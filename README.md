@@ -1,4 +1,4 @@
-# stude
+# StuDE
 StuDE - Desktop Environment Fork of KDE1 - Lightweight, Fast, Independent, Simple and Stupid.
 
 As far as I know the KDE components are all licensed under the GNU GPL version 2. Any licensing discrepancies, please let me know.
