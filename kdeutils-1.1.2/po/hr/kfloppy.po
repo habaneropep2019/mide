@@ -1,0 +1,230 @@
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Vladimir Vuksan <vuksan@veus.hr>, 1998
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeutils\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: 1998-10-15 15:00-0500\n"
+"Last-Translator: Vladimir Vuksan <vuksan@veus.hr>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Xgettext-Options: -C -ki18n -x../../kdelibs/po/kde.pot\n"
+"Files: about.cpp floppy.cpp main.cpp\n"
+
+# about.cpp:40
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "O KDE programu za formatiranje"
+
+# about.cpp:49 floppy.cpp:289 floppy.cpp:336 floppy.cpp:352 floppy.cpp:368 floppy.cpp:475 floppy.cpp:578 floppy.cpp:592 floppy.cpp:707 floppy.cpp:721 floppy.cpp:768 floppy.cpp:777 floppy.cpp:884 floppy.cpp:905 floppy.cpp:929
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+# about.cpp:54
+#: about.cpp:54
+msgid "Version "
+msgstr "Inaèica"
+
+# floppy.cpp:56
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Floppy Drive:"
+
+# floppy.cpp:65
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Gustoæa:"
+
+# floppy.cpp:74
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Datoteèni sistem:"
+
+# floppy.cpp:108 floppy.cpp:408
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Formatiraj"
+
+# floppy.cpp:131
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Brzo brisanje"
+
+# floppy.cpp:136
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Puni format"
+
+# floppy.cpp:142
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Dodaj oznaku:"
+
+# floppy.cpp:148
+#: floppy.cpp:148
+msgid "KDE Floppy"
+msgstr "KDE Floppy"
+
+# floppy.cpp:162
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "KDE program za formatiranje disketa"
+
+# floppy.cpp:222 floppy.cpp:237 floppy.cpp:252 floppy.cpp:267
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr "DD"
+
+# floppy.cpp:286
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"Ne mogu pristupiti %s\n"
+"Provjerite da ureðaj postoji i da na njemu\n"
+"imate privilegije za pisanje."
+
+# floppy.cpp:333
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Ne mogu naæi kfdformat\n"
+"kfdformat je dio KFloppy distribucije.\n"
+"Morate ispravno instalirati KFloppy."
+
+# floppy.cpp:349
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Ne mogu naæi kmke2fs\n"
+"kmke2fs je dio KFloppy distribucije.\n"
+"Morate ispravno instalirati KFloppy."
+
+# floppy.cpp:364
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Ne mogu naæi kmkdosfs\n"
+"kmkdosfs je dio KFloppy distribucije.\n"
+"Morate ispravno instalirati KFloppy."
+
+# floppy.cpp:424
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Prekini"
+
+# floppy.cpp:472
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Ne mogu pokrenuti novi program: fork() nije uspio."
+
+# floppy.cpp:572 floppy.cpp:700
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Ne mogu pristupiti disketi ili floppy driveu\n"
+"Molim umetnite disketu i provjerite da ste\n"
+"izabrali ispravnu disketu.\n"
+
+# floppy.cpp:587
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"Ne mogu formatirati: %s\n"
+"%s"
+
+# floppy.cpp:634
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Block %d je lo¹. Nastavljam ..."
+
+# floppy.cpp:717
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"Ne mogu naèiniti datoteèni sistem na: %s\n"
+"%s"
+
+# floppy.cpp:753
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"Disketa je uspje¹no formatirana.\n"
+"Oznaèeni lo¹i blokovi: %d\n"
+"Sirovi Kapacitet: %d\n"
+
+# floppy.cpp:774
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Sve datoteke su obrisane uspje¹no."
+
+# floppy.cpp:832
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Kreiram datoteèni sistem ..."
+
+# floppy.cpp:836
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Provjeravam ..."
+
+# floppy.cpp:881
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Ne mogu pokrenuti novi program\n"
+"fork() nije uspio."
+
+# floppy.cpp:907
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Gre¹ka prilikom poku¹aja da utvrdim da li je disk namontiran\n"
+
+# floppy.cpp:924
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s je montiran.\n"
+"Morate ga demontirati prije nego nastavimo."

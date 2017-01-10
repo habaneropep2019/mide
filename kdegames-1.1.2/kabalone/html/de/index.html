@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<TITLE>KAbalone</TITLE>
+
+</HEAD>
+<BODY>
+<H1>KAbalone</H1>
+<h3>*DIE* KDE-Version von Abalone</h3>
+
+<h2>Inhalt</h2>
+<ul>
+<li><a href="#about">Was ist "Abalone"?</a></li>
+<li><a href="#rules">Spielregeln</a></li>
+<li><a href="#interface">Bedienung des Programmes</a></li>
+<li><a href="#author">&Uuml;ber "kabalone"</a></li>
+</ul>
+
+<hr>
+
+<h2><a name=about>Was ist "Abalone"?</a></h2>
+Abalone ist ein einfaches Brettspiel. Zwei Personen spielen gegeneinander
+mit roten und gelben Spielsteinen (Kugeln). Beginnend bei einer
+Startstellung, in der jeder Spieler 14 Kugeln besitzt, wird abwechselnd
+gezogen, bis ein Spieler 6 Kugeln des Gegners aus dem Spielfeld gedr&auml;ngt
+hat.
+
+<hr>
+
+<H2><a name=rules>Spielregeln f&uuml;r Abalone</a></H2>
+
+1. Der Spieler mit den roten Kugeln beginnt. <p>
+
+2. Zwei Arten von Z&uuml;gen sind erlaubt: <p>
+<ul>
+<li> Normaler Zug <br>
+Eine, zwei oder drei Kugeln in einer Linie k&ouml;nnen um eins nach vorn
+geschoben werden. Dabei sind 6 Richtungen m&ouml;glich. Seitliches
+Verschieben ist ebenfalls erlaubt. <p>
+
+F&uuml;r einen Zug mu&szlig; eine Maustaste &uuml;ber der zu schiebenden
+Kugel gedr&uuml;ckt werden. Die Kugel &auml;ndert daraufhin ihre Farbe, wenn
+ein Zug damit erlaubt ist. Bei Gedr&uuml;ckthalten der Maustaste zieht man
+den Mauszeiger in die gew&uuml;nschte Richtung. Der Zeiger sollte sich nun
+in einen Pfeil in die entsprechende Richtung wandeln, und alle betroffenen
+Kugeln ihre Farbe &auml;ndern. Durch Loslassen der Maustaste wird der Zug
+ausgef&uuml;hrt. <p>
+
+Um zwei Kugeln seitlich zu schieben, clickt man zwischen die zwei Kugeln;
+drei Kugeln werden durch Dr&uuml;cken der mittleren Maustaste auf die
+mittlere Kugel angesprochen und k&ouml;nnen dann seitw&auml;rts bewegt
+werden. <p>
+
+<li> Anschiebe-Zug <br>
+Maximal zwei Kugeln des Gegners k&ouml;nnen vor den eigenen Kugeln
+hergeschoben werden, n&auml;mlich dann, wenn die eigenen Kugeln in der Zahl
+&uuml;berlegen sind. Das hei&szlig;t: mit zwei Kugeln kann man eine Kugel des
+Gegners schieben, und mit drei entsprechend eine oder zwei. <p>
+
+Besondere Anschiebe-Z&uuml;ge sind solche, die Gegner-Kugeln aus dem
+Spielfeld dr&auml;ngen. Wenn man 6 Kugeln des Gegners so rausgeschoben hat,
+hat man das Spiel gewonnen. <p>
+
+</ul>
+
+Wenn immer noch nicht klar ist, wie das Spiel funktioniert: Einfach im
+Men&uuml; Optionen "Computer spielt/Beide Seiten" anw&auml;hlen und ein neues
+Spiel starten.
+
+<hr>
+
+<h2><a name=interface>Bedienung des Programmes</a></h2>
+
+Das Ausf&uuml;hren von Z&uuml;gen wird in den Spielregeln
+beschrieben. Im folgenden werden Men&uuml;eintr&auml;ge erl&auml;utert. <p>
+
+Das Datei-Men&uuml;: <p>
+<ul>
+<li> Neues Spiel <br>
+Startet ein neues Spiel. Dies ist jederzeit, auch w&auml;hrend eines laufenden
+Spieles, m&ouml;glich. <p>
+
+<li> Stellung speichern <br>
+Speichert die aktuelle Stellung ab. <p>
+
+<li> Stellung restaurieren <p>
+Stellt eine vorher gespeicherte Stellung wieder her. <p>
+
+<li> Suche unterbrechen <br>
+Wenn der Computer &uuml;ber einen Zug nachdenkt, kann damit dessen Suche
+unterbrochen werden. Er w&auml;hlt dann den Zug, den er bis jetzt als Besten
+erachtet. <p>
+
+<li> Zur&uuml;cknehmen <br>
+Nimmt einen Zug zur&uuml;ck. Tats&auml;chlich werden zwei Z&uuml;ge
+zur&uuml;ckgenommen: ein Zug des Gegners und ein eigener, soda&szlig; man
+wieder an der Reihe ist. Etwa 100 Z&uuml;ge k&ouml;nnen zur&uuml;ckgenommen
+werden. <p>
+
+<li> Vorschlag <br>
+Damit wird ein m&ouml;glicher (guter ?) Zug vom Computer vorgeschlagen. Dies
+funktioniert nur, wenn Spielst&auml;rke Normal oder h&ouml;her gew&auml;ht
+wurde, die aktuelle Zugnummer gr&ouml;&szlig;er als 2 ist, und nicht gerade
+erst ein Zug zur&uuml;ckgenommen wurde. Hintergrund: In einer vorigen Suche des
+Computers merkt er sich den besten Zug des Gegners; diese wird dann als Tip
+angezeigt.
+</ul> <p>
+
+Das Optionen-Men&uuml;: <p>
+
+<ul>
+<li> Spielst&auml;rke <br>
+Unter vier Spielst&auml;rken des Computers kann ausgew&auml;hlt werden. Dies
+beeinflu&szlig;t die Anzahl Z&uuml;ge, die der Computer im Voraus berechnet,
+um den besten Zug zu finden. Unterbrochen werden kann die Suche mit der
+Taste S. <p>
+
+<li> Computer spielt <br>
+Der Computer kann Rot, Gelb oder beide Seiten &uuml;bernehmen. Dies kann
+jederzeit (nicht nur vor Spielbeginn) ge&auml;ndert werden, um
+beispielsweise die Seite zu wechseln (wenn man zu schlecht spielt). <p>
+
+<li> Langsam ziehen <br>
+Ein Computerzug wird dadurch angezeigt, da&szlig; die am Zug beteiligten
+Kugeln vor dem eigentlichen Zug zu blinken beginnen und ihre Farbe
+&auml;ndern (wenn diese Option angew&auml;hlt ist). Ein Abw&auml;hlen
+verhindert diese etwas langsame (Pseudo-) Animation. Dann wechseln die
+entsprechenden Kugeln nur kurzzeitig ihre Farbe, ohne zu blinken; dies ist
+deutlich schneller. <p>
+
+<li> Spion <br>
+Ist die Option Spion angew&auml;hlt, so werden in der Statuszeile
+Informationen zum aktuellen Zug - sowohl des Spielers als auch eines
+momentan besten Zuges des Computers - angezeigt: der Zug selbst sowie eine
+vom Computer errechnete Verbesserung (positiv) oder Verschlechterung
+(negativ) der aktuellen Stellungsbewertung durch den Zug. <p>
+
+<li> Speichern <br>
+Speichert die Optionen in der Konfigurationsdatei der Applikation. <p>
+
+</ul> <p>
+
+Die restlichen Eintr&auml;ge sollten klar sein.
+
+<hr>
+
+<h2><a name=author>&Uuml;ber KAbalone</a></h2>
+"KAbalone" ist Teil des <a href="http://www.kde.org">KDE (Kool Desktop
+Environment)</a>-Projektes. Das Programm wurde im September 1997 von
+<a href="mailto:weidendo@informatik.tu-muenchen.de">Josef Weidendorfer</a>
+geschrieben. Z&ouml;gern Sie nicht, mich zu kontaktieren, wenn Sie einen
+Fehler im Programm finden oder Fragen/Vorschl&auml;ge zur Implementierung
+haben (Etwa: Mein Computer - das intelligentere Wesen ?). Und
+<a href="http://www.student.uni-augsburg.de/~weidendo/">hier</a> gehts zu meiner
+Homepage im WWW. Das Programm (mit den Quellen) wurde, wie der Rest von KDE,
+unter den Bedingungen der GNU GPL zur Verf&uuml;gung gestellt. <p>
+
+Der erste Anlauf dieses Programmes stammt &uuml;brigens schon aus dem 
+Jahre 1993, und wurde f&uuml;r DOS sowie reines Xlib geschrieben. Im Zuge
+der Implementierung f&uuml;r KDE wurde es erheblich umgeschrieben. <p>
+
+Anmerkung: Die Spielidee stammt nicht von mir. Zumindest in Deutschland ist
+das Brettspiel ziemlich verbreitet. Ich wei&szlig; im Moment leider nicht
+den Spielehersteller. Sollte er sich bei mir melden, werde ich ihn gern hier
+erw&auml;hnen (hoffentlich mu&szlig; ich den Namen dann nicht &auml;ndern).
+<p>
+
+<hr>
+<i>Josef Weidendorfer, 9/97<i>
+</BODY>
+</HTML>

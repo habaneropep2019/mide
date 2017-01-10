@@ -1,0 +1,199 @@
+kdenetwork (4:1.1.2-19990906-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Mon, 06 Sep 1999 22:30:56 -0400
+
+kdenetwork (4:1.1.1-19990701-1) unstable; urgency=low   
+
+  * New upstream CVS version 
+  * This is pre-1.1.2 (frozen)
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Thu, 01 Jul 1999 23:45:56 -0400
+
+kdenetwork (4:1.1.1-19990624-1) unstable; urgency=low
+
+  * New upstream CVS version (pull)
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Thu, 24 Jun 1999 05:30:56 -0400
+
+kdenetwork (4:1.1.1-19990612-2) unstable; urgency=low
+
+  * Migrating -dev files into their own package per Debian policy
+  * Changing Section to contrib/net (was contrib/mail) 
+  * Updating README.debian (still had old information in it)
+  * Added files in /etc/kde to conffiles directive
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Mon, 14 Jun 1999 03:30:56 -0400
+
+kdenetwork (4:1.1.1-19990612-1) unstable; urgency=low
+
+  * new upstream CVS version
+  * fixes security bug with kmail
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sat, 12 Jun 1999 03:30:56 -0400
+
+kdenetwork (4:1.1.1-19990529-1) unstable; urgency=low
+
+  * new upstream CVS version
+  * fixed some dependency issues to make lintian happy
+  * added a dh_makeshlibs to also make lintian happy
+  * fixing a few file modes after install
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sat, 29 May 1999 22:00:56 -0400
+
+kdenetwork (4:1.1.1-19990523-1) unstable; urgency=low
+
+  * new upstream CVS version 
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sun, 23 May 1999 08:00:56 -0400
+
+kdenetwork (4:1.1.1-19990424-1) unstable; urgency=low
+
+  * new upstream version for KDE 1.1.1
+
+ -- Stephan Kulow <coolo@kde.org>  Sat, 24 Apr 1999 16:53:56 +0200
+
+kdenetwork (4:1.1-19990306-1) unstable; urgency=low
+
+  * new upstream version out of CVS (many translation updates and some
+    security fixes
+
+ -- Stephan Kulow <coolo@kde.org>  Sat,  6 Mar 1999 18:03:05 +0100
+
+kdenetwork (4:1.1-19990222-1) unstable; urgency=low
+
+  * new upstream version with fixed pws 
+
+ -- Patricia Jung <trish@freiburg.linux.de>  Mon, 22 Feb 1999 23:25:49 +0100 
+
+kdenetwork (4:1.1-19990217-1) unstable; urgency=low
+
+  * new upstream version
+
+ -- Stephan Kulow <coolo@kde.org>  Wed, 17 Feb 1999 19:09:42 +0100
+
+kdenetwork (4:1.1-19990211-2) unstable; urgency=low
+
+  * fixed line numbers in po/hr/kppp.po
+
+ -- Patricia Jung <trish@freiburg.linux.de>  Wed, 17 Feb 1999 22:53:57 +0100 
+
+kdenetwork (4:1.1-19990211) unstable; urgency=low
+
+  * adding ksirc back into the distribution after fixing some weired
+    things in it
+
+ -- Stephan Kulow <coolo@kde.org>  Thu, 11 Feb 1999 22:35:00 +0100
+
+kdenetwork (4:1.1-19990207-2) unstable; urgency=low
+
+  * fixed a bug with the wrong libjpeg version
+
+ -- Stephan Kulow <coolo@kde.org>  Tue,  9 Feb 1999 10:43:43 +0100
+
+kdenetwork (4:1.1-19990207-1) unstable; urgency=low
+
+  * new upstream version 1.1 and new epoche
+
+ -- Stephan Kulow <coolo@kde.org>  Sun,  7 Feb 1999 12:12:59 +0100
+
+kdenetwork (2:980710-1.0-1) unstable; urgency=low
+
+  * new upstream version 1.0
+
+ -- Stephan Kulow <coolo@kde.org>  Sun, 12 Jul 1998 10:12:19 +0200
+
+kdenetwork (2:980419-b4-1) unstable; urgency=low
+
+  * new upstream version Beta4
+
+ -- Stephan Kulow <coolo@kde.org>  Sun, 19 Apr 1998 17:43:01 +0200
+
+kdenetwork (2:980328-2) frozen; urgency=low
+
+  * added undocumented man page for all binaries
+  * new compile with fixed kdelibs (should be the last time)
+
+ -- Stephan Kulow <coolo@kde.org>  Sat, 28 Mar 1998 21:33:55 +0100    
+
+kdenetwork (2:980328-1) frozen; urgency=low 
+
+  * new upstream version with bug fixes
+
+ -- Stephan Kulow <coolo@kde.org>  Sat, 28 Mar 1998 21:33:55 +0100
+
+kdenetwork (2:980311-2) frozen; urgency=low
+
+  * new compile cycle with qt-1.33 and libstc++-2.8
+
+ -- Stephan Kulow <coolo@kde.org>  Tue, 24 Mar 1998 19:59:56 +0100
+
+kdenetwork (2:980311-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Thu, 12 Mar 1998 23:21:40 +0100
+
+kdenetwork (980228-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Sat, 28 Feb 1998 22:17:39 +0100
+
+kdenetwork (980227-1) experimental; urgency=low
+
+  * changed maintainer field
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Sat, 28 Feb 1998 02:28:33 +0100
+
+kdenetwork (1:Beta2-2.1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Fri,  5 Dec 1997 21:17:07 +0100
+
+kdenetwork (1:Beta2-2) unstable; urgency=low
+
+  * changed kmail to use umask(077) ! mailfolders should not be world
+    readable ...
+  * fixed debstd call in debian/rules
+  * removed virtual package names.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 30 Nov 1997 17:08:07 +0100
+
+kdenetwork (1:Beta2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 23 Nov 1997 16:07:21 +0100
+
+kdenetwork (1:Beta1.2-2) unstable; urgency=low
+
+  * new compile cycle with bugfixes.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun,  9 Nov 1997 19:42:58 +0100
+
+kdenetwork (1:Beta1.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 27 Oct 1997 11:44:46 +0100
+
+kdenetwork (1:Beta1.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 20 Oct 1997 11:15:00 +0200
+
+kdenetwork (971019-1) unstable; urgency=low
+
+  * Initial Release (my old version disapeared from my hard disk ?)
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 19 Oct 1997 17:59:43 +0200
+
+Local variables:
+mode: debian-changelog
+add-log-mailing-address: "aj@debian.org"
+End:

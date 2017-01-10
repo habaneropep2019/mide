@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The KLpq Handbook: Usage</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="printer queue kde qt X11">
+<META NAME="description" CONTENT="Displays the printer queue">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="index-4.html">Next</A>
+<A HREF="index-2.html">Previous</A>
+<A HREF="index.html#toc3">Table of Contents</A>
+</P>
+<H3><A NAME="s3">3. Usage</A></H3>
+
+<P>klpq [ [-n ] [-P printer ] file1 file2 URL1 URL2]
+<P>On first startup klpq asks you which print spooler you use. Klpq supports
+BSD, PPR and LPRng. If you don't know which spooler is installed on your
+system you will most probably have BSD. If klpq does not display your printqueue
+try one of the other settings (You may change the spooling system from
+<EM>config->spooler</EM>).
+<P>Without any arguments klpq searches for the environment variable PRINTER
+and tries to display the contents of the corresponding queue. If PRINTER
+is not set, it displays the contents of the queue named 'lp'. If no queue
+with this name exists it displays the first printer queue in your printcap
+file.
+<P>With the file argument you may use klpq as a replacement for lpr. You
+don't have to type <EM>lpr file_to_print; klpq</EM> but may type directly <EM>klpq
+file_to_print</EM>. Klpq executes lpr for you. The -P option specifies the
+spool area to use. Currently no other options to lpr are supported.
+<P>The -n option tells klpq not to display the queue if a filename was
+given on the command line. E.g. <EM>klpq -n file_to_print</EM> lets klpq send
+the file to the printer and exit immediatly. <EM>klpq -n</EM> without file argument
+will start klpq as normal.
+<P>Klpq now supports URLs as arguments on the command line. Klpq will use
+KFM to copy the file to a temporary file on the local system and sends
+it to the printer. Please note that klpq must be running during the download.
+If you quit klpq earlier the files will not be printed.
+<P>DRAG&amp;DROP: You may drag any URL out of KFM and drop it on the klpq-window.
+Klpq will copy the URL to a temporary file and send it to the printer.
+<P>Klpq is quite easy to use, so I just want to say some words about things that
+are not obvious:
+<P>If the <EM>Auto</EM> button is pressed down, klpq rereads the current printqueue
+every 'no' seconds, so you don't have to hit the <EM>Update</EM> button every time.
+You may change the 'no' of seconds by selecting <EM>config->Auto update</EM>
+from the menu. If you set 'no' to 0, then the <EM>Auto</EM> button will be completely
+disabled.
+<P>If you get the message <EM>This is a privileged command</EM>, than you have
+to be root or any other privileged user to execute this command and if
+you try to remove a printjob of another user, this is silently ignored.
+<P>There are several key accelerators defined:
+<P>
+<UL>
+<LI><B>Key_U</B>: like pressing the 'Update' button.</LI>
+<LI><B>Key_R</B>: like pressing the 'Remove' button.</LI>
+<LI><B>Key_T</B>: like pressing the 'Make Top' button.</LI>
+<LI><B>Key_A</B>: like pressing the 'Auto' button.</LI>
+<LI><B>Key_Left</B>: displays the previous queue.</LI>
+<LI><B>Key_Right</B>: displays the next queue.</LI>
+</UL>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="index-4.html">Next</A>
+<A HREF="index-2.html">Previous</A>
+<A HREF="index.html#toc3">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

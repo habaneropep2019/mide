@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 1998.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KTETRIS\n"
+"POT-Creation-Date: 1998-10-01 13:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: board.cpp:65 dialogs.cpp:137
+msgid "Anonymous"
+msgstr "Tuntematon"
+
+#: board.cpp:97
+msgid "Game paused"
+msgstr "Peli pysäytetty"
+
+#: board.cpp:102
+msgid "Press to resume"
+msgstr "Paina nappia jatkaaksesi"
+
+#: board.cpp:119 net.cpp:208
+msgid "Game over"
+msgstr "Peli loppu"
+
+#: board.cpp:123
+msgid "Press Return to replay"
+msgstr "Paina Return pelataksesi uudestaan"
+
+#: board.cpp:127
+msgid "Press to start game"
+msgstr "Paina nappia aloittaaksesi"
+
+#: board.cpp:371
+msgid "Highscores file not writable !"
+msgstr "Ennätyslistatiedostoa ei voida kirjoittaa !"
+
+#: net.cpp:129
+msgid "Illegal port"
+msgstr "Kielletty portti"
+
+#: net.cpp:135
+msgid "Null address"
+msgstr "Tyhjä osoite"
+
+#: net.cpp:142
+msgid "Unknown address"
+msgstr "Tuntematon osoite"
+
+#: net.cpp:157
+msgid "Cannot create socket"
+msgstr "En voi luoda pistoketta"
+
+#: net.cpp:196
+msgid "at"
+msgstr " "
+
+#: net.cpp:233
+msgid "Connect error"
+msgstr "Yhteysvirhe"
+
+#: net.cpp:243 net.cpp:299
+msgid "Server unreachable"
+msgstr "Palvelin tavoittamattomissa"
+
+#: net.cpp:266
+msgid "The server has died"
+msgstr "Palvelin on kuollut"
+
+#: net.cpp:267
+msgid "Cancel from server"
+msgstr "Peruutus palvelimelta"
+
+#: net.cpp:273 net.cpp:333
+msgid "Unknown data from server"
+msgstr "Tuntematonta tietoa palvelimelta"
+
+#: net.cpp:312
+msgid "Cannot send to server"
+msgstr "En voi lähettää palvelimelle"
+
+#: net.cpp:324
+msgid "Client timeout (No message from server)"
+msgstr "Asiakas lopetti odottamisen (ei viestiä palvelimelta)"
+
+#: net.cpp:329
+msgid "Server has vanished"
+msgstr "Palvelin on kadonnut"
+
+#: net.cpp:366
+msgid "Bind error"
+msgstr "Liittymisvirhe"
+
+#: net.cpp:371
+msgid "Listen error"
+msgstr "Kuunteluvirhe"
+
+#: net.cpp:390
+msgid "Unknown message from unknown player (??)"
+msgstr "Tuntematon viesti tuntemattomalta pelaajalta"
+
+#: net.cpp:449 net.cpp:490
+msgid "Unknown message from client"
+msgstr "Tuntematon viesti asiakkaalta"
+
+#: net.cpp:486
+msgid "Client has died"
+msgstr "Asiakas on kuollut"
+
+#: net.cpp:487
+msgid "Cancel from client"
+msgstr "Peruutus asiakkaalta"
+
+#: net.cpp:494
+msgid "Timeout"
+msgstr "Odotusaika loppu"
+
+#: net.cpp:520
+msgid "No message from client"
+msgstr "Ei viestiä asiakkaalta"
+
+#: net.cpp:525
+msgid "Client has vanished"
+msgstr "Asiakas on kadonnut"
+
+#: net.cpp:529
+msgid "Unknown data from client"
+msgstr "Tuntematonta tietoa asiakkaalta"
+
+#: net.cpp:533
+msgid "End message from client"
+msgstr "Lopetus viesti asiakkaalta"
+
+#: net.cpp:550
+msgid "Cannot send to client"
+msgstr "En voi lähettää asiakkaalle"
+
+#: dialogs.cpp:61
+msgid "High Scores"
+msgstr "Ennätyslista"
+
+#: dialogs.cpp:84 dialogs.cpp:93
+msgid "Hall of Fame"
+msgstr "Ennätyslista"
+
+#: dialogs.cpp:156
+msgid "No option yet !"
+msgstr "Ei valittavissa !"
+
+#: dialogs.cpp:175 dialogs.cpp:232
+msgid "Network Dialog"
+msgstr "Verkkoasetukset"
+
+#: dialogs.cpp:178
+msgid "Server"
+msgstr "Palvelin"
+
+#: dialogs.cpp:179
+msgid "Client"
+msgstr "Asiakas"
+
+#: dialogs.cpp:183
+msgid "Player name :"
+msgstr "Pelaajan nimi :"
+
+#: dialogs.cpp:185
+msgid "Server address :"
+msgstr "Palvelimen osoite :"
+
+#: dialogs.cpp:187
+msgid "Port :"
+msgstr "Portti :"
+
+#: dialogs.cpp:199
+msgid "Connect"
+msgstr "Yhdistä"
+
+#: dialogs.cpp:202
+msgid "Connecting ..."
+msgstr "Yhdistän ..."
+
+#: dialogs.cpp:205
+msgid "Play !"
+msgstr "Pelaa !"
+
+#: dialogs.cpp:252
+msgid "Network game"
+msgstr "Verkkopeli"
+
+#: dialogs.cpp:256
+msgid "Server mode"
+msgstr "Palvelintila"
+
+#: dialogs.cpp:258
+msgid "Client mode"
+msgstr "Asiakastila"
+
+#: dialogs.cpp:336
+msgid "Waiting for other player(s) ..."
+msgstr "Odotan muita pelaajia ..."
+
+#: field.cpp:27
+msgid "New game"
+msgstr "Uusi peli"
+
+#: field.cpp:28
+msgid "Pause game"
+msgstr "Pysäytä peli"
+
+#: field.cpp:30
+msgid "High scores"
+msgstr "Ennätystulokset"
+
+#: field.cpp:31
+msgid "Move left"
+msgstr "Vasemmalle"
+
+#: field.cpp:32
+msgid "Move right"
+msgstr "Oikealle"
+
+#: field.cpp:33
+msgid "Drop down"
+msgstr "Tiputa"
+
+#: field.cpp:34
+msgid "One line down"
+msgstr "Rivi alas"
+
+#: field.cpp:35
+msgid "Rotate left"
+msgstr "Pyöritä vasemmalle"
+
+#: field.cpp:36
+msgid "Rotate right"
+msgstr "Pyöritä oikealle"
+
+#: field.cpp:51
+msgid "Score"
+msgstr "Tulos"
+
+#: field.cpp:55
+msgid "Lines removed"
+msgstr "Rivejä poistettiin"
+
+#: field.cpp:59
+msgid "Level"
+msgstr "Taso"
+
+#: field.cpp:63
+msgid "Next tile"
+msgstr "Seuraava"
+
+#: field.cpp:185
+msgid "&Restart game"
+msgstr "&Käynnistä uudelleen"
+
+#: field.cpp:186
+msgid "&Pause game"
+msgstr "&Pysäytä peli"
+
+#: field.cpp:187
+msgid "&Multiplayer game"
+msgstr "&Monipelaajatila"
+
+#: field.cpp:189
+msgid "&High scores"
+msgstr "&Ennätyslista"
+
+#: main.cpp:25 main.cpp:74
+msgid "Hide menu"
+msgstr "Piilota valikko"
+
+#: main.cpp:30
+msgid "&Keys"
+msgstr "&Näppäimet"
+
+#: main.cpp:35
+msgid "by"
+msgstr " "
+
+#: main.cpp:71
+msgid "Show menu"
+msgstr "Näytä valikko"

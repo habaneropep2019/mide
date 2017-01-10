@@ -1,0 +1,612 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: LinuxKorea Co. <kde@linuxkorea.co.kr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "CDDB 기본 디렉토리"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "CDDB 요청 보낼 곳:"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "CDDB 서버:"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "갱신"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "원격 CDDB 이용"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "기본 설정"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "CDDB 접속시 HTTP 프락시 사용"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "CD 데이터베이스 편집기"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"총 시간:\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"총 시간:\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "트랙 주석 편집기"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "제목 주석 편집기"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "범위를 선택하거나 취소를 누르십시오"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "CD가 어떤 분류항목에 포함되어 있습니까?"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "cddb 항목 요청하는 중: %s\n"
+
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"다음으로 내용을 보낼 수 없음:\n"
+" %s"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "어느 분류항목에 이 CDDB 항목을 저장하시겠습니까?"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"다음 파일에 쓸 수 없음:\n"
+"%s\n"
+"귀하의 권한을 확인하시고 분류항목 디렉토리를 만드십시오."
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "Kscd 오류"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "잘못된 데이터베이스 항목"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"디스크의 아티스트 / 제목 항목이 비어 있습니다\n"
+"항목을 수정하고 다시 시도하십시오."
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"디스크의 아티스트 / 제목 항목이 바르게 채워지지 않았습니다\n"
+"아티스트 항목을 CD 제목과 슬래쉬로 구분해 주십시오 \n"
+" 예 : Peter Gabriel / Greatest Hits\n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"모든 트랙 제목을 비울 수 없습니다.\n"
+"항목을 수정하고 다시 시도하십시오."
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "내부 오류"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"제작자에게 전자우편을 보내십시오."
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "유효하지 않은 연주목록\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "불러오기"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "연주 목록 편집기"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "트랙 제목 편집"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "아티스트 / 제목"
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "트랙 / 시간 / 제목"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "추가 정보"
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "디스크 ID"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "업로드"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "kscd 설정"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "LED 색:"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "배경 색:"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "CDROM 장치:"
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Unix 전자우편 명령:"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "WWW-브라우저"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "브라우저로 kfm 사용"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "사용자 지정 브라우저:"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "도구 팁 보이기"
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "KPanel에 작은 아이콘 표시"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr ""
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr ""
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr ""
+
+#: configdlg.cpp:190
+#, fuzzy
+msgid "Eject on Finish"
+msgstr "꺼냄"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "연주/잠시멈춤"
+
+#: docking.cpp:75
+#, fuzzy
+msgid "Forward"
+msgstr "30초 앞으로"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "뒤로"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "다음"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "이전"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "꺼내기"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "최소화"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr ""
+"정확히 일치하는 것이 없읍니다. 아래 선택 목록 중에서 적당한 CD를 선택 하시기 "
+"바랍니다."
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "디스크의 제목을 선택하거나 취소를 누르십시오"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr ""
+
+#: kscd.cpp:236
+msgid "Error connecting to server."
+msgstr ""
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr ""
+
+#: kscd.cpp:242
+#, fuzzy
+msgid "Connection timed out."
+msgstr "CDDB 질의 시간 초과"
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr ""
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "음량: --"
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Performances"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "Purchases"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Magic"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "CD 반복"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "트랙 선택"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "30초 앞으로"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "30초 뒤로"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "다음 트랙"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "이전 트랙"
+
+#: kscd.cpp:570
+#, fuzzy
+msgid "Quit Kscd"
+msgstr "Kscd 끝내기"
+
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "연주 시간 표시"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Kscd 설정"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "CD 꺼내기"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "The Artist on the Web"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "임의 연주"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "CDDB 대화창"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "CD 음량 조절"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "연주중"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr ""
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "잠시 멈춤"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "임의 연주"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Strange...."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "멈춤"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "반복"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "꺼냄"
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "Kscd 설정사항"
+
+#: kscd.cpp:1008
+#, fuzzy
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"kscd는 workman 1.4 베타 3\n"
+"코드를 포함하고 있읍니다\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"CDDB 데이터베이스 개념의 창안자인 Ti Kan 과 Steve Scherf 에게 특별한 감사를 "
+"표합니다. CDDB의 상세정보는 http//www.cddb.com를 참조하기 바랍니다.\n"
+"\n"
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"KSCD Magic은 Paul Harrison의 Synaesthesia에 기반을두고 있읍니다. "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+
+#: kscd.cpp:1025
+#, fuzzy
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"http 프락시 코드 작업을 해준 Vadim Zaliva\n"
+"<lord@crocodile.org>에게 감사를 드립니다.\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr ""
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Kscd 옵션"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Magic"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "음량: %02d%%"
+
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"CDROM 읽기 또는 억세스 오류\n"
+"다음에 대한 억세스 허가권이 있는지 확인하십시오:\n"
+"%s"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "준비"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "열림"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "CDDB 서버 목록을 얻을 수 없음"
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "맞는 CDDB 항목을 찾을 수 없습니다"
+
+#: kscd.cpp:1834 kscd.cpp:1844
+#, fuzzy
+msgid "Error getting CDDB entry."
+msgstr "맞는 CDDB 항목을 찾을 수 없습니다"
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "CDDB 질의 시간 초과"
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "Tra Rem"
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Tot Sec"
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Tot Rem"
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "Tra Sec"
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "kscdmagic을 실행할 수 없음"
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"KSCD Magic이 비정상적으로 종료됐읍니다.\n"
+"분명히 kscdmagic을 설치했읍니까?"
+
+#: kscd.cpp:2368
+#, fuzzy
+msgid "Enter the local CDDB base Directory"
+msgstr "CDDB 기본 디렉토리"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: 명령행 옵션을 보여줌\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: 디버깅 출력을 가능하게 함\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "매직 Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "매직 윈도우 넓이:"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "매직 윈도우 높이:"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "Magic 밝기:"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr ""
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr ""
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Dock Kscd"
+#~ msgstr "매직 Kscd"
+
+#~ msgid "Track %02d"
+#~ msgstr "트랙 %02d"

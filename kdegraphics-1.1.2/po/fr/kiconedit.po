@@ -1,0 +1,1114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kiconedit\n"
+"POT-Creation-Date: 1999-01-10 01:46+0100\n"
+"PO-Revision-Date: 1998-12-09 12:00+0100\n"
+"Last-Translator: Francois-Xavier DURANCEAU & Alain "
+"Gibaud<Francois-Xavier.Duranceau@loria.fr>\n"
+"Language-Team: Français <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"<Alain.Gibaud@univ-valenciennes.fr>\n"
+
+#: utils.cpp:65
+#, c-format
+msgid "copyFile - There was an error opening destination file: %s"
+msgstr "copyFile - Impossible d'ouvrir le fichier destination : %s"
+
+#: utils.cpp:72
+#, c-format
+msgid "copyFile - There was an error reading source file: %s"
+msgstr "copyFile - Impossible de lire le fichier source : %s"
+
+#: utils.cpp:80
+#, c-format
+msgid "copyFile - There was an error writing to destination file: %s"
+msgstr "copyFile - Impossible d'écrire le fichier destination : %s"
+
+#: utils.cpp:93
+#, c-format
+msgid "copyFile - There was an error opening source file: %s"
+msgstr "copyFile - Impossible d'ouvrir le fichier source : %s"
+
+#: utils.cpp:105
+#, c-format
+msgid "removeFile - There was an error removing the file: %s"
+msgstr "removeFile - Impossible de supprimer le fichier : %s"
+
+#: kiconedit.cpp:239 kiconeditslots.cpp:62 kiconeditslots.cpp:121
+msgid ""
+"The current file has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"Le fichier courant a été modifié.\n"
+"Voulez-vous l'enregistrer ?"
+
+#: kiconedit.cpp:373
+msgid "Select All"
+msgstr "Tout sélectionner"
+
+#: kiconedit.cpp:391
+msgid "New &Window"
+msgstr "Nouvelle &fenêtre"
+
+#: kiconedit.cpp:396
+msgid "&New..."
+msgstr "&Nouveau..."
+
+#: kiconedit.cpp:402
+msgid "Open recent"
+msgstr "Récemment ouvert"
+
+#: kiconedit.cpp:423
+msgid "&Exit"
+msgstr "&Quitter"
+
+#: kiconedit.cpp:431
+msgid "Cu&t"
+msgstr "Co&uper"
+
+#: kiconedit.cpp:440
+msgid "Paste as &new"
+msgstr "Coller comme &nouveau"
+
+#: kiconedit.cpp:443
+msgid "Clea&r"
+msgstr "Efface&r"
+
+#: kiconedit.cpp:447
+msgid "Select &all"
+msgstr "&Tout sélectionner"
+
+#: kiconedit.cpp:454
+msgid "1:1"
+msgstr "1:1"
+
+#: kiconedit.cpp:455
+msgid "1:5"
+msgstr "1:5"
+
+#: kiconedit.cpp:456
+msgid "1:10"
+msgstr "1:10"
+
+#: kiconedit.cpp:461
+msgid "Zoom &in"
+msgstr "Zoom a&vant"
+
+#: kiconedit.cpp:462
+msgid "Zoom &out"
+msgstr "Zoom a&rrière"
+
+#: kiconedit.cpp:463
+msgid "Zoom factor"
+msgstr "&Facteur de zoom"
+
+#: kiconedit.cpp:470
+msgid "&Resize"
+msgstr "&Taille"
+
+#: kiconedit.cpp:472
+msgid "&GrayScale"
+msgstr "Niveaux de &gris"
+
+#: kiconedit.cpp:477
+msgid "&Icon"
+msgstr "&Icône"
+
+#: kiconedit.cpp:481
+msgid "Freehand"
+msgstr "Stylo"
+
+#: kiconedit.cpp:482
+msgid "Rectangle"
+msgstr "Rectangle"
+
+#: kiconedit.cpp:483
+msgid "Filled rectangle"
+msgstr "Rectangle rempli"
+
+#: kiconedit.cpp:484
+msgid "Circle"
+msgstr "Cercle"
+
+#: kiconedit.cpp:485
+msgid "Filled circle"
+msgstr "Cercle rempli"
+
+#: kiconedit.cpp:486
+msgid "Ellipse"
+msgstr "Ellipse"
+
+#: kiconedit.cpp:487
+msgid "Filled ellipse"
+msgstr "Ellipse remplie"
+
+#: kiconedit.cpp:488 kiconedit.cpp:687
+msgid "Spray"
+msgstr "Aérographe"
+
+# ++Gib: Flood filling == remplissage plutot
+#: kiconedit.cpp:489 kiconedit.cpp:689
+msgid "Flood fill"
+msgstr "Pot de peinture"
+
+#: kiconedit.cpp:490
+msgid "Line"
+msgstr "Ligne"
+
+#: kiconedit.cpp:491
+msgid "Eraser (Transparent)"
+msgstr "Gomme (Transparent)"
+
+#: kiconedit.cpp:494
+msgid "&Tools"
+msgstr "Ou&tils"
+
+#: kiconedit.cpp:498
+msgid "&Configure"
+msgstr "&Configurer..."
+
+#: kiconedit.cpp:500
+msgid "Toggle &Grid"
+msgstr "Afficher la &grille"
+
+#: kiconedit.cpp:503
+msgid "Toggle &toolbar"
+msgstr "Afficher la barre d'&outils"
+
+#: kiconedit.cpp:506
+msgid "Toggle &drawing tools"
+msgstr "Afficher les outils de &dessin"
+
+#: kiconedit.cpp:509
+msgid "Toggle &statusbar"
+msgstr "Afficher la barre d'état"
+
+#: kiconedit.cpp:513
+msgid "&Save options"
+msgstr "&Enregistrer les options"
+
+#: kiconedit.cpp:520
+msgid ""
+"KDE Icon Editor\n"
+"\n"
+"A graphics drawing program for creating\n"
+"icons using the KDE icon palette\n"
+"\n"
+"Copyright 1998 by Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018"
+msgstr ""
+"Editeur d'Icône de KDE\n"
+"\n"
+"Un programme de dessin graphique pour créer\n"
+"des icônes utilisant la palette d'icône KDE\n"
+"\n"
+"Copyright 1998 par Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018"
+
+#: kiconedit.cpp:570
+msgid "What is ...?"
+msgstr "Qu'est-ce que c'est ?"
+
+#: kiconedit.cpp:579
+msgid "Drag source"
+msgstr "Glisser la source"
+
+#: kiconedit.cpp:584
+msgid "New File"
+msgstr "Nouveau fichier"
+
+#: kiconedit.cpp:588
+msgid "Save the file"
+msgstr "Enregistrer le fichier"
+
+#: kiconedit.cpp:591
+msgid "Print icon"
+msgstr "Imprimer l'icône"
+
+#: kiconedit.cpp:606
+msgid "Select area"
+msgstr "Sélectionner une zone"
+
+#: kiconedit.cpp:612
+msgid "Resize"
+msgstr "Changer de taille"
+
+#: kiconedit.cpp:615
+msgid "GrayScale"
+msgstr "Convertir en Niveaux de gris"
+
+#: kiconedit.cpp:622
+msgid "Zoom out"
+msgstr "Zoom arrière"
+
+#: kiconedit.cpp:625
+msgid "Zoom in"
+msgstr "Zoom avant"
+
+#: kiconedit.cpp:629
+msgid "Toggle grid"
+msgstr "Afficher/Cacher la grille"
+
+#: kiconedit.cpp:640
+msgid "New Window"
+msgstr "Nouvelle fenêtre"
+
+#: kiconedit.cpp:668
+msgid "Find pixel"
+msgstr "Chercher un pixel"
+
+#: kiconedit.cpp:670
+msgid "Draw freehand"
+msgstr "Dessiner avec le stylo"
+
+#: kiconedit.cpp:673
+msgid "Draw line"
+msgstr "Dessiner une ligne"
+
+#: kiconedit.cpp:675
+msgid "Draw rectangle"
+msgstr "Dessiner un rectangle"
+
+#: kiconedit.cpp:677
+msgid "Draw filled rectangle"
+msgstr "Dessiner un rectangle rempli"
+
+#: kiconedit.cpp:679
+msgid "Draw circle"
+msgstr "Dessiner un cercle"
+
+#: kiconedit.cpp:681
+msgid "Draw filled circle"
+msgstr "Dessiner un cercle rempli"
+
+#: kiconedit.cpp:683
+msgid "Draw ellipse"
+msgstr "Dessiner une ellipse"
+
+#: kiconedit.cpp:685
+msgid "Draw filled ellipse"
+msgstr "Dessiner une ellipse remplie"
+
+#: kiconedit.cpp:692
+msgid "Erase"
+msgstr "Gomme"
+
+#: kiconedit.cpp:715
+msgid "System Colors"
+msgstr "Couleurs systèmes"
+
+#: kiconedit.cpp:745
+msgid "Custom Colors"
+msgstr "Couleurs personnalisées"
+
+#: kiconedit.cpp:786
+msgid ""
+"Icon draw grid\n"
+"\n"
+"The icon grid is the area where you draw the icons.\n"
+"You can zoom in and out using the magnifying glasses on the toolbar.\n"
+"(Tip: Hold the magnify button down for a few seconds to zoom to a predefined "
+"scale"
+msgstr ""
+"Grille de dessin d'icône\n"
+"\n"
+"La grille d'icône est la zone où vous dessinez les icônes.\n"
+"Vous pouvez zoomer en avant ou en arrière en utilisant les loupes de la "
+"barre d'outils.\n"
+"(Note : Appuzer quelques secondes sur le bouton de loupe pour zoomer vers "
+"une échelle prédéfinie)"
+
+#: kiconedit.cpp:791
+msgid ""
+"Rulers\n"
+"\n"
+"This is a visual represantation of the current cursor position"
+msgstr ""
+"Règles\n"
+"\n"
+"Ceci est une représentation visuelle de la position courante du curseur"
+
+#: kiconedit.cpp:795
+msgid ""
+"Statusbar\n"
+"\n"
+"The statusbar gives information of the status of the current icon. The "
+"fields are:\n"
+"\n"
+"\t- Cursor position\n"
+"\t- Size\n"
+"\t- Zoom factor\n"
+"\t- Number of colors\n"
+"\t- Application messages"
+msgstr ""
+"Barre d'état\n"
+"\n"
+"La barre d'état donne des informations sur l'état de l'icône courante. Les "
+"données sont :\n"
+"\n"
+"\t- Position du curseur\n"
+"\t- Taille\n"
+"\t- Facteur de zoom\n"
+"\t- Nombre de couleurs\n"
+"\t- Messages de l'application"
+
+#: kiconedit.cpp:804
+msgid ""
+"Preview\n"
+"\n"
+"This is a 1:1 preview of the current icon"
+msgstr ""
+"Aperçu\n"
+"\n"
+"Ceci est un aperçu 1:1 de l'icône courante"
+
+#: kiconedit.cpp:807
+msgid ""
+"System colors\n"
+"\n"
+"Here you can select colors from the KDE Icon Palette."
+msgstr ""
+"Couleurs systèmes\n"
+"\n"
+"Ici, vous pouvez sélectionner les couleurs de la Palette d'Icône de KDE."
+
+#: kiconedit.cpp:810
+msgid ""
+"Custom colors\n"
+"\n"
+"Here you can build a palette of custom colors.\n"
+"Just double-click on a box to edit the color"
+msgstr ""
+"Couleurs systèmes\n"
+"\n"
+"Ici, vous pouvez construire une palette de couleurs personnalisées.\n"
+"Double-cliquez sur une case pour modifier la couleur"
+
+#: kiconedit.cpp:816
+msgid ""
+"New\n"
+"\n"
+"Create a new icon either from a template or by specifying the size"
+msgstr ""
+"Nouveau\n"
+"\n"
+"Créer une nouvelle icône à partir d'un modèle ou en spécifiant une taille"
+
+#: kiconedit.cpp:819
+msgid ""
+"Open\n"
+"\n"
+"Open an existing icon"
+msgstr ""
+"Ouvrir\n"
+"\n"
+"Ouvre une icône existante"
+
+#: kiconedit.cpp:822
+msgid ""
+"Save\n"
+"\n"
+"Save the current icon"
+msgstr ""
+"Enregistrer\n"
+"\n"
+"Enregistrer l'icône courante"
+
+#: kiconedit.cpp:825
+msgid ""
+"Print\n"
+"\n"
+"Opens a print dialog to let you print the current icon. (Doesn't realy work "
+"as expected"
+msgstr ""
+"Imprimer\n"
+"\n"
+"Ouvre une boîte de dialogue pour l'impression de l'icône courante. (Ne "
+"fonctionne pas comme attendu) "
+
+#: kiconedit.cpp:829
+msgid ""
+"Cut\n"
+"\n"
+"Cut the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Couper\n"
+"\n"
+"Coupe la sélection courante hors de l'icône\n"
+"\n"
+"(Note : Vous pouvez utiliser un rectangle ou un cercle de sélection)"
+
+#: kiconedit.cpp:833
+msgid ""
+"Copy\n"
+"\n"
+"Copy the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Copier\n"
+"\n"
+"Copie la sélection courante de l'icône\n"
+"\n"
+"(Note : Vous pouvez utiliser un rectangle ou un cercle de sélection)"
+
+#: kiconedit.cpp:837
+msgid ""
+"Paste\n"
+"\n"
+"Paste the contents of the clipboard into the current icon.\n"
+"\n"
+"If the contents is larger than the current icon you can paste it in a new "
+"window.\n"
+"\n"
+"(Tip: Select \"Paste transparent pixels\" in the configuration dialog if you "
+"also want to paste transparent)"
+msgstr ""
+"Coller\n"
+"\n"
+"Colle le contenu du presse-papiers dans l'icône courante.\n"
+"\n"
+"Si le contenu est plus grand que l'icône courante, vous pouvez le coller "
+"dans une nouvelle fenêtre.\n"
+"\n"
+"(Note : Sélectionnez \"Paste transparent pixels\" dans la boîte de dialogue "
+"si vous voulez aussi le coller de façon transparente)"
+
+#: kiconedit.cpp:844
+msgid ""
+"Select\n"
+"\n"
+"Select a section of the icon using the mouse.\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Sélectionner\n"
+"\n"
+"Sélectionne avec la souris une zone de l'icône.\n"
+"\n"
+"(Note : Vous pouvez créer des sélections rectangulaires et circulaires)"
+
+#: kiconedit.cpp:848
+msgid ""
+"Resize\n"
+"\n"
+"Smoothly resizes the icon while trying to preserve the contents"
+msgstr ""
+"Redimensionner\n"
+"\n"
+"Redimensionne l'icône en essayant de préserver le contenu"
+
+#: kiconedit.cpp:851
+msgid ""
+"Gray scale\n"
+"\n"
+"Gray scale the current icon.\n"
+"(Warning: The result is likely to contain colors not in the icon palette"
+msgstr ""
+"Niveaux de gris\n"
+"\n"
+"Convertit l'icône courante en niveaux de gris.\n"
+"(Attention : Le résultat pourra contenir des couleurs absentes de la palette "
+"de couleurs de l'icône)"
+
+#: kiconedit.cpp:855
+msgid ""
+"Zoom out\n"
+"\n"
+"Zoom out by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Zoom arrière\n"
+"\n"
+"Zoom arrière de un.\n"
+"\n"
+"(Note : Maintenir le bouton enfoncé quelques secondes pour zoomer à une "
+"échelle prédéfinie)"
+
+#: kiconedit.cpp:859
+msgid ""
+"Zoom in\n"
+"\n"
+"Zoom in by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Zoom avant\n"
+"\n"
+"Zoom avant de un.\n"
+"\n"
+"(Note : Maintenir le bouton enfoncé quelques secondes pour zoomer à une "
+"échelle prédéfinie)"
+
+#: kiconedit.cpp:863
+msgid ""
+"Toggle grid\n"
+"\n"
+"Toggles the grid in the icon edit grid on/off"
+msgstr ""
+"Afficher/Cacher la grille\n"
+"\n"
+"Active/Désactive l'affichage de la grille de l'éditeur d'icônes"
+
+#: kiconedit.cpp:866
+msgid ""
+"New window\n"
+"\n"
+"Opens a new Icon Editor window."
+msgstr ""
+"Nouvelle fenêtre\n"
+"\n"
+"Ouvre une nouvelle fenêtre d'Editeur d'Icône."
+
+#: kiconedit.cpp:869
+msgid ""
+"Whats is...?\n"
+"\n"
+"Well since you're reading this I guess you found out ;-)"
+msgstr ""
+"Qu'est-ce que c'est...?\n"
+"\n"
+"Comme vous êtes en train de lire ceci, je suppose que vous avez trouvé ;-)"
+
+#: kiconedit.cpp:872
+msgid ""
+"Drag source\n"
+"\n"
+"From this button you can drag out a copy of the current icon and drop it on "
+"a drop enabled window, eg. another Icon Editor.\n"
+"\n"
+"(Note: The drag source uses the QT XDND protocol which is not yet standard "
+"in KDE)"
+msgstr ""
+"Glisser-Déplacer l'icône\n"
+"\n"
+"Avec ce bouton, vou pouvez glisser une copie de l'icône courante et la "
+"déposer dans une fenêtre qui accèpte les dépacements, par ex. un autre "
+"Editeur d'Icône.\n"
+"\n"
+"(Note: Cette fonctionnalité utilise le protocole QT XDND qui n'est pas "
+"encore standard dans KDE)"
+
+#: kiconedit.cpp:880
+msgid ""
+"Free hand\n"
+"\n"
+"Draw non-linear lines"
+msgstr ""
+"Stylo\n"
+"\n"
+"Dessine une ligne quelconque"
+
+#: kiconedit.cpp:883
+msgid ""
+"Flood fill\n"
+"\n"
+"Fill adjoining pixels with the same color with the current color"
+msgstr ""
+"Remplissage\n"
+"\n"
+"Remplit les pixels contigüs de même couleur avec la couleur courante"
+
+#: kiconedit.cpp:886
+msgid ""
+"Rectangle\n"
+"\n"
+"Draw a rectangle"
+msgstr ""
+"Rectangle\n"
+"\n"
+"Dessine un rectangle"
+
+#: kiconedit.cpp:889
+msgid ""
+"Filled rectangle\n"
+"\n"
+"Draw a filled rectangle"
+msgstr ""
+"Rectangle rempli\n"
+"\n"
+"Dessine un rectangle rempli"
+
+#: kiconedit.cpp:892
+msgid ""
+"Circle\n"
+"\n"
+"Draw a circle"
+msgstr ""
+"Cercle\n"
+"\n"
+"Dessine un cercle"
+
+#: kiconedit.cpp:895
+msgid ""
+"Filled circle\n"
+"\n"
+"Draw a filled circle"
+msgstr ""
+"Cercle rempli\n"
+"\n"
+"Dessine un cercle rempli"
+
+#: kiconedit.cpp:898
+msgid ""
+"Ellipse\n"
+"\n"
+"Draw an ellipse"
+msgstr ""
+"Ellipse\n"
+"\n"
+"Dessine une ellipse"
+
+#: kiconedit.cpp:901
+msgid ""
+"Filled ellipse\n"
+"\n"
+"Draw a filled ellipse"
+msgstr ""
+"Ellipse remplie\n"
+"\n"
+"Dessine une ellipse remplie"
+
+#: kiconedit.cpp:904
+msgid ""
+"Line\n"
+"\n"
+"Draw a straight line vertically, horizontically or in 45 dgr. angles"
+msgstr ""
+"Ligne\n"
+"\n"
+"Dessine une ligne droite verticale, horizontale ou inclinée à 45 degrés"
+
+#: kiconedit.cpp:907
+msgid ""
+"Spray\n"
+"\n"
+"Draw scattered pixels in the current color"
+msgstr ""
+"Aérographe\n"
+"\n"
+"Dessine des pixels diffus avec la couleur courante"
+
+#: kiconedit.cpp:910
+msgid ""
+"Find\n"
+"\n"
+"The color of the pixel clicked on will be the current drawcolor"
+msgstr ""
+"Pipette\n"
+"\n"
+"La couleur du pixel sur lequel vous cliquerez deviendra la couleur de dessin"
+
+#: kiconedit.cpp:913
+msgid ""
+"Erase\n"
+"\n"
+"Erase pixels. Set the pixels to be transparent\n"
+"\n"
+"(Tip: If you want to draw transparent with a different tool then first click "
+"on \"Erase\" then on the tool you want to use)"
+msgstr ""
+"Gomme\n"
+"\n"
+"Efface les pixels. Rend les pixels transparents\n"
+"\n"
+"(Note : Si vous voulez dessiner en transparence avec un outil différent, "
+"cliquez d'abord sur la gomme et ensuite sur l'outil que vous voulez utiliser)"
+
+#: kicongrid.cpp:66
+msgid "width"
+msgstr "largeur"
+
+#: kicongrid.cpp:71
+msgid "height"
+msgstr "hauteur"
+
+#: kicongrid.cpp:684
+msgid "There was an error loading a blank image.\n"
+msgstr "Une erreur s'est produite en chargeant une image vierge.\n"
+
+#: kicongrid.cpp:830
+msgid "All selected"
+msgstr "Tout sélectionné"
+
+#: kicongrid.cpp:841
+msgid "Cleared"
+msgstr "Effacé"
+
+#: kicongrid.cpp:883
+msgid "Selected area cutted"
+msgstr "Zone sélectionnée coupée"
+
+#: kicongrid.cpp:886
+msgid "Selected area copied"
+msgstr "Zone sélectionnée copiée"
+
+#: kicongrid.cpp:964
+msgid ""
+"There was an copying:\n"
+"to the clipboard!"
+msgstr ""
+"Il y avait une copie en cours :\n"
+"vers le presse-papiers !"
+
+#: kicongrid.cpp:985
+msgid ""
+"The clipboard image is larger than the current image!\n"
+"Paste as new image?"
+msgstr ""
+"L'image dans le presse-papiers est plus grande que l'image courante !\n"
+"Coller comme nouvelle image ?"
+
+#: kicongrid.cpp:998
+msgid "Pasting"
+msgstr "Collage"
+
+#: kicongrid.cpp:1030 kicongrid.cpp:1057
+msgid "Done pasting"
+msgstr "Collage effectué"
+
+#: kicongrid.cpp:1035 kicongrid.cpp:1061
+msgid "Invalid pixmap data in clipboard!\n"
+msgstr "Donnée pixmap invalide dans le presse-papiers !\n"
+
+#: kiconcombiview.cpp:81
+msgid "Folders:"
+msgstr "Répertoires :"
+
+#: kiconcombiview.cpp:82
+msgid "Contents:"
+msgstr "Contenu :"
+
+#: kicondetaillist.cpp:50
+msgid "Name"
+msgstr "Nom"
+
+#: kicondetaillist.cpp:52
+msgid "Size"
+msgstr "Taille"
+
+#: kicondetaillist.cpp:55
+msgid "Permissions"
+msgstr "Permissions"
+
+#: kicondetaillist.cpp:57
+msgid "Date"
+msgstr "Date"
+
+#: kicondetaillist.cpp:60
+msgid "Owner"
+msgstr "Propriétaire"
+
+#: kicondetaillist.cpp:62
+msgid "Group"
+msgstr "Groupe"
+
+#: kicon.cpp:48
+msgid "There was an error removing temporary backup file:\n"
+msgstr ""
+"Une erreur s'est poduite pendant la suppression du fichier temporaire :\n"
+
+#: kicon.cpp:74 kicon.cpp:258 kicon.cpp:342 kicon.cpp:445
+msgid ""
+"We've got a KFM job running.\n"
+"Please wait."
+msgstr ""
+"Une tâche KFM est active.\n"
+"Attendez, SVP."
+
+#: kicon.cpp:97
+msgid "The URL:\n"
+msgstr "L'URL :\n"
+
+#: kicon.cpp:99
+msgid ""
+"\n"
+"seems to be malformed.\n"
+msgstr ""
+"\n"
+"semble mal formée.\n"
+
+#: kicon.cpp:100 kicon.cpp:146 kicon.cpp:169 kicon.cpp:181 kicon.cpp:194
+#: kicon.cpp:207 kicon.cpp:218 kicon.cpp:399 kicon.cpp:432
+msgid "ERROR"
+msgstr "ERREUR"
+
+#: kicon.cpp:116
+msgid "The KDE Icon Editor has found a recover file for:\n"
+msgstr "L'Editeur d'Icône de KDE a trouvé un fichier de secours pour :\n"
+
+#: kicon.cpp:118 kicon.cpp:285
+msgid ""
+"\n"
+"Do you want to open this?"
+msgstr ""
+"\n"
+"Voulez-vous l'ouvrir ?"
+
+#: kicon.cpp:143
+msgid "The file:\n"
+msgstr "Le fichier :\n"
+
+#: kicon.cpp:145
+msgid ""
+"\n"
+"doesn't exist or isn't readable.\n"
+msgstr ""
+"\n"
+"n'existe pas ou est illisible.\n"
+
+#: kicon.cpp:160
+msgid ""
+"The Icon Editor is already downloading a non-local file.\n"
+"Please wait.\n"
+msgstr ""
+"L'Editeur d'Icône télécharge déjà un fichier non local.\n"
+"Attendez, SVP.\n"
+
+#: kicon.cpp:170
+msgid "Couldn't initiate KFM!"
+msgstr "Impossible d'initialiser KFM !"
+
+#: kicon.cpp:178
+msgid "There was a KFM error creating a backup for:\n"
+msgstr "Une erreur KFM s'est produite à la création d'un backup de :\n"
+
+#: kicon.cpp:191 kicon.cpp:396
+msgid "There was an error creating a backup for:\n"
+msgstr "Une erreur s'est produite à la création d'un backup de :\n"
+
+#: kicon.cpp:204
+msgid "KIcon: There was a error locking:\n"
+msgstr "KIcon : Une erreur s'est produite en verrouillant :\n"
+
+#: kicon.cpp:215 kicon.cpp:291
+msgid "KIcon: There was a QT error loading:\n"
+msgstr "KIcon : Une erreur de QT s'est produite dans le chargement de :\n"
+
+#: kicon.cpp:261
+msgid ""
+"*|All files (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|GIF files (*.gif)\n"
+"*jpg|JPEG files (*.jpg)\n"
+msgstr ""
+"*|Tous les fichiers (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|Images GIF (*.gif)\n"
+"*jpg|Images JPEG (*.jpg)\n"
+
+#: kicon.cpp:283
+msgid "The KDE Icon Editor has found a recover\n"
+msgstr "L'Editeur d'Icône de KDE a trouvé un fichier de secours\n"
+
+#: kicon.cpp:284
+msgid "file for an unsaved icon."
+msgstr "fichier pour une icône non enregistrée."
+
+#: kicon.cpp:409
+msgid "Couldn't initiate KFM"
+msgstr "Impossible d'initialiser KFM"
+
+#: kicon.cpp:422
+msgid "Done saving"
+msgstr "Enregistrement effectué"
+
+#: kicon.cpp:429
+msgid "There was an error saving:\n"
+msgstr "Une erreur s'est produite pendant l'enregistrement de :\n"
+
+#: kresize.cpp:29
+msgid "Size:"
+msgstr "Taille :"
+
+#: kresize.cpp:64
+msgid "Select size:"
+msgstr "Choisir la taille :"
+
+#: knew.cpp:34
+msgid "Standard file"
+msgstr "Fichier standard"
+
+#: knew.cpp:39
+msgid "Source file"
+msgstr "Fichier source"
+
+#: knew.cpp:44
+msgid "Compressed file"
+msgstr "Fichier compressé"
+
+#: knew.cpp:49
+msgid "Standard folder"
+msgstr "Répertoire standard"
+
+#: knew.cpp:54
+msgid "Standard package"
+msgstr "Paquetage standard"
+
+#: knew.cpp:59
+msgid "Mini folder"
+msgstr "Répertoire mini"
+
+#: knew.cpp:64
+msgid "Mini package"
+msgstr "Paquetage mini"
+
+#: knew.cpp:156 knew.cpp:258 knew.cpp:308
+msgid "Create from scratch"
+msgstr "Créer à partir d'une image vide"
+
+#: knew.cpp:158 knew.cpp:313
+msgid "Create from template"
+msgstr "Créer à partir d'un modèle"
+
+#: kiconconfig.cpp:120 knew.cpp:194
+msgid "Templates:"
+msgstr "Modèles :"
+
+#: knew.cpp:252
+msgid "Select icontype"
+msgstr "Choisir le type d'icône"
+
+#: knew.cpp:263
+msgid "Create new icon"
+msgstr "Créer une nouvelle icône"
+
+#: debug.cpp:20
+msgid "Fatal!"
+msgstr "Fatal !"
+
+#: kiconeditslots.cpp:403
+msgid "Sorry - not implemented."
+msgstr "Désolé - Pas ecore implanté"
+
+#: kiconeditslots.cpp:471 kiconeditslots.cpp:478
+#, c-format
+msgid "Colors: %u"
+msgstr "Couleurs : %u"
+
+#: kiconconfig.cpp:30
+msgid "Template"
+msgstr "Modèle"
+
+#: kiconconfig.cpp:31
+msgid "Description:"
+msgstr "Description :"
+
+#: kiconconfig.cpp:33
+msgid "Path:"
+msgstr "Chemin :"
+
+#: kiconconfig.cpp:63
+msgid "&Browse..."
+msgstr "&Parcourir..."
+
+#: kiconconfig.cpp:136
+msgid "&Add"
+msgstr "&Ajouter"
+
+#: kiconconfig.cpp:248
+msgid "Color or pixmap"
+msgstr "Couleur ou pixmap"
+
+#: kiconconfig.cpp:256
+msgid "Colored background"
+msgstr "Arrière-plan de couleur"
+
+#: kiconconfig.cpp:261
+msgid "Pixmap background"
+msgstr "Pixmap d'arrière-plan"
+
+#: kiconconfig.cpp:276
+msgid "&Color..."
+msgstr "&Couleur..."
+
+#: kiconconfig.cpp:279
+msgid "&Pixmap..."
+msgstr "&Pixmap..."
+
+#: kiconconfig.cpp:287
+msgid "&Built-in"
+msgstr "&Intégrés d'origine"
+
+#: kiconconfig.cpp:291
+msgid "Example"
+msgstr "Exemple"
+
+#: kiconconfig.cpp:399
+msgid "Main Toolbar"
+msgstr "Barre d'outils principale"
+
+#: kiconconfig.cpp:402
+msgid "Drawing tools"
+msgstr "Outils de dessin"
+
+#: kiconconfig.cpp:406
+msgid ""
+"Note: Other settings of the toolbars can be reached\n"
+"from the toolbar \"handle\" or from the \"Options\" menu"
+msgstr ""
+"Note : Les autres paramètres des barres d'outils peuvent être atteints\n"
+"à partir de la barre d'outils \"handle\" ou à partir du menu \"Options\" "
+
+#: kiconconfig.cpp:425 kiconconfig.cpp:438
+msgid "Show Icon"
+msgstr "Afficher l'icône"
+
+#: kiconconfig.cpp:430 kiconconfig.cpp:443
+msgid "Show Icon and Text"
+msgstr "Afficher l'icône et le texte"
+
+#: kiconconfig.cpp:434 kiconconfig.cpp:447
+msgid "Show Text"
+msgstr "Afficher le texte"
+
+#: kiconconfig.cpp:505
+msgid "Paste mode"
+msgstr "Mode de collage"
+
+#: kiconconfig.cpp:507
+msgid "Paste transparent pixels"
+msgstr "Collage de pixels transparents"
+
+#: kiconconfig.cpp:511
+msgid "Show rulers"
+msgstr "Afficher les règles"
+
+#: kiconconfig.cpp:593
+msgid "Keys"
+msgstr "Raccourcis clavier"
+
+#: kiconconfig.cpp:598
+msgid "Configure keys"
+msgstr "Configurer les raccourcis"
+
+#: kiconconfig.cpp:605
+msgid "Templates"
+msgstr "Modèles"
+
+#: kiconconfig.cpp:610
+msgid "Configure Icon templates"
+msgstr "Configuration des Modèles d'Icônes"
+
+#: kiconconfig.cpp:622
+msgid "Configure background"
+msgstr "Configuration de l'arrière-plan"
+
+#: kiconconfig.cpp:630
+msgid "Toolbars"
+msgstr "Barres d'outils"
+
+#: kiconconfig.cpp:642
+msgid "Icon grid"
+msgstr "Grille d'icône"

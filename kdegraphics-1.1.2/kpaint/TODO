@@ -1,0 +1,25 @@
+- menues at the toolbar paint tool buttons: 
+	select in circle between draw circle around starting point 
+	or inside rectangle. same for oval. Fill tools with color or not.
+	Roundness of roundangle
+	( vitual function in tools.h mit hasMenue() ? getMenue() bekommt
+	  eine StringListe zurück, die als menue eingesetzt wird. danach
+	  connect mit dem slot handleCommand(). (der slot ist nicht in
+	  tools.h) )
+- colorbar with standart colors
+- colorbar with picture colors
+- colorbar with self created colors
+- paste action like areaselect.
+- areaselect has move cursor inside selection frame
+- drag/move areaselect with mousepress&mmove inside selection frame until
+  undo paste is selected or mouseclick outside of selection
+DONE - activate/deactivate menubar bearbeiten
+DONE - application global pixmap clipboard
+- selection undo function in toolsbar + menu in place of the paste pixmap
+  when pasted from clipboard.
+- select Textcolor from colorbar
+- show text icon in text color
+- preview widget in own window
+- !!!!!! make everything zoom aware !!!
+- horizontal & vertical ruler 
+- x/y coordinates in statusbar

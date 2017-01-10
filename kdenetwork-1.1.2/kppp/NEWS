@@ -1,0 +1,35 @@
+Aug 07 1999:
+	* fixed a prominent cause of "PPP timeout expired" (see ChangeLog)
+	* kppplogview should compile on all platforms supported by KDE now.
+	* removed the option to switch between 7 and 8 data bits in favor of
+	  using 7 bits only all the time (like `chat' does). A *real* data and
+          parity bit support has to wait until KDE 2.0.
+
+Jul 13 1999:
+	* `Mode {7bit|8bit}' script command for CompuServe's 7E1 mode
+	* speed up in reading from the modem
+
+Jun 11 1999:
+        * detection of stale lock files works again
+        * "PPP support missing" warning is no longer fatal
+        * line termination defaults to CR instead of CR/LF
+
+Apr 10 1999:
+        * support for pppd 2.3.6 and 2.3.7
+        * solved crash on SuSE and Caldera systems
+        * eliminated most prominent cause for timeout errors
+        * should run on Alphas again
+        * `lock' in /etc/ppp/options is no longer in kppp's way
+
+Aug 21 1998:
+        * Syslog viewer
+        * graph showing transfer rates
+        * 'kppp -k' command line option
+
+May 12 1998:
+	* Multiple phone-numbers supported
+
+April 6 1998:
+	* Volume accounting
+	* /etc/kppp.allow file for superusers who want to have control
+	  who may dial out

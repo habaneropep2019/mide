@@ -1,0 +1,81 @@
+
+AC_DEFUN(JS_CHECK_FEATURES,
+[
+AC_REQUIRE([AC_CANONICAL_HOST])
+AC_DEFINE_UNQUOTED(CANONICAL_HOST, "$host")
+AC_DEFINE_UNQUOTED(CANONICAL_HOST_CPU, "$host_cpu")
+AC_DEFINE_UNQUOTED(CANONICAL_HOST_VENDOR, "$host_vendor")
+AC_DEFINE_UNQUOTED(CANONICAL_HOST_OS, "$host_os")
+
+dnl System / C-compiler properties.
+
+AC_REQUIRE([AC_PROG_CC])
+
+dnl AM_ENABLE_SHARED(no)
+dnl AM_ENABLE_STATIC(yes) 
+dnl The following is commented out because already checked by configure.in
+dnl AM_PROG_LIBTOOL
+dnl AC_AIX
+dnl AM_PROG_CC_STDC
+dnl AC_C_CONST
+dnl AM_C_PROTOTYPES
+
+AC_STDC_HEADERS
+dnl AC_HAVE_HEADERS(string.h stdlib.h unistd.h errno.h float.h limits.h)
+AC_HAVE_HEADERS(errno.h float.h limits.h)
+
+AC_CHECK_SIZEOF(int)
+AC_CHECK_SIZEOF(long)
+
+AC_CHECK_FUNCS(srand48 drand48 sleep usleep lstat)
+
+dnl Can we use inline?
+AC_MSG_CHECKING([if inline works])
+AC_TRY_COMPILE([
+static inline int foo ()
+{
+  return 0;
+}
+], [
+  foo ();
+], [
+  AC_MSG_RESULT(yes)
+], [
+  AC_MSG_RESULT(no)
+  AC_DEFINE(inline,)
+])
+
+dnl Does the struct stat have st_blocks?
+AC_MSG_CHECKING([if struct stat has st_blocks])
+AC_TRY_COMPILE([
+#include <sys/stat.h>
+#include <sys/types.h>
+], [
+  struct stat stat_st;
+  stat_st.st_blocks = 0;
+], [
+  AC_MSG_RESULT(yes)
+  AC_DEFINE(HAVE_STAT_ST_ST_BLOCKS, 1)
+], [
+  AC_MSG_RESULT(no)
+])
+
+dnl
+dnl Interpreter features.
+dnl
+
+INTERPRETER_FEATURES=""
+AC_SUBST(INTERPRETER_FEATURES)
+
+
+dnl
+dnl Extensions.
+dnl
+
+EXTENSIONS=""
+EXTENSIONS_LIBS=""
+
+AC_SUBST(EXTENSIONS)
+AC_SUBST(EXTENSIONS_LIBS)
+
+])

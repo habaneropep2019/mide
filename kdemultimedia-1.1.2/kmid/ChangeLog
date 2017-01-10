@@ -1,0 +1,96 @@
+0.1	30-10-97
+-----	--------
+First version
+
+0.2 	9-11-97
+-----	-------
+Better syncronization between lyrics and music.
+Drag&Drop, better installation, icons, Customizable fonts.
+
+0.3 	16-11-97
+-----	--------
+The lyrics handler is very improved. 
+Option to automagically select lyrics or text.
+Better handling for broken files.
+Few bug fixes.
+Real Session Management.
+First rpm version.
+
+0.4	30-12-97 
+-----   --------
+Fixed the pthread bug (sorry to everyone that suffered it ;-))
+Added support for AWE and GUS cards
+Can modify the midi device without recompiling.
+Can play gzipped files
+
+0.41   22-2-98
+-----  -------
+Fixed a problem with GUS cards
+Improved midi mapper
+Fixed a non-feature :-) related to FM
+New icon and toolbar pixmaps which use fewer colors
+
+0.5    15-3-98
+-----  -------
+FM support
+Playlists (Collections)
+Some small improvements here and there
+
+0.5.1  15-3-98
+-----  -------
+A very small bug fix
+
+0.5.2  5-4-98
+-----  ------
+Save Lyrics
+Some bug fixes
+More keys binded to functions (arrows, space, backspace, etc.)
+
+0.5.3  24-4-98
+-----  -------
+Improved Synchronization between gui and player
+Some bug fixes:
+  - One which caused kmid to freeze when playing a collection with only 1 song
+	in aleatory mode and changing to next song 
+	(reported by Jose Luis Sanchez)
+  - It was not possible to play a gzipped file that have spaces in its name
+  - There were some songs that played at a lower volume when moving the
+	slider, but not if playing from the beginning.
+Better support for shuffle mode (now it doesn't repeat songs :-))
+
+0.6    7-5-98
+-----  ------
+Just thought that everything worked fine and did a major release to 
+put it in my homepage 
+
+1.0    22-6-98
+-----  -------
+Well, I should be studying, but KDE 1.0 good deserves a few minutes
+to change the version number everywhere, remove debug printfs, and
+clean the latest bugs, isn't it ? :-)
+
+1.2    14-9-98
+-----  -------
+This version includes a new ChannelView to see notes played by each 
+instrument and a volume bar.
+It also has some bug fixes and support for really broken midi files.
+
+1.6    27-11-98
+-----  --------
+This version fix a bug that made kmid totally unusable to many users
+because it played music at different tempos (sometimes faster and
+sometimes slower), without any rhythm. Anyway, this isn't a public
+version yet, it's only available from CVS.
+
+1.7     2-4-99
+-----  -------
+Modified KMid to work with Linux kernels from the 2.2.x series which
+work very different than the ones in 2.0.x . That problem made KMid
+continue playing music for a while (up to a few minutes !) after the
+user had pressed the stop button.
+Fixed a problem with AWE cards that made it play files with the pitch
+bender raised.
+Fixed a problem that made kmid not to play the last few milliseconds of
+some songs (sometimes up to half a second)
+Another usual fixes (better support for kernel modules, workarounds for
+compiler bugs, etc.)         

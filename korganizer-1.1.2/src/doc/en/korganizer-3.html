@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>KOrganizer Reference Manual: KOrganizer Docking Icon (Alarm Daemon)</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="PIM calendar scheduling C&S vCalendar UNIX X">
+<META NAME="description" CONTENT="A Calendar / Scheduling Program for KDE / Unix / X">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="korganizer-4.html">Next</A>
+<A HREF="korganizer-2.html">Previous</A>
+<A HREF="korganizer.html#toc3">Table of Contents</A>
+</P>
+<H3><A NAME="s3">3. KOrganizer Docking Icon (Alarm Daemon)</A></H3>
+
+<P>The "alarm daemon" is a small, separate program from the main
+KOrganizer binary which handles all display of alarms, both visible
+and audible.  It manifests itself as a small calendar icon with a bell
+superimposed on top of it in the task tray area of the KDE panel.
+<P>
+<P>
+<IMG SRC="alarmd-panel.gif">
+<P>
+<P>When you run KOrganizer, it checks whether or not the alarm daemon
+is already running, and if it isn't, it will start it automatically.
+The alarm daemon continues to run even after you exit KOrganizer,
+which lets you receive alarm notification without keeping the full
+KOrganizer program resident in memory at all times.  The alarm daemon
+is much more light weight in it's memory requirements.
+<P>
+<P>The alarm daemon has several possible functions.  The main function
+is to start the KOrganizer program.  A single click with the left
+mouse button on the icon will launch KOrganizer.  Currently, the alarm
+daemon will start a new copy of KOrganizer each time you click it;
+therefore you should take care only to click it once.  This will be
+fixed in the next release.
+<P>
+<P>The secondary alarm daemon functions are activated through a right
+click on the icon, which will bring up a popup menu.  Currently, the
+only choices are to enable or disable alarms, and to quit.  These
+options are hopefully self-explanatory.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="korganizer-4.html">Next</A>
+<A HREF="korganizer-2.html">Previous</A>
+<A HREF="korganizer.html#toc3">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

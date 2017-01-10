@@ -1,0 +1,82 @@
+# Original Author was Kalle@kde.org
+# I lifted it in some mater. (Stephan Kulow)
+# I used much code from Janos Farkas
+
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(acinclude.m4) dnl a source file from your sub dir
+
+dnl This is so we can use kde-common
+AC_CONFIG_AUX_DIR(admin)
+
+AC_CANONICAL_SYSTEM 
+AC_ARG_PROGRAM
+
+dnl Automake doc recommends to do this only here. (Janos)
+AM_INIT_AUTOMAKE(kdegames, 1.1.2) dnl searches for some needed programs
+
+dnl make $KDEDIR the default for the installation
+AC_PREFIX_DEFAULT(${KDEDIR:-/usr/local/kde})
+
+dnl generate the config header
+AM_CONFIG_HEADER(config.h) dnl at the distribution this done
+
+dnl Checks for programs.
+AC_CHECK_COMPILERS
+KDE_PROG_LIBTOOL
+
+dnl for NLS support. Call them in this order!
+dnl WITH_NLS is for the po files
+AM_KDE_WITH_NLS
+
+dnl I need to check for libsocket before testing X
+AC_CHECK_LIB(socket, socket, [LIBSOCKET="-lsocket -lnsl"]) dnl for Solaris
+AC_SUBST(LIBSOCKET)
+AC_PATH_KDE
+
+AC_LANG_CPLUSPLUS
+dnl Checks for libraries. 
+AC_CHECK_LIB(compat, main, [LIBCOMPAT="-lcompat"]) dnl for FreeBSD
+AC_SUBST(LIBCOMPAT)
+AC_CHECK_LIB(crypt, main, [LIBCRYPT="-lcrypt"]) dnl for BSD
+AC_SUBST(LIBCRYPT)
+LIBKHTMLW="-lkhtmlw -ljscript" dnl this is somewhat historical, since jscript is ways needed
+AC_SUBST(LIBKHTMLW)
+
+dnl zlib check for ksokoban
+AC_FIND_ZLIB
+if [ test -n "$LIBZ" ]; then
+  AC_DEFINE(HAVE_LIBZ)
+fi
+
+AC_FIND_JPEG
+
+dnl Checks for header files.
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+AC_CHECK_HEADERS(fcntl.h sys/time.h unistd.h sys/select.h)
+AC_CHECK_FUNCS(usleep)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_TIME
+
+dnl check if the compiler has bool
+AC_CHECK_BOOL
+
+dnl Checks for library functions. MISCOBJS is for kdecore
+AC_LANG_CPLUSPLUS
+AC_CHECK_SETENV
+AC_CHECK_RANDOM
+KDE_ADD_INCLUDES
+
+dnl output files
+topdir=`pwd`
+AC_SUBST(topdir)
+
+dnl Perform program name transformation
+AC_ARG_PROGRAM
+
+KDE_CREATE_SUBDIRSLIST
+
+dnl this will be replaced by Makefile.am
+AC_OUTPUT(Makefile kabalone/Makefile kasteroids/Makefile kblackbox/Makefile kmahjongg/Makefile kmines/Makefile konquest/Makefile kpat/Makefile kpoker/Makefile kreversi/Makefile ksame/Makefile kshisen/Makefile ksirtet/Makefile ksmiletris/Makefile ksnake/Makefile ksokoban/Makefile po/Makefile kabalone/bitmaps/Makefile kabalone/html/Makefile kabalone/toolbar/Makefile kasteroids/html/Makefile kasteroids/sprites/Makefile kblackbox/doc/Makefile kblackbox/pics/Makefile kmines/data/Makefile konquest/docs/Makefile konquest/pics/Makefile kpat/icons/Makefile kpat/pics/Makefile kpoker/bitmaps/Makefile kpoker/docs/Makefile kpoker/sounds/Makefile kreversi/html/Makefile kreversi/icons/Makefile kreversi/pics/Makefile kreversi/sounds/Makefile ksame/docs/Makefile kshisen/html/Makefile kshisen/pics/Makefile ksirtet/data/Makefile ksmiletris/data/Makefile ksmiletris/doc/Makefile ksmiletris/wav/Makefile ksnake/data/Makefile ksnake/doc/Makefile ksokoban/data/Makefile ksokoban/images/Makefile ksokoban/levels/Makefile po/br/Makefile po/cs/Makefile po/da/Makefile po/de/Makefile po/el/Makefile po/eo/Makefile po/es/Makefile po/et/Makefile po/fi/Makefile po/fr/Makefile po/he/Makefile po/hr/Makefile po/hs/Makefile po/hu/Makefile po/is/Makefile po/it/Makefile po/ja/Makefile po/ko/Makefile po/mk/Makefile po/nl/Makefile po/no/Makefile po/pl/Makefile po/pt/Makefile po/pt_BR/Makefile po/ro/Makefile po/ru/Makefile po/sk/Makefile po/sl/Makefile po/sv/Makefile po/zh_CN.GB2312/Makefile po/zh_TW.Big5/Makefile kabalone/html/de/Makefile kabalone/html/fr/Makefile kasteroids/sprites/bits/Makefile kasteroids/sprites/missile/Makefile kasteroids/sprites/rock1/Makefile kasteroids/sprites/rock2/Makefile kasteroids/sprites/rock3/Makefile kasteroids/sprites/ship/Makefile kblackbox/doc/en/Makefile konquest/docs/en/Makefile konquest/docs/pt/Makefile kreversi/pics/background/Makefile ksmiletris/doc/en/Makefile ksnake/data/backgrounds/Makefile ksnake/data/levels/Makefile ksnake/data/pixmaps/Makefile ksokoban/images/20/Makefile ksokoban/images/32/Makefile ksokoban/images/40/Makefile )

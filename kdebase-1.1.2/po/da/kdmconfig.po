@@ -1,0 +1,323 @@
+# Danish translations for KDE Base, kdmconfig
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Thomas Tanghus <tanghus@earthling.net>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE BASE/kdmconfig\n"
+"POT-Creation-Date: 1999-01-12 01:14+0100\n"
+"PO-Revision-Date: 1999-02-16 18:19+0100\n"
+"Last-Translator: Bo Thorsen <gobo@imada.sdu.dk>\n"
+"Language-Team: <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:84
+msgid "&Appearance"
+msgstr "&Udseende"
+
+#: main.cpp:92
+msgid "&Background"
+msgstr "&Baggrund"
+
+#: main.cpp:95
+msgid "&Users"
+msgstr "Br&ugere"
+
+#: main.cpp:98
+msgid "&Sessions"
+msgstr "&Sessioner"
+
+#: main.cpp:103
+msgid ""
+"usage: kdmconfig [-init | {appearance,font,background,sessions,users}]\n"
+msgstr ""
+"Anvendelse: kdmconfig [-init | {appearance,font,background,sessions,users}]\n"
+
+#: main.cpp:142
+msgid "KDM Configuration"
+msgstr "KDM opsætning"
+
+#: main.cpp:152
+msgid ""
+"Sorry, but you don't have read/write\n"
+"permission to the KDM setup file."
+msgstr "Du har ikke skriverettigheder til KDM opsætningsfilen"
+
+#: main.cpp:154
+msgid "Missing privileges"
+msgstr "Manglende rettigheder"
+
+#: kdm-appear.cpp:70
+msgid "Greeting string:"
+msgstr "Velkomsttekst:"
+
+#: kdm-appear.cpp:78
+msgid "KDM logo:"
+msgstr "KDM logo:"
+
+#: kdm-appear.cpp:105 kdm-users.cpp:135
+msgid "Click or drop an image here"
+msgstr "Klik eller læg et billede her"
+
+#: kdm-appear.cpp:110
+msgid "GUI Style:"
+msgstr "Brugerfladestil:"
+
+#: kdm-appear.cpp:116
+msgid "Motif"
+msgstr "Motif"
+
+#: kdm-appear.cpp:117
+msgid "Windows"
+msgstr "Windows"
+
+#: kdm-appear.cpp:128
+msgid "Language"
+msgstr "Sprog"
+
+#: kdm-appear.cpp:131
+msgid "Language:"
+msgstr "Sprog:"
+
+#: kdm-appear.cpp:167 kdm-appear.cpp:251 kdm-users.cpp:276
+msgid ""
+"There was an error loading the image:\n"
+">"
+msgstr ""
+"Der opstod en fejl ved indlæsningen af billedet:\n"
+">"
+
+#: kdm-appear.cpp:169 kdm-appear.cpp:188 kdm-users.cpp:196
+msgid "<"
+msgstr "<"
+
+#: kdm-appear.cpp:170 kdm-appear.cpp:189 kdm-appear.cpp:254 kdm-users.cpp:197
+#: kdm-users.cpp:279
+msgid "ERROR"
+msgstr "FEJL"
+
+#: kdm-appear.cpp:186 kdm-users.cpp:194
+msgid ""
+"There was an error saving the image:\n"
+">"
+msgstr ""
+"Der opstod en fejl ved skrivning af billedet:\n"
+">"
+
+#: kdm-appear.cpp:219 kdm-users.cpp:227
+msgid "Sorry, but \n"
+msgstr "Desværre,\n"
+
+#: kdm-appear.cpp:221 kdm-users.cpp:229
+msgid ""
+"\n"
+"does not seem to be an image file"
+msgstr ""
+"\n"
+"ser ikke ud til at være en billedfil"
+
+#: kdm-appear.cpp:222 kdm-users.cpp:230
+msgid ""
+"\n"
+"Please use files with these extensions\n"
+msgstr ""
+"\n"
+"Brug billeder med følgende endelser\n"
+
+#: kdm-appear.cpp:224 kdm-users.cpp:232
+msgid "Improper File Extension"
+msgstr "Forkert fil-efternavn"
+
+#: kdm-appear.cpp:253 kdm-users.cpp:278
+msgid ""
+"<\n"
+"It will not be saved..."
+msgstr ""
+"<\n"
+"Det vil ikke blive gemt..."
+
+#: kdm-font.cpp:48
+msgid "Select fonts"
+msgstr "Vælg skrifttyper"
+
+#: kdm-font.cpp:50
+msgid "Example"
+msgstr "Eksempel"
+
+#: kdm-font.cpp:52
+msgid "Change font..."
+msgstr "Skift skrifttype..."
+
+#: kdm-font.cpp:57
+msgid "Greeting"
+msgstr "Velkomst"
+
+#: kdm-font.cpp:58
+msgid "Fail"
+msgstr "Fejl"
+
+#: kdm-font.cpp:59
+msgid "Standard"
+msgstr "Standard"
+
+#: kdm-font.cpp:157
+msgid "Greeting font"
+msgstr "Skrifttype til velkomst"
+
+#: kdm-font.cpp:161
+msgid "Fail font"
+msgstr "Skrifttype ved fejl"
+
+#: kdm-font.cpp:165
+msgid "Standard font"
+msgstr "Standardskrifttype"
+
+#: kdm-bgnd.cpp:70
+msgid "Preview"
+msgstr "Eksempel"
+
+#: kdm-bgnd.cpp:95
+msgid "Color"
+msgstr "Farve"
+
+#: kdm-bgnd.cpp:101
+msgid "Solid Color"
+msgstr "Ugennemsigtig farve"
+
+#: kdm-bgnd.cpp:106
+msgid "Horizontal Blend"
+msgstr "Vandret overgang"
+
+#: kdm-bgnd.cpp:111
+msgid "Vertical Blend"
+msgstr "Lodret overgang"
+
+#: kdm-bgnd.cpp:130
+msgid "Wallpaper"
+msgstr "Tapet"
+
+#: kdm-bgnd.cpp:171 kdm-sess.cpp:56
+msgid "None"
+msgstr "Ingen"
+
+#: kdm-bgnd.cpp:176
+msgid "Tile"
+msgstr "Fliselagt"
+
+#: kdm-bgnd.cpp:181
+msgid "Center"
+msgstr "Centrer"
+
+#: kdm-bgnd.cpp:186
+msgid "Scale"
+msgstr "Skaleret"
+
+#: kdm-bgnd.cpp:191
+msgid "TopLeft"
+msgstr "Øverste venstre"
+
+#: kdm-bgnd.cpp:196
+msgid "TopRight"
+msgstr "Øverste højre"
+
+#: kdm-bgnd.cpp:201
+msgid "BottomLeft"
+msgstr "Nederste venstre"
+
+#: kdm-bgnd.cpp:206
+msgid "BottomRight"
+msgstr "Nederste højre"
+
+#: kdm-bgnd.cpp:211
+msgid "Fancy"
+msgstr "Flot"
+
+#: kdm-users.cpp:48
+msgid "All users"
+msgstr "Alle brugere"
+
+#: kdm-users.cpp:50
+msgid "Selected users"
+msgstr "Udvalgte brugere"
+
+#: kdm-users.cpp:52
+msgid "No-show users"
+msgstr "Brugere der ikke vises"
+
+#: kdm-users.cpp:79
+msgid ""
+"Show only\n"
+"selected users"
+msgstr ""
+"Vis kun\n"
+"udvalgte brugere"
+
+#: kdm-users.cpp:86
+msgid ""
+"Show all users\n"
+" but no-show users"
+msgstr ""
+"Vis alle pånær\n"
+"brugere der ikke skal ses"
+
+#: kdm-users.cpp:97
+msgid "Show users"
+msgstr "Vis brugere"
+
+#: kdm-users.cpp:103
+msgid "Sort users"
+msgstr "Sorter brugere"
+
+#: kdm-users.cpp:182 kdm-users.cpp:251
+msgid "No user selected"
+msgstr "Ingen bruger valgt"
+
+#: kdm-users.cpp:183 kdm-users.cpp:252
+msgid "Save image as default image?"
+msgstr "Gem billede som standardbillede?"
+
+#: kdm-sess.cpp:52
+msgid "Allow to shutdown"
+msgstr "Tilladelse til at lukke ned"
+
+#: kdm-sess.cpp:57
+msgid "All"
+msgstr "Alle"
+
+#: kdm-sess.cpp:58
+msgid "Root Only"
+msgstr "Kun Root"
+
+#: kdm-sess.cpp:59
+msgid "Console Only"
+msgstr "Kun fra konsol"
+
+#: kdm-sess.cpp:63
+msgid "Commands"
+msgstr "Kommandoer"
+
+#: kdm-sess.cpp:64
+msgid "Shutdown"
+msgstr "Luk ned"
+
+#: kdm-sess.cpp:70
+msgid "Restart"
+msgstr "Genstart"
+
+#: kdm-sess.cpp:77
+msgid "Session types"
+msgstr "Sessionstyper"
+
+#: kdm-sess.cpp:79
+msgid "New type"
+msgstr "Ny type"
+
+#: kdm-sess.cpp:89
+msgid "Available types"
+msgstr "Tilgængelige typer"
+
+#: klangcombo.cpp:133
+msgid "without name!"
+msgstr "uden navn!"

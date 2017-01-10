@@ -1,0 +1,948 @@
+# Breton translation of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Romuald Texier <texierr@worldnet.fr>, 1999
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kdat-1.1\n"
+"POT-Creation-Date: 1998-12-10 02:17+0100\n"
+"PO-Revision-Date: 1999-03-26 16:26+0100\n"
+"Last-Translator: Romuald Texier <texierr@worldnet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+
+#: ArchiveInfoWidget.cpp:39 BackupProfileWidget.cpp:40
+msgid "Archive name:"
+msgstr "Anv an diell :"
+
+#: ArchiveInfoWidget.cpp:40 FileInfoWidget.cpp:38 TapeInfoWidget.cpp:43
+msgid "Created on:"
+msgstr "Deiziad krouiñ :"
+
+#: ArchiveInfoWidget.cpp:41 FileInfoWidget.cpp:41 TapeFileInfoWidget.cpp:36
+msgid "Size:"
+msgstr "Ment :"
+
+#: BackupDlg.cpp:74 BackupDlg.cpp:75 KDat.cpp:432
+msgid "KDat: Backup"
+msgstr "KDat : Gwareziñ"
+
+#: BackupDlg.cpp:87 IndexDlg.cpp:69 VerifyDlg.cpp:78
+msgid "Elapsed time:"
+msgstr "Amzer dremenet :"
+
+#: BackupDlg.cpp:90 BackupDlg.cpp:96 IndexDlg.cpp:72 VerifyDlg.cpp:81
+#: VerifyDlg.cpp:87
+msgid "00:00:00"
+msgstr "00:00:00"
+
+#: BackupDlg.cpp:93 VerifyDlg.cpp:84
+msgid "Time remaining:"
+msgstr "Amzer a chom :"
+
+#: BackupDlg.cpp:99 VerifyDlg.cpp:90
+msgid "Total kbytes:"
+msgstr "Ko. en holl :"
+
+#: BackupDlg.cpp:105
+msgid "Kbytes written:"
+msgstr "Ko. skrivet :"
+
+#: BackupDlg.cpp:108 IndexDlg.cpp:84 VerifyDlg.cpp:99
+msgid "0k"
+msgstr "0k"
+
+#: BackupDlg.cpp:111 IndexDlg.cpp:93 VerifyDlg.cpp:102
+msgid "Transfer rate:"
+msgstr "Feur treuzkas :"
+
+#: BackupDlg.cpp:114 IndexDlg.cpp:96 VerifyDlg.cpp:105
+msgid "0k/min"
+msgstr "0k/mun"
+
+#: BackupDlg.cpp:117 IndexDlg.cpp:87 VerifyDlg.cpp:110
+msgid "Files:"
+msgstr "Restroù :"
+
+#: BackupDlg.cpp:120 IndexDlg.cpp:78 IndexDlg.cpp:90 IndexDlg.cpp:102
+msgid "0"
+msgstr "0"
+
+#: BackupDlg.cpp:123
+msgid "Backup log:"
+msgstr "Kerzlevr ar gwareziñ :"
+
+#: BackupDlg.cpp:130 IndexDlg.cpp:112 VerifyDlg.cpp:131
+msgid "Save Log..."
+msgstr "Enrollañ ar c'herzlevr ..."
+
+#: BackupDlg.cpp:135 IndexDlg.cpp:117 VerifyDlg.cpp:136
+msgid "Abort"
+msgstr "Paouez"
+
+#: BackupDlg.cpp:302
+msgid "*** Write failed, giving up."
+msgstr "*** Kammad skrivañ, o tilezel."
+
+#: BackupDlg.cpp:367 BackupDlg.cpp:377 IndexDlg.cpp:335 VerifyDlg.cpp:358
+#: VerifyDlg.cpp:368
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#: BackupDlg.cpp:380 IndexDlg.cpp:338 VerifyDlg.cpp:371
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: BackupDlg.cpp:384 IndexDlg.cpp:342 VerifyDlg.cpp:375
+#, c-format
+msgid "%s/min"
+msgstr "%s/mun"
+
+#: BackupOptDlg.cpp:31 BackupOptDlg.cpp:32
+msgid "KDat: Backup Options"
+msgstr "KDat : Dibarzhoù gwareziñ"
+
+#: BackupProfileInfoWidget.cpp:40
+msgid "Backup profile name:"
+msgstr "Anv ar profil gwareziñ :"
+
+#: BackupProfileInfoWidget.cpp:51
+msgid "Files >>"
+msgstr "Restroù >>"
+
+#: BackupProfileInfoWidget.cpp:54
+msgid "<< Files"
+msgstr "<< Restroù"
+
+#: BackupProfileWidget.cpp:38 KDat.cpp:152
+msgid "Backup"
+msgstr "Gwareziñ"
+
+#: BackupProfileWidget.cpp:46
+msgid "Working directory:"
+msgstr "Renkell labour :"
+
+#: BackupProfileWidget.cpp:52
+msgid "Backup files:"
+msgstr "Restroù gwarezet :"
+
+#: BackupProfileWidget.cpp:58
+msgid "Tar Options"
+msgstr "Dibarzhoù tar"
+
+#: BackupProfileWidget.cpp:60
+msgid "Stay on one filesystem"
+msgstr "Chom war ur reizhiad restroù"
+
+#: BackupProfileWidget.cpp:63
+msgid "GNU listed incremental"
+msgstr "Azvuiadañ roll GNU"
+
+#: BackupProfileWidget.cpp:67
+msgid "Snapshot file:"
+msgstr "Restr skeudenn :"
+
+#: BackupProfileWidget.cpp:73
+msgid "Remove snapshot file before backup"
+msgstr "Dilemel ar restr skeudenn a-raok gwareziñ"
+
+#: FileInfoWidget.cpp:37 TapeFileInfoWidget.cpp:34
+msgid "File name:"
+msgstr "Anv ar restr :"
+
+#: FileInfoWidget.cpp:39 TapeFileInfoWidget.cpp:35 TapeInfoWidget.cpp:44
+msgid "Last modified:"
+msgstr "Kemm diwezhañ :"
+
+#: FileInfoWidget.cpp:40
+msgid "Last accessed:"
+msgstr "Moned diwezhañ :"
+
+#: FileInfoWidget.cpp:42
+msgid "Owner:"
+msgstr "Perc'henn :"
+
+#: FileInfoWidget.cpp:43
+msgid "Group:"
+msgstr "Strollad :"
+
+#: IndexDlg.cpp:56 IndexDlg.cpp:57
+msgid "KDat: Index"
+msgstr "KDat : Meneger"
+
+#: IndexDlg.cpp:75
+msgid "Archives:"
+msgstr "Dielloù :"
+
+#: IndexDlg.cpp:81 VerifyDlg.cpp:96
+msgid "Kbytes read:"
+msgstr "Ko. bet lennet :"
+
+#: IndexDlg.cpp:99
+msgid "Total files:"
+msgstr "Restroù en holl :"
+
+#: IndexDlg.cpp:105
+msgid "Index log:"
+msgstr "Kerzlevr meneger :"
+
+#: IndexDlg.cpp:226
+msgid "Rewinding tape."
+msgstr "O punañ ar seizenn"
+
+#: IndexDlg.cpp:228 KDat.cpp:442
+msgid "KDat: Cannot Rewind Tape"
+msgstr "KDat : N'hellan ket punañ ar seizenn"
+
+#: IndexDlg.cpp:228
+msgid "Cannot rewind tape.  Indexing aborted."
+msgstr "N'hellan ket punañ ar seizenn. Menegiñ darnet."
+
+#: IndexDlg.cpp:232
+msgid "Cannot rewind tape."
+msgstr "N'hellan ket punañ ar seizenn."
+
+#: IndexDlg.cpp:238 KDat.cpp:451 TapeDrive.cpp:222 TapeDrive.cpp:230
+#: TapeDrive.cpp:242 TapeDrive.cpp:254 TapeDrive.cpp:259
+msgid "KDat: Error"
+msgstr "KDat : Fazi"
+
+#: IndexDlg.cpp:238 IndexDlg.cpp:242
+msgid "Failed to skip tape ID."
+msgstr "Sac'het en ur tremen ANV. ar seizenn."
+
+#: IndexDlg.cpp:271
+#, c-format
+msgid "Indexing archive %d."
+msgstr "O sevel meneger diell %d."
+
+#: IndexDlg.cpp:274
+#, c-format
+msgid "Archive %d"
+msgstr "Diell %d"
+
+#: IndexDlg.cpp:321
+msgid "Reindexed Tape"
+msgstr "Seizenn admeneget"
+
+#: KDat.cpp:81 KDat.cpp:82 KDat.cpp:1101
+msgid "KDat: <no tape>"
+msgstr "KDat : <seizenn ebet>"
+
+#: KDat.cpp:86 KDat.cpp:122 KDat.cpp:233 KDat.cpp:1141
+msgid "Mount Tape"
+msgstr "Mountañ ar seizenn"
+
+#: KDat.cpp:87 KDat.cpp:123
+msgid "Recreate Tape Index"
+msgstr "Adkrouiñ meneger ar seizenn"
+
+#: KDat.cpp:89 KDat.cpp:129
+msgid "Format Tape..."
+msgstr "Furmadiñ ar seizenn..."
+
+#: KDat.cpp:92 KDat.cpp:98 KDat.cpp:126
+msgid "Delete Archive"
+msgstr "Dilemel an diell"
+
+#: KDat.cpp:95 KDat.cpp:101 KDat.cpp:121
+msgid "Verify..."
+msgstr "Gwiriekaat ..."
+
+#: KDat.cpp:96 KDat.cpp:102 KDat.cpp:120
+msgid "Restore..."
+msgstr "Assevel..."
+
+#: KDat.cpp:105 KDat.cpp:114 KDat.cpp:119
+msgid "Backup..."
+msgstr "Gwareziñ ..."
+
+#: KDat.cpp:108
+msgid "Delete Tape Index"
+msgstr "Dilemel meneger ar seizenn"
+
+#: KDat.cpp:111 KDat.cpp:124
+msgid "Create Backup Profile"
+msgstr "Krouiñ ur profil gwareziñ"
+
+#: KDat.cpp:116 KDat.cpp:128
+msgid "Delete Backup Profile"
+msgstr "Dilemel ur profil gwareziñ"
+
+#: KDat.cpp:127
+msgid "Delete Index"
+msgstr "Dilemel ar meneger"
+
+#: KDat.cpp:134
+msgid "Preferences..."
+msgstr "Dibaboù..."
+
+#: KDat.cpp:141
+#, c-format
+msgid ""
+"KDat Version %s\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+msgstr ""
+"KDat doare %s\n"
+"\n"
+"KDat, dieller seizenn diazezet war tar.\n"
+"\n"
+"Gwirioù eilañ (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+
+#: KDat.cpp:148
+msgid "Mount/unmount tape"
+msgstr "Mountañ/divountañ ar seizenn"
+
+#: KDat.cpp:154
+msgid "Verify"
+msgstr "Gwiriekaat"
+
+#: KDat.cpp:168
+msgid "Ready."
+msgstr "Prest."
+
+#: KDat.cpp:230 KDat.cpp:1138
+msgid "Unmount Tape"
+msgstr "Divountañ ar seizenn"
+
+#: KDat.cpp:399 KDat.cpp:756
+msgid "%m/%d/%y"
+msgstr "%m/%d/%b"
+
+#: KDat.cpp:400
+#, c-format
+msgid "Archive created on %s"
+msgstr "Diell krouet d'an %s"
+
+#: KDat.cpp:418
+msgid "Performing backup..."
+msgstr "O wareziñ ..."
+
+#: KDat.cpp:431
+#, c-format
+msgid ""
+"WARNING: The estimated archive size is %dKB.\n"
+"The tape has only %dKB of space!\n"
+"\n"
+"Backup anyway?"
+msgstr ""
+"HO EVEZH : ment rakjedet an diell zo %dKO.\n"
+"Egor ar seizenn zo %dKO hepken !\n"
+"\n"
+"Gwareziñ evelato ?"
+
+#: KDat.cpp:433
+msgid "Backup canceled."
+msgstr "Gwareziñ nullet."
+
+#: KDat.cpp:440 TapeDrive.cpp:520 TapeDrive.cpp:541
+msgid "Rewinding tape..."
+msgstr "O punañ ar seizenn..."
+
+#: KDat.cpp:442
+msgid "Cannot rewind tape.  Backup aborted."
+msgstr "N'hellañ ket punañ ar seizenn. Gwareziñ nullet."
+
+#: KDat.cpp:443 KDat.cpp:452 KDat.cpp:472
+msgid "Backup aborted."
+msgstr "Gwareziñ nullet."
+
+#: KDat.cpp:449
+msgid "Skipping to end of tape..."
+msgstr "O tremen da ziwezh ar seizenn..."
+
+#: KDat.cpp:451
+msgid "Cannot get to end of tape."
+msgstr "N'hellan ket tizhout diwezh ar seizenn."
+
+#: KDat.cpp:456
+msgid "Backup in progress..."
+msgstr "Gwareziñ war ober..."
+
+#: KDat.cpp:470
+msgid "Backup complete."
+msgstr "Gwareziñ peurc'hraet."
+
+#: KDat.cpp:591
+msgid "Restore in progress..."
+msgstr "Assevel war ober..."
+
+#: KDat.cpp:593
+msgid "Verify in progress..."
+msgstr "Gwririañ war ober..."
+
+#: KDat.cpp:600
+msgid "Restore complete."
+msgstr "Assevel peurc'hraet."
+
+#: KDat.cpp:602
+msgid "Verify complete."
+msgstr "Gwririañ peurc'hraet."
+
+#: KDat.cpp:606
+msgid "Restore aborted."
+msgstr "Assevel nullet."
+
+#: KDat.cpp:608
+msgid "Verify aborted."
+msgstr "Gwririañ nullet."
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "KDat: No Tape"
+msgstr "KDat : Seizenn ebet"
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "There is no tape in the drive."
+msgstr "N'eus ket a seizenn en unvez."
+
+#: KDat.cpp:636
+msgid "KDat: Index Tape"
+msgstr "KDat : Menegiñ ar seizenn"
+
+#: KDat.cpp:636
+msgid "The current tape index will be overwritten, continue?"
+msgstr "Meneger ar seizenn-red a vo rasklet, kenderc'hel ?"
+
+#: KDat.cpp:641 KDat.cpp:1097
+#, c-format
+msgid "KDat: %s"
+msgstr "KDat : %s"
+
+#: KDat.cpp:645
+msgid "Index complete."
+msgstr "Menegiñ peurc'hraet."
+
+#: KDat.cpp:647
+msgid "Index aborted."
+msgstr "Menegiñ nullet."
+
+#: KDat.cpp:656
+msgid "KDat: No Archive Selected"
+msgstr "KDat : Diell ebet diuzet"
+
+#: KDat.cpp:656
+msgid "An archive must be selected in the tree."
+msgstr "Ret eo diuz un diell er wezenn."
+
+#: KDat.cpp:689
+#, c-format
+msgid ""
+"An archive cannot be removed from the middle of the tape.  If\n"
+"the archive '%s' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%s\n"
+"\n"
+" Delete all listed archives?"
+msgstr ""
+"N'heller ket dilemel un diell diwar kreiz ar seizenn.Ma vez dilamet an diell "
+"'%s' neuze\n"
+"an dielloù a heul a vo dilamet ivez :\n"
+"%s\n"
+"\n"
+"Dilemel holl dielloù ar roll ?"
+
+#: KDat.cpp:690
+msgid "KDat: Delete Archives?"
+msgstr "KDat : Dilemel dielloù ?"
+
+#: KDat.cpp:692
+msgid "Archives deleted."
+msgstr "Dielloù dilamet."
+
+#: KDat.cpp:701
+#, c-format
+msgid "Really delete the archive '%s'?"
+msgstr "Dilemel an diell '%s' da vat ?"
+
+#: KDat.cpp:702
+msgid "KDat: Delete Archive?"
+msgstr "KDat : Dilemel an diell ?"
+
+#: KDat.cpp:704
+msgid "Archive deleted."
+msgstr "Diell dilamet."
+
+#: KDat.cpp:717
+msgid "KDat: No Tape Index Selected"
+msgstr "KDat : Meneger seizenn diuzet ebet"
+
+#: KDat.cpp:717
+msgid "A tape index must be selected in the tree."
+msgstr "Ret eo diuz ur meneger seizenn er wezenn."
+
+#: KDat.cpp:724
+msgid "KDat: Tape Is Mounted"
+msgstr "KDat : Mountet eo ar seizenn"
+
+#: KDat.cpp:724
+msgid ""
+"The index for a mounted tape cannot be deleted.\n"
+"\n"
+"Unmount the tape and try again."
+msgstr ""
+"Meneger ur seizenn mountet n'hell ket bezañ dilamet.\n"
+"\n"
+"Divountit ar seizenn ha klaskit adarre."
+
+#: KDat.cpp:729
+#, c-format
+msgid "Really delete the index for '%s'?"
+msgstr "Dilemel ar meneger evit '%s' da vat ?"
+
+#: KDat.cpp:730
+msgid "KDat: Delete Tape Index?"
+msgstr "KDat : Dilemel meneger ar seizenn ?"
+
+#: KDat.cpp:732
+msgid "Tape index deleted."
+msgstr "Meneger ar seizenn dilamet."
+
+#: KDat.cpp:743
+msgid "KDat: No Tape In Drive"
+msgstr "KDat : Seizenn ebet en unvez"
+
+#: KDat.cpp:743
+msgid ""
+"There is no tape in the tape drive.\n"
+"Please insert a tape and try again."
+msgstr ""
+"N'eus ket a seizenn en unvez seizenn.\n"
+"Enlakait ur seizenn ha klaskit adarre."
+
+#: KDat.cpp:748
+msgid "KDat: Write Protected Tape"
+msgstr "KDat : Seizenn anskrivadus"
+
+#: KDat.cpp:748
+msgid ""
+"The tape in the drive is write protected.\n"
+"Please disable write protection and try again."
+msgstr ""
+"Ar seizenn en unvez a zo anskrivadus.\n"
+"Diweredekait al lanker ha klaskit adarre mar plij."
+
+#: KDat.cpp:752
+msgid "KDat: Format Tape"
+msgstr "KDat : Furmadiñ ar seizenn"
+
+#: KDat.cpp:752
+msgid "All data will be lost, continue?"
+msgstr "An holl roadoù a vo kollet, kenderc'hel ?"
+
+#: KDat.cpp:757
+#, c-format
+msgid "Tape created on %s"
+msgstr "Seizenn krouet d'ar %s"
+
+#: KDat.cpp:773
+msgid "Formatting tape..."
+msgstr "O furmadiñ ar seizenn..."
+
+#: KDat.cpp:776
+msgid "Format complete."
+msgstr "Furmadiñ peurc'hraet."
+
+#: KDat.cpp:790
+#, c-format
+msgid "Backup Profile %d"
+msgstr "Profil gwareziñ %d"
+
+#: KDat.cpp:807
+msgid "Archive"
+msgstr "Diell"
+
+#: KDat.cpp:828
+msgid "KDat: No Backup Profile Selected"
+msgstr "KDat : Profil gwareziñ diuzet ebet"
+
+#: KDat.cpp:828
+msgid "A backup profile must be selected in the tree."
+msgstr "Ret eo diuz ur profil gwareziñ er wezenn."
+
+#: KDat.cpp:836
+#, c-format
+msgid "Really delete backup profile '%s'?"
+msgstr "Dilemel ar profil gwareziñ '%s' da vat ?"
+
+#: KDat.cpp:837
+msgid "KDat: Delete Backup Profile?"
+msgstr "KDat : Dilemel ar profil gwareziñ ?"
+
+#: KDat.cpp:839
+msgid "Backup profile deleted."
+msgstr "Profil gwareziñ dilamet."
+
+#: KDat.cpp:877
+msgid "Tape unmounted."
+msgstr "Seizenn divountet."
+
+#: KDat.cpp:881
+msgid "Reading tape header..."
+msgstr "O lenn reollin ar seizenn..."
+
+#: KDat.cpp:888 KDat.cpp:890
+msgid "KDat: Unformatted Tape"
+msgstr "KDat : seizenn anfurmadet"
+
+#: KDat.cpp:888
+msgid "This tape has not been formatted by KDat."
+msgstr "N'eo ket bet furmadet ar seizenn-mañ gant KDat."
+
+#: KDat.cpp:890
+msgid ""
+"This tape has not been formatted by KDat.\n"
+"\n"
+"Would you like to format it now?"
+msgstr ""
+"N'eo ket bet furmadet ar seizenn-mañ gant KDat.\n"
+"Hag e fell deoc'h he furmadiñ bremañ ?"
+
+#: KDat.cpp:901
+msgid "Tape mounted."
+msgstr "Seizenn mountet."
+
+#: KDat.cpp:976
+#, c-format
+msgid "Estimating backup size: %s, %s"
+msgstr "Ment rakjedet ar gwareziñ : %s, %s"
+
+#: KDat.cpp:1102
+msgid "KDat: <no tape >"
+msgstr "KDat : <seizenn ebet>"
+
+#: LoggerWidget.cpp:60
+msgid "KDat: Save Log"
+msgstr "KDat : Enrollañ ar c'herzlevr"
+
+#: LoggerWidget.cpp:60
+msgid "Log file exists, overwrite?"
+msgstr "Ur c'herzlevr a zo c'hoazh, e rasklañ ?"
+
+#: Node.cpp:1182 Node.cpp:1252
+msgid "<no tape>"
+msgstr "<seizenn ebet>"
+
+#: Node.cpp:1332
+msgid "Tape Indexes"
+msgstr "Menegerien seizenn"
+
+#: Node.cpp:1466
+msgid "Backup Profiles"
+msgstr "Profiloù gwareziñ"
+
+#: OptionsDlg.cpp:39 OptionsDlg.cpp:40
+msgid "KDat: Options"
+msgstr "KDat : Dibarzhoù"
+
+#: OptionsDlg.cpp:44
+msgid "Default tape size:"
+msgstr "Ment ar seizenn dre ziouer :"
+
+#: OptionsDlg.cpp:45
+msgid "Tape block size:"
+msgstr "Ment bloc'h ar seizenn :"
+
+#: OptionsDlg.cpp:46
+msgid "Tape device:"
+msgstr "Unvez seizenn :"
+
+#: OptionsDlg.cpp:47
+msgid "Tar command:"
+msgstr "Urzhiad tar :"
+
+#: OptionsDlg.cpp:70
+msgid "bytes"
+msgstr "okted"
+
+#: OptionsDlg.cpp:76 OptionsDlg.cpp:82 VerifyOptDlg.cpp:57
+msgid "..."
+msgstr "..."
+
+#: OptionsDlg.cpp:85
+msgid "Tape drive options"
+msgstr "Dibarzhoù an unvez seizenn"
+
+#: OptionsDlg.cpp:87
+msgid "Load tape on mount"
+msgstr "Kargañ ar seizenn en ur vountañ"
+
+#: OptionsDlg.cpp:90
+msgid "Lock tape drive on mount"
+msgstr "Prennañ an unvez seizenn en ur vountañ"
+
+#: OptionsDlg.cpp:93
+msgid "Eject tape on unmount"
+msgstr "Stlepel ar seizenn en ur zivountañ"
+
+#: OptionsDlg.cpp:96
+msgid "Variable block size"
+msgstr "Ment bloc'h kemmus"
+
+#: Tape.cpp:36
+msgid "New Tape"
+msgstr "Seizenn nevez"
+
+#: Tape.cpp:70 Tape.cpp:76 Tape.cpp:85 Tape.cpp:92 Tape.cpp:99 Tape.cpp:103
+msgid "KDat: Format Failed"
+msgstr "KDat : Furmadiñ sac'het"
+
+#: Tape.cpp:70 TapeDrive.cpp:222
+msgid "Rewinding tape failed."
+msgstr "Punañ ar seizenn sac'het."
+
+#: Tape.cpp:76
+msgid "Cannot set tape block size."
+msgstr "N'hellan ket termeniñ ment ar bloc'h."
+
+#: Tape.cpp:85
+msgid "Writing magic string failed."
+msgstr "Skrivañ an hedad hud sac'het."
+
+#: Tape.cpp:92
+msgid "Writing version number failed."
+msgstr "Skrivañ niverenn an doare sac'het."
+
+#: Tape.cpp:99
+msgid "Writing tape ID length failed."
+msgstr "Skrivañ hirder ANV. ar seizenn sac'het."
+
+#: Tape.cpp:103
+msgid "Writing tape ID failed."
+msgstr "Skrivañ ANV. ar seizenn sac'het."
+
+#: Tape.cpp:132
+msgid "KDat: Tape Index"
+msgstr "KDat : Meneger ar seizenn"
+
+#: Tape.cpp:132
+msgid ""
+"No index file was found for this tape.\n"
+"Recreate the index from tape?"
+msgstr ""
+"Restr meneger digavus war ar seizenn-mañ.\n"
+"Adkrouiñ ar meneger adalek ar seizenn ?"
+
+#: Tape.cpp:150 Tape.cpp:192 Tape.cpp:471 Tape.cpp:477 Tape.cpp:483
+#: Tape.cpp:490 Tape.cpp:497 Tape.cpp:505 Tape.cpp:512 Tape.cpp:520
+#: Tape.cpp:528 Tape.cpp:535 Tape.cpp:542 Tape.cpp:555 Tape.cpp:567
+#: Tape.cpp:575 Tape.cpp:582 Tape.cpp:589 Tape.cpp:618 Tape.cpp:624
+#: Tape.cpp:630 Tape.cpp:637 Tape.cpp:644 Tape.cpp:652 Tape.cpp:659
+#: Tape.cpp:679 Tape.cpp:685 Tape.cpp:721 Tape.cpp:727
+msgid "KDat: Index File Error"
+msgstr "KDat : Fazi gant restr ar meneger"
+
+#: Tape.cpp:150 TapeDrive.cpp:242
+msgid "Reading version number failed."
+msgstr "Lenn an niverenn doare sac'het."
+
+#: Tape.cpp:191
+#, c-format
+msgid ""
+"The tape index file format is version %d.  The index cannot be read by this "
+"version of KDat.  Perhaps the tape index file was created by a newer version "
+"of KDat?"
+msgstr ""
+"Furmad ar restr meneger zo doare %d. Ar meneger n'hell ket bezañ lennet gant "
+"an doare-mañ KDat. Restr meneger ar seizenn a voe krouet gant un doare "
+"neveshoc'h KDat marteze ?"
+
+#: Tape.cpp:471 Tape.cpp:618 Tape.cpp:679 Tape.cpp:721 TapeDrive.cpp:259
+msgid "Reading tape ID failed."
+msgstr "Lenn ANV. ar seizenn sac'het."
+
+#: Tape.cpp:477 Tape.cpp:624 Tape.cpp:685 Tape.cpp:727
+msgid "Tape ID on tape does not match tape ID in index file."
+msgstr ""
+"ANV. seizenn war seizenn ne glot ket gant ANV. seizenn er restr meneger."
+
+#: Tape.cpp:483 Tape.cpp:630
+msgid "Reading creation time failed."
+msgstr "Lenn koulz krouidigezh sac'het."
+
+#: Tape.cpp:490 Tape.cpp:637
+msgid "Reading modification time failed."
+msgstr "Lenn koulz kemmañ sac'het."
+
+#: Tape.cpp:497 Tape.cpp:644
+msgid "Reading tape name failed."
+msgstr "Lenn anv ar seizenn sac'het."
+
+#: Tape.cpp:505 Tape.cpp:652
+msgid "Reading tape size failed."
+msgstr "Lenn ment ar seizenn sac'het."
+
+#: Tape.cpp:512 Tape.cpp:659
+msgid "Reading archive count failed."
+msgstr "Lenn konter diell sac'het."
+
+#: Tape.cpp:520
+msgid "Reading archive name failed."
+msgstr "Lenn anv an diell sac'het."
+
+#: Tape.cpp:528
+msgid "Reading archive time stamp failed."
+msgstr "Lenn siell koulz an diell sac'het."
+
+#: Tape.cpp:535
+msgid "Reading archive start block failed."
+msgstr "Lenn bloc'h deraouiñ an diell sac'het."
+
+#: Tape.cpp:542
+msgid "Reading archive end block failed."
+msgstr "Lenn bloc'h diwezh an diell sac'het."
+
+#: Tape.cpp:555
+msgid "Reading archive file count failed."
+msgstr "Lenn konter restr an diell sac'het."
+
+#: Tape.cpp:567
+msgid "Reading file name failed."
+msgstr "Lenn anv restr sac'het."
+
+#: Tape.cpp:575
+msgid "Reading file size failed."
+msgstr "Lenn ment ar restr sac'het."
+
+#: Tape.cpp:582
+msgid "Reading file modification time failed."
+msgstr "Lenn koulz kemmañ ar restr sac'het."
+
+#: Tape.cpp:589
+msgid "Reading file record number failed."
+msgstr "Lenn niver marilh ar restr sac'het."
+
+#: TapeDrive.cpp:188
+msgid "Tape mounted readonly."
+msgstr "Seizenn mountet lenn hepken."
+
+#: TapeDrive.cpp:190
+msgid "Tape mounted read/write."
+msgstr "Seizenn mountet lenn/skrivañ."
+
+#: TapeDrive.cpp:227
+msgid "Reading magic string..."
+msgstr "O lenn an hedad hud..."
+
+#: TapeDrive.cpp:230
+msgid "Reading magic string failed."
+msgstr "Lenn an hedad hud sac'het."
+
+#: TapeDrive.cpp:239
+msgid "Reading version number..."
+msgstr "O lenn an niverenn doare..."
+
+#: TapeDrive.cpp:247
+msgid "KDat: Warning"
+msgstr "KDat : Ho evezh"
+
+#: TapeDrive.cpp:247
+msgid ""
+"Tape was formatted by a more recent version of KDat, consider upgrading."
+msgstr ""
+"Furmadet eo bet ar seizenn gant un doare nevesoc'h KDat, soñjit bremanaat."
+
+#: TapeDrive.cpp:251
+msgid "Reading tape ID..."
+msgstr "O lenn ANV. ar seizenn..."
+
+#: TapeDrive.cpp:254
+msgid "Reading tape ID length failed."
+msgstr "Lenn ANV. ar seizenn sac'het."
+
+#: TapeDrive.cpp:515
+msgid "Skipping to archive..."
+msgstr "O tremen d'an diell..."
+
+#: TapeDrive.cpp:537
+msgid "Skipping to block..."
+msgstr "O tremen d'ar bloc'h..."
+
+#: TapeFileInfoWidget.cpp:37
+msgid "Start record:"
+msgstr "Deroù an enrolladur :"
+
+#: TapeFileInfoWidget.cpp:38
+msgid "End record:"
+msgstr "Diwezh an enrolladur :"
+
+#: FormatOptDlg.cpp:39 TapeInfoWidget.cpp:40
+msgid "Tape name:"
+msgstr "Anv ar seizenn :"
+
+#: FormatOptDlg.cpp:40 TapeInfoWidget.cpp:41
+msgid "Tape size:"
+msgstr "Ment ar seizenn :"
+
+#: TapeInfoWidget.cpp:42
+msgid "Tape ID:"
+msgstr "ANV. ar seizenn :"
+
+#: TapeInfoWidget.cpp:45
+msgid "Archive count:"
+msgstr "Konter an diell :"
+
+#: TapeInfoWidget.cpp:46
+msgid "Space used:"
+msgstr "Egor ac'hubet :"
+
+#: FormatOptDlg.cpp:36 FormatOptDlg.cpp:37
+msgid "KDat: Format Options"
+msgstr "KDat : Dibarzhoù furmadiñ"
+
+#: VerifyDlg.cpp:61 VerifyDlg.cpp:62
+msgid "KDat: Restore"
+msgstr "KDat : Assevel"
+
+#: VerifyDlg.cpp:64 VerifyDlg.cpp:65
+msgid "KDat: Verify"
+msgstr "KDat : Gwiriañ"
+
+#: VerifyDlg.cpp:113
+msgid "Differences:"
+msgstr "Diforzhioù :"
+
+#: VerifyDlg.cpp:121
+msgid "Restore log:"
+msgstr "Kerzlevr assevel :"
+
+#: VerifyDlg.cpp:123
+msgid "Verify log:"
+msgstr "Kerzlevr gwiriañ :"
+
+#: VerifyDlg.cpp:315
+msgid "failed while reading tape data.\n"
+msgstr "sac'het en ul lenn roadoù ar seizenn.\n"
+
+#: VerifyOptDlg.cpp:38 VerifyOptDlg.cpp:39
+msgid "KDat: Restore Options"
+msgstr "KDat : Dibarzhoù assevel"
+
+#: VerifyOptDlg.cpp:41 VerifyOptDlg.cpp:42
+msgid "KDat: Verify Options"
+msgstr "KDat : Dibarzhoù gwiriañ"
+
+#: VerifyOptDlg.cpp:47
+msgid "Restore to directory:"
+msgstr "Assevel er renkell :"
+
+#: VerifyOptDlg.cpp:49
+msgid "Verify in directory:"
+msgstr "Gwiriañ er renkell :"
+
+#: VerifyOptDlg.cpp:62
+msgid "Restore files:"
+msgstr "Assevel restroù :"
+
+#: VerifyOptDlg.cpp:64
+msgid "Verify files:"
+msgstr "Gwiriañ restroù :"

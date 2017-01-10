@@ -1,0 +1,12 @@
+1999-02-17  David Faure  <faure@kde.org>
+
+	* Added call to AC_CHECK_RANDOM, and converted all apps to use
+	random() and srandom() (and to avoid RAND_MAX).
+	If random() is not defined, acconfig.h defines the header for the
+	fake functions in kdecore.
+
+1998-12-05  Alex Zepeda  <garbanzo@hooked.net>
+
+	* autmoc: Moved to admin/
+	* Makefile.cvs: Copied over from kdenetwork verbatim.
+	* README: Updated to "require" Qt 1.41.

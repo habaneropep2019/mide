@@ -1,0 +1,265 @@
+/*************************************************************************
+ *
+ *	LINUX 
+ *
+ *************************************************************************/
+
+#ifdef linux
+
+
+/* define the correct cdrom device for your machine, /dev/cdrom should be 
+   a link to your cdrom device or, if you don't have that link you might want
+   to create it. Just for illustration, I have listed two more common
+   names for cdrom devices */
+
+#define DEFAULT_CD_DEVICE	"/dev/cdrom"
+
+/* Two examples in case you don't have a /dev/cdrom */
+/*
+#define DEFAULT_CD_DEVICE	"/dev/sbpcd"
+#define DEFAULT_CD_DEVICE       "/dev/sr0"
+*/
+
+/* I have hacked these sources a bit. I have now the fastest, most responsive
+   and least poping noises producing cd player I have come across for linx and windows 95.
+   However, my changes may not work for you. I recommend you leave the following
+   untouched for a first test drive. If things don't work properly come back
+   and uncomment the next line.
+*/
+/*
+#define WORKMAN_ORIGINAL
+*/
+
+/* I have incorporated a hack from dirk (milliByte@DeathsDoor.com)  which will
+   make the cd's play better on any drive using the sbpcd or mcdx drivers. If you
+   are using any of those you want to uncomment SBPCD_HACK. For more info about this
+   hack read the docs in the spbcd directory of this distribution 
+*/
+/*
+#define SBPCD_HACK
+*/
+
+/* Uncomment the next line if you have an SCSI cdrom drive */
+/*
+#define LINUX_SCSI_PASSTHROUGH
+*/
+
+/* CD VOLUME RANGE */
+
+#define MIN_VOLUME  0   
+#define MAX_VOLUME 255
+
+/*  Some cd players don't support the whole range 0 to 255. In
+    such a case the correct choice for this range is most
+    likely 128 - 255. Also try putting a 1 here. This will
+    reduce popping noises. In short -- play with it ;-)
+ */
+
+/* If you have one of those weird cd player whose volume only works from 128 to 255
+   you might want to try the following, and only then.*/
+/*
+#define CURVED_VOLUME
+*/
+
+
+#endif /* linux */
+
+/*************************************************************************
+ *
+ *	SUN
+ *
+ *************************************************************************/
+
+#if defined(sun) || defined(__sun__)
+
+/* Comment out the following two defines if you're not compiling on 
+   Solaris 2.x.
+
+   If you don't want WorkMan to try to activate the SPARCstation 5 internal
+   audio input so you get sound from the workstation, comment out the 
+   CODEC define.
+*/
+
+#define SYSV
+#define CODEC
+
+/*
+   Comment this out if you don't want digital audio capability on drives that
+   support it.  This only works on Solaris 2.4 and higher.
+*/
+
+#define BUILD_CDDA 
+
+
+/* Feel free to play with min_volume !!!! You might be able to get the whole
+   range from 0 to 255 depending on your cdrom drive */
+
+#define MIN_VOLUME 128
+#define MAX_VOLUME 255
+
+#endif
+
+/*************************************************************************
+ *
+ *	BSD386
+ *
+ *************************************************************************/
+
+#ifdef __bsdi__
+
+/* Default is libcdrom. Uncomment the following if you have a SOUNDBLASTER CDROM */
+/*
+#define SOUNDBLASTER
+*/
+
+#endif
+
+
+/*************************************************************************
+ *
+ *	FreeBSD/NetBSD
+ *
+ *************************************************************************/
+
+#if defined(__FreeBSD__) || defined(__NetBSD__)
+
+/* Is this the most commonly used cd device on FreeBSD ? */
+
+#define DEFAULT_CD_DEVICE       "/dev/rmatcd0c"
+
+/*
+#define DEFAULT_CD_DEVICE       "/dev/rcd0d"
+*/
+
+/* Please have a look at void KSCD::playClicked() in kscd.cpp. You will find there
+   the following code:
+
+#ifdef __FreeBSD__
+	if (cur_cdmode == STOPPED || cur_cdmode == UNKNOWN  || cur_cdmode == BACK) {
+#else
+	if (cur_cdmode == STOPPED || cur_cdmode == UNKNOWN ) {
+#endif
+
+Try either one there ( THAT IS IN kscd.cpp NOT HERE ), and tell me which version 
+works for you. -- thanks !
+*/
+
+#endif
+
+
+/*************************************************************************
+ *
+ *	HPUX
+ *
+ *************************************************************************/
+
+#if defined(hpux) || defined(__hpux)
+
+#define	DEFAULT_CD_DEVICE	"/dev/rscsi"
+
+#endif
+
+/*************************************************************************
+ *
+ *	Irix
+ *
+ *************************************************************************/
+
+#if defined(sgi)
+
+#define	DEFAULT_CD_DEVICE	"/dev/scsi/sc0d6l0"
+
+#endif
+
+
+/*************************************************************************
+ *
+ *	SONY NEWS
+ *
+ *************************************************************************/
+
+#if defined( __sony_news) || defined(sony_news)
+
+
+/* I have conflicting reports. You may need this */
+
+#include <CD.h>
+
+/* or this */
+
+/*
+#include <newsiodev/scu.h>
+#include <newsiodev/scsireg.h>
+*/
+
+/* or boths, please experiment and let me know the result, thanks -- Bernd */
+
+
+/* define the right device for you machine here */
+#define	DEFAULT_CD_DEVICE	"/dev/rsd/b0i6u0p2\0"
+
+/* Feel free to play with min_volume !!!! You might be able to get the whole
+   range from 0 to 255 */
+
+#define MIN_VOLUME 128
+#define MAX_VOLUME 255
+
+#endif
+
+/*************************************************************************
+ *
+ *	OSF1
+ *
+ *************************************************************************/
+
+
+#if defined(__osf__)
+
+/* Nothing to be done. The cd device should be automatically detected */
+/* If you have trouble look at plat_osf1.c and let me know what needs
+   to be changes */
+
+#endif
+
+/*************************************************************************
+ *
+ *	Generic SVR4 -- not sun 
+ *
+ *************************************************************************/
+
+#if defined(SVR4) && !defined(sun) && !defined(__sun__)
+
+#define	DEFAULT_CD_DEVICE	"/dev/rcdrom/cd0"
+
+#endif
+
+/*************************************************************************
+ *
+ *	Ultrix
+ *
+ *************************************************************************/
+
+#if defined(ultrix) || defined(__ultrix)
+
+
+#include <sys/rzdisk.h>
+#include <sys/cdrom.h>
+
+/* I have confliciting reports  try adding any of the following if you 
+   have trouble with the above and let me know if and how you succeed */
+/*
+#include <sys/devio.h>
+#include <io/cam/cam.h>
+#include <io/cam/uagt.h> 
+#include <io/cam/dec_cam.h>
+#include <io/cam/scsi_all.h>  
+*/
+
+/* Feel free to play with min_volume !!!! You might be able to get the whole
+   range from 0 to 255 */
+
+#define MIN_VOLUME 128
+#define MAX_VOLUME 255
+
+#endif
+

@@ -1,0 +1,4 @@
+#!/usr/bin/perl
+
+s/(.*setText\()\s*\"(.+?)\"\s*(\).*)/$1 i18n\(\"$2\"\) $3/ixg;
+print;

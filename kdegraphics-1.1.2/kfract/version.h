@@ -1,0 +1,1 @@
+#define KFRACT_VERSION	"1.3"

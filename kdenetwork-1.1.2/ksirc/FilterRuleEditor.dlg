@@ -1,0 +1,215 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {FilterRuleEditor.h}
+	ClassSource {FilterRuleEditor.cpp}
+	ClassName {FilterRuleEditor}
+	DataHeader {FilterRuleEditorData.h}
+	DataSource {FilterRuleEditorData.cpp}
+	DataName {FilterRuleEditorData}
+	WindowBaseClass {QDialog}
+	IsModal {FALSE}
+	WindowCaption {Edit Filter Rules}
+	WindowFlags {118784}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {510 250}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+Label {
+		Text {Description:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {140 10 80 30}
+		Name {Label_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {80}
+		FrameShown {TRUE}
+		Rect {220 10 280 30}
+		Name {LineEdit_1}
+		Variable {LineTitle}
+		LayoutStatus {NoLayout}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Match:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {140 50 70 30}
+		Name {Label_4}
+		LayoutStatus {NoLayout}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {80}
+		FrameShown {TRUE}
+		Rect {220 50 280 30}
+		Name {LineEdit_2}
+		Variable {LineSearch}
+		LayoutStatus {NoLayout}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {From:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {140 90 80 30}
+		Name {Label_7}
+		LayoutStatus {NoLayout}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {To:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {140 130 70 30}
+		Name {Label_9}
+		LayoutStatus {NoLayout}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {220 90 280 30}
+		Name {LineEdit_3}
+		Variable {LineFrom}
+		LayoutStatus {NoLayout}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {80}
+		FrameShown {TRUE}
+		Rect {220 130 280 30}
+		Name {LineEdit_4}
+		Variable {LineTo}
+		LayoutStatus {NoLayout}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {TRUE}
+		Text {&Modify}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {390 170 110 30}
+		Name {PushButton_1}
+		Variable {ApplyButton}
+		Signal {[Protected]  clicked --> OkPressed  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Close}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {390 210 110 30}
+		Name {PushButton_2}
+		Signal {[Protected]  clicked --> closePressed  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&New Rule}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {270 170 110 30}
+		Name {PushButton_7}
+		Signal {[Protected]  clicked --> newRule  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Delete}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {150 170 110 30}
+		Name {PushButton_8}
+		Variable {deleteButton}
+		Signal {[Protected]  clicked --> deleteRule  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Up}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 210 55 30}
+		Name {PushButton_9}
+		Signal {[Protected]  clicked --> raiseRule  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Down}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {75 210 55 30}
+		Name {PushButton_10}
+		Signal {[Protected]  clicked --> lowerRule  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ListBox {
+		DragSelect {FALSE}
+		AutoScroll {FALSE}
+		ScrollBar {FALSE}
+		AutoScrollBar {TRUE}
+		BottomScrollBar {FALSE}
+		AutoBottomScrollBar {FALSE}
+		SmoothScrolling {FALSE}
+		MultiSelection {FALSE}
+		Style {51}
+		LineWidth {2}
+		Rect {10 10 120 190}
+		Name {ListBox_2}
+		Variable {RuleList}
+		Signal {[Protected]  highlighted --> newHighlight  (int)}
+		Signal {[Protected]  selected --> newHighlight  (int)}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+}

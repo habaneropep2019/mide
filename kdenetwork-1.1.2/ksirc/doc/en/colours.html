@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>kSirc Colours</title>
+  </head>
+  <body bgcolor=#FFFFFF>
+<center>
+<H1><img src="ksirc.gif" width=400 height=100 alt="kSirc"></H1>
+</center>
+<center>
+[
+<A HREF="index.html">General Help</A> | 
+<A HREF="colours.html">Colours</A> |
+<A HREF="filters.html">Filters</A> 
+]
+</CENTER>
+<HR>
+<H1>KSirc does Colours!</H1>
+Contents:
+<OL>
+<LI><A HREF="#mirc">mIrc</A>
+<LI><A HREF="#ksirc">kSirc</a>
+<LI><A HREF="#colours">Colours</A>
+<LI><A HREF="#send">Sending</A>
+<LI><A HREF="#ex">Examples</A>
+</OL>
+
+KSirc follows the colour scheme used by mIrc and a slight modification
+for more powerfull in house use.
+</P>
+
+&lt;fg&gt; == foreground<BR>
+&lt;bg&gt; == background<BR>
+[] == optional
+
+<H3><A NAME="mirc">mIrc compatibility</A></H3>
+
+Format: 
+<DL>
+<DT>0x03&lt;fg&gt;[,&lt;bg&gt;]   
+<DD>sets the foreground and background
+<DT>0x03
+<DD>resets to defaults for THAT line
+</DL>        
+
+<H3><A NAME="ksirc">KSirc native</A></H3>
+
+Format:
+<DL>
+<DT>~&lt;fg&gt;[,&lt;bg&gt;]
+<DD>sets the foreground and background
+<DT>~c
+<DD>resets tp defaults
+<DT>~b
+<DD>sets bold font
+<DT>~u
+<DD>sets underline
+<DT>~i
+<DD>sets italics
+<DT>~r
+<DD>sets underline
+</DL>
+        
+Why did I change ksirc to use ~ instead of 0x03 (^C)? Well, it's hard to
+use 0x03 in scripts and not all C functions seem to like it.
+~&lt;letter&gt; also alows more commands while not stomping on mirc's future
+changes.
+
+<H3><A NAME="colours">Colour Numbers</A></H3>
+
+
+<B>0.</B> white<BR>
+<B>1.</B> black<BR>
+<B>2.</B> blue<BR>
+<B>3.</B> green<BR>
+<B>4.</B> red<BR>
+<B>5.</B> brown<BR>
+<B>6.</B> purple<BR>
+<B>7.</B> orange<BR>
+<B>8.</B> yellow<BR>
+<B>9</B>. lightGreen<BR>
+<B>10.</B> cyan<BR>
+<B>11.</B> lightCyan<BR>
+<B>12.</B> lightBlue<BR>
+<B>13.</B> pink<BR>
+<B>14.</B> gray<BR>
+<B>15.</B> lightGray<BR>
+<P>
+
+<H3><A NAME="send">Sending Bold, Underline, Reverse, and Colour</A></H3>
+
+You can use the following key combinations to insert control codes in text:
+<UL>
+<LI>Control-B for bold text
+<LI>Control-U for underlined text
+<LI>Control-R for reverse text
+<LI>Control-K for coloured text
+<LI>Control-O for plain text
+</UL>
+
+<H3><A NAME="ex">Examples</A></H3>
+
+To underline a single word in a sentence:
+<OL>
+<LI>Type Control-U
+<LI>Type in the word
+<LI>Type Control-U again
+</OL>
+
+Only the text that is enclosed by the start and end codes will be affected.
+You can use this method with all of the other control codes.<P>
+
+The Control-K control code is slightly different because it allows you to
+specify a colour number. To colour a single word in a sentence:
+
+<OL>
+<LI>Type Control-K
+<LI>Type a number between 0 and 15
+<LI>Type the word
+<LI>Type Control-K again
+</OL>
+
+If you also want to change the background colour of a word, you would need
+to type two numbers separated by a comma instead of just one number. The
+first number is the text colour, the second number is the background
+colour. The colours range from 0 to 15, the index is in the previous section.<P>
+
+You can enclose text in multiple control codes, so for example you could
+have a bold, underlined, and coloured word.<P>
+
+    <hr>
+    <address><a href="mailto:asj@chowtown.cban.com">Andrew Stanley-Jones</a></address>
+<!-- Created: Sun Jan 11 11:45:20 MST 1998 -->
+<!-- hhmts start -->
+Last modified: Mon Jan 12 21:07:38 MST 1998
+<!-- hhmts end -->
+  </body>
+</html>

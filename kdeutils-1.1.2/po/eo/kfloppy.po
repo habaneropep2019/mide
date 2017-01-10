@@ -1,0 +1,201 @@
+# Esperantaj mesaøoj por "kfloppy"
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Wolfram Diestel <diestel@rzaix340.rz.uni-leipzig.de>, 1998.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kfloppy 1.0pre2\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: 1998-07-19 10:00+0100\n"
+"Last-Translator: Wolfram Diestel <diestel@rzaix340.rz-uni-leipzig.de>\n"
+"Language-Team: Esperanto <eo@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-3\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr ""
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "versio "
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Disketlegilo:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Denseco:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Dosierartipo:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Formatu"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Rapida Estingo"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Plena formatado"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Kreu disketnomon:"
+
+#: floppy.cpp:148
+#, fuzzy
+msgid "KDE Floppy"
+msgstr "KDE FLoppy"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "KDE Disketformatilo"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr ""
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"Ne povas aliri %s\n"
+"Certigu, ke la aparato ekzistas kaj ke\n"
+"vi havas skribpermeson por øi."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Ne eblis trovi Kfdformat\n"
+"Kfdformat estas parto de KFloppy.\n"
+"Bonvolu instali KFloppy øuste."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Ne eblis trovi Kmke2fs\n"
+"Kmke2fs estas parto de KFloppy.\n"
+"Bonvolu instali KFloppy øuste."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Ne eblis trovi Kmkdosfs\n"
+"Kmkdosf2 estas parto de KFloppy.\n"
+"Bonvolu instali KFloppy øuste."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Interrompu"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Ne eblas lanæi novan programon: fork() fiaskis."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Ne eblas aliri la disketon aý la disketlegilon\n"
+"Bonvolu enmeti disketon kaj certigu, ke vi\n"
+"elektis validan disketlegilon.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"Ne eblas formati: %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Bloko %d estas difektita. Daýrigante ...."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"Ne povas krei dosieraron sur: %s\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"La disketo sukcese formatiøis.\n"
+"Bolkoj difektitaj: %d\n"
+"Kruda kapacito: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Æiuj dosieroj estas sukceses estingitaj."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Kreanta dosierarsistemon ..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Kontrolante ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Ne eblas lanæi novan programon\n"
+"fork() fiaskis."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Eraro dum la testo, æu ladisketo estas muntita.\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s estas muntita.\n"
+"Bonvolu malmunti la disketon unue."

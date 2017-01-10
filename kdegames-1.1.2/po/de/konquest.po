@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-13 01:34+0100\n"
+"PO-Revision-Date: 1999-03-29 11:53+MET\n"
+"Last-Translator: Matthias Kiefer <matthias.kiefer@gmx.de>Translator: Thomas "
+"Diehl <th_diehl@csi.com>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gameboard.cc:55
+msgid "End Turn"
+msgstr "Runde beenden"
+
+#: gameboard.cc:203
+msgid ": Select source planet..."
+msgstr ": Herkunftsplaneten auswählen..."
+
+#: gameboard.cc:221
+msgid ": Select destination planet..."
+msgstr ": Zielplanet auswählen..."
+
+#: gameboard.cc:243
+msgid ": How many ships?"
+msgstr ": Wieviele Schiffe?"
+
+#: gameboard.cc:267
+msgid "Ruler: Select starting planet."
+msgstr "Herrscher: Wähle den Startplaneten aus."
+
+#: gameboard.cc:287
+#, c-format
+msgid ""
+"The distance from Planet %s to Planet %s is %s light years.\n"
+"A ship leaving this turn will arrive on turn %s"
+msgstr ""
+"Die Entfernung vom Planeten %s zum Planeten %s beträgt %s Lichtjahre.\n"
+"Ein Schiff, das in dieser Runde startet, wird in Runde %s ankommen."
+
+#: gameboard.cc:291
+msgid "Distance"
+msgstr "Entfernung"
+
+#: gameboard.cc:296
+msgid "Ruler: Select ending planet."
+msgstr "Herrscher: Wähle den Endplaneten aus."
+
+#: gameboard.cc:311
+#, c-format
+msgid "Turn #: %2d of %2d"
+msgstr "Runde #: %2d von %2d"
+
+#: gameboard.cc:426
+#, c-format
+msgid "The once mighty empire of %s has fallen in ruins."
+msgstr "Das einst mächtige Reich von %s ist in Trümmern versunken."
+
+#: gameboard.cc:428
+msgid "An Empire has fallen..."
+msgstr "Ein Reich ist gefallen..."
+
+#: gameboard.cc:438
+#, c-format
+msgid "The fallen empire of %s has staggered back to life."
+msgstr "Das gefallene Reich von %s ist ins Leben zurückgetaumelt."
+
+#: gameboard.cc:440
+msgid "Up from the ashes..."
+msgstr "Aus der Asche erstanden..."
+
+#: gameboard.cc:460
+#, c-format
+msgid "Reinforcements have arrived for planet %s"
+msgstr "Für Planet %s ist Verstärkung eingetroffen."
+
+#: gameboard.cc:462
+msgid "Fleet Arrival"
+msgstr "Ankunft der Flotte"
+
+#: gameboard.cc:505
+#, c-format
+msgid "Planet %s has held against an attack from %s"
+msgstr "Planet %s hat die Attacke von %s überstanden."
+
+#: gameboard.cc:507
+msgid "Planet Holds"
+msgstr "Planet hält sich"
+
+#: gameboard.cc:515
+#, c-format
+msgid "Planet %s has fallen to %s"
+msgstr "Planet %s ist an %s gefallen."
+
+#: gameboard.cc:517
+msgid "Planet Conquered"
+msgstr "Planet erobert"
+
+#: gameboard.cc:579 mainwin.cc:82
+msgid "End Game"
+msgstr "Spielende"
+
+#: gameboard.cc:580
+msgid "Do you wish to retire this game?"
+msgstr "Möchten Sie dieses Spiel aufgeben?"
+
+#: gameboard.cc:586
+msgid "Final Standings"
+msgstr "Letzter Stand"
+
+#: gameboard.cc:758
+msgid "Not enough ships to send."
+msgstr "Nicht genug Schiffe zu senden."
+
+#: mainwin.cc:23
+msgid "GNU-Lactic Conquest"
+msgstr "GNU-Lactic Conquest"
+
+#: mainwin.cc:47
+#, c-format
+msgid ""
+"Version %s\n"
+"Copyright (c) 1998 by\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE version by Russ Steffen <rsteffen@ia.net>\n"
+"See http://www.ia.net/~rsteffen/konquest.html for more info"
+msgstr ""
+"Version %s\n"
+"Copyright (c) 1998 by\n"
+"Gnu-Lactic Conquest Projekt\n"
+"\n"
+"KDE version von Russ Steffen <rsteffen@ia.net>\n"
+"Siehe http://www.ia.net/~rsteffen/konquest.html für nähere Information."
+
+#: mainwin.cc:88
+msgid "Measure Distance"
+msgstr "Entfernung messen"
+
+#: mainwin.cc:92
+msgid "Show Standings"
+msgstr "Stand anzeigen"
+
+#: newgamedlg.cc:31
+msgid "Preview Map"
+msgstr "Kartenvorschau"
+
+#: newgamedlg.cc:35
+msgid "&Reject Map"
+msgstr "&Karte zurückweisen"
+
+#: newgamedlg.cc:41
+msgid "&Player List"
+msgstr "&Spielerliste"
+
+#: newgamedlg.cc:48
+msgid "&Add"
+msgstr "&Hinzufügen"
+
+#: newgamedlg.cc:54
+msgid "&Clear"
+msgstr "&Zurücksetzen"
+
+#: newgamedlg.cc:70
+msgid "&Start Game"
+msgstr "Spiel &beginnen"
+
+#: newgamedlg.cc:162
+#, c-format
+msgid "Number of Neutral Planets: %2d"
+msgstr "Zahl der neutralen Planeten: %2d"
+
+#: newgamedlg.cc:174
+#, c-format
+msgid "Number of turns: %2d"
+msgstr "Anzahl der Runden: %2d"
+
+#: planet_info.cc:81 planet_info.cc:116 planet_info.cc:131
+msgid "Planet Name : "
+msgstr "Planeten-Name: "
+
+#: planet_info.cc:84 planet_info.cc:134
+msgid "Owner : "
+msgstr "Besitzer: "
+
+#: planet_info.cc:87
+msgid "Ships : "
+msgstr "Schiffe: "
+
+#: planet_info.cc:90
+msgid "Production : "
+msgstr "Produktion: "
+
+#: planet_info.cc:93
+msgid "Kill Percent : "
+msgstr "Kampfkraft: "
+
+#: planet_info.cc:137
+#, c-format
+msgid "Ships : %d"
+msgstr "Schiffe: %d"
+
+#: planet_info.cc:140
+#, c-format
+msgid "Production : %d"
+msgstr "Produktion: %d"
+
+#: planet_info.cc:143
+#, c-format
+msgid "Kill Percent : %.3f"
+msgstr "Kampfkraft: %.3f"
+
+#: gameenddlg.cc:14
+msgid ""
+"This is the last turn.\n"
+"Do you wish to add more turns?"
+msgstr ""
+"Dies ist die letzte Runde.\n"
+"Möchten Sie weitere Runden anhängen?"
+
+#: gameenddlg.cc:64
+#, c-format
+msgid "Add %d turns"
+msgstr "%d Runden anhängen"
+
+#: scoredlg.cc:18
+msgid "Player"
+msgstr "Spieler"
+
+#: scoredlg.cc:19
+msgid "Ships Built"
+msgstr "Schiffe gebaut"
+
+#: scoredlg.cc:20
+msgid "Planets Conquered"
+msgstr "Planeten erobert"
+
+#: scoredlg.cc:21
+msgid "Fleets Launched"
+msgstr "Flotten entsandt"
+
+#: scoredlg.cc:22
+msgid "Fleets Destroyed"
+msgstr "Flotten zerstört"
+
+#: scoredlg.cc:23
+msgid "Ships Destroyed"
+msgstr "Schiffe zerstört"

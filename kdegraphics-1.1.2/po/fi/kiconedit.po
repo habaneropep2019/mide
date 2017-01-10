@@ -1,0 +1,1187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 1998.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KICONEDIT\n"
+"POT-Creation-Date: 1999-01-10 01:46+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: utils.cpp:65
+#, c-format
+msgid "copyFile - There was an error opening destination file: %s"
+msgstr "copyFile - Tapahtui virhe avattaessa kohdetiedostoa: %s"
+
+#: utils.cpp:72
+#, c-format
+msgid "copyFile - There was an error reading source file: %s"
+msgstr "copyFile - Tapahtui virhe luettaessa lähdetiedostoa: %s"
+
+#: utils.cpp:80
+#, c-format
+msgid "copyFile - There was an error writing to destination file: %s"
+msgstr "copyFile - Tapahtui virhe kirjoitettaessa kohdetiedostoa: %s"
+
+#: utils.cpp:93
+#, c-format
+msgid "copyFile - There was an error opening source file: %s"
+msgstr "copyFile - Tapahtui virhe avattaessa lähdetiedostoa: %s"
+
+#: utils.cpp:105
+#, c-format
+msgid "removeFile - There was an error removing the file: %s"
+msgstr "removeFile - Tapahtui virhe poistettaessa tiedostoa: %s"
+
+#: kiconedit.cpp:239 kiconeditslots.cpp:62 kiconeditslots.cpp:121
+msgid ""
+"The current file has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"Nykyistä tiedostoa on muutettu.\n"
+"Haluatko tallentaa sen?"
+
+#: kiconedit.cpp:373
+msgid "Select All"
+msgstr "Valitse Kaikki"
+
+#: kiconedit.cpp:391
+msgid "New &Window"
+msgstr "Uusi &ikkuna"
+
+#: kiconedit.cpp:396
+msgid "&New..."
+msgstr "&Uusi..."
+
+#: kiconedit.cpp:402
+msgid "Open recent"
+msgstr "Avaa edellinen"
+
+#: kiconedit.cpp:423
+msgid "&Exit"
+msgstr "&Lopeta"
+
+#: kiconedit.cpp:431
+msgid "Cu&t"
+msgstr "L&eikkaa"
+
+#: kiconedit.cpp:440
+msgid "Paste as &new"
+msgstr "Liitä &uutena"
+
+#: kiconedit.cpp:443
+msgid "Clea&r"
+msgstr "&Poista"
+
+#: kiconedit.cpp:447
+msgid "Select &all"
+msgstr "Valitse &kaikki"
+
+#: kiconedit.cpp:454
+msgid "1:1"
+msgstr "1:1"
+
+#: kiconedit.cpp:455
+msgid "1:5"
+msgstr "1:5"
+
+#: kiconedit.cpp:456
+msgid "1:10"
+msgstr "1:10"
+
+#: kiconedit.cpp:461
+msgid "Zoom &in"
+msgstr "&Suurenna"
+
+#: kiconedit.cpp:462
+msgid "Zoom &out"
+msgstr "&Pienennä"
+
+#: kiconedit.cpp:463
+msgid "Zoom factor"
+msgstr "Suurennus"
+
+#: kiconedit.cpp:470
+msgid "&Resize"
+msgstr "&Koko"
+
+#: kiconedit.cpp:472
+msgid "&GrayScale"
+msgstr "&Harmaasävy"
+
+#: kiconedit.cpp:477
+msgid "&Icon"
+msgstr "&Kuvake"
+
+#: kiconedit.cpp:481
+msgid "Freehand"
+msgstr "Vapaa piirto"
+
+#: kiconedit.cpp:482
+msgid "Rectangle"
+msgstr "Neliö"
+
+#: kiconedit.cpp:483
+msgid "Filled rectangle"
+msgstr "Täytetty neliö"
+
+#: kiconedit.cpp:484
+msgid "Circle"
+msgstr "Ympyrä"
+
+#: kiconedit.cpp:485
+msgid "Filled circle"
+msgstr "Täytetty ympyrä"
+
+#: kiconedit.cpp:486
+msgid "Ellipse"
+msgstr "Ellipsi"
+
+#: kiconedit.cpp:487
+msgid "Filled ellipse"
+msgstr "Täytetty ellipsi"
+
+#: kiconedit.cpp:488 kiconedit.cpp:687
+msgid "Spray"
+msgstr "Srpay"
+
+#: kiconedit.cpp:489 kiconedit.cpp:689
+msgid "Flood fill"
+msgstr "Täyttö"
+
+#: kiconedit.cpp:490
+msgid "Line"
+msgstr "Viiva"
+
+#: kiconedit.cpp:491
+msgid "Eraser (Transparent)"
+msgstr "Pyyhekumi (Läpinäkyvä)"
+
+#: kiconedit.cpp:494
+msgid "&Tools"
+msgstr "&Työkalut"
+
+#: kiconedit.cpp:498
+msgid "&Configure"
+msgstr "&Asetukset"
+
+#: kiconedit.cpp:500
+msgid "Toggle &Grid"
+msgstr "Näytä &hila"
+
+#: kiconedit.cpp:503
+msgid "Toggle &toolbar"
+msgstr "Näytä &työkalupalkki"
+
+#: kiconedit.cpp:506
+msgid "Toggle &drawing tools"
+msgstr "Näytä t&yökalut"
+
+#: kiconedit.cpp:509
+msgid "Toggle &statusbar"
+msgstr "Näytä t&ilarivi"
+
+#: kiconedit.cpp:513
+msgid "&Save options"
+msgstr "T&allenna asetukset"
+
+#: kiconedit.cpp:520
+msgid ""
+"KDE Icon Editor\n"
+"\n"
+"A graphics drawing program for creating\n"
+"icons using the KDE icon palette\n"
+"\n"
+"Copyright 1998 by Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018"
+msgstr ""
+"KDE Kuvakemuokkain\n"
+"\n"
+"Grafiikkaohjelma KDE:n ikonien\n"
+"luomiseen käyttäen KDE:n palettia\n"
+"\n"
+"Copyright 1998 Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018"
+
+#: kiconedit.cpp:570
+msgid "What is ...?"
+msgstr "Mitä on ...?"
+
+#: kiconedit.cpp:579
+msgid "Drag source"
+msgstr "Vedon lähde"
+
+#: kiconedit.cpp:584
+msgid "New File"
+msgstr "Uusi tiedosto"
+
+#: kiconedit.cpp:588
+msgid "Save the file"
+msgstr "Tallenna tiedosto"
+
+#: kiconedit.cpp:591
+msgid "Print icon"
+msgstr "Tulosta kuvake"
+
+#: kiconedit.cpp:606
+msgid "Select area"
+msgstr "Valitse alue"
+
+#: kiconedit.cpp:612
+msgid "Resize"
+msgstr "Muuta kokoa"
+
+#: kiconedit.cpp:615
+msgid "GrayScale"
+msgstr "Harmaasävy"
+
+#: kiconedit.cpp:622
+msgid "Zoom out"
+msgstr "Suurenna"
+
+#: kiconedit.cpp:625
+msgid "Zoom in"
+msgstr "Pienennä"
+
+#: kiconedit.cpp:629
+msgid "Toggle grid"
+msgstr "Hila"
+
+#: kiconedit.cpp:640
+msgid "New Window"
+msgstr "Uusi ikkuna"
+
+#: kiconedit.cpp:668
+msgid "Find pixel"
+msgstr "Etsi piste"
+
+#: kiconedit.cpp:670
+msgid "Draw freehand"
+msgstr "Vapaa piirto"
+
+#: kiconedit.cpp:673
+msgid "Draw line"
+msgstr "Piirrä viiva"
+
+#: kiconedit.cpp:675
+msgid "Draw rectangle"
+msgstr "Piirrä suorakaide"
+
+#: kiconedit.cpp:677
+msgid "Draw filled rectangle"
+msgstr "Piirrä täytetty suorakaide"
+
+#: kiconedit.cpp:679
+msgid "Draw circle"
+msgstr "Piirrä ympyrä"
+
+#: kiconedit.cpp:681
+msgid "Draw filled circle"
+msgstr "Piirrä täytetty ympyrä"
+
+#: kiconedit.cpp:683
+msgid "Draw ellipse"
+msgstr "Piirrä ellipsi"
+
+#: kiconedit.cpp:685
+msgid "Draw filled ellipse"
+msgstr "Piirrä täytetty ellipsi"
+
+#: kiconedit.cpp:692
+msgid "Erase"
+msgstr "Pyyhekumi"
+
+#: kiconedit.cpp:715
+msgid "System Colors"
+msgstr "Järjestelmän värit"
+
+#: kiconedit.cpp:745
+msgid "Custom Colors"
+msgstr "Omat värit"
+
+#: kiconedit.cpp:786
+msgid ""
+"Icon draw grid\n"
+"\n"
+"The icon grid is the area where you draw the icons.\n"
+"You can zoom in and out using the magnifying glasses on the toolbar.\n"
+"(Tip: Hold the magnify button down for a few seconds to zoom to a predefined "
+"scale"
+msgstr ""
+"Kuvakkeen piirtotila\n"
+"\n"
+"Tähän tilaa voit piirtää ikoneja.\n"
+"Voit suurentaa ja pienentää kuvaa käyttämällä suurennuslasia "
+"työkalupalkista.\n"
+"(Vihje: Pidä suurennusnappia alhaalla muutama sekunti käyttääksesi "
+"ennaltamäärättyä suurennusta"
+
+#: kiconedit.cpp:791
+msgid ""
+"Rulers\n"
+"\n"
+"This is a visual represantation of the current cursor position"
+msgstr ""
+"Mittanauha\n"
+"\n"
+"Näyttää visuaalisesti kohdostimen paikan"
+
+#: kiconedit.cpp:795
+msgid ""
+"Statusbar\n"
+"\n"
+"The statusbar gives information of the status of the current icon. The "
+"fields are:\n"
+"\n"
+"\t- Cursor position\n"
+"\t- Size\n"
+"\t- Zoom factor\n"
+"\t- Number of colors\n"
+"\t- Application messages"
+msgstr ""
+"Tilarivi\n"
+"\n"
+"Tilarivi antaa tietoja senhetkisestä kuvakkeesta. Kentät ovat:\n"
+"\n"
+"\t- Kursorin paikka\n"
+"\t- Koko\n"
+"\t- Suurennus\n"
+"\t- Värien määrä\n"
+"\t- Sovelluksen viestit"
+
+#: kiconedit.cpp:804
+msgid ""
+"Preview\n"
+"\n"
+"This is a 1:1 preview of the current icon"
+msgstr ""
+"Esikatselu\n"
+"\n"
+"Tämä on 1:1 mittakaavassa esikatselukuva"
+
+#: kiconedit.cpp:807
+msgid ""
+"System colors\n"
+"\n"
+"Here you can select colors from the KDE Icon Palette."
+msgstr ""
+"Järjestelmän värit\n"
+"\n"
+"Voit valita värejä KDE:n kuvakepaletista."
+
+#: kiconedit.cpp:810
+msgid ""
+"Custom colors\n"
+"\n"
+"Here you can build a palette of custom colors.\n"
+"Just double-click on a box to edit the color"
+msgstr ""
+"Omat värit\n"
+"\n"
+"Tähän voit rakentaa paletin omista väreistäsi.\n"
+"Tuplaklikkaa laatikkoa muokataksesi väriä"
+
+#: kiconedit.cpp:816
+msgid ""
+"New\n"
+"\n"
+"Create a new icon either from a template or by specifying the size"
+msgstr ""
+"Uusi\n"
+"\n"
+"Luo uusi kuvake joko pohjasta tai määrittelemällä sen koko"
+
+#: kiconedit.cpp:819
+msgid ""
+"Open\n"
+"\n"
+"Open an existing icon"
+msgstr ""
+"Avaa\n"
+"\n"
+"Avaa olemassaolevan kuvakkeen"
+
+#: kiconedit.cpp:822
+msgid ""
+"Save\n"
+"\n"
+"Save the current icon"
+msgstr ""
+"Tallenna\n"
+"\n"
+"Tallentaa nykyisen kuvakkeen"
+
+#: kiconedit.cpp:825
+msgid ""
+"Print\n"
+"\n"
+"Opens a print dialog to let you print the current icon. (Doesn't realy work "
+"as expected"
+msgstr ""
+"Tulosta\n"
+"\n"
+"Avaa tulostusikkunan ja mahdollistaa kuvakkeen tulostuksen. (Ei toimi kuten "
+"pitäisi"
+
+#: kiconedit.cpp:829
+msgid ""
+"Cut\n"
+"\n"
+"Cut the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Leikkaa\n"
+"\n"
+"Leikkaa valinta pois kuvakkeesta\n"
+"\n"
+"(Vihje: Voit tehdä suorakaiteen ja ympyrän muotoisia valintoja)"
+
+#: kiconedit.cpp:833
+msgid ""
+"Copy\n"
+"\n"
+"Copy the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Kopioi\n"
+"\n"
+"Voit kopioida valinnan kuvakkeesta\n"
+"\n"
+"(Vihje: Voit tehdä suorakaiteen ja ympyrän muotoisia valintoja)"
+
+#: kiconedit.cpp:837
+msgid ""
+"Paste\n"
+"\n"
+"Paste the contents of the clipboard into the current icon.\n"
+"\n"
+"If the contents is larger than the current icon you can paste it in a new "
+"window.\n"
+"\n"
+"(Tip: Select \"Paste transparent pixels\" in the configuration dialog if you "
+"also want to paste transparent)"
+msgstr ""
+"Liitä\n"
+"\n"
+"Liittää leikepöydän sisällön kuvakkeeseen.\n"
+"\n"
+"Jos leikepöydän sisältö on suurempi kuin kuvake voit liittää sen uuteen "
+"ikkunaan.\n"
+"(Vinkki: Valitse \"Liitä läpinäkyvät pisteet\" asetusfialogissa jos haluat "
+"liittää myös läpinäkyvät.)"
+
+#: kiconedit.cpp:844
+msgid ""
+"Select\n"
+"\n"
+"Select a section of the icon using the mouse.\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Valitse\n"
+"\n"
+"Valitse alue kuvasta käyttämällä hiirtä.\n"
+"\n"
+"(Vihje: Voit tehdä suorakaiteen ja ympyrän muotoisia valintoja)"
+
+#: kiconedit.cpp:848
+msgid ""
+"Resize\n"
+"\n"
+"Smoothly resizes the icon while trying to preserve the contents"
+msgstr ""
+"Koko\n"
+"\n"
+"Muuttaa kuvakkeen kokoa yrittäen säilyttää sen sisällön"
+
+#: kiconedit.cpp:851
+msgid ""
+"Gray scale\n"
+"\n"
+"Gray scale the current icon.\n"
+"(Warning: The result is likely to contain colors not in the icon palette"
+msgstr ""
+"Harmaasävy\n"
+"\n"
+"Muuta kuvake harmaasävyiseksi.\n"
+"(Varoitus: Tulos sisältää mahdollisesti värejä joita ei ole kuvakepaletissa"
+
+#: kiconedit.cpp:855
+msgid ""
+"Zoom out\n"
+"\n"
+"Zoom out by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Suurenna\n"
+"\n"
+"Suurenna kuvaa yhdellä tasolla.\n"
+"\n"
+"(Vihje: Pidä suurennusnappia alhaalla muutama sekunti käyttääksesi "
+"ennaltamäärättyä suurennusta"
+
+#: kiconedit.cpp:859
+msgid ""
+"Zoom in\n"
+"\n"
+"Zoom in by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Pienennä\n"
+"\n"
+"Pienennä kuvaa yhdellä tasolla.\n"
+"\n"
+"(Vihje: Pidä pienennysnappia alhaalla muutama sekunti käyttääksesi "
+"ennaltamäärättyä suurennusta"
+
+#: kiconedit.cpp:863
+msgid ""
+"Toggle grid\n"
+"\n"
+"Toggles the grid in the icon edit grid on/off"
+msgstr ""
+"Hila\n"
+"\n"
+"Näyttää tai piiloittaa piirtohilan"
+
+#: kiconedit.cpp:866
+msgid ""
+"New window\n"
+"\n"
+"Opens a new Icon Editor window."
+msgstr ""
+"Uusi ikkuna\n"
+"\n"
+"Avaa uuden muokkausikkunan."
+
+#: kiconedit.cpp:869
+msgid ""
+"Whats is...?\n"
+"\n"
+"Well since you're reading this I guess you found out ;-)"
+msgstr ""
+"Mikä on...?\n"
+"\n"
+"Kun luet tätä luulen että keksit jo asian ;-)"
+
+#: kiconedit.cpp:872
+msgid ""
+"Drag source\n"
+"\n"
+"From this button you can drag out a copy of the current icon and drop it on "
+"a drop enabled window, eg. another Icon Editor.\n"
+"\n"
+"(Note: The drag source uses the QT XDND protocol which is not yet standard "
+"in KDE)"
+msgstr ""
+"Vedon lähde\n"
+"\n"
+"Tästä napista voit vetää kopion tämänhetkisestä kuvakkeesta ja pudottaa sen "
+"sen hyväksyvään ikkunaan, esim. toiseen Kuvakemuokkaimeen.\n"
+"\n"
+"(Huomaa: Lähde käyttää QT XDND protokollaa joka ei ole vielä oletus KDE:ssa)"
+
+#: kiconedit.cpp:880
+msgid ""
+"Free hand\n"
+"\n"
+"Draw non-linear lines"
+msgstr ""
+"Vapaa piirto\n"
+"\n"
+"Piirrä vapaita viivoja"
+
+#: kiconedit.cpp:883
+msgid ""
+"Flood fill\n"
+"\n"
+"Fill adjoining pixels with the same color with the current color"
+msgstr ""
+"Täytä\n"
+"\n"
+"Täytä toisiinsa yhteydessä olevat samanväriset pisteet valitulla värillä"
+
+#: kiconedit.cpp:886
+msgid ""
+"Rectangle\n"
+"\n"
+"Draw a rectangle"
+msgstr ""
+"Suorakaide\n"
+"\n"
+"Piirrä suorakaide"
+
+#: kiconedit.cpp:889
+msgid ""
+"Filled rectangle\n"
+"\n"
+"Draw a filled rectangle"
+msgstr ""
+"Täytetty suorakaide\n"
+"\n"
+"Piirrä täytetty suorakaide"
+
+#: kiconedit.cpp:892
+msgid ""
+"Circle\n"
+"\n"
+"Draw a circle"
+msgstr ""
+"Ympyrä\n"
+"\n"
+"Piirrä ympyrä"
+
+#: kiconedit.cpp:895
+msgid ""
+"Filled circle\n"
+"\n"
+"Draw a filled circle"
+msgstr ""
+"Täytetty ympyrä\n"
+"\n"
+"Piirrä täytetty ympyrä"
+
+#: kiconedit.cpp:898
+msgid ""
+"Ellipse\n"
+"\n"
+"Draw an ellipse"
+msgstr ""
+"Ellipsi\n"
+"\n"
+"Piirrä ellipsi"
+
+#: kiconedit.cpp:901
+msgid ""
+"Filled ellipse\n"
+"\n"
+"Draw a filled ellipse"
+msgstr ""
+"Täytetty ellipsi\n"
+"\n"
+"Piirrä täytetty ellipsi"
+
+#: kiconedit.cpp:904
+msgid ""
+"Line\n"
+"\n"
+"Draw a straight line vertically, horizontically or in 45 dgr. angles"
+msgstr ""
+"Viiva\n"
+"\n"
+"Piirrä suora viiva vaakasuuntaan, pystysuuntaan tai 45 asteen kulmissa."
+
+#: kiconedit.cpp:907
+msgid ""
+"Spray\n"
+"\n"
+"Draw scattered pixels in the current color"
+msgstr ""
+"Spray\n"
+"\n"
+"Piirrä hajallaan olevia pisteitä valitulla värillä"
+
+#: kiconedit.cpp:910
+msgid ""
+"Find\n"
+"\n"
+"The color of the pixel clicked on will be the current drawcolor"
+msgstr ""
+"Etsi\n"
+"\n"
+"Klikatun pisteen väri siirtyy piirtoväriksi"
+
+#: kiconedit.cpp:913
+msgid ""
+"Erase\n"
+"\n"
+"Erase pixels. Set the pixels to be transparent\n"
+"\n"
+"(Tip: If you want to draw transparent with a different tool then first click "
+"on \"Erase\" then on the tool you want to use)"
+msgstr ""
+"Pyyhekumi\n"
+"\n"
+"Poista pisteitä. Asettaa pisteet läpinäkyviksi\n"
+"\n"
+"(Vihje: Jos haluat piirtää läpinäkyvää muilla työkaluilla paina ensin "
+"pyyhekumia ja sitten työkalua jota haluat käyttää)"
+
+#: kicongrid.cpp:66
+msgid "width"
+msgstr "leveys"
+
+#: kicongrid.cpp:71
+msgid "height"
+msgstr "korkeus"
+
+#: kicongrid.cpp:684
+msgid "There was an error loading a blank image.\n"
+msgstr "Tyhjää kuvaa ladattaessa tapahtui virhe.\n"
+
+#: kicongrid.cpp:830
+msgid "All selected"
+msgstr "Kaikki valittu"
+
+#: kicongrid.cpp:841
+msgid "Cleared"
+msgstr "Tyhjennetty"
+
+#: kicongrid.cpp:883
+msgid "Selected area cutted"
+msgstr "Valittu alue leikattu"
+
+#: kicongrid.cpp:886
+msgid "Selected area copied"
+msgstr "Valittu alue kopioitu"
+
+#: kicongrid.cpp:964
+msgid ""
+"There was an copying:\n"
+"to the clipboard!"
+msgstr ""
+"Tapahtui kopiointi:\n"
+"leikepöydälle!"
+
+#: kicongrid.cpp:985
+msgid ""
+"The clipboard image is larger than the current image!\n"
+"Paste as new image?"
+msgstr ""
+"Leikepöydän kuma on suurempi kuin nykyinen kuva!\n"
+"Liitä uutena kuvana?"
+
+#: kicongrid.cpp:998
+msgid "Pasting"
+msgstr "Liitän"
+
+#: kicongrid.cpp:1030 kicongrid.cpp:1057
+msgid "Done pasting"
+msgstr "Liittäminen valmis"
+
+#: kicongrid.cpp:1035 kicongrid.cpp:1061
+msgid "Invalid pixmap data in clipboard!\n"
+msgstr "Virheellistä kuvatietoa leikepöydällä!\n"
+
+#: kiconcombiview.cpp:81
+msgid "Folders:"
+msgstr "Kansiot:"
+
+#: kiconcombiview.cpp:82
+msgid "Contents:"
+msgstr "Sisältö:"
+
+#: kicondetaillist.cpp:50
+msgid "Name"
+msgstr "Nimi"
+
+#: kicondetaillist.cpp:52
+msgid "Size"
+msgstr "Koko"
+
+#: kicondetaillist.cpp:55
+msgid "Permissions"
+msgstr "Oikeudet"
+
+#: kicondetaillist.cpp:57
+msgid "Date"
+msgstr "Päiväys"
+
+#: kicondetaillist.cpp:60
+msgid "Owner"
+msgstr "Omistaja"
+
+#: kicondetaillist.cpp:62
+msgid "Group"
+msgstr "Ryhmä"
+
+#: kicon.cpp:48
+msgid "There was an error removing temporary backup file:\n"
+msgstr "Tapahtui virhe poistettaessa väliaikaiskuvaa:\n"
+
+#: kicon.cpp:74 kicon.cpp:258 kicon.cpp:342 kicon.cpp:445
+msgid ""
+"We've got a KFM job running.\n"
+"Please wait."
+msgstr ""
+"KFM työ on ajossa.\n"
+"Odota hetki."
+
+#: kicon.cpp:97
+msgid "The URL:\n"
+msgstr "URL:\n"
+
+#: kicon.cpp:99
+msgid ""
+"\n"
+"seems to be malformed.\n"
+msgstr ""
+"\n"
+"on viallinen.\n"
+
+#: kicon.cpp:100 kicon.cpp:146 kicon.cpp:169 kicon.cpp:181 kicon.cpp:194
+#: kicon.cpp:207 kicon.cpp:218 kicon.cpp:399 kicon.cpp:432
+msgid "ERROR"
+msgstr "VIRHE"
+
+#: kicon.cpp:116
+msgid "The KDE Icon Editor has found a recover file for:\n"
+msgstr "KDE Kuvakemuokkain on löytänyt varmuuskopiotiedoston:\n"
+
+#: kicon.cpp:118 kicon.cpp:285
+msgid ""
+"\n"
+"Do you want to open this?"
+msgstr ""
+"\n"
+"Haluatko avata tämän?"
+
+#: kicon.cpp:143
+msgid "The file:\n"
+msgstr "Tiedosto:\n"
+
+#: kicon.cpp:145
+msgid ""
+"\n"
+"doesn't exist or isn't readable.\n"
+msgstr ""
+"\n"
+"ei ole olemassa tai sitä ei voida lukea.\n"
+
+#: kicon.cpp:160
+msgid ""
+"The Icon Editor is already downloading a non-local file.\n"
+"Please wait.\n"
+msgstr ""
+"Kuvakemuokkain hakee jo ei-paikallista tiedostoa.\n"
+"Odota hetki.\n"
+
+#: kicon.cpp:170
+msgid "Couldn't initiate KFM!"
+msgstr "En saanut käynnistettyä KFM:ää!"
+
+#: kicon.cpp:178
+msgid "There was a KFM error creating a backup for:\n"
+msgstr "Tapahtui KFM virhe luotaessa varmuuskopioita:\n"
+
+#: kicon.cpp:191 kicon.cpp:396
+msgid "There was an error creating a backup for:\n"
+msgstr "Tapahtui virhe luotaessa varmuuskopiota:\n"
+
+#: kicon.cpp:204
+msgid "KIcon: There was a error locking:\n"
+msgstr "KIcon: Tapahtui lukitusvirhe:\n"
+
+#: kicon.cpp:215 kicon.cpp:291
+msgid "KIcon: There was a QT error loading:\n"
+msgstr "KIcon: Tapahtui QT-virhe ladattaessa:\n"
+
+#: kicon.cpp:261
+msgid ""
+"*|All files (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|GIF files (*.gif)\n"
+"*jpg|JPEG files (*.jpg)\n"
+msgstr ""
+"*|Kaikki tiedostot (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|GIF tiedostot (*.gif)\n"
+"*jpg|JPEG tiedostot (*.jpg)\n"
+
+#: kicon.cpp:283
+msgid "The KDE Icon Editor has found a recover\n"
+msgstr "KDE Kuvakemuokkain on löytänyt varmuus\n"
+
+#: kicon.cpp:284
+msgid "file for an unsaved icon."
+msgstr "tiedoston tallentamattomalle kuvakkeelle"
+
+#: kicon.cpp:409
+msgid "Couldn't initiate KFM"
+msgstr "En saanut käynnistettyä KFM:ää"
+
+#: kicon.cpp:422
+msgid "Done saving"
+msgstr "Tallennus valmis"
+
+#: kicon.cpp:429
+msgid "There was an error saving:\n"
+msgstr "Tapahtui virhe tallennettaessa:\n"
+
+#: kresize.cpp:29
+msgid "Size:"
+msgstr "Koko:"
+
+#: kresize.cpp:64
+msgid "Select size:"
+msgstr "Valitse koko:"
+
+#: knew.cpp:34
+msgid "Standard file"
+msgstr "Oletustiedosto"
+
+#: knew.cpp:39
+msgid "Source file"
+msgstr "Lähdetiedosto"
+
+#: knew.cpp:44
+msgid "Compressed file"
+msgstr "Pakkaa tiedosto"
+
+#: knew.cpp:49
+msgid "Standard folder"
+msgstr "Oletuskansio"
+
+#: knew.cpp:54
+msgid "Standard package"
+msgstr "Oletuspaketti"
+
+#: knew.cpp:59
+msgid "Mini folder"
+msgstr "Pienoiskansio"
+
+#: knew.cpp:64
+msgid "Mini package"
+msgstr "Pienoispaketti"
+
+#: knew.cpp:156 knew.cpp:258 knew.cpp:308
+msgid "Create from scratch"
+msgstr "Luo tyhjästä"
+
+#: knew.cpp:158 knew.cpp:313
+msgid "Create from template"
+msgstr "Luo pohjasta"
+
+#: kiconconfig.cpp:120 knew.cpp:194
+msgid "Templates:"
+msgstr "Pohjat:"
+
+#: knew.cpp:252
+msgid "Select icontype"
+msgstr "Valitse kuvaketyyppi"
+
+#: knew.cpp:263
+msgid "Create new icon"
+msgstr "Luo uusi kuvake"
+
+#: debug.cpp:20
+msgid "Fatal!"
+msgstr "Tuhoisa!"
+
+#: kiconeditslots.cpp:403
+msgid "Sorry - not implemented."
+msgstr "Ei toteutettu."
+
+#: kiconeditslots.cpp:471 kiconeditslots.cpp:478
+#, c-format
+msgid "Colors: %u"
+msgstr "Värit: %u"
+
+#: kiconconfig.cpp:30
+msgid "Template"
+msgstr "Pohja"
+
+#: kiconconfig.cpp:31
+msgid "Description:"
+msgstr "Kuvaus:"
+
+#: kiconconfig.cpp:33
+msgid "Path:"
+msgstr "Polku:"
+
+#: kiconconfig.cpp:63
+msgid "&Browse..."
+msgstr "&Selaa..."
+
+#: kiconconfig.cpp:136
+msgid "&Add"
+msgstr "&Lisää"
+
+#: kiconconfig.cpp:248
+msgid "Color or pixmap"
+msgstr "Väri tai kuvake"
+
+#: kiconconfig.cpp:256
+msgid "Colored background"
+msgstr "Värillinen tausta"
+
+#: kiconconfig.cpp:261
+msgid "Pixmap background"
+msgstr "Kuvakkeen tausta"
+
+#: kiconconfig.cpp:276
+msgid "&Color..."
+msgstr "&Väri..."
+
+#: kiconconfig.cpp:279
+msgid "&Pixmap..."
+msgstr "&Kuvae..."
+
+#: kiconconfig.cpp:287
+msgid "&Built-in"
+msgstr "&Sisäänrakennettu"
+
+#: kiconconfig.cpp:291
+msgid "Example"
+msgstr "Esimerkki"
+
+#: kiconconfig.cpp:399
+msgid "Main Toolbar"
+msgstr "Päätyökalurivi"
+
+#: kiconconfig.cpp:402
+msgid "Drawing tools"
+msgstr "Piirtotyökalut"
+
+#: kiconconfig.cpp:406
+msgid ""
+"Note: Other settings of the toolbars can be reached\n"
+"from the toolbar \"handle\" or from the \"Options\" menu"
+msgstr ""
+"Huomaa: Muut työkalupalkin asetukset löytyvät työkalupalkin\n"
+"\"kiinikkeestä\" tai \"Asetukset\" valikosta"
+
+#: kiconconfig.cpp:425 kiconconfig.cpp:438
+msgid "Show Icon"
+msgstr "Näytä ikoni"
+
+#: kiconconfig.cpp:430 kiconconfig.cpp:443
+msgid "Show Icon and Text"
+msgstr "Näytä ikoni ja teksti"
+
+#: kiconconfig.cpp:434 kiconconfig.cpp:447
+msgid "Show Text"
+msgstr "Näytä teksti"
+
+#: kiconconfig.cpp:505
+msgid "Paste mode"
+msgstr "Liitostila"
+
+#: kiconconfig.cpp:507
+msgid "Paste transparent pixels"
+msgstr "Liitä läpinäkyvät pisteet"
+
+#: kiconconfig.cpp:511
+msgid "Show rulers"
+msgstr "Näytä mittanauhat"
+
+#: kiconconfig.cpp:593
+msgid "Keys"
+msgstr "Näppäimet"
+
+#: kiconconfig.cpp:598
+msgid "Configure keys"
+msgstr "Aseta näppäimiä"
+
+#: kiconconfig.cpp:605
+msgid "Templates"
+msgstr "Pohjat"
+
+#: kiconconfig.cpp:610
+msgid "Configure Icon templates"
+msgstr "Aseta kuvakepohjia"
+
+#: kiconconfig.cpp:622
+msgid "Configure background"
+msgstr "Aseta taustaa"
+
+#: kiconconfig.cpp:630
+msgid "Toolbars"
+msgstr "Työkalupalkit"
+
+#: kiconconfig.cpp:642
+msgid "Icon grid"
+msgstr "Kuvakehila"
+
+#~ msgid "Open image"
+#~ msgstr "Avaa kuva"
+
+#~ msgid "Save image As"
+#~ msgstr "Tallenna kuva nimellä"
+
+#~ msgid "&Map to KDE palette"
+#~ msgstr "&KDE värit"
+
+#~ msgid "Warning"
+#~ msgstr "Varoitus"
+
+#~ msgid "New &window"
+#~ msgstr "Uusi &ikkuna"
+
+#~ msgid "&Open..."
+#~ msgstr "&Avaa..."
+
+#~ msgid "&Save"
+#~ msgstr "&Tallenna"
+
+#~ msgid "Save &as..."
+#~ msgstr "Tallenna &nimellä..."
+
+#~ msgid "&Print..."
+#~ msgstr "T&ulosta..."
+
+#~ msgid "&Close"
+#~ msgstr "&Sulje"
+
+#~ msgid "&File"
+#~ msgstr "&Tiedosto"
+
+#~ msgid "&Copy"
+#~ msgstr "&Kopioi"
+
+#~ msgid "&Paste"
+#~ msgstr "&Liitä"
+
+#~ msgid "&Edit"
+#~ msgstr "&Muokkaa"
+
+#~ msgid "&View"
+#~ msgstr "&Näytä"
+
+#~ msgid "&Options"
+#~ msgstr "&Asetukset"
+
+#~ msgid "&Help"
+#~ msgstr "&Ohje"
+
+#~ msgid "Open a file"
+#~ msgstr "Avaa tiedosto"
+
+#~ msgid "Cut"
+#~ msgstr "Leikkaa"
+
+#~ msgid "Copy"
+#~ msgstr "Kopioi"
+
+#~ msgid "Error"
+#~ msgstr "Virhe"
+
+#~ msgid "Information"
+#~ msgstr "Tietoja"
+
+#~ msgid "&Ok"
+#~ msgstr "&Ok"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Peruuta"
+
+#~ msgid "&Remove"
+#~ msgstr "&Poista"
+
+#~ msgid "Appearance"
+#~ msgstr "Ulkonäkö"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "Sekalaista"

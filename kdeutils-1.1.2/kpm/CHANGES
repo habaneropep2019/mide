@@ -1,0 +1,36 @@
+Changes from kpm-1.3k6:
+	* when backporting the rightclick-patch I did not change
+	  htable.o to correspond to the new htable.h. Fixed.
+
+Changes from kpm-1.3k5:
+	* fixed a segfault for Linux kernel > 2.2.2
+	* some color and style improvements
+	* more KDE-compliant table style
+	* removed obsolete "Dock into panel" option
+	* does not crash anymore when rightclicking on empty area
+
+Changes from kpm-1.3k4:
+	* fixed a segfault when doing QString::sprintf() in qps.C
+
+Changes from kpm-1.3k3:
+	* added an external program to dock into the panel
+	* fixed tons of compiler warnings when compiling with egcs
+
+Changes from kpm-1.3k2:
+	* fixes for DEC Alpha/Linux
+	* hideable toolbar
+
+Changes from kpm-1.3k1:
+	* preparing for panel docking
+	* some bugs fixed
+	* new feature: filled graphs
+
+Changes from qps-1.3 (original package) to kpm-1.3k1
+	* improved dialogs
+	* added toolbar
+	* added field help
+	* removed non-standard widgets
+	* scheduling dialog is disabled for non-root users
+	* scheduling dialog reworked (layout)
+	* SliderDialog reworked (layout)
+	* session management

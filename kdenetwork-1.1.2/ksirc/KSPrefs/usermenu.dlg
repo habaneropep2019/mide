@@ -1,0 +1,183 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {UserMenuRef.h}
+	ClassSource {UserMenuRef.cpp}
+	ClassName {UserMenuRef}
+	DataHeader {UserMenuRefData.h}
+	DataSource {UserMenuRefData.cpp}
+	DataName {UserMenuRefData}
+	WindowBaseClass {QFrame}
+	WindowCaption {User Control Menu}
+	WindowFlags {241664}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {400 300}
+MinSize {400 300}
+MaxSize {400 300}
+Grid {10}
+
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {280 40 100 30}
+		Name {LineEdit_1}
+		Variable {MenuName}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {280 120 100 30}
+		Name {LineEdit_2}
+		Variable {MenuCommand}
+		LayoutStatus {NoLayout}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+}
+ComboBox {
+		Style {ReadOnly}
+		SizeLimit {2}
+		Policy {NoInsertion}
+		AutoResize {FALSE}
+		Item {Seperator}
+		Item {Action}
+		Rect {280 80 100 30}
+		Name {ComboBox_1}
+		Variable {MenuType}
+		Signal {[Protected]  highlighted --> typeSetActive  (int)}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Menu Name}
+		Alignment {290}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {170 40 100 30}
+		Name {Label_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Type}
+		Alignment {290}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {170 80 100 30}
+		Name {Label_2}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Command}
+		Alignment {290}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {180 120 90 30}
+		Name {Label_3}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {FALSE}
+		Text {OP Only}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {280 160 100 30}
+		Name {CheckBox_1}
+		Variable {MenuOpOnly}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Close}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {280 240 100 30}
+		Name {PushButton_1}
+		Variable {ApplyButton}
+		Signal {[Public]  clicked --> terminate  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Insert}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {170 240 100 30}
+		Name {PushButton_2}
+		Variable {insertButton}
+		Signal {[Protected]  clicked --> insertMenu  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ListBox {
+		DragSelect {TRUE}
+		AutoScroll {TRUE}
+		ScrollBar {FALSE}
+		AutoScrollBar {TRUE}
+		BottomScrollBar {FALSE}
+		AutoBottomScrollBar {TRUE}
+		SmoothScrolling {TRUE}
+		MultiSelection {FALSE}
+		Style {51}
+		LineWidth {2}
+		Rect {30 40 120 230}
+		Name {ListBox_1}
+		Variable {MainListBox}
+		Signal {[Protected]  highlighted --> newHighlight  (int)}
+		Signal {[Protected]  selected --> newHighlight  (int)}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Delete}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {170 200 100 30}
+		Name {PushButton_3}
+		Signal {[Protected]  clicked --> deleteMenu  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Modify}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {280 200 100 30}
+		Name {PushButton_4}
+		Signal {[Protected]  clicked --> modifyMenu  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

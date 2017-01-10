@@ -1,0 +1,166 @@
+# KDEUTILS translation to Slovenian language.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Marko Samastur <markos@elite.org>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcalc\n"
+"POT-Creation-Date: 1999-03-05 01:58+0100\n"
+"PO-Revision-Date: 1999-07-17 00:30 MEST\n"
+"Last-Translator: Marko Samastur <markos@elite.org>\n"
+"Language-Team: Slovenian <ftp://ftp.lugos.si/pub/lugos/localization/kde-sl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: kcalc.cpp:99
+msgid "KCalc Setup/Help"
+msgstr "KCalc Nastavitev/Pomoè"
+
+#: kcalc.cpp:152
+msgid "Angle"
+msgstr "Kot"
+
+#: kcalc.cpp:192
+msgid "Base"
+msgstr "Baza"
+
+#: kcalc.cpp:1524
+msgid "KCalc Configuraton"
+msgstr "Konfiguracija KCalc"
+
+#: kcalc.cpp:1542
+#, c-format
+msgid ""
+"KCalc %s\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@math.cornell.edu\n"
+"wuebben@kde.org\n"
+"Copyright (C) 1996-98\n"
+"\n"
+"\n"
+msgstr ""
+"KCalc %s\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@math.cornell.edu\n"
+"wuebben@kde.org\n"
+"Avtorske pravice (C) 1996-98\n"
+"\n"
+"\n"
+
+#: kcalc.cpp:1551
+msgid "Base type: long double\n"
+msgstr "Osnovni tip: long double\n"
+
+#: kcalc.cpp:1553
+msgid ""
+"Due to broken glibc's everywhere, I had to reduce KCalc's precision from "
+"'long double' to 'double'. Owners of systems with a working libc should "
+"recompile KCalc with 'long double' precision enabled. See the README for "
+"details."
+msgstr ""
+"Zaradi napak v knji¾nicah glibc je bilo potrebno zmanj¹ati natanènost "
+"kalkulatorja KCalc iz 'long double' na 'double'. Lastniki sistemov z "
+"delujoèo knji¾nico libc bi morali prevesti KCalc z vkljuèeno natanènostjo "
+"'long double'. Za podrobnosti si oglejte datoteko README."
+
+#: configdlg.cpp:56 kcalc.cpp:1592
+msgid "Defaults"
+msgstr "Privezeto"
+
+#: kcalc.cpp:1593
+msgid "Display Font"
+msgstr "Zaslonska pisava"
+
+#: kcalc.cpp:1909
+#, c-format
+msgid ""
+"KCalc %s\n"
+"Copyright 1997 Bernd Johannes Wuebben <wuebben@kde.org>\n"
+msgstr ""
+"KCalc %s\n"
+"Avtorske pravice 1997 Bernd Johannes Wuebben <wuebben@kde.org>\n"
+
+#: kcalc_core.cpp:1115
+msgid "Last stat item erased"
+msgstr "Zadnji stat. vnos pobrisan"
+
+#: kcalc_core.cpp:1155
+msgid "Stat Mem cleared"
+msgstr "Stat spomin pobrisan"
+
+#: kcalc_core.cpp:1632
+msgid "Stack processing error - right_op"
+msgstr "Napaka pri procesiranju skladu - right_op"
+
+#: kcalc_core.cpp:1640
+msgid "Stack processing error - function"
+msgstr "Napaka pri procesiranju skladu - function"
+
+#: kcalc_core.cpp:1649
+msgid "Stack processing error - left_op"
+msgstr "Napaka pri procesiranju skladu - left_op"
+
+#: kcalc_core.cpp:1953 kcalc_core.cpp:1961
+msgid "Emergency"
+msgstr "Urgenca"
+
+#: kcalc_core.cpp:1953 kcalc_core.cpp:1961
+msgid "Stack Error!"
+msgstr "Napaka skladu!"
+
+#: configdlg.cpp:61
+msgid "Foreground Color:"
+msgstr "Barva ospredja:"
+
+#: configdlg.cpp:78
+msgid "Background Color:"
+msgstr "Barva ozadja:"
+
+#: configdlg.cpp:95
+msgid "Precision:"
+msgstr "Natanènost:"
+
+#: configdlg.cpp:116
+msgid "Set Fixed Precision at:"
+msgstr "Fiksna natanènost pri:"
+
+#: configdlg.cpp:145
+msgid "Beep on Error"
+msgstr "Zapiskaj ob napaki"
+
+#: configdlg.cpp:153
+msgid "Trigonometry Mode"
+msgstr "Trigonometrièni naèin"
+
+#: configdlg.cpp:158
+msgid "Statistical Mode"
+msgstr "Statistièni naèin"
+
+#: fontdlg.cpp:44
+msgid "Set Default Font"
+msgstr "Nastavi privzeto pisavo"
+
+#: fontdlg.cpp:53
+msgid "Family:"
+msgstr "Dru¾ina:"
+
+#: fontdlg.cpp:63
+msgid "Point Size:"
+msgstr "Velikost v toèkah:"
+
+#: fontdlg.cpp:76
+msgid "Style:"
+msgstr "Stil:"
+
+#: fontdlg.cpp:91
+msgid "Weight:"
+msgstr "Te¾a:"
+
+#: fontdlg.cpp:101 fontdlg.cpp:134
+msgid "Bold"
+msgstr "Krepko"
+
+#: fontdlg.cpp:103 fontdlg.cpp:136
+msgid "Normal"
+msgstr "Normalno"

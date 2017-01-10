@@ -1,0 +1,828 @@
+# Breton translation of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>, 1998
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kuser-1.1\n"
+"POT-Creation-Date: 1999-06-03 18:02+0700\n"
+"PO-Revision-Date: 1999-04-20 15:48+0200\n"
+"Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+"Translator: Romuald Texier <texierr@worldnet.fr>\n"
+
+#: mainWidget.cpp:20
+msgid "&Preferences..."
+msgstr "&Dibaboù..."
+
+#: mainWidget.cpp:26 mainWidget.cpp:33
+msgid "&Edit..."
+msgstr "&Aozañ ..."
+
+#: mainWidget.cpp:27 mainWidget.cpp:34
+msgid "&Delete..."
+msgstr "&Dilemel..."
+
+#: mainWidget.cpp:28 mainWidget.cpp:35
+msgid "&Add..."
+msgstr "&Ouzhpennañ ..."
+
+#: mainWidget.cpp:29
+msgid "&Set password..."
+msgstr "&Spisaat an tremenger..."
+
+#: mainWidget.cpp:38
+#, fuzzy, c-format
+msgid ""
+"KUser version %s\n"
+"KDE project\n"
+"This program was created by\n"
+"Denis Pershin\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+msgstr ""
+"KUser doare %s\n"
+"Raktres KDE\n"
+"Savet eo bet ar goulev-mañ gant\n"
+"Denis Y. Pershin\n"
+"dyp@inetlab.com\n"
+"Gwiroù eilañ 1997(c)"
+
+#: mainWidget.cpp:49
+msgid "&User"
+msgstr "&Arveriad"
+
+#: mainWidget.cpp:50
+msgid "&Group"
+msgstr "&Strollad"
+
+#: mainWidget.cpp:60
+msgid "Add user"
+msgstr "Ouzhpennañ un arveriad"
+
+#: mainWidget.cpp:62
+msgid "Delete user"
+msgstr "Dilemel an arveriad"
+
+#: mainWidget.cpp:64
+msgid "Edit user"
+msgstr "Aozañ an arveriad"
+
+#: grpnamedlg.cpp:17 mainWidget.cpp:69
+msgid "Add group"
+msgstr "Ouzhpennañ ur strollad"
+
+#: mainWidget.cpp:71
+msgid "Delete group"
+msgstr "Dilemel ar strollad"
+
+#: mainWidget.cpp:73
+msgid "Edit group"
+msgstr "Aozañ ar strollad"
+
+#: mainWidget.cpp:96
+msgid "Ready"
+msgstr "Prest"
+
+#: editGroup.cpp:37
+msgid "Group properties"
+msgstr "Perzhioù ar strollad"
+
+#: editGroupData.cpp:41
+#, fuzzy
+msgid "Users not in Group"
+msgstr "Implij Strollad Prevez"
+
+#: editGroupData.cpp:55
+#, fuzzy
+msgid "Users in Group"
+msgstr "Implij Strollad Prevez"
+
+#: kuservw.cpp:49 propdlg.cpp:56
+msgid "User login"
+msgstr "Anv an arveriad"
+
+#: kuservw.cpp:50
+msgid "Full Name"
+msgstr "Anv ledan"
+
+#: kgroupvw.cpp:49
+msgid "GID"
+msgstr "GID"
+
+#: kgroupvw.cpp:50
+msgid "Group name"
+msgstr "Anv ar strollad"
+
+#: kdatectl.cpp:28
+msgid "January"
+msgstr "Genver"
+
+#: kdatectl.cpp:29
+msgid "February"
+msgstr "C'hwevrer"
+
+#: kdatectl.cpp:30
+msgid "March"
+msgstr "Meurzh"
+
+#: kdatectl.cpp:31
+msgid "April"
+msgstr "Ebrel"
+
+#: kdatectl.cpp:32
+msgid "May"
+msgstr "Mae"
+
+#: kdatectl.cpp:33
+msgid "June"
+msgstr "Mezheven"
+
+#: kdatectl.cpp:34
+msgid "July"
+msgstr "Gouere"
+
+#: kdatectl.cpp:35
+msgid "August"
+msgstr "Eost"
+
+#: kdatectl.cpp:36
+msgid "September"
+msgstr "Gwengolo"
+
+#: kdatectl.cpp:37
+msgid "October"
+msgstr "Here"
+
+#: kdatectl.cpp:38
+msgid "November"
+msgstr "Du"
+
+#: kdatectl.cpp:39
+msgid "December"
+msgstr "Kerzu"
+
+#: kgroup.cpp:143 kuser.cpp:454
+#, c-format
+msgid "Error opening %s for reading"
+msgstr "Fazi en ur zigeriñ %s evit lenn"
+
+#: kuser.cpp:520
+#, c-format
+msgid ""
+"No /etc/passwd entry for %s.\n"
+"Entry will be removed at the next `Save'-operation."
+msgstr ""
+"Enmont ebet evit %s en /etc/passwd.\n"
+"Skarzhet e vo an enmont an tro kentañ ma vo enrollet."
+
+#: kgroup.cpp:183 kuser.cpp:615 kuser.cpp:693
+#, c-format
+msgid "Error opening %s for writing"
+msgstr "Fazi en ur zigeriñ %s evit skrivañ"
+
+#: kuser.cpp:663
+msgid "Unable to build password database"
+msgstr "Divarrek da sevel an diaz tremengerioù"
+
+#: kuser.cpp:704
+#, c-format
+msgid "No shadow entry for %s."
+msgstr "Enmont 'shadow' ebet evit %s."
+
+#: kuser.cpp:761
+msgid "You have more than 65534 users!?!? You have ran out of uid space!"
+msgstr ""
+"Muioc'h eget 65534 implijer zo ganeoc'h ? N'oc'h eus uid vak ebet ken !"
+
+#: kuser.cpp:801
+#, c-format
+msgid "Directory %s already exists"
+msgstr "Ar renkell %s a zo c'hoazh"
+
+#: kuser.cpp:808
+#, c-format
+msgid ""
+"Cannot create home directory\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket krouiñ ar renkell Er-gêr\n"
+"Fazi : %s"
+
+#: kuser.cpp:815
+#, c-format
+msgid ""
+"Cannot change owner of home directory\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket kemmañ perc'henn ar renkell Er-gêr\n"
+"Fazi : %s"
+
+#: kuser.cpp:822
+#, c-format
+msgid ""
+"Cannot change permissions on home directory\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket kemmañ aotreoù ar renkell Er-gêr\n"
+"Fazi : %s"
+
+#: kuser.cpp:855
+#, fuzzy, c-format
+msgid ""
+"Cannot change permissions on mailbox: %s\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket kemmañ aotreoù ar restr %s\n"
+"Fazi : %s"
+
+#: kuser.cpp:893
+#, c-format
+msgid ""
+"Cannot change owner of directory %s\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket kemmañ perc'henn ar renkell %s\n"
+"Fazi : %s"
+
+#: kuser.cpp:900
+#, c-format
+msgid ""
+"Cannot change permissions on directory %s\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket kemmañ aotreoù ar renkell %s\n"
+"Fazi : %s"
+
+#: kuser.cpp:927
+#, c-format
+msgid ""
+"Cannot change owner of file %s\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket kemmañ perc'henn ar restr %s\n"
+"Fazi : %s"
+
+#: kuser.cpp:934
+#, c-format
+msgid ""
+"Cannot change permissions on file %s\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket kemmañ aotreoù ar restr %s\n"
+"Fazi : %s"
+
+#: kuser.cpp:949 kuser.cpp:957
+#, c-format
+msgid "Directory %s does not exist"
+msgstr "N'eus ket a renkell %s"
+
+#: kuser.cpp:984
+#, c-format
+msgid ""
+"Cannot remove home directory %s\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket dilemel ar renkell Er-gêr %s\n"
+"Fazi : %s"
+
+#: kuser.cpp:1007
+#, c-format
+msgid ""
+"Cannot remove crontab %s\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket dilemel crontab %s\n"
+"Fazi : %s"
+
+#: kuser.cpp:1024
+#, c-format
+msgid ""
+"Cannot remove mailbox %s\n"
+"Error: %s"
+msgstr ""
+"N'hellan ket dilemel ar voest postel %s\n"
+"Fazi : %s"
+
+#: kuser.cpp:1044
+msgid "Cannot fork()"
+msgstr "N'hellan ket seveniñ fork()"
+
+#: kgroup.cpp:240
+msgid "You have more than 65534 groups!?!? You have ran out of gid space!"
+msgstr ""
+"Muioc'h eget 65534 strollad zo ganeoc'h ? N'oc'h eus gid vak ebet ken !"
+
+#: main.cpp:48
+msgid "Only root is allowed to manage users."
+msgstr "Ar gourarveriad hepken zo aotreet da verañ an arveriaded."
+
+#: main.cpp:58
+msgid "KDE User Manager"
+msgstr "Merour arveriaded KDE"
+
+#: maindlg.cpp:152 maindlg.cpp:190 maindlg.cpp:495
+msgid "WARNING"
+msgstr "HOC'H EVEZH"
+
+#: maindlg.cpp:153
+msgid "Do you really want to delete user ?"
+msgstr "Ha fellout a ra deoc'h dilemel da vat an arveriad ?"
+
+#: maindlg.cpp:191
+msgid ""
+"You are using private groups.\n"
+"Do you want delete user's private group ?"
+msgstr ""
+"Ober a rit gant strolladoù prevez.\n"
+"Ha fellout a ra deoc'h dilemel strollad prevez an arveriad ?"
+
+#: maindlg.cpp:321
+msgid "Data was modified"
+msgstr "Kemmet ez eus bet roadoù"
+
+#: maindlg.cpp:322
+msgid "Would you like to save changes ?"
+msgstr "Ha fellout a ra deoc'h enrollañ ar c'hemmoù ?"
+
+#: maindlg.cpp:324
+msgid "Discard changes"
+msgstr "Diskar ar c'hemmoù"
+
+#: maindlg.cpp:362
+msgid "Edit defaults"
+msgstr "Aozañ talvoudoù dre ziouer"
+
+#: maindlg.cpp:390
+#, c-format
+msgid "Null pointer tmpKG in mainDlg::groupSelected(%d)\n"
+msgstr "Buker null tmpKG e mainDlg::groupSelected(%d)\n"
+
+#: maindlg.cpp:408
+#, c-format
+msgid "Null pointer tmpKU in mainDlg::userSelected(%d)\n"
+msgstr "Buker null tmpKU e mainDlg::userSelected(%d)\n"
+
+#: maindlg.cpp:418
+#, c-format
+msgid "Null pointer tmpQ in mainDlg::selected(%d)\n"
+msgstr "Buker null tmpQ e mainDlg::selected(%d)\n"
+
+#: maindlg.cpp:496
+msgid "Do you really want to delete group ?"
+msgstr "Ha fellout a ra deoc'h dilemel da vat ar strollad ?"
+
+#: propdlg.cpp:55
+msgid "User name"
+msgstr "Anv arveriad"
+
+#: propdlg.cpp:59
+msgid "User identificator"
+msgstr "Anvelezh an arveriad"
+
+#: propdlg.cpp:60
+msgid "User id"
+msgstr "Niverenn an arveriad"
+
+#: propdlg.cpp:64
+msgid "Set password"
+msgstr "Spisaat an tremenger"
+
+#: propdlg.cpp:69 propdlg.cpp:70
+msgid "Full name"
+msgstr "Anv ledan"
+
+#: propdlg.cpp:73 propdlg.cpp:96
+msgid "Login shell"
+msgstr "Shell ereañ"
+
+#: propdlg.cpp:75 userDefaultsPage.cpp:30
+msgid "<Empty>"
+msgstr "<Goullo>"
+
+#: propdlg.cpp:101 propdlg.cpp:102
+msgid "Home directory"
+msgstr "Renkell Er-gêr"
+
+#: propdlg.cpp:109 propdlg.cpp:110
+msgid "Office"
+msgstr "Burev"
+
+#: propdlg.cpp:112
+msgid "Office description"
+msgstr "Deskrivadur ar burev"
+
+#: propdlg.cpp:116 propdlg.cpp:117
+msgid "Office phone"
+msgstr "Pellgomz er burev"
+
+#: propdlg.cpp:119
+msgid "Office phone number"
+msgstr "Niverenn bellgomz er burev"
+
+#: propdlg.cpp:123 propdlg.cpp:124
+msgid "Home phone"
+msgstr "Pellgomz er gêr"
+
+#: propdlg.cpp:126
+msgid "Home phone number"
+msgstr "Niverenn bellgomz er gêr"
+
+#: propdlg.cpp:127 propdlg.cpp:186
+msgid "User info"
+msgstr "Titouroù war an arveriad"
+
+#: propdlg.cpp:135 propdlg.cpp:136
+msgid "Login class"
+msgstr "Renkad ereañ"
+
+#: propdlg.cpp:138
+msgid "Login resource class"
+msgstr "Renkad pourvezoù ereañ"
+
+#: propdlg.cpp:145
+msgid "Password never expires"
+msgstr "Tremenger hollbadus"
+
+#: propdlg.cpp:146
+msgid "Date when password expires"
+msgstr "Deiziad ma varvo an tremenger"
+
+#: propdlg.cpp:154 propdlg.cpp:224
+msgid "Account never expires"
+msgstr "Kont peurbadus"
+
+#: propdlg.cpp:155
+msgid "Date when account expires"
+msgstr "Deiziad ma varvo ar gont"
+
+#: propdlg.cpp:163 propdlg.cpp:230
+msgid "Extended"
+msgstr "Astennet"
+
+#: propdlg.cpp:169
+msgid "The first office"
+msgstr "Burev kentañ"
+
+#: propdlg.cpp:170
+msgid "Office1"
+msgstr "Burev1"
+
+#: propdlg.cpp:172
+msgid "First office description"
+msgstr "Deskrivadur ar burev kentañ"
+
+#: propdlg.cpp:176
+msgid "The second office"
+msgstr "An eil burev"
+
+#: propdlg.cpp:177
+msgid "Office2"
+msgstr "Burev2"
+
+#: propdlg.cpp:179
+msgid "Second office description"
+msgstr "Deskrivadur an eil burev"
+
+#: propdlg.cpp:182
+msgid "Postal address"
+msgstr "Chomlec'h post"
+
+#: propdlg.cpp:183
+msgid "Address"
+msgstr "Chomlec'h"
+
+#: propdlg.cpp:184
+msgid "Full postal address"
+msgstr "Chomlec'h post ledan"
+
+#: propdlg.cpp:197
+msgid "Last password change"
+msgstr "Diwezhañ kemm an tremenger "
+
+#: propdlg.cpp:199
+#, fuzzy
+msgid "Password change not allowed"
+msgstr "Kemm morse aotreet"
+
+#: propdlg.cpp:200
+#, fuzzy
+msgid ""
+"Date before which password cannot\n"
+"be changed"
+msgstr "Kemmañ aotreet adalek"
+
+#: propdlg.cpp:205
+#, fuzzy
+msgid "Password will not expire"
+msgstr "Tremenger hollbadus"
+
+#: propdlg.cpp:206
+#, fuzzy
+msgid ""
+"Date when password expires and\n"
+"must be changed"
+msgstr "Deiziad ma varvo an tremenger"
+
+#: propdlg.cpp:212
+msgid "No warning will be given"
+msgstr ""
+
+#: propdlg.cpp:213
+#, fuzzy
+msgid ""
+"Date after which warning about pending\n"
+"password expiration will be given"
+msgstr ""
+"Deizhiad ma vo kemennet an termen\n"
+"d'an arveriad"
+
+#: propdlg.cpp:218
+#, fuzzy
+msgid "Account will remain enabled"
+msgstr "Talvezout a ra ar gont adalek m'eo krouet"
+
+#: propdlg.cpp:219
+#, fuzzy
+msgid ""
+"Date when account will be disabled\n"
+"if password has expired"
+msgstr ""
+"Deizhiad ma vo kemennet an termen\n"
+"d'an arveriad"
+
+#: propdlg.cpp:225
+#, fuzzy
+msgid ""
+"Date when account expires and will\n"
+"be disabled"
+msgstr "Deiziad ma varvo ar gont"
+
+#: propdlg.cpp:239
+#, fuzzy
+msgid "Filesystem with quotas"
+msgstr "Kota restr izelañ"
+
+#: propdlg.cpp:248
+#, fuzzy
+msgid "Filesystem with quotas:"
+msgstr "Kota restr izelañ"
+
+#: propdlg.cpp:254 propdlg.cpp:255
+#, fuzzy
+msgid "Disk space soft quota"
+msgstr "Kota restr izelañ"
+
+#: propdlg.cpp:260 propdlg.cpp:261
+#, fuzzy
+msgid "Disk space hard quota"
+msgstr "Kota restr uhelañ"
+
+#: propdlg.cpp:264 propdlg.cpp:265
+#, fuzzy
+msgid "Disk space usage"
+msgstr "Aotre implj restroù"
+
+#: propdlg.cpp:271 propdlg.cpp:272
+msgid "Time limit allowed for Disk space over soft quota"
+msgstr ""
+
+#: propdlg.cpp:278 propdlg.cpp:279
+#, fuzzy
+msgid "File number soft quota"
+msgstr "Kota restr izelañ"
+
+#: propdlg.cpp:284 propdlg.cpp:285
+#, fuzzy
+msgid "File number hard quota"
+msgstr "Kota restr uhelañ"
+
+#: propdlg.cpp:288 propdlg.cpp:289
+#, fuzzy
+msgid "File number usage"
+msgstr "Aotre implj restroù"
+
+#: propdlg.cpp:295 propdlg.cpp:296
+msgid "Time limit allowed for File number over soft quota"
+msgstr ""
+
+#: propdlg.cpp:299
+msgid "Quota"
+msgstr "Kota"
+
+#: propdlg.cpp:313
+msgid "Groups not belonged to"
+msgstr ""
+
+#: propdlg.cpp:339
+msgid "Groups belonged to"
+msgstr ""
+
+#: propdlg.cpp:350
+msgid "Primary group"
+msgstr "Strollad pennañ"
+
+#: propdlg.cpp:354
+msgid "Groups"
+msgstr "Strolladoù"
+
+#: propdlg.cpp:365
+#, fuzzy
+msgid "User properties"
+msgstr "Perzhioù ar strollad"
+
+#: addUser.cpp:93 propdlg.cpp:681
+#, c-format
+msgid "User with UID %u already exists"
+msgstr "An arveriad %u (h)e UID a zo c'hoazh"
+
+#: misc.cpp:48
+#, c-format
+msgid "Can't create backup file for %s"
+msgstr "N'hellan ket krouiñ ur restr gwareziñ evit %s"
+
+#: misc.cpp:165
+#, c-format
+msgid "File %s does not exist."
+msgstr "N'eus ket a restr %s."
+
+#: misc.cpp:173
+#, c-format
+msgid "Can not open file %s for reading."
+msgstr "N'hellan ket digeriñ restr %s evit lenn."
+
+#: misc.cpp:181
+#, c-format
+msgid "Can not open file %s for writing."
+msgstr "N'hellan ket digeriñ restr %s evit skrivañ."
+
+#: usernamedlg.cpp:15
+msgid "Enter username"
+msgstr "Roit anv ar arveriad"
+
+#: usernamedlg.cpp:22
+msgid "Username:"
+msgstr "Anv arveriad :"
+
+#: usernamedlg.cpp:72
+#, c-format
+msgid "User with name %s already exists."
+msgstr "An arveriad %s (h)e anv a zo c'hoazh."
+
+#: usernamedlg.cpp:79
+msgid "You have to enter a user name."
+msgstr "Ret eo deoc'h reiñ un anv arveriad."
+
+#: pwddlg.cpp:24
+msgid "Enter password"
+msgstr "Roit an tremenger"
+
+#: pwddlg.cpp:31
+msgid "Password"
+msgstr "Tremenger"
+
+#: pwddlg.cpp:49
+msgid "Retype password"
+msgstr "Adskrivit tremenger"
+
+#: pwddlg.cpp:105
+msgid ""
+"Passwords are not identical.\n"
+"Try again"
+msgstr ""
+"Disheñvel eo an tremengerioù.\n"
+"Klaskit adarre"
+
+#: grpnamedlg.cpp:24
+msgid "Group name:"
+msgstr "Anv ar strollad :"
+
+#: grpnamedlg.cpp:30
+msgid "Group number:"
+msgstr "Niverenn ar strollad :"
+
+#: grpnamedlg.cpp:98
+#, c-format
+msgid "Group with name %s already exists."
+msgstr "Ar strollad %s e anv a zo c'hoazh"
+
+#: grpnamedlg.cpp:105
+#, c-format
+msgid "Group with gid %d already exists."
+msgstr "Ar strollad %d e gid a zo c'hoazh."
+
+#: kerror.cpp:35
+msgid "Message"
+msgstr "Kemennad"
+
+#: addUser.cpp:32 addUser.cpp:52
+msgid "Create home directory"
+msgstr "Krouiñ renkell Er-gêr"
+
+#: addUser.cpp:38 addUser.cpp:58
+msgid "Copy skeleton"
+msgstr "Eilañ ar patrom"
+
+#: addUser.cpp:43 addUser.cpp:63 userDefaultsPageData.cpp:115
+msgid "User Private Group"
+msgstr "Implij Strollad Prevez"
+
+#: addUser.cpp:135
+#, c-format
+msgid "Directory %s already exists (uid = %d, gid = %d)"
+msgstr "Ar renkell %s a zo c'hoazh (uid = %d, gid = %d)"
+
+#: addUser.cpp:138
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s n'eo ket ur renkell"
+
+#: addUser.cpp:164
+#, c-format
+msgid "Mailbox %s already exist (uid=%d)"
+msgstr "Ar voest postel %s a zo c'hoazh (uid=%d)"
+
+#: addUser.cpp:167
+#, c-format
+msgid "%s exists but is not a regular file"
+msgstr "%s a zo c'hoazh hogen n'eo ket ur restr reoliek"
+
+#: editDefaults.cpp:32
+msgid "User"
+msgstr "Arveriad"
+
+#: userDefaultsPageData.cpp:39
+msgid "Shell"
+msgstr "Shell"
+
+#: userDefaultsPageData.cpp:64
+msgid "Base of home directories"
+msgstr "Diaz ar renkelloù Er-gêr"
+
+#: userDefaultsPageData.cpp:89
+msgid "Create home dir"
+msgstr "Krouiñ ar renkell Er-gêr"
+
+#: userDefaultsPageData.cpp:102
+msgid "Copy skeleton to home dir"
+msgstr "Eilañ ar patrom er renkell Er-gêr"
+
+#, fuzzy
+#~ msgid "Disk space  hard quota"
+#~ msgstr "Kota restr uhelañ"
+
+#, fuzzy
+#~ msgid "Other Users"
+#~ msgstr "Arveriaded"
+
+#, fuzzy
+#~ msgid "Group Users"
+#~ msgstr "Strolladoù"
+
+#, fuzzy
+#~ msgid "Password change not required"
+#~ msgstr "N'eo ket ret kemmañ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Date after which password change\n"
+#~ "is required"
+#~ msgstr "Deizhiad ma vo ret kemmañ"
+
+#, fuzzy
+#~ msgid "User will not be warned"
+#~ msgstr "Biken ne vo kemennet d'an arveriad"
+
+#, fuzzy
+#~ msgid "Date when account becomes active"
+#~ msgstr "Deiziad ma varvo ar gont"
+
+#~ msgid "Quota filesystem"
+#~ msgstr "Reizhiad restroù evit kota"
+
+#~ msgid "File time limit"
+#~ msgstr "Bevenn pad ar restroù"
+
+#~ msgid "iNode soft quota"
+#~ msgstr "Kota iNod izelañ"
+
+#~ msgid "iNode hard quota"
+#~ msgstr "Kota iNod uhelañ"
+
+#~ msgid "iNode usage"
+#~ msgstr "Aotre implij iNodoù"
+
+#~ msgid "iNode time limit"
+#~ msgstr "Bevenn pad an iNodoù"
+
+#~ msgid "Users"
+#~ msgstr "Arveriaded"
+
+#~ msgid "Date before account inactive"
+#~ msgstr "Deiziad ma vo didalvez ar gont"
+
+#~ msgid "Edit User"
+#~ msgstr "Aozañ an arveriad"

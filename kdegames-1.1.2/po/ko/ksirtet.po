@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1998-10-01 13:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: LinuxKorea Co. <kde@linuxkorea.co.kr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: board.cpp:65 dialogs.cpp:137
+msgid "Anonymous"
+msgstr "이름없음"
+
+#: board.cpp:97
+msgid "Game paused"
+msgstr "게임 중지"
+
+#: board.cpp:102
+msgid "Press to resume"
+msgstr "계속하려면 누르십시오"
+
+#: board.cpp:119 net.cpp:208
+msgid "Game over"
+msgstr "게임 끝"
+
+#: board.cpp:123
+msgid "Press Return to replay"
+msgstr "게임 다시 시작"
+
+#: board.cpp:127
+msgid "Press to start game"
+msgstr "게임 시작"
+
+#: board.cpp:371
+msgid "Highscores file not writable !"
+msgstr "점수판 파일에 쓸 수 없습니다 !"
+
+#: net.cpp:129
+msgid "Illegal port"
+msgstr "잘못된 포트"
+
+#: net.cpp:135
+msgid "Null address"
+msgstr "주소 없음"
+
+#: net.cpp:142
+msgid "Unknown address"
+msgstr "알 수 없는 주소"
+
+#: net.cpp:157
+msgid "Cannot create socket"
+msgstr "소켓을 만들 수 없습니다"
+
+#: net.cpp:196
+msgid "at"
+msgstr " "
+
+#: net.cpp:233
+msgid "Connect error"
+msgstr "연결 오류"
+
+#: net.cpp:243 net.cpp:299
+msgid "Server unreachable"
+msgstr "서버에 도달할 수 없습니다"
+
+#: net.cpp:266
+msgid "The server has died"
+msgstr "서버가 다운되었습니다"
+
+#: net.cpp:267
+msgid "Cancel from server"
+msgstr "서버로부터의 취소"
+
+#: net.cpp:273 net.cpp:333
+msgid "Unknown data from server"
+msgstr "서버로부터 알 수 없는 데이터"
+
+#: net.cpp:312
+msgid "Cannot send to server"
+msgstr "서버로 보낼 수 없슴"
+
+#: net.cpp:324
+msgid "Client timeout (No message from server)"
+msgstr "클라이언트 시간경과 (서버로부터 메시지 없음)"
+
+#: net.cpp:329
+msgid "Server has vanished"
+msgstr "서버가 사라졌습니다"
+
+#: net.cpp:366
+msgid "Bind error"
+msgstr "바인드 오류"
+
+#: net.cpp:371
+msgid "Listen error"
+msgstr "리슨 오류"
+
+#: net.cpp:390
+msgid "Unknown message from unknown player (??)"
+msgstr "알 수 없는 경기자 (??) 로부터의 알 수 없는 메시지"
+
+#: net.cpp:449 net.cpp:490
+msgid "Unknown message from client"
+msgstr "클라이언트로부터의 알 수 없는 메시지"
+
+#: net.cpp:486
+msgid "Client has died"
+msgstr "클라이언트가 죽었습니다"
+
+#: net.cpp:487
+msgid "Cancel from client"
+msgstr "클라이언트로부터의 취소"
+
+#: net.cpp:494
+msgid "Timeout"
+msgstr "시간 초과"
+
+#: net.cpp:520
+msgid "No message from client"
+msgstr "클라이언트로부터 메시지 없음"
+
+#: net.cpp:525
+msgid "Client has vanished"
+msgstr "클라이언트가 사라졌습니다"
+
+#: net.cpp:529
+msgid "Unknown data from client"
+msgstr "클라이언트로부터의 알 수 없는 데이터"
+
+#: net.cpp:533
+msgid "End message from client"
+msgstr "클라이언트로부터의 종료 메시지"
+
+#: net.cpp:550
+msgid "Cannot send to client"
+msgstr "클라이언트에게 보낼 수 없음"
+
+#: dialogs.cpp:61
+msgid "High Scores"
+msgstr "점수판"
+
+#: dialogs.cpp:84 dialogs.cpp:93
+msgid "Hall of Fame"
+msgstr "명예의 전당"
+
+#: dialogs.cpp:156
+msgid "No option yet !"
+msgstr "옵션이 아직 없음"
+
+#: dialogs.cpp:175 dialogs.cpp:232
+msgid "Network Dialog"
+msgstr "네트웍 대화창"
+
+#: dialogs.cpp:178
+msgid "Server"
+msgstr "서버"
+
+#: dialogs.cpp:179
+msgid "Client"
+msgstr "클라이언트"
+
+#: dialogs.cpp:183
+msgid "Player name :"
+msgstr "경기자 이름 :"
+
+#: dialogs.cpp:185
+msgid "Server address :"
+msgstr "서버 주소 :"
+
+#: dialogs.cpp:187
+msgid "Port :"
+msgstr "포트 :"
+
+#: dialogs.cpp:199
+msgid "Connect"
+msgstr "연결"
+
+#: dialogs.cpp:202
+msgid "Connecting ..."
+msgstr "연결중 ..."
+
+#: dialogs.cpp:205
+msgid "Play !"
+msgstr "시작 !"
+
+#: dialogs.cpp:252
+msgid "Network game"
+msgstr "네트웍 게임"
+
+#: dialogs.cpp:256
+msgid "Server mode"
+msgstr "서버 모드"
+
+#: dialogs.cpp:258
+msgid "Client mode"
+msgstr "클라이언트 모드"
+
+#: dialogs.cpp:336
+msgid "Waiting for other player(s) ..."
+msgstr "다른 경기자를 기다리는 중 ..."
+
+#: field.cpp:27
+msgid "New game"
+msgstr "새 게임"
+
+#: field.cpp:28
+msgid "Pause game"
+msgstr "게임 중지"
+
+#: field.cpp:30
+msgid "High scores"
+msgstr "점수판"
+
+#: field.cpp:31
+msgid "Move left"
+msgstr "왼쪽으로 옮김"
+
+#: field.cpp:32
+msgid "Move right"
+msgstr "오른쪽으로 옮김"
+
+#: field.cpp:33
+msgid "Drop down"
+msgstr "빨리 떨어뜨리기"
+
+#: field.cpp:34
+msgid "One line down"
+msgstr "한 라인 떨어뜨리기"
+
+#: field.cpp:35
+msgid "Rotate left"
+msgstr "왼쪽으로 회전"
+
+#: field.cpp:36
+msgid "Rotate right"
+msgstr "오른쪽으로 회전"
+
+#: field.cpp:51
+msgid "Score"
+msgstr "점수"
+
+#: field.cpp:55
+msgid "Lines removed"
+msgstr "행이 제거되었음"
+
+#: field.cpp:59
+msgid "Level"
+msgstr "레벨"
+
+#: field.cpp:63
+msgid "Next tile"
+msgstr "다음 타일"
+
+#: field.cpp:185
+msgid "&Restart game"
+msgstr "게임 다시 시작(&R)"
+
+#: field.cpp:186
+msgid "&Pause game"
+msgstr "게임 중지(&P)"
+
+#: field.cpp:187
+msgid "&Multiplayer game"
+msgstr "다중 경기자 게임(&M)"
+
+#: field.cpp:189
+msgid "&High scores"
+msgstr "점수판(&H)"
+
+#: main.cpp:25 main.cpp:74
+msgid "Hide menu"
+msgstr "메뉴 숨기기"
+
+#: main.cpp:30
+msgid "&Keys"
+msgstr "글쇠(&K)"
+
+#: main.cpp:35
+msgid "by"
+msgstr ""
+
+#: main.cpp:71
+msgid "Show menu"
+msgstr "메뉴 보이기"
+
+#~ msgid "Close dialog"
+#~ msgstr "대화창 닫기"
+
+#~ msgid "Ok dialog"
+#~ msgstr "대화창 좋음"
+
+#~ msgid "Cancel dialog"
+#~ msgstr "대화창 취소"
+
+#~ msgid "Tetris"
+#~ msgstr "테트리스"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "by Nicolas Hadacek"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Nicolas Hadacek 제작"

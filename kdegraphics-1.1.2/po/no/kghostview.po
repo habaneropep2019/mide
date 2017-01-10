@@ -1,0 +1,700 @@
+# Norwegian translations for KDE Graphics/kghostview
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Hans Petter Bieker <zerium@webindex.no>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE GRAPHICS/kghostview\n"
+"POT-Creation-Date: 1999-04-23 02:23+0200\n"
+"PO-Revision-Date: 1998-03-31 22:12+0100\n"
+"Last-Translator: Hans Petter Bieker <zerium@webindex.no>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: marklist.cpp:38
+msgid "Mark current page"
+msgstr "Merk gjeldene side"
+
+#: marklist.cpp:39
+msgid "Mark all pages"
+msgstr "Merk alle sider"
+
+#: marklist.cpp:40
+msgid "Mark even pages"
+msgstr "Merk partallsider"
+
+#: marklist.cpp:41
+msgid "Mark odd pages"
+msgstr "Merk oddetallsider"
+
+#: marklist.cpp:42
+msgid "Toggle page marks"
+msgstr "Snu om på sidemerker"
+
+#: marklist.cpp:43
+msgid "Remove page marks"
+msgstr "Fjern sidemerker"
+
+#: marklist.cpp:367
+msgid "Page"
+msgstr "Side"
+
+#: copyright.cpp:27
+msgid "Copyright"
+msgstr "Enerett"
+
+#: copyright.cpp:41 kghostview.cpp:629
+msgid ""
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."
+msgstr ""
+"\n"
+"Dette program er fri programvare; du kan distribuere det videre og/eller "
+"endre\n"
+"det under betingelsene i GNU-lisensen som er publisert av \n"
+"Free Software Foundation; enten versjon 2 av lisensen, eller\n"
+"(ditt valg) hvilken som helst senere versjon.\n"
+"\n"
+"Dette program er utgitt i det håp at det vil være nyttig,\n"
+"men UTEN NOEN GARANTI, til og med uten den underforståtte garanti om\n"
+"SALGBARHET eller EGNET FOR ET SPESIELT FORMEL.  Se \n"
+"GNU-lisensen for flere detaljer.\n"
+"\n"
+"Du bør ha mottatt en kopi av GNU-lisensen\n"
+"sammen med dette program; hvis ikke, skriv til Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."
+
+#: interpreter.cpp:42
+msgid "General"
+msgstr "Generelt"
+
+#: interpreter.cpp:79
+msgid "&Interpreter name"
+msgstr "Navn på &oversetter"
+
+#: interpreter.cpp:87
+msgid "&Antialiasing"
+msgstr "&Antialiasing"
+
+#: interpreter.cpp:97
+msgid "Platform &fonts"
+msgstr "Plattformskrifttyper"
+
+#: interpreter.cpp:107
+msgid "&Messages"
+msgstr "&Meldinger"
+
+#: interpreter.cpp:130
+msgid "Palette"
+msgstr "Palett"
+
+#: interpreter.cpp:152
+msgid "Colo&r"
+msgstr "Fa&rge"
+
+#: interpreter.cpp:161
+msgid "&Grayscale"
+msgstr "&Gråskala"
+
+#: interpreter.cpp:169
+msgid "Monochrom&e"
+msgstr "E&nsfarget"
+
+#: interpreter.cpp:192
+msgid "Backing"
+msgstr "Går tilbake"
+
+#: interpreter.cpp:214
+msgid "&Pixmap"
+msgstr "&Pixmap"
+
+#: interpreter.cpp:224
+msgid "&Backing store"
+msgstr "&Backing store"
+
+#: interpreter.cpp:314
+msgid "gs"
+msgstr "gs"
+
+#: messages.cpp:29
+msgid "Ghostscript messages"
+msgstr "Ghostscript-melding"
+
+#: messages.cpp:56
+msgid "&Clear"
+msgstr "&Rens"
+
+#: messages.cpp:59
+msgid "&Dismiss"
+msgstr "&Avvis"
+
+#: info.cpp:45
+msgid "File name :"
+msgstr "Filnavn :"
+
+#: info.cpp:53
+msgid "Document title :"
+msgstr "Dokumenttittel :"
+
+#: info.cpp:61
+msgid "Publication date :"
+msgstr "Publikasjonsdato :"
+
+#: print.cpp:35
+msgid "Printer setup"
+msgstr "Skrivernavn"
+
+#: print.cpp:61
+msgid "&Printer name"
+msgstr "Skrivernavn"
+
+#: print.cpp:73
+msgid "&Spooler command"
+msgstr "&Spooler-kommando"
+
+#: print.cpp:85
+msgid "&Environment variable"
+msgstr "&Miljøvariabel"
+
+#: print.cpp:145
+msgid "Print to file"
+msgstr "Skriv til fil"
+
+#: print.cpp:150
+msgid "Pages"
+msgstr "Sider"
+
+#: print.cpp:176
+msgid "&All"
+msgstr "&Alle"
+
+#: print.cpp:185
+msgid "&Current"
+msgstr "&Gjeldende"
+
+#: print.cpp:193
+msgid "&Marked"
+msgstr "&Merket"
+
+#: print.cpp:202
+msgid "&Range"
+msgstr "&Område"
+
+#: print.cpp:216
+msgid "to"
+msgstr "til"
+
+#: print.cpp:229
+msgid "Print document in re&verse order"
+msgstr "Skriv ut dokument"
+
+#: print.cpp:246
+msgid "&Setup ..."
+msgstr "Opp&sett ..."
+
+#: print.cpp:304
+msgid "Range error"
+msgstr "Feil i tallområde"
+
+#: print.cpp:305
+msgid ""
+"The range of pages entered for printing\n"
+"can't be understood.\n"
+"\n"
+"The range specified must lie within the page\n"
+"range for this part of the document.\n"
+"Check the status bar for this information.\n"
+msgstr ""
+"Området for hvilke sider som skulle skrives ut\n"
+"kan ikke bli forstått.\n"
+"\n"
+"Området som gis må ligge innenfor sideområdet\n"
+"for denne delen av dokumentet.\n"
+"Sjekk statuslinjen for denne informasjonen.\n"
+
+#: goto.cpp:54
+msgid "&Section"
+msgstr "&Seksjon"
+
+#: goto.cpp:70
+msgid "&Page"
+msgstr "S&ide"
+
+#: goto.cpp:123 goto.cpp:130 goto.cpp:147 kghostview.cpp:2315
+#: kghostview.cpp:2327 kghostview.cpp:2332 kghostview.cpp:2615
+#, c-format
+msgid "of %d"
+msgstr "av %d"
+
+#: kghostview.cpp:1269 kghostview.cpp:2406 viewcontrol.cpp:64
+msgid "Portrait"
+msgstr "Stående"
+
+#: kghostview.cpp:1273 kghostview.cpp:2412 viewcontrol.cpp:65
+msgid "Landscape"
+msgstr "Liggende"
+
+#: kghostview.cpp:1277 kghostview.cpp:2408 viewcontrol.cpp:66
+msgid "Upside down"
+msgstr "Opp ned"
+
+#: kghostview.cpp:1281 kghostview.cpp:2410 viewcontrol.cpp:67
+msgid "Seascape"
+msgstr "Seascape"
+
+#: viewcontrol.cpp:75
+msgid "magnification"
+msgstr "forstørrelse"
+
+#: viewcontrol.cpp:85
+msgid "&Media"
+msgstr "&Media"
+
+#: viewcontrol.cpp:93
+msgid "&Orientation"
+msgstr "&Orientering"
+
+#: viewcontrol.cpp:117
+msgid "&Apply"
+msgstr "&Bruk"
+
+#: main.cpp:25
+msgid "Usage: "
+msgstr "Bruk: "
+
+#: main.cpp:27
+msgid ""
+" [filename] [siwtches]\n"
+"\n"
+msgstr ""
+" [filnavn] [brytere]\n"
+"\n"
+
+#: main.cpp:28
+msgid ""
+"See KDE and Qt documentation for\n"
+"command line options.\n"
+msgstr ""
+"Se Qt-dokumentasjon for\n"
+"kommandolinjevalg\n"
+
+#: main.cpp:30
+msgid "Error on command line"
+msgstr "Veil på kommandolinje"
+
+#: kghostview.cpp:206
+msgid "Document information"
+msgstr "Dokumentinformasjon"
+
+#: kghostview.cpp:220 kghostview.cpp:371 kghostview.cpp:460
+msgid "Page Setup"
+msgstr "Sideoppsett"
+
+#: kghostview.cpp:372 kghostview.cpp:465
+msgid "Go To Page"
+msgstr "Gå til side"
+
+#: kghostview.cpp:373 kghostview.cpp:458
+msgid "Zoom In"
+msgstr "Forstørre"
+
+#: kghostview.cpp:374 kghostview.cpp:459
+msgid "Zoom Out"
+msgstr "Forminske"
+
+#: kghostview.cpp:375 kghostview.cpp:463
+msgid "Next Page"
+msgstr "Neste side"
+
+#: kghostview.cpp:376 kghostview.cpp:464
+msgid "Prev Page"
+msgstr "Forrige side"
+
+#: kghostview.cpp:377
+msgid "Scroll Up"
+msgstr "Skroll opp"
+
+#: kghostview.cpp:378
+msgid "Scroll Down"
+msgstr "Skroll ned"
+
+#: kghostview.cpp:379
+msgid "Scroll Left"
+msgstr "Skroll venstre"
+
+#: kghostview.cpp:380
+msgid "Scroll Right"
+msgstr "Skroll høyre"
+
+#: kghostview.cpp:381 kghostview.cpp:461
+msgid "Redisplay"
+msgstr "Vis på nytt"
+
+#: kghostview.cpp:424 kghostview.cpp:426
+msgid "Not known"
+msgstr "Ikke kjent"
+
+#: kghostview.cpp:437
+msgid "Configure interpreter"
+msgstr "Konfigurer oversetter"
+
+#: kghostview.cpp:455
+msgid "New"
+msgstr "Ny"
+
+#: kghostview.cpp:509
+msgid "&New"
+msgstr "&Ny"
+
+#: kghostview.cpp:511
+msgid "&Open ..."
+msgstr "Å&pne ..."
+
+#: kghostview.cpp:512
+msgid "Open &recent"
+msgstr "Åpne &nylig"
+
+#: kghostview.cpp:520
+msgid "Page Set&up ..."
+msgstr "Side&oppsett ..."
+
+#: kghostview.cpp:522
+msgid "&Print ..."
+msgstr "&Skriv ut ..."
+
+#: kghostview.cpp:530
+msgid "Zoom &in"
+msgstr "&Forstørre"
+
+#: kghostview.cpp:532
+msgid "Zoom &out"
+msgstr "F&orminske"
+
+#: kghostview.cpp:534
+msgid "&Zoom ..."
+msgstr "&Forstørre ..."
+
+#: kghostview.cpp:539
+msgid "&Info ..."
+msgstr "&Info ..."
+
+#: kghostview.cpp:544
+msgid "&Previous Page"
+msgstr "&Forrige side"
+
+#: kghostview.cpp:546
+msgid "&Next page"
+msgstr "&Neste side"
+
+#: kghostview.cpp:548
+msgid "&Go to page ..."
+msgstr "&Gå til side ..."
+
+#: kghostview.cpp:551
+msgid "Go to &start"
+msgstr "Gå t&il start"
+
+#: kghostview.cpp:553
+msgid "Go to &end"
+msgstr "Gå til sl&utten"
+
+#: kghostview.cpp:555
+msgid "&Read down"
+msgstr "&Les ned"
+
+#: kghostview.cpp:560
+msgid "Mark &current page"
+msgstr "&Merk gjeldene side"
+
+#: kghostview.cpp:563
+msgid "Mark &all pages"
+msgstr "Merk &alle sider"
+
+#: kghostview.cpp:565
+msgid "Mark &even pages"
+msgstr "Merk &like sider"
+
+#: kghostview.cpp:567
+msgid "Mark &odd pages"
+msgstr "Merk &ulike sider"
+
+#: kghostview.cpp:570
+msgid "&Toggle page marks"
+msgstr "S&nu om på sidemerker"
+
+#: kghostview.cpp:573
+msgid "&Remove page marks"
+msgstr "&Fjern sidemerker"
+
+#: kghostview.cpp:584
+msgid "Show &tool bar"
+msgstr "Vis &verktøylinje"
+
+#: kghostview.cpp:585
+msgid "Show st&atus bar"
+msgstr "Vis st&atuslinje"
+
+#: kghostview.cpp:586
+msgid "Show &page list"
+msgstr "Vis &sideliste"
+
+#: kghostview.cpp:588
+msgid "Configure &interpreter ..."
+msgstr "Konfigurer &oversetter ..."
+
+#: kghostview.cpp:589
+msgid "Configure &key bindings ..."
+msgstr "Konfigurer &tastaturbindinger ..."
+
+#: kghostview.cpp:591
+msgid "&Save options"
+msgstr "&Lagre valg"
+
+#: kghostview.cpp:598
+msgid "&About this application"
+msgstr "&Om denne applikasjon"
+
+#: kghostview.cpp:600
+msgid "&Help for this application"
+msgstr "&Hjelp for denne applikasjon"
+
+#: kghostview.cpp:602
+msgid "&Copyright"
+msgstr "&Kopirettighet"
+
+#: kghostview.cpp:609
+msgid "&Go"
+msgstr "&Kjør"
+
+#: kghostview.cpp:610
+msgid "&Pagemarks"
+msgstr "&Sidemerker"
+
+#: kghostview.cpp:619
+msgid ""
+" - the PostScript document viewer for\n"
+"the K Desktop Environment.\n"
+"\n"
+"Written by Mark Donohoe <donohoe@kde.org>, based on original\n"
+"work by Tim Theisen.\n"
+"\n"
+"Incorporates code from Johanes Plass' gv. This adds compressed and\n"
+"PDF file support.\n"
+"\n"
+"See http://wwwthep.physik.uni-mainz.de/~plass/gv/n"
+msgstr ""
+" - PostScript-dokumentfremviseren for\n"
+"K Desktop Environment.\n"
+"\n"
+"Skrevet Mark Donohoe <donohoe@kde.org>, basert på orginale\n"
+"arbeidet til Tim Theisen.\n"
+"\n"
+"Lagt inn kode fra Incorporate Johanes Plass' gv. Dette legger til støtte "
+"for\n"
+"komprimerte filer og PDF-filer\n"
+"\n"
+"Se http://wwwthep.physik.uni-mainz.de/~plass/gv/n"
+
+#: kghostview.cpp:676
+msgid "New window ..."
+msgstr "Nytt vindu ..."
+
+#: kghostview.cpp:679
+msgid "Open file ..."
+msgstr "Åpne &fil..."
+
+#: kghostview.cpp:687
+msgid "Print document ..."
+msgstr "Skriv ut dokument..."
+
+#: kghostview.cpp:692
+msgid "Zoom in"
+msgstr "Forstørre"
+
+#: kghostview.cpp:695
+msgid "Zoom out"
+msgstr "Forminske"
+
+#: kghostview.cpp:700
+msgid "Go back"
+msgstr "Gå tilbake"
+
+#: kghostview.cpp:703
+msgid "Go forward"
+msgstr "Gå fremover"
+
+#: kghostview.cpp:706
+msgid "Go to page ..."
+msgstr "Gå til side ..."
+
+#: kghostview.cpp:711
+msgid "Go to start"
+msgstr "Gå til start"
+
+#: kghostview.cpp:714
+msgid "Go to end"
+msgstr "Gå til slutten"
+
+#: kghostview.cpp:717
+msgid "Read down the page"
+msgstr "Les ned siden"
+
+#: kghostview.cpp:722
+msgid "Toggle this page mark"
+msgstr "Snu om på dette sidemerket"
+
+#: kghostview.cpp:744
+msgid "Sc.100 of 100  P.100 of 100"
+msgstr "Sk.100 av 1000 S.100 av 100"
+
+#: kghostview.cpp:745
+#, c-format
+msgid "100 %"
+msgstr "100 %"
+
+#: kghostview.cpp:746
+msgid "Upside Down"
+msgstr "Opp ned"
+
+#: kghostview.cpp:771
+msgid "Malformed URL."
+msgstr "Feil ved URL."
+
+#: kghostview.cpp:783
+msgid ""
+"Already waiting\n"
+"for an internet job to finish.\n"
+"Please wait until has finished.\n"
+"Alternatively stop the running one."
+msgstr ""
+"Venter allerede\n"
+"for at en internet job skal avsluttes.\n"
+"Vennligst vent til den er avsluttet.\n"
+"Alternativt stopp nevfrende jobb."
+
+#: kghostview.cpp:792
+msgid "Could not start or find KFM."
+msgstr "Kunne ikke starte eller finne KFM."
+
+#: kghostview.cpp:1318
+msgid "Go to ..."
+msgstr "Gå til ..."
+
+#: kghostview.cpp:1577
+msgid "Version 0.6"
+msgstr "Versjon 0.6"
+
+#: kghostview.cpp:1578
+msgid "Sorry, not ready yet"
+msgstr "Beklager, er ikke klar ennå"
+
+#: kghostview.cpp:1585
+msgid "About kghostview"
+msgstr "Om kghostview"
+
+#: kghostview.cpp:1586
+msgid ""
+"Version :\t0.6 alpha\n"
+"Author : Mark Donohoe\n"
+"Mail : donohoe@kde.org"
+msgstr ""
+"Versjon :\t0.6 alpha\n"
+"Forfatter: Mark Donohoe\n"
+"E-post: donohoe@kde.org"
+
+#: kghostview.cpp:1638 kghostview.cpp:1758
+msgid "Error printing"
+msgstr "Feil ved skriving"
+
+#: kghostview.cpp:1648
+msgid ""
+"You chose to print all pages to a file.\n"
+"This would produce a document identical to\n"
+"that currently loaded into the viewer.\n"
+"There is no need to print all pages into a new file."
+msgstr ""
+"Du velger å skrive alle sider til en fil.\n"
+"Dette vil produsere et dokument identisk til\n"
+"det som er lastet inn i viseren nå.\n"
+"Det er ikke behov for å skrive ut alle sidene til en ny fil."
+
+#: kghostview.cpp:1661
+msgid ""
+"No file name was given so\n"
+"nothing could be printed to a file.\n"
+msgstr ""
+"Intet filnavn ble gitt, så\n"
+"ingenting kan bli skrevet ut til en fil.\n"
+
+#: kghostview.cpp:1702
+msgid ""
+"Set Environment variable (to PRINTER or LPDEST for instance)for Printer name "
+"to be taken into account."
+msgstr ""
+"Sett miljøvariabel (til PRINTER eller LPDEST for eksempel) for skrivernavn "
+"til å bli tatt inn i konto."
+
+#: kghostview.cpp:1723
+#, c-format
+msgid "Print failure : %s"
+msgstr "Skriverfeil : %s"
+
+#: kghostview.cpp:1759
+msgid ""
+"Printing failed because the list of\n"
+"pages to be printed was empty.\n"
+msgstr ""
+"Utskriften mislyktes fordi listen av\n"
+"sidene som skulle skrives ut var tom.\n"
+
+#: kghostview.cpp:2309 kghostview.cpp:2321 kghostview.cpp:2586
+#: kghostview.cpp:2609
+msgid "of 1    "
+msgstr "av 1    "
+
+#: kghostview.cpp:2311 kghostview.cpp:2323 kghostview.cpp:2611
+#, c-format
+msgid "of %d    "
+msgstr "av %d    "
+
+#: kghostview.cpp:2313 kghostview.cpp:2325 kghostview.cpp:2613
+#: kghostview.cpp:2620
+#, c-format
+msgid "of %d  "
+msgstr "av %d  "
+
+#: kghostview.cpp:2585
+msgid "Sc.1 "
+msgstr "Sk.1 "
+
+#: kghostview.cpp:2588
+msgid "P.1 "
+msgstr "S.1 "
+
+#: kghostview.cpp:2590 kghostview.cpp:2603
+#, c-format
+msgid "P.%d "
+msgstr "S.%d "
+
+#: kghostview.cpp:2605
+#, c-format
+msgid "Sc.%d "
+msgstr "Sk.%d "
+
+#: zoom.cpp:63
+msgid "&Zoom factor"
+msgstr "F&aktor for forsørrelse"

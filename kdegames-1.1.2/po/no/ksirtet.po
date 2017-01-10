@@ -1,0 +1,290 @@
+# Norwegian translations for KDE Games, ktetris
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Hans Petter Bieker <zerium@webindex.no>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE GAMES/ktetris\n"
+"POT-Creation-Date: 1998-10-01 13:29+0200\n"
+"PO-Revision-Date: 1998-03-20 HO:MI+ZONE\n"
+"Last-Translator: Hans Petter Bieker <zerium@webindex.no>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: board.cpp:65 dialogs.cpp:137
+msgid "Anonymous"
+msgstr "Anonym"
+
+#: board.cpp:97
+msgid "Game paused"
+msgstr "Pause i spillet"
+
+#: board.cpp:102
+msgid "Press to resume"
+msgstr "Trykk for å fortsette"
+
+#: board.cpp:119 net.cpp:208
+msgid "Game over"
+msgstr "Spillet er slutt"
+
+#: board.cpp:123
+msgid "Press Return to replay"
+msgstr "Trykk Return for spille om igjen"
+
+#: board.cpp:127
+msgid "Press to start game"
+msgstr "Trykk for å starte spill"
+
+#: board.cpp:371
+msgid "Highscores file not writable !"
+msgstr "Kan ikke skrive til fil for høy poengsum !"
+
+#: net.cpp:129
+msgid "Illegal port"
+msgstr "Illegal port"
+
+#: net.cpp:135
+msgid "Null address"
+msgstr "Ingen adresse"
+
+#: net.cpp:142
+msgid "Unknown address"
+msgstr "Ukjent adresse"
+
+#: net.cpp:157
+msgid "Cannot create socket"
+msgstr "Kan ikke lage socket"
+
+#: net.cpp:196
+msgid "at"
+msgstr "ved"
+
+#: net.cpp:233
+msgid "Connect error"
+msgstr "Kontakt feil"
+
+#: net.cpp:243 net.cpp:299
+msgid "Server unreachable"
+msgstr "Tjener ikke tilgjengelig"
+
+#: net.cpp:266
+msgid "The server has died"
+msgstr "Tjeneren døde"
+
+#: net.cpp:267
+msgid "Cancel from server"
+msgstr "Kanseller fra tjener"
+
+#: net.cpp:273 net.cpp:333
+msgid "Unknown data from server"
+msgstr "Ukjent data fra tjener"
+
+#: net.cpp:312
+msgid "Cannot send to server"
+msgstr "Kan ikke sende til tjener"
+
+#: net.cpp:324
+msgid "Client timeout (No message from server)"
+msgstr "Klient timeout (Ingen melding fra tjener)"
+
+#: net.cpp:329
+msgid "Server has vanished"
+msgstr "Tjeneren har forsvunnet"
+
+#: net.cpp:366
+msgid "Bind error"
+msgstr "Bind feil"
+
+#: net.cpp:371
+msgid "Listen error"
+msgstr "Lytte feil"
+
+#: net.cpp:390
+msgid "Unknown message from unknown player (??)"
+msgstr "Ukjent melding fra ukjent spiller (??)"
+
+#: net.cpp:449 net.cpp:490
+msgid "Unknown message from client"
+msgstr "Ukjent melding fra klient"
+
+#: net.cpp:486
+msgid "Client has died"
+msgstr "Klienten døde"
+
+#: net.cpp:487
+msgid "Cancel from client"
+msgstr "Kanseller fra klient"
+
+#: net.cpp:494
+msgid "Timeout"
+msgstr "Tiden gikk ut"
+
+#: net.cpp:520
+msgid "No message from client"
+msgstr "Ingen melding fra klient"
+
+#: net.cpp:525
+msgid "Client has vanished"
+msgstr "Klienten har forsvunnet"
+
+#: net.cpp:529
+msgid "Unknown data from client"
+msgstr "Ukjent data fra klient"
+
+#: net.cpp:533
+msgid "End message from client"
+msgstr "Slutt på melding fra klient"
+
+#: net.cpp:550
+msgid "Cannot send to client"
+msgstr "Kan ikke sende til klient"
+
+#: dialogs.cpp:61
+msgid "High Scores"
+msgstr "Høy poengsum"
+
+#: dialogs.cpp:84 dialogs.cpp:93
+msgid "Hall of Fame"
+msgstr "På toppen av seierspallen"
+
+#: dialogs.cpp:156
+msgid "No option yet !"
+msgstr "Intet valg ennå !"
+
+#: dialogs.cpp:175 dialogs.cpp:232
+msgid "Network Dialog"
+msgstr "Nettverks dialog"
+
+#: dialogs.cpp:178
+msgid "Server"
+msgstr "Tjener"
+
+#: dialogs.cpp:179
+msgid "Client"
+msgstr "Klient"
+
+#: dialogs.cpp:183
+msgid "Player name :"
+msgstr "Spillerens navn :"
+
+#: dialogs.cpp:185
+msgid "Server address :"
+msgstr "Tjenerens adresse :"
+
+#: dialogs.cpp:187
+msgid "Port :"
+msgstr "Port :"
+
+#: dialogs.cpp:199
+msgid "Connect"
+msgstr "Tilkople"
+
+#: dialogs.cpp:202
+msgid "Connecting ..."
+msgstr "Tilkopler ..."
+
+#: dialogs.cpp:205
+msgid "Play !"
+msgstr "Spill !"
+
+#: dialogs.cpp:252
+msgid "Network game"
+msgstr "Nettverk spill"
+
+#: dialogs.cpp:256
+msgid "Server mode"
+msgstr "Tjener mode"
+
+#: dialogs.cpp:258
+msgid "Client mode"
+msgstr "Klient mode"
+
+#: dialogs.cpp:336
+msgid "Waiting for other player(s) ..."
+msgstr "Venter på annen(andre) spiller(e) ..."
+
+#: field.cpp:27
+msgid "New game"
+msgstr "Nytt spill"
+
+#: field.cpp:28
+msgid "Pause game"
+msgstr "Pause i spillet"
+
+#: field.cpp:30
+msgid "High scores"
+msgstr "Høy poengsum"
+
+#: field.cpp:31
+msgid "Move left"
+msgstr "Flytt til venstre"
+
+#: field.cpp:32
+msgid "Move right"
+msgstr "Flytt til høyre"
+
+#: field.cpp:33
+msgid "Drop down"
+msgstr "Slipp ned"
+
+#: field.cpp:34
+msgid "One line down"
+msgstr "En linje ned"
+
+#: field.cpp:35
+msgid "Rotate left"
+msgstr "Roter til venstre"
+
+#: field.cpp:36
+msgid "Rotate right"
+msgstr "Roter til høyre"
+
+#: field.cpp:51
+msgid "Score"
+msgstr "Poengsum"
+
+#: field.cpp:55
+msgid "Lines removed"
+msgstr "Linjer er fjernet"
+
+#: field.cpp:59
+msgid "Level"
+msgstr "Nivå"
+
+#: field.cpp:63
+msgid "Next tile"
+msgstr "Neste flis"
+
+#: field.cpp:185
+msgid "&Restart game"
+msgstr "&Omstart spill"
+
+#: field.cpp:186
+msgid "&Pause game"
+msgstr "&Pause i spillet"
+
+#: field.cpp:187
+msgid "&Multiplayer game"
+msgstr "&Flere spillere deltar"
+
+#: field.cpp:189
+msgid "&High scores"
+msgstr "&Høy poengsum"
+
+#: main.cpp:25 main.cpp:74
+msgid "Hide menu"
+msgstr "Skjul meny"
+
+#: main.cpp:30
+msgid "&Keys"
+msgstr "&Taster"
+
+#: main.cpp:35
+msgid "by"
+msgstr "av"
+
+#: main.cpp:71
+msgid "Show menu"
+msgstr "Vis meny"

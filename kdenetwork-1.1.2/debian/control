@@ -1,0 +1,19 @@
+Source: kdenetwork
+Section: contrib/net
+Priority: extra
+Maintainer: Stephan Kulow <coolo@kde.org>
+Standards-Version: 2.5.1
+
+Package: kdenetwork
+Architecture: any
+Depends: ${shlibs:Depends}, perl | perl-5.005
+Suggests: kdebase
+Description: KDE mail and news clients
+ KDE has a mail client (kmail) and a news client (krn) available via
+ this package. KDE is the K desktop project (see www.kde.org).
+
+Package: kdenetwork-dev
+Architecture: any
+Depends: kdenetwork (= ${Source-Version}), gettext, qt1g-dev
+Description: KDE networking libraries (development files)
+ KDE networking libraries for the kdenetwork package

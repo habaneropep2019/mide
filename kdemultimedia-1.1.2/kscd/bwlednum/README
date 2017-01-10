@@ -1,0 +1,19 @@
+
+                            BW_LED_Number
+
+This is a very very primitive LED. It was designed to work with my
+kaudiosuite ( kplayer, kmodplayer kcdplayer etc..) It may or may not
+be sufficient for your purposes. The main problem in designing
+it was to get the pixels on the segments right, which turned out to 
+be difficult. As a consequence there are only very few sizes at
+which BW_LED_Number displays nicely out of the box. If you want it to
+work at a particular size you might need to invest some work in:
+
+void BW_LED_Number::drawSegment()                 
+
+Send me patches if you are able to improve on it. :-) 
+
+Have fun, 
+
+Bernd Wuebben
+wuebben@math.cornell.edu

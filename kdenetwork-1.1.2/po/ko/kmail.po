@@ -1,0 +1,1887 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-26 03:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: LinuxKorea Co. <kde@linuxkorea.co.kr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: kmcomposewin.cpp:1516 kmmainwin.cpp:377 kpgp.cpp:546
+msgid ""
+"Sorry, but this feature\n"
+"is still missing"
+msgstr ""
+"아직 이 기능은\n"
+"구현되지 않았습니다."
+
+#: kmmainwin.cpp:386
+msgid "New Folder"
+msgstr "새 폴더"
+
+#: kmaddrbookdlg.cpp:178 kmmainwin.cpp:399 kmmainwin.cpp:433 main.cpp:484
+msgid "KMail error"
+msgstr "KMail 오류"
+
+#: kmmainwin.cpp:400 kmmainwin.cpp:434
+msgid "Already checking for mail!"
+msgstr "이미 확인한 전자우편입니다!"
+
+#: kmmainwin.cpp:410 kmmainwin.cpp:444
+msgid "No new mail available"
+msgstr "새로운 전자우편이 없습니다"
+
+#: kmmainwin.cpp:474
+msgid "Modify Folder"
+msgstr "폴더 수정"
+
+#: kmmainwin.cpp:497
+msgid "Moved all messages into trash"
+msgstr "모든 메시지를 휴지통으로 이동"
+
+#: kmmainwin.cpp:516
+msgid ""
+"Cannot remove a\n"
+"system folder."
+msgstr ""
+"시스템 폴더를 제거\n"
+"할 수 없습니다."
+
+#: kmmainwin.cpp:520
+#, c-format
+msgid ""
+"Are you sure you want to remove the folder\n"
+"\"%s\", discarding it's contents ?"
+msgstr ""
+"정말 \"%s\"의 내용을 버리고, 폴더를\n"
+"삭제하시겠습니까?"
+
+#: kmmainwin.cpp:523
+msgid "Confirmation"
+msgstr "확인"
+
+#: kmmainwin.cpp:583
+msgid "KMail notification!"
+msgstr ""
+
+#: kmmainwin.cpp:584
+msgid "Only messages in the outbox folder can be edited!"
+msgstr ""
+
+#: kmmainwin.cpp:619
+msgid "Message as Plain Text"
+msgstr "메시지를 일반 문자열"
+
+#: kmmainwin.cpp:626 kmmainwin.cpp:646
+msgid "Select Folder"
+msgstr "폴더 선택"
+
+#: kmmainwin.cpp:669
+msgid "Queued messages successfully sent."
+msgstr "대기 중인 메시지 보내기에 성공하였습니다."
+
+#: kmmainwin.cpp:671
+msgid "Failed to send (some) queued messages."
+msgstr "대기 중인 메시지 보내기에 실패하였습니다."
+
+#: kmmainwin.cpp:802
+msgid "Opening URL..."
+msgstr "URL 열기..."
+
+#: kmmainwin.cpp:857
+msgid "Address added to addressbook."
+msgstr "주소록에 주소를 추가하였습니다."
+
+#: kmmainwin.cpp:869
+msgid "Address copied to clipboard."
+msgstr "클립보드에 주소를 복사하였습니다."
+
+#: kmmainwin.cpp:874
+msgid "URL copied to clipboard."
+msgstr "클립보드에 URL을 복사하였습니다."
+
+#: kmmainwin.cpp:901
+msgid "Send to..."
+msgstr "받을 사람..."
+
+#: kmmainwin.cpp:903
+msgid "Send reply to..."
+msgstr "답장 쓰기..."
+
+#: kmmainwin.cpp:905
+msgid "Forward to..."
+msgstr "전달할 사람"
+
+#: kmmainwin.cpp:908
+msgid "Add to addressbook"
+msgstr "주소록에 추가"
+
+#: kmmainwin.cpp:910 kmmainwin.cpp:919
+msgid "Copy to clipboard"
+msgstr "클립보드에 복사"
+
+#: kmmainwin.cpp:917
+msgid "Open URL..."
+msgstr "URL 열기..."
+
+#: kmheaders.cpp:1001 kmmainwin.cpp:927 kmmainwin.cpp:1044
+msgid "&Reply..."
+msgstr "답장쓰기(&R)..."
+
+#: kmheaders.cpp:1003 kmmainwin.cpp:929 kmmainwin.cpp:1046
+msgid "Reply &All..."
+msgstr "모두에게 답장(&A)..."
+
+#: kmheaders.cpp:1005 kmmainwin.cpp:931 kmmainwin.cpp:1048
+msgid "&Forward..."
+msgstr "전달(&F)..."
+
+#: kmheaders.cpp:1008 kmmainwin.cpp:934 kmmainwin.cpp:1058
+msgid "&Move..."
+msgstr "이동(&M)..."
+
+#: kmheaders.cpp:1010 kmmainwin.cpp:936 kmmainwin.cpp:1060
+msgid "&Copy..."
+msgstr "복사(&C)..."
+
+#: kmmainwin.cpp:963
+msgid "New Composer"
+msgstr "새 작성기"
+
+#: kmcomposewin.cpp:451 kmmainwin.cpp:965
+msgid "New Mailreader"
+msgstr "새 전자우편"
+
+#: kmmainwin.cpp:968
+msgid "Save As..."
+msgstr "다른 이름으로 저장..."
+
+#: kmmainwin.cpp:970
+msgid "Print..."
+msgstr "인쇄..."
+
+#: kmmainwin.cpp:973
+msgid "Check Mail..."
+msgstr "전자우편 확인..."
+
+#: kmmainwin.cpp:982
+msgid "Check Mail in..."
+msgstr "전자우편 확인..."
+
+#: kmmainwin.cpp:984
+msgid "Send Queued"
+msgstr "대기 전자우편 보내기"
+
+#: kmmainwin.cpp:987
+msgid "&Settings..."
+msgstr "설정(&S)..."
+
+#: kmcomposewin.cpp:443 kmmainwin.cpp:989
+msgid "&Addressbook..."
+msgstr "주소록(&A)..."
+
+#: kmmainwin.cpp:991
+msgid "&Filter..."
+msgstr "필터(&F)..."
+
+#: kmmainwin.cpp:1005
+msgid "&Find..."
+msgstr "찾기(&F)..."
+
+#: kmfoldertree.cpp:307 kmmainwin.cpp:1010
+msgid "&Create..."
+msgstr "만들기(&C)..."
+
+#: kmfoldertree.cpp:309 kmmainwin.cpp:1012
+msgid "&Modify..."
+msgstr "변경(&M)..."
+
+#: kmfoldertree.cpp:311 kmmainwin.cpp:1014
+msgid "C&ompact"
+msgstr "간단히 보기(&o)"
+
+#: kmfoldertree.cpp:314 kmmainwin.cpp:1017
+msgid "&Empty"
+msgstr "내용지우기(&E)"
+
+#: kmfilterdlg.cpp:149 kmheaders.cpp:991 kmmainwin.cpp:1026
+#, fuzzy
+msgid "New"
+msgstr "네트웍"
+
+#: kmheaders.cpp:992 kmmainwin.cpp:1027
+msgid "Unread"
+msgstr "읽지않음"
+
+#: kmheaders.cpp:993 kmmainwin.cpp:1028
+msgid "Read"
+msgstr "읽음"
+
+#: kmheaders.cpp:994 kmmainwin.cpp:1029
+msgid "Replied"
+msgstr "답장 보냈음"
+
+#: kmheaders.cpp:995 kmmainwin.cpp:1030
+msgid "Queued"
+msgstr "대기중"
+
+#: kmheaders.cpp:996 kmmainwin.cpp:1031
+msgid "Sent"
+msgstr "보냄"
+
+#: kmmainwin.cpp:1035
+msgid "&Next"
+msgstr ""
+
+#: kmmainwin.cpp:1037
+msgid "Next unread"
+msgstr "다음 읽은 않은 전자우편"
+
+#: kmmainwin.cpp:1039
+#, fuzzy
+msgid "&Previous"
+msgstr "이전에 읽지 않은 전자우편"
+
+#: kmmainwin.cpp:1041
+msgid "Previous unread"
+msgstr "이전에 읽지 않은 전자우편"
+
+#: kmmainwin.cpp:1051
+#, fuzzy
+msgid "Edi&t..."
+msgstr "인쇄..."
+
+#: kmmainwin.cpp:1054
+msgid "&Set Status"
+msgstr "상태 설정(&S)"
+
+#: kmmainwin.cpp:1056
+#, fuzzy
+msgid "Mar&k all"
+msgstr "모두 표시"
+
+#: kmmainwin.cpp:1065
+msgid "Send again..."
+msgstr "다시 보내기..."
+
+#: kmmainwin.cpp:1067
+msgid "Apply filters"
+msgstr "필터 적용"
+
+#: kmmainwin.cpp:1070
+msgid "View Source..."
+msgstr "소스 보기..."
+
+#: kmmainwin.cpp:1077
+msgid "&Brief Headers"
+msgstr "간단한 헤더(&B)"
+
+#: kmmainwin.cpp:1079
+msgid "&Fancy Headers"
+msgstr "꾸며진 헤더(&F)"
+
+#: kmmainwin.cpp:1081
+msgid "&Standard Headers"
+msgstr "표준 헤더(&S)"
+
+#: kmmainwin.cpp:1083
+msgid "&Long Headers"
+msgstr "긴 헤더(&L)"
+
+#: kmmainwin.cpp:1085
+msgid "&All Headers"
+msgstr "모든 헤더(&A)"
+
+#: kmmainwin.cpp:1088
+msgid "Iconic Attachments"
+msgstr "첨부하여 아이콘으로 표시"
+
+#: kmmainwin.cpp:1089
+msgid "Smart Attachments"
+msgstr "세련된 첨부"
+
+#: kmmainwin.cpp:1090
+msgid "Inlined Attachments"
+msgstr "일렬 첨부"
+
+#: kmmainwin.cpp:1101
+msgid "F&older"
+msgstr "폴더(&o)"
+
+#: kmmainwin.cpp:1102
+msgid "&Message"
+msgstr "메시지(&M)"
+
+#: kmcomposewin.cpp:573 kmmainwin.cpp:1121
+msgid "Compose new message"
+msgstr "새 메시지"
+
+#: kmcomposewin.cpp:579 kmmainwin.cpp:1126
+msgid "Save message to file"
+msgstr "파일로 저장"
+
+#: kmcomposewin.cpp:585 kmmainwin.cpp:1131
+msgid "Print message"
+msgstr "인쇄"
+
+#: kmmainwin.cpp:1138
+msgid "Get new mail"
+msgstr "새 전자우편"
+
+#: kmmainwin.cpp:1144
+msgid "Reply to author"
+msgstr "답장"
+
+#: kmmainwin.cpp:1149
+msgid "Reply to all recipients"
+msgstr "모든 수신자에게 답장하기"
+
+#: kmmainwin.cpp:1154
+msgid "Forward message"
+msgstr "전달"
+
+#: kmmainwin.cpp:1159
+msgid "Delete message"
+msgstr "삭제"
+
+#: kmcomposewin.cpp:609 kmmainwin.cpp:1165
+msgid "Open addressbook..."
+msgstr "주소록 열기..."
+
+#: kmmainwin.cpp:1177
+msgid "Initializing..."
+msgstr "초기화중..."
+
+#: kmfolderdia.cpp:39 kmmsgpartdlg.cpp:62 kmsettings.cpp:175
+#: kmsettings.cpp:883
+#, fuzzy
+msgid "Name:"
+msgstr "로그인 이름:"
+
+#: kmcomposewin.cpp:1524 kmfolderdia.cpp:45 kmfolderdia.cpp:132
+msgid "unnamed"
+msgstr "이름없음"
+
+#: kmfolderdia.cpp:55
+msgid "Associated with"
+msgstr "그룹설정"
+
+#: kmfolderdia.cpp:65
+msgid "Unassociated Accounts"
+msgstr "그룹에서 제외"
+
+#: kmfoldertree.cpp:49 kmsettings.cpp:538
+msgid "Folders"
+msgstr "폴더"
+
+#: kmsettings.cpp:54
+msgid "Settings"
+msgstr "설정"
+
+#: kmsettings.cpp:177
+msgid "Organization:"
+msgstr "단체:"
+
+#: kmsettings.cpp:179
+msgid "Email Address:"
+msgstr "Email 주소:"
+
+#: kmsettings.cpp:182
+msgid "Reply-To Address:"
+msgstr "답장받을 주소:"
+
+#: kmsettings.cpp:184
+msgid "Signature File:"
+msgstr "서명 파일:"
+
+#: kmsettings.cpp:193 kpgp.cpp:821
+msgid "Identity"
+msgstr "사용자정보"
+
+#: kmsettings.cpp:212
+msgid "Sending Mail"
+msgstr "전자우편 보내기"
+
+#: kmsettings.cpp:218
+msgid "Sendmail"
+msgstr "Sendmail"
+
+#: kmsettings.cpp:223 kmsettings.cpp:890
+msgid "Location:"
+msgstr "위치:"
+
+#: kmsettings.cpp:228
+msgid "SMTP"
+msgstr "SMTP"
+
+#: kmsettings.cpp:233
+msgid "Server:"
+msgstr "서버:"
+
+#: kmsettings.cpp:235 kmsettings.cpp:911
+msgid "Port:"
+msgstr "포트:"
+
+#: kmsettings.cpp:257
+msgid "Incoming Mail"
+msgstr "전자우편 받기"
+
+#: kmsettings.cpp:262
+msgid "Accounts:   (add at least one account!)"
+msgstr "계정:   (최소한 계정하나는 추가하십시오!)"
+
+#: kmcomposewin.cpp:140 kmsettings.cpp:267
+msgid "Name"
+msgstr ""
+
+#: kmcomposewin.cpp:143 kmsettings.cpp:268
+msgid "Type"
+msgstr "형식"
+
+#: kmsettings.cpp:269
+msgid "Folder"
+msgstr "폴더"
+
+#: kmsettings.cpp:277
+msgid "Add..."
+msgstr "추가..."
+
+#: kmsettings.cpp:280
+msgid "Modify..."
+msgstr "변경..."
+
+#: kmsettings.cpp:300
+msgid "Network"
+msgstr "네트웍"
+
+#: kmsettings.cpp:324
+msgid "Message Body Font:"
+msgstr "메시지 본문 글꼴:"
+
+#: kmsettings.cpp:329
+msgid "Message List Font:"
+msgstr "메시지 목록 글꼴:"
+
+#: kmsettings.cpp:357
+#, fuzzy
+msgid "Long folder list"
+msgstr "긴 헤더(&L)"
+
+#: kmsettings.cpp:386
+msgid "Phrases"
+msgstr "표현"
+
+#: kmsettings.cpp:391
+msgid ""
+"The following placeholders are supported in the reply phrases:\n"
+"%D=date, %S=subject, %F=sender, %%=percent sign"
+msgstr ""
+"다음 표현식을 답장에 사용할 수 있습니다:\n"
+"%D=날짜, %S=제목, %F=보내는 사람, %%=% 기호"
+
+#: kmsettings.cpp:399
+msgid "Reply to sender:"
+msgstr "답장 보내기:"
+
+#: kmsettings.cpp:402
+msgid "Reply to all:"
+msgstr "모두에게 답장보내기"
+
+#: kmsettings.cpp:405
+msgid "Forward:"
+msgstr "전달:"
+
+#: kmsettings.cpp:408
+msgid "Indentation:"
+msgstr "들여쓰기:"
+
+#: kmmessage.cpp:1383 kmsettings.cpp:420
+msgid "On %D, you wrote:"
+msgstr "%D에 귀하가 작성한 글:"
+
+#: kmmessage.cpp:1384 kmsettings.cpp:424
+msgid "On %D, %F wrote:"
+msgstr "%D에, %F 작성한 글:"
+
+#: kmmessage.cpp:1385 kmsettings.cpp:428
+msgid "Forwarded Message"
+msgstr "전달된 메시지"
+
+#: kmsettings.cpp:439
+msgid "Automatically append signature"
+msgstr "서명을 자동으로 붙임"
+
+#: kmsettings.cpp:445
+msgid "Automatically sign messages using PGP"
+msgstr "PGP 사인을 자동으로 붙임"
+
+#: kmsettings.cpp:450
+msgid "Word wrap at column:"
+msgstr "자동으로 줄을 넘길 컬럼위치:"
+
+#: kmsettings.cpp:460
+msgid "Use monospaced font"
+msgstr "고정폭 글꼴 사용"
+
+#: kmsettings.cpp:472
+msgid "When sending mail"
+msgstr "전자우편을 보내는 시기"
+
+#: kmsettings.cpp:475
+msgid "Default sending:"
+msgstr "보내기 기본설정:"
+
+#: kmsettings.cpp:478
+msgid "send now"
+msgstr "지금 보내기"
+
+#: kmsettings.cpp:482
+msgid "send later"
+msgstr "나중에 보내기"
+
+#: kmsettings.cpp:487
+msgid "Send messages:"
+msgstr "메시지 보내기:"
+
+#: kmsettings.cpp:490
+msgid "Allow 8-bit"
+msgstr "8 비트 허용"
+
+#: kmsettings.cpp:495
+msgid "MIME Compilant (Quoted Printable)"
+msgstr "Mime 편집 ("
+
+#: kmsettings.cpp:521
+msgid "Composer"
+msgstr "작성기"
+
+#: kmsettings.cpp:542
+msgid "empty trash on exit"
+msgstr "종료시에 휴지통 비우기"
+
+#: kmsettings.cpp:546
+msgid "Send Mail in outbox Folder on Check"
+msgstr ""
+
+#: kmsettings.cpp:561
+msgid "Misc"
+msgstr ""
+
+#: kmsettings.cpp:568
+msgid "PGP"
+msgstr ""
+
+#: kmsettings.cpp:591
+msgid "Message Body Font"
+msgstr "메시지 본문 글꼴"
+
+#: kmsettings.cpp:605
+msgid "Message List Font"
+msgstr "메시지 목록 글꼴"
+
+#: kmsettings.cpp:657
+msgid "Select Account"
+msgstr "계정 선택"
+
+#: kmaccount.cpp:77 kmfilterdlg.cpp:472 kmsettings.cpp:676
+msgid "Unnamed"
+msgstr "이름없음"
+
+#: kmsettings.cpp:695
+msgid "Choose Sendmail Location"
+msgstr "Sendmail 위치 선택"
+
+#: kmcomposewin.cpp:1623 kmsettings.cpp:704
+msgid "Choose Signature File"
+msgstr "서명 파일 선택"
+
+#: kmsettings.cpp:875
+#, fuzzy
+msgid "Type:"
+msgstr "형식"
+
+#: kmsettings.cpp:888
+msgid "Local Account"
+msgstr "지역 계정"
+
+#: kmsettings.cpp:897
+msgid "Pop Account"
+msgstr "Pop 계정"
+
+#: kmsettings.cpp:899
+msgid "Login:"
+msgstr "로그인:"
+
+#: kmacctpop.cpp:486 kmsettings.cpp:902
+msgid "Password:"
+msgstr "암호:"
+
+#: kmsettings.cpp:906
+msgid "Host:"
+msgstr "호스트:"
+
+#: kmsettings.cpp:914
+msgid "Store POP password in config file"
+msgstr ""
+
+#: kmsettings.cpp:919
+msgid "Delete mail from server"
+msgstr "서버의 전자우편 지우기"
+
+#: kmsettings.cpp:924
+#, fuzzy
+msgid "Retrieve all mail from server"
+msgstr "서버의 전자우편 지우기"
+
+#: kmsettings.cpp:936
+msgid "Enable interval Mail checking"
+msgstr ""
+
+#: kmsettings.cpp:946
+msgid "Store new mail in account:"
+msgstr "계정에 새 전자우편 저장:"
+
+#: kmsettings.cpp:960
+msgid "<none>"
+msgstr "<없음>"
+
+#: kmsettings.cpp:1009
+msgid "Choose Location"
+msgstr "위치 선택"
+
+#: kmaccount.cpp:116
+msgid "Receipt: "
+msgstr "받을 사람:"
+
+#: kmaccount.cpp:150
+msgid "Failed to add message:"
+msgstr "메시지 추가 실패:"
+
+#: kmcomposewin.cpp:139 kmheaders.cpp:42
+msgid "F"
+msgstr "F"
+
+#: kmheaders.cpp:43 kmheaders.cpp:223
+msgid "Sender"
+msgstr "보낸 사람"
+
+#: kmheaders.cpp:44
+msgid "Subject"
+msgstr "제목"
+
+#: kmheaders.cpp:45
+#, fuzzy
+msgid "Date"
+msgstr "날   짜: "
+
+#: kmheaders.cpp:222
+msgid "Receiver"
+msgstr ""
+
+#: kmheaders.cpp:225
+#, c-format
+msgid "%d Messages, %d unread."
+msgstr "%d 개의 메시지, %d 개의 읽지 않은 메시지."
+
+#: kmheaders.cpp:227
+msgid "Folder is read-only."
+msgstr "폴더가 읽기 전용입니다."
+
+#: kmheaders.cpp:279
+msgid "Unknown"
+msgstr "알 수 없음"
+
+#: kmheaders.cpp:282
+msgid "No Subject"
+msgstr "제목 없음"
+
+#: kmheaders.cpp:343
+msgid "order of arrival"
+msgstr "도착 순서"
+
+#: kmheaders.cpp:352
+msgid "subject"
+msgstr "제목"
+
+#: kmheaders.cpp:353
+msgid "date"
+msgstr "날짜"
+
+#: kmheaders.cpp:354
+msgid "sender"
+msgstr "보낸 사람"
+
+#: kmheaders.cpp:355
+msgid "status"
+msgstr "상태"
+
+#: kmheaders.cpp:357
+#, c-format
+msgid "Sorting messages descending by %s"
+msgstr "%s을(를) 내림차순으로 정렬"
+
+#: kmheaders.cpp:359
+#, c-format
+msgid "Sorting messages ascending by %s"
+msgstr "%s을(를) 오름차순으로 정렬"
+
+#: kmheaders.cpp:486
+msgid "Message(s) saved."
+msgstr "메시지가 저장되었습니다."
+
+#: kmheaders.cpp:488
+msgid "Failed to save message(s)."
+msgstr "메시지 저장에 실패했습니다."
+
+#: kmcomposewin.cpp:128
+msgid "KMail Composer"
+msgstr "KMail 작성기"
+
+#: kmcomposewin.cpp:141
+msgid "Size"
+msgstr ""
+
+#: kmcomposewin.cpp:142
+msgid "Encoding"
+msgstr "인코딩"
+
+#: kmcomposewin.cpp:345
+msgid "&From:"
+msgstr "보냄(&F):"
+
+#: kmcomposewin.cpp:347
+msgid "&Reply to:"
+msgstr "답장(&R):"
+
+#: kmcomposewin.cpp:349
+msgid "&To:"
+msgstr "수신(&T):"
+
+#: kmcomposewin.cpp:351
+msgid "&Cc:"
+msgstr "참조(&C):"
+
+#: kmcomposewin.cpp:353
+msgid "&Bcc:"
+msgstr "추가참조(&B):"
+
+#: kmcomposewin.cpp:355
+msgid "&Subject:"
+msgstr "제목(&S):"
+
+#: kmcomposewin.cpp:358
+msgid "&Newsgroups:"
+msgstr "뉴스그룹(&N):"
+
+#: kmcomposewin.cpp:360
+msgid "&Followup-To:"
+msgstr "&Followup-To:"
+
+#: kmcomposewin.cpp:432
+msgid "&Send"
+msgstr "보내기(&S)"
+
+#: kmcomposewin.cpp:435
+msgid "S&end later"
+msgstr "나중에 보내기(&e)"
+
+#: kmcomposewin.cpp:437
+msgid "S&end now"
+msgstr "지금 보내기(&e)"
+
+#: kmcomposewin.cpp:439
+msgid "&Insert File..."
+msgstr "파일 삽입(&I)..."
+
+#: kmcomposewin.cpp:448
+msgid "&New Composer..."
+msgstr "새 작성기(&N)..."
+
+#: kmcomposewin.cpp:471 kmcomposewin.cpp:705 kmcomposewin.cpp:1923
+msgid "Mark all"
+msgstr "모두 표시"
+
+#: kmcomposewin.cpp:474 kmcomposewin.cpp:707
+msgid "Find..."
+msgstr "찾기..."
+
+#: kmcomposewin.cpp:476 kmcomposewin.cpp:708
+msgid "Replace..."
+msgstr "바꾸기..."
+
+#: kmcomposewin.cpp:479
+#, fuzzy
+msgid "&Spellcheck..."
+msgstr "KMail: 철자 검색"
+
+#: kmcomposewin.cpp:486
+msgid "&Urgent"
+msgstr "긴급(&U)"
+
+#: kmcomposewin.cpp:488
+msgid "&Confirm delivery"
+msgstr "배달 확인(&C)"
+
+#: kmcomposewin.cpp:490
+msgid "&Confirm read"
+msgstr "읽음 확인(&C)"
+
+#: kmcomposewin.cpp:493
+#, fuzzy
+msgid "&Spellchecker..."
+msgstr "KMail: 철자 검색"
+
+#: kmcomposewin.cpp:496
+msgid "&Charsets..."
+msgstr "글자모음(&C)"
+
+#: kmcomposewin.cpp:509
+msgid "&All Fields"
+msgstr "모든 필드(&A)"
+
+#: kmcomposewin.cpp:511
+msgid "&From"
+msgstr "발신(&F)"
+
+#: kmcomposewin.cpp:512
+msgid "&Reply to"
+msgstr "답장(&R)"
+
+#: kmcomposewin.cpp:513
+msgid "&To"
+msgstr "수신(&T)"
+
+#: kmcomposewin.cpp:514
+msgid "&Cc"
+msgstr "참조(&C)"
+
+#: kmcomposewin.cpp:515
+msgid "&Bcc"
+msgstr "추가참조(&B)"
+
+#: kmcomposewin.cpp:516
+msgid "&Subject"
+msgstr "제목(&S)"
+
+#: kmcomposewin.cpp:518
+msgid "&Newsgroups"
+msgstr "뉴스그룹(&N)"
+
+#: kmcomposewin.cpp:519
+msgid "&Followup-To"
+msgstr "&Followup-To"
+
+#: kmcomposewin.cpp:525
+msgid "Append S&ignature"
+msgstr "서명 추가(&i)"
+
+#: kmcomposewin.cpp:527
+msgid "&Insert File"
+msgstr "파일 삽입(&I)"
+
+#: kmcomposewin.cpp:530
+msgid "&Attach..."
+msgstr "첨부(&A)"
+
+#: kmcomposewin.cpp:532
+#, fuzzy
+msgid "Attach &Public Key"
+msgstr "파일 첨부"
+
+#: kmcomposewin.cpp:534
+msgid "Attach My &Public Key"
+msgstr ""
+
+#: kmcomposewin.cpp:545
+msgid "&Save..."
+msgstr "저장(&S)..."
+
+#: kmcomposewin.cpp:546
+msgid "Pr&operties..."
+msgstr "등록정보(&o)"
+
+#: kmcomposewin.cpp:548
+msgid "&Attach"
+msgstr "첨부(&A)"
+
+#: kmcomposewin.cpp:568
+#, fuzzy
+msgid "Send message"
+msgstr "메시지 보내기:"
+
+#: kmcomposewin.cpp:594
+msgid "Cut selection"
+msgstr "잘라내기"
+
+#: kmcomposewin.cpp:597
+msgid "Copy selection"
+msgstr "복사하기"
+
+#: kmcomposewin.cpp:600
+msgid "Paste clipboard contents"
+msgstr "붙이기"
+
+#: kmcomposewin.cpp:605
+msgid "Attach file"
+msgstr "파일 첨부"
+
+#: kmcomposewin.cpp:616
+msgid "sign message"
+msgstr "사인 메시지"
+
+#: kmcomposewin.cpp:621
+msgid "encrypt message"
+msgstr "메시지 암호화"
+
+#: kmcomposewin.cpp:638 kmcomposewin.cpp:654
+msgid "Column"
+msgstr "열"
+
+#: kmcomposewin.cpp:639 kmcomposewin.cpp:652
+msgid "Line"
+msgstr "행"
+
+#: kmcomposewin.cpp:920
+msgid "KMail Confirm"
+msgstr "KMail 확인"
+
+#: kmcomposewin.cpp:921
+msgid ""
+"Close and discard\n"
+"edited message?"
+msgstr ""
+"편집한 내용을 버리고\n"
+"닫으시겠습니까?"
+
+#: kmcomposewin.cpp:1194
+msgid "Attach File"
+msgstr "파일 첨부"
+
+#: kmcomposewin.cpp:1216
+msgid "Include File"
+msgstr "파일 포함"
+
+#: kmcomposewin.cpp:1248
+msgid "my pgp key"
+msgstr ""
+
+#: kmcomposewin.cpp:1276
+msgid "pgp key"
+msgstr ""
+
+#: kmcomposewin.cpp:1297 kmreaderwin.cpp:906
+msgid "View..."
+msgstr "보기..."
+
+#: kmcomposewin.cpp:1298
+msgid "Save..."
+msgstr "저장..."
+
+#: kmcomposewin.cpp:1299 kmreaderwin.cpp:909
+msgid "Properties..."
+msgstr "등록정보..."
+
+#: kmcomposewin.cpp:1303
+msgid "Attach..."
+msgstr "첨부..."
+
+#: kmcomposewin.cpp:1345 kmreaderwin.cpp:978 kmreaderwin.cpp:995
+msgid "View Attachment: "
+msgstr "첨부파일 보기:"
+
+#: kmcomposewin.cpp:1539
+msgid "To:"
+msgstr "수신:"
+
+#: kmcomposewin.cpp:1543
+msgid "Subject:"
+msgstr "제목:"
+
+#: kmcomposewin.cpp:1546
+#, fuzzy
+msgid "Date:"
+msgstr "날   짜: "
+
+#: kmcomposewin.cpp:1670
+#, fuzzy
+msgid "Spellcheck complete."
+msgstr "KMail: 철자 검색"
+
+#: kmcomposewin.cpp:2113
+msgid "Spellcheck - KMail"
+msgstr ""
+
+#: kmcomposewin.cpp:2139
+msgid ""
+"Error starting KSpell. Please make sure you have ISpell properly configured."
+msgstr ""
+"KSpell을 시작할 수 없습니다. ISpell이 올바르게 설정되었는지 확인하십시오."
+
+#: kmfolder.cpp:147
+#, c-format
+msgid "Folder `%s' changed. Recreating index."
+msgstr "%s 폴더가 변경되었습니다. 색인을 다시 만듭니다."
+
+#: kmfolder.cpp:388
+#, c-format
+msgid "Creating index file: %d messages done"
+msgstr "색인 파일을 만들고 있습니다: %d개 메시지 완료"
+
+#: kmfolder.cpp:477
+msgid "Writing index file"
+msgstr "색인 파일에 쓰고 있습니다"
+
+#: kmfolder.cpp:934
+#, c-format
+msgid "Compacting folder: %d messages done"
+msgstr "폴더 압축: %d개 메시지 완료"
+
+#: kmmsgpartdlg.cpp:41
+msgid "Message Part Properties"
+msgstr "메시지 부분 등록정보"
+
+#: kmmsgpartdlg.cpp:73
+msgid "Description:"
+msgstr "설명:"
+
+#: kmmsgpartdlg.cpp:83
+msgid "Encoding:"
+msgstr "인코딩:"
+
+#: kmmsgpartdlg.cpp:89
+msgid "none (8bit)"
+msgstr "없음 (8비트)"
+
+#: kmmsgpartdlg.cpp:90
+msgid "base 64"
+msgstr "베이스 64"
+
+#: kmmsgpartdlg.cpp:91
+msgid "quoted printable"
+msgstr "인쇄할 수 있는 인용구"
+
+#: kmreaderwin.cpp:402 kmreaderwin.cpp:415 kmreaderwin.cpp:434
+#: kmreaderwin.cpp:455
+msgid "Cc: "
+msgstr "참조:"
+
+#: kmreaderwin.cpp:410 kmreaderwin.cpp:429 kmreaderwin.cpp:450
+msgid "From: "
+msgstr "보낸 이: "
+
+#: kmreaderwin.cpp:412 kmreaderwin.cpp:431 kmreaderwin.cpp:452
+msgid "To: "
+msgstr "받는 이: "
+
+#: kmreaderwin.cpp:419 kmreaderwin.cpp:440 kmreaderwin.cpp:465
+msgid "References: "
+msgstr "참   고: "
+
+#: kmreaderwin.cpp:436 kmreaderwin.cpp:449
+msgid "Date: "
+msgstr "날   짜: "
+
+#: kmreaderwin.cpp:458
+msgid "Bcc: "
+msgstr "추가참고: "
+
+#: kmreaderwin.cpp:461
+msgid "Reply to: "
+msgstr "답장: "
+
+#: kmreaderwin.cpp:468
+msgid "Groups: "
+msgstr "그룹: "
+
+#: kmreaderwin.cpp:506
+msgid "Encrypted message"
+msgstr "암호 처리한 메시지"
+
+#: kmreaderwin.cpp:512
+msgid "Cannot decrypt message:"
+msgstr "메시지를 암호 처리 할 수 없습니다:"
+
+#: kmreaderwin.cpp:521
+msgid "Message was signed by"
+msgstr "메시지가 다음 사람에 의해 서명되었습니다"
+
+#: kmreaderwin.cpp:522
+msgid "Warning: Bad signature from"
+msgstr "경  고: "
+
+#: kmreaderwin.cpp:532
+msgid "unknown key ID"
+msgstr ""
+
+#: kmreaderwin.cpp:870
+msgid "Attachment: "
+msgstr "첨  부: "
+
+#: kmreaderwin.cpp:1084
+msgid "Could not save file"
+msgstr "파일을 저장할 수 없습니다"
+
+#: kmacctmgr.cpp:116 kmacctmgr.cpp:223 kmacctmgr.cpp:285
+#, c-format
+msgid ""
+"Account %s has no mailbox defined!\n"
+"Mail checking aborted\n"
+"Check your account settings!"
+msgstr ""
+
+#: kmacctmgr.cpp:207 kmacctmgr.cpp:264
+msgid ""
+"You need to add an account in the network\n"
+"section of the settings in order to\n"
+"receive mail."
+msgstr ""
+"전자우편을 받기 위해서는 설정사항의 네트웍\n"
+"항목에 계정을 추가해야 \n"
+"합니다."
+
+#: main.cpp:121 main.cpp:371
+msgid "warning"
+msgstr "경고"
+
+#: main.cpp:128 main.cpp:129
+msgid "fatal error"
+msgstr "치명적인 오류"
+
+#: main.cpp:306
+msgid "KMail notification"
+msgstr ""
+
+#: main.cpp:307
+msgid ""
+"$HOME is not set!\n"
+"KMail cannot start without it.\n"
+msgstr ""
+
+#: main.cpp:373
+msgid ""
+"The directory ~/KMail exists. From now on, KMail uses the\n"
+"directory ~/Mail for it's messages.\n"
+"KMail can move the contents of the directory ~/KMail into\n"
+"~/Mail, but this will replace existing files with the same\n"
+"name in the directory ~/Mail (e.g. inbox).\n"
+"\n"
+"Shall KMail move the mail folders now ?"
+msgstr ""
+"~/KMail 디렉토리가 존재합니다. KMail이 ~/Mail 디렉토리에\n"
+"메시지를 저장할 것입니다.\n"
+"KMail은 ~/KMail 디렉토리의 내용을 ~/Mail 디렉토리로 옮길\n"
+"수 있지만, 그렇게 하면 ~/Mail 디렉토리에 있는 같은 이름을\n"
+"가진 파일을 대체하게 될 것입니다(예를 들어, inbox)\n"
+"\n"
+"지금 전자우편 폴더를 옮기시겠습니까?"
+
+#: main.cpp:485
+msgid "Loading addressbook failed"
+msgstr ""
+
+#: main.cpp:588 main.cpp:729
+#, c-format
+msgid "Unknown command line option: %s"
+msgstr "알 수 없는 명령행 선택사항: %s"
+
+#: kmacctlocal.cpp:77
+#, fuzzy
+msgid "Cannot open file:"
+msgstr ""
+"파일을 열 수 업음:\n"
+"%s"
+
+#: kmacctlocal.cpp:113
+#, c-format
+msgid ""
+"Cannot remove mail from\n"
+"mailbox `%s':\n"
+"%s"
+msgstr ""
+"%s 전자우편 상자의 전자우편을\n"
+"제거할 수 없습니다:\n"
+"%s"
+
+#: kmacctpop.cpp:100
+msgid "Please set Password and Username"
+msgstr ""
+
+#: kmacctpop.cpp:135
+msgid "Incorrect Username"
+msgstr ""
+
+#: kmacctpop.cpp:148
+msgid "Incorrect Password"
+msgstr ""
+
+#: kmacctpop.cpp:185
+msgid ""
+"Please specify Host, Port  and\n"
+"destination folder in the settings\n"
+"and try again."
+msgstr ""
+"설정사항에서 호스트, 포트 그리고\n"
+"대상 폴더를 지정한 다음\n"
+"다시 시도하십시오."
+
+#: kmacctpop.cpp:291
+msgid "Pop Mail Error"
+msgstr "Pop 전자우편 오류"
+
+#: kmacctpop.cpp:296
+msgid "Pop Mail Network Error"
+msgstr "Pop 전자우편 네트웍 오류"
+
+#: kmacctpop.cpp:312
+msgid "Unknown error"
+msgstr "알 수 없는 오류"
+
+#: kmacctpop.cpp:317
+#, c-format
+msgid ""
+"Account: %s\n"
+"In %s:\n"
+"%s"
+msgstr ""
+"계   정: %s\n"
+"In %s:\n"
+"%s"
+
+#: kmacctpop.cpp:477
+msgid "Login Name:"
+msgstr "로그인 이름:"
+
+#: kmfolderdir.cpp:78
+#, c-format
+msgid ""
+"Error while creating folder `%s':\n"
+"%s"
+msgstr ""
+"`%s' 폴더 만드는 중 오류 발생:\n"
+"%s"
+
+#: kmfoldermgr.cpp:136
+#, c-format
+msgid ""
+"Creating missing folder\n"
+"`%s'"
+msgstr ""
+"빠뜨린 폴더를 만듭니다.\n"
+"`%s'"
+
+#: kmfoldermgr.cpp:139
+#, c-format
+msgid ""
+"Cannot create folder `%s'\n"
+"in %s"
+msgstr ""
+"%s에 `%s'폴더를 만들 수\n"
+"없습니다."
+
+#: kmsender.cpp:124
+msgid ""
+"Please specify a send\n"
+"method in the settings\n"
+"and try again."
+msgstr ""
+"설정사항에서 보내기\n"
+"방법을 지정하고 다시\n"
+"시도하십시오."
+
+#: kmsender.cpp:130
+msgid ""
+"Please set the required fields in the\n"
+"identity settings:\n"
+"user-name and email-address"
+msgstr ""
+"개인정보 설정에서 필요한 항목을\n"
+"설정하십시오:\n"
+"사용자 이름과 전자우편 주소"
+
+#: kmsender.cpp:155
+msgid "You must specify a receiver"
+msgstr "받을 사람을 지정해야 합니다"
+
+#: kmsender.cpp:166
+msgid "Cannot add message to outbox folder"
+msgstr "보낸 전자우편 폴더에 메시지를 추가할 수 없습니다"
+
+#: kmsender.cpp:197
+msgid "Sending still in progress"
+msgstr "아직 전송중입니다"
+
+#: kmsender.cpp:255 kmsender.cpp:259
+msgid "Initiating sender process..."
+msgstr "전송 작업을 초기화 합니다..."
+
+#: kmsender.cpp:275
+msgid "Sending message: "
+msgstr "보내는 메시지:"
+
+#: kmsender.cpp:303
+msgid "Done sending messages."
+msgstr "메시지 전송 완료"
+
+#: kmsender.cpp:335
+msgid "Sending failed:"
+msgstr "전송 실패:"
+
+#: kmsender.cpp:525
+msgid ""
+"Please specify a mailer program\n"
+"in the settings."
+msgstr ""
+"설정사항에서 전자우편 프로그램을\n"
+"지정해야 합니다."
+
+#: kmsender.cpp:574
+#, c-format
+msgid "Failed to execute mailer program %s"
+msgstr "%s 전자우편 프로그램 실행 실패"
+
+#: kmsender.cpp:662
+msgid "connecting to server"
+msgstr "서버에 접속중"
+
+#: kmsender.cpp:667
+#, c-format
+msgid ""
+"Cannot open SMTP connection to\n"
+"host %s for sending:\n"
+"%s"
+msgstr ""
+"전송을 위해 %s 호스트로 SMTP\n"
+"접속을 할 수 없습니다\n"
+"%s"
+
+#: kmsender.cpp:696
+msgid "Cannot close SMTP connection."
+msgstr "SMTP 접속을 종료할 수 없습니다."
+
+#: kmsender.cpp:748
+msgid "transmitting message"
+msgstr "메시지 전송중"
+
+#: kmsender.cpp:785
+msgid "network error"
+msgstr "네크웍 오류"
+
+#: kmsender.cpp:787
+#, c-format
+msgid ""
+"a SMTP error occured.\n"
+"Command: %s\n"
+"Response: %s\n"
+"Return code: %d"
+msgstr ""
+"SMTP 오류\n"
+"명령: %s\n"
+"응답: %s\n"
+"반환코드: %d"
+
+#: kmsender.cpp:802
+#, c-format
+msgid "Sending SMTP command: %s"
+msgstr "SMTP 명령 보냄: %s"
+
+#: kmacctseldlg.cpp:26
+msgid "Account Type"
+msgstr "계정 형식"
+
+#: kmacctseldlg.cpp:45
+msgid "Local Mailbox"
+msgstr "지역 전자우편 상자"
+
+#: kmacctseldlg.cpp:49
+msgid "Pop3"
+msgstr "Pop3"
+
+#: kmfilteraction.cpp:93 kmfilteraction.cpp:197
+msgid "transfer"
+msgstr "전달"
+
+#: kmfilteraction.cpp:166 kmfilteraction.cpp:199
+msgid "skip rest"
+msgstr "나머지 제외"
+
+#: kmidentity.cpp:162
+#, c-format
+msgid ""
+"Failed to execute signature script\n"
+"%s\n"
+"%s"
+msgstr ""
+"서명 스크립트 실행 실패\n"
+"%s\n"
+"%s"
+
+#: kmfolderseldlg.cpp:32
+msgid "Select folder"
+msgstr "폴더 선택"
+
+#: kmfilter.cpp:197
+#, c-format
+msgid ""
+"Unknown filter action `%s'\n"
+"in filter rule `%s'.\n"
+"Ignoring it."
+msgstr ""
+"알 수 없는 필터 행동 `%s'.\n"
+"필터 규칙 %s 에서 발생하였음.\n"
+"무시합니다."
+
+#: kmfilterdlg.cpp:62
+msgid "Filter Rules"
+msgstr "필터 규칙"
+
+#: kmfilterdlg.cpp:143
+msgid "Up"
+msgstr "위로"
+
+#: kmfilterdlg.cpp:146
+msgid "Down"
+msgstr "아래로"
+
+#: kmfilterdlg.cpp:544
+msgid "<nothing>"
+msgstr "<없음>"
+
+#: kmfilterdlg.cpp:555
+msgid "ignore"
+msgstr "무시"
+
+#: kmfilterdlg.cpp:556
+msgid "and"
+msgstr "그리고"
+
+#: kmfilterdlg.cpp:557
+msgid "unless"
+msgstr "unless"
+
+#: kmfilterdlg.cpp:558
+msgid "or"
+msgstr "또는"
+
+#: kmfilterdlg.cpp:564
+msgid "equals"
+msgstr "동일함"
+
+#: kmfilterdlg.cpp:565
+msgid "not equal"
+msgstr "동일하지 않음"
+
+#: kmfilterdlg.cpp:566
+msgid "contains"
+msgstr "포함"
+
+#: kmfilterdlg.cpp:567
+msgid "doesn't contain"
+msgstr "포함할 수 없습니다"
+
+#: kmfilterdlg.cpp:568
+msgid "regular expression"
+msgstr "정규표현식"
+
+#: kmfilterdlg.cpp:575
+msgid "<message>"
+msgstr "<메시지>"
+
+#: kmfilterdlg.cpp:576
+msgid "<body>"
+msgstr "<본문>"
+
+#: kmfilterdlg.cpp:577
+msgid "<any header>"
+msgstr "<모든 헤더>"
+
+#: kpgp.cpp:151
+msgid ""
+"Couldn't find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+"PGP 실행 파일을 찾을 수 없읍니다\n"
+"경로 설정이 올바른지 확인하십시오."
+
+#: kpgp.cpp:193
+msgid ""
+"Could not find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+"PGP 실행 파일을 찾을 수 없읍니다\n"
+"경로 설정이 올바른지 확인하십시오."
+
+#: kpgp.cpp:207
+msgid "The pass phrase is missing."
+msgstr "전달 구가 빠져있습니다."
+
+#: kpgp.cpp:286 kpgp.cpp:312 kpgp.cpp:325 kpgp.cpp:344 kpgp.cpp:361
+#, fuzzy
+msgid "PGP Warning"
+msgstr "경고"
+
+#: kpgp.cpp:287
+msgid ""
+"Could not find the public keys for the\n"
+"recipients of this mail.\n"
+"Message will not be encrypted."
+msgstr ""
+
+#: kpgp.cpp:296
+msgid "Could not find the public keys for\n"
+msgstr ""
+
+#: kpgp.cpp:307
+msgid "These persons will not be able to\n"
+msgstr ""
+
+#: kpgp.cpp:309
+msgid "This person will not be able to\n"
+msgstr ""
+
+#: kpgp.cpp:311
+#, fuzzy
+msgid "decrypt the message."
+msgstr "메시지 암호화"
+
+#: kpgp.cpp:326
+msgid ""
+"You just entered an invalid passphrase.\n"
+"Do you wan't to try again, continue and\n"
+"leave the message unsigned, or cancel sending the message?"
+msgstr ""
+
+#: kpgp.cpp:331
+msgid "Retry"
+msgstr ""
+
+#: kpgp.cpp:342
+msgid ""
+"Do you wan't to encrypt anyway, leave the\n"
+"message as is, or cancel the message?"
+msgstr ""
+
+#: kpgp.cpp:346
+msgid "Encrypt"
+msgstr ""
+
+#: kpgp.cpp:359
+msgid ""
+"Do you wan't to leave the message as is,\n"
+"or cancel the message?"
+msgstr ""
+
+#: kpgp.cpp:717
+msgid ""
+"Please enter your\n"
+"PGP passphrase"
+msgstr ""
+"귀하의 PGP 전달구를\n"
+"입력하십시오"
+
+#: kpgp.cpp:744
+msgid "PGP Security Check"
+msgstr "PGP 보안 검사"
+
+#: kpgp.cpp:769
+msgid "Please select the public key to insert"
+msgstr ""
+
+#: kpgp.cpp:800
+#, fuzzy
+msgid "Select key"
+msgstr "폴더 선택"
+
+#: kpgp.cpp:827
+msgid "PGP User Identity:"
+msgstr "PGP 사용자 인증:"
+
+#: kpgp.cpp:838
+msgid "Store passphrase"
+msgstr ""
+
+#: kpgp.cpp:844
+msgid "Always encrypt to self"
+msgstr ""
+
+#: kpgpbase.cpp:322
+msgid "Bad pass Phrase; couldn't sign"
+msgstr "잘못된 전달 구; 서명할 수 없습니다"
+
+#: kpgpbase.cpp:361
+msgid "error running pgp"
+msgstr ""
+
+#: kpgpbase.cpp:378 kpgpbase.cpp:669
+msgid "Bad pass Phrase; couldn't decrypt"
+msgstr "잘못된 전달 구; 해독할 수 없습니다"
+
+#: kpgpbase.cpp:389 kpgpbase.cpp:680
+msgid "Do not have the secret key for this message"
+msgstr ""
+
+#: kpgpbase.cpp:417
+msgid "unknown key ID "
+msgstr ""
+
+#: kpgpbase.cpp:437
+msgid "??? (file ~/.pgp/pubring.pgp not found)"
+msgstr ""
+
+#: kpgpbase.cpp:592
+#, fuzzy
+msgid "The passphrase you entered is invalid."
+msgstr "전달 구가 빠져있습니다."
+
+#: kpgpbase.cpp:618
+msgid ""
+"The key(s) you wan't to encrypt your message\n"
+"to are not trusted. No encryption done."
+msgstr ""
+
+#: kpgpbase.cpp:621
+#, fuzzy, c-format
+msgid ""
+"The following key(s) are not trusted:\n"
+"%s\n"
+"They will not be able to decrypt the message"
+msgstr ""
+"%s의 공용 키를 발견할 수 없습니다.\n"
+"메시지를 해독할 수 없을 수도 있습니다."
+
+#: kfileio.cpp:26 kmaddrbook.cpp:162
+msgid "File I/O Error"
+msgstr "파일 입출력 오류"
+
+#: kfileio.cpp:47
+#, c-format
+msgid ""
+"The specified file does not exist:\n"
+"%s"
+msgstr ""
+"지정한 파일이 존재하지 않습니다:\n"
+"%s"
+
+#: kfileio.cpp:54
+#, c-format
+msgid ""
+"This is a directory and not a file:\n"
+"%s"
+msgstr ""
+"파일이 아니고 디렉토리입니다:\n"
+"%s"
+
+#: kfileio.cpp:61
+#, c-format
+msgid ""
+"You do not have read permissions to the file:\n"
+"%s"
+msgstr ""
+"다음 파일에 대한 읽기 허가권이 없읍니다:\n"
+"%s"
+
+#: kfileio.cpp:72 kmaddrbook.cpp:152
+#, c-format
+msgid ""
+"Could not read file:\n"
+"%s"
+msgstr ""
+"파일을 읽을 수 없음:\n"
+"%s"
+
+#: kfileio.cpp:75 kmaddrbook.cpp:155
+#, c-format
+msgid ""
+"Could not open file:\n"
+"%s"
+msgstr ""
+"파일을 열 수 업음:\n"
+"%s"
+
+#: kfileio.cpp:78
+#, c-format
+msgid ""
+"Error while reading file:\n"
+"%s"
+msgstr ""
+"파일 읽는 중 오류:\n"
+"%s"
+
+#: kfileio.cpp:95
+#, c-format
+msgid "Could only read %u bytes of %u."
+msgstr "%u 바이트만 읽을 수 있음(총 %u 바이트)"
+
+#: kfileio.cpp:124
+#, c-format
+msgid ""
+"File %s exists.\n"
+"Do you want to replace it ?"
+msgstr ""
+"%s 파일이 존재합니다\n"
+"파일을 바꾸시겠읍니까?"
+
+#: kfileio.cpp:144
+#, c-format
+msgid ""
+"Failed to make a backup copy of %s.\n"
+"Continue anyway ?"
+msgstr ""
+"%s 백업본 만들기 실패.\n"
+"계속 하시겠읍니까?"
+
+#: kfileio.cpp:156 kfileio.cpp:175
+#, c-format
+msgid ""
+"Could not write to file:\n"
+"%s"
+msgstr ""
+"다음 파일에 쓸 수 없음:\n"
+"%s"
+
+#: kfileio.cpp:159
+#, c-format
+msgid ""
+"Could not open file for writing:\n"
+"%s"
+msgstr ""
+"다음 파일을 쓰기 위해 열 수 없음:\n"
+"%s"
+
+#: kfileio.cpp:163 kmaddrbook.cpp:158
+#, c-format
+msgid ""
+"Error while writing file:\n"
+"%s"
+msgstr ""
+"파일 쓰는 중 오류:\n"
+"%s"
+
+#: kfileio.cpp:181
+#, c-format
+msgid "Could only write %d bytes of %d."
+msgstr ""
+
+#: kmaddrbook.cpp:25
+#, fuzzy
+msgid "KMail Error"
+msgstr "KMail 오류"
+
+#: kmaddrbook.cpp:26
+msgid "Storing the addressbook failed!\n"
+msgstr ""
+
+#: kmaddrbookdlg.cpp:20
+msgid "Addressbook"
+msgstr "주소록"
+
+#: kmaddrbookdlg.cpp:95
+msgid "Addressbook Manager"
+msgstr "주소록 관리자"
+
+#: kmaddrbookdlg.cpp:179
+#, fuzzy
+msgid "Storing addressbook failed"
+msgstr "주소록에 추가"
+
+#: kmiostatusdlg.cpp:32
+msgid "&Abort"
+msgstr "중지(&A)"
+
+#: kmnewiostatuswdg.cpp:26
+#, fuzzy
+msgid "Abort"
+msgstr "중지(&A)"
+
+#: kmnewiostatuswdg.cpp:43
+msgid "Sending messages to "
+msgstr "메시지 받을 사람 "
+
+#: kmnewiostatuswdg.cpp:46
+msgid "Retrieving messages from "
+msgstr "메시지 가져오기 "
+
+#: kmnewiostatuswdg.cpp:56
+msgid "Preparing transmission..."
+msgstr "전송 준비중..."
+
+#: kmnewiostatuswdg.cpp:62
+msgid "Transmission completed..."
+msgstr "전송 완료..."
+
+#: kmnewiostatuswdg.cpp:97
+msgid "Aborting transmission...\n"
+msgstr "전송 중지...\n"
+
+#: charsetsDlg.cpp:27
+msgid "KRN - Charset Settings"
+msgstr "KRN - 글자모음 설정"
+
+#: charsetsDlg.cpp:29
+msgid "KMail - Charset Settings"
+msgstr "KMail - 글자모음 설정"
+
+#: charsetsDlg.cpp:39
+msgid "Message charset"
+msgstr "메시지 글자모음"
+
+#: charsetsDlg.cpp:57
+msgid "Composer charset"
+msgstr "작성기 글자모음"
+
+#: charsetsDlg.cpp:75
+msgid "Set as &default"
+msgstr " 설정(&d)"
+
+#: charsetsDlg.cpp:80
+msgid "&7 bit is ASCII"
+msgstr "7비트 아스키(&7)"
+
+#: charsetsDlg.cpp:84
+msgid "&Qute unknonw characters"
+msgstr "알 수 없는 글자모음(&Q)"
+
+#~ msgid ""
+#~ "Cannot modify a\n"
+#~ "system folder."
+#~ msgstr ""
+#~ "시스템 폴더를\n"
+#~ "수정할 수 없습니다."
+
+#~ msgid ""
+#~ "Are you sure you want to discard the\n"
+#~ "contents of the folder \"%s\" ?"
+#~ msgstr ""
+#~ "\"%s\" 폴더의 내용을 정말\n"
+#~ "버리시겠습니까?"
+
+#~ msgid ""
+#~ "Changing fonts currently only occurs when a new\n"
+#~ "window is opened or kmail is restarted"
+#~ msgstr ""
+#~ "지금 바뀐 글꼴은 새 윈도우가 열리거나 kmail을\n"
+#~ "다시 시작할 때 적용됩니다."
+
+#~ msgid "Could not create temporary file"
+#~ msgstr "임시 파일을 만들 수 없습니다"
+
+#~ msgid "Could not save temporary file %s"
+#~ msgstr "임시 파일 %에 저장할 수 없습니다"
+
+#~ msgid "Error during PGP:"
+#~ msgstr "PGP 도중에 오류:"
+
+#~ msgid "Message signed by"
+#~ msgstr "사인된 메시지"
+
+#~ msgid "Message has a bad signature from"
+#~ msgstr "메시지가 잘못된 서명을 포함하고 있습니다"
+
+#~ msgid "End PGP signed message"
+#~ msgstr "메시지에 PGP 서명 끝"

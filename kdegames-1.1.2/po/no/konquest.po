@@ -1,0 +1,252 @@
+# Norwegian translations for KDE Games, kmahjongg
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Hans Petter Bieker <zerium@webindex.no>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE GAMES/kmahjongg\n"
+"POT-Creation-Date: 1999-01-13 01:34+0100\n"
+"PO-Revision-Date: 1998-03-20 HO:MI+ZONE\n"
+"Last-Translator: Hans Petter Bieker <zerium@webindex.no>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gameboard.cc:55
+msgid "End Turn"
+msgstr "Slutt trekk"
+
+#: gameboard.cc:203
+msgid ": Select source planet..."
+msgstr ": velg kildeplanet..."
+
+#: gameboard.cc:221
+msgid ": Select destination planet..."
+msgstr ": Velg målplanet..."
+
+#: gameboard.cc:243
+msgid ": How many ships?"
+msgstr ": Hvor mange skip?"
+
+#: gameboard.cc:267
+msgid "Ruler: Select starting planet."
+msgstr "Hersker: Velg en startplanet."
+
+#: gameboard.cc:287
+#, c-format
+msgid ""
+"The distance from Planet %s to Planet %s is %s light years.\n"
+"A ship leaving this turn will arrive on turn %s"
+msgstr ""
+"Distansen fra planet %s til planet %s er %s lysår.\n"
+"Et skip som drar dette i dette trekket vil nå frem i trekk %s"
+
+#: gameboard.cc:291
+msgid "Distance"
+msgstr "Distanse"
+
+#: gameboard.cc:296
+msgid "Ruler: Select ending planet."
+msgstr "Hersker: Velg en sluttplanet."
+
+#: gameboard.cc:311
+#, c-format
+msgid "Turn #: %2d of %2d"
+msgstr "Trekk #: %2d av %2d"
+
+#: gameboard.cc:426
+#, c-format
+msgid "The once mighty empire of %s has fallen in ruins."
+msgstr "Det en gang mektige emperiet %s har falt."
+
+#: gameboard.cc:428
+msgid "An Empire has fallen..."
+msgstr "Et emperie har falt..."
+
+#: gameboard.cc:438
+#, c-format
+msgid "The fallen empire of %s has staggered back to life."
+msgstr "Det døde emperiet %s har nå kjempet seg tilbake til livet."
+
+#: gameboard.cc:440
+msgid "Up from the ashes..."
+msgstr "Opp fra asken..."
+
+#: gameboard.cc:460
+#, c-format
+msgid "Reinforcements have arrived for planet %s"
+msgstr "Forsterkninger har ankommet planeten %s"
+
+#: gameboard.cc:462
+msgid "Fleet Arrival"
+msgstr "Flåte ankommet"
+
+#: gameboard.cc:505
+#, c-format
+msgid "Planet %s has held against an attack from %s"
+msgstr "Planet %s har holdt ut angrep fra %s"
+
+#: gameboard.cc:507
+msgid "Planet Holds"
+msgstr "Planet inneholder"
+
+#: gameboard.cc:515
+#, c-format
+msgid "Planet %s has fallen to %s"
+msgstr "Planet %s har blitt mistet til %s"
+
+#: gameboard.cc:517
+msgid "Planet Conquered"
+msgstr "Planet beseiret"
+
+#: gameboard.cc:579 mainwin.cc:82
+msgid "End Game"
+msgstr "Slutt spill"
+
+#: gameboard.cc:580
+msgid "Do you wish to retire this game?"
+msgstr "Vil du avslutte spillet?"
+
+#: gameboard.cc:586
+msgid "Final Standings"
+msgstr "Endelige plasseringer"
+
+#: gameboard.cc:758
+msgid "Not enough ships to send."
+msgstr "Ikke nok skip sendt."
+
+#: mainwin.cc:23
+msgid "GNU-Lactic Conquest"
+msgstr "GNU-tisk Overvinner"
+
+#: mainwin.cc:47
+#, c-format
+msgid ""
+"Version %s\n"
+"Copyright (c) 1998 by\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE version by Russ Steffen <rsteffen@ia.net>\n"
+"See http://www.ia.net/~rsteffen/konquest.html for more info"
+msgstr ""
+"Versjon %s\n"
+"Enerett (c) 1998 av\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE-versjon av Russ Steffen <rsteffen@ia.net>\n"
+"Se http://www.ia.net/~rsteffen/konquest.html for mer info"
+
+#: mainwin.cc:88
+msgid "Measure Distance"
+msgstr "Måle distanser"
+
+#: mainwin.cc:92
+msgid "Show Standings"
+msgstr "Vise rangering"
+
+#: newgamedlg.cc:31
+msgid "Preview Map"
+msgstr "Forhåndsvis kart"
+
+#: newgamedlg.cc:35
+msgid "&Reject Map"
+msgstr "&Forkast kart"
+
+#: newgamedlg.cc:41
+msgid "&Player List"
+msgstr "&Spillerliste"
+
+#: newgamedlg.cc:48
+msgid "&Add"
+msgstr "&Legg til"
+
+#: newgamedlg.cc:54
+msgid "&Clear"
+msgstr "&Nullstill"
+
+#: newgamedlg.cc:70
+msgid "&Start Game"
+msgstr "&Start spill"
+
+#: newgamedlg.cc:162
+#, c-format
+msgid "Number of Neutral Planets: %2d"
+msgstr "Antall nøytrale planeter: %2d"
+
+#: newgamedlg.cc:174
+#, c-format
+msgid "Number of turns: %2d"
+msgstr "Antall slag: %2d"
+
+#: planet_info.cc:81 planet_info.cc:116 planet_info.cc:131
+msgid "Planet Name : "
+msgstr "Planetnavn : "
+
+#: planet_info.cc:84 planet_info.cc:134
+msgid "Owner : "
+msgstr "Eier : "
+
+#: planet_info.cc:87
+msgid "Ships : "
+msgstr "Skip : "
+
+#: planet_info.cc:90
+msgid "Production : "
+msgstr "Produksjon : "
+
+#: planet_info.cc:93
+msgid "Kill Percent : "
+msgstr "Drapsprosent : "
+
+#: planet_info.cc:137
+#, c-format
+msgid "Ships : %d"
+msgstr "Skip : %d"
+
+#: planet_info.cc:140
+#, c-format
+msgid "Production : %d"
+msgstr "Produksjon : %d"
+
+#: planet_info.cc:143
+#, c-format
+msgid "Kill Percent : %.3f"
+msgstr "Drapsprosent : %.3f"
+
+#: gameenddlg.cc:14
+msgid ""
+"This is the last turn.\n"
+"Do you wish to add more turns?"
+msgstr ""
+"Detter er siste trekk.\n"
+"Ønsker du å legge til flere trekk?"
+
+#: gameenddlg.cc:64
+#, c-format
+msgid "Add %d turns"
+msgstr "Legg til %d trekk"
+
+#: scoredlg.cc:18
+msgid "Player"
+msgstr "Spiller"
+
+#: scoredlg.cc:19
+msgid "Ships Built"
+msgstr "Skip bygget"
+
+#: scoredlg.cc:20
+msgid "Planets Conquered"
+msgstr "Planeter beseiret"
+
+#: scoredlg.cc:21
+msgid "Fleets Launched"
+msgstr "Flåter tatt av"
+
+#: scoredlg.cc:22
+msgid "Fleets Destroyed"
+msgstr "Flåter ødelagt"
+
+#: scoredlg.cc:23
+msgid "Ships Destroyed"
+msgstr "Skipp ødelagt"

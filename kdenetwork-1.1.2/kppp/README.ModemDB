@@ -1,0 +1,77 @@
+Modem Database
+==============
+
+The Modem Database (MD) will further simplify kppp by allowing the user to
+select a modem from a database. The MD will be organized by the name of the
+manufacturer. Each modem will only have those entries not common to the
+generic Hayes Modem command set. The following entries will be available
+(defaults in brackets):
+
+[Group]:	Can be freely choosen, may not be "Common"
+Vendor:		The modem vendor
+Name:		The name of the modem, without vendor. Needed
+Parent:		All settings of this modem are inherited. Parent works
+		recursive, so if the parent has another parent, this will
+		be inherited too and so on.
+Reset:		This should reset the modem (ATZ)
+Init:		The init string (AT V1 E1)
+Volume0:	Volume off (ATL0)
+Volume1:	Medium volume (ATL1)
+Volume2:	Loud volume (ATL3)
+PreInitDelay:	Delay after opening the modem, before sending the Init
+		command (50)
+PostInitDelay:	Delay after sending the Init command (30)
+InitResponse:	Modem response to the Init command (OK)
+BlindDialOn:	To dial without waiting for line carrier (ATX3)
+BlindDialOff:	Don´t dial without waiting for line carrier (ATX4)
+ToneDial:	The command to dial out, number is appended (ATDT)
+PulseDial:	The command to use impulse dialing (ATDP)
+ConnectResponse:The modems answer to "Dial" when connection is established
+BusyResponse:	Response to a busy line (BUSY)
+NoCarrierResponese: Response when carrier was not establ. (NO CARRIER)
+NoDialTone:	Response when no dial tone was found (NO DIALTONE)
+SupportsCD:	Modem supports the "Modem asserts CD line" feature (1==yes)
+AutoAnswerOn:   Turn on auto answer (for callback) (ATS0=1)
+AutoAnswerOff:   Turn off auto answer ATS0=0
+
+If the name begins with "!", this is NOT shown in the modem list but can be
+taken as parent. Every modem initially inherits from "Common".
+
+Example:
+========
+
+[Common]
+Vendor=Generic
+Name=Hayes Compatible
+Reset=Z
+Init=ATV1
+Volume0=M0L0
+Volume1=M1L1
+Volume2=M1L3
+PreInitDelay=50
+PostInitDelay=30
+InitResponse=OK
+BlindDialOn=X3
+BlindDialOff=X4
+ToneDial=DT
+PulseDial=DP
+ConnectResponse=CONNECT
+BusyResponse=BUSY
+NoCarrierResponese=NO CARRIER
+NoDialTone=NO DIALTONE
+SupportsCD=true
+
+[!Zyxel Omni TA128]
+Vendor=Zyxel
+Name=Omni TA 128
+Reset=&F
+
+[Zyxel Omni TA128/X75]
+Parent=Zyxel Omni TA128
+Name=Zyxel Omni TA128/X75
+Init=B20 V1 E1
+
+[Zyxel Omni TA128/sync.PPP]
+Parent=!Zyxel Omni TA128
+Name=Zyxel Omni TA128/sync.PPP
+Init=B40 V1 E1

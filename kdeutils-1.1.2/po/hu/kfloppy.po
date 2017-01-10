@@ -1,0 +1,204 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Sári Gábor <saga@mail.externet.hu>, 1999.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kfloppy 1.1.0\n"
+"POT-Creation-Date: 1999-08-27 01:21+0200\n"
+"PO-Revision-Date: 1999-08-02 13:53+0200\n"
+"Last-Translator: Sári Gábor <saga@mail.externet.hu>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+""
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "KDE mágneslemez formattáló"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "Verzió"
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Meghajtó:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Sûrûség:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Fájlrendszer:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Formattálás"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Gyors törlés"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Teljes formattálás"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Kötetnév:"
+
+#: floppy.cpp:148
+msgid "KDE Floppy"
+msgstr "KDE floppy"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "KDE mágneslemez formattáló"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr "DD"
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"Nem tudok hozzáférni a(z) %s meghajtóhoz\n"
+"Ellenõrizd le, hogy létezik-e ez az eszköz,\n"
+"vagy van-e jogod írni rá."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Nem találom a kfdformat parancsot\n"
+"A kfdformat része a KFloppy csomagnak.\n"
+"Kérem telepítse újra."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Nem találom a kmke2fs parancsot\n"
+"A kmke2fs része a KFloppy csomagnak.\n"
+"Kérem telepítse újra."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Nem találom a kmkdosfs parancsot\n"
+"A kmkdosfs része a KFloppy csomagnak.\n"
+"Kérem telepítse újra."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Megszakít"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Nem tudok új programot indítani: a fork() nem sikerült."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Nem érem el a lemezt vagy a lemez meghajtót\n"
+"Tegyél be egy lemezt, vagy ellenõrizd, hogy\n"
+"érvényes meghajtót választottál-e.\n"
+""
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"Nem formázható: %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "%d blokk hibás. Folytatás ..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"A %s-n nem hozható létre fájlrendszer\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"A mágneslemez formattálása befejezõdött.\n"
+"Hibás blokk: %d\n"
+"Üres kapacitás: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Az összes fájl sikeresen letörölve."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Fájlrendszer létrehozása ..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Ellenõrzés ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Nem tudok új programot indítani\n"
+"fork() nem sikerült."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Hiba történt miközben megpróbáltam kideríteni, hogy mountolva van-e a floppy\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"A %s mountolva van a fájlrendszerhez.\n"
+"Kérem az umount-al szabadítsa fel."

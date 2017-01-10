@@ -1,0 +1,279 @@
+kdeutils (4:1.1.2-19990906-1) unstable; urgency=low
+
+  * new upstream version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Mon, 06 Sep 1999 22:30:57 -0400
+
+kdeutils (4:1.1.1-19990706-1) unstable; urgency=low
+
+  * new upstream CVS version
+  * Fixes kfloppy issue with /dev/fd0u1440
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Tue, 06 Jun 1999 01:05:57 -0500
+
+kdeutils (4:1.1.1-19990701-1) unstable; urgency=low     
+
+  * new upstream CVS version 
+  * This is pre-1.1.2 (frozen)
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Thu, 01 Jun 1999 23:45:57 -0500
+
+kdeutils (4:1.1.1-19990624-1) unstable; urgency=low
+
+  * new upstream CVS version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Thu, 24 Jun 1999 05:30:57 -0500
+
+kdeutils (4:1.1.1-19990612-1) unstable; urgency=low
+
+  * new upstream CVS version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sat, 12 Jun 1999 03:30:57 -0500
+
+kdeutils (4:1.1.1-19990529-1) unstable; urgency=low
+
+  * new upstream CVS version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sat, 29 May 1999 22:00:57 -0500
+
+kdeutils (4:1.1.1-19990523-1) unstable; urgency=low
+
+  * new upstream CVS version 
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sun, 23 May 1999 08:00:57 -0500 
+
+kdeutils (4:1.1.1-19990424-1) unstable; urgency=low
+
+  * new upstream version for KDE 1.1.1
+
+ -- Stephan Kulow <coolo@kde.org>  Sat, 24 Apr 1999 16:53:57 +0200
+
+kdeutils (4:1.1-19990306-1) unstable; urgency=low
+
+  * new upstream version out of CVS (many translation updates and some
+    security fixes
+
+ -- Stephan Kulow <coolo@kde.org>  Sat,  6 Mar 1999 18:03:06 +0100
+
+kdeutils (4:1.1-19990217-1) unstable; urgency=low
+
+  * new upstream version
+
+ -- Stephan Kulow <coolo@kde.org>  Wed, 17 Feb 1999 19:09:43 +0100
+
+kdeutils (4:1.1-19990207-2) unstable; urgency=low
+
+  * fixed a bug with the wrong libjpeg version
+
+ -- Stephan Kulow <coolo@kde.org>  Tue,  9 Feb 1999 10:43:44 +0100
+
+kdeutils (4:1.1-19990207-1) unstable; urgency=low
+
+  * new upstream version 1.1 and new epoche
+
+ -- Stephan Kulow <coolo@kde.org>  Sun,  7 Feb 1999 12:12:59 +0100
+
+kdeutils (2:980710-1.0-1) unstable; urgency=low
+
+  * new upstream version 1.0
+
+ -- Stephan Kulow <coolo@kde.org>  Sun, 12 Jul 1998 10:12:20 +0200
+
+kdeutils (2:980419-b4-1) unstable; urgency=low
+
+  * new upstream version Beta4
+
+ -- Stephan Kulow <coolo@kde.org>  Sun, 19 Apr 1998 15:24:47 +0200
+
+kdeutils (2:980312-6) frozen; urgency=low
+
+  * new frozen compile with latest fixed kdelibs. This time from CVS
+
+ -- Stephan Kulow <coolo@kde.org>  Fri,  3 Apr 1998 15:10:54 +0200
+
+kdeutils (2:980312-5) frozen; urgency=low
+
+  * don't compile kcalc with long double
+
+ -- Stephan Kulow <coolo@kde.org>  Thu, 26 Mar 1998 14:35:59 +0100
+
+kdeutils (2:980312-4) frozen; urgency=low
+
+  * new compile cycle with qt-1.33 and libstdc++-2.8
+
+ -- Stephan Kulow <coolo@kde.org>  Tue, 24 Mar 1998 20:49:33 +0100
+
+kdeutils (2:980312-3) unstable; urgency=low
+
+  * changed the maintainer field. I have missed this one ;(
+
+ -- Stephan Kulow <coolo@kde.org>  Sun, 15 Mar 1998 20:51:08 +0100
+
+kdeutils (2:980312-2) unstable; urgency=low
+
+  * fixed typo in the Description
+
+ -- Stephan Kulow <coolo@kde.org>  Sun, 15 Mar 1998 20:05:47 +0100
+
+kdeutils (2:980312-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Thu, 12 Mar 1998 23:27:36 +0100
+
+kdeutils (980227-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Fri, 27 Feb 1998 22:03:42 +0100
+
+kdeutils (1:Beta2-2.1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Fri,  5 Dec 1997 21:16:47 +0100
+
+kdeutils (1:Beta2-2) unstable; urgency=low
+
+  * removed virtual package names.
+  * fixed kcalc (compiling with long double breaks somewhere).
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sat, 29 Nov 1997 14:37:17 +0100
+
+kdeutils (1:Beta2-1) unstable; urgency=low
+
+  * new upstream version
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 23 Nov 1997 16:02:18 +0100
+
+kdeutils (1:Beta1.2-2) unstable; urgency=low
+
+  * added /usr/bin/editor divertion
+  * now remove inst-apps file.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun,  9 Nov 1997 17:44:32 +0100
+
+kdeutils (1:Beta1.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 27 Oct 1997 11:23:49 +0100
+
+kdeutils (1:Beta1.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 20 Oct 1997 12:32:06 +0200
+
+kdeutils (971019-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 13 Oct 1997 08:29:18 +0200
+
+kdeutils (971013-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 13 Oct 1997 08:29:18 +0200
+
+kdeutils (971009-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Thu,  9 Oct 1997 10:57:54 +0200
+
+kdeutils (971008-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Wed,  8 Oct 1997 10:14:01 +0200
+
+kdeutils (971006-2) unstable; urgency=low
+
+  * daily recompile of everything.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Tue,  7 Oct 1997 12:51:04 +0200
+
+kdeutils (971006-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon,  6 Oct 1997 09:30:04 +0200
+
+kdeutils (971005-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun,  5 Oct 1997 17:38:07 +0200
+
+kdeutils (971002-2) unstable; urgency=low
+
+  * daily recompile of everything.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Fri,  3 Oct 1997 10:38:16 +0200
+
+kdeutils (971002-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Thu,  2 Oct 1997 08:57:52 +0200
+
+kdeutils (970930-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Tue, 30 Sep 1997 11:59:53 +0200
+
+kdeutils (970929-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 29 Sep 1997 09:45:28 +0200
+
+kdeutils (970926-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Fri, 26 Sep 1997 08:12:07 +0200
+
+kdeutils (970925-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Thu, 25 Sep 1997 08:09:30 +0200
+
+kdeutils (970922-3) unstable; urgency=low
+
+  * daily recompile of everything.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Wed, 24 Sep 1997 11:46:00 +0200
+
+kdeutils (970922-2) unstable; urgency=low
+
+  * daily recompile of everything.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Tue, 23 Sep 1997 09:47:14 +0200
+
+kdeutils (970922-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 22 Sep 1997 09:49:29 +0200
+
+kdeutils (970921-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 21 Sep 1997 13:58:12 +0200
+
+kdeutils (970920-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sat, 20 Sep 1997 17:48:42 +0200
+
+Local variables:
+mode: debian-changelog
+add-log-mailing-address: "aj@debian.org"
+End:

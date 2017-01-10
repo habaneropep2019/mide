@@ -1,0 +1,7 @@
+Known Bugs:
+
+ - segfault on exit (only sometimes...)
+   workaround: SIGSEGV-handler
+ - propably some memory holes (not sure, couldn't get efence to work)
+ - relative links are changed to absolute ones
+ - small resize neccessary because of a bug in KNewPanner

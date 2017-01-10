@@ -1,0 +1,492 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 1998.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KWRITE\n"
+"POT-Creation-Date: 1999-04-17 02:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: highlight.cpp:1715
+msgid "Normal:"
+msgstr "Normaali:"
+
+#: highlight.cpp:1725 kwdialog.cpp:495
+msgid "Selected:"
+msgstr "Valittu:"
+
+#: highlight.cpp:1732
+msgid "Bold"
+msgstr "Paksu"
+
+#: highlight.cpp:1783
+msgid "Family:"
+msgstr "Perhe:"
+
+#: highlight.cpp:1793
+msgid "Size:"
+msgstr "Koko:"
+
+#: highlight.cpp:1891
+msgid "Default Item Styles"
+msgstr "Oletustyyppien tyylit"
+
+#: highlight.cpp:1895 highlight.cpp:1966
+msgid "Item:"
+msgstr "Tyyppi:"
+
+#: highlight.cpp:1913
+msgid "Default Font"
+msgstr "Oletuskirjasin"
+
+#: highlight.cpp:1950
+msgid "Config Select"
+msgstr "Asetusten valinta"
+
+#: highlight.cpp:1954
+msgid "Highlight:"
+msgstr "Syntaksiväritys:"
+
+#: highlight.cpp:1973
+msgid "Highlight Auto Select"
+msgstr "Automaattinen syntaksiväritys"
+
+#: highlight.cpp:1977
+msgid "File Extensions:"
+msgstr "Tiedostopäätteet:"
+
+#: highlight.cpp:1984
+msgid "Mime Types:"
+msgstr "Mime -tyypit:"
+
+#: highlight.cpp:1991
+msgid "Item Style"
+msgstr "Tyypin tyyli"
+
+#: highlight.cpp:2000
+msgid "Item Font"
+msgstr "Tyypin kirjasin"
+
+#: kwview.cpp:1069
+msgid "Vertical Selections On"
+msgstr "Pystyvalinnat päällä"
+
+#: kwview.cpp:1069
+msgid "Vertical Selections Off"
+msgstr "Pystyvalinnat poissa"
+
+#: kwview.cpp:1128
+msgid "The specified File does not exist"
+msgstr "Määriteltyä tiedostoa ei löydy"
+
+#: kwview.cpp:1138
+msgid "You have specified a directory"
+msgstr "Olet valinnut hakemiston"
+
+#: kwview.cpp:1148
+msgid "You do not have read permission to this file"
+msgstr "Sinulla ei ole lukuoikeuksia tiedostoon"
+
+#: kwview.cpp:1164 kwview.cpp:1194
+msgid "An Error occured while trying to open this Document"
+msgstr "Tapahtui virhe avattaessa asiakirjaa"
+
+#: kwview.cpp:1178
+msgid "You do not have write permission to this file"
+msgstr "Sinulla ei ole kirjoitusoikeuksia tiedosoton"
+
+#: kwview.cpp:1231
+msgid "Loading..."
+msgstr "Lataan..."
+
+#: kwview.cpp:1239 kwview.cpp:1360
+msgid "Inserted"
+msgstr "Lisätty"
+
+#: kwview.cpp:1244 kwview.cpp:1369
+msgid "Read"
+msgstr "Lue"
+
+#: kwview.cpp:1253 kwview.cpp:1311
+msgid ""
+"KWrite is already waiting\n"
+"for an internet job to finish\n"
+"Please wait until it has finished\n"
+"Alternatively stop the running one."
+msgstr ""
+"KWrite odottaa Internet työn\n"
+"valmistumista. Odota kunnes se\n"
+"on valmis tai keskeytä nykyinen."
+
+#: kwview.cpp:1261 kwview.cpp:1319
+msgid "Waiting for KFM..."
+msgstr "Odotan KFM:ää..."
+
+#: kwview.cpp:1267 kwview.cpp:1332
+msgid "Could not start or find KFM"
+msgstr "En saanut käynnistettyä KFM:ää"
+
+#: kwview.cpp:1294
+msgid "Saving..."
+msgstr "Tallennan..."
+
+#: kwview.cpp:1302 kwview.cpp:1379
+msgid "Wrote"
+msgstr "Kirjoitin"
+
+#: kwview.cpp:1408
+msgid ""
+"The current Document has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Nykyistä asiakirjaa on muutettu.\n"
+"Haluatko tallentaa sen?"
+
+#: kwview.cpp:1419
+msgid ""
+"Could not save the document.\n"
+"Open a new document anyways?"
+msgstr ""
+"En saanut tallennettuna asiakirjaa.\n"
+"Avaa uusi asiakirja kuitenkin?"
+
+#: kwview.cpp:1466
+msgid "No changes need to be saved"
+msgstr "Mitään muutoksia ei tarvitse tallettaa"
+
+#: kwview.cpp:1487
+msgid ""
+"A Document with this Name already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Samalla nimellä on jo olemassa asiakirja.\n"
+"Haluatko ylikirjoittaa sen?"
+
+#: kwview.cpp:1690 kwview.cpp:1878
+msgid "End of document reached"
+msgstr "Asiakirjan loppu saavutettu"
+
+#: kwview.cpp:1691 kwview.cpp:1879
+msgid "Continue from the beginning"
+msgstr "Jatka alusta"
+
+#: kwview.cpp:1693 kwview.cpp:1704 kwview.cpp:1714
+msgid "Find"
+msgstr "Etsi"
+
+#: kwview.cpp:1701 kwview.cpp:1890
+msgid "Beginning of document reached"
+msgstr "Asiakirjan alku saavutettu"
+
+#: kwview.cpp:1702 kwview.cpp:1891
+msgid "Continue from the end"
+msgstr "Jatka lopusta"
+
+#: kwview.cpp:1715
+msgid "Search string not found!"
+msgstr "Hakusanaa ei löytynyt!"
+
+#: kwview.cpp:1863 kwview.cpp:1877 kwview.cpp:1889
+msgid "replace(s) made"
+msgstr "korvausta tehty"
+
+#: kwview.cpp:2004 toplevel.cpp:477
+msgid "Line"
+msgstr "Rivi"
+
+#: kwdialog.cpp:31
+msgid "&Text To Find:"
+msgstr "&Hakusana:"
+
+#: kwdialog.cpp:43
+msgid "&Replace With:"
+msgstr "&Korvaa:"
+
+#: kwdialog.cpp:57
+msgid "&Case Sensitive"
+msgstr "K&irjasinkokoherkkä"
+
+#: kwdialog.cpp:61
+msgid "&Whole Words Only"
+msgstr "K&okonaisia sanoja"
+
+#: kwdialog.cpp:65
+msgid "&From Cursor"
+msgstr "&Kohdistimesta"
+
+#: kwdialog.cpp:74
+msgid "Find &Backwards"
+msgstr "Etsi &taaksepäin"
+
+#: kwdialog.cpp:78
+msgid "&Selected Text"
+msgstr "&Valittu teksti"
+
+#: kwdialog.cpp:91
+msgid "&Prompt On Replace"
+msgstr "K&ysy korvattaessa"
+
+#: kwdialog.cpp:167
+msgid "Replace this occurence?"
+msgstr "Korvaa tämä?"
+
+#: kwdialog.cpp:174
+msgid "&Yes"
+msgstr "&Kyllä"
+
+#: kwdialog.cpp:182
+msgid "&No"
+msgstr "&Ei"
+
+#: kwdialog.cpp:188
+msgid "&All"
+msgstr "K&aikki"
+
+#: kwdialog.cpp:251
+msgid "&Goto Line:"
+msgstr "&Siirry riville:"
+
+#: kwdialog.cpp:294
+msgid "Edit Options"
+msgstr "Muokkausasetukset"
+
+#: kwdialog.cpp:295
+msgid "Auto &Indent"
+msgstr "&Automaattisisennys"
+
+#: kwdialog.cpp:297
+msgid "&Backspace Indent"
+msgstr "&Backspace sisennys"
+
+#: kwdialog.cpp:299
+msgid "&Word Wrap"
+msgstr "&Sanankierrätys"
+
+#: kwdialog.cpp:301
+msgid "Replace &Tabs"
+msgstr "Korvaa &tabulaattorit"
+
+#: kwdialog.cpp:303
+msgid "Remove Trailing &Spaces"
+msgstr "Poista loppu&välilyönnit"
+
+#: kwdialog.cpp:305
+msgid "Wrap &Cursor"
+msgstr "&Kierrätä kohdistinta"
+
+#: kwdialog.cpp:307
+msgid "&Auto Brackets"
+msgstr "A&utomaattisulut"
+
+#: kwdialog.cpp:321
+msgid "Select Options"
+msgstr "Valinnan asetukset"
+
+#: kwdialog.cpp:322
+msgid "&Persistent Selections"
+msgstr "&Pysyvät valinnat"
+
+#: kwdialog.cpp:324
+msgid "&Multiple Selections"
+msgstr "&Monta valintaa"
+
+#: kwdialog.cpp:326 toplevel.cpp:233
+msgid "&Vertical Selections"
+msgstr "P&ystyvalinnat"
+
+#: kwdialog.cpp:328
+msgid "&Delete On Input"
+msgstr "&Tuhoa kirjoitettaessa"
+
+#: kwdialog.cpp:330
+msgid "&Toggle Old"
+msgstr "&Vanha"
+
+#: kwdialog.cpp:345
+msgid "Wrap Words At:"
+msgstr "Kierrätä sanoja:"
+
+#: kwdialog.cpp:351
+msgid "Tab Width:"
+msgstr "Tab pituus:"
+
+#: kwdialog.cpp:358
+msgid "Undo steps:"
+msgstr "Peruutusaskeleita:"
+
+#: kwdialog.cpp:479
+msgid "Background:"
+msgstr "Tausta:"
+
+#: kwdialog.cpp:487
+msgid "Text Background:"
+msgstr "Tekstin tausta:"
+
+#: kwdialog.cpp:503
+msgid "Found:"
+msgstr "Löytyi:"
+
+#: kwdialog.cpp:511
+msgid "Selected + Found:"
+msgstr "Valittu + Löytyi:"
+
+#: toplevel.cpp:102
+msgid "Message"
+msgstr "Viesti"
+
+#: toplevel.cpp:103
+msgid ""
+"This Document has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Asiakirjaa on muokattu.\n"
+"Haluatko tallentaa sen?"
+
+#: toplevel.cpp:166
+msgid "Ne&w..."
+msgstr "&Uusi..."
+
+#: toplevel.cpp:168
+msgid "&Insert..."
+msgstr "&Liitä..."
+
+#: toplevel.cpp:169
+msgid "Open Recen&t"
+msgstr "Avaa &edellinen"
+
+#: toplevel.cpp:180
+msgid "New &Window"
+msgstr "Uusi &ikkuna"
+
+#: toplevel.cpp:181
+msgid "New &View"
+msgstr "Uusi &näkymä"
+
+#: toplevel.cpp:190
+msgid "&Find..."
+msgstr "&Etsi..."
+
+#: toplevel.cpp:191
+msgid "&Replace..."
+msgstr "&Korvaa..."
+
+#: toplevel.cpp:192
+msgid "Find &Again"
+msgstr "Etsi &uudelleen"
+
+#: toplevel.cpp:193
+msgid "&Goto Line..."
+msgstr "&Siirry riville..."
+
+#: toplevel.cpp:195
+msgid "U&ndo"
+msgstr "&Peruuta"
+
+#: toplevel.cpp:196
+msgid "R&edo"
+msgstr "&Tee uudelleen"
+
+#: toplevel.cpp:198
+msgid "&Indent"
+msgstr "Sisennä"
+
+#: toplevel.cpp:199
+msgid "Uninden&t"
+msgstr "Poista sisennys"
+
+#: toplevel.cpp:203
+msgid "&Select All"
+msgstr "&Valitse kaikki"
+
+#: toplevel.cpp:204
+msgid "&Deselect All"
+msgstr "P&oista valinta"
+
+#: toplevel.cpp:205
+msgid "In&vert Selection"
+msgstr "K&äännä valinta"
+
+#: toplevel.cpp:210
+msgid "&Set Bookmark..."
+msgstr "&Aseta kirjanmerkki..."
+
+#: toplevel.cpp:211
+msgid "&Add Bookmark"
+msgstr "&Lisää kirjanmerkki"
+
+#: toplevel.cpp:212
+msgid "&Clear Bookmarks"
+msgstr "&Poista kirjanmerkki"
+
+#: toplevel.cpp:224
+msgid "Set Highlight"
+msgstr "Syntaksiväritys"
+
+#: toplevel.cpp:226
+msgid "&Defaults..."
+msgstr "&Oletukset..."
+
+#: toplevel.cpp:227
+msgid "&Highlight..."
+msgstr "&Syntaksiväritys..."
+
+#: toplevel.cpp:230
+msgid "&Options..."
+msgstr "&Asetukset..."
+
+#: toplevel.cpp:231
+msgid "&Colors..."
+msgstr "&Värit..."
+
+#: toplevel.cpp:234
+msgid "Show &Toolbar"
+msgstr "Näytä &työkalurivi"
+
+#: toplevel.cpp:235
+msgid "Show &Statusbar"
+msgstr "Näytä t&ilarivi"
+
+#: toplevel.cpp:236
+msgid "Save Config"
+msgstr "Tallenna asetukset"
+
+#: toplevel.cpp:249
+msgid ""
+"KWrite 0.98\n"
+"\n"
+"Copyright 1998\n"
+"Jochen Wilhelmy\n"
+"digisnap@cs.tu-berlin.de"
+msgstr ""
+"KWrite 0.98\n"
+"\n"
+"Copyright 1998\n"
+"Jochen Wilhelmy\n"
+"digisnap@cs.tu-berlin.de"
+
+#: toplevel.cpp:272
+msgid "&Bookmarks"
+msgstr "&Kirjanmerkit"
+
+#: toplevel.cpp:291
+msgid "New Document"
+msgstr "Uusi asiakirja"
+
+#: toplevel.cpp:295
+msgid "Open Document"
+msgstr "Avaa asiakirja"
+
+#: toplevel.cpp:299
+msgid "Save Document"
+msgstr "Tallenna asiakirja"
+
+#: toplevel.cpp:478
+msgid "Col"
+msgstr "Sar"

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwPositionedSprite Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwPositionedSprite Class Reference</h1><br clear="all">
+<p>
+A <a href="qwvirtualsprite.html">QwVirtualSprite</a> with a stored position and frame number.
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>
+Inherits <a href="qwvirtualsprite.html">QwVirtualSprite</a>.
+<p><a href="qwpositionedsprite-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwpositionedsprite.html#a0"><strong>QwPositionedSprite</strong></a> ( QwSpritePixmapSequence * seq ) </span>
+<li><span class="fn"><a href="qwpositionedsprite.html#a1"><strong>QwPositionedSprite</strong></a> () </span>
+<li><span class="fn">void <a href="qwpositionedsprite.html#a2"><strong>setSequence</strong></a> ( QwSpritePixmapSequence * seq ) </span>
+<li><span class="fn">virtual <a href="qwpositionedsprite.html#a3"><strong>~QwPositionedSprite</strong></a> () </span>
+<li><span class="fn">void <a href="qwpositionedsprite.html#a4"><strong>frame</strong></a> ( int f ) </span>
+<li><span class="fn">int <a href="qwpositionedsprite.html#a5"><strong>frame</strong></a> () const</span>
+<li><span class="fn">int <a href="qwpositionedsprite.html#a6"><strong>frameCount</strong></a> () const</span>
+<li><span class="fn">virtual int <a href="qwpositionedsprite.html#a7"><strong>x</strong></a> () const</span>
+<li><span class="fn">virtual int <a href="qwpositionedsprite.html#a8"><strong>y</strong></a> () const</span>
+<li><span class="fn">COORD <a href="qwpositionedsprite.html#a9"><strong>exact_x</strong></a> () const</span>
+<li><span class="fn">COORD <a href="qwpositionedsprite.html#b0"><strong>exact_y</strong></a> () const</span>
+<li><span class="fn">void <a href="qwpositionedsprite.html#b1"><strong>x</strong></a> ( COORD nx ) </span>
+<li><span class="fn">void <a href="qwpositionedsprite.html#b2"><strong>y</strong></a> ( COORD ny ) </span>
+<li><span class="fn">void <a href="qwpositionedsprite.html#b3"><strong>moveBy</strong></a> ( COORD dx, COORD dy ) </span>
+<li><span class="fn">void <a href="qwpositionedsprite.html#b4"><strong>moveTo</strong></a> ( COORD nx, COORD ny ) </span>
+<li><span class="fn">virtual void <a href="qwpositionedsprite.html#b5"><strong>moveTo</strong></a> ( COORD nx, COORD ny, int nf ) </span>
+<li><span class="fn">virtual int <a href="qwpositionedsprite.html#b6"><strong>z</strong></a> () const</span>
+<li><span class="fn">void <a href="qwpositionedsprite.html#b7"><strong>z</strong></a> ( int a ) </span>
+<li><span class="fn">virtual int <a href="qwpositionedsprite.html#b8"><strong>rtti</strong></a> () const</span>
+<li><span class="fn">Pix <a href="qwpositionedsprite.html#b9"><strong>neighbourhood</strong></a> ( int nframe ) const</span>
+<li><span class="fn">Pix <a href="qwpositionedsprite.html#c0"><strong>neighbourhood</strong></a> ( int nx, int ny ) const</span>
+<li><span class="fn">Pix <a href="qwpositionedsprite.html#c1"><strong>neighbourhood</strong></a> ( COORD nx, COORD ny, int nframe ) const</span>
+<li><span class="fn">bool <a href="qwpositionedsprite.html#c2"><strong>wouldHit</strong></a> ( QwSpriteFieldGraphic &amp; other, COORD x, COORD y, int frame ) const</span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+A <a href="qwvirtualsprite.html">QwVirtualSprite</a> with a stored position and frame number.
+<p>
+This is a template class which allows any numerical class to be used as
+the stored coordinate type of a QwVirtualSprite.  Two derived classes,
+<a href="qwsprite.html">QwSprite</a> and <a href="qwrealsprite.html">QwRealSprite</a> provide \t integer and \t double instantiations
+of this class.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a1"></a>QwPositionedSprite::QwPositionedSprite ()</h3>
+<p>Create a QwPositionedSprite<COORD> without defining its image sequence.
+<p>The sprite in initially at (0,0) on the current spritefield
+(see constructor for <a href="qwspritefield.html">QwSpriteField</a>), using the 0th sequence frame.
+<p>Note that you must call <a href="qwpositionedsprite.html#a2">setSequence</a>(<a href="qwspritepixmapsequence.html">QwSpritePixmapSequence</a>*) before
+doing anything else with the sprite.
+<h3 class="fn"><a name="a0"></a>QwPositionedSprite::QwPositionedSprite ( <a href="qwspritepixmapsequence.html">QwSpritePixmapSequence</a> * seq )</h3>
+<p>Create a QwPositionedSprite<COORD> which uses images from the given sequence.
+<p>The sprite in initially at (0,0) on the current spritefield
+(see constructor for <a href="qwspritefield.html">QwSpriteField</a>), using the 0th sequence frame.
+<h3 class="fn"><a name="a3"></a>QwPositionedSprite::~QwPositionedSprite () <code>[virtual]</code></h3>
+<p>Destruct the sprite.
+It is removed from its <a href="qwspritefield.html">QwSpriteField</a> in this process.
+<h3 class="fn">COORD <a name="a9"></a>QwPositionedSprite::exact_x () const</h3>
+<p>Returns the X-position, in COORD units rather than the integer pixel
+coordinates used by the graphical engine.
+<h3 class="fn">COORD <a name="b0"></a>QwPositionedSprite::exact_y () const</h3>
+<p>Returns the Y-position, in COORD units rather than the integer pixel
+coordinates used by the graphical engine.
+<h3 class="fn">int <a name="a5"></a>QwPositionedSprite::frame () const</h3>
+<p>Returns the index into the QwPositionedSprite<COORD>'s <a href="qwspritepixmapsequence.html">QwSpritePixmapSequence</a>
+of the current animation frame.
+<p>See also:  <a href="qwpositionedsprite.html#b4">moveTo</a>(COORD,COORD,int).
+<h3 class="fn">void <a name="a4"></a>QwPositionedSprite::frame ( int f )</h3>
+<p>Set the animation frame used for displaying the sprite to
+the given index into the QwPositionedSprite<COORD>'s <a href="qwspritepixmapsequence.html">QwSpritePixmapSequence</a>.
+<p>See also:  <a href="qwpositionedsprite.html#b4">moveTo</a>(COORD,COORD,int).
+<h3 class="fn">int <a name="a6"></a>QwPositionedSprite::frameCount () const</h3>
+<p>Returns the number of frames in the QwPositionedSprite<COORD>'s <a href="qwspritepixmapsequence.html">QwSpritePixmapSequence</a>.
+<h3 class="fn">void <a name="b3"></a>QwPositionedSprite::moveBy ( COORD dx, COORD dy )</h3>
+<p>Move the sprite from its current position by the given amounts.
+<h3 class="fn">void <a name="b4"></a>QwPositionedSprite::moveTo ( COORD nx, COORD ny )</h3>
+<p>Move the sprite to the given absolute position.
+<p>See also:  <a href="qwpositionedsprite.html#b3">moveBy</a>(COORD,COORD) and moveTo(COORD,COORD,int).
+<h3 class="fn">void <a name="b5"></a>QwPositionedSprite::moveTo ( COORD nx, COORD ny, int nf ) <code>[virtual]</code></h3>
+<p>Set both the position and the frame of the sprite.
+<h3 class="fn">Pix <a name="c1"></a>QwPositionedSprite::neighbourhood ( COORD nx, COORD ny, int nframe ) const</h3>
+<p>Similar to <a href="qwvirtualsprite.html#b4">QwVirtualSprite::neighbourhood</a>(int x, int y, <a href="qwspritepixmap.html">QwSpritePixmap</a>*), but
+the image is specified by index rather than actual value.
+<h3 class="fn">Pix <a name="b9"></a>QwPositionedSprite::neighbourhood ( int nframe ) const</h3>
+<p>Similar to <a href="qwvirtualsprite.html#b4">QwVirtualSprite::neighbourhood</a>(<a href="qwspritepixmap.html">QwSpritePixmap</a>*), but
+the image is specified by index rather than actual value.
+<h3 class="fn">Pix <a name="c0"></a>QwPositionedSprite::neighbourhood ( int nx, int ny ) const</h3>
+<p>Same as <a href="qwvirtualsprite.html#b4">QwVirtualSprite::neighbourhood</a>(int x, int y).
+<h3 class="fn">int <a name="b8"></a>QwPositionedSprite::rtti () const <code>[virtual]</code></h3>
+<p>Returns 2.
+<p>See also:  <a href="qwspritefieldgraphic.html#b3">QwSpriteFieldGraphic::rtti</a>().
+<h3 class="fn">void <a name="a2"></a>QwPositionedSprite::setSequence ( <a href="qwspritepixmapsequence.html">QwSpritePixmapSequence</a> * seq )</h3>
+<p>Set the sequence of images used for displaying the sprite.  Note that
+the sequence should have enough images for the sprites current <a href="qwpositionedsprite.html#a4">frame</a>()
+to be valid.
+<h3 class="fn">bool <a name="c2"></a>QwPositionedSprite::wouldHit ( <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> &amp; other, COORD x, COORD y, int frame ) const</h3>
+<p>Similar to <a href="qwvirtualsprite.html#c2">QwVirtualSprite::wouldHit</a>(<a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>&, int x, int y, <a href="qwspritepixmap.html">QwSpritePixmap</a>*),
+but the image is specified by index rather than actual value.
+<h3 class="fn">int <a name="a7"></a>QwPositionedSprite::x () const <code>[virtual]</code></h3>
+<p>Returns the stored horizontal position of the sprite.
+<h3 class="fn">void <a name="b1"></a>QwPositionedSprite::x ( COORD nx )</h3>
+<p>Set the horizontal position of the sprite.
+<p>See also:  <a href="qwpositionedsprite.html#b4">moveTo</a>(COORD,COORD).
+<h3 class="fn">int <a name="a8"></a>QwPositionedSprite::y () const <code>[virtual]</code></h3>
+<p>Returns the stored vertical position of the sprite.
+<h3 class="fn">void <a name="b2"></a>QwPositionedSprite::y ( COORD ny )</h3>
+<p>Set the vertical position of the sprite.
+<p>See also:  <a href="qwpositionedsprite.html#b4">moveTo</a>(COORD,COORD).
+<h3 class="fn">int <a name="b6"></a>QwPositionedSprite::z () const <code>[virtual]</code></h3>
+<p>Returns the stored z of the sprite.
+<h3 class="fn">void <a name="b7"></a>QwPositionedSprite::z ( int a )</h3>
+<p>Sets the stored z of the sprite.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

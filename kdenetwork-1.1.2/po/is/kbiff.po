@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Richard Allen <ra@hp.is>, 1999
+# Bjarni R. Einarsson <bre@mmedia.is>, 1999
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kbiff\n"
+"POT-Creation-Date: 1999-06-05 11:50-0700\n"
+"PO-Revision-Date: 1999-08-24 14:28+0000\n"
+"Last-Translator: Bjarni R. Einarsson <bre@mmedia.is>\n"
+"Language-Team: is <kde-isl@mmedia.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: ISO-8859-1\n"
+
+#: kbiff.cpp:629
+msgid "&UnDock"
+msgstr "&Af spjaldinu"
+
+#: kbiff.cpp:631
+msgid "&Dock"
+msgstr "Á spjal&d"
+
+#: kbiff.cpp:632
+msgid "&Setup..."
+msgstr "&Stillingar..."
+
+#: kbiff.cpp:634
+msgid "&Help..."
+msgstr "&Hjálp..."
+
+#: kbiff.cpp:638
+msgid "&Check Mail Now"
+msgstr "A&thuga póst"
+
+#: kbiff.cpp:640
+msgid "&Read Mail Now"
+msgstr "&Lesa póst"
+
+#: kbiff.cpp:646
+msgid "&Stop"
+msgstr "&Stöðva"
+
+#: notify.cpp:33 notify.cpp:50
+msgid "You have new mail!"
+msgstr "Þú hefur fengið nýjan póst!"
+
+#: notify.cpp:58 notify.cpp:103
+#, c-format
+msgid "New Messages: %d"
+msgstr "Nýr póstur: %d"
+
+#: notify.cpp:63
+#, c-format
+msgid "Mailbox: %s"
+msgstr "Pósthólf: %s"
+
+# This is on a button.  It launches the user's mail client
+#: notify.cpp:73
+msgid "Mailer"
+msgstr "Póstforrit"
+
+#: setupdlg.cpp:83
+msgid "KBiff Setup"
+msgstr "Stillingar KBiff"
+
+#: setupdlg.cpp:86
+msgid "Profile:"
+msgstr "Hólf:"
+
+#: setupdlg.cpp:102
+msgid "&New..."
+msgstr "&Nýtt..."
+
+#: setupdlg.cpp:109
+msgid "&Rename..."
+msgstr "Endu&rnefna"
+
+#: setupdlg.cpp:143
+msgid "General"
+msgstr "Almennt"
+
+#: setupdlg.cpp:144
+msgid "New Mail"
+msgstr "Nýr póstur"
+
+#: setupdlg.cpp:145 status.cpp:33
+msgid "Mailbox"
+msgstr "Pósthólf"
+
+#: setupdlg.cpp:391
+msgid "New Profile"
+msgstr "Nýtt hólf"
+
+#: setupdlg.cpp:423
+#, c-format
+msgid "Rename Profile: %s"
+msgstr "Endurnefna hólf: %s"
+
+#: setupdlg.cpp:463
+#, c-format
+msgid "Delete Profile: %s"
+msgstr "Eyða hólfi: %s"
+
+#: setupdlg.cpp:464
+msgid "Are you sure you wish to delete this profile?\n"
+msgstr "Ertu viss um að þú viljir eyða þessu hólfi?\n"
+
+#: setupdlg.cpp:524
+msgid "Poll (sec):"
+msgstr "Tími milli póstathugana (sek.):"
+
+#: setupdlg.cpp:529
+msgid "Mail client:"
+msgstr "Póstforrit:"
+
+#: setupdlg.cpp:542
+msgid "Dock in panel"
+msgstr "Á spjald"
+
+#: setupdlg.cpp:547
+msgid "Use session management"
+msgstr "Nota setustjóra"
+
+#: setupdlg.cpp:552
+msgid "Icons:"
+msgstr "Táknmyndir:"
+
+#: setupdlg.cpp:570
+msgid "No Mail:"
+msgstr "Enginn póstur:"
+
+#: setupdlg.cpp:579
+msgid "Old Mail"
+msgstr "Gamall póstur"
+
+#: setupdlg.cpp:589
+msgid "New Mail:"
+msgstr "Nýr póstur:"
+
+# This is the icon that is displayed when KBiff could not make a connection
+# to a remote server
+#: setupdlg.cpp:599
+msgid "No Conn.:"
+msgstr "Sambandslaust:"
+
+#: setupdlg.cpp:756
+msgid "Run Command"
+msgstr "Keyra skipun"
+
+#: setupdlg.cpp:763 setupdlg.cpp:783 setupdlg.cpp:1178
+msgid "Browse"
+msgstr "Flakka"
+
+#: setupdlg.cpp:769
+msgid "Play Sound"
+msgstr "Spila hljóð"
+
+#: setupdlg.cpp:789
+msgid "System Beep"
+msgstr "Pípa"
+
+#: setupdlg.cpp:794
+msgid "Notify"
+msgstr "Láta vita"
+
+# If this is checked, then KBiff will popup a list of mailboxes with the
+# number of new mail whenever the user puts the cursor of a KBiff icon.
+#: setupdlg.cpp:798
+msgid "Floating Status"
+msgstr "Yfirlit undir mús"
+
+#: setupdlg.cpp:948
+msgid "Advanced Options"
+msgstr "Frekari stillingar"
+
+#: setupdlg.cpp:952
+msgid "Mailbox URL:"
+msgstr "Slóð pósthólfs:"
+
+#: setupdlg.cpp:956
+msgid "Port:"
+msgstr "Port:"
+
+#: setupdlg.cpp:960
+msgid "PREAUTH"
+msgstr "PREAUTH"
+
+#: setupdlg.cpp:967
+msgid "Keep Alive"
+msgstr "Keep Alive"
+
+# If this is selected, then KBiff will do all of it's network work in an
+# asynchronous mode.  That is, it will not wait for the response to any
+# given command... it will receive the response as an event, later.
+#: setupdlg.cpp:974
+msgid "Asynchronous"
+msgstr "Asynchronous"
+
+#: setupdlg.cpp:1123 setupdlg.cpp:1152
+msgid "Mailbox:"
+msgstr "Pósthólf:"
+
+#: setupdlg.cpp:1136 setupdlg.cpp:1474
+msgid "New Mailbox"
+msgstr "Nýtt pósthólf"
+
+#: setupdlg.cpp:1143
+msgid "Delete Mailbox"
+msgstr "Eyða pósthólfi"
+
+#: setupdlg.cpp:1149
+msgid "Protocol:"
+msgstr "Samskiptamáti:"
+
+#: setupdlg.cpp:1155
+msgid "Server:"
+msgstr "Þjónn:"
+
+#: setupdlg.cpp:1158
+msgid "User:"
+msgstr "Notandi:"
+
+#: setupdlg.cpp:1161
+msgid "Password:"
+msgstr "Lykilorð:"
+
+#: setupdlg.cpp:1195
+msgid "Store password"
+msgstr "Geyma lykilorð"
+
+#: setupdlg.cpp:1198
+msgid "Advanced"
+msgstr "Frekari stillingar"
+
+#: setupdlg.cpp:1675
+msgid "KBiff"
+msgstr "KBiff"
+
+#: setupdlg.cpp:1697
+#, c-format
+msgid ""
+"Version %s\n"
+"\n"
+"Copyright (C) 1999\n"
+"Kurt Granroth"
+msgstr ""
+"Útgáfa %s\n"
+"\n"
+"Höfundarréttur (C) 1999\n"
+"Kurt Granroth"
+
+#: setupdlg.cpp:1746
+msgid "New Name:"
+msgstr "Nýtt heiti:"
+
+#: setupdlg.cpp:1772
+msgid "New Name"
+msgstr "Nýtt heiti"
+
+# This displays the number of new messages for a given mailbox
+#: status.cpp:34
+msgid "New"
+msgstr "Nýtt"

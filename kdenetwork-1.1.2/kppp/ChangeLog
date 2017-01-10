@@ -1,0 +1,1394 @@
+1999-08-25  Harri Porten  <porten@kde.org>
+
+	* main.cpp: work around copy&paste password bug by using a widget
+	derived from QLineEdit that disables that overrides the buggy methods.
+	* runtests.cpp (ppp_available): until our check can cope with the
+	PPP code in 2.3 Linux kernels we'll simply skip that test for
+	versions higher than 2.2.
+
+1999-08-17  Harri Porten  <porten@kde.org>
+
+	* modem.cpp: disabled CD line test. Responsible for too many problems.
+
+1999-08-07  Harri Porten  <porten@kde.org>
+
+	* modem.cpp: removed the "Mode 7bit" CompuServe hack after I saw
+	that `chat' is always masking incoming data with 0x7F. The 7bit
+	command was a scripting command and wouldn't have any effect
+	before (and I read a posting from someone getting garbled text
+	when dialing). Now we are back to the behaviour <= KDE 1.1 and
+	CompuServe users won't need any extra scripting commands.
+	Let's implement a real parity and data bit handling in the KDE 2.0
+	branch. The current solution wasn't perfect. 
+
+1999-07-22  Harri Porten  <porten@kde.org>
+
+	* connect.cpp: visualize \n as <LF> in setExpect()'s debug messages
+	* logviewer: rename `log' variable to `logList' to avoid clash with
+	mathematical function on some systems. 
+	* logview/loginfo.cpp: added mystrsep() function as strsep()
+	replacement which is not POSIX compliant.
+
+1999-07-19  Harri Porten  <porten@kde.org>
+
+	* pppdata.cpp: fixed a cause of those "Timeout expired" errors: if 
+	the user never set the speed of the serial port gpppdata would return
+	an empty string as speed(). The modem initialization code would
+	fall back to 57600 but no speed would be passed to pppd. Whatever
+	pppd does in this case (I haven't checked the sources yet) breaks the
+	negotiation process.
+
+1999-07-13  Harri Porten  <porten@kde.org>
+
+	* added "Mode 7bit" and "Mode 8bit" script commands for CompuServe
+	users. 7bit will simply strip off the highest bit to deal with the
+	incoming 7E1 data. Write operations are not affected.
+	* modem.cpp: try a tcsendbreak() if tcgetattr() fails. Ask for
+	feedback if that solved the "modem is busy" error for anyone.
+	* modem.cpp: read data in multiple chunks of up to 200 bytes. This 
+	should speed up things and avoid problems with the socket notifier. 
+
+1999-07-11  Harri Porten  <porten@kde.org>
+
+	* connect.cpp: moved some code from readChar() into checkBuffers() 
+	to clean up the setExpect() race condition fix.
+
+1999-07-06  Harri Porten  <porten@kde.org>
+
+	* modem.cpp: adhere to the lock file format described in the
+	Serial HOWTO (10 digits pid and a newline).
+	* edit.cpp: fixed highlighting in ScriptWidget
+	* connect.cpp: fixed race condition that might have lead to data not
+	being caught by "Expect" (found by Arch Harris <arch@cs.jmu.edu>)
+
+1999-06-11  Harri Porten  <porten@kde.org>
+
+	* pppdata.cpp: line termination will default to CR instead of CR/LF.
+
+1999-06-10  Harri Porten  <porten@kde.org>
+
+	* modem.cpp: fixed check for stale lock file ((s)traced down by
+	Duane Ellis <duane@skyhigh.com>)
+
+1999-04-30  Harri Porten  <porten@kde.org>
+
+	* conwindow.cpp: fixed deleting of old geometry layout
+	* logview/loginfo.cpp: added #include <string.h> for strsep
+	* "PPP support missing" is no longer fatal. Just a warning.
+	* pppstatdlg.cpp: update statistic data even if widget is not visible.
+	(patch by  Bastien Chevreux <B.Chevreux@dkfz-heidelberg.de>)
+
+=========================== KDE 1.1.1 released =============================
+
+1999-04-24  Harri Porten  <porten@kde.org>
+
+	* runtests.cpp: test for `lock' in /etc/ppp/options is not needed any-
+	more, thanks to a hint from Paul Mackeras (pppd). Leaving away ttySx
+	(99/04/10) from the command line and binding stdin/stdout to the
+	device (99/01/12) stops pppd from trying to lock the device itself.
+
+1999-04-10  Harri Porten  <porten@kde.org>
+
+	* connect.cpp: solved problems with pppd 2.3.6 and 2.3.7
+	* pppdata.cpp: PPPDebug() defaults to `false'.
+	* opener.cpp: introduced MY_ASSERT macro. We don't want to see our
+	security checks disabled by the NDEBUG flag.
+
+1999-04-09  Harri Porten  <porten@kde.org>
+
+	* modem.cpp: improved protection against socket notifier zombie as
+	suggested by Brian Fisher <fisherb@hotdog.ccs.queensu.ca>.
+
+
+1999-04-06  Harri Porten  <porten@kde.org>
+	* modem.cpp: set modemfd to -1 in closetty().
+	* modem.cpp: block attempts to start the socket notfier if modemfd < 0.
+	* connect.cpp: call closetty() _before_ execppp(). This should solve
+	some of the reported timeout errors and the observed memory hogging.
+	* modem.cpp: added stop() in closetty() (just to be sure)
+	(all fixes above were proposed by Ian Gordon <ig@cs.strath.ac.uk>)
+	* requester.cpp: setpppdRunning(false) _before_ killing the pppd.
+
+1999-03-26  Harri Porten  <porten@kde.org>
+
+	* main.cpp: added flushX() before every command_execute()
+	* increased maximum modem string size
+	* store child pid in helper_pid instead of gpppdata.* (safer) 
+
+1999-03-20  Harri Porten  <porten@kde.org>
+
+	* connect.cpp: fixed "unknown speed" bug introduced in previous version
+
+1999-03-15  Harri Porten  <porten@kde.org>
+
+	* opener.cpp: replaced regex library calls with self-written matching
+	algorithm. This hopefully prevents the segfaults reported with SuSE
+	and Caldera binaries. (Update: identified the assert() around regcomp()
+	as the bug. It was left out when compiling with NODEBUG) 
+	* connect.cpp: fixed bugs of internal scripting loop. Possible
+	symptoms: broken 'Expect' command and incorrectly parsed modem speed.
+
+1999-03-10  Harri Porten  <porten@kde.org>
+
+	* modem.cpp: dropped ISTRIP option and made everything else "8-bit
+	clean" by using unsigned char and removing 0x7F AND'ing. Characters
+	like [§´°äöü] will work now.
+	* conwindow.cpp (ConWindow): initialise volinfo after discovering that
+	this prevents a segfault with Qt2.0 (turned out to be a beta bug only)
+
+1999-03-09  Harri Porten  <porten@kde.org>
+
+	* opener.cpp: utilize CMSG_LEN macro if present
+	* opener.cpp: insert LF if missing at end of *-secrets file
+	* opener.cpp: supply REG_NOSUB flag to regcomp
+
+1999-03-05  Harri Porten  <porten@kde.org>
+
+	* requester.cpp: relaxed check for msg_controllen due to alignment
+	problems on different hardware architectures (eg. Alphas). Proposed
+	by Martin Ostermann <ost@comnets.rwth-aachen.de>
+	* removed unused or doubled code
+
+=========================== KDE 1.1 released ==============================
+	
+1999-02-04  Harri Porten  <porten@kde.org>
+
+	* main.cpp: remove stale pidfile before creating new the
+	one. Otherwise creation with O_EXCL fails.
+	* runtests.cpp: removed securityTest(). $HOME check wasn't fully
+	functional and not needed anymore.
+	* runtests.cpp: re-enabled test for pppd's s-bit if eff. uid != 0.
+
+1999-02-03  Mario Weilguni <mweilguni@kde.org>
+
+	* fixed a bug in my testing code
+
+1999-02-02  Mario Weilguni <mweilguni@kde.org>
+
+	* the value of the environment var $HOME is no longer trusted,
+	  kppp now uses getpwent() to find out the home directory.
+
+	* the pidfile is now created with O_EXCL
+
+	* added new portugal rules
+
+	* executable accounting rulesets are now disabled (will re-enable
+	  after KDE 1.1)
+
+	* fixed a bug that caused the throughput graph display
+          unreasonable high numbers
+
+1999-01-31  Mario Weilguni <mweilguni@kde.org>
+
+	* fixed a security bug (stdout or stderr closed on program start)
+
+1999-01-28  Mario Weilguni <mweilguni@kde.org>
+
+	* fixed a bug in opener.cpp. recvmsg() was interrupted, and thus
+	the SUID part died.
+
+1999-01-28  Harri Porten  <porten@kde.org>
+
+	* modem.cpp: use sigsetjmp() instead of just setjmp() to solve
+	freeze when modem is powered off (bug#267)
+
+1999-01-27  Harri Porten  <porten@kde.org>
+
+	* pppstats.cpp: removed debug output
+	* opener.cpp: delay closing the tty fd. Otherwise the ioctl() in
+	execpppd() can't succeed.
+	* opener.cpp: ignore TERM and INT signals. This is probably the
+	best until a safe clean-up & terminate routine is written.
+	* connect.cpp: added a removedns() call to cancelbutton().
+
+1999-01-25  Mario Weilguni <mweilguni@kde.org>
+
+	* updated and regenerated documentation
+	
+1999-01-23  Harri Porten  <porten@kde.org>
+
+	* main.cpp: config data wasn't saved on immediate exit.
+
+1999-01-22  Harri Porten  <porten@kde.org>
+
+	* moved pppd call to the server process. It should be safer and
+	much more comfortable that pppd doesn't need to be installed SUID
+	root anymore. If I don't get any negative feedback I'll remove
+	some doubled code later. 
+
+1999-01-17  Harri Porten  <porten@kde.org>
+
+	* modeminfo.cpp: ATI1 was left out. Wait 0.1 secs to process the ATE0.
+
+1999-01-14  Mario Weilguni <mweilguni@kde.org>
+
+	* Most windows should now have the mini-icon
+	* the lineedit for the modem timeout was too narrow to see at
+	least 2 characters. Fixed it, now shows at least 4 chars
+	* double-clicking an account in the account-listbox now opens 
+	the account for editing, as expected
+	* for some weird reason, the lineedit showing costs and volume
+	were both editable, thus letting users think they can edit
+	it. Fixed that.
+
+1999-01-12  Harri Porten  <porten@kde.org>
+
+	* connect.cpp: become the session leader and let ttySx be the
+	controlling terminal before launching pppd. This might solve
+	timeout problems several people reported, ie. when kppp was
+	started from kpanel instead of a terminal window.
+	* main.cpp: the kppp.sh workaround for make_directories() isn't
+	needed anymore and confused a few people.
+	* requester.cpp: convert cmsglen to size_t to make the compiler happy.
+	* modem.cpp: fixed usleep() replacement in case #ifndef HAVE_USLEEP
+	* connect.cpp: saving of old_hostname was broken
+
+1999-01-10  Mario Weilguni <mweilguni@kde.org>
+
+	* complete rework of the accounting system. The old implementation
+	did only allow one type of accounting (=via rulefiles). The new
+	will allow executable rulefiles too.
+	
+1999-01-06  Mario Weilguni <mweilguni@kde.org>
+
+	* added new hungarian rules
+	* the title of the main window was "kppp.bin". Fixed this.
+	* the combobox for selecting the account to dial in was
+	editable for some strange reason. Fixed.
+	* modified the testing stuff (-T now)
+
+1999-01-04  Mario Weilguni <mweilguni@kde.org>
+
+	* began to add a modem database. See README.ModemDB for
+	details. The modem DB will not make it into KDE 1.1 (sorry)
+
+1999-01-05  Harri Porten  <porten@kde.org>
+
+	* opener.cpp: set O_NOCTTY flag when opening the modem device to
+	hinder the server process from being assigned a controlling terminal
+        (and 'stealing' it from pppd ?)
+	* pppdata.h: renamed "LockFile" key to "UseLockFile" to prevent a
+	clash with kppprc's from KDE 1.0. (reported by Seth Rothberg
+	<sethr@crocker.com>)
+        * umask(0) in suid child to avoid permission conflicts with lock file.
+	* connect.cpp,opener.*,requester.*: moved call to sethostname()
+	into Opener. Bug discovered by Matthew Ando <ando@math.jhu.edu>
+
+
+1999-01-04  Mario Weilguni <mweilguni@kde.org>
+
+	* Updated Hungarian rules
+	* removed all Qt calls from log to make it safe to use in
+	opener.cpp
+	* replace Debug() calls in opener.cpp with the function
+	provided by log.cpp
+	* clarified comments in opener.cpp
+	* replaced the button "Ok" with a "Exit" button when another
+	instance of kppp was found. This clarifies the action when
+	pressing the button.
+	* added a .kdelnk file for the log-viewer
+
+1998-12-28  Harri Porten  <porten@kde.org>
+
+        * opener.cpp: netinet/in.h is needed on FreeBSD
+	* reverse order of dropping suid rights (first setgid, then
+	setuid) to avoid an EPERM error (doesn't make a difference on Linux)
+	* requester/opener: removed transmission of filename. I discovered
+	problems with the variable string length and it wasn't used
+	anyway.
+	
+1998-12-27  Mario Weilguni <mweilguni@kde.org>
+
+	* moved gpppdata.setpppdError(0) to end of dieppp()
+	* the "Don´t show this hint again" option is now immediatly saved
+
+1998-12-26  Mario Weilguni <mweilguni@kde.org>
+
+	* gpppdata.pppdError() was never reset, causing a bunch of error
+	  windows to appear. Should be fixed.
+	* cosmetic changes in various files for better readability	
+
+1998-12-25  Harri Porten  <porten@kde.org>
+
+	* kpppconfig.h: include <sys/param.h> to get the BSD define.
+	#include <config.h> was missing too. This prevented several #ifdefs
+	from doing the right thing.
+
+1998-12-24  Harri Porten  <porten@kde.org>
+
+	* runtests.cpp: relaxed my previously enforced suid check for pppd
+
+1998-12-23  Harri Porten  <porten@kde.org>
+
+	* runtests.cpp, opener.cpp: fixed FreeBSD compile problem reported by Hans
+	Petter Bieker
+
+1998-12-22  Harri Porten  <porten@kde.org>
+
+	* pppdata.cpp: Give users upgrading from KDE 1.0 instructions how
+	to modify their kppprc if it is owned by root (KConfig bug back then).
+
+1998-12-21  Mario Weilguni <mweilguni@kde.org>
+
+	* opener.cpp: using umask now instead of chmod (more safe)
+	* opener.cpp: regfree was called too late. Fixed.
+	* re-enable scripts when using CHAP or PAP
+	* cosmetic changes in the "Accounts" widget
+
+1998-12-21  Harri Porten  <porten@kde.org>
+
+	* opener.h: define system dependend type cast for struct iovec's
+	iov_base. FreeBSD needs (char *) instead (void *).
+
+1998-12-20  Mario Weilguni <mweilguni@kde.org>
+
+	* added Germany Mannesmann Arcor ruleset
+
+1998-12-20  Harri Porten  <porten@kde.org>
+
+	* docking.cpp: call KWM::activate() on connection window after
+	being re-opened from docking icon (recommended by Matthias on
+	kde-devel)
+	* ppplog.cpp: re-introduced reading messages with fgets() instead
+	of single chars. Should be faster.
+	* ppplog.cpp: worked on diagnostic messages
+
+1998-12-18  Harri Porten  <porten@kde.org>
+
+	* #include "auth.h" was needed after pap.h was removed
+	* opener.h: workaround for glibc bug in RedHat 5.0. Since there is
+	presumably no way to detect the exact release version we'll simply
+	define SCM_RIGHTS to be 1 for every glibc2.0 on Linux. This should
+	solve the conflict with the kernel.  
+
+1998-12-18  Harri Porten  <porten@kde.org>
+
+	* removed pap.* and chap.* files and moved their code in
+	requester.cpp where all setuid root stuff is gathered now.
+	* requester.cpp: rewrote PAP/CHAP so that the setuid part is free
+	of any Qt/X calls. 
+
+1998-12-16  Mario Weilguni <mweilguni@kde.org>
+
+	* added Indonesia rule files
+	* added some new Denmark rule files
+	* added a patch from Filip Larsen <filip@post4.tele.dk> to allow a
+	  rule to be dependent on connection time. See Rules/TEMPLATE for
+	  an example. This will allow much better danish rulesets
+
+1998-12-14  Harri Porten  <porten@kde.org>
+
+	* runtests.cpp: fixed test for pppd's suid bit
+	* requester.cpp: initialize struct control (may be necessary for
+	some kernel versions)
+	* runtests.cpp: use Requester to check write access to modem (PPP Test)
+
+1998-12-13  Harri Porten  <porten@kde.org>
+
+	* use hardcoded lock file path (kpppconfig.h)
+	* tighten interface between Requester/Opener by transmitting
+	device index instead of device path 
+	* do a fchown(fd, 0, 0) on lock file
+
+1998-12-08  Mario Weilguni <mweilguni@kde.org>
+
+	* added Denmark rules
+	* added Luxembourg rules
+	* commented out the no-longer need CHAP_* functions
+	* removed the old/never used setup program
+	* cleaned up accounting (set umask, no chown/chmod)
+	* cleaned up PPP log (set umask, no SUID check)
+
+1998-12-05  Harri Porten  <porten@kde.org>
+
+	* connect.cpp: killpppd() and stop if_timeout_timer in cancelbutton()
+	* main.cpp: ignore SIGCHLDs in shutDown()
+	* main.cpp: interface timeout error wasn't displayed anymore
+	* modem.cpp: check for possible existance of stale lockfile before
+	trying it to open via Requester::rq->openLockFile(). The resulting
+	error message on failure was too confusing.
+	* main.cpp: ignore SIGHUPs in child process
+
+1998-12-04  Harri Porten  <porten@kde.org>
+
+	* requester.cpp: disable alarm() for now, silence some debug messages
+
+1998-12-01  Harri Porten  <porten@kde.org>
+
+	* main.cpp: notify user about death of helper process and abort
+
+1998-11-28  Harri Porten  <porten@kde.org>
+
+	* main.cpp: restored accidentally deleted line (setPassword())
+	* connect.cpp: suppress warnings from QStrList
+
+1998-11-26  Harri Porten  <porten@kde.org>
+
+	* included errno.h in opener.cpp and modified CMSG_DATA()'s
+	argument (as suggested by Andreas Pour).
+	* had to revert to SOCK_DGRAM since I keep getting failed
+	assertions. Using a stream seems to require some attention in
+	terms of ensuring that the correct length is received.
+
+1998-11-26  Mario Weilguni <mweilguni@kde.org>
+	
+	* added missing rules for Switzerland, and added kppp.sh
+	* replace SOCK_DGRAM by SOCK_STREAM, and hope that it works
+
+1998-11-26  Harri Porten  <porten@kde.org>
+
+	* requester.cpp: made the ifdef's for cmsg_data more portable
+	* requester.cpp, opener.cpp: include sys/uio.h to define struct
+	iovec. As far as I can see this should work for systems with and
+	without glibc. If it doesn't, please mail me directly.
+ 
+1998-11-25  Mario Weilguni <mweilguni@kde.org>
+
+	* fixed a lot of rulefiles. Pentecost Monday is NOT easter+60,
+	  but easter+50. My TEMPLATE file contained this bug,
+	  and unfortunatly a lot of people copied it.
+	* improved and new Switzerland rulefiles
+
+1998-11-24  Harri Porten  <porten@kde.org>
+
+	* main.cpp: store pid of setuid child in PPPData object
+        * define KERNEL_VERSION()
+
+1998-11-24  Mario Weilguni <mweilguni@kde.org>
+
+	* fixed opener.cpp for Linux >= 2.1.0
+	* removed PAP_UsePAP(), no longer needed
+
+1998-11-23  Harri Porten  <porten@kde.org>
+
+	* requester.cpp: removed ancient #include "requester.moc"
+
+1998-11-22  Harri Porten  <porten@kde.org>
+
+	* main.cpp: fixed freeze on disconnect by using waitpid(...,
+	WNOHANG) instead of wait()
+	* main.cpp: forgot to convert gpppdata.password to char*
+	* opener.cpp: close file descriptors after being sent. Left out
+	dup() call. Did it serve any special purpose ?
+	* opener.h: increased allow size for username and passwords
+	* modem.cpp: included config.h for HAVE_USLEEP
+	(thanks to hpj.lisa@t-online.de (hpj) for reporting this)
+	* PAP/CHAP: fixed typo and return value
+		
+1998-11-20  Harri Porten  <porten@kde.org>
+
+	* First draft of a client&server archicture consisting of setuid
+	child process that will serve requests for file manipulation from
+	the parent. The parent is doing all the GUI operations is running
+	with normal user privileges. Assuming the approx. 300 lines still
+	running setuid root will be intensively reviewed this should
+	result in a kppp far less vulnerable to security exploits.
+	* added requester.* and opener.*
+	* TODO: - handle signals (SIGCHLD, SIGPIPE?)
+		- get ppp_available() running (presumably broken now)
+		- speed up reading the syslog (reading single chars now)
+
+1998-11-17  Mario Weilguni <mweilguni@kde.org>
+
+	* another security hole fixed: the function make_directories() is
+	  no longer used, instead of a shell script make those directores.
+	  Since shell scripts do not run suid, this should be safe
+	* fixed a bug in the main.cpp, at the calls to setPAPSecret() and
+	  setCHAPSecret().
+	* fixed (void*)new Opener(...) to (void)new Opener(...)
+
+1998-11-17  Mario Weilguni <mweilguni@kde.org>
+
+	* Security fix: fixed possible buffer overflow in findFileInPath()
+	* Security fixes: re-checked all char[] on stack to be suid-safe
+	  If it is considere to be safe, a comment was added to the end of
+	  line
+
+1998-11-17  Mario Weilguni <mweilguni@kde.org>	
+
+	* removed another "extern" by making Accounting::getCosts(...) static
+
+1998-11-17  Mario Weilguni <mweilguni@kde.org>
+
+	* further improvements in ppp-log wizard
+	* runtests.cpp: test for Qt >= 1.40 before include header files
+
+1998-11-11  Harri Porten  <porten@kde.org>
+
+	* connect.cpp: allow a little delay after sending the volume
+	string. Prevents it from getting eaten by the next command.
+	Thanks to Craig Goodrich <craig@airnet.net> for providing the patch.
+
+1998-11-11  Harri Porten  <porten@kde.org>
+
+	* runtests.cpp: added header file to solve compilation problems
+
+1998-11-04  Harri Porten  <porten@kde.org>
+
+	* got rid of two global variables
+
+1998-11-04  Mario Weilguni <mweilguni@kde.org>
+
+	* kppp now checks itself if the kernel supports PPP (Linux only
+	for now. If anyone wants this for another system - implement it!)
+	* before dialing out, the check for PPP support is repeated, if
+	the kernel module was unloaded between running the tests and the
+	actual dialing, it will reloaded again	
+
+1998-11-01  Harri Porten  <porten@kde.org>
+
+	* modemcmds.cpp: added a wait&CR&wait sequence before sending the
+	init string. This seems to be necessary to avoid locking some modems.
+
+1998-10-29  Harri Porten  <porten@kde.org>
+
+	* connect.cpp: fixed search&replace typo
+
+1998-10-26  Mario Weilguni <mweilguni@kde.org>
+
+	* incorporated new Netherland rules (NetPoint)
+
+1998-10-25  Mario Weilguni <mweilguni@kde.org>
+
+	* added updated rules for Spain
+
+1998-10-06  Mario Weilguni <mweilguni@kde.org>
+
+	* repaired Makefile.am and reverted Hans Petter Bieker's changes
+	to something more usefull.
+	* added SecurityWidget, but currently there's not much use for
+	this widget. Later on, it will allow root to specify who may use
+	kppp and pppd.
+	* removed the global variable miniIcon
+	* removed the global variable dock_widget, replaced with a static
+	class variable
+	* added lockdevice() and unlockdevice() to the class modem. This
+	will finally allow us to have a modem class which handles the
+	device locking itself (yeah...)
+	* removed the global var "modem", now a static member of the class
+	"Modem"
+	* modem.cpp: removed some global vars
+
+1998-10-14  Harri Porten  <porten@kde.org>
+
+	* pppdata.cpp: don't care about CD line by default. We'll receive
+	too many "bug reports" otherwise.
+
+1998-10-13  Harri Porten  <porten@kde.org>
+
+	* ppplog.cpp: offer some advice based on keywords found in the log
+	(very primitive so far, but may be extended later)
+
+1998-10-09  Harri Porten  <porten@kde.org>
+
+	* modem.cpp: additional data flushes
+	* pppdata.cpp: don't need workaround for '$' with recent kde libraries
+
+1998-10-05  Mario Weilguni <mweilguni@kde.org>
+
+	* better QuickHelp text, proof-read by a native english
+	speaker. Thanks a lot to Martin A. Brown for doing this!
+
+1998-10-04  Harri Porten  <porten@kde.org>
+
+	* miniterm.cpp: fixed toolbar
+
+1998-10-03  Harri Porten  <porten@kde.org>
+
+	* modem.cpp: disentangled Modem class from other Widgets, i.e.
+	removed the Multiple Inheritance I introduced earlier.
+	Drawback: another global pointer :(
+	* main.cpp: since KConfig neglects the real user id when creating
+        config files we have to give kppprc back to the user ourself.
+	* connect.cpp: pass something more useful to parseModemSpeed()	
+	* removed lots of unused/redundant code and variables
+
+1998-10-02  Mario Weilguni <mweilguni@kde.org>
+
+	* fixed that stupid segfault combined with the throughput graph
+	* "make" did not set the suid bit anymore. Why? However, I fixed
+	that
+
+1998-09-29  Mario Weilguni <mweilguni@kde.org>
+
+	* fixed a bug in the graphing code
+	* runtests.cpp: fixed typos
+
+1998-09-28  Harri Porten  <porten@kde.org>
+
+	* ppplog.cpp: reduce memory consumption, small fixes
+	* pppdata.cpp: fixed segfaults caused by non-readable kppprc
+
+1998-09-28  Harri Porten  <porten@kde.org>
+
+	* runtests.cpp: bail out if some evil-doer has manipulated $HOME
+
+1998-09-26  Mario Weilguni <mweilguni@kde.org>
+
+	* cosmetic changes in ppplog.cpp
+
+1998-09-24  Mario Weilguni <mweilguni@kde.org>
+
+	* Ownership of PPP logfiles corrected to the real, not the
+	effective user id
+
+1998-09-23  Harri Porten  <porten@kde.org>
+
+	* ppplog.cpp: skip remote message if empty
+	* ppplog.cpp: fixed segfault triggered by virgin log files
+
+1998-09-21  Mario Weilguni <mweilguni@kde.org>
+
+	* introducing quickhelp
+	* forgot to add i18n to quickhelp entries, fixed this
+
+1998-09-20  Mario Weilguni <mweilguni@kde.org>
+
+	* PPP-arguments dialog reworked	
+
+1998-09-19  Mario Weilguni <mweilguni@kde.org>
+
+	* more QuickHelp
+	* began to clean up layout management, it's a mess
+	* added setup widget for the throughput graph
+	* some code cleanups
+
+1998-09-16  Mario Weilguni <mweilguni@kde.org>
+
+	* Added some more QuickHelp
+	* The QLineEdit for fixed IP and netmask is not re-initialized
+	with  "0.0.0.0" whenever you select "dynamic IP"
+	* the scripting widget is disabled if authentication PAP or CHAP
+	is selected
+	
+1998-09-15  Mario Weilguni <mweilguni@kde.org>
+
+	* replaced strings that span several lines with multiple
+	strings, it seems that this was a GCC-only feature
+
+1998-09-11  Mario Weilguni <mweilguni@kde.org>
+
+	* more code cleanups
+	* fixed a bug in log.h (semicolon after a macro definition --
+	brrr)
+	* added quickhelp to many setup dialogs
+
+1998-09-05  Harri Porten  <porten@kde.org>
+
+	* pppdata.cpp: fixed warnings
+	* replaced readListConfig calls with calls to readWholeListConfig
+	* and removed 'Whole' from function names afterwards
+	* connect.cpp: sped up scripting loop by reducing calls to gpppdata
+
+1998-08-29  Mario Weilguni <mweilguni@kde.org>
+
+	* In ConnectWidget::readtty(): after a newline or CR is received,
+	the QSocketnotifier is disabled for 20ms to avoid reading too
+	much, e.g. the start characters of the ppp protocol.
+	* added compile option "NO_GRAPH" to disable the graph
+	* removed the compile options "COMPILE_PIX" in pppstatsdlg.cpp,
+	this is no longer needed or supported
+
+1998-08-27  Harri Porten  <porten@kde.org>
+
+	* ppplog.cpp: use short named header file to keep Qt 1.33 users happy
+
+1998-08-25  Mario Weilguni <mweilguni@kde.org>
+
+	* removed all QTimers for reading tty output, a QSocketNotifier is
+	now used. Much better response time now, lower CPU usage!
+	* "prompt" was deleted in the ConnectWidget destructor. Removed
+	that
+	* added telephone rule for Malaysia	
+
+1998-08-24  Harri Porten  <porten@kde.org>
+
+	* connect.cpp: re-enabled closeEvent()
+        * pppdata.cpp: dumped writeListConfig(). Will do the same with
+        readListConfig() too ... next week.
+
+1998-08-22  Mario Weilguni <mweilguni@kde.org>
+
+	* some KDE style guide conformant changes
+	* some code cleanups
+	* removed -lkfile and -lkfm from Makefile.am
+	* added debug switch to pppd command line when debugging
+	is turned on
+	* Improved the response time for modem output. Modem output is
+	polled in longer intervals, if data is pending the polling time
+	is shortened, otherwise the polling time is set back to it´s 
+	original, rather high value
+	* re-worked the "About" widget. It was time to save poor old Bernd
+	from receiving bug-reports.
+	* miniterm.cpp: code cleanups
+	* improved responseness of MiniTerm, reduced CPU load
+	* MiniTerm adheres to KDE Standards now (Help-Menu, ...)
+	* The ATI query was broken. Fixed.
+	* Improved the ATI query result window
+	* modeminfo.cpp: code cleanups
+	* main.cpp: code cleanup, banner updated
+	* repaired the german "Tele-2" ruleset (was broken due to invalid
+	characters)
+	* added improved ruleset for Italy (thanks to Michele Manzato for
+	supplying this ruleset)
+	* fixed a few typos in the TEMPLATE
+	* prepared a replacement for the debug-window
+	* connwindow.cpp: code cleanups
+	* began to remove the code dependencies between main.cpp
+	(KPPPWidget) and the setup GUI components. This will help
+	to separate the dialer and the setup later
+	* general.cpp: code cleanups
+	* accounts.cpp: removed as many references to p_kppp as possible,
+	using signal/slots instead of. There´s only on occurence of p_kppp
+	left
+	* general.cpp: removed the mysterious function itoa (nowhere used)
+	* various files: a lot of code cleanups, removed many references
+	to extern variables, reduced the amount of functions called from
+	p_kppp directly (done with signal/slots now)	
+	* Added a new parser for modem speeds. The results are much better
+	now, especially for the new K56flex/X2/V.90 modems (where
+	different speeds are used for RX/TX)
+	* removed tons of "#ifdef MY_DEBUG" and replaced them with
+	functions "Debug", which is provided in log.cpp and is a
+	"printf()" like function
+	* added modem volume selector to the setup.
+	
+1998-08-21  Harri Porten  <porten@kde.org>
+
+	* use SIGINT instead of SIGHUP to end a connection
+	* implemented command line option 'kppp -k' that will
+	terminate a connection
+	
+1998-08-21  Mario Weilguni <mweilguni@kde.org>
+
+	* Added a graphical display of the current modem line
+	throughput.
+	* Added an assistent for those "ppp has died" messages
+	* Evaluating remote system messages now
+	
+1998-08-19  Mario Weilguni <mweilguni@kde.org>
+	
+	* added function to create a ppp - log
+	* connect speed improvements
+
+1998-08-18  Harri Porten  <porten@kde.org>
+
+	* fixed security leak in execute_command(): drop setgid root and
+	close file descriptors
+
+1998-08-17  Mario Weilguni <mweilguni@kde.org>
+
+	* fixed a bug in runtest.cpp that caused a segfault (fclose()
+	called twice)
+
+1998-08-17  Harri Porten  <porten@tu-harburg.de>
+
+	* main.cpp: added SIGHUP handler that will cleanly disconnect an
+	existing connection.
+
+1998-08-09  Harri Porten  <porten@tu-harburg.de>
+
+	* miniterm.cpp: switched to QMenuBar, fixed memory leak
+
+1998-08-08  Harri Porten  <porten@tu-harburg.de>
+
+	* modem.cpp: fixed hangup that occured if the modem power was off.
+	hangup() aborts after 2 seconds if it doesn't suceed. 
+
+1998-08-06  Harri Porten  <porten@tu-harburg.de>
+
+	* runtests.cpp: scan up to 100 lines when searching for the
+	unwanted 'lock' in /etc/ppp/options and recognize the '#' sign
+	to avoid a false alarm
+	
+1998-08-04  Harri Porten  <porten@tu-harburg.de>
+
+	* fixed replacement for systems without a BSD 4.2 style usleep()
+	* modem.cpp: continued to move modem related stuff to modem.cpp.
+	The new Modem class is inherited by the Connect-, MiniTerm- and
+	ATI-Query Widget for now. This should be way easier to maintain and
+	will reduce the binary's size.
+	* modeminfo.cpp: cleaned up  
+	
+1998-08-02  Harri Porten  <porten@tu-harburg.de>
+
+	* opentty(): fixed XON/XOFF flow control
+	* closetty(): flush data not read or transmitted
+	* main.cpp: enforce killpppd()
+	* modem.cpp: moved lockdevice(), unlockdevice() and modemspeed()
+	into this newly created file. opentty(), closetty() and hangup()
+	should follow soon to let them be shared between widgets.
+
+1998-07-30  Harri Porten  <porten@tu-harburg.de>
+
+	* connect.cpp: take the burden of specifying the modem lock file
+	from the user. Just entering the directory should be easier and
+	safer. Presets for different systems can be found in kpppconfig.h 
+
+1998-07-29  Harri Porten  <porten@tu-harburg.de>
+
+	* macros.h: replaced remaining MAX with QMAX
+	* main.cpp: followed recommendation of the Unix Programming FAQ to
+	use _exit() instead of exit() in child processes  
+
+1998-07-25  Harri Porten  <porten@tu-harburg.de>
+
+	* connect.cpp: rewrote check for stale lock files. After dropping
+	the use of /proc it should work on other platforms now, too.
+
+1998-07-19  Harri Porten  <porten@tu-harburg.de>
+
+	* merged killppp() and terminatepppd() in killpppd()	
+	* main.cpp: added execute_command() to launch external programms
+	* added "Command Before Disconnect" for people who have to clean
+	up before they leave the net
+
+1998-07-11  Harri Porten  <porten@tu-harburg.de>
+
+	* main.cpp: replaced ~/.kde with kdelocaldir() 
+	* connect.cpp: hardcoded ´-detach´ as pppd argument
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>> KDE 1.0 released <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	
+1998-06-21  Harri Porten  <porten@tu-harburg.de>
+
+	* general.cpp (GeneralWidget): modified checkbox-size to avoid
+	warnings from QGManager
+
+1998-06-18  Harri Porten  <porten@tu-harburg.de>
+
+	* edit.cpp (ScriptWidget): deactivated "Use default script"-option
+	as long as someone comes up with a default script
+
+1998-06-02  Harri Porten  <porten@tu-harburg.de>
+
+	* replaced klocale->translate() with i18n() and every reference to
+	XPPP with KPPP
+	* utilize ´kapp´ (defined in kapp.h) instead of the global ´extern
+	KApplication *app´
+	(Sorry about the large amount of changes, but I couldn´t resist to 
+        clean up the code)
+
+1998-06-02  Harri Porten  <porten@tu-harburg.de>
+
+	* pppdata.cpp: removed workaround, since KConfig fix is in place now
+
+Mon Jun  1 16:13:06 1998    Mario Weilguni <mweilguni@kde.org>
+
+	* kppp did´nt like "$" in modem strings, fixed that
+	
+Sun May 24 23:39:42 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* Applied FreeBSD patch for the modem devices
+	  Affected File:general.cpp pppdata.cpp
+	  Look for __FreeBSD__
+
+Mon May 18 19:51:56 1998  Mario Weilguni <mweilguni@kde.org>
+
+	* introduced a separate log-viewer "kppplogview"
+	* removed the no-more needed entry widget for the log-viewer
+	* removed test code checking for log viewer
+
+1998-05-15  Harri Porten  <porten@tu-harburg.de>
+
+	* pppdata.cpp: temporary workaround for KConfig bug concerning
+	lists without a trailing separator 
+
+Fri May 15 22:27:02 1998    Mario Weilguni <mweilguni@kde.org>
+	* removed the writeline("") once again, it does not work
+
+1998-05-12  Harri Porten  <porten@tu-harburg.de>
+
+	* added support for multiple telephone numbers (separated by ':')
+	Patch contributed by Sebastian Rittau <srittau@jroger.in-berlin.de>
+	
+Tue May 12 18:55:02 1998    Mario Weilguni <mweilguni@kde.org>
+
+	* the format of the accounting logfile has changed to allow
+	  easier parsing from external files:
+	  
+	  the format is:
+	  CONNECT_TIME_FROM:CONNECTION_PEER:CURRENCY_SYMBOL: \
+	  CONNECT_TIME_UNTIL:SUBTOTAL:TOTAL:BYTES_IN_BYTES_OUT	
+
+	  there´s a small tcl script which converts the log files. Simply
+	  use "tclsh convlog.tcl" will convert all log-files, but NOT
+	  delete the old ones.
+
+Mon May  4 17:19:12 1998    Mario Weilguni <mweilguni@kde.org>
+
+	* Austrian rule files updated
+	* LSM updated
+	* line-limit for /etc/resolv.conf raised to 128
+	* fixed the hard-coded line-limit in removedns() to use
+	  MAX_RESOLV_CONF instead (128)	
+	* added writeLine("") in connect.cpp to make sure that the modem
+	  is in ready state (waiting for AT*)
+	* support for internal ISDN cards on Linux via modem emulation 
+	  (/dev/ttyI*)
+
+1998-04-30  Harri Porten  <porten@tu-harburg.de>
+
+	* connect.cpp: undid my stupid PAP/CHAP changes from yesterday
+
+1998-04-29  Harri Porten  <porten@tu-harburg.de>
+
+	* connect.cpp: prevented segfault on invalid lockfiles
+	* runtests.cpp: /etc/resolv.conf will be created if missing 
+	* connect.cpp: fixed reversal of command line options for PAP/CHAP
+
+Tue Apr 28 20:57:04 1998    Mario Weilguni <mweilguni@kde.org>
+
+	* added CHAP (client side only) authentication
+
+1998-04-27  Harri Porten  <porten@tu-harburg.de>
+
+	* general.cpp (GeneralWidget): command line option "quit after
+	end of connection" is availabe via GUI, too.
+	* hangup(): made another usleep() adjustable to prevent hanging 
+	(thanks to A.D.Y. Cheng <adyc100@hkstar.com> for pointing that out)
+
+Fri Apr 24 18:57:46 1998    Mario Weilguni <mweilguni@kde.org>
+
+	* general.cpp (GeneralWidget): removed the entry field for
+	  the path to the pppd binary
+
+Fri Apr 24 13:03:02 1998    Mario Weilguni <mweilguni@kde.org>
+
+	* runtests.cpp: kppp now does not allow anymore the user
+	  to specify a path to the pppd binary, but searches for
+	  it 
+	* kppp now checks if pppd is owned by root
+	* kppp does not anymore drop suid before starting pppd
+
+Thu Apr 23 22:35:31 1998    Mario Weilguni <mweilguni@kde.org>
+
+	* Fixed a few security holes: kppp drops suid before executing pppd,
+	  checks for buffer overflow with the -c command line switch,
+	  drops suid before checking a file with -r
+
+Thu Apr 16 21:21:03 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* main.cpp: set portable locale settings for numerical values,
+	since the rulefiles will always have a point as decimal delimiter.
+
+1998-04-15  Harri Porten  <porten@tu-harburg.de>
+
+	* connect.cpp: extended parseargs() to deal with quoted arguments
+	* fixed bug in 'Save' that made multiple use impossible.
+	* enclosed username and password with quotes to ensure proper
+	handling of whitespace characters
+	* pap.cpp: fixed regexp to recognize entries in pap-secrets with
+	usernames that are either quoted or preceeded by whitspace. Phew !
+	That should eliminate one source of these "pppd	died" errors.
+	
+Mon Apr  6 20:18:40 1998    <mweilguni@kde.org>
+
+	* fixed a volume accounting bug
+	* volume accounting is now configureable (bytes in, out, in/out)
+	* added new feature (very usefull for sysadmins). If there´s a
+	file /etc/kppp.allow, only users from that file may use kppp to
+	dial out. Format is one entry per line, comments begin with "#",
+	users specified by their login names
+	* fixed a bug where the PAP authetication record was only removed
+	from /etc/ppp/pap-secrets if an external program is started on 
+	login (stupid me :-)	
+
+Wed Apr  1 21:09:05 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* connect.cpp: small fixes for 'Scan'
+
+Tue Mar 31 18:54:13 1998  Harri Porten  <porten@tu-harburg.de>
+	
+	* connect.cpp: corrected stripping of whitespace from 'scanvar'
+	* main scripting loop idles until 'Scan' is completed
+	* added new keyword 'Save' to store scanned strings
+ 	* cleaned up add_domain(), adddns(), removedns() by adding data()
+ 	calls where QString variables are passed as const char* parameters
+
+Mon Mar 30 22:02:07 1998    <mweilguni@kde.org>
+
+	* added volume accounting (currently, only inbytes are counted,
+	but should be very easy to change). Unfortunatly, there´s no
+	method yet to reset the number of bytes, so you have to fiddle
+	around in kppprc.	
+
+Wed Mar 18 21:47:20 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* runtests.cpp: added check for 'lock' option in /etc/ppp/options.
+	Hopefully, this check isn't too harsh and won't cause any false alarms.
+
+Wed Mar 18 01:13:50 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* modemcmds.cpp: replaced 'Modem Sustains Fast Init' (from general.cpp)
+	option by an adjustable 'Init Delay'. Some users reported that they
+ 	had to increase the delay time to prevent kppp from hanging
+ 	after ATZ.
+
+Mon Mar 16 03:37:04 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* command line options need to be parse after creating a KApplications
+	due to some changes by Matthias in kapp I think.
+
+1998-03-15  Mario Weilguni  <mweilguni@kde.org>
+
+	* main.cpp: added mini-icon for all kppp windows, not just 
+	  the main window
+
+Mon Mar  9 00:17:20 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* added new script keyword 'scan', see the documentation.
+	  It allows for password challenges etc.
+
+Tue Feb 24 19:19:44 1998  Mario Weilguni  <mweilguni@kde.org>
+
+	* pap.cpp, connect.cpp: removed the need for a "+ua" option
+	  for PAP. Unfortunatly this REQUIRES that kppp can write
+	  /etc/ppp/pap-secrets (either by running SUID root or
+	  by group permissions)
+
+Fri Feb 13 01:12:19 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* loginterm.cpp: implemented the possibility to log in via
+	a simple terminal window. Should have developed a generic widget
+	that could have been shared by Miniterm, the debug window and
+	loginterm, but I didn't want to touch the rest of the stuff yet.
+	* kpppconfig.h: increased max. script size to 20
+
+Thu Feb  5 22:00:55 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* pppdata.cpp: added pppdError() and setpppdError()
+	* main.cpp: added new error message for timeout
+	* removed last remaining command_on_disconnect bug (see Jan 24)
+
+Sat Jan 31 19:56:03 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* main.cpp: in some cases kppp connected to an account 
+	different from the one selected in the combo box. Added
+	setAccount() in connectbutton() to fix that, hopefully.
+
+Sun Jan 25 00:45:45 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* docking.cpp: included a hide() statement to cleanly undock
+	the widget from the panel. Otherwise the window stayed invisible
+	after one dock/undock-cycle.
+
+Sat Jan 24 03:40:44 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* fixed a bug (occuring twice) that caused the if-statement for
+	command_on_connect and command_on_disconnect to be always true.
+
+Fri Jan 23 01:32:57 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* fixed alignment in conwindow.cpp's layout.
+
+Wed Jan 21 03:22:43 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* prevented the password from being left in kppprc after the
+ 	option 'Store password' has just been turned off
+	
+	* the ID & password field will be disabled if no account has
+	been created yet
+
+	* pppdata.cpp: removed absolute path for default log viewer
+	to prevent warning messages upon first startup if KDE's location
+ 	differs from /usr/local/kde
+
+	* removed gpppdata.Id() and gpppdata.setId() since they have been
+	replaced by storedUsername() and setStoredUsername()
+
+Tue Jan 20 15:30:08 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* Sigh. After unintentionally deleting my account for the sixth
+	time, I added a yesNo() dialog to confirm deleting an
+	account. This is VERY important, because if you click on "Show
+	log" and double-click onto a file to view it and you have the bad
+	luck that the filename is just over the "Delete" button, the
+	account will be gone.
+
+	* runtests.cpp: gpppdata is now saved after modifications in
+	runtests(), and the default log viewer is set correctly
+
+Tue Jan 20 03:10:35 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* tried to get the docking window to display a tooltip with transfer
+	bytes statistics. Failed. Need to contact Matthias about it.
+       
+	* Removed the 'Dock' button. It is superfluous. Use the window
+	close button to hide the window.
+
+	* fixed the flicker problem that was reintroduced in pppstatdlg.cpp
+
+	* fixed ( hopefully ) a hangup problem on busy redial caused
+	by the  modem_in_connect_state varible in connect.cpp
+
+Mon Jan 19 17:51:16 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* main.cpp: the setup dialog is now created on demand. Since in
+	most cases we only dial out, creating the setup dialog is a waste
+	of CPU and memory. This reduces memory by approx 200KB.
+
+	* geometry managment added to PPP statistic window
+
+	* tried to minimize dependencies on "main.h" by removing unneeded
+	#includes
+
+	* removed homedir.(cpp|h). It can be easily replaced with
+	QDir::homeDirPath().
+
+	* before doing anything else, a few tests will be started to
+	ensure that i.e. the pppd binary is found...
+
+Mon Jan 19 12:05:00 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* set default for get_dock_into_panel() to false as safety
+	  precaution
+	
+	* introduced docking. It allows kppp to be run as a small
+ 	  animated icon on the panel. Clicking on the icon with the left
+	  mouse button restores the regular window. The right button
+ 	  opens up a popup menu with other options.
+
+Mon Jan 19 04:46:39 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* reset PHONENUMBER_SIZE to 60. People with phone cards need lots
+	space.
+
+Fri Jan 16 21:41:08 1998  Stephan Kulow  <coolo@kde.org>
+
+	* some improvements to the toplevel Makefile.am. rpath is very
+	important for setuid programs
+
+Fri Jan 16 19:04:35 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* Improved Makefiles. Now documentation and rulesets are correctly
+	uninstalled with "make uninstall"
+
+	* Toplevel Makefile.am improved. Subdir traversal is only done for
+	installing, not for compiling
+
+	* fixed that "segfault-on-rulecheck" bug introduced by coolo's
+	modifications for locale support.
+
+	* RuleSet::checkRuleFile() now returns 0 on success, otherwise
+	1. kppp uses this as exit value.
+
+	* fixed a bug in the swiss rulesets
+
+	* added file "checkrules" in Rules. It autochecks all rules found
+	and reports bad rulesets.
+
+Thu Jan 15 20:31:14 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* Ported kppp to use automake. 
+
+	* Since the rulefiles now have separate subdirectories, I have
+	removed the prefix (i.e. Spain/Spain_Inovia.rst -->
+	Spain/Inovia.rst). Since the old files still exist it should be no
+	problem for users of former kppp versions.
+
+	* renamed config.h to kpppconfig.h because it conflicts with the
+	default include file config.h, generated from autoconf
+
+Wed Jan 14 12:12:29 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* main.cpp: pressing Enter in ID_Edit moves focus to PW_Edit, in
+	PW_Edit moves focus to the connect-button
+
+Wed Jan 14 04:13:57 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* fixed a bug that caused passwords to be spread among other accounts.
+	  Triggering XPPPWidget::entryChanged() had a nasty side effect. 
+
+Tue Jan 13 17:50:07 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* fixed a bug introduced with the creation of the 'execute command
+	  on disconnect' option
+
+	* CD is by default off. It doesn't work on my internal modem 
+	  and I suspect it might not even work on most (all) internal modems ..
+
+Tue Jan 13 12:02:33 1998  Mario Weilguni <mweilguni@sime.com>
+	* the PAP authentication file is now created in the users
+	  homedirectory. Otherwise I'd have to create the directory 
+	  myself and fix the permissions if kppp runs suid root - 
+	  I'm too lazy for that.
+
+	* fixed a security bug in connect.cpp, a typical buffer
+	  overflow. Very bad for setuid root programs
+
+Thu Jan 13 06:58:29 1998  Peter Silva <peter.silva@videotron.ca>
+
+	* make new behaviour optional (in response to Bernd's worry 
+	  about cheap modems.)
+
+Thu Jan 13 06:58:29 1998  Peter Silva <peter.silva@videotron.ca>
+
+	* patch to prevent kppp hang if modem is off when connecting.
+
+
+Tue Jan 13 02:48:55 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* applied BSD patch from Alex <garbanzo@hooked.net>
+	  (just a few missing includes)
+
+	* various fixes and geometry improvements
+
+	* added a linedit for a command to be executed on disconnect
+	
+
+Mon Jan 12 17:18:41 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* username and password are now remembered between
+	session. Remembering the password can be switched off for each
+	account.
+
+	* connect.cpp: fixed 2 security bugs in lockfile(). Now it's
+	checked if the lockfile is a regular file and no more than
+	32 characters are read from this file, no matter how long it is.
+
+	* Added PAP authentication option and code. Using PAP (at least
+	client-side-authentication should now be VERY easy. Sorry,
+	no CHAP support so far.
+	
+	* edit.cpp: Added a checkbox if to use kppp's default script.
+	If this checkbox is checked, all scriptedit controls are disabled.
+
+Sun Jan 11 21:03:00 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* lslisder in modemcmd.cpp wasn't set correctely on widget
+	  creation. 
+
+
+Thu Jan 11 14:58:29 1998  Peter Silva <peter.silva@videotron.ca>
+	* (0.8.10) incorporate iconify_on_connect patch.
+
+
+Sat Jan 10 21:23:10 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* main.cpp: fixed a bug that cause kppp to go wild and display
+	hundreds of windows when it cannot load a ruleset file
+
+Wed Jan  7 13:00:24 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* edit.cpp: improved the IP and Gateway widgets
+
+	* various improvements for the geometry managements
+
+Tue Jan  6 12:56:14 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* main.cpp: the main kppp window has now layout control
+
+	* connect.cpp: layouted the connection window.
+
+	* modeminfo.cpp (ModemInfo): layoutet the modeminfo dialog
+	  and layouted the ModemTransfer dialog (ATI query)
+
+Mon Jan  5 20:59:00 1998  Harri Porten  <porten@tu-harburg.de>
+
+	* accounting.cpp: telephone costs are stored in kppprc now.
+	  ~/.kde/share/apps/kppp/Costs is obsolete.
+	* pppdata.cpp: added totalCosts() and setTotalCosts().
+	  Several small cosmetic changes.  
+	
+Mon Jan  5 14:25:37 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* docs/kppp.sgml: updated the docs for the new KDE file system
+	  standard. Ispell'ed the docu.
+
+	* main.cpp: added the "-q" command line switch. This is very
+	  usefull in combination with "-c". Instead of returning to
+	  the kppp main window kppp will exit after disconnecting.
+
+	* Makefile.in: removed the external moc_*.cpp files and
+	  included them directly with "#include". This saves 
+	  approx. 30 KB in the binary and greatly speeds up 
+	  compilation
+
+Mon Jan  5 13:59:20 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* Rules/TEMPLATE: fixed a typo: the extension of ruleset
+	  files is ".rst", not ".rts"
+
+Mon Jan  5 13:42:28 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* general.cpp: replaced the KIntLineEdit class with the
+	  class KIntegerLine from libkdeui. Replaced the progress
+	  widget with that from libkdeui.
+
+Mon Jan  5 12:51:43 1998  Mario Weilguni  <mweilguni@sime.com>
+
+	* edit.cpp: now all major dialogs use Qt layout
+
+Mon Jan  5 04:55:58 1998  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* fixed the while(*it) problem in pppdata.cpp it should be
+	  while(it->current()).
+
+Sun Jan  4 13:54:12 1998  Mario Weilguni <mweilguni@sime.com>
+	* modified the modemcommands dialog to use the layout
+	  classes of Qt. Replaced the scrollbar with a slider,
+	  because scrollbars are not the right widget to change
+	  values.
+
+Thu Jan  2 00:25:03 1998  Peter Silva <peter.silva@videotron.ca>
+	* added modem_in_connect_state, and checks for it
+          to avoid unneccessary delays on modem initialization.
+	  delay of 2 seconds will still occur on hangup by default.
+	  I think that's bearable.
+	* Added modem tricks section, gentle introduction.
+
+Thu Dec 25 11:46:34 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+        * Added new script keywords: PwPrompt and ID
+	* Added ID and Password LineEdits on the main dialog window
+	* KConfig transition is now complete, one more time the data
+	  storage format has changed. ( Hopefully the last time )
+
+	* All sorts of little cosmetic changes
+	* fixed up the mini-terminal a bit
+
+Sun Dec 22 23:00:03 1997  Peter Silva <peter.silva@videotron.ca>
+
+	* To fix hangup problems:
+	* Added programmable guard time around escape sequence
+	* Separated escape sequence from hangup command
+
+Sun Dec 21 10:19:18 1997  Peter Silva <peter.silva@videotron.ca>
+
+	* Changed maxloopnest to MAXLOOPNEST for portability reasons 
+	  (See developers guide, about const int)
+	* Set window titles when connected to account name.
+
+Fri Dec 19 22:49:18 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* Extended the grammar of the tarif rules. 
+	  New keyword: flat_init_costs necessitated by the new french
+	  accounting rules.
+
+Tue Dec 16 01:54:50 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* extended scripting capabilities to allow password dialogs
+
+Sun Nov  2 14:02:31 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* accounts.cpp: applied mario's patches to the rulessets. Now deals
+	  with fractions too. 
+	* accounts.cpp: fixed the bug that caused kppp to reset the costs 
+	  even if you chose cancel.
+	* docs/kppp.sgml: doc updates and corrections
+
+Fri Aug 15 21:25:05 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* connect.cpp: leaving the lock file name edit blank will cause
+	kppp not to create lock files. That is this turn the use of lock files off
+
+	* added option to not disconnect on xserver exit/crash
+
+Sun Aug 10 19:07:07 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* kppp will no automatically disconnect on X-server exit
+
+Sun Jul 20 17:26:58 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* fixed bug in phone cost accounting

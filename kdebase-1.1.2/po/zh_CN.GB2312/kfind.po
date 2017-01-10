@@ -1,0 +1,348 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kfind\n"
+"POT-Creation-Date: 1999-03-30 01:17+0200\n"
+"PO-Revision-Date: 1999-03-31 18:40+0800\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312 )\n"
+"Translator: Wang Jian <larkw@263.net>\n"
+
+#: kfdird.cpp:46
+msgid "Directories:"
+msgstr "目录:"
+
+#: kfdird.cpp:168 kfdird.cpp:193 kfdird.cpp:211
+msgid "Cannot open or read directory."
+msgstr "无法打开或读取目录."
+
+#
+#: kfindtop.cpp:121
+msgid "&Start search"
+msgstr "开始查找(&S)"
+
+#
+#: kfindtop.cpp:123
+msgid "S&top search"
+msgstr "停止查找(&T)"
+
+#: kfindtop.cpp:128
+msgid "&Open"
+msgstr "打开(&O)"
+
+#: kfindtop.cpp:130
+msgid "&Add to archive"
+msgstr "添加到压缩文件(&A)"
+
+#: kfindtop.cpp:135
+msgid "&Properties"
+msgstr "特性(&P)"
+
+#: kfindtop.cpp:138
+msgid "Open Containing &Folder"
+msgstr "打开包含文件的文件夹(&F)"
+
+#: kfindtop.cpp:141
+msgid "&Save Search"
+msgstr "保存查找结果(&S)"
+
+#: kfindtop.cpp:158
+msgid "&Select All"
+msgstr "全选(&S)"
+
+#
+#: kfindtop.cpp:160
+msgid "Unse&lect All"
+msgstr "取消选择(&L)"
+
+#: kfindtop.cpp:162
+msgid "&Invert Selection"
+msgstr "反转选择(&I)"
+
+#: kfindtop.cpp:174
+msgid "&Preferences ..."
+msgstr "偏好设定(&P) ..."
+
+#: kfindtop.cpp:179
+#, c-format
+msgid ""
+"KFind %s\n"
+"Frontend to find utility\n"
+"Miroslav Fl韉r <flidr@kky.zcu.cz>\n"
+"\n"
+"Special thanks to Stephan Kulow\n"
+"<coolo@kde.org>"
+msgstr ""
+"KFind %s\n"
+"find 应用程序的前端\n"
+"Miroslav Fl韉r <flidr@kky.zcu.cz>\n"
+"\n"
+"特别感谢 Stephan Kulow\n"
+"<coolo@kde.org>"
+
+#: kfindtop.cpp:199
+msgid "Start Search"
+msgstr "开始查找"
+
+#: kfindtop.cpp:204
+msgid "New Search"
+msgstr "新的查找"
+
+#: kfindtop.cpp:209
+msgid "Stop Search"
+msgstr "停止查找"
+
+#: kfindtop.cpp:222
+msgid "Add to archive"
+msgstr "添加到压缩文件中"
+
+#: kfindtop.cpp:237
+msgid "Open Containing Folder"
+msgstr "打开包含文件的文件夹"
+
+#: kfindtop.cpp:242
+msgid "Save Search Results"
+msgstr "保存查找结果"
+
+#: kftabdlg.cpp:72
+msgid "&Named:"
+msgstr "名称为(&N):"
+
+#: kftabdlg.cpp:75
+msgid "&Look in:"
+msgstr "查找(&L)"
+
+#: kftabdlg.cpp:78
+msgid "&Browse ..."
+msgstr "浏览(&B) ..."
+
+#: kftabdlg.cpp:84
+msgid "Include &subfolders"
+msgstr "包含子文件夹(&S)"
+
+#: kftabdlg.cpp:118
+msgid " Name& Location "
+msgstr " 名称与位置 "
+
+#: kftabdlg.cpp:130
+msgid "and"
+msgstr "和"
+
+#: kftabdlg.cpp:131
+msgid "month(s)"
+msgstr "个月"
+
+#: kftabdlg.cpp:132
+msgid "day(s)"
+msgstr "天"
+
+#: kftabdlg.cpp:147
+msgid "&All files"
+msgstr "所有文件(&A)"
+
+#: kftabdlg.cpp:148
+msgid "Find all files created or &modified:"
+msgstr "寻找所有建立或修改的文件(&M):"
+
+#: kftabdlg.cpp:149
+msgid "&between"
+msgstr "期间(&B)"
+
+#: kftabdlg.cpp:150
+msgid "during the previou&s "
+msgstr "之前几月(&S) "
+
+#: kftabdlg.cpp:151
+msgid "&during the previous "
+msgstr "之前几天(&D) "
+
+#: kftabdlg.cpp:199
+msgid " Date Modified "
+msgstr " 修改日期 "
+
+#: kftabdlg.cpp:206
+msgid "Of &type:"
+msgstr "文件类型(&T)"
+
+#: kftabdlg.cpp:208
+msgid "&Containing Text:"
+msgstr "包含文字(&C)"
+
+#: kftabdlg.cpp:213
+msgid "&Size is:"
+msgstr "文件大小(&S)"
+
+#: kftabdlg.cpp:217
+msgid "KB"
+msgstr "KB"
+
+#: kftabdlg.cpp:236
+msgid "All Files and Folders"
+msgstr "所有文件和文件夹"
+
+#: kftabdlg.cpp:238
+msgid "Folders"
+msgstr "文件夹"
+
+#: kftabdlg.cpp:239
+msgid "Symbolic links"
+msgstr "符号链接"
+
+#: kftabdlg.cpp:240
+msgid "Special files (sockets, device files...)"
+msgstr "特殊文件(套接字, 设备文件 ...)"
+
+#: kftabdlg.cpp:241
+msgid "Executable files"
+msgstr "可执行文件"
+
+#: kftabdlg.cpp:242
+msgid "SUID executable files"
+msgstr "SUID 可执行文件"
+
+#: kftabdlg.cpp:250
+msgid "(none)"
+msgstr "(无)"
+
+#: kftabdlg.cpp:251
+msgid "At Least"
+msgstr "至少"
+
+#: kftabdlg.cpp:252
+msgid "At Most"
+msgstr "最多"
+
+#: kftabdlg.cpp:263
+msgid " Advanced "
+msgstr " 高级 "
+
+#: kftabdlg.cpp:501
+msgid "The date is not valid!!"
+msgstr "无效的日期!!"
+
+#: kftabdlg.cpp:513
+msgid "The month(s) value isn't valid!!"
+msgstr "月份不对!!"
+
+#: kftabdlg.cpp:524
+msgid "The day(s) value isn't valid!!"
+msgstr "天数不对!!"
+
+#: kftabdlg.cpp:541
+msgid "The value in size isn't valid number!!"
+msgstr "无效的文件大小!!"
+
+#: kfoptions.cpp:52
+msgid "Preferences"
+msgstr "偏好设置"
+
+#: kfoptions.cpp:74
+msgid "File format:"
+msgstr "文件格式:"
+
+#: kfoptions.cpp:76
+msgid "Save results to file:"
+msgstr "保存结果到文件:"
+
+#: kfoptions.cpp:79
+msgid "Save results to file ~/.kfind-results.html"
+msgstr "保存结果到文件 ~/.kfind-results.html"
+
+#: kfoptions.cpp:81
+msgid "Browse"
+msgstr "浏览"
+
+#: kfoptions.cpp:94
+msgid "Plain Text"
+msgstr "普通文本"
+
+#: kfoptions.cpp:123
+msgid "Saving"
+msgstr "保存"
+
+#: kfoptions.cpp:130
+msgid "Create Archive:"
+msgstr "建立压缩文件:"
+
+#: kfoptions.cpp:132
+msgid "Add to Archive:"
+msgstr "添加到压缩文件中:"
+
+#: kfoptions.cpp:136
+msgid "Patterns:"
+msgstr "模式"
+
+#: kfoptions.cpp:139
+msgid "Add New"
+msgstr "加入新项目"
+
+#: kfoptions.cpp:180
+msgid "Archivers"
+msgstr "压缩文件"
+
+#: kfwin.cpp:112 kfwin.cpp:119 kfwin.cpp:139 kfwin.cpp:166
+#, c-format
+msgid "%d file(s) found"
+msgstr "找到 %d 个文件"
+
+#: kfwin.cpp:250
+msgid "It wasn't possible to save results!"
+msgstr "无法保存查找结果!"
+
+#: kfwin.cpp:258 kfwin.cpp:260 kfwin.cpp:262
+msgid "KFind Results File"
+msgstr "KFind 查找结果文件"
+
+#: kfwin.cpp:287
+msgid "Results were saved to file\n"
+msgstr "查找结果已经保存到文件\n"
+
+#: kfwin.cpp:302
+#, c-format
+msgid ""
+"Do you really want to delete file:\n"
+"%s"
+msgstr ""
+"确定要删除文件? :\n"
+"%s"
+
+#: kfwin.cpp:304
+msgid "Delete File"
+msgstr "删除文件"
+
+#: kfwin.cpp:316
+msgid ""
+"You have no permission\n"
+" to delete this file"
+msgstr "你没有权限删除这个文件"
+
+#: kfwin.cpp:322
+msgid ""
+"It isn't possible to delete\n"
+"selected file"
+msgstr "无法删除选中的文件"
+
+#: kfwin.cpp:340
+msgid ""
+"You have no permission\n"
+" to delete this directory"
+msgstr "你没有权限删除这个目录"
+
+#: kfwin.cpp:345
+msgid ""
+"Specified directory\n"
+"is not empty!"
+msgstr "指定的目录不是空的!"
+
+#: kfwin.cpp:350
+msgid ""
+"It isn't possible to delete\n"
+"selected directory"
+msgstr "无法删除选定的目录"
+
+#: kfwin.cpp:442
+msgid "Couldn't recognize archive type!"
+msgstr "无法认出压缩格式!"
+
+#: kfwin.cpp:501
+msgid "Error while creating child process!"
+msgstr "建立子进程时发生错误!"

@@ -1,0 +1,44 @@
+In this file:
+
+* Common Mistakes
+* Debugging
+* Removal/Uninstallation
+* More Info
+
+Common Mistakes
+---------------
+
+IMPORTANT: most applications need KDEDIR as the directory where KDE is
+installed.  If this variable is not set, strange things may happen.  
+Please set this in your login file.
+
+If configure claims Qt cannot be found, have a look at http://www.troll.no
+to get a copy of Qt, version 1.41 or newer.
+
+Debugging
+---------
+
+You can use --enable-debug with the configure script, if you want to have
+debug code in your KDE apps and libs.  I recommend to do this, since this
+is alpha software and this makes debugging things a whole lot easier.
+
+Removal/Uninstallation
+----------------------
+
+You can use 'make uninstall' if you want to remove the kde from the dirs.
+This feature has not been tested completely.
+
+More Info
+---------
+
+Have a look at the individual subdirectories, if you want to know, what
+versions of apps are included.
+
+Please direct any bug reports to our bug list maintainer 
+David McCanney <9504506m@student.gla.ac.uk>.  Or visit
+http://buglist.kde.org.
+
+If you have problems compiling and installing this package, contact
+me at coolo@kde.org.
+
+General KDE discussions should go to the KDE mailing list (kde@kde.org).

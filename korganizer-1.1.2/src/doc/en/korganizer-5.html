@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>KOrganizer Reference Manual: Appointment Editor Window</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="PIM calendar scheduling C&S vCalendar UNIX X">
+<META NAME="description" CONTENT="A Calendar / Scheduling Program for KDE / Unix / X">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="korganizer-6.html">Next</A>
+<A HREF="korganizer-4.html">Previous</A>
+<A HREF="korganizer.html#toc5">Table of Contents</A>
+</P>
+<H3><A NAME="sec-apptmntwin"></A> <A NAME="s5">5. Appointment Editor Window</A></H3>
+
+<P>The appointment editor window is a detailed interface for adding
+new appointments or editing existing ones.  Without using this window,
+you are generally limited to changing only an appointment's
+description (and hopefully, when we have time to implement it, an
+appointment's time and date as well).  While this is good for
+``quick'' access, if you want to change more sophisticated components
+of an appointment such as how often it repeats, when and if an alarm
+should be set, what categories it belongs to, and so on, you will need
+this window.
+<P>
+<P>The appointment editor window is made up of three tabs.  The
+<CODE>General</CODE> tab has the most common items related to the
+appointment, including times and dates, description, privacy
+information, categories, etc.  The <CODE>Details</CODE> tab has more
+advanced information, especially information pertaining to group
+scheduling.  Unfortunately, we haven't finished implementing most of
+these features, and for that reason, the documentation will not cover
+the <CODE>Details</CODE> tab (until that part of the code is completed).
+The last tab is the <CODE>Recurrence</CODE> tab, which holds all the
+settings for if and how often an event should repeat over a period of
+time.
+<P>
+<P>To save changes to your appointment, press the ``disk'' button on
+the toolbar (it stands for save).  To cancel, either close the window,
+or press the ``cancel'' button on the toolbar.
+<P>
+<P>
+<P>
+<H3><A NAME="sec-apptgeneral"></A> <A NAME="ss5.1">5.1 General Tab</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Summary</B><DD><P>A Short description of the event or appointment.
+<P>
+<DT><B>Start and End Time</B><DD><P>Set your appointment's starting and ending
+date and time here.  Click on the little calendar icon next to the
+date to pull up an interactive date selector, or type in a date in the
+<EM>same format</EM> shown.  For changing the time, you can type it in
+directly, or use the pulldown on the combobox to choose the time from
+a list.  You can also use the up and down arrows to scroll through 15
+minute increments of time.
+<P>
+<DT><B>All day event</B><DD><P>Click this checkbox if you don't want to associate
+any time with the appointment at all; instead you want to make more of
+a ``general reminder'' that the appointment occurs on this date.
+<P>
+<DT><B>Recurring event</B><DD><P>If you click this checkbox, the
+<CODE>Recurrence</CODE> tab will become available, and you will be able to
+set up how often the appointment repeats itself.  By default, it isn't
+checked--the appointment will occur only once.  See 
+<A HREF="#sec-apptrecurrence">Recurrence Tab</A>.
+<P>
+<DT><B>Reminder</B><DD><P>Clicking this checkbox will enable a visual reminder or
+alarm for your appointment.  Type in the number of minutes
+``lead-time'' in the textbox next to it.  Unfortunately, at this time,
+the ``WAV'' and ``PROG'' buttons, which will eventually let you play a
+noise or run a program when the alarm goes off, are not available.
+<P>
+<DT><B>Show Time As:</B><DD><P>Using this combo box, you will be able to switch
+how your appointment's time appears to the ``outside world''--either
+Free or Busy.  This will make more sense when the group scheduling
+features of KOrganizer are completed.
+<P>
+<DT><B>Description</B><DD><P>The large text area beneath the alarm information is
+where you can put any details about the appointment.  Cut and paste in
+airline flight information, details of a meeting, notes about a
+homework assignment, or anything else that requires more detail beyond
+the simple one-line summary.
+<P>
+<DT><B>Categories</B><DD><P>This button will bring up a dialog box which will
+allow you to select a number of categories to place this appointment
+in.  Eventually, you will be able to sort events by category or select
+to only view events in certain categories, but this isn't finished
+yet.  For now, use categories as personal reminders and notes about
+what sort of appointment or event this is.
+<P>
+<DT><B>Private</B><DD><P>If the appointment is of a private or confidential
+nature, you will want to click this textbox. When the group scheduling
+features are completed, only ``public'' events will be world-visible;
+private events will not show up.
+<P>
+</DL>
+<P>
+<P>
+<H3><A NAME="sec-details"></A> <A NAME="ss5.2">5.2 Details Tab</A>
+</H3>
+
+<P>
+<P>
+<DL>
+<P>This section still needs to be written.  Volunteers?
+</DL>
+<P>
+<P>
+<H3><A NAME="sec-apptrecurrence"></A> <A NAME="ss5.3">5.3 Recurrence Tab</A>
+</H3>
+
+<P>
+<P>
+<DL>
+<P>
+<DT><B>Appointment Time</B><DD><P>In this area, you can edit an appointment's
+start and end time. Changes made in these areas will be reflected on
+the <CODE>General</CODE> tab, and vice versa.  See 
+<A HREF="#sec-apptgeneral">General Tab</A>.
+<P>
+<DT><B>Recurrence Rule</B><DD><P>This appears to be a complex section, but it is
+really rather simple.  Choose the repetition period by clicking the
+<CODE>Daily, Weekly, Monthly,</CODE> or <CODE>Yearly</CODE> radio button on
+the left side of this area.  When you choose a different period, the
+display to the right of the radio button will change to reflect the
+settings associated with that period.  By default, an appointment will
+set itself up to repeat on a weekly basis.
+<P>
+<P>For <CODE>Daily</CODE>, simply choose how often to repeat.  By default,
+it is every day (1), but you can change this to every other day (2),
+etc.
+<P>
+<P> For <CODE>Weekly</CODE>, change the period of weeks if you wish, and
+select which days of the week you want the appointment to occur on.
+<P>
+<P>For <CODE>Monthly</CODE>, you can either have the appointment occur on
+the same day of the month, or in a specific week on a specific day of
+the month.  You need to choose this.  By default, it assumes you want
+to repeat on the same calendar day of the month (like the 15th for
+instance).  You can also adjust the period, so you can repeat monthly,
+tri-monthly, bi-yearly, etc.  
+<P>
+<P><CODE>Yearly</CODE> is similar to <CODE>Monthly</CODE>.  You need to choose
+whether or not you are indicating a calendar day of the year (i.e.,
+the 250th day of the year), or this day of the month in a particular
+month of the year.  By default, KOrganizer assumes you mean the actual
+day of the year.  You can adjust the period to reflect events that
+occur bi-annually, every four years, and so on.
+<P>
+<DT><B>Recurrence Range</B><DD><P>By default, appoints which repeat will do so
+forever; there is no ``end'' to the repetition.  This may or may not
+be desirable, so you are provided with two ways of terminating the
+repetition: either by giving an ending date, or by specifying a total
+number of recurrences.  In this area, you can choose the method that
+is suitable for this appointment.
+<P>
+<DT><B>Exceptions</B><DD><P>You may have a very nice recurrence rule set up, but
+realize that there are a few exceptions.  If you set up your college
+class schedule for instance, you may want to make exceptions for
+holidays and the like.  In this area, you can add, change, and delete
+dates from the list of exceptions (i.e. times when even if the
+recurrence rule matches, the event will <EM>not</EM> be scheduled).  Pick a
+date with the date selector, and press <CODE>Add</CODE> to include it.
+For removing dates, hilight them in the box on the right side, and
+then click <CODE>Delete</CODE>.
+<P>
+<P>
+<P>
+</DL>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="korganizer-6.html">Next</A>
+<A HREF="korganizer-4.html">Previous</A>
+<A HREF="korganizer.html#toc5">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

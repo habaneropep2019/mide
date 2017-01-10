@@ -1,0 +1,285 @@
+# Icelandic translation.
+# Copyright (C) 1998 Bjarni R. Einarsson
+# Bjarni R. Einarsson, <bre@mmedia.is>, 1998
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1998-10-01 13:29+0200\n"
+"Last-Translator: Bjarni R. Einarsson <bre@mmedia.is>\n"
+"Language-Team: is\n"
+
+#: board.cpp:65 dialogs.cpp:137
+msgid "Anonymous"
+msgstr "Nonni nafnlausi"
+
+#: board.cpp:97
+msgid "Game paused"
+msgstr "Leikurinn er í biðstöðu"
+
+#: board.cpp:102
+msgid "Press to resume"
+msgstr "Halda áfram..."
+
+#: board.cpp:119 net.cpp:208
+msgid "Game over"
+msgstr "Leikslok"
+
+#: board.cpp:123
+msgid "Press Return to replay"
+msgstr "Smelltu á Enter til að endurtaka"
+
+#: board.cpp:127
+msgid "Press to start game"
+msgstr "Smelltu til að hefja leik"
+
+#: board.cpp:371
+msgid "Highscores file not writable !"
+msgstr "Get ekki skrifað í methafaskrá!"
+
+#: net.cpp:129
+msgid "Illegal port"
+msgstr "Ólöglegt port"
+
+#: net.cpp:135
+msgid "Null address"
+msgstr "\"Null\" vistfang"
+
+#: net.cpp:142
+msgid "Unknown address"
+msgstr "Óþekkt vistfang"
+
+#: net.cpp:157
+msgid "Cannot create socket"
+msgstr "Gat ekki smíðað sökkul"
+
+#: net.cpp:196
+msgid "at"
+msgstr "á"
+
+#: net.cpp:233
+msgid "Connect error"
+msgstr "Tengingarvilla"
+
+#: net.cpp:243 net.cpp:299
+msgid "Server unreachable"
+msgstr "Get ekk tengst þjóni"
+
+#: net.cpp:266
+msgid "The server has died"
+msgstr "Þjónninn dó"
+
+#: net.cpp:267
+msgid "Cancel from server"
+msgstr "Þjónninn hætti við"
+
+#: net.cpp:273 net.cpp:333
+msgid "Unknown data from server"
+msgstr "Óþekkt gögn frá þjóninum"
+
+#: net.cpp:312
+msgid "Cannot send to server"
+msgstr "Get ekki sent til þjónsins"
+
+#: net.cpp:324
+msgid "Client timeout (No message from server)"
+msgstr "Tími útrunninn (engin skilaboð frá þjóni)"
+
+#: net.cpp:329
+msgid "Server has vanished"
+msgstr "Þjónninn hvarf"
+
+#: net.cpp:366
+msgid "Bind error"
+msgstr "Bindingarvilla"
+
+#: net.cpp:371
+msgid "Listen error"
+msgstr "Hlustunarvilla"
+
+#: net.cpp:390
+msgid "Unknown message from unknown player (??)"
+msgstr "Óþekkt skilaboð frá óþekktum leikmanni (??)"
+
+#: net.cpp:449 net.cpp:490
+msgid "Unknown message from client"
+msgstr "Óþekkt skilaboð frá biðlara"
+
+#: net.cpp:486
+msgid "Client has died"
+msgstr "Biðlari dó"
+
+#: net.cpp:487
+msgid "Cancel from client"
+msgstr "Biðlari hætti við"
+
+#: net.cpp:494
+msgid "Timeout"
+msgstr "Tími rann út"
+
+#: net.cpp:520
+msgid "No message from client"
+msgstr "Engin skilaboð frá biðlara"
+
+#: net.cpp:525
+msgid "Client has vanished"
+msgstr "Biðlari hvarf"
+
+#: net.cpp:529
+msgid "Unknown data from client"
+msgstr "Óþekkt skilaboð frá biðlara"
+
+#: net.cpp:533
+msgid "End message from client"
+msgstr "Lok skilaboðs frá biðlara"
+
+#: net.cpp:550
+msgid "Cannot send to client"
+msgstr "Get ekki sent til biðlara"
+
+#: dialogs.cpp:61
+msgid "High Scores"
+msgstr "Methafar"
+
+#: dialogs.cpp:84 dialogs.cpp:93
+msgid "Hall of Fame"
+msgstr "Methafar"
+
+#: dialogs.cpp:156
+msgid "No option yet !"
+msgstr "Enginn valmöguleiki enn !"
+
+#: dialogs.cpp:175 dialogs.cpp:232
+msgid "Network Dialog"
+msgstr "Netupplýsingagluggi"
+
+#: dialogs.cpp:178
+msgid "Server"
+msgstr "Þjónn"
+
+#: dialogs.cpp:179
+msgid "Client"
+msgstr "Biðlari"
+
+#: dialogs.cpp:183
+msgid "Player name :"
+msgstr "Nafn leikmanns :"
+
+#: dialogs.cpp:185
+msgid "Server address :"
+msgstr "Vistfang þjóns :"
+
+#: dialogs.cpp:187
+msgid "Port :"
+msgstr "Port :"
+
+#: dialogs.cpp:199
+msgid "Connect"
+msgstr "Tenging"
+
+#: dialogs.cpp:202
+msgid "Connecting ..."
+msgstr "Tengi ..."
+
+#: dialogs.cpp:205
+msgid "Play !"
+msgstr "Spila !"
+
+#: dialogs.cpp:252
+msgid "Network game"
+msgstr "Netleikur"
+
+#: dialogs.cpp:256
+msgid "Server mode"
+msgstr "Sem þjónn"
+
+#: dialogs.cpp:258
+msgid "Client mode"
+msgstr "Sem biðlari"
+
+#: dialogs.cpp:336
+msgid "Waiting for other player(s) ..."
+msgstr "Bíð eftir hinum leikmönnunum ..."
+
+#: field.cpp:27
+msgid "New game"
+msgstr "Nýr leikur"
+
+#: field.cpp:28
+msgid "Pause game"
+msgstr "Hvíla"
+
+#: field.cpp:30
+msgid "High scores"
+msgstr "Methafar"
+
+#: field.cpp:31
+msgid "Move left"
+msgstr "Til vinstri"
+
+#: field.cpp:32
+msgid "Move right"
+msgstr "Til hægri"
+
+#: field.cpp:33
+msgid "Drop down"
+msgstr "Sleppa"
+
+#: field.cpp:34
+msgid "One line down"
+msgstr "Niður um einn"
+
+#: field.cpp:35
+msgid "Rotate left"
+msgstr "Vinstri snúningur"
+
+#: field.cpp:36
+msgid "Rotate right"
+msgstr "Hægri snúningur"
+
+#: field.cpp:51
+msgid "Score"
+msgstr "Stig"
+
+#: field.cpp:55
+msgid "Lines removed"
+msgstr "Raðir fjarlægðar"
+
+#: field.cpp:59
+msgid "Level"
+msgstr "Borð"
+
+#: field.cpp:63
+msgid "Next tile"
+msgstr "Næsti kubbur"
+
+#: field.cpp:185
+msgid "&Restart game"
+msgstr "&Byrja upp á nýtt"
+
+#: field.cpp:186
+msgid "&Pause game"
+msgstr "&Hvíla"
+
+#: field.cpp:187
+msgid "&Multiplayer game"
+msgstr "Spila við &marga í einu"
+
+#: field.cpp:189
+msgid "&High scores"
+msgstr "Met&hafar"
+
+#: main.cpp:25 main.cpp:74
+msgid "Hide menu"
+msgstr "Fela valmyndarönd"
+
+#: main.cpp:30
+msgid "&Keys"
+msgstr "&Hnappar"
+
+#: main.cpp:35
+msgid "by"
+msgstr "eftir"
+
+#: main.cpp:71
+msgid "Show menu"
+msgstr "Sýna valmyndarönd"

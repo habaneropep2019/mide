@@ -1,0 +1,946 @@
+# Copyright (C) 1998 Free Software Foundation, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1998-12-10 02:17+0100\n"
+"PO-Revision-Date: 1999-01-11 22:30+0100\n"
+"Last-Translator: Anders Bengtsson <d96-abe@nada.kth.se>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: ArchiveInfoWidget.cpp:39 BackupProfileWidget.cpp:40
+msgid "Archive name:"
+msgstr "Arkivnamn"
+
+#: ArchiveInfoWidget.cpp:40 FileInfoWidget.cpp:38 TapeInfoWidget.cpp:43
+msgid "Created on:"
+msgstr "Skapad:"
+
+#: ArchiveInfoWidget.cpp:41 FileInfoWidget.cpp:41 TapeFileInfoWidget.cpp:36
+msgid "Size:"
+msgstr "Storlek:"
+
+#: BackupDlg.cpp:74 BackupDlg.cpp:75 KDat.cpp:432
+msgid "KDat: Backup"
+msgstr "KDat: Backup"
+
+#: BackupDlg.cpp:87 IndexDlg.cpp:69 VerifyDlg.cpp:78
+msgid "Elapsed time:"
+msgstr "Förfluten tid:"
+
+#: BackupDlg.cpp:90 BackupDlg.cpp:96 IndexDlg.cpp:72 VerifyDlg.cpp:81
+#: VerifyDlg.cpp:87
+msgid "00:00:00"
+msgstr "00:00:00"
+
+#: BackupDlg.cpp:93 VerifyDlg.cpp:84
+msgid "Time remaining:"
+msgstr "Kvarvarande tid:"
+
+#: BackupDlg.cpp:99 VerifyDlg.cpp:90
+msgid "Total kbytes:"
+msgstr "Totalt kbyte:"
+
+#: BackupDlg.cpp:105
+msgid "Kbytes written:"
+msgstr "Kbyte skrivna:"
+
+#: BackupDlg.cpp:108 IndexDlg.cpp:84 VerifyDlg.cpp:99
+msgid "0k"
+msgstr "0k"
+
+#: BackupDlg.cpp:111 IndexDlg.cpp:93 VerifyDlg.cpp:102
+msgid "Transfer rate:"
+msgstr "Hastighet:"
+
+#: BackupDlg.cpp:114 IndexDlg.cpp:96 VerifyDlg.cpp:105
+msgid "0k/min"
+msgstr "0k/min"
+
+#: BackupDlg.cpp:117 IndexDlg.cpp:87 VerifyDlg.cpp:110
+msgid "Files:"
+msgstr "Filer:"
+
+#: BackupDlg.cpp:120 IndexDlg.cpp:78 IndexDlg.cpp:90 IndexDlg.cpp:102
+msgid "0"
+msgstr "0"
+
+#: BackupDlg.cpp:123
+msgid "Backup log:"
+msgstr "Backuplogg:"
+
+#: BackupDlg.cpp:130 IndexDlg.cpp:112 VerifyDlg.cpp:131
+msgid "Save Log..."
+msgstr "Spara logg..."
+
+#: BackupDlg.cpp:135 IndexDlg.cpp:117 VerifyDlg.cpp:136
+msgid "Abort"
+msgstr "Avbryt"
+
+#: BackupDlg.cpp:302
+msgid "*** Write failed, giving up."
+msgstr "*** Skrivning misslyckades, ger upp."
+
+#: BackupDlg.cpp:367 BackupDlg.cpp:377 IndexDlg.cpp:335 VerifyDlg.cpp:358
+#: VerifyDlg.cpp:368
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#: BackupDlg.cpp:380 IndexDlg.cpp:338 VerifyDlg.cpp:371
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: BackupDlg.cpp:384 IndexDlg.cpp:342 VerifyDlg.cpp:375
+#, c-format
+msgid "%s/min"
+msgstr "%s/min"
+
+#: BackupOptDlg.cpp:31 BackupOptDlg.cpp:32
+msgid "KDat: Backup Options"
+msgstr "KDat: Backupalternativ"
+
+#: BackupProfileInfoWidget.cpp:40
+msgid "Backup profile name:"
+msgstr "Backupprofil:"
+
+#: BackupProfileInfoWidget.cpp:51
+msgid "Files >>"
+msgstr "Filer >>"
+
+#: BackupProfileInfoWidget.cpp:54
+msgid "<< Files"
+msgstr "<< Filer"
+
+#: BackupProfileWidget.cpp:38 KDat.cpp:152
+msgid "Backup"
+msgstr "Backup"
+
+#: BackupProfileWidget.cpp:46
+msgid "Working directory:"
+msgstr "Kör i katalog:"
+
+#: BackupProfileWidget.cpp:52
+msgid "Backup files:"
+msgstr "Backup på filer:"
+
+#: BackupProfileWidget.cpp:58
+msgid "Tar Options"
+msgstr "Tar-alternativ"
+
+#: BackupProfileWidget.cpp:60
+msgid "Stay on one filesystem"
+msgstr "Stanna i samma filsystem"
+
+#: BackupProfileWidget.cpp:63
+msgid "GNU listed incremental"
+msgstr "inkrementiell (GNU listed-incremental)"
+
+#: BackupProfileWidget.cpp:67
+msgid "Snapshot file:"
+msgstr "Snapshot-fil:"
+
+#: BackupProfileWidget.cpp:73
+msgid "Remove snapshot file before backup"
+msgstr "Ta bort snapshot-fil innan backup"
+
+#: FileInfoWidget.cpp:37 TapeFileInfoWidget.cpp:34
+msgid "File name:"
+msgstr "Filnamn:"
+
+#: FileInfoWidget.cpp:39 TapeFileInfoWidget.cpp:35 TapeInfoWidget.cpp:44
+msgid "Last modified:"
+msgstr "Senast ändrad:"
+
+#: FileInfoWidget.cpp:40
+msgid "Last accessed:"
+msgstr "Senast använd:"
+
+#: FileInfoWidget.cpp:42
+msgid "Owner:"
+msgstr "Ägare:"
+
+#: FileInfoWidget.cpp:43
+msgid "Group:"
+msgstr "Grupp:"
+
+#: IndexDlg.cpp:56 IndexDlg.cpp:57
+msgid "KDat: Index"
+msgstr "KDat: Index"
+
+#: IndexDlg.cpp:75
+msgid "Archives:"
+msgstr "Arkiv"
+
+#: IndexDlg.cpp:81 VerifyDlg.cpp:96
+msgid "Kbytes read:"
+msgstr "Kbyte lästa:"
+
+#: IndexDlg.cpp:99
+msgid "Total files:"
+msgstr "Totalt filer:"
+
+#: IndexDlg.cpp:105
+msgid "Index log:"
+msgstr "Index logg:"
+
+#: IndexDlg.cpp:226
+msgid "Rewinding tape."
+msgstr "Spolar tillbaka bandet."
+
+#: IndexDlg.cpp:228 KDat.cpp:442
+msgid "KDat: Cannot Rewind Tape"
+msgstr "KDat: Kan inte spola tillbaka bandet"
+
+#: IndexDlg.cpp:228
+msgid "Cannot rewind tape.  Indexing aborted."
+msgstr "Kan inte spola tillbaka bandet. Indexering avbruten."
+
+#: IndexDlg.cpp:232
+msgid "Cannot rewind tape."
+msgstr "Kan inte spola tillbaka bandet."
+
+#: IndexDlg.cpp:238 KDat.cpp:451 TapeDrive.cpp:222 TapeDrive.cpp:230
+#: TapeDrive.cpp:242 TapeDrive.cpp:254 TapeDrive.cpp:259
+msgid "KDat: Error"
+msgstr "KDat: Fel"
+
+#: IndexDlg.cpp:238 IndexDlg.cpp:242
+msgid "Failed to skip tape ID."
+msgstr "Lyckades inte hoppa över band-ID"
+
+#: IndexDlg.cpp:271
+#, c-format
+msgid "Indexing archive %d."
+msgstr "Indexerar arkiv %d."
+
+#: IndexDlg.cpp:274
+#, c-format
+msgid "Archive %d"
+msgstr "Arkiv %d"
+
+#: IndexDlg.cpp:321
+msgid "Reindexed Tape"
+msgstr "Återindexerat band"
+
+#: KDat.cpp:81 KDat.cpp:82 KDat.cpp:1101
+msgid "KDat: <no tape>"
+msgstr "KDat: <band saknas>"
+
+#: KDat.cpp:86 KDat.cpp:122 KDat.cpp:233 KDat.cpp:1141
+msgid "Mount Tape"
+msgstr "Montera bandet"
+
+#: KDat.cpp:87 KDat.cpp:123
+msgid "Recreate Tape Index"
+msgstr "Återskapar bandindex"
+
+#: KDat.cpp:89 KDat.cpp:129
+msgid "Format Tape..."
+msgstr "Formattera band..."
+
+#: KDat.cpp:92 KDat.cpp:98 KDat.cpp:126
+msgid "Delete Archive"
+msgstr "Ta bort arkiv"
+
+#: KDat.cpp:95 KDat.cpp:101 KDat.cpp:121
+msgid "Verify..."
+msgstr "Kontrollera..."
+
+#: KDat.cpp:96 KDat.cpp:102 KDat.cpp:120
+msgid "Restore..."
+msgstr "Återställ..."
+
+#: KDat.cpp:105 KDat.cpp:114 KDat.cpp:119
+msgid "Backup..."
+msgstr "Backup..."
+
+#: KDat.cpp:108
+msgid "Delete Tape Index"
+msgstr "Ta bort bandindex"
+
+#: KDat.cpp:111 KDat.cpp:124
+msgid "Create Backup Profile"
+msgstr "Skapa backupprofil"
+
+#: KDat.cpp:116 KDat.cpp:128
+msgid "Delete Backup Profile"
+msgstr "Ta bort backupprofil"
+
+#: KDat.cpp:127
+msgid "Delete Index"
+msgstr "Ta bort index"
+
+#: KDat.cpp:134
+msgid "Preferences..."
+msgstr "Inställningar..."
+
+#: KDat.cpp:141
+#, c-format
+msgid ""
+"KDat Version %s\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+msgstr ""
+"KDat version %s\n"
+"\n"
+"KDat är ett arkiveringsprogram baserat på Tar.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+
+#: KDat.cpp:148
+msgid "Mount/unmount tape"
+msgstr "Montera/avmontera band"
+
+#: KDat.cpp:154
+msgid "Verify"
+msgstr "Kontrollera"
+
+#: KDat.cpp:168
+msgid "Ready."
+msgstr "Klar."
+
+#: KDat.cpp:230 KDat.cpp:1138
+msgid "Unmount Tape"
+msgstr "Avmontera band"
+
+#: KDat.cpp:399 KDat.cpp:756
+msgid "%m/%d/%y"
+msgstr "%y-%m-%d"
+
+#: KDat.cpp:400
+#, c-format
+msgid "Archive created on %s"
+msgstr "Arkiv skapat %s"
+
+#: KDat.cpp:418
+msgid "Performing backup..."
+msgstr "Gör backup..."
+
+#: KDat.cpp:431
+#, c-format
+msgid ""
+"WARNING: The estimated archive size is %dKB.\n"
+"The tape has only %dKB of space!\n"
+"\n"
+"Backup anyway?"
+msgstr ""
+"VARNING: Beräknad storlek för arkivet\n"
+"är %d kbyte.\n"
+"Bandet rymmer bara %d kbyte!\n"
+"\n"
+"Gör backup ändå?"
+
+#: KDat.cpp:433
+msgid "Backup canceled."
+msgstr "Backup avbruten."
+
+#: KDat.cpp:440 TapeDrive.cpp:520 TapeDrive.cpp:541
+msgid "Rewinding tape..."
+msgstr "Spolar tillbaka bandet..."
+
+#: KDat.cpp:442
+msgid "Cannot rewind tape.  Backup aborted."
+msgstr "Kan inte spola tillbaka bandet. Backup avbruten."
+
+#: KDat.cpp:443 KDat.cpp:452 KDat.cpp:472
+msgid "Backup aborted."
+msgstr "Backup avbruten."
+
+#: KDat.cpp:449
+msgid "Skipping to end of tape..."
+msgstr "Hoppar till bandets slut..."
+
+#: KDat.cpp:451
+msgid "Cannot get to end of tape."
+msgstr "Kan inte komma till bandets slut."
+
+#: KDat.cpp:456
+msgid "Backup in progress..."
+msgstr "Backup pågår..."
+
+#: KDat.cpp:470
+msgid "Backup complete."
+msgstr "Backup klar."
+
+#: KDat.cpp:591
+msgid "Restore in progress..."
+msgstr "Återställning pågår..."
+
+#: KDat.cpp:593
+msgid "Verify in progress..."
+msgstr "Kontroll pågår..."
+
+#: KDat.cpp:600
+msgid "Restore complete."
+msgstr "Återställning klar."
+
+#: KDat.cpp:602
+msgid "Verify complete."
+msgstr "Kontroll klar."
+
+#: KDat.cpp:606
+msgid "Restore aborted."
+msgstr "Återställning avbruten."
+
+#: KDat.cpp:608
+msgid "Verify aborted."
+msgstr "Kontroll avbruten."
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "KDat: No Tape"
+msgstr "KDat: band saknas"
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "There is no tape in the drive."
+msgstr "Det finns inget band i bandenheten."
+
+#: KDat.cpp:636
+msgid "KDat: Index Tape"
+msgstr "KDat: bandindex"
+
+#: KDat.cpp:636
+msgid "The current tape index will be overwritten, continue?"
+msgstr "Nuvarande bandindex kommer skrivas över, fortsätt?"
+
+#: KDat.cpp:641 KDat.cpp:1097
+#, c-format
+msgid "KDat: %s"
+msgstr "KDat: %s"
+
+#: KDat.cpp:645
+msgid "Index complete."
+msgstr "Indexering klart."
+
+#: KDat.cpp:647
+msgid "Index aborted."
+msgstr "Indexering avbruten."
+
+#: KDat.cpp:656
+msgid "KDat: No Archive Selected"
+msgstr "KDat: Inget backuparkiv valt"
+
+#: KDat.cpp:656
+msgid "An archive must be selected in the tree."
+msgstr "Ett arkiv måste väljas i trädet."
+
+#: KDat.cpp:689
+#, c-format
+msgid ""
+"An archive cannot be removed from the middle of the tape.  If\n"
+"the archive '%s' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%s\n"
+"\n"
+" Delete all listed archives?"
+msgstr ""
+"Ett arkiv kan inte tas bort från bandets mitt.\n"
+"Om arkivet '%s' tas bort så kommer också följande\n"
+"arkiv att raderas:\n"
+"%s\n"
+"\n"
+" Ta bort alla listade arkiv?"
+
+#: KDat.cpp:690
+msgid "KDat: Delete Archives?"
+msgstr "KDat: Ta bort arkiv?"
+
+#: KDat.cpp:692
+msgid "Archives deleted."
+msgstr "Arkiv borttagna."
+
+#: KDat.cpp:701
+#, c-format
+msgid "Really delete the archive '%s'?"
+msgstr "Vill du verkligen ta bort arkivet '%s'?"
+
+#: KDat.cpp:702
+msgid "KDat: Delete Archive?"
+msgstr "KDat: Ta bort arkiv?"
+
+#: KDat.cpp:704
+msgid "Archive deleted."
+msgstr "Arkiv borttaget."
+
+#: KDat.cpp:717
+msgid "KDat: No Tape Index Selected"
+msgstr "KDat: Inget bandindex valt"
+
+#: KDat.cpp:717
+msgid "A tape index must be selected in the tree."
+msgstr "Ett bandindex måste väljas i trädet."
+
+#: KDat.cpp:724
+msgid "KDat: Tape Is Mounted"
+msgstr "KDat: Bandet är monterat"
+
+#: KDat.cpp:724
+msgid ""
+"The index for a mounted tape cannot be deleted.\n"
+"\n"
+"Unmount the tape and try again."
+msgstr ""
+"Index för monterat band kan inte tas bort.\n"
+"\n"
+"Avmontera bandet och försök igen."
+
+#: KDat.cpp:729
+#, c-format
+msgid "Really delete the index for '%s'?"
+msgstr "Vill du verkligen ta bort indexet för '%s'?"
+
+#: KDat.cpp:730
+msgid "KDat: Delete Tape Index?"
+msgstr "KDat: Ta bort bandindex?"
+
+#: KDat.cpp:732
+msgid "Tape index deleted."
+msgstr "Bandindex borttaget."
+
+#: KDat.cpp:743
+msgid "KDat: No Tape In Drive"
+msgstr "KDat: Inget band i bandenheten."
+
+#: KDat.cpp:743
+msgid ""
+"There is no tape in the tape drive.\n"
+"Please insert a tape and try again."
+msgstr ""
+"Det finns inget band i bandenheten.\n"
+"Sätt i ett band och försök igen."
+
+#: KDat.cpp:748
+msgid "KDat: Write Protected Tape"
+msgstr "KDat: Skrivskyddat band"
+
+#: KDat.cpp:748
+msgid ""
+"The tape in the drive is write protected.\n"
+"Please disable write protection and try again."
+msgstr ""
+"Bandet i bandenheten är skrivskyddat.\n"
+"Ta bort skrivskyddet och försök igen."
+
+#: KDat.cpp:752
+msgid "KDat: Format Tape"
+msgstr "KDat: Formattera band"
+
+#: KDat.cpp:752
+msgid "All data will be lost, continue?"
+msgstr "Allting på bandet kommer raderas, fortsätt?"
+
+#: KDat.cpp:757
+#, c-format
+msgid "Tape created on %s"
+msgstr "Band skapat %s"
+
+#: KDat.cpp:773
+msgid "Formatting tape..."
+msgstr "Formatterar band..."
+
+#: KDat.cpp:776
+msgid "Format complete."
+msgstr "Formattering klar."
+
+#: KDat.cpp:790
+#, c-format
+msgid "Backup Profile %d"
+msgstr "Backupprofil"
+
+#: KDat.cpp:807
+msgid "Archive"
+msgstr "Arkiv"
+
+#: KDat.cpp:828
+msgid "KDat: No Backup Profile Selected"
+msgstr "KDat: Ingen backupprofil vald"
+
+#: KDat.cpp:828
+msgid "A backup profile must be selected in the tree."
+msgstr "En backupprofil måste väljas i trädet."
+
+#: KDat.cpp:836
+#, c-format
+msgid "Really delete backup profile '%s'?"
+msgstr "Vill du verkligen ta bort backupprofilen '%s'?"
+
+#: KDat.cpp:837
+msgid "KDat: Delete Backup Profile?"
+msgstr "KDat: Ta bort backupprofil?"
+
+#: KDat.cpp:839
+msgid "Backup profile deleted."
+msgstr "Backupprofil borttagen."
+
+#: KDat.cpp:877
+msgid "Tape unmounted."
+msgstr "Bandet avmonterat."
+
+#: KDat.cpp:881
+msgid "Reading tape header..."
+msgstr "Läser bandhuvud..."
+
+#: KDat.cpp:888 KDat.cpp:890
+msgid "KDat: Unformatted Tape"
+msgstr "KDat: Oformatterat band"
+
+#: KDat.cpp:888
+msgid "This tape has not been formatted by KDat."
+msgstr "Det här bandet har inte formatterats av KDat."
+
+#: KDat.cpp:890
+msgid ""
+"This tape has not been formatted by KDat.\n"
+"\n"
+"Would you like to format it now?"
+msgstr ""
+"Det här bandet har inte formatterats av KDat.\n"
+"\n"
+"Vill du formattera det nu?"
+
+#: KDat.cpp:901
+msgid "Tape mounted."
+msgstr "Bandet monterat."
+
+#: KDat.cpp:976
+#, c-format
+msgid "Estimating backup size: %s, %s"
+msgstr "Uppskattar backupstorlek: %s, %s"
+
+#: KDat.cpp:1102
+msgid "KDat: <no tape >"
+msgstr "KDat: <band saknas>"
+
+#: LoggerWidget.cpp:60
+msgid "KDat: Save Log"
+msgstr "KDat: Spara logg"
+
+#: LoggerWidget.cpp:60
+msgid "Log file exists, overwrite?"
+msgstr "Loggfil finns redan, skriv över?"
+
+#: Node.cpp:1182 Node.cpp:1252
+msgid "<no tape>"
+msgstr "<band saknas>"
+
+#: Node.cpp:1332
+msgid "Tape Indexes"
+msgstr "Bandindex"
+
+#: Node.cpp:1466
+msgid "Backup Profiles"
+msgstr "Backupprofiler"
+
+#: OptionsDlg.cpp:39 OptionsDlg.cpp:40
+msgid "KDat: Options"
+msgstr "KDat: Alternativ"
+
+#: OptionsDlg.cpp:44
+msgid "Default tape size:"
+msgstr "Standard bandstorlek:"
+
+#: OptionsDlg.cpp:45
+msgid "Tape block size:"
+msgstr "Bandets blockstorlek:"
+
+#: OptionsDlg.cpp:46
+msgid "Tape device:"
+msgstr "Bandenhet:"
+
+#: OptionsDlg.cpp:47
+msgid "Tar command:"
+msgstr "Tar-kommando:"
+
+#: OptionsDlg.cpp:70
+msgid "bytes"
+msgstr "byte"
+
+#: OptionsDlg.cpp:76 OptionsDlg.cpp:82 VerifyOptDlg.cpp:57
+msgid "..."
+msgstr "..."
+
+#: OptionsDlg.cpp:85
+msgid "Tape drive options"
+msgstr "Alternativ för bandenhet"
+
+#: OptionsDlg.cpp:87
+msgid "Load tape on mount"
+msgstr "Ladda band vid montering"
+
+#: OptionsDlg.cpp:90
+msgid "Lock tape drive on mount"
+msgstr "Lås bandenheten vid montering"
+
+#: OptionsDlg.cpp:93
+msgid "Eject tape on unmount"
+msgstr "Mata ut bandet vid avmontering"
+
+#: OptionsDlg.cpp:96
+msgid "Variable block size"
+msgstr "Variabel blockstorlek"
+
+#: Tape.cpp:36
+msgid "New Tape"
+msgstr "Nytt band"
+
+#: Tape.cpp:70 Tape.cpp:76 Tape.cpp:85 Tape.cpp:92 Tape.cpp:99 Tape.cpp:103
+msgid "KDat: Format Failed"
+msgstr "KDat: Formattering misslyckades"
+
+#: Tape.cpp:70 TapeDrive.cpp:222
+msgid "Rewinding tape failed."
+msgstr "Tillbakaspolning misslyckades."
+
+#: Tape.cpp:76
+msgid "Cannot set tape block size."
+msgstr "Kan inte sätta blockstorlek för bandet."
+
+#: Tape.cpp:85
+msgid "Writing magic string failed."
+msgstr "Misslyckades skriva magisk sträng."
+
+#: Tape.cpp:92
+msgid "Writing version number failed."
+msgstr "Misslyckades skriva versionsnummer."
+
+#: Tape.cpp:99
+msgid "Writing tape ID length failed."
+msgstr "Misslyckades skriva band-ID-längd."
+
+#: Tape.cpp:103
+msgid "Writing tape ID failed."
+msgstr "Misslyckades skriva band-ID."
+
+#: Tape.cpp:132
+msgid "KDat: Tape Index"
+msgstr "KDat: bandindex"
+
+#: Tape.cpp:132
+msgid ""
+"No index file was found for this tape.\n"
+"Recreate the index from tape?"
+msgstr ""
+"Ingen indexfil hittades för det här bandet.\n"
+"Återskapa indexet från bandet?"
+
+#: Tape.cpp:150 Tape.cpp:192 Tape.cpp:471 Tape.cpp:477 Tape.cpp:483
+#: Tape.cpp:490 Tape.cpp:497 Tape.cpp:505 Tape.cpp:512 Tape.cpp:520
+#: Tape.cpp:528 Tape.cpp:535 Tape.cpp:542 Tape.cpp:555 Tape.cpp:567
+#: Tape.cpp:575 Tape.cpp:582 Tape.cpp:589 Tape.cpp:618 Tape.cpp:624
+#: Tape.cpp:630 Tape.cpp:637 Tape.cpp:644 Tape.cpp:652 Tape.cpp:659
+#: Tape.cpp:679 Tape.cpp:685 Tape.cpp:721 Tape.cpp:727
+msgid "KDat: Index File Error"
+msgstr "KDat: Indexfilsfel"
+
+#: Tape.cpp:150 TapeDrive.cpp:242
+msgid "Reading version number failed."
+msgstr "Misslyckades läsa versionsnummer."
+
+#: Tape.cpp:191
+#, c-format
+msgid ""
+"The tape index file format is version %d.  The index cannot be read by this "
+"version of KDat.  Perhaps the tape index file was created by a newer version "
+"of KDat?"
+msgstr ""
+"Bandindexets filformat är version %d. Det kan inte läsas av den här "
+"versionen av KDat. Bandindexet kanske har skapats av en nyare version av "
+"KDat?"
+
+#: Tape.cpp:471 Tape.cpp:618 Tape.cpp:679 Tape.cpp:721 TapeDrive.cpp:259
+msgid "Reading tape ID failed."
+msgstr "Misslyckades läsa band-ID"
+
+#: Tape.cpp:477 Tape.cpp:624 Tape.cpp:685 Tape.cpp:727
+msgid "Tape ID on tape does not match tape ID in index file."
+msgstr "Bandets ID matchar inte det i indexfilen."
+
+#: Tape.cpp:483 Tape.cpp:630
+msgid "Reading creation time failed."
+msgstr "Misslyckades läsa tillkomstdatum."
+
+#: Tape.cpp:490 Tape.cpp:637
+msgid "Reading modification time failed."
+msgstr "Misslyckades läsa senast-ändrat-datum."
+
+#: Tape.cpp:497 Tape.cpp:644
+msgid "Reading tape name failed."
+msgstr "Misslyckades läsa bandnamn."
+
+#: Tape.cpp:505 Tape.cpp:652
+msgid "Reading tape size failed."
+msgstr "Misslyckades läsa bandstorlek."
+
+#: Tape.cpp:512 Tape.cpp:659
+msgid "Reading archive count failed."
+msgstr "Misslyckades läsa arkivräknare."
+
+#: Tape.cpp:520
+msgid "Reading archive name failed."
+msgstr "Misslyckades läsa arkivnamn."
+
+#: Tape.cpp:528
+msgid "Reading archive time stamp failed."
+msgstr "Misslyckades läsa stämpeltid."
+
+#: Tape.cpp:535
+msgid "Reading archive start block failed."
+msgstr "Misslyckades läsa arkivets startblock."
+
+#: Tape.cpp:542
+msgid "Reading archive end block failed."
+msgstr "Misslyckades läsa arkivets slutblock."
+
+#: Tape.cpp:555
+msgid "Reading archive file count failed."
+msgstr "Misslyckades läsa arkivets filantal."
+
+#: Tape.cpp:567
+msgid "Reading file name failed."
+msgstr "Misslyckades läsa filnamn."
+
+#: Tape.cpp:575
+msgid "Reading file size failed."
+msgstr "Misslyckades läsa filstorlek."
+
+#: Tape.cpp:582
+msgid "Reading file modification time failed."
+msgstr "Misslyckades läsa filens ändringsdatum."
+
+#: Tape.cpp:589
+msgid "Reading file record number failed."
+msgstr "Misslyckades läsa filens arkiveringsnummer."
+
+#: TapeDrive.cpp:188
+msgid "Tape mounted readonly."
+msgstr "Bandet monterat som endast läsbart."
+
+#: TapeDrive.cpp:190
+msgid "Tape mounted read/write."
+msgstr "Bandet monterat läs- och skrivbart."
+
+#: TapeDrive.cpp:227
+msgid "Reading magic string..."
+msgstr "Läser magisk sträng..."
+
+#: TapeDrive.cpp:230
+msgid "Reading magic string failed."
+msgstr "Misslyckades läsa magisk sträng."
+
+#: TapeDrive.cpp:239
+msgid "Reading version number..."
+msgstr "Läser versionsnummer..."
+
+#: TapeDrive.cpp:247
+msgid "KDat: Warning"
+msgstr "KDat: Varning"
+
+#: TapeDrive.cpp:247
+msgid ""
+"Tape was formatted by a more recent version of KDat, consider upgrading."
+msgstr ""
+"Bandet formatterades av en nyare version av KDat, uppgradering rekommenderas."
+
+#: TapeDrive.cpp:251
+msgid "Reading tape ID..."
+msgstr "Läser band-ID..."
+
+#: TapeDrive.cpp:254
+msgid "Reading tape ID length failed."
+msgstr "Misslyckades läsa band-ID-längd."
+
+#: TapeDrive.cpp:515
+msgid "Skipping to archive..."
+msgstr "Hoppar till arkiv..."
+
+#: TapeDrive.cpp:537
+msgid "Skipping to block..."
+msgstr "Hoppar till block..."
+
+#: TapeFileInfoWidget.cpp:37
+msgid "Start record:"
+msgstr ""
+
+#: TapeFileInfoWidget.cpp:38
+msgid "End record:"
+msgstr ""
+
+#: FormatOptDlg.cpp:39 TapeInfoWidget.cpp:40
+msgid "Tape name:"
+msgstr "Bandnamn:"
+
+#: FormatOptDlg.cpp:40 TapeInfoWidget.cpp:41
+msgid "Tape size:"
+msgstr "Bandstorlek:"
+
+#: TapeInfoWidget.cpp:42
+msgid "Tape ID:"
+msgstr "Band-ID:"
+
+#: TapeInfoWidget.cpp:45
+msgid "Archive count:"
+msgstr "Arkivräknare:"
+
+#: TapeInfoWidget.cpp:46
+msgid "Space used:"
+msgstr "Använt utrymme:"
+
+#: FormatOptDlg.cpp:36 FormatOptDlg.cpp:37
+msgid "KDat: Format Options"
+msgstr "KDat: Formatteringsalternativ"
+
+#: VerifyDlg.cpp:61 VerifyDlg.cpp:62
+msgid "KDat: Restore"
+msgstr "KDat: Återställ"
+
+#: VerifyDlg.cpp:64 VerifyDlg.cpp:65
+msgid "KDat: Verify"
+msgstr "KDat: Kontrollera"
+
+#: VerifyDlg.cpp:113
+msgid "Differences:"
+msgstr "Skillnader:"
+
+#: VerifyDlg.cpp:121
+msgid "Restore log:"
+msgstr "Återställningslogg:"
+
+#: VerifyDlg.cpp:123
+msgid "Verify log:"
+msgstr "Kontroll-logg:"
+
+#: VerifyDlg.cpp:315
+msgid "failed while reading tape data.\n"
+msgstr "misslyckades vid läsning från bandet.\n"
+
+#: VerifyOptDlg.cpp:38 VerifyOptDlg.cpp:39
+msgid "KDat: Restore Options"
+msgstr "KDat: Återställningsalternativ"
+
+#: VerifyOptDlg.cpp:41 VerifyOptDlg.cpp:42
+msgid "KDat: Verify Options"
+msgstr "KDat: Kontrollalternativ"
+
+#: VerifyOptDlg.cpp:47
+msgid "Restore to directory:"
+msgstr "Återställ till katalog:"
+
+#: VerifyOptDlg.cpp:49
+msgid "Verify in directory:"
+msgstr "Kontrollera i katalog:"
+
+#: VerifyOptDlg.cpp:62
+msgid "Restore files:"
+msgstr "Återställ filer:"
+
+#: VerifyOptDlg.cpp:64
+msgid "Verify files:"
+msgstr "Kontrollera filer:"

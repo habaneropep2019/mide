@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The KMid Handbook: Midi Maps</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KMid midi karaoke multimedia mid kar player music sound fm awe gus">
+<META NAME="description" CONTENT="KMid midi/karaoke multimedia player">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="index-5.html">Next</A>
+<A HREF="index-3.html">Previous</A>
+<A HREF="index.html#toc4">Table of Contents</A>
+</P>
+<H3><A NAME="s4">4. Midi Maps</A></H3>
+
+<P>
+<P>
+<H3><A NAME="ss4.1">4.1 What is a midi map ?</A>
+</H3>
+
+<P>A Midi Map is something that maps midi events in other midi events .
+<P>This is totally needed if a synthesizer doesn't understand the standard events (that is, if a synthesizer is not General Midi compliant), in this case, a midi map will translate General Midi events in the events that that synthesizer understands.
+<P>For example you can make a midi map that converts all the <CODE>Change patch to
+Bright Piano</CODE> events, to <CODE>Change patch to Trumpet</CODE> events, and so when a song tries to play a piano, it will play a trumpet instead.
+<P>This may sound odd, (why playing a trumpet when the song is made to play
+a piano ?), but it is very useful. The GM standard specifies that when a
+midi keyboard receives an event to change patch to <CODE>0</CODE>, it will change the
+current patch to <CODE>Grand Piano</CODE>, but older synthesizer will change for example to a <CODE>Electric Guitar</CODE> when it receives a <CODE>0</CODE>. This old keyboard,
+needed to receive a <CODE>3</CODE> (for example) to change to a <CODE>Piano</CODE>. And here comes
+the midi map in action, changing all <CODE>change patch to 0</CODE> to <CODE>change patch to 3</CODE> and thus really playing the correct instrument when it has to.
+<P>
+<P>
+<H3><A NAME="ss4.2">4.2 Do I need a midi map ?</A>
+</H3>
+
+<P>Quickly, if you don't have an external synth, NO.
+<P>
+<P>If you only have a sound card, midi maps are not needed because all the sound
+cards are GM compliant (this include AWE cards, GUS cards, FM devices and so on).
+<P>If you are playing music through an external synthesizer, and it is
+not GM compliant, you will need to make a midi map for your midi keyboard .
+Although you will perhaps be a whole afternoon doing your map file and
+trying different values for all the options, you will be fully rewarded
+when you finish it, because then you will find all the hidden possibilities
+of your keyboard. For example, I have a low-cost Yamaha PSS-790, which is not
+GM compatible, and doesn't has as many instruments as a GM synthesizer,
+but with KMid's midi mapper, it sounds even better than many soundcards
+(including AWE :-)), due to the sound quality found in external synths (even on non GM compliant ones).
+<P>
+<P>
+<H3><A NAME="ss4.3">4.3 Creating a midi map</A>
+</H3>
+
+<P>There isn't any program to generate midi maps, so you will have to
+edit a file by hand (using your favourite text editor).
+<P>A Midi map is a text file that keeps all the needed translations there will
+be made when playing music.
+<P>It consist of four sections: <CODE>PATCHMAP</CODE>, <CODE>KEYMAP</CODE>, <CODE>CHANNELMAP</CODE> and <CODE>OPTIONS</CODE>.
+<P>Each section must appear only once, except the <CODE>KEYMAP</CODE> section that
+can appear as many times as needed, provided that each appearance use
+a different TextID (continue reading for details) .
+<P>The general structure of a map file is :
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+DEFINE PATCHMAP
+...
+END
+
+DEFINE KEYMAP "Name of Keymap"
+...
+END
+
+DEFINE KEYMAP "Another Keymap"
+...
+END
+
+DEFINE CHANNELMAP
+...
+END
+
+OPTIONS
+...
+END
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>You can see that the <CODE>DEFINE</CODE> word is used to specify which section is going
+to be started (except for <CODE>OPTIONS</CODE>), and <CODE>END</CODE> is put at the end of each section.
+<P>You can put comments by starting the line with a <CODE>#</CODE> character.
+<P>Please, don't forget to send me your map file by email, so that future
+releases of KMid will include support for more non General Midi compliant
+keyboards.
+<P>
+<P>
+<H4>The <CODE>PATCHMAP</CODE> section</H4>
+
+<P>This section is used to specify how patches are going to be mapped, from GM to your keyboard specs . The general usage is :
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+(Name of GM Patch name)=(N) [AllKeysTo M]
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Where <CODE>N</CODE> is the number that you keyboard needs to receive to change the patch to the same that the GM standard does .
+<P>Please note that the left side of the equal sign is ignored, so GM patches are supossed to be in order (from 0 to 127) , and so you are not allowed to change
+the order of the lines nor to omit any of the 128 instruments.
+<P>The optional <CODE>AllKeysTo M</CODE> is used to map all notes that use that instrument to the <CODE>M</CODE> key . For example, suppose that your midi keyboard doesn't have
+a Gun Shot sound (GM patch 127) so you want to map it to a percussion drum (i.e. key 60),
+which sounds similar to a gun shot, then you can put in the 127th line of the <CODE>PATCHMAP</CODE> section:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+Gunshot       =100 AllKeysTo 60
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>So when a midi file tries to play a note with the patch 127 (gun shot), it
+will be mapped to the patch 100 (your keyboard's percussion patch) and play
+the note 60 (independently of the key that was goind to be played) .
+<P>Please note that when I use the expression 'Percussion patch', I mean
+the patch in which each key plays a different drum, cymbal, tom, maracas and so on, and not to a possible sound which some keyboards have and which plays a
+different tone of the same drum with each key.
+<P>
+<P>
+<H4>The <CODE>KEYMAP</CODE> section</H4>
+
+<P>The <CODE>KEYMAP</CODE> section is used to specify how keys are going to be mapped, within a given channel or instrument . The usage is :
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+DEFINE KEYMAP "Name of Keymap"
+C 0 =0
+C#0 =1
+D 0 =2
+...
+END
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>As with the <CODE>PATCHMAP</CODE> section, it is very important the order of the lines, and that they are all there (the 128 keys).
+<P>As you can define multiple keymaps for different channels and instruments,
+you must give a different name to each one in the first line.
+<P>Keymaps are mainly used to map keys in the percussion channel . Have a look
+at the distributed maps to see some examples.
+<P>
+<P>
+<H4>The <CODE>CHANNELMAP</CODE> section</H4>
+
+<P>This section can be used to map some channels to different ones . For example,
+if you want to swap the first and second channels, you can easily do it within
+the <CODE>CHANNELMAP</CODE> section .
+<P>
+<P>However it is more usefull for keyboards that need the percussion channel
+to be in a given channel (the GM standard use the channel 10, others use the
+channel 16 and others use channel 9).
+<P>Note that midi devices use 16 channels, so the <CODE>CHANNELMAP</CODE> section, has
+16 lines, from 0 to 15 , as this one :
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+(N) = (M) [Keymap "Name"] [ForcePatch x]
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>Where <CODE>N</CODE> is the channel which is mapped to the <CODE>M</CODE> channel .
+If the <CODE>Keymap</CODE> option is used, the Keymap with name <CODE>Name</CODE> will be used in this channel (this Keymap should be defined earlier in the map file !) .
+If the <CODE>ForcePatch</CODE> option is used, all events that try to change the patch
+which is used in this channel will be ignored, and patch <CODE>x</CODE> will be used instead .
+<P>The <CODE>ForcePatch</CODE> option may be useful for example to always use the
+percussion patch on the percussion channel .
+<P>
+<P>
+<H4>The <CODE>OPTIONS</CODE> section</H4>
+
+<P>The <CODE>OPTIONS</CODE> section has some general options that can be very useful :
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+OPTIONS
+PitchBenderRatio = r
+MapExpressionToVolumeEvents
+END
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>You can specify both options, only one, or none of them.
+<P>The <CODE>PitchBenderRatio r</CODE> value, has the ratio by which pitch bender events
+will be multiplied . That is, when a midi file tries to send a pitch bender event with a <CODE>n</CODE> value, the real value that will be sent is <CODE>n*(r/4096)</CODE> (the <CODE>4096</CODE> value is for not having to put decimal points in the map file).
+<P>This is used because the GM standard says that when a midi keyboard receives a Pitch Bender event with a 4096 data value, it should bend the note to a higher one , but some midi keyboards try to bend the initial note by two or more higher notes (even an octave higher !) when they receive a 4096 .
+This can be easily fixed by trying different values so that instead of sending a 4096, KMid sends the appropiate value .
+<P>When the <CODE>MapExpressionToVolumeEvents</CODE> option is set in the map file, and
+a midi file try to send an expression event, KMid will send a volume event
+which is understood by more non-GM keyboards, and which has a similar effect .
+There are many midi files which use expression events to fade out at the end
+of a song, so if you feel that music should be heard softer and softer, you
+can turn on this option and see if this is what you need, because your midi
+synthesizer could be ignoring the expression events because it doesn't
+understand them.
+<P>
+<P>
+<H3><A NAME="ss4.4">4.4 Using midi maps</A>
+</H3>
+
+<P>To use a midi map, simply open the <CODE>Midi Setup</CODE> dialog by selecting the
+<CODE>Midi Setup ...</CODE> entry of the <CODE>Options</CODE> menu.
+<P>Then click on <CODE>Browse ...</CODE>, select the map file within the open file dialog
+and enjoy the music ! :-)
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="index-5.html">Next</A>
+<A HREF="index-3.html">Previous</A>
+<A HREF="index.html#toc4">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

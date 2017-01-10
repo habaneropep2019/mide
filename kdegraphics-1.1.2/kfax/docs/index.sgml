@@ -1,0 +1,399 @@
+<!doctype linuxdoc system>
+
+<!-- The KFax Handbook.
+
+ -->
+
+<article>
+
+<!-- Title information -->
+
+<title>The KFax Handbook
+<author>Bernd Johannes Wuebben, <tt/wuebben@kde.org/
+<date>Version 0.3-1, 5 October 1997
+<abstract>This Handbook describes KFax Version 0.3
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+
+<sect>Introduction
+
+<p>
+KFax is a Fax file viewer capable of displaying and printing all common fax file formats.
+In particular the fax files used by popular the mgetty/sendfax and hylafx fax send and
+receive packages can be displayed. The first (or only) page of a "PC-Research"-style 
+(DigiFAX) files produced  by  the ghostscript dfaxhigh or dfaxlow drivers can
+also be displayed. (who is still using this format?) Input files using any 
+common fax encoding such as group  3 (1 and 2 dimensional) 
+and group 4 can be displayed. KFax has built in native postscript printing
+capabilities.
+
+<p>
+I hope you will enjoy this Fax viewer,
+<p>
+<tt>Bernd Johannes Wuebben</tt>
+<p>
+<htmlurl url="mailto:wuebben@kde.org" name="wuebben@kde.org">
+<p>
+
+<sect>Installation
+<p>
+<sect1>How to obtain KFax
+<p>
+KFax is part of the KDE project <url url="http://www.kde.org">.
+KFax can be found on <url url="ftp://ftp.kde.org/pub/kde/">, the main ftp site
+of the KDE project.
+
+<sect1>Requirements
+<p>
+In order to successfully compile KFax, you need the latest versions of 
+<tt> libkdecore</tt>,<tt> libkfm</tt> and <tt> libkdeui</tt>. All 
+required libraries as well as KFax itself can be found on 
+<url url="ftp://ftp.kde.org/pub/kde/">. 
+
+
+
+<sect1>Compilation and installation
+<p>
+
+In order to compile and install KFax on your system, execute the following commands
+in the base  directory of the KFax distribution:
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+Since KFax uses <tt>autoconf</tt> you should have not trouble compiling it.
+Should you run into problems please report them to the <sf/KDE/ mailing lists.
+
+<sect>Fundamentals
+<p>
+
+KFax can not (yet) send or receive Fax files. For this I wholeheartedly
+recommend the mgetty/sendfax 
+<url url="ftp://ftp.leo.org/pub/comp/networking/communication/modem/mgetty">
+and hylafax fax
+<url url="ftp://sgi.com/sgi/fax">
+send/receive packages which are
+available for free.
+
+<p>
+HylaFAX:
+<url url="http://info-sys.home.vix.com/flexfax/toc.html">
+<p>
+sendfax/mgetty:
+<url url="http://www.leo.org/~doering/mgetty/">
+<p>
+
+
+A "zoomed-in" document can be moved within the KFax view, by clicking and holding
+down the first mouse button down while moving the pointer.
+
+KFax can not display image file formats which are not related to 
+faxing, such as an arbitrary tiff or gif file.
+
+By default raw fax files are interpreted as g3 files. If you want
+to display faxg3-2d and faxg4 files you have to specifiy this on
+the Fax Options dialog. In the case of raw g4 files you might also 
+need to specify the height in scan lines of the fax if it differs 
+from the default 2155.
+
+
+<p>
+<sect1>Drag and Drop
+<p>
+KFax makes use of the KDE Drag and Drop protocol. This means that you can drag
+and drop files form the Desktop or kfm or some remote ftp site that you have
+open in one of kfm's windows onto KFax. 
+
+<sect1>Dealing with files on the internet
+<p>
+You can open and save files transparently on the internet.
+
+<sect1> Printing
+<p>
+KFax supports PostScript printing natively. 
+supported. 
+<p>
+
+
+Make sure your system is set up for printing PostScript documents. If you
+don't have a native PostScript printer get yourself
+ghostscript/ghostview version 5 or newer  from
+<url url="http://www.cs.wisc.edu/%7Eghost/">.
+
+<p>
+<sect1> Fax Options
+<p>
+KFax supports a number of options in order to allow you an optimal configuration
+for your specific usage.
+<descrip>
+<tag/Display Options./ 
+<itemize>
+<item>Landscape: Show the fax pages by default rotated by 90 degrees.
+<item>Upside Down: Display the fax pages by default upside-down.
+<item>Invert: Display the Fax as white on black background
+</itemize>
+<p>
+<tag/Raw Fax Resolution./ 
+<itemize>
+<item>Auto: Some fax transmission programs set the first letter of the 
+            name of a fax of "fine" resolution to an f and to an n for a 
+	    fax of "normal" resolution. If "Auto" is checked
+            KFax will observe this convention. This options has no effect
+	    on Tiff and "PC-Research (DIGIFAX) facsimili. Those facsimili
+	    are self-specifying.
+<item>Fine: Assume raw fax files (g3-g32d-g4) are fine resolution facsimili
+             (7.7 lines/mm). Tiff  and "PC-Research" (DigiFAX) files are self-specifying. 
+<item>Normal: Assume raw fax files (g3/g32d/g4) are of normal resolution
+               (3.85  lines/mm).   Each  fax  line is
+              duplicated in the displayed image to give  approximately 
+              equal vertical and horizontal scales. 
+
+</itemize>
+<p>
+<tag/Raw Fax Data:/ Checking LS-Bit first will lead KFax to assume that the
+bit order of the fax data bytes is reversed. The official fax specification deals only
+with serial data transmission. Modem manufacturers have to decide whether the first
+bit received should be placed in the most significant or the least significant position
+in a byte. The consensus is to pack most significant first, but the options is
+available to deal with the opposite order.
+<p>
+<tag/Raw Faxsimili Format:/ 
+<itemize>
+<item>g3: Assume the raw input files use group 3, 1-dimensional coding.
+<item>g32d: Assume the raw input files use group 3, 2-dimensional coding.
+<item>g4: Assume the raw input files use group 4 coding.
+</itemize>
+<p>
+<tag/Raw Fax Data default height-width:/
+<itemize>
+<item>height: specify the default number of line for raw fax data
+<item>width: specify the default number of pixels in each scan line for raw fax data
+The default value is 1728.
+<item>auto: this option is the recommended setting for g3 raw fax data. g3-2d and g4 need
+            explicit dimensions.
+</itemize>
+</descrip>
+
+<p>
+<sect1> Command Line Options
+<p>
+KFax supports the following command line options:
+<tscreen><verb>
+wuebben: ../kfax -h
+usage: KFax <flags> file ...
+        -f      fine resolution
+        -n      normal resolution
+        -h      height (number of fax lines)
+        -w      width (dots per fax line)
+        -l      turn image 90 degrees (landscape mode)
+        -u      turn image upside down
+        -i      invert (black/white)
+        -m      memory usage limit in bytes (M m mega, K k kilo) default:8 megs
+        -r      fax data is packed ls-bit first in input bytes
+        -v      version information
+        -2      raw files are g3-2d
+        -4      raw files are g4    
+
+</verb></tscreen>
+
+<p>
+<sect1>KFax Key Bindings
+<p>
+KFax honors the following key bindings when the pointer is place on an open
+fax document view.
+
+
+<itemize>
+<item><tt/h/ Show help page displaying the available keyboard-shortcuts
+<item><tt/q/ Return to the original document.
+<item><tt/n + Next PgDn Space/ Display the next page
+<item><tt/p - Prior PgUp Backspace/ Display the previous page
+<item><tt/Shift Home/ First Page
+<item><tt/Shift End/ Last Page
+<item><tt/u/ Turn Page upside down
+<item><tt/l/ Turn page 90 degrees
+<item><tt/m/ Show a mirror image of the current fax page
+<item><tt/i/ zoom in
+<item><tt/o/ zoom out
+
+</itemize>
+<p>
+<sect1>How to create fax files
+<p>
+
+Perhaps the easiest way to create fax files is by first creating
+PostScript file from you document that you wish to fax and then 
+to use the ghostscript PostScript interpreter to transform the PostScript
+file into one of several fax file, conforming to one of several different
+fax file format.
+<p>
+In order to create fax files from ps documents you will need ghostscript.
+KFax can display all fax output modes of ghostscript:
+<p>
+<itemize>
+<item>raw:  fag3 faxg32d faxg4  
+<item>tiff: tiffg3 tiffg32d tiffg4
+</itemize>
+<p>
+A raw file will have no pagination information and will be displayed
+as a whole in the fax window. 
+Tiff files contain pagination information can be paged through in the
+fax window.
+
+<p>
+<sect2>Example
+<p>
+How to create a fax file that sendfax/mgetty can accept and send:
+
+<tscreen><verb>
+gs -sDEVICE=faxg3 -sOutputFile=/tmp/fax.g3.%d yourdocument.ps
+</verb></tscreen>
+
+Assuming that your ps document <tt>yourdocumnet.ps</tt> contains three pages,
+this will result in the creation of  fax.g3.1 fax.g3.2 fax.g3.3
+
+
+<p>
+<sect>The Menu Entries
+<p>
+<sect1>File
+<p>
+<sect2>New
+<p>
+Opens a new Document in the editor
+<sect2>Open
+<p>
+Allows the user to open a fax
+<sect2>Add
+<p>
+Allows the user to add a fax file. This is particularly useful for raw g3/g32d/g4
+fax files. The user can add all pages of a fax transmission and print all of the
+out in one printing session.
+<sect2>Close Fax
+<p>
+Closes all currently open fax files
+<sect2>Open URL
+<p>
+Allows the user to open a fax file on the internet.
+<sect2>Save to URL
+<p>
+Allows the user to save to a fax file on the internet.
+<sect2>Print
+<p>
+Open the print dialog and lets the user print the currently open fax file pages.
+
+<sect2>Exit<p>
+Exit the fax viewer.
+<p>
+
+<sect1>View
+<p>
+<sect2>Next<p>
+Display the next fax page
+<p>
+
+
+<sect2>Previous<p>
+Display the previous fax page
+<p>
+
+<sect2>First<p>
+Display the first fax page
+<p>
+
+<sect2>Last<p>
+Display the last fax page
+<p>
+
+<sect2>Rotate<p>
+Rotate the fax counter-clockwise
+<p>
+
+<sect2>Mirror<p>
+Display a mirror image of the current fax page
+<p>
+
+<sect2>Flip<p>
+Display the current fax page upside Down
+<p>
+
+<sect2>Zoom in<p>
+Zoom in -- that is magnify the current view.
+<p>
+<sect2>
+Zoom out --that is reduce the current view.
+<p>
+
+<sect1>Options
+<p>
+<sect2>Fax Options
+<p>
+Brings up the Fax Options Dialog.
+<sect2>Hide/Show Tool-Bar
+<p>
+Allows the user to have the tool bar displayed or hidden.
+<sect2>Hide/Show Status-Bar
+<p>
+Allows the user to have the status bar displayed or hidden.
+
+<sect1>Help
+<p>
+<sect2>Help
+<p>
+Invokes the KDE help system with the KFax help pages displayed.
+<sect2>About 
+<p>
+Displays essential information about KFax.
+
+<sect>Questions and answers
+
+
+
+<p>
+<sect>Copyright<p>
+<tscreen><verb>
+KFax is Copyright 1997 by Bernd Johannes Wuebben,
+                          wuebben@math.cornell.edu
+                          wuebben@kde.org
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.     
+
+</verb></tscreen>
+<p>
+<sect1>Thanks<p>
+<tscreen><verb>
+As always I am resting on the shoulders of giants. I am deeply indebted to 
+Frank D. Cringle who wrote the excellent fax viewer viewfax on which 
+KFax is partially based:
+
+viewfax version 2.3, Copyright (C) 1990, 1995 Frank D. Cringle.
+
+As well as the wonderful libtiff library version 2.3 beta:
+
+Copyright (c) 1988-1995 Sam Leffler
+Copyright (c) 1991-1995 Silicon Graphics, Inc.
+
+And last but not least: Thanks to the Trolls for Qt. http://www.troll.no               
+
+</verb></tscreen>
+
+<p>
+</article>

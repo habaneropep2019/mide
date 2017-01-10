@@ -1,0 +1,72 @@
+Version 0.5
+
+- fixed a problem with the recognition of straights (the combo ace-2-3-4-5 was
+  not recognized in all versions <0.4.1
+
+- cleaned up the code a little
+
+- KPoker is now considered to be stable - I fixed all reported bugs and I did
+  not find any new ones :)
+
+------------------------------------------------------------------------------
+Version 0.4.1
+
+Silly me deleted some important lines that were initializing a timer while
+merging my version of 0.4 with the one in the CVS. This caused 0.4 to
+segfault when you press "Draw Cards" :-(
+
+- [Robert William] put version.h back in.
+
+- integrated version.h so that there is only one #define for the version & 
+  release date (and not multiple ones like before)
+
+- put epilogue into the documentation
+
+------------------------------------------------------------------------------
+Version 0.4
+
+- deleted version.h because it is of no use
+- put in that nice "wave" effect
+- added sm-support
+- some internal stuff (as usual :)
+
+------------------------------------------------------------------------------
+Version 0.3.1
+
+- [Robert Williams]  added getHelpMenu()
+- [Robert Williams]  added version.h
+- changed minor look&feel stuff
+
+------------------------------------------------------------------------------
+Version 0.3
+
+- kpoker got adapted to the new fsstnd (thanks Coolo !)
+- kpoker now supports KLocale (only works in the kdegames-distribution)
+- added german language file (kdegames distribution only)
+- kpoker should now run on DEC Alphas (thanks Uwe Thiem :)
+
+------------------------------------------------------------------------------
+Version 0.2
+
+- reduced number of colors needed by the images for the backsides of cards
+- KPoker documentation is now written in .sgml format
+- lots of changes in makefiles
+- fixed that "#include <top.h>" bug.
+- sound support (experimental - *please* report problems)
+
+------------------------------------------------------------------------------
+Version 0.1.2
+
+- made kpoker use KTopLevelWidget + the new menubars
+- fixed silly problem with cardImage
+- finished the helpfile
+- built in new icon
+- built in new backsides of cards (1000 thanks to our "icon/graphics Man")
+
+------------------------------------------------------------------------------
+Version 0.1.1
+
+- made kpoker more "KDE conform" (like inserted separator between
+  help/help and help/about)
+- fixed a few silly bugs/problems
+- started to do the helpfile (halfway done right now)

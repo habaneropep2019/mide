@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-02 02:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Peter Ivanyi <ivanyi@internet.sk>\n"
+"Language-Team: Slovak <bednar@isternet.sk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: main.cpp:178
+msgid "Sorry, can't open your printcap file."
+msgstr "¥utujem, nemô¾em otvori» vá¹ printcap súbor"
+
+#: main.cpp:183
+msgid "Sorry, unable to parse your printcap."
+msgstr "¥utujem, nemo¾em analyzova» vá¹ printcap súbor"
+
+#: main.cpp:184
+msgid "Please email your printcap to Christoph.Neerfeld@home.ivm.de"
+msgstr ""
+"Prosím po¹lite vá¹ printcap na Christoph.Neerfeld@home.ivm.deProsím mailnite "
+"vá¹ printcap na adresu Christoph.Neerfeld@home.ivm.deProsím, po¹lite svoj "
+"súbor printcap na adresu Christoph.Neerfeld@home.ivm.de"
+
+#: klpq.cpp:90
+msgid "Printer"
+msgstr "Tlaèiareò"
+
+#: klpq.cpp:95
+msgid "Queuing"
+msgstr "Ukladanie do fronty"
+
+#: klpq.cpp:100
+msgid "Printing"
+msgstr "Tlaè"
+
+#: klpq.cpp:105
+msgid "Update"
+msgstr "Aktualizácia"
+
+#: klpq.cpp:125
+msgid "Rank"
+msgstr "Poradie"
+
+#: klpq.cpp:126
+msgid "Owner"
+msgstr "Vlastník"
+
+#: klpq.cpp:127
+msgid "Job"
+msgstr "Èinnos»/práca"
+
+#: klpq.cpp:129
+msgid "Size"
+msgstr "Veµkos»"
+
+#: klpq.cpp:150 klpq.cpp:228
+msgid "Make Top"
+msgstr "Umiestni» na zaèiatok"
+
+#: klpq.cpp:160
+msgid "Auto"
+msgstr "Automaticky"
+
+#: klpq.cpp:204
+msgid "&Auto update"
+msgstr "&Automatická aktualizácia"
+
+#: klpq.cpp:205
+msgid "&Spooler"
+msgstr "&Zásobník/Spooler"
+
+#: klpq.cpp:208
+#, c-format
+msgid ""
+"Klpq %s\n"
+"(C) by Christoph Neerfeld\n"
+"chris@kde.org"
+msgstr ""
+"Klpq %s\n"
+"(C) by Christoph Neerfeld\n"
+"chris@kde.org"
+
+#: klpq.cpp:213
+msgid "&Config"
+msgstr "&Nastavenie"
+
+#: klpq.cpp:404
+#, c-format
+msgid "Do you really want to remove job No %d"
+msgstr "Skutoène odstráni» úlohu è. %d"
+
+#: klpq.cpp:424
+#, c-format
+msgid ""
+"Do you really want to move job No\n"
+"%d\n"
+"on top of queue"
+msgstr ""
+"Skutoène presunú» úlohu è.\n"
+"%d\n"
+"na vrchol fronty"
+
+#: klpq.cpp:572 klpq.cpp:578 klpq.cpp:593
+msgid "Permission denied"
+msgstr "Prístup zamietnutý"
+
+#: klpq.cpp:573 klpq.cpp:579 klpq.cpp:594
+msgid ""
+"This is a privileged command\n"
+"and you do not have permission to execute it."
+msgstr ""
+"Toto je privilégovaný príkaz\n"
+"a vy nemáte povolenie ho vykona»."
+
+#: ConfAutoUpdate.cpp:10
+msgid "Configure Auto Update"
+msgstr "Nastavi» automatickú aktualizáciu"
+
+#: ConfAutoUpdateData.cpp:17
+msgid "Update frequency in seconds:"
+msgstr "Frekvencia aktualizácie v sekundách:"
+
+#: klpqspooler.cpp:199 klpqspooler.cpp:269
+msgid "Can't find your lpc program !"
+msgstr "Nemô¾em nájs» Vá¹ program lpc"
+
+#: klpqspooler.cpp:200 klpqspooler.cpp:270
+msgid ""
+"Sorry, I can't find your lpc program.\n"
+"Please check the configuration under Config->Spooler."
+msgstr ""
+"¥utujem, nemô¾em nájs» Vá¹ program lpc.\n"
+"Prosím, skontrolujte va¹e nastavenie pod Nastavenie->Spooler."
+
+#: FirstStart.cpp:21 SpoolerConfig.cpp:21 SpoolerConfigData.cpp:151
+msgid "Select your spooling system"
+msgstr "Vyberte Vá¹ systém na spooling"
+
+#: FirstStartData.cpp:42
+msgid ""
+"Please select the spooling system you use. Most systems use the BSD spooler. "
+"So if you don't know which spooler is installed on your system, BSD is "
+"probably a good choice."
+msgstr ""
+"Prosím, vyberte Vá¹ systém na spooling. Väè¹ina systémov pou¾íva BSD "
+"spooler. Ak neviete, aký spooler je nain¹talovaný na Va¹om systéme, BSD je "
+"pravdepodobne dobrou voµbou."
+
+#: SpoolerConfigData.cpp:99
+msgid "Paths of spooling commands:"
+msgstr "Cesta príkazu na spooling:"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"

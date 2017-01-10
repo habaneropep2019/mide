@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kppp Handbook: kppp and Security Issues</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KPPP Dialer Internet PPP IP PAP CHAP">
+<META NAME="description" CONTENT="KPPP Internet Dialer">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-9.html">Next</A>
+<A HREF="kppp-7.html">Previous</A>
+<A HREF="kppp.html#toc8">Table of Contents</A>
+</P>
+<H3><A NAME="security"></A> <A NAME="s8">8. <EM>kppp</EM> and Security Issues</A></H3>
+
+<P>This section is mainly for superusers (root), people with high
+security demands or simply technically interested people. It is
+not necessary to read this if you only use Linux at home for
+yourself (though you might learn something new when you read
+this)
+<P>
+<H3><A NAME="ss8.1">8.1 Restricting access to kppp</A>
+</H3>
+
+<P>A system administrator might want to restrict access to who is
+allowed to use <EM>kppp</EM>. There are two ways to accomplish this:
+<P>
+<H4>With group permissions</H4>
+
+<P>Create a new group (you might want to name it "dialout" or
+similar), put every user that should be allowed to use <EM>kppp</EM>
+into that group and type:
+<BLOCKQUOTE><CODE>
+<PRE>
+chown root.dialout /usr/local/kde/bin/kppp
+chmod 4750 /usr/local/kde/bin/kppp
+</PRE>
+</CODE></BLOCKQUOTE>
+
+This assumes that KDE was installed in <CODE>/usr/local/kde</CODE>
+and your new group is named "dialout".
+<P>
+<H4><EM>kppp´s</EM> way</H4>
+
+<P>Before doing anything, <EM>kppp</EM> checks if there is a file named
+<CODE>/etc/kppp.allow</CODE>. If such a file exists, ONLY users named
+in this file are allowed to dial out. This file must be readable
+by every user (of course NOT writable). Only login names are
+recognised, thus you cannot use UID´s in this file. Here´s a
+short example:
+<BLOCKQUOTE><CODE>
+<PRE>
+# /etc/kppp.allow
+# comment lines like this are ignored, 
+# as well as empty lines
+fred
+karl
+
+# I put myself in here :-)
+mweilguni
+</PRE>
+</CODE></BLOCKQUOTE>
+
+In the example above only the users <I>fred</I>, <I>karl</I> and
+<I>mweilguni</I> can use <EM>kppp</EM> to dial out, as well as every
+user with a UID of 0. So you don´t need to put <I>root</I> in this
+file.
+<P>
+<H3><A NAME="ss8.2">8.2 <EM>kppp</EM> has the SUID bit on. What about security?</A>
+</H3>
+
+<P>It´s virtually impossible to write a dialer without the SUID bit,
+that is both safe and easy to use for unexperienced
+users. <EM>kppp</EM> addresses the security issues with the following
+strategy:
+<P>
+<UL>
+<LI>Immidiatly after program start, <EM>kppp</EM> forks.</LI>
+<LI>The master process (which does all GUI stuff, user interaction
+and such) drops the SUID state afterwards, and runs with normal
+user privileges.</LI>
+<LI>The slave process keeps it´s privileges, and is
+responsible for all actions that need root privileges. To keep
+this part safe, no KDE/Qt library calls are used here, just
+simple C library calls. The source code for this process is short
+(around 500 lines) and well documented, so it´s easy for to check
+it for security holes.</LI>
+<LI>Master and slave process communicate with standard UNIX IPC.</LI>
+</UL>
+<P>Many thanks to Harri Porten for writing this excellent piece of
+code. I thought it was impossible - he made it within a week.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-9.html">Next</A>
+<A HREF="kppp-7.html">Previous</A>
+<A HREF="kppp.html#toc8">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

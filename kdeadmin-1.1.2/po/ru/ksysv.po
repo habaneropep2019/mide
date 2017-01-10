@@ -1,0 +1,387 @@
+# Перевод ksysv.
+# Copyright (C) 1998, 1999 Free Software Foundation, Inc.
+# Denis Pershin <dyp@inetlab.com>, 1998, 1999.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ksysv\n"
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"PO-Revision-Date: 1999-02-09 02:06+0600\n"
+"Last-Translator: Denis Pershin <dyp@inetlab.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: main.cpp:236
+msgid ": Error"
+msgstr ": Ошибка"
+
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr "Только root имеет право управлять уровнями запуска."
+
+#: OldView.cpp:105
+msgid "Available"
+msgstr "Доступно"
+
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "&Сервисы"
+
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+"Это <bold>доступные сервисы</bold>\n"
+"Для запуска сервиса, перенесите его в секцию <bold>\"Старт\"</bold> уровня "
+"запуска.\n"
+"\n"
+"Для остановки. сделайте то же самое для секции <bold>\"Стоп\"</bold>."
+
+# , c-format
+# , c-format
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "Уровень запуска &%i"
+
+# , c-format
+# , c-format
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "Уровень запуска %i"
+
+#: OldView.cpp:149
+msgid "Start"
+msgstr "Запустить"
+
+# , c-format
+# , c-format
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Перенесите сюда для запуска сервиса\n"
+"при входе на уровень запуска %i"
+
+# , c-format
+# , c-format
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Перенесите сюда для остановки сервиса\n"
+"при входе на уровень запуска %i"
+
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr "** ИДЕТ ЗАПИСЬ КОНФИГУРАЦИИ **\n"
+
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr "** УРОВЕНЬ ЗАПУСКА %i **\n"
+
+#: OldView.cpp:517
+msgid "Reading configuration: "
+msgstr "Чтение конфигурации: "
+
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr "** Остановка "
+
+#: OldView.cpp:624
+msgid " stop"
+msgstr " остановить"
+
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr "** Запуск "
+
+#: OldView.cpp:644
+msgid " start"
+msgstr " запустить"
+
+#: OldView.cpp:661
+msgid "** Re-starting "
+msgstr "** Перезапуск "
+
+#: OldView.cpp:666
+msgid " restart"
+msgstr " перезапустить"
+
+# , c-format
+# , c-format
+#: OldView.cpp:811
+msgid "P&roperties..."
+msgstr "Свойства..."
+
+#: OldView.cpp:831
+msgid "S&top"
+msgstr "Остановить"
+
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "&Перезапустить"
+
+#: TopWidget.cpp:136
+msgid "&New Configuration"
+msgstr "Новая конфигурация"
+
+#: TopWidget.cpp:137
+msgid "&Save Configuration"
+msgstr "Записать конфигурацию"
+
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr "Печатать журнал..."
+
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr "Показать панель инструментов"
+
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr "Показать строку статуса"
+
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr "Показать журнал"
+
+#: TopWidget.cpp:174
+msgid "&Configure..."
+msgstr "&Настроить..."
+
+#: TopWidget.cpp:177
+msgid "&Save Options"
+msgstr "&Записать настройки"
+
+#: TopWidget.cpp:215
+msgid "New"
+msgstr "Новый"
+
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "Переключить вывод скрипта"
+
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"Изменения не записаны.\n"
+"Вы действительно хотите выйти?"
+
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "Да, выйти!"
+
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "Нет, не выходить."
+
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "Отменить Изменения"
+
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "Вы действительно хотите отменить не записанные изменения?"
+
+#: TopWidget.cpp:307
+msgid "Save configuration"
+msgstr "Сохранить настройки"
+
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"Вы собираетесь записать изменения, произведенные в вашей конфигурации "
+"инициализации.\n"
+"Неверные установки могут привести к тому, что ваша система не сможет "
+"загрузиться.\n"
+".\n"
+"Вы желаете продолжить?"
+
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr "Да, записать!"
+
+#: TopWidget.cpp:314
+msgid "No, &don't save."
+msgstr "Нет, не записывать."
+
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "Об Qt"
+
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "Изменено"
+
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr "Ошибка генерации номера сортировки. Пожалуйста измените вручную."
+
+#: prefs.cpp:48
+#, c-format
+msgid "%s - Preferences"
+msgstr "%s - Установки"
+
+#: prefs.cpp:58
+msgid "Directory containing your init-scripts (&services)"
+msgstr "Каталогу, содержащий ваши инициализационные скрипты (&сервисы):"
+
+#: prefs.cpp:79
+msgid "Directory containing your &runlevel-directories"
+msgstr "Каталог, содержащий ваши каталоги уровней запуска:"
+
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr "Цвет для новых элементов"
+
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr "Цвет для измененных элементов"
+
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr "Пути"
+
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr "Цвета"
+
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "Перенесите сюда для удаления сервиса"
+
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr "Имя"
+
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr "Указывает на"
+
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr "Сортировочный номер"
+
+# , c-format
+# , c-format
+#: PropDlg.cpp:113
+#, c-format
+msgid "%s - Properties"
+msgstr "%s - Свойства"
+
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr "Ошибка удаления %s из %s: \"%s\"\n"
+
+#: IOCore.cpp:53
+#, c-format
+msgid "removed %s from %s\n"
+msgstr "удален %s из %s\n"
+
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr "создан %s в %s\n"
+
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr "Ошибка создания %s из %s: \"%s\"\n"
+
+#: About.cpp:46
+#, c-format
+msgid "About %s"
+msgstr "О %s"
+
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr "Редактор инициализационных скриптов SYSV"
+
+#: About.cpp:81
+#, c-format
+msgid "Version %s (KDE %s)"
+msgstr "Версия %s (KDE %s)"
+
+#: About.cpp:89
+msgid "╘ 1997-1999 "
+msgstr "╘ 1997-1999 "
+
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr "Peter Putzer"
+
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr "Ошибки почтой/успешные истории/много денег/..."
+
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ". Все права защищены."
+
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp ╘ 1997 Martin Jones.\n"
+"Uses the KDE libraries ╘ 1997-1999 The KDE Team.\n"
+"Uses the Qt library ╘ 1992-1998 Troll Tech AS."
+msgstr ""
+"IPC часть взята из kdehelp ╘ 1997 Martin Jones.\n"
+"Используются библиотеки KDE ╘ 1997-1999 команда KDE.\n"
+"Используется библиотека Qt ╘ 1992-1998 Troll Tech AS."
+
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+"Редактор для инициализационных настроек типа SYSV, похожий на RedHat'овский "
+"\"tksysv\",\n"
+"только ksysv использует DnD, вместе с клавиатурой."
+
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""
+"Эта программа является свободным программным обеспечением; вы можете "
+"распространять ее или изменять в границах\n"
+"версии 2 GNU General Public License, в варианте опубликованном Free\n"
+"Software Foundation.\n"
+"\n"
+"Эта программа распространяется в надежде, что она будет кому-либо полезна, "
+"но\n"
+"БЕЗ КАКОЙ-ЛИБО ГАРАНТИИ; даже без гарантии прибыльности или без гарантии "
+"того,\n"
+"что она подойдет под определенные задачи. Более подробно смотрите\n"
+"GNU General Public License."

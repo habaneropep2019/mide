@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Manual del Ktalkd: Preguntas y respuestas</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, Spanish, ktalkd, talk">
+<META NAME="description" CONTENT="El Manual de KTalkd">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Página siguiente</A>
+<A HREF="ktalkd-4.html">Página anterior</A>
+<A HREF="ktalkd.html#toc5">Índice general</A>
+</P>
+<H3><A NAME="s5">5. Preguntas y respuestas</A></H3>
+
+<P>
+<H3><A NAME="ss5.1">5.1 ¿Por qué root no recibe los avisos de KDE?</A>
+</H3>
+
+<P>Porque esto podría ser un agujero de seguridad con la detección de un
+usuario nomal.
+Puedes solucionar esta limitación añadiendo dos lineas en los ficheros de
+configuración de xdm (que son los mismos que los de kdm).
+Nota : La distribución S.u.S.E incluye esas lineas por defecto.
+<P>
+<P>Esos ficheros de configuración están situados en un directorio como
+/etc/X11/xdm, o /usr/X11R6/lib/X11/xdm en otros sistemas. 
+Suponemos en adelante que están en /etc/X11/xdm así que deberás traducirlos
+a otro directorio.
+<P>
+<P>Aquí está lo que tienes que hacer:
+Edita el fichero Xstartup, o crealo (en el directorio de configuración xdm)
+de tal forma que se lea:
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/GiveConsole
+sessreg -a -l $DISPLAY -x /etc/X11/xdm/Xservers $USER
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>y el fichero Xreset para que se lea:
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/TakeConsole
+sessreg -d -l $DISPLAY $USER   
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Asegúrate de que <B>xdm-config</B> hace referencia a los dos ficheros:
+<BLOCKQUOTE><CODE>
+<PRE>
+DisplayManager._0.startup:      /etc/X11/xdm/Xstartup
+DisplayManager._0.reset:        /etc/X11/xdm/Xreset 
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>Esto hará que kdm (o xdm) registre el usuario en utmp, que es lo que hay que
+hacer. Esto no es para kvt, ni para xterm, el registrar el usuario pero si
+para xdm y kdm en mi opionión. De todas formas, esto no registrará el
+usuario como un usuario de X cuando ejecute startx,... ¿Alguna pista para
+esto?
+<P>
+<H3><A NAME="ss5.2">5.2 ¿Por qué yo, como usuario normal, recibo anuncios de KDE?</A>
+</H3>
+
+<P>Si estás ejecutando en un sistema LiNUX (con /proc habilitado), esto es un
+fallo (un bug). Por favor envíame la descripción para que pueda
+corregirlo.
+<P>De otra forma, esto es normal : Ktalkd no puede encontrar al usuario 
+así que KDE no puede registrarlo en utmp porque la detección basada en /proc de
+LiNUX está deshabilitada.
+La solución es la misma que la de la sección 5.1, teniendo en cuenta que tu
+ejecutarás kdm o xdm para registrarlo en X.
+<P>
+<H3><A NAME="ss5.3">5.3 ¿Cómo puedo ver salidas detalladas del Ktalkd?</A>
+</H3>
+
+<P>Como es un demonio, no hay salidas detalladas en la salida estándar.
+Para obtener salidas depuradas (por ejemplo ¡ antes de envíarme un reporte de
+error !) actualiza las lineas del inet.conf con las que ejecutas el ktalkd y
+kotalkf que han de ser:
+<BLOCKQUOTE><CODE>
+<PRE>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd -d
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd -d
+</PRE>
+</CODE></BLOCKQUOTE>
+
+(date cuenta de la opción <B>-d</B>)
+<P>
+<P>Edita el /etc/syslog.conf para añadir la linea siguiente :
+<BLOCKQUOTE><CODE>
+<PRE>
+*.*         /var/log/all_messages
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Para hacerlo funcionar, tienes que reiniciar inetd y syslogd :
+<BLOCKQUOTE><CODE>
+<PRE>
+% killall -HUP inetd
+% killall -HUP syslogd
+</PRE>
+</CODE></BLOCKQUOTE>
+
+Finalmente, ejecuta una sesión de talk y mira el resultado en /var/log/all_messages
+<P>Cuando envíes un reporte de error, nunca olvides incluir la salida
+detallada, la versión del Ktalkd y la de "./configure"
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Página siguiente</A>
+<A HREF="ktalkd-4.html">Página anterior</A>
+<A HREF="ktalkd.html#toc5">Índice general</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

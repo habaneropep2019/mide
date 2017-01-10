@@ -1,0 +1,1436 @@
+	USE OF THE XMCD CD DATABASE IN YOUR SOFTWARE
+	--------------------------------------------
+		  by Ti Kan and Steve Scherf
+
+		  @(#)cddb.howto	1.12 97/12/09
+
+
+	In this document:
+
+	- WHAT IS THE XMCD CDDB
+	- CDDB USE RESTRICTIONS
+	- TWO FORMS OF ACCESS TO THE CDDB
+	- CDDB DISCID
+	- LOCAL CDDB ACCESS
+	- REMOTE CDDB ACCESS
+	- CDDB SUBMISSION
+	- QUESTIONS?
+	- APPENDIX A - CDDB DISCID ALGORITHM
+	- APPENDIX B - CDDB FILE FORMAT
+	- APPENDIX C - CDDB SERVER PROTOCOL
+	- APPENDIX D - OFFICIAL XMCD/CDDB SOFTWARE DISTRIBUTION SITES
+
+
+
+WHAT IS THE XMCD CDDB
+---------------------
+
+Xmcd is a CD-audio player software package for many computer platforms
+(primarily UNIX) running the X11 window system.  It uses the OSF/Motif
+toolkit for its graphical user interface.
+
+Users of xmcd can enter the CD's artist, disc title, track titles, and
+extended information such as band information, song lyrics, etc., and
+save the information on the computer's local directories.  The next
+time a user loads the same CD in the drive, the saved information is
+automatically retrieved and displayed.  Further more, xmcd has a "Send"
+feature which allows its users to submit CD information entries to a
+central archive via Internet electronic mail.  Over time, this archive
+has grown to contain a substantial collection of CD information and is
+continuing to grow at a rapid rate.  This collection of CD entries is
+known as the CD database (CDDB).
+
+The CDDB were made available via FTP on the Internet, so that users can
+download this archive onto their computers and use it with xmcd.  We
+also periodically update the FTP-able CDDB such that user submissions
+are incorporated.
+
+Recent versions of xmcd began supporting the concept of CDDB servers,
+such that users no longer need to download the entire CDDB to make full
+use of it.  Rather, a number of CDDB server hosts have been set up on
+the Internet around the world, and xmcd running on a system which is
+connected to the Internet can connect to one or more a CDDB servers and
+query the CD database information.
+
+The CDDB and servers are designed to be open, and can be used by other
+CD players applications or other software requiring CD information.
+Indeed, the concept is popular and several other CD players have
+already adopted it and more are modified or being developed to use it.
+
+
+CDDB USE RESTRICTIONS
+---------------------
+
+A lot of time and effort went into the development of xmcd and the CDDB
+server software.  Since the xmcd package, the CDDB server software, and
+the CDDB information are all distributed for free, we would like to
+foster the concept of free software.  Moreover, the public CDDB servers
+all run on sites that have graciously volunteered their disk space,
+computing and network resources, not to mention occasional maintenance
+and support chores, all for free.
+
+Given this, we provide full assistance to freeware authors who desire
+to incorporate the use of CDDB into their software.  In addition,
+shareware programs are also supported, because it is our understanding
+that shareware authors, like freeware authors, usually develop their
+software because they enjoy doing so, and they rarely make significant
+enough money from their shareware programs.
+
+While we don't have anything against commercial software per se. we
+take a dim view toward having someone profiting from the use of the
+CDDB and servers.  The reason should be obvious given the above
+circumstances.  However, the CDDB archive itself does not carry any
+licensing restrictions, nor is there any connection restrictions
+imposed on the CDDB servers.  Thus, commercial software are not
+expressly prohibited from using these facilities.  We will provide
+support and assistance if the commercial software will be submitting
+entries to the CDDB archives.  This is in the interest of ensuring that
+the submissions will not compromise the integrity of the CDDB, and
+because such software would contribute to the growth of the CDDB,  With
+this noted exception, we do not otherwise support nor endorse the use
+of the CDDB archives and servers by commercial software.
+
+The xmcd and CDDB server software are both released to the public with
+full source code.  You may inspect the source to see how it works. but
+please be aware that the source code to both of these packages are
+released under the terms of the GNU General Public License.  The full
+text of the GNU GPL is in the COPYING file in each of these packages.
+
+If you plan to use the CDDB and/or the CDDB servers in your software,
+please notify xmcd@amb.org of your intention.  Also, we appreciate
+that you keep us posted as to your development/test progress and
+release schedules.
+
+You must explicitly give credit to the authors (Ti Kan, author of xmcd
+and creator of the CDDB concept and maintainer of the CDDB sites; and
+Steve Scherf, author of the CDDB server software and co-designer of
+the remote CDDB interfaces) both in all documentation and when the product
+is operating.  The latter need not appear conspicuously, but should be
+viewable by the user through some obvious means.
+
+
+
+TWO FORMS OF ACCESS TO THE CDDB
+-------------------------------
+
+If you are interested in incorporating the use of CDDB in your
+software, there are two forms of access that you may consider.
+
+1. Local access
+
+   In this mode your software simply attempts to open local files on
+   the computer to access the CDDB.
+
+2. Remote access
+
+   In this mode the software must connect to a CDDB server on the
+   network to access the CDDB.  There is a CDDB server protocol that
+   the software (also known as the "client") must use to converse with
+   the server.
+
+You may choose to support either one, or both of these modes.
+
+
+CDDB DISCID
+-----------
+
+Both forms of CDDB access requires that the software compute a "disc
+ID" which is an identifier that is used to access the CDDB.  The disc
+ID is a 8-digit hexadecimal (base-16) number, computed using data from
+a CD's Table-of-Contents (TOC) in MSF (Minute Second Frame) form.  The
+algorithm is listed below in Appendix A.
+
+It is crucial that your software compute the disc ID correctly.  If it
+does not generate the disc ID, it will not be compatible with the
+CDDB.  Moreover, if your software submits CDDB entries with bad disc
+IDs to the CDDB archives, it could compromise the integrity of the
+CDDB.
+
+If you have access to a UNIX platform that xmcd supports, we suggest 
+installing xmcd, and then testing the disc ID code in your software by
+comparing the disc ID generated by xmcd with that of your software
+for as large a number of CDs as possible.
+
+
+LOCAL CDDB ACCESS
+-----------------
+
+There are two forms of the CDDB archive available, the standard form
+and the alternate form.  Both forms are available for FTP from the
+official xmcd distribution sites listed in Appendix D.  The standard
+form of the CDDB archive is released to the public as a UNIX
+tar(1)-format archive, compressed with gzip (GNU ZIP).  The alternate
+form archive is in the .ZIP (PKZIP) format that is popular on the
+DOS/Windows platform.
+
+Standard Form:
+--------------
+
+Each CD entry is a separate file in the xmcd CDDB.  These files are
+organized in several directories, each directory is a category of
+music.  Currently the "official" categories are listed as follows:
+
+	blues
+	classical
+	country
+	data
+	folk
+	jazz
+	misc
+	newage
+	reggae
+	rock
+	soundtrack
+
+The individual CDDB files have a file name that is the 8-digit disc
+ID.  For example, under the blues directory there may be the following
+files:
+
+	0511c012
+	060e7314
+	0c01e902
+	0f0c3112
+	...
+	fa0f6f10
+	fb0f8814
+	fd0e6013
+
+To access the CDDB entry associated with a CD, your software simply
+opens the appropriate file and read in the information.
+
+The content of each of these files is in a format described below in
+Appendix B.
+
+Different pressings of a particular CD title may contain differences
+in timings that can cause the computed disc ID to be different.
+The CDDB allows this by having multiple file names be links to
+the same file.  The links are implemented as actual filesystem links
+(see the ln(1) command) on UNIX systems.  For example, the following
+files in the rock directory are all links to the same file, and
+refer to the CD "Pink Floyd / The Division Bell".:
+
+	850f740b
+	850f950b
+	850f970b
+	860f960b
+	890f970b
+
+Xmcd and the CD database server use this form of the CDDB archive.  The
+benefit of the standard form of the CDDB archive is very fast access,
+and ease of add/delete/edit operations on entries.
+
+Alternate Form:
+---------------
+
+Due to limitations in the FAT file system used on MS-DOS, MS-Windows,
+and Windows-95, it is infeasible to use the standard format CDDB
+archive due to the large number of files.  This is because such a
+filesystem operates on fixed-size clusters and even a small file (and
+most CDDB files are 1KB or less) would consume the space of a full
+cluster (Depending upon disk size, a cluster can range from 4KB to 32KB
+in size).  Thus, a tremendous amount of disk space would be wasted on
+these systems if the CDDB archive is used in its standard form.
+
+An alternate form of the CDDB archives was created for use by software
+that must operate on a system with the FAT limitations.
+
+The alternate form still use the separate category directories as the
+standard form, but concatenates many files into a smaller number of
+files under each category.  The first two digits of the CDDB file names
+is used as a key for concatenation, each file is allowed to grow to
+approximately 64KB in size before a new file is started.  The file name
+indicates what range of the digits are included in that file.  For
+example, under the blues category we may have the following files:
+
+	01to36
+	37to55
+	56to71
+	...
+	b2tod7
+	d8toff
+
+The 01to36 file contains all CDDB entries with disc ID 01xxxxxx,
+02xxxxxx, 03xxxxxx and so on, up to 36xxxxxx.
+
+Each entry in the concatenated file begins with the keyword
+
+#FILENAME=xxxxxxxx
+
+where discid is the 8-digit hexadecimal disc ID of that entry.  Your
+software must search through the appropriate file to locate the desired
+entry.  The CDDB entry is in the format described in Appendix B below.
+
+The alternate form avoids the problem of inefficient disk space
+utilization on FAT-based filesystems, but is slower to access than the
+standard form, and much more cumbersome to perform add/delete/edit
+operations on a CDDB entry.
+
+
+REMOTE CDDB ACCESS
+------------------
+
+In order to perform remote access of CDDB servers, your software must be
+able to communicate with a remote CD server system via TCP/IP.  There are a
+number of public CDDB servers operating on the Internet.  The current list
+of public servers is listed on the xmcd Web page at:
+
+	http://sunsite.unc.edu/~cddb/xmcd/
+
+The current list of public servers may also be obtained programmatically
+via the CDDBP "sites" command.  The permanent server site, cddb.cddb.com
+has been established in order to provide a reliable source of server site
+information via the "sites" command.  This address may be safely hard-wired
+into client software for this purpose.
+
+There are two forms of remote access to CDDB servers, CDDBP and HTTP.
+All current CDDB servers answer at TCP port 888 for CDDBP and port 80 for
+HTTP access.  There may be future sites that deviate from this convention,
+however.
+
+You should make the CDDB server host (or hosts) and port numbers
+user-configurable in your software.  Do not hard-wire the list of
+CD database servers into your code.  The list of active servers changes
+over time.
+
+Note that while all the current public CDDB server sites on the Internet
+support the CDDBP protocol, not all of them support HTTP.
+
+Both the CDDBP and HTTP CDDB server protocols are described below in
+Appendix C.
+
+The CDDB entry returned from the server via a "cddb read" command is in
+the format described in Appendix B below.
+
+You may experiment with the CDDB server by connecting to port 888 of
+the server host via the "telnet" program, and then typing the cddb
+protocol commands by hand.  For example:
+
+	telnet sunsite.unc.edu 888
+
+connects you to the CDDB server at sunsite.unc.edu.
+
+
+CDDB SUBMISSION
+---------------
+
+Your software may allow users to enter CDDB data and then submit them
+to the CDDB archives.  The method of submission is to send the entry to
+following address via electronic mail:
+
+	xmcd-cddb@amb.org
+
+You may implement a button or somesuch in your software's user-interface
+to facilitate this.  The destination e-mail address should be made
+user-configurable.  Submissions are silently accepted, and no confirmation
+of receipt is sent to the submitter.  Rejected submissions are automatically
+returned to the sender via e-mail with an explanation of the reason for the
+rejection.
+
+There should be one e-mail message per CDDB entry.  The mail Subject
+line should be in the form "cddb category discid".  For example:
+
+Subject: cddb rock 850f970b
+
+The body of the e-mail message should be in the format of a CDDB file
+entry as described in Appendix B.  The messages should contain only
+plain ASCII text.  Do not attach encoded information or add special
+escape sequences.
+
+Note that the disc ID specified in the mail Subject line should
+also appear in the list of disc IDs in the DISCID= field of the
+CDDB file entry.  If not, it is considered an error and the submission
+will be rejected.
+
+You should only allow categories that are currently supported by the
+CDDB (see LOCAL CDDB ACCESS above).  Submissions specifying unsupported
+categories will be rejected.
+
+Please do not allow a user to submit CD database entries that
+have completely unfilled contents (i.e., blank information in the
+disc artist/title as well as the track titles, or filled with
+useless default information like "track 1", "track 2", etc.).
+While the current CD database server checks and rejects submissions
+that have a blank DTITLE line, it doesn't (and can't feasibly) check
+the track titles effectively, nor can it check any of these fields
+if they are filled with a default string.  If it were, it would
+have to be hacked to know about the default strings of every possible
+client.
+
+Thus, please design your client with this in mind.  This is a somewhat
+tricky thing to do, as some CDs contain blank tracks with no titles
+and you need to allow for that.  An example minimum requirement
+that a CD player client should meet is listed below:
+
+1. Don't allow the "send" or "submit" feature to be activated if
+   the CD database information form is not edited at all.
+2. Check that the disc artist/title contains something (that the user
+   typed in).
+3. At least one of the tracks has a title filled in by the user.
+4. Don't submit a default string if a field is not filled in
+   (e.g. If track 3 is not filled in, submit a blank "TTITLE3=" line
+   rather than something like "TTITLE3=track 3").
+
+This should minimize the amount of useless garbage being submitted
+into the CD database.
+
+Before you release your software, please be sure that it produces
+submissions that adhere to the CDDB file format, and that the frame
+offset, disc length, and disc ID information are correctly computed.
+For testing, please make your software send submissions to one of the
+following two e-mail addresses (rather than the real submission site at
+xmcd-cddb@amb.org):
+
+	cddb-test@amb.org
+
+	or
+
+	cddb-test@cddb.cddb.com
+
+The test addresses perform sanity checking on the CDDB submission and
+send back pass/fail confirmation, but do not actually deposit the entry
+in the CD database.  The first address is currently connected to the Internet
+via UUCP, so confirmation of receipt may take several hours. The second
+address is connected via a dedicated link, so response is reasonably
+immediate.  It is recommended that you use both when testing your program's
+submission capability.
+
+
+QUESTIONS?
+----------
+
+Please direct your questions about the xmcd to xmcd@amb.org.  Questions
+specific to the CDDB or the CDDB server should be directed to
+cddb-support@moonsoft.com.
+
+APPENDIX A - CDDB DISCID ALGORITHM
+----------------------------------
+
+The following is C code that illustrates how to generate the
+CDDB disc ID:
+
+
+struct toc {
+	int	min;
+	int	sec;
+	int	frame;
+};
+
+struct toc cdtoc[100];
+
+int
+read_cdtoc_from_drive(void)
+{
+	/* Do whatever is appropriate to read the TOC of the CD
+	 * into the cdtoc[] structure array.
+	 */
+	return (tot_trks);
+}
+
+int
+cddb_sum(int n)
+{
+	char	buf[12],
+		*p;
+	int	ret = 0;
+
+	/* For backward compatibility this algorithm must not change */
+	sprintf(buf, "%lu", n);
+	for (p = buf; *p != '\0'; p++)
+		ret += (*p - '0');
+
+	return (ret);
+}
+
+unsigned long
+cddb_discid(int tot_trks)
+{
+	int	i,
+		t = 0,
+		n = 0;
+
+	/* For backward compatibility this algorithm must not change */
+	for (i = 0; i < tot_trks; i++)
+		n += cddb_sum((cdtoc[i].min * 60) + cdtoc[i].sec);
+
+	t = ((cdtoc[tot_trks].min * 60) + cdtoc[tot_trks].sec) -
+	     ((cdtoc[0].min * 60) + cdtoc[0].sec);
+
+	return ((n % 0xff) << 24 | t << 8 | tot_trks);
+}
+
+main()
+{
+	int tot_trks;
+
+	tot_trks = read_cdtoc_from_drive();
+	printf("The discid is %08x", cddb_discid(tot_trks));
+}
+
+
+This code assumes that your compiler and architecture support 32-bit
+integers.
+
+The cddb_discid function computes the discid based on the CD's TOC data
+in MSF form.  The frames are ignored for this purpose.  The function is
+passed a parameter of tot_trks (which is the total number of tracks on
+the CD), and returns the discid integer number.
+
+It is assumed that cdtoc[] is an array of data structures (records)
+containing the fields min, sec and frame, which are the minute, second
+and frame offsets (the starting location) of each track.  This
+information is read from the TOC of the CD.  There are actually
+tot_trks + 1 "active" elements in the array, the last one being the
+offset of the lead-out (also known as track 0xAA).
+
+The function loops through each track in the TOC, and for each track
+it takes the (M * 60) + S (total offset in seconds) of the track and
+feeds it to cddb_sum() function, which simply adds the value of each digit
+in the decimal string representation of the number. A running sum of this
+result for each track is kept in the variable n.
+
+At the end of the loop:
+1. t is calculated by subtracting the (M * 60) + S offset of the lead-out
+minus the (M * 60) + S offset of first track (yielding the length of
+the disc in seconds).
+
+2. The result of (n modulo FFh) is left-shifted by 24 bits.
+
+3. t is left shifted by 8.
+
+The bitwise-OR operation of result 2., 3. and the tot_trks number is
+used as the discid.
+
+The discid is represented in hexadecimal form for the purpose of
+xmcd cddb file names and the DISCID= field in the xmcd cddb file itself.
+If the hexadecimal string is less than 8 characters long, it is
+zero-padded to 8 characters (i.e., 3a8f07 becomes 003a8f07).  All
+alpha characters in the string should be in lower case, where
+applicable.
+
+Important note for clients using the MS-Windows MCI interface:
+
+The Windows MCI interface does not provide the MSF location of the
+lead-out.  Thus, you must compute the lead-out location by taking the
+starting position of the last track and add the length of the last
+track to it.  However, the MCI interface returns the length of the last
+track as ONE FRAME SHORT of the actual length found in the CD's TOC.
+In most cases this does not affect the disc ID generated, because we
+truncate the frame count when computing the disc ID anyway.  However,
+if the lead-out track has an actual a frame count of 0, the computed
+quantity (based on the MSF data returned from the MCI interface) would
+result in the seconds being one short and the frame count be 74.  For
+example, a CD that was 51m 23s 0f long is reported by the MCI interface
+as 51m 22s 74f long and thus the resulting truncated disc length is off
+by one second.  This will cause an incorrect disc ID to be generated.
+You should thus add one frame to the length of the last track when
+computing the location of the lead-out.
+
+
+APPENDIX B - CDDB FILE FORMAT
+-----------------------------
+
+			Xmcd CD Database File Format
+			         Version 1.0
+
+			       By Steve Scherf
+
+	      Based on the xmcd database file design by Ti Kan
+	      ------------------------------------------------
+
+Revision: $Id: cddb.howto,v 1.2 1998/01/05 06:01:48 wuebben Exp $
+
+
+Database entries must be in the ISO-8859-1 character set (the 8-bit ASCII
+extension also known as "Latin alphabet #1"). Lines must always be
+terminated only by a single newline (ctrl-J, or 0Ah). All lines in a
+database entry must be less than or equal to 80 bytes in length, including
+the newline. Database entries with lines that are longer will be considered
+invalid. There must be no blank lines in a database entry.
+
+Lines that begin with # are comments. Comments should appear only at the
+top of the file before any keywords. Comments in the body of the file are
+subject to removal when submitted for inclusion to the database. Comments
+may consist only of characters in the set:
+
+{ tab (09h); space (20h) through tilde (7Eh) inclusive }
+
+Comments should be ignored by applications using the database file, with
+several exceptions described below.
+
+The beginning of the first line in a database entry should consist of the
+string "# xmcd". This string identifies the file as an xmcd format CD
+database file. More text can appear after the "xmcd", but is unnecessary.
+
+The comments should also contain the string "# Track frame offsets:" followed
+by the list of track offsets (the # of frames from the beginning of the CD)
+obtained from the table of contents on the CD itself, with any amount of white
+space between the "#" and the offset. There should be no other comments
+interspersed between the list of track offsets. This list must follow the
+initial identifier string described above. Following the offset list should
+be at least one blank comment.
+
+Note for Windows programmers:
+
+The frame offset provided by the MCI interface is one less than the actual
+count in the disc table of contents. You must be sure to account for this
+by adding one frame to each of the offsets when generating a database entry.
+
+After the offset list, the following string should appear:
+
+"# Disc length: N seconds"
+
+where the number of seconds in the CD's play length is substituted for "N".
+The number of seconds should be computed by dividing the total number of
+1/75th second frames in the CD by 75 and truncating any remainder. This number
+should not be rounded. 
+
+Note for Windows programmers:
+
+The disc length provided by the Windows MCI interface should not be used here.
+Instead, the lead-out (address of the N+1th track) should be used. Since the
+MCI interface does not provide the address of the lead-out, it should be
+computed by adding the length of the last track to the offset of the last
+track and truncating (not rounding) any remaining fraction of a second. Note
+that the MCI interface yields an incorrect track offset which must be
+corrected by adding one frame to the total frame count when performing the
+disc length computation.
+
+After the disc length, the following string should appear:
+
+"# Revision: N"
+
+where the database entry revision (decimal integer) is substituted for "N".
+
+Files missing a revision are assumed to have a revision revision level of 0.
+The revision is used for database management when comparing two entries in
+order to determine which is the most recent. Client programs which allow the
+user to modify a database entry should increment the revision when the user
+submits a modified entry for inclusion in the database.
+
+After the revision, the following string should appear:
+
+"# Submitted via: client_name client_version optional_comments"
+
+where the name of the client submitting the entry is substituted for
+"client_name", the version of the client is substituted for "client_version",
+and "optional_comments" is any sequence of legal characters. Clients which
+allow users to modify database entries read from the database should update
+this string with their own information before submitting.
+
+The "client_version" field has a very specific format which should be observed:
+
+[leading text]version_number[release type][level]
+
+Where:
+
+	Leading text: is any string which does not include numbers.
+	Version number and level: is any (possibly) decimal-separated list of
+	    numbers.
+	Release type: is a string of the form:
+	    alpha, a, beta, b, patchlevel, patch, pl
+
+For example:
+
+	release:2.35.1alpha7
+	v4.0PL0
+	2.4
+
+The only required portion of the version field is the version number. The
+other parts are optional, though it is strongly recommended that the release
+type field be filled in if relevant. Strict version checking may be
+applied by software which evaluates the submitter revision, so it is wise
+to make it clear when a release is beta, etc.
+
+Following the comments is the disc data. Each line of disc data consists
+of the format "KEYWORD=data", where "KEYWORD" is a valid keyword as described
+below and "data" is any string consisting of characters in the set:
+
+{ space (20h) through tilde (7Eh) inclusive; no-break-space (A0h) through
+  y-umlaut (FFh) inclusive }
+
+Newlines (20h), tabs (09h) and backslashes (2Fh) may be represented by the
+two-character sequences "\n", "\t" and "\\" respectively. Client programs must
+translate these sequences to the appropriate characters when displaying
+disc data.
+
+All of the applicable keywords must be present in the file, though they may
+have empty data except for the DISCID and DTITLE keywords. They must appear in
+the file in the order shown below. Multiple occurrences of the same keyword
+indicate that the data contained on those lines should be concatenated.
+Keywords with numeric data should not have a comma after the last number on
+each line. Valid keywords are as follows:
+
+DISCID: The data following this keyword should be a comma-separated list of
+        8-byte disc IDs. The disc ID indicated by the track offsets in the
+	comment section must appear somewhere in the list. Other disc IDs
+	represent links to this database entry. The algorithm for generating
+	the disc ID is beyond the scope of this document.
+
+DTITLE: Technically, this may consist of any data, but by convention contains
+	the artist and disc title (in that order) separated by a "/". If the
+	"/" is absent, it is implied that the artist and disc title are the
+	same.
+
+TTITLEN:There must be one of these for each track in the CD. The track
+	number should be substituted for the "N", starting with 0. This field
+	should contain the title of the Nth track on the CD.
+
+EXTD:	This field contains the "extended data" for the CD. This is intended
+	to be used as a place for interesting information related to the CD,
+	such as credits, et cetera. If there is more than one of these lines
+	in the file, the data is concatenated. This allows for extended data
+	of arbitrary length.
+
+EXTTN:	This field contains the "extended track data" for track "N". There
+	must be one of these for each track in the CD. The track number
+	should be substituted for the "N", starting with 0. This field is
+	intended to be used as a place for interesting information related to
+	the Nth track, such as the author and other credits, or lyrics. If
+	there is more than one of these lines in the file, the data is
+	concatenated. This allows for extended data of arbitrary length.
+
+PLAYORDER:
+	This field contains a comma-separated list of track numbers which
+	represent a programmed track play order. This field is generally
+	stripped of data in non-local database entries. Applications that
+	submit entries for addition to the main database should strip this
+	keyword of data.
+
+
+A minimal database entry is as follows. A "[ ... ]" indicates repetition.
+
+# xmcd
+#
+# Track frame offsets:
+#	150
+[ ... 21 frame offsets omitted ]
+#	210627
+#
+# Disc length: 2952 seconds
+#
+# Revision: 1
+# Submitted via: xmcd 2.0
+#
+DISCID=270b8617,5f430c17,[ ... ],4c72be17
+[ ... ]
+DISCID=88fe2017,ff293017,[ ... ],5920cc17
+DTITLE=Con Spirito / Franske stemninger
+TTITLE0=Mille regretz de vous abandonner
+[ ... 21 TTITLEN keywords omitted ]
+TTITLE22=L'arche de no
+EXTD=Copyright (c) 1981 MCA Records Inc.\nManufactured
+EXTD=for MCA Records Inc.
+EXTT0=Des Prez\nYez
+[ ... 21 EXTTN keywords omitted ]
+EXTT22=Schmitt: A contre-voix \n(excerpt)
+PLAYORDER=1,5,6,19,7,[ ... ],19
+PLAYORDER=8,20,[ ... ],21
+
+
+APPENDIX C - CDDB SERVER PROTOCOL
+---------------------------------
+
+				CDDB Protocol
+
+			  By Steve Scherf and Ti Kan
+		          --------------------------
+
+Revision: $Id: cddb.howto,v 1.2 1998/01/05 06:01:48 wuebben Exp $
+
+
+Notation:
+-> : client to server
+<- : server to client
+
+terminating marker: `.' character in the beginning of a line
+
+
+Server response code (three digit code):
+
+First digit:
+1xx	Informative message
+2xx	Command OK
+3xx	Command OK so far, continue
+4xx	Command OK, but cannot be performed for some specified reasons
+5xx	Command unimplemented, incorrect, or program error
+ 
+Second digit:
+x0x	Ready for further commands
+x1x	More server-to-client output follows (until terminating marker)
+x2x	More client-to-server input follows (until terminating marker)
+x3x	Connection will close
+
+Third digit:
+xx[0-9]	Command-specific code
+
+
+CDDB Protocol Level 1:
+----------------------
+
+Server sign-on banner:
+----------------------
+<- code hostname CDDBP server version ready at date
+
+    code:
+	200	OK, read/write allowed
+	201	OK, read only
+	432	No connections allowed: permission denied
+	433	No connections allowed: X users allowed, Y currently active
+	434	No connections allowed: system load too high
+    hostname:
+	Server host name.  Example: xyz.fubar.com
+    version:
+	Version number of server software.  Example: v1.0PL0
+    date:
+	Current date and time.  Example: Wed Mar 13 00:41:34 1996
+
+
+Initial client-server handshake:
+--------------------------------
+Note: This handshake must occur before other cddb commands
+      are accepted by the server.
+
+Client command:
+-> cddb hello username hostname clientname version
+
+    username:
+	Login name of user.  Example: johndoe
+    hostname:
+	Host name of client.  Example: abc.fubar.com
+    clientname:
+	The name of the connecting client.  Example: xmcd, cda, EasyCD,
+	et cetera. Do not use the name of another client which already
+	exists.
+    version:
+	Version number of client software.  Example: v1.0PL0
+
+Server response:
+<- code hello and welcome username@hostname running clientname version
+
+    code:
+	200	Handshake successful
+	431	Handshake not successful, closing connection
+	402	Already shook hands
+
+
+CDDB query:
+-----------
+Client command:
+-> cddb query discid ntrks off1 off2 ... nsecs
+
+    discid:
+	CD disc ID number.  Example: f50a3b13
+    ntrks:
+	Total number of tracks on CD.
+    off1, off2, ...:
+	Frame offset of the starting location of each track.
+    nsecs:
+	Total playing length of CD in seconds.
+
+Server response:
+<- code categ discid dtitle
+	or
+<- code close matches found
+<- categ discid dtitle
+<- categ discid dtitle
+<- (more matches...)
+<- .
+
+    code:
+	200	Found exact match
+	211	Found inexact matches, list follows (until terminating marker)
+	202	No match found
+	403	Database entry is corrupt
+	409	No handshake
+    categ:
+	CD category.  Example: rock
+    discid:
+	CD disc ID number of the found entry.  Example: f50a3b13
+    dtitle:
+	The Disc Artist and Disc Title (The DTITLE line).  For example:
+	Pink Floyd / The Dark Side of the Moon
+
+
+CDDB read:
+----------
+Client command:
+-> cddb read categ discid
+
+    categ:
+	CD category.  Example: rock
+    discid:
+	CD disc ID number.  Example: f50a3b13
+
+Server response:
+<- code categ discid
+<- # xmcd 2.0 CD database file
+<- # ...
+<- (CDDB data...)
+<- .
+	or
+<- code categ discid No such CD entry in database
+
+    code:
+	210	OK, CDDB database entry follows (until terminating marker)
+	401	Specified CDDB entry not found.
+	402	Server error.
+	403	Database entry is corrupt.
+	409	No handshake.
+    categ:
+	CD category.  Example: rock
+    discid:
+	CD disc ID number.  Example: f50a3b13
+
+
+CDDB search:
+----------
+Client command:
+-> cddb srch key search_type ... search_type
+
+    key:
+	Pseudo-regular expression to match. Expressions should meet the
+	following description:
+
+	- No white space.
+	- Printable characters only.
+	- Case is ignored.
+    search_type:
+	CDDB fields to search through.  Example: title
+	Supported types: artist, title, extd, ext, trk
+    categ:
+	CD category.  Example: rock
+
+Server response:
+<- code matches found
+<- categ discid dtitle
+<- categ discid dtitle
+<- (more matches...)
+<- .
+
+    code:
+	210	OK, matches found, list follows (until terminating marker)
+	401	No match found.
+	409	No handshake.
+    categ:
+	CD category.  Example: rock
+    dtitle:
+	The Disc Artist and Disc Title (The DTITLE line).  For example:
+	Pink Floyd / The Dark Side of the Moon
+
+
+CDDB write:
+-----------
+Client command:
+-> cddb write categ discid
+
+    categ:
+	CD category.  Example: rock
+    discid:
+	CD disc ID number.  Example: f50a3b13
+
+Server response:
+<- code categ discid
+
+    code:
+	320	OK, input CDDB data (until terminating marker)
+	401	Permission denied.
+	402	Server file system full/file access failed.
+	409	No handshake.
+	501	Entry rejected: reason for rejection.
+    categ:
+	CD category.  Example: rock
+    discid:
+	CD disc ID number.  Example: f50a3b13
+
+Client data:
+-> # xmcd 2.0 CD database file
+-> # ...
+-> (CDDB data)
+-> .
+
+Server response:
+<- code message
+
+    code:
+	200	CDDB entry accepted
+	401	CDDB entry rejected: reason why
+    message:
+	Message string to indicate write status:
+	CDDB entry accepted, or CDDB entry rejected.
+
+
+Help information:
+-----------------
+Client command:
+-> help
+	or
+-> help cmd
+
+    cmd:
+	CDDB command.  Example: quit
+
+	or
+
+-> help cmd subcmd
+
+    cmd:
+	CDDB command.  Example: cddb
+    subcmd:
+	CDDB command argument.  Example: query
+
+Server response:
+<- code Help information follows
+<- (help data ...)
+<- .
+	or
+<- code no help information available
+
+    code:
+	210	OK, help information follows (until terminating marker)
+	401	No help information available
+
+
+Log statistics:
+---------------
+Client command:
+-> log [[-l lines] [start date [end date]] | [day [days]] | [get]]
+
+    lines:
+	The maximum number of lines to print for each data list in the
+	log statistics.
+    start date:
+	The date after which statistics should be calculated. Date is
+	of the format: hh[mm[ss[MM[DD[[CC]YY]]]]]
+
+	E.g.:	201200053196 for 8:12 PM on May 31, 1996.
+		20120005312096 for 8:12 PM on May 31, 2096.
+		080530 for today at at 8:15 and 30 seconds.
+
+	If the century ("CC") is omitted, a reasonable guess is made. If
+	this argument is omitted, all messages are considered.
+    end date:
+	The date after which statistics should not be calculated. If
+	omitted, the end date is assumed to be the current date.
+    day:
+	The string "day". This solitary argument will cause a log search
+	of messages generated within the last day.
+    days:
+	A positive numerical argument which modifies the number of days'
+        messages to searh. If this argument is left out, the default is 1.
+    get:
+	The string "get". This solitary argument will cause the server
+	to send the contents of the log file.
+
+Server response:
+<- code Log summary follows
+<- (log stats)
+<- .
+	or
+<- code Log follows
+<- (log stats)
+<- .
+
+    code:
+	210	OK, log summary follows (until terminating marker)
+	211	OK, log follows (until terminating marker)
+	401	Permission denied
+	402	No log information available
+	501	Invalid start/end date
+
+
+Message of the day:
+------------------
+Client command:
+-> motd
+
+Server response:
+<- code Last modified: date MOTD follows (until terminating marker)
+<- (message text)
+<- .
+
+    code:
+	210	Last modified: 05/31/96 06:31:14 MOTD follows (until terminating marker)
+	401	No message of the day available
+    date:
+	The date the text of the message of the day was modified. The date
+	appears in the following format:
+
+		05/31/96 06:31:14
+
+	This value may be used by client software as a message timestamp
+	for purposes of determining if it has already been displayed. This
+	format was chosen because it is more easily parsed than the standard
+	ctime() format.
+
+
+Server protocol level:
+----------------------
+Client command:
+-> proto [level]
+
+    level:
+	The (numerical) protocol level to set the server to.
+
+Server response:
+<- code CDDB protocol level: current cur_level, supported supported_level
+	or
+<- code OK, protocol version now: cur_level
+
+    code:
+	200	CDDB protocol level: current cur_level, supported supp_level
+	201	OK, protocol version now: cur_level
+	501	Illegal protocol level.
+	502	Protocol level already cur_level.
+    cur_level:
+	The current protocol level at which the server is running.
+    supported_level:
+	The maximum supported protocol level.
+
+
+Server sites:
+--------------
+Client command:
+-> sites
+
+Server response:
+<- code OK, site information follows (until terminating `.')
+<- (data)
+<- .
+
+    code:
+	210	Ok, site information follows
+	401	No site information available.
+
+    The data format is as follows:
+	site port latitude longitude description
+
+    The fields are as follows:
+	site:
+	    The Internet address of the remote site.
+	port:
+	    The port at which the server resides on that site.
+	latitude:
+	    The latitude of the server site. The format is as follows:
+		CDDD.MM
+	    Where "C" is the compass direction (N, S), "DDD" is the
+	    degrees, and "MM" is the minutes.
+	longitude:
+	    The longitude of the server site. Format is as above, except
+	    the compass direction must be one of (E, W).
+	description:
+	    A short description of the geographical location of the site.
+
+    Example:
+	cddb.moonsoft.com 888 N037.23 W122.01 Fremont, CA USA
+
+
+Server status:
+--------------
+Client command:
+-> stat
+
+Server response:
+<- code OK, status information follows (until terminating `.')
+<- (data)
+<- .
+
+    code:
+	210	Ok, status information follows
+
+    The possible data is as follows:
+	current proto: <current_level>
+	    An integer representing the server's current operating protocol
+	    level.
+	max proto:     <max_level>
+	    The maximum supported protocol level.
+	gets:          <yes | no>
+	    Whether or not the client is allowed to get log information,
+	    according to the string "yes" or "no".
+	updates:       <yes | no>
+	    Whether or not the client is allowed to initiate a database
+	    update, according to the string "yes" or "no".
+	posting:       <yes | no>
+	    Whether or not the client is allowed to post new entries,
+	    according to the string "yes" or "no".
+	quotes:        <yes | no>
+	    Whether or not quoted arguments are enabled, according to
+	    the string "yes" or "no".
+	current users: <num_users>
+	    The number of users currently connected to the server.
+	max users:     <num_max_users>
+	    The number of users that can concurrently connect to the server.
+	strip ext:	<yes | no>
+	    Whether or not extended data is stripped by the server before
+	    presented to the user.
+	Database entries: <num_db_entries>
+	    The total number of entries in the database.
+	Database entries by category:
+	    This field is followed by a list of catgories and the number
+	    of entries in that category. Each entry is of the following
+	    format:
+
+		<white space>catgory: <num_db_entries>
+
+	    The list of entries is terminated by the first line that does
+	    not begin with white space.
+
+	Pending file transmissions:
+	    This field is followed by a list of sites that are fed new
+	    database entries at periodic intervals, and the number of
+	    entries that have yet to be transmitted to that site.
+	    Each entry is of the following format:
+
+		<white space>site: <num_db_entries>
+
+	    The list of entries is terminated by the first line that does
+	    not begin with white space.
+
+	This list may grow as needed, so clients must expect possible
+	unrecognizable data. Also, additional fields may be added to
+	the currently existing lines, although no existing fields will
+	be removed or change position.
+	
+
+Server version:
+---------------
+Client command:
+-> ver
+
+Server response:
+<- code servername version copyright
+	or
+<- code Version information follows
+
+    code:
+	200	Version information.
+	211	OK, version information follows (until terminating marker)
+    version:
+	Server version.  Example: v1.0PL0
+    copyright:
+	Copyright string.  Example: Copyright (c) 1996 Steve Scherf
+
+
+Database update:
+----------------
+Client command:
+-> update
+
+Server response:
+<- code Updating the database.
+	or
+<- code Permission denied.
+	or
+<- code Unable to update the database.
+
+    code:
+	200 Updating the database.
+	401 Permission denied.
+	402 Unable to update the database.
+
+
+Server users:
+-------------
+Client command:
+-> whom
+
+Server response:
+<- code User list follows
+
+    code:
+	210	OK, user list follows (until terminating marker)
+	401	No user information available.
+
+
+Client sign-off:
+----------------
+Client command:
+-> quit
+
+Server response:
+<- code hostname closing connection.  Goodbye.
+
+    code:
+	230	OK, goodbye.
+    hostname:
+	Server host name.  Example: xyz.fubar.com
+
+
+General errors:
+---------------
+
+Server response:
+<- code error
+    code:
+	402	Server error.
+	408	CGI environment error.
+	500	Command syntax error, command unknown, command unimplemented.
+	530	Server error, server timeout.
+
+
+Reserved errors:
+----------------
+
+The following error codes are reserved, and will never be returned as a
+response to a CDDB protocol command. They are intended to be used internally
+by clients that have a need for generating pseudo-responses.
+
+	600-699
+
+
+CDDB Protocol Level 2:
+----------------------
+
+In all respects, protocol level 2 is the same as level 1, with the exceptions
+listed below.
+
+Arguments to commands may be surrounded by double quotes. All characters
+within the quotes, including white space, are included in the argument. All
+white space is replaced by the `_' (2Dh) character by the server. White space
+is defined as ` ' (20h) and `^I' (control-I, or 09h).
+
+Arguments containing quotes that should not be interpreted with the special
+meaning described above should be escaped with a preceding backslash character,
+or '\' (5Ch). If an actual backslash appears in an argument, it should be
+escaped with a preceding backslash. In both cases, the preceding backslash
+will be removed from the input before being interpreted.
+
+
+CDDB Protocol Level 3:
+----------------------
+
+Protocol level 3 is the same as level 2, with the exception listed below.
+
+The output of the "sites" command has changed to meet the following
+description:
+
+    The data format is as follows:
+	site protocol port address latitude longitude description
+
+    The fields are as follows:
+	site:
+	    The Internet address of the remote site.
+	protocol:
+	    The transfer protocol used to access the site.
+	port:
+	    The port at which the server resides on that site.
+	address:
+	    Any additional addressing information needed to access the
+	    server. For example, for HTTP protocol servers, this would be
+	    the path to the CDDB server CGI script. This field will be
+	    "-" if no additional addressing information is needed.
+	latitude:
+	    The latitude of the server site. The format is as follows:
+		CDDD.MM
+	    Where "C" is the compass direction (N, S), "DDD" is the
+	    degrees, and "MM" is the minutes.
+	longitude:
+	    The longitude of the server site. Format is as above, except
+	    the compass direction must be one of (E, W).
+	description:
+	    A short description of the geographical location of the site.
+
+    Example:
+	cddb.moonsoft.com cddbp 888 - N037.23 W122.01 Fremont, CA USA
+	cddb.moonsoft.com http 80 /~cddb/cddb.cgi N037.23 W122.01 Fremont,CA USA
+
+Note that a site may appear once for each type of protocol it supports for
+accessing the server.
+
+
+Addendum A: Proper use of CDDBP:
+--------------------------------
+
+There are a few guidelines that must be followed in order to make proper use
+of CDDBP:
+
+- When handshaking with the server via the "cddb hello" command, the client
+  must specify its own name and version, not that of some other client (such
+  as xmcd). Also, the "username" and "hostname" must be that of the actual
+  user running the program, not some hardwired value.
+
+- Before performing a "cddb read", the client program MUST perform a
+  "cddb query". Failure to do so may result in the client program receiving
+  incorrect CDDB data from the server. Also, without performing a query, the
+  client program will not benefit from close matches in the event of the
+  lack of an exact match in the database.
+
+- For accounting purposes, it is best if client programs only perform a single
+  "cddb query" for a particular disc before performing a "cddb read" for that
+  disc.
+
+
+Addendum B: CDDBP under HTTP:
+-----------------------------
+
+Accessing a server as a CGI script is done in much the same way as through
+direct interaction. The command set is identical, though the method of
+communication is through CDDBP commands encapsulated in the HTTP protocol.
+The only limitation is that a single command may be executed per connection,
+since HTTP is not truly interactive. For the server to be accessed in this
+way, it must reside on the target host at a known URL which is accessible by
+the host HTTP server. The client program must connect to the HTTP server on
+the target host and issue an HTTP command with the appropriate CDDBP command
+encapsulated within.
+
+Commands may be submitted to servers in CGI mode using either the "GET" or
+"POST" HTTP commands. Both methods are supported, and there is no real
+difference between how both are to be used other than the syntactical
+difference between the two methods. The "POST" method may provide the ability
+to issue longer commands, though, depending on the architecture of the system
+on which the server resides.
+
+The server command must be sent as part of the "Request-URI" in the case
+of the "GET" method, and as the "Entity-Body" in the case of the "POST"
+method. In both cases, the command must be of the following form:
+
+cmd=server+command&hello=joe+my.host.com+clientname+version&proto=1
+
+Where the text following the "cmd=" represents the CDDBP command to be
+executed, the text following the "hello=" represents the arguments to
+the "cddb hello" command that is implied by this operation, and the
+text following the "proto=" represents the argument to the "proto" command
+that is implied by this operation.
+
+The "+" characters in the input represent spaces, and will be translated
+by the server before performing the request. Special characters may be
+represented by the sequence "%XX" where "XX" is a two-digit hex number
+corresponding to the ASCII (ISO-8859-1) sequence of that character. The
+"&" characters denote separations between the command, hello and proto
+arguments. Newlines and carriage returns must not appear anywhere in the
+string except at the end.
+
+All CDDBP commands are supported under HTTP, except for "cddb hello",
+"cddb write", "proto" and "quit".
+
+For example, should user "joe" on system "my.host.com" be running xmcd 2.1,
+a read request for his currenly playing CD might look like this:
+
+cmd=cddb+read+rock+12345678&hello=joe+my.host.com+xmcd+2.1&proto=1
+
+The server will perform the implied "proto" and "cddb hello" commands,
+and then perform the requested "cddb read" command.
+
+Server response to the command is encapsulated in the HTTP server response,
+and appears in the "Entity-Body" exactly as it would appear using the CDDBP
+protocol. Note that the HTTP response "Entity-Header" is not guaranteed to
+contain a "Content-Length" field, so clients should be prepared to accept
+variable length input. This is no different from operation under CDDBP. The
+header will always contain a Mime "Content-Type" field which describes the
+body of data as "text/plain".
+
+For more detailed information on HTTP and Mime, see RFC 1945 and RFC 1521.
+
+
+APPENDIX D - OFFICIAL XMCD/CDDB SOFTWARE DISTRIBUTION SITES
+-----------------------------------------------------------
+
+All xmcd software distribution is via the xmcd web page:
+
+	http://sunsite.unc.edu/~cddb/xmcd/
+
+All CDDB-related software and archive distribution is via the
+CDDB server web page (under "Software and Stuff"):
+
+	http://www.cddb.com/
+
+

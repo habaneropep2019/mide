@@ -1,0 +1,1691 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-18 02:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: LinuxKorea Co. <kde@linuxkorea.co.kr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: main.cpp:219 main.cpp:232 main.cpp:246 main.cpp:264 main.cpp:279
+msgid "KRN-Missing Configuration info"
+msgstr "KRN - 설정 정보가 빠져 있음"
+
+#: main.cpp:220
+msgid "Please enter your email adress"
+msgstr "email 주소를 입력하십시오"
+
+#: main.cpp:233
+msgid "Please enter your real name"
+msgstr "실제 이름을 입력하십시오"
+
+#: main.cpp:247
+msgid "Please enter your organization's name"
+msgstr "소속 기관명을 입력하십시오"
+
+#: main.cpp:265
+msgid "Please enter your NNTP server name"
+msgstr "NNTP 서버 이름을 입력하십시오"
+
+#: main.cpp:280
+msgid "Please enter your SMTP server name"
+msgstr "SMTP 서버 이름을 입력하십시오"
+
+#: NNTP.cpp:120
+#, c-format
+msgid "Received %.2f Kb"
+msgstr "%.2f Kb 받았습니다"
+
+#: NNTP.cpp:607
+msgid "Getting Article"
+msgstr "기사 가져오는 중"
+
+#: NNTP.cpp:749
+msgid "Article Received"
+msgstr "받은 기사"
+
+#: groupdlg.cpp:130
+msgid "Connect to Server"
+msgstr "서버에 연결 중"
+
+#: groupdlg.cpp:131
+msgid "Disconnect From Server"
+msgstr "서버와의 연결 해제"
+
+#: groupdlg.cpp:132
+msgid "Get Active File"
+msgstr "Active 파일 받기"
+
+#: groupdlg.cpp:134
+msgid "Post Queued Messages"
+msgstr "대기중인 메시지를 기사로 게제"
+
+#: groupdlg.cpp:136
+msgid "Exit"
+msgstr "종료"
+
+#: groupdlg.cpp:139
+msgid "KRN - Group List"
+msgstr "KRN - 그룹 목록"
+
+#: groupdlg.cpp:142 groupdlg.cpp:148
+msgid "Get Subjects"
+msgstr "제목 받기"
+
+#: groupdlg.cpp:143 groupdlg.cpp:149
+msgid "Get Articles"
+msgstr "기사 받기"
+
+#: groupdlg.cpp:144 groupdlg.cpp:152 groupdlg.cpp:160
+msgid "Catchup"
+msgstr ""
+
+#: groupdlg.cpp:150 groupdlg.cpp:158
+msgid "(un)Subscribe"
+msgstr "구독(안)하기"
+
+#: artdlg.cpp:158 groupdlg.cpp:151
+msgid "Untag"
+msgstr "Untag"
+
+#: artdlg.cpp:167 findArtDlg.cpp:65 groupdlg.cpp:157
+msgid "Find"
+msgstr ""
+
+#: artdlg.cpp:178 groupdlg.cpp:159
+msgid "(Un)Tag"
+msgstr "(Un)Tag"
+
+#: artdlg.cpp:171 artdlg.cpp:228 groupdlg.cpp:162 groupdlg.cpp:214
+msgid "Post New Article"
+msgstr "새로운 기사 쓰기"
+
+#: groupdlg.cpp:163
+msgid "Post All Queued Articles"
+msgstr "대기중인 모든 기사 게제"
+
+#: groupdlg.cpp:165
+msgid "&Subscribed"
+msgstr "구독(&S)"
+
+#: artdlg.cpp:212 groupdlg.cpp:166
+msgid "&Tagged"
+msgstr "꼬리표(&T)"
+
+#: groupdlg.cpp:171
+msgid "Identity..."
+msgstr "사용자정보.."
+
+#: groupdlg.cpp:172
+msgid "NNTP Options..."
+msgstr "NNTP 선택사항..."
+
+#: groupdlg.cpp:173
+msgid "Expire Options..."
+msgstr "기사 보존 옵션..."
+
+#: groupdlg.cpp:174
+msgid "Printing Options..."
+msgstr "인쇄 선택사항..."
+
+#: groupdlg.cpp:181
+msgid "About Krn..."
+msgstr "Krn 정보"
+
+#: groupdlg.cpp:193
+msgid "&Newsgroup"
+msgstr "뉴스그룹(&N)"
+
+#: groupdlg.cpp:200
+msgid "Connect to server"
+msgstr "서버에 연결"
+
+#: groupdlg.cpp:202
+msgid "Disconnect from server"
+msgstr "서버 연결 해제"
+
+#: groupdlg.cpp:205
+msgid "Get list of active groups"
+msgstr "활성화된 그룹의 목록 받기"
+
+#: groupdlg.cpp:206
+msgid "Find group"
+msgstr "그룹 찾기"
+
+#: groupdlg.cpp:209
+#, fuzzy
+msgid "(Un)Subscribe"
+msgstr "구독(안)하기"
+
+#: groupdlg.cpp:212
+msgid "Check for Unread Articles"
+msgstr "읽지 않은 기사 검사"
+
+#: groupdlg.cpp:365 groupdlg.cpp:587 groupdlg.cpp:929
+msgid "All Newsgroups."
+msgstr "모든 뉴스그룹"
+
+#: groupdlg.cpp:475 groupdlg.cpp:569
+msgid "Subscribed Newsgroups."
+msgstr "뉴스그룹 구독"
+
+#: groupdlg.cpp:524
+msgid "Disconnected"
+msgstr "연결해제"
+
+#: groupdlg.cpp:531
+msgid "Connecting to server"
+msgstr "서버에 연결"
+
+#: groupdlg.cpp:536
+msgid "Connected to server - Posting not allowed"
+msgstr "서버에 연결됨 - 글올리기 허용되지 않음"
+
+#: groupdlg.cpp:538
+msgid "Connected to server - Posting allowed"
+msgstr "서버에 연결됨 - 글올리기 허용됨"
+
+#: groupdlg.cpp:544
+msgid "Can't connect to server"
+msgstr "서버에 연결할 수 없음"
+
+#: groupdlg.cpp:546
+msgid "Connection to server failed"
+msgstr "서버에 연결 실패"
+
+#: groupdlg.cpp:555
+msgid "Authentication Failed"
+msgstr "인증 실패"
+
+#: groupdlg.cpp:558
+msgid "Connection to server failed: Authentication problem"
+msgstr "서버 접속 실패: 인증 문제"
+
+#: groupdlg.cpp:607
+msgid "Krn-Question"
+msgstr "Krn-질문"
+
+#: groupdlg.cpp:608
+msgid ""
+"The operation you requested needs a connection to the News server\n"
+"Should I attempt one?"
+msgstr ""
+"뉴스 서버에 접속해야지만 요청하신 작업을 할 수 있습니다.\n"
+"접속하시겠습니까?"
+
+#: groupdlg.cpp:872
+msgid ""
+"You don't have an active groups list.\n"
+" get it from server?"
+msgstr ""
+"활성화된 그룹 목록이 없습니다.\n"
+" 서버에서 받으시겠습니까?"
+
+#: groupdlg.cpp:888
+msgid "Listing active newsgroups"
+msgstr "활성화된 뉴스그룹 목록"
+
+#: groupdlg.cpp:903
+msgid "KRN - Find a Newsgroup"
+msgstr "KRN - 뉴스그룹 찾기"
+
+#: groupdlg.cpp:904
+msgid "Enter the name of the Newsgroup"
+msgstr "뉴스그룹 이름 입력"
+
+#: groupdlg.cpp:988
+msgid "Krn - Message"
+msgstr "Krn - 메시지"
+
+#: groupdlg.cpp:989
+msgid "I can't find the group you want!"
+msgstr "찾는 그룹이 없습니다"
+
+#: groupdlg.cpp:1082
+msgid "Getting messages in "
+msgstr ""
+
+#: groupdlg.cpp:1095
+msgid "Getting list of messages in "
+msgstr ""
+
+#: artdlg.cpp:151 artdlg.cpp:166
+msgid "Download"
+msgstr "다운로드"
+
+#: artdlg.cpp:153 artdlg.cpp:275
+msgid "Mark Read"
+msgstr "읽은 기사 표시"
+
+#: artdlg.cpp:154
+msgid "Mark Unread"
+msgstr "읽지 않은 기사 표시"
+
+#: artdlg.cpp:157 artdlg.cpp:177
+msgid "Decode"
+msgstr "암호해독"
+
+#: artdlg.cpp:159 artdlg.cpp:179
+msgid "Don't expire"
+msgstr "경과 처리 않기"
+
+#: artdlg.cpp:168
+msgid "Lookup in Altavista"
+msgstr "알타비스타에서 찾기"
+
+#: artdlg.cpp:172 artdlg.cpp:259
+msgid "Reply by Mail"
+msgstr "전자우편으로 답장"
+
+#: artdlg.cpp:173
+msgid "Post Followup"
+msgstr "동보 기사 게제"
+
+#: artdlg.cpp:174
+msgid "Post & Reply"
+msgstr "게제 & 답장"
+
+#: artdlg.cpp:175 artdlg.cpp:265
+msgid "Forward"
+msgstr ""
+
+#: artdlg.cpp:181 artdlg.cpp:249
+msgid "Tagged"
+msgstr "꼬리표"
+
+#: artdlg.cpp:192
+msgid "Show Only Unread Messages"
+msgstr "읽은 않은 메시지만 보이기"
+
+#: artdlg.cpp:194
+msgid "Show Only Cached Messages"
+msgstr "캐쉬된 메시지만 보이기"
+
+#: artdlg.cpp:196
+msgid "Show Locked Messages"
+msgstr "잠겨진 메시지 보이기"
+
+#: artdlg.cpp:198
+msgid "Expunge"
+msgstr "삭제"
+
+#: artdlg.cpp:199
+msgid "Appearance..."
+msgstr "모양..."
+
+#: artdlg.cpp:200
+msgid "Sorting..."
+msgstr "분류중..."
+
+#: artdlg.cpp:204
+msgid "Edit Rules"
+msgstr "규칙 편집"
+
+#: artdlg.cpp:205
+msgid "Update"
+msgstr "갱신"
+
+#: artdlg.cpp:214
+msgid "&Scoring"
+msgstr ""
+
+#: artdlg.cpp:221
+msgid "Previous Message"
+msgstr "이전 메시지"
+
+#: artdlg.cpp:223
+msgid "Next Message"
+msgstr "다음 메시지"
+
+#: artdlg.cpp:225
+msgid "Find Article"
+msgstr "기사 찾기"
+
+#: artdlg.cpp:230
+msgid "Get Article List"
+msgstr "기사 목록 받기"
+
+#: artdlg.cpp:232
+msgid "Refresh Display"
+msgstr "새로 고침"
+
+#: artdlg.cpp:248
+msgid "Current"
+msgstr ""
+
+#: artdlg.cpp:250 fontsDlg.cpp:52
+msgid "All"
+msgstr "전체 머릿말"
+
+#: artdlg.cpp:251
+#, fuzzy
+msgid "Read"
+msgstr "읽음:"
+
+#: artdlg.cpp:252
+#, fuzzy
+msgid "UnRead"
+msgstr "읽지않음:"
+
+#: artdlg.cpp:255
+msgid "Save Article"
+msgstr "기사 저장"
+
+#: artdlg.cpp:257
+msgid "Print Article"
+msgstr "기사 인쇄"
+
+#: artdlg.cpp:261
+msgid "Post a Followup"
+msgstr "동보기사 게제"
+
+#: artdlg.cpp:263
+msgid "Post & Mail"
+msgstr "게제 & 전자우편"
+
+#: artdlg.cpp:269
+msgid "Tag Article"
+msgstr "기사 표시"
+
+#: artdlg.cpp:271
+msgid "Lock (keep in cache)"
+msgstr "잠금 (캐쉬에 보관)"
+
+#: artdlg.cpp:273
+msgid "Decode Article"
+msgstr "기사 해독"
+
+#: artdlg.cpp:277
+msgid "Mark UnRead"
+msgstr "읽지 않은 기사 표시"
+
+#: artdlg.cpp:299 sortDlg.cpp:34
+msgid "Sender"
+msgstr "보낸이"
+
+#: artdlg.cpp:300 sortDlg.cpp:35
+#, fuzzy
+msgid "Date"
+msgstr "갱신"
+
+#: artdlg.cpp:301 sortDlg.cpp:36
+msgid "Lines"
+msgstr "행"
+
+#: artdlg.cpp:302 sortDlg.cpp:33
+msgid "Score"
+msgstr "점수"
+
+#: artdlg.cpp:303 sortDlg.cpp:32
+msgid "Subject"
+msgstr "제목"
+
+#: artdlg.cpp:469
+msgid "Threading..."
+msgstr "쓰레딩..."
+
+#: artdlg.cpp:478
+msgid "Showing Article List"
+msgstr "기사 목록 보기"
+
+#: artdlg.cpp:1323
+msgid "KRN - Existing File"
+msgstr "KRN - 존재하는 파일"
+
+#: artdlg.cpp:1324
+msgid "The File you selected already exists"
+msgstr "선택한 파일이 이미 존재합니다"
+
+#: artdlg.cpp:1330
+msgid "OverWrite"
+msgstr "덮어쓰기"
+
+#: artdlg.cpp:1332
+msgid "Append"
+msgstr "덧붙이기"
+
+#: artdlg.cpp:1367 artdlg.cpp:1432
+msgid ""
+"From: Krn\n"
+"To: You\n"
+"\n"
+"Error getting article.\n"
+"Server said:\n"
+msgstr ""
+"발신: Krn\n"
+"수신: 귀하\n"
+"\n"
+"기사 받아 오기 오류\n"
+"서버 응답:\n"
+
+#: artdlg.cpp:1541
+msgid "Getting Article List"
+msgstr "기사목록 받기"
+
+#: identDlg.cpp:41
+msgid "KRN-Identity Configuration"
+msgstr "KRN 개인정보 구성"
+
+#: identDlg.cpp:50
+msgid "Here you should enter your personal information"
+msgstr "개인 정보를 입력하셔야 합니다."
+
+#: identDlg.cpp:52
+msgid "You should know what these are!"
+msgstr "이것이 무엇인지에 대해서 알 필요가 있습니다."
+
+#: identDlg.cpp:61
+msgid "Real Name"
+msgstr "실제 이름"
+
+#: identDlg.cpp:67
+msgid "E-mail Address"
+msgstr "전자우편 주소"
+
+#: identDlg.cpp:73
+msgid "Organization"
+msgstr "소속단체"
+
+#: NNTPConfigDlg.cpp:30
+msgid "KRN-NNTP configuration"
+msgstr "KRN-NNTP 구성"
+
+#: NNTPConfigDlg.cpp:35
+msgid "Servers"
+msgstr "서버"
+
+#: NNTPConfigDlg.cpp:37
+msgid "SMTP server"
+msgstr "SMTP 서버"
+
+#: NNTPConfigDlg.cpp:42
+msgid "NNTP Server"
+msgstr "NNTP 서버"
+
+#: NNTPConfigDlg.cpp:67
+msgid "Connect on Startup"
+msgstr "시작할 때 연결"
+
+#: NNTPConfigDlg.cpp:71
+msgid "Connect without asking"
+msgstr "묻지 않고 접속"
+
+#: NNTPConfigDlg.cpp:75
+msgid "Authenticate"
+msgstr "인증"
+
+#: NNTPConfigDlg.cpp:80
+msgid "User Name"
+msgstr "사용자 이름"
+
+#: NNTPConfigDlg.cpp:84
+msgid "Password"
+msgstr "암호"
+
+#: NNTPConfigDlg.cpp:91
+msgid "Ask before downloading more than"
+msgstr ""
+
+#: NNTPConfigDlg.cpp:94
+#, fuzzy
+msgid "articles"
+msgstr "기사 표시"
+
+#: aboutDlg.cpp:28
+msgid "About KRN"
+msgstr "KRN 정보"
+
+#: aboutDlg.cpp:39
+msgid "Part of the KDE project."
+msgstr "KDE 프로젝트의 일부분"
+
+#: aboutDlg.cpp:42
+msgid "Credits & Thanks"
+msgstr "신용 및 감사"
+
+#: aboutDlg.cpp:66
+msgid "And Many thanks to:"
+msgstr "다음 분에게 감사를 드립니다:"
+
+#: aboutDlg.cpp:71
+msgid "All KDE developers"
+msgstr ""
+
+#: aboutDlg.cpp:73
+msgid "Chuck, for helping in time of need"
+msgstr ""
+
+#: aboutDlg.cpp:74
+#, fuzzy
+msgid "All testers"
+msgstr "모든 뉴스그룹"
+
+#: fontsDlg.cpp:39
+msgid "Message Display Settings"
+msgstr "메시지 보기 설정"
+
+#: fontsDlg.cpp:46
+msgid "Header Style"
+msgstr "머릿말 형식"
+
+#: fontsDlg.cpp:48
+msgid "Fancy"
+msgstr "꾸밈 머릿말"
+
+#: fontsDlg.cpp:49
+msgid "Brief"
+msgstr "간략한 머릿말"
+
+#: fontsDlg.cpp:50
+msgid "Standard"
+msgstr "표준 머릿말"
+
+#: fontsDlg.cpp:51
+msgid "Long"
+msgstr "자세한 머릿말"
+
+#: fontsDlg.cpp:56
+msgid "Attachment Style"
+msgstr "첨부 형식"
+
+#: fontsDlg.cpp:58
+msgid "Iconic"
+msgstr "아이콘으로"
+
+#: fontsDlg.cpp:59
+msgid "Smart"
+msgstr "멋진 첨부"
+
+#: fontsDlg.cpp:60
+msgid "Inline"
+msgstr "일렬 첨부"
+
+#: fontsDlg.cpp:67
+msgid "Font Size:"
+msgstr "글꼴 크기:"
+
+#: fontsDlg.cpp:70
+#, fuzzy
+msgid "Small"
+msgstr "멋진 첨부"
+
+#: fontsDlg.cpp:71
+msgid "Normal"
+msgstr ""
+
+#: fontsDlg.cpp:72
+msgid "Large"
+msgstr ""
+
+#: fontsDlg.cpp:73
+msgid "Huge"
+msgstr "크게"
+
+#: fontsDlg.cpp:78
+msgid "Standard Font"
+msgstr "표준 글꼴"
+
+#: fontsDlg.cpp:84
+#, fuzzy
+msgid "Standard Font Test"
+msgstr "표준 글꼴"
+
+#: fontsDlg.cpp:86
+msgid "Fixed Font"
+msgstr "고정폭 글꼴"
+
+#: fontsDlg.cpp:91
+#, fuzzy
+msgid "Fixed Font Test"
+msgstr "고정폭 글꼴"
+
+#: fontsDlg.cpp:94
+msgid "Background Color"
+msgstr "배경 색"
+
+#: fontsDlg.cpp:97
+msgid "Foreground Color"
+msgstr "전면 색"
+
+#: fontsDlg.cpp:100
+msgid "Link Color"
+msgstr "연결 색"
+
+#: fontsDlg.cpp:103
+msgid "Followed Color"
+msgstr "방문한 연결 색"
+
+#: fontsDlg.cpp:107
+msgid "Use only one window"
+msgstr "창 하나만 사용"
+
+#: fontsDlg.cpp:109
+msgid "Split window vertically"
+msgstr "창 수직으로 나눔"
+
+#: kmmessage.cpp:1340
+msgid "On %D, you wrote:"
+msgstr ""
+
+#: kmmessage.cpp:1341
+msgid "On %D, %F wrote:"
+msgstr ""
+
+#: kmmessage.cpp:1342
+#, fuzzy
+msgid "Forwarded Message"
+msgstr "잠겨진 메시지 보이기"
+
+#: kmcomposewin.cpp:127
+msgid "KMail Composer"
+msgstr ""
+
+#: kmcomposewin.cpp:138
+msgid "F"
+msgstr ""
+
+#: kmcomposewin.cpp:139
+#, fuzzy
+msgid "Name"
+msgstr "실제 이름"
+
+#: kmcomposewin.cpp:140
+msgid "Size"
+msgstr ""
+
+#: kmcomposewin.cpp:141
+msgid "Encoding"
+msgstr ""
+
+#: kmcomposewin.cpp:142
+msgid "Type"
+msgstr ""
+
+#: kmcomposewin.cpp:343
+msgid "&From:"
+msgstr ""
+
+#: kmcomposewin.cpp:345
+msgid "&Reply to:"
+msgstr ""
+
+#: kmcomposewin.cpp:347
+msgid "&To:"
+msgstr ""
+
+#: kmcomposewin.cpp:349
+msgid "&Cc:"
+msgstr ""
+
+#: kmcomposewin.cpp:351
+msgid "&Bcc:"
+msgstr ""
+
+#: kmcomposewin.cpp:353
+#, fuzzy
+msgid "&Subject:"
+msgstr "제목"
+
+#: kmcomposewin.cpp:356
+#, fuzzy
+msgid "&Newsgroups:"
+msgstr "뉴스그룹(&N)"
+
+#: kmcomposewin.cpp:358
+#, fuzzy
+msgid "&Followup-To:"
+msgstr "동보 기사 게제"
+
+#: kmcomposewin.cpp:430
+#, fuzzy
+msgid "&Send"
+msgstr "보낸이"
+
+#: kmcomposewin.cpp:433
+#, fuzzy
+msgid "S&end later"
+msgstr "보낸이"
+
+#: kmcomposewin.cpp:435
+msgid "S&end now"
+msgstr ""
+
+#: kmcomposewin.cpp:437
+msgid "&Insert File..."
+msgstr ""
+
+#: kmcomposewin.cpp:441
+msgid "&Addressbook..."
+msgstr ""
+
+#: kmcomposewin.cpp:446
+msgid "&New Composer..."
+msgstr ""
+
+#: kmcomposewin.cpp:449
+msgid "New Mailreader"
+msgstr ""
+
+#: kmcomposewin.cpp:469 kmcomposewin.cpp:693 kmcomposewin.cpp:1836
+#, fuzzy
+msgid "Mark all"
+msgstr "읽은 기사 표시"
+
+#: kmcomposewin.cpp:472 kmcomposewin.cpp:695
+msgid "Find..."
+msgstr ""
+
+#: kmcomposewin.cpp:474 kmcomposewin.cpp:696
+#, fuzzy
+msgid "Replace..."
+msgstr "모양..."
+
+#: kmcomposewin.cpp:477
+msgid "&Spellcheck..."
+msgstr ""
+
+#: kmcomposewin.cpp:484
+msgid "&Urgent"
+msgstr ""
+
+#: kmcomposewin.cpp:486
+msgid "&Confirm delivery"
+msgstr ""
+
+#: kmcomposewin.cpp:488
+msgid "&Confirm read"
+msgstr ""
+
+#: kmcomposewin.cpp:491
+msgid "&Spellchecker..."
+msgstr ""
+
+#: kmcomposewin.cpp:494
+msgid "&Charsets..."
+msgstr ""
+
+#: kmcomposewin.cpp:507
+#, fuzzy
+msgid "&All Fields"
+msgstr "필드에서:"
+
+#: kmcomposewin.cpp:509
+msgid "&From"
+msgstr ""
+
+#: kmcomposewin.cpp:510
+msgid "&Reply to"
+msgstr ""
+
+#: kmcomposewin.cpp:511
+msgid "&To"
+msgstr ""
+
+#: kmcomposewin.cpp:512
+msgid "&Cc"
+msgstr ""
+
+#: kmcomposewin.cpp:513
+msgid "&Bcc"
+msgstr ""
+
+#: kmcomposewin.cpp:514
+#, fuzzy
+msgid "&Subject"
+msgstr "제목"
+
+#: kmcomposewin.cpp:516
+#, fuzzy
+msgid "&Newsgroups"
+msgstr "뉴스그룹(&N)"
+
+#: kmcomposewin.cpp:517
+#, fuzzy
+msgid "&Followup-To"
+msgstr "동보 기사 게제"
+
+#: kmcomposewin.cpp:523
+msgid "Append S&ignature"
+msgstr ""
+
+#: kmcomposewin.cpp:525
+msgid "&Insert File"
+msgstr ""
+
+#: kmcomposewin.cpp:527
+msgid "Insert My &Public Key"
+msgstr ""
+
+#: kmcomposewin.cpp:532
+msgid "&Attach..."
+msgstr ""
+
+#: kmcomposewin.cpp:535
+msgid "&Save..."
+msgstr ""
+
+#: kmcomposewin.cpp:536
+msgid "Pr&operties..."
+msgstr ""
+
+#: kmcomposewin.cpp:538
+msgid "&Attach"
+msgstr ""
+
+#: kmcomposewin.cpp:558
+#, fuzzy
+msgid "Send message"
+msgstr "Krn - 메시지"
+
+#: kmcomposewin.cpp:563
+msgid "Compose new message"
+msgstr ""
+
+#: kmcomposewin.cpp:568
+msgid "Save message to file"
+msgstr ""
+
+#: kmcomposewin.cpp:573
+#, fuzzy
+msgid "Print message"
+msgstr "Krn - 메시지"
+
+#: kmcomposewin.cpp:582
+msgid "Cut selection"
+msgstr ""
+
+#: kmcomposewin.cpp:585
+msgid "Copy selection"
+msgstr ""
+
+#: kmcomposewin.cpp:588
+msgid "Paste clipboard contents"
+msgstr ""
+
+#: kmcomposewin.cpp:593
+#, fuzzy
+msgid "Attach file"
+msgstr "첨부 형식"
+
+#: kmcomposewin.cpp:597
+msgid "Open addressbook..."
+msgstr ""
+
+#: kmcomposewin.cpp:604
+#, fuzzy
+msgid "sign message"
+msgstr "Krn - 메시지"
+
+#: kmcomposewin.cpp:609
+#, fuzzy
+msgid "encrypt message"
+msgstr "다음 메시지"
+
+#: kmcomposewin.cpp:626 kmcomposewin.cpp:642
+msgid "Column"
+msgstr ""
+
+#: kmcomposewin.cpp:627 kmcomposewin.cpp:640
+#, fuzzy
+msgid "Line"
+msgstr "행"
+
+#: kmcomposewin.cpp:908
+msgid "KMail Confirm"
+msgstr ""
+
+#: kmcomposewin.cpp:909
+msgid ""
+"Close and discard\n"
+"edited message?"
+msgstr ""
+
+#: kmcomposewin.cpp:1182
+#, fuzzy
+msgid "Attach File"
+msgstr "첨부 형식"
+
+#: kmcomposewin.cpp:1204
+msgid "Include File"
+msgstr ""
+
+#: kmcomposewin.cpp:1239 kmreaderwin.cpp:737
+msgid "View..."
+msgstr ""
+
+#: kmcomposewin.cpp:1240
+msgid "Save..."
+msgstr ""
+
+#: kmcomposewin.cpp:1241 kmreaderwin.cpp:740
+#, fuzzy
+msgid "Properties..."
+msgstr "분류중..."
+
+#: kmcomposewin.cpp:1245
+msgid "Attach..."
+msgstr ""
+
+#: kmcomposewin.cpp:1287 kmreaderwin.cpp:782
+#, fuzzy
+msgid "View Attachment: "
+msgstr "첨부 형식"
+
+#: kmcomposewin.cpp:1458 kpgp.cpp:546
+msgid ""
+"Sorry, but this feature\n"
+"is still missing"
+msgstr ""
+
+#: kmcomposewin.cpp:1466
+msgid "unnamed"
+msgstr ""
+
+#: kmcomposewin.cpp:1481
+msgid "To:"
+msgstr ""
+
+#: kmcomposewin.cpp:1485
+#, fuzzy
+msgid "Subject:"
+msgstr "제목"
+
+#: kmcomposewin.cpp:1488
+msgid "Date:"
+msgstr ""
+
+#: kmcomposewin.cpp:1565
+msgid "Choose Signature File"
+msgstr ""
+
+#: kmcomposewin.cpp:2018
+msgid "Spellcheck - KMail"
+msgstr ""
+
+#: kmcomposewin.cpp:2044
+msgid ""
+"Error starting KSpell. Please make sure you have ISpell properly configured."
+msgstr ""
+
+#: kmsender.cpp:116
+msgid ""
+"Please specify a send\n"
+"method in the settings\n"
+"and try again."
+msgstr ""
+
+#: kmsender.cpp:122
+msgid ""
+"Please set the required fields in the\n"
+"identity settings:\n"
+"user-name and email-address"
+msgstr ""
+
+#: kmsender.cpp:147
+msgid "You must specify a receiver"
+msgstr ""
+
+#: kmsender.cpp:158
+msgid "Cannot add message to outbox folder"
+msgstr ""
+
+#: kmsender.cpp:189
+msgid "Sending still in progress"
+msgstr ""
+
+#: kmsender.cpp:245
+msgid "Initiating sender process..."
+msgstr ""
+
+#: kmsender.cpp:261
+msgid "Sending message: "
+msgstr ""
+
+#: kmsender.cpp:289
+msgid "Done sending messages."
+msgstr ""
+
+#: kmsender.cpp:308
+msgid "Sending failed:"
+msgstr ""
+
+#: kmsender.cpp:461
+msgid ""
+"Please specify a mailer program\n"
+"in the settings."
+msgstr ""
+
+#: kmsender.cpp:501
+#, c-format
+msgid "Failed to execute mailer program %s"
+msgstr ""
+
+#: kmsender.cpp:589
+#, fuzzy
+msgid "connecting to server"
+msgstr "서버에 연결"
+
+#: kmsender.cpp:594
+#, c-format
+msgid ""
+"Cannot open SMTP connection to\n"
+"host %s for sending:\n"
+"%s"
+msgstr ""
+
+#: kmsender.cpp:623
+msgid "Cannot close SMTP connection."
+msgstr ""
+
+#: kmsender.cpp:673
+msgid "transmitting message"
+msgstr ""
+
+#: kmsender.cpp:707
+msgid "network error"
+msgstr ""
+
+#: kmsender.cpp:709
+#, c-format
+msgid ""
+"a SMTP error occured.\n"
+"Command: %s\n"
+"Response: %s\n"
+"Return code: %d"
+msgstr ""
+
+#: kmsender.cpp:724
+#, c-format
+msgid "Sending SMTP command: %s"
+msgstr ""
+
+#: findArtDlg.cpp:22
+msgid "KRN - Article Searcher"
+msgstr "KRN - 기사 검색기"
+
+#: findArtDlg.cpp:29
+msgid "Find Articles With:"
+msgstr "다음으로 기사 검색:"
+
+#: findArtDlg.cpp:34 rulesDlg.cpp:106
+msgid "In Field:"
+msgstr "필드에서:"
+
+#: findArtDlg.cpp:53 rulesDlg.cpp:131
+msgid "Case Sensitive"
+msgstr ""
+
+#: findArtDlg.cpp:56 rulesDlg.cpp:132
+msgid "Wildcard Mode"
+msgstr "와일드카드 모드"
+
+#: findArtDlg.cpp:66 rulesDlg.cpp:144
+#, fuzzy
+msgid "Done"
+msgstr "암호해독"
+
+#: kmidentity.cpp:162
+#, c-format
+msgid ""
+"Failed to execute signature script\n"
+"%s\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:26 kmaddrbook.cpp:162
+msgid "File I/O Error"
+msgstr ""
+
+#: kfileio.cpp:47
+#, c-format
+msgid ""
+"The specified file does not exist:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:54
+#, c-format
+msgid ""
+"This is a directory and not a file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:61
+#, c-format
+msgid ""
+"You do not have read permissions to the file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:72 kmaddrbook.cpp:152
+#, c-format
+msgid ""
+"Could not read file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:75 kmaddrbook.cpp:155
+#, c-format
+msgid ""
+"Could not open file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:78
+#, c-format
+msgid ""
+"Error while reading file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:95
+#, c-format
+msgid "Could only read %u bytes of %u."
+msgstr ""
+
+#: kfileio.cpp:124
+#, c-format
+msgid ""
+"File %s exists.\n"
+"Do you want to replace it ?"
+msgstr ""
+
+#: kfileio.cpp:144
+#, c-format
+msgid ""
+"Failed to make a backup copy of %s.\n"
+"Continue anyway ?"
+msgstr ""
+
+#: kfileio.cpp:156 kfileio.cpp:174
+#, c-format
+msgid ""
+"Could not write to file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:159
+#, c-format
+msgid ""
+"Could not open file for writing:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:163 kmaddrbook.cpp:158
+#, c-format
+msgid ""
+"Error while writing file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:180
+#, c-format
+msgid "Could only write %d bytes of %d."
+msgstr ""
+
+#: kmmsgpartdlg.cpp:41
+msgid "Message Part Properties"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:62
+msgid "Name:"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:73
+msgid "Description:"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:83
+msgid "Encoding:"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:89
+msgid "none (8bit)"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:90
+msgid "base 64"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:91
+msgid "quoted printable"
+msgstr ""
+
+#: kmreaderwin.cpp:320 kmreaderwin.cpp:333 kmreaderwin.cpp:352
+#: kmreaderwin.cpp:373
+msgid "Cc: "
+msgstr ""
+
+#: kmreaderwin.cpp:328 kmreaderwin.cpp:347 kmreaderwin.cpp:368
+msgid "From: "
+msgstr ""
+
+#: kmreaderwin.cpp:330 kmreaderwin.cpp:349 kmreaderwin.cpp:370
+msgid "To: "
+msgstr ""
+
+#: kmreaderwin.cpp:337 kmreaderwin.cpp:358 kmreaderwin.cpp:383
+msgid "References: "
+msgstr ""
+
+#: kmreaderwin.cpp:354 kmreaderwin.cpp:367
+msgid "Date: "
+msgstr ""
+
+#: kmreaderwin.cpp:376
+msgid "Bcc: "
+msgstr ""
+
+#: kmreaderwin.cpp:379
+#, fuzzy
+msgid "Reply to: "
+msgstr "전자우편으로 답장"
+
+#: kmreaderwin.cpp:386
+msgid "Groups: "
+msgstr ""
+
+#: kmreaderwin.cpp:425
+msgid "Encrypted message"
+msgstr ""
+
+#: kmreaderwin.cpp:431
+msgid "Cannot decrypt message:"
+msgstr ""
+
+#: kmreaderwin.cpp:440
+msgid "Message was signed by"
+msgstr ""
+
+#: kmreaderwin.cpp:441
+msgid "Warning: Bad signature from"
+msgstr ""
+
+#: kmreaderwin.cpp:451
+msgid "unknown key ID"
+msgstr ""
+
+#: kmreaderwin.cpp:701
+#, fuzzy
+msgid "Attachment: "
+msgstr "첨부 형식"
+
+#: kmreaderwin.cpp:813
+msgid "Could not create temporary file"
+msgstr ""
+
+#: kmreaderwin.cpp:834
+#, c-format
+msgid "Could not save temporary file %s"
+msgstr ""
+
+#: kmreaderwin.cpp:863
+#, fuzzy
+msgid "Could not save file"
+msgstr "서버에 연결 실패"
+
+#: kpgp.cpp:151
+msgid ""
+"Couldn't find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+
+#: kpgp.cpp:193
+msgid ""
+"Could not find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+
+#: kpgp.cpp:207
+msgid "The pass phrase is missing."
+msgstr ""
+
+#: kpgp.cpp:286 kpgp.cpp:312 kpgp.cpp:325 kpgp.cpp:344 kpgp.cpp:361
+msgid "PGP Warning"
+msgstr ""
+
+#: kpgp.cpp:287
+msgid ""
+"Could not find the public keys for the\n"
+"recipients of this mail.\n"
+"Message will not be encrypted."
+msgstr ""
+
+#: kpgp.cpp:296
+msgid "Could not find the public keys for\n"
+msgstr ""
+
+#: kpgp.cpp:307
+msgid "These persons will not be able to\n"
+msgstr ""
+
+#: kpgp.cpp:309
+msgid "This person will not be able to\n"
+msgstr ""
+
+#: kpgp.cpp:311
+#, fuzzy
+msgid "decrypt the message."
+msgstr "다음 메시지"
+
+#: kpgp.cpp:326
+msgid ""
+"You just entered an invalid passphrase.\n"
+"Do you wan't to try again, continue and\n"
+"leave the message unsigned, or cancel sending the message?"
+msgstr ""
+
+#: kpgp.cpp:331
+msgid "Retry"
+msgstr ""
+
+#: kpgp.cpp:342
+msgid ""
+"Do you wan't to encrypt anyway, leave the\n"
+"message as is, or cancel the message?"
+msgstr ""
+
+#: kpgp.cpp:346
+msgid "Encrypt"
+msgstr ""
+
+#: kpgp.cpp:359
+msgid ""
+"Do you wan't to leave the message as is,\n"
+"or cancel the message?"
+msgstr ""
+
+#: kpgp.cpp:717
+#, fuzzy
+msgid ""
+"Please enter your\n"
+"PGP passphrase"
+msgstr "실제 이름을 입력하십시오"
+
+#: kpgp.cpp:744
+msgid "PGP Security Check"
+msgstr ""
+
+#: kpgp.cpp:765
+#, fuzzy
+msgid "Identity"
+msgstr "사용자정보.."
+
+#: kpgp.cpp:771
+msgid "PGP User Identity:"
+msgstr ""
+
+#: kpgp.cpp:782
+msgid "Store passphrase"
+msgstr ""
+
+#: kpgp.cpp:788
+msgid "Always encrypt to self"
+msgstr ""
+
+#: krnsender.cpp:60
+msgid "This server is read onlyyou can't post here!"
+msgstr "이 서버는 읽기 전용이므로 서버에 게제할 수 없습니다!"
+
+#: kmaddrbookdlg.cpp:20
+msgid "Addressbook"
+msgstr ""
+
+#: kmaddrbookdlg.cpp:95
+msgid "Addressbook Manager"
+msgstr ""
+
+#: kmaddrbookdlg.cpp:178
+msgid "KMail error"
+msgstr ""
+
+#: kmaddrbookdlg.cpp:179
+msgid "Storing addressbook failed"
+msgstr ""
+
+#: kmaddrbook.cpp:25
+msgid "KMail Error"
+msgstr ""
+
+#: kmaddrbook.cpp:26
+msgid "Storing the addressbook failed!\n"
+msgstr ""
+
+#: expireDlg.cpp:22 expireDlg.cpp:27
+msgid "KRN - Expire Settings"
+msgstr "KRN - 기사 보존 설정"
+
+#: expireDlg.cpp:36
+msgid "For how long should we keep things (in days)?"
+msgstr "기사를 얼마동안 보존하시겠습니까?(일 단위)?"
+
+#: expireDlg.cpp:46
+msgid "Read:"
+msgstr "읽음:"
+
+#: expireDlg.cpp:47
+msgid "Unread:"
+msgstr "읽지않음:"
+
+#: expireDlg.cpp:50
+msgid "Article Bodies:"
+msgstr "기사 본문:"
+
+#: expireDlg.cpp:55
+msgid "Article Headers:"
+msgstr "기사 머릿말:"
+
+#: printdlg.cpp:21
+msgid "KRN - Print Settings"
+msgstr "KRN - 인쇄 설정"
+
+#: printdlg.cpp:26
+msgid "KRN - Printing Settings"
+msgstr "KRN - 인쇄 설정"
+
+#: printdlg.cpp:33
+msgid "General"
+msgstr "일반"
+
+#: printdlg.cpp:35
+msgid "Printing System"
+msgstr ""
+
+#: printdlg.cpp:37
+msgid "Use HTML Printing"
+msgstr "HTML 인쇄 사용"
+
+#: printdlg.cpp:40
+msgid "Use Direct Printing"
+msgstr "직접 인쇄 사용"
+
+#: printdlg.cpp:45
+#, fuzzy
+msgid "Direct Printing"
+msgstr "직접 인쇄 사용"
+
+#: printdlg.cpp:48
+msgid "Print using:"
+msgstr "인쇄 명령"
+
+#: printdlg.cpp:52
+msgid "Feed it with:"
+msgstr "공급 용지:"
+
+#: printdlg.cpp:54
+msgid "Postscript"
+msgstr "포스트스크립트"
+
+#: printdlg.cpp:55
+msgid "HTML"
+msgstr "HTML"
+
+#: printdlg.cpp:56
+msgid "Text"
+msgstr "텍스트"
+
+#: rulesDlg.cpp:38
+msgid "KRN - Scoring Rules Editor"
+msgstr ""
+
+#: rulesDlg.cpp:45
+msgid "Global Rules"
+msgstr "전체 규칙"
+
+#: rulesDlg.cpp:47
+msgid "All Rules"
+msgstr "모든 규칙"
+
+#: rulesDlg.cpp:63
+msgid "Active Rules"
+msgstr "규칙 활성화"
+
+#: rulesDlg.cpp:70
+msgid "Rule Editor"
+msgstr "규칙 편집기"
+
+#: rulesDlg.cpp:87
+msgid "Save as"
+msgstr "다른 이름으로 저장"
+
+#: rulesDlg.cpp:101
+msgid "Match Articles With:"
+msgstr "다음과 일치되는 기사:"
+
+#: rulesDlg.cpp:124
+msgid "Weight:"
+msgstr ""
+
+#: rulesDlg.cpp:126
+msgid "Negative"
+msgstr "부정"
+
+#: rulesDlg.cpp:190
+msgid "Rule name:"
+msgstr "규칙 이름:"
+
+#: sortDlg.cpp:23
+msgid "KRN - Header Sorting"
+msgstr "KRN - 머릿말 분류"
+
+#: sortDlg.cpp:37
+msgid "None"
+msgstr ""
+
+#: sortDlg.cpp:39
+msgid "Sort by:"
+msgstr "분류"
+
+#: sortDlg.cpp:56
+msgid "Use Threading"
+msgstr "쓰레딩 사용"
+
+#: charsetsDlg.cpp:27
+#, fuzzy
+msgid "KRN - Charset Settings"
+msgstr "KRN - 인쇄 설정"
+
+#: charsetsDlg.cpp:29
+#, fuzzy
+msgid "KMail - Charset Settings"
+msgstr "KRN - 인쇄 설정"
+
+#: charsetsDlg.cpp:39
+msgid "Message charset"
+msgstr ""
+
+#: charsetsDlg.cpp:57
+msgid "Composer charset"
+msgstr ""
+
+#: charsetsDlg.cpp:75
+msgid "Set as &default"
+msgstr ""
+
+#: charsetsDlg.cpp:80
+msgid "&7 bit is ASCII"
+msgstr ""
+
+#: charsetsDlg.cpp:84
+msgid "&Qute unknonw characters"
+msgstr ""
+
+#: expirestatusdlg.cpp:35
+msgid "Please wait a minute, I am expiring!"
+msgstr ""
+
+#: kpgpbase.cpp:315
+msgid "Bad pass Phrase; couldn't sign"
+msgstr ""
+
+#: kpgpbase.cpp:354
+msgid "error running pgp"
+msgstr ""
+
+#: kpgpbase.cpp:371 kpgpbase.cpp:662
+msgid "Bad pass Phrase; couldn't decrypt"
+msgstr ""
+
+#: kpgpbase.cpp:382 kpgpbase.cpp:673
+msgid "Do not have the secret key for this message"
+msgstr ""
+
+#: kpgpbase.cpp:410
+msgid "unknown key ID "
+msgstr ""
+
+#: kpgpbase.cpp:430
+msgid "??? (file ~/.pgp/pubring.pgp not found)"
+msgstr ""
+
+#: kpgpbase.cpp:585
+msgid "The passphrase you entered is invalid."
+msgstr ""
+
+#: kpgpbase.cpp:611
+msgid ""
+"The key(s) you wan't to encrypt your message\n"
+"to are not trusted. No encryption done."
+msgstr ""
+
+#: kpgpbase.cpp:614
+#, c-format
+msgid ""
+"The following key(s) are not trusted:\n"
+"%s\n"
+"They will not be able to decrypt the message"
+msgstr ""
+
+#: TooManydlg.cpp:25
+#, fuzzy
+msgid "KRN-Confirmation"
+msgstr "KRN-NNTP 구성"
+
+#: TooManydlg.cpp:30
+msgid "Read how many articles?"
+msgstr ""
+
+#: TooManydlg.cpp:36
+msgid "Get them from"
+msgstr ""
+
+#: TooManydlg.cpp:37
+#, fuzzy
+msgid "Oldest articles"
+msgstr "기사 받기"
+
+#: TooManydlg.cpp:39
+#, fuzzy
+msgid "Newest articles"
+msgstr "기사 받기"
+
+#: TooManydlg.cpp:43
+msgid "Make this the new threshold"
+msgstr ""

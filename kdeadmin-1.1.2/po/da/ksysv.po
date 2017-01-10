@@ -1,0 +1,378 @@
+# Danish translations for KDE Admin, ksysv
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Erik Kjær Pedersen <erik@binghamton.edu>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE ADMIN/ksysv\n"
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"PO-Revision-Date: 1999-02-16 20:06+0100\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: da <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:236
+msgid ": Error"
+msgstr ": Fejl"
+
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr "Kun root har lov til at behandle køreniveauer."
+
+#: OldView.cpp:105
+msgid "Available"
+msgstr "Tilgængelig"
+
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "&Tjenester"
+
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+"Disse er de <bold>tilgængelige tjenester</bold>\n"
+"For at starte en tjeneste, træk den til <bold>\"Start\"</bold>-sektionen på "
+"et af køreniveauerne.\n"
+"\n"
+"For at standse en, gør det samme for <bold>\"Stopp\"</bold>-sektionen."
+
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "Køreniveau &%i"
+
+# , c-format
+# , c-format
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "Køreniveau %i"
+
+#: OldView.cpp:149
+msgid "Start"
+msgstr "Start"
+
+# , c-format
+# , c-format
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Træk herhen for at starte tjenester\n"
+"når du går ind i Køreniveau %i"
+
+# , c-format
+# , c-format
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Træk herhen for at standse tjenester\n"
+"når du går ind i Køreniveau %i"
+
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr "** SKRIVER INDSTILLINGERNE **\n"
+
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr "** KØRENIVEAU %i **\n"
+
+#: OldView.cpp:517
+msgid "Reading configuration: "
+msgstr "Læser indstillingerne: "
+
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr "** Stopper "
+
+#: OldView.cpp:624
+msgid " stop"
+msgstr " stop"
+
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr "** Starter "
+
+#: OldView.cpp:644
+msgid " start"
+msgstr " start"
+
+#: OldView.cpp:661
+msgid "** Re-starting "
+msgstr "** Genstarter "
+
+#: OldView.cpp:666
+msgid " restart"
+msgstr " omstart"
+
+# , c-format
+#: OldView.cpp:811
+msgid "P&roperties..."
+msgstr "&Egenskaber..."
+
+#: OldView.cpp:831
+msgid "S&top"
+msgstr "S&top"
+
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "&Genstart"
+
+#: TopWidget.cpp:136
+msgid "&New Configuration"
+msgstr "&Nye indstillinger"
+
+#: TopWidget.cpp:137
+msgid "&Save Configuration"
+msgstr "&Gem indstillinger"
+
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr "Udskriv &log..."
+
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr "Vis &værktøjslinie"
+
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr "Vis &statuslinie"
+
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr "Vis &log"
+
+#: TopWidget.cpp:174
+msgid "&Configure..."
+msgstr "&Indstil..."
+
+#: TopWidget.cpp:177
+msgid "&Save Options"
+msgstr "&Gem valg"
+
+#: TopWidget.cpp:215
+msgid "New"
+msgstr "Ny"
+
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "Slå skriptoutput til/fra"
+
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"Der er ugemte ændringer.\n"
+"Er du sikker på at du ønsker at afslutte?"
+
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "Ja, afslut!"
+
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "Nej, slut ikke af."
+
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "Fjern ændringer"
+
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "Ønsker du virkelig at fjerne alle ugemte ændringer?"
+
+#: TopWidget.cpp:307
+msgid "Save configuration"
+msgstr "Gem indstillinger"
+
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"Du skal til at gemme ændringerne som er lavet på din startindstilling.\n"
+"Vær opmærksom på at forkerte indstillinger kan resultere i at dit system "
+"bliver umuligt at starte.\n"
+"\n"
+"Ønsker du at fortsætte?"
+
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr "Ja, &gem!"
+
+#: TopWidget.cpp:314
+msgid "No, &don't save."
+msgstr "Nej, gem &ikke."
+
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "Om Qt"
+
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "Ændret"
+
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr "Kunne ikke generere sorteringsnummer. Gør det venligst manuelt."
+
+#: prefs.cpp:48
+#, c-format
+msgid "%s - Preferences"
+msgstr "%s - Indstillinger"
+
+#: prefs.cpp:58
+msgid "Directory containing your init-scripts (&services)"
+msgstr "Sti til folderen som indeholder dit startmanuskript (&tjenester)"
+
+#: prefs.cpp:79
+msgid "Directory containing your &runlevel-directories"
+msgstr "Sti til folderen som indeholder dine &køreniveau-kataloger"
+
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr "Farver for &nye indgange"
+
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr "Farver for &ændrede indgange"
+
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr "&Sti"
+
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr "&Farver"
+
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "Træk herhen for at fjerne tjenester"
+
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr "&Navn"
+
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr "&Peger på"
+
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr "&Sorterer nummer"
+
+# , c-format
+#: PropDlg.cpp:113
+#, c-format
+msgid "%s - Properties"
+msgstr "%s - Egenskaber"
+
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr "MISLYKKEDES at fjerne %s fra %s: \"%s\"\n"
+
+#: IOCore.cpp:53
+#, c-format
+msgid "removed %s from %s\n"
+msgstr "fjernede %s fra %s\n"
+
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr "lavede %s i %s\n"
+
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr "MISLYKKEDES at fjerne %s i %s: \"%s\"\n"
+
+#: About.cpp:46
+#, c-format
+msgid "About %s"
+msgstr "Om %s"
+
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr "KDE SysV Init-redigerer"
+
+#: About.cpp:81
+#, c-format
+msgid "Version %s (KDE %s)"
+msgstr "Version %s (KDE %s)"
+
+#: About.cpp:89
+msgid "© 1997-1999 "
+msgstr "© 1997-1999 "
+
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr "Peter Putzer"
+
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr "Send fejlrapporter/succeshistorier/masser af penge/..."
+
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ". Alle rettigheder reserverede."
+
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp © 1997 Martin Jones.\n"
+"Uses the KDE libraries © 1997-1999 The KDE Team.\n"
+"Uses the Qt library © 1992-1998 Troll Tech AS."
+msgstr ""
+"IPC-dele taget fra kdehelp © 1997 Martin Jones.\n"
+"Bruger KDE-biblioteket © 1997, 1998 KDE holdet.\n"
+"Bruger Qt-biblioteket © 1992-1998 Troll Tech AS."
+
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+"En tekstbehandler for SysV-stil init-indstilling ligesom Red Hats "
+"\"tksysv\",\n"
+"men ksysv tillader træk-og-slip i tillæg til tastaturbrug."
+
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""
+"Dette program er frit programmel; du kan fordele det videre og/eller ændre\n"
+"det under betingelserne i version 2 af GNU General Public License\n"
+"som er publiceret af Free Software Foundation.\n"
+"\n"
+"Dette program er udgivet i det håb at det vil være nyttigt,\n"
+"men UDEN NOGEN GARANTI, til og med uden den underforståede garanti om\n"
+"SALGBARHED eller EGNETHED TIL ET SPECIELT FORMÅL. Se\n"
+"GNU General Public License for flere detaljer."

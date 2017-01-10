@@ -1,0 +1,346 @@
+# Norwegian translations for KDE Network, ksirc
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Hans Petter Bieker <zerium@webindex.no>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE NETWORK/ksirc\n"
+"POT-Creation-Date: 1999-03-05 02:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Hans Petter Bieker <zerium@webindex.no>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: FilterRuleEditor.cpp:29
+msgid "Edit Filter Rules"
+msgstr "Endre filtreringsregler"
+
+#: FilterRuleEditor.cpp:58 FilterRuleEditor.cpp:79
+#: FilterRuleEditorData.cpp:105
+msgid "&Modify"
+msgstr "&Rediger"
+
+#: FilterRuleEditor.cpp:74
+msgid "Missing Arguments"
+msgstr "Mangler argumenter"
+
+#: FilterRuleEditor.cpp:75
+msgid ""
+"Cannot create a Rule since not\n"
+"all the fields are filled in."
+msgstr ""
+"Kan ikke skape en regel ettersom\n"
+"alle felter ikke er fylt ut."
+
+#: FilterRuleEditorData.cpp:33
+msgid "Description:"
+msgstr "Beskrivelse:"
+
+#: FilterRuleEditorData.cpp:51
+msgid "Match:"
+msgstr "Passer:"
+
+#: FilterRuleEditorData.cpp:69
+msgid "From:"
+msgstr "Fra:"
+
+#: FilterRuleEditorData.cpp:78
+msgid "To:"
+msgstr "Til:"
+
+#: FilterRuleEditorData.cpp:126
+msgid "New Rule"
+msgstr "Ny regel"
+
+#: FilterRuleEditorData.cpp:145
+msgid "Up"
+msgstr "Opp"
+
+#: FilterRuleEditorData.cpp:155
+msgid "Down"
+msgstr "Ned"
+
+#: KSircColour.cpp:33
+msgid "Colour Settings"
+msgstr "Fargeinnstillinger"
+
+#: KSircColourData.cpp:33
+msgid "Generic Text"
+msgstr "Generell tekst"
+
+#: KSircColourData.cpp:62
+msgid "Info"
+msgstr "Info"
+
+#: KSircColourData.cpp:71
+msgid "Chan Messages"
+msgstr "Kanalmeldinger"
+
+#: KSircColourData.cpp:80
+msgid "Errors"
+msgstr "Feil"
+
+#: KSircColourData.cpp:115
+msgid "Background"
+msgstr "Bakgrunn"
+
+#: dccDialog.cpp:22
+msgid "DCC Files Offered"
+msgstr "DCC-filer tilbudt"
+
+#: dccDialogData.cpp:38
+msgid "&Get"
+msgstr "&Hent"
+
+#: dccDialogData.cpp:46
+msgid "&Forget"
+msgstr "&Glem"
+
+#: ksirc.cpp:60
+msgid ""
+"kSirc Alpha releases have an 8 week\n"
+"expiry date.\n"
+"\n"
+"kSirc-ALPHA HAS EXPIRED!!\n"
+"Please upgrade or use a beta release"
+msgstr ""
+"kSirc Alpha-utgaver har en 8-ukers\n"
+"datofrist.\n"
+"\n"
+"kSirc-ALPHA HAR GÅTT UT!!\n"
+"Vennligst oppgrader eller bruk en beta-utgave"
+
+#: ksirc.cpp:68
+msgid ""
+"kSirc Alpha release have an 8 week\n"
+"expiry date.\n"
+"\n"
+"THIS VERSION WILL EXPIRE IN UNDER 4 WEEKS"
+msgstr ""
+"kSirc Alpha-utgaver har en 8-ukers\n"
+"datofrist.\n"
+"\n"
+"DENNE VERSJONEN VIL GÅ UT OM UNDER 4 UKER"
+
+#: open_top.cpp:26
+msgid "New Window For"
+msgstr "Nytt vindu for"
+
+#: open_topData.cpp:39
+msgid "Channel/Nick:"
+msgstr "Kanal/Kallenavn:"
+
+#: servercontroller.cpp:160
+msgid "&Dock"
+msgstr "&Dokk"
+
+#: servercontroller.cpp:168 servercontroller.cpp:750
+msgid "New Server..."
+msgstr "Ny tjener..."
+
+#: servercontroller.cpp:169
+msgid "&Join Channel..."
+msgstr "&Gi inn i kanal..."
+
+#: servercontroller.cpp:171
+msgid "&Connections"
+msgstr "&Forbindelser"
+
+#: servercontroller.cpp:188 servercontroller.cpp:739
+msgid "&Colour Preferences..."
+msgstr "&Fargepreferanser..."
+
+#: servercontroller.cpp:190 servercontroller.cpp:741
+msgid "&Global Fonts..."
+msgstr "&Global skrifttype..."
+
+#: servercontroller.cpp:192 servercontroller.cpp:743
+msgid "&Filter Rule Editor..."
+msgstr "&Filterregelredigerer..."
+
+#: servercontroller.cpp:194 servercontroller.cpp:745
+msgid "&Web Server Configuration..."
+msgstr "&Vevtjenerkonfigurasjon..."
+
+#: servercontroller.cpp:197 servercontroller.cpp:747
+msgid "&Preferences..."
+msgstr "&Preferanser..."
+
+#: servercontroller.cpp:207
+msgid "Help on Colours..."
+msgstr "Hjelp om fager..."
+
+#: servercontroller.cpp:209
+msgid "Help on Filters..."
+msgstr "Hjelp om filter..."
+
+#: servercontroller.cpp:211
+msgid "Help on Keys..."
+msgstr "Hjelp om taster..."
+
+#: servercontroller.cpp:214
+msgid "About kSirc..."
+msgstr "Om kSirc..."
+
+#: servercontroller.cpp:232
+msgid "Server Control"
+msgstr "Tjener-kontroll"
+
+#: servercontroller.cpp:293 servercontroller.cpp:457
+msgid "Channels"
+msgstr "Kanaler"
+
+#: servercontroller.cpp:293 servercontroller.cpp:457
+msgid "Online"
+msgstr "På nett"
+
+#: servercontroller.cpp:695
+msgid "Active Server Connections"
+msgstr "Aktive tjenerforbindelser"
+
+#: servercontroller.cpp:736
+msgid "&Undock"
+msgstr "&Udokk"
+
+#: ssfeprompt.cpp:25
+msgid "Prompt"
+msgstr "Ledetekst"
+
+#: toplevel.cpp:140
+msgid "Lag in seconds to the server"
+msgstr "Forsinkelse i sekunder til tjeneren"
+
+#: toplevel.cpp:144
+msgid "&Ticker Mode"
+msgstr "&Ur-modus"
+
+#: toplevel.cpp:166
+msgid "&Cut Window..."
+msgstr "&Klipp ut vindu..."
+
+#: toplevel.cpp:297
+msgid "&Users"
+msgstr "&Brukere"
+
+#: welcomeWin.cpp:30
+msgid "Welcome to kSirc"
+msgstr "Velkommen til kSirc"
+
+#: welcomeWinData.cpp:35
+msgid "Show Again"
+msgstr "Vis igjen"
+
+#: welcomeWinData.cpp:44
+msgid "Dissmiss"
+msgstr "Forkast"
+
+#: KSColourPicker/kscolourpicker.cpp:28
+msgid "kSirc Colour Picker"
+msgstr "kSirc Fargevelger"
+
+#: KSColourPicker/kscolourpickerData.cpp:30
+msgid "Pick"
+msgstr "Velg"
+
+#: KSColourPicker/kscolourpickerData.cpp:46
+msgid "Sample Colour"
+msgstr "Eksempelfarge"
+
+#: KSCutDialog/KSCutDialog.cpp:27
+msgid "Cut Window"
+msgstr "Utklippsvindu"
+
+#: KSCutDialog/KSCutDialogData.cpp:39
+msgid "Cop&y"
+msgstr "&Kopier"
+
+#: KSOpenkSirc/open_ksirc.cpp:38
+msgid "Connect to Server"
+msgstr "Kobler opp mot tjener"
+
+#: KSOpenkSirc/open_ksirc.cpp:186
+msgid "Not Avalable"
+msgstr "Ikke tilgjenglig"
+
+#: KSOpenkSirc/open_ksircData.cpp:37
+msgid "&Connect"
+msgstr "&Forbind"
+
+#: KSOpenkSirc/open_ksircData.cpp:54
+msgid "&Edit Servers"
+msgstr "&Rediger tjenere"
+
+#: KSOpenkSirc/open_ksircData.cpp:86
+msgid "Group:"
+msgstr "&Gruppe:"
+
+#: KSOpenkSirc/open_ksircData.cpp:103
+msgid "Server/Quick Connect to:"
+msgstr "Tjener/Hurtigforbind med:"
+
+#: KSOpenkSirc/open_ksircData.cpp:120
+msgid "Port:"
+msgstr "Port:"
+
+#: KSOpenkSirc/open_ksircData.cpp:147
+msgid "Server Desc:"
+msgstr "Tjenerbeskrivelse:"
+
+#: KSPrefs/UserMenuRefData.cpp:61
+msgid "Menu Name"
+msgstr "Menynavn"
+
+#: KSPrefs/UserMenuRefData.cpp:70
+msgid "Type"
+msgstr "Type"
+
+#: KSPrefs/UserMenuRefData.cpp:79
+msgid "Command"
+msgstr "Kommando"
+
+#: KSPrefs/UserMenuRefData.cpp:87
+msgid "OP Only"
+msgstr "Kun OP"
+
+#: KSPrefs/UserMenuRefData.cpp:135
+msgid "Modify"
+msgstr "Rediger"
+
+#: KSPrefs/ksprefs.cpp:9
+msgid "kSirc Prefrences"
+msgstr "kSirc-Preferanser..."
+
+#: KSPrefs/ksprefs.cpp:22
+msgid "&General"
+msgstr "&Generelt"
+
+#: KSPrefs/ksprefs.cpp:23
+msgid "&StartUp"
+msgstr "&Oppstart"
+
+#: KSPrefs/ksprefs.cpp:24
+msgid "Servers/&Channels"
+msgstr "Tjenere/&kanaler"
+
+#: KSPrefs/ksprefs.cpp:25
+msgid "&User Menu"
+msgstr "&Brukermeny"
+
+#: KSPrefs/ksprefs.cpp:26
+msgid "&Default Filters"
+msgstr "&Standardfilter"
+
+#: KSTicker/speeddialogData.cpp:79
+msgid "Tick Interval"
+msgstr "Tikk-intervall"
+
+#: KSTicker/speeddialogData.cpp:88
+msgid "Step Size"
+msgstr "Steg-størrelse"
+
+#: puke/kdynlib.cpp:70
+#, c-format
+msgid "No such file \"%s\"!"
+msgstr "Ingen fil \"%s\"!"

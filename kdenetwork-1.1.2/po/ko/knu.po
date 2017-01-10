@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: LinuxKorea Co. <kde@linuxkorea.co.kr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "Ping(&P)"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "&Traceroute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "Host &resolution"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "F&inger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr ""
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"설정 파일에 사용 가능한\n"
+"명령이 없습니다.\n"
+"\n"
+"아무 것도 할 수 없습니다.\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "새 윈도우(&N)"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "윈도우 닫기(&C)"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "모두 선택(&a)"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "출력 윈도우 정리(&l)"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "등록정보(&r)..."
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "%s 정보(&A)"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "Qt 정보(&Q)"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "정보..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr ""
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "호스트(&o):"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "실행!(&G)"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "중지(&S)"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"이 명령을 찾을 수 없습니다. \n"
+"편집->등록정보... 메뉴에서 경로를 설정할 수 있습니다."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"귀하의 %s/%src 설정파일에\n"
+"문제가\n"
+"있습니다.\n"
+"[%s] 그룹에서\n"
+"\"path=\" 항목을 찾을 수 없습니다.\n"
+"\n"
+"편집->등록정보... 메뉴를\n"
+"이용해 다시 설정하십시오.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "경로명 오류"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "바이너리"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "경로명(&n)"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "추가 인수(&a):"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "이 명령은 설정 파일에서 사용할 수 없습니다"
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - 설정"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr ""
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr ""
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr ""
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr ""
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr ""
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr ""
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr ""
+
+#: MtrDlg.cpp:99
+#, fuzzy
+msgid "Worst"
+msgstr "hos&t"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "host &name resolution"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "hos&t"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "&Maximum number of hops:"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "address (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "name (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "name server (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "mail exchanger (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "alias (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "start of authority (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "any record (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "찾기(&a):"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "기본 서버"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "서버(&v):"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "사용자(&U):"
+
+#~ msgid "&Matt's traceroute"
+#~ msgstr "&Matt's traceroute"

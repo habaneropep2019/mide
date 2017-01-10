@@ -1,0 +1,1 @@
+uucheck.o: uucheck.c

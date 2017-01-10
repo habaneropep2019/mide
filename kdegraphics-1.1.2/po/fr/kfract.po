@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kfract\n"
+"POT-Creation-Date: 1998-11-16 01:58+0100\n"
+"PO-Revision-Date: 1999-01-29 22:00+0100\n"
+"Last-Translator: Francois-Xavier Duranceau & Alain "
+"Gibaud<Francois-Xavier.Duranceau@loria.fr>\n"
+"Language-Team: Français <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"<Alain.Gibaud@univ-valenciennes.fr>\n"
+
+#: kfract.C:73
+msgid "&Load params..."
+msgstr "&Charger les paramètres..."
+
+#: kfract.C:74
+msgid "&Save params..."
+msgstr "&Enregistrer les paramètres..."
+
+#: kfract.C:75
+msgid "Save &pic..."
+msgstr "Enregistrer l'&image..."
+
+#: kfract.C:81
+msgid "Mandelbrot..."
+msgstr "Mandelbrot..."
+
+#: kfract.C:82
+msgid "Julia..."
+msgstr "Julia..."
+
+#: kfract.C:86
+msgid "Max. Iterations..."
+msgstr "Itérations maximales..."
+
+#: kfract.C:87
+msgid "Colour scheme..."
+msgstr "Modèle de couleurs..."
+
+#: kfract.C:88
+msgid "Colour cycling..."
+msgstr "Permutation cyclique des couleurs..."
+
+#: kfract.C:89
+msgid "Zoom factor..."
+msgstr "Facteur de zoom..."
+
+#: kfract.C:91
+msgid "Fractals Generator"
+msgstr "Générateur de fractales"
+
+#: kfract.C:93
+msgid ""
+"\n"
+"\n"
+"by Uwe Thiem"
+msgstr ""
+"\n"
+"\n"
+"par Uwe Thiem"
+
+#: kfract.C:99
+msgid "&Types"
+msgstr "&Types"
+
+#: kfract.C:123
+msgid "Open parameters"
+msgstr "Charger des paramètres"
+
+#: kfract.C:127
+msgid "Save parameters"
+msgstr "Enregistrer les paramètres"
+
+#: kfract.C:131
+msgid "Save picture"
+msgstr "Enregistrer l'image"
+
+#: kfract.C:136
+msgid "Zoom in"
+msgstr "Zoom avant"
+
+#: kfract.C:140
+msgid "Zoom out"
+msgstr "Zoom arrière"
+
+#: kfract.C:145
+msgid "Defaults for this type"
+msgstr "Par défaut pour ce type"
+
+#: kfract.C:280
+msgid "Oops!"
+msgstr "Houlà !"
+
+#: kfract.C:280
+msgid "Oops! Not implemented yet."
+msgstr "Houlà ! Pas encore implanté."
+
+#: kfractdlgs.C:96 kfractdlgs.C:604
+msgid "Iterations:"
+msgstr "Itérations :"
+
+#: kfractdlgs.C:107 kfractdlgs.C:615
+msgid "0 - 999"
+msgstr "0 - 999"
+
+#: kfractdlgs.C:129 kfractdlgs.C:637
+msgid "1000 - 100000"
+msgstr "1000 - 100000"
+
+# ++Gib: To bail out == sauter en parachute
+#: kfractdlgs.C:144
+msgid "Bailout"
+msgstr "Ejection"
+
+# Les 3 messages qui suivent ont ete raccourcis pour entrer dans la boite
+#: kfractdlgs.C:161
+msgid "Center of picture: Real part"
+msgstr "Centre image : Partie réelle"
+
+#: kfractdlgs.C:176
+msgid "Center of picture: Imaginary part"
+msgstr "Centre image : Partie imaginaire"
+
+#: kfractdlgs.C:192
+msgid "Width of picture:"
+msgstr "Largeur image :"
+
+# ++Gib: Traduction Raccourcie pour ne pas sortir du bouton
+#: kfractdlgs.C:220 kfractdlgs.C:655 kfractdlgs.C:840
+msgid "Defaults"
+msgstr "Défauts"
+
+#: kfractdlgs.C:408
+msgid "z(0) = c = pixel"
+msgstr "z(0) = c = pixel"
+
+#: kfractdlgs.C:413
+msgid "z(n+1) = z(n)^2 + c"
+msgstr "z(n+1) = z(n)^2 + c"
+
+#: kfractdlgs.C:417
+msgid "Mandelbrot"
+msgstr "Mandelbrot"
+
+#: kfractdlgs.C:476
+msgid "Extra parameter: Real part"
+msgstr "Param. suppl. : Partie réelle"
+
+#: kfractdlgs.C:492
+msgid "Extra parameter: Imaginary part"
+msgstr "Param. suppl. : Partie imaginaire"
+
+#: kfractdlgs.C:505
+msgid "Julia"
+msgstr "Julia"
+
+#: kfractdlgs.C:597
+msgid "Max. Iterations"
+msgstr "Itérations max."
+
+#: kfractdlgs.C:733
+msgid "Less colours"
+msgstr "Moins de couleurs"
+
+#: kfractdlgs.C:736
+msgid "More colours"
+msgstr "Plus de couleurs"
+
+#: kfractdlgs.C:764
+msgid "Colour schemes"
+msgstr "Modèles de couleurs"
+
+# ++Gib: Raccourci volontairement (pb de boite de dialogue)
+# le titre de la boite (Facteurs de zoom) suffit largement
+#: kfractdlgs.C:806
+msgid "Zoom in factor:"
+msgstr "Zoom avant :"
+
+# ++Gib: Raccourci volontairement (pb de boite de dialogue)
+#: kfractdlgs.C:822
+msgid "Zoom out factor:"
+msgstr "Zoom arrière :"
+
+#: kfractdlgs.C:849
+msgid "Zoom factors"
+msgstr "Facteurs de zoom"
+
+#: fract.C:73
+msgid ""
+"Fract::calcPoint() is an abstract method. You MUST\n"
+"re-write it!\n"
+msgstr ""
+"Fract::calcPoint() est une méthode abstraite. Vous DEVEZ\n"
+"la ré-écrire !\n"

@@ -1,0 +1,191 @@
+# Norwegian translations for KDE Network, kckktalkd
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Hans Petter Bieker <zerium@webindex.no>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE KDENETWORK/kcmktalkd\n"
+"POT-Creation-Date: 1998-12-12 15:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Hans Petter Bieker <zerium@webindex.no>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:58
+msgid "&Announcement"
+msgstr "&Annonsering"
+
+#: main.cpp:61
+msgid "Ans&wering machine"
+msgstr "&Svaremaskin"
+
+#: main.cpp:64
+msgid "&Forward"
+msgstr "&Videresende"
+
+#: main.cpp:70
+msgid "usage: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+msgstr "bruk: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+
+#: main.cpp:111
+msgid "KTalkd Configuration"
+msgstr "KTald-konfigurasjon"
+
+#: soundpage.cpp:46
+msgid "&Announcement program"
+msgstr "&Annonseringsprogram"
+
+#: soundpage.cpp:53
+msgid "&Talk client"
+msgstr "&Talk-klient"
+
+#: soundpage.cpp:57
+msgid "&Play sound"
+msgstr "&Spill lyd"
+
+#: soundpage.cpp:59
+msgid "&Sound File"
+msgstr "&Lydfil"
+
+#: soundpage.cpp:61
+msgid "Additional WAV files can be dropped onto the sound list."
+msgstr "Ytligere WAV-filer kan bli sluppet ned på lydlisten."
+
+#: soundpage.cpp:76
+msgid "&Test"
+msgstr "&Test"
+
+#: soundpage.cpp:156
+msgid "Unsupported URL"
+msgstr "Ustøttet URL"
+
+#: soundpage.cpp:157
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE System Sound "
+"Module"
+msgstr ""
+"Beklager, denne typen URL er foreløbig ikke støttet av KDE-lydsystemmodulen"
+
+#: soundpage.cpp:164
+#, c-format
+msgid ""
+"Sorry, but \n"
+"%s\n"
+"does not seem to be a WAV--file."
+msgstr ""
+"Beklager, men \n"
+"%s\n"
+"ser ikke ut til å være en WAV--fil."
+
+#: soundpage.cpp:167
+msgid "Improper File Extension"
+msgstr "Feilaktig filendelse"
+
+#: soundpage.cpp:175
+#, c-format
+msgid ""
+"The file\n"
+"%s\n"
+"is already in the list"
+msgstr ""
+"Filen\n"
+"%s\n"
+"er allerede i listen"
+
+#: soundpage.cpp:179
+msgid "File Already in List"
+msgstr "Fil allerede i liste"
+
+#: answmachpage.cpp:39
+msgid "&Activate answering machine"
+msgstr "&Aktiver svaremaskin"
+
+#: answmachpage.cpp:44
+msgid "&Mail address"
+msgstr "&Postadresse"
+
+#: answmachpage.cpp:51
+msgid "Mail sub&ject"
+msgstr "&Postemne"
+
+#: answmachpage.cpp:54
+#, c-format
+msgid "Use %s for the caller name"
+msgstr "Bruk %s for ringerens navn"
+
+#: answmachpage.cpp:60
+msgid "Mail &first line"
+msgstr "Post &første linje"
+
+#: answmachpage.cpp:64
+#, c-format
+msgid "Use first %s for caller name, and second %s for caller hostname"
+msgstr ""
+"Bruk første %s for ringerens navn, og den andre %s for ringerens vertsnavn"
+
+#: answmachpage.cpp:68
+msgid "&Receive a mail even if no message left"
+msgstr "&Motta post selv når ingen meldinger ble lagt igjen"
+
+#: answmachpage.cpp:74
+msgid "&Banner displayed on answering machine startup :"
+msgstr "&Banner som vises på den svarende maskinen ved oppstart:"
+
+#: answmachpage.cpp:83
+msgid ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+msgstr ""
+"Personen du ønsker å snakke med svarer ikke.\n"
+"Vennligst legg igjen en melding for levering pr epost.\n"
+"Bare start å skrive, og bare avslutt normalt når du er ferdig."
+
+#: answmachpage.cpp:171 answmachpage.cpp:189
+#, c-format
+msgid "Message from %s"
+msgstr "Melding fra %s"
+
+#: answmachpage.cpp:172 answmachpage.cpp:191
+#, c-format
+msgid "Message left in the answering machine, by %s@%s"
+msgstr "Melding lagt igjen i svarende maskin av %s@%s"
+
+#: forwmachpage.cpp:34
+msgid "Activate &forward"
+msgstr "Aktiver &videresende "
+
+#: forwmachpage.cpp:39
+msgid "&Destination (user or user@host)"
+msgstr "&Mål (bruker eller bruker@vert)"
+
+#: forwmachpage.cpp:49
+msgid "Forward &method"
+msgstr "V&ideresendingsmetode"
+
+#: forwmachpage.cpp:54
+msgid ""
+"FWA : Forward announcement only. Direct connection. Not recommended.\n"
+"FWR : Forward all requests, changing info when necessary. Direct "
+"connection.\n"
+"FWT : Forward all requests and take the talk. No direct connection.\n"
+"\n"
+"Recommended use : FWT it you want to use it behind a firewall (and if "
+"ktalkd\n"
+"can access both networks), and FWR otherwise.\n"
+"\n"
+"See Help for further explanations.\n"
+msgstr ""
+"FWA : Videresend kun annonser. Direkte forbindelse. Anbefales ikke.\n"
+"FWR : Videresend alle forespørsler, endre informasjon når nødvendig. Direkte "
+"forbindelse.\n"
+"FWT : Videresend alle forespørsler og ta samtalen. Ingen direkte "
+"forbindelser.\n"
+"\n"
+"Anbefalt å bruke: FWT hvis du ønsker å bruke det bak en brannmur (og hvis "
+"ktalkd\n"
+"kan bruke begge nettverk), og FWR ellers.\n"
+"\n"
+"Se Hjelp for nærmere forklaring.\n"

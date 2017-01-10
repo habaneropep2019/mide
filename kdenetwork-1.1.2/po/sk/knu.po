@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: knu 0.3.4\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: 1998-03-08 10:42 MET\n"
+"Last-Translator: Juraj Bednár <bednar@isternet.sk>\n"
+"Language-Team: Slovak <bednar@isternet.sk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "&Traceroute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "&Rozlí¹enie hostiteµa"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "F&inger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"V konfiguraènom súbore nie je\n"
+"aktivovaný ¾iadny príkaz.\n"
+"\n"
+"Tak¾e nemô¾em niè vykonáva»...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "&Nové okno"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "&Zavrie» okno"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "Vybr&a» v¹etko"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "&Vyèisti» okno s výstupom"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "N&astavenie..."
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "&Informácie o %s"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "Informácie o &Qt"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+"Knu\n"
+"Verzia %s\n"
+"\n"
+"Bertrand"
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "Informácie..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "Sie»ové pomôcky"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "H&ostiteµ:"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "Vy&kona»!"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "&Stop"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Program vykonávajúci túto funkciu nebol nájdený. \n"
+"Je mo¾né zada» jeho meno a cestu v menu Upravi»->Nastavenie."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Máte problém vo va¹om\n"
+"%s/%src\n"
+"konfiguraènom súbore.\n"
+"V skupine [%s]\n"
+"nemô¾em nájs» správnu polo¾ku \"path=\".\n"
+"\n"
+"Prosím pou¾ite menu Úpravy->Nastavenie\n"
+"a správne nastavte po¾adované polo¾ky.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "Chyba v ceste"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Program"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "U&miestnenie:"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "&Ïal¹ie parametre"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "Tento príkaz bol vypnutý v konfiguraènom súbore."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - konfigurácia"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "Meno hostiteµa"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Strata"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Pri"
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Pos"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Najl."
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "Priem."
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Najho."
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "Previes» rozlí¹enie &mena hostiteµa"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "hos&t"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "&Maximálny poèet skokov:"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "adresa (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "meno (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "menný server (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "po¹tový sprostredkovateµ (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "alias (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "¹tart autority (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "µubovoµný záznam (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "&Hµada»:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "¹tandardný server"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "Ser&ver:"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "&U¾ívateµ:"
+
+#~ msgid "&Matt's traceroute"
+#~ msgstr "&Mattov traceroute"
+
+#~ msgid "&Contents"
+#~ msgstr "&Obsah"

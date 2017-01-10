@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The KSysV Handbook: Introduction</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="SysV, System V, Init, Editor">
+<META NAME="description" CONTENT="SysV Init Editor Handbook">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ksysv-2.html">Next</A>
+Previous<A HREF="ksysv.html#toc1">Table of Contents</A>
+</P>
+<H3><A NAME="s1">1. Introduction</A></H3>
+
+<P>Welcome to my <B>System V Init Editor</B>, commonly known (and hereafter referenced)
+as <B>ksysv</B>. This section introduces a few concepts and explains what you can
+do with ksysv.
+<P>The following explanation is "borrowed" from <CODE>tksysv</CODE> (an inspiration
+for ksysv):
+<H3><A NAME="ss1.1">1.1 A Brief Description of System V Init</A>
+</H3>
+
+<P>System V init is fast becoming the standard in the Linux world to control
+the startup of software at boot time. This is because it is easier to use and
+more powerful and flexible than the traditional BSD init.
+<P>I won't go into the history here (mainly because I don't know it :-).
+<P>The init binary is located in <CODE>/sbin</CODE> and not <CODE>/etc</CODE>. This is important as
+one might try and upgrade a machine to System V init without re-installing
+and reformatting. The Linux kernel looks in <CODE>/etc</CODE> for its init first, so you
+must make sure and delete your old init from there if any.
+<P>SysV init also differs from BSD init in that the config files are in a
+subdirectory of <CODE>/etc</CODE> instead of residing directly in <CODE>/etc</CODE>. This directory is
+called <CODE>rc.d</CODE>. In there you will find <CODE>rc.sysinit</CODE> and the following directories:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+init.d/
+rc0.d/
+rc1.d/
+rc2.d/
+rc3.d/
+rc4.d/
+rc5.d/
+rc6.d/
+</PRE>
+</CODE></BLOCKQUOTE>
+<P><CODE>init.d</CODE> contains a bunch of scripts. Basically, you need one script for
+each service you may need to start at boot time or when entering another runlevel.
+Services include things like networking, NFS, sendmail, httpd, etc. Services
+do not include things like setserial that must only be run once and then exited.
+Things like that should go in <CODE>rc.local</CODE>.
+<P><CODE>rc.local</CODE> should be in <CODE>/etc/rc.d</CODE> if you want one. Most systems include one
+even though it doesn't do much. You can also include an <CODE>rc.serial</CODE> in <CODE>/etc/rc.d</CODE>
+if you need to do serial port specific things at boot time.
+<P>The chain of events is as follows: 
+<P>
+<UL>
+<LI>the kernel looks in several places for init and runs the first one it finds</LI>
+<LI>init runs <CODE>/etc/rc.d/rc.sysinit</CODE></LI>
+<LI><CODE>rc.sysinit</CODE> does a bunch of necessary things and then runs <CODE>rc.serial</CODE> (if
+it exists)</LI>
+<LI>init runs <CODE>rc.local</CODE></LI>
+<LI>init runs all the scripts for the default runlevel</LI>
+</UL>
+<P>The default runlevel is decided in <CODE>/etc/inittab</CODE>. You should have a line
+close to the top like: 
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+id:3:initdefault:
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>From this, you'd look in the second column and see that the default runlevel
+is 3, as should be the case for most systems. If you want to change it, you
+can edit <CODE>/etc/inittab</CODE> by hand and change the 3. Be very careful when you are
+messing with the inittab. If you do mess up, you can get in to fix it by rebooting
+and doing:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+LILO boot: linux single
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>This *should* allow you to boot into single user mode so you can fix it.
+<P>Now, how does it run all the right scripts? If you do an '<CODE>ls -l</CODE>' on <CODE>rc3.d</CODE>,
+you might see something like:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+lrwxrwxrwx 1 root root 13 13:11 S10network -&gt; ../init.d/network 
+lrwxrwxrwx 1 root root 16 13:11 S30syslog -&gt; ../init.d/syslog 
+lrwxrwxrwx 1 root root 14 13:32 S40cron -&gt; ../init.d/cron
+lrwxrwxrwx 1 root root 14 13:11 S50inet -&gt; ../init.d/inet
+lrwxrwxrwx 1 root root 13 13:11 S60nfs -&gt; ../init.d/nfs
+lrwxrwxrwx 1 root root 15 13:11 S70nfsfs -&gt; ../init.d/nfsfs
+lrwxrwxrwx 1 root root 18 13:11 S75keytable -&gt; ../init.d/keytable
+lrwxrwxrwx 1 root root 23 13:11 S80sendmail -&gt; ../init.d/sendmail.init
+lrwxrwxrwx 1 root root 18 13:11 S90lpd -&gt; ../init.d/lpd.init
+lrwxrwxrwx 1 root root 11 13:11 S99local -&gt; ../rc.local
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>What you'll notice is that there are no real "files" in the directory.
+Everything there is a link to one of the scripts in the init.d directory. The
+links also have an "S" and a number at the beginning. The "S" means to start
+this particular script and a "K" would mean to stop it. The number is just
+there for ordering purposes. Init will start all the services based on the
+order they appear. You can duplicate numbers, but it will only confuse you
+somewhat. You just need to use a two digit number only, along with an upper
+case "S" or "K" to start or stop the services you need to. 
+<P>How does it start and stop services? Simple. Each of the scripts is written
+to accept an argument which can be "start" and "stop". You can execute those
+scripts by hand in fact with a command like:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+/etc/rc.d/init.d/httpd.init stop
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>to stop the httpd server. Init just reads the name and if it has a "K",
+it calls the script with the "stop" argument. If it has an "S" it calls the
+script with a "start" argument.
+<H4>Why All These Runlevels ?</H4>
+
+<P>Some people want an easy way to setup machines to be multi-purpose. I could
+have a "server" runlevel that just runs httpd, sendmail, networking, etc. Then
+I could have a "user" runlevel that runs xdm, networking, etc. 
+<P ALIGN="RIGHT">
+
+<A HREF="ksysv-2.html">Next</A>
+Previous<A HREF="ksysv.html#toc1">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

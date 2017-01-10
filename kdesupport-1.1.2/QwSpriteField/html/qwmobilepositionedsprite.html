@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwMobilePositionedSprite Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwMobilePositionedSprite Class Reference</h1><br clear="all">
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>
+Inherits <a href="qwpositionedsprite.html">QwPositionedSprite</a>&lt;COORD&gt;.
+<p><a href="qwmobilepositionedsprite-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwmobilepositionedsprite.html#a0"><strong>QwMobilePositionedSprite</strong></a> ( QwSpritePixmapSequence * ) </span>
+<li><span class="fn"><a href="qwmobilepositionedsprite.html#a1"><strong>QwMobilePositionedSprite</strong></a> () </span>
+<li><span class="fn">void <a href="qwmobilepositionedsprite.html#a2"><strong>bounds</strong></a> ( COORD l, COORD t, COORD r, COORD b ) </span>
+<li><span class="fn">void <a href="qwmobilepositionedsprite.html#a3"><strong>adoptSpritefieldBounds</strong></a> () </span>
+<li><span class="fn">enum { Ignore, Stop, Wrap, Bounce }</span>
+<li><span class="fn">void <a href="qwmobilepositionedsprite.html#a4"><strong>setBoundsAction</strong></a> ( int a ) </span>
+<li><span class="fn">bool <a href="qwmobilepositionedsprite.html#a5"><strong>outOfBounds</strong></a> () </span>
+<li><span class="fn">void <a href="qwmobilepositionedsprite.html#a6"><strong>setVelocity</strong></a> ( COORD dX, COORD dY ) </span>
+<li><span class="fn">COORD <a href="qwmobilepositionedsprite.html#a7"><strong>dX</strong></a> () const</span>
+<li><span class="fn">COORD <a href="qwmobilepositionedsprite.html#a8"><strong>dY</strong></a> () const</span>
+<li><span class="fn">void <a href="qwmobilepositionedsprite.html#a9"><strong>forward</strong></a> ( COORD multiplier ) </span>
+<li><span class="fn">void <a href="qwmobilepositionedsprite.html#b0"><strong>forward</strong></a> ( COORD multiplier, int frame ) </span>
+<li><span class="fn">Pix <a href="qwmobilepositionedsprite.html#b1"><strong>forwardHits</strong></a> ( COORD multiplier ) const</span>
+<li><span class="fn">Pix <a href="qwmobilepositionedsprite.html#b2"><strong>forwardHits</strong></a> ( COORD multiplier, int frame ) const</span>
+<li><span class="fn">void <a href="qwmobilepositionedsprite.html#b3"><strong>moveTo</strong></a> ( COORD x, COORD y ) </span>
+<li><span class="fn">virtual void <a href="qwmobilepositionedsprite.html#b4"><strong>moveTo</strong></a> ( COORD x, COORD y, int frame ) </span>
+</ul>
+<hr><h2>Detailed Description</h2>
+A <a href="qwpositionedsprite.html">QwPositionedSprite</a> which has <em>velocity</em> as well as position, and a
+bounding area in which it may move.  This class is useful for simple
+applications where objects have simple motion.  More complex uses will
+require use of one of the QwPositionedSprite derived classes,
+<a href="qwsprite.html">QwSprite</a> or <a href="qwrealsprite.html">QwRealSprite</a>.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a1"></a>QwMobilePositionedSprite::QwMobilePositionedSprite ()</h3>
+<p>Create a <a href="qwpositionedsprite.html">QwPositionedSprite</a> without defining its image sequence. 
+Note that you must call setSequence(<a href="qwspritepixmapsequence.html">QwSpritePixmapSequence</a>*) before doing anything else with the sprite.
+<h3 class="fn"><a name="a0"></a>QwMobilePositionedSprite::QwMobilePositionedSprite ( <a href="qwspritepixmapsequence.html">QwSpritePixmapSequence</a> * )</h3>
+<p>Create a <a href="qwpositionedsprite.html">QwPositionedSprite</a> which uses images from the given sequence.
+<h3 class="fn">void <a name="a3"></a>QwMobilePositionedSprite::adoptSpritefieldBounds ()</h3>
+<p>Use the width and height of the sprite's spritefield as the bounds.
+This is the default when the sprite is created.
+<h3 class="fn">void <a name="a2"></a>QwMobilePositionedSprite::bounds ( COORD l, COORD t, COORD r, COORD b )</h3>
+<p>Set the bounds of the sprite's motion.
+The default is the bounds of the Spritefield containing the sprite.
+<h3 class="fn">COORD <a name="a7"></a>QwMobilePositionedSprite::dX () const</h3>
+<p>Returns the horizontal velocity of the sprite.
+<p>See also:  <a href="qwmobilepositionedsprite.html#a6">QwMobilePositionedSprite::setVelocity</a>.
+<h3 class="fn">COORD <a name="a8"></a>QwMobilePositionedSprite::dY () const</h3>
+<p>Returns the vertical velocity of the sprite.
+<p>See also:  <a href="qwmobilepositionedsprite.html#a6">QwMobilePositionedSprite::setVelocity</a>.
+<h3 class="fn">void <a name="a9"></a>QwMobilePositionedSprite::forward ( COORD multiplier )</h3>
+<p>Move forward (or backward if multiplier is negative) by the given amount
+multiplied by the current velocity of the sprite.
+<h3 class="fn">void <a name="b0"></a>QwMobilePositionedSprite::forward ( COORD multiplier, int frame )</h3>
+<p>Move forward (or backward if multiplier is negative) by the given amount
+multiplied by the current velocity of the sprite, and set the frame to
+the given index.
+<h3 class="fn">Pix <a name="b1"></a>QwMobilePositionedSprite::forwardHits ( COORD multiplier ) const</h3>
+<p>Returns an iterator over objects that might be hit if the sprite
+moves forward.  Note that if the movement would not change the pixel
+position of the sprite, 0 is returned, even if the sprite is already
+in contact with something - the assumption being that such a collision
+has already been dealt with.
+<h3 class="fn">Pix <a name="b2"></a>QwMobilePositionedSprite::forwardHits ( COORD multiplier, int frame ) const</h3>
+<p>Returns an iterator over objects that might be hit if the sprite
+moves forward, and changes frame.  Note that if the movement would not change the pixel
+position of the sprite, 0 is returned, even if the sprite is already
+in contact with something - the assumption being that such a collision
+has already been dealt with.
+<h3 class="fn">void <a name="b3"></a>QwMobilePositionedSprite::moveTo ( COORD x, COORD y )</h3>
+<p>Override to implement bounds action.
+<h3 class="fn">void <a name="b4"></a>QwMobilePositionedSprite::moveTo ( COORD x, COORD y, int frame ) <code>[virtual]</code></h3>
+<p>Override to implement bounds action.
+<h3 class="fn">bool <a name="a5"></a>QwMobilePositionedSprite::outOfBounds ()</h3>
+<p>Returns TRUE if the sprite has moved out of its bounds.  This should only
+happen if the bounds action is set to Ignore.
+<h3 class="fn">void <a name="a4"></a>QwMobilePositionedSprite::setBoundsAction ( int a )</h3>
+<p>Set the action to perform when the sprite hits its bounds.
+It can:
+<ul>
+<li>Ignore the bounds, continuing on.
+<li>Stop moving at the boundary.
+<li>Wrap from one side of the boundary to the other.
+<li>Bounce away from the boundary as it hits.
+</ul>
+The default is to Ignore the bounds.
+<h3 class="fn">void <a name="a6"></a>QwMobilePositionedSprite::setVelocity ( COORD dX, COORD dY )</h3>
+<p>Set the velocity of the sprite.  It will only actually move when
+<a href="qwmobilepositionedsprite.html#a9">QwMobilePositionedSprite::forward</a> is called.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwSpriteFieldGraphic Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwSpriteFieldGraphic Class Reference</h1><br clear="all">
+<p>
+An abstract graphic object on a <a href="qwspritefield.html">QwSpriteField</a>.
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>Inherited by <a href="qwpolygonalgraphic.html">QwPolygonalGraphic</a>, <a href="qwtextsprite.html">QwTextSprite</a> and <a href="qwvirtualsprite.html">QwVirtualSprite</a>.
+<p><a href="qwspritefieldgraphic-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn">void <a href="qwspritefieldgraphic.html#a1"><strong>setSpriteField</strong></a> ( QwSpriteField * ) </span>
+<li><span class="fn"><a href="qwspritefieldgraphic.html#a2"><strong>QwSpriteFieldGraphic</strong></a> () </span>
+<li><span class="fn">virtual <a href="qwspritefieldgraphic.html#a3"><strong>~QwSpriteFieldGraphic</strong></a> () </span>
+<li><span class="fn">virtual int <a href="qwspritefieldgraphic.html#a4"><strong>z</strong></a> () const</span>
+<li><span class="fn">virtual void <a href="qwspritefieldgraphic.html#a5"><strong>draw</strong></a> ( QPainter &amp; ) </span>
+<li><span class="fn">void <a href="qwspritefieldgraphic.html#a6"><strong>show</strong></a> () </span>
+<li><span class="fn">void <a href="qwspritefieldgraphic.html#a7"><strong>hide</strong></a> () </span>
+<li><span class="fn">void <a href="qwspritefieldgraphic.html#a8"><strong>visible</strong></a> ( bool yes ) </span>
+<li><span class="fn">bool <a href="qwspritefieldgraphic.html#a9"><strong>visible</strong></a> () const</span>
+<li><span class="fn">virtual bool <a href="qwspritefieldgraphic.html#b0"><strong>at</strong></a> ( int x, int y ) const</span>
+<li><span class="fn">virtual bool <a href="qwspritefieldgraphic.html#b1"><strong>at</strong></a> ( const QRect &amp; rect ) const</span>
+<li><span class="fn">virtual bool <a href="qwspritefieldgraphic.html#b2"><strong>at</strong></a> ( const QImage * image, const QRect &amp; rect ) const</span>
+<li><span class="fn">virtual int <a href="qwspritefieldgraphic.html#b3"><strong>rtti</strong></a> () const</span>
+</ul>
+<h2>Static Public Members</h2>
+<ul>
+<li><span class="fn">void <a href="qwspritefieldgraphic.html#b5"><strong>setCurrentSpriteField</strong></a> ( QwSpriteField * ) </span>
+</ul>
+<h2>Protected Members</h2>
+<ul>
+<li><span class="fn">virtual void <a href="qwspritefieldgraphic.html#b4"><strong>makeVisible</strong></a> ( bool yes ) </span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+An abstract graphic object on a <a href="qwspritefield.html">QwSpriteField</a>.
+<p>
+This class will primarily be of interest to those wanting to
+add graphic objects other than the sprite object already defined.
+<p>In most graphic rendering systems, graphic objects are considered to
+have a bounding <em>rectangle,</em> and redraw optimization is based on this
+simplification.  This simplistic view is not used by QwSpriteField.  A
+QwSpriteField considers itself to contain numerous graphic objects, each
+of which covers certain `chunks' in the QwSpriteField.  For graphic
+objects with a rectangular bias, this has only a minor effect on
+redraw efficiency (although still a major effect on collision
+detection and other area indexing).  But for other shapes, such as
+lines, the tighter area-bound made possible by chunks can provide
+improvements.
+<p>Whenever a QwSpriteFieldGraphic moves, it must add and remove itself
+from the chunks of the QwSpriteField upon which it moves.  If the
+QwSpriteFieldGraphic is much smaller than the chunk size of the
+QwSpriteField, it will usually be in one, sometimes 2, and occasionally
+3 or 4 chunks.  If the QwSpriteFieldGraphic is larger than the
+chunk size of the QwSpriteField, it will span a number of chunks.
+Clearly there is a trade-off between tight bounds and excessive
+numbers of chunks a QwSpriteFieldGraphic will have to add and remove
+itself from.
+<p>Note that a QwSpriteFieldGraphic may be `on' a QwSpriteField even if it's
+coordinates place it far off the edge of the area of the QwSpriteField.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a2"></a>QwSpriteFieldGraphic::QwSpriteFieldGraphic ()</h3>
+<p>Construct a QwSpriteFieldGraphic on the current spritefield.
+<p>See also:  <a href="qwspritefieldgraphic.html#b5">setCurrentSpriteField</a>(<a href="qwspritefield.html">QwSpriteField</a>*) and <a href="qwspritefieldgraphic.html#a1">setSpriteField</a>(QwSpriteField*).
+<h3 class="fn"><a name="a3"></a>QwSpriteFieldGraphic::~QwSpriteFieldGraphic () <code>[virtual]</code></h3>
+<p>Destruct a QwSpriteFieldGraphic.  It is removed from its spritefield.
+<h3 class="fn">bool <a name="b2"></a>QwSpriteFieldGraphic::at ( const QImage *, const QRect &amp; yourarea ) const <code>[virtual]</code></h3>
+<p>QwSpriteFieldGraphic derivatives can give pixel-accuracy for collision
+detection by overriding this method.  By default, it simply returns
+<a href="qwspritefieldgraphic.html#b0">at</a>(const QRect&) on the same area.
+<h3 class="fn">bool <a name="b1"></a>QwSpriteFieldGraphic::at ( const QRect &amp; rect ) const <code>[virtual]</code></h3>
+<p>TRUE if the graphic intersects with the given area.  This need not be
+perfectly accurate.
+<h3 class="fn">bool <a name="b0"></a>QwSpriteFieldGraphic::at ( int x, int y ) const <code>[virtual]</code></h3>
+<p>Should return TRUE if the graphic includes the given pixel position.
+<p>Reimplemented in <a href="qwtextsprite.html#b8">QwTextSprite</a>.
+<h3 class="fn">void <a name="a5"></a>QwSpriteFieldGraphic::draw ( QPainter &amp; ) <code>[virtual]</code></h3>
+<p>This abstract method should draw the the graphic on the given QPainter.
+<h3 class="fn">void <a name="a7"></a>QwSpriteFieldGraphic::hide ()</h3>
+<p>Alias for <a href="qwspritefieldgraphic.html#a8">visible</a>(FALSE).
+<h3 class="fn">void <a name="b4"></a>QwSpriteFieldGraphic::makeVisible ( bool ) <code>[virtual protected]</code></h3>
+<p>The default implementation of makeVisible(bool) does nothing.
+<p>Note: derived classes should not be in any chunks if they are not visible,
+so during this method, they should remove themselves if they are becoming
+invisible, and add themselves if they are becoming visible.
+<p>Reimplemented in <a href="qwpolygonalgraphic.html#b6">QwPolygonalGraphic</a>.
+<h3 class="fn">int <a name="b3"></a>QwSpriteFieldGraphic::rtti () const <code>[virtual]</code></h3>
+<p>Returns 0.
+<p>Although often frowned upon by purists, Run Time
+Type Identification is very useful in this case, as it allows
+a <a href="qwspritefield.html">QwSpriteField</a> to be an efficient indexed storage mechanism.
+<p>Make your derived classes return their own values for rtti(), and you
+can distinguish between objects returned by <a href="qwspritefield.html#b4">QwSpriteField::at</a>().  You should
+use values greater than 1000 preferrably a large random number,
+to allow for extensions to this class.
+<p>However, it is important not to overuse this facility, as
+it damages extensibility.  For example, once you have identified
+a base class of a QwSpriteFieldGraphic found by QwSpriteField::at(), cast it
+to that type and call meaningful methods rather than acting
+upon the object based on its rtti value.
+<p>For example:
+<p><pre>    if (field.at(p)-&gt;rtti() == MySprite::rtti()) {
+    MySprite* s = (MySprite*)field.at(p);
+    if (s-&gt;isDamagable()) s-&gt;loseHitPoints(1000);
+    if (s-&gt;isHot()) myself-&gt;loseHitPoints(1000);
+    ...
+    }
+</pre>
+<p>Reimplemented in <a href="qwrectangle.html#a5">QwRectangle</a>, <a href="qwpolygon.html#a3">QwPolygon</a>, <a href="qwellipse.html#a6">QwEllipse</a> and <a href="qwpolygonalgraphic.html#a4">QwPolygonalGraphic</a>.
+<h3 class="fn">void <a name="b5"></a>QwSpriteFieldGraphic::setCurrentSpriteField ( <a href="qwspritefield.html">QwSpriteField</a> * pf ) <code>[static]</code></h3>
+<p>QwSpriteFieldGraphics may be created on a `current' <a href="qwspritefield.html">QwSpriteField</a>, which must be
+set prior to any graphic creation.  QwSpriteField objects set this,
+so the most recently created QwSpriteField will get new QwSpriteFieldGraphics.
+<p>This notion of `currency' makes the most common case easy to use - that
+of a single instance of QwSpriteField in the application - rather than
+having to pass around a pointer to a QwSpriteField.
+<h3 class="fn">void <a name="a1"></a>QwSpriteFieldGraphic::setSpriteField ( <a href="qwspritefield.html">QwSpriteField</a> * pf )</h3>
+<p>Set the <a href="qwspritefield.html">QwSpriteField</a> upon which the QwSpriteFieldGraphic is to be drawn.
+Initially this will be the current spritefield.
+<p>See also:  <a href="qwspritefieldgraphic.html#b5">setCurrentSpriteField</a>(<a href="qwspritefield.html">QwSpriteField</a>*).
+<h3 class="fn">void <a name="a6"></a>QwSpriteFieldGraphic::show ()</h3>
+<p>Alias for <a href="qwspritefieldgraphic.html#a8">visible</a>(TRUE).
+<h3 class="fn">bool <a name="a9"></a>QwSpriteFieldGraphic::visible () const</h3>
+<p>Returns TRUE if the QwSpriteFieldGraphic is visible.  This does <em>not</em>
+mean the QwSpriteFieldGraphic is currently in a view, merely that if a view
+was showing the area where the QwSpriteFieldGraphic is, and the graphic
+was not obscured by graphics at a higher z, it would be visible.
+<h3 class="fn">void <a name="a8"></a>QwSpriteFieldGraphic::visible ( bool yes )</h3>
+<p>Calls <a href="qwspritefieldgraphic.html#b4">makeVisible</a>(bool) if necessary to set the
+visibility of the QwSpriteFieldGraphic to the given state.
+<h3 class="fn">int <a name="a4"></a>QwSpriteFieldGraphic::z () const <code>[virtual]</code></h3>
+<p>This abstract method should return the z of the graphic,
+which is used for visual order:  higher z sprites obscure
+lower-z ones.
+<p>Reimplemented in <a href="qwtextsprite.html#b4">QwTextSprite</a>.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

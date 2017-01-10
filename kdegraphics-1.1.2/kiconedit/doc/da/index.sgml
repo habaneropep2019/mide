@@ -1,0 +1,297 @@
+<!doctype linuxdoc system>
+
+<!-- KDE Ikon Editor Håndbog.-->
+
+<article>
+
+<!-- Title information -->
+
+<title> KDE Ikon Editor Dokumentation
+<author>
+Thomas Tanghus <tt/tanghus@earthling.net/,
+<date>Version 0.3.0, Juli 1998
+<abstract>Denne Håndbog beskriver KDE Ikon Editor Version 0.3.0
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+<!-- NEW SECTION	NEW SECTION		NEW SECTION		NEW SECTION		 -->
+
+
+<sect>Introduktion
+
+<p>
+<bf/KDE Ikon Editoren/ er designet til at hjælpe med at lave ikoner til KDE desktoppen ved
+brug af KDE ikon paletten.
+
+<p>
+Jeg håber du finder programmet brugbart og jeg vil sætte pris på forslag og kommentarer.
+<p>
+<tt/Thomas Tanghus/
+<htmlurl url="mailto:tanghus@earthling.net" name="tanghus@earthling.net">.
+<p>
+
+<sect>Installation
+<p>
+
+<sect1>Hvor finder jeg Ikon Editoren
+<p>
+<bf/KDE Ikon Editoren/ kan findes på <url
+url="ftp://ftp.kde.org/pub/kde/unstable/apps/graphics">, KDE projektets primære site eller på
+<htmlurl url="http://w1.1358.telia.com/~u135800018" name="min hjemmeside">.
+
+<sect1>Systemkrav
+<p>
+For succesfuldt at kunne kompilere ikon editoren, har du brug for enten kdelibs-1.0 eller
+de nyeste versioner af <tt> libkdecore</tt>, <tt> libkdeui</tt>, <tt> libkfile</tt> og <tt> libkfm</tt>.
+Alle krævede libraries så vel som KDE Ikon Editoren selv kan findes på <url
+url="ftp://ftp.kde.org/pub/kde/">.
+
+<sect1>Kompilering og installering
+<p>
+For at kompilere og installere <bf/KDE Ikon Editoren/ på dit system, tast følgende
+i det directory hvor du har udpakket Ikon Editor distributionen:
+<tscreen>
+<verb> 
+% ./configure 
+% make 
+% make install 
+</verb>
+</tscreen>
+
+Da Ikon Editoren bruger <tt/autoconf/ og <tt/automake/ skulle du ikke få problemer
+med at kompilere den. Skulle det alligevel volde problemer så rapporter det venligst
+til <bf/KDE/ mailing listen.
+
+<sect1>Konfiguration
+<p>
+
+<sect>Onscreen Fundamentals
+<p>
+In this section will be briefly described the Icon Editor user interface. 
+<p>
+The Icon Editor window is separated in four areas: main toolbar, tools toolbar
+grid and statusbar.
+<p>
+
+<sect1>Main toolbar
+<p>
+<descrip>
+	<tag/New File/
+	Create a new ikon. If the current file has been modified you will be asked if you
+	want to save the changes. After that a dialog will open where you can choose to create
+	the ikon from scratch or from a template (templates requires kdelibs > 1.0).
+	<tag/Open/ 
+	Open an existing icon file.
+	<p>
+	<tag/Save/
+	Save the currently open icon.
+	<p>
+	<tag/Print/
+	Print the icon
+	<tag/Cut/
+	Cuts out the entire icon and put it onto the clipboard.
+	<p>
+	<tag/Copy/
+	Copies the entire icon to the clipboard.
+	<p>
+	<tag/Paste/
+	Paste the contents of the clipboard as a new image (if the clipboard contains a valid icon).
+	<p>
+	<tag/Resize/
+	Resize icon to width X height (req. kdelibs > 1.0)
+	<p>
+	<tag/Gray scale/
+	Gray scale the icon image. This may create colors not conformant to the KDE icon palette.
+	<p>
+	<tag/Zoom in/
+	<p>
+	<tag/Zoom out/
+	<p>
+	<tag/Zoom factor/
+	Zoom to predefined zoom factor.
+	<p>
+	<tag/Toggle grid/
+	Toggle grid on/off.
+	<p>
+	<tag/New Icon Editor/
+	Open a new Icon Editor window.
+	<p>
+
+</descrip>
+
+<sect1>Tools toolbar
+<p>
+This toolbar contains the tools you can use to manipulate the icon.
+<descrip>
+	<tag/Find color/
+	Doesn't change the icon but changes the current drawcolor to the color clicked on.
+	<p>
+	<tag/Freehand/
+	Draw free hand.
+	<p>
+	<tag/Select/
+	Select (mark) a part of the icon.
+	<p>
+	<tag/Line/
+	Draw a line.
+	<p>
+	<tag/Rectangle/
+	Draw a rectangle.
+	<p>
+	<tag/Filled rectangle/
+	Draw a filled rectangle.
+	<p>
+	<tag/Circle/
+	Draw a circle.
+	<p>
+	<tag/Filled circle/
+	Draw a filled circle.
+	<p>
+	<tag/Ellipse/
+	<p>
+	<tag/Filled ellipse/
+	Almost the same as drawing a circle.
+	<p>
+	<tag/Spray/
+	Draws a randow dotted pattern like a spraycan.
+	<p>
+	<tag/Flood fill/
+	Fill an area with the current color..
+	<p>
+	<tag/Eraser/
+	Draw transparent (invisible).
+</descrip>
+
+
+<sect1>Grid
+<p>
+The grid is where you manipulate the icon contents.
+<sect1>Statusbar
+
+<sect>The Menu Entries
+<p>
+
+<sect1>File
+<p>
+The following functions are available from the file menu:
+<descrip>
+	<tag/New Window/
+	Open a new Icon Editor window.
+	<p>
+	<tag/New .../
+	Lets you create a new Icon either from a <bf/template/ or by specifying the size.
+	<p>
+	<tag/Open/ 
+	Open an existing icon file.
+	<p>
+	<tag/Save/
+	Save the currently open icon.
+	<p>
+	<tag/Save as/
+	Save the currently open icon under a new name.
+	<p>
+	<tag/Print/
+	Print the icon
+	<p>
+	<tag/Close/
+	Close the icon Editor window.
+	<p>
+	<tag/Exit/
+	Close all Icon Editor windows opened ( by this instance ),
+</descrip>
+
+
+<sect1>Edit
+<p>
+The Edit menu contains the following entries:
+<descrip>
+	<tag/Cut/
+	Cuts out the entire icon and put it onto the clipboard.
+	<p>
+	<tag/Copy/
+	Copies the entire icon to the clipboard.
+	<p>
+	<tag/Paste/
+	Paste the contents of the clipboard as a new image (if the clipboard contains a valid icon).
+	<p>
+	<tag/Clear/
+	Clear the grid and fill it with transparent color.
+	<p>
+	<tag/Select all/
+	Marks the entire icon as selected.
+</descrip>
+
+<sect1>View
+<p>
+<descrip>
+	<tag/Zoom in/
+	<p>
+	<tag/Zoom out/
+	<p>
+	<tag/Zoom factor/
+	Zoom to a predefined zoom factor
+	<p>
+</descrip>
+
+<sect1>Tools
+<p>
+<descrip>
+	<tag/Freehand/
+	Draw free hand.
+	<p>
+	<tag/Select/
+	Select (mark) a part of the icon.
+	<p>
+	<tag/Line/
+	Draw a line.
+	<p>
+	<tag/Rectangle/
+	Draw a rectangle.
+	<p>
+	<tag/Filled rectangle/
+	Draw a filled rectangle.
+	<p>
+	<tag/Circle/
+	Draw a circle.
+	<p>
+	<tag/Filled circle/
+	Draw a filled circle.
+	<p>
+	<tag/Ellipse/
+	<p>
+	<tag/Filled ellipse/
+	Almost the same as drawing a circle.
+	<p>
+	<tag/Spray/
+	Draws a randow dotted pattern like a spraycan.
+	<p>
+	<tag/Flood fill/
+	Fill an area with the current color..
+	<p>
+	<tag/Eraser/
+	Draw transparent (invisible).
+</descrip>
+
+<sect1>Options 
+<p>
+<descrip>
+	<tag/Toggle grid/
+	Toggle grid on/off.
+</descrip>
+
+
+<sect1>Help
+<p>
+From this menu user can show information about The Icon Editor.
+
+</article>
+
+
+
+
+
+
+
+

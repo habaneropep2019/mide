@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kde-1.0pre\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: 1998-07-04 12:00+0200\n"
+"Last-Translator: Paul Ionescu <omy@main.romsoft.ro>\n"
+"Language-Team: ??? <ro@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "Despre Formatorul de dischete KDE"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr ""
+
+#: about.cpp:54
+msgid "Version "
+msgstr "Versiunea "
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Unitate disc:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Densitate:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Sistem de fiºiere:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Formateazã"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "ªtergere rapidã"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Formatare totalã"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Creazã etichetã:"
+
+#: floppy.cpp:148
+#, fuzzy
+msgid "KDE Floppy"
+msgstr "Formator de diskete"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "Formator de diskete"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr ""
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr ""
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"Nu pot accesa %s\n"
+"Asigurã-te cã dispozitivul existã ºi cã\n"
+"ai drepturi de scriere pe el."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Nu gãsesc kfdformat\n"
+"kfdformat este parte din distributia KFloppy.\n"
+"Instaleazã KFloppy integral."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Nu gãsesc kmke2fs\n"
+"kmke2fs este parte din distributia KFloppy.\n"
+"Instaleazã KFloppy integral."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Nu gãsesc kmkdosfs\n"
+"kmkdosfs este parte din distributia KFloppy.\n"
+"Instaleazã KFloppy integral."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Renunþã"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Nu pot porni un nou program: fork() a eºuat."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Nu pot accesa discheta sau unitatea de disc\n"
+"Introduceþi o dischetã ºi asiguraþi-vã cã aþi\n"
+"selectat o unitate de disc validã.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"Nu pot formata: %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Blocul %d este defect. Continuu ..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"Nu pot crea un sistem de fiºiere pe: %s\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"Discheta a fost formatatã.\n"
+"Blocuri marcate defecte: %d\n"
+"Capacitate brutã: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Toate fiºierele au fost ºterse."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Creez sistemul de fiºiere ..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Verific ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Nu pot porni un program nou\n"
+"funcþia fork() a eºuat."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Eroare în încercarea de a determina dacã discheta e montatã\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s este montatã.\n"
+"Vã rugãm sã demontaþi discheta mai întâi."

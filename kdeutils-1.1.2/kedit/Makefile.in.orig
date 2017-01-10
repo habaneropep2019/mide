@@ -1,0 +1,116 @@
+#
+#                           KEdit Makefile
+#
+#  Copyright 1997 Bernd Johannes Wuebben, wuebben@math.cornell.edu
+#
+#  $Id: Makefile.in.orig,v 1.1 1998/02/03 22:53:06 kulow Exp $
+#
+
+# this variables are needed for rpath support
+kde_libraries = @kde_libraries@
+qt_libraries = @qt_libraries@
+top_builddir = ..
+LIBTOOL = @LIBTOOL@
+KDE_RPATH = @KDE_RPATH@
+exec_prefix = @exec_prefix@
+
+CXXFLAGS= @CXXFLAGS@ @all_includes@ -DHAVE_CONFIG_H -I..
+LDFLAGS	= @LDFLAGS@ @all_libraries@ -lkfm -lkdecore -lkdeui -lqt -lXext -lX11 @LIBSOCKET@
+CXX     = @CXX@
+MOC   	= @MOC@
+
+############# INSTALL #################
+
+INSTALL = @INSTALL@ -m 0755
+INSTALL_DATA = @INSTALL@ -m 0644
+INSTALL_DIR = @INSTALL@ -d -m 0755
+
+prefix = @prefix@
+install_root = @install_root@
+BINDIR = @kde_bindir@
+TOOLPICSDIR = @kde_datadir@/kedit/toolbar
+ICONDIR = @kde_icondir@
+MINIDIR = @kde_minidir@
+PICSDIR = @kde_datadir@/kedit/pics
+DOCSDIR = @kde_htmldir@/en/kedit
+APPSDIR = @kde_appsdir@/Applications
+
+########### File Formats ###########
+
+DEFS = #-DDOCS_PATH=\"$(DOCSDIR)/\"
+.SUFFIXES: .cpp .moc
+
+.cpp.o:
+	$(CXX) $(DEFS) -c $(CXXFLAGS) $<
+
+.h.moc: 
+	$(MOC) $< -o $@
+
+########## Files #####################
+
+SOURCES =	kedit.cpp  keditcl1.cpp keditcl2.cpp print.cpp\
+		filldlg.cpp mail.cpp about.cpp urldlg.cpp
+HEADERS =	kedit.h  keditcl.h  print.h\
+		filldlg.h  version.h mail.h about.h urldlg.h
+OBJECTS =	kedit.o  keditcl1.o keditcl2.o print.o\
+		filldlg.o mail.o about.o urldlg.o
+SRCMETA =	kedit.moc  keditcl.moc  print.moc\
+		filldlg.moc mail.moc about.moc urldlg.moc
+TARGET	=	kedit
+
+
+######### build rules ################
+
+all: $(TARGET)
+
+Makefile: Makefile.in
+	cd .. && CONFIG_FILES=kedit/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+$(TARGET): $(SRCMETA) $(OBJECTS)
+	$(LIBTOOL) --mode=link $(CXX) $(OBJECTS) -o $(TARGET) $(LDFLAGS) $(KDE_RPATH)
+
+depend:
+	@makedepend $(SOURCES) 2> /dev/null
+
+showfiles:
+	@echo $(SOURCES) $(HEADERS) Makefile
+
+clean:
+	rm -f *.o *.bak *~ *% #*
+	rm -f $(SRCMETA) $(TARGET)
+
+distclean: clean
+	rm -f Makefile
+
+install: all
+	$(INSTALL_DIR) $(BINDIR)
+	$(INSTALL) $(TARGET) $(BINDIR)
+	(cd docs && $(MAKE) install)
+	$(INSTALL_DIR) $(APPSDIR)
+	$(INSTALL_DATA) KEdit.kdelnk $(APPSDIR)/kedit.kdelnk 
+	$(INSTALL_DIR) $(TOOLPICSDIR)
+	$(INSTALL_DATA) pixmaps/filenew2.xpm $(TOOLPICSDIR)
+	$(INSTALL_DATA) pixmaps/send.xpm $(TOOLPICSDIR)
+	$(INSTALL_DIR) $(PICSDIR)
+	$(INSTALL_DATA) pixmaps/keditlogo.xpm  $(PICSDIR)
+	$(INSTALL_DIR) $(ICONDIR)
+	$(INSTALL_DATA) pixmaps/kedit.xpm  $(ICONDIR)
+	$(INSTALL_DIR) $(MINIDIR)
+	$(INSTALL_DATA) pixmaps/mini-kedit.xpm  $(MINIDIR)/kedit.xpm
+
+
+uninstall:
+	rm -f $(BINDIR)/$(TARGET)
+	(cd docs && $(MAKE) uninstall)
+	rm -f $(APPSDIR)/kedit.kdelnk
+	rm -f $(ICONDIR)/kedit.xpm
+	rm -f $(MINIDIR)/kedit.xpm
+	rm -f $(PICSDIR)/keditlogo.xpm
+	rm -f $(TOOLPICSDIR)/filenew2.xpm
+	rm -f $(TOOLPICSDIR)/send.xpm
+
+messages:
+	@XGETTEXT@ -C --keyword=translate -x ../../kdelibs/po/kde.pot $(SOURCES) && mv messages.po ../po/kedit.pot
+
+# DO NOT DELETE THIS LINE -- make depend depends on it.
+

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Manual del Ktalkd: Uso</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, Spanish, ktalkd, talk">
+<META NAME="description" CONTENT="El Manual de KTalkd">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-5.html">Página siguiente</A>
+<A HREF="ktalkd-3.html">Página anterior</A>
+<A HREF="ktalkd.html#toc4">Índice general</A>
+</P>
+<H3><A NAME="s4">4. Uso</A></H3>
+
+<P>
+<P>No hay mucho que decir acerca de Ktalkd : es un demonio. No tiene interfaz
+de usuario para usarlo.
+<P>El cuadro de anuncio es sencillo : responder o ignorar.
+<P>El cuadro de configuración debería dejarse como está, excepto para
+configurar un reenvío a otro usuario (u otra máquina).
+<P>
+<H3><A NAME="ss4.1">4.1 Eligiendo un método de reenvío</A>
+</H3>
+
+<P>Nada es perfecto, todos tienen pros (+) y contras (-).
+<P>
+<P><B>FWA</B> : Reenvíar solo el anuncio. Conexión directa. No recomendado.
+<UL>
+<LI>       (+) Puedes saber quien te llama, pero</LI>
+<LI>       (-) El que llama tendrá que responder a un anuncio tuyo. Desagradable.</LI>
+<LI>       (-) No lo uses si tienes una "Máquina contestadora" en tu
+máquina remota. (La Máquina contestadora" no podrá hacer aparecer el aviso.
+¡Puede ser confuso!)</LI>
+</UL>
+<P><B>FWR</B> : Reenvíar todas las peticiones, cambiando la información
+cuando sea necesario. Conexión directa.
+<UL>
+<LI>       (+) La persona que llama no sabrá que estas fuera, pero</LI>
+<LI>       (-) Tu no sabrás realmente quien te llama - solo su nombre de usuario, 
+(así que verás "talk from Wintalk@mi_máquina")</LI>
+</UL>
+<P><B>FWT</B> : Reenviar todas las peticiones y cojer el talkk. No hay conexión directa.
+<UL>
+<LI>       (+) Lo mismo que mas arriba, pero funciona también si tú y el
+que llama no pueden estar en contacto directo con el otro (ej: firewalls)</LI>
+<LI>       (+) Te avisará de la persona real que está hablando contigo
+cuando aceptes la conexión.</LI>
+<LI>       (-) Pero como en un reenvío, no podras saber el nombre de su máquina en el anuncio.</LI>
+</UL>
+<P>En resumen, usa <B>FWT</B> si quieres usarlo a través de una firewall (y si
+ktalkd puede acceder a ambas redes),y <B>FWR</B> en otro caso.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-5.html">Página siguiente</A>
+<A HREF="ktalkd-3.html">Página anterior</A>
+<A HREF="ktalkd.html#toc4">Índice general</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

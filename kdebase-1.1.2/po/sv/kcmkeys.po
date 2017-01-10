@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Karl Backström <backstrom@kde.org>, 1998.
+# Anders Widell <d95-awi@nada.kth.se>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kwm\n"
+"POT-Creation-Date: 1999-01-08 01:16+0100\n"
+"PO-Revision-Date: 1998-12-12 18:46+01:00\n"
+"Last-Translator: Anders Widell <d95-awi@nada.kth.se>\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: main.cpp:72
+msgid "&Standard shortcuts"
+msgstr "&Standardgenvägar"
+
+#: main.cpp:80
+msgid "&Global shortcuts"
+msgstr "&Globala genvägar"
+
+#: main.cpp:88
+msgid "usage: kcmkeys [-init | {standard,global}]\n"
+msgstr "användning: kcmkeys [-init | {standard,global}]\n"
+
+#: main.cpp:132
+msgid "Key binding settings"
+msgstr "Tangentbindningar"
+
+#: keyconfig.cpp:106
+msgid "Current scheme"
+msgstr "Nuvarande bindningar"
+
+#: keyconfig.cpp:108
+msgid "KDE default"
+msgstr "Kde standard"
+
+#: keyconfig.cpp:115
+msgid "&Key scheme"
+msgstr "&Tangentbindningar"
+
+#: keyconfig.cpp:126
+msgid "&Add ..."
+msgstr "&Lägg till..."
+
+#: keyconfig.cpp:148
+msgid "&Save changes"
+msgstr "&Spara ändringarna"
+
+#: keyconfig.cpp:211
+msgid "Error removing scheme"
+msgstr "Fel vid bortagandet av bindningarna"
+
+#: keyconfig.cpp:212
+msgid ""
+"This key scheme could not be removed.\n"
+"Perhaps you do not have permission to alter the file\n"
+"system where the key scheme is stored."
+msgstr ""
+"Den här tangentbindningen kunde inte tas bort.\n"
+"Du har kanske inte har rättigheter att ändra den del\n"
+"av filsystemet som tangentbindnings filen är lagrad på."
+
+#: keyconfig.cpp:343
+msgid "Naming conflict"
+msgstr "Namnkonflikt"
+
+#: keyconfig.cpp:344
+msgid ""
+"Please choose a unique name for the new key\n"
+"scheme. The one you entered already appears\n"
+"in the key scheme list."
+msgstr ""
+"Vargod ange ett unikt namn för den nya\n"
+"tangentbindningarna. Det namn du använde på\n"
+"tangentbindningarna används redan."
+
+#: savescm.cpp:18
+msgid "Add a key scheme"
+msgstr "Lägg till tangentbindningar"
+
+#: savescm.cpp:32
+msgid ""
+"&Enter a name for the new key scheme\n"
+"to be added to your personal list.\n"
+"\n"
+"The keys currently used in the preview will\n"
+"be copied into this scheme to begin with."
+msgstr ""
+"&Skriv in ett namn på tangentbindningarna\n"
+"som kan läggas till din personliga lista.\n"
+"\n"
+"Tangentbindningarna som du nu använder kommer\n"
+"att kopieras in som en start."
+
+#: ../../kwm/kwmbindings.cpp:1
+msgid "Task manager"
+msgstr "Uppdragshanterare"
+
+#: ../../kwm/kwmbindings.cpp:2
+msgid "Kill window mode"
+msgstr "Fönsterdödarläge"
+
+#: ../../kwm/kwmbindings.cpp:3
+msgid "Execute command"
+msgstr "Kör kommando"
+
+#: ../../kwm/kwmbindings.cpp:4
+msgid "Window operations menu"
+msgstr "Fönsteregenskapsmeny"
+
+#: ../../kwm/kwmbindings.cpp:5
+msgid "Pop-up system menu"
+msgstr "Poppa upp systemmenyn"
+
+#: ../../kwm/kwmbindings.cpp:7
+msgid "Window raise"
+msgstr "Höj fönster"
+
+#: ../../kwm/kwmbindings.cpp:8
+msgid "Window lower"
+msgstr "Sänk fönster"
+
+#: ../../kwm/kwmbindings.cpp:9
+msgid "Window close"
+msgstr "Stäng fönster"
+
+#: ../../kwm/kwmbindings.cpp:10
+msgid "Window iconify"
+msgstr "Ikonifiera fönster"
+
+#: ../../kwm/kwmbindings.cpp:11
+msgid "Window resize"
+msgstr "Ändra storlek på fönster"
+
+#: ../../kwm/kwmbindings.cpp:12
+msgid "Window move"
+msgstr "Flytta fönster"
+
+#: ../../kwm/kwmbindings.cpp:13
+msgid "Window toggle sticky"
+msgstr "Växla klistrighet på fönster"
+
+#: ../../kwm/kwmbindings.cpp:15
+msgid "Switch to desktop 1"
+msgstr "Byt till skrivbord 1"
+
+#: ../../kwm/kwmbindings.cpp:16
+msgid "Switch to desktop 2"
+msgstr "Byt till skrivbord 2"
+
+#: ../../kwm/kwmbindings.cpp:17
+msgid "Switch to desktop 3"
+msgstr "Byt till skrivbord 3"
+
+#: ../../kwm/kwmbindings.cpp:18
+msgid "Switch to desktop 4"
+msgstr "Byt till skrivbord 4"
+
+#: ../../kwm/kwmbindings.cpp:19
+msgid "Switch to desktop 5"
+msgstr "Byt till skrivbord 5"
+
+#: ../../kwm/kwmbindings.cpp:20
+msgid "Switch to desktop 6"
+msgstr "Byt till skrivbord 6"
+
+#: ../../kwm/kwmbindings.cpp:21
+msgid "Switch to desktop 7"
+msgstr "Byt till skrivbord 7"
+
+#: ../../kwm/kwmbindings.cpp:22
+msgid "Switch to desktop 8"
+msgstr "Byt till skrivbord 8"
+
+#: ../../kwm/kwmbindings.cpp:24
+msgid "Switch one desktop to the right"
+msgstr "Byt till skrivbordet närmast åt höger"
+
+#: ../../kwm/kwmbindings.cpp:25
+msgid "Switch one desktop to the left"
+msgstr "Byt till skrivbordet närmast åt vänster"
+
+#: ../../kwm/kwmbindings.cpp:26
+msgid "Switch one desktop up"
+msgstr "Byt till skrivbordet närmast uppåt"
+
+#: ../../kwm/kwmbindings.cpp:27
+msgid "Switch one desktop down"
+msgstr "Byt till skrivbordet närmast nedåt"
+
+#: stdbindings.cpp:3
+msgid "New"
+msgstr "Ny"
+
+#: stdbindings.cpp:8
+msgid "Next"
+msgstr "Nästa"
+
+#: stdbindings.cpp:9
+msgid "Prior"
+msgstr "Föregående"
+
+#: stdbindings.cpp:14
+msgid "Find"
+msgstr "Sök"
+
+#: stdbindings.cpp:17
+msgid "Home"
+msgstr "Hem"
+
+#: stdbindings.cpp:18
+msgid "End"
+msgstr "Slut"
+
+#~ msgid "KDE lite"
+#~ msgstr "Kde lätt"

@@ -1,0 +1,1228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <TITLE>Hayes Modem Commands</TITLE>
+   <META NAME="GENERATOR" CONTENT="Mozilla/3.01Gold (X11; I; Linux 2.0.23 i586) [Netscape]">
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF">
+
+<H1 ALIGN=CENTER><BR>
+The Hayes Command Set </H1>
+
+<P>
+<HR SIZE=1></P>
+
+<P><FONT SIZE=+1>Here is a description of the Hayes Command Set. Most modem
+follow this command set to large extent. If you lost your modem manual
+or never had one in the first place this reference might come in handy.
+I for instance finally found out how to turn my modems speaker off: ATM0
+-- Finally:&nbsp;Silence !</FONT></P>
+
+<H2><A NAME="top"></A>The Hayes Command Set</H2>
+
+<P>The modem initialization string consists of a series of commands. It
+prepares the modem for communications, setting such features as dialing
+mode, waits, detection of the busy signal and many other settings. Newer
+modem communications programs reset the initializations string for you
+according to which menu options you select, which features you enable,
+etc.</P>
+
+<P>For many years Hayes modems have been <B>the</B> standard. As the field
+of modem manufactures has grown, most have adhered at least loosely to
+the Hayes standard. The following is a partial list of the Hayes command
+set. (called the AT commands). The <B>Hayes Command Set</B> can be divided
+into four groups:</P>
+
+<DL>
+<DT>Basic Command Set </DT>
+
+<DD>A capital character followed by a digit. For example, M1.</DD>
+
+<DT>Extended Command Set </DT>
+
+<DD>An &quot;&amp;&quot; (ampersand) and a capital character followed by
+a digit. This is an extension of the basic command set. For example, &quot;&amp;M1&quot;.
+Note that &quot;M1&quot; is different from &quot;&amp;M1&quot;.</DD>
+
+<DT>Proprietary Command Set </DT>
+
+<DD>Usually started by either a backslash (&quot;\&quot;), or a percent
+sign (&quot;%&quot;), these commands vary widely among modem manufacturers.
+For that reason, only a few of these commands are listed below.</DD>
+
+<DT>Register Commands </DT>
+
+<DD>Sr=n where &quot;r&quot; is the number of the register to be changed
+and &quot;n&quot; is the new value that is being assigned. </DD>
+</DL>
+
+<P>A &quot;register&quot; is computerese for a specific physical location
+in memory. Modem have small amounts of memory onboard. This fourth set
+of commands is used to enter values in a particular register (memory location).
+The register will be storing a particular &quot;variable&quot; (alpha-numeric
+information) which is utilized by the modem and communication software.
+For example, S7=60 instructs your computer to &quot;Set register #7 to
+the value 60.&quot;</P>
+
+<P><B>Note:</B> Although most commands are defined by a letter-number combination
+(L0, L1, etc.), the use of a zero is optional. In this case, L0 is the
+same as a plain &quot;L&quot; - keep this in mind when reading the table
+below!</P>
+
+<P>Here are some of the most important characters that may appear in the
+modem initialization string. These characters normally should not be changed.</P>
+
+<DL>
+<DT><B>AT</B> </DT>
+
+<DD>tells the modem that modem commands follow. This must begin each line
+of commands.</DD>
+
+<DT><B>Z</B> </DT>
+
+<DD>resets the modem to default state</DD>
+
+<DT><B>, (comma)</B> </DT>
+
+<DD>makes your software pause for a second. You can use more than one ,
+in a row. For example, &quot;,,,,&quot; tells the software to pause four
+seconds. (The duration of the pause is governed by the setting of register
+S8.</DD>
+
+<DT><B>^M</B> </DT>
+
+<DD>sends the terminating Carriage Return character to the modem. This
+is a control code that most communication software translate as a &quot;carriage
+return.&quot;</DD>
+</DL>
+
+<P>
+<HR SIZE=1 NOSHADE></P>
+
+<H2><A NAME="basicset"></A>The Basic Hayes Command Set - Alphabetical</H2>
+
+<TABLE BORDER=1 WIDTH="100%" >
+<TR>
+<TH>Command </TH>
+
+<TH>- Description - </TH>
+
+<TH>Comments<BR>
+</TH>
+</TR>
+
+<TR>
+<TD><A NAME="A"></A>A0 or A </TD>
+
+<TD>Answer incoming call<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>A/ </TD>
+
+<TD>Repeat last command. </TD>
+
+<TD>(Don't preface with AT. Enter usually aborts.)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="B"></A>B0 or B </TD>
+
+<TD ROWSPAN=3>Call negotiation </TD>
+
+<TD>V32 Mode/CCITT ans Seq <BR>
+</TD>
+</TR>
+
+<TR>
+<TD>B1 </TD>
+
+<TD>Bell 212A Answer Seq <BR>
+</TD>
+</TR>
+
+<TR>
+<TD>B2 </TD>
+
+<TD>Verbose/Quiet On Answer<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="D"></A>D </TD>
+
+<TD>Dial </TD>
+
+<TD>Dial the following number and then handshake in originate mode. 
+<P>Dial Modifiers</P>
+
+<P>(These are common but most modems will have more.)</P>
+
+<DL COMPACT>
+<DT>P </DT>
+
+<DD>Pulse dial </DD>
+
+<DT>T </DT>
+
+<DD>Touch Tone dial </DD>
+
+<DT>W </DT>
+
+<DD>Wait for second dial tone </DD>
+
+<DT>, </DT>
+
+<DD>Pause for time specified in register S8 (usually 2 seconds) </DD>
+
+<DT>; </DT>
+
+<DD>Remain in command mode after dialing </DD>
+
+<DT>! </DT>
+
+<DD>Flash switch-hook (Hang up for a half second as in transferring a call)
+</DD>
+
+<DT>L </DT>
+
+<DD>Dial last number </DD>
+</DL>
+
+<P><BR>
+</P>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="E"></A>E0 or E </TD>
+
+<TD>No Echo </TD>
+
+<TD>Will not echo commands to the computer<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>E1 </TD>
+
+<TD>Echo </TD>
+
+<TD>Will echo commands to the computer (so one can see what one types)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="H"></A>H0 or H </TD>
+
+<TD ROWSPAN=2>Hook status </TD>
+
+<TD>On hook - hang up<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>H1 </TD>
+
+<TD>Off hook - phone picked up<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="I"></A>I0 or I </TD>
+
+<TD>Inquiry, Information, or Interrogation </TD>
+
+<TD>(This command is very model specific. I0 usually returns a number or
+code, while higher numbers often provide much more useful information.)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="L"></A>L0 or L </TD>
+
+<TD ROWSPAN=4>Speaker Loudness 
+<P>Modems with volume control knobs will not have these options.<BR>
+</P>
+</TD>
+
+<TD>Off or low volume<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>L1 </TD>
+
+<TD>Low volume <BR>
+</TD>
+</TR>
+
+<TR>
+<TD>L2 </TD>
+
+<TD>Medium volume<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>L3 </TD>
+
+<TD>Loud or high volume <BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="M"></A>M0 or M </TD>
+
+<TD ROWSPAN="3">Speaker off </TD>
+
+<TD>(M3 is also common, but different on many brands)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>M1 </TD>
+
+<TD>Speaker on until remote carrier detected (until the other modem is
+heard)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>M2 </TD>
+
+<TD>Speaker is always on (data sounds are heard after CONNECT)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="N"></A>N0 or N </TD>
+
+<TD ROWSPAN=2>Handshake Speed </TD>
+
+<TD>Handshake only at speed in <A HREF="#S37">S37</A><BR>
+</TD>
+</TR>
+
+<TR>
+<TD>N1 </TD>
+
+<TD>Handshake at highest speed larger than <A HREF="#S37">S37</A><BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="O"></A>O0 or O </TD>
+
+<TD ROWSPAN=2>Return Online </TD>
+
+<TD>(O0 see also X1 as dial tone detection may be active)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>O1 </TD>
+
+<TD>Return Online after an equalizer retrain sequence<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="Q"></A>Q0 or Q </TD>
+
+<TD ROWSPAN=2>Quiet mode </TD>
+
+<TD>Off - Displays result codes, user sees command responses (e.g. OK)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>Q1 </TD>
+
+<TD>On - Result codes are suppressed, user does not see responses<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S"></A>Sn? </TD>
+
+<TD></TD>
+
+<TD>Query the contents of S-register n<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>Sn=r </TD>
+
+<TD>Store </TD>
+
+<TD>Store the value r in S-register n<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="V"></A>V0 or V </TD>
+
+<TD ROWSPAN=2>Verbal? </TD>
+
+<TD>Numeric result codes<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>V1 </TD>
+
+<TD>English result codes (e.g. CONNECT, BUSY, NO CARRIER etc.)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="X"></A>X0 or X </TD>
+
+<TD ROWSPAN=5>Smartmodem </TD>
+
+<TD>Hayes Smartmodem 300 compatible result codes<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>X1 </TD>
+
+<TD>Usually adds connection speed to basic result codes (e.g. CONNECT 1200)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>X2 </TD>
+
+<TD>Usually adds dial tone detection (preventing blind dial and sometimes
+ATO)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>X3 </TD>
+
+<TD>Usually adds busy signal detection<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>X4 </TD>
+
+<TD>Usually adds both busy signal and dial tone detection<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="Z"></A>Z0 or Z </TD>
+
+<TD>Reset </TD>
+
+<TD>Reset modem to stored configuration (Z0, Z1 etc. for multiple profiles)<BR>
+(Same as &amp;F (factory default) on modems with out NVRAM (non volatile
+memory)<BR>
+</TD>
+</TR>
+</TABLE>
+
+<P>
+<HR SIZE=1 NOSHADE></P>
+
+<H2><A NAME="extendedset"></A>The Extended Hayes Command Set<BR>
+(Ampersand Commands )</H2>
+
+<TABLE BORDER=1 WIDTH="100%" >
+<TR>
+<TH>Command </TH>
+
+<TH>- Description - </TH>
+
+<TH>Comments<BR>
+</TH>
+</TR>
+
+<TR>
+<TD><A NAME="ampB"></A>&amp;B0 or &amp;B </TD>
+
+<TD ROWSPAN=3>Retrain Parameters </TD>
+
+<TD>Disable auto retrain function<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;B1 </TD>
+
+<TD>Enable auto retrain function<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;B2 </TD>
+
+<TD>Enable auto retrain, but disconnect if no line improvement over period
+dictated by <A HREF="#S7">S7</A><BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampC"></A>&amp;C0 or &amp;C </TD>
+
+<TD ROWSPAN=2>Carrier detect </TD>
+
+<TD>signal always on<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;C1 </TD>
+
+<TD>Indicates remote carrier (usual preferred default)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampD"></A>&amp;D0 or &amp;D </TD>
+
+<TD ROWSPAN=4>Data Terminal Ready (DTR) </TD>
+
+<TD>Signal ignored (See your manual on this one!)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;D1 </TD>
+
+<TD>If DTR goes from On to Off the modem goes into command mode (some modems)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;D2 </TD>
+
+<TD>Some modems hang upon DTR On to Off transition. (Usual prefered default)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;D3 </TD>
+
+<TD>Hang up, reset modem and return to command mode upon DTR<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampF"></A>&amp;F0 or &amp;F </TD>
+
+<TD ROWSPAN=4>Factory defaults </TD>
+
+<TD>Generic Hayes-compatible defaults. 
+<P>This is usually a good thing to use in your init string, since the &amp;F1-&amp;F3
+settings can vary among modems, and they may actually be the cause of connection
+problems. (Since you never know exactly what Brand X's &amp;F2 <B>really</B>
+changes.</P>
+
+<P>On the other hand, it pays to try out the other options below; many
+people's problems can be solved by replacing a complicated init string
+with a simple &amp;F2 or the like. However, if you're building an init
+string, it's best to start with a simple &amp;F, and not use the &quot;customized&quot;
+form of defaults.<BR>
+</P>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;F1 </TD>
+
+<TD>Factory defaults tailored to an IBM-PC compatible user<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;F2 </TD>
+
+<TD>Factory defaults for a Mac w/software handshaking<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;F3 </TD>
+
+<TD>Factory defaults for a Mac w/hardware handshaking<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampG"></A>&amp;G0 or &amp;G </TD>
+
+<TD>Guard tones </TD>
+
+<TD>Disable guard tones<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampK"></A>&amp;K0 or &amp;K </TD>
+
+<TD ROWSPAN=5>Local flow control </TD>
+
+<TD>Disable local flow control<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;K1 </TD>
+
+<TD>Enable RTS/CTS hardware local flow control<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;K2 </TD>
+
+<TD>Enable XON/XOFF software local flow control<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;K3 </TD>
+
+<TD>Enable RTS/CTS hardware local flow control<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;K4 </TD>
+
+<TD>Enable XON/XOFF software local flow control<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampL"></A>&amp;L0 or &amp;L </TD>
+
+<TD>Dial mode </TD>
+
+<TD>Select dial-up mode<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampM"></A>&amp;M0 or &amp;M </TD>
+
+<TD>Error Control mode </TD>
+
+<TD>Select asynchronous non-EC mode (same as &amp;Q0)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampP"></A>&amp;P0 or &amp;P </TD>
+
+<TD ROWSPAN=2>Pulse dialing ratio </TD>
+
+<TD>U.S./Canada pulse dialing 39% make/ 61% break ratio<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;P1 </TD>
+
+<TD>U.K./Hong Kong pulse dialing 33% make/ 67% break ratio<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampQ"></A>&amp;Q0 or &amp;Q </TD>
+
+<TD ROWSPAN=5>Error Control mode </TD>
+
+<TD>Asynchronous non-EC more. No data buffering. ASB disabled.<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;Q5 </TD>
+
+<TD>Select V.42 EC operation (requires flow control)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;Q6 </TD>
+
+<TD>Asynchronous mode with ASB (requires flow control)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;Q8 </TD>
+
+<TD>Select alternate EC protocol (MNP)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;Q9 </TD>
+
+<TD>Conditional data compression: V.42bis = yes, MNP5 = no.<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampS"></A>&amp;S0 or &amp;S </TD>
+
+<TD ROWSPAN=2>DSR Action Select </TD>
+
+<TD>Always on (default)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;S1 </TD>
+
+<TD>Follows EIA specification (Active following carrier tone, and until
+carrier is lost.)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampT"></A>&amp;T0 or &amp;T </TD>
+
+<TD>Self test </TD>
+
+<TD>Model specific self tests on some modems<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampU"></A>&amp;U0 or &amp;U </TD>
+
+<TD ROWSPAN=2>Trellis code modulation </TD>
+
+<TD>Enable V.32 TCM<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;U1 </TD>
+
+<TD>Disable V.32 TCM<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampV"></A>&amp;V0 or &amp;V </TD>
+
+<TD>View active </TD>
+
+<TD>(And often stored) configuration profile settings (or ATI4)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampW"></A>&amp;W0 or &amp;W </TD>
+
+<TD>Store profile </TD>
+
+<TD>In NVRAM (&amp;W0, &amp;W1 etc. for multiple profiles)<BR>
+Some settings cannot be stored. These often don't show on &amp;V or ATI4<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampY"></A>&amp;Y0 or &amp;Y </TD>
+
+<TD ROWSPAN=2>Select Configuration Loaded at power-up </TD>
+
+<TD>Load profile 0 (default)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>&amp;Y1 </TD>
+
+<TD>Load profile 1<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="ampZ"></A>&amp;Zn=x </TD>
+
+<TD>Soft reset and Load Stored profile #n </TD>
+
+<TD>Note: All items after the &amp;Z on the command line are ignored<BR>
+</TD>
+</TR>
+</TABLE>
+
+<P>
+<HR SIZE=1 NOSHADE></P>
+
+<H2><A NAME="slash_pct"></A>Backslash &amp; Percent Commands:</H2>
+
+<TABLE BORDER=1 WIDTH="100%" >
+<TR>
+<TH>Command </TH>
+
+<TH>- Description - </TH>
+
+<TH>Comments<BR>
+</TH>
+</TR>
+
+<TR>
+<TD><A NAME="bsA"></A>\A0 or \A </TD>
+
+<TD ROWSPAN=4>Character maximum MNP block size </TD>
+
+<TD>64 character maximum<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\A1 </TD>
+
+<TD>128 character maximum<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\A2 </TD>
+
+<TD>192 character maximum<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\A3 </TD>
+
+<TD>256 character maximum<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="pctC"></A>%C0 or %C </TD>
+
+<TD ROWSPAN=4>Data Compression Enable/Disable </TD>
+
+<TD>Disabled<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%C1 </TD>
+
+<TD>MNP5 Enabled<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%C2 </TD>
+
+<TD>V.42bis (BTLZ) Enabled<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%C3 </TD>
+
+<TD>MNP5 &amp; V.42bis (BTLZ) Enabled<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="pctD"></A>%D0 or %D </TD>
+
+<TD ROWSPAN=4>Data compression </TD>
+
+<TD>512 BLTZ dictionary size<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%D1 </TD>
+
+<TD>1024 BLTZ dictionary size<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%D2 </TD>
+
+<TD>2048 BLTZ dictionary size<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%D3 </TD>
+
+<TD>4096 BLTZ dictionary size<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="pctE"></A>%E0 or %E </TD>
+
+<TD ROWSPAN="6">Escape method </TD>
+
+<TD>ESCAPE DISABLED<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%E1 </TD>
+
+<TD>+++AT method (default)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%E2 </TD>
+
+<TD>&lt;BREAK&gt;AT method<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%E3 </TD>
+
+<TD>BOTH methods enabled<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%E4 </TD>
+
+<TD>Disable &quot;OK&quot; to +++<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>%E5 </TD>
+
+<TD>Enable &quot;OK&quot; to +++<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="bsJ"></A>\J0 or \J </TD>
+
+<TD ROWSPAN=2>DTE Auto Rate Adjustment </TD>
+
+<TD>Disabled<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>J1 </TD>
+
+<TD>DTE rate is adjusted to match carrier rate.<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="bsN"></A>\N0 or \N </TD>
+
+<TD ROWSPAN=8>Connection type </TD>
+
+<TD>Normal connection (see below for definitions)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\N1 </TD>
+
+<TD>Direction connection<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\N2 </TD>
+
+<TD>MNP Auto-reliable connection<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\N3 </TD>
+
+<TD>Auto-reliable connection<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\N4 </TD>
+
+<TD>V.42bis reliable link with phase detection<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\N5 </TD>
+
+<TD>V.42bis auto-reliable link with phase detection<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\N6 </TD>
+
+<TD>V.42 reliable link with phase detection<BR>
+</TD>
+</TR>
+
+<TR>
+<TD>\N7 </TD>
+
+<TD>V.42 auto-reliable link with phase detection<BR>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Note:</B> A <I>direct connection</I> is a simple straight-though
+connection without any error correction or data compression. In this case,
+the computer-to-modem and modem-to-modem speeds must be identical.</P>
+
+<P>A <I>normal</I> connection uses flow control (either software or hardware)
+to buffer the data being sent or received, so that the modem can transmit
+data at a different rate than the computer is actually sending or receiving
+it. For example, a computer may send actual data at 57kbps, but using compression,
+the modem only actually sends 28.8kbps. This is the mode use by most modems.</P>
+
+<P>A <I>reliable</I> connection is a type of normal connection; if, for
+some reason, data compression or error correction cannot be established
+or maintained, the connection will hang up. (In essence, such a modem ensures
+that all connections are reliable, for it will hang up if the connection
+isn't.)</P>
+
+<P>Likewise, an <I>auto-reliable</I> connection is virtually the same,
+except that the modem will try to renegotiate the connection in order to
+establish a reliable connection. Again, this is the mode that most modems
+use.</P>
+
+<P>
+<HR SIZE=1 NOSHADE></P>
+
+<H2><A NAME="sregister"></A>S-Registers:</H2>
+
+<TABLE BORDER=1 WIDTH="100%" >
+<TR>
+<TH>Register </TH>
+
+<TH>Range </TH>
+
+<TH>Default </TH>
+
+<TH>Function<BR>
+</TH>
+</TR>
+
+<TR>
+<TD><A NAME="S0"></A>S0 </TD>
+
+<TD>0-255 rings </TD>
+
+<TD>1-2 </TD>
+
+<TD>Answer on ring number Don't answer if 0<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S1"></A>S1 </TD>
+
+<TD>0-255 rings </TD>
+
+<TD>0 </TD>
+
+<TD>If S0&gt;0 this register counts incoming rings<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S2"></A>S2 </TD>
+
+<TD>0-127 ASCII </TD>
+
+<TD>43 + </TD>
+
+<TD>Escape to command mode character <BR>
+</TD>
+</TR>
+
+<TR>
+<TD>S2 </TD>
+
+<TD>&amp;gt;127 </TD>
+
+<TD></TD>
+
+<TD>no ESC<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S3"></A>S3 </TD>
+
+<TD>0-127 ASCII </TD>
+
+<TD>13 CR </TD>
+
+<TD>Carriage return character<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S4"></A>S4 </TD>
+
+<TD>0-127 ASCII </TD>
+
+<TD>10 LF </TD>
+
+<TD>Line feed character<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S5"></A>S5 </TD>
+
+<TD>0-32,127 ASCII </TD>
+
+<TD>8 BS </TD>
+
+<TD>Backspace character <BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S6"></A>S6 </TD>
+
+<TD>2-255 seconds </TD>
+
+<TD>2 </TD>
+
+<TD>Dial tone wait time (blind dialing, see Xn)<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S7"></A>S7 </TD>
+
+<TD>1-255 seconds </TD>
+
+<TD>30-60 </TD>
+
+<TD>Wait time for remote carrier<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S8"></A>S8 </TD>
+
+<TD>0-255 seconds </TD>
+
+<TD>2 </TD>
+
+<TD>Comma pause time used in dialing<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S9"></A>S9 </TD>
+
+<TD>1-255 1/10 sec. </TD>
+
+<TD>6 </TD>
+
+<TD>Carrier detect time required for recognition<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S10"></A>S10 </TD>
+
+<TD>1-255 1/10 sec. </TD>
+
+<TD>7-14 </TD>
+
+<TD>Time between loss of carrier and hangup<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S11"></A>S11 </TD>
+
+<TD>50-255 millisec. </TD>
+
+<TD>70-95 </TD>
+
+<TD>Duration and spacing of tones when tone dialing<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S12"></A>S12 </TD>
+
+<TD>0-255 1/50 sec. </TD>
+
+<TD>50 </TD>
+
+<TD>Guard time for pause around +++ command sequence<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S36"></A>S36 </TD>
+
+<TD>Fallback options when error correction link fails:<BR>
+0 - Disconnect<BR>
+1 - Establish Direct connection<BR>
+3 - Establish Normal connection<BR>
+4 - Establish a MNP connection if possible, else Disconnect<BR>
+5 - Establish a MNP connection if possible, else Direct connection<BR>
+7 - Establish a MNP connection if possible, else Normal connection<BR>
+</TD>
+
+<TD>7 </TD>
+
+<TD>Negotiation Failure Treatment<BR>
+</TD>
+</TR>
+
+<TR>
+<TD><A NAME="S37"></A>S37 </TD>
+
+<TD>1 = 300 bps<BR>
+5 = 1200 bps<BR>
+6 = 2400 bps<BR>
+7 = 1200/75 bps (v.23 mode)<BR>
+8 = 4800 bps<BR>
+9 = 9600 bps<BR>
+10 = 12000 bps<BR>
+11 = 14400 bps<BR>
+12 = 7200 bps </TD>
+
+<TD>0 </TD>
+
+<TD>Negotiation Speed (Initial handshake)<BR>
+</TD>
+</TR>
+</TABLE>
+
+<P>Many modems have dozens, even hundreds, of S registers, but only the
+first dozen or so are fairly standard. They are changed with a command
+like <A HREF="#S">ATSn=N</A>, and examined with <A HREF="#S">ATSn?</A>
+(e.g. &quot;<A HREF="#S10">AT S10=70</A> <A HREF="#S">S1?</A>&quot; would
+tell the modem not to hang up for seven seconds should it not hear the
+answering modem, and return the number of times the phone last rang.)</P>
+
+<P>
+<HR WIDTH="100%"></P>
+
+</BODY>
+</HTML>

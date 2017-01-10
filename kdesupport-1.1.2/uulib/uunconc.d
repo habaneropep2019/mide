@@ -1,0 +1,1 @@
+uunconc.o: uunconc.c

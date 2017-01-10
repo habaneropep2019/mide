@@ -1,0 +1,29 @@
+/*
+ *   xmcd - Motif(tm) CD Audio Player
+ *
+ *   Copyright (C) 1993-1997  Ti Kan
+ *   E-mail: ti@amb.org
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, write to the Free Software
+ *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ *
+ */
+
+#define shuffle_width 16
+#define shuffle_height 16
+static unsigned char shuffle_bits[] = {
+   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x78, 0x00, 0xcc, 0x00,
+   0x84, 0x0c, 0xc0, 0x3c, 0x60, 0x3c, 0x30, 0x0c, 0x00, 0x00, 0x30, 0x00,
+   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+};

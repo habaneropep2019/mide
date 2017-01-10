@@ -1,0 +1,170 @@
+# Original Author was Kalle@kde.org
+# I lifted it in some mater. (Stephan Kulow)
+# I used much code from Janos Farkas
+
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(acinclude.m4) dnl a source file from your sub dir
+
+dnl This is so we can use kde-common
+AC_CONFIG_AUX_DIR(admin)
+
+AC_CANONICAL_SYSTEM 
+AC_ARG_PROGRAM
+
+dnl Automake doc recommends to do this only here. (Janos)
+AM_INIT_AUTOMAKE(kdeutils, 1.1.2) dnl searches for some needed programs
+
+dnl make $KDEDIR the default for the installation
+AC_PREFIX_DEFAULT(${KDEDIR:-/usr/local/kde})
+
+dnl generate the config header
+AM_CONFIG_HEADER(config.h) dnl at the distribution this done
+
+dnl Checks for programs.
+AC_CHECK_COMPILERS
+AM_DISABLE_LIBRARIES
+KDE_PROG_LIBTOOL
+
+dnl for NLS support. Call them in this order!
+dnl WITH_NLS is for the po files
+AM_KDE_WITH_NLS
+
+dnl I need to check for libsocket before testing X
+AC_CHECK_LIB(socket, socket, [LIBSOCKET="-lsocket -lnsl"]) dnl for Solaris
+AC_SUBST(LIBSOCKET)
+AC_PATH_KDE
+
+AC_LANG_CPLUSPLUS
+KDE_CHECK_STL
+dnl Checks for libraries. 
+AC_FIND_GIF
+AC_FIND_JPEG
+AC_FIND_TIFF
+KDE_CHECK_KIMGIO
+
+dnl Checks for header files.
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+AC_CHECK_HEADERS(fcntl.h sys/time.h unistd.h ieeefp.h sys/types.h sys/stat.h sys/resource.h sys/user.h)
+
+AC_CHECK_KDEMAXPATHLEN
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_TIME
+
+dnl check if the compiler has bool
+AC_CHECK_BOOL
+
+AC_DEFUN(KDE_C_LONG_DOUBLE,
+[AC_CACHE_CHECK(for long double, ac_cv_c_long_double,
+[AC_TRY_RUN([
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+int main() {
+/* The Stardent Vistra knows sizeof(long double), but does not support it.  */
+long double foo = 1.0;
+char buffer[10];
+/* On Ultrix 4.3 cc, long double is 4 and double is 8.  */
+int result = (sizeof(long double) < sizeof(double));
+/* the following is needed for a broken printf in glibc2 */
+if (!result) {
+    foo = foo * 3;
+    sprintf(buffer,"%0.0Lf",foo);
+    result = strcmp(buffer, "3");
+/* and now something mean ;-) */
+    foo = fabsl(foo);
+}
+exit(result); }],
+ac_cv_c_long_double=yes, ac_cv_c_long_double=no)
+])
+if test $ac_cv_c_long_double = yes; then
+  AC_DEFINE(HAVE_LONG_DOUBLE)
+fi
+])
+KDE_C_LONG_DOUBLE
+
+AC_LANG_C
+AC_CHECK_LIB(m, isinf, [
+AC_DEFINE_UNQUOTED(HAVE_FUNC_ISINF)
+])
+
+dnl Checks for library functions. MISCOBJS is for kdecore
+AC_CHECK_FUNCS(socket fabsl strdup) 
+
+dnl output files
+topdir=`pwd`
+AC_SUBST(topdir)
+
+dnl Perform program name transformation
+AC_ARG_PROGRAM
+
+AC_MSG_CHECKING(if kpm can be compiled)
+case "$host" in 
+  *86-*-linux-*) kpm_compile=yes ;;
+  alpha*-*-linux-*) kpm_compile=yes ;;
+  *) kpm_compile=no
+esac
+AC_MSG_RESULT($kpm_compile)
+if test "$kpm_compile" = "no"; then
+  DO_NOT_COMPILE="$DO_NOT_COMPILE kpm"
+fi
+
+dnl Check whether ktop can run
+dnl Alpha Linux might work as well; please test and modify check
+AC_MSG_CHECKING(if ktop can be compiled)
+case "$host" in
+  *86-*-linux-*) ktop_compile=yes ;;
+  alpha*-*-linux-*) kpm_compile=yes ;;
+  *-*-freebsd-*) ktop_compile=yes ;;
+  *) ktop_compile=no
+esac
+AC_MSG_RESULT($ktop_compile)
+if test "$ktop_compile" = "no"; then
+  DO_NOT_COMPILE="$DO_NOT_COMPILE ktop"
+fi
+
+if echo $DO_NOT_COMPILE | grep kfloppy > /dev/null; then
+ ac_cv_compile_kfloppy=no
+
+else
+
+AC_MSG_CHECKING(if kfloppy's headers are installed)
+AC_CACHE_VAL(ac_cv_compile_kfloppy,
+[
+AC_LANG_C
+# this is a little piece of code out of kfloppy. If it doesn't compile,
+# kfloppy is not good for this system. It doesn't do anything, but enough
+# to fail ;)
+if test -r $srcdir/kfloppy/kmkdosfs.c; then
+  cat $srcdir/kfloppy/kmkdosfs.c > conftest.c
+fi
+
+if AC_TRY_EVAL(ac_compile); then
+  ac_cv_compile_kfloppy=yes
+else
+  ac_cv_compile_kfloppy=no
+fi
+rm -f conftest.*
+])
+
+AC_MSG_RESULT($ac_cv_compile_kfloppy)
+if test "$ac_cv_compile_kfloppy" = "no"; then
+  DO_NOT_COMPILE="$DO_NOT_COMPILE kfloppy"
+fi
+fi 
+
+dnl configure in kfloppy/e2fs, if kfloppy will be built.
+dnl AC_CONFIG_SUBDIRS has to be done before KDE_CREATE_SUBDIRSLIST
+if test -d kfloppy && test "$ac_cv_compile_kfloppy" = "yes"; then
+  AC_CONFIG_SUBDIRS([kfloppy/e2fs])
+fi
+
+KDE_CREATE_SUBDIRSLIST
+
+dnl this will be replaced by Makefile.am
+AC_OUTPUT()
+

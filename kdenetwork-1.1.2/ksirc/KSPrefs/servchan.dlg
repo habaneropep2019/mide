@@ -1,0 +1,160 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {serverchannel.h}
+	ClassSource {serverchannel.cpp}
+	ClassName {ServerChannel}
+	DataHeader {serverchanneldata.h}
+	DataSource {serverchanneldata.cpp}
+	DataName {serverchanneldata}
+	WindowBaseClass {QFrame}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {400 300}
+MinSize {400 300}
+MaxSize {400 300}
+Grid {5}
+
+ButtonGroup {
+		Title {Channels}
+		Alignment {Left}
+		Style {49}
+		Rect {10 150 380 150}
+		Name {ButtonGroup_2}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ButtonGroup {
+		Title {Servers}
+		Alignment {Left}
+		Style {49}
+		Rect {10 0 380 150}
+		Name {ButtonGroup_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ListBox {
+		DragSelect {TRUE}
+		AutoScroll {TRUE}
+		ScrollBar {FALSE}
+		AutoScrollBar {TRUE}
+		BottomScrollBar {FALSE}
+		AutoBottomScrollBar {TRUE}
+		SmoothScrolling {TRUE}
+		MultiSelection {FALSE}
+		Style {51}
+		LineWidth {2}
+		Rect {20 20 200 120}
+		Name {ListBox_3}
+		Variable {LB_Servers}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ListBox {
+		DragSelect {TRUE}
+		AutoScroll {TRUE}
+		ScrollBar {FALSE}
+		AutoScrollBar {TRUE}
+		BottomScrollBar {FALSE}
+		AutoBottomScrollBar {TRUE}
+		SmoothScrolling {TRUE}
+		MultiSelection {FALSE}
+		Style {51}
+		LineWidth {2}
+		Rect {20 170 200 120}
+		Name {ListBox_4}
+		Variable {LB_Channels}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Delete}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {230 170 150 30}
+		Name {PushButton_1}
+		Signal {[Protected]  clicked --> channels_delete  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Add}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {230 215 150 30}
+		Name {PushButton_2}
+		Variable {B_AddChannels}
+		Signal {[Protected]  clicked --> channels_add  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Delete}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {230 20 150 30}
+		Name {PushButton_4}
+		Signal {[Protected]  clicked --> servers_delete  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Add}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {230 65 150 30}
+		Name {PushButton_5}
+		Variable {B_AddServers}
+		Signal {[Protected]  clicked --> servers_add  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {230 110 150 30}
+		Name {LineEdit_4}
+		Variable {SLE_Servers}
+		Signal {[Protected]  textChanged --> servers_sle_update  (const char*)}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {230 260 150 30}
+		Name {LineEdit_5}
+		Variable {SLE_Channels}
+		Signal {[Protected]  textChanged --> channels_sle_update  (const char*)}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

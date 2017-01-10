@@ -1,0 +1,203 @@
+KDE Help System CHANGES
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Version 0.7
+-----------
+
+Use rman to parse man pages.
+
+Version 0.6
+-------------
+
+Find Text function.
+Minor cleanup
+
+Version 0.5.6
+-------------
+
+Use kapp->getHelpMenu()
+Use KFM to open http: ftp: mailto:
+Portability changes from various people.
+
+Version 0.5.5
+-------------
+
+New session management.
+Update for KFSSTND.
+
+Version 0.5.4
+-------------
+
+Session management.
+Apply patch from Christian Czezatke to make the location bar a KToolBar.
+
+Version 0.5.3
+-------------
+
+Apply patch from Marco Zuehlke to put kdehelp's files in ~/.kde/kdehelp
+instead of ~/.kdehelp
+
+Version 0.5.2
+-------------
+
+Fix jumping to anchors within the current document.
+Use KIconLoader.
+
+Version 0.5.1
+-------------
+
+Update for new directory structure.
+
+Version 0.5.0
+-------------
+
+Reload option from Andre Fornacon <Andre.Fornacon@tesis.de>
+Maintain a history of sites visited so that visited links are rendered with
+the vlink color.
+
+Version 0.4.19
+--------------
+
+Added support for translation (Coolo)
+
+Version 0.4.18
+--------------
+
+Allow default background and text colors to be changed.
+
+Version 0.4.17
+--------------
+
+Added printing.
+X Selections.
+explicitly close() all toplevel windows before quitting so that 
+ delete toolbar and delete menu are called.
+use getCaption()
+
+Version 0.4.16
+--------------
+
+Added text copying.
+
+Version 0.4.15
+--------------
+
+Add delete toolbar; to destructor so that kdehelp works properly with the
+new toolbar.
+
+Version 0.4.14
+--------------
+
+man bugfix from Ralph C. Weichert:
+  when calling system( man ) add < /dev/null in case stdin has been closed.
+
+Version 0.4.13
+--------------
+
+Minor changes to ensure compatability with khtmlw-0.8.2a
+
+Version 0.4.12
+--------------
+
+Apply extensive patches from Christian Czezatke to incorporate Ktoolbar and
+ fix crashes, lockups, etc.
+Apply patch from Marco Zuehlke to fix info file locating
+Make rmb popup menu stay visible when button is released.
+Make as many columns in man section lists as possible.
+Add hand cursor from Mark Donohoe.
+
+Version 0.4.11
+--------------
+
+Apply patch from Marco Zuehlke to accept compressed man pages.
+Apply patches from Christian Czezatke to stop SEGV when a url is not found.
+Add location bar.
+Options to hide tool/location/status bars
+Remember position on page in history.
+Handle full path names in info correctly
+Presentation changes in documentation
+
+Version 0.4.10
+--------------
+
+man and info display improvements
+fix running kdehelp when kdehelp is already running bug
+
+Version 0.4.9
+-------------
+
+More documentation
+Check that links in man pages exist and other man fixes
+KDE HTML documentation searching
+more font options
+handle #refs properly
+
+Version 0.4.8
+-------------
+
+Added search form and very basic CGI server for search engine. This is
+still very preliminary.
+Only man page searching implemented so far.
+more bug fixes as usual
+removed "search:" url type
+removed kcolordlg code - use libkdeui
+KDE help index is a CGI program
+
+Version 0.4.7
+-------------
+
+Catch up to kpanel-0.6 *.kdelnk format and location
+more info fixes
+cleanup URL handling
+initial kfm http: and ftp: support
+
+Version 0.4.6
+-------------
+
+Bug fixes (especially info)
+adopt kpanel [KDE Desktop Entry] for application index
+use Mark Donohoe's ktoolpics-0.2 (you will need to install this separately)
+khtmlw is no longer packaged with kdehelp
+
+Version 0.4.5
+-------------
+
+Use Mark Donohoe's opening page.
+more minor changes
+removed the silly "index:" url type
+keyboard accelerators for up/dn/left/right/pgup/pgdn
+
+Version 0.4
+-----------
+
+major changes to khtmlw
+horizontal scrolling
+
+Version 0.3.2
+-------------
+
+bookmarks bug-fix
+use libkde-0.51
+simple options dialog
+remove man page footers
+fix other man bugs
+
+Version 0.3
+-----------
+
+bookmarks
+special characters display properly in man/info - #include <header.h> works
+allow only one instance
+included khtmlw-0.2, see README.HTMLWidget
+
+Version 0.2
+-----------
+
+searching (man only currently)
+pictures on toolbar
+right button popup
+
+
+Martin Jones
+mjones@kde.org
+

@@ -1,0 +1,50 @@
+Changes in Kfract
+=================
+
+KFract 0.1.3   25 February 1998
+- [Robert Williams]  Added version.h
+- [Robert Williams]  renamed Fract.kdelnk to kfract.kdelnk
+- [Robert Williams]  added getHelpMenu()
+- [Robert Williams]  added -caption "%c" to kfract.kdelnk
+
+
+KFract 0.1.2   20.08.97
+-----------------------
+
+- Works now with new KMenuBar and KTopLevelWidget
+- A lot more dialogs
+- More parameters can be set
+- Two different Colour schemes
+- Toolbar added
+
+
+
+Kfract 0.1.1   24.07.97
+-----------------------
+
+- Works now with X servers that don't do 'backing store'
+- Performance improvements
+- Squeezed out a bit more precision
+- Now always interruptable
+- 'Resize' during drawing works now
+- Some minor bug fixes
+- Added 'julia sets'
+- Switching between set types possible
+- Added 'Save as parameter set'
+  Plain ASCII, allows re-calculating pictures
+- Added 'Save as picture'
+  Sorry, no gif format. Giflib23 is a mess.
+- Added 'Load parameter set', re-calculates the picture
+
+
+
+Kfract 0.1.0   18.07.97
+-----------------------
+
+Well, everything. ;-)  It's the very first public release and it's done
+from scratch.
+
+
+Uwe Thiem
+uwe@uwix.alt.na
+

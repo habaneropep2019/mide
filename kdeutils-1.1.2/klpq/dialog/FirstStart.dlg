@@ -1,0 +1,92 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {FirstStart.h}
+	ClassSource {FirstStart.cpp}
+	ClassName {FirstStart}
+	DataHeader {FirstStartData.h}
+	DataSource {FirstStartData.cpp}
+	DataName {FirstStartData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowCaption {Select your spooling system}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {304 300}
+MinSize {304 300}
+MaxSize {304 300}
+Grid {8}
+
+ButtonGroup {
+		Title {}
+		Alignment {Left}
+		Rect {88 136 128 112}
+		Name {ButtonGroup_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Please select the spooling system you use. Most systems use the BSD system. So if you don't know which spooler is installed on your system, BSD is probably a good choice.}
+		Alignment {1313}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {24 16 264 120}
+		Name {Label_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {TRUE}
+		Text {Ok}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {104 256 100 24}
+		Name {PushButton_1}
+		Variable {b_ok}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+RadioButton {
+		Checked {TRUE}
+		Text {BSD}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {104 144 100 30}
+		Name {RadioButton_1}
+		Variable {rb_bsd}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+RadioButton {
+		Checked {FALSE}
+		Text {PPR}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {104 176 100 30}
+		Name {RadioButton_2}
+		Variable {rb_ppr}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+RadioButton {
+		Checked {FALSE}
+		Text {LPRNG}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {104 208 100 30}
+		Name {RadioButton_3}
+		Variable {rb_lprng}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

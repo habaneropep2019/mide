@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kpm Handbook: Appendix</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="">
+<META NAME="description" CONTENT="kpm process management">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+Next<A HREF="kpm-3.html">Previous</A>
+<A HREF="kpm.html#toc4">Table of Contents</A>
+</P>
+<H3><A NAME="s4">4. Appendix</A></H3>
+
+<P>
+<A NAME="UNIX Signals"></A> <H3><A NAME="ss4.1">4.1 UNIX Signals</A>
+</H3>
+
+<P>These are the signals as explained on the manual page of <I>signal(7)</I>. For
+details consult the manual page with:
+<P><CODE>man 7 signal</CODE>
+<P>The following signals are defined by Posix and can be sent by kpm:
+<UL>
+<LI><B>SIGHUP:</B>  Hangup detected on controlling terminal or death of controlling
+process</LI>
+<LI><B>SIGINT:</B> Interrupt from keyboard</LI>
+<LI><B>SIGQUIT:</B> Quit from keyboard</LI>
+<LI><B>SIGILL:</B> Illegal Instruction</LI>
+<LI><B>SIGABRT:</B> Abort signal from abort(3)</LI>
+<LI><B>SIGFPE:</B> Floating point exception</LI>
+<LI><B>SIGKILL:</B> Kill signal</LI>
+<LI><B>SIGSEG:</B> Invalid memory reference</LI>
+<LI><B>SIGPIPE:</B> Broken pipe: write to pipe with no readers</LI>
+<LI><B>SIGALRM:</B> Timer signal from alarm(1)</LI>
+<LI><B>SIGTERM:</B> Termination signal</LI>
+<LI><B>SIGUSR1:</B> User-defined signal 1</LI>
+<LI><B>SIGUSR2:</B> User-defined signal 2</LI>
+<LI><B>SIGCHLD:</B> Child stopped or terminated</LI>
+<LI><B>SIGCONT:</B> Continue if stopped</LI>
+<LI><B>SIGSTOP:</B> Stop process</LI>
+<LI><B>SIGTSTP:</B> Stop typed at tty</LI>
+<LI><B>SIGTTIN:</B> tty input for background process</LI>
+<LI><B>SIGTTOU:</B> tty output for background process </LI>
+</UL>
+
+These signals aren't defined by Posix, nor available from kpm (yet)
+<UL>
+<LI><B>SIGTRAP:</B> Trace/breakpoint trap</LI>
+<LI><B>SIGIOT:</B> IOT trap. A synonym for SIGABRT</LI>
+<LI><B>SIGBUS:</B> Bus error</LI>
+<LI><B>SIGSYS:</B> Bad argument to routine (SVID)</LI>
+<LI><B>SIGSTKFLT:</B> Stack fault on coprocessor</LI>
+<LI><B>SIGURG:</B> Urgent condition on socket (4.2 BSD)</LI>
+<LI><B>SIGIO:</B> I/O now possible (4.2 BSD)</LI>
+<LI><B>SIGPOLL:</B> synonym for SIGIO (System V)</LI>
+<LI><B>SIGCLD:</B> synonym for SIGCHLD</LI>
+<LI><B>SIGXCPU:</B> CPU time limit exceeded (4.2 BSD)</LI>
+<LI><B>SIGXFSZ:</B> File size limit exceeded (4.2 BSD)</LI>
+<LI><B>SIGVTALRM:</B> Virtual alarm clock (4.2 BSD)</LI>
+<LI><B>SIGPROF:</B> Profile alarm clock</LI>
+<LI><B>SIGPWR:</B> Power failure (System V)</LI>
+<LI><B>SIGINFO:</B> A synonym for SIGPWR </LI>
+<LI><B>SIGLOST:</B> File lock lost</LI>
+<LI><B>SIGWINCH:</B> Window resize signal (4.3 BSD, Sun)</LI>
+<LI><B>SIGUNUSED:</B> Unused signal</LI>
+</UL>
+<P>
+<H3><A NAME="ss4.2">4.2 Known bugs and problems</A>
+</H3>
+
+<P>
+<UL>
+<LI>kpm sometimes dies with a segmentation fault if more than one process is
+marked and the list is updated. I've no clue why...</LI>
+<LI>The info bar and the process list itself are optimized for 12pt
+fonts. It will look good enough with fonts up to 14pt, but look very ugly for
+bigger fonts.</LI>
+<LI>kpm can consume a lot of CPU resources if the update period is too
+small. On my system (AMD K6PR200) it uses approximatly 5 percent CPU time with
+an update period of one second. This heavily depends on the total number of
+processes (all processes, not only those displayed) and can be much higher
+than this.</LI>
+<LI>The %CPU number isn't accurate at very short update periods due to timer
+granularity.</LI>
+<LI>The WCHAN field isn't correct if a  process  sleeps  in  a location
+outside those in <CODE>System.map</CODE> (for instance, in a kernel module). In
+these cases, the last entry in <CODE>System.map</CODE> will be showed (something like
+<CODE>_end</CODE>).</LI>
+<LI>kpm doesn't handle more than one process with the same PID.  This can
+occur when using CLONE_PID with the clone() system call. </LI>
+</UL>
+<P>
+<P ALIGN="RIGHT">
+
+Next<A HREF="kpm-3.html">Previous</A>
+<A HREF="kpm.html#toc4">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

@@ -1,0 +1,160 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-08-27 01:21+0200\n"
+"PO-Revision-Date: Sat Jul 31 1999 08:21:58+0200\n"
+"Last-Translator: Hazai Géza <janu@kern.hu>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"X-Generator: KTranslator v 0.4.0\n"
+""
+
+#: main.cpp:178
+msgid "Sorry, can't open your printcap file."
+msgstr "Sajnos nem tudom megnyitni a 'printcap' állományát"
+
+#: main.cpp:183
+msgid "Sorry, unable to parse your printcap."
+msgstr "Sajnos nem tudom átnézni a 'printcap' állományát"
+
+#: main.cpp:184
+msgid "Please email your printcap to Christoph.Neerfeld@home.ivm.de"
+msgstr "Kérem, küldje el 'printcap' állományát drótpostán Christoph.Neerfeld@home.ivm.de címre"
+
+#: klpq.cpp:90
+msgid "Printer"
+msgstr "Nyomtató"
+
+#: klpq.cpp:95
+msgid "Queuing"
+msgstr "Sorra várakozás"
+
+#: klpq.cpp:100
+msgid "Printing"
+msgstr "Nyomtatás folyamatban"
+
+#: klpq.cpp:105
+msgid "Update"
+msgstr "Frissítés"
+
+#: klpq.cpp:125
+msgid "Rank"
+msgstr "Helyezés"
+
+#: klpq.cpp:126
+msgid "Owner"
+msgstr "Tulajdonos"
+
+#: klpq.cpp:127
+msgid "Job"
+msgstr "Feladat"
+
+#: klpq.cpp:129
+msgid "Size"
+msgstr "Méret"
+
+#: klpq.cpp:150 klpq.cpp:228
+msgid "Make Top"
+msgstr "Elsõnek beállít"
+
+#: klpq.cpp:160
+msgid "Auto"
+msgstr "Automatikus"
+
+#: klpq.cpp:204
+msgid "&Auto update"
+msgstr "&Automatikus frissítés"
+
+#: klpq.cpp:205
+msgid "&Spooler"
+msgstr "&Gyüjtõ"
+
+#: klpq.cpp:208
+#, c-format
+msgid ""
+"Klpq %s\n"
+"(C) by Christoph Neerfeld\n"
+"chris@kde.org"
+msgstr ""
+"Klpq %s\n"
+"(C) Christoph Neerfeld\n"
+"chris@kde.org"
+
+#: klpq.cpp:213
+msgid "&Config"
+msgstr "&Konfigurálás"
+
+#: klpq.cpp:404
+#, c-format
+msgid "Do you really want to remove job No %d"
+msgstr "Valóban törölni akarja a(z) %d. számú feladatot"
+
+#: klpq.cpp:424
+#, c-format
+msgid ""
+"Do you really want to move job No\n"
+"%d\n"
+"on top of queue"
+msgstr ""
+"Valóban elsõnek akarja elhelyezni a(z)\n"
+"%d.\n"
+"számú feladatot a sorban"
+
+#: klpq.cpp:572 klpq.cpp:578 klpq.cpp:593
+msgid "Permission denied"
+msgstr "Hozzáférés megtagadva"
+
+#: klpq.cpp:573 klpq.cpp:579 klpq.cpp:594
+msgid ""
+"This is a privileged command\n"
+"and you do not have permission to execute it."
+msgstr ""
+"Ez egy kivételezett parancs\n"
+"és Önnek nincs hozzá végrehajtási joga."
+
+#: ConfAutoUpdate.cpp:10
+msgid "Configure Auto Update"
+msgstr "Az automatikus frissités konfigurálása"
+
+#: ConfAutoUpdateData.cpp:17
+msgid "Update frequency in seconds:"
+msgstr "Frissítés gyakorisága másodpercben:"
+
+#: klpqspooler.cpp:199 klpqspooler.cpp:269
+msgid "Can't find your lpc program !"
+msgstr "Nem találom az 'lpc' programját!"
+
+#: klpqspooler.cpp:200 klpqspooler.cpp:270
+msgid ""
+"Sorry, I can't find your lpc program.\n"
+"Please check the configuration under Config->Spooler."
+msgstr ""
+"Sajnos, nem találom az 'lpc' programját\n"
+"Ellenörizze a Beállítás->Gyüjtõ alatt a konfigurációt."
+
+#: FirstStart.cpp:21 SpoolerConfig.cpp:21 SpoolerConfigData.cpp:151
+msgid "Select your spooling system"
+msgstr "Válassza ki a gyüjtési módszert"
+
+#: FirstStartData.cpp:42
+msgid ""
+"Please select the spooling system you use. Most systems use the BSD spooler. "
+"So if you don't know which spooler is installed on your system, BSD is "
+"probably a good choice."
+msgstr ""
+"Kérem, válassza ki azt a gyüjtési módszert, amit használ. A rendszerek \n"
+"többsége BSD gyüjtõt használ Így, ha nem tudja, hogy milyen gyüjtõ \n"
+"lett installálva az Ön rendszerén, a BSD feltehetõen jó választás."
+
+#: SpoolerConfigData.cpp:99
+msgid "Paths of spooling commands:"
+msgstr "A gyüjtési parancsok útvonala:"

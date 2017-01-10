@@ -1,0 +1,491 @@
+# Перевод kwrite.
+# Copyright (C) 1998, 1999 Free Software Foundation, Inc.
+# Denis Pershin <dyp@inetlab.com>, 1998, 1999.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwrite\n"
+"POT-Creation-Date: 1999-04-17 02:13+0200\n"
+"PO-Revision-Date: 1999-02-09 00:00+0600\n"
+"Last-Translator: Denis Pershin <dyp@inetlab.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: highlight.cpp:1715
+msgid "Normal:"
+msgstr "Нормальный:"
+
+#: highlight.cpp:1725 kwdialog.cpp:495
+msgid "Selected:"
+msgstr "Выделенный:"
+
+#: highlight.cpp:1732
+msgid "Bold"
+msgstr "Жирный"
+
+#: highlight.cpp:1783
+msgid "Family:"
+msgstr "Семейство:"
+
+#: highlight.cpp:1793
+msgid "Size:"
+msgstr "Размер"
+
+#: highlight.cpp:1891
+msgid "Default Item Styles"
+msgstr "Стили элемента по умолчанию"
+
+#: highlight.cpp:1895 highlight.cpp:1966
+msgid "Item:"
+msgstr "Элемент:"
+
+#: highlight.cpp:1913
+msgid "Default Font"
+msgstr "Шрифт по умолчанию"
+
+#: highlight.cpp:1950
+msgid "Config Select"
+msgstr "Выбор настроек"
+
+#: highlight.cpp:1954
+msgid "Highlight:"
+msgstr "Раскраска:"
+
+#: highlight.cpp:1973
+msgid "Highlight Auto Select"
+msgstr "Автоматический выбор раскраски"
+
+#: highlight.cpp:1977
+msgid "File Extensions:"
+msgstr "Расширение файла"
+
+#: highlight.cpp:1984
+msgid "Mime Types:"
+msgstr "Типы Mime:"
+
+#: highlight.cpp:1991
+msgid "Item Style"
+msgstr "Стиль элемента"
+
+#: highlight.cpp:2000
+msgid "Item Font"
+msgstr "Шрифт элемента"
+
+#: kwview.cpp:1069
+msgid "Vertical Selections On"
+msgstr "Вертикальное выделение включено"
+
+#: kwview.cpp:1069
+msgid "Vertical Selections Off"
+msgstr "Вертикальное выделение выключено"
+
+#: kwview.cpp:1128
+msgid "The specified File does not exist"
+msgstr "Указанный файл не существует"
+
+#: kwview.cpp:1138
+msgid "You have specified a directory"
+msgstr "Вы указали каталог"
+
+#: kwview.cpp:1148
+msgid "You do not have read permission to this file"
+msgstr "Вы не имеете права читать этот файл"
+
+#: kwview.cpp:1164 kwview.cpp:1194
+msgid "An Error occured while trying to open this Document"
+msgstr "Произошла ошибка при попытке открытия этого документа"
+
+#: kwview.cpp:1178
+msgid "You do not have write permission to this file"
+msgstr "Вы не имеете прав записи на этот файл"
+
+#: kwview.cpp:1231
+msgid "Loading..."
+msgstr "Загружаю..."
+
+#: kwview.cpp:1239 kwview.cpp:1360
+msgid "Inserted"
+msgstr "Вставлено"
+
+#: kwview.cpp:1244 kwview.cpp:1369
+msgid "Read"
+msgstr "Прочитано"
+
+#: kwview.cpp:1253 kwview.cpp:1311
+msgid ""
+"KWrite is already waiting\n"
+"for an internet job to finish\n"
+"Please wait until it has finished\n"
+"Alternatively stop the running one."
+msgstr ""
+"KWrite ожидает\n"
+"завершения интернет задачи\n"
+"Пожалуйста подождите\n"
+"Либо остановите."
+
+#: kwview.cpp:1261 kwview.cpp:1319
+msgid "Waiting for KFM..."
+msgstr "Жду KFM..."
+
+#: kwview.cpp:1267 kwview.cpp:1332
+msgid "Could not start or find KFM"
+msgstr "Ошибка запуска KFM"
+
+#: kwview.cpp:1294
+msgid "Saving..."
+msgstr "Записываю..."
+
+#: kwview.cpp:1302 kwview.cpp:1379
+msgid "Wrote"
+msgstr "Записано"
+
+#: kwview.cpp:1408
+msgid ""
+"The current Document has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Текущий документ был изменен.\n"
+"Сохранить?"
+
+#: kwview.cpp:1419
+msgid ""
+"Could not save the document.\n"
+"Open a new document anyways?"
+msgstr ""
+"Ошибка сохранения документа.\n"
+"Открыть документ?"
+
+#: kwview.cpp:1466
+msgid "No changes need to be saved"
+msgstr "Нечего сохранять"
+
+#: kwview.cpp:1487
+msgid ""
+"A Document with this Name already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Документ с этим именем уже существует.\n"
+"Переписать?"
+
+#: kwview.cpp:1690 kwview.cpp:1878
+msgid "End of document reached"
+msgstr "Достигнут конец документа"
+
+#: kwview.cpp:1691 kwview.cpp:1879
+msgid "Continue from the beginning"
+msgstr "Продолжать с начала"
+
+#: kwview.cpp:1693 kwview.cpp:1704 kwview.cpp:1714
+msgid "Find"
+msgstr "Искать"
+
+#: kwview.cpp:1701 kwview.cpp:1890
+msgid "Beginning of document reached"
+msgstr "Достигнуто начало документа"
+
+#: kwview.cpp:1702 kwview.cpp:1891
+msgid "Continue from the end"
+msgstr "Продолжить с конца"
+
+#: kwview.cpp:1715
+msgid "Search string not found!"
+msgstr "Искомая строка не найдена!"
+
+#: kwview.cpp:1863 kwview.cpp:1877 kwview.cpp:1889
+msgid "replace(s) made"
+msgstr "произведено замен(а)"
+
+#: kwview.cpp:2004 toplevel.cpp:477
+msgid "Line"
+msgstr "Строка"
+
+#: kwdialog.cpp:31
+msgid "&Text To Find:"
+msgstr "Искать:"
+
+#: kwdialog.cpp:43
+msgid "&Replace With:"
+msgstr "Заменить на:"
+
+#: kwdialog.cpp:57
+msgid "&Case Sensitive"
+msgstr "С учетом регистра"
+
+#: kwdialog.cpp:61
+msgid "&Whole Words Only"
+msgstr "Только целые слова"
+
+#: kwdialog.cpp:65
+msgid "&From Cursor"
+msgstr "От курсора"
+
+#: kwdialog.cpp:74
+msgid "Find &Backwards"
+msgstr "Искать назад"
+
+#: kwdialog.cpp:78
+msgid "&Selected Text"
+msgstr "Выделенный текст"
+
+#: kwdialog.cpp:91
+msgid "&Prompt On Replace"
+msgstr "Спросить при замене"
+
+#: kwdialog.cpp:167
+msgid "Replace this occurence?"
+msgstr "Заменить все вхождения?"
+
+#: kwdialog.cpp:174
+msgid "&Yes"
+msgstr "Да"
+
+#: kwdialog.cpp:182
+msgid "&No"
+msgstr "Нет"
+
+#: kwdialog.cpp:188
+msgid "&All"
+msgstr "Все"
+
+#: kwdialog.cpp:251
+msgid "&Goto Line:"
+msgstr "Перейти на строчку:"
+
+#: kwdialog.cpp:294
+msgid "Edit Options"
+msgstr "Параметры редактирования"
+
+#: kwdialog.cpp:295
+msgid "Auto &Indent"
+msgstr "Авто отступ"
+
+#: kwdialog.cpp:297
+msgid "&Backspace Indent"
+msgstr "Отступ при забое"
+
+#: kwdialog.cpp:299
+msgid "&Word Wrap"
+msgstr "Разрыв между словами"
+
+#: kwdialog.cpp:301
+msgid "Replace &Tabs"
+msgstr "Заменять табуляции"
+
+#: kwdialog.cpp:303
+msgid "Remove Trailing &Spaces"
+msgstr "Удалять конечные пробелы"
+
+#: kwdialog.cpp:305
+msgid "Wrap &Cursor"
+msgstr "Курсор при разрыве"
+
+#: kwdialog.cpp:307
+msgid "&Auto Brackets"
+msgstr "Авто скобки"
+
+#: kwdialog.cpp:321
+msgid "Select Options"
+msgstr "Параметры выделения"
+
+#: kwdialog.cpp:322
+msgid "&Persistent Selections"
+msgstr "Постоянное выделение"
+
+#: kwdialog.cpp:324
+msgid "&Multiple Selections"
+msgstr "Множественное выделение"
+
+#: kwdialog.cpp:326 toplevel.cpp:233
+msgid "&Vertical Selections"
+msgstr "Вертикальное выделение"
+
+#: kwdialog.cpp:328
+msgid "&Delete On Input"
+msgstr "Удалять при вводе"
+
+#: kwdialog.cpp:330
+msgid "&Toggle Old"
+msgstr "Переключать старый"
+
+#: kwdialog.cpp:345
+msgid "Wrap Words At:"
+msgstr "Разрывать слова на:"
+
+#: kwdialog.cpp:351
+msgid "Tab Width:"
+msgstr "Размер табуляции:"
+
+#: kwdialog.cpp:358
+msgid "Undo steps:"
+msgstr "Глубина отката:"
+
+#: kwdialog.cpp:479
+msgid "Background:"
+msgstr "Фон:"
+
+#: kwdialog.cpp:487
+msgid "Text Background:"
+msgstr "Фон текста:"
+
+#: kwdialog.cpp:503
+msgid "Found:"
+msgstr "Найдено:"
+
+#: kwdialog.cpp:511
+msgid "Selected + Found:"
+msgstr "Выделено + Найдено:"
+
+#: toplevel.cpp:102
+msgid "Message"
+msgstr "Сообщение"
+
+#: toplevel.cpp:103
+msgid ""
+"This Document has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Этот документ был изменен.\n"
+"Вы хотите его сохранить?"
+
+#: toplevel.cpp:166
+msgid "Ne&w..."
+msgstr "Новый..."
+
+#: toplevel.cpp:168
+msgid "&Insert..."
+msgstr "Вставить..."
+
+#: toplevel.cpp:169
+msgid "Open Recen&t"
+msgstr "Открыть недавний"
+
+#: toplevel.cpp:180
+msgid "New &Window"
+msgstr "Новое окно"
+
+#: toplevel.cpp:181
+msgid "New &View"
+msgstr "Новый вид"
+
+#: toplevel.cpp:190
+msgid "&Find..."
+msgstr "Найти..."
+
+#: toplevel.cpp:191
+msgid "&Replace..."
+msgstr "Заменить..."
+
+#: toplevel.cpp:192
+msgid "Find &Again"
+msgstr "Найти еще"
+
+#: toplevel.cpp:193
+msgid "&Goto Line..."
+msgstr "Перейти на строчку..."
+
+#: toplevel.cpp:195
+msgid "U&ndo"
+msgstr "Откат"
+
+#: toplevel.cpp:196
+msgid "R&edo"
+msgstr "Откат назад"
+
+#: toplevel.cpp:198
+msgid "&Indent"
+msgstr "Отступ"
+
+#: toplevel.cpp:199
+msgid "Uninden&t"
+msgstr "Без отступа"
+
+#: toplevel.cpp:203
+msgid "&Select All"
+msgstr "Выделить все"
+
+#: toplevel.cpp:204
+msgid "&Deselect All"
+msgstr "Убрать выделение"
+
+#: toplevel.cpp:205
+msgid "In&vert Selection"
+msgstr "Перевернуть выделение"
+
+#: toplevel.cpp:210
+msgid "&Set Bookmark..."
+msgstr "Установить закладку..."
+
+#: toplevel.cpp:211
+msgid "&Add Bookmark"
+msgstr "Добавить закладку"
+
+#: toplevel.cpp:212
+msgid "&Clear Bookmarks"
+msgstr "Очистить закладки"
+
+#: toplevel.cpp:224
+msgid "Set Highlight"
+msgstr "Установить раскраску"
+
+#: toplevel.cpp:226
+msgid "&Defaults..."
+msgstr "По умолчанию..."
+
+#: toplevel.cpp:227
+msgid "&Highlight..."
+msgstr "Раскраска..."
+
+#: toplevel.cpp:230
+msgid "&Options..."
+msgstr "Настройки..."
+
+#: toplevel.cpp:231
+msgid "&Colors..."
+msgstr "Цвета..."
+
+#: toplevel.cpp:234
+msgid "Show &Toolbar"
+msgstr "Показать инструменты"
+
+#: toplevel.cpp:235
+msgid "Show &Statusbar"
+msgstr "Показать строку статуса"
+
+#: toplevel.cpp:236
+msgid "Save Config"
+msgstr "Сохранить настройки"
+
+#: toplevel.cpp:249
+msgid ""
+"KWrite 0.98\n"
+"\n"
+"Copyright 1998\n"
+"Jochen Wilhelmy\n"
+"digisnap@cs.tu-berlin.de"
+msgstr ""
+"KWrite 0.98\n"
+"\n"
+"Copyright 1998\n"
+"Jochen Wilhelmy\n"
+"digisnap@cs.tu-berlin.de"
+
+#: toplevel.cpp:272
+msgid "&Bookmarks"
+msgstr "Закладки"
+
+#: toplevel.cpp:291
+msgid "New Document"
+msgstr "Новый документ"
+
+#: toplevel.cpp:295
+msgid "Open Document"
+msgstr "Открыть документ"
+
+#: toplevel.cpp:299
+msgid "Save Document"
+msgstr "Сохранить документ"
+
+#: toplevel.cpp:478
+msgid "Col"
+msgstr "Кол"

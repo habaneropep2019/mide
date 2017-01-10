@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <TITLE>kmedia User Manual</TITLE>
+</HEAD>
+<BODY>
+
+<H1>kmedia - the KDE Multimedia player</H1>
+
+<P>This documentation has been updated to match Version 0.40.
+<HR WIDTH="100%"></P>
+
+<H2>Introduction</H2>
+
+<P>kmedia is a program that can play various types of multimedia objects,
+such as audio files (<I>*.wav</I>), midi music (<I>*.mid</I>), MPEG videos
+(<I>*.mpg, *.mpeg</I>) and Soundtracker modules (*.<I>mod, mod.*</I>).
+</P>
+
+<P>This is an alpha release of kmedia. Wave audio, Midi tunes and Soundtracker
+modules are currently supported.</P>
+
+<H2>Contents</H2>
+
+<UL>
+<LI><A HREF="#usage">Usage</A></LI>
+
+<LI><A HREF="#mediaplayer">The media players</A></LI>
+
+<LI><A HREF="#TODO">TODO</A></LI>
+
+<LI><A HREF="#BUGS">BUGS</A></LI>
+
+<LI><A HREF="#Changelog">Changelog</A></LI>
+</UL>
+
+<H2><A NAME="usage"></A>Usage:</H2>
+
+<OL>
+<LI>Just start kmedia from kpanel or by double-clicking a desktop icon.</LI>
+
+<LI>Drag one Wav from kfm into the kmedia window. The Wav should play now.</LI>
+
+<LI>Press &quot;Stop&quot; or &quot;Pause&quot; to control playback. </LI>
+
+<LI>You can drag another Wav to the same window, if you like.</LI>
+</OL>
+
+<H2><A NAME="mediaplayer"></A>The media players</H2>
+
+<UL>
+<P>The media players are programs, that can play certain media types. There
+is one program available for playing wave audio. Soon there will be one
+for midi playing, Mod playing and so on. Please note the documentation
+below.</P>
+
+<P><B>The player programs below are all copyrighted by their authors. Please
+contact them only, if you have problems with the players. Before contacting
+them, please try the original program, as these versions are patched by
+me.</B></P>
+
+<P><B>Contact me, if you have problems with kmedia, maudio and the mediatool
+library. You should contact me too, when you have no trouble with the original
+player program, but with the patched one.</B></P>
+
+<LI>Audio player <I><A HREF="maudio.html">maudio</A></I></LI>
+
+<LI>Midi player <I><A HREF="mplaymidi.html">mplaymidi</A></I></LI>
+
+<LI>MOD-Player <I><A HREF="mtracker.html">mtracker</A></I></LI>
+</UL>
+
+<H2><A NAME="TODO"></A>TODO:</H2>
+
+<UL>
+<LI>Reimplement support for sidplay, tracker and playmidi.</LI>
+
+<LI>Support timidity, sidplay, MPEG and more media types.</LI>
+
+<LI>Allow &quot;OSS bugflags&quot; to be set. As the OSS driver seems to
+be pretty buggy with many cards, I have activated the bugflags by default.
+(Change is only possible in maudio.cpp currently).</LI>
+</UL>
+
+<H2><A NAME="BUGS"></A>BUGS:</H2>
+
+<UL>
+<LI>kmedia and maudio eat up CPU time even when being &quot;idle&quot;.
+This problem and it solution is known already.</LI>
+
+<LI>Multiple window support does not work 100%. Closing the application when
+multiple windows were open
+can leave "maudio" processes running, which you have to kill explicitely.</LI>
+
+<H2><A NAME="Changelog"></A>Changelog:</H2>
+
+<UL>
+<P><B>V0.1</B> Initial revision. Only one mediatool capable player included:
+tracker, a Soundtracker module (<I>*.mod</I>) player.</P>
+
+<P><B>V0.2</B> Reworked UI completely: New Layout, smaller window, new
+icons. Has a scrollbar as position indicator. Easier compilation procedure.</P>
+
+<P><B>V0.3</B> Mediatool capable midi (<I>*.mid</I>) player included. Much
+more KDE &quot;awareness&quot;. Technically speaking, kmedia is now a KDE
+core application, which fulfills all creteria given in the RFCs: Has a
+menubar, has standard keybindings, ...</P>
+
+<P><B>V0.4</B> Mediatool capable audio (<I>*.wav</I>) player included.
+Supports DnD. Uses Statusbar. Can open multiple windows. Multiple windows
+support actually works (see <A HREF="#BUGS">BUGS</A> section though). SHM
+segments are freed automatically when unused, ...</P>
+
+<P><B>V0.45</B> Updated to new FSSTND and shortcut standard. Uses
+KIconLoader. Fixed lockups. This is the version being sent out with Beta1.
+</UL>
+
+<P>
+<HR WIDTH="100%">Christian Esken <A HREF="mailto:esken@kde.org">(esken@kde.org)</A></P>
+
+</BODY>
+</HTML>

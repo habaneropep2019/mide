@@ -1,0 +1,45 @@
+This package was updated by Ivan E. Moore II <rkrusty@debian.org>
+This package was debianized by Andreas Jellinghaus <aj@debian.org>.
+Thanks to Brandon Mitchell <bhmit1@mail.wm.edu> for his work on the
+libc5 version.
+ 
+It was downloaded from ftp.kde.org 
+/pub/kde/stable/Beta1/distribution/tgz/source kdesupport-*.tar.gz 
+
+Copyright:
+
+gdbm : GPL (not included in binary package)
+
+giflib: copyright.giflib
+
+jpeglib: jpeglib6a/README
+
+mimelib : mimelib/CPYRIGHT, mimelib/LICENCE
+
+additional licence to distribute :
+> I don't mind making the mimelib freely distributable.  The terms for
+> *use* of the library will, for at least the time being, be covered by
+> the LICENSE.  I think that terms for use are separate from terms for
+> copying.  There is no restriction on copying.
+
+uulib:
+ * Distributed by the GNU General Public License. Use and be happy.
+ * Read http://www.uni-frankfurt.de/~fp/Tools/Getcgi.html for more
+ * information.                     fp@informatik.uni-frankfurt.de     
+
+All changes by the kde team are copyleft under the gnu general public
+licence (read /usr/doc/copyright/GPL for details).
+
+Makefiles :
+# Makefile.in generated automatically by automake 1.2a from Makefile.am
+
+# Copyright (C) 1994, 1995, 1996, 1997 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+

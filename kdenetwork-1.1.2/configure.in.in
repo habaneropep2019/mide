@@ -1,0 +1,203 @@
+# Original Author was Kalle@kde.org
+# I lifted it in some mater. (Stephan Kulow)
+# I used much code from Janos Farkas
+
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(acinclude.m4) dnl a source file from your sub dir
+
+dnl This is so we can use kde-common
+AC_CONFIG_AUX_DIR(admin)
+
+AC_CANONICAL_SYSTEM 
+AC_FIND_USER_METHOD    dnl ktalk[d] specific. see acincktalk.m4.in
+AC_ARG_PROGRAM
+
+dnl Automake doc recommends to do this only here. (Janos)
+AM_INIT_AUTOMAKE(kdenetwork, 1.1.2) dnl searches for some needed
+programs
+
+dnl make $KDEDIR the default for the installation
+AC_PREFIX_DEFAULT(${KDEDIR:-/usr/local/kde})
+
+dnl generate the config header
+AM_CONFIG_HEADER(config.h) dnl at the distribution this done
+
+AC_CHECK_COMPILERS
+KDE_PROG_LIBTOOL
+
+dnl for NLS support. Call them in this order!
+dnl WITH_NLS is for the po files
+AM_KDE_WITH_NLS
+
+dnl I need to check for libsocket before testing X
+AC_CHECK_LIB(socket, socket, [LIBSOCKET="-lsocket -lnsl"]) dnl for Solaris
+AC_SUBST(LIBSOCKET)
+AC_PATH_KDE
+
+# Define a symbol, to know that we're compiling WITH kde. (for apps that
+#  can compile without KDE, optionally)
+AM_CONDITIONAL(KDE_INSTALLED, test "$have_kde" = "yes")
+
+AC_LANG_C
+dnl Checks for libraries. 
+AC_CHECK_LIB(bsd, bsd_ioctl, [LIBBSD="-lbsd"]) dnl for Linux with libc5
+AC_SUBST(LIBBSD)
+
+dnl uu or uulib?
+AC_CHECK_LIB(uu,    UUInitialize, [LIBUU="-luu"   ], , $all_libraries)
+AC_CHECK_LIB(uulib, UUInitialize, [LIBUU="-luulib"], , $all_libraries)
+if test -z "$LIBUU"; then
+  AC_MSG_WARN([no acceptable libuu found. You should look into config.log
+for the reasons of this. There is one in kdesupport, so be sure to have
+this installed! 
+Til then we will disable krn from compiling.
+])
+  DO_NOT_COMPILE="$DO_NOT_COMPILE krn"
+fi
+
+AC_SUBST(LIBUU)
+ac_cpp_safe=$ac_cpp
+ac_cpp='$CXXCPP $CPPFLAGS $all_includes'
+AC_CHECK_HEADERS(uu.h uudeview.h)
+ac_cpp=$ac_cpp_safe
+
+AC_LANG_CPLUSPLUS
+dnl Checks for header files.
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+AC_CHECK_HEADERS(fcntl.h sys/time.h unistd.h sys/types.h sys/stat.h)
+AC_CHECK_HEADERS(sys/cdefs.h fnmatch.h sysent.h strings.h paths.h)
+AC_CHECK_HEADERS(utmp.h sys/param.h linux/tcp.h asm/param.h sys/file.h)
+AC_CHECK_HEADERS(re_comp.h net/errno.h getopt.h resolv.h)
+AC_CHECK_FUNCS(flock)
+AC_CHECK_USLEEP
+AC_CHECK_KDEMAXPATHLEN
+
+AC_FIND_JPEG
+KDE_CHECK_KIMGIO
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_TIME
+
+dnl check if the compiler has bool
+AC_CHECK_BOOL
+
+dnl Checks for library functions.
+AC_CHECK_SETENV
+AC_CHECK_FUNCS(socket fabsl strdup vsnprintf) 
+AC_CHECK_GETDOMAINNAME
+AC_CHECK_GETHOSTNAME
+
+dnl Check for utmp file
+AC_CHECK_UTMP_FILE
+
+dnl output files
+topdir=`pwd`
+AC_SUBST(topdir)
+
+dnl Perform program name transformation
+AC_ARG_PROGRAM
+
+AC_MSG_CHECKING(if kppp's headers are installed)
+# this is a little piece of code out of kppp. If it doesn't compile,
+# kppp is not good for this system. It doesn't do anything, but enough
+# to fail ;)
+cat > conftest.C <<EOF
+#include <arpa/inet.h>
+#include <net/ppp_defs.h>
+#include <netinet/in.h>
+
+#ifdef __svr4__
+  #include <sys/stropts.h>
+  #include <net/pppio.h>		/* SVR4, Solaris 2, etc. */
+
+#else
+  #include <sys/time.h>
+  #include <sys/socket.h>
+  #include <net/if.h>
+
+  #ifndef STREAMS 
+
+    #if defined(linux) && !(__GLIBC__ >= 2)
+      #include <linux/if_ppp.h>
+    #else
+      #include <net/if_ppp.h>                /* BSD, Linux, NeXT, etc. */
+    #endif
+
+  #else				/* SunOS 4, AIX 4, OSF/1, etc. */
+    #include <sys/stream.h>
+    #include <net/ppp_str.h>
+  #endif
+#endif
+EOF
+
+AC_LANG_CPLUSPLUS
+if AC_TRY_EVAL(ac_compile); then
+  AC_MSG_RESULT(yes)
+else
+  DO_NOT_COMPILE="$DO_NOT_COMPILE kppp"
+  AC_MSG_RESULT(no)
+fi
+rm -r conftest.*
+
+AC_MSG_CHECKING(Exception handling for kSirc)
+#
+# Check for C++ exception handling and don't compile kSirc
+# if it doesn't work.  Ones known to work are egcs and gcc28
+#
+AC_LANG_CPLUSPLUS
+cat > conftest.C <<EOF
+#include <iostream.h>
+
+int main(int argc, char **argv)
+{
+  try {
+  }
+  catch(...) {
+  }
+}
+EOF
+
+ac_compile='${CXX-g++} -c conftest.C'
+if AC_TRY_EVAL(ac_compile); then
+  AC_MSG_RESULT(yes)
+else
+  DO_NOT_COMPILE="$DO_NOT_COMPILE ksirc"
+  AC_MSG_RESULT([no...Skipping kSirc])
+fi
+rm -r conftest.*
+
+AC_MSG_CHECKING(for static KDE libraries)
+if test -r "$ac_kde_libraries/libkdeui.a"; then
+  static_libkde="$ac_kde_libraries/libkdeui.a $ac_kde_libraries/libkdecore.a $ac_kde_libraries/libkfile.a $ac_kde_libraries/libkfm.a"
+  AC_MSG_RESULT(found)
+  AC_SUBST(static_libkde)
+else
+  AC_MSG_RESULT([Not Found])
+fi
+
+AC_MSG_CHECKING(for static Qt libraries)
+if test -r "$ac_qt_libraries/libqt.a"; then
+  AC_MSG_RESULT(found)
+  static_libqt="$ac_qt_libraries/libqt.a"
+  AC_SUBST(static_libqt)
+else
+  AC_MSG_RESULT([Not Found])
+fi
+
+AC_MSG_CHECKING(for static libstdc++)
+
+static_libstdc=`$CC -print-file-name=libstdc++.a`
+if test ! -z "$static_libstdc"; then
+  AC_MSG_RESULT($static_libstdc)
+  AC_SUBST(static_libstdc)
+else
+  AC_MSG_RESULT([Not Found])
+fi
+
+KDE_CHECK_DLOPEN 
+
+KDE_CREATE_SUBDIRSLIST
+
+dnl this will be replaced by Makefile.am
+AC_OUTPUT()

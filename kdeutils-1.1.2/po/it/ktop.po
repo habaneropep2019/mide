@@ -1,0 +1,423 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-03-19 01:51+0100\n"
+"Content-Type: text/plain; charset=\n"
+"Date: 1997-12-07 12:23:22-0500\n"
+"From: root,,, <root@petit>\n"
+"Xgettext-Options: -C -ktranslate -kktr\n"
+"Files: ktop.cpp memory.cpp settings.cpp cpu.cpp widgets.cpp\n"
+
+#: ktop.cpp:66
+msgid "88888 Processes"
+msgstr "88888 Processi"
+
+#: ktop.cpp:67
+msgid "Memory: 888888 kB used, 888888 kB free"
+msgstr "Memoria: 888888 kB utilizzati, 888888 kB liberi"
+
+#: ktop.cpp:69
+msgid "Swap: 888888 kB used, 888888 kB free"
+msgstr "Swap: 888888 kB utilizzati, 888888 kB liberi"
+
+#: ktop.cpp:76
+msgid "KDE Task Manager"
+msgstr "KDE Task manager"
+
+#: ktop.cpp:137
+#, c-format
+msgid "%d Processes"
+msgstr "%d Processi"
+
+#: ktop.cpp:142
+#, c-format
+msgid "Memory: %d kB used, %d kB free"
+msgstr "Memoria: %d kB usati, %d kB liberi"
+
+#: ktop.cpp:147
+#, c-format
+msgid "Swap: %d kB used, %d kB free"
+msgstr "Swap: %d kB utilizzati, %d kB liberi"
+
+#: MainMenu.cpp:51
+#, c-format
+msgid ""
+"KDE Task Manager (KTop) Version %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+msgstr ""
+"KDE Task Manager (KTop) Versione %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+
+#: MainMenu.cpp:64
+msgid "Manual Refresh"
+msgstr "Manuale"
+
+#: MainMenu.cpp:65
+msgid "Slow Refresh"
+msgstr "Lento"
+
+#: MainMenu.cpp:66
+msgid "Medium Refresh"
+msgstr "Medio"
+
+#: MainMenu.cpp:67
+msgid "Fast Refresh"
+msgstr "Rapido"
+
+#: MainMenu.cpp:79
+msgid "&Refresh Rate"
+msgstr "&Aggiornamento"
+
+#: MainMenu.cpp:80
+msgid "&Process"
+msgstr "&Processo"
+
+#: ProcessMenu.cpp:44
+msgid "Renice Task..."
+msgstr "Cambia valore 'nice' del Task.."
+
+#: ProcessMenu.cpp:47
+msgid "send SIGINT\t(ctrl-c)"
+msgstr ""
+
+#: ProcessMenu.cpp:48
+msgid "send SIGQUIT\t(core)"
+msgstr ""
+
+#: ProcessMenu.cpp:49
+msgid "send SIGTERM\t(term.)"
+msgstr ""
+
+#: ProcessMenu.cpp:50
+msgid "send SIGKILL\t(term.)"
+msgstr ""
+
+#: ProcessMenu.cpp:52
+msgid "send SIGUSR1\t(user1)"
+msgstr ""
+
+#: ProcessMenu.cpp:53
+msgid "send SIGUSR2\t(user2)"
+msgstr ""
+
+#: ProcessMenu.cpp:74 ProcessMenu.cpp:86 ProcessMenu.cpp:150
+#: ProcessMenu.cpp:158 ProcessMenu.cpp:176
+msgid "Task Manager"
+msgstr "Gestione Task"
+
+#: ProcessMenu.cpp:75
+msgid "You need to select a process first!"
+msgstr "Prima devi selezionare un processo!"
+
+#: ProcessMenu.cpp:85 ProcessMenu.cpp:149
+#, c-format
+msgid "The process %d is no longer persistent."
+msgstr "Il processo %d non esite piu'."
+
+#: ProcessMenu.cpp:98
+msgid "SIGINT"
+msgstr ""
+
+#: ProcessMenu.cpp:101
+msgid "SIGQUIT"
+msgstr ""
+
+#: ProcessMenu.cpp:104
+msgid "SIGTERM"
+msgstr ""
+
+#: ProcessMenu.cpp:107
+msgid "SIGKILL"
+msgstr ""
+
+#: ProcessMenu.cpp:110
+msgid "SIGUSR1"
+msgstr ""
+
+#: ProcessMenu.cpp:113
+msgid "SIGUSR2"
+msgstr ""
+
+#: ProcessMenu.cpp:116
+msgid "Unkown Signal"
+msgstr "Segnale sconosciuto"
+
+#: ProcessMenu.cpp:122
+#, c-format
+msgid ""
+"Send signal %s to process %d?\n"
+"(Process name: %s  Owner: %s)\n"
+msgstr ""
+"Mando il segnale %s al processo %d ?\n"
+"(Nome processo: %s  Proprietario: %s)\n"
+
+#: ProcessMenu.cpp:126
+msgid "Abort"
+msgstr "Annulla"
+
+#: ProcessMenu.cpp:159 ProcessMenu.cpp:177
+msgid ""
+"Renice error...\n"
+"Specified process does not exist\n"
+"or permission denied."
+msgstr ""
+"Errore di renice...\n"
+"Il processo specificato non esiste \n"
+"o permesso negato."
+
+#: TaskMan.cpp:80
+msgid "Processes &List"
+msgstr "&Lista Processi"
+
+#: TaskMan.cpp:81
+msgid "Performance &Meter"
+msgstr "&Monitor Performance"
+
+#: ProcListPage.cpp:42
+msgid "Running Processes"
+msgstr "Processi Attivi"
+
+#: ProcListPage.cpp:49
+msgid "Show Tree"
+msgstr "Mostra albero"
+
+#: ProcListPage.cpp:60
+msgid "All processes"
+msgstr "Tutti i processi"
+
+#: ProcListPage.cpp:61
+msgid "System processes"
+msgstr "Processi di Sistema"
+
+#: ProcListPage.cpp:62
+msgid "User processes"
+msgstr "Processi utente"
+
+#: ProcListPage.cpp:63
+msgid "Own processes"
+msgstr "Processi personali"
+
+#: ProcListPage.cpp:79
+msgid "Refresh Now"
+msgstr "Aggiorna Ora"
+
+#: ProcListPage.cpp:85
+msgid "Kill task"
+msgstr "Uccidi processo"
+
+#: ProcessList.cpp:227
+msgid "Remove Column"
+msgstr "Rimuovi Colonna"
+
+#: ProcessList.cpp:228
+msgid "Add Column"
+msgstr "Aggiungi Colonna"
+
+#: ProcessList.cpp:229
+msgid "Help on Column"
+msgstr "Aiuto riguardo alla colonna"
+
+#: ProcessList.cpp:691 ProcessList.cpp:692
+msgid "Name"
+msgstr "Nome"
+
+#: ProcessList.cpp:695 ProcessList.cpp:696
+msgid "PID"
+msgstr "PID"
+
+#: ProcessList.cpp:699
+msgid "User ID"
+msgstr "ID Utente"
+
+#: ProcessList.cpp:700
+msgid "CPU"
+msgstr "CPU"
+
+#: ProcessList.cpp:701
+msgid "Time"
+msgstr "Tempo"
+
+#: ProcessList.cpp:702
+msgid "Nice"
+msgstr "Nice"
+
+#: ProcessList.cpp:703
+msgid "Status"
+msgstr "Stato"
+
+#: ProcessList.cpp:704
+msgid "Memory"
+msgstr "Memoria"
+
+#: ProcessList.cpp:705
+msgid "Resident"
+msgstr "Residente"
+
+#: ProcessList.cpp:706
+msgid "Shared"
+msgstr "Condivisa"
+
+#: ProcessList.cpp:707
+msgid "Command line"
+msgstr "Linea di comando"
+
+#: OSProcessList.cpp:76 OSProcessList.cpp:104
+msgid ""
+"Cannot open directory '/proc'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+
+#: OSProcessList.cpp:266
+msgid "Cannot read status of processes\n"
+msgstr ""
+
+#: OSProcessList.cpp:367
+msgid "Your OS is not supported yet.  Sorry"
+msgstr ""
+
+#: OSProcess.cpp:123 OSProcess.cpp:154 OSProcess.cpp:171
+#, c-format
+msgid "Cannot open %s!\n"
+msgstr ""
+
+#: OSProcess.cpp:183
+msgid "Run"
+msgstr ""
+
+#: OSProcess.cpp:186
+msgid "Sleep"
+msgstr ""
+
+#: OSProcess.cpp:189
+msgid "Disk"
+msgstr ""
+
+#: OSProcess.cpp:192
+msgid "Zombie"
+msgstr ""
+
+#: OSProcess.cpp:198
+msgid "Swap"
+msgstr ""
+
+#: OSProcess.cpp:201
+msgid "????"
+msgstr ""
+
+#: OSProcess.cpp:320
+#, c-format
+msgid "Could not set new nice level for process %d"
+msgstr ""
+
+#: OSProcess.cpp:334
+#, c-format
+msgid "Cound not send signal %d to process %d"
+msgstr ""
+
+#: PerfMonPage.cpp:49
+msgid "CPU Load History"
+msgstr "Grafico del carico della CPU"
+
+#: PerfMonPage.cpp:52
+msgid "System Load History"
+msgstr "Grafico del carico di Sistema"
+
+#: PerfMonPage.cpp:55 PerfMonPage.cpp:113
+msgid "User (%)"
+msgstr "Utente (%)"
+
+#: PerfMonPage.cpp:56 PerfMonPage.cpp:114
+msgid "Nice (%)"
+msgstr "Nice (%)"
+
+#: PerfMonPage.cpp:57 PerfMonPage.cpp:115
+msgid "System (%)"
+msgstr "Sistema (%)"
+
+#: PerfMonPage.cpp:64
+msgid "Memory Usage History"
+msgstr "Grafico dell'uso della memoria"
+
+#: PerfMonPage.cpp:66
+msgid "Program (kB)"
+msgstr "Programma (kB)"
+
+#: PerfMonPage.cpp:67
+msgid "Buffer (kB)"
+msgstr "Buffer (kB)"
+
+#: PerfMonPage.cpp:68
+msgid "Cache (kB)"
+msgstr "Cache (kB)"
+
+#: PerfMonPage.cpp:69
+msgid "Swap (kB)"
+msgstr "Swap (kB)"
+
+#: PerfMonPage.cpp:109
+#, c-format
+msgid "CPU%d Load History"
+msgstr "Grafico dell'uso della CPU%d"
+
+#: OSStatus.cpp:98
+msgid ""
+"Cannot open file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+
+#: OSStatus.cpp:120 OSStatus.cpp:303 OSStatus.cpp:378
+msgid ""
+"Cannot open file '/proc/meminfo'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+
+#: OSStatus.cpp:311
+msgid "Cannot read memory info file '/proc/meminfo'!\n"
+msgstr ""
+
+#: OSStatus.cpp:354
+#, c-format
+msgid ""
+"Cannot read info for %s from file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+
+#: OSStatus.cpp:386
+msgid "Cannot read swap info from '/proc/meminfo'!\n"
+msgstr ""
+
+#: OSStatus.cpp:575 OSStatus.cpp:588 OSStatus.cpp:615 OSStatus.cpp:624
+msgid ""
+"Your system is not currently supported.\n"
+"Sorry"
+msgstr ""
+
+#: ReniceDlg.cpp:32
+msgid "Renice Process"
+msgstr "Cambia 'nice' del processo"
+
+#: ReniceDlg.cpp:39
+#, c-format
+msgid ""
+"You are about the change the scheduling priority of\n"
+"process %d. Be aware that only the Superuser (root)\n"
+"can decrease the nice level of a process. The smaller\n"
+"the number is the higher is the priority.\n"
+"\n"
+"Please enter the desired nice level:"
+msgstr ""

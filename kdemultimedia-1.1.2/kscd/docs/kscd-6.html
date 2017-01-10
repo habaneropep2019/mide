@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The Kscd Handbook: Questions and answers</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KSCD CD player CDDB">
+<META NAME="description" CONTENT="KSCD CD player CDDB">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kscd-7.html">Next</A>
+<A HREF="kscd-5.html">Previous</A>
+<A HREF="kscd.html#toc6">Table of Contents</A>
+</P>
+<H3><A NAME="s6">6. Questions and answers</A></H3>
+<DL>
+<DT>Q. I see this dialog when I start <B>kscd</B>. What&#39;s wrong?<BR>
+<CENTER><IMG SRC="kscd16.gif"></CENTER><P></DT>
+<DD>
+A. This means that <B>kscd</B> couldn&#39;t open your CDROM drive. The name of the device in the &quot;CDROM Device&quot; field of
+the &quot;<B>kscd</B> Configuration&quot; must actually refer to the block
+device associated with your CD-ROM drive. This will often be a hardlink to
+the appropriate IDE (<B>/dev/hd<I>x</I></B>) or SCSI
+(<B>/dev/sd<I>x</I></B>) device. The device file normally belongs to
+user <B>root</B> in group <B>root</B>, and does not allow normal users to
+open it for reading, writing, or execution directly. This has *nothing* to
+do with the SUID <I>(Set User ID programs use the <B>setuid()</B> function in the standard Un*x
+library to assume the identity of another user)</I> 
+<B>mount</B> command, which has no problems with permissions; <B>kscd</B> must be able to get a
+read-only file descriptor referring to the CD device to control the CDROM drive 
+and read raw data off the disk.
+<P>If you have the root password, you can fix this quickly and easily.
+Become root and type <B>chmod a+r /dev/cdrom</B> to allow any user on your
+system to read from <B>/dev/cdrom</B>. If your CDROM device is called
+something else, change the permissions on that device with the same
+procedure. If you don&#39;t have the root password, ask your system 
+administrator nicely to give you read permission for the CDROM device.
+<P>See also <A HREF="kscd-4.html#ss4.2">Section 4.2 Configuring
+<B>kscd</B></A>.
+<P>
+</DD>
+<DT>Q. I can&#39;t get the CDDB to work. Can I get any detailed information
+about what may be going wrong?<P></DT>
+<DD>
+A. If you experience trouble with the CDDB functionality try to starting
+<B>kscd</B> from the command line with the <B>-d</B> switch and observe the 
+debug output.
+<P>
+</DD>
+</DL>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kscd-7.html">Next</A>
+<A HREF="kscd-5.html">Previous</A>
+<A HREF="kscd.html#toc6">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

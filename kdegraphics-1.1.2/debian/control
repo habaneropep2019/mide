@@ -1,0 +1,12 @@
+Source: kdegraphics
+Section: contrib/graphics
+Priority: extra
+Maintainer: Stephan Kulow <coolo@kde.org>
+Standards-Version: 2.5.1
+
+Package: kdegraphics
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: kdebase
+Description: KDE collection of graphics programs.
+ This collections includes kfax kfract kghostview kpaint kview and kdvi

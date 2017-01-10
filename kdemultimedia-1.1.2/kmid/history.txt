@@ -1,0 +1,490 @@
+Thursday 11-9-97
+- I have started with some tries to make the midi work and due to the
+  success I have even made an object to manage the midi : midiOut
+
+Friday 12-9-97
+- Waking up at 7:00am, working from 8:20 to 11:20 and doing some fixes
+  at 14:20, I have been able to play a midi file through the /dev/sequencer
+  using the class midiOut and writing some new classes like : midfile
+  track and some more. 
+
+Saturday 13-9-97
+- Today I have made a midi mapper (object mapper) which read a map config file
+  and is used to support older synths without general midi compliance.
+
+Sunday 14-9-97 
+- I have made a window, with a KMenuBar, and a KSilder, which reads a mid file
+  and play it (using a fork)
+
+Monday 15-9-97
+- fork copy the memory and thus, I cannot tell the player to pause, I have read
+  much about the subject, and about threads
+
+Tuesday 16-9-97
+- I have made a small program to test the threads and forks, threads apparently
+are faster, but it seems to have a problem with libqt or anyone, and I get
+core dumpes what I run kmid even if I only link libpthread but don't use it.
+So I've decided to make a fork, in the other way, I've learned to share memory
+
+Wednesday 17-9-97
+- Christian Esken has told me to use mediatool, but I don't have the
+documentation, so I cannot continue work until I get it.
+
+Thursday 18-9-97
+- Well, I'll continue even without the docs, and when I have them, I will
+make the neccesary changes to the code. I have made a few details in windows
+
+Friday 19-9-97
+- Today I have made the Pause and Stop buttons work. Also, I have made the
+slide bar move. And also, I have made a parser of the midi file, which tells
+how long the song is, in seconds. If this was little, I have made the interface
+between the ui and the player.
+
+Saturday 20-9-97
+- The interface between the ui and the player doesn't work well, I have to
+redesign it because it's difficult to be accurate writing the karaoke at the same that the note plays
+
+Sunday 21-9-97
+- I have redesigned twice the interface between ui and player and it still
+doesn't work well, the first method was creating a list of the karaoke events
+and using a timer to process the next event at the right time, but that doesn't
+work perfectly, because the text appears a moment after or before the note is
+played. The second method is a while loop, which calls processEvents, but
+that isn't a very good option, because, though text appears just at the same
+time of the note is played, top tells me that kmid is consuming up to 98% of
+CPU time, and I don't want to make such a monster.
+
+Monday 22-9-97
+- Another failed method, and another passed day
+
+Tuesday 23-9-97
+- Some small changes beautifying the monster to send it to Christian
+
+Wednesday 24-9-97
+- More debugging and no result. I have uploaded current version to arrakis for
+Christian to see it.
+
+Thursday 25-9-97
+- Eureka ! , at last, I have made the player and the ui run at the same time
+with PERFECT syncronisation :-) (at 10:30 pm)
+
+Friday,Saturday,Sunday 26,27,28-9-97
+- I've been looking at the birds flying freely from tree to tree in all this
+weekend, also, I've studied for the test drive.
+
+Monday 29-9-97
+- I have passed the exam and also, I have (almost) done the karaoke widget
+and it works very well !
+
+Tuesday 30-9-97
+- The karaoke widget is finished, it also have a scrollbar to see all the
+lyrics. By the way, StarTrek : First Contact is a very recommended film 
+
+Wednesday 1-10-97
+- I have fixed pause and stop, which were broken during the karaoke syncro
+By the way, kmid consumes 0.0% CPU and 00:00 time while playing a 6 minute song
+(and I think that even in longer songs !)
+
+Thursday 2-10-97
+- I have started classes, so I think I will have less time :-(
+
+Wednesday 8-10-97
+- The player now recognizes the SETPOS message, but the ui is not syncronized
+yet
+
+Thursday 9-10-97
+- S. R. has "show"ed me the way to initialize the menu, toolbar and client of a
+KTopLevelWidget, without the need to resize the window.
+
+Sunday 12-10-97
+- I have made that all time variables are expressed in milliseconds, so no
+more change units !!
+
+Sunday 19-10-97
+- I have programmed very little this week, but today I have kill a big bug,
+now all the songs play well. Some songs were played with some parts faster and
+some parts slower than they should (thanks to Christian Esken for reporting
+ the bug!)
+
+Tuesday 21-10-97
+- WOE, KDE-Beta-ONE is even better than before. But now kmid doesn't compile (?)
+
+Wednesday 22-10-97
+- After compiling the kde libs, kmid compiles ok. KSlider has changed and its
+behaviour (Arrrgh!), so I have trickered a little the code.
+
+Thursday 23-10-97
+- I have cleaned a little the code.
+
+Friday 24-10-97
+- I started to "rewrite"  the track class to make the slider work well
+
+Saturday 25-10-97
+- I have passed the day working in the time. 
+
+Sunday 26-10-97
+- Eureka !!!, KMid works great! with good timings and syncronization between
+         O ~                     music and lyrics.
+          U
+         \_/
+
+Monday 27-10-97
+- After 10 hours in the university, I have made the final touches to send
+kmid 0.1 to the internet.
+
+??? 7-11-97
+- Finally, there's an impossible-better syncro between the program
+and the user !!!. I mean, that when you press the pause button, the music
+is inmediatly paused !!!
+
+Saturday 8-11-97
+- So I suppose yesterday was Friday, but I should demostrate it :-)
+I have added drag & drop support in kmid to load files by dropping them from kfm
+Also made the slider show the time played at resizeable steps
+
+Sunday 9-11-97
+- Today I have made possible to change the font and I have made an icon.
+Prepare a version to upload tomorrow to the internet.
+
+Thursday 13-11-97
+- I have nearly rewritten (made lots of changes to) the lyrics display widget
+Also fixed that old "bug" that let in black the last word of a phrase in some
+songs.
+
+Friday 14-11-97
+- Automatic text event chooser is done ! 
+- Fixed a bug that could freeze kmid under very rare circunstances.
+- Added more support for incomplete/broken files
+
+Saturday 15-11-97
+- I have changed the exit-behaviour for a messagebox-behaviour
+- Fixed a bug that could leave the children running when closing kmid
+
+Sunday 16-11-97
+- KMid adds a mime entry for karaoke files in audio/x-karaoke
+- Real Session Management.
+- Made the first rpm of kmid.
+
+Monday 17-11-97
+- Release version 0.3 in tgz and rpm
+
+Friday 28-11-97
+- I've been quite busy this week, but I have had reports and patches :-) on
+how to make kmid to work with an AWE, a GUS, and in FreeBSD :-))))
+
+Monday 8-12-97
+- I have fixed a small bug with which the time that a song longs was not well
+reported.
+- Also a tiny bug in consolekmid
+
+Tuesday 9-12-97
+- I've made the first feature that I've been asked for. Another thing to map
+with the midi mapper for Dietmar's PSR500  
+
+Friday 12-12-97
+- Nearly done the map chooser so that there will no be needed to edit the kmidrc
+for anything.
+Now when you choose a new map or change GM/MT32 mode, the music is automatically
+changed while playing !.
+
+...... **-12-97
+- I have been the rest of the month implementing a midi server that I will 
+call KMidServer and that will provide any application with easy control over
+midi functions.
+
+30-12-97
+- KMid now can play gzipped midi files just as any other normal file. 
+
+.... **-1-98
+- I have improved the midi mapper by allowing to factor the pitch bender.
+   Now pitch benders works OK !! (at last I have improved the windows mapper :-)
+  I have also added support to convert expression events to volume events.
+* I have been doing the kfourier this month and studying (little time to do more)
+
+
+Thursday 5-2-98
+- After doing my first exam this year, I have decided to calm things a little
+ by programming something. I have made the options added to the mapper available
+through the config map file.
+
+Monday 9-2-98
+- 2nd exam done and a bug that I introduced last thrusday fixed.
+
+Friday 20-2-98
+- I've finished exams, have installed the yesterday snapshots and have 
+updated the configure scripts to add rpath and all that stuff to my copy
+of kmid (thanks to Kulow, who added it to kmid in kdemultimedia)
+
+Saturday 21-2-98
+- Fixed the not-a-feature problem with FM, next time I will not let the
+option for the user to select something that doesn't work.
+Final touches to release kmid 0.41 tomorrow morning.
+
+Monday 23-2-98
+- I've started working on FM support (and it goes very fast)
+
+Tuesday 24-2-98
+- fm already works, but notes are shifted to a higher key !!!
+Also pitch bender seems not to be accurate.
+
+Wednesday 25-2-98
+- pitch bender is now fixed, and also the shift of notes, now the problem
+ is that some notes are lost (always from the same track/channel/patch?!?!)
+
+Friday 27-2-98
+- The problem with the lost notes is fixed :-/, the problem was that some
+notes are played through the left speaker and some thru the right speaker,
+and my wires for the right speaker were broken, but it wasn't noted with
+the surround activated :-))))))) (Sometimes I feel real shame). Three days
+lost in that !!
+
+Saturday 28-2-98
+- I've gone to the country and I've done the internals of the playlists in a
+486/50 without linux, so I'll compile the Monday.
+
+Sunday 1-3-98
+- Some test with multiple toolbars.
+
+Monday 2-3-98
+- Started to do the collections manager dialog
+
+Tuesday 3-3-98
+- The collections manager dialog is done.
+
+Wednesday 4-3-98
+- KKeyConfig is a really good class, easy to use to make the karaoke scroll
+when arrow keys are pressed.
+
+Thursday 5-3-98
+- I've done the playlist hardest part, now it works and there's only left
+ some final touches to do  
+
+Tuesday 10-3-98
+- Playlists are finally working ok.
+
+Wednesday 11-3-98
+- Fixed the session management (in fact, I've changed it a little to support
+collections)
+
+Thursday 12-3-98
+- Fixed some small bugs.
+
+Friday 13-3-98
+- I have replaced my new Makefiles.am (just two days old) with the one
+of Stephan Kulow which look much better.
+
+Saturday 14-3-98
+- Finished deleting printf's to upload kmid tomorrow :-)
+
+Sunday 15-3-98
+- Upload it, but as I forgot to delete some printf messages :-( , I had
+to quickly do a fix and send also 0.5.1
+
+**** **-3-98
+- I've passed many days configuring the modem, the internet connection,
+sendmail, kppp, cvs and all those programs :-)
+
+Monday 30-3-98
+- I've implemented the save-Lyrics feature that Adrian Knoth suggested (thanks!)
+
+Tuesday 31-3-98
+- I've done some changes to support the new KFileDialog and the new
+changes in kdelibs done by Matthias.
+
+Thursday 2-4-98
+- Some bug fixes
+
+Monday 6-4-98
+- I've found and fixed a memory leakage bug, I forgot to delete the
+SpecialEvents from each song, so kmid was using more and more memory with
+each opened song.
+
+Tuesday 7-4-98
+- Aaaargh !, I have to remove the changes that I did last tuesday because it
+seems that the changes in the kdelibs have been removed.
+
+Monday 13-4-98
+- Added support for midi files with strange headers not related to midi files.
+ (suggested by Adrian Knoth, thanks !)
+
+Friday 24-4-98
+- At last, I have had some free time and have done some things:
+ 1. Finally fixed the synchronization between gui and player (hopefully forever)
+ 2. Fixed a problem openning a gzipped file with spaces in its name
+ 3. Fixed a bug which caused kmid to freeze if collection has only 1 song, and
+	trying to play next song in aleatory mode.
+ 4. Fixed the problem which made some songs to play at a lower volume when
+	moving the slider, but no if playing from the beginning
+ That's all for now :-) , there have been so many changes that I've call
+  this version 0.5.3
+
+Thursday 7-5-98
+- Released version 0.6 to update my homepage which was getting very outdated
+
+Saturday 9-5-98
+- After fixing my midi cable, I've noticed that fm is (as Gyula Kerekes
+ reported), playing in mono, and I've fixed it.
+
+Sunday 10-5-98
+- I've fixed a small bug with which midi files without text events (nor lyrics)
+got the time slider very desynchronized after pausing for a long time.
+
+Monday 25-5-98
+- Applied a patch submitted by Kevin Street, to compile kmid on FreeBSD 3.0
+systems with awe support (directory settings has changed since 2.2) 
+
+Saturday 20-6-98
+- I'm on exams, but just to relax a few minutes I've been hunting for bugs :-)
+
+Sunday 21-6-98
+- Wow, KDE-1.0 is finally here, and it is REAL, so I will prepare very quickly
+KMid 1.0 before the freeze of kdemultimedia.
+
+Saturday 4-7-98
+- Just finished exams :-), and I've implemented the (long awaited feature of a)
+volume bar.
+
+Sunday 5-7-98
+- I'm doing a channel view in which you can see the keys being pressed
+and released, it's very nice :-)
+
+Monday 6-7-98
+- Using the (still hot) shutDown signal (the most awaited thing for
+kmid)
+
+Monday 13-7-98
+- I've restructured the Channel view, it's much nicer and allows for easier
+expansion. It also shows the used instrument
+
+Saturday 15-8-98
+- Wow, I haven't updated this file for so long ...
+ I've finished the changing instrument feature and so the channel view.
+ I've also improved speed a little by supressing some parses to the midi file.
+ I have improved consolekmid, now it is much more usuable.
+ Finally, I've changed the sources to use the KAccel class.
+
+Monday 31-8-98
+- I've fixed some bugs, the most important one being that kmid left its player
+ processes as zombies after stopping playing (it worked ok, but now it doesn't, 
+ dunno why). That problem made to appear some weird dialogs telling "song is already
+ playing" at each moment
+- I left a color hardcoded in button*.xpm when it should be Transparent (not 
+ everybody has a window background color of #5D5D8F8FA0A0 :-) )
+- I created a Motif 1.0 combo box in the channelview, but it should be Motif 2.0
+ because 1.0 has a "feature" for large como boxes (as this one) 
+ 
+
+Wednesday 9-9-98
+- Fixed the last bug for leaving zombies around.
+
+Monday 14-9-98
+- Released Version 1.2
+
+Tuesday 15-9-98
+- Added the change tempo widget and the KTriangleButton widget
+
+Wednesday 16-9-98
+- It's possible now to change the tempo of a song.
+
+Thursday 1-10-98
+- Fixed some problems
+
+Thursday 15-10-98
+- FIXED !!!
+ The long awaited fix has arrived for songs keeping playing after X11' logout
+ when channelview was actived.
+ Now also the ChannelView change its colors when the user change the
+ global colors, kdisptext paints a frame over the karaoke text,
+ KLCDNumber only accepts a range of values (from 3 to 999)
+
+Friday 16-10-98
+- Improved support for really broken files.
+- Added some translations to Spanish
+
+Friday 23-10-98
+- I've started writing the internals of a rhythm view
+
+Saturday 24-10-98
+- Now KMid shows a new widget to make easier follow the rhythm of songs.
+ I've also fixed a small bug by which the tempo (and rhythm) changed its 
+ state before the event actually happening if you moved the timebar near
+ before the event time. The problem was caused by volatile shared variables. 
+
+Sunday 25-10-98
+- Fixed a serious bug I introduced in the previous commitment
+
+Monday 2-11-98
+- Fixed some problems
+
+Sunday 8-11-98
+- Some small changes 
+
+Wednesday 25-11-98
+- I've finally fixed the bug that made kmid play music sometimes
+faster and sometimes slower on some machines (i.e. mine, since I installed
+kernel 2.0.36)
+This bug was there since the real beginning,  and now, it is FIXED.
+This deserves a new 2.0 version, probably next week. 
+
+Friday 27-11-98
+- Fixed a broken link in the .kdelnk file (DocPath) and raised version
+number to 1.6
+
+Thursday 10-12-98
+- Added new sgml documentation, updated up to KMid 1.6
+
+Friday 11-12-98
+- Fixed a shared memory leackage bug (hopefully the last bug in KMid :) ).
+
+Thursday 17-12-98
+- Initial support for SoftOSS (this is making some sound now :))
+- Indentified the player directory sources and beautified them a little
+
+Friday 18-12-98
+- Fixed a geometry layout bug
+
+Sunday 20-12-98
+- Fixed a problem when [un]installing midi devices (not such a mad idea if you
+use kernel modules) that made kmid segfault because it couldn't found
+the device.
+
+Saturday 16-1-99
+- Decode URL before showing it on the screen.
+
+Thursday 21-1-99
+- Fixed a null pointer access while generating beats, because I didn't
+checked for songs which didn't contain any spev (songs which use absolute 0 spev
+are extremely rare to find, as any song must include at least a tempo event)
+
+Tuesday 26-1-99
+- Removed ; after QOBJECT and fixed default midi map in consolekmid (not kmid)
+
+Saturday 6-3-99  (Applied on 2-4-99)
+- The sound driver in Linux kernels from the 2.2.x series work very different
+than the ones in 2.0.x so kmid was severely damaged. After several days of
+hacking (and after getting from A.Cox that this wasn't going to be fixed in the
+kernel) I've found a fix that even works in the 2.0.x kernels.
+ 
+Sunday 21-3-99   (Applied on 2-4-99)
+- Fixed the high pitch of AWE cards (thanks to Joseph H. Buehler and Takashi Iwai for
+ the indications)
+
+Friday 2-4-99
+- Did a workaround for a bug in egcs which doesn't seem to optimize simple 
+return-a-value function as an inline function when using -O2 and it made kmid
+freeze under certain conditions when parsing some midi files.
+
+- Removed a comparison of double variables which is very dangerous (_even_ after
+storing in one of them the value of the other one)
+- Fixed a problem by which kmid didn't play the last half second or so of some songs. 
+- Raised version number to 1.7
+
+Thursday 8-4-99
+- Fixed a problem that made Kmid consume 99% of CPU since a month ago, now it's back
+to the usual 0.00% of CPU use :-)
+
+Monday 12-4-99
+- Fixed a bug that made KMid freeze when trying to open a directory
+
+Thursday 15-4-99
+- Better support for broken karaoke files which has duplicated lyrics

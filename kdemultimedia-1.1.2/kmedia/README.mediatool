@@ -1,0 +1,86 @@
+-----------------------------------------------------------------------------
+                               Mediatool 0.37
+
+   A media player framework, including library, user interfaces and players
+                  by Christian Esken (esken@kde.org).
+
+      (Linux-)Binaries, Docs, up-to-date informations are available at
+                  http://wallace.free.de/~chris/mediatool.html              
+-----------------------------------------------------------------------------
+  Currently available:
+  - kmedia             A Qt based media player for KDE
+  - cmedia             A ncurses based media player
+  - libmediatool.so    The mediatool shared library
+  - maudio             A audio (*.wav) player
+
+  The following players are available seperately:
+  - mplaymidi          A midi player based on playmidi v2.3
+  - tracker            A mod player based on tracker v4.31
+-----------------------------------------------------------------------------
+
+
+Intro
+-----
+Mediatool is a multimedia player framework. Its main part are the media
+players (maudio, tracker, playmidi, ...) and the player interfaces ([kc]media).
+So the included player interfaces are no standalone programs, they need
+backend players that do the real work.
+
+Currently there are players for audio, mods, and midis available. maudio
+and playmidi are included. If you want MOD support, you must download and
+patch it. It is available from Aminet and its mirrors:
+
+ftp://ftp.aminet.org/pub/aminet/misc/unix/tracker-4.31.tar.Z
+
+KMedia is released under the GPL. Please read the accompanying file
+"COPYING" for more info on GPL.
+
+
+Platform
+--------
+Tested and Developed on Intel Linux 2.0.29 with QT 1.2
+
+
+Compiling mediatools:
+---------------------
+
+The mediatool package consists out of three parts: The library, the
+user interface(s) and the player program(s). This part covers the library
+and player programs.
+
+
+Calling "make; make install" should work well. Please report compilation
+problems to me. Everything goes below $(KDEDIR), only cmedia will go to
+/usr/local/bin.
+
+!!! This package (kmedia) needs KDE and Qt.
+!!! If you dont know what KDE is, see http://www.kde.org.
+!!! To learn more about Qt, see http://www.troll.no
+
+
+
+Bugs
+----
+- Let me know if you find any. :-)
+
+
+Author
+------
+kmedia, cmedia and the mediatool protocol were developed by Christian Esken.
+Please send comments and bug reports to me at esken@kde.org
+
+
+
+Credits
+-------
+Erik Thiele   - He (erik@unterland.de) gave me several very useful hints for
+                the (upcoming) revised protocol concerning TCP/UDP/IP.
+Yat-Nam Lo    - the author of the (outdated) kscd, the KDE CD player. I
+                "borrowed" his source code to get a start with kmedia and C++.
+Nathan Laredo - The author of playmidi (laredo@gnu.ai.mit.edu,
+                laredo@ix.netcom.com). Contact him, if you have general
+                problems with playmidi, contact me, if your problems are
+                mediatool specific.
+Marc Espie    - The author of tracker (espie@ens.fr). Contact him, if you
+                have general problems with tracker, contact me, if your
+                problems are mediatool specific.

@@ -1,0 +1,1733 @@
+# Icelandic translation of krn.po
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Richard Allen <ra@hp.is>, 1999
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: krn\n"
+"POT-Creation-Date: 1999-06-22 01:24+0200\n"
+"PO-Revision-Date: 1999-08-11 22:18-0000\n"
+"Last-Translator: Richard Allen <ra@hp.is>\n"
+"Language-Team: is <kde-isl@mmedia.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: ISO-8859-1\n"
+
+#: main.cpp:194 main.cpp:207 main.cpp:221 main.cpp:239 main.cpp:254
+msgid "KRN-Missing Configuration info"
+msgstr "KRN-Stillingar vantar"
+
+#: main.cpp:195
+msgid "Please enter your email adress"
+msgstr "Vinsamlegast sláðu inn netfang þitt"
+
+#: main.cpp:208
+msgid "Please enter your real name"
+msgstr "Vinsamlegast sláðu inn nafn þitt"
+
+#: main.cpp:222
+msgid "Please enter your organization's name"
+msgstr "Vinsamlegast sláðu inn nafn fyrirtækis þíns"
+
+#: main.cpp:240
+msgid "Please enter your NNTP server name"
+msgstr "Vinsamlegast sláðu inn nafn NNTP þjóns þíns"
+
+#: main.cpp:255
+msgid "Please enter your SMTP server name"
+msgstr "Vinsamlegast sláðu inn nafn SMTP þjóns þíns"
+
+#: NNTP.cpp:122
+#, c-format
+msgid "Received %.2f Kb"
+msgstr "Móttekin %.2f Kb"
+
+#: NNTP.cpp:609
+msgid "Getting Article"
+msgstr "Sæki grein"
+
+#: NNTP.cpp:751
+msgid "Article Received"
+msgstr "Grein móttekin"
+
+#: groupdlg.cpp:132
+msgid "Connect to Server"
+msgstr "Tengjast þjóni"
+
+#: groupdlg.cpp:133
+msgid "Disconnect From Server"
+msgstr "Aftengjast þjóni"
+
+#: groupdlg.cpp:134
+msgid "Get Active File"
+msgstr "Sækja 'Active' skrána"
+
+#: groupdlg.cpp:136
+msgid "Post Queued Messages"
+msgstr "Senda greinar úr biðröð"
+
+#: groupdlg.cpp:138
+msgid "Exit"
+msgstr "Hætta"
+
+#: groupdlg.cpp:141
+msgid "KRN - Group List"
+msgstr "KRN - Hópalisti"
+
+#: groupdlg.cpp:144 groupdlg.cpp:150
+msgid "Get Subjects"
+msgstr "Ná í umfjöllunarefni"
+
+#: groupdlg.cpp:145 groupdlg.cpp:151
+msgid "Get Articles"
+msgstr "Sækja greinar"
+
+#: groupdlg.cpp:146 groupdlg.cpp:154 groupdlg.cpp:162
+msgid "Catchup"
+msgstr "Merkja rest sem lesið"
+
+#: groupdlg.cpp:152 groupdlg.cpp:160
+msgid "(un)Subscribe"
+msgstr "Hefja/Hætta áskrift"
+
+#: artdlg.cpp:160 groupdlg.cpp:153
+msgid "Untag"
+msgstr "Fjarlægja merki"
+
+#: artdlg.cpp:169 findArtDlg.cpp:67 groupdlg.cpp:159
+msgid "Find"
+msgstr "Finna"
+
+#: artdlg.cpp:180 groupdlg.cpp:161
+msgid "(Un)Tag"
+msgstr "Merkja/Fjarlægja merki"
+
+#: artdlg.cpp:173 artdlg.cpp:230 groupdlg.cpp:164 groupdlg.cpp:216
+msgid "Post New Article"
+msgstr "Senda nýja grein"
+
+#: groupdlg.cpp:165
+msgid "Post All Queued Articles"
+msgstr "Senda allar greinar í biðröðinni"
+
+#: groupdlg.cpp:167
+msgid "&Subscribed"
+msgstr "&Í áskrift"
+
+#: artdlg.cpp:214 groupdlg.cpp:168
+msgid "&Tagged"
+msgstr "&Merkt"
+
+#: groupdlg.cpp:173
+msgid "Identity..."
+msgstr "Einkenni..."
+
+#: groupdlg.cpp:174
+msgid "NNTP Options..."
+msgstr "NNTP stillingar"
+
+#: groupdlg.cpp:175
+msgid "Expire Options..."
+msgstr "Stillingar á Endingu"
+
+#: groupdlg.cpp:176
+msgid "Printing Options..."
+msgstr "Prentstillingar..."
+
+#: groupdlg.cpp:183
+msgid "About Krn..."
+msgstr "Um Krn..."
+
+#: groupdlg.cpp:195
+msgid "&Newsgroup"
+msgstr "&Fréttahópur"
+
+#: groupdlg.cpp:202
+msgid "Connect to server"
+msgstr "Tengjast þjóni"
+
+#: groupdlg.cpp:204
+msgid "Disconnect from server"
+msgstr "Aftengjast þjóni"
+
+#: groupdlg.cpp:207
+msgid "Get list of active groups"
+msgstr "Sækja skrá yfir virka hópa"
+
+#: groupdlg.cpp:208
+msgid "Find group"
+msgstr "Finna hóp"
+
+#: groupdlg.cpp:211
+msgid "(Un)Subscribe"
+msgstr "Hefja/Hætta áskrift"
+
+#: groupdlg.cpp:214
+msgid "Check for Unread Articles"
+msgstr "Gá að ólesnum greinum"
+
+#: groupdlg.cpp:367 groupdlg.cpp:589 groupdlg.cpp:931
+msgid "All Newsgroups."
+msgstr "Allir fréttahópar."
+
+#: groupdlg.cpp:477 groupdlg.cpp:571
+msgid "Subscribed Newsgroups."
+msgstr "Fréttahópar í áskrift."
+
+#: groupdlg.cpp:526
+msgid "Disconnected"
+msgstr "Aftengdur"
+
+#: groupdlg.cpp:533
+msgid "Connecting to server"
+msgstr "Tengist þjóni"
+
+#: groupdlg.cpp:538
+msgid "Connected to server - Posting not allowed"
+msgstr "Tengdur þjóni - Óheimilt að senda"
+
+#: groupdlg.cpp:540
+msgid "Connected to server - Posting allowed"
+msgstr "Tengdur þjóni - Heimilt að senda"
+
+#: groupdlg.cpp:546
+msgid "Can't connect to server"
+msgstr "Get ekki tengst þjóni"
+
+#: groupdlg.cpp:548
+msgid "Connection to server failed"
+msgstr "Tenging við þjón misfórst"
+
+#: groupdlg.cpp:557
+msgid "Authentication Failed"
+msgstr "Auðkenning mistókst"
+
+#: groupdlg.cpp:560
+msgid "Connection to server failed: Authentication problem"
+msgstr "Tenging við þjón misfórst: Vandi við auðkenningu"
+
+#: groupdlg.cpp:609
+msgid "Krn-Question"
+msgstr "Krn-fyrirspurn"
+
+#: groupdlg.cpp:610
+msgid ""
+"The operation you requested needs a connection to the News server\n"
+"Should I attempt one?"
+msgstr ""
+"Aðgerðin krefst tengingar við fréttaþjóninn\n"
+"Á ég að reyna að koma henni á?"
+
+#: groupdlg.cpp:874
+msgid ""
+"You don't have an active groups list.\n"
+" get it from server?"
+msgstr ""
+"Þú hefur ekki skrá yfir virka hópa.\n"
+"Á ég að sækja hana frá þjóninum?"
+
+#: groupdlg.cpp:890
+msgid "Listing active newsgroups"
+msgstr "Skrái virka fréttahópa"
+
+#: groupdlg.cpp:905
+msgid "KRN - Find a Newsgroup"
+msgstr "KRN - Finna hóp"
+
+#: groupdlg.cpp:906
+msgid "Enter the name of the Newsgroup"
+msgstr "Sláðu inn heiti fréttahóps"
+
+#: groupdlg.cpp:990
+msgid "Krn - Message"
+msgstr "Krn - Skilaboð"
+
+#: groupdlg.cpp:991
+msgid "I can't find the group you want!"
+msgstr "Ég finn ekki hópinn sem um var beðið!"
+
+#: groupdlg.cpp:1085
+msgid "Getting messages in "
+msgstr "Sæki greinar í "
+
+#: groupdlg.cpp:1098
+msgid "Getting list of messages in "
+msgstr "Sæki greinaskrá í "
+
+#: artdlg.cpp:153 artdlg.cpp:168
+msgid "Download"
+msgstr "Sækja"
+
+#: artdlg.cpp:155 artdlg.cpp:277
+msgid "Mark Read"
+msgstr "Merkja lesið"
+
+#: artdlg.cpp:156
+msgid "Mark Unread"
+msgstr "Merkja ólesið"
+
+#: artdlg.cpp:159 artdlg.cpp:179
+msgid "Decode"
+msgstr "Afkóta"
+
+#: artdlg.cpp:161 artdlg.cpp:181
+msgid "Don't expire"
+msgstr "Ekki eyða"
+
+#: artdlg.cpp:170
+msgid "Lookup in Altavista"
+msgstr "Fletta í Altavista"
+
+#: artdlg.cpp:174 artdlg.cpp:261
+msgid "Reply by Mail"
+msgstr "Svara með tölvupósti"
+
+#: artdlg.cpp:175
+msgid "Post Followup"
+msgstr "Senda svargrein"
+
+#: artdlg.cpp:176
+msgid "Post & Reply"
+msgstr "Svargrein og tölvupóst"
+
+#: artdlg.cpp:177 artdlg.cpp:267
+msgid "Forward"
+msgstr "Framsenda"
+
+#: artdlg.cpp:183 artdlg.cpp:251
+msgid "Tagged"
+msgstr "Merkt"
+
+#: artdlg.cpp:194
+msgid "Show Only Unread Messages"
+msgstr "Sýna aðeins ólesnar greinar"
+
+#: artdlg.cpp:196
+msgid "Show Only Cached Messages"
+msgstr "Sýna bara greinar í biðminni"
+
+#: artdlg.cpp:198
+msgid "Show Locked Messages"
+msgstr "Sýna læstar greinar"
+
+#: artdlg.cpp:200
+msgid "Expunge"
+msgstr "Strika út"
+
+#: artdlg.cpp:201
+msgid "Appearance..."
+msgstr "Útlit..."
+
+#: artdlg.cpp:202
+msgid "Sorting..."
+msgstr "Raða..."
+
+#: artdlg.cpp:206
+msgid "Edit Rules"
+msgstr "Sýsla með reglur"
+
+#: artdlg.cpp:207
+msgid "Update"
+msgstr "Uppfæra"
+
+#: artdlg.cpp:216
+msgid "&Scoring"
+msgstr "&Stig"
+
+#: artdlg.cpp:223
+msgid "Previous Message"
+msgstr "Fyrri grein"
+
+#: artdlg.cpp:225
+msgid "Next Message"
+msgstr "Næsta grein"
+
+#: artdlg.cpp:227
+msgid "Find Article"
+msgstr "Finna grein"
+
+#: artdlg.cpp:232
+msgid "Get Article List"
+msgstr "Sækja greinaskrá"
+
+#: artdlg.cpp:234
+msgid "Refresh Display"
+msgstr "Endurteikna"
+
+#: artdlg.cpp:250
+msgid "Current"
+msgstr "Núverandi"
+
+#: artdlg.cpp:252 fontsDlg.cpp:53
+msgid "All"
+msgstr "Allar"
+
+#: artdlg.cpp:253
+msgid "Read"
+msgstr "Lesa"
+
+#: artdlg.cpp:254
+msgid "UnRead"
+msgstr "Aflesa"
+
+#: artdlg.cpp:257
+msgid "Save Article"
+msgstr "Vista grein"
+
+#: artdlg.cpp:259
+msgid "Print Article"
+msgstr "Prenta grein"
+
+#: artdlg.cpp:263
+msgid "Post a Followup"
+msgstr "Senda svargrein"
+
+#: artdlg.cpp:265
+msgid "Post & Mail"
+msgstr "Svargrein og tölvupóst"
+
+#: artdlg.cpp:271
+msgid "Tag Article"
+msgstr "Merkja grein"
+
+#: artdlg.cpp:273
+msgid "Lock (keep in cache)"
+msgstr "Læsa (geyma í biðminni)"
+
+#: artdlg.cpp:275
+msgid "Decode Article"
+msgstr "Afdulrita grein"
+
+#: artdlg.cpp:279
+msgid "Mark UnRead"
+msgstr "Merkja sem ólesið"
+
+#: artdlg.cpp:301 sortDlg.cpp:35
+msgid "Sender"
+msgstr "Sendandi"
+
+#: artdlg.cpp:302 sortDlg.cpp:36
+msgid "Date"
+msgstr "Dags"
+
+#: artdlg.cpp:303 sortDlg.cpp:37
+msgid "Lines"
+msgstr "Línur"
+
+#: artdlg.cpp:304 sortDlg.cpp:34
+msgid "Score"
+msgstr "Stig"
+
+#: artdlg.cpp:305 sortDlg.cpp:33
+msgid "Subject"
+msgstr "Umfjöllunarefni"
+
+#: artdlg.cpp:471
+msgid "Threading..."
+msgstr "Þræðing..."
+
+#: artdlg.cpp:480
+msgid "Showing Article List"
+msgstr "Sýna greinaskrá"
+
+#: artdlg.cpp:1325
+msgid "KRN - Existing File"
+msgstr "KRN - Skrá þegar til"
+
+#: artdlg.cpp:1326
+msgid "The File you selected already exists"
+msgstr "Skráin sem var valin er þegar til"
+
+#: artdlg.cpp:1332
+msgid "OverWrite"
+msgstr "Yfirrita"
+
+#: artdlg.cpp:1334
+msgid "Append"
+msgstr "Bæta við"
+
+#: artdlg.cpp:1369 artdlg.cpp:1434
+msgid ""
+"From: Krn\n"
+"To: You\n"
+"\n"
+"Error getting article.\n"
+"Server said:\n"
+msgstr ""
+"Frá: Krn\n"
+"Til: þín\n"
+"\n"
+"Ekki tókst að sækja grein.\n"
+"þjónninn sagði:\n"
+
+#: artdlg.cpp:1543
+msgid "Getting Article List"
+msgstr "Sæki greinaskrána"
+
+#: identDlg.cpp:42
+msgid "KRN-Identity Configuration"
+msgstr "KRN-Einkennisstillingar"
+
+#: identDlg.cpp:51
+msgid "Here you should enter your personal information"
+msgstr "Hér skaltu skrá persónulegar upplýsingar"
+
+#: identDlg.cpp:53
+msgid "You should know what these are!"
+msgstr "Þú ættir að vita hverjar þær eru!"
+
+#: identDlg.cpp:62
+msgid "Real Name"
+msgstr "Nafn"
+
+#: identDlg.cpp:68
+msgid "E-mail Address"
+msgstr "Netfang"
+
+#: identDlg.cpp:74
+msgid "Organization"
+msgstr "Fyrirtæki"
+
+#: NNTPConfigDlg.cpp:31
+msgid "KRN-NNTP configuration"
+msgstr "KRN-NNTP stillingar"
+
+#: NNTPConfigDlg.cpp:36
+msgid "Servers"
+msgstr "Þjónar"
+
+#: NNTPConfigDlg.cpp:38
+msgid "SMTP server"
+msgstr "SMTP þjónn"
+
+#: NNTPConfigDlg.cpp:43
+msgid "NNTP Server"
+msgstr "NNTP þjónn"
+
+#: NNTPConfigDlg.cpp:68
+msgid "Connect on Startup"
+msgstr "Tengjast við uppkeyrslu"
+
+#: NNTPConfigDlg.cpp:72
+msgid "Connect without asking"
+msgstr "Tengjast án þess að spyrja"
+
+#: NNTPConfigDlg.cpp:76
+msgid "Authenticate"
+msgstr "Auðkenna"
+
+#: NNTPConfigDlg.cpp:81
+msgid "User Name"
+msgstr "Nafn notanda"
+
+#: NNTPConfigDlg.cpp:85
+msgid "Password"
+msgstr "Lykilorð"
+
+#: NNTPConfigDlg.cpp:92
+msgid "Ask before downloading more than"
+msgstr "Spyrja áður en sóttar eru meira en"
+
+#: NNTPConfigDlg.cpp:95
+msgid "articles"
+msgstr "greinar"
+
+#: aboutDlg.cpp:30
+msgid "About KRN"
+msgstr "Um KRN"
+
+#: aboutDlg.cpp:41
+msgid "Part of the KDE project."
+msgstr "Hluti af KDE"
+
+#: aboutDlg.cpp:44
+msgid "Credits & Thanks"
+msgstr "Höfundar og þakkir"
+
+#: aboutDlg.cpp:68
+msgid "And Many thanks to:"
+msgstr "Og kærar þakkir til:"
+
+#: aboutDlg.cpp:73
+msgid "All KDE developers"
+msgstr "Allra höfunda KDE"
+
+#: aboutDlg.cpp:75
+msgid "Chuck, for helping in time of need"
+msgstr "Chuck, fyrir að hjálpa þegar þörfin var mest"
+
+#: aboutDlg.cpp:76
+msgid "All testers"
+msgstr "Allra sem prófuðu"
+
+#: fontsDlg.cpp:40
+msgid "Message Display Settings"
+msgstr "Stillingar greinalesara"
+
+#: fontsDlg.cpp:47
+msgid "Header Style"
+msgstr "Hausar"
+
+#: fontsDlg.cpp:49
+msgid "Fancy"
+msgstr "Fínir"
+
+#: fontsDlg.cpp:50
+msgid "Brief"
+msgstr "Stuttir"
+
+#: fontsDlg.cpp:51
+msgid "Standard"
+msgstr "Venjulegir"
+
+#: fontsDlg.cpp:52
+msgid "Long"
+msgstr "Langir"
+
+#: fontsDlg.cpp:57
+msgid "Attachment Style"
+msgstr "Viðhengisstíll"
+
+#: fontsDlg.cpp:59
+msgid "Iconic"
+msgstr "Táknmyndir"
+
+#: fontsDlg.cpp:60
+msgid "Smart"
+msgstr "Flott"
+
+#: fontsDlg.cpp:61
+msgid "Inline"
+msgstr "Áfest"
+
+#: fontsDlg.cpp:68
+msgid "Font Size:"
+msgstr "Leturstærð:"
+
+#: fontsDlg.cpp:71
+msgid "Small"
+msgstr "Smá"
+
+#: fontsDlg.cpp:72
+msgid "Normal"
+msgstr "Venjuleg"
+
+#: fontsDlg.cpp:73
+msgid "Large"
+msgstr "Stór"
+
+#: fontsDlg.cpp:74
+msgid "Huge"
+msgstr "Risastór"
+
+#: fontsDlg.cpp:79
+msgid "Standard Font"
+msgstr "Venjulegt letur"
+
+#: fontsDlg.cpp:85
+msgid "Standard Font Test"
+msgstr "Sýnishorn venjulegs leturs"
+
+#: fontsDlg.cpp:87
+msgid "Fixed Font"
+msgstr "Jafnbreitt letur"
+
+#: fontsDlg.cpp:92
+msgid "Fixed Font Test"
+msgstr "Sýnishorn jafnbreiðs leturs"
+
+#: fontsDlg.cpp:95
+msgid "Background Color"
+msgstr "Bakgrunnslitur"
+
+#: fontsDlg.cpp:98
+msgid "Foreground Color"
+msgstr "Forgrunnslitur"
+
+#: fontsDlg.cpp:101
+msgid "Link Color"
+msgstr "Tengingalitur"
+
+#: fontsDlg.cpp:104
+msgid "Followed Color"
+msgstr "Litur heimsóttra tenginga"
+
+#: fontsDlg.cpp:108
+msgid "Use only one window"
+msgstr "Nota aðeins einn glugga"
+
+#: fontsDlg.cpp:110
+msgid "Split window vertically"
+msgstr "Helminga gluggann lóðrétt"
+
+#: kmmessage.cpp:1339
+msgid "On %D, you wrote:"
+msgstr "Þann %D, ritaðir þú:"
+
+#: kmmessage.cpp:1340
+msgid "On %D, %F wrote:"
+msgstr "Þann %D, ritaði %F:"
+
+#: kmmessage.cpp:1341
+msgid "Forwarded Message"
+msgstr "Framsend skilaboð"
+
+#: kmcomposewin.cpp:127
+msgid "KMail Composer"
+msgstr "KMail ritill"
+
+#: kmcomposewin.cpp:138
+msgid "F"
+msgstr "F"
+
+#: kmcomposewin.cpp:139
+msgid "Name"
+msgstr "Nafn"
+
+#: kmcomposewin.cpp:140
+msgid "Size"
+msgstr "Stærð"
+
+#: kmcomposewin.cpp:141
+msgid "Encoding"
+msgstr "Kótun"
+
+#: kmcomposewin.cpp:142
+msgid "Type"
+msgstr "Tegund"
+
+#: kmcomposewin.cpp:345
+msgid "&From:"
+msgstr "&Frá:"
+
+#: kmcomposewin.cpp:347
+msgid "&Reply to:"
+msgstr "&Svar til:"
+
+#: kmcomposewin.cpp:349
+msgid "&To:"
+msgstr "&Til:"
+
+#: kmcomposewin.cpp:351
+msgid "&Cc:"
+msgstr "&Afrit:"
+
+#: kmcomposewin.cpp:353
+msgid "&Bcc:"
+msgstr "&Blint afrit:"
+
+#: kmcomposewin.cpp:355
+msgid "&Subject:"
+msgstr "&Viðfang:"
+
+#: kmcomposewin.cpp:358
+msgid "&Newsgroups:"
+msgstr "&Fréttahópar:"
+
+#: kmcomposewin.cpp:360
+msgid "&Followup-To:"
+msgstr "&Svargrein til:"
+
+#: kmcomposewin.cpp:431
+msgid "&Send"
+msgstr "&Senda"
+
+#: kmcomposewin.cpp:434
+msgid "S&end later"
+msgstr "S&enda síðar"
+
+#: kmcomposewin.cpp:436
+msgid "S&end now"
+msgstr "S&enda nú"
+
+#: kmcomposewin.cpp:438
+msgid "&Insert File..."
+msgstr "Skjóta &inn skrá..."
+
+#: kmcomposewin.cpp:442
+msgid "&Addressbook..."
+msgstr "Netfangaskrá..."
+
+#: kmcomposewin.cpp:447
+msgid "&New Composer..."
+msgstr "Nýr ritill..."
+
+#: kmcomposewin.cpp:450
+msgid "New Mailreader"
+msgstr "Nýr póstgluggi"
+
+#: kmcomposewin.cpp:469 kmcomposewin.cpp:703 kmcomposewin.cpp:1879
+msgid "Mark all"
+msgstr "Merkja allt"
+
+#: kmcomposewin.cpp:472 kmcomposewin.cpp:705
+msgid "Find..."
+msgstr "Finna..."
+
+#: kmcomposewin.cpp:474 kmcomposewin.cpp:706
+msgid "Replace..."
+msgstr "Skipta..."
+
+#: kmcomposewin.cpp:477
+msgid "&Spellcheck..."
+msgstr "&Villuleita..."
+
+#: kmcomposewin.cpp:485
+msgid "&Urgent"
+msgstr "Á&ríðandi"
+
+#: kmcomposewin.cpp:487
+msgid "&Confirm delivery"
+msgstr "&Staðfesta sendingu"
+
+#: kmcomposewin.cpp:489
+msgid "&Confirm read"
+msgstr "Staðfesta lestur"
+
+#: kmcomposewin.cpp:492
+msgid "&Spellchecker..."
+msgstr "&Villupúki..."
+
+#: kmcomposewin.cpp:495
+msgid "&Charsets..."
+msgstr "Stafasett..."
+
+#: kmcomposewin.cpp:508
+msgid "&All Fields"
+msgstr "Ö&ll svið"
+
+#: kmcomposewin.cpp:510
+msgid "&From"
+msgstr "&Frá"
+
+#: kmcomposewin.cpp:511
+msgid "&Reply to"
+msgstr "&Svar til"
+
+#: kmcomposewin.cpp:512
+msgid "&To"
+msgstr "&Til"
+
+#: kmcomposewin.cpp:513
+msgid "&Cc"
+msgstr "&Afrit"
+
+#: kmcomposewin.cpp:514
+msgid "&Bcc"
+msgstr "&Blint afrit"
+
+#: kmcomposewin.cpp:515
+msgid "&Subject"
+msgstr "&Viðfang"
+
+#: kmcomposewin.cpp:517
+msgid "&Newsgroups"
+msgstr "&Fréttahópar"
+
+#: kmcomposewin.cpp:518
+msgid "&Followup-To"
+msgstr "Svargrein til"
+
+#: kmcomposewin.cpp:524
+msgid "Append S&ignature"
+msgstr "Bæta v&ið undirskrift"
+
+#: kmcomposewin.cpp:526
+msgid "&Insert File"
+msgstr "Skjóta inn skrá"
+
+#: kmcomposewin.cpp:529
+msgid "&Attach..."
+msgstr "Hengj&a við..."
+
+#: kmcomposewin.cpp:531
+msgid "Attach &Public Key"
+msgstr "Skjóta inn &dreifilykli"
+
+#: kmcomposewin.cpp:533
+msgid "Attach My &Public Key"
+msgstr "Skjóta inn &dreifilykli mínum"
+
+#: kmcomposewin.cpp:544
+msgid "&Save..."
+msgstr "&Vista..."
+
+#: kmcomposewin.cpp:545
+msgid "Pr&operties..."
+msgstr "&Eiginleikar..."
+
+#: kmcomposewin.cpp:547
+msgid "&Attach"
+msgstr "Hengja við"
+
+#: kmcomposewin.cpp:566
+msgid "Send message"
+msgstr "Senda grein"
+
+#: kmcomposewin.cpp:571
+msgid "Compose new message"
+msgstr "Rita nýja grein"
+
+#: kmcomposewin.cpp:577
+msgid "Save message to file"
+msgstr "Vista grein í skrá"
+
+#: kmcomposewin.cpp:583
+msgid "Print message"
+msgstr "Prenta grein"
+
+#: kmcomposewin.cpp:592
+msgid "Cut selection"
+msgstr "Klippa"
+
+#: kmcomposewin.cpp:595
+msgid "Copy selection"
+msgstr "Afrita"
+
+#: kmcomposewin.cpp:598
+msgid "Paste clipboard contents"
+msgstr "Líma innihald klemmuspjalds"
+
+#: kmcomposewin.cpp:603
+msgid "Attach file"
+msgstr "Hengja skrá við"
+
+#: kmcomposewin.cpp:607
+msgid "Open addressbook..."
+msgstr "Opna netfangabók..."
+
+#: kmcomposewin.cpp:614
+msgid "sign message"
+msgstr "skrifa undir"
+
+#: kmcomposewin.cpp:619
+msgid "encrypt message"
+msgstr "dulrita bréfið"
+
+#: kmcomposewin.cpp:636 kmcomposewin.cpp:652
+msgid "Column"
+msgstr "Dálkur"
+
+#: kmcomposewin.cpp:637 kmcomposewin.cpp:650
+msgid "Line"
+msgstr "Lína"
+
+#: kmcomposewin.cpp:919
+msgid "KMail Confirm"
+msgstr "KMail staðfesting"
+
+#: kmcomposewin.cpp:920
+msgid ""
+"Close and discard\n"
+"edited message?"
+msgstr ""
+"Loka og hætta við\n"
+"þetta bréf?"
+
+#: kmcomposewin.cpp:1193
+msgid "Attach File"
+msgstr "Hengja skrá við"
+
+#: kmcomposewin.cpp:1215
+msgid "Include File"
+msgstr "Velja skrá"
+
+#: kmcomposewin.cpp:1247
+msgid "my pgp key"
+msgstr "pgp lykillinn minn"
+
+#: kmcomposewin.cpp:1275
+msgid "pgp key"
+msgstr "pgp lykill"
+
+#: kmcomposewin.cpp:1296 kmreaderwin.cpp:734
+msgid "View..."
+msgstr "Birta..."
+
+#: kmcomposewin.cpp:1297
+msgid "Save..."
+msgstr "Vista..."
+
+#: kmcomposewin.cpp:1298 kmreaderwin.cpp:737
+msgid "Properties..."
+msgstr "Eiginleikar..."
+
+#: kmcomposewin.cpp:1302
+msgid "Attach..."
+msgstr "Hengja við..."
+
+#: kmcomposewin.cpp:1344 kmreaderwin.cpp:779
+msgid "View Attachment: "
+msgstr "Skoða viðhengingu: "
+
+#: kmcomposewin.cpp:1523 kpgp.cpp:545
+msgid ""
+"Sorry, but this feature\n"
+"is still missing"
+msgstr ""
+"Því miður þá vantar enn\n"
+"þessa aðgerð"
+
+#: kmcomposewin.cpp:1531
+msgid "unnamed"
+msgstr "nafnlaust"
+
+#: kmcomposewin.cpp:1546
+msgid "To:"
+msgstr "Til:"
+
+#: kmcomposewin.cpp:1550
+msgid "Subject:"
+msgstr "Viðfangsefni:"
+
+#: kmcomposewin.cpp:1553
+msgid "Date:"
+msgstr "Dags:"
+
+#: kmcomposewin.cpp:1630
+msgid "Choose Signature File"
+msgstr "Velja undirskriftarskrá"
+
+#: kmcomposewin.cpp:1677
+msgid "Spellcheck complete."
+msgstr "&Villuleit lokið."
+
+#: kmcomposewin.cpp:2070
+msgid "Spellcheck - KMail"
+msgstr "Stafsetningarathugun - KPóstur"
+
+#: kmcomposewin.cpp:2096
+msgid ""
+"Error starting KSpell. Please make sure you have ISpell properly configured."
+msgstr ""
+"Villa við keyrslu KSpell. Athugaðu hvort ISpell er rétt upp sett."
+
+#: kmsender.cpp:116
+msgid ""
+"Please specify a send\n"
+"method in the settings\n"
+"and try again."
+msgstr ""
+"Vinsamlega tilgreindu sendingar-\n"
+"aðferðina í stillingunum og\n"
+"prófaðu svo aftur."
+
+#: kmsender.cpp:122
+msgid ""
+"Please set the required fields in the\n"
+"identity settings:\n"
+"user-name and email-address"
+msgstr ""
+"Vinsamlega gefðu upp viðeigandi upplýsingar\n"
+"í auðkennisreitunum:\n"
+"notandanafn og netfang"
+
+#: kmsender.cpp:147
+msgid "You must specify a receiver"
+msgstr "Þú verður að gefa upp móttakanda"
+
+#: kmsender.cpp:158
+msgid "Cannot add message to outbox folder"
+msgstr "Bréf fæst ekki flutt í út-möppuna"
+
+#: kmsender.cpp:189
+msgid "Sending still in progress"
+msgstr "Sending stendur enn yfir"
+
+#: kmsender.cpp:245
+msgid "Initiating sender process..."
+msgstr "Ræsi sendiaðgerð..."
+
+#: kmsender.cpp:261
+msgid "Sending message: "
+msgstr "Sendi bréf: "
+
+#: kmsender.cpp:289
+msgid "Done sending messages."
+msgstr "Búin að senda bréf."
+
+#: kmsender.cpp:308
+msgid "Sending failed:"
+msgstr "Sendingin mistókst:"
+
+#: kmsender.cpp:461
+msgid ""
+"Please specify a mailer program\n"
+"in the settings."
+msgstr ""
+"Vinsamlega veldu póstforrit í\n"
+"stillingunum."
+
+#: kmsender.cpp:501
+#, c-format
+msgid "Failed to execute mailer program %s"
+msgstr "Tókst ekki að ræsa póstforritið %s"
+
+#: kmsender.cpp:589
+msgid "connecting to server"
+msgstr "tengi við þjóninn"
+
+#: kmsender.cpp:594
+msgid ""
+"Cannot open SMTP connection to\n"
+"host %1 for sending:\n"
+"%2"
+msgstr ""
+"Get ekki opnað SMTP tengingu við\n"
+"%1 vélina til að senda:\n"
+"%2"
+
+#: kmsender.cpp:623
+msgid "Cannot close SMTP connection."
+msgstr "Get ekki lokað SMTP tengingu."
+
+#: kmsender.cpp:673
+msgid "transmitting message"
+msgstr "er að senda"
+
+#: kmsender.cpp:707
+msgid "network error"
+msgstr "Villa á neti"
+
+#: kmsender.cpp:709
+msgid ""
+"a SMTP error occured.\n"
+"Command: %1\n"
+"Response: %2\n"
+"Return code: %3"
+msgstr ""
+"SMTP villa átti sér stað.\n"
+"Skipun: %1\n"
+"Svar: %2\n"
+"Skilagildi: %3"
+
+#: kmsender.cpp:714
+msgid "(nothing)"
+msgstr "(ekkert)"
+
+#: kmsender.cpp:727
+#, c-format
+msgid "Sending SMTP command: %1"
+msgstr "Sendi SMTP skipun: %1"
+
+#: findArtDlg.cpp:24
+msgid "KRN - Article Searcher"
+msgstr "KRN - Greinaleitari"
+
+#: findArtDlg.cpp:31
+msgid "Find Articles With:"
+msgstr "Finna greinar með:"
+
+#: findArtDlg.cpp:36 rulesDlg.cpp:107
+msgid "In Field:"
+msgstr "Í dálk:"
+
+#: findArtDlg.cpp:55 rulesDlg.cpp:132
+msgid "Case Sensitive"
+msgstr "Háð há/lágstöfum"
+
+#: findArtDlg.cpp:58 rulesDlg.cpp:133
+msgid "Wildcard Mode"
+msgstr "Wildcard hamur"
+
+#: findArtDlg.cpp:68 rulesDlg.cpp:145
+msgid "Done"
+msgstr "Búin"
+
+#: kmidentity.cpp:163
+#, c-format
+msgid ""
+"Failed to execute signature script\n"
+"%s\n"
+"%s"
+msgstr ""
+"Tókst ekki að keyra skeljarforrit undirskriftar\n"
+"%s\n"
+"%s"
+
+#: kfileio.cpp:27 kmaddrbook.cpp:167
+msgid "File I/O Error"
+msgstr "Inntaks/úttaksvilla"
+
+#: kfileio.cpp:48
+#, c-format
+msgid ""
+"The specified file does not exist:\n"
+"%s"
+msgstr ""
+"Þessi skrá er ekki til:\n"
+"%s"
+
+#: kfileio.cpp:55
+#, c-format
+msgid ""
+"This is a directory and not a file:\n"
+"%s"
+msgstr ""
+"Þetta er mappa en ekki skrá:\n"
+"%s"
+
+#: kfileio.cpp:62
+#, c-format
+msgid ""
+"You do not have read permissions to the file:\n"
+"%s"
+msgstr ""
+"Þú hefur ekki lesheimild á þessa skrá:\n"
+"%s"
+
+#: kfileio.cpp:73 kmaddrbook.cpp:157
+#, c-format
+msgid ""
+"Could not read file:\n"
+"%s"
+msgstr ""
+"Gat ekki lesið skrána:\n"
+"%s"
+
+#: kfileio.cpp:76 kmaddrbook.cpp:160
+#, c-format
+msgid ""
+"Could not open file:\n"
+"%s"
+msgstr ""
+"Gat ekki opnað skrána:\n"
+"%s"
+
+#: kfileio.cpp:79
+#, c-format
+msgid ""
+"Error while reading file:\n"
+"%s"
+msgstr ""
+"Villa við lestur á skránni:\n"
+"%s"
+
+#: kfileio.cpp:96
+msgid "Could only read %1 bytes of %2."
+msgstr "Gat aðeins lesið %1 bæti af %2."
+
+#: kfileio.cpp:124 kfileio.cpp:207
+msgid ""
+"File %1 exists.\n"
+"Do you want to replace it ?"
+msgstr ""
+"Skrá %1 er nú þegar til.\n"
+"Viltu skrifa yfir hana ?"
+
+#: kfileio.cpp:144 kfileio.cpp:227
+#, c-format
+msgid ""
+"Failed to make a backup copy of %s.\n"
+"Continue anyway ?"
+msgstr ""
+"Tókst ekki að taka afrit af %s.\n"
+"Halda áfram ?"
+
+#: kfileio.cpp:156 kfileio.cpp:175 kfileio.cpp:239 kfileio.cpp:255
+#, c-format
+msgid ""
+"Could not write to file:\n"
+"%s"
+msgstr ""
+"Gat ekki skrifað í skrána:\n"
+"%s"
+
+#: kfileio.cpp:159 kfileio.cpp:242
+#, c-format
+msgid ""
+"Could not open file for writing:\n"
+"%s"
+msgstr ""
+"Gat ekki skrifað í skrána:\n"
+"%s"
+
+#: kfileio.cpp:163 kfileio.cpp:246 kmaddrbook.cpp:163
+#, c-format
+msgid ""
+"Error while writing file:\n"
+"%s"
+msgstr ""
+"Villa við skrif á skrá:\n"
+"%s"
+
+#: kfileio.cpp:181 kfileio.cpp:261
+msgid "Could only write %1 bytes of %2."
+msgstr "Gat aðeins skrifað %1 bæti af %2."
+
+#: kmmsgpartdlg.cpp:41
+msgid "Message Part Properties"
+msgstr "Eiginleikar bréfshluta"
+
+#: kmmsgpartdlg.cpp:62
+msgid "Name:"
+msgstr "Nafn:"
+
+#: kmmsgpartdlg.cpp:73
+msgid "Description:"
+msgstr "Lýsing:"
+
+#: kmmsgpartdlg.cpp:83
+msgid "Encoding:"
+msgstr "Kótun:"
+
+#: kmmsgpartdlg.cpp:89
+msgid "none (8bit)"
+msgstr "Engin (8 bíta)"
+
+#: kmmsgpartdlg.cpp:90
+msgid "base 64"
+msgstr "base 64"
+
+#: kmmsgpartdlg.cpp:91
+msgid "quoted printable"
+msgstr "QP (quoted printable)"
+
+#: kmreaderwin.cpp:321 kmreaderwin.cpp:334 kmreaderwin.cpp:353
+#: kmreaderwin.cpp:374
+msgid "Cc: "
+msgstr "Afrit: "
+
+#: kmreaderwin.cpp:329 kmreaderwin.cpp:348 kmreaderwin.cpp:369
+msgid "From: "
+msgstr "Frá: "
+
+#: kmreaderwin.cpp:331 kmreaderwin.cpp:350 kmreaderwin.cpp:371
+msgid "To: "
+msgstr "Til: "
+
+#: kmreaderwin.cpp:338 kmreaderwin.cpp:359 kmreaderwin.cpp:384
+msgid "References: "
+msgstr "Tilvísanir: "
+
+#: kmreaderwin.cpp:355 kmreaderwin.cpp:368
+msgid "Date: "
+msgstr "Dags: "
+
+#: kmreaderwin.cpp:377
+msgid "Bcc: "
+msgstr "Blint afrit: "
+
+#: kmreaderwin.cpp:380
+msgid "Reply to: "
+msgstr "Svar til: "
+
+#: kmreaderwin.cpp:387
+msgid "Groups: "
+msgstr "Hópar: "
+
+#: kmreaderwin.cpp:426
+msgid "Encrypted message"
+msgstr "Dulritað bréf"
+
+#: kmreaderwin.cpp:432
+msgid "Cannot decrypt message:"
+msgstr "Get ekki afdulritað bréfið:"
+
+#: kmreaderwin.cpp:441
+msgid "Message was signed by"
+msgstr "Bréfið var undirskrifað af"
+
+#: kmreaderwin.cpp:442
+msgid "Warning: Bad signature from"
+msgstr "Aðvörun: Varhugaverð undirskrift frá"
+
+#: kmreaderwin.cpp:452
+msgid "unknown key ID"
+msgstr "óþekkt lykilnúmer"
+
+#: kmreaderwin.cpp:698
+msgid "Attachment: "
+msgstr "Viðhenging: "
+
+#: kmreaderwin.cpp:810
+msgid "Could not create temporary file"
+msgstr "Gat ekki skrifað tímabundna skrá"
+
+#: kmreaderwin.cpp:831
+#, c-format
+msgid "Could not save temporary file %s"
+msgstr "Gat ekki vistað í tímabundna skrá %s"
+
+#: kmreaderwin.cpp:860
+msgid "Could not save file"
+msgstr "Gat ekki vistað skrá"
+
+#: kpgp.cpp:150
+msgid ""
+"Couldn't find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+"Fann ekki PGP forritið..\n"
+"Athugaðu að leitarslóðin þín (PATH) sé rétt."
+
+#: kpgp.cpp:192
+msgid ""
+"Could not find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+"Fann ekki PGP forritið..\n"
+"Athugaðu að leitarslóðin þín (PATH) sé rétt."
+
+#: kpgp.cpp:206
+msgid "The pass phrase is missing."
+msgstr "Það vantar lykilsetninguna."
+
+#: kpgp.cpp:285 kpgp.cpp:311 kpgp.cpp:324 kpgp.cpp:343 kpgp.cpp:360
+msgid "PGP Warning"
+msgstr "PGP aðvörun"
+
+#: kpgp.cpp:286
+msgid ""
+"Could not find the public keys for the\n"
+"recipients of this mail.\n"
+"Message will not be encrypted."
+msgstr ""
+"Fann ekki lykla fyrir móttakendur\n"
+"þessa bréfs.\n"
+"Bréfið verður því ekki dulritað."
+
+#: kpgp.cpp:295
+msgid "Could not find the public keys for\n"
+msgstr "Fann ekki lykla fyrir\n"
+
+#: kpgp.cpp:306
+msgid "These persons will not be able to\n"
+msgstr "Þessir aðilar munu ekki geta\n"
+
+#: kpgp.cpp:308
+msgid "This person will not be able to\n"
+msgstr "Þessir aðilar munu ekki geta\n"
+
+#: kpgp.cpp:310
+msgid "decrypt the message."
+msgstr "afdulritað bréfið."
+
+#: kpgp.cpp:325
+msgid ""
+"You just entered an invalid passphrase.\n"
+"Do you wan't to try again, continue and\n"
+"leave the message unsigned, or cancel sending the message?"
+msgstr ""
+"Þú gafst upp ógilda lykilsetningu.\n"
+"Viltu reyna aftur, halda áfram og senda bréfið\n"
+"ódulritað, eða hætta við að senda bréfið?"
+
+#: kpgp.cpp:330
+msgid "Retry"
+msgstr "Reyna aftur"
+
+#: kpgp.cpp:341
+msgid ""
+"Do you wan't to encrypt anyway, leave the\n"
+"message as is, or cancel the message?"
+msgstr ""
+"Viltu dulrita samt sem áður, láta það vera eins\n"
+"og það er, eða hætta við þetta bréf?"
+
+#: kpgp.cpp:345
+msgid "Encrypt"
+msgstr "Dulrita"
+
+#: kpgp.cpp:358
+msgid ""
+"Do you wan't to leave the message as is,\n"
+"or cancel the message?"
+msgstr ""
+"Viltu hafa bréfið eins og það er eða\n"
+"hætta við það?"
+
+#: kpgp.cpp:712
+msgid ""
+"Please enter your\n"
+"PGP passphrase"
+msgstr ""
+"Vinsamlega sláðu inn\n"
+"PGP lykilsetninguna"
+
+#: kpgp.cpp:739
+msgid "PGP Security Check"
+msgstr "PGP öryggisathugun"
+
+#: kpgp.cpp:763
+msgid "Please select the public key to insert"
+msgstr "Veldu dreifilykil sem þú villt bæta við"
+
+#: kpgp.cpp:794
+msgid "Select key"
+msgstr "Veldu lykil"
+
+#: kpgp.cpp:815
+msgid "Identity"
+msgstr "Auðkenni"
+
+#: kpgp.cpp:821
+msgid "PGP User Identity:"
+msgstr "PGP auðkenni:"
+
+#: kpgp.cpp:832
+msgid "Store passphrase"
+msgstr "Vista lykilsetningu"
+
+#: kpgp.cpp:838
+msgid "Always encrypt to self"
+msgstr "Alltaf að dulrita til mín"
+
+#: krnsender.cpp:62
+msgid "This server is read onlyyou can't post here!"
+msgstr "Þessi þjónn er aðeins til aflestrar og tekur ekki við sendingum"
+
+#: kmaddrbookdlg.cpp:21
+msgid "Addressbook"
+msgstr "Netfangabókin"
+
+#: kmaddrbookdlg.cpp:96
+msgid "Addressbook Manager"
+msgstr "Netfangastjórinn"
+
+#: kmaddrbookdlg.cpp:179
+msgid "KMail error"
+msgstr "KMail villa"
+
+#: kmaddrbookdlg.cpp:180
+msgid "Storing addressbook failed"
+msgstr "Tókst ekki að vista netfangabók"
+
+#: kmaddrbook.cpp:30
+msgid "KMail Error"
+msgstr "KMail villa"
+
+#: kmaddrbook.cpp:31
+msgid "Storing the addressbook failed!\n"
+msgstr "Tókst ekki að vista netfangabók!\n"
+
+#: expireDlg.cpp:23 expireDlg.cpp:28
+msgid "KRN - Expire Settings"
+msgstr "KRN - Gildistímastillingar"
+
+#: expireDlg.cpp:37
+msgid "For how long should we keep things (in days)?"
+msgstr "Hve lengi skal geyma eftirfarandi (í dögum)?"
+
+#: expireDlg.cpp:47
+msgid "Read:"
+msgstr "Lesin:"
+
+#: expireDlg.cpp:48
+msgid "Unread:"
+msgstr "Ólesin:"
+
+#: expireDlg.cpp:51
+msgid "Article Bodies:"
+msgstr "Meginhluta bréfa:"
+
+#: expireDlg.cpp:56
+msgid "Article Headers:"
+msgstr "Bréfhausa:"
+
+#: printdlg.cpp:22
+msgid "KRN - Print Settings"
+msgstr "KRN - Prentkerfi"
+
+#: printdlg.cpp:27
+msgid "KRN - Printing Settings"
+msgstr "KRN - Prentstillingar"
+
+#: printdlg.cpp:34
+msgid "General"
+msgstr "Almennt"
+
+#: printdlg.cpp:36
+msgid "Printing System"
+msgstr "Prentkerfi"
+
+#: printdlg.cpp:38
+msgid "Use HTML Printing"
+msgstr "Nota HTML prentun"
+
+#: printdlg.cpp:41
+msgid "Use Direct Printing"
+msgstr "Prenta beint"
+
+#: printdlg.cpp:46
+msgid "Direct Printing"
+msgstr "Bein prentun"
+
+#: printdlg.cpp:49
+msgid "Print using:"
+msgstr "Prenta með:"
+
+#: printdlg.cpp:53
+msgid "Feed it with:"
+msgstr "Senda því:"
+
+#: printdlg.cpp:55
+msgid "Postscript"
+msgstr "Postscript"
+
+#: printdlg.cpp:56
+msgid "HTML"
+msgstr "HTML"
+
+#: printdlg.cpp:57
+msgid "Text"
+msgstr "Texta"
+
+#: rulesDlg.cpp:39
+msgid "KRN - Scoring Rules Editor"
+msgstr "KRN - Stigaregluritill"
+
+#: rulesDlg.cpp:46
+msgid "Global Rules"
+msgstr "Altækar reglur"
+
+#: rulesDlg.cpp:48
+msgid "All Rules"
+msgstr "Allar reglur"
+
+#: rulesDlg.cpp:64
+msgid "Active Rules"
+msgstr "Virkar reglur"
+
+#: rulesDlg.cpp:71
+msgid "Rule Editor"
+msgstr "Regluritill"
+
+#: rulesDlg.cpp:88
+msgid "Save as"
+msgstr "Vista sem"
+
+#: rulesDlg.cpp:102
+msgid "Match Articles With:"
+msgstr "Finna greinar með:"
+
+#: rulesDlg.cpp:125
+msgid "Weight:"
+msgstr "Þyngd:"
+
+#: rulesDlg.cpp:127
+msgid "Negative"
+msgstr "Neikvæð"
+
+#: rulesDlg.cpp:191
+msgid "Rule name:"
+msgstr "Nafn reglu:"
+
+#: sortDlg.cpp:24
+msgid "KRN - Header Sorting"
+msgstr "KRN - Hausaröðun"
+
+#: sortDlg.cpp:38
+msgid "None"
+msgstr "Engin"
+
+#: sortDlg.cpp:40
+msgid "Sort by:"
+msgstr "Raða eftir:"
+
+#: sortDlg.cpp:57
+msgid "Use Threading"
+msgstr "Nota þræði"
+
+#: charsetsDlg.cpp:27
+msgid "KRN - Charset Settings"
+msgstr "KRN - Stafatöflustillingar"
+
+#: charsetsDlg.cpp:29
+msgid "KMail - Charset Settings"
+msgstr "KMail - Stafatöflustillingar"
+
+#: charsetsDlg.cpp:39
+msgid "Message charset"
+msgstr "Stafatafla í bréfi"
+
+#: charsetsDlg.cpp:56
+msgid "Composer charset"
+msgstr "Stafasett ritils"
+
+#: charsetsDlg.cpp:73
+msgid "Set as &default"
+msgstr "Nota sem &sjálfgefið"
+
+#: charsetsDlg.cpp:78
+msgid "&7 bit is ASCII"
+msgstr "&7 bita er ASCII"
+
+#: charsetsDlg.cpp:82
+msgid "&Quote unknown characters"
+msgstr "&Kóða óþekkta stafi"
+
+#: expirestatusdlg.cpp:36
+msgid "Please wait a minute, I am expiring!"
+msgstr "Augnablik, loka tengingu við fréttaþjón!"
+
+#: kpgpbase.cpp:321
+msgid "Bad pass Phrase; couldn't sign"
+msgstr "Ógild lykilsetning. Kótun ekki framkvæmd"
+
+#: kpgpbase.cpp:360
+msgid "error running pgp"
+msgstr "villa við keyrslu pgp"
+
+#: kpgpbase.cpp:377 kpgpbase.cpp:668
+msgid "Bad pass Phrase; couldn't decrypt"
+msgstr "Ógild lykilsetning. Engin afdulritun framkvæmd"
+
+#: kpgpbase.cpp:388 kpgpbase.cpp:679
+msgid "Do not have the secret key for this message"
+msgstr "Hef ekki lykil fyrir þetta bréf"
+
+#: kpgpbase.cpp:416
+msgid "unknown key ID "
+msgstr "óþekkt lykilnúmer"
+
+#: kpgpbase.cpp:436
+msgid "??? (file ~/.pgp/pubring.pgp not found)"
+msgstr "??? (skráin ~/.pgp/pubring.pgp er ekki til)"
+
+#: kpgpbase.cpp:591
+msgid "The passphrase you entered is invalid."
+msgstr "Ógild lykilsetning."
+
+#: kpgpbase.cpp:617
+msgid ""
+"The key(s) you wan't to encrypt your message\n"
+"to are not trusted. No encryption done."
+msgstr ""
+"Lyklinum/unum sem þú villt dulrita greinina með\n"
+"má ekki treysta. Engin dulritun framkvæmd."
+
+#: kpgpbase.cpp:620
+msgid ""
+"The following key(s) are not trusted:\n"
+"%1\n"
+"They will not be able to decrypt the message"
+msgstr ""
+"Eftirfarandi lyklum má ekki treysta:\n"
+"%1\n"
+"Ekki verður unnt að afdulrita greinina með þeim"
+
+#: TooManydlg.cpp:27
+msgid "KRN-Confirmation"
+msgstr "KRN-Staðfesting"
+
+#: TooManydlg.cpp:32
+msgid "Read how many articles?"
+msgstr "Sækja hve margar greinar?"
+
+#: TooManydlg.cpp:38
+msgid "Get them from"
+msgstr "Sækja þær frá"
+
+#: TooManydlg.cpp:39
+msgid "Oldest articles"
+msgstr "Elstu greinarnar"
+
+#: TooManydlg.cpp:41
+msgid "Newest articles"
+msgstr "Nýjustu greinarnar"
+
+#: TooManydlg.cpp:45
+msgid "Make this the new threshold"
+msgstr "Nota sem nýjan þröskuld"

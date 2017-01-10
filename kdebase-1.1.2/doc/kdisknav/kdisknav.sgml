@@ -1,0 +1,377 @@
+
+<!doctype linuxdoc system>
+
+<!-- KDE Disk Navigator.
+ -->
+
+<article>
+
+<!-- Title information -->
+
+<title>KDE Disk Navigator
+<author>Pietro Iglio
+(<htmlurl url="mailto:iglio@kde.org" name="iglio@kde.org">)
+<date>v. 0.3 (beta), Nov 17 15:45:00 1998
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+<!--################################################################## -->
+<sect>Introduction
+<!--################################################################## -->
+<p>
+
+Disk Navigator is a simple utility to navigate through the filesystem starting
+from the KPanel menu. It is activated when the "Disk Navigator" entry from
+the KPanel menu is selected. In this case, a menu with the following 
+entries is shown:
+
+
+<list>
+<item><bf>Shared:</bf> 
+  this section lists entries shared among all users.
+  Typical shared entries include: / (root dir), CD-ROM, mounted filesystems,
+  removable disks, etc.
+  Shared entries can be changed selecting the "Options" menu entry.
+  Note: only the superuser can change shared entries. 
+
+<item><bf>Personal:</bf> this section lists user-specific filesystem entries. 
+  Typical entries in this section are user's home dir, user's desktop, 
+  frequently accessed directories. Personal entries can be changed selecting 
+  the "Options" menu entry.
+
+<item><bf>Recent:</bf>
+  this section lists recently accessed documents, applications
+  and folders.  When a document or application is accessed, it goes in the
+  "Recent" section along with its parent folder. The number of folders and
+  files that are kept in this section can be set selecting the "Options" menu
+  entry.
+
+<item><bf>Options:</bf>
+  shows a configuration dialog that can be used to specify some settings.
+  For a description of available settings, see the "Options" Section.
+
+</list>
+
+The Disk Navigator menu is easily customizable to fit user needs, 
+as explained in the section
+"Adding, Changing and Removing Filesystem Entries".
+
+<!--################################################################## -->
+<sect>Features & Tips
+<!--################################################################## -->
+<p>
+
+<list>
+
+<item>
+On the top of each folder submenu there is an entry "Open Folder".
+When this entry is selected, a KFM window referring to the current
+folder is displayed. 
+If you hold down the Shift key when selecting this entry, Disk
+Navigator opens a terminal with the current directory corresponding to the
+folder submenu.
+
+<item>
+Disk Navigator can be used to quickly access files in any mounted filesystem,
+including local files, remote files (eg. NFS mounts), removable media
+(CD-ROM, Iomega Zip, floppy drive), etc. You can create folders in the
+Disk Navigator menu to group related filesystem entries (eg. "Remote 
+Filesystems", "Removable Media", "Development Stuff", etc.).
+
+<item>
+When you click on a file in a folder submenu, the action performed is
+exactly the same performed when the file is clicked in a KFM window.
+
+<item>
+Slow devices: accessing a folder on a slow device can stop Disk Navigator
+for a while (eg. entering a folder with a large number of files on a slow
+CD-ROM reader). Since you may want to place entry points to slow devices on
+the root menu, you might accidentally enter such slow entries.
+To avoid this problem, you can add a "Removable Media" folder to the 
+Shared/Personal sections, and create URL files or links pointing to the slow
+devices in this folder.
+See the "Options" section to see how to customize the Shared/Personal sections.
+
+<item>
+URL vs. Links: starting version 0.3, Disk Navigator supports KDE URL files 
+to define filesystem entry points.
+Disk Navigator, in particular, supports local aliases, i.e. URL files referring
+to local files (not, for instance, ftp URLs).
+For more information, see section "Adding, Changing and Removing
+Filesystem Entries". Currently, you can use both URL files and filesystem links
+(hard or symbolic). Using symbolic links, however, can be source of problems
+if you try to make a copy of the KDE directory using the <tt>-r</tt> option
+of the <tt>cp</tt> command (recursive copy). Linux users can get rid of such
+problem using the <tt>-d</tt> option in conjunction with <tt>-r</tt> so that
+<tt>cp</tt> will not follow symbolic links. Unexperienced users should
+always use URL files to define new entries in the Disk Navigator menu.
+
+</list>
+
+<!--################################################################## -->
+<sect>Options
+<!--################################################################## -->
+<p>
+
+The option dialog box is activated selecting "Disk Navigator" -> "Options" from
+the KPanel menu. It is possible to set the following options:
+
+  <list>
+
+  <item><bf>"Edit Personal..."</bf>, <bf>"Edit Shared..."</bf> these
+  buttons allow to change entries in the Personal and Shared Sections
+  (note: only superusers can change the shared section).  In both cases,
+  a KFM window is displayed. Use KFM to create URL files, links and folders
+  in the personal (<tt>~/.kde/share/disknav</tt>) and shared
+  (<tt>$KDEDIR/share/disknav</tt>) directories. For more details, read
+  section "Adding, Changing and Removing Filesystem Entries".
+
+  When either the "Apply" or the "OK" button in the Options dialog is selected, these
+  directories are parsed again and the "Disk Navigator" menu is
+  updated.  Alternatively, it is possible to change personal and shared
+  directory contents from the command line (e.g. using a shell
+  script). In such case, the panel must be restarted ("Panel" ->
+  "Restart" from the KPanel menu) to re-parse these directories.
+
+  <item><bf>"Max recent folder entries":</bf>
+  how many folders are stored in the "Recent" section.
+
+  <item><bf>"Max recent file entries":</bf>
+  how many files (applications or documents) are
+  stored in the "Recent" section.
+
+  <item><bf>"Max files in a single folder":</bf>
+  if the number of files in a folder exceeds 
+  this limit, the folder content is not displayed (and a "Too Many Files"
+  icon is displayed). It is suggested that this limit is kept not too high
+  for slow systems. Future version of Disk Navigator will probably get rid
+  of this problem (see the "Limitations" section).
+
+  <item><bf>"Show dot files"</bf>
+   sets if hidden files should be displayed in "Disk Navigator" menus.
+
+  <item><bf>"Ignore case when sorting":</bf>
+  if set, uses the order "A", "a", "B", "b" when
+  sorting rather than "A", "B", "a", "b".
+
+  <item><bf>"Show Shared section":</bf>
+  if set, the Shared section is shown.
+
+  <item><bf>"Show Personal section":</bf>
+  if set, the Personal section is shown.
+
+  <item><bf>"Show Recent section":</bf>
+  if set, the Recent section is shown.
+  Note that when this option is turned off,
+  the list of recently accessed folder/files is not updated (some
+  users might turn this option off for `privacy' reasons).
+
+  <item><bf>"Show Option entry":</bf>
+  if set, the Option entry is shown. Note that the Option dialog box can be
+		accessed from the KPanel configuration dialog. The "Option" entry 
+		here is just a shortcut for those who change frequently Disk
+		Navigator options.
+
+  <item><bf>"Terminal application":</bf>
+  Application that must be run when "Open Folder" is selected holding the
+  Shift key.
+
+</list>
+
+<!--################################################################## -->
+<sect>Adding, Changing and Removing Filesystem Entries
+<!--################################################################## -->
+<p>
+
+The Disk Navigator menu can be easily customized to contain frequently accessed
+filesystem entries. After installation, the Disk Navigator menu contains some
+example entries (root, user's home, user's desktop, etc.). It is possible
+to remove those entries, change their icons, add new entries, and so on.
+
+To edit Disk Navigator menu entries, select "Options..." from the Disk
+Navigator menu. Alternatively, select Panel -> Configure from the KPanel
+menu and then select the "Disk Navigator" tab.
+
+At this point click on "Edit Personal..." or "Edit Shared..." buttons to edit,
+respectively, user specific entries and common entries (shared among all
+users). Note that you must be logged as root to change shared entries.
+
+After that, a KFM window is displayed, showing the entries for the
+Disk Navigator section that you are editing (Shared/Personal). 
+If, for instance, you want to add a new entry pointing to /opt/kde you
+can do the following:
+
+<list>
+<item> Select: File -> New -> URL. A new icon named "URL" should appear in the
+KFM window.
+
+<item> Click with the right mouse button on the new icon and choose "Properties".
+
+<item> Change the file name to "KDE.kdelnk". "KDE" will be the name of
+the entry in the Disk Navigator menu (the <tt>.kdelnk</tt> suffix is ignored).
+
+<item> Select the "URL" tab and write <tt>/opt/kde</tt> in the URL input box.
+
+<item> Optionally, you can change the icon. This is the icon that will be
+displayed in the Disk Navigator menu.
+
+<item> Close the KFM window and "OK" on the Disk Navigator configuration
+window. This should restart KPanel. After that, you will see the new entry
+in the Disk Navigator menu.
+</list>
+
+In place of an URL file you might use symbolic links. However, using 
+symbolic links has some drawbacks and are not recommended. Please read Section
+"Feature & Tips".
+
+To remove an entry from the Disk Navigator menu simply remove the corresponding
+URL from the KFM window used to edit entries.
+
+Note that you can also create folders in this window to group common entries.
+For instance, you could create a folder "Network" containing entry points
+to distributed filesystem mount points (NFS, SAMBA, etc).
+
+<!--################################################################## -->
+<sect>Notes
+<!--################################################################## -->
+<p>
+
+<list>
+
+<item>
+Disk Navigator menus are updated automatically when directory
+contents change, except the first menu, that is updated through the
+Options dialog.
+
+<item>
+The contents of the "Recent" section are saved in the
+~/.kde/share/config/kpanelrc configuration file. If you want to clear this
+section, you can clear the <tt>RecentFolders</tt> and <tt>RecentFiles</tt>
+entries in this file after logging out from KDE.
+
+<item>
+Documents and applications not accessed through the KPanel are not added 
+to the "Recent" section. This limitation will disappear in future
+versions of Disk Navigator.
+
+<item>
+Due to efficiency reasons, most files are not displayed with the same icon
+you would see in a file manager window. With the current version, only
+<tt>.kdelnk</tt> files have the corresponding icon displayed. Other files
+are displayed with two different icons to distinguish between data files
+and executables.
+
+<item>
+Copying <tt>~/.kde</tt> and $KDEDIR: if you are using symbolic links to define
+filesystem entry points in the Shared/Personal sections, you must be careful 
+when copying the KDE directory, since the <tt>cp</tt> command with the
+<tt>-r</tt>
+option follows symbolic links. Under Linux you can use the <tt>-d</tt>
+option to avoid this problem.
+However, you are recommended to change all symbolic links to corresponding 
+KDE URL files.
+Symbolic links are stored under <tt>$KDEDIR/share/disknav</tt> (Shared) and
+<tt>~/.kde/share/disknav</tt> (Personal).
+
+</list>
+
+<!--################################################################## -->
+<sect>Configuration File (<em>advanced topic</em>)
+<!--################################################################## -->
+<p>
+
+Configuration information for Disk Navigator are stored in the
+<tt>~/.kde/share/config/kpanelrc</tt> configuration file. The group
+is <tt>[kdisknav]</tt>.
+
+Usually you don't need to edit this file manually, as this can be done through
+the Options dialog box. This section documents entries related to 
+Disk Navigator. If the option is missing in the configuration file, its
+default value is assumed. Note that a broken [kdisknav] group can be repaired
+simply removing all the entries listed here (their default value will be
+assumed).
+
+<list>
+
+<item>
+<bf>MaxNavigableFolderEntries</bf>=<em>n</em> : if a folder contains more than <em>n</em> entries, 
+a "Too many files" message is displayed.
+
+Default: 200
+
+<item>
+<bf>MaxRecentFoldersEntries</bf>=<em>n</em> : the "Recent" menu section will contain the last
+<em>n</em> folders open through Disk Navigator.
+
+Default: 4
+
+<item>
+<bf>MaxRecentFilesEntries</bf>=<em>n</em> : the "Recent" menu section will contain the last
+<em>n</em> files open through Disk Navigator.
+
+Default: 4
+
+<item>
+<bf>ShowDotFiles</bf>=on/off : should dot (hidden) files be showed in the Disk Navigator?
+
+Default: off
+
+<item>
+<bf>RecentFiles</bf>=<em>path1,path2,path3...</em> : list of recently opened files.
+
+<item>
+<bf>RecentFolders</bf>=<em>path1,path2,path3...</em>: list of recently opened folders.
+
+<item>
+<bf>IgnoreCase</bf>=on/off : should Disk Navigator sort files in case-sensitive mode?
+
+Default: off
+
+<item>
+<bf>Terminal</bf>=<em>app</em> : use this application to launch a terminal when the user holds
+the Shift key clicking on "Open Folder".
+Command-line options can be added here.
+
+Default: kvt
+
+<item>
+<bf>ShowGlobalSection</bf>=on/off : should the Shared section be part of the
+   Disk Navigator main menu?
+
+Default: on
+
+<item>
+<bf>ShowLocalSection</bf>=on/off : should the Personal section be part of the
+ Disk Navigator main menu?
+
+Default: on
+
+<item>
+<bf>ShowRecentSection</bf>=on/off : should the Recent section be part of the
+ Disk Navigator main menu?
+
+Default: on
+
+<item>
+<bf>ShowOptionEntry</bf>=on/off : should the Option entry be in the
+	 	Disk Navigator main menu? 
+
+Default: on
+
+</list>
+
+<!--################################################################## -->
+<sect>Feedback
+<!--################################################################## -->
+<p>
+
+Bugs can be reported filling the form available 
+<htmlurl url="http://www.geocities.com/SiliconValley/Haven/2776/disk-navigator-bugs.html" name="here">.
+
+Comments and suggestions can be sent directly to the author (<htmlurl url="mailto:iglio@kde.org" name="Pietro Iglio">).
+
+</article>
+

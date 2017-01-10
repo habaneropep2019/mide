@@ -1,0 +1,452 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# , fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: LinuxKorea Co. <kde@linuxkorea.co.kr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: main.cpp:236
+msgid ": Error"
+msgstr ""
+
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr ""
+
+#: OldView.cpp:105
+msgid "Available"
+msgstr "이용가능"
+
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "서비스(&S)"
+
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+
+# , c-format
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "실행레벨 &%i"
+
+# , c-format
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "실행레벨 %i"
+
+#: OldView.cpp:149
+msgid "Start"
+msgstr "시작"
+
+# , c-format
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"실행레벨이 %i일때 서비스를\n"
+"시작하려면 여기에 끌어다 놓으십시오"
+
+# , c-format
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"실행레벨이 %i일때 서비스를\n"
+"멈추려면 여기로 끌어다 놓으십시오"
+
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr ""
+
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr ""
+
+#: OldView.cpp:517
+#, fuzzy
+msgid "Reading configuration: "
+msgstr "경로 설정"
+
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr ""
+
+#: OldView.cpp:624
+msgid " stop"
+msgstr ""
+
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr ""
+
+#: OldView.cpp:644
+#, fuzzy
+msgid " start"
+msgstr "시작"
+
+#: OldView.cpp:661
+#, fuzzy
+msgid "** Re-starting "
+msgstr "다시 시작(&R)"
+
+#: OldView.cpp:666
+#, fuzzy
+msgid " restart"
+msgstr "다시 시작(&R)"
+
+# , c-format
+#: OldView.cpp:811
+#, fuzzy
+msgid "P&roperties..."
+msgstr "%s 등록정보"
+
+#: OldView.cpp:831
+msgid "S&top"
+msgstr ""
+
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "다시 시작(&R)"
+
+#: TopWidget.cpp:136
+#, fuzzy
+msgid "&New Configuration"
+msgstr "경로 설정"
+
+#: TopWidget.cpp:137
+#, fuzzy
+msgid "&Save Configuration"
+msgstr "경로 설정"
+
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr ""
+
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr ""
+
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr ""
+
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr ""
+
+#: TopWidget.cpp:174
+#, fuzzy
+msgid "&Configure..."
+msgstr "경로 설정(&C)..."
+
+#: TopWidget.cpp:177
+#, fuzzy
+msgid "&Save Options"
+msgstr "옵션 저장하고 나가기(&a)"
+
+#: TopWidget.cpp:215
+msgid "New"
+msgstr ""
+
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "스크립트 결과 보이기(감추기)"
+
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"저장되지 않은 변경사항이 있습니다.\n"
+"끝내는 것이 확실합니까?"
+
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "예, 끝냅니다!"
+
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "아니오, 끝내지 않습니다."
+
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "변화 무시"
+
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "정말로 저장되지 않은 변경 사항을 무시하겠습니까?"
+
+#: TopWidget.cpp:307
+#, fuzzy
+msgid "Save configuration"
+msgstr "경로 설정"
+
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"변경 사항을 init 설정에 저장하려고 합니다\n"
+"잘못된 설정은 귀하의 시스템을 부팅조차 할 수 없게 만들 수 있다는 "
+"것을명심하십시오.\n"
+"\n"
+"계속 하시겠습니까?"
+
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr ""
+
+#: TopWidget.cpp:314
+#, fuzzy
+msgid "No, &don't save."
+msgstr "아니오, 저장하지 않습니다"
+
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "Qt 정보"
+
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "변경되었습니다"
+
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr ""
+
+#: prefs.cpp:48
+#, fuzzy, c-format
+msgid "%s - Preferences"
+msgstr " - 등록정보"
+
+#: prefs.cpp:58
+#, fuzzy
+msgid "Directory containing your init-scripts (&services)"
+msgstr "초기화 스크립트(서비스(&S))가 있는 디렉토리 경로:"
+
+#: prefs.cpp:79
+#, fuzzy
+msgid "Directory containing your &runlevel-directories"
+msgstr "실행레벨 디렉토리가 있는 디렉토리 경로:"
+
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr ""
+
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr ""
+
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr ""
+
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr ""
+
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "제거할 서비스를 여기에 끌어다 놓으십시오"
+
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr ""
+
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr ""
+
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr ""
+
+# , c-format
+#: PropDlg.cpp:113
+#, fuzzy, c-format
+msgid "%s - Properties"
+msgstr "%s 등록정보"
+
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr ""
+
+#: IOCore.cpp:53
+#, fuzzy, c-format
+msgid "removed %s from %s\n"
+msgstr "목록에서 스크립트를 제거할 수 없음"
+
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr ""
+
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr ""
+
+#: About.cpp:46
+#, fuzzy, c-format
+msgid "About %s"
+msgstr "정보 "
+
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr ""
+
+#: About.cpp:81
+#, fuzzy, c-format
+msgid "Version %s (KDE %s)"
+msgstr ""
+"\n"
+"버전 "
+
+#: About.cpp:89
+msgid "� 1997-1999 "
+msgstr ""
+
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr ""
+
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr ""
+
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ""
+
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp � 1997 Martin Jones.\n"
+"Uses the KDE libraries � 1997-1999 The KDE Team.\n"
+"Uses the Qt library � 1992-1998 Troll Tech AS."
+msgstr ""
+
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""
+
+#, fuzzy
+#~ msgid "Cannot remove service from list"
+#~ msgstr "목록에서 스크립트를 제거할 수 없음"
+
+# , c-format
+#~ msgid "%s to:"
+#~ msgstr "%s"
+
+#~ msgid "Runlevel"
+#~ msgstr "실행레벨"
+
+#~ msgid "Action"
+#~ msgstr "동작"
+
+#~ msgid "&Clear Changes"
+#~ msgstr "변화 무시(&C)"
+
+#~ msgid "&Accept Changes"
+#~ msgstr "변화 수용(&A)"
+
+#~ msgid "&Show Script Output"
+#~ msgstr "스크립트 출력 보이기(&S)"
+
+#~ msgid "About &Qt..."
+#~ msgstr "Qt 정보(&Q)"
+
+#~ msgid "Exit "
+#~ msgstr "나가기 "
+
+#~ msgid "Abort changes"
+#~ msgstr "변경 중지"
+
+#~ msgid "Save changes"
+#~ msgstr "변경사항 저장"
+
+#~ msgid "Save Changes"
+#~ msgstr "변경사항 저장"
+
+#~ msgid "Yes, commit changes!"
+#~ msgstr "예, 변경합니다!"
+
+# , c-format
+#~ msgid ""
+#~ "\n"
+#~ "ERROR: %i\n"
+#~ "while making symlink\n"
+#~ "%s%s%s\n"
+#~ "pointing to\n"
+#~ "%s"
+#~ msgstr ""
+#~ "\n"
+#~ "오류: %i\n"
+#~ "%s에 대한 심볼릭 링크\n"
+#~ "%s%s%s를\n"
+#~ "만드는 중\n"
+#~ "오류"
+
+# , c-format
+#~ msgid ""
+#~ "Failed to remove\n"
+#~ "%s\n"
+#~ "Please check Permissions."
+#~ msgstr ""
+#~ "지우기 실패\n"
+#~ "%s\n"
+#~ "권한을 확인하십시오."
+
+# , c-format
+#~ msgid ""
+#~ "%s\n"
+#~ "\n"
+#~ "%s is a link to\n"
+#~ "%s"
+#~ msgstr ""
+#~ "%s\n"
+#~ "\n"
+#~ "%s은 %s에 대한\n"
+#~ "링크입니다"

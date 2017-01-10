@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>Filters</title>
+  </head>
+  <body bgcolor=#FFFFFF>
+<center>
+<H1><img src="ksirc.gif" width=400 height=100 alt="kSirc"></H1>
+</center>
+<center>
+[
+<A HREF="index.html">General Help</A> | 
+<A HREF="colours.html">Colours</A> |
+<A HREF="filters.html">Filters</A> 
+]
+</CENTER>
+<HR>
+<H1>Filter Rules and HowTo Make them</H1>
+
+If just you just can't figure it out, wait. I want to build a nice
+"filter builder" where you can just click your wait through it.
+Though, it might be a while.<P>
+
+The filter tries to find the "match" string then use the "From" and
+"To" as a substitution.  You could do both operations simply with the
+substation this allows finer control on which strings you do the
+substitution.  The match, from, and to are all perl regex
+expressions. Rules are evaluated in descending order.  The top rule is
+first evaluated, then the second from the top, etc. All strings are
+evaluated as:<P>
+
+$&lt;name&gt; is expanded to the environment variable &lt;name&gt;.
+This is done immediately when you insert the rule, and will not change
+after that time.  Therefor it's probably of limited value.<P>
+
+
+$$&lt;name&gt; is substituted with the perl $&lt;name&gt; variable
+during the match.  This can be substrings such as $1, $2 in the
+substitution, or normal variables available under sirc (such as $nick,
+$channel, etc).<P>
+
+~&lt;name&gt;~ <B><U>PREPENDED ONCE AND ONLY ONCE</U></B> to the line
+will send the line of text to the window called &lt;name&gt;.  If the
+window does not exist it will go to the last window which had focus.
+There are several special windows, all prefixed by a single "!":
+
+<DL>
+<DT><B>!default</B>
+<DD>the current default window.  Guaranteed to be.
+
+<DT><B>!all</B>
+<DD> Send to every window.  This might not show up on all
+windows, depending on how the parse the text.  For example, channel
+windows won't show a part/quit unless the nick is on the channel.
+
+<DT><B>!discard</B>
+<DD> discards the text.
+</DL>
+
+The rest of the expression is dealt with as normal perl regex.  A good
+understanding of the perlre man page will certainly help, but a basic
+understating of regex is most certainly required.<P>
+
+<H3>Examples:</H3>
+
+<OL>
+<H4><LI>Want to convert all boren from boren to BoreN</H4>
+
+Match: .*<BR>
+From: boren<BR>
+To: BoreN
+<P>
+
+Pretty straight forward, match anything, then substitute boren with BoreN.
+
+<H4><LI>You want to match everything with boren in it and send to the
+window called "boren"</H4>
+
+Match: boren<BR>
+From: ^<BR>
+To: ~boren~
+
+<P>
+Looks for "boren" if found, substitutes the beginning of the string (^)
+with ~boren~.
+
+<H4><LI>Though #2 works, if the string already has ~somewindow~ on it,
+you'll now have two ~boren~~somewindow~...  So you can do this
+instead.</H4>
+
+Match: boren<BR>
+From: ^(?:~\S+~)<BR>
+To: ~boren~
+<P>
+
+Ok, the from line is a little bit more complicated.  It says match 0
+or 1 copies of "~\S+~".  Which is 1 tilde, one or more none
+whitespaces, and then another tilde.  The paranoid might do (*:~\S+~)
+which says match 0 or more channel directives in case prior rules are
+broken.
+
+<H4><LI>Server kill messages then to be long, ugly, annoying, etc.  Basic
+message on dalnet looks like:</H4>
+<PRE>
+*** Notice -- Received KILL message for BOBO!ANDY@line82-basel.datacomm.ch 
+from NickServ Path: empire.ny.us.dal.net[209.51.168.14]!trapdoor.ca.us.dal
+.net[206.86.127.252]!caris.ca.us.dal.net[208.1.222.221]!services.dal.net[2
+08.1.222.222]!services.dal.net (NickServ Enforcement)
+</PRE>
+When you're +s you get a tons of them, you don't want all of them
+flying across your screen.  I'm going to make 3 rules to deal with
+them one bit at a time.  You could do it in less rules, but it'll show
+you the basic rule structure, in nice steps, and how to use multiple
+rules to parse a message.  The first step is to remove the Path:
+portion of the message, and will be example 4.<P>
+
+Match: ^\*\*\*.* KILL message for.*<BR>
+From:  Path: \S+<BR>
+To: .
+<P>
+Match looks for the message starting with ***, the *'s have to be
+quoted with \ since by themselves they mean 0 or more of the prior
+character.  .* the means match anything until you find " KILL message
+for".  This allows us to avoid tying in "-- Reicevied..." etc. The
+trailing .* says match anything to the end of the line. (not needed I think)<P>
+
+The From like says substitute space Path: space and any non whitespace
+characters with the To.  To is a "." therefor the entire path turns
+into a single period.<P>
+
+The message now looks like:
+<PRE>*** Notice -- Received KILL message for BOBO!ANDY@line82-basel.datacomm.ch
+from NickServ. (NickServ Enforcement)
+</PRE>
+Notice the new "." after NickServ?
+
+<H4><LI>Ok, the message is a lot cleaner, but KILL's from nickserv aren't
+really that important, so let's forward them to the !discard window.</H4>
+
+Match: ^\*\*\*.*KILL message.*\(NickServ Enforcement\)<BR>
+From: ^(?:~\S+~)<BR>
+To:  ~!discard~
+<P>
+
+Match rule searches for the KILL message and makes sure it's from
+NickServ.  Notice the \( and \) both () and used in regex, therefor we
+have to quote them.  This is very similar to example 3.<P>
+
+<H4><LI>We've now filtered out all the nickserv kills, but the message is
+still pretty hard to read by simply glancing at it.  So let's reorder
+it to something like:</H4>
+
+<PRE>*** [KILL] &lt;KILLER&gt; killed &lt;KILLED&gt; (reason)</PRE>
+
+Match: \*\*\*.*KILL message<BR>
+From: \*\*\*.*for (.*?) from (.*?)\. \((.*?)\).*<BR>
+To: *** [KILL] $$2 killed $$1 ($$3)
+<P>
+
+Ok, the match looks for ***&lt;something&gt; KILL message.  We can't use ^
+since we may have just appended ~&lt;window&gt;~.<P>
+
+The from line get's little more interesting.  The "for (.*?) " looks
+for the word for then some text.  .*? says match zero or more of
+anything except newline, but isn't greedy. Stop when the first
+terminating condition is found, not the last.  In other words it
+matches anything until a space.  The surrounding () says to save the
+contents.  Each () saves the matched data in $# where # starts at 1
+for the first substring, etc.  In this case, $1 gets the nick/user-info
+of the person killed.  $2 is then filled with the name of the killer.
+Between the () we have the reason for the kill.  Here the ( and \( get
+a little confusing.  Remember \( matchin the actual character '('.<P>
+
+<H4><LI>How to colourize your life. Ok, you want to add some colour to ksirc.  See
+README.colours for colour info, but here's a filter ruls to highlight the nick
+between &lt;NICK&gt; on each line:</H4>
+
+Match: ^(?:~\S+~)&lt;\S+&gt;<BR>
+From: &lt;(\S+)&gt;<BR>
+To: &lt;~4$$1~c&gt;
+<P>
+Takes the nick and adds colour #4 between the two &lt;&gt; ~c clears the colour.
+
+    <hr>
+    <address><a href="mailto:asj@chowtown.cban.com">Andrew Stanley-Jones</a></address>
+<!-- Created: Sun Jan 11 12:07:05 MST 1998 -->
+<!-- hhmts start -->
+Last modified: Mon Jan 12 21:07:55 MST 1998
+<!-- hhmts end -->
+ </body>
+</html>

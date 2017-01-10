@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Guida al ktalkd: Domande e risposte</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KTalkd, talkd,daemon,talk,kde,it,doc">
+<META NAME="description" CONTENT="La Guida di KTalkd">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Avanti</A>
+<A HREF="ktalkd-4.html">Indietro</A>
+<A HREF="ktalkd.html#toc5">Indice Generale</A>
+</P>
+<H3><A NAME="s5">5. Domande e risposte</A></H3>
+
+<P>
+<H3><A NAME="ss5.1">5.1 Perchè root non riceve gli annunci dal KDE?</A>
+</H3>
+
+<P>Perchè con
+il metodo correntemente utilizzato per l'identificazione dell'utente,
+si verrebbe a creare un buco nella sicurezza del sistema.
+Puoi ovviare a questa limitazione aggiungendo due linee nei file di
+configurazione dell'xdm (che sono gli stessi di quelli del kdm).
+Nota: nella S.u.S.E. queste linee sono incluse di default.
+<P>
+<P>Questi file di configurazione stanno in una directory come
+/etc/X11/xdm oppure /usr/X11R6/lib/X11/xdm su altri sistemi.
+Queste linee suppongono che siano in /etc/X11/xdm, se i files
+si trovano in un'altra directory dovrai modificare le linee a dovere.
+<P>
+<P>Edita il file Xstartup, o crealo se non esiste. Deve comparire così:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/GiveConsole
+sessreg -a -l $DISPLAY -x /etc/X11/xdm/Xservers $USER
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>ed il file Xreset:
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/TakeConsole
+sessreg -d -l $DISPLAY $USER   
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Assicurati che <B>xdm-config</B> punti a questi di files:
+<BLOCKQUOTE><CODE>
+<PRE>
+DisplayManager._0.startup:      /etc/X11/xdm/Xstartup
+DisplayManager._0.reset:        /etc/X11/xdm/Xreset 
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>Questo farà loggare a kdm (o xdm) l'utente in utmp, che è la cosa
+giusta da fare. Secondo il mio parere dovrebbe essere kdm (o xdm)
+a loggare gli utenti e non kvt o xterm.
+Purtroppo questo non loggherà l'utente come utente X quando si usa startx...
+Qualcuno ha un suggerimento per questo?
+<P>
+<H3><A NAME="ss5.2">5.2 Perchè io, da utente normale, non ricevo gli annunci dal KDE?</A>
+</H3>
+
+<P>Se il tuo sistema è un linux (con /proc abilitato), allora questo è un bug.
+Mandami la descrizione cosicchè io posso correggere il problema.
+<P>Altrimenti è normale: ktalkd non può trovare l'utente, come KDE
+non lo logga in utmp e il riconoscimente da linux (/proc) è disabilitato.
+La soluzione è la stessa descritta nella sezione 5.1.
+<P>Un'altra soluzione è quella di essere sicuri di avere sempre un xterm in
+esecuzione.
+<P>
+<H3><A NAME="ss5.3">5.3 Come posso avere un output di debug da ktalkd ?</A>
+</H3>
+
+<P>Essendo un demone, non c'è output di debug sullo standard output.
+Per avere informazioni di debug ( prima di mailarmi un bug report!),
+modifica le seguenti linee nel file /etc/inetd.conf:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd -d
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd -d
+</PRE>
+</CODE></BLOCKQUOTE>
+
+(nota l'opzione <B>-d</B>)
+<P>
+<P>Poi edita il file /etc/syslog.conf e aggiungi la linea seguente :
+<BLOCKQUOTE><CODE>
+<PRE>
+*.*         /var/log/all_messages
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Per farlo funzionare, devi rilanciare inetd e syslogd :
+<BLOCKQUOTE><CODE>
+<PRE>
+% killall -HUP inetd
+% killall -HUP syslogd
+</PRE>
+</CODE></BLOCKQUOTE>
+
+Ed infine, lancia una sessione di talk e vedi in risultato in /var/log/all_messages
+<P>Quando sottometti un bug report, non dimenticarti di includere l'output del debug, ma anche la versione del talkd che stai utilizzando e l'output del "./configure".
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Avanti</A>
+<A HREF="ktalkd-4.html">Indietro</A>
+<A HREF="ktalkd.html#toc5">Indice Generale</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

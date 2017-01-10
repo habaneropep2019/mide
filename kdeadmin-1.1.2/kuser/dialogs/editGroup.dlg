@@ -1,0 +1,417 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {editGroup.h}
+	ClassSource {editGroup.cpp}
+	ClassName {editGroup}
+	DataHeader {editGroupData.h}
+	DataSource {editGroupData.cpp}
+	DataName {editGroupData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowCaption {Group properties}
+	WindowFlags {20480}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {490 230}
+MinSize {480 160}
+MaxSize {32767 32767}
+Grid {10}
+
+Label {
+		Text {Users not in Group}
+		AutoResize {TRUE}
+		Margin {-1}
+		Rect {5 5 200 30}
+		Name {Label_4}
+		MinimumSize {200 30}
+		MaximumSize {200 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {Users in Group}
+		AutoResize {TRUE}
+		Margin {-1}
+		Rect {275 5 200 30}
+		Name {Label_5}
+		MinimumSize {200 30}
+		MaximumSize {200 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+ListBox {
+		DragSelect {TRUE}
+		AutoScroll {TRUE}
+		ScrollBar {FALSE}
+		AutoScrollBar {TRUE}
+		BottomScrollBar {FALSE}
+		AutoBottomScrollBar {TRUE}
+		SmoothScrolling {TRUE}
+		MultiSelection {FALSE}
+		Style {51}
+		LineWidth {2}
+		Rect {5 40 210 150}
+		Name {m_Users}
+		Variable {m_Users}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {SameFont}
+		PalettePropagation {SameFont}
+}
+ListBox {
+		DragSelect {TRUE}
+		AutoScroll {TRUE}
+		ScrollBar {FALSE}
+		AutoScrollBar {TRUE}
+		BottomScrollBar {FALSE}
+		AutoBottomScrollBar {TRUE}
+		SmoothScrolling {TRUE}
+		MultiSelection {FALSE}
+		Style {51}
+		LineWidth {2}
+		Rect {275 40 210 150}
+		Name {m_Group}
+		Variable {m_Group}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {SameFont}
+		PalettePropagation {SameFont}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {OK}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {140 195 100 30}
+		Name {pbok}
+		Variable {pbok}
+		Signal {[Protected]  clicked --> ok  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {250 195 100 30}
+		Name {pbcancel}
+		Variable {pbcancel}
+		Signal {[Protected]  clicked --> cancel  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {5 195 125 30}
+		Name {Label_6}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {360 195 125 30}
+		Name {Label_7}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {->}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {225 83 40 30}
+		Name {pbadd}
+		Variable {pbadd}
+		Signal {[Protected]  clicked --> add  ()}
+		MinimumSize {40 30}
+		MaximumSize {40 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {<-}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {225 118 40 30}
+		Name {pbdel}
+		Variable {pbdel}
+		Signal {[Protected]  clicked --> del  ()}
+		MinimumSize {40 30}
+		MaximumSize {40 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {225 40 40 38}
+		Name {Label_8}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {225 153 40 37}
+		Name {Label_9}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {225 5 40 30}
+		Name {Label_10}
+		MinimumSize {40 30}
+		MaximumSize {40 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Box_Layout-1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Box_Layout-1.1{
+	Direction {LeftToRight}
+	Border {5}
+	AutoBorder {10}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Box_Layout-1.1.1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1.1.1{
+	Widget {Label_4}
+	BoxStretch {0}
+	Alignment {9}
+}
+Layout_Widget-1.1.1.2{
+	Widget {m_Users}
+	BoxStretch {1}
+	Alignment {36}
+}
+Box_Layout-1.1.2{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {0}
+}
+Layout_Widget-1.1.2.1{
+	Widget {Label_10}
+	BoxStretch {0}
+	Alignment {36}
+}
+Layout_Widget-1.1.2.2{
+	Widget {Label_8}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.1.2.3{
+	Widget {pbadd}
+	BoxStretch {0}
+	Alignment {12}
+}
+Layout_Widget-1.1.2.4{
+	Widget {pbdel}
+	BoxStretch {0}
+	Alignment {20}
+}
+Layout_Widget-1.1.2.5{
+	Widget {Label_9}
+	BoxStretch {1}
+	Alignment {36}
+}
+Box_Layout-1.1.3{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1.3.1{
+	Widget {Label_5}
+	BoxStretch {1}
+	Alignment {9}
+}
+Layout_Widget-1.1.3.2{
+	Widget {m_Group}
+	BoxStretch {1}
+	Alignment {36}
+}
+Box_Layout-1.2{
+	Direction {LeftToRight}
+	Border {5}
+	AutoBorder {10}
+	Name {}
+	Strut {0}
+	Stretch {0}
+}
+Layout_Widget-1.2.1{
+	Widget {Label_6}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.2{
+	Widget {pbok}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.3{
+	Widget {pbcancel}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.4{
+	Widget {Label_7}
+	BoxStretch {1}
+	Alignment {36}
+}
+}

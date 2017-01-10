@@ -1,0 +1,1 @@
+#define KABALONE_VERSION	"1.03"

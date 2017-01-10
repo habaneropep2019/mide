@@ -1,0 +1,255 @@
+# KDEGAMES translation to Slovenian language.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Marko Samastur <markos@elite.org>, 1999.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kdegames\n"
+"POT-Creation-Date: 1999-01-13 01:34+0100\n"
+"PO-Revision-Date: 1999-04-13 03:34+0100\n"
+"Last-Translator: Marko Samastur <markos@elite.org>\n"
+"Language-Team: Slovenian <ftp://ftp.lugos.si/pub/lugos/localization/kde-sl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gameboard.cc:55
+msgid "End Turn"
+msgstr "Konèaj potezo"
+
+#: gameboard.cc:203
+msgid ": Select source planet..."
+msgstr ": Izberi izhodni planet..."
+
+#: gameboard.cc:221
+msgid ": Select destination planet..."
+msgstr ": Izberi ciljni planet..."
+
+#: gameboard.cc:243
+msgid ": How many ships?"
+msgstr ": Koliko ladij?"
+
+#: gameboard.cc:267
+msgid "Ruler: Select starting planet."
+msgstr "Vladar: Izberi zaèetni planet."
+
+#: gameboard.cc:287
+#, fuzzy, c-format
+msgid ""
+"The distance from Planet %s to Planet %s is %s light years.\n"
+"A ship leaving this turn will arrive on turn %s"
+msgstr ""
+"Razdalja med planetom %s in planetom %s je %s svetlobnih let.\n"
+"Ladja, ki odhaja ob tej potezi, bo prispela ob potezi %s"
+
+#: gameboard.cc:291
+msgid "Distance"
+msgstr "Razdalja"
+
+#: gameboard.cc:296
+msgid "Ruler: Select ending planet."
+msgstr "Vladar: Izberi konèni planet."
+
+#: gameboard.cc:311
+#, fuzzy, c-format
+msgid "Turn #: %2d of %2d"
+msgstr "Poteza #: %2d od %2d"
+
+#: gameboard.cc:426
+#, fuzzy, c-format
+msgid "The once mighty empire of %s has fallen in ruins."
+msgstr "Nekoè mogoèen imperij od %s je razpadel v ru¹evine."
+
+#: gameboard.cc:428
+msgid "An Empire has fallen..."
+msgstr "Imperij je padel..."
+
+#: gameboard.cc:438
+#, fuzzy, c-format
+msgid "The fallen empire of %s has staggered back to life."
+msgstr "Padli imperij od %s se je opotekel nazaj v ¾ivljenje."
+
+#: gameboard.cc:440
+msgid "Up from the ashes..."
+msgstr "Dvignil iz pepela..."
+
+#: gameboard.cc:460
+#, fuzzy, c-format
+msgid "Reinforcements have arrived for planet %s"
+msgstr "Okrepitve so prispele na planet %s"
+
+#: gameboard.cc:462
+msgid "Fleet Arrival"
+msgstr "Prihod ladjevja"
+
+#: gameboard.cc:505
+#, fuzzy, c-format
+msgid "Planet %s has held against an attack from %s"
+msgstr "Planet %s se je obdr¾al v napadu %s"
+
+#: gameboard.cc:507
+msgid "Planet Holds"
+msgstr "Planet se dr¾i"
+
+#: gameboard.cc:515
+#, fuzzy, c-format
+msgid "Planet %s has fallen to %s"
+msgstr "Planet %s je padel v roke %s"
+
+#: gameboard.cc:517
+msgid "Planet Conquered"
+msgstr "Planet osvojen"
+
+#: gameboard.cc:579 mainwin.cc:82
+msgid "End Game"
+msgstr "Konèaj igro"
+
+#: gameboard.cc:580
+msgid "Do you wish to retire this game?"
+msgstr "Ali ¾elite konèati to igro?"
+
+#: gameboard.cc:586
+msgid "Final Standings"
+msgstr "Konèno stanje"
+
+#: gameboard.cc:758
+msgid "Not enough ships to send."
+msgstr "Nimate dovolj ladij, da bi jih lahko poslali."
+
+#: mainwin.cc:23
+msgid "GNU-Lactic Conquest"
+msgstr "GNU-laktièna osvojitev"
+
+#: mainwin.cc:47
+#, fuzzy, c-format
+msgid ""
+"Version %s\n"
+"Copyright (c) 1998 by\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE version by Russ Steffen <rsteffen@ia.net>\n"
+"See http://www.ia.net/~rsteffen/konquest.html for more info"
+msgstr ""
+"Verzija %s\n"
+"Avtorske pravice (c) 1998 od\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE verzijo napisal Russ Steffen <rsteffen@ia.net>\n"
+"Za veè informacij: http://www.ia.net/~rsteffen/konquest.html"
+
+#: mainwin.cc:88
+msgid "Measure Distance"
+msgstr "Premeri razdaljo"
+
+#: mainwin.cc:92
+msgid "Show Standings"
+msgstr "Prika¾i stanje"
+
+#: newgamedlg.cc:31
+msgid "Preview Map"
+msgstr "Predpregled karte"
+
+#: newgamedlg.cc:35
+msgid "&Reject Map"
+msgstr "Zav&r¾i karto"
+
+#: newgamedlg.cc:41
+msgid "&Player List"
+msgstr "&Seznam igralcev"
+
+#: newgamedlg.cc:48
+msgid "&Add"
+msgstr "Dod&aj"
+
+#: newgamedlg.cc:54
+msgid "&Clear"
+msgstr "&Zbri¹i"
+
+#: newgamedlg.cc:70
+msgid "&Start Game"
+msgstr "&Prièni igro"
+
+#: newgamedlg.cc:162
+#, fuzzy, c-format
+msgid "Number of Neutral Planets: %2d"
+msgstr "©tevilo nevtralnih planetov: %2d"
+
+#: newgamedlg.cc:174
+#, fuzzy, c-format
+msgid "Number of turns: %2d"
+msgstr "©tevilo potez: %2d"
+
+#: planet_info.cc:81 planet_info.cc:116 planet_info.cc:131
+msgid "Planet Name : "
+msgstr "Ime planeta : "
+
+#: planet_info.cc:84 planet_info.cc:134
+msgid "Owner : "
+msgstr "Lastnik : "
+
+#: planet_info.cc:87
+msgid "Ships : "
+msgstr "Ladje : "
+
+#: planet_info.cc:90
+msgid "Production : "
+msgstr "Proizvodnja : "
+
+#: planet_info.cc:93
+msgid "Kill Percent : "
+msgstr "Odstotek ubitih : "
+
+#: planet_info.cc:137
+#, fuzzy, c-format
+msgid "Ships : %d"
+msgstr "Ladje : %d"
+
+#: planet_info.cc:140
+#, fuzzy, c-format
+msgid "Production : %d"
+msgstr "Proizvodnja : %d"
+
+#: planet_info.cc:143
+#, c-format
+msgid "Kill Percent : %.3f"
+msgstr "Odstotek ubitih : %.3f"
+
+#: gameenddlg.cc:14
+msgid ""
+"This is the last turn.\n"
+"Do you wish to add more turns?"
+msgstr ""
+"To je zadnja poteza.\n"
+"Ali ¾elite dodati veè potez?"
+
+#: gameenddlg.cc:64
+#, fuzzy, c-format
+msgid "Add %d turns"
+msgstr "Dodaj %d potez"
+
+#: scoredlg.cc:18
+msgid "Player"
+msgstr "Igralec"
+
+#: scoredlg.cc:19
+msgid "Ships Built"
+msgstr "Zgrajenih ladij"
+
+#: scoredlg.cc:20
+msgid "Planets Conquered"
+msgstr "Osvojenih planetov"
+
+#: scoredlg.cc:21
+msgid "Fleets Launched"
+msgstr "Poslanih ladjevij"
+
+#: scoredlg.cc:22
+msgid "Fleets Destroyed"
+msgstr "Unièenih ladjevij"
+
+#: scoredlg.cc:23
+msgid "Ships Destroyed"
+msgstr "Unièenih ladij"
+
+#, fuzzy

@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE 1.0\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: 1998-06-29 11:00+0200\n"
+"Last-Translator: Kerem ERZURUMLU <kerem@linux.org.tr>\n"
+"Language-Team: Hacettepe Linux Users Group <hacettepe@linux.org.tr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ISO 8859-9\n"
+
+#: about.cpp:40
+#, fuzzy
+msgid "About KDE Floppy Formatter"
+msgstr "KDE Disket Biçimleyici Hakkýnda"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KDisket"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "Sürüm"
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Disket Sürücü:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Yoðunluk:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Dosya Sistemi:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Format"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Çabuk Sil"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Tam Formatlama"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Etiket Yarat:"
+
+#: floppy.cpp:148
+#, fuzzy
+msgid "KDE Floppy"
+msgstr "KDE Disket"
+
+#: floppy.cpp:162
+#, fuzzy
+msgid "KDE Floppy Formatter"
+msgstr "KDE Disket Biçimleyici"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr ""
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"%s'e ulaþýlamýyor\n"
+"Varlýðýndan ve yazma hakkýnýz olduðundan\n"
+"emin olunuz."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"kdeformat bulunamýyor\n"
+"kdeformat KDisketin bir parçasýdýr.\n"
+"Kdisket'i lütfen doðru kurunuz."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"kmke2fs bulunamýyor\n"
+"kmke2fs KDisketin bir parçasýdýr.\n"
+"Kdisket'i lütfen doðru kurunuz."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"kmkdosfs bulunamýyor\n"
+"kmkdosfs KDisketin bir parçasýdýr.\n"
+"Kdisket'i lütfen doðru kurunuz."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Vazgeç"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Yeni program baþlayamýyor: fork() baþarýsýz."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Diskete ya da sürücüye eriþilemiyor\n"
+"Lütfen disketi takýnýz ve geçerli bir sürücü\n"
+"seçtiðinize emin olunuz.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"%s biçimlenemiyor\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Blok %d kötü. Devam ediliyor..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"%s üzerinde dosya sistemi yaratýlamýyor\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"Disket baþarý ile biçimlendirildi.\n"
+"Kötü olarak iþaretlenen bloklar : %d\n"
+"Net Kapasite: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Tüm dosyalar baþarý ile silindi."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Dosya Sistemi yaratýlýyor..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Kontrol ediliyor..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Yeni program baþlayamýyor\n"
+"fork() baþarýsýz."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Disketin baðlý olup olmadýðý kontrolu sýrasýnda hata\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s baðlanmýþ.\n"
+"Önce disketi ayýrýnýz."

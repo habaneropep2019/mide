@@ -1,0 +1,24 @@
+BUGS:
+============================================================================
+Description:
+  On some systems, EVERY new email will pop up a notify box (BUG #774)
+
+Status:
+  No clue what is going on here.  This happens most often in mbox but it
+  looks like pop3 is affected too.  This should *never* happen in maildir
+  or imap4
+
+Seriousness:
+  Very High!!
+---------------------------------------------------------------------------
+Description:
+  Once an animated icon appears, it will never go away.  This only happens
+  if the *next* icon is a pixmap -- the pixmap will never replace the GIF.
+  (BUG #695)
+
+Status:
+  This looks like a Qt bug.
+
+Seriousness:
+  Moderate
+---------------------------------------------------------------------------

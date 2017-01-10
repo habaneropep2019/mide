@@ -1,0 +1,23 @@
+
+  Mathopd - a minimalistic, non-forking HTTP server.
+
+
+  Mathopd is an HTTP/1.0 compliant Web server.  Limited support
+  for HTTP/1.1 is also available.
+
+  Unlike most servers, Mathopd does not fork at each incoming
+  connection, or even create a pool of pre-forked children. Hence
+  it should be extremely fast and easy on system resources.
+
+  Other features of Mathopd include: persistent connections, CGI
+  scripts (NPH only), ability to bind to specific addresses,
+  support for the 'Host:' header, etc.
+
+  Mathopd is known to work on the following platforms:
+  SunOS 4.1.3, Solaris 2.5, Linux 1.2, Linux 2.0,
+  HP-UX A.09.05, IRIX 5.3, OSF1 V3.2, ULTRIX 4.2,
+  FreeBSD 2.1.5.
+
+
+  Michiel Boland <boland@diva.nl>
+

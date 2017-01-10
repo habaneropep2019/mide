@@ -1,0 +1,946 @@
+# KDEADMIN translation to Slovenian language.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Marko Samastur <markos@elite.org>, 1999
+# Rok Papez <rok@slo.net>, 1999
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeadmin\n"
+"POT-Creation-Date: 1998-12-10 02:17+0100\n"
+"PO-Revision-Date: 1999-08-01 19:15+0100\n"
+"Last-Translator: Rok Papez <rok@slo.net>\n"
+"Language-Team: Slovenian <ftp://ftp.lugos.si/pub/lugos/localization/kde-sl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ArchiveInfoWidget.cpp:39 BackupProfileWidget.cpp:40
+msgid "Archive name:"
+msgstr "Ime arhiva:"
+
+#: ArchiveInfoWidget.cpp:40 FileInfoWidget.cpp:38 TapeInfoWidget.cpp:43
+msgid "Created on:"
+msgstr "Ustvarjen:"
+
+#: ArchiveInfoWidget.cpp:41 FileInfoWidget.cpp:41 TapeFileInfoWidget.cpp:36
+msgid "Size:"
+msgstr "Velikost:"
+
+#: BackupDlg.cpp:74 BackupDlg.cpp:75 KDat.cpp:432
+msgid "KDat: Backup"
+msgstr "KDat: Arhiviraj"
+
+#: BackupDlg.cpp:87 IndexDlg.cpp:69 VerifyDlg.cpp:78
+msgid "Elapsed time:"
+msgstr "Preteèeni èas:"
+
+#: BackupDlg.cpp:90 BackupDlg.cpp:96 IndexDlg.cpp:72 VerifyDlg.cpp:81
+#: VerifyDlg.cpp:87
+msgid "00:00:00"
+msgstr "00:00:00"
+
+#: BackupDlg.cpp:93 VerifyDlg.cpp:84
+msgid "Time remaining:"
+msgstr "Preostali èas:"
+
+#: BackupDlg.cpp:99 VerifyDlg.cpp:90
+msgid "Total kbytes:"
+msgstr "Skupno kbajtov"
+
+#: BackupDlg.cpp:105
+msgid "Kbytes written:"
+msgstr "Kbajtov zapisanih:"
+
+#: BackupDlg.cpp:108 IndexDlg.cpp:84 VerifyDlg.cpp:99
+msgid "0k"
+msgstr "0k"
+
+#: BackupDlg.cpp:111 IndexDlg.cpp:93 VerifyDlg.cpp:102
+msgid "Transfer rate:"
+msgstr "Hitrost prenosa:"
+
+#: BackupDlg.cpp:114 IndexDlg.cpp:96 VerifyDlg.cpp:105
+msgid "0k/min"
+msgstr "0k/min"
+
+#: BackupDlg.cpp:117 IndexDlg.cpp:87 VerifyDlg.cpp:110
+msgid "Files:"
+msgstr "Datoteke:"
+
+#: BackupDlg.cpp:120 IndexDlg.cpp:78 IndexDlg.cpp:90 IndexDlg.cpp:102
+msgid "0"
+msgstr "0"
+
+#: BackupDlg.cpp:123
+msgid "Backup log:"
+msgstr "Dnevnik arhiviranja:"
+
+#: BackupDlg.cpp:130 IndexDlg.cpp:112 VerifyDlg.cpp:131
+msgid "Save Log..."
+msgstr "Shrani dnevnik..."
+
+#: BackupDlg.cpp:135 IndexDlg.cpp:117 VerifyDlg.cpp:136
+msgid "Abort"
+msgstr "Prekini"
+
+#: BackupDlg.cpp:302
+msgid "*** Write failed, giving up."
+msgstr "*** Pisanje spodletelo, odstopam."
+
+#: BackupDlg.cpp:367 BackupDlg.cpp:377 IndexDlg.cpp:335 VerifyDlg.cpp:358
+#: VerifyDlg.cpp:368
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#: BackupDlg.cpp:380 IndexDlg.cpp:338 VerifyDlg.cpp:371
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: BackupDlg.cpp:384 IndexDlg.cpp:342 VerifyDlg.cpp:375
+#, c-format
+msgid "%s/min"
+msgstr "%s/min"
+
+#: BackupOptDlg.cpp:31 BackupOptDlg.cpp:32
+msgid "KDat: Backup Options"
+msgstr "KDat: Arhiviranje - nastavitve"
+
+#: BackupProfileInfoWidget.cpp:40
+msgid "Backup profile name:"
+msgstr "Ime skupine nastavitev:"
+
+#: BackupProfileInfoWidget.cpp:51
+msgid "Files >>"
+msgstr "Datoteke >>"
+
+#: BackupProfileInfoWidget.cpp:54
+msgid "<< Files"
+msgstr "<< Datoteke"
+
+#: BackupProfileWidget.cpp:38 KDat.cpp:152
+msgid "Backup"
+msgstr "Arhiviranje"
+
+#: BackupProfileWidget.cpp:46
+msgid "Working directory:"
+msgstr "Delovni imenik:"
+
+#: BackupProfileWidget.cpp:52
+msgid "Backup files:"
+msgstr "Arhiviraj datoteke:"
+
+#: BackupProfileWidget.cpp:58
+msgid "Tar Options"
+msgstr "Tar nastavitve"
+
+#: BackupProfileWidget.cpp:60
+msgid "Stay on one filesystem"
+msgstr "Ostani na enem datoteènem sistemu"
+
+#: BackupProfileWidget.cpp:63
+msgid "GNU listed incremental"
+msgstr "Arhiviranje spremenjenih datotek"
+
+#: BackupProfileWidget.cpp:67
+msgid "Snapshot file:"
+msgstr "Datoteka s posnetkom stanja:"
+
+#: BackupProfileWidget.cpp:73
+msgid "Remove snapshot file before backup"
+msgstr "Odstrani datoteko s posnetkom stanja pred arhiviranjem"
+
+#: FileInfoWidget.cpp:37 TapeFileInfoWidget.cpp:34
+msgid "File name:"
+msgstr "Ime datoteke:"
+
+#: FileInfoWidget.cpp:39 TapeFileInfoWidget.cpp:35 TapeInfoWidget.cpp:44
+msgid "Last modified:"
+msgstr "Nazadnje spremenjena:"
+
+#: FileInfoWidget.cpp:40
+msgid "Last accessed:"
+msgstr "Nazadnje dostopana:"
+
+#: FileInfoWidget.cpp:42
+msgid "Owner:"
+msgstr "Lastnik:"
+
+#: FileInfoWidget.cpp:43
+msgid "Group:"
+msgstr "Skupina:"
+
+#: IndexDlg.cpp:56 IndexDlg.cpp:57
+msgid "KDat: Index"
+msgstr "KDat: Indeks"
+
+#: IndexDlg.cpp:75
+msgid "Archives:"
+msgstr "Arhivi:"
+
+#: IndexDlg.cpp:81 VerifyDlg.cpp:96
+msgid "Kbytes read:"
+msgstr "Kbajtov prebranih:"
+
+#: IndexDlg.cpp:99
+msgid "Total files:"
+msgstr "Skupaj datotek:"
+
+#: IndexDlg.cpp:105
+msgid "Index log:"
+msgstr "Dnevnik indeksov:"
+
+#: IndexDlg.cpp:226
+msgid "Rewinding tape."
+msgstr "Previjam trak."
+
+#: IndexDlg.cpp:228 KDat.cpp:442
+msgid "KDat: Cannot Rewind Tape"
+msgstr "KDat: Ne morem previti traku"
+
+#: IndexDlg.cpp:228
+msgid "Cannot rewind tape.  Indexing aborted."
+msgstr "Ne morem previti traku. Indeksiranje je prekinjeno."
+
+#: IndexDlg.cpp:232
+msgid "Cannot rewind tape."
+msgstr "Ne morem previti traku."
+
+#: IndexDlg.cpp:238 KDat.cpp:451 TapeDrive.cpp:222 TapeDrive.cpp:230
+#: TapeDrive.cpp:242 TapeDrive.cpp:254 TapeDrive.cpp:259
+msgid "KDat: Error"
+msgstr "KDat: Napaka"
+
+#: IndexDlg.cpp:238 IndexDlg.cpp:242
+msgid "Failed to skip tape ID."
+msgstr "Neuspe¹en preskok traènega ID"
+
+#: IndexDlg.cpp:271
+#, c-format
+msgid "Indexing archive %d."
+msgstr "Indeksiranje arhiva %d."
+
+#: IndexDlg.cpp:274
+#, c-format
+msgid "Archive %d"
+msgstr "Arhiv %d"
+
+#: IndexDlg.cpp:321
+msgid "Reindexed Tape"
+msgstr "Trak je bil ponovno indeksiran"
+
+#: KDat.cpp:81 KDat.cpp:82 KDat.cpp:1101
+msgid "KDat: <no tape>"
+msgstr "KDat: <brez traku>"
+
+#: KDat.cpp:86 KDat.cpp:122 KDat.cpp:233 KDat.cpp:1141
+msgid "Mount Tape"
+msgstr "Priklop traku"
+
+#: KDat.cpp:87 KDat.cpp:123
+msgid "Recreate Tape Index"
+msgstr "Ponovno zgradi indeks traku"
+
+#: KDat.cpp:89 KDat.cpp:129
+msgid "Format Tape..."
+msgstr "Format traku..."
+
+#: KDat.cpp:92 KDat.cpp:98 KDat.cpp:126
+msgid "Delete Archive"
+msgstr "Zbri¹i arhiv"
+
+#: KDat.cpp:95 KDat.cpp:101 KDat.cpp:121
+msgid "Verify..."
+msgstr "Preveri..."
+
+#: KDat.cpp:96 KDat.cpp:102 KDat.cpp:120
+msgid "Restore..."
+msgstr "Obnovi..."
+
+#: KDat.cpp:105 KDat.cpp:114 KDat.cpp:119
+msgid "Backup..."
+msgstr "Arhiviraj..."
+
+#: KDat.cpp:108
+msgid "Delete Tape Index"
+msgstr "Zbri¹i indeks traku"
+
+#: KDat.cpp:111 KDat.cpp:124
+msgid "Create Backup Profile"
+msgstr "Ustvari skupino nastavitev arhiva"
+
+#: KDat.cpp:116 KDat.cpp:128
+msgid "Delete Backup Profile"
+msgstr "Zbri¹i skupino nastavitev arhiva"
+
+#: KDat.cpp:127
+msgid "Delete Index"
+msgstr "Zbri¹i indeks"
+
+#: KDat.cpp:134
+msgid "Preferences..."
+msgstr "Nastavitve..."
+
+#: KDat.cpp:141
+#, c-format
+msgid ""
+"KDat Version %s\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+msgstr ""
+"KDat razlièica %s\n"
+"\n"
+"KDat uporablja tar za arhiviranje na trakove\n"
+"\n"
+"Avtorske pravice (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+
+#: KDat.cpp:148
+msgid "Mount/unmount tape"
+msgstr "Priklop/odklop traku"
+
+#: KDat.cpp:154
+msgid "Verify"
+msgstr "Preveri"
+
+#: KDat.cpp:168
+msgid "Ready."
+msgstr "Pripravljen."
+
+#: KDat.cpp:230 KDat.cpp:1138
+msgid "Unmount Tape"
+msgstr "Odklop traku"
+
+#: KDat.cpp:399 KDat.cpp:756
+msgid "%m/%d/%y"
+msgstr "%m/%d/%y"
+
+#: KDat.cpp:400
+#, c-format
+msgid "Archive created on %s"
+msgstr "Arhiv ustvarjen na %s"
+
+#: KDat.cpp:418
+msgid "Performing backup..."
+msgstr "Arhiviram..."
+
+#: KDat.cpp:431
+#, c-format
+msgid ""
+"WARNING: The estimated archive size is %dKB.\n"
+"The tape has only %dKB of space!\n"
+"\n"
+"Backup anyway?"
+msgstr ""
+"OPOZORILO: Predvidena velikost arhiva je %dKB.\n"
+"Trak ima le %dKB prostora!\n"
+"\n"
+"nNaj nadaljujem?"
+
+#: KDat.cpp:433
+msgid "Backup canceled."
+msgstr "Arhiviranje preklicano."
+
+#: KDat.cpp:440 TapeDrive.cpp:520 TapeDrive.cpp:541
+msgid "Rewinding tape..."
+msgstr "Previjam trak..."
+
+#: KDat.cpp:442
+msgid "Cannot rewind tape.  Backup aborted."
+msgstr "Ne morem previti traku. Arhiviranje prekinjeno."
+
+#: KDat.cpp:443 KDat.cpp:452 KDat.cpp:472
+msgid "Backup aborted."
+msgstr "Arhiviranje prekinjeno."
+
+#: KDat.cpp:449
+msgid "Skipping to end of tape..."
+msgstr "Preskok na konec traku..."
+
+#: KDat.cpp:451
+msgid "Cannot get to end of tape."
+msgstr "Ne morem priti na konec traku."
+
+#: KDat.cpp:456
+msgid "Backup in progress..."
+msgstr "Arhiviranje poteka..."
+
+#: KDat.cpp:470
+msgid "Backup complete."
+msgstr "Arhiviranje konèano."
+
+#: KDat.cpp:591
+msgid "Restore in progress..."
+msgstr "Obnavljanje v poteku..."
+
+#: KDat.cpp:593
+msgid "Verify in progress..."
+msgstr "Preverjanje v poteku..."
+
+#: KDat.cpp:600
+msgid "Restore complete."
+msgstr "Obnavljanje konèano."
+
+#: KDat.cpp:602
+msgid "Verify complete."
+msgstr "Preverjanje konèano."
+
+#: KDat.cpp:606
+msgid "Restore aborted."
+msgstr "Obnavljanje preklicano."
+
+#: KDat.cpp:608
+msgid "Verify aborted."
+msgstr "Preverjanje preklicano."
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "KDat: No Tape"
+msgstr "KDat: Brez traku"
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "There is no tape in the drive."
+msgstr "V pogonu ni traku."
+
+#: KDat.cpp:636
+msgid "KDat: Index Tape"
+msgstr "KDat: Indeksiraj trak"
+
+#: KDat.cpp:636
+msgid "The current tape index will be overwritten, continue?"
+msgstr "Trenutni indeks traku bo prepisan, nadaljujem?"
+
+#: KDat.cpp:641 KDat.cpp:1097
+#, c-format
+msgid "KDat: %s"
+msgstr "KDat: %s"
+
+#: KDat.cpp:645
+msgid "Index complete."
+msgstr "Indeksiranje konèano."
+
+#: KDat.cpp:647
+msgid "Index aborted."
+msgstr "Indeksiranje preklicano."
+
+#: KDat.cpp:656
+msgid "KDat: No Archive Selected"
+msgstr "KDat: Noben arhiv ni bil izbran"
+
+#: KDat.cpp:656
+msgid "An archive must be selected in the tree."
+msgstr "Arhiv mora biti izbran v drevesu."
+
+#: KDat.cpp:689
+#, c-format
+msgid ""
+"An archive cannot be removed from the middle of the tape.  If\n"
+"the archive '%s' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%s\n"
+"\n"
+" Delete all listed archives?"
+msgstr ""
+"Arhiv ne more biti odstranjen s sredine traku. Èe bo zbrisan\n"
+"arhiv `%s', bodo zbrisani tudi naslednji arhivi:\n"
+"%s\n"
+"\n"
+" Zbri¹em vse na¹tete arhive?"
+
+#: KDat.cpp:690
+msgid "KDat: Delete Archives?"
+msgstr "KDat: Zbri¹em arhive?"
+
+#: KDat.cpp:692
+msgid "Archives deleted."
+msgstr "Arhivi zbrisani."
+
+#: KDat.cpp:701
+#, c-format
+msgid "Really delete the archive '%s'?"
+msgstr "Resnièno zbri¹e arhiv '%s'?"
+
+#: KDat.cpp:702
+msgid "KDat: Delete Archive?"
+msgstr "KDat: Zbri¹em arhiv?"
+
+#: KDat.cpp:704
+msgid "Archive deleted."
+msgstr "Arhiv zbrisan."
+
+#: KDat.cpp:717
+msgid "KDat: No Tape Index Selected"
+msgstr "KDat: Noben indeks traku ni bil izbran"
+
+#: KDat.cpp:717
+msgid "A tape index must be selected in the tree."
+msgstr "Indeks traku mora biti izbran v drevesu."
+
+#: KDat.cpp:724
+msgid "KDat: Tape Is Mounted"
+msgstr "KDat: Trak je priklopljen"
+
+#: KDat.cpp:724
+msgid ""
+"The index for a mounted tape cannot be deleted.\n"
+"\n"
+"Unmount the tape and try again."
+msgstr ""
+"Indeks priklopljenega traku ne more biti zbrisan.\n"
+"\n"
+"Odklopite trak in poiskusite znova."
+
+#: KDat.cpp:729
+#, c-format
+msgid "Really delete the index for '%s'?"
+msgstr "Resnièno zbri¹em indeks od '%s'?"
+
+#: KDat.cpp:730
+msgid "KDat: Delete Tape Index?"
+msgstr "KDat: Zbri¹em indeks traku?"
+
+#: KDat.cpp:732
+msgid "Tape index deleted."
+msgstr "Indeks traku zbrisan."
+
+#: KDat.cpp:743
+msgid "KDat: No Tape In Drive"
+msgstr "KDat: V pogonu ni traku"
+
+#: KDat.cpp:743
+msgid ""
+"There is no tape in the tape drive.\n"
+"Please insert a tape and try again."
+msgstr ""
+"V traènem pogonu ni traku.\n"
+"Vstavite trak in poiskusite znova."
+
+#: KDat.cpp:748
+msgid "KDat: Write Protected Tape"
+msgstr "KDat: Trak za¹èite pred pisanjem"
+
+#: KDat.cpp:748
+msgid ""
+"The tape in the drive is write protected.\n"
+"Please disable write protection and try again."
+msgstr ""
+"Trak v pogonu je za¹èiten pred pisanjem.\n"
+"Odstranite za¹èito in poiskusite znova."
+
+#: KDat.cpp:752
+msgid "KDat: Format Tape"
+msgstr "KDat: Format traku"
+
+#: KDat.cpp:752
+msgid "All data will be lost, continue?"
+msgstr "Vsi podatki bodo izgubljeni, nadaljujem?"
+
+#: KDat.cpp:757
+#, c-format
+msgid "Tape created on %s"
+msgstr "Trak ustvarjen na %s"
+
+#: KDat.cpp:773
+msgid "Formatting tape..."
+msgstr "Formatiram trak..."
+
+#: KDat.cpp:776
+msgid "Format complete."
+msgstr "Formatiranje konèano."
+
+#: KDat.cpp:790
+#, c-format
+msgid "Backup Profile %d"
+msgstr "Skupina nastavitev arhiva %d"
+
+#: KDat.cpp:807
+msgid "Archive"
+msgstr "Arhiv"
+
+#: KDat.cpp:828
+msgid "KDat: No Backup Profile Selected"
+msgstr "KDat: Nobena skupina nastavitev ni bila izbrana"
+
+#: KDat.cpp:828
+msgid "A backup profile must be selected in the tree."
+msgstr "V drevesu morate izbrati skupino nastavitev."
+
+#: KDat.cpp:836
+#, c-format
+msgid "Really delete backup profile '%s'?"
+msgstr "Resnièno zbri¹em skupino nastavitev '%s'?"
+
+#: KDat.cpp:837
+msgid "KDat: Delete Backup Profile?"
+msgstr "KDat: Zbri¹em skupino nastavitev?"
+
+#: KDat.cpp:839
+msgid "Backup profile deleted."
+msgstr "Skupina nastavitev zbrisana."
+
+#: KDat.cpp:877
+msgid "Tape unmounted."
+msgstr "Trak odklopljen."
+
+#: KDat.cpp:881
+msgid "Reading tape header..."
+msgstr "Berem glavo traku..."
+
+#: KDat.cpp:888 KDat.cpp:890
+msgid "KDat: Unformatted Tape"
+msgstr "KDat: Neformatiran trak"
+
+#: KDat.cpp:888
+msgid "This tape has not been formatted by KDat."
+msgstr "KDat ¹e ni formatiral tega traku."
+
+#: KDat.cpp:890
+msgid ""
+"This tape has not been formatted by KDat.\n"
+"\n"
+"Would you like to format it now?"
+msgstr ""
+"KDat ¹e ni formatiral tega traku.\n"
+"Ali ga naj sedaj formatiram?"
+
+#: KDat.cpp:901
+msgid "Tape mounted."
+msgstr "Trak priklopljen."
+
+#: KDat.cpp:976
+#, c-format
+msgid "Estimating backup size: %s, %s"
+msgstr "Ocenjena velikost arhiva: %s, %s"
+
+#: KDat.cpp:1102
+msgid "KDat: <no tape >"
+msgstr "KDat: <brez traku>"
+
+#: LoggerWidget.cpp:60
+msgid "KDat: Save Log"
+msgstr "KDat: Shrani dnevnik"
+
+#: LoggerWidget.cpp:60
+msgid "Log file exists, overwrite?"
+msgstr "Dnevnik obstaja, prepi¹em?"
+
+#: Node.cpp:1182 Node.cpp:1252
+msgid "<no tape>"
+msgstr "<brez traku>"
+
+#: Node.cpp:1332
+msgid "Tape Indexes"
+msgstr "Traèni indeksi"
+
+#: Node.cpp:1466
+msgid "Backup Profiles"
+msgstr "Skupina nastavitev  arhivov"
+
+#: OptionsDlg.cpp:39 OptionsDlg.cpp:40
+msgid "KDat: Options"
+msgstr "KDat: Nastavitve"
+
+#: OptionsDlg.cpp:44
+msgid "Default tape size:"
+msgstr "Privzeta velikost traku:"
+
+#: OptionsDlg.cpp:45
+msgid "Tape block size:"
+msgstr "Velikost traku v blokih:"
+
+#: OptionsDlg.cpp:46
+msgid "Tape device:"
+msgstr "Traèna naprava:"
+
+#: OptionsDlg.cpp:47
+msgid "Tar command:"
+msgstr "Tar ukaz:"
+
+#: OptionsDlg.cpp:70
+msgid "bytes"
+msgstr "bajtov"
+
+#: OptionsDlg.cpp:76 OptionsDlg.cpp:82 VerifyOptDlg.cpp:57
+msgid "..."
+msgstr "..."
+
+#: OptionsDlg.cpp:85
+msgid "Tape drive options"
+msgstr "Nastavitve traène enote"
+
+#: OptionsDlg.cpp:87
+msgid "Load tape on mount"
+msgstr "Nalo¾i trak ob priklopu"
+
+#: OptionsDlg.cpp:90
+msgid "Lock tape drive on mount"
+msgstr "Zakleni traèno napravo ob priklopu"
+
+#: OptionsDlg.cpp:93
+msgid "Eject tape on unmount"
+msgstr "Izvr¾i trak ob odklopu"
+
+#: OptionsDlg.cpp:96
+msgid "Variable block size"
+msgstr "Spremenljiva velikost bloka"
+
+#: Tape.cpp:36
+msgid "New Tape"
+msgstr "Nov trak"
+
+#: Tape.cpp:70 Tape.cpp:76 Tape.cpp:85 Tape.cpp:92 Tape.cpp:99 Tape.cpp:103
+msgid "KDat: Format Failed"
+msgstr "KDat: Formatiranje spodletelo"
+
+#: Tape.cpp:70 TapeDrive.cpp:222
+msgid "Rewinding tape failed."
+msgstr "Previjanje traku spodletelo."
+
+#: Tape.cpp:76
+msgid "Cannot set tape block size."
+msgstr "Ne morem nastaviti velikosti bloka na traku."
+
+#: Tape.cpp:85
+msgid "Writing magic string failed."
+msgstr "Zapis prepoznavnega niza je spodletel."
+
+#: Tape.cpp:92
+msgid "Writing version number failed."
+msgstr "Zapis razlièice zapisa je spodletel."
+
+#: Tape.cpp:99
+msgid "Writing tape ID length failed."
+msgstr "Zapis ID dol¾ine traku je spodletel."
+
+#: Tape.cpp:103
+msgid "Writing tape ID failed."
+msgstr "Zapis ID traku je spodletel."
+
+#: Tape.cpp:132
+msgid "KDat: Tape Index"
+msgstr "KDat: Indeks traku"
+
+#: Tape.cpp:132
+msgid ""
+"No index file was found for this tape.\n"
+"Recreate the index from tape?"
+msgstr ""
+"Na traku ni bil najdena indeksna datoteka.\n"
+"Ponovno zgradi indeks s traku?"
+
+#: Tape.cpp:150 Tape.cpp:192 Tape.cpp:471 Tape.cpp:477 Tape.cpp:483
+#: Tape.cpp:490 Tape.cpp:497 Tape.cpp:505 Tape.cpp:512 Tape.cpp:520
+#: Tape.cpp:528 Tape.cpp:535 Tape.cpp:542 Tape.cpp:555 Tape.cpp:567
+#: Tape.cpp:575 Tape.cpp:582 Tape.cpp:589 Tape.cpp:618 Tape.cpp:624
+#: Tape.cpp:630 Tape.cpp:637 Tape.cpp:644 Tape.cpp:652 Tape.cpp:659
+#: Tape.cpp:679 Tape.cpp:685 Tape.cpp:721 Tape.cpp:727
+msgid "KDat: Index File Error"
+msgstr "KDat: Napaka v indeksni datoteki"
+
+#: Tape.cpp:150 TapeDrive.cpp:242
+msgid "Reading version number failed."
+msgstr "Branje razlièice zapisa je spodletelo."
+
+#: Tape.cpp:191
+#, c-format
+msgid ""
+"The tape index file format is version %d.  The index cannot be read by this "
+"version of KDat.  Perhaps the tape index file was created by a newer version "
+"of KDat?"
+msgstr ""
+"Indeksna datoteka je razlièice  %d. Indeksa ni mogoèe prebrati s "
+"to razlièico KDat. Mogoèe je bila indeksna datoteka ustvarjena z novej¹o "
+"razlièico KDat?"
+
+#: Tape.cpp:471 Tape.cpp:618 Tape.cpp:679 Tape.cpp:721 TapeDrive.cpp:259
+msgid "Reading tape ID failed."
+msgstr "Branje traènega ID je spodletelo."
+
+#: Tape.cpp:477 Tape.cpp:624 Tape.cpp:685 Tape.cpp:727
+msgid "Tape ID on tape does not match tape ID in index file."
+msgstr "Traèni ID na traku se ne ujema z traènim ID v indeksni datoteki."
+
+#: Tape.cpp:483 Tape.cpp:630
+msgid "Reading creation time failed."
+msgstr "Branje èasa ustvarjenja je spodletelo."
+
+#: Tape.cpp:490 Tape.cpp:637
+msgid "Reading modification time failed."
+msgstr "Branje èasa zadnje spremembe je spodletelo."
+
+#: Tape.cpp:497 Tape.cpp:644
+msgid "Reading tape name failed."
+msgstr "Branje imena traku je spodletelo."
+
+#: Tape.cpp:505 Tape.cpp:652
+msgid "Reading tape size failed."
+msgstr "Branje velikosti traku je spodletelo."
+
+#: Tape.cpp:512 Tape.cpp:659
+msgid "Reading archive count failed."
+msgstr "Branje ¹tevila arhivov je spodletelo."
+
+#: Tape.cpp:520
+msgid "Reading archive name failed."
+msgstr "Branje imena arhiva je spodletelo."
+
+#: Tape.cpp:528
+msgid "Reading archive time stamp failed."
+msgstr "Branje èasovnega peèata arhiva je spodletelo."
+
+#: Tape.cpp:535
+msgid "Reading archive start block failed."
+msgstr "Branje zaèetnega bloka arhiva je spodletelo."
+
+#: Tape.cpp:542
+msgid "Reading archive end block failed."
+msgstr "Branje konènega bloka arhiva je spodletelo."
+
+#: Tape.cpp:555
+msgid "Reading archive file count failed."
+msgstr "Branje ¹tevila arhiviranih datotek je spodletelo."
+
+#: Tape.cpp:567
+msgid "Reading file name failed."
+msgstr "Branje datoteènega imena je spodletelo."
+
+#: Tape.cpp:575
+msgid "Reading file size failed."
+msgstr "Branje velikosti datoteke je spodletelo."
+
+#: Tape.cpp:582
+msgid "Reading file modification time failed."
+msgstr "Branje èasa zadnje spremembe datoteke je spodletelo."
+
+#: Tape.cpp:589
+msgid "Reading file record number failed."
+msgstr "Branje ¹tevila datoteènih zapisov je spodletelo."
+
+#: TapeDrive.cpp:188
+msgid "Tape mounted readonly."
+msgstr "Trak je priklopljen v samo bralnem naèinu."
+
+#: TapeDrive.cpp:190
+msgid "Tape mounted read/write."
+msgstr "Trak je priklopljen v pisalno/bralnem naèinu."
+
+#: TapeDrive.cpp:227
+msgid "Reading magic string..."
+msgstr "Berem prepoznavni niz..."
+
+#: TapeDrive.cpp:230
+msgid "Reading magic string failed."
+msgstr "Branje prepoznavnega niza je spodletelo."
+
+#: TapeDrive.cpp:239
+msgid "Reading version number..."
+msgstr "Branje razlièice..."
+
+#: TapeDrive.cpp:247
+msgid "KDat: Warning"
+msgstr "KDat: Opozorilo"
+
+#: TapeDrive.cpp:247
+msgid ""
+"Tape was formatted by a more recent version of KDat, consider upgrading."
+msgstr ""
+"Trak je bil fromatiran z novej¹o razlièico KDat, razmislite o nadgraditvi."
+
+#: TapeDrive.cpp:251
+msgid "Reading tape ID..."
+msgstr "Berem ID traku..."
+
+#: TapeDrive.cpp:254
+msgid "Reading tape ID length failed."
+msgstr "Branje traène ID dol¾ine je spodletelo."
+
+#: TapeDrive.cpp:515
+msgid "Skipping to archive..."
+msgstr "Preskok do arhiva..."
+
+#: TapeDrive.cpp:537
+msgid "Skipping to block..."
+msgstr "Preskok na blok..."
+
+#: TapeFileInfoWidget.cpp:37
+msgid "Start record:"
+msgstr "Zaèetni zapis:"
+
+#: TapeFileInfoWidget.cpp:38
+msgid "End record:"
+msgstr "Konèni zapis:"
+
+#: FormatOptDlg.cpp:39 TapeInfoWidget.cpp:40
+msgid "Tape name:"
+msgstr "Ime traku:"
+
+#: FormatOptDlg.cpp:40 TapeInfoWidget.cpp:41
+msgid "Tape size:"
+msgstr "Velikost traku:"
+
+#: TapeInfoWidget.cpp:42
+msgid "Tape ID:"
+msgstr "ID traku:"
+
+#: TapeInfoWidget.cpp:45
+msgid "Archive count:"
+msgstr "©tevilo arhivov:"
+
+#: TapeInfoWidget.cpp:46
+msgid "Space used:"
+msgstr "Porabljen prostor:"
+
+#: FormatOptDlg.cpp:36 FormatOptDlg.cpp:37
+msgid "KDat: Format Options"
+msgstr "KDat: Nastavitve formatiranja"
+
+#: VerifyDlg.cpp:61 VerifyDlg.cpp:62
+msgid "KDat: Restore"
+msgstr "KDat: Obnovitev"
+
+#: VerifyDlg.cpp:64 VerifyDlg.cpp:65
+msgid "KDat: Verify"
+msgstr "KDat: Preveri"
+
+#: VerifyDlg.cpp:113
+msgid "Differences:"
+msgstr "Spremembe:"
+
+#: VerifyDlg.cpp:121
+msgid "Restore log:"
+msgstr "Dnevnik obnovitve:"
+
+#: VerifyDlg.cpp:123
+msgid "Verify log:"
+msgstr "Dnevnik preverjanj:"
+
+#: VerifyDlg.cpp:315
+msgid "failed while reading tape data.\n"
+msgstr "spodletelo branje podatkov s traku.\n"
+
+#: VerifyOptDlg.cpp:38 VerifyOptDlg.cpp:39
+msgid "KDat: Restore Options"
+msgstr "KDat: Nastavitve obnovitve"
+
+#: VerifyOptDlg.cpp:41 VerifyOptDlg.cpp:42
+msgid "KDat: Verify Options"
+msgstr "KDat: Nastavitve preverjanja"
+
+#: VerifyOptDlg.cpp:47
+msgid "Restore to directory:"
+msgstr "Obnovi v imenik:"
+
+#: VerifyOptDlg.cpp:49
+msgid "Verify in directory:"
+msgstr "Preveri v imeniku:"
+
+#: VerifyOptDlg.cpp:62
+msgid "Restore files:"
+msgstr "Obnovi datoteke:"
+
+#: VerifyOptDlg.cpp:64
+msgid "Verify files:"
+msgstr "Preveri datoteke:"

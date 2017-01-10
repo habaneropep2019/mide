@@ -1,0 +1,1585 @@
+# Japanized korganizer.po
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Eiichi Yamauchi <yamaeiic@pa2.so-net.ne.jp>, 1999.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: korganizer 1.1.2\n"
+"POT-Creation-Date: 1999-05-01 04:22+0200\n"
+"PO-Revision-Date: 1999-07-13 18:00+0900\n"
+"Last-Translator: Eiichi Yamauchi <yamaeiic@pa2.so-net.ne.jp>\n"
+"Language-Team: Japanese <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: alarmdaemon.cpp:38 alarmdaemon.cpp:43 calobject.cpp:372 calobject.cpp:385
+#: eventwindetails.cpp:341 eventwindetails.cpp:361 searchdialog.cpp:80
+#: topwidget.cpp:959 topwidget.cpp:967 topwidget.cpp:1110 topwidget.cpp:1136
+#: topwidget.cpp:1140
+msgid "KOrganizer Error"
+msgstr "KOrganizerエラー"
+
+#: calobject.cpp:373 calobject.cpp:386
+msgid ""
+"An error has occurred parsing the contents of the clipboard.\n"
+"You can only paste a valid vCalendar into KOrganizer.\n"
+msgstr ""
+"クリップボードのデータの解析中にエラーが発生しました.\n"
+"適正なvCalenderだけを、KOrganizerに張り付けることができます。\n"
+
+#: calobject.cpp:434
+msgid "found a VEvent with no DTSTART/DTEND! Skipping"
+msgstr "DTSTART/DTENDのないVEventが見つかりました。スキップします。"
+
+#: catdlg.cpp:19
+msgid "KOrganizer Categories"
+msgstr "KOrganizer カテゴリー"
+
+#: catdlg.cpp:30
+msgid "Available Categories"
+msgstr "適正なカテゴリ"
+
+#: catdlg.cpp:36 eventwin.cpp:297 optionsdlg.cpp:228 optionsdlg.cpp:234
+#: optionsdlg.cpp:240
+msgid "Appointment"
+msgstr "アポイントメント"
+
+#: catdlg.cpp:37
+msgid "Business"
+msgstr "ビジネス"
+
+#: catdlg.cpp:38
+msgid "Meeting"
+msgstr "会議"
+
+#: catdlg.cpp:39
+msgid "Phone Call"
+msgstr "電話をする"
+
+#: catdlg.cpp:40
+msgid "Education"
+msgstr "教育"
+
+#: catdlg.cpp:41
+msgid "Holiday"
+msgstr "休み"
+
+#: catdlg.cpp:42
+msgid "Vacation"
+msgstr "バケーション"
+
+#: catdlg.cpp:43
+msgid "Special Occasion"
+msgstr "特別な行事"
+
+#: catdlg.cpp:44 optionsdlg.cpp:34
+msgid "Personal"
+msgstr "パーソナル"
+
+#: catdlg.cpp:45
+msgid "Travel"
+msgstr "旅行"
+
+#: catdlg.cpp:55
+msgid "&Add >>"
+msgstr "追加(&A) >>"
+
+#: catdlg.cpp:57
+msgid "<< &Remove"
+msgstr "削除(R) <<"
+
+#: catdlg.cpp:66
+msgid "Selected Categories"
+msgstr "カテゴリーの選択"
+
+#: catdlg.cpp:78
+msgid "New Category:"
+msgstr "New Category:"
+
+#: editeventwin.cpp:116 todoeventwin.cpp:108
+msgid "General"
+msgstr "一般"
+
+#: editeventwin.cpp:117 todoeventwin.cpp:109
+msgid "Details"
+msgstr "詳細"
+
+#: editeventwin.cpp:119
+msgid "Recurrence"
+msgstr "繰り返し"
+
+#: editeventwin.cpp:195 editeventwin.cpp:406 todoeventwin.cpp:162
+#: todoeventwin.cpp:182
+#, c-format
+msgid "Owner: %s"
+msgstr "所有者: %s"
+
+#: editeventwin.cpp:810
+msgid "Duration: all day"
+msgstr "継続期間: 全日"
+
+#: editeventwin.cpp:818
+#, c-format
+msgid "Duration: %i hour(s), %i minute(s)"
+msgstr "継続期間: %i時間、%i分間"
+
+#: editeventwin.cpp:820
+#, c-format
+msgid "Duration: %i hour(s)"
+msgstr "継続期間: %i時間"
+
+#: editeventwin.cpp:822
+#, c-format
+msgid "Duration: %i minute(s)"
+msgstr "継続期間: %i分間"
+
+#: eventwidget.cpp:193
+msgid "Toggle Alarm"
+msgstr "アラームON/OFF"
+
+#: eventwingeneral.cpp:42 eventwinrecur.cpp:28 wingeneral.cpp:34
+msgid "Appointment Time"
+msgstr "アポイントメント時間"
+
+#: eventwingeneral.cpp:47 wingeneral.cpp:39
+msgid "Start Time:"
+msgstr "開始時間"
+
+#: eventwingeneral.cpp:58 wingeneral.cpp:48
+msgid "End Time:"
+msgstr "終了時間"
+
+#: eventwingeneral.cpp:80 wingeneral.cpp:64
+msgid "No time associated"
+msgstr "時間指定なし"
+
+#: eventwingeneral.cpp:91 wingeneral.cpp:75
+msgid "Recurring event"
+msgstr "繰り返しイベント"
+
+#: eventwingeneral.cpp:99 todowingeneral.cpp:77
+msgid "Summary:"
+msgstr "要約:"
+
+#: eventwingeneral.cpp:110
+msgid "Show Time As:"
+msgstr "時間表示方法:"
+
+#: eventwingeneral.cpp:117
+msgid "Busy"
+msgstr "ビジー"
+
+#: eventwingeneral.cpp:118
+msgid "Free"
+msgstr "空き"
+
+#: eventwingeneral.cpp:133 todowingeneral.cpp:96
+msgid "Owner:"
+msgstr "オーナー"
+
+#: eventwingeneral.cpp:139 todowingeneral.cpp:102
+msgid "Private"
+msgstr "個人"
+
+#: eventwindetails.cpp:199 eventwingeneral.cpp:145 todowingeneral.cpp:108
+msgid "Categories..."
+msgstr "カテゴリー..."
+
+#: eventwingeneral.cpp:164
+msgid "Reminder:"
+msgstr "アラーム:"
+
+#: eventwindetails.cpp:39
+msgid "Attendee Information"
+msgstr "出席者情報"
+
+#: eventwindetails.cpp:46
+msgid "Name"
+msgstr "名前"
+
+#: eventwindetails.cpp:47
+msgid "Email"
+msgstr "メール"
+
+#: eventwindetails.cpp:48
+msgid "Role"
+msgstr "役割"
+
+#: eventwindetails.cpp:49
+msgid "Status"
+msgstr "状態"
+
+#: eventwindetails.cpp:50
+msgid "RSVP"
+msgstr "RSVP"
+
+#: eventwindetails.cpp:65
+msgid "Attendee Name:"
+msgstr "出席者名:"
+
+#: eventwindetails.cpp:77
+msgid "Email Address:"
+msgstr "メールアドレス"
+
+#: eventwindetails.cpp:92
+msgid "Role:"
+msgstr "役割:"
+
+#: eventwindetails.cpp:98
+msgid "Attendee"
+msgstr "出席者"
+
+#: eventwindetails.cpp:99
+msgid "Organizer"
+msgstr "世話人"
+
+#: eventwindetails.cpp:100
+msgid "Owner"
+msgstr "オーナー"
+
+#: eventwindetails.cpp:101
+msgid "Delegate"
+msgstr "代表者"
+
+#: eventwindetails.cpp:106
+msgid "Status:"
+msgstr "状況:"
+
+#: eventwindetails.cpp:112
+msgid "Needs Action"
+msgstr "要実施"
+
+#: eventwindetails.cpp:113
+msgid "Accepted"
+msgstr "受け付け"
+
+#: eventwindetails.cpp:114
+msgid "Sent"
+msgstr "送付"
+
+#: eventwindetails.cpp:115
+msgid "Tentative"
+msgstr "仮決め"
+
+#: eventwindetails.cpp:116
+msgid "Confirmed"
+msgstr "確認済み"
+
+#: eventwindetails.cpp:117
+msgid "Declined"
+msgstr "取り下げ"
+
+#: eventwindetails.cpp:118 todowingeneral.cpp:35 todowingeneral.cpp:52
+msgid "Completed"
+msgstr "完了"
+
+#: eventwindetails.cpp:119
+msgid "Delegated"
+msgstr "Delegated"
+
+#: eventwindetails.cpp:126
+msgid "Request Response"
+msgstr "対応要求"
+
+#: eventwindetails.cpp:132
+msgid "&Add"
+msgstr "追加(&A)"
+
+#: eventwindetails.cpp:136
+msgid "Address &Book..."
+msgstr "アドレスブック(&B)"
+
+#: eventwindetails.cpp:163
+msgid "Attach..."
+msgstr "取り付け..."
+
+#: eventwindetails.cpp:183
+msgid "Save As..."
+msgstr "名前を付けて保存..."
+
+#: eventwindetails.cpp:218
+msgid "Priority:"
+msgstr "優先度:"
+
+#: eventwindetails.cpp:224
+msgid "Low (1)"
+msgstr "低い(1)"
+
+#: eventwindetails.cpp:225
+msgid "Normal (2)"
+msgstr "普通(2)"
+
+#: eventwindetails.cpp:226
+msgid "High (3)"
+msgstr "高い(3)"
+
+#: eventwindetails.cpp:227
+msgid "Maximum (4)"
+msgstr "最高(4)"
+
+#: eventwindetails.cpp:342
+msgid "Unable to open address book."
+msgstr "アドレスブックを開けません。"
+
+#: eventwindetails.cpp:362
+msgid "Error getting entry from address book."
+msgstr "アドレスブックからエントリ取り出しにエラー"
+
+#: eventwinrecur.cpp:30
+msgid "Start:  "
+msgstr "開始:  "
+
+#: eventwinrecur.cpp:31
+msgid "End:  "
+msgstr "終了:  "
+
+#: eventwinrecur.cpp:61
+msgid "Recurrence Rule"
+msgstr "継続の規則"
+
+#: eventwinrecur.cpp:67
+msgid "Daily"
+msgstr "毎日"
+
+#: eventwinrecur.cpp:68
+msgid "Weekly"
+msgstr "毎週"
+
+#: eventwinrecur.cpp:69
+msgid "Monthly"
+msgstr "毎月"
+
+#: eventwinrecur.cpp:70
+msgid "Yearly"
+msgstr "毎年"
+
+#: eventwinrecur.cpp:95
+msgid "Enable Advanced Rule:"
+msgstr "高度な規則の使用"
+
+#: eventwinrecur.cpp:128
+msgid "Recurrence Range"
+msgstr "継続範囲"
+
+#: eventwinrecur.cpp:132
+msgid "Begin On:"
+msgstr "開始:"
+
+#: eventwinrecur.cpp:134
+msgid "No Ending Date"
+msgstr "終了日なし"
+
+#: eventwinrecur.cpp:135
+msgid "End after"
+msgstr "実施回数"
+
+#: eventwinrecur.cpp:137
+msgid "occurrence(s)"
+msgstr "回後終了"
+
+#: eventwinrecur.cpp:138
+msgid "End by:"
+msgstr "にて終了:"
+
+#: eventwinrecur.cpp:181
+msgid "Exceptions"
+msgstr "例外"
+
+#: eventwinrecur.cpp:267 eventwinrecur.cpp:297
+msgid "Recur every"
+msgstr "継続期間は"
+
+#: eventwinrecur.cpp:273
+msgid "day(s)"
+msgstr "日毎に"
+
+#: eventwinrecur.cpp:303
+msgid "week(s) on:"
+msgstr "週間毎の次の曜日に"
+
+#: eventwinrecur.cpp:305 kagenda.cpp:106
+msgid "Sun"
+msgstr "日"
+
+#: eventwinrecur.cpp:306 kagenda.cpp:105
+msgid "Mon"
+msgstr "月"
+
+#: eventwinrecur.cpp:307 kagenda.cpp:105
+msgid "Tue"
+msgstr "火"
+
+#: eventwinrecur.cpp:308 kagenda.cpp:105
+msgid "Wed"
+msgstr "水"
+
+#: eventwinrecur.cpp:309 kagenda.cpp:106
+msgid "Thu"
+msgstr "木"
+
+#: eventwinrecur.cpp:310 kagenda.cpp:106
+msgid "Fri"
+msgstr "金"
+
+#: eventwinrecur.cpp:311 kagenda.cpp:106
+msgid "Sat"
+msgstr "土"
+
+#: eventwinrecur.cpp:361 eventwinrecur.cpp:365
+msgid "Recur on the"
+msgstr "毎月の"
+
+#: eventwinrecur.cpp:363
+msgid "day"
+msgstr "日に"
+
+#: eventwinrecur.cpp:369 eventwinrecur.cpp:481
+msgid "every"
+msgstr " "
+
+#: eventwinrecur.cpp:371
+msgid "month(s)"
+msgstr "月毎に"
+
+#: eventwinrecur.cpp:383 eventwinrecur.cpp:424
+msgid "1st"
+msgstr "1番目"
+
+#: eventwinrecur.cpp:384 eventwinrecur.cpp:425
+msgid "2nd"
+msgstr "2番目"
+
+#: eventwinrecur.cpp:385 eventwinrecur.cpp:426
+msgid "3rd"
+msgstr "3番目"
+
+#: eventwinrecur.cpp:386 eventwinrecur.cpp:427
+msgid "4th"
+msgstr "4番目"
+
+#: eventwinrecur.cpp:387 eventwinrecur.cpp:428
+msgid "5th"
+msgstr "5番目"
+
+#: eventwinrecur.cpp:388
+msgid "6th"
+msgstr "6番目"
+
+#: eventwinrecur.cpp:389
+msgid "7th"
+msgstr "7番目"
+
+#: eventwinrecur.cpp:390
+msgid "8th"
+msgstr "8番目"
+
+#: eventwinrecur.cpp:391
+msgid "9th"
+msgstr "9番目"
+
+#: eventwinrecur.cpp:392
+msgid "10th"
+msgstr "10番目"
+
+#: eventwinrecur.cpp:393
+msgid "11th"
+msgstr "11番目"
+
+#: eventwinrecur.cpp:394
+msgid "12th"
+msgstr "12番目"
+
+#: eventwinrecur.cpp:395
+msgid "13th"
+msgstr "13番目"
+
+#: eventwinrecur.cpp:396
+msgid "14th"
+msgstr "14番目"
+
+#: eventwinrecur.cpp:397
+msgid "15th"
+msgstr "15番目"
+
+#: eventwinrecur.cpp:398
+msgid "16th"
+msgstr "16番目"
+
+#: eventwinrecur.cpp:399
+msgid "17th"
+msgstr "17番目"
+
+#: eventwinrecur.cpp:400
+msgid "18th"
+msgstr "18番目"
+
+#: eventwinrecur.cpp:401
+msgid "19th"
+msgstr "19番目"
+
+#: eventwinrecur.cpp:402
+msgid "20th"
+msgstr "20番目"
+
+#: eventwinrecur.cpp:403
+msgid "21st"
+msgstr "21番目"
+
+#: eventwinrecur.cpp:404
+msgid "22nd"
+msgstr "22番目"
+
+#: eventwinrecur.cpp:405
+msgid "23rd"
+msgstr "23番目"
+
+#: eventwinrecur.cpp:406
+msgid "24th"
+msgstr "24番目"
+
+#: eventwinrecur.cpp:407
+msgid "25th"
+msgstr "25番目"
+
+#: eventwinrecur.cpp:408
+msgid "26th"
+msgstr "26番目"
+
+#: eventwinrecur.cpp:409
+msgid "27th"
+msgstr "27番目"
+
+#: eventwinrecur.cpp:410
+msgid "28th"
+msgstr "28番目"
+
+#: eventwinrecur.cpp:411
+msgid "29th"
+msgstr "29番目"
+
+#: eventwinrecur.cpp:412
+msgid "30th"
+msgstr "30番目"
+
+#: eventwinrecur.cpp:413
+msgid "31st"
+msgstr "31番目"
+
+#: eventwinrecur.cpp:466
+msgid "Recur in the month of"
+msgstr "毎年、"
+
+#: eventwinrecur.cpp:467
+msgid "Recur on this day"
+msgstr "今日の日付の"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:469 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "January"
+msgstr "1月"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:470 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "February"
+msgstr "2月"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:471 kdatenav.cpp:68 kdatenav.cpp:259
+msgid "March"
+msgstr "3月"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:472 kdatenav.cpp:69 kdatenav.cpp:259
+msgid "April"
+msgstr "4月"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:473 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "May"
+msgstr "5月"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:474 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "June"
+msgstr "6月"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:475 kdatenav.cpp:69 kdatenav.cpp:261
+msgid "July"
+msgstr "7月"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:476 kdatenav.cpp:70 kdatenav.cpp:261
+msgid "August"
+msgstr "8月"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:477 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "September"
+msgstr "9月"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:478 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "October"
+msgstr "10月"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:479 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "November"
+msgstr "11月"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:480 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "December"
+msgstr "12月"
+
+#: eventwinrecur.cpp:484
+msgid "year(s)"
+msgstr "年"
+
+#: kagenda.cpp:212
+msgid "All Day Event"
+msgstr "終日のイベント"
+
+#: kagenda.cpp:830
+msgid "New appointment"
+msgstr "新規アポイントメント"
+
+#: kagenda.cpp:967 kagenda.cpp:975
+msgid "am"
+msgstr "午前"
+
+#: kagenda.cpp:971
+msgid "pm"
+msgstr "午後"
+
+#: kdatenav.cpp:44
+msgid "Previous Year"
+msgstr "前年"
+
+#: kdatenav.cpp:50
+msgid "Previous Month"
+msgstr "前月"
+
+#: kdatenav.cpp:56
+msgid "Next Month"
+msgstr "次月"
+
+#: kdatenav.cpp:62
+msgid "Next Year"
+msgstr "次年"
+
+#: kmonthview.cpp:386
+msgid "New Event"
+msgstr "新規イベント"
+
+#: kpbutton.cpp:22 kpbutton.cpp:40 kpbutton.cpp:90
+msgid "KPButton: pixmap is empty, perhaps some missing file"
+msgstr "KPButton: ピックスマップが空です。多分間違ったファイルです。"
+
+#: baselistview.cpp:28
+msgid "Date"
+msgstr "日"
+
+#: baselistview.cpp:29
+msgid "Time"
+msgstr "時間"
+
+#: baselistview.cpp:30 calprinter.cpp:365
+msgid "Summary"
+msgstr "要約"
+
+#: baselistview.cpp:77
+msgid "started "
+msgstr "開始"
+
+#: baselistview.cpp:80
+msgid "ends "
+msgstr "終了"
+
+#: baselistview.cpp:85
+#, c-format
+msgid "repeats %d times"
+msgstr "%d回繰り返す"
+
+#: baselistview.cpp:89
+msgid "repeats forever"
+msgstr "永久に繰り返す"
+
+#: listview.cpp:14
+msgid "Edit Event"
+msgstr "イベント編集"
+
+#: listview.cpp:17
+msgid "Delete Event  "
+msgstr "イベント削除"
+
+#: listview.cpp:20
+msgid "Show Dates"
+msgstr "日程表示"
+
+#: listview.cpp:22
+msgid "Hide Dates"
+msgstr "日程を隠す"
+
+#: main.cpp:29
+msgid "No default calendar, and none was specified on the command line.\n"
+msgstr "標準カレンダーがありません。\n"
+
+#: main.cpp:33
+msgid "Error reading from default calendar.\n"
+msgstr "標準カレンダーの読み込み中にエラー。\n"
+
+#: searchdialog.cpp:22
+msgid "Search For:"
+msgstr "検索対象: "
+
+#: searchdialog.cpp:32 topwidget.cpp:494
+msgid "&Search"
+msgstr "検索(&S)"
+
+#: searchdialog.cpp:81
+msgid ""
+"Invalid search expression, cannot perform\n"
+"the search.  Please enter a search expression\n"
+"using the wildcard characters '*' and '?'\n"
+"where needed."
+msgstr "不正な検索式です。検索を実行できません。\n"
+"必要ならば、ワイルドカード文字の'*'と'?'を使って\n"
+"検索式を入力してください。"
+
+#: topwidget.cpp:391
+msgid "&Open"
+msgstr "開く(&O)"
+
+#: topwidget.cpp:394
+msgid "Open &Recent"
+msgstr "最近のファイルを開く(&R)"
+
+#: topwidget.cpp:410
+msgid "Save &As"
+msgstr "名前を付けて保存(&A)"
+
+#: topwidget.cpp:415
+msgid "&Import From Ical"
+msgstr "Icakからインポート(&I)"
+
+#: topwidget.cpp:417
+msgid "&Merge Calendar"
+msgstr "カレンダーのマージ(&M)"
+
+#: topwidget.cpp:420
+msgid "Archive Old Entries"
+msgstr "古いエントリのアーカイブ"
+
+#: topwidget.cpp:427
+msgid "Print Setup"
+msgstr "印刷の設定"
+
+#: calprinter.cpp:844 topwidget.cpp:431
+msgid "&Print"
+msgstr "印刷(&P)"
+
+#: topwidget.cpp:433
+msgid "Print Pre&view"
+msgstr "印刷プレビュー(&v)"
+
+#: topwidget.cpp:455
+msgid "&List"
+msgstr "リスト(&L)"
+
+#: topwidget.cpp:459
+msgid "&Day"
+msgstr "日(&D)"
+
+#: topwidget.cpp:462
+msgid "W&ork Week"
+msgstr "平日(&o)"
+
+#: topwidget.cpp:465
+msgid "&Week"
+msgstr "週(&W)"
+
+#: topwidget.cpp:468
+msgid "&Month"
+msgstr "月(&M)"
+
+#: topwidget.cpp:471
+msgid "&To-do list"
+msgstr "&To-doリスト"
+
+#: topwidget.cpp:479
+msgid "New &Appointment"
+msgstr "新規アポイントメント(&A)"
+
+#: topwidget.cpp:481
+msgid "New E&vent"
+msgstr "新規イベント(&v)"
+
+#: topwidget.cpp:483
+msgid "&Edit Appointment"
+msgstr "アポイントメント編集(&E)"
+
+#: topwidget.cpp:486
+msgid "&Delete Appointment"
+msgstr "アポイントメント(&D)"
+
+#: topwidget.cpp:488
+msgid "Delete To-do"
+msgstr "To-Do削除"
+
+#: topwidget.cpp:498
+msgid "&Mail Appointment"
+msgstr "メールアポイントメント(&M)"
+
+#: topwidget.cpp:504
+msgid "Go to &Today"
+msgstr "今日へジャンプ(&T)"
+
+#: topwidget.cpp:508
+msgid "&Previous Day"
+msgstr "前の日へ(&P)"
+
+#: topwidget.cpp:512
+msgid "&Next Day"
+msgstr "次の日へ(&N)"
+
+#: topwidget.cpp:516
+msgid "Show &Tool Bar"
+msgstr "ツールバーの表示(&T)"
+
+#: topwidget.cpp:520
+msgid "Show St&atus Bar"
+msgstr "ステータスバー表示(&a)"
+
+#: topwidget.cpp:525
+msgid "&Edit Options"
+msgstr "オプションの編集(&E)"
+
+#: topwidget.cpp:533
+msgid "&About"
+msgstr "バージョン情報(&A)"
+
+#: topwidget.cpp:535
+msgid "Send &Bug Report"
+msgstr "バグレポートを送る(&B)"
+
+#: topwidget.cpp:543
+msgid "&Actions"
+msgstr "アクション(&A)"
+
+#: topwidget.cpp:562
+msgid "Open A Calendar"
+msgstr "カレンダーを開く"
+
+#: topwidget.cpp:568
+msgid "Save This Calendar"
+msgstr "このカレンダーを上書き保存"
+
+#: topwidget.cpp:585
+msgid "New Appointment"
+msgstr "新規アポイントメント"
+
+#: topwidget.cpp:591
+msgid "Delete Appointment"
+msgstr "アポイントメント削除"
+
+#: topwidget.cpp:597
+msgid "Search For an Appointment"
+msgstr "アポイントメントから検索"
+
+#: topwidget.cpp:603
+msgid "Mail Appointment"
+msgstr "メールアポイントメント"
+
+#: topwidget.cpp:622
+msgid "Go to Today"
+msgstr "今日へジャンプ"
+
+#: topwidget.cpp:628
+msgid "Previous Day"
+msgstr "前の日"
+
+#: topwidget.cpp:634
+msgid "Next Day"
+msgstr "次の日"
+
+#: topwidget.cpp:650
+msgid "List View"
+msgstr "リストビュー"
+
+#: topwidget.cpp:655
+msgid "Schedule View"
+msgstr "スケジュールビュー"
+
+#: topwidget.cpp:662
+msgid "Month View"
+msgstr "月ビュー"
+
+#: topwidget.cpp:668
+msgid "To-do list view"
+msgstr "To-doリストビュー"
+
+#: topwidget.cpp:750
+msgid "we don't handle updates for that view, yet.\n"
+msgstr "まだ、このビューに対する更新をを取り扱えません。\n"
+
+#: topwidget.cpp:842
+msgid "we don't handle that view yet.\n"
+msgstr "まだ、このビューを取り扱えません。\n"
+
+#: topwidget.cpp:960
+msgid "You did not specify a valid file name."
+msgstr "あなたは、正しいファイル名を指定していません。"
+
+#: topwidget.cpp:968
+msgid ""
+"The file you specified is a directory,\n"
+"and cannot be opened. Please try again,\n"
+"this time selecting a valid calendar file."
+msgstr "あなたが指定したファイルはディレクトリです。\n"
+"開くことができません。正しいカレンダーファイルを\n"
+"指定し、再度、試みてください。"
+
+#: topwidget.cpp:995
+msgid "KOrganizer Warning"
+msgstr "KOrganizer警告"
+
+#: topwidget.cpp:996
+msgid ""
+"This calendar has been modified.\n"
+"Would you like to save it?"
+msgstr "このカレンダーは変更されています。\n"
+"これを保存したいですか？"
+
+#: topwidget.cpp:998
+msgid "&Yes"
+msgstr "はい (&Y)"
+
+#: topwidget.cpp:998
+msgid "&No"
+msgstr "いいえ (&N)"
+
+#: topwidget.cpp:1007 topwidget.cpp:1597
+msgid "KOrganizer Confirmation"
+msgstr "KOrganizer確認"
+
+#: topwidget.cpp:1008
+msgid "This item will be permanently deleted."
+msgstr "このアイテムは永久に削除されます。"
+
+#: topwidget.cpp:1111
+msgid ""
+"You have no ical file in your home directory.\n"
+"Import cannot proceed.\n"
+msgstr "あなたのディレクトリにicalファイルがありません。\n"
+"取り込みを行なうことができません。\n"
+
+#: topwidget.cpp:1124
+msgid "KOrganizer Info"
+msgstr "KOrganizer情報"
+
+#: topwidget.cpp:1125
+msgid ""
+"KOrganizer succesfully imported and merged your\n"
+".calendar file from ical into the currently\n"
+"opened calendar.\n"
+msgstr ""
+"KOrganizerはあなたの.calendarファイルをicalから\n"
+"現在のカレンダーに取り込み、またはマージしました。\n"
+
+#: topwidget.cpp:1130
+msgid "ICal Import Successful With Warning"
+msgstr "警告付でICalを取り込みました"
+
+#: topwidget.cpp:1131
+msgid ""
+"KOrganizer encountered some unknown fields while\n"
+"parsing your .calendar ical file, and had to\n"
+"discard them.  Please check to see that all\n"
+"your relevant data was correctly imported.\n"
+msgstr ""
+".calendar icalファイルに未知のフィールドがありました。\n"
+"取り込みをキャンセルします。\n"
+"あなたが最近読み込んだデータをチェックして下さい。\n"
+
+#: topwidget.cpp:1137
+msgid ""
+"KOrganizer encountered some error parsing your\n"
+".calendar file from ical.  Import has failed.\n"
+msgstr ""
+".calendar icalファイルに取り込み中にエラーが発生しました。\n"
+"取り込みが失敗しました。\n"
+
+#: topwidget.cpp:1141
+msgid ""
+"KOrganizer doesn't think that your .calendar\n"
+"file is a valid ical calendar. Import has failed.\n"
+msgstr ""
+"あなたの.calendarファイルは適正ではないようです。\n"
+"取り込みに失敗しました。\n"
+
+#: topwidget.cpp:1305 topwidget.cpp:1332 topwidget.cpp:1683 topwidget.cpp:1693
+msgid "KOrganizer error"
+msgstr "KOrganizerエラー"
+
+#: topwidget.cpp:1306 topwidget.cpp:1333
+msgid ""
+"Unfortunately, we don't handle cut/paste for\n"
+"that view yet.\n"
+msgstr ""
+"残念ながら、このビューで切取と張り付けを\n"
+"サポートしていません。\n"
+
+#: topwidget.cpp:1549
+msgid "don't handle deletes from that view, yet.\n"
+msgstr "まだ、このビューから削除していけません。\n"
+
+#: topwidget.cpp:1598
+msgid ""
+"This event recurs over multiple dates.\n"
+"Are you sure you want to delete the\n"
+"selected event, or just this instance?\n"
+msgstr ""
+"これは複数日で繰り返すイベントです。\n"
+"本当にこのイベントを削除して良いですか？\n"
+"全てのイベントを削除するか、\n"
+"このイベントだけ削除するか選択してください。\n"
+
+#: topwidget.cpp:1601
+msgid "&All"
+msgstr "全て(&A)"
+
+#: topwidget.cpp:1601
+msgid "&This"
+msgstr "これだけ(&T)"
+
+#: topwidget.cpp:1616
+msgid "no date selected, or invalid date\n"
+msgstr "データを選んでいないか、不正なデータです。\n"
+
+#: topwidget.cpp:1684
+msgid "Can't generate mail from this view\n"
+msgstr "この表示からメールを作成できません。\n"
+
+#: topwidget.cpp:1694
+msgid ""
+"Can't generate mail:\n"
+" No attendees defined!\n"
+msgstr ""
+"メール作成不可:\n"
+" 出席者の定義がない！\n"
+
+#: topwidget.cpp:1833
+msgid "New Calendar"
+msgstr "新規カレンダー"
+
+#: eventwin.cpp:313 eventwin.cpp:319 topwidget.cpp:1839
+msgid "modified"
+msgstr "変更した"
+
+#: eventwin.cpp:325 topwidget.cpp:1844
+msgid "KOrganizer"
+msgstr "KOrganizer"
+
+#: calprinter.cpp:47
+msgid "Korganizer Configuration Options"
+msgstr "Korganizer設定オプション"
+
+#: calprinter.cpp:361 todowingeneral.cpp:60
+msgid "Priority"
+msgstr "優先度"
+
+#: calprinter.cpp:369
+msgid "Due"
+msgstr "期日"
+
+#: calprinter.cpp:453
+#, c-format
+msgid "To-Do items: %s %.2d"
+msgstr "To-Do項目: %s %.2d"
+
+#: calprinter.cpp:791
+msgid "Date Range"
+msgstr "日程範囲"
+
+#: calprinter.cpp:811
+msgid "View Type"
+msgstr "表示タイプ"
+
+#: calprinter.cpp:816
+msgid "Day"
+msgstr "日"
+
+#: calprinter.cpp:821
+msgid "Week"
+msgstr "週"
+
+#: calprinter.cpp:825
+msgid "Month"
+msgstr "月"
+
+#: calprinter.cpp:829
+msgid "To-Do"
+msgstr "To-Do"
+
+#: calprinter.cpp:843
+msgid "&Preview"
+msgstr "プレビュー(&P)"
+
+#: koarchivedlg.cpp:19
+msgid "Archive / Delete Past Appointments - KOrganizer"
+msgstr "アーカイブ / 過去のアポイントメントの削除 - KOrganizer"
+
+#: optionsdlg.cpp:37
+msgid "Time & Date"
+msgstr "時間と日程"
+
+#: optionsdlg.cpp:43
+msgid "Colors"
+msgstr "色"
+
+#: optionsdlg.cpp:46
+msgid "Views"
+msgstr "表示"
+
+#: optionsdlg.cpp:52
+msgid "Printing"
+msgstr "印刷"
+
+#: optionsdlg.cpp:65
+msgid "KOrganizer Configuration"
+msgstr "KOrganizer設定"
+
+#: optionsdlg.cpp:93
+msgid "Your name:"
+msgstr "あなたの名前"
+
+#: optionsdlg.cpp:97
+msgid "Email address:"
+msgstr "メールアドレス"
+
+#: optionsdlg.cpp:101
+msgid "Additional:"
+msgstr "追記項目:"
+
+#: optionsdlg.cpp:105
+msgid "Auto-save Calendar"
+msgstr "カレンダーの自動保存"
+
+#: optionsdlg.cpp:109
+msgid "Confirm Appointment/To-Do Deletes"
+msgstr "アポイントメント/To-Do削除の確認"
+
+#: optionsdlg.cpp:113
+msgid "Holidays:"
+msgstr "休日"
+
+#: optionsdlg.cpp:139
+msgid "1 minute"
+msgstr "1分"
+
+#: optionsdlg.cpp:139
+msgid "5 minutes"
+msgstr "5分"
+
+#: optionsdlg.cpp:140
+msgid "10 minutes"
+msgstr "10分"
+
+#: optionsdlg.cpp:140
+msgid "15 minutes"
+msgstr "15分"
+
+#: optionsdlg.cpp:141
+msgid "30 minutes"
+msgstr "30分"
+
+#: optionsdlg.cpp:148
+msgid "Time Format:"
+msgstr "時間フォーマット"
+
+#: optionsdlg.cpp:149
+msgid "24 hour"
+msgstr "24時間"
+
+#: optionsdlg.cpp:150
+msgid "AM / PM"
+msgstr "午前/午後"
+
+#: optionsdlg.cpp:154
+msgid "Date Format:"
+msgstr "日フォーマット"
+
+#: optionsdlg.cpp:155
+msgid "Day.Month.Year (31.01.2000)"
+msgstr "日.月.年 (31.01.2000)"
+
+#: optionsdlg.cpp:156
+msgid "Month/Day/Year (01/31/2000)"
+msgstr "月/日/年 (01/31/2000)"
+
+#: optionsdlg.cpp:157
+msgid "Month-Day-Year (01-31-2000)"
+msgstr "月-日-年 (01-31-2000)"
+
+#: optionsdlg.cpp:161
+msgid "Time Zone:"
+msgstr "タイムゾーン"
+
+#: optionsdlg.cpp:168
+msgid "Default Appointment Time:"
+msgstr "標準アポイントメント時刻:"
+
+#: optionsdlg.cpp:178
+msgid "Default Alarm Time:"
+msgstr "標準のアラーム時間:"
+
+#: optionsdlg.cpp:186
+msgid "Week Starts on Monday"
+msgstr "月曜日から週を始める"
+
+#: optionsdlg.cpp:203
+msgid "Day Begins At:"
+msgstr "1日の始まり:"
+
+#: optionsdlg.cpp:213
+msgid "Hour size in schedule view"
+msgstr "スケジュールビューでの時間の大きさ"
+
+#: optionsdlg.cpp:217
+msgid "Show events that recur daily in Date Navigator"
+msgstr "日ナビゲータで毎日のイベントを表示する"
+
+#: optionsdlg.cpp:229
+msgid "List view font"
+msgstr "リストビューフォント"
+
+#: optionsdlg.cpp:235
+msgid "Schedule view font"
+msgstr "スケジュールビューフォント"
+
+#: optionsdlg.cpp:241
+msgid "Month view font"
+msgstr "月ビューフォント"
+
+#: optionsdlg.cpp:246
+msgid "12345"
+msgstr ""
+
+#: optionsdlg.cpp:246
+msgid "Time bar font"
+msgstr "タイムバーフォント"
+
+#: optionsdlg.cpp:251
+msgid "Things to do"
+msgstr "To Do項目"
+
+#: optionsdlg.cpp:252
+msgid "To-Do list font"
+msgstr "To-Doリストフォント"
+
+#: optionsdlg.cpp:273
+msgid "Use system default colors"
+msgstr "システム標準色を使う"
+
+#: optionsdlg.cpp:278
+msgid "Appointment & Checklist items"
+msgstr "アポイントメントとチェックリストのアイテム"
+
+#: optionsdlg.cpp:279
+msgid "Background"
+msgstr "背景"
+
+#: optionsdlg.cpp:282
+msgid "Text"
+msgstr "テキスト"
+
+#: optionsdlg.cpp:285
+msgid "Handle Selected"
+msgstr "選択物"
+
+#: optionsdlg.cpp:288
+msgid "Handle Unselected"
+msgstr "非選択物"
+
+#: optionsdlg.cpp:291
+msgid "Handle Active Apt."
+msgstr "アクティブなアポイントメント"
+
+#: optionsdlg.cpp:296
+msgid "Sheet background"
+msgstr "背景シート"
+
+#: optionsdlg.cpp:299
+msgid "Calendar Background"
+msgstr "Calendar Background"
+
+#: optionsdlg.cpp:302
+msgid "Calendar Date Text"
+msgstr "カレンダー日テキスト"
+
+#: optionsdlg.cpp:305
+msgid "Calendar Date Selected"
+msgstr "選択されたカレンダーデータ"
+
+#: optionsdlg.cpp:344
+msgid "Printer Name"
+msgstr "プリンター名"
+
+#: optionsdlg.cpp:374
+msgid "Paper Size"
+msgstr "用紙サイズ"
+
+#: optionsdlg.cpp:376
+msgid "A4"
+msgstr "A4"
+
+#: optionsdlg.cpp:377
+msgid "B5"
+msgstr "B5"
+
+#: optionsdlg.cpp:378
+msgid "Letter"
+msgstr "レター"
+
+#: optionsdlg.cpp:379
+msgid "Legal"
+msgstr "リーガル"
+
+#: optionsdlg.cpp:380
+msgid "Executive"
+msgstr "エグゼクティブ"
+
+#: optionsdlg.cpp:384
+msgid "Paper Orientation"
+msgstr "用紙方向"
+
+#: optionsdlg.cpp:386
+msgid "Portrait"
+msgstr "ポートレイト"
+
+#: optionsdlg.cpp:388
+msgid "Landscape"
+msgstr "ランドスケープ"
+
+#: optionsdlg.cpp:395
+msgid "Preview Program"
+msgstr "プレビュープログラム"
+
+#: kpropdlg.cpp:124
+msgid "Prev"
+msgstr "前へ"
+
+#: kpropdlg.cpp:125
+msgid "Next"
+msgstr "次の日へジャンプ"
+
+#: aboutdlg.cpp:20
+msgid "KOrganizer Virtual Postcard"
+msgstr "KOrganizer仮想切手"
+
+#: aboutdlg.cpp:24
+msgid ""
+"Please send a postcard to me, so I can see who is\n"
+"using KOrganizer! Tell me how great the program is,\n"
+"and how you just can't live without it.  Or, report\n"
+"a bug which is stopping you from doing useful work.\n"
+"The postcard will simply include anything you wish to\n"
+"type in the comment area below.\n"
+msgstr ""
+"私にポストカードを送って下さい。そうすれば、誰がKOrgnaizerを\n"
+"使っているか分かります。優れている点、それ無しに\n"
+"に生きていけないかを教えて下さい。または、\n"
+"あなたの仕事を妨げるバグを報告して下さい。\n"
+"ポストカードが含む内容は、\n"
+"貴方がコメントに記入した事だけです。\n"
+
+#: aboutdlg.cpp:104
+msgid "About KOrganizer"
+msgstr "KOrganizerバージョン情報"
+
+#: aboutdlg.cpp:137
+msgid "by Preston Brown and"
+msgstr "by Preston Brown and"
+
+#: aboutdlg.cpp:156
+msgid "License Agreement:"
+msgstr "ライセンス契約:"
+
+#: aboutdlg.cpp:162
+msgid ""
+"\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n"
+msgstr ""
+"\n"
+"\n"
+"このプログラムはフリーソフトウェアです; 手を加えたものも再配布可能です\n"
+"フリーソフトウェア団体のGNU一般公用使用許諾か、\n"
+"そのバージョン2かそれ以降(あなたのオプションで)のもとにあります\n"
+"\n"
+"このプログラムは使いやすくなることを願って配布していますが\n"
+"どのような保証もありません; ある特定の目的のための商業性や適合性の\n"
+"保証でさえ当然伴いません\n"
+"より詳しくはGNU一般公用使用許諾を見て下さい\n"
+"\n"
+"このプログラムと共にGNU一般公用使用許諾のコピーを\n"
+"受けとっているはずです;もしそうでなければ\n"
+" the Free Software Foundation, Inc.,\n"
+" 675 Mass Ave, Cambridge, MA 02139, USA.に手紙を書いて下さい\n"
+
+#: aboutdlg.cpp:197
+msgid "&Send Postcard"
+msgstr "ポストカードを送る"
+
+#: aboutdlg.cpp:233
+msgid "many more, thank you!"
+msgstr "さらに大勢。ありがとう"
+
+#: aboutdlg.cpp:255
+msgid "Could not load movie"
+msgstr "動画を読み込めません"
+
+#: kotodoview.cpp:27
+msgid "To-Do Items"
+msgstr "To-Do項目"
+
+#: kotodoview.cpp:91 kotodoview.cpp:99
+msgid "New To-Do"
+msgstr "新規To-Do"
+
+#: kotodoview.cpp:94
+msgid "Purge Completed "
+msgstr "完了したTo-Doを消す"
+
+#: kotodoview.cpp:101
+msgid "Edit To-Do"
+msgstr "To-Do編集"
+
+#: kotodoview.cpp:104
+msgid "Delete To-Do"
+msgstr "To-Do削除"
+
+#: kotodoview.cpp:106
+msgid "Purge Completed"
+msgstr "消去完了"
+
+#: kotodoview.cpp:108
+msgid "Sort by Priority"
+msgstr "優先度でソート"
+
+#: eventwin.cpp:91
+msgid "Save and Close"
+msgstr "保存し閉じる"
+
+#: eventwin.cpp:111
+msgid "Previous Event"
+msgstr "前のイベント"
+
+#: eventwin.cpp:117
+msgid "Next Event"
+msgstr "次のイベント"
+
+#: eventwin.cpp:128
+msgid "Delete Event"
+msgstr "イベントの削除"
+
+#: eventwin.cpp:286
+msgid "New"
+msgstr "新規"
+
+#: eventwin.cpp:293
+msgid "Todo"
+msgstr "Todo"
+
+#: eventwin.cpp:309
+msgid "readonly"
+msgstr "書込み不可"
+
+#: todowingeneral.cpp:41
+msgid "% Completed"
+msgstr "% 完了"
+
+#: todowingeneral.cpp:48
+#, c-format
+msgid "0 %"
+msgstr "0 %"
+
+#: todowingeneral.cpp:49
+#, c-format
+msgid "25 %"
+msgstr "25 %"
+
+#: todowingeneral.cpp:50
+#, c-format
+msgid "50 %"
+msgstr "50 %"
+
+#: todowingeneral.cpp:51
+#, c-format
+msgid "75 %"
+msgstr "75 %"
+
+#: todowingeneral.cpp:67
+msgid "1 (Highest)"
+msgstr "1 (高い)"
+
+#: todowingeneral.cpp:68
+msgid "2"
+msgstr "2"
+
+#: todowingeneral.cpp:69
+msgid "3"
+msgstr "3"
+
+#: todowingeneral.cpp:70
+msgid "4"
+msgstr "4"
+
+#: todowingeneral.cpp:71
+msgid "5 (lowest)"
+msgstr "5 (低い)"
+
+#: alarmdaemon.cpp:39 alarmdaemon.cpp:44
+msgid "Can't load docking tray icon!"
+msgstr "ドッキングトレイアイコンを読み込めません"
+
+#: alarmdaemon.cpp:48
+msgid "Alarms Enabled"
+msgstr "アラームオン"
+
+#: alarmdaemon.cpp:51
+msgid "Exit Applet"
+msgstr "アプレット終了"
+
+#: alarmdaemon.cpp:54
+msgid "KOrganizer Control Applet"
+msgstr "KOrganizerコントロールアプレット"
+
+#: alarmdaemon.cpp:156
+#, c-format
+msgid "KOrganizer Alarm: %s\n"
+msgstr "KOrganizer アラーム: %s\n"
+
+#: alarmdaemon.cpp:157
+msgid ""
+"The following events triggered alarms:\n"
+"\n"
+msgstr "次のイベントのアラームが起動しました:\n"
+"\n"
+

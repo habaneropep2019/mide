@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kcminfo\n"
+"POT-Creation-Date: 1999-03-30 01:17+0200\n"
+"PO-Revision-Date: 1999-03-29 19:10+0800\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312 )\n"
+"Translator: Wang Jian <larkw@263.net>\n"
+
+#: info.cpp:50
+#, c-format
+msgid "screen #%d"
+msgstr "屏幕 #%d"
+
+#: info.cpp:52
+#, c-format
+msgid "  dimensions          : %dx%d pixels (%dx%d mm)\n"
+msgstr "  尺寸                : %dx%d 像素 (%dx%d mm)\n"
+
+#: info.cpp:56
+#, c-format
+msgid "  resolution          : %dx%d dots per inch\n"
+msgstr "  分辨率              : 每英寸 %dx%d 点\n"
+
+#: info.cpp:61
+#, c-format
+msgid "  depths (%d)          : "
+msgstr "  颜色深度(%d)         : "
+
+#: info.cpp:85
+#, c-format
+msgid "name of display       : %s"
+msgstr "显示器名称            : %s"
+
+#: info.cpp:87
+#, c-format
+msgid "version number        : %i.%i"
+msgstr "版本号                : %i.%i"
+
+#: info.cpp:89
+#, c-format
+msgid "vendor string         : %s"
+msgstr "制造商代码            : %s"
+
+#: info.cpp:91
+#, c-format
+msgid "vendor release number : %i"
+msgstr "制造商发行号          : %i"
+
+#: info.cpp:93
+#, c-format
+msgid "default screen number : %i"
+msgstr "默认屏幕号            : %i"
+
+#: info.cpp:95
+#, c-format
+msgid "number of screens     : %i"
+msgstr "屏幕个数              : %i"
+
+#: info.cpp:181
+msgid ""
+"No Information available\n"
+" or\n"
+"this system is not yet supported :-("
+msgstr ""
+"没有可查询的信息\n"
+"或者\n"
+"不支持这个系统 :-("
+
+#: info_fbsd.cpp:73
+#, c-format
+msgid "%s, unknown speed"
+msgstr "%s, 速度未知"
+
+#: info_fbsd.cpp:75
+#, c-format
+msgid "%s running at %s MHz"
+msgstr "%s 在 %s MHz上运行"
+
+#: info_fbsd.cpp:213
+msgid "Ahh couldn't open fstab!"
+msgstr "不能打开fstab文件!"
+
+#: info_fbsd.cpp:220 info_fbsd.cpp:221
+msgid "Device"
+msgstr "设备"
+
+#: info_fbsd.cpp:223 info_fbsd.cpp:224
+msgid "Mount Point"
+msgstr "安装点"
+
+#: info_fbsd.cpp:226 info_fbsd.cpp:227
+msgid "FS Type"
+msgstr "文件系统类型"
+
+#: info_fbsd.cpp:229 info_fbsd.cpp:230
+msgid "Mount Options"
+msgstr "安装选项"
+
+#: info_hpux.cpp:54
+msgid "unknown CPU type"
+msgstr "未知的CPU类型"
+
+#
+#: info_hpux.cpp:62
+msgid "unavailable"
+msgstr "未知"
+
+#: info_hpux.cpp:67
+msgid "Number of active processor(s)= "
+msgstr "活动的CPU数目= "
+
+#: info_linux.cpp:99
+msgid "Value"
+msgstr "值"
+
+#: info_linux.cpp:114
+msgid "DMA-Channel"
+msgstr "DMA通道"
+
+#: info_linux.cpp:115 info_linux.cpp:128
+msgid "used by"
+msgstr "被使用"
+
+#: info_linux.cpp:127
+msgid "I/O-Range"
+msgstr "I/O范围"
+
+#: main.cpp:79
+msgid "&Memory"
+msgstr "内存(&M)"
+
+#: main.cpp:82
+msgid "&Processor"
+msgstr "处理器(&P)"
+
+#: main.cpp:85
+msgid "&Interrupts"
+msgstr "中断(&I)"
+
+#: main.cpp:88
+msgid "DMA-C&hannels"
+msgstr "DMA通道(&H)"
+
+#: main.cpp:91
+msgid "&IO-Ports"
+msgstr "&IO端口"
+
+#: main.cpp:94
+msgid "PCI-&Bus"
+msgstr "PCI总线(&B)"
+
+#: main.cpp:97
+msgid "S&ound"
+msgstr "声音(&O)"
+
+#: main.cpp:100
+msgid "&Devices"
+msgstr "设备(&D)"
+
+#: main.cpp:103
+msgid "S&CSI"
+msgstr "S&CSI"
+
+#: main.cpp:106
+msgid "P&artitions"
+msgstr "分区(&A)"
+
+#: main.cpp:109
+msgid "&X-Server"
+msgstr "&X服务器"
+
+#: main.cpp:120
+msgid ""
+"usage: kcminfo [-init | "
+"{memory,processor,interrupts,dma,ioports,pci,sound,devices,scsi,partitions,xs"
+"erver}]\n"
+msgstr ""
+"用法: kcminfo [-init | "
+"{memory,processor,interrupts,dma,ioports,pci,sound,devices,scsi,partitions,xs"
+"erver}]\n"
+
+#: main.cpp:148
+msgid "System Information"
+msgstr "系统信息"
+
+#: memory.cpp:15
+msgid "Total memory"
+msgstr "内存总量"
+
+#: memory.cpp:25
+msgid "Free memory"
+msgstr "空闲内存"
+
+#: memory.cpp:33
+msgid "Shared memory"
+msgstr "共享的内存"
+
+#: memory.cpp:41
+msgid "Buffer memory"
+msgstr "缓冲区内存"
+
+#: memory.cpp:49
+msgid "Swap memory"
+msgstr "交换区"
+
+#: memory.cpp:57
+msgid "Free swap memory"
+msgstr "空闲交换区"
+
+#: memory.cpp:78
+#, c-format
+msgid "%10ld bytes  = %8.2f MB"
+msgstr "%10ld 字节  = %8.2f MB"
+
+#: memory.cpp:100 memory.cpp:101 memory.cpp:102 memory.cpp:103 memory.cpp:104
+#: memory.cpp:105 memory_fbsd.cpp:25 memory_fbsd.cpp:26 memory_fbsd.cpp:27
+msgid "Not available"
+msgstr "未知"
+
+#: memory_hpux.cpp:23 memory_hpux.cpp:24 memory_hpux.cpp:25 memory_hpux.cpp:26
+#: memory_sgi.cpp:30
+msgid "Not Available"
+msgstr "未知"
+
+#~ msgid "usage: kcminfo [-init | {processor,memory}]\n"
+#~ msgstr "用法: kcminfo [-init | {processor, memory}]\n"

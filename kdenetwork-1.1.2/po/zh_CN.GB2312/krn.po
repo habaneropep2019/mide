@@ -1,0 +1,1691 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: krn\n"
+"POT-Creation-Date: 1999-01-18 02:04+0100\n"
+"PO-Revision-Date: 1998-06-12 08:33 MET DST\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312)\n"
+
+#: main.cpp:219 main.cpp:232 main.cpp:246 main.cpp:264 main.cpp:279
+msgid "KRN-Missing Configuration info"
+msgstr "KRN - 没有找到配置信息"
+
+#: main.cpp:220
+msgid "Please enter your email adress"
+msgstr "请输入你的电子邮件地址"
+
+#: main.cpp:233
+msgid "Please enter your real name"
+msgstr "请输入你的真实姓名"
+
+#: main.cpp:247
+msgid "Please enter your organization's name"
+msgstr "请输入你所在的组织名称"
+
+#: main.cpp:265
+msgid "Please enter your NNTP server name"
+msgstr "请输入你使用的 NNTP 服务器的名字"
+
+#: main.cpp:280
+msgid "Please enter your SMTP server name"
+msgstr "请输入你使用的 SMTP 服务器的名字"
+
+#: NNTP.cpp:120
+#, c-format
+msgid "Received %.2f Kb"
+msgstr "接收到 %.2f Kb"
+
+#: NNTP.cpp:607
+msgid "Getting Article"
+msgstr "正在取文章"
+
+#: NNTP.cpp:749
+msgid "Article Received"
+msgstr "文章已取到"
+
+#: groupdlg.cpp:130
+msgid "Connect to Server"
+msgstr "连接到服务器"
+
+#: groupdlg.cpp:131
+msgid "Disconnect From Server"
+msgstr "从服务器断开"
+
+#: groupdlg.cpp:132
+msgid "Get Active File"
+msgstr "取活动文件"
+
+#: groupdlg.cpp:134
+msgid "Post Queued Messages"
+msgstr "发表排队的信件"
+
+#: groupdlg.cpp:136
+msgid "Exit"
+msgstr "退出"
+
+#: groupdlg.cpp:139
+msgid "KRN - Group List"
+msgstr "KRN - 讨论组列表"
+
+#: groupdlg.cpp:142 groupdlg.cpp:148
+msgid "Get Subjects"
+msgstr "取标题"
+
+#: groupdlg.cpp:143 groupdlg.cpp:149
+msgid "Get Articles"
+msgstr "取得文章"
+
+#: groupdlg.cpp:144 groupdlg.cpp:152 groupdlg.cpp:160
+msgid "Catchup"
+msgstr "全部标为已读"
+
+#: groupdlg.cpp:150 groupdlg.cpp:158
+msgid "(un)Subscribe"
+msgstr "(取消)订阅"
+
+#: artdlg.cpp:158 groupdlg.cpp:151
+msgid "Untag"
+msgstr "取消标记"
+
+#: artdlg.cpp:167 findArtDlg.cpp:65 groupdlg.cpp:157
+msgid "Find"
+msgstr ""
+
+#: artdlg.cpp:178 groupdlg.cpp:159
+msgid "(Un)Tag"
+msgstr "(取消)标记"
+
+#: artdlg.cpp:171 artdlg.cpp:228 groupdlg.cpp:162 groupdlg.cpp:214
+msgid "Post New Article"
+msgstr "发表新文章"
+
+#: groupdlg.cpp:163
+msgid "Post All Queued Articles"
+msgstr "发表所有排队的文章"
+
+#: groupdlg.cpp:165
+msgid "&Subscribed"
+msgstr "订阅[&S]"
+
+#: artdlg.cpp:212 groupdlg.cpp:166
+msgid "&Tagged"
+msgstr "标记的[&T]"
+
+#: groupdlg.cpp:171
+msgid "Identity..."
+msgstr "身份..."
+
+#: groupdlg.cpp:172
+msgid "NNTP Options..."
+msgstr "NNTP 选项..."
+
+#: groupdlg.cpp:173
+msgid "Expire Options..."
+msgstr "过期选项..."
+
+#: groupdlg.cpp:174
+msgid "Printing Options..."
+msgstr "打印选项..."
+
+#: groupdlg.cpp:181
+msgid "About Krn..."
+msgstr "关于 Krn..."
+
+#: groupdlg.cpp:193
+msgid "&Newsgroup"
+msgstr "新闻组[&N]"
+
+#: groupdlg.cpp:200
+msgid "Connect to server"
+msgstr "连接到服务器"
+
+#: groupdlg.cpp:202
+msgid "Disconnect from server"
+msgstr "从服务器断开"
+
+#: groupdlg.cpp:205
+msgid "Get list of active groups"
+msgstr "取得活动讨论组列表"
+
+#: groupdlg.cpp:206
+msgid "Find group"
+msgstr "查找讨论组"
+
+#: groupdlg.cpp:209
+#, fuzzy
+msgid "(Un)Subscribe"
+msgstr "(取消)订阅"
+
+#: groupdlg.cpp:212
+msgid "Check for Unread Articles"
+msgstr "检查未读文章"
+
+#: groupdlg.cpp:365 groupdlg.cpp:587 groupdlg.cpp:929
+msgid "All Newsgroups."
+msgstr "所有新闻组."
+
+#: groupdlg.cpp:475 groupdlg.cpp:569
+msgid "Subscribed Newsgroups."
+msgstr "订阅的新闻组."
+
+#: groupdlg.cpp:524
+msgid "Disconnected"
+msgstr "已断开连接"
+
+#: groupdlg.cpp:531
+msgid "Connecting to server"
+msgstr "正在连接服务器"
+
+#: groupdlg.cpp:536
+msgid "Connected to server - Posting not allowed"
+msgstr "已连接到服务器 - 不允许发表文章"
+
+#: groupdlg.cpp:538
+msgid "Connected to server - Posting allowed"
+msgstr "已连接到服务器 - 允许发表文章"
+
+#: groupdlg.cpp:544
+msgid "Can't connect to server"
+msgstr "不能连接到服务器"
+
+#: groupdlg.cpp:546
+msgid "Connection to server failed"
+msgstr "到服务器的连接失败"
+
+#: groupdlg.cpp:555
+msgid "Authentication Failed"
+msgstr "身份验证失败"
+
+#: groupdlg.cpp:558
+msgid "Connection to server failed: Authentication problem"
+msgstr "到服务器的连接失败: 身份验证问题"
+
+#: groupdlg.cpp:607
+msgid "Krn-Question"
+msgstr "Krn - 问题"
+
+#: groupdlg.cpp:608
+msgid ""
+"The operation you requested needs a connection to the News server\n"
+"Should I attempt one?"
+msgstr ""
+"你请求的操作需要连接到新闻服务器上\n"
+"要尝试连接吗?"
+
+#: groupdlg.cpp:872
+msgid ""
+"You don't have an active groups list.\n"
+" get it from server?"
+msgstr ""
+"你没有活动讨论组列表.\n"
+"从服务器上取得 ?"
+
+#: groupdlg.cpp:888
+msgid "Listing active newsgroups"
+msgstr "正在列出活动新闻组"
+
+#: groupdlg.cpp:903
+msgid "KRN - Find a Newsgroup"
+msgstr "KRN - 找到一个新闻组"
+
+#: groupdlg.cpp:904
+msgid "Enter the name of the Newsgroup"
+msgstr "输入新闻组的名字"
+
+#: groupdlg.cpp:988
+msgid "Krn - Message"
+msgstr "Krn - 信件"
+
+#: groupdlg.cpp:989
+msgid "I can't find the group you want!"
+msgstr "找不到你要的讨论组 !"
+
+#: groupdlg.cpp:1082
+msgid "Getting messages in "
+msgstr "取得信件 "
+
+#: groupdlg.cpp:1095
+msgid "Getting list of messages in "
+msgstr "取得信件列表 "
+
+#: artdlg.cpp:151 artdlg.cpp:166
+msgid "Download"
+msgstr "下载"
+
+#: artdlg.cpp:153 artdlg.cpp:275
+msgid "Mark Read"
+msgstr "标记已读"
+
+#: artdlg.cpp:154
+msgid "Mark Unread"
+msgstr "标记未读"
+
+#: artdlg.cpp:157 artdlg.cpp:177
+msgid "Decode"
+msgstr "解码"
+
+#: artdlg.cpp:159 artdlg.cpp:179
+msgid "Don't expire"
+msgstr "不过期"
+
+#: artdlg.cpp:168
+msgid "Lookup in Altavista"
+msgstr "在 Altavista 中查找"
+
+#: artdlg.cpp:172 artdlg.cpp:259
+msgid "Reply by Mail"
+msgstr "用邮件回复"
+
+#: artdlg.cpp:173
+msgid "Post Followup"
+msgstr "发表讨论"
+
+#: artdlg.cpp:174
+msgid "Post & Reply"
+msgstr "发表和回复"
+
+#: artdlg.cpp:175 artdlg.cpp:265
+msgid "Forward"
+msgstr ""
+
+#: artdlg.cpp:181 artdlg.cpp:249
+msgid "Tagged"
+msgstr "已标记的"
+
+#: artdlg.cpp:192
+msgid "Show Only Unread Messages"
+msgstr "只显示未读的信件"
+
+#: artdlg.cpp:194
+msgid "Show Only Cached Messages"
+msgstr "只显示缓存的信件"
+
+#: artdlg.cpp:196
+msgid "Show Locked Messages"
+msgstr "显示锁住的信件"
+
+#: artdlg.cpp:198
+msgid "Expunge"
+msgstr "删除"
+
+#: artdlg.cpp:199
+msgid "Appearance..."
+msgstr "外观..."
+
+#: artdlg.cpp:200
+msgid "Sorting..."
+msgstr "正在排序..."
+
+#: artdlg.cpp:204
+msgid "Edit Rules"
+msgstr "编辑规则"
+
+#: artdlg.cpp:205
+msgid "Update"
+msgstr "更新"
+
+#: artdlg.cpp:214
+msgid "&Scoring"
+msgstr "记分[&S]"
+
+#: artdlg.cpp:221
+msgid "Previous Message"
+msgstr "前一个信件"
+
+#: artdlg.cpp:223
+msgid "Next Message"
+msgstr "下一个信件"
+
+#: artdlg.cpp:225
+msgid "Find Article"
+msgstr "查找文章"
+
+#: artdlg.cpp:230
+msgid "Get Article List"
+msgstr "取得文章列表"
+
+#: artdlg.cpp:232
+msgid "Refresh Display"
+msgstr "刷新显示"
+
+#: artdlg.cpp:248
+msgid "Current"
+msgstr ""
+
+#: artdlg.cpp:250 fontsDlg.cpp:52
+msgid "All"
+msgstr "全部"
+
+#: artdlg.cpp:251
+#, fuzzy
+msgid "Read"
+msgstr "已读:"
+
+#: artdlg.cpp:252
+#, fuzzy
+msgid "UnRead"
+msgstr "未读:"
+
+#: artdlg.cpp:255
+msgid "Save Article"
+msgstr "保存文章"
+
+#: artdlg.cpp:257
+msgid "Print Article"
+msgstr "打印文章"
+
+#: artdlg.cpp:261
+msgid "Post a Followup"
+msgstr "发表讨论"
+
+#: artdlg.cpp:263
+msgid "Post & Mail"
+msgstr "发表和寄信"
+
+#: artdlg.cpp:269
+msgid "Tag Article"
+msgstr "标记文章"
+
+#: artdlg.cpp:271
+msgid "Lock (keep in cache)"
+msgstr "锁定 (保存在缓存中)"
+
+#: artdlg.cpp:273
+msgid "Decode Article"
+msgstr "对文章进行解码"
+
+#: artdlg.cpp:277
+msgid "Mark UnRead"
+msgstr "标记未读"
+
+#: artdlg.cpp:299 sortDlg.cpp:34
+msgid "Sender"
+msgstr "发信人"
+
+#: artdlg.cpp:300 sortDlg.cpp:35
+msgid "Date"
+msgstr ""
+
+#: artdlg.cpp:301 sortDlg.cpp:36
+msgid "Lines"
+msgstr "行"
+
+#: artdlg.cpp:302 sortDlg.cpp:33
+msgid "Score"
+msgstr "得分"
+
+#: artdlg.cpp:303 sortDlg.cpp:32
+msgid "Subject"
+msgstr "标题"
+
+#: artdlg.cpp:469
+msgid "Threading..."
+msgstr "正在串接 ..."
+
+#: artdlg.cpp:478
+msgid "Showing Article List"
+msgstr "正在显示文章列表"
+
+#: artdlg.cpp:1323
+msgid "KRN - Existing File"
+msgstr "KRN - 存在的文件"
+
+#: artdlg.cpp:1324
+msgid "The File you selected already exists"
+msgstr "你所选中的文件已经存在"
+
+#: artdlg.cpp:1330
+msgid "OverWrite"
+msgstr "覆写"
+
+#: artdlg.cpp:1332
+msgid "Append"
+msgstr "添加到结尾"
+
+#: artdlg.cpp:1367 artdlg.cpp:1432
+msgid ""
+"From: Krn\n"
+"To: You\n"
+"\n"
+"Error getting article.\n"
+"Server said:\n"
+msgstr ""
+"从: Krm\n"
+"到: 你\n"
+"\n"
+"取文章时发生错误.\n"
+"服务器信息:\n"
+
+#: artdlg.cpp:1541
+msgid "Getting Article List"
+msgstr "正在取文章列表"
+
+#: identDlg.cpp:41
+msgid "KRN-Identity Configuration"
+msgstr "KRN - 身份配置"
+
+#: identDlg.cpp:50
+msgid "Here you should enter your personal information"
+msgstr "你应该在这儿输入你的个人信息"
+
+#: identDlg.cpp:52
+msgid "You should know what these are!"
+msgstr "你应该知道这些是什么!"
+
+#: identDlg.cpp:61
+msgid "Real Name"
+msgstr "真实姓名"
+
+#: identDlg.cpp:67
+msgid "E-mail Address"
+msgstr "电子邮件地址"
+
+#: identDlg.cpp:73
+msgid "Organization"
+msgstr "组织"
+
+#: NNTPConfigDlg.cpp:30
+msgid "KRN-NNTP configuration"
+msgstr "KRN - NNTP 配置"
+
+#: NNTPConfigDlg.cpp:35
+msgid "Servers"
+msgstr "服务器"
+
+#: NNTPConfigDlg.cpp:37
+msgid "SMTP server"
+msgstr "SMTP 服务器"
+
+#: NNTPConfigDlg.cpp:42
+msgid "NNTP Server"
+msgstr "NNTP 服务器"
+
+#: NNTPConfigDlg.cpp:67
+msgid "Connect on Startup"
+msgstr "在启动时进行连接"
+
+#: NNTPConfigDlg.cpp:71
+msgid "Connect without asking"
+msgstr "不需问就进行连接"
+
+#: NNTPConfigDlg.cpp:75
+msgid "Authenticate"
+msgstr "身份验证"
+
+#: NNTPConfigDlg.cpp:80
+msgid "User Name"
+msgstr "用户名"
+
+#: NNTPConfigDlg.cpp:84
+msgid "Password"
+msgstr "密码"
+
+#: NNTPConfigDlg.cpp:91
+msgid "Ask before downloading more than"
+msgstr ""
+
+#: NNTPConfigDlg.cpp:94
+#, fuzzy
+msgid "articles"
+msgstr "标记文章"
+
+#: aboutDlg.cpp:28
+msgid "About KRN"
+msgstr "关于 KRN"
+
+#: aboutDlg.cpp:39
+msgid "Part of the KDE project."
+msgstr "KDE 计划的一部分."
+
+#: aboutDlg.cpp:42
+msgid "Credits & Thanks"
+msgstr "致谢"
+
+#: aboutDlg.cpp:66
+msgid "And Many thanks to:"
+msgstr "非常感谢:"
+
+#: aboutDlg.cpp:71
+msgid "All KDE developers"
+msgstr ""
+
+#: aboutDlg.cpp:73
+msgid "Chuck, for helping in time of need"
+msgstr ""
+
+#: aboutDlg.cpp:74
+#, fuzzy
+msgid "All testers"
+msgstr "所有新闻组."
+
+#: fontsDlg.cpp:39
+msgid "Message Display Settings"
+msgstr "信件显示设置"
+
+#: fontsDlg.cpp:46
+msgid "Header Style"
+msgstr "信头风格"
+
+#: fontsDlg.cpp:48
+msgid "Fancy"
+msgstr "非常花"
+
+#: fontsDlg.cpp:49
+msgid "Brief"
+msgstr "简洁"
+
+#: fontsDlg.cpp:50
+msgid "Standard"
+msgstr "标准"
+
+#: fontsDlg.cpp:51
+msgid "Long"
+msgstr "长"
+
+#: fontsDlg.cpp:56
+msgid "Attachment Style"
+msgstr "附件风格"
+
+#: fontsDlg.cpp:58
+msgid "Iconic"
+msgstr "图标式"
+
+#: fontsDlg.cpp:59
+msgid "Smart"
+msgstr "时髦"
+
+#: fontsDlg.cpp:60
+msgid "Inline"
+msgstr "嵌入"
+
+#: fontsDlg.cpp:67
+msgid "Font Size:"
+msgstr "字体大小:"
+
+#: fontsDlg.cpp:70
+msgid "Small"
+msgstr "小"
+
+#: fontsDlg.cpp:71
+msgid "Normal"
+msgstr ""
+
+#: fontsDlg.cpp:72
+msgid "Large"
+msgstr "大"
+
+#: fontsDlg.cpp:73
+msgid "Huge"
+msgstr "非常大"
+
+#: fontsDlg.cpp:78
+msgid "Standard Font"
+msgstr "标准字体"
+
+#: fontsDlg.cpp:84
+#, fuzzy
+msgid "Standard Font Test"
+msgstr "标准字体"
+
+#: fontsDlg.cpp:86
+msgid "Fixed Font"
+msgstr "等宽字体"
+
+#: fontsDlg.cpp:91
+#, fuzzy
+msgid "Fixed Font Test"
+msgstr "等宽字体"
+
+#: fontsDlg.cpp:94
+msgid "Background Color"
+msgstr "背景颜色"
+
+#: fontsDlg.cpp:97
+msgid "Foreground Color"
+msgstr "前景颜色"
+
+#: fontsDlg.cpp:100
+msgid "Link Color"
+msgstr "链接颜色"
+
+#: fontsDlg.cpp:103
+msgid "Followed Color"
+msgstr "访问过的颜色"
+
+#: fontsDlg.cpp:107
+msgid "Use only one window"
+msgstr "只使用一个窗口"
+
+#: fontsDlg.cpp:109
+msgid "Split window vertically"
+msgstr "垂直分割窗口"
+
+#: kmmessage.cpp:1340
+msgid "On %D, you wrote:"
+msgstr ""
+
+#: kmmessage.cpp:1341
+msgid "On %D, %F wrote:"
+msgstr ""
+
+#: kmmessage.cpp:1342
+#, fuzzy
+msgid "Forwarded Message"
+msgstr "显示锁住的信件"
+
+#: kmcomposewin.cpp:127
+msgid "KMail Composer"
+msgstr ""
+
+#: kmcomposewin.cpp:138
+msgid "F"
+msgstr ""
+
+#: kmcomposewin.cpp:139
+#, fuzzy
+msgid "Name"
+msgstr "真实姓名"
+
+#: kmcomposewin.cpp:140
+msgid "Size"
+msgstr ""
+
+#: kmcomposewin.cpp:141
+#, fuzzy
+msgid "Encoding"
+msgstr "记分[&S]"
+
+#: kmcomposewin.cpp:142
+msgid "Type"
+msgstr ""
+
+#: kmcomposewin.cpp:343
+msgid "&From:"
+msgstr ""
+
+#: kmcomposewin.cpp:345
+msgid "&Reply to:"
+msgstr ""
+
+#: kmcomposewin.cpp:347
+msgid "&To:"
+msgstr ""
+
+#: kmcomposewin.cpp:349
+msgid "&Cc:"
+msgstr ""
+
+#: kmcomposewin.cpp:351
+msgid "&Bcc:"
+msgstr ""
+
+#: kmcomposewin.cpp:353
+#, fuzzy
+msgid "&Subject:"
+msgstr "标题"
+
+#: kmcomposewin.cpp:356
+#, fuzzy
+msgid "&Newsgroups:"
+msgstr "新闻组[&N]"
+
+#: kmcomposewin.cpp:358
+#, fuzzy
+msgid "&Followup-To:"
+msgstr "发表讨论"
+
+#: kmcomposewin.cpp:430
+#, fuzzy
+msgid "&Send"
+msgstr "发信人"
+
+#: kmcomposewin.cpp:433
+#, fuzzy
+msgid "S&end later"
+msgstr "发信人"
+
+#: kmcomposewin.cpp:435
+msgid "S&end now"
+msgstr ""
+
+#: kmcomposewin.cpp:437
+msgid "&Insert File..."
+msgstr ""
+
+#: kmcomposewin.cpp:441
+msgid "&Addressbook..."
+msgstr ""
+
+#: kmcomposewin.cpp:446
+msgid "&New Composer..."
+msgstr ""
+
+#: kmcomposewin.cpp:449
+msgid "New Mailreader"
+msgstr ""
+
+#: kmcomposewin.cpp:469 kmcomposewin.cpp:693 kmcomposewin.cpp:1836
+#, fuzzy
+msgid "Mark all"
+msgstr "标记已读"
+
+#: kmcomposewin.cpp:472 kmcomposewin.cpp:695
+msgid "Find..."
+msgstr ""
+
+#: kmcomposewin.cpp:474 kmcomposewin.cpp:696
+#, fuzzy
+msgid "Replace..."
+msgstr "外观..."
+
+#: kmcomposewin.cpp:477
+msgid "&Spellcheck..."
+msgstr ""
+
+#: kmcomposewin.cpp:484
+msgid "&Urgent"
+msgstr ""
+
+#: kmcomposewin.cpp:486
+msgid "&Confirm delivery"
+msgstr ""
+
+#: kmcomposewin.cpp:488
+msgid "&Confirm read"
+msgstr ""
+
+#: kmcomposewin.cpp:491
+msgid "&Spellchecker..."
+msgstr ""
+
+#: kmcomposewin.cpp:494
+msgid "&Charsets..."
+msgstr ""
+
+#: kmcomposewin.cpp:507
+msgid "&All Fields"
+msgstr ""
+
+#: kmcomposewin.cpp:509
+msgid "&From"
+msgstr ""
+
+#: kmcomposewin.cpp:510
+msgid "&Reply to"
+msgstr ""
+
+#: kmcomposewin.cpp:511
+msgid "&To"
+msgstr ""
+
+#: kmcomposewin.cpp:512
+msgid "&Cc"
+msgstr ""
+
+#: kmcomposewin.cpp:513
+msgid "&Bcc"
+msgstr ""
+
+#: kmcomposewin.cpp:514
+#, fuzzy
+msgid "&Subject"
+msgstr "标题"
+
+#: kmcomposewin.cpp:516
+#, fuzzy
+msgid "&Newsgroups"
+msgstr "新闻组[&N]"
+
+#: kmcomposewin.cpp:517
+#, fuzzy
+msgid "&Followup-To"
+msgstr "发表讨论"
+
+#: kmcomposewin.cpp:523
+msgid "Append S&ignature"
+msgstr ""
+
+#: kmcomposewin.cpp:525
+msgid "&Insert File"
+msgstr ""
+
+#: kmcomposewin.cpp:527
+msgid "Insert My &Public Key"
+msgstr ""
+
+#: kmcomposewin.cpp:532
+msgid "&Attach..."
+msgstr ""
+
+#: kmcomposewin.cpp:535
+msgid "&Save..."
+msgstr ""
+
+#: kmcomposewin.cpp:536
+msgid "Pr&operties..."
+msgstr ""
+
+#: kmcomposewin.cpp:538
+msgid "&Attach"
+msgstr ""
+
+#: kmcomposewin.cpp:558
+#, fuzzy
+msgid "Send message"
+msgstr "取得信件 "
+
+#: kmcomposewin.cpp:563
+msgid "Compose new message"
+msgstr ""
+
+#: kmcomposewin.cpp:568
+msgid "Save message to file"
+msgstr ""
+
+#: kmcomposewin.cpp:573
+#, fuzzy
+msgid "Print message"
+msgstr "Krn - 信件"
+
+#: kmcomposewin.cpp:582
+msgid "Cut selection"
+msgstr ""
+
+#: kmcomposewin.cpp:585
+msgid "Copy selection"
+msgstr ""
+
+#: kmcomposewin.cpp:588
+msgid "Paste clipboard contents"
+msgstr ""
+
+#: kmcomposewin.cpp:593
+#, fuzzy
+msgid "Attach file"
+msgstr "附件风格"
+
+#: kmcomposewin.cpp:597
+msgid "Open addressbook..."
+msgstr ""
+
+#: kmcomposewin.cpp:604
+#, fuzzy
+msgid "sign message"
+msgstr "Krn - 信件"
+
+#: kmcomposewin.cpp:609
+#, fuzzy
+msgid "encrypt message"
+msgstr "下一个信件"
+
+#: kmcomposewin.cpp:626 kmcomposewin.cpp:642
+msgid "Column"
+msgstr ""
+
+#: kmcomposewin.cpp:627 kmcomposewin.cpp:640
+#, fuzzy
+msgid "Line"
+msgstr "行"
+
+#: kmcomposewin.cpp:908
+msgid "KMail Confirm"
+msgstr ""
+
+#: kmcomposewin.cpp:909
+msgid ""
+"Close and discard\n"
+"edited message?"
+msgstr ""
+
+#: kmcomposewin.cpp:1182
+#, fuzzy
+msgid "Attach File"
+msgstr "附件风格"
+
+#: kmcomposewin.cpp:1204
+msgid "Include File"
+msgstr ""
+
+#: kmcomposewin.cpp:1239 kmreaderwin.cpp:737
+msgid "View..."
+msgstr ""
+
+#: kmcomposewin.cpp:1240
+msgid "Save..."
+msgstr ""
+
+#: kmcomposewin.cpp:1241 kmreaderwin.cpp:740
+#, fuzzy
+msgid "Properties..."
+msgstr "正在排序..."
+
+#: kmcomposewin.cpp:1245
+msgid "Attach..."
+msgstr ""
+
+#: kmcomposewin.cpp:1287 kmreaderwin.cpp:782
+#, fuzzy
+msgid "View Attachment: "
+msgstr "附件风格"
+
+#: kmcomposewin.cpp:1458 kpgp.cpp:546
+msgid ""
+"Sorry, but this feature\n"
+"is still missing"
+msgstr ""
+
+#: kmcomposewin.cpp:1466
+msgid "unnamed"
+msgstr ""
+
+#: kmcomposewin.cpp:1481
+msgid "To:"
+msgstr ""
+
+#: kmcomposewin.cpp:1485
+#, fuzzy
+msgid "Subject:"
+msgstr "标题"
+
+#: kmcomposewin.cpp:1488
+msgid "Date:"
+msgstr ""
+
+#: kmcomposewin.cpp:1565
+msgid "Choose Signature File"
+msgstr ""
+
+#: kmcomposewin.cpp:2018
+msgid "Spellcheck - KMail"
+msgstr ""
+
+#: kmcomposewin.cpp:2044
+msgid ""
+"Error starting KSpell. Please make sure you have ISpell properly configured."
+msgstr ""
+
+#: kmsender.cpp:116
+msgid ""
+"Please specify a send\n"
+"method in the settings\n"
+"and try again."
+msgstr ""
+
+#: kmsender.cpp:122
+msgid ""
+"Please set the required fields in the\n"
+"identity settings:\n"
+"user-name and email-address"
+msgstr ""
+
+#: kmsender.cpp:147
+msgid "You must specify a receiver"
+msgstr ""
+
+#: kmsender.cpp:158
+msgid "Cannot add message to outbox folder"
+msgstr ""
+
+#: kmsender.cpp:189
+msgid "Sending still in progress"
+msgstr ""
+
+#: kmsender.cpp:245
+msgid "Initiating sender process..."
+msgstr ""
+
+#: kmsender.cpp:261
+#, fuzzy
+msgid "Sending message: "
+msgstr "取得信件 "
+
+#: kmsender.cpp:289
+#, fuzzy
+msgid "Done sending messages."
+msgstr "取得信件 "
+
+#: kmsender.cpp:308
+msgid "Sending failed:"
+msgstr ""
+
+#: kmsender.cpp:461
+msgid ""
+"Please specify a mailer program\n"
+"in the settings."
+msgstr ""
+
+#: kmsender.cpp:501
+#, c-format
+msgid "Failed to execute mailer program %s"
+msgstr ""
+
+#: kmsender.cpp:589
+#, fuzzy
+msgid "connecting to server"
+msgstr "正在连接服务器"
+
+#: kmsender.cpp:594
+#, c-format
+msgid ""
+"Cannot open SMTP connection to\n"
+"host %s for sending:\n"
+"%s"
+msgstr ""
+
+#: kmsender.cpp:623
+msgid "Cannot close SMTP connection."
+msgstr ""
+
+#: kmsender.cpp:673
+#, fuzzy
+msgid "transmitting message"
+msgstr "取得信件 "
+
+#: kmsender.cpp:707
+msgid "network error"
+msgstr ""
+
+#: kmsender.cpp:709
+#, c-format
+msgid ""
+"a SMTP error occured.\n"
+"Command: %s\n"
+"Response: %s\n"
+"Return code: %d"
+msgstr ""
+
+#: kmsender.cpp:724
+#, c-format
+msgid "Sending SMTP command: %s"
+msgstr ""
+
+#: findArtDlg.cpp:22
+msgid "KRN - Article Searcher"
+msgstr "KRN - 文章搜寻者"
+
+#: findArtDlg.cpp:29
+msgid "Find Articles With:"
+msgstr "查找带...的文章:"
+
+#: findArtDlg.cpp:34 rulesDlg.cpp:106
+msgid "In Field:"
+msgstr "在域:"
+
+#: findArtDlg.cpp:53 rulesDlg.cpp:131
+msgid "Case Sensitive"
+msgstr ""
+
+#: findArtDlg.cpp:56 rulesDlg.cpp:132
+msgid "Wildcard Mode"
+msgstr "通配符模式"
+
+#: findArtDlg.cpp:66 rulesDlg.cpp:144
+#, fuzzy
+msgid "Done"
+msgstr "无"
+
+#: kmidentity.cpp:162
+#, c-format
+msgid ""
+"Failed to execute signature script\n"
+"%s\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:26 kmaddrbook.cpp:162
+msgid "File I/O Error"
+msgstr ""
+
+#: kfileio.cpp:47
+#, c-format
+msgid ""
+"The specified file does not exist:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:54
+#, c-format
+msgid ""
+"This is a directory and not a file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:61
+#, c-format
+msgid ""
+"You do not have read permissions to the file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:72 kmaddrbook.cpp:152
+#, c-format
+msgid ""
+"Could not read file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:75 kmaddrbook.cpp:155
+#, c-format
+msgid ""
+"Could not open file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:78
+#, c-format
+msgid ""
+"Error while reading file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:95
+#, c-format
+msgid "Could only read %u bytes of %u."
+msgstr ""
+
+#: kfileio.cpp:124
+#, c-format
+msgid ""
+"File %s exists.\n"
+"Do you want to replace it ?"
+msgstr ""
+
+#: kfileio.cpp:144
+#, c-format
+msgid ""
+"Failed to make a backup copy of %s.\n"
+"Continue anyway ?"
+msgstr ""
+
+#: kfileio.cpp:156 kfileio.cpp:174
+#, c-format
+msgid ""
+"Could not write to file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:159
+#, c-format
+msgid ""
+"Could not open file for writing:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:163 kmaddrbook.cpp:158
+#, c-format
+msgid ""
+"Error while writing file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:180
+#, c-format
+msgid "Could only write %d bytes of %d."
+msgstr ""
+
+#: kmmsgpartdlg.cpp:41
+msgid "Message Part Properties"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:62
+msgid "Name:"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:73
+msgid "Description:"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:83
+msgid "Encoding:"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:89
+msgid "none (8bit)"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:90
+msgid "base 64"
+msgstr ""
+
+#: kmmsgpartdlg.cpp:91
+msgid "quoted printable"
+msgstr ""
+
+#: kmreaderwin.cpp:320 kmreaderwin.cpp:333 kmreaderwin.cpp:352
+#: kmreaderwin.cpp:373
+msgid "Cc: "
+msgstr ""
+
+#: kmreaderwin.cpp:328 kmreaderwin.cpp:347 kmreaderwin.cpp:368
+msgid "From: "
+msgstr ""
+
+#: kmreaderwin.cpp:330 kmreaderwin.cpp:349 kmreaderwin.cpp:370
+msgid "To: "
+msgstr ""
+
+#: kmreaderwin.cpp:337 kmreaderwin.cpp:358 kmreaderwin.cpp:383
+msgid "References: "
+msgstr ""
+
+#: kmreaderwin.cpp:354 kmreaderwin.cpp:367
+msgid "Date: "
+msgstr ""
+
+#: kmreaderwin.cpp:376
+msgid "Bcc: "
+msgstr ""
+
+#: kmreaderwin.cpp:379
+#, fuzzy
+msgid "Reply to: "
+msgstr "用邮件回复"
+
+#: kmreaderwin.cpp:386
+msgid "Groups: "
+msgstr ""
+
+#: kmreaderwin.cpp:425
+msgid "Encrypted message"
+msgstr ""
+
+#: kmreaderwin.cpp:431
+msgid "Cannot decrypt message:"
+msgstr ""
+
+#: kmreaderwin.cpp:440
+msgid "Message was signed by"
+msgstr ""
+
+#: kmreaderwin.cpp:441
+msgid "Warning: Bad signature from"
+msgstr ""
+
+#: kmreaderwin.cpp:451
+msgid "unknown key ID"
+msgstr ""
+
+#: kmreaderwin.cpp:701
+#, fuzzy
+msgid "Attachment: "
+msgstr "附件风格"
+
+#: kmreaderwin.cpp:813
+msgid "Could not create temporary file"
+msgstr ""
+
+#: kmreaderwin.cpp:834
+#, c-format
+msgid "Could not save temporary file %s"
+msgstr ""
+
+#: kmreaderwin.cpp:863
+#, fuzzy
+msgid "Could not save file"
+msgstr "到服务器的连接失败"
+
+#: kpgp.cpp:151
+msgid ""
+"Couldn't find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+
+#: kpgp.cpp:193
+msgid ""
+"Could not find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+
+#: kpgp.cpp:207
+msgid "The pass phrase is missing."
+msgstr ""
+
+#: kpgp.cpp:286 kpgp.cpp:312 kpgp.cpp:325 kpgp.cpp:344 kpgp.cpp:361
+msgid "PGP Warning"
+msgstr ""
+
+#: kpgp.cpp:287
+msgid ""
+"Could not find the public keys for the\n"
+"recipients of this mail.\n"
+"Message will not be encrypted."
+msgstr ""
+
+#: kpgp.cpp:296
+msgid "Could not find the public keys for\n"
+msgstr ""
+
+#: kpgp.cpp:307
+msgid "These persons will not be able to\n"
+msgstr ""
+
+#: kpgp.cpp:309
+msgid "This person will not be able to\n"
+msgstr ""
+
+#: kpgp.cpp:311
+#, fuzzy
+msgid "decrypt the message."
+msgstr "下一个信件"
+
+#: kpgp.cpp:326
+msgid ""
+"You just entered an invalid passphrase.\n"
+"Do you wan't to try again, continue and\n"
+"leave the message unsigned, or cancel sending the message?"
+msgstr ""
+
+#: kpgp.cpp:331
+msgid "Retry"
+msgstr ""
+
+#: kpgp.cpp:342
+msgid ""
+"Do you wan't to encrypt anyway, leave the\n"
+"message as is, or cancel the message?"
+msgstr ""
+
+#: kpgp.cpp:346
+msgid "Encrypt"
+msgstr ""
+
+#: kpgp.cpp:359
+msgid ""
+"Do you wan't to leave the message as is,\n"
+"or cancel the message?"
+msgstr ""
+
+#: kpgp.cpp:717
+#, fuzzy
+msgid ""
+"Please enter your\n"
+"PGP passphrase"
+msgstr "请输入你的真实姓名"
+
+#: kpgp.cpp:744
+msgid "PGP Security Check"
+msgstr ""
+
+#: kpgp.cpp:765
+#, fuzzy
+msgid "Identity"
+msgstr "身份..."
+
+#: kpgp.cpp:771
+msgid "PGP User Identity:"
+msgstr ""
+
+#: kpgp.cpp:782
+msgid "Store passphrase"
+msgstr ""
+
+#: kpgp.cpp:788
+msgid "Always encrypt to self"
+msgstr ""
+
+#: krnsender.cpp:60
+msgid "This server is read onlyyou can't post here!"
+msgstr "这个服务器是只读的 , 你不能在这儿发表文章 !"
+
+#: kmaddrbookdlg.cpp:20
+msgid "Addressbook"
+msgstr ""
+
+#: kmaddrbookdlg.cpp:95
+msgid "Addressbook Manager"
+msgstr ""
+
+#: kmaddrbookdlg.cpp:178
+msgid "KMail error"
+msgstr ""
+
+#: kmaddrbookdlg.cpp:179
+msgid "Storing addressbook failed"
+msgstr ""
+
+#: kmaddrbook.cpp:25
+msgid "KMail Error"
+msgstr ""
+
+#: kmaddrbook.cpp:26
+msgid "Storing the addressbook failed!\n"
+msgstr ""
+
+#: expireDlg.cpp:22 expireDlg.cpp:27
+msgid "KRN - Expire Settings"
+msgstr "KRN - 过期设置"
+
+#: expireDlg.cpp:36
+msgid "For how long should we keep things (in days)?"
+msgstr "保留信件多长时间(天) ?"
+
+#: expireDlg.cpp:46
+msgid "Read:"
+msgstr "已读:"
+
+#: expireDlg.cpp:47
+msgid "Unread:"
+msgstr "未读:"
+
+#: expireDlg.cpp:50
+msgid "Article Bodies:"
+msgstr "文章主体:"
+
+#: expireDlg.cpp:55
+msgid "Article Headers:"
+msgstr "文章头部:"
+
+#: printdlg.cpp:21
+msgid "KRN - Print Settings"
+msgstr "KRN - 打印配置"
+
+#: printdlg.cpp:26
+msgid "KRN - Printing Settings"
+msgstr "KRN - 打印配置"
+
+#: printdlg.cpp:33
+msgid "General"
+msgstr "一般"
+
+#: printdlg.cpp:35
+msgid "Printing System"
+msgstr ""
+
+#: printdlg.cpp:37
+msgid "Use HTML Printing"
+msgstr "使用 HTML 打印"
+
+#: printdlg.cpp:40
+msgid "Use Direct Printing"
+msgstr "使用直接打印"
+
+#: printdlg.cpp:45
+#, fuzzy
+msgid "Direct Printing"
+msgstr "使用直接打印"
+
+#: printdlg.cpp:48
+msgid "Print using:"
+msgstr "打印时用:"
+
+#: printdlg.cpp:52
+msgid "Feed it with:"
+msgstr "送给:"
+
+#: printdlg.cpp:54
+msgid "Postscript"
+msgstr "Postscript"
+
+#: printdlg.cpp:55
+msgid "HTML"
+msgstr "HTML"
+
+#: printdlg.cpp:56
+msgid "Text"
+msgstr "文本"
+
+#: rulesDlg.cpp:38
+msgid "KRN - Scoring Rules Editor"
+msgstr "KRN - 记分规则编辑器"
+
+#: rulesDlg.cpp:45
+msgid "Global Rules"
+msgstr "全局规则"
+
+#: rulesDlg.cpp:47
+msgid "All Rules"
+msgstr "所有规则"
+
+#: rulesDlg.cpp:63
+msgid "Active Rules"
+msgstr "活动规则"
+
+#: rulesDlg.cpp:70
+msgid "Rule Editor"
+msgstr "规则编辑器"
+
+#: rulesDlg.cpp:87
+msgid "Save as"
+msgstr "存为"
+
+#: rulesDlg.cpp:101
+msgid "Match Articles With:"
+msgstr "用 ... 匹配文章:"
+
+#: rulesDlg.cpp:124
+msgid "Weight:"
+msgstr ""
+
+#: rulesDlg.cpp:126
+msgid "Negative"
+msgstr "消极的"
+
+#: rulesDlg.cpp:190
+msgid "Rule name:"
+msgstr "规则名:"
+
+#: sortDlg.cpp:23
+msgid "KRN - Header Sorting"
+msgstr "KRN - 信头排序"
+
+#: sortDlg.cpp:37
+msgid "None"
+msgstr "无"
+
+#: sortDlg.cpp:39
+msgid "Sort by:"
+msgstr "排序按照:"
+
+#: sortDlg.cpp:56
+msgid "Use Threading"
+msgstr "使用串连"
+
+#: charsetsDlg.cpp:27
+#, fuzzy
+msgid "KRN - Charset Settings"
+msgstr "KRN - 打印配置"
+
+#: charsetsDlg.cpp:29
+#, fuzzy
+msgid "KMail - Charset Settings"
+msgstr "KRN - 打印配置"
+
+#: charsetsDlg.cpp:39
+msgid "Message charset"
+msgstr ""
+
+#: charsetsDlg.cpp:57
+msgid "Composer charset"
+msgstr ""
+
+#: charsetsDlg.cpp:75
+msgid "Set as &default"
+msgstr ""
+
+#: charsetsDlg.cpp:80
+msgid "&7 bit is ASCII"
+msgstr ""
+
+#: charsetsDlg.cpp:84
+msgid "&Qute unknonw characters"
+msgstr ""
+
+#: expirestatusdlg.cpp:35
+msgid "Please wait a minute, I am expiring!"
+msgstr ""
+
+#: kpgpbase.cpp:315
+msgid "Bad pass Phrase; couldn't sign"
+msgstr ""
+
+#: kpgpbase.cpp:354
+msgid "error running pgp"
+msgstr ""
+
+#: kpgpbase.cpp:371 kpgpbase.cpp:662
+msgid "Bad pass Phrase; couldn't decrypt"
+msgstr ""
+
+#: kpgpbase.cpp:382 kpgpbase.cpp:673
+msgid "Do not have the secret key for this message"
+msgstr ""
+
+#: kpgpbase.cpp:410
+msgid "unknown key ID "
+msgstr ""
+
+#: kpgpbase.cpp:430
+msgid "??? (file ~/.pgp/pubring.pgp not found)"
+msgstr ""
+
+#: kpgpbase.cpp:585
+msgid "The passphrase you entered is invalid."
+msgstr ""
+
+#: kpgpbase.cpp:611
+msgid ""
+"The key(s) you wan't to encrypt your message\n"
+"to are not trusted. No encryption done."
+msgstr ""
+
+#: kpgpbase.cpp:614
+#, c-format
+msgid ""
+"The following key(s) are not trusted:\n"
+"%s\n"
+"They will not be able to decrypt the message"
+msgstr ""
+
+#: TooManydlg.cpp:25
+#, fuzzy
+msgid "KRN-Confirmation"
+msgstr "KRN - NNTP 配置"
+
+#: TooManydlg.cpp:30
+msgid "Read how many articles?"
+msgstr ""
+
+#: TooManydlg.cpp:36
+msgid "Get them from"
+msgstr ""
+
+#: TooManydlg.cpp:37
+#, fuzzy
+msgid "Oldest articles"
+msgstr "取得文章"
+
+#: TooManydlg.cpp:39
+#, fuzzy
+msgid "Newest articles"
+msgstr "取得文章"
+
+#: TooManydlg.cpp:43
+msgid "Make this the new threshold"
+msgstr ""
+
+#~ msgid "Print"
+#~ msgstr "打印"

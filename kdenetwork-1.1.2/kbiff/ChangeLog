@@ -1,0 +1,193 @@
+08-24-99 - Kurt Granroth (2.3.10a)
+   o Had to split my sources again since we can only commit bug fixes during
+     the freeze for KDE 1.2.  This does *not* have the internal code changes
+	 from 2.3.8
+   o "Launch" button should now look better i18n'ed
+   o Empty Status: lines in mbox should now be flagged as read (patch from
+     Dirk Foersterling)
+   o KBiff should compile on HP-UX again (patch from Stefan Becker)
+   o Popup no longer shows 1 new mail when there is 0 messages (patch from
+     Riko Jacob)
+   o KBiff should no longer dump core when restarting a session.  Don't know
+     when this bug was introduced... but it's squashed now.
+
+06-06-99 - Kurt Granroth (2.3.7)
+   o Passwords with '(' in them should now work...
+
+06-03-99 - Kurt Granroth (2.3.6)
+   o POP3 protocol now exits properly when closing.  This should fix a bevy
+     of irritating socket problems.
+
+04-24-99 - Kurt Granroth (2.3.5)
+   o Note to self: ALWAYS test with gcc 2.7.2 before shipping!!
+
+04-22-99 - Kurt Granroth (2.3.4)
+   o Added 'Mailer' button to notify dialog.  This will launch your mail
+     client.
+   o Added button to test new mail sound
+   o NNTP support works again.  Not sure when it broke..
+
+04-21-99 - Kurt Granroth (2.3.3)
+   o Setup dialog is now correctly deleted (patch from Bjorn Hansson)  
+   o New "not connected" icon for network protocols (patch from Bjorn Hansson)
+   o Got rid of 'const' warning (patch from -- guess who -- Bjorn)
+   o Async net protocols are now "25% faster" (patch from Bjorn.. again!)
+   o POP3 code now closes the socket if there was an error (Bjorn)
+   o Icon should now draw correctly when it is not the first app docked
+     into the panel.  Seems there was a race condition (me, this time)
+
+04-16-99 - Kurt Granroth (2.3.2)
+   o Config files are now read with read only enabled.  This hopefully should
+     prevent the "empty" config files bug.
+   o Notify boxes will no longer take focus when they pop up
+
+04-08-99 - Kurt Granroth (2.3.1)
+   o It is now possible to have only one profile with a name other than Inbox
+
+03-27-99 - Kurt Granroth (2.3)
+   o KBiff now has NNTP support!  It is a very basic implementation, but
+     it seems to work in lots of cases.
+   o Should now handle Netscape Mail folders.  Netscape seems to use an
+     internal (read: not in the headers) way of determining mail state...
+     but using X-Mozilla-Status might work a little.
+   o Some more tweaks with the asynchronous code.
+   o Should now handle mbox mailboxes that double as IMAP or POP mailboxes.
+     I think PINE might use this format for all of its mailboxes (maybe).
+
+03-23-99 - Kurt Granroth (2.2.8)
+   o POP3 and IMAP4 code reworked due to a incredibly well done patch from
+     Bjorn Hansson <Bjorn.Hansson@signal.uu.se>.  KBiff should now work
+     on laptops much better than before.  All socket connections can now
+     be asynchronous AND KBiff should no longer "leak" file descriptors
+   o The new mail count on the floating status should now be correct at
+     all times for mbox and imap4 mailboxes.
+
+03-09-99 - Kurt Granroth (2.2.7)
+   o Fixed bone-headed bug which would cause KBiff to seg fault in a
+     'leaveEvent'.  Many thanks to Scott Bender <sbender@harmony-ds.com>
+     for working with me on this!
+   o MH handling code no longer allocates memory without deleting it.  No
+     more 64Meg KBiff processes!
+
+03-08-99 - Kurt Granroth (2.2.6)
+   o Should now compile again with gcc 2.7.2.  Also made status popup
+     a little more elegant looking.
+
+03-06-99 - Kurt Granroth (2.2.5)
+   o Implemented a Frequently Asked Feature (FAF) -- KBiff will now popup
+     a list of mailboxs with the newmail count when you put your mouse over
+     the icon (like a tooltip).  As with pretty much everything in KBiff,
+     this is configurable.
+
+02-27-99 - Kurt Granroth (2.2.4)
+   o KBiff now counts the number of new mail in MH mailboxes.  Also fixed
+     a silly bug that I introduced while applying the last patch.
+
+02-26-99 - Kurt Granroth (2.2.3)
+   o KBiff now supports MH mailboxes!  Thanks to David Woodhouse
+     <David.Woodhouse@mvhi.com> for the very well done patch!
+
+02-23-99 - Kurt Granroth (2.2.2)
+   o username, password, and path are now encoded.  That means that really
+     funky usernames like 'granroth@kde.org' and '/users/granroth' will
+     now work!
+
+02-09-99 - Kurt Granroth (2.2.1)
+   o Fixed stupid bug where I tried to print out the mailbox name from the
+     notify dialog.. AFTER I deleted the dialog :-(
+
+02-04-99 - Kurt Granroth (2.2)
+   o "Notify" dialogs are now non-modal AND are controlled.  That means that
+     when number of new mails changes, the number displayed is updated.  If
+     the state goes to OldMail or NoMail, the dialog is destroyed.
+
+02-01-99 - Kurt Granroth
+   o Changed imap code to use 'unseen' flag instead of 'recent'
+   o Slightly modified Trace.cpp code to compile on NetBSD (tip o' the hat
+     to Jaromir Dolecek <jdolecek@per4mance.cz> for that).  Apparently,
+     the va_start() macro on NetBSD does NOT like the (const char*)
+     overloaded method for QString
+   o Small change to kbiffmonitor.cpp so that pop3 doesn't produce hundreds
+     of new 'notify' boxes (patch by Martin Hill <mjhill@home.com>)
+
+01-30-99 - Kurt Granroth
+   o Thanks to David Barth (dbarth@videotron.ca) for pointing out that
+     older POP3 servers (ones that don't support UIDL) will cause KBiff
+     to fail even though there is code to get around that...(patched)
+
+01-13-99 - Kurt Granroth
+   o Put KProcess handling code by itself so that all executing code passes
+     through it.
+   o Added profile name to tooltip
+     
+11-11-98 - Kurt Granroth
+   o Added patch by Martin ? <spirk@kla.pvt.cz> to handle arguments for
+     mail client better
+
+11-10-98 - Kurt Granroth
+   o Removed Qt 1.33 compatibility from CVS version and put back AUTOMOC
+
+10-31-98 - Kurt Granroth
+   o Released 1.1.6
+
+10-26-98 - Kurt Granroth
+   o Changed width of Advanced button so that certain translations will
+     fit.
+
+10-24-98 - Kurt Granroth
+   o Fixed bug in POP3 code where it would *never* go back to "no mail"
+     state if it ever received new mail.
+
+10-13-98 - Kurt Granroth
+   o Hideously mangled KTreeView to look exactly like QListView... at least
+     as far as kbiff is concerned.  It is *very* ugly.. but it works!  And
+     the cool thing is when I decide to go with QListView (the real one)
+     exclusively, well, I just have to nuke ktreeview.[cpp|h] and remove
+     a few #ifs.
+
+10-10-98 - Kurt Granroth
+   o Replaced QListView with KTreeView.  QListView isn't cool enough to
+     require all kbiff users to upgrade to Qt 1.40.  Maybe after KDE 1.1
+     is released, I'll put it back...
+
+10-06-98 - Kurt Granroth
+   o Added patch from Ian Denton to use POP3 UIDL to check number of new
+     messages.  Doesn't quite work perfectly, but it's almost there!  Still
+     problems with knowing when POP3 mailbox was "read", though...
+     POP3 code now will attempt to figure out the number of new messages
+     by checking UIDL, then if that fails, it checks STAT, then if that
+     fails, it checks LIST.
+
+10-04-98 - Kurt Granroth
+   o Checking for new messages in mbox breaks the code!  Added a work-around
+     that may or may not work (didn't test yet).  This will also break
+     random file monitoring (file *must* be in mbox format), so I added
+     a new protocol: "file"
+   o Modified Trace class so that it will work with egcs.
+
+09-25-98 - Kurt Granroth
+   o Changed POP3 code back to using STAT.  Apparently some servers don't
+     return the number of messages with a successful USER/PASS
+
+09-24-98 - Kurt Granroth
+   o Added code from 'korn' to check number of new messages in mbox.  'Notify'
+     should not correctly list the number of new messages in all four
+     mailbox types.
+   o Changed 'getlogin()' to more general form.  Hopefully doesn't break on
+     non-Linux systems.
+   o Some bug fixes.
+
+09-23-98 - Kurt Granroth
+   o Quite a few bug fixes.
+
+09-19-98 - Kurt Granroth
+   o Added -secure option
+   o Added "Read Mail" menu item.  This will set the flags to OldMail if it
+     was New.  This also disables checking for new mail until the "current"
+     new mail becomes old!
+
+09-18-98 - Kurt Granroth
+   o Fixed bug in 'scramble'
+
+08-26-08 - Kurt Granroth
+   o Added isGIF8x to facilitate animated gifs.

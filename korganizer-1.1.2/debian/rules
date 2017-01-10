@@ -1,0 +1,82 @@
+#!/usr/bin/make -f
+# Made with the iad of dh_make, by Craig Small
+# Sample debian/rules that uses debhelper. GNU copyright 1997 by Joey Hess.
+# Also some stuff taken from debmake scripts, by Cristopt Lameter.
+
+BUILDDIR = ./build
+
+build: $(BUILDDIR)/build-stamp
+
+$(BUILDDIR)/build-stamp:
+	dh_testdir
+	if test ! -f configure; then \
+	  $(MAKE) -f admin/Makefile.common ;\
+	fi 
+	test -d $(BUILDDIR) || mkdir $(BUILDDIR) ;\
+	cd $(BUILDDIR) ;\
+	CFLAGS="-O2 -g -pipe -Wall" \
+	CXXFLAGS="-O2 -g -pipe -Wall" \
+	../configure --with-install-root=`pwd`/../debian/tmp \
+	        --disable-rpath --prefix=/usr --with-qt-dir=/usr/lib/qt1g
+	# Add here commands to compile the package.
+	$(MAKE) -C $(BUILDDIR)
+
+	touch $(BUILDDIR)/build-stamp
+
+clean: debian-clean
+	-rm -rf $(BUILDDIR)
+	-rm -f debian/files
+	-rm -f debian/substvars
+	-rm -f debian/menu
+	-rm -f configure
+	dh_clean -k
+
+debian-clean:
+	dh_testdir
+	-rm -f $(BUILDDIR)/build-stamp
+	-rm -f $(BUILDDIR)/install-stamp
+
+install: $(BUILDDIR)/install-stamp
+$(BUILDDIR)/install-stamp: $(BUILDDIR)/build-stamp
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+
+	# Add here commands to install the package into debian/tmp.
+	$(MAKE) -C $(BUILDDIR) install
+
+	dh_movefiles
+	touch $(BUILDDIR)/install-stamp
+
+# Build architecture-independent files here.
+binary-indep: build install
+
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	perl -w admin/debianrules
+	dh_installdocs
+	dh_installexamples
+	dh_installmenu
+	dh_undocumented 
+	dh_installchangelogs 
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_suidregister -a
+	dh_makeshlibs -a
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	perl -w admin/debianrules update
+	dh_builddeb
+
+source diff:                                                                  
+	@echo >&2 'source and diff are obsolete - use dpkg-source -b'; false
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary

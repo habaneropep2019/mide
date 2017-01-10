@@ -1,0 +1,22 @@
+#!/bin/sh
+
+PNG=$1
+PPM=${PNG%.png}.ppm
+PGM=${PNG%.png}.pgm
+PBM=${PNG%.png}.pbm
+
+PATH=..:$PATH # So that we can execute this in the sprite subdirs
+
+pngtoppmpgm -h -c $PNG
+
+# Fix PBM treatment of narrow bit bitmaps
+if [ `head -2 $PGM | tail -1 | sed 's/ .*//'` -lt 9 ]
+then
+	FIX=pnmnoraw
+else
+	FIX=cat
+fi
+
+pgmtopbm -threshold -value 0.05 <$PGM | pnminvert | $FIX >$PBM
+
+#rm $PGM

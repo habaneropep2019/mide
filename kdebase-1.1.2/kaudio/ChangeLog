@@ -1,0 +1,91 @@
+1998-12-17  Christian Esken  <esken@kde.org>
+
+	* kaudioserver.cpp: Adding XIO Error Handler. Now kaudioserver
+	shuts down on X11 termination. Changing SIGQUIT to SIGKILL,
+	that is being sent from kaudioserver to maudio.
+
+1998-11-18  Christian Esken  <esken@kde.org>
+
+	* io_oss.cpp: AudioDev::emitSilence() : Fixed so that it emits
+	silence multiple times if neccesary. This fixes the
+	"play garbage at end of audio file or while pause"
+	problem - This garbage was there due to playback underrun.
+
+1998-11-06  Christian Esken  <esken@kde.org>
+
+	* Added kplayaudio executable - Audio playback without GUI.
+	
+1998-11-01  Alex Zepeda  <garbanzo@hooked.net>
+
+	* Tweak the Makefile template a bit.
+
+1998-10-02  Christian Esken  <esken@kde.org>
+	* io_oss.cpp+maudio.cpp: Adding "probe mode" for the audio device.
+	* kaudioserver: Quitting audio server, when probing says, there
+	is no aduio device available.
+
+1998-06-17  Christian Esken  <esken@kde.org>
+
+	* ADDING MdDisconnect(). *BSD users should be much happier now.
+
+Sat Apr 25 02:21:18 1998    <chris@magicon.ping.de>
+
+	* Cleaned up some stuff. Removed error messages when device is busy
+	* Reduced buffers from 160 to 8 ;-)
+	* This is the first good and reliable version. Voila, we have now a
+	sound capable desktop.
+
+Fri Apr 24 23:13:43 1998    <chris@magicon.ping.de>
+
+	*  Checked, why long media caused pops and noises. Found out maudio
+	was not the guilty one, but the UI kmedia, which caused a dirty
+	loopback with maudio.
+	* some cleanups
+	* emitSilence() is called now always, if device is open and not
+	playing any useful data. This is especially important when the
+	automaton is in state "PAUSE".
+	* Multi Buffers get cleared now when a new media gets opened. This
+	fixes the "repeated output" bug nobody reported till now.
+	* Warped the verison number to V0.80. We are nearing the final 1.0
+	version :-)
+	* Adding "-version" command line switch
+
+
+Fri Apr 17 01:14:19 CEST 1998
+
+	* Multi-Buffering allows easy pre-read and pre-write. Implemented
+	it, this should fix annoying "trailing garbage" bug.
+
+
+Wed Apr 15 02:10:34 CEST 1998 Christian Esken <esken@kde.org>
+
+	* Implementing real multi buffering. Audioserver is now prepared
+	for V1.0
+
+
+Thu Apr  9 19:16:11 CEST 1998 Christian Esken <esken@kde.org>
+
+	* Implementing multi buffering (actual here: double buffering).
+	This should fix playing trailing garbage and is a neccesity
+	on "slow" computers.
+
+
+Sun Feb  8 15:41:13 CET 1998 Christian Esken <esken@kde.org>
+
+	* maudio.cpp : Moved from device name to device number. Added command
+	line option "-devnum <devnum>", to attach to another device than the
+	default device
+	* io_oss.cpp : Added mapping from device number to device name. You can
+	now attach to any device called /dev/dspX , with X in [0..9] . This
+	is useful if you have multiple audio devices or the SoftOSS extensions.
+
+
+1998-02-05 Christian Esken <esken@kde.org>
+
+        * Adding feature: Setting the current position in the media stream.
+
+
+Sat Jan 10 06:19:50 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* kaudioserver.cpp (main): fixed segfault on startup. return value
+	of fopen on line 123 was ignored which led to a sefault of fclose.

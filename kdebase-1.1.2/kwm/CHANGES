@@ -1,0 +1,1149 @@
+
+       Changes file for kwm, the KDE window manager
+       ============================================
+ Developed and maintained by Matthias Ettrich (ettrich@kde.org)
+
+
+kwm (since 0.10) was almost rewritten from scratch in C++.  Many ideas
+and some code went in from my experiences with the former kwm, which I
+originally based on David Hogan's 9wm (a smart and small windowmanager
+written in plain C).
+
+
+Current is 0.14.1 
+
+In 0.14:
+-------
+patchlevel 3:
+        - improved placement. Now application settings are ignore when the window
+           is partially covered by either the panel or the taskbar (i.e. outside the 
+           window region)
+
+patchlevel 2:
+        - internal: support for window names in COMPOUND_TEXT style
+
+patchlevel 1:
+        - fixed event passing: release no longer repeated to application
+
+In 0.13:
+--------
+patchlevel 9:
+        - fixed initial focus handling (non decorated windows where sometimes broken)
+        - fixed occasional crashbugs when internal window close (such as minicli)
+        - fixes for stays-on-top
+
+patchlevel 8:
+        - delayed internal event handling fix (kwm sometimes lost the 
+           mouse on opaque resize)
+        - minicli in-memory history has now a maximum limit (CT)
+        - added handling for the KWM::staysOnTop property. The internal
+           functionality was there already, just the activation was missing.
+           Cannot break any existing code.
+
+patchlevel 7:
+        - small bugfixes
+        - improved (faster) configure request handling
+        - some support for windowgroups
+        - fixed unClutter/cascade with standalone menubars
+
+patchlevel 6:
+        - dock window handling improved for restart
+        - new CheckRaise option for focus follows mouse policies 
+        - slightly improved the titlebar animation (Thorsten Scheuermann)
+
+
+patchlevel 5:
+        - animation of shaded windows improved
+         - "restart" command in addition to "go:" and "configure"
+         - sensitive handling of maximized windows when the window 
+            region changes.
+
+patchlevel 4:
+        - improved handling for floating menubars
+
+patchlevel 3:
+        - fixed semantics with FocusFollowsMouse and AutoRaise:
+               There are now two kwmrc properties:
+                      AutoRaise=on/off
+                      AutoRaiseInterval=0...x
+               If the inner window command for the left mouse button contains
+               any raise, this applies to the first click.
+
+patchlevel 2:
+        - some additions to the middle mouse handling to emulate
+           the former behaviour with MMB-movement.
+        - new signal "initialized" emited to modules when the
+          initialization is finished.
+	- titlebar font choosing enabled (CT)
+	- title alignment (CT) 
+		( kwmrc\[General]\TitleAlignment=[left|middle|right] )
+	- stickyTitles, stickyClasses lists (in a [Sticky] section) 
+		a la noDecor*, noFocus* lists (CT)
+
+patchlevel 1:
+        - simplified outline drawing since the previous nifty stippled
+           rectangle relied on some graphic hardware support (which
+           was not available with all cards). Result: kwm's outline
+           drawing (transparent movement of windows) should speed up
+           with these cards a lot.
+
+
+In 0.12:
+--------
+patchlevel 4:
+        - introduced some support for multi-screen displays
+        - fixed some drag problems 
+        - fixed more drag problems with opaque movement
+        - hopefully fixed occasional freezes on certain X-Servers.
+
+patchlevel 3:
+        - honours KWM_WIN_ICON_GEOMETRY for iconify/deiconify animation
+        - shaped window decorations faster and less flickering
+        - border pixmaps fixed names got all a 'wm_' prefix. Name conflicts
+		were reported. Sorry for all inconvenient.
+
+
+patchlevel 2:
+        - improved shaped window handling
+	- CT: "pinned down" the pixmaps names for titlebar texture 
+		and shaped borders. Now the only parameters necessary 
+		in kwmrc to make these two features work are
+
+		TitlebarLook=pixmap 
+		ShapeMode=on
+
+		The names of the pixmaps are no longer defined in the 
+		kwmrc. They are fixed to: top.xpm, bottom.xpm, left.xpm, 
+		right.xpm, topleft.xpm, topright.xpm, bottomleft.xpm, 
+		bottomright.xpm, activetitlebar.xpm, inactivetitlebar.xpm. 
+		All these pixmap s should to be found either in 
+		$KDEDIR$/share/apps/kwm/pics/ or in 
+		$USER_KDEDIR$ /share/apps/kwm/pics.
+
+		This modification introduces consistancy with the technique 
+		used to define titlebar buttons pixmaps and allows simplified
+		theme constructions.
+
+patchlevel 1:
+        - first attempts of configurable mousebindings
+patchlevel 0:
+        - first attempts of configurable keybindings
+
+In 0.11:
+--------
+patchlevel 14: 
+        - internal cleanups with unmapNotify handling.
+        - fixed the problems with java and dissappearing windows.
+
+patchlevel 13: Mario Weilguni <mweilguni@kde.org>
+        - added a replacement for gradientFill (for color depths
+        higher than 8). It´s only used for horizontal gradients 
+        - hopefully fixed Christoph Neerfeld's Ghostwindow problem
+        - fixed a couple of memory leaks (thanks to Wolfgang Hoffmann)
+        - kill clients on shutdown. Clients can react on that via
+           KApplication's shutDown() signal.
+
+patchlevel 12:
+        - new property "ResizeAnimationSpeed". Default value is 1 
+           (former behaviour), possible values range from 1 to 10
+           (maximum speed). Kudos to Christian Tibirna for this.
+	- Erratum (CT): "ResizeAnimation" config key now gets values
+	   from 0 (no anim) to 10 (fastest) with 1 being the current
+	   behaviour. ResizeAnimationSpeed is disabled (and deleted)
+	   for redundancy reasons. Support is offered in kcontrol too.
+        - electric borders dissabled per default
+        - CDE style AltTab-Feature to have something usable with
+            the classic focus policies. The CDE style is default with
+            the classic focus policies, since KDE style does not 
+            make much sense under these circumstances. For all
+            other focus policies you may chose the style with
+                 AltTabStyle=KDE/CDE
+            Default is KDE, most certainly.
+         - Alt-MMB lowers a window if it's already on the top
+
+patchlevel 11:
+        - switchActivateClient (used by the taskbar or the current
+           session manager) ensures visibility of the window according
+           to the user's current placement policy
+        - focus warning box appears only one time per session now.
+        - visual feedback when preparing the session for logout
+        - new command "go:other" which will kill all modules and 
+           replace kwm with the other process.
+        
+
+patchlevel 10:
+        - Warning message for crappy focus policies only occurs with Alt-Tab now.
+            The ACTIVATE_WINDOW client message (used by modules such as 
+            kpanel(taskbar) and kpager) will be interpreted as change-to-the-desktop-
+            and-raise-the-window instead.
+
+
+
+patchlevel 9 (CT - 27May98):
+	- SnapToWindow and SnapToBorder FUNCTIONS replaced with snapIt. The
+	    user-visible configurability remains the same. The on-screen
+	    effect is nonetheless improved.
+	- replaced "shaded" option by "shadedHorizontal" and "shadedVertical".
+	   For the moment it seems vertical shading is much more rapid (of
+	   course, much less gradient steps to calculate in KPixmap).
+                - small bugfix to allow runtime switching between vertical and horizontal (Matthias)
+                - small fix to avoid a double calling of Manager::sendConfig after a 
+                   drag/resize in opaque mode(Matthias)
+                - bugfix for double buffering (confusing dst and src in bitBlt is a bad idea....)
+  
+patchlevel 8:
+        - WindowResizeType=Opaque improved. No more flickering and a 
+            bit faster. Still not perfect in combination with horizontal shading. 
+
+patchlevel 7:
+        - Some new properties for the kwmrc:
+
+                [Decoration]
+                noDecorationTitles=,
+                tinyDecorationTitles=,
+                noDecorationClasses=,
+                tinyDecorationClasses=,
+	[Focus]
+	noFocusTitles=,
+	noFocusClasses=,
+
+            Each property allows you to specify a comma separated list
+            of regular expressions. A window whose title or class
+            matches a specified expression will be decorated appropriately. 
+            Note: these hints only affect NEW windows. Do not forget to 
+            call "kwmcom configure" or to restart kwm after you changed the
+            kwmrc file.
+
+        - cleanups and performance improvements for horziontal shading 
+           and titlebar animation 
+
+patchlevel 6:
+        - horizontal shading (blending) a la kpixmap
+        - fixed motif decoration hint handling. Useful for the fullscreen view
+           of the acrobat reader.
+ 
+patchlevel 5:
+        - no more harecoded "Helvetica" font. kwm uses the generalFont instead.
+        - two new focus policies: CLASSIC_FOCUS_FOLLOWS_MOUSE and
+           CLASSIC_SLOPPY_FOCUS. Both break the fancy Alt-Tab feature as well as
+           the "switch-to"-function in the taskmanager/taskbar. Anyway, old hand twm
+           fans seems unable to live without _true_ focus follows mouse :-) 
+        - changed autoraise semantics: autoraise only works when the pointer is 
+           inside the window. Just having the focus is no longer sufficient.
+        - fixed manual placement in combination with electricBorders. Did I already
+           mention that I hate all these options....grrr.........
+        - ElectricBorderMovePointer is obsolete and no longer supported. Instead there
+           is a new option: ElectricBorderPointerWarp=NoWarp,MiddleWarp,FullWarp
+        - some improvements for reparenting
+
+patchlevel 4:
+        - raised the number of possible virtual desktops to 32. Note that you need
+           a current libkdecore to take the full benefit from this.
+        - electric borders need to be "pushed" if you want to switch to another virtual 
+           desktop without dragging a window. The number of pushes within the
+           timeframe given by the ElectricBorder property is defined in the new property
+           ElectricBorderNumberOfPushes. The default is 5.
+        - small fix to generate less toplevel windows
+
+patchlevel 4:
+        - new option: WindowResizeType={Opaque, Transparent}
+
+patchlevel 3:
+        - "snap to border" and "snap to window" modified: they are
+           working in "real time", now. The default is 10 pixel for
+           both. This made my older edge resitance obsolete (removed)
+         - doNotManage understands regular expressions
+         - self transient windows can be moved to other virtual desktops
+
+patchlevel 2:
+	- fixed a bunch of bugs with smart placement, cascade placement,
+	  unclutter, snap to border and snap to window (bugs given mostly
+	  by the wrong assumption that te client's geometry is defined
+	  relative to free desk space). Thanks Stephan (CT)
+        - fixed a nasty pointer-grab bug for window movement
+
+patchlevel 1:
+	- fixed the avoidance of shaded windows bug in smart placement.
+	  Ugly fix. Ugh! (CT)
+	- snap to border and snap to window functions (CT). Maximum limit
+	  arbitrarily fixed at 50 pixels. Complain if you're unhappy with :-)
+
+patchlevel 0: (Matthias? Bernd?)
+
+In 0.10:
+--------
+patchlevel 33:
+        - new property "EdgeResistance=<value>". Default value is 50
+        - bugfix for electric borders
+        - bugfix for winMove and winResize (internal pointer grabbing)
+        - bugfix for interactive (manual) placement: now the whole
+          window is painted :)
+        - bugfix for electric borders (Diego Zamboni) 
+
+patchlevel 32:
+	- fixed bugs:   interactive placement persistence
+			transient windows placed interactively (NOT!) (CT)
+	- deskUnclutter and deskCascade commands (to issue through kwmcom
+	   in minicli for the moment; krootwm menu entries soon) (CT)
+
+patchlevel 31: 
+	-- Bernd: minor fixes (typos in the sound events)
+       - small fix for alt-tab
+       - changed "ElectricBorderMovePointer" values to on/off to be 
+         consitent with the rest of kwm.
+
+patchlevel 30:
+	-- Bernd: 
+	
+	Further improved Electric Borders. They can now be graphically
+        configured using a kcontrol module and also completely turned off.
+	
+patchlevel 29:
+  
+  	- Bernd:
+  	ElectricBorders are great but difficult to use. Added option
+	ElectricBorderMovePointer which takes 0 or 1 as parameter.
+	If ElectricBorderMovepointer is 0 ( false) the original behaviour
+	implemented by Matthias is exhibited. If it is 1 ( true) the
+	mouse pointer is moved to the middle of the desktop after
+	an 'electric border' desktop switch.
+	
+  
+  patchlevel 28:  
+     - added WindowsPlacement=interactive,10 and 
+	WindowsPlacement=manual. The number after interactive indicates
+	what percentage from the current desktop array should represent
+	the total overlap area before manual placement to be enforced. 
+	This value can be bigger than 100 :-) (Cristian Tibirna)
+     - fixed iconified windows avoidance bug in smart placement (CT)
+     - electric borders: Just move the cursor to the border of
+       the screen, wait a short time and kwm will magically change the
+       current virtual desktop. The interval can be specified in 
+       milliseconds with the ElectricBorder property in the kwmrc. 
+       ElectricBorder=-1 dissables the feature.
+
+         
+  patchlevel 27:
+     - support for shaded windows a la openstep.
+     - new option:
+             TitlebarDoubleClickCommand=winMaximize/winShade/winMove/
+                 winResize, winRestore/winIconify/winClose/winSticky/
+                 winOperations
+
+       Please notice the "winShade" function :)
+
+       Shading raises two new sounds:
+                  "Window Shade Up"
+                  "Window Shade Down"
+
+       [ I do not know how OpenStep handles this, but I think it is 
+         a feature that the bounding box (when dragging a shaded window
+         in transparent mode) shows the original size! ]
+
+       Hopefully kcmkwm will soon support this feature, too.
+
+     - new windowPlacement=cascade (Cristian Tibirna)
+     - new option
+                      TraverseAll=on/off
+       which makes Alt-Tab traverse all windows on all virtual desktops.
+       Default is "off", which means that Alt-trab traversal is only
+       possible on the current desktop.
+     - small bugfix for FreeBSD (Marc van Kempen)
+     - menuButton (if defined) on the top
+     - Extended semantics for AutoRaise in FocusFollowsMouse mode:
+                 AutoRaise=-1 
+       This will not start an auto timer, but you can raise the most recent
+       activated window with a simple click inside the window (= Raise
+       on first click)
+     - fixed a dirty bug with the rstart protocol (I mixed up 
+       QStrings and Char*.... grrr.....)
+       
+
+  patchlevel 26:
+     - fixed double click problem with java/motif on some X-Servers
+
+  patchlevel 25:
+     - smart placement (Cristian Tibirna)
+     - "Window Activate" sound event (I simply forgot this one...)
+     - more fixes for the sound events
+
+  patchlevel 24:
+       - supports the following commands in addition:
+
+     refreshScreen, darkenScreen, logout, commandLine, taskManager,
+     configure, winMove, winResize, winMaximize, winRestore,
+     winIconify, winClose, winSticky, winOperations, desktop1,
+     desktop2, desktop3, desktop4, desktop5, desktop6, desktop7,
+     desktop8, desktop+1, desktop+2, desktop-1, desktop-2, desktop%2
+
+
+  patchlevel 23:
+       - support for KDE SOUND EVENTS.
+         raises: 
+                  "Window Iconify"
+                  "Window DeIconify"
+                  "Window Maximize"
+                  "Window UnMaximize"
+                  "Window Sticky"
+                  "Window UnSticky"
+                  "Window New"
+                  "Window Delete"
+                  "Window Trans New"
+                  "Window Trans Delete"
+                  "Logout"
+                  "Logout Message"
+                  "Window Move Start"
+                  "Window Move End"
+                  "Window Resize Start"
+                  "Window Resize End"
+
+      Also passes KDE_SOUND_EVENT, KDE_REGISTER_SOUND_EVENT and
+      KDE_UNREGISTER_SOUND_EVENT to the modules. REGISTER-events are
+      stored. That means it is possible to launch the sound module after
+      the applications without losing any registered sound-event.
+
+ 
+       - fix for the session management proxy (Gerd Knorr)
+
+  patchlevel 22:
+       - fixes for the screen-shading during logout. The old way had
+         severe problems with backing store. (Christian Czezatke)
+       - support for shaped window decorations:
+                ShapeMode=on
+                ShapePixmapTop=...
+                ShapePixmapBottom=...
+                ShapePixmapLeft=...
+                ShapePixmapRight=...
+                ShapePixmapTopLeft=...
+                ShapePixmapTopRight=...
+                ShapePixmapBottomLeft=...
+                ShapePixmapBottomRight=...
+         There are some (ugly) example pixmaps under ./images
+
+       - made the taskwindow look a little bit nicer, including their
+	 mini icons (Mario Weilguni)
+
+  patchlevel 21:
+       - fix for motif applications: program-defined positioning will
+         be ignored while user-defined positiong still works.
+         Most toolkits define user-defined if it is is programm-defined
+         anyway so this should not harm.
+       - fixes and enhancements for dock-windows
+       - support for KWM_DO_NOT_MANAGE command (smoother swallowing)
+
+  patchlevel 20:
+       - self-transient do not crash kwm anymore
+       - new option:
+              Button3Grab=on/off  
+         to make "missbehaving" clients like GIMP usable on a KDE desktop.
+       - new kwmrc-option: RstartProtocol. Defaults to "rstart -v"
+       - support for noFocus property
+       - on fast X-Servers the resize animation sometimes left a tiny 
+         rectangle: fixed
+  
+  patchlevel 19:
+       - small fixes for swallowing
+       - bugfix for  TitlebarPixmapActive
+       - auto-iconify-on-focus-loss applies only for floating windows
+         (like kde toolbars or kde menubars)
+       - re-introduced explicit XUnmapWindow calls for the inner windows.
+         This is important for video cards etc. I hope I did not break 
+         anything.
+       - resize animation improved (thanks to Hans-Guenther Nusseck)
+       - bugfixes for auto-iconify
+
+  patchlevel 18:
+       - transient windows become iconified if the main window loses
+         the focus (and none of its transient gets it instead!)
+       - combind history completion with kURLcompletion in minicli
+
+       - minicli changes by Torben:
+           - minicli does handle URLs now like http://....
+           - minicli handles URLs like "www.xxx" or "ftp.xxxx"
+           - minicli handles dirctories like "/home/weis"
+           - minicli has tab completion ( use TAB and Ctrl+D )
+           - minicli supports the URL man:
+           - minicli understand #kill, this will search the
+	             man page for kill and is a shortcut for man:kill
+
+       - new options TitlebarPixmapActive/TitlebarPixmapInactive. Used
+         for TitlebarLook=pixmap
+       - few bugfixes for kwmpager
+       - small fix in handling of windows which do not request the
+         WM_DELETE_WINDOW protocol (Did YOU know XKillClient? %-} )
+
+  patchlevel 17:
+       - fixed a serious bug (crashing clients when dragging in 
+         opaque mode)
+       - tiny fix for gravity handling
+       - *many* modifications to autoraise
+       - fix for FocusFollowsMouse
+       - animation a bit faster
+       - small fix for resize/move with the mouse 
+       - works together with newest kfm to keep the root icons 
+         lowered
+       - small fix for setting the kwm_running property
+       - fixed a very old bug: now you can press Control-F1
+         Control-F2 Control-F1 Control-F2 Control-F1 Control-F2
+         like a maniac without any windows loosing their frames :-)
+       - kURL-completion (Torben Weis, Henner Zeller)
+       - fixed a bug that menu-button-click sometimes closes a window
+
+  patchlevel 16:
+       - fix for "move" via keyboard (pointer warp)
+       - autoraise fixes
+       - fixed the "kwm needs cpu when dragging windows" bug
+       - ontoDesktop also moves the transient windows
+       - transient windows cannot be moved onto different desktops
+         separately anymore
+       - transient windows cannot be iconified separately anymore
+       - few smaller fixes
+
+       - cosmectic problem with my pushbuttons fixed
+       - sticky cares about transient windows now
+
+       - fix for proxyignore
+       - window dragging fixed (problems with some compilers)
+
+  patchlevel 15:
+       - transient windows are iconified/deiconified with their parent
+         window. They also dissappear for the modules and the Mod1-Tab
+         traversal if they were automatically iconified.
+       - new commandline option "-nosession" to disable the restoration
+         of the previous session.
+       - new list entry "proxyignore" in the [session]-group of kwmrc
+         to specify WM_COMMANDS that should be ignored
+       - fixed the minicli-focus-follows-mouse problem
+       - yakb fixed for Stephan, small adaption to new kcc module
+          
+  patchlevel 14:
+       - new keybindings Control-F[1..8] for virtual desktop switching
+       - new option "ControlTab=[on,off]" to switch off the Control-Tab
+         shortcut.
+       - fixed the "last window is iconified and deficonified"-focus-
+         followss-mouse-bug
+       - fixed the autoraise-over-operations-menu bug 
+       - Uwe's fix for the timing problem of the resize animation
+       - history command completion with Tab in minicli
+       - KProcess for execution
+       - Fix for unsavedDataHint handling
+
+  patchlevel 13:
+       - new decoration style (tiny decoration). Useful for floating
+         menu- or toolbars. Can be set via KWM::setDecoration(...)
+       - KWM::geometry(Window w, bool including_frame = FALSE) has
+         including_frame as additional argument. Useful for
+         pager modules.
+       - workaround to the "X freezes when pasting in minicli"-bug
+         
+  patchlevel 12:
+       - new command "execute" for minicli (temporary solution until
+         we finally get a real kcli)
+
+  patchlevel 11:
+       - session management for unamanged windows modified. Since this
+         is a KDE special for applications like kfm, other programms
+         make trouble (for example Netscape 4) (Needs current libkdecore!)
+       - session management fix (Netscape 3 et. al.)
+       - placement: transient windows always on the desktop of their parent
+       - desktop placement fixed for withdraw-by-client windows
+       - maximize/sticky fixed (bug with hidden buttons)
+       - For modules: no kwm_win_change before kwm_win_add (hopefully)
+       - menu button on first position also appears for transient windows
+         (to keep the pretty miniicon visible)
+  patchlevel 10:
+       - internal changes to module registration. (Needs the newest
+         libkdecore to work)
+       - Alt-MouseButton fix: works regardless NumLock/Capslock now
+       - correct cursorfont for Alt-RMB rsize and Alt-LMB move
+       - fixed control/tab release
+  patchlevel 9:
+       - small fix for kwm modules
+       - further qt-1.3 changes: with 1.3 the mouse sometimes hang
+         for the global modal dialogs (session manager et. al.)
+  patchlevel 8:
+       - needs qt-1.3
+       - for modules: 
+            KWM_WIN_DESKTOP handling fixed
+            KWM_DESKTOP_NAME_CHANGE and KWM_DESKTOP_NUMBER_CHANGE
+       - some smaller improvements
+
+  patchlevel 7:
+       - improved KConfig handling (uses strlists :-)
+       - small bugfix with module registration (introduced with some cleanups
+         in the previous patchlevel...)
+       - cleaner pushButton class (behaves slightly different now)
+
+  patchlevel 6:
+       - small fix to execute(...);
+       - maximizeButton has different semantics for LMB, MMB and RMB
+         (README updated)
+
+  patchlevel 5
+       - should work under qt-1.3 AND qt-1.2 now. Qt-1.2 support needs
+         some dirty lowlevel X-Hacks and will probably be removed as
+         soon as qt-1.3 will be KDE's offical qt-version.
+       - Tab-Box uses three different horizontal sizes now.
+
+
+  patchlevel 4
+       - small bug with buttons remaining raised fixed. Was introduced
+         in the previous patchlevel with the avoid-flickering patch:(
+
+  patchlevel 3:
+       - session management can handle even crappy missbehaving clients
+         like xfig, which destroy their window instead of saving theirselfs.
+         kwm even enables the proxy (if possible) for those lying programs.
+         (Please do not look at the hacks necessary to support this rubbish)
+       - no more flickering with opaque move and FocusFollowsMouse
+       - Alt-Tab works now even with FocusFollowsMouse
+       - Alt-Tab/Control-Tab can be aborted with Escape (Thanks to Christian
+         for this idea)
+       - re-enabled MWM decoration hints for StarOffice (floatwinshells)
+       - kwm_desktop_change contains new desktop as argument
+       - unknown commands are sent to the modules as described in kwm.h
+       - session management now possible for unmapped windows (usefull
+         for example for kfm). Please see kwm.h for details.
+
+  patchlevel 2:
+       - fixed the frames-are-dissappearing-and-qt-focus-not-working
+         bug I introduced in patchlevel 1 :-(
+       - tiny fixes / improvements for KWMModuleApplication
+
+  patchlevel 1:
+       - "-version" command line argument
+       - Alt-MMB fixed
+       - bugfix in module registration 
+       - bugfix in X error handling during initialization
+
+
+Some changes beside the rewrite since previous kwms:
+
+ - well documentated libkwm allows clients to communicate with the
+   windowmanager in an easy way (will go into libkdecore as kwm.h) 
+ - more complete README including a mini-FAQ
+ - does not select button events from the root window.
+   Rootwindow handling will be done by krootwin.
+ - Session management (uses the rstart-command for remote machines)
+ - Session management proxy for applications which cannot do real
+   session management (almost all X-Applications, unfortunately)
+ - logout dialog displays clients who cannot do session management or do
+   very poor pseudo session management a la xterm or xedit:
+   Just select the client to jump to his window.
+ - logout dialog also display clients who can do session management but
+   set the KWM_WIN_UNSAVED_DATA property to True. Just select the client 
+   to jump to his window.
+ - nicer Ctrl-Tab virtual desktop switching
+ - nicer Alt-Tab window switching (takes care about the focus-traversal
+   order and shows a pretty box with icons)
+ - [Alt/Control]-Escape shows a pretty "current session"-box
+ - improved windows stacking (no more flickering)
+ - nicer resize animation (cares about the server respond time)
+ - nicer outlines (kwm style :-)
+ - unique window titles (a la emacs buffers)
+ - close will destroy the window for clients that do not understand
+   WM_DELETE_WINDOW: No need for a "destroy" menu item anymore.
+ - New shortcut Control-Alt-Escape allows to select a window that
+   needs to be destroyed because the application hangs (a la xkill)
+ - sensitive window operations popup
+ - Maximize button appears only for windows which can be maximized
+   (this can change for windows during runtime)
+ - Module communication via X properties. As a side effect you can also
+   restart kwm and all windows will be in correct state on their former
+   virtual desktops
+ - Menu button shows the window's icon (if one is defined) scaled to 14x14.
+   Applications can also define a special miniicon via libkwm.
+ - The desktop names and the number of desktops are stored in the kwmrc
+   now, no longer in the global kderc. Clients have nevertheless easy read
+   and write access to these properties via libkwm.
+ - Also stores the window regions (for maximize and the random placement)
+   for each virtual desktop. These can also be modified easily via libkwm.
+ - extra communication with kdisplay not needed anymore
+
+
+
+
+
+========================================================
+====      CHANGES FILE FROM kwm-0.1 TO kwm-0.9     =====
+========================================================
+
+Changes file for kwm, the KDE window manager.
+
+Developed and mantained again by Matthias Ettrich (ettrich@kde.org) since v0.5
+
+v0.2 - v0.5 developed and maintained by 
+      Brian Cooper (cooperb@er4.eng.ohio-state.edu)
+kwm v0.1 by Matthias Ettrich based on 9wm by David Hogan
+==================================================================
+-------
+In 0.9:
+
+    patchlevel 7:
+         - new Button "Menu" for the window operations popup
+           (doubleclick will close the window)
+         - new option "MaximizeOnlyVertically=[on/off]"
+         - slightly improved resize-animation
+         - internal cleanups
+
+    patchlevel 6:
+         - new power-user mousebindings inside windows:
+               Alt-LMB still moves
+               Alt-MMB raises (good for FocusFollowsMouse)
+               Alt-RMB invokes resize
+    patchlevel 5:
+         - autoraise: AutoRaise=<timer value>.
+           0 means no AutoRaise at all. Works only with FocusFollowsMouse.
+         - bugfix in handling iconified windows during startup
+           (for example kdm´s xconsole)
+         - automatic module unregistration
+         - new kwmrc option TitleAnimation=on/off
+         - root icon selection via kfmipc
+         - several small bugfixes
+    patchlevel 4:
+         - several internal cleanups: faster, nicer, better :)
+         - resize-animation now works under Linux, too
+         - Alt-LMB for moving also works with active windows now
+         - Changed Meaning of Alt-Tab / Alt-Control-Tab:
+            Alt-Tab circulates all non-iconified windows of
+              the current desktop now, while
+            Alt-Contrl-Tab circulates ALL windows of the current
+              desktop (including the iconified ones)
+    patchlevel 3:
+         - hanging due to command execution hopefully fixed 
+    patchlevel 2:
+         - small configure bugfix for transient windows
+    patchlevel 1:
+         - usage of KConfig's new reparseConfiguration()-method.
+
+________________
+In 0.8:
+
+    patchlevel 18:
+         - new command "configure": re-reads the configuration files
+         - Alt-LMB moves a window without raising or activating it (mwm-like)
+
+    patchlevel 17:
+         - fixed support for the PMinSize WM-Hint
+
+    patchlevel 16:
+         - bugfixes
+
+    patchlevel 15:
+         - improved windowlist 
+         - "To desktop" item in the window operation popup
+         - some internal changes for kpanel-0.16.7
+
+    patchlevel 14:
+         - works now correctly with kdisplay :)
+
+    patchlevel 13:
+         - small bug in rectangular selection fixed
+         - small bug in animation fixed
+
+    patchlevel 12:
+         - Kalle's mysterious windows jumping fixed
+
+    patchlevel 11:
+         - long term bug with raising of transient windows fixed
+         - LMB on root window drags a selection-rectangle
+            (Communication with kfm will come soon)
+         - new kwmrc option: ResizeAnimation=on/off
+
+    patchlevel 10:
+         - minor fixes for kdisplay
+         - internal changes. Needed for features coming soon
+
+    patchlevel 9:
+         - segfault with sizeincrement zero hopefully fixed
+
+    patchlevel 8:
+         - little bugfix for resizing with the keyboard (broken in pl7)
+
+    patchlevel 7:
+         - opque move fixed
+         - "-iconic" somewhat fixed 
+         - key grabbing somewhat fixed
+
+    patchlevel 6:
+         - small fix for random placement (Bernd's XEmacs should
+           have a visible titlebar now)
+         - small fixes for the taskbar functions when the window is on another
+           virtual desktop
+         - WindowMoveType=Opaque is possible again
+         - ArrowKey-Movement during Move/Resize changed to fvwm behaviour 
+         - nicer Resize/Move-Outlines (twm-like :-)
+         - less flicker during resize
+         - function keys work with all modifiers now 
+         - support for global transient_for hints
+         - further fixes for focus handling
+         - system() no longer used, but fork();fclose(stdin);execl()
+         - other minor bugfixes and cleanups
+
+    patchlevel 5:
+         - fixed some things in UnmapNotify-Handling. Hopefully
+           Bernd's segfaults, too :)
+         - minor (but important) fix for focus handling
+         - modification to random placement to keep the titlebar of too
+           large windows visible
+         - focusPolicy == NoFocus for all buttons
+         - history list for minicli
+         - other small fixes
+
+    patchlevel 4:
+         - ...
+    patchlevel 3:
+         - iconified windows stay on their virtual desktop
+         - internal cleanups
+    patchlevel 2:
+         - small fix for more/resize of maximized windows
+    patchlevel 1:
+         - bugfix for maprequests of iconified windows (exmh needs this)
+
+________________
+In 0.7:
+	
+    patchlevel 7:
+         - maximize takes care about sizehints
+         - random placement takes care about the maximize definitions
+         - resizing a maximized windows pulls maximize
+         - fixed kwm_toggle_maximize command handling
+         - bugfix in mpreq for iconified clients
+         - new commands: kwm_close_window, kwm_destroy_window
+         - new commands: kwm_define_desktops, kwm_toggle_sticky
+         - more improvements in command handling
+         - Mod1-Tab and Mod1-Shift-Tab circulates windows on one desktops
+         - Mod1-Control-Tab and Mod1-Shift-Control-Tab circulates 
+           all windows 
+         - Control-Tab and Control-Shift-Tab switches virtual desktops
+         - Mod1-F1 shows kpanel's system menu
+         - Mod1-F3 shows window operations popup
+         - Resize/Move: arrow keys work. Ctrl+arrowKey for faster movement.
+         - Mod1-Esc / Control-Esc shows windowlist
+         - internal cleanups, many functions rewritten, bugfixes
+         - move/resize without raising a window with MMB
+         - entering a window without raise with MMB or RMB
+         - Doubleclick on title toggles maximize
+         - improved focus follows mouse
+         - New focus policy: click-to-focus
+         - kwmrc option "FocusPolicy=ClickToFocus/FocusFollowsMouse"
+         - kwmrc option "TitlebarLook=shaded/plain"
+
+    patchlevel 6:
+         - re-implemented some lost gravity stuff 
+
+    patchlevel 5:
+         - new look proposal implemented
+         - reparenting works again like old style
+    patchlevel 4:
+         - provisional raise_notify command for modules
+         - small resize bugfix
+
+    patchlevel 3:
+         - small improvement for shaped windows like xeyes
+
+    patchlevel 2:
+         - (0,0) placement will take care about window decorations
+         - smaller fixes
+
+    patchlevel 1:
+         - cares about USPosition and PPosition now
+         - "Random" placement for all other windows
+
+
+________________
+In 0.6
+
+    patchlevel 11:
+         - manage keeps the exact position of new windows (Is this ok
+            for everyone?)
+         - started code-cleanup: removing of obsolete/unused 9wm stuff
+         - find a ghostwindow bug with xemacs :-)
+         - XEmacs Ctrl-z works now (even twice)
+         - all-corner resize 
+
+
+    patchlevel 10:
+         - added unminimize by win id to the communications protocol (Bernd)
+
+    patchlevel 9:
+         - some bugfixes concerning raise and lower
+
+
+    patchlevel 8:
+         - implicit raising of transient windows (preliminary, still flickers)
+	 - highly improved switching of virtual desktops (less
+            exposure events)
+         - right mouse button menu extended
+
+    patchlevel 7:
+         - focus problem in PropertyNotify handling fixed
+         - withdrawn reparent bug fix (thanks to Brian)
+         - "Run" and "Display" in RMB menu
+         - final fixes to the resizedrag 
+
+     patchlevel 6:
+         - resizedrag takes care about changed size hints
+         - mincli no longer adds "&" if there is already one :)
+
+      patchlevel 5:
+         - BBUTTON = STICKY bug fixed.
+
+      patchlevel 4:
+         - Fixed a bug in ConfigureRequest handling (only occured
+           with a weird StarOffice dialog window that is somewhat broken)
+         - Implemented some MWM-hints: Now StarOffice looks better
+           since kwm doesn't decorate its floating windows anymore.
+           (sibling still missing, that means transient windows
+           cannot be kept on the top automatically. This will come
+           soon)
+         - heavy cleanups and fixes for resize-handling
+
+      patchlevel 3:
+         - finally found the easiest solution to fix the kfm/icon-problems
+           forever :-) 
+         - reduced the number XSetInputFocus:BadWindow messages
+         - better flickering avoiding via XCheckTypedEvent
+         - rewrote the manage function => now even Netscape works :)
+         - code cleanups (also less unused variables)
+
+      patchlevel 2:
+         - operations popup stays visible, too
+         - some fixes of the fixes
+         - some remaining debug messages removed
+
+
+         - Focus works now without flickering and wrong windows
+         - Memory optimizations and speedups. Fastest and smallest kwm ever!
+         - Options GUI removed (will be an extra program in the future)
+         - experimental XGrabKey's removed. Will come again some day 
+           customizable.
+           Yet only Mod1-F4 (Alt-F4) calls "Close" or "Logout",
+           Mod1-F2 (Alt-F2) will invoke the internal minicli
+         - usage of libkde's findFile for seeking the icons
+         - changed the default look
+         - Some improvements to look&feel
+         - No more left popup
+         - smaller right popup
+         - popups stay visible when releasing the mouse at the same position
+         - no more debugging output
+         - Window operations menu has a working "(Un-)Maximize" and "Move" now.
+         - Added working "Close" item to the window operations menu
+         - Added working "Resize" item to the window operations menu
+           (now it's possible to move and resize XEyes with kwm :-)
+         - new kwm_onto_current_desktop command
+         - "kwm -version" doesn't change the backgroundcolor anymore.
+         - LOTS of cleanups and TONS of bugfixes (still a lot to do)
+         - Tested extensivly with kfm, kpanel, tkdesk (tcl/tk request
+           a working windowmanager), XEmacs, XEyes, xv ->  No more problems :)
+         - Did I already mention cleanups and bigfixes?
+         - Cleanups and bugfixes
+         - Bugfixes and cleanups
+
+
+
+All changes above this point were made by Matthias Ettrich
+except as noted.
+----------------
+
+
+        - no more segfault when exiting (Matthias)
+        - focus handling fixed (Matthias)
+        - no more weird reshape menuitem (Matthias) 
+        - some memory optimizations (~50kB data during runtime 
+          with a default kfm started) (Matthias)
+        - small fix for Brian's root-menus (they took the grab
+          away of minicli) (Matthias)
+        - hopefully fixed drag and resize jumpings of windows (Matthias)
+        - jumping icons and kpanel fixed (Matthias)
+        - disabled "restart"-command since it was broken
+          anyway (Matthias)
+        - minicli works as internal now (Matthias)
+        - usage of klogout (Matthias)
+
+In 0.5
+        - Titlebar colors are settable from kdisplay (I hope?)
+	  Non-default colors are currently NOT rememebered from
+	  session to session, so you will need to do a kdisplay -init.
+	  Sorry for the flicker this will cause for now.
+	- Updated Titlebar options dialog
+	- kdisplay can be called from RMB
+	- Compiles against Qt-1.2
+        - AutoConfiguration, thanks to Stephan Kulow
+	- No drag latency for Transparent Move (Bernd's Buttered Mouse)
+        - Global Keyboard Accelerators.  Currently limited and hardcoded
+	
+________________
+In 0.4.8
+        - Added titlebars and resize boxes to transient windows
+	
+________________
+In 0.4.7
+        - Thanks again to Torsten Paul for some management stuff
+	- Menubar removed. (See RMB root menu for options)
+        - More ghost window hunting
+	- Matthias' patches listed
+below     
+
+- new command kwm_release_window, which allows kpanel and other
+modules to swallow windows 
+- updating of kwm's internal windowlist when the title changes
+  (sorry Brian, couldn't resit to add this one-liner :-)
+- iconfied windows in the windowlist are now inside brackets.
+- kwm_changed_window now also sends the state to the modules
+  ( 1 == IconicState, 0 otherwise), as well as kwm_add_window. 
+- kwm_minimize_window will unminimize if the window is already iconified
+- xpm instead of xbm for window decoration and some nice xpms almost
+  according one of Mark's proposals.
+                      (Matthias)
+
+________________
+In 0.4.6
+        - more ghost window hunting
+
+________________
+In 0.4.5
+        - Up 4 hours without a ghost client! Please test
+          extensively!
+	- Preview of the root menus for v0.5.  Try all mouse
+          buttons on desktop.
+	  
+________________
+In 0.4.4
+        - several small patches, fixes, suggestions, mostly to
+          keep up with kpanel.
+________________
+In 0.4.3
+        - sends kwm_active_window to new module at registration
+        - kwm_active_window is less eager (only sent when necessary)
+        - kwm_minimize_window
+	- kwm_toggle_maximize( long depressed )
+          depressed == TRUE means maximize else UNmaximize
+        - fix for root icon managing by Torsten Paul which allows...
+	- shaped window fix.  Now you can run xeyes !!
+	
+________________
+In 0.4.2
+        - config entries and kwmcom docs (weak)
+        - kwmcom stuff:
+	  send kwm_desktop to new module right after registration
+	  kwm_active_window( long -id, long window)
+	  kwm_define_maximize(long x, long y, long width, long height)
+          	  
+
+________________
+In 0.4.1
+        - removed hardcoding of setStyle()
+        - official addition of communication and generalization
+          of desktop choice (allows an arbitrary number of desktops) 
+        - ops popup fix by Matthias Ettrich
+	- Solaris printf fix by Matthias Ettrich
+	- kwm appears as a System app entry in kdehelp when installed
+
+
+________________
+In 0.4.m
+        - kwmcom stuff for communication with modules like kpanel
+                                          Matthias Ettrich
+________________
+In 0.4
+        - kwm is now a KApplication with KConfig support.
+	- Configurable titlebar. Check out Options->Titlebar.
+	- Friendly resizebox in lower right corner with diagonal
+	  arrow cursor.
+	- "Smooth dragging" courtesy of Matthias Ettrich.
+	- Less ugly sticky and min buttons.
+	- kwmhelp updates.
+	- make install.
+	- KDE FSSTD
+	- kwm now installs and expects bitmaps to be in
+	  (KDEDIR)/lib/pics/ so it can be run from anywhere.
+
+________________
+In 0.3.2
+        - Focus problems fixed.
+        - Some compilers will be happier with new fns.h
+	  thanks to Andrei Tcherepanov.
+        - Shaped-window fix. KFM icons ought to be dandy now.
+	- Additions to kwmhelp.
+	
+________________
+In 0.3.1
+        - No more blank grey frames
+	- Dialogs don't come up naked
+	- The kwmhelp file
+
+________________
+In 0.3.0
+        - Bug Fixes...
+
+________________
+In 0.2.3
+        - Fixed Reshape.
+	- Resize now works by grabbing lower right corner of window
+	  though the cursor doesn't change shape yet as a hint.
+	- Both of the above respect min_dx, min_dy.
+	- Window list items are removed when client is closed,
+	  tho' extra WITHDRAWN state items may appear.
+
+________________
+In 0.2.2
+
+	- X button closes app nicely. Thanks to Eric Johnson.
+	- MMB lowers window.  RMB bring up operations menu.
+        - Fixed configurereq bug.  Now xv et. al. shouldn't chop
+	  pictures or wander around.
+	- There are some different button group patterns under
+	  options.
+	- This source code is getting pretty silly from messing
+	  with various solutions.  I really don't want to
+	  strip some of the obnoxious stuff yet, 'cause I might
+	  find a gem.  The cleaning is on my schedule for 
+	  v0.3 (the release number for when it has virtual
+	  desktop support)
+	
+________________
+In 0.2.1
+
+        - Added X button (a la Bernd) which destroys window.
+	  I want to make it close nicely instead, tho'.
+	- Iconify on operations popupmenu works
+	- Changed inactive titlebar colors to be readable
+	  Hope this isn't too obnoxious for those with fewer bpp.
+	- Added restart to File menu. (Clean up your windows menu :)
+	- Pushpin pixmap for "sticky" button.
+	- Includes Acli 0.6
+	- Selecting item from Windows menu now also raises that item.
+	  Before, you could "lose" a window when unMinimizing it.
+	- Fixed titlebar label.  It used to say things like "rxvt"
+	  even if you used -T "title name".  Now it shows "title name".
+	  Let me know if you get some other wierd results.
+	- Client x,y,dx,dy now refer to Client object, not app inside.
+	  This spawns the following fixes more easily and greatly
+	  simplifies the code.
+	- Both opaque and transparent move work with the correct
+	  size bounding box and no jumping boxes.
+	- Windows are correctly positioned.
+
+----------------
+In 0.2
+        - Menu bar
+	- Minimization works
+	- Adding items to window list works, removing doesn't
+	- Transparent Move support
+	- Quit from menu bar
+	- Options of transparent/opaque move
+
+All changes above this point were made by Brian Cooper 
+except as noted.
+------------
+
+since 0.1.p1
+
+        - fixed many many bugs (some where old 9wm bugs...). Kwm shouldn't
+           segfault anymore yet, at least not with my testing programs ;-)  (Matthias)
+        - small changes to window positioning (Matthias)
+        - shaped windows aren't decorated anymore (Matthias)
+
+
+

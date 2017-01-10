@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The ktalkd Handbook: Introduction</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KTALKD kotalkd talk talkd otalk ntalk ktalkdlg kcmktalkd">
+<META NAME="description" CONTENT="ktalkd documentation">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-2.html">Next</A>
+Previous<A HREF="ktalkd.html#toc1">Table of Contents</A>
+</P>
+<H3><A NAME="s1">1. Introduction</A></H3>
+
+<P>
+<P><CODE>ktalkd</CODE> is an enhanced talk daemon - a program to handle incoming talk requests,
+announce them and allow you to respond to it using a talk client.
+<P>GLOSSARY : In this document, if somebody wants to talk to you, you are 
+designated as the "callee".
+<P><CODE>ktalkd</CODE> has the following features :
+<P>
+<DL>
+<DT><B>KDE or not KDE</B><DD><P>That is the question. :) More seriously, this means that
+<CODE>ktalkd</CODE> is able to be compiled with or without KDE support.
+To use it without KDE, the compilation stage will detect if X or Qt 
+or KDE is not installed, but you can force a non-KDE daemon if you 
+use the configure option '--without-X'.
+<P>
+<DT><B>Answering machine</B><DD><P>If the callee isn't logged on, or doesn't answer after
+the second announcement, an answering machine is launched, takes the
+message, and mails it to the callee.
+<P>
+<DT><B>Sound</B><DD><P>If desired, a sound is played with the announcement.
+<P>
+<DT><B>X Announce</B><DD><P>If compiled with KDE installed, ktalkd will use
+<B>ktalkdlg</B>, a KDE dialog, for announcement.
+If <B>ktalk</B> is running, it will be asked to make the announcement 
+itself. (New since 0.8.8).
+<P>
+<DT><B>Multiple displays annoucement</B><DD><P>If you are logged remotely (e.g. with an
+<CODE>"export DISPLAY=..."</CODE> command), the X announcement will be made on
+this display too. Answer on the one you want !
+If you're also logged in a text terminal, and if you're NOT using xterms
+(internal restriction), then you'll see a text announcement too, in case 
+you're using the text terminal at the time of the announcement.  
+<P>
+<DT><B>Forwarding   <I>(New since 0.8.0)</I></B><DD><P>You can set up a forward to another user even to another host
+if you're away. There are 3 different forwarding methods. See section 'Usage'.
+<P>
+<DT><B>Configuration</B><DD><P>If ktalkd is compiled for KDE, it reads config from KDE config files,
+the sitewide ($KDEDIR/share/config/ktalkdrc) and the user one, in its home directory.
+The sitewide one has to be manually edited by the administrator, but there is now
+a configuration dialog for the user one. It's called <B>kcmktalkd</B> and can 
+be found in the KDE Control Center after installing <CODE>ktalkd</CODE>.
+On non-KDE systems, <CODE>ktalkd</CODE> will read /etc/talkd.conf.
+<P>
+<DT><B>Internationalization</B><DD><P>Under KDE, the announcement will be in your language provided that
+you set it in the KDE menus and that someone translated <B>ktalkdlg</B> to your
+language. The same goes for the configuration dialog, <B>kcmktalkd</B>.
+<P>
+<DT><B>Support for otalk and ntalk   <I>(New since 0.8.1)</I></B><DD><P>ktalkd now supports both protocols, even when forwarding. 
+ktalk supports both protocols as well.
+</DL>
+<P>
+<P>I hope you will enjoy this talk daemon,
+<P>David Faure
+<P>
+<A HREF="mailto:faure@kde.org">faure@kde.org</A><P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-2.html">Next</A>
+Previous<A HREF="ktalkd.html#toc1">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

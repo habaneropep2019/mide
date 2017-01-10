@@ -1,0 +1,93 @@
+<!--  $Id: index.sgml,v 1.3 1998/06/18 17:46:58 jochen Exp $ -->
+<!doctype linuxdoc system>
+<article>
+<title>KPoker help
+<author>Jochen Tuchbreiter, <htmlurl url="mailto:whynot@mabi.de" name="whynot@mabi.de">
+<date>v0.4, 06/18/98
+<abstract>
+This is the helpfile of KPoker, a little video poker clone. It was last
+updated for KPoker version 0.5
+</abstract>
+<toc>
+<sect>Introduction
+
+<sect1>What is KPoker ?
+<p>
+KPoker is a <htmlurl url="http://www.kde.org" name="KDE"> compilant clone of those highly addictive 
+pocket video poker games which are sometimes called "Videopoker" as well.
+</sect1>
+
+<sect1>Where do I get the latest version of KPoker ?
+<p>
+The latest version of KPoker is always avaible at
+<itemize>
+<item>The KPoker homepage: <url url="http://www.mabi.de/~whynot/kpoker/">
+<item>The KDE homepage: <url url="http://www.kde.org">
+</itemize>
+</sect1>
+
+<sect>Gameplay
+<sect1>How do I play ?
+<p>
+At the beginning of the game you get $100. You draw five cards and
+decide which ones you want to keep. After doing this you draw new
+cards for those you did not want to keep. The game now looks if you
+got any <ref id="hands" name="poker hand"> and gives cash
+according to the kind of hand you got (see <ref id="scoring" name="scoring">). Now you start
+over, drawing five cards, deciding which ones you want to keep ...
+
+The game ends if you can't pay for another round anymore or if you close the kpoker window.
+</sect1>
+
+<sect1>What are possible poker hands ?<label id="hands">
+<p>
+Possible poker hands are:
+<itemize>
+<item> Jacks or higher: Two cards of the same rank, both Jacks or higher
+<item> Two pairs: Two cards of one rank and two cards of another rank
+<item> Three of a kind: Three cards of the same rank
+<item> Four of a kind: Four cards of the same rank
+<item> Full House: Three cards of one rank and two cards of another
+<item> Straight  Five cards of consecutive rank including the combo ace-2-3-4-5
+<item> Flush: Five cards of the same suit
+<item> Straight flush: Five cards of the same suit and of consecutive rank
+<item> Royal flush: Ace, king, queen, jack, and ten of the same suit
+</itemize>
+</sect1>
+
+<sect1>How many bucks do I get for what hand ? <label id="scoring">
+<p>
+<itemize>
+<item> A pair of Jacks or higher cards: $5
+<item> Two Pairs: $10
+<item> Three of a kind: $15
+<item> Straight: $20
+<item> Flush: $25
+<item> Full House: $40
+<item> Four of a kind: $125
+<item> Straight Flush: $250
+<item> Royal Flush: $2000
+</itemize>
+</sect1>
+
+<sect>Epilogue
+<sect1>Authors
+<p>
+Author of KPoker is Jochen Tuchbreiter, <htmlurl url="mailto:whynot@mabi.de" name="whynot@mabi.de">
+<p>
+Persons helping me:
+<itemize>
+<item>Chris Holmes - idea of writing this game and for parts of the visual appearence
+<item>John Fitzgibbon - provided the card images
+<item>Nico Schirwing - drew the backsides of the cards
+</itemize>
+</sect1>
+
+<sect1>Copyright
+<p>
+KPoker is released under the GPL license
+</sect1>
+
+</sect>
+
+</article>

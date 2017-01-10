@@ -1,0 +1,49 @@
+
+Drag and Drop
+Net Drag and Drop
+
+kfax can display all fax output modes of ghostscript:
+raw: fag3 faxg32d faxg4  
+tiff: tiffg3 tiffg32d tiffg4
+
+By default raw fax files are interpreted as g3 files. If you want
+to display faxg3-2d and faxg4 files you have to specifiy this on
+the command line and in the case of raw g4 files also specify
+the height in scan lines of the fax if it differs from the 
+default 2155.
+
+A raw file will have no pagignation information and will be displayed
+as a whole in the fax window. 
+tiff files contain pagination information can be paged through in the
+fax window
+
+kfax can not display image file formats which are not related to 
+faxing, such as an arbitrary tiff or gif file.
+
+
+How to create fax file that sendfax /mgetty can accept and send:
+gs -sDEVICE=faxg3 -sOutputFile=/tmp/fax.g3.%d yourdocument.ps
+
+Assume that you ps document yourdocumnet.ps contains three pages,
+this will produce fax.g3.1 fax.g3.2 fax.g3.3
+
+
+HylaFAX:
+http://info-sys.home.vix.com/flexfax/toc.html
+
+sendfax/mgetty:
+http://www.leo.org/~doering/mgetty/
+
+cat fax.g3 | g32pbm | pnmtops -noturn > output.ps     
+
+
+
+How to print raw " no tiff " g3 fax data:
+
+
+
+fax2tiff -M viewfax.g3 -o viewfax.tiff
+(M for: Treat  input  data  as having bits filled from most
+        significant bit (MSB) to most least bit (LSB))
+This is what I need on my intel machine, I would presume this
+might be different on a Sun station.

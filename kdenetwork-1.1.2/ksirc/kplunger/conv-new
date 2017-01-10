@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+if(/\".*new.*\"/){
+  print;
+  next;
+}
+s/(\s+)new[ ]+([^( ;\n"]+)/$1new("$2") $2/ixg;
+print;

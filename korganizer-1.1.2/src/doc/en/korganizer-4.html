@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>KOrganizer Reference Manual: Main Program Window</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="PIM calendar scheduling C&S vCalendar UNIX X">
+<META NAME="description" CONTENT="A Calendar / Scheduling Program for KDE / Unix / X">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="korganizer-5.html">Next</A>
+<A HREF="korganizer-3.html">Previous</A>
+<A HREF="korganizer.html#toc4">Table of Contents</A>
+</P>
+<H3><A NAME="s4">4. Main Program Window</A></H3>
+
+<P>When KOrganizer starts, you are first presented with the main
+KOrganizer window.  The window has several components, including a
+menubar, a toolbar, a month calendar, a current ``view'' of events,
+and a tasklist.  The calendar defaults to displaying today's date.
+<P>
+<H3><A NAME="ss4.1">4.1 Menus</A>
+</H3>
+
+<P>The menus provide access to all the common operations that can be
+performed on the calendar, including saving, loading, adding and
+deleting appointments, printing, etc. etc.
+<P>
+<H4><A NAME="sec-file"></A> File Menu</H4>
+
+<P>The <CODE>File</CODE> menu provides access to functions involving the
+entire calendar.
+<P>
+<P>
+<DL>
+<P>
+<DT><B>New Window</B><DD><P>Allows you to open up another main window.  You might
+want to do this if you wish to have two simultaneous but different
+views of a calendar open at once.
+<P>
+<DT><B>Open</B><DD><P>Opens a file dialog allowing you to select a new vCalendar
+to load.  If you have made changes to the current calendar, you will
+be given the option of saving them before loading a new one.
+<P>
+<DT><B>Open Recent</B><DD><P>Provides a list of recently opened calendars for
+quick access, allowing you to bypass the file dialog entirely.
+<P>
+<DT><B>Close</B><DD><P>Closes the current window. If this is the last window, this
+choice has the same effect as Quit.
+<P>
+<DT><B>Save</B><DD><P>Saves the calendar to disk, making sure all changes you
+might have made will be kept.  If the calendar has no name, save will
+behave like <CODE>Save As</CODE>.
+<P>
+<DT><B>Save As</B><DD><P>Gives you a file dialog so that you may choose a
+different name for your calendar than the one currently assigned to
+it.  Useful if you have made changes to a calendar that you want to
+save, but also want to keep separate from your ``regular'' calendar.
+<P>
+<DT><B>Import From Ical</B><DD><P>If you have used ical, a popular but older
+calendar program for unix using the Tk widget set, you may wish to
+import your appointments, events, and todo items directly to
+KOrganizer.  This action will read the <CODE>.calendar</CODE> file from
+your home directory and merge any entries it contains into your
+current calendar.  If any errors or suspicious things occur during the
+process, you will be notified via a message box.
+<P>
+<DT><B>Merge Calendar</B><DD><P>If you have a different vCalendar file somewhere,
+and you would like to include its contents into your own calendar,
+this will do just that.  A good time to do this would be if you
+received a vCalendar with a few entries via e-mail, for instance.
+<P>
+<DT><B>Print Setup</B><DD><P>Brings up the print setup dialog and allows you to
+set up how you want printed output to appear.  See 
+<A HREF="korganizer-7.html#sec-print">the section on printing</A> for more information.
+<P>
+<DT><B>Print</B><DD><P>Prints the current calendar.
+<P>
+<DT><B>Print Preview</B><DD><P>Prints the current calendar and displays it with
+your print preview program, instead of sending the output  directly to
+the printer.  You can choose the program that you use to preview
+output in the 
+<A HREF="korganizer-7.html#sec-optionsdlg">Options dialog</A>.
+<P>
+<DT><B>Quit</B><DD><P>Quits KOrganizer, prompting to save if the current calendar
+has been modified but not yet saved.
+<P>
+</DL>
+<P>
+<H4><A NAME="sec-edit"></A> Edit Menu</H4>
+
+<P>The <CODE>Edit</CODE> menu provides editing operations on appointments.
+<P>
+<P>
+<DL>
+<P>
+<DT><B>Cut</B><DD><P>Cuts the currently selected appointment(s) to the clipboard,
+removing them from your calendar.
+<P>
+<DT><B>Copy</B><DD><P>Copies the currently selected appointment(s) to the
+clipboard, leaving them untouched in your calendar.
+<P>
+<DT><B>Paste</B><DD><P>Inserts the contents of the clipboard into your calendar.
+The clipboard must contain a valid vCalendar, provided either by a
+previous Cut/Copy operation or from a selection made outside of
+KOrganizer.  You will be warned if the contents of the clipboard
+cannot be understood.
+<P>
+</DL>
+<P>
+<H4><A NAME="sec-view"></A> View Menu</H4>
+
+<P>Options for changing the current view of your appointments
+<P>
+<P>
+<DL>
+<P>
+<DT><B>List</B><DD><P>Switches to 
+<A HREF="#sec-listview">List View</A>.
+<P>
+<DT><B>Day</B><DD><P>Switches to 
+<A HREF="#sec-dayview">Day View</A>. 
+<P>
+<DT><B>Work Week</B><DD><P>Switches to 
+<A HREF="#sec-weekview">sec-weekview</A>
+ name="Week View">,
+but with only the 5 days of a business week selected instead of the
+normal 7.
+<P>
+<DT><B>Week</B><DD><P>Switches to 
+<A HREF="#sec-weekview">Week View</A>.
+<P>
+<DT><B>Month</B><DD><P>Switches to 
+<A HREF="#sec-monthview">Month View</A>.
+<P>
+<DT><B>Todo List</B><DD><P>Switches to full screen
+<A HREF="#sec-todolist">Todo View</A>.
+<P>
+<DT><B>Update</B><DD><P>Updates or refreshes the currently displayed view.
+<P>
+</DL>
+<P>
+<H4><A NAME="sec-action"></A> Actions Menu</H4>
+
+<P>Different actions you can take to modify your calendar.
+<P>
+<P>
+<DL>
+<P>
+<DT><B>New Appointment</B><DD><P>Brings up the appointment window, allowing you to
+create a new appointment.  By default, the appointment will begin on
+the currently selected date.
+<P>
+<DT><B>New Event</B><DD><P>Brings up the appointment window, allowing you to
+create a new appointment.  The default for this mode is that the
+appointment has no time associated with it; it is merely a reminder of
+something you mean to do on that particular date or range of dates.
+<P>
+<DT><B>Edit Appointment</B><DD><P>Brings up the appointment window with the
+currently selected appointment filled in to the fields and ready for
+editing.
+<P>
+<DT><B>Delete Appointment</B><DD><P>Confirms that you would like to delete the
+currently selected appointment, and upon positive confirmation,
+removes it from your calendar.
+<P>
+<DT><B>Search</B><DD><P>Pops up the 
+<A HREF="korganizer-6.html#sec-search">Search Window</A>,
+allowing you to search for appointment(s) by date, a common phrase,
+etc.
+<P>
+<DT><B>Mail Appointment</B><DD><P>This is currently unimplemented.
+<P>
+</DL>
+<P>
+<H4><A NAME="sec-options"></A> Options Menu</H4>
+
+<P>Allows access to configuration options common to the entire program.
+<P>
+<P>
+<DL>
+<P>
+<DT><B>Show Tool Bar</B><DD><P>Toggles whether or not the tool bar is visible.
+<P>
+<DT><B>Show Status Bar</B><DD><P>Toggles whether or not the status bar (at the
+bottom of the screen) is visible.
+<P>
+<DT><B>Edit Options</B><DD><P>Brings up the  
+<A HREF="korganizer-7.html#sec-optionsdlg">Options Dialog</A>, allowing you to change common options like
+date/time formats, fonts, etc.
+<P>
+</DL>
+<P>
+<H4><A NAME="sec-help"></A> Help Menu</H4>
+
+<P>Various methods of getting help on KOrganizer.
+<P>
+<P>
+<DL>
+<P>
+<DT><B>Contents</B><DD><P>The contents of the KOrganizer online help manual.
+<P>
+<DT><B>Help On</B><DD><P>Gives you context sensitive help information on the
+object that you click on after choosing this.  However, none of the
+help for the different objects has been written as of the time this
+manual was last updated, so this will not be too useful.  Volunteers?
+<P>
+<DT><B>About</B><DD><P>Shameless plug about the authors of KOrganizer.
+<P>
+</DL>
+<P>
+<H3><A NAME="sec-datenav"></A> <A NAME="ss4.2">4.2 Date Navigator</A>
+</H3>
+
+<P>
+<IMG SRC="datenavigator.gif">
+<P>The small calendar that is in the upper-left corner of the screen
+is the main way provided to navigate among and select from various
+dates.  The single-arrow icons move forwards and backwards in time by
+increments of a month, while the double-arrows allow moving by years
+at a time.  Today's date will be outlined with a gray box.  Dates
+which have appointments scheduled on them will be bold and a different
+color than the regular dates.  Selecting a date is accomplished simply
+by clicking on it; multiple dates may be selected/deselected simply by
+holding down the <CODE>control</CODE> key while clicking.
+<P>
+<H3><A NAME="ss4.3">4.3 Views</A>
+</H3>
+
+<P>There are several different ``views'' available for displaying your
+list of events and appointments, including a ``list'' view, a ``day''
+view, a ``week'' view, and a ``month'' view.  KOrganizer is smart
+enough to remember in between sessions what the last active view was,
+and the next time it is started, it will default to that view.
+<P>
+<P>In general, each view will provide a way of displaying your events
+and appointments constrained to a particular time period or style of
+display.  clicking on any appointment will select it for further
+action.  Right clicking an appointment brings up a menu with options
+such as <CODE>edit</CODE>, <CODE>delete</CODE>, and so on.  You can also use
+the <CODE>Action</CODE> menu to perform similar operations.
+<P>
+<H4><A NAME="sec-listview"></A> List View</H4>
+
+<P>This view allows you to see all your appointments for the day in
+list-type arrangement.  Appointments are displayed one per line.  The
+first column of the appointment will have a bell icon displayed in it
+if an alarm is set for the appointment.  The second column will
+display a chasing-arrows icon if the appointment repeats multiple
+times.  Holding the mouse over the arrows icon will bring up a tooltip
+with more detailed recurrence information.  The third column displays
+start and end time information, and the fourth column gives a summary
+of the appointment.
+<P>
+<P>The list view is good for displaying many appointments on a single
+day in a compact fashion.  It is also useful if your appointments are
+spread out over a long time period that would not normally fit
+entirely on the screen when using one of the other views.
+<P>
+<H4><A NAME="sec-dayview"></A> Day View</H4>
+
+<P>This view presents your appointment information in a chronological
+fashion which also provides visual feedback on the length of each
+appointment.  Time is indicated on the left side of the view.  A
+scrollbar on the right is provided when the entire day cannot fit onto
+the screen at one time (which is the usual case).  Each rectangle in
+the view represents an individual appointment, and displays the
+appointment's start and end time, summary, and whether or not the
+appointment repeats or has any alarms set.
+<P>
+<IMG SRC="kagenda-appointment.gif">
+<P>
+<P>A useful shortcut that this view provides for adding appointments
+is the ability to double-click on any open region of time, which will
+automatically create a one hour long appointment and let you start
+editing the description.  The appointment's ``snap'' to half-hour
+increments, rounding off to the closest half hour from where you
+clicked.
+<P>
+<H4><A NAME="sec-weekview"></A> Week View</H4>
+
+<P>The week view provides a view very similar to the day view for
+displaying seven days worth of appointments next to each other.  All
+of the functions available for the day view are available in the week
+view.  See the 
+<A HREF="#sec-dayview">Day View</A> section for
+further information.
+<P>
+<H4><A NAME="sec-monthview"></A> Month View </H4>
+
+<P>The month view displays all the appointments for the current month
+in a familar calendar layout.  Each day displays all of the appoints
+that can fit in the area provided (maximizing the window will enable
+you to see more appointments).  Information on repeating and alarm
+status is indicated through icons.
+<P>
+<P>Navigation inside the month view is provided by a set of buttons
+along the right side of the screen.  By pressing the appropriate
+upwards-facing button, you can navigate by week, month, or even year.
+The downwards-facing buttons perform the analogous function, except
+forwards in time versus backwards.
+<P>
+<H3><A NAME="sec-todolist"></A> <A NAME="ss4.4">4.4 Todo List</A>
+</H3>
+
+<P>The todo list is unfortunately in a state of flux, so what is
+described here (as far as ``operation'' of the todo list goes) may
+change in the near future.
+<P>
+<P>The todolist provides a place for you to jot down quick (or
+long-term) notes to yourself about things that you need to do.
+Currently, you cannot associate a date due with a todo entry, but this
+is forthcoming.  You can however assign priorities to todos, and they
+will appear sorted in order of priority.  The lower the number, the
+higher the priority, except that zero (0) is defined as ``no
+priority.''
+<P>
+<P>To make a new todo entry, right click in the todo box.  You will
+get a menu with the option to create a new entry.  If you clicked on
+an already existing todo, you will also see a choice to delete that
+entry if you wish.  When you choose <CODE>New Todo</CODE>, a new todo will
+be created and you will be prompted to enter a short description.
+After doing this, you can change the priority by double-clicking in
+the second column of the todo, which will bring up a list of possible
+priorities.  simply click on one to choose it.  Similarly, if you
+double-click in the description (third) column of an existing todo,
+you will be able to edit the description.  Double clicking on the box
+(first column) will toggle the todo's ``completed'' status.  
+<P>
+<P>You may also pick <CODE>Purge Completed</CODE> from the right mouse
+button menu to delete all todo entries that you have marked completed.
+This is handy for quick cleanup.
+<P>
+<P>As has already been mentioned, the todo list could be a lot
+friendlier and fancier, and we plan for it to be so.  If you have any
+suggestions for what you would like to see in the todo list, please
+e-mail the authors.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="korganizer-5.html">Next</A>
+<A HREF="korganizer-3.html">Previous</A>
+<A HREF="korganizer.html#toc4">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

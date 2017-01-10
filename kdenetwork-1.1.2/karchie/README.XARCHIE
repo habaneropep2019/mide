@@ -1,0 +1,359 @@
+	    README for Xarchie - X11 browser interface to Archie
+
+		George Ferguson, ferguson@cs.rochester.edu
+
+			 Last Change: 5 Jul 1994
+
+NOTE: Version 2.0.10 is an interim release to fix a few nagging bugs,
+      update a few things and generally get the house in order (and
+      slow the flood of email). The next release of xarchie should be
+      3.0, and will support the Prospero V5 servers now online. Please
+      don't email me about 3.0---when it's ready for testing and/or
+      general use, you'll be the first to know. Also, xarchie has not
+      yet been tested against X11R6 or updated for it.
+     
+DISCLAIMER:
+
+     This is release 2.0 of xarchie -- an X browser interface to
+     the Archie Internet information system.
+
+     This software is provided as is with no warranty expressed or
+     implied. I hope you find it useful, but I won't be held responsible
+     for any damage that may occur from reading, compiling, installing,
+     using, or even thinking about it.
+
+     You are free to use any parts of the code that I wrote for other
+     purposes. It would be nice if you could keep my name on some part of
+     whatever the final product is. Parts of the code that are derived from
+     the Prospero archie client are subject to their own copyright, which
+     is included in "query.c" and in files that were not written by me.
+     See the file "copyright.h" for details. Examples of other things
+     Prospero can do are in the file "README.PROSP" in this distribution.
+
+     The file "inet_ntoa.c" is part of the freely-redistributable BSD
+     code, and is copyright (c) 1983 Regents of the University of
+     California.
+
+     The code in directory FWF for the MultiList widget and portable
+     directory routines (Dir) was written by Brian Totty
+     (totty@flute.cs.uiuc.edu) and is distributed by the Free Widget
+     Foundation (contact free-widgets-request@kazoo.cs.uiuc.edu). This
+     code is copyright 1990,1991,1992 Brian Totty. See the file
+     FWF/COPYRIGHT for more details. The FileChooser widget was
+     written by me based on Brian's code for FileSelector, and is
+     subject to the same copyrights.
+ 
+CREDITS:
+
+     The original standalone archie client was written by Brendan
+     Kehoe, (brendan@cygnus.com), based on the Prospero archie client
+     by Clifford Neuman, (bcn@isi.edu). The file "README.FILES"
+     attempts to make some sense of the lineages. It should be
+     taken with a huge grain of salt.
+
+     The archie service was conceived of and implemented by Alan Emtage
+     (bajan@bunyip.com), Peter Deutsch (peterd@bunyip.com), and Bill
+     Heelan (wheelan@cs.mcgill.ca). For more information about the
+     Archie service, see the manpage and then write to "info@bunyip.com".
+
+INSTALLATION:
+
+     See the file INSTALL for installation instructions. Xarchie comes
+     with a GNU Autoconf-generated configure script, and has Makefiles
+     for the imake-impaired.
+
+PROBLEMS:
+
+     See the file PROBLEMS for discussion of various often-reported
+     problems. Please read this file *before* reporting a problem.
+
+REPORTING BUGS/KUDOS:
+
+     When reporting bugs, problems, suggestions or contributions,
+     please be sure to send them to the right place. I (George
+     Ferguson) am really only interested in the working of the X
+     interface. Brendan Kehoe is is charge of the archie clients and
+     much the network stuff underlying xarchie, Cliff Neuman is in
+     charge of Prospero, and Alan Emtage and the others are in charge
+     of the Archie service itself. The Free Widget Foundation widgets
+     are the responability of Brian Totty. Further details are given
+     in the manpage.
+
+HISTORY:
+
+Version 2.0.10 - 5 Jul 1994
+- Interim release.
+- Updated documentation to reflect status of v3.0 and X11R6.
+- Fixed bug in stripping CR's during FTP (ftp.c).
+  <t30474@ee.t.u-tokyo.ac.jp>
+- Updated server list from archie.funet.fi (Xarchie.ad).
+- Added default for MAXHOSTNAMELEN (hostname.c).
+  <pss@tfn.com>
+- Changed tildeExpand() to not modify the string its passed (tilde.c).
+  Based on suggestion by <root@stevie.isar.muc.de>
+- Added non-blocking I/O defs for ultrix (ftp.c)
+  <hurmejw@pb.com>
+- Added non-blocking I/O defs for Intergraph (__clipper__ in ftp.c).
+  <mlcampb1@mikec.b30.ingr.com>
+- Added non-blocking I/O defs for Alliant (ftp.c).
+  <rdr@gscs.com>
+- Missing close-comment in ftp.h when <arpa/ftp.h> not found.
+  <ccml@hippo.ru.ac.za>,<rocky@panix.com>
+
+Version 2.0.9 - 24 Aug 1993
+- Allow 200 reply for ftp CWD as well as 250 (ftp.c).
+  <amoss@cs.huji.ac.il>
+- New servers for Korea and Sweden (Xarchie.ad).
+  <mark@rfisk.is>
+- Use perror() rather than herror() in resolv.c. Hopefully this will
+  allow resolv.c to compile, so then the configure test will be based
+  on whether it worked or not, rather than deciding on -lresolv
+  because the compile failed.
+  <chris@wg.estec.esa.nl>
+- NeXT uses BSD-style fcntl (ftp.c).
+  <jk@zarniwoop.pc-labor.uni-bremen.de>
+
+Version 2.0.8 - 27 Jul 1993
+- Only call XtRemoveTimeOut() if HAVE_RANDOM or HAVE_RAND (about.c).
+  <maraman@physics.purdue.edu>
+- New archie server for Italy (Xarchie.ad).
+  <mau@unipi.it>
+- New archie server for Israel (Xarchie.ad) and weights (weight.c).
+  <amoss@cs.huji.ac.il>
+- Changed ftp-actions.c to not use Boolean AND of condition flags
+  since either R4 XtAppAddInput() chokes on them or R4 XtRemoveInput()
+  doesn't clear one of the select()-mask bits, resulting in the
+  "select failed" error.
+- Changes to files for sync with eventual varchie release.
+
+Version 2.0.7 - 30 Jun 1993
+- Removed extra quotes in types.c.
+  <DOUG@JHUVMS.HCF.JHU.EDU>
+- Fixed setting of menu mark on Host menu (m-settings.c).
+  <tda10@cus.cam.ac.uk>
+- Duplicate line for ftpStripButton.fromVert in Xarchie.ad deleted.
+  <dcs@neutron.chem.yale.edu>
+- Added weights for France (weight.c)
+  <Hugues.Leroy@irisa.fr>
+- Added weights for Germany (weight.c)
+  <zink@post.inf-wiss.ivp.uni-konstanz.de>,<liebe@hrz.th-darmstadt.de>
+- Added new server in Switzerland (Xarchie.ad)
+  <lenggenhager@gate.switch.ch>
+- Added text regarding undefined symbols in OW to PROBLEMS file.
+  <ivan@stat.ph.albany.edu>, <palm@tokyo.rockwell.com>
+- Fixes for SCO OpenDesktop 3.0 (FWF/Dir/Directory.[hc])
+  <gws@xenitec.xenitec.on.ca>
+- Fixes for Encore Multimax (Umax 4.3)
+  <Gerry.Tomlinson@newcastle.ac.uk>
+- Added line to About panel referring to "archie-admin" address.
+- Changed identifier "regexp" in FWF/Dir/RegExp.c since it conflicts
+  with a library function on some platforms.
+- Deleted most sample weights from Xarchie.ad since we prefer to use the
+  auto-select mechanism in weight.c anyway.
+- Added text to PROBLEMS file for people with NIS problems regarding
+  the DISPLAY variable.
+
+Version 2.0.6 - 7 Jun 1993
+- Allow SVR4 as well as SYSV for getwd() in Director.c, FChooser.c.
+  <dana@thumper.bellcore.com>
+- Norwegian weights added to weight.c.
+  <janl@ifi.uio.no>
+- Really released to comp.sources.x -- 2.0.5 never made it...
+
+Version 2.0.5 - 1 Jun 1993
+- ISC fixes for ftp.c. Perhaps these are needed for other SYS5?
+  <jbh@moses.aii.COM>
+- Serious bug in archie clients vs V5 prospero server
+  <eanders+@cmu.edu>
+- Released to comp.sources.x.
+
+Version 2.0.4 - 14 May 1993
+- Stupid error in about.c when neither HAVE_RANDOM nor HAVE_RAND defined.
+  <posse@masg26.epfl.ch>
+- Added discussion of HP Xaw problems to PROBLEMS file.
+  <geidel@wior.wiwi.uni-karlsruhe.de>,<rvloon@cv.ruu.nl>,<daves@csc.liv.ac.uk>
+- Cleaned up fchooser.c for when FILECHOOSER not defined.
+  <pk@TechFak.Uni-Bielefeld.DE>
+- Fixed Xarchie.ad and display-x.c for when MULTILIST not defined.
+
+Version 2.0.3 - 13 May 1993
+- Add #include <sydio.h> to FD_SET_IN_* tests in configure.in and
+  configure, and modify selectdefs.h (for AIX machines, methinks).
+  <weiss@zeus.rz.th-leipzig.de>, <rob@psy.vu.nl>
+- Fixed icon problems on color displays by applying the icon resources
+  to realToplevel rather than toplevel in xarchie.c.
+  <jhahn@nadia.snu.ac.kr>
+- Check for NULL return from ftpNewContext() in ftp-actions.c (happens
+  when nameserver lookup fails).
+  <nms@ussr.eu.net> 
+- -iconic was being ignored, so remove explicit XtMapWidget() call in
+  xarchie.c.
+  <scott@udel.edu>
+- Apply tilde expansion to initial ftpLocalDir resource.
+  <amoss@cs.huji.ac.il>
+- Fix auto-scroll when more than one selection so last selection is
+  visible rather than first.
+  <amoss@cs.huji.ac.il>
+- Fix fchooser.c for when FILECHOOSER not defined.
+  <pk@TechFak.Uni-Bielefeld.DE>
+- Weights for US need ".org", some other updates to weights.c.
+  <ckd@eff.org>
+- Fixed syserr.c: Use HAVE_SYS_ERRLIST properly and fix comments.
+- Some additions to PROBLEMS file.
+- Changed the way the version number is printed (about.c, help.c).
+- Changed style of the animation in the About window (in my infinite
+  spare time).
+
+     Version 2.0.2 - 28 Apr 1993
+	- Change default server to archie.sura.net(1526). That is,
+	  specify alternate port. <eanders@sura.net>
+	- Change constant used in ftp.h from _FTP_H to _XA_FTP_H since
+	  there was a conflict with wuarchive replacement <arpa/ftp.h>.
+	  <dec@alex.com>,<C.C.Boucher@southampton.ac.uk>
+	- Cleaned up status messages in browser.c and ftp.c.
+
+     Version 2.0.1 - 26 Apr 1993
+	- Include <stdio.h> in tilde.c to get NULL defined. Duuh.
+	  Jonathan Stone <jonathan@oscar.stanford.edu>
+
+     Version 2.0 - 23 Apr 1993
+	* Major improvements include:
+	  - Multiple selections allowed in browser for use with other new
+	    features (FWF MultiList widget).
+	  - Ability to expand directories in browser.
+	  - Real fully-integrated ftp implementation.
+	  - Ability to save and reload query results, as well as print them.
+	  - Ability to resort results, and sort results by user-definable
+	    pseudo-weights.
+	  - Online help browser.
+	  - Color resources, done so that they don't break mono displays.
+	  - FWF FileSelector widget for local file operations.
+	  - Makefile.dst's supplied for the imake-impaired.
+	* Fixes and reconsiderations include:
+	  - Did away with EzMenus, which I didn't exploit fully anyway
+	    and which were causing portability problems.
+	  - Did away with user-definable widget hierarchies since I
+	    doubt that anyone used them and XtNameToWidget() was a
+	    problem for many people. I still use it in a few places,
+	    but not crucially.
+	  - A fix for the crashing Text widgets, I think, and fixed the
+	    query-while-querying crash bug.
+	  - Browser code rewritten to isolate display dependencies, which
+	    allowed the development of a Curses browser client, to be
+	    released soon.
+	* Major contributors for this version include:
+	  - Alan Emtage (bajan@bunyip.com)
+	    Amos Shapira <amoss@cs.huji.ac.il>
+	    - Donated code that was warped into the ftp implementation.
+	  - Peter J Nilsson (pjn@ida.liu.se)
+	    - Suggested the "sort by weight" feature, and donated code.
+	  - Brian Totty (totty@cs.uiuc.edu)
+	    - Allowed use of the Free Widget Foundation MultiList and
+	      FileSelector widgets, in directory FWF.
+	* The undauntable beta-testers (there were more, sorry if I
+          missed you):
+	  Amos Shapira <amoss@cs.huji.ac.il>
+	  Jay Bourland <jayb@MATH.ColoState.EDU>
+	  long%imagen.materials@ox.ac.uk (Neil J Long)
+	  darrell@dcs119.dcsnod.uwf.edu (Darrell Werries)
+	  Kevin O'Connor <kocon@ctp.com>
+	  simon@lia.di.epfl.ch (Simon Leinen)
+	  palm@tokyo.rockwell.com (Stephen [kiwin] PALM)
+	  John Howells <howells@pioneer.arc.nasa.gov>
+	  David Meleedy <dmm@worf.harvard.edu>
+	  Brendan Kehoe <brendan@cs.widener.edu>
+	  osyjm@fubar.cs.montana.edu (Jaye Mathisen)
+	  jjsc@informatics.rutherford.ac.uk (John Cullen)
+	  Lee M J McLoughlin <lmjm@doc.ic.ac.uk>
+	  davidw@uiuc.edu (David Wojtowicz)
+	  Larry W. Virden, x2487 (lwv27@cas.org)
+	* Reports of problems/wishes with 1.3, some of which made it 2.0:
+ 	  Jonathan I. Kamens (jik@pit-manager.MIT.EDU)
+	  Lauren Weinstein (lauren@cv.vortex.com)
+	  Larry W. Virden, x2487 (lwv27@cas.org)
+	  Stephen Malowany (malowany@cenparmi.concordia.ca)
+	  Thomas A Peterson (tap@src.honeywell.com)
+	  Joachim Schrod (schrod@iti.informatik.th-darmstadt.de)
+	  Marshal Linfoot (marshal@nexus.yorku.ca)
+	  Paul Close (pdc@lunch.wpd.sgi.com)
+	  Bill Silvert (silvert@biome.bio.dfo.ca)
+	  Michael Wojcik (woj@ll.mit.edu)
+	  Anthony J. Persechini (ajp2o@crocus.medicine.rochester.edu)
+	  G|ran Uddeborg (uddeborg@sisug.sisu.se)
+	  Jim Watt (jimw@PE-Nelson.COM)
+	  Theo Vosse (VOSSE@rulfsw.LeidenUniv.nl)
+	  David N. Blank-Edelman (dnb@meshugge.media.mit.edu)
+	  Warren R Carithers (wrc@cs.rit.edu)
+	  Mike Szloh (szloh@jupiter.cse.UTOLEDO.edu)
+	  David Meleedy (dmm@worf.harvard.edu)
+	  Jonathan Stone (jonathan@isor.vuw.ac.nz)
+	  Marc E. Fiuczynski (mef@klinzhai.rutgers.edu)
+	  Peter K. Campbell (p.campbell@trl.oz.au)
+	  Christopher T Hubbard (chubbard@ecn.purdue.edu)
+	  John Keener (keener@astro.psu.edu)
+	  Dave Brennan (brennan@hal.com)
+	  William Stephen Kish (wk0x+@andrew.cmu.edu)
+	  Kevin O'Connor (kevin@ctp.com)
+	  Tim Auckland (tda10@cus.cam.ac.uk)
+	  dockhorn@gate.fzi.de
+
+     Version 1.3 - 12 Nov 1991
+	- Separated EzMenu widget creation from others by adding .menus
+	  resource and slightly changing initWidgets() in xarchie.c. This
+	  hopefully prevents those annoying core dumps under old or otherwise
+	  strange version of X. Also renamed the "hostText" on the Settings
+	  form to "setHostText" again in hopes of avoiding the problem.
+	- Added archie.sura.net to hostMenu and made it the default elsewhere.
+	- "-debug" formerly didn't want an argument -- fixed.
+	- Made dirsend() asynchronous by restructuring it, so xarchie will
+	  now refresh and can be interrupted during queries. Added "Abort"
+	  button to interrupt queries.
+	- Removed comments about gcc from this file and the Imakefile since
+	  it's handled automatically in dirsend.c using SUN_GNU_FIX.
+	- From the TODO file: Fixed default-settings() action so it uses
+	  as defaults the values of the application resources when xarchie
+	  starts up.
+	- Added confirmation of quitting and -expert flag (and expert
+	  resource) to avoid it if desired.
+	- Tweaked resources for better layout, better resizing, etc, etc.
+	- From: bajan@cs.mcgill.ca
+	  - Updated man page and added Bill Heelan acknowledgement.
+	- From: khushro@zip.eecs.umich.edu
+	  - Added "save-to-file()" action.
+	- From: Dennis Shiao <shiao@ans.net>
+	  - ftp.c called alert0() rather than alert1().
+	- From: Lee M J McLoughlin <lmjm@doc.imperial.ac.uk>
+	  - Added archie.doc.ic.ac.uk to hostMenu
+	- From: Amos Shapira <amoss@cs.huji.ac.il>
+	  - Added cs.huji.ac.il to hostMenu.
+	- From: brendan@cs.widener.edu (Brendan Kehoe)
+	  - Changes to many files from the "archie" distribution, including
+	    more portable #includes and Prospero warning message handling.
+	    Includes new file perrmesg.c.
+	  - Provide udp.c to test whether UDP traffic is enabled.
+	- From bcn@isi.edu (Clifford Neuman)
+	  - Changed dirsend.c to compare connection id's rather than
+	    hostnames, based on an observation from Lee McLoughlin,
+	    among other Prospero stuff.
+
+     Version 1.2 - 12 Sep 1991
+	- Changed LowerCase() in types.c (from Xt manual example) to
+	  XmuCopyISOLatin1Lowered() since the former was not always
+	  compiled into X.
+	- Added resources "ftpDir" and "ftpType" and corresponding items
+	  on the Settings panel so the ftp service is a bit better.
+	- From: beser@aplcomm.jhuapl.edu (Nick Beser)
+	  - Fixed regex support in Imakefile. Added regex.h which is included
+	    by support.c and actions.c.
+	- From: Greg Lindahl <gl8f@fermi.clas.Virginia.EDU>)
+	  - Changed strcasecmp() in types.c to XmuCompareISOLatin1() since
+	    some systems don't have the former.
+	  - Changed two leftover instances of isspace() to ISSPACE() in
+	    xarchie.c.
+	- From: "(Simon Leinen)" <simon@liasun1.epfl.ch>
+	   and: Alan B Clegg <abc@concert.net>
+	  - Changed some widget names in resource file since the Settings
+	    form wasn't being laid out correctly.
+
+     Version 1.1 - 4 Sep 1991
+	Released to comp.sources.x.

@@ -1,0 +1,194 @@
+# Breton translation of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Jañ-Mai Drapier <jdrapier@club-internet.fr>, 1999
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmktalkd-1.1\n"
+"POT-Creation-Date: 1998-12-12 15:20+0100\n"
+"PO-Revision-Date: 1999-03-19 11:56+0100\n"
+"Last-Translator: Jañ-Mai Drapier <jdrapier@club-internet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+
+#: main.cpp:58
+msgid "&Announcement"
+msgstr "&Kemenn"
+
+#: main.cpp:61
+msgid "Ans&wering machine"
+msgstr "Ardivink &eilgeriañ"
+
+#: main.cpp:64
+msgid "&Forward"
+msgstr "&Dazkas"
+
+#: main.cpp:70
+msgid "usage: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+msgstr ""
+"arveriadur : kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+
+#: main.cpp:111
+msgid "KTalkd Configuration"
+msgstr "Kefluniañ KTalkd"
+
+#: soundpage.cpp:46
+msgid "&Announcement program"
+msgstr "&Goulev kemenn"
+
+#: soundpage.cpp:53
+msgid "&Talk client"
+msgstr "&Pratik kaozeal"
+
+#: soundpage.cpp:57
+msgid "&Play sound"
+msgstr "&Mouezhiañ"
+
+#: soundpage.cpp:59
+msgid "&Sound File"
+msgstr "&Restr son"
+
+#: soundpage.cpp:61
+msgid "Additional WAV files can be dropped onto the sound list."
+msgstr "Restroù WAV ouzhpenn a c'heller leuskel davet roll ar sonioù."
+
+#: soundpage.cpp:76
+msgid "&Test"
+msgstr "&Arnodiñ"
+
+#: soundpage.cpp:156
+msgid "Unsupported URL"
+msgstr "URL anskoraet"
+
+#: soundpage.cpp:157
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE System Sound "
+"Module"
+msgstr ""
+"Ho tigarez, ar rizh URL-mañ a zo anskoraet evit ar poent gant mollad sonioù "
+"ar reizhiad KDE"
+
+#: soundpage.cpp:164
+#, c-format
+msgid ""
+"Sorry, but \n"
+"%s\n"
+"does not seem to be a WAV--file."
+msgstr ""
+"Ho tigarez, hogen \n"
+"%s\n"
+"n'eo ket ur restr WAV, evit doare."
+
+#: soundpage.cpp:167
+msgid "Improper File Extension"
+msgstr "Astenn restr siek"
+
+#: soundpage.cpp:175
+#, c-format
+msgid ""
+"The file\n"
+"%s\n"
+"is already in the list"
+msgstr ""
+"Ar restr\n"
+"%s\n"
+"a zo er roll endeo"
+
+#: soundpage.cpp:179
+msgid "File Already in List"
+msgstr "Restr er roll endeo"
+
+#: answmachpage.cpp:39
+msgid "&Activate answering machine"
+msgstr "Bevaat an ardinvink eilgeriañ"
+
+#: answmachpage.cpp:44
+msgid "&Mail address"
+msgstr "&Chomlec'h postel"
+
+#: answmachpage.cpp:51
+msgid "Mail sub&ject"
+msgstr "D&odenn postel"
+
+#: answmachpage.cpp:54
+#, c-format
+msgid "Use %s for the caller name"
+msgstr "Implijit %s evit anv ar galver"
+
+#: answmachpage.cpp:60
+msgid "Mail &first line"
+msgstr "Lenenn &kentañ ar postel"
+
+#: answmachpage.cpp:64
+#, c-format
+msgid "Use first %s for caller name, and second %s for caller hostname"
+msgstr ""
+"Implijit an %s kentañ evit anv ar galver, hag an eil %s evit anv ostiz ar "
+"galver "
+
+#: answmachpage.cpp:68
+msgid "&Receive a mail even if no message left"
+msgstr "&Resev ur postel zoken ma n'eus kemennad ebet laosket"
+
+#: answmachpage.cpp:74
+msgid "&Banner displayed on answering machine startup :"
+msgstr "&Banner diskwelet en ur loc'hañ an ardivink eilgeriañ :"
+
+#: answmachpage.cpp:83
+msgid ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+msgstr ""
+"An hini e klaskit kaozeal gantañ ne eilger ket.\n"
+"Laoskit mar plij ur c'hemennad da ingalañ dre bostel.\n"
+"Krogit da vizskrivañ ha p'ho devo echu, kuitit evel boas."
+
+#: answmachpage.cpp:171 answmachpage.cpp:189
+#, c-format
+msgid "Message from %s"
+msgstr "Kemennad a-berzh %s"
+
+#: answmachpage.cpp:172 answmachpage.cpp:191
+#, c-format
+msgid "Message left in the answering machine, by %s@%s"
+msgstr "Kemennad laozket en ardivink eilgeriañ, gant by %s@%s"
+
+#: forwmachpage.cpp:34
+msgid "Activate &forward"
+msgstr "&Bevaat an dazkas"
+
+#: forwmachpage.cpp:39
+msgid "&Destination (user or user@host)"
+msgstr "D&ehaezadur (hedad pe hedad@ostiz)"
+
+#: forwmachpage.cpp:49
+msgid "Forward &method"
+msgstr "&Hentenn dazkas"
+
+#: forwmachpage.cpp:54
+msgid ""
+"FWA : Forward announcement only. Direct connection. Not recommended.\n"
+"FWR : Forward all requests, changing info when necessary. Direct "
+"connection.\n"
+"FWT : Forward all requests and take the talk. No direct connection.\n"
+"\n"
+"Recommended use : FWT it you want to use it behind a firewall (and if "
+"ktalkd\n"
+"can access both networks), and FWR otherwise.\n"
+"\n"
+"See Help for further explanations.\n"
+msgstr ""
+"FWA : Dazkas ar c'hemennoù hepken. Kevreañ war-eeun. N'eo ket erbedet.\n"
+"FWR : Dazkas an holl goulennoù, o kemmañ stlenn pa vez ezhomm. Kevreañ "
+"war-eeun.\n"
+"FWT : Dazkas an holl goulennoù ha kemer ar gaoz. Kevreañ war eeun ebet.\n"
+"\n"
+"Arveriadur erbedet : FWT m'ho peus c'hoant e arverañ a-dreñv ur maltouter "
+"(ha\n"
+"ma c'hell ktalkd tizhout an daou rouedad), mod all FWR.\n"
+"\n"
+"Gwelit ar skoazell evit muioc'h a zisplegadennoù.\n"

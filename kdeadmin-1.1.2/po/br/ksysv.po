@@ -1,0 +1,372 @@
+# Breton translation of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Jañ-Mai Drapier <jdrapier@club-internet.fr>, 1998
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ksysv-1.1\n"
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"PO-Revision-Date: 1999-03-26 23:51+0100\n"
+"Last-Translator: Romuald Texier <texierr@worldnet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+
+#: main.cpp:236
+msgid ": Error"
+msgstr ": Fazi"
+
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr "Ar gourarveriad hepken zo aotreet da gemm al liveoù seveniñ."
+
+#: OldView.cpp:105
+msgid "Available"
+msgstr "Hegerz"
+
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "&Servijoù"
+
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+"Setu ar <bold>servijoù hegerz.</bold>\n"
+"Evit loc'hañ ur servij, stlejit anezhañ en dachenn <bold>\"Loc'hañ\"</bold> "
+"ul\n"
+"live seveniñ.\n"
+"\n"
+"Evit paouez unan, grit kement-all en dachenn <bold>\"Paouez\"</bold>."
+
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "Live seveniñ &%i"
+
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "Live seveniñ %i"
+
+#: OldView.cpp:149
+msgid "Start"
+msgstr "Loc'hañ"
+
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Stlejit amañ evit loc'hañ servijoù\n"
+"pa grog al live seveniñ %i"
+
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Stlejit amañ evit paouez servijoù\n"
+"pa grog al live seveniñ %i"
+
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr "*** O SKRIVAÑ AR C'HEFLUNIADUR **\n"
+
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr "** LIVE SEVENIÑ %i **\n"
+
+#: OldView.cpp:517
+msgid "Reading configuration: "
+msgstr "O lenn ar c'hefluniadur :"
+
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr "** O paouez"
+
+#: OldView.cpp:624
+msgid " stop"
+msgstr " paouez"
+
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr "** O loc'hañ"
+
+#: OldView.cpp:644
+msgid " start"
+msgstr " loc'hañ "
+
+#: OldView.cpp:661
+msgid "** Re-starting "
+msgstr "** Oc'h adloc'hañ"
+
+#: OldView.cpp:666
+msgid " restart"
+msgstr " adloc'hañ"
+
+#: OldView.cpp:811
+msgid "P&roperties..."
+msgstr "Pe&rzhioù ..."
+
+#: OldView.cpp:831
+msgid "S&top"
+msgstr "Paoue&z"
+
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "Adloc'&han"
+
+#: TopWidget.cpp:136
+msgid "&New Configuration"
+msgstr "Kefluniadur &nevez"
+
+#: TopWidget.cpp:137
+msgid "&Save Configuration"
+msgstr "&Enrollañ ar c'hefluniadur"
+
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr "Moulañ ar &c'herzlevr ..."
+
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr "Diskouez barrenn ar &binvioù"
+
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr "Diskouez barrenn a &stad"
+
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr "Diskouez ar &c'herzlevr"
+
+#: TopWidget.cpp:174
+msgid "&Configure..."
+msgstr "Ke&fluniañ ..."
+
+#: TopWidget.cpp:177
+msgid "&Save Options"
+msgstr "&Enrollañ an dibaboù"
+
+#: TopWidget.cpp:215
+msgid "New"
+msgstr "Nevez"
+
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "Gwintañ diskas an urzhiaoueg"
+
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"Kemmoù dienroll a zo.\n"
+"Hag e fell deoc'h kuitaat da vat ?"
+
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "Ya, er-maez !"
+
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "Ket, chomit."
+
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "Skarañ ar c'hemmoù"
+
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "Hag e fell deoc'h skarañ an holl gemmoù dienroll ?"
+
+#: TopWidget.cpp:307
+msgid "Save configuration"
+msgstr "Enrollañ ar c'hefluniadur"
+
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"Emaoc'h o vont da enrollañ kemmoù graet d'ho kefluniadur deraouiñ.\n"
+"Soñjit mat e c'hell dibarzhoù fall lakaat ho reizhiad divarrek da loc'hañ "
+"en-dro.\n"
+"\n"
+"Hag e fell deoc'h kenderc'hel ?"
+
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr "Ya, en&rollit !"
+
+#: TopWidget.cpp:314
+msgid "No, &don't save."
+msgstr "Ket, &na enrollit tra."
+
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "Diwar-benn Qt"
+
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "Kemmet"
+
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr "Ne m'eus ket gellet genel an niver rummañ. Grit gant an dorn mar plij."
+
+#: prefs.cpp:48
+#, c-format
+msgid "%s - Preferences"
+msgstr "%s - Dibarzhoù"
+
+#: prefs.cpp:58
+msgid "Directory containing your init-scripts (&services)"
+msgstr "Renkell enni ho urzhiaouegoù deraouiñ (&servijoù)"
+
+#: prefs.cpp:79
+msgid "Directory containing your &runlevel-directories"
+msgstr "Renkell enni ho renkelloù &live-seveniñ"
+
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr "Liv evit enmontoù &nevez"
+
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr "Liv evit enmontoù ke&mmet"
+
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr "&Hentoù"
+
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr "&Livioù"
+
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "Stejit amañ evit dilemel servijoù"
+
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr "&Anv"
+
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr "A &buk ouzh"
+
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr "Niver &rummañ"
+
+#: PropDlg.cpp:113
+#, c-format
+msgid "%s - Properties"
+msgstr "%s - Perzhioù"
+
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr "SAC'HET en ur zilemel %s diwar %s: \"%s\"\n"
+
+#: IOCore.cpp:53
+#, c-format
+msgid "removed %s from %s\n"
+msgstr "dilamet %s diwar %s\n"
+
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr "krouet %s e %s\n"
+
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr "SAC'HET en ur grouiñ %s e %s : \"%s\"\n"
+
+#: About.cpp:46
+#, c-format
+msgid "About %s"
+msgstr "Diwar-benn %s"
+
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr "Aozer deraouiñ SysV KDE"
+
+#: About.cpp:81
+#, c-format
+msgid "Version %s (KDE %s)"
+msgstr "Doare %s (KDE %s)"
+
+#: About.cpp:89
+msgid "© 1997-1999 "
+msgstr "© 1997-1999 "
+
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr "Peter Putzer"
+
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr "Kasit danevelloù drein/istorioù berzh/arc'hant e-leiz/..."
+
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ". Pep gwir miret strizh."
+
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp © 1997 Martin Jones.\n"
+"Uses the KDE libraries © 1997-1999 The KDE Team.\n"
+"Uses the Qt library © 1992-1998 Troll Tech AS."
+msgstr ""
+"Lodennoù IPC kemeret diwar kdehelp © 1997 Martin Jones.\n"
+"Implijout a ra levraouegoù KDE © 1997-1999 Skipailh KDE.\n"
+"Implijout a ra levraoueg Qt © 1992-1998 Troll Tech AS."
+
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+"Un aozer evit kefluniañ an deraouiñ giz SysV, heñvel ouzh \"tksysv\" Red "
+"Hat,\n"
+"nemet ez-euz stlej-ha-laosk gant ksysv, e-kichen implij ar stokellaoueg."
+
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""
+"Frank eo ar meziant-mañ ; tu zo deoc'h e adskignañ pe e gemmañ\n"
+"dindan mennadoù doare 2 eus ar GNU General Public License, evel m'eo bet\n"
+"embannet gant ar Free Software Foundation.\n"
+"\n"
+"Skignet eo ar meziant-mañ gant ar spi e vo talvoudus, hogen HEP AN DISTERAÑ\n"
+"KRETADUR ; hep zoken ur c'hretatur a WERZHUSTED pe a TALVOUD SEVENIÑ\n"
+"UR GEFRIDI BENNAK. Sellit ouzh GNU General Public License evit\n"
+"muioc'h a munudoù."

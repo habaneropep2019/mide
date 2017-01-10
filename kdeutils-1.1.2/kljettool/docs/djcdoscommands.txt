@@ -1,0 +1,258 @@
+This file contains information on using printer codes with
+DeskJets.  It has three sections:  Sending printer commands to the
+printer, combining printer codes, and testing printer functionality
+using codes from a DOS prompt.
+                                                          
+SENDING PRINTER COMMANDS TO THE PRINTER
+=======================================
+
+     To use HP DeskJet printer features that are not supported by
+     your software printer driver and cannot be accessed from the
+     control panel, send the appropriate codes directly to the
+     printer using one of the three methods discussed below.
+     
+     Specific software packages may or may not support one or all
+     of the following:
+
+     1.   Embedded Commands:  Some software packages allow you to
+          embed printer commands at the top of the document (for
+          example, MultiMate Advantage II and Professional
+          Write).  The ability to embed commands is specific to
+          the software package you are using.  Printer commands
+          are located in the "Printer Commands" chapter in the
+          user's manual for your printer, but you will have to
+          see your software documentation for further
+          instructions.
+     
+     2.   Setup Strings:  Some software packages allow you to
+          enter setup strings to access printer features (for
+          example, Lotus 1-2-3, Paradox, Quattro, etc.).  Printer
+          commands are located in the "Printer Commands" chapter
+          in the user's manual for your printer, but you will
+          have to see your software documentation for further
+          instructions.
+     
+     3.   Control Codes:  Some software packages allow you to
+          enter control codes, usually with decimal values (27 69
+          27 40 115....) to access printer features.  This is a
+          common method for older packages that were designed for
+          dot matrix printers.
+     
+     Examples of common escape sequences appear in the following
+     table:
+     
+          Program      Escape         Reset Example
+                       Character
+                       Keystrokes
+          Edit         (Control       ^P(Esc)
+                       key+P)Esc
+          Edlin        (Control key   ^V[E
+                       +V) [
+          GW Basic     LPRINT         LPRINT
+                       CHR$(27);      CHR$(27);"E";
+          dBase III+   ?? CHR(27)+    ?? CHR(27)+"E"
+          Framework    ?? CHR(27)+    ?? CHR(27)+"E"
+          Lotus 1-2-3  \027           \027E
+          MultiMate    (ALT Key + A)  027 E
+                       027
+          Symphony     \027           \027E
+          Q&A          *P27, * or     *27,69*
+                       027
+          Quattro      \027           \027E
+          Professional *P 27, *       *P 27,69*
+          Write
+          WordPerfect  <27>           <27>E
+          WordStar     .XQ (or E, R,  .XQ 1B 69
+                       W)
+          Enable       %^27,          %^27,69
+          MS Word      [Alt]027       [Alt]027 069
+          (DOS)
+          
+          NOTE:  Your software documentation may have
+                 a section about embedding setup
+                 strings or printer commands that will
+                 show any unique syntax required to
+                 enter control codes.  If not, you
+                 will need to call your software
+                 company.
+
+                                                                 
+                                                                 
+COMBINING ESCAPE SEQUENCES
+==========================
+
+     To save keystrokes, you can combine several HP DeskJet
+     printer escape sequences into one escape sequence string.
+     For example, to set the left and right margins to columns 10
+     and 70 respectively, you could either enter:
+     
+                 Ec&a10L and Ec&a70M
+     
+                 OR
+     
+                 Ec&a10l70M
+     
+          NOTE:  l = Lower case L
+          
+     There are three important rules to remember in combining
+     escape sequences:
+     
+          1.   The first two characters after the Esc character
+               must be the same.
+          2.   When combining, change the upper case letters in
+               each individual escape sequence to lower case.
+          3.   The final character of the escape sequence must be
+               upper case.
+     
+     The escape sequences will be performed in the order they are
+     specified.
+     
+                 Example:  Selecting a Character Font
+     
+     This example illustrates how to select a primary font with
+     the following characteristics:
+     
+          NOTE:  The escape sequences need to be
+                 entered in the order listed below.
+     
+                 Orientation--portrait
+                 Symbol Set--PC-8
+                 Spacing--fixed
+                 Pitch--10 characters/inch
+                 Character height--12 point
+                 Style--italics
+                 Typeface--Courier
+     
+     The following escape sequence would be sent to the printer
+     to select a font with these characteristics:
+     
+                 Ec&lOEc(1UEc(sPEc(s1HEc(s12VEc(s1SEc(s3T
+     
+     The following escape sequence sends the same printer
+     commands by combining them into a shorter escape sequence.
+     
+                 Ec&lOEc(1UEc(sp1h12v1sb3T
+     
+                                                            
+                                                            
+TESTING PRINTER FUNCTIONALITY FROM DOS EDIT
+===========================================
+
+REFERENCE SHEET EDIT COMMAND OR  DESCRIPTION FUNCTION
+
+<Ctrl> + <P>      The ESCAPE CODE <Ec> for use with followed by 
+                  <Esc> PCL commands appears as a LEFT ARROW <- on
+                  the screen.
+                  
+<Alt>+< >         The <Alt> key used in combination with a letter
+                  allows access to the menu.  Example: Suppress
+                  <Alt> + <F> to access the file menu.
+                  
+< > or <arrow     To access additional selections on key> the menu
+                  use one of the procedures described.  < > Replace
+                  the space with the highlighted letter displayed
+                  on the menu.  Example: <P> will access the print
+                  function.  <arrow key> Utilize the arrow keys
+                  to choose other selections.
+
+<Tab>             This key is used to MANEUVER within a function
+                  screen to another item.
+
+<Esc>             Is used to EXIT a menu or function screen.
+
+<Shift> + <arrow  To HIGHLIGHT data suppress the shift key> key
+                  along with the desired arrow key.
+
+<Shift> + <Del>   To CUT a highlighted portion use this edit
+                  function.
+
+<Ctrl> + <Ins>    To COPY a highlighted portion use this edit
+                  function.
+
+<Shift> + <Ins>   To PASTE a highlighted portion use this edit
+                  function.
+
+<Del>             To CLEAR a highlighted portion use this edit
+                  function.
+
+<File>, <Print>,  To EXECUTE the file created. <Complete Document>
+          
+NOTE:  All printer commands in Edit must be on the same line
+followed by the first portion of text when defining margins and
+cursor positioning.
+
+Question:   Using DOS Edit how can I test printing bold to my
+DeskJet printer?     
+
+Answer:     Following is the program to test bolding:  
+
+            EcE            Reset
+            Ec(s7B         Extra bold
+            EcE            Reset
+
+Ec is represented by pressing the CTRL key and the letter P at the 
+same time followed by the ESCAPE KEY (Esc), which will appear
+as a left arrow <- on the screen.
+     
+Printer commands can be typed in separately or combined.  The
+example below keeps each printer command separate:
+     
+                 <-E
+                 <-(s7BThis is a test of bolding text.
+                 <-E
+     
+Question:   Using DOS Edit how can I test printing underlines to my
+DeskJet printer?
+     
+Answer:     Following is the program to test underlining:
+
+                 EcE            Reset
+                 Ec&d1D         Underline
+                 EcE            Reset
+
+Ec is represented by pressing the CTRL key and the letter P at the
+same time followed by the ESCAPE KEY (Esc), which will appear
+as a left arrow <- on the screen.
+     
+Printer commands can be typed in separately or combined.  The
+example below keeps each printer command separate:
+     
+                 <-E
+                 <-&d1DThis is a test to demonstrate
+                      underlining text.
+                 <-E
+
+Question:   Using DOS Edit how can I test printing envelopes to my
+DeskJet printer?    
+
+Answer:     Following is the program to test envelopes:
+     
+                 EcE            Reset
+                 Ec&l0O         Portrait
+                 Ec&l81A        Envelope
+                 Ec&l0L         Perforation Skip Mode OFF
+                 Ec&l12E        Top margin (2")
+                 Ec&a40L        Left margin (4 columns @10cpi)
+                 Ec&l3H         Envelope Feed
+                 Ec&l0H         Page Eject
+                 EcE            Reset
+                 
+Ec is represented by pressing the CTRL key and the letter P at the
+same time followed by the ESCAPE KEY (Esc), which will appear
+as a left arrow <- on the screen.
+     
+Printer commands can be typed in separately or combined.  The
+example below keeps each printer command separate:
+
+                 <-E
+                 <-&l0O<-&l81A<-&l0L<-&l12E<-&a40L<-&l3H
+                 Mr. Smyth
+                 9999 44th Ave.
+                 Zeno, NK  99999
+                 <-&l0H
+                 <-E
+
+Copyright  Hewlett-Packard Co. 1993 The information contained
+herein is subject to change without notice. Hewlett-Packard shall
+not be liable for incidental or consequential damages in connection
+with the use of this material.

@@ -1,0 +1,92 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {KSCutDialog.h}
+	ClassSource {KSCutDialog.cpp}
+	ClassName {KSCutDialog}
+	DataHeader {KSCutDialogData.h}
+	DataSource {KSCutDialogData.cpp}
+	DataName {KSCutDialogData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowCaption {Cut Window}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {590 370}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+User {
+		UserClassHeader {cutmle.h}
+		UserClassName {KCutMLE}
+		Rect {5 5 580 320}
+		Name {User_1}
+		Variable {IrcMLE}
+		LayoutStatus {InLayout}
+		MinimumSize {10 320}
+		MaximumSize {32767 320}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cop&y}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {370 5 100 30}
+		Name {PushButton_9}
+		Signal {[Protected]  clicked --> copy  ()}
+		LayoutStatus {InLayout}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Close}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {475 5 100 30}
+		Name {PushButton_10}
+		Signal {[Protected]  clicked --> terminate  ()}
+		LayoutStatus {InLayout}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+}
+Layout {Box}
+Box_Layout-1{
+		Direction {TopToBottom}
+		Border {5}
+		AutoBorder {5}
+		Name {}
+		Strut {0}
+}
+Box_Widget-1.1{
+		Widget {User_1}
+		Stretch {1}
+		Alignment {9}
+}
+Box_Layout-1.2{
+		Direction {LeftToRight}
+		AutoBorder {5}
+		Name {}
+		Strut {0}
+		Stretch {0}
+}
+Box_Stretch-1.2.1{
+		Stretch {1}
+}
+Box_Widget-1.2.2{
+		Widget {PushButton_9}
+		Stretch {0}
+		Alignment {36}
+}
+Box_Widget-1.2.3{
+		Widget {PushButton_10}
+		Stretch {0}
+		Alignment {36}
+}
+}

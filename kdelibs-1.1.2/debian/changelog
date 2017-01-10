@@ -1,0 +1,401 @@
+kdelibs (4:1.1.2-19990906-1.0) unstable; urgency=low
+
+  * New upstream version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Mon, 06 Sep 1999 16:30:00 -0400
+
+kdelibs (4:1.1.1-19990822-1.0) unstable; urgency=low
+
+  * New upstream CVS version
+  * Adding in verification piece to make sure that /usr/doc/kde/HTML/default is
+    a link and not a directory
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sun, 22 Aug 1999 10:45:00 -0400
+
+kdelibs (4:1.1.1-19990817-1) unstable; urgency=low
+
+  * New upstream CVS version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Tue, 17 Aug 1999 11:45:00 -0400
+
+kdelibs (4:1.1.1-19990812-1) unstable; urgency=low
+
+  * New upstream CVS version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Thu, 12 Aug 1999 14:45:00 -0400
+
+kdelibs (4:1.1.1-19990809-1) unstable; urgency=low
+
+  * New upstream CVS version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Mon, 09 Aug 1999 01:39:00 -0400
+
+kdelibs (4:1.1.1-19990803-1) unstable; urgency=low
+
+  * New upstream CVS version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Tue, 03 Aug 1999 16:45:56 -0400
+
+kdelibs (4:1.1.1-19990717-1) unstable; urgency=low
+
+  * New upstream CVS version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sat, 17 Jul 1999 00:45:56 -0400
+
+kdelibs (4:1.1.1-19990701-1) unstable; urgency=low
+
+  * New upstream CVS version 
+  * This is pre-1.1.2 (frozen) 
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Thu, 01 Jul 1999 11:45:56 -0400
+
+kdelibs (4:1.1.1-19990624-1) unstable; urgency=low
+
+  * New upstream CVS version (pull)
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Thu, 24 Jun 1999 05:30:56 -0400
+
+kdelibs (4:1.1.1-19990612-2) unstable; urgency=low
+
+  * Seperated out docs into their own package for use with programs like
+    kdevelop
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Tue, 22 Jun 1999 15:30:56 -0400
+
+kdelibs (4:1.1.1-19990612-1) unstable; urgency=low
+
+  * New upstream CVS version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sat, 12 Jun 1999 03:30:56 -0400
+
+kdelibs (4:1.1.1-19990529-1) unstable; urgency=low
+
+  * New upstream CVS version
+  * New kderules script which cleans up some errors
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sat, 29 May 1999 22:05:56 -0400
+
+kdelibs (4:1.1.1-19990523-1) unstable; urgency=low
+
+  * New upstream CVS version
+  * Minor build fixes
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sun, 23 May 1999 07:05:56 -0400
+
+kdelibs (4:1.1.1-19990510-1) unstable; urgency=low
+
+  * Official 1.1.1 version
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Mon,  3 May 1999 07:05:56 -0400
+
+kdelibs (4:1.1.1-19990501-2) unstable; urgency=low
+
+  * Fixing some compiling issues
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sat,  1 May 1999 22:05:56 -0400
+
+kdelibs (4:1.1.1-19990501-1) unstable; urgency=low
+
+  * Moving everything out of X11R6
+  * Fixed problem with kderules perl script
+  * Adding a -doc package and moving all usr/doc files into it
+  * Adding a kdm package so kdm is not required for KDE
+
+ -- Ivan E. Moore II <rkrusty@debian.org>  Sat,  1 May 1999 09:05:56 -0400
+
+(4:1.1.1-19990424-1) unstable; urgency=low
+
+  * new upstream version for KDE 1.1.1
+
+ -- Stephan Kulow <coolo@kde.org>  Sat, 24 Apr 1999 16:53:56 +0200
+
+kdelibs (4:1.1-19990306-1) unstable; urgency=low
+
+  * new upstream version out of CVS (many translation updates and some
+    security fixes
+
+ -- Stephan Kulow <coolo@kde.org>  Sat,  6 Mar 1999 18:03:04 +0100
+
+kdelibs (4:1.1-19990217-1) unstable; urgency=low
+
+  * new upstream version
+
+ -- Stephan Kulow <coolo@kde.org>  Wed, 17 Feb 1999 19:09:42 +0100
+
+kdelibs (4:1.1-19990207-2) unstable; urgency=low
+
+  * fixed a bug with the jpeglib version
+
+ -- Stephan Kulow <coolo@kde.org>  Tue,  9 Feb 1999 09:31:40 +0100
+
+kdelibs (4:1.1-19990207-1) unstable; urgency=low
+
+  * new upstream version 1.1 and new epoche
+
+ -- Stephan Kulow <coolo@kde.org>  Sun,  7 Feb 1999 12:12:58 +0100
+
+kdelibs (2:980710-1.0-1) unstable; urgency=low
+
+  * new upstream version 1.0
+
+ -- Stephan Kulow <coolo@kde.org>  Sun, 12 Jul 1998 10:12:19 +0200
+
+kdelibs (2:980419-b4-1) unstable; urgency=low
+
+  * new upstream version Beta4
+
+ -- Stephan Kulow <coolo@kde.org>  Sun, 19 Apr 1998 13:58:13 +0200
+
+kdelibs (2:980312-4) frozen; urgency=low
+
+  * touch the .so.0 files to satisfy lintian
+  * moved all unnecessary files out of -dev
+  * moved the symbolic link default->en to kdelibs, where it belongs
+  * fixed the shlibs format
+  * new qt1g release (1.33)
+
+ -- Stephan Kulow <coolo@kde.org>  Tue, 31 Mar 1998 13:00:00 +0100   
+
+kdelibs (2:980312-3) frozen; urgency=low
+
+  * new g++ and libstdc++ release (egcs-2.90.26-1)
+
+ -- Stephan Kulow <coolo@kde.org>  Tue, 24 Mar 1998 14:45:16 +0100
+
+kdelibs (2:980312-2) unstable; urgency=low
+
+  * use debhelper now
+
+ -- Stephan Kulow <coolo@kde.org>  Sun, 15 Mar 1998 21:28:42 +0100
+
+kdelibs (2:980312-1) experimental; urgency=low
+
+  * changed the files file
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Thu, 12 Mar 1998 22:15:37 +0100
+
+kdelibs (2:980310-3) experimental; urgency=low
+
+  * removed the preinst script
+  * use absolute paths instead of the one with 
+  * changed directory for libraries
+
+ -- Stephan Kulow <coolo@kde.org>  Wed, 11 Mar 1998 20:11:50 +0100
+
+kdelibs (2:980310-2) experimental; urgency=low
+
+  * removed the file correction part from kderules
+
+ -- Stephan Kulow <coolo@kde.org>  Mon,  9 Mar 1998 23:29:50 +0100
+
+kdelibs (2:980310-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Mon,  9 Mar 1998 22:47:16 +0100
+
+kdelibs (980303-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Wed, 4 Mar 1998 10:43:42 +0100
+
+kdelibs (980228-1) experimental; urgency=low
+
+  * added *.moc to the clean target
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Sat, 28 Feb 1998 21:05:58 +0100
+
+kdelibs (980227-2) experimental; urgency=low
+
+  * removed the REENTRANT flag. KDE don't uses threds
+  * updated libmediatool
+
+ -- Stephan Kulow <coolo@kde.org>  Sat, 28 Feb 1998 01:22:56 +0100
+
+kdelibs (980227-1) experimental; urgency=low
+
+  * changed the name of libjpeg-dev
+  * renamed preint to preinst (typo while moving last time)
+  * added fields in control file (most taken from AJ's versions)
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Fri, 27 Feb 1998 20:20:24 +0100
+
+kdelibs (980225-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Wed, 25 Dec 1998 19:23:12 +0100
+
+kdelibs (980224-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Stephan Kulow <coolo@kde.org>  Wed, 25 Dec 1998 11:25:23 +0100
+
+kdelibs (1:Beta2-2.1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Fri,  5 Dec 1997 21:15:52 +0100
+
+kdelibs (1:Beta2-2) unstable; urgency=low
+
+  * removed virtual package names.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 30 Nov 1997 16:59:27 +0100
+
+kdelibs (1:Beta2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 23 Nov 1997 14:04:20 +0100
+
+kdelibs (1:Beta1.2-2) unstable; urgency=low
+
+  * new compile cycle with bugfixes.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun,  9 Nov 1997 19:43:46 +0100
+
+kdelibs (1:Beta1.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 27 Oct 1997 11:16:24 +0100
+
+kdelibs (1:Beta1.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 20 Oct 1997 12:33:52 +0200
+
+kdelibs (971019-1) unstable; urgency=low
+
+  * New upstream release
+  * Fixed all paths to match debian setup
+  * Fixed locale path
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 19 Oct 1997 12:05:32 +0200
+
+kdelibs (971013-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 13 Oct 1997 08:18:16 +0200
+
+kdelibs (971011-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 12 Oct 1997 12:08:40 +0200
+
+kdelibs (971009-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Thu,  9 Oct 1997 10:47:00 +0200
+
+kdelibs (971008-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Wed,  8 Oct 1997 10:03:09 +0200
+
+kdelibs (971006-2) unstable; urgency=low
+
+  * daily recompile of everything.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Tue,  7 Oct 1997 10:36:58 +0200
+
+kdelibs (971006-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon,  6 Oct 1997 09:19:17 +0200
+
+kdelibs (971005-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun,  5 Oct 1997 17:27:13 +0200
+
+kdelibs (971003-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Fri,  3 Oct 1997 08:16:14 +0200
+
+kdelibs (971002-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Thu,  2 Oct 1997 08:47:49 +0200
+
+kdelibs (970930-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Tue, 30 Sep 1997 11:39:38 +0200
+
+kdelibs (970929-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 29 Sep 1997 09:36:11 +0200
+
+kdelibs (970925-2) unstable; urgency=low
+
+  * daily recompile of everything.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Fri, 26 Sep 1997 08:42:24 +0200
+
+kdelibs (970925-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Thu, 25 Sep 1997 08:04:45 +0200
+
+kdelibs (970924-2) unstable; urgency=low
+
+  * new use kderules.
+  * daily recompile of everything.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Wed, 24 Sep 1997 10:21:17 +0200
+
+kdelibs (970924-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Wed, 24 Sep 1997 08:28:48 +0200
+
+kdelibs (970923-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Tue, 23 Sep 1997 08:36:52 +0200
+
+kdelibs (970922-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Mon, 22 Sep 1997 09:48:41 +0200
+
+kdelibs (970921-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sun, 21 Sep 1997 13:45:48 +0200
+
+kdelibs (970920-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Andreas Jellinghaus <aj@debian.org>  Sat, 20 Sep 1997 09:59:48 +0200
+
+Local variables:
+mode: debian-changelog
+add-log-mailing-address: "aj@debian.org"
+End:

@@ -1,0 +1,168 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {defaultfilters.h}
+	ClassSource {defaultfilters.cpp}
+	ClassName {DefaultFilters}
+	DataHeader {defaultfiltersdata.h}
+	DataSource {defaultfiltersdata.cpp}
+	DataName {defaultfiltersdata}
+	WindowBaseClass {QFrame}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {400 300}
+MinSize {400 300}
+MaxSize {400 300}
+Grid {5}
+
+ButtonGroup {
+		Title {Highlight Your Nick}
+		Alignment {Left}
+		Style {49}
+		Rect {15 240 370 55}
+		Name {ButtonGroup_4}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ButtonGroup {
+		Title {Colour Nicks in Channels}
+		Alignment {Left}
+		Style {49}
+		Rect {15 115 370 120}
+		Name {ButtonGroup_2}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ButtonGroup {
+		Title {Allow External Colours}
+		Alignment {Left}
+		Style {49}
+		Rect {15 5 370 105}
+		Name {ButtonGroup_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {TRUE}
+		Text {Allow &kSirc Colour codes}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {110 30 170 30}
+		Name {CheckBox_1}
+		Variable {kSircColours}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {TRUE}
+		Text {&Allow &mirc Colour codes}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {110 60 170 30}
+		Name {CheckBox_2}
+		Variable {mircColours}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Background}
+		Alignment {290}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {35 185 100 30}
+		Name {Label_3}
+		Variable {LabelNickB}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Foreground}
+		Alignment {290}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {35 145 100 30}
+		Name {Label_5}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Colour}
+		Alignment {290}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {35 255 100 30}
+		Name {Label_6}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {Sample}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {285 165 50 30}
+		Name {LineEdit_1}
+		Variable {SLE_SampleColourNick}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {Sample}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {285 255 50 30}
+		Name {LineEdit_2}
+		Variable {SLE_SampleHighlight}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ComboBox {
+		Style {ReadOnly}
+		SizeLimit {17}
+		Policy {AtBottom}
+		AutoResize {FALSE}
+		Rect {150 255 100 30}
+		Name {ComboBox_1}
+		Variable {usHighlightColour}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ComboBox {
+		Style {ReadOnly}
+		SizeLimit {17}
+		Policy {AtBottom}
+		AutoResize {FALSE}
+		Rect {150 145 100 30}
+		Name {ComboBox_2}
+		Variable {NickFColour}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ComboBox {
+		Style {ReadOnly}
+		SizeLimit {17}
+		Policy {AtBottom}
+		AutoResize {FALSE}
+		Rect {150 185 100 30}
+		Name {ComboBox_3}
+		Variable {NickBColour}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

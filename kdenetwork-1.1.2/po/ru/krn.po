@@ -1,0 +1,1710 @@
+# Russian messages for KRN.
+# Copyright (C) 1998, 1999 KDE Team.
+# Const Kaplinsky <const@ce.cctpu.edu.ru>, 1998.
+# Denis Pershin <dyp@inetlab.com>, 1999.
+msgid ""
+msgstr ""
+"Project-Id-Version: krn\n"
+"POT-Creation-Date: 1999-01-18 02:04+0100\n"
+"PO-Revision-Date: 1999-06-06 13:04+07:00\n"
+"Last-Translator: Const Kaplinsky <const@ce.cctpu.edu.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:219 main.cpp:232 main.cpp:246 main.cpp:264 main.cpp:279
+msgid "KRN-Missing Configuration info"
+msgstr "KRN-отсутствует конфигурационная информация"
+
+#: main.cpp:220
+msgid "Please enter your email adress"
+msgstr "Пожалуйста, введите адрес E-Mail"
+
+#: main.cpp:233
+msgid "Please enter your real name"
+msgstr "Пожалуйста, введите Ваше реальное имя"
+
+#: main.cpp:247
+msgid "Please enter your organization's name"
+msgstr "Пожалуйста, введите имя вашей организации"
+
+#: main.cpp:265
+msgid "Please enter your NNTP server name"
+msgstr "Пожалуйста, введите имя вашего NNTP-сервера"
+
+#: main.cpp:280
+msgid "Please enter your SMTP server name"
+msgstr "Пожалуйста, введите имя вашего SMTP-сервера"
+
+#: NNTP.cpp:120
+#, c-format
+msgid "Received %.2f Kb"
+msgstr "Получено %.2f Кб"
+
+#: NNTP.cpp:607
+msgid "Getting Article"
+msgstr "Получение статьи"
+
+#: NNTP.cpp:749
+msgid "Article Received"
+msgstr "Статья получена"
+
+#: groupdlg.cpp:130
+msgid "Connect to Server"
+msgstr "Соединение с сервером"
+
+#: groupdlg.cpp:131
+msgid "Disconnect From Server"
+msgstr "Отключение от сервера"
+
+#: groupdlg.cpp:132
+msgid "Get Active File"
+msgstr "Получить список конференций"
+
+#: groupdlg.cpp:134
+msgid "Post Queued Messages"
+msgstr "Отправить сообщения из очереди"
+
+#: groupdlg.cpp:136
+msgid "Exit"
+msgstr "Выход"
+
+#: groupdlg.cpp:139
+msgid "KRN - Group List"
+msgstr "KRN - Список конференций"
+
+#: groupdlg.cpp:142 groupdlg.cpp:148
+msgid "Get Subjects"
+msgstr "Получить заголовки"
+
+#: groupdlg.cpp:143 groupdlg.cpp:149
+msgid "Get Articles"
+msgstr "Получить статьи"
+
+#: groupdlg.cpp:144 groupdlg.cpp:152 groupdlg.cpp:160
+msgid "Catchup"
+msgstr "Пометить статьи как прочитанные"
+
+#: groupdlg.cpp:150 groupdlg.cpp:158
+msgid "(un)Subscribe"
+msgstr "Подписаться/Отписаться"
+
+#: artdlg.cpp:158 groupdlg.cpp:151
+msgid "Untag"
+msgstr "Снять пометку"
+
+#: artdlg.cpp:167 findArtDlg.cpp:65 groupdlg.cpp:157
+msgid "Find"
+msgstr "Найти"
+
+#: artdlg.cpp:178 groupdlg.cpp:159
+msgid "(Un)Tag"
+msgstr "Пометить/Снять пометку"
+
+#: artdlg.cpp:171 artdlg.cpp:228 groupdlg.cpp:162 groupdlg.cpp:214
+msgid "Post New Article"
+msgstr "Отправить новую статью"
+
+#: groupdlg.cpp:163
+msgid "Post All Queued Articles"
+msgstr "Отправить все статьи из очереди"
+
+#: groupdlg.cpp:165
+msgid "&Subscribed"
+msgstr "&Подписанные"
+
+#: artdlg.cpp:212 groupdlg.cpp:166
+msgid "&Tagged"
+msgstr "П&омеченые"
+
+#: groupdlg.cpp:171
+msgid "Identity..."
+msgstr "Идентификация..."
+
+#: groupdlg.cpp:172
+msgid "NNTP Options..."
+msgstr "Параметры NNTP..."
+
+#: groupdlg.cpp:173
+msgid "Expire Options..."
+msgstr "Параметры хранения..."
+
+#: groupdlg.cpp:174
+msgid "Printing Options..."
+msgstr "Параметры печати..."
+
+#: groupdlg.cpp:181
+msgid "About Krn..."
+msgstr "О программе Krn..."
+
+#: groupdlg.cpp:193
+msgid "&Newsgroup"
+msgstr "&Конференция"
+
+#: groupdlg.cpp:200
+msgid "Connect to server"
+msgstr "Соединение с сервером"
+
+#: groupdlg.cpp:202
+msgid "Disconnect from server"
+msgstr "Отключение от сервера"
+
+#: groupdlg.cpp:205
+msgid "Get list of active groups"
+msgstr "Получить список активных конференций"
+
+#: groupdlg.cpp:206
+msgid "Find group"
+msgstr "Поиск конференции"
+
+#: groupdlg.cpp:209
+msgid "(Un)Subscribe"
+msgstr "Подписаться/Отписаться"
+
+#: groupdlg.cpp:212
+msgid "Check for Unread Articles"
+msgstr "Проверка непрочитанных статей"
+
+#: groupdlg.cpp:365 groupdlg.cpp:587 groupdlg.cpp:929
+msgid "All Newsgroups."
+msgstr "Все конференции."
+
+#: groupdlg.cpp:475 groupdlg.cpp:569
+msgid "Subscribed Newsgroups."
+msgstr "Конференции, на которые мы подписаны."
+
+#: groupdlg.cpp:524
+msgid "Disconnected"
+msgstr "Разъединено"
+
+#: groupdlg.cpp:531
+msgid "Connecting to server"
+msgstr "Установка соединения с сервером"
+
+#: groupdlg.cpp:536
+msgid "Connected to server - Posting not allowed"
+msgstr "Соединение с сервером установлено - Посылка не разрешена"
+
+#: groupdlg.cpp:538
+msgid "Connected to server - Posting allowed"
+msgstr "Соединение с сервером установлено - Посылка разрешена"
+
+#: groupdlg.cpp:544
+msgid "Can't connect to server"
+msgstr "Не удается соединиться с сервером"
+
+#: groupdlg.cpp:546
+msgid "Connection to server failed"
+msgstr "Попытка соединения с сервером завершилась неудачно"
+
+#: groupdlg.cpp:555
+msgid "Authentication Failed"
+msgstr "Аутентификация завершилась неудачно"
+
+#: groupdlg.cpp:558
+msgid "Connection to server failed: Authentication problem"
+msgstr "Соединение с сервером завершилось неудачно: проблема аутентификации"
+
+#: groupdlg.cpp:607
+msgid "Krn-Question"
+msgstr "Krn-Вопрос"
+
+#: groupdlg.cpp:608
+msgid ""
+"The operation you requested needs a connection to the News server\n"
+"Should I attempt one?"
+msgstr ""
+"Запрошенная Вами операция требует соединения с сервером новостей\n"
+"Нужно ли сделать попытку соединения?"
+
+#: groupdlg.cpp:872
+msgid ""
+"You don't have an active groups list.\n"
+" get it from server?"
+msgstr ""
+"У Вас нет списка активных конференций.\n"
+" взять его с сервера?"
+
+#: groupdlg.cpp:888
+msgid "Listing active newsgroups"
+msgstr "Просмотр активных конференций"
+
+#: groupdlg.cpp:903
+msgid "KRN - Find a Newsgroup"
+msgstr "KRN - Поиск конференции"
+
+#: groupdlg.cpp:904
+msgid "Enter the name of the Newsgroup"
+msgstr "Введите имя конференции"
+
+#: groupdlg.cpp:988
+msgid "Krn - Message"
+msgstr "Krn - Сообщение"
+
+#: groupdlg.cpp:989
+msgid "I can't find the group you want!"
+msgstr "Нужную Вам конференцию найти не удалось!"
+
+#: groupdlg.cpp:1082
+msgid "Getting messages in "
+msgstr "Получение сообщений в "
+
+#: groupdlg.cpp:1095
+msgid "Getting list of messages in "
+msgstr "Получение списка сообщений в "
+
+#: artdlg.cpp:151 artdlg.cpp:166
+msgid "Download"
+msgstr "Получить"
+
+#: artdlg.cpp:153 artdlg.cpp:275
+msgid "Mark Read"
+msgstr "Пометить как прочитанные"
+
+#: artdlg.cpp:154
+msgid "Mark Unread"
+msgstr "Пометить как непрочитанные"
+
+#: artdlg.cpp:157 artdlg.cpp:177
+msgid "Decode"
+msgstr "Декодировать"
+
+#: artdlg.cpp:159 artdlg.cpp:179
+msgid "Don't expire"
+msgstr "Не удалять"
+
+#: artdlg.cpp:168
+msgid "Lookup in Altavista"
+msgstr "Поиск в системе Altavista"
+
+#: artdlg.cpp:172 artdlg.cpp:259
+msgid "Reply by Mail"
+msgstr "Ответить"
+
+#: artdlg.cpp:173
+msgid "Post Followup"
+msgstr "Ответить с пересылкой"
+
+#: artdlg.cpp:174
+msgid "Post & Reply"
+msgstr "Ответить с дублированием почтой"
+
+#: artdlg.cpp:175 artdlg.cpp:265
+msgid "Forward"
+msgstr "Переслать"
+
+#: artdlg.cpp:181 artdlg.cpp:249
+msgid "Tagged"
+msgstr "Отмеченные"
+
+#: artdlg.cpp:192
+msgid "Show Only Unread Messages"
+msgstr "Показывать только непрочитанные сообщения"
+
+#: artdlg.cpp:194
+msgid "Show Only Cached Messages"
+msgstr "Показывать только сообщения из кэша"
+
+#: artdlg.cpp:196
+msgid "Show Locked Messages"
+msgstr "Показывать заблокированные сообщения"
+
+#: artdlg.cpp:198
+msgid "Expunge"
+msgstr "Вычеркнуть"
+
+#: artdlg.cpp:199
+msgid "Appearance..."
+msgstr "Вид..."
+
+#: artdlg.cpp:200
+msgid "Sorting..."
+msgstr "Сортировка..."
+
+#: artdlg.cpp:204
+msgid "Edit Rules"
+msgstr "Правила редактирования"
+
+#: artdlg.cpp:205
+msgid "Update"
+msgstr "Обновить"
+
+#: artdlg.cpp:214
+msgid "&Scoring"
+msgstr "&Рейтинг"
+
+#: artdlg.cpp:221
+msgid "Previous Message"
+msgstr "Предыдущее сообщение"
+
+#: artdlg.cpp:223
+msgid "Next Message"
+msgstr "Следующее сообщение"
+
+#: artdlg.cpp:225
+msgid "Find Article"
+msgstr "Поиск статьи"
+
+#: artdlg.cpp:230
+msgid "Get Article List"
+msgstr "Получить список статей"
+
+#: artdlg.cpp:232
+msgid "Refresh Display"
+msgstr "Обновить экран"
+
+#: artdlg.cpp:248
+msgid "Current"
+msgstr "Текущие"
+
+#: artdlg.cpp:250 fontsDlg.cpp:52
+msgid "All"
+msgstr "Все"
+
+#: artdlg.cpp:251
+msgid "Read"
+msgstr "Прочитанные"
+
+#: artdlg.cpp:252
+msgid "UnRead"
+msgstr "Непрочитанные"
+
+#: artdlg.cpp:255
+msgid "Save Article"
+msgstr "Сохранить статью"
+
+#: artdlg.cpp:257
+msgid "Print Article"
+msgstr "Напечатать статью"
+
+#: artdlg.cpp:261
+msgid "Post a Followup"
+msgstr "Ответить с дублированием в других конференциях"
+
+#: artdlg.cpp:263
+msgid "Post & Mail"
+msgstr "Ответить с дублированием почтой"
+
+#: artdlg.cpp:269
+msgid "Tag Article"
+msgstr "Пометить статью"
+
+#: artdlg.cpp:271
+msgid "Lock (keep in cache)"
+msgstr "Заблокировать (для сохранения в кэше)"
+
+#: artdlg.cpp:273
+msgid "Decode Article"
+msgstr "Декодировать статью"
+
+#: artdlg.cpp:277
+msgid "Mark UnRead"
+msgstr "Пометить как непрочитанные"
+
+#: artdlg.cpp:299 sortDlg.cpp:34
+msgid "Sender"
+msgstr "Отправитель"
+
+#: artdlg.cpp:300 sortDlg.cpp:35
+msgid "Date"
+msgstr "Дата"
+
+#: artdlg.cpp:301 sortDlg.cpp:36
+msgid "Lines"
+msgstr "Строки"
+
+#: artdlg.cpp:302 sortDlg.cpp:33
+msgid "Score"
+msgstr "Рейтинг"
+
+#: artdlg.cpp:303 sortDlg.cpp:32
+msgid "Subject"
+msgstr "Тема"
+
+#: artdlg.cpp:469
+msgid "Threading..."
+msgstr "Цепочки тем..."
+
+#: artdlg.cpp:478
+msgid "Showing Article List"
+msgstr "Отображение списка статей"
+
+#: artdlg.cpp:1323
+msgid "KRN - Existing File"
+msgstr "KRN - существующий файл"
+
+#: artdlg.cpp:1324
+msgid "The File you selected already exists"
+msgstr "Выбранный Вами файл уже существует"
+
+#: artdlg.cpp:1330
+msgid "OverWrite"
+msgstr "Записать поверх"
+
+#: artdlg.cpp:1332
+msgid "Append"
+msgstr "Добавить в конец"
+
+#: artdlg.cpp:1367 artdlg.cpp:1432
+msgid ""
+"From: Krn\n"
+"To: You\n"
+"\n"
+"Error getting article.\n"
+"Server said:\n"
+msgstr ""
+"Отправитель: Krn\n"
+"Получатель: Вы\n"
+"\n"
+"Ошибка при получении статьи.\n"
+"Сообщение сервера:\n"
+
+#: artdlg.cpp:1541
+msgid "Getting Article List"
+msgstr "Получение списка статей"
+
+#: identDlg.cpp:41
+msgid "KRN-Identity Configuration"
+msgstr "KRN-Конфигурация пользователя"
+
+#: identDlg.cpp:50
+msgid "Here you should enter your personal information"
+msgstr "Здесь нужно ввести Вашу личную информацию"
+
+#: identDlg.cpp:52
+msgid "You should know what these are!"
+msgstr "Вы должны знать, что вводить!"
+
+#: identDlg.cpp:61
+msgid "Real Name"
+msgstr "Реальное имя"
+
+#: identDlg.cpp:67
+msgid "E-mail Address"
+msgstr "Адрес E-mail"
+
+#: identDlg.cpp:73
+msgid "Organization"
+msgstr "Организация"
+
+#: NNTPConfigDlg.cpp:30
+msgid "KRN-NNTP configuration"
+msgstr "KRN-Конфигурация NNTP"
+
+#: NNTPConfigDlg.cpp:35
+msgid "Servers"
+msgstr "Серверы"
+
+#: NNTPConfigDlg.cpp:37
+msgid "SMTP server"
+msgstr "SMTP-сервер"
+
+#: NNTPConfigDlg.cpp:42
+msgid "NNTP Server"
+msgstr "NNTP-сервер"
+
+#: NNTPConfigDlg.cpp:67
+msgid "Connect on Startup"
+msgstr "Соединяться при запуске"
+
+#: NNTPConfigDlg.cpp:71
+msgid "Connect without asking"
+msgstr "Соединяться без вопросов"
+
+#: NNTPConfigDlg.cpp:75
+msgid "Authenticate"
+msgstr "Аутентификация"
+
+#: NNTPConfigDlg.cpp:80
+msgid "User Name"
+msgstr "Имя регистрации"
+
+#: NNTPConfigDlg.cpp:84
+msgid "Password"
+msgstr "Пароль"
+
+#: NNTPConfigDlg.cpp:91
+msgid "Ask before downloading more than"
+msgstr "Спрашивать перед загрузкой более чем"
+
+#: NNTPConfigDlg.cpp:94
+msgid "articles"
+msgstr "статей"
+
+#: aboutDlg.cpp:28
+msgid "About KRN"
+msgstr "О программе KRN"
+
+#: aboutDlg.cpp:39
+msgid "Part of the KDE project."
+msgstr "Часть проекта KDE."
+
+#: aboutDlg.cpp:42
+msgid "Credits & Thanks"
+msgstr "Благодарности"
+
+#: aboutDlg.cpp:66
+msgid "And Many thanks to:"
+msgstr "А также большая благодарность:"
+
+#: aboutDlg.cpp:71
+msgid "All KDE developers"
+msgstr "Все разработчики KDE"
+
+#: aboutDlg.cpp:73
+msgid "Chuck, for helping in time of need"
+msgstr "Чак, за помощь в нужный момент"
+
+#: aboutDlg.cpp:74
+msgid "All testers"
+msgstr "Все тестеры"
+
+#: fontsDlg.cpp:39
+msgid "Message Display Settings"
+msgstr "Настройка отображения сообщений"
+
+#: fontsDlg.cpp:46
+msgid "Header Style"
+msgstr "Стиль заголовков"
+
+#: fontsDlg.cpp:48
+msgid "Fancy"
+msgstr "Изящные"
+
+#: fontsDlg.cpp:49
+msgid "Brief"
+msgstr "Краткие"
+
+#: fontsDlg.cpp:50
+msgid "Standard"
+msgstr "Стандартные"
+
+#: fontsDlg.cpp:51
+msgid "Long"
+msgstr "Расширенные"
+
+#: fontsDlg.cpp:56
+msgid "Attachment Style"
+msgstr "Стиль подцеплений"
+
+#: fontsDlg.cpp:58
+msgid "Iconic"
+msgstr "В виде пиктограмм"
+
+#: fontsDlg.cpp:59
+msgid "Smart"
+msgstr "Разумное отображение"
+
+#: fontsDlg.cpp:60
+msgid "Inline"
+msgstr "В тексте"
+
+#: fontsDlg.cpp:67
+msgid "Font Size:"
+msgstr "Размер шрифта:"
+
+#: fontsDlg.cpp:70
+msgid "Small"
+msgstr "Мелкий"
+
+#: fontsDlg.cpp:71
+msgid "Normal"
+msgstr "Обычный"
+
+#: fontsDlg.cpp:72
+msgid "Large"
+msgstr "Крупный"
+
+#: fontsDlg.cpp:73
+msgid "Huge"
+msgstr "Огромный"
+
+#: fontsDlg.cpp:78
+msgid "Standard Font"
+msgstr "Стандартный шрифт"
+
+#: fontsDlg.cpp:84
+msgid "Standard Font Test"
+msgstr "Тест стандартного шрифта"
+
+#: fontsDlg.cpp:86
+msgid "Fixed Font"
+msgstr "Фиксированный шрифт"
+
+#: fontsDlg.cpp:91
+msgid "Fixed Font Test"
+msgstr "Тест фиксированного шрифта"
+
+#: fontsDlg.cpp:94
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: fontsDlg.cpp:97
+msgid "Foreground Color"
+msgstr "Цвет текста"
+
+#: fontsDlg.cpp:100
+msgid "Link Color"
+msgstr "Цвет ссылок"
+
+#: fontsDlg.cpp:103
+msgid "Followed Color"
+msgstr "Цвет пройденных ссылок"
+
+#: fontsDlg.cpp:107
+msgid "Use only one window"
+msgstr "Только одно окно"
+
+#: fontsDlg.cpp:109
+msgid "Split window vertically"
+msgstr "Разбить окно по высоте"
+
+#: kmmessage.cpp:1340
+msgid "On %D, you wrote:"
+msgstr "%D, Вы написали:"
+
+#: kmmessage.cpp:1341
+msgid "On %D, %F wrote:"
+msgstr "%D, %F написал:"
+
+#: kmmessage.cpp:1342
+msgid "Forwarded Message"
+msgstr "Перенаправленное сообщение"
+
+#: kmcomposewin.cpp:127
+msgid "KMail Composer"
+msgstr "Редактор KMail"
+
+#: kmcomposewin.cpp:138
+msgid "F"
+msgstr "F"
+
+#: kmcomposewin.cpp:139
+msgid "Name"
+msgstr "Имя"
+
+#: kmcomposewin.cpp:140
+msgid "Size"
+msgstr "Размер"
+
+#: kmcomposewin.cpp:141
+msgid "Encoding"
+msgstr "Кодировка"
+
+#: kmcomposewin.cpp:142
+msgid "Type"
+msgstr "Тип"
+
+#: kmcomposewin.cpp:343
+msgid "&From:"
+msgstr "&Отправитель:"
+
+#: kmcomposewin.cpp:345
+msgid "&Reply to:"
+msgstr "О&братный адрес:"
+
+#: kmcomposewin.cpp:347
+msgid "&To:"
+msgstr "&Получатель:"
+
+#: kmcomposewin.cpp:349
+msgid "&Cc:"
+msgstr "&Cc:"
+
+#: kmcomposewin.cpp:351
+msgid "&Bcc:"
+msgstr "&Bcc:"
+
+#: kmcomposewin.cpp:353
+msgid "&Subject:"
+msgstr "Тема:"
+
+#: kmcomposewin.cpp:356
+msgid "&Newsgroups:"
+msgstr "&Конференции:"
+
+#: kmcomposewin.cpp:358
+msgid "&Followup-To:"
+msgstr "&Followup-To:"
+
+#: kmcomposewin.cpp:430
+msgid "&Send"
+msgstr "Отправить"
+
+#: kmcomposewin.cpp:433
+msgid "S&end later"
+msgstr "Отправить позже"
+
+#: kmcomposewin.cpp:435
+msgid "S&end now"
+msgstr "Отправить немедленно"
+
+#: kmcomposewin.cpp:437
+msgid "&Insert File..."
+msgstr "Вставить файл..."
+
+#: kmcomposewin.cpp:441
+msgid "&Addressbook..."
+msgstr "Адресная книга"
+
+#: kmcomposewin.cpp:446
+msgid "&New Composer..."
+msgstr "Новое окно редактора"
+
+#: kmcomposewin.cpp:449
+msgid "New Mailreader"
+msgstr "Новое окно просмотра"
+
+#: kmcomposewin.cpp:469 kmcomposewin.cpp:693 kmcomposewin.cpp:1836
+msgid "Mark all"
+msgstr "Пометить все"
+
+#: kmcomposewin.cpp:472 kmcomposewin.cpp:695
+msgid "Find..."
+msgstr "Найти..."
+
+#: kmcomposewin.cpp:474 kmcomposewin.cpp:696
+msgid "Replace..."
+msgstr "Заменить..."
+
+#: kmcomposewin.cpp:477
+msgid "&Spellcheck..."
+msgstr "Проверка орфографии..."
+
+#: kmcomposewin.cpp:484
+msgid "&Urgent"
+msgstr "Срочное"
+
+#: kmcomposewin.cpp:486
+msgid "&Confirm delivery"
+msgstr "Подтвердить доставку"
+
+#: kmcomposewin.cpp:488
+msgid "&Confirm read"
+msgstr "Подтвердить прочтение"
+
+#: kmcomposewin.cpp:491
+msgid "&Spellchecker..."
+msgstr "Проверка орфографии..."
+
+#: kmcomposewin.cpp:494
+msgid "&Charsets..."
+msgstr "Кодировки..."
+
+#: kmcomposewin.cpp:507
+msgid "&All Fields"
+msgstr "Все поля"
+
+#: kmcomposewin.cpp:509
+msgid "&From"
+msgstr "&Отправитель"
+
+#: kmcomposewin.cpp:510
+msgid "&Reply to"
+msgstr "О&братный адрес:"
+
+#: kmcomposewin.cpp:511
+msgid "&To"
+msgstr "&Получатель"
+
+#: kmcomposewin.cpp:512
+msgid "&Cc"
+msgstr "&Cc"
+
+#: kmcomposewin.cpp:513
+msgid "&Bcc"
+msgstr "&Bcc"
+
+#: kmcomposewin.cpp:514
+msgid "&Subject"
+msgstr "&Тема"
+
+#: kmcomposewin.cpp:516
+msgid "&Newsgroups"
+msgstr "&Конференции"
+
+#: kmcomposewin.cpp:517
+msgid "&Followup-To"
+msgstr "&Followup-To"
+
+#: kmcomposewin.cpp:523
+msgid "Append S&ignature"
+msgstr "Добавить подпись"
+
+#: kmcomposewin.cpp:525
+msgid "&Insert File"
+msgstr "Вставить файл"
+
+#: kmcomposewin.cpp:527
+msgid "Insert My &Public Key"
+msgstr "Вставить &открытый ключ"
+
+#: kmcomposewin.cpp:532
+msgid "&Attach..."
+msgstr "Подцепить..."
+
+#: kmcomposewin.cpp:535
+msgid "&Save..."
+msgstr "Сохранить..."
+
+#: kmcomposewin.cpp:536
+msgid "Pr&operties..."
+msgstr "Свойства..."
+
+#: kmcomposewin.cpp:538
+msgid "&Attach"
+msgstr "Подцепить"
+
+#: kmcomposewin.cpp:558
+msgid "Send message"
+msgstr "Отправить сообщение"
+
+#: kmcomposewin.cpp:563
+msgid "Compose new message"
+msgstr "Создать новое сообщение"
+
+#: kmcomposewin.cpp:568
+msgid "Save message to file"
+msgstr "Сохранить сообщение в файле"
+
+#: kmcomposewin.cpp:573
+msgid "Print message"
+msgstr "Напечатать сообщение"
+
+#: kmcomposewin.cpp:582
+msgid "Cut selection"
+msgstr "Вырезать отмеченный текст"
+
+#: kmcomposewin.cpp:585
+msgid "Copy selection"
+msgstr "Копировать отмеченный текст"
+
+#: kmcomposewin.cpp:588
+msgid "Paste clipboard contents"
+msgstr "Вставить содержимое буфера"
+
+#: kmcomposewin.cpp:593
+msgid "Attach file"
+msgstr "Подцепить файл"
+
+#: kmcomposewin.cpp:597
+msgid "Open addressbook..."
+msgstr "Открыть адресную книгу..."
+
+#: kmcomposewin.cpp:604
+msgid "sign message"
+msgstr "подписать сообщение"
+
+#: kmcomposewin.cpp:609
+msgid "encrypt message"
+msgstr "зашифровать сообщение"
+
+#: kmcomposewin.cpp:626 kmcomposewin.cpp:642
+msgid "Column"
+msgstr "Столбец"
+
+#: kmcomposewin.cpp:627 kmcomposewin.cpp:640
+msgid "Line"
+msgstr "Строка"
+
+#: kmcomposewin.cpp:908
+msgid "KMail Confirm"
+msgstr "Подтверждение KMail"
+
+#: kmcomposewin.cpp:909
+msgid ""
+"Close and discard\n"
+"edited message?"
+msgstr ""
+"Закрыть окно с утерей\n"
+"текущего сообщения?"
+
+#: kmcomposewin.cpp:1182
+msgid "Attach File"
+msgstr "Подцепить файл"
+
+#: kmcomposewin.cpp:1204
+msgid "Include File"
+msgstr "Вставить файл"
+
+#: kmcomposewin.cpp:1239 kmreaderwin.cpp:737
+msgid "View..."
+msgstr "Просмотр..."
+
+#: kmcomposewin.cpp:1240
+msgid "Save..."
+msgstr "Сохранить..."
+
+#: kmcomposewin.cpp:1241 kmreaderwin.cpp:740
+msgid "Properties..."
+msgstr "Свойства..."
+
+#: kmcomposewin.cpp:1245
+msgid "Attach..."
+msgstr "Подцепить..."
+
+#: kmcomposewin.cpp:1287 kmreaderwin.cpp:782
+msgid "View Attachment: "
+msgstr "Просмотр подцепления: "
+
+#: kmcomposewin.cpp:1458 kpgp.cpp:546
+msgid ""
+"Sorry, but this feature\n"
+"is still missing"
+msgstr ""
+"Извините, но данная возможность\n"
+"все еще не реализована"
+
+#: kmcomposewin.cpp:1466
+msgid "unnamed"
+msgstr "без_имени"
+
+#: kmcomposewin.cpp:1481
+msgid "To:"
+msgstr "Получатель:"
+
+#: kmcomposewin.cpp:1485
+msgid "Subject:"
+msgstr "Тема:"
+
+#: kmcomposewin.cpp:1488
+msgid "Date:"
+msgstr "Дата:"
+
+#: kmcomposewin.cpp:1565
+msgid "Choose Signature File"
+msgstr "Выбор файла подписи"
+
+#: kmcomposewin.cpp:2018
+msgid "Spellcheck - KMail"
+msgstr "Проверка орфографии - KMail"
+
+#: kmcomposewin.cpp:2044
+msgid ""
+"Error starting KSpell. Please make sure you have ISpell properly configured."
+msgstr ""
+"Ошибка запуска KSpell. Пожалуйста, убедитесь в правильности настройки ISpell."
+
+#: kmsender.cpp:116
+msgid ""
+"Please specify a send\n"
+"method in the settings\n"
+"and try again."
+msgstr ""
+"Укажите, пожалуйста, метод\n"
+"отправки в настройках программы,\n"
+"затем попробуйте еще раз."
+
+#: kmsender.cpp:122
+msgid ""
+"Please set the required fields in the\n"
+"identity settings:\n"
+"user-name and email-address"
+msgstr ""
+"Пожалуйста, заполните в настройках программы\n"
+"обязательные поля идентификации пользователя:\n"
+"пользовательское имя и адрес E-mail"
+
+#: kmsender.cpp:147
+msgid "You must specify a receiver"
+msgstr "Вы должны указать получателя"
+
+#: kmsender.cpp:158
+msgid "Cannot add message to outbox folder"
+msgstr "Не удается добавить сообщение в папку outbox"
+
+#: kmsender.cpp:189
+msgid "Sending still in progress"
+msgstr "Отправка почты еще не закончена"
+
+#: kmsender.cpp:245
+msgid "Initiating sender process..."
+msgstr "Инициализация процесса отсылки..."
+
+#: kmsender.cpp:261
+msgid "Sending message: "
+msgstr "Отправка сообщения: "
+
+#: kmsender.cpp:289
+msgid "Done sending messages."
+msgstr "Сообщения успешно отправлены."
+
+#: kmsender.cpp:308
+msgid "Sending failed:"
+msgstr "Отправка завершилась неудачно:"
+
+#: kmsender.cpp:461
+msgid ""
+"Please specify a mailer program\n"
+"in the settings."
+msgstr ""
+"Пожалуйста, укажите почтовую программу\n"
+"в настройках программы."
+
+#: kmsender.cpp:501
+#, c-format
+msgid "Failed to execute mailer program %s"
+msgstr "Не удалось выполнить почтовую программу %s"
+
+#: kmsender.cpp:589
+msgid "connecting to server"
+msgstr "установка соединения с сервером"
+
+#: kmsender.cpp:594
+#, c-format
+msgid ""
+"Cannot open SMTP connection to\n"
+"host %s for sending:\n"
+"%s"
+msgstr ""
+"Не удается открыть SMTP-соединение\n"
+"с машиной %s для отправки почты:\n"
+"%s"
+
+#: kmsender.cpp:623
+msgid "Cannot close SMTP connection."
+msgstr "Не удается закрыть SMTP-соединение."
+
+#: kmsender.cpp:673
+msgid "transmitting message"
+msgstr "передача сообщения"
+
+#: kmsender.cpp:707
+msgid "network error"
+msgstr "ошибка сети"
+
+#: kmsender.cpp:709
+#, c-format
+msgid ""
+"a SMTP error occured.\n"
+"Command: %s\n"
+"Response: %s\n"
+"Return code: %d"
+msgstr ""
+"Произошла ошибка SMTP.\n"
+"Команда: %s\n"
+"Ответ: %s\n"
+"Код возврата: %d"
+
+#: kmsender.cpp:724
+#, c-format
+msgid "Sending SMTP command: %s"
+msgstr "Посылка команды SMTP: %s"
+
+#: findArtDlg.cpp:22
+msgid "KRN - Article Searcher"
+msgstr "KRN - Поиск статей"
+
+#: findArtDlg.cpp:29
+msgid "Find Articles With:"
+msgstr "Найти статьи с:"
+
+#: findArtDlg.cpp:34 rulesDlg.cpp:106
+msgid "In Field:"
+msgstr "В поле:"
+
+#: findArtDlg.cpp:53 rulesDlg.cpp:131
+msgid "Case Sensitive"
+msgstr "Учитывать регистр"
+
+#: findArtDlg.cpp:56 rulesDlg.cpp:132
+msgid "Wildcard Mode"
+msgstr "Режим шаблонов"
+
+#: findArtDlg.cpp:66 rulesDlg.cpp:144
+msgid "Done"
+msgstr "Сделано"
+
+#: kmidentity.cpp:162
+#, c-format
+msgid ""
+"Failed to execute signature script\n"
+"%s\n"
+"%s"
+msgstr ""
+"Не удалось исполнить сценарий добавления подписи\n"
+"%s\n"
+"%s"
+
+#: kfileio.cpp:26 kmaddrbook.cpp:162
+msgid "File I/O Error"
+msgstr "Ошибка файлового ввода/вывода"
+
+#: kfileio.cpp:47
+#, c-format
+msgid ""
+"The specified file does not exist:\n"
+"%s"
+msgstr ""
+"Указанный файл не существует:\n"
+"%s"
+
+#: kfileio.cpp:54
+#, c-format
+msgid ""
+"This is a directory and not a file:\n"
+"%s"
+msgstr ""
+"Это каталог, а не файл:\n"
+"%s"
+
+#: kfileio.cpp:61
+#, c-format
+msgid ""
+"You do not have read permissions to the file:\n"
+"%s"
+msgstr ""
+"У Вас нет прав для чтения файла:\n"
+"%s"
+
+#: kfileio.cpp:72 kmaddrbook.cpp:152
+#, c-format
+msgid ""
+"Could not read file:\n"
+"%s"
+msgstr ""
+"Не удалось прочитать файл:\n"
+"%s"
+
+#: kfileio.cpp:75 kmaddrbook.cpp:155
+#, c-format
+msgid ""
+"Could not open file:\n"
+"%s"
+msgstr ""
+"Не удалось открыть файл:\n"
+"%s"
+
+#: kfileio.cpp:78
+#, c-format
+msgid ""
+"Error while reading file:\n"
+"%s"
+msgstr ""
+"Ошибка при чтении файла:\n"
+"%s"
+
+#: kfileio.cpp:95
+#, c-format
+msgid "Could only read %u bytes of %u."
+msgstr "Удалось прочитать только %u байт из %u."
+
+#: kfileio.cpp:124
+#, c-format
+msgid ""
+"File %s exists.\n"
+"Do you want to replace it ?"
+msgstr ""
+"Файл %s существует.\n"
+"Вы желаете его заместить?"
+
+#: kfileio.cpp:144
+#, c-format
+msgid ""
+"Failed to make a backup copy of %s.\n"
+"Continue anyway ?"
+msgstr ""
+"Не удалось создать резервную копию %s.\n"
+"Продолжить, несмотря на это ?"
+
+#: kfileio.cpp:156 kfileio.cpp:174
+#, c-format
+msgid ""
+"Could not write to file:\n"
+"%s"
+msgstr ""
+"Не удалось записать в файл:\n"
+"%s"
+
+#: kfileio.cpp:159
+#, c-format
+msgid ""
+"Could not open file for writing:\n"
+"%s"
+msgstr ""
+"Не удалось открыть файл для записи:\n"
+"%s"
+
+#: kfileio.cpp:163 kmaddrbook.cpp:158
+#, c-format
+msgid ""
+"Error while writing file:\n"
+"%s"
+msgstr ""
+"Ошибка при записи в файл:\n"
+"%s"
+
+#: kfileio.cpp:180
+#, c-format
+msgid "Could only write %d bytes of %d."
+msgstr "Удалось записать только %d байт из %d."
+
+#: kmmsgpartdlg.cpp:41
+msgid "Message Part Properties"
+msgstr "Свойства раздела сообщения"
+
+#: kmmsgpartdlg.cpp:62
+msgid "Name:"
+msgstr "Имя:"
+
+#: kmmsgpartdlg.cpp:73
+msgid "Description:"
+msgstr "Описание:"
+
+#: kmmsgpartdlg.cpp:83
+msgid "Encoding:"
+msgstr "Кодировка:"
+
+#: kmmsgpartdlg.cpp:89
+msgid "none (8bit)"
+msgstr "нет (8 бит)"
+
+#: kmmsgpartdlg.cpp:90
+msgid "base 64"
+msgstr "base 64"
+
+#: kmmsgpartdlg.cpp:91
+msgid "quoted printable"
+msgstr "quoted printable"
+
+#: kmreaderwin.cpp:320 kmreaderwin.cpp:333 kmreaderwin.cpp:352
+#: kmreaderwin.cpp:373
+msgid "Cc: "
+msgstr "Cc: "
+
+#: kmreaderwin.cpp:328 kmreaderwin.cpp:347 kmreaderwin.cpp:368
+msgid "From: "
+msgstr "Отправитель: "
+
+#: kmreaderwin.cpp:330 kmreaderwin.cpp:349 kmreaderwin.cpp:370
+msgid "To: "
+msgstr "Получатель: "
+
+#: kmreaderwin.cpp:337 kmreaderwin.cpp:358 kmreaderwin.cpp:383
+msgid "References: "
+msgstr "Ссылки: "
+
+#: kmreaderwin.cpp:354 kmreaderwin.cpp:367
+msgid "Date: "
+msgstr "Дата: "
+
+#: kmreaderwin.cpp:376
+msgid "Bcc: "
+msgstr "Bcc: "
+
+#: kmreaderwin.cpp:379
+msgid "Reply to: "
+msgstr "Обратный адрес: "
+
+#: kmreaderwin.cpp:386
+msgid "Groups: "
+msgstr "Конференции: "
+
+#: kmreaderwin.cpp:425
+msgid "Encrypted message"
+msgstr "Зашифрованное сообщение"
+
+#: kmreaderwin.cpp:431
+msgid "Cannot decrypt message:"
+msgstr "Не удается расшифровать сообщение:"
+
+#: kmreaderwin.cpp:440
+msgid "Message was signed by"
+msgstr "Сообщение подписано"
+
+#: kmreaderwin.cpp:441
+msgid "Warning: Bad signature from"
+msgstr "Предупреждение: плохая подпись от"
+
+#: kmreaderwin.cpp:451
+msgid "unknown key ID"
+msgstr "неизвестный ID ключа"
+
+#: kmreaderwin.cpp:701
+msgid "Attachment: "
+msgstr "Подцепление: "
+
+#: kmreaderwin.cpp:813
+msgid "Could not create temporary file"
+msgstr "Не удалось создать временный файл"
+
+#: kmreaderwin.cpp:834
+#, c-format
+msgid "Could not save temporary file %s"
+msgstr "Не удалось сохранить временный файл %s"
+
+#: kmreaderwin.cpp:863
+msgid "Could not save file"
+msgstr "Не удалось сохранить файл"
+
+#: kpgp.cpp:151
+msgid ""
+"Couldn't find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+"Не удалось найти исполняемый файл PGP.\n"
+"Проверьте, пожалуйста, корректность путей в PATH."
+
+#: kpgp.cpp:193
+msgid ""
+"Could not find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+"Не удалось найти исполняемый файл PGP.\n"
+"Проверьте, пожалуйста, корректность путей в PATH."
+
+#: kpgp.cpp:207
+msgid "The pass phrase is missing."
+msgstr "Отсутствует секретная фраза."
+
+#: kpgp.cpp:286 kpgp.cpp:312 kpgp.cpp:325 kpgp.cpp:344 kpgp.cpp:361
+msgid "PGP Warning"
+msgstr "Предупреждение PGP"
+
+#: kpgp.cpp:287
+msgid ""
+"Could not find the public keys for the\n"
+"recipients of this mail.\n"
+"Message will not be encrypted."
+msgstr ""
+"Не удалось найти открытые ключи\n"
+"для получателей этого сообщения.\n"
+"Сообщение не будет зашифровано."
+
+#: kpgp.cpp:296
+msgid "Could not find the public keys for\n"
+msgstr "Не удалось найти открытые ключи для\n"
+
+#: kpgp.cpp:307
+msgid "These persons will not be able to\n"
+msgstr "Эти люди не смогут\n"
+
+#: kpgp.cpp:309
+msgid "This person will not be able to\n"
+msgstr "Этот человек не сможет\n"
+
+#: kpgp.cpp:311
+msgid "decrypt the message."
+msgstr "расшифровать сообщение."
+
+#: kpgp.cpp:326
+msgid ""
+"You just entered an invalid passphrase.\n"
+"Do you wan't to try again, continue and\n"
+"leave the message unsigned, or cancel sending the message?"
+msgstr ""
+"Вы ввели неверную секретную фразу.\n"
+"Вы желаете повторить ввод, продолжить, оставив сообщение\n"
+"не подписанным, или отменить отправку сообщения вообще?"
+
+#: kpgp.cpp:331
+msgid "Retry"
+msgstr "Повторить"
+
+#: kpgp.cpp:342
+msgid ""
+"Do you wan't to encrypt anyway, leave the\n"
+"message as is, or cancel the message?"
+msgstr ""
+"Вы желаете зашифровать, несмотря на проблемы,\n"
+"пропустить шифрование или отменить сообщение?"
+
+#: kpgp.cpp:346
+msgid "Encrypt"
+msgstr "Зашифровать"
+
+#: kpgp.cpp:359
+msgid ""
+"Do you wan't to leave the message as is,\n"
+"or cancel the message?"
+msgstr ""
+"Вы желаете оставить сообщение в исходном виде\n"
+"или отменить его написание?"
+
+#: kpgp.cpp:717
+msgid ""
+"Please enter your\n"
+"PGP passphrase"
+msgstr ""
+"Пожалуйста, введите\n"
+"Вашу секретную фразу PGP"
+
+#: kpgp.cpp:744
+msgid "PGP Security Check"
+msgstr "Проверка безопасности с помощью PGP"
+
+#: kpgp.cpp:765
+msgid "Identity"
+msgstr "Идентификация"
+
+#: kpgp.cpp:771
+msgid "PGP User Identity:"
+msgstr "Идентификация пользователя PGP:"
+
+#: kpgp.cpp:782
+msgid "Store passphrase"
+msgstr "Сохранить секретную фразу"
+
+#: kpgp.cpp:788
+msgid "Always encrypt to self"
+msgstr "Всегда шифровать при посылке себе"
+
+#: krnsender.cpp:60
+msgid "This server is read onlyyou can't post here!"
+msgstr "Это сервер только для чтения - Вы не можете ничего отправлять!"
+
+#: kmaddrbookdlg.cpp:20
+msgid "Addressbook"
+msgstr "Адресная книга"
+
+#: kmaddrbookdlg.cpp:95
+msgid "Addressbook Manager"
+msgstr "Управление адресной книгой"
+
+#: kmaddrbookdlg.cpp:178
+msgid "KMail error"
+msgstr "Ошибка KMail"
+
+#: kmaddrbookdlg.cpp:179
+msgid "Storing addressbook failed"
+msgstr "Не удалось сохранить адресную книгу"
+
+#: kmaddrbook.cpp:25
+msgid "KMail Error"
+msgstr "Ошибка KMail"
+
+#: kmaddrbook.cpp:26
+msgid "Storing the addressbook failed!\n"
+msgstr "Не удалось сохранить адресную книгу!\n"
+
+#: expireDlg.cpp:22 expireDlg.cpp:27
+msgid "KRN - Expire Settings"
+msgstr "KRN - Настройки хранения"
+
+#: expireDlg.cpp:36
+msgid "For how long should we keep things (in days)?"
+msgstr "Как долго следует хранить (в днях)?"
+
+#: expireDlg.cpp:46
+msgid "Read:"
+msgstr "Прочитанные:"
+
+#: expireDlg.cpp:47
+msgid "Unread:"
+msgstr "Непрочитанные:"
+
+#: expireDlg.cpp:50
+msgid "Article Bodies:"
+msgstr "Тела статей:"
+
+#: expireDlg.cpp:55
+msgid "Article Headers:"
+msgstr "Заголовки статей:"
+
+#: printdlg.cpp:21
+msgid "KRN - Print Settings"
+msgstr "KRN - Настройки печати"
+
+#: printdlg.cpp:26
+msgid "KRN - Printing Settings"
+msgstr "KRN - Настройки печати"
+
+#: printdlg.cpp:33
+msgid "General"
+msgstr "Общие"
+
+#: printdlg.cpp:35
+msgid "Printing System"
+msgstr "Система печати"
+
+#: printdlg.cpp:37
+msgid "Use HTML Printing"
+msgstr "Печать в HTML"
+
+#: printdlg.cpp:40
+msgid "Use Direct Printing"
+msgstr "Прямая печать"
+
+#: printdlg.cpp:45
+msgid "Direct Printing"
+msgstr "Прямая печать"
+
+#: printdlg.cpp:48
+msgid "Print using:"
+msgstr "Печать с помощью:"
+
+#: printdlg.cpp:52
+msgid "Feed it with:"
+msgstr "Формат данных:"
+
+#: printdlg.cpp:54
+msgid "Postscript"
+msgstr "Postscript"
+
+#: printdlg.cpp:55
+msgid "HTML"
+msgstr "HTML"
+
+#: printdlg.cpp:56
+msgid "Text"
+msgstr "Текст"
+
+#: rulesDlg.cpp:38
+msgid "KRN - Scoring Rules Editor"
+msgstr "KRN - Редактор правил подсчета рейтинга"
+
+#: rulesDlg.cpp:45
+msgid "Global Rules"
+msgstr "Глобальные правила"
+
+#: rulesDlg.cpp:47
+msgid "All Rules"
+msgstr "Все правила"
+
+#: rulesDlg.cpp:63
+msgid "Active Rules"
+msgstr "Активные правила"
+
+#: rulesDlg.cpp:70
+msgid "Rule Editor"
+msgstr "Редактор правил"
+
+#: rulesDlg.cpp:87
+msgid "Save as"
+msgstr "Сохранить как"
+
+#: rulesDlg.cpp:101
+msgid "Match Articles With:"
+msgstr "Искать статьи, содержащие:"
+
+#: rulesDlg.cpp:124
+msgid "Weight:"
+msgstr "Вес:"
+
+#: rulesDlg.cpp:126
+msgid "Negative"
+msgstr "Инверсия"
+
+#: rulesDlg.cpp:190
+msgid "Rule name:"
+msgstr "Имя правила"
+
+#: sortDlg.cpp:23
+msgid "KRN - Header Sorting"
+msgstr "KRN - Сортировка заголовков"
+
+#: sortDlg.cpp:37
+msgid "None"
+msgstr "Нет"
+
+#: sortDlg.cpp:39
+msgid "Sort by:"
+msgstr "Сортировать по полю:"
+
+#: sortDlg.cpp:56
+msgid "Use Threading"
+msgstr "Использовать цепочки тем"
+
+#: charsetsDlg.cpp:27
+msgid "KRN - Charset Settings"
+msgstr "KRN - Настройка кодировки"
+
+#: charsetsDlg.cpp:29
+msgid "KMail - Charset Settings"
+msgstr "KMail - Настройка кодировки"
+
+#: charsetsDlg.cpp:39
+msgid "Message charset"
+msgstr "Кодировка сообщения"
+
+#: charsetsDlg.cpp:57
+msgid "Composer charset"
+msgstr "Кодировка редактора"
+
+#: charsetsDlg.cpp:75
+msgid "Set as &default"
+msgstr "&Установить в качестве умолчания"
+
+#: charsetsDlg.cpp:80
+msgid "&7 bit is ASCII"
+msgstr "&7 бит ASCII"
+
+#: charsetsDlg.cpp:84
+msgid "&Qute unknonw characters"
+msgstr "&Кодировать неизвестные символы"
+
+#: expirestatusdlg.cpp:35
+msgid "Please wait a minute, I am expiring!"
+msgstr "Пожалуйста подождите, удаляю старые статьи!"
+
+#: kpgpbase.cpp:315
+msgid "Bad pass Phrase; couldn't sign"
+msgstr "Неверная секретная фраза; не удается сделать подпись"
+
+#: kpgpbase.cpp:354
+msgid "error running pgp"
+msgstr "ошибка при выполнении pgp"
+
+#: kpgpbase.cpp:371 kpgpbase.cpp:662
+msgid "Bad pass Phrase; couldn't decrypt"
+msgstr "Неверная секретная фраза; не удается расшифровать"
+
+#: kpgpbase.cpp:382 kpgpbase.cpp:673
+msgid "Do not have the secret key for this message"
+msgstr "Закрытый ключ для этого сообщения отсутствует"
+
+#: kpgpbase.cpp:410
+msgid "unknown key ID "
+msgstr "неизвестный ID ключа "
+
+#: kpgpbase.cpp:430
+msgid "??? (file ~/.pgp/pubring.pgp not found)"
+msgstr "??? (файл ~/.pgp/pubring.pgp не найден)"
+
+#: kpgpbase.cpp:585
+msgid "The passphrase you entered is invalid."
+msgstr "Введенная Вами секретная фраза неверна."
+
+#: kpgpbase.cpp:611
+msgid ""
+"The key(s) you wan't to encrypt your message\n"
+"to are not trusted. No encryption done."
+msgstr ""
+"Ключи, которыми Вы желаете зашифровать сообщение\n"
+"не внушают доверия. Шифрование не произведено."
+
+#: kpgpbase.cpp:614
+#, c-format
+msgid ""
+"The following key(s) are not trusted:\n"
+"%s\n"
+"They will not be able to decrypt the message"
+msgstr ""
+"Следующие ключи не внушают доверия:\n"
+"%s\n"
+"Они не смогут расшифровать сообщение"
+
+#: TooManydlg.cpp:25
+msgid "KRN-Confirmation"
+msgstr "KRN-Подтверждение"
+
+#: TooManydlg.cpp:30
+msgid "Read how many articles?"
+msgstr "Сколько статей читать?"
+
+#: TooManydlg.cpp:36
+msgid "Get them from"
+msgstr "Брать из"
+
+#: TooManydlg.cpp:37
+msgid "Oldest articles"
+msgstr "Самые старые статьи"
+
+#: TooManydlg.cpp:39
+msgid "Newest articles"
+msgstr "Самые новые статьи"
+
+#: TooManydlg.cpp:43
+msgid "Make this the new threshold"
+msgstr "Установить это как новый порог"

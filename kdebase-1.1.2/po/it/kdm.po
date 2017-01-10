@@ -1,0 +1,88 @@
+# File : kdm.po -- kde internationalization, italian translation.
+# Authors : Andrea Rizzi <bilibao@ouverture.it>,
+#           Lucien Nocera <lnocera@limpet.cis.upenn.edu> and
+#           Marco Spolaore <gemini@sctrade.it>.
+# v 0.1 -- 15/10/97
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-04-08 01:20+0200\n"
+"Content-Type: text/plain; charset=\n"
+"Date: 1997-09-09 17:23:06+0200\n"
+"From: Steffen Hansen,Home,,66178676, <stefh@nostromo>\n"
+"Xgettext-Options: -s -C -ktranslate\n"
+"Files: chooser.cpp gif.cpp jpeg.cpp kdmconfig.cpp kdmdesktop.cpp "
+"kdmshutdown.cpp kdmview.cpp kfdialog.cpp kgreeter.cpp\n"
+
+#: kdmshutdown.cpp:176
+msgid "Shutdown or restart?"
+msgstr "Vuoi spengere o riavviare il computer?"
+
+#: kdmshutdown.cpp:179
+msgid "(Enter Root Password)"
+msgstr "(Inserisci Password di Root)"
+
+#: kdmshutdown.cpp:197
+msgid "Shutdown"
+msgstr "Arresta Sistema"
+
+#: kdmshutdown.cpp:211
+msgid "Shutdown and restart"
+msgstr "Riavvia il Computer"
+
+#: kdmshutdown.cpp:220
+msgid "Restart X Server"
+msgstr "Riavvia Server X"
+
+#: kgreeter.cpp:234
+msgid "Login:"
+msgstr "Nome utente (login):"
+
+#: kgreeter.cpp:246
+msgid "Password:"
+msgstr "Password:"
+
+#: kgreeter.cpp:271
+msgid "Login failed!"
+msgstr "Login Fallito!"
+
+#: kgreeter.cpp:277
+msgid "Session Type:"
+msgstr "Tipo di sessione"
+
+#: kgreeter.cpp:324
+msgid "Go!"
+msgstr "Vai!"
+
+#: kgreeter.cpp:340
+msgid "Shutdown..."
+msgstr "Arresta sistema..."
+
+#: kgreeter.cpp:585
+msgid "Logins not available right now."
+msgstr "Login non disponibili al momento."
+
+#: kgreeter.cpp:626
+msgid "login_getcapstr() failed."
+msgstr "login_getcapstr() fallito."
+
+#: kgreeter.cpp:680 kgreeter.cpp:707
+msgid "Sorry -- your account has expired."
+msgstr "Spiacente -- il tuo account è scaduto."
+
+#: kgreeter.cpp:685 kgreeter.cpp:712
+#, c-format
+msgid "Warning: your account expires on %s"
+msgstr "Attenzione: il tuo account scadrà il %s"
+
+#: kgreeter.cpp:739
+msgid "Home directory not available"
+msgstr "Directory home non disponibile"
+
+#~ msgid "Exit kdm"
+#~ msgstr "Esci da kdm"
+
+#~ msgid "Cancel"
+#~ msgstr "Annulla"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"

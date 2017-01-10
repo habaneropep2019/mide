@@ -1,0 +1,197 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {CDDialog.h}
+	ClassSource {CDDialog.cpp}
+	ClassName {CDDialog}
+	DataHeader {CDDialogData.h}
+	DataSource {CDDialogData.cpp}
+	DataName {CDDialogData}
+	WindowBaseClass {QDialog}
+	IsModal {FALSE}
+	WindowCaption {CD Database Editor}
+}
+WidgetLayout {
+		Rect {5 102 465 460}
+		Grid {5}
+
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {70}
+		FrameShown {TRUE}
+		Rect {20 35 320 28}
+		Name {titleedit}
+		Variable {titleedit}
+}
+ListBox {
+		DragSelect {TRUE}
+		AutoScroll {TRUE}
+		ScrollBar {FALSE}
+		AutoScrollBar {TRUE}
+		BottomScrollBar {FALSE}
+		AutoBottomScrollBar {TRUE}
+		SmoothScrolling {TRUE}
+		Style {51}
+		LineWidth {2}
+		Rect {20 110 320 170}
+		Name {listbox}
+		Variable {listbox}
+		Signal {[Public]  highlighted --> titleselected  (int)}
+}
+Frame {
+		Style {52}
+		Rect {15 65 430 15}
+		Name {Frame_1}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {70}
+		FrameShown {TRUE}
+		Rect {20 315 320 30}
+		Name {trackedit}
+		Variable {trackedit}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {70}
+		FrameShown {TRUE}
+		Rect {20 375 320 30}
+		Name {programsequence_edit}
+		Variable {progseq_edit}
+}
+Frame {
+		Style {52}
+		Rect {15 410 430 10}
+		Name {hline2}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Save}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {15 425 85 25}
+		Name {save_button}
+		Variable {save_button}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Load}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {185 425 85 25}
+		Name {PushButton_3}
+		Variable {load_button}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Close}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {355 425 85 25}
+		Name {PushButton_4}
+		Variable {ok_button}
+}
+Label {
+		Text {Play List Editor}
+		Alignment {292}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {105 355 185 20}
+		Name {Label_2}
+}
+Label {
+		Text {Edit Track Title}
+		Alignment {292}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {100 295 185 20}
+		Name {Label_3}
+}
+Label {
+		Text {Disc Artist / Title}
+		Alignment {292}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {100 15 185 20}
+		Name {Label_4}
+}
+Label {
+		Text {Track / Time / Title}
+		Alignment {292}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {100 90 185 20}
+		Name {Label_5}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Ext Info}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {360 35 85 25}
+		Name {PushButton_5}
+		Variable {ext_info_title_button}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Ext Info}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {360 110 85 25}
+		Name {extinfo_button}
+		Variable {ext_info_button}
+}
+Frame {
+		Style {49}
+		Rect {360 180 85 55}
+		Name {Frame_3}
+}
+Label {
+		Text {}
+		Alignment {292}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {365 185 75 45}
+		Name {diskid_label}
+		Variable {disc_id_label}
+}
+Label {
+		Text {Disc ID}
+		Alignment {292}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {355 155 90 20}
+		Name {Label_7}
+}
+Label {
+		Text {}
+		Alignment {292}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {360 315 85 40}
+		Name {totaltimelabel}
+		Variable {total_time_label}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Upload}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {360 255 85 25}
+		Name {PushButton_8}
+		Variable {upload_button}
+}}

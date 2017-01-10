@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwSpritePixmapSequence Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwSpritePixmapSequence Class Reference</h1><br clear="all">
+<p>
+A sequence of <a href="qwspritepixmap.html">QwSpritePixmap</a> to have multiple frames for animation.
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p><a href="qwspritepixmapsequence-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwspritepixmapsequence.html#a0"><strong>QwSpritePixmapSequence</strong></a> ( const char * datafilenamepattern, const char * maskfilenamepattern, int framecount=1 ) </span>
+<li><span class="fn"><a href="qwspritepixmapsequence.html#a1"><strong>QwSpritePixmapSequence</strong></a> ( QList&lt;QPixmap&gt;, QList&lt;QPoint&gt; hotspots ) </span>
+<li><span class="fn"><a href="qwspritepixmapsequence.html#a2"><strong>~QwSpritePixmapSequence</strong></a> () </span>
+<li><span class="fn">void <a href="qwspritepixmapsequence.html#a3"><strong>readCollisionMasks</strong></a> ( const char * filenamepattern ) </span>
+<li><span class="fn">int <a href="qwspritepixmapsequence.html#a4"><strong>operator!</strong></a> () </span>
+<li><span class="fn">QwSpritePixmap* <a href="qwspritepixmapsequence.html#a5"><strong>image</strong></a> ( int i ) const</span>
+<li><span class="fn">void <a href="qwspritepixmapsequence.html#a6"><strong>setImage</strong></a> ( int i, QwSpritePixmap * p ) </span>
+<li><span class="fn">int <a href="qwspritepixmapsequence.html#a7"><strong>frameCount</strong></a> () const</span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+A sequence of <a href="qwspritepixmap.html">QwSpritePixmap</a> to have multiple frames for animation.
+<p>
+This allows sprite objects
+to have multiple frames for animation.
+<p>QwSpritePixmaps for sprite objects are collected into
+QwSpritePixmapSequences, which are
+the set of images a sprite will use, indexed by the sprite's
+frame.  This allows sprites to simply have animated forms.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a1"></a>QwSpritePixmapSequence::QwSpritePixmapSequence ( QList&lt;QPixmap&gt; list, QList&lt;QPoint&gt; hotspots )</h3>
+<p>Construct a QwSpritePixmapSequence from QPixmaps.
+<h3 class="fn"><a name="a0"></a>QwSpritePixmapSequence::QwSpritePixmapSequence ( const char * datafilenamepattern, const char * maskfilenamepattern, int fc=1 )</h3>
+<p>Construct a QwSpritePixmapSequence from files.
+<p>The framecount parameter sets the number of frames to be
+loaded for this image.  The filenames should be printf-style
+strings such as "foo%03d.ppm" or "animdir/%4d.pbm".  The actual
+filenames are formed by sprintf-ing a string with each integer
+from 0 to framecount-1, eg. foo000.ppm, foo001.ppm, foo002.ppm, etc.
+<h3 class="fn"><a name="a2"></a>QwSpritePixmapSequence::~QwSpritePixmapSequence ()</h3>
+<p>Destructs the pixmap sequence.
+<h3 class="fn">int <a name="a7"></a>QwSpritePixmapSequence::frameCount () const</h3>
+<p>Returns the length of the sequence.
+<h3 class="fn"><a href="qwspritepixmap.html">QwSpritePixmap</a>* <a name="a5"></a>QwSpritePixmapSequence::image ( int i ) const</h3>
+<p>Returns the <em>i-th</em> pixmap in the sequence.
+<h3 class="fn">int <a name="a4"></a>QwSpritePixmapSequence::operator! ()</h3>
+<p>Constructor failure check.  Currently not implemented.
+Exceptions would be a better solution.
+<h3 class="fn">void <a name="a3"></a>QwSpritePixmapSequence::readCollisionMasks ( const char * fname )</h3>
+<p>When testing sprite collision detection with <a href="qwspritefield.html#b5">QwSpriteField::exact</a>(Pix), 
+the default is to use the image mask of the sprite.  By using
+readCollisionMasks(const char*), an alternate mask can be used.
+Also, by using <a href="qwvirtualsprite.html#e3">QwVirtualSprite::setPixelCollisionPrecision</a>(int),
+the resolution of the collision mask can be different to the
+resolution of the pixel coordinates of the sprites.
+<p>The filename is a printf-style string, as per the constructor
+for QwSpritePixmapSequence.
+<p>The image must be a PBM file, with a HOTSPOT comment as described
+in <a href="qwspritepixmap.html#a0">QwSpritePixmap::QwSpritePixmap</a>(const char*, const char*).
+<p>See also:  <a href="qwvirtualsprite.html#e3">QwVirtualSprite::setPixelCollisionPrecision</a>(int).
+<h3 class="fn">void <a name="a6"></a>QwSpritePixmapSequence::setImage ( int i, <a href="qwspritepixmap.html">QwSpritePixmap</a> * p )</h3>
+<p>Deletes the <em>i-th</em> pixmap and replaces it by <em>p.</em>  Note that <em>p</em>
+becomes owned by the sequence - it will be deleted later.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

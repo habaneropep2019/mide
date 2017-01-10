@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>KOrganizer Reference Manual: Options</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="PIM calendar scheduling C&S vCalendar UNIX X">
+<META NAME="description" CONTENT="A Calendar / Scheduling Program for KDE / Unix / X">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="korganizer-8.html">Next</A>
+<A HREF="korganizer-6.html">Previous</A>
+<A HREF="korganizer.html#toc7">Table of Contents</A>
+</P>
+<H3><A NAME="sec-optionsdlg"></A> <A NAME="s7">7. Options</A>T</H3>
+
+<P>The options dialog will allow you to configure a number of different
+areas of KOrganizer.  
+<P>
+<H3><A NAME="ss7.1">7.1 Personal</A>
+</H3>
+
+<P>The personal options relate to your personal identity, and other
+miscellaneous things that don't fall under any of the other general
+categories.
+<P>
+<DL>
+<P>
+<DT><B>Your Name</B><DD><P>Refers to your full name.
+<P>
+<DT><B>Email Address</B><DD><P>Your email address, which will be used both to
+identify appointments and events which belong to you, and for group
+scheduling, so others know what address to send appointments to.
+<P>
+<DT><B>Additional</B><DD><P>Additional information about yourself.  Currently this
+field is unused, so you may safely ignore it.
+<P>
+</DL>
+<P>
+<H3><A NAME="ss7.2">7.2 Time &amp; Date</A>
+</H3>
+
+<P>
+<P>
+<DL>
+<P>
+<DT><B>Time Zone</B><DD><P>Specifies your time zone in hours offset from UTC
+(GMT).  For the US East Coast, that means -0500 when Daylight Savings
+are not in effect, and -0400 when they are.  KOrganizer will
+automatically adjust for daylight savings.  In the future, the name of
+the region (i.e. US/Eastern) will be specified instead of the
+harder-to-remember numeric representation.
+<P>
+<DT><B>Time Format</B><DD><P>Here, you may choose either 24 hour or 12 hour
+(am/pm) time representations.  Most widgets and display areas in
+KOrganizer are smart enough to switch between the two, but there are a
+few remaining areas where you may notice that this property has not
+been fully implemented.  This will change before the 1.0 release.
+<P>
+<DT><B>Default Appointment Time</B><DD><P>When you choose <CODE>New Appointment</CODE>
+from the 
+<A HREF="korganizer-4.html#sec-action">Action Menu</A>, or create an
+appointment in some other manner such that KOrganizer cannot guess
+what time you would like it to start at, KOrganizer will put this hour
+in the start time editor as the default value.
+<P>
+<DT><B>Default Alarm Time</B><DD><P>Select the time at which you would like alarms
+to go off preceeding the actual event's scheduled time.  Right now,
+you must choose among the hard-coded times that are available.
+<P>
+</DL>
+<P>
+<H3><A NAME="ss7.3">7.3 Fonts</A>
+</H3>
+
+<P>
+<P>
+<DL>
+<P>
+<DT><B>List View</B><DD><P>The font which appointments are displayed in for 
+<A HREF="korganizer-4.html#sec-listview">List View</A>.
+<P>
+<DT><B>Schedule View</B><DD><P>The font which appointments are displayed in for
+<A HREF="korganizer-4.html#sec-dayview">Schedule View</A>, which includes views such
+as 
+<A HREF="korganizer-4.html#sec-dayview">Day View</A> and 
+<A HREF="korganizer-4.html#sec-weekview">Week View</A>.
+<P>
+<DT><B>Month View</B><DD><P>The font which appointments are displayed in for 
+<A HREF="korganizer-4.html#sec-monthview">Month View</A>.
+<P>
+<DT><B>Time Bar</B><DD><P>Currently unimplemented.
+<P>
+<DT><B>Todo View</B><DD><P>The font which appointments are displayed in for the
+<A HREF="korganizer-4.html#sec-todolist">Todo List</A>.
+<P>
+</DL>
+<P>
+<H3><A NAME="ss7.4">7.4 Colors</A>
+</H3>
+
+<P>Currently, this section is unimplemented.
+<P>
+<H3><A NAME="ss7.5">7.5 Views</A>
+</H3>
+
+<P>
+<P>
+<DL>
+<P>
+<DT><B>Day Begins At</B><DD><P>this is the hour for which KOrganizer defaults to
+on the scroll bar when you are in day or week view.  Useful when you
+don't usually have appointments beginning before 8 or 9 o'clock in the
+morning.
+<P>
+</DL>
+<P>
+<H3><A NAME="sec-print"></A> <A NAME="ss7.6">7.6 Printing</A>
+</H3>
+
+<P>
+<P>
+<DL>
+<P>
+<DT><B>Paper Size</B><DD><P>Specifies the size of paper you want to print on by
+default.  You may also choose each time you print something other than
+the default.  Most likely you will choose A4 in Europe, and Letter
+everywhere else.
+<P>
+<DT><B>Paper Orientation</B><DD><P>Specifies what direction you want prints to be
+facing.  Portait is vertically, Landscape is horizontally.  Disabled at
+the moment, because the various views decide on what the paper orientation
+should be themselves. If this changes, the option will be enabled.
+<P>
+<DT><B>Preview Program</B><DD><P>Tells KOrganizer what program you want to use
+when you choose <CODE>Print Preview</CODE> from the  
+<A HREF="korganizer-4.html#sec-file">File Menu</A>.  Typically you will want to use kghostview,
+ghostview, or gv here.
+<P>
+</DL>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="korganizer-8.html">Next</A>
+<A HREF="korganizer-6.html">Previous</A>
+<A HREF="korganizer.html#toc7">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

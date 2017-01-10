@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"Content-Type: text/plain; charset=\n"
+"Date: 1998-03-06 22:13:59-0500\n"
+"From: Bernd Johannes Wuebben,201 Lincoln Hall,,256-1036, "
+"<root@petit.cornell.edu>\n"
+"Xgettext-Options: -C -ki18n -x../../kdelibs/po/kde.pot\n"
+"Files: about.cpp floppy.cpp main.cpp\n"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "Over de KDE Floppy Formatteerder"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "Versie"
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Floppy Speler:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Dichtheid:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Bestandssysteem:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Formatteer"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Snel wissen"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Volledig Formatteren"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Geef Label:"
+
+#: floppy.cpp:148
+#, fuzzy
+msgid "KDE Floppy"
+msgstr "KDE Floppy"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "KDE Floppy Formatteerder"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr ""
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"Geen toegang tot %s\n"
+"Verzeker u ervan dat het apparaat bestaat en dat\n"
+"u hiervoor schrijfrechten hebt."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Kan kfdformat niet vinden.\n"
+"kfdformat is onderdeel van de KFloppy distributie.\n"
+"Installeer KFloppy a.u.b. correct."
+
+#: floppy.cpp:355
+#, fuzzy
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Kan kmke2fs niet vinden\n"
+"kmke2fs is onderdeel van de KFloppy distributie.\n"
+"Installeer KFloppy a.u.b. correct."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Kan kmkdosfs niet vinden.\n"
+"kmkdosfs is onderdeel van de KFloppy distributie.\n"
+"Installeer KFloppy a.u.b. correct."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Breek af"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Kan nieuw programma niet starten: fork() faalde."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Geen toegang tot floppy of floppy speler.\n"
+"Voer a.u.b. een floppy in en verzeker u ervan dat\n"
+"u een correcte floppy speler hebt gekozen.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"Kan %s niet formatteren\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Blok %d is slecht. Ga verder ..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"Kan geen bestandssysteem aanmaken op: %s\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"De floppy is nu geformatteerd.\n"
+"Als slecht gemarkeerde blokken: %d\n"
+"Kale capaciteit: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Alle bestanden zijn gewist."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Bestandssysteem wordt aangemaakt ..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Controle ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Kan geen nieuw programma start\n"
+"fork() faalde."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Fout bij het bepalen van de wijze van aansluiting van floppy\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s is aangesloten.\n"
+"Sluit de floppy a.u.b. eerst af."

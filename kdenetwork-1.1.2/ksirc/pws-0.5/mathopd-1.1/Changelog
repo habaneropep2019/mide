@@ -1,0 +1,174 @@
+Some historical data:
+
+Mathopd started life in the early months of 1996.
+Development of 1.1 started in August 1996 (just before I got my
+current job :) with the release of mathopd-1.1b1.
+
+New releases have been emitted since then at irregular intervals.
+
+Release 1.1b5 was issued on 2 April 1997. This was the first
+stable version of 1.1. Any version between 1.1b5 and current is
+available on request for your entertainment.
+
+b5 -> b6:
+
+	Always use persistent connections if client asks for it.
+
+	Use more appropriate status codes.
+
+	request.c: new functions: get_method, get_url, get_version
+
+	process_headers: major rewrite
+
+b6 -> b7:
+
+	CERN style logging
+
+	KeepAlive keyword zapped
+
+	Read state machine altered to barf at really stupid clients
+
+	More verbose error logging for unknown methods, oversized
+	URLs, badly encoded URLs, unsupported versions, bad protocol
+	strings.
+
+	Close connection when an error occurs and the method is not
+	GET or HEAD (should discard posted data - perhaps later)
+
+	Log content length
+
+b7 -> b8:
+
+	NO_TIMEOUT hack
+
+	-v flag added
+
+	Fix core dump (could happen if you put a directoryindex
+	above a document tree)
+
+b8 -> b9:
+
+	UserDir hack added (redirecting /~ to http://users/~ now works)
+
+	Add check for empty translated path (can only happen when
+	webmaster is a moron)
+
+b9 -> b10:
+
+	Allow 0 servers - mathopd will now die if it has no active
+	fds left (see below)
+
+	Use /dev/null instead of some random thingy for stdin
+	and stderr
+
+	Added SIGUSR2 handler: causes graceful death by
+	nuking the servers
+
+	Added thrash(): if we have to drop a connection,
+	fork, close all connections in the parent and close
+	all servers in the child. This appears reasonably clean.
+
+b10 -> b11:
+
+	thrash() removed - did not always work
+
+b11 -> b12:
+
+	dump dumped
+	extras.c -> cgi.c and imap.c (now always included)
+
+b12 -> b13:
+
+	umask added
+	integers can now be specified in octal or hex in the
+	config file
+
+b13 -> b14:
+
+	'Clients' config item added
+	usage:
+
+	Control {
+		Alias /some/alias
+		Location /home/some/location
+		Clients {
+			Allow 255.255.255.0 193.79.142.0
+		}
+	}
+
+	This will only translate the alias for clients
+	from the 193.79.142.0 network.
+
+	findcontrol removed
+
+b14 -> b15:
+
+	Apply keyword added
+	Allow inside 'Clients' thingy must be changed to 'Apply'
+
+b15 -> b16:
+
+	Referer and agent logged in access log
+	AgentLog item removed
+
+b16 -> b17
+
+	RootDirectory added
+
+b17 -> b18
+
+	PathArgs added
+
+b18 -> b19
+
+	Slightly more verbose error logging
+
+b19 -> b20
+
+	PathArgs now also works when redirecting to other hosts
+
+b20 -> b21
+
+	Admin moved into control structs
+	Some directories created
+	Configure script modified
+	core.c: Write as much as possible in one go
+
+b21 -> b22
+
+	core.c: do not try to send any more when send() fails to
+	send it all
+
+b22 -> b23
+
+	fields in log files are now separated by tabs
+
+b23 -> b24
+
+	removed ERROR_FOOTER - error messages cleaned up a bit
+
+b24 -> b25
+
+	dump.c: added
+	main.c: handler for SIGWINCH added
+	mathopd.h: added byte counter for each virtual server
+	core.c: call time() immediately after select()
+	core.c: close server socket instead of dup2() hack
+	core.c: do_servers, do_connections added
+	mathopd.h: new global variable my_pid
+	main.c: record current_time as well as startuptime
+
+b25 -> b26
+
+	core.c: do not log broken pipe errors - these are just too common
+	request.c: no need to do extensive logging for not found errors
+
+b26 -> b27
+
+	CHANGES: typo in version numbers corrected
+	core.c: fatal error in EPIPE handling corrected
+
+b27 -> b28
+
+	config.c: 'Refresh' keyword added
+	request.c: return 'Refresh:' header when refresh is nonzero

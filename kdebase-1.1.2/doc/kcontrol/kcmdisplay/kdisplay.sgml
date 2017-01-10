@@ -1,0 +1,545 @@
+<!doctype linuxdoc system>
+
+<!-- The KDE Display Setup Handbook.
+
+	 This could be considered a template for producing online help files for
+	 the K Desktop Environment.
+ -->
+
+<article>
+
+<!-- Title information -->
+
+<title>Display Setup Handbook
+<author>Mark Donohoe and Martin Jones, updated by Duncan.
+<date>v1.4, 06 September 1999
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+<sect>Introduction
+<p>
+
+KDisplay is a display setup utility. Running <verb> kcmdisplay  </verb>
+gives a tab dialog with five pages dealing with different aspects of the
+desktop display.
+
+<enum>
+<item>The desktop <bf>Background</bf>.
+<item>The <bf>Screen Saver</bf>.
+<item>The desktop <bf>Color Scheme</bf>.
+<item>The desktop <bf>Fonts</bf>.
+<item>The desktop <bf>Style</bf> choices.
+</enum>
+
+Running <verb>kcmdisplay -init</verb> simply applies your preferences to the
+desktop.
+
+<!-- NEW SECTION	NEW SECTION		NEW SECTION		NEW SECTION		 -->
+
+
+
+<sect>Tutorial
+<p>
+
+
+<!-- NEW SECTION	NEW SECTION		NEW SECTION		NEW SECTION		 -->
+
+
+
+<sect>Background
+<p>
+
+The Background setup dialog is comprised of four sections:
+
+<enum>
+<item>Selection of the <bf>Desktop</bf> to configure.
+<item>The background <bf>Preview Monitor</bf>.
+<item>The background <bf>Color</bf>.
+<item>The background <bf>Wallpaper</bf>.
+</enum>
+
+At the bottom of the screen the
+option <bf>Dock into the panel</bf>
+allows you to select whether an icon for
+the Background  Display Setting dialog is docked into the Panel
+(this provides quick access to the Display Settings menu,
+and also allows stepping through changing background
+sequences  when the ``<bf>Random</bf>'' background mode option
+is selected).
+
+Also at the bottom of the screen is a slider
+allowing the  memory <bf>Cache size</bf> used by the display to
+be adjusted.
+
+
+<sect1>Selection of the Desktop to configure.
+<p>
+The top left <bf>Desktop</bf> box lists the 
+currently-configured desktops by their assigned names.
+Click on a name to select the corresponding desktop to
+be configured.   
+
+If you wish to configure a common background for
+all Desktops, select  the <bf>Common Background</bf>
+option.
+
+<sect1>Preview Monitor
+
+<p>
+
+This is a minature representation of your display background, using the
+current settings.  To apply these settings to your display, press the
+<bf>Apply</bf> button to continue using the KDE display setup utility, or the
+<bf>Ok</bf> button to apply your changes and quit.
+
+<p>
+
+<em>Note:</em> Pressing <bf>Ok</bf> or <bf>Apply</bf> applies changes made in
+<em>all</em> of the display setup modules.
+
+<sect1>Background Color
+
+<p>
+
+The display background can be filled with a single color or with a color
+gradient.
+
+<p>
+
+<itemize>
+<item>
+Select ``<bf>One Color</bf>'' to fill the background with a single color.
+The background color can be changed by clicking on the colored box which
+shows the currently-selected color.
+This will display a color selection dialog from which
+you may select a new background color.
+<item>
+Select ``<bf>Two Color</bf>''
+to fill the background with a color gradient or pattern,
+A second colored box will appear. 
+Click on this box to select the second color.
+Now click on the <bf>Setup</bf> button to choose how to
+blend the two colors. A dialog and Preview box will appear.
+You may choose to progressively blend the colors from 
+<bf>top to bottom</bf> of the screen, from <bf>right to left</bf>, 
+or in a <bf>pattern</bf> selected
+from the list shown.   You will see a preview of the choice you make
+before you apply it. Click <bf>OK</bf> or <bf>Cancel</bf> to leave
+this dialog.
+</itemize>
+
+
+When you are happy with your color selection, press <bf>Ok</bf> in the color
+selection dialog.  The colors will be updated in the colored
+boxes (and in the Preview
+Monitor,  provided no Wallpaper is selected).
+<p>
+
+
+<p>
+A blend of the two colors uses only 8 colors, leaving plenty free for other
+applications. However, it requires an image the size of your display to be
+maintained in memory.
+
+<sect1>Wallpaper
+
+<p>
+
+The wallpaper is an image displayed in the background (root window) of your
+display.  To change the wallpaper displayed, select one from the list
+or click the <bf>Browse</bf> button and select an image.  If wish to
+use a One Color or Two Color background, choose <tt>No Wallpaper</tt>. 
+
+<p>
+Choose from the <bf>Arrangement</bf> list to select how the
+wallpaper image is applied to the desktop: various tiling, mirroring, or
+scaling schemes are possible, and their effects may be seen in 
+the Preview box.
+
+<p>
+You may also select the  <bf>Random</bf> option
+which causes a random sequence
+of backgrounds to be displayed, changing after a specified time
+interval, or when you click on the  Display icon docked in the panel.
+
+ To configure the random sequence of backgrounds:
+<itemize>
+<item> 
+ Click on the <bf>Setup</bf> button to open the
+<bf>Random mode setup</bf> dialog, which allows you to select 
+the sequence of backgrounds which is sampled.
+<item>
+If the option <bf>Pick files from directory</bf> is
+selected, the backgrounds wil be
+chosen from the set of wallpaper files in the selected directory
+entered in the box that opens.
+If this option is <bf>not</bf> selected, they will
+be chosen from a list of backgrounds that can be specified in
+the ``<bf>Desktops</bf>''  box below.
+<item>
+The <bf>Timer Delay in seconds </bf> box allows you to set
+the time interval  between background changes.  
+
+<item>Select the ``<bf>in order</bf>'' option to display
+the sequence of backgrounds in order.  If this option is not
+active, the sequence will be sampled randomly.
+
+<item> The ``<bf>Desktops</bf>'' box contains the user-specified
+sequence of  backgrounds that will be sampled if the ``<bf>pick files
+from directory</bf>'' option is <it>not</it> active.
+<itemize>
+<item>
+Click on an entry to highlight it; it will be
+previewed in the main Background dialog Preview Monitor.  
+<item>
+Click on <bf>Add</bf> To add an entry to this sequence.
+This will open a  dialog which
+allows you to choose a Wallpaper file.
+(Initially, the contents of the KDE default wallpaper directory are
+displayed, but you may change
+to other directories).  
+Select a file, and click on ``OK''. If your choice
+is valid, it will be added to the sequence.
+<item>
+Click on <bf>Delete</bf> to remove the highlighted
+item from the Random Mode backgrounds sequence.
+</itemize>
+In this way, you can construct any sequence of backgrounds
+you wish.  Click on <bf>OK</bf> when you are satisfied with it.
+</itemize>
+
+
+<p>
+Displaying wallpaper requires that the image be kept in memory.  If you are low
+on memory, using a small, tiled image or none at all is recommended. Note
+that scaling or centering a small image still requires an image the size of
+your display to be maintained in memory.
+
+
+
+<sect>Screen Saver
+<p>
+
+The Screen Saver setup dialog is comprised of three sections:
+
+<enum>
+<item>The screen saver <bf>Preview Monitor</bf>.
+<item>The  choice of <bf>Screen Saver</bf> program to run.
+<item>The global screen saver <bf>Settings</bf>.
+
+
+
+</enum>
+
+<sect1>Preview Monitor
+<p>
+
+This is a minature representation of your screen saver, using the current
+settings.  
+To apply these settings to your display, press the <bf>Apply</bf>
+button to continue using the KDE display setup utility or <bf>Ok</bf> button
+to apply your changes and quit.
+
+<p>
+
+In the corners of this monitor are four grey boxes.  These boxes indicate
+what action to take if the cursor is left in one of the corners for more than
+5 seconds.  The options are:
+
+<itemize>
+<item><bf>Ignore</bf> - take no action
+<item><bf>Save Screen</bf> - invoke the screen saver
+<item><bf>Lock Screen</bf> - lock the screen
+</itemize>
+
+To select an option, place the mouse over a grey box, and right-click;
+make your choice in the dialog box that opens. If the Save or Lock
+option is selected, this
+is shown in the corresponding grey box: ("s" = Save, "l" = Lock). 
+
+
+<p>
+<em>Note:</em> Pressing <bf>Ok</bf> or <bf>Apply</bf> applies changes made in
+<em>all</em> of the display setup modules.
+
+<sect1>Screen Saver
+<p>
+
+Choose the particular screen saver program that runs from the list.  
+The working screen saver will
+be shown in minature in the preview monitor.
+(<tt>No screensaver</tt> is the default.)
+<p>
+
+Most screen savers have settings which can be changed by clicking the
+<bf>Setup...</bf> button.  This will display a dialog specific to the
+currently selected screen saver.
+
+<p>
+
+The <bf>Test</bf> button runs the screen saver immediately, full screen,
+for a short interval.
+
+
+<sect1>Settings
+<p>
+
+Enter the time (in minutes) without activity to wait before the screen saver
+is invoked.
+
+<p>
+
+Selecting the <bf>Requires Password</bf> option
+will make the screen saver prompt you for
+your password before restoring the screen.
+<p>
+Select the  <bf>Show password as stars</bf> option
+for the screensaver password box
+to show the number of characters typed.
+
+
+<p>
+
+The <bf>Priority</bf> slider sets the priority 
+of the screen saver 
+relative to other running processes.
+
+
+
+
+<sect>Color Scheme
+<p>
+
+The Color Scheme setup dialog is comprised of three sections:
+
+<enum>
+<item>The color scheme <bf>Preview</bf>.
+<item>The available <bf>Color Schemes</bf>.
+<item>The choice of <bf>Widget Color</bf>.
+</enum>
+
+(The term "<bf>Widget</bf>" 
+means an element of the
+User Interface such as a button, menu, scroll bar, etc. )
+
+<sect1>Preview
+<p>
+
+This section of the dialog demonstrates how a color scheme applies to a
+sample selection of widgets. A color scheme consists of a set of twelve
+colors. These colors apply to the  following elements:
+
+<itemize>
+<item><bf>Inactive window</bf>: title bar text, background and blend.
+<item><bf>Active window</bf>: title bar text, background and blend
+<item><bf>General</bf>: text and background
+<item><bf>Selected</bf>: text and background
+<item><bf>Window</bf>: text and background
+</itemize>
+
+Labels on the sample widgets identify most of these 
+locations. If you click on any object in the preview
+box, the corresponding color scheme element will be
+named  in the  box in the <bf>Widget color</bf> section.
+
+<p>
+
+The colors are grouped into 5 text/background pairs. Thus, good
+contrast between the text and background colors of widgets can be
+ensured at all times.
+
+<p>
+
+When you press <bf>Ok</bf> or <bf>Apply</bf> the color scheme you have selected
+will be written to the desktop configuration.  
+
+<p>
+<em>Note:</em> Pressing <bf>Ok</bf> or <bf>Apply</bf> applies changes made in
+<em>all</em> of the display setup modules.
+
+
+<sect1>Color schemes
+<p>
+
+Various color schemes are supplied with KDE. These include:
+<it>
+KDE default, 
+Atlas green,
+BeOS,
+Blue slate,
+CDE,
+Desert red,
+Digital CDE,
+Pale gray,
+Pumpkin,
+Solaris CDE,
+Storm,</it>
+and <it>Windows 95</it>.
+To preview a scheme click on its name in the list box. 
+
+<p>
+You can use the
+KDE-supplied Color Schemes as a starting point to devise your own
+Scheme. Click on the 
+<bf>Add</bf> button to store the color scheme from the
+Preview under a new name, then modify it. When such a user-created
+Color Scheme is selected, changes to it (as shown
+in the Preview) can be  saved
+with the <bf>Save Changes</bf> button; it can also be
+deleted with the 
+<bf>Remove</bf> button.
+
+The KDE-supplied Schemes themselves cannot be changed or deleted.
+
+
+<sect1>Widget Color
+<p>
+
+The currently selected element of the color scheme is shown in 
+the <bf>Widget Color</bf> group. The color can be changed by clicking on 
+the
+colored box. A color selection dialog will then appear, from which you may
+select any desired color.
+<p>
+
+When you are happy with your color selection, press <bf>Ok</bf> in the color
+selection dialog.  The color will be updated in the <bf>Preview</bf>.
+
+<p>
+<p>
+The <bf>Contrast</bf> slider allows you to change the contrast between
+different shadings of the selected colors.
+
+
+
+<sect>Fonts
+<p>
+
+You may change the font and character set  for the desktop.  
+These fonts will be used by KDE applications, and 
+(if ``<bf>Apply fonts and colors to non-KDE apps</bf>''
+is selected in the Desktop <bf>Style</bf> settings)
+by selected non-KDE
+applications.
+
+You may need to restart KDE for
+font changes to be fully applied  to all KDE 
+applications.
+
+
+Click on a Font category in the main list to select it
+(This lists various categories of KDE functions for which
+a font must be defined: General font, Fixed font, etc.). 
+
+For each category,
+select a <bf>Typeface</bf> from the list,
+optionally choose <bf>Bold</bf> or <bf>Italic</bf>,  
+and select the typeface size by clicking
+on "+" or "-" buttons at the right of the <bf>Size</bf> box.
+You may also choose the <bf>Character Set</bf> for this font (the choices
+available depend on the Typeface chosen). The choices 
+<tt>default</tt> 
+and <tt>any</tt> are always available.
+(The Default Character Set is configured in the File Manager Font menu).
+
+The font you have selected is previewed in the 
+<bf>Sample text</bf> box.
+
+
+To restore the KDE default configuration, click on the <bf>Default</bf>
+button at the bottom of the screen.  Click on <bf>Apply</bf> or
+<bf>OK</bf> to activate your choice.  
+
+<p>
+<em>Note:</em> Pressing <bf>Ok</bf> or <bf>Apply</bf> applies changes made in
+<em>all</em> of the display setup modules.
+
+
+<sect>Style
+<p>
+
+The Style dialog allows three Desktop style choices to be made, and
+the icon style (``normal'' or ``large'') to be selected.
+
+<itemize>
+<item> <bf>Draw widgets in the  style of Windows 95</bf>.  
+Select this option
+for a Windows95/98(tm) style for the KDE Desktop widgets.
+If this option is not selected, they will have a Motif(tm)
+style.
+For example, the widget  that chooses this option
+is a button in Motif style, and a check box in
+Windows 95 style.
+
+<item> <bf>Menubar on top of the screen in the style of MacOS</bf>.
+This option emulates the MacOS style by placing a menubar for
+the currently-active application at the top of the screen.
+ 
+
+<item> <bf>Apply fonts and colors to non-KDE apps</bf>.
+Selecting this option allows the "look and feel"
+of KDE applications (mainly fonts and colors) to also be applied to 
+certain non-KDE X11 applications such as Emacs and XEmacs.  
+</itemize>
+
+
+Note: The ``<bf>Apply fonts and colors to non-KDE apps</bf>'' 
+feature uses <tt>krdb</tt>, KDE's
+interface to <tt>xrdb</tt>, the X-resources database.  If this
+causes you to experience problems with your non-KDE applications, 
+you may wish to deactivate this feature.
+A change of this selection  may not take effect until KDE is
+restarted.
+
+
+The <bf>Icon style</bf> section allows you to
+choose between ``<bf>normal</bf>'' and ``<bf>large</bf>'' style
+icons.  You may make this choice separately for icons
+used in the <bf>Panel</bf>,
+<bf>File manager and desktop icons</bf>,
+and <bf>Other</bf> icons.
+<itemize>
+<item> <bf>Note:</bf> The <bf>Panel Icon Style</bf> controls the size of the
+Panel.   For more complete configuration, including the choice
+of ``<bf>tiny</bf>'' style icons for the Panel, use the panel configuration
+dialog (select ``Configure'' in the Panel menu, or go to the 
+``Applications -> Panel'' configuration menu).
+</itemize>
+
+
+<p>
+To restore the KDE default configuration, click on the <bf>Default</bf>
+button at the bottom of the screen.  Click on <bf>Apply</bf> or
+<bf>OK</bf> to activate your choice.  
+
+<p>
+<em>Note:</em> Pressing <bf>Ok</bf> or <bf>Apply</bf> applies changes made in
+<em>all</em> of the display setup modules.
+
+<!-- NEW SECTION	NEW SECTION		NEW SECTION		NEW SECTION		 -->
+
+
+
+<sect>Questions and answers
+<p>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

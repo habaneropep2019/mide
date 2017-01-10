@@ -1,0 +1,273 @@
+# KTranslator Generated File
+# Mostly translated by Pawe³ Jab³oñski <pawel.jablonski@mail.lze.lodz.pl>
+# Latest updates by Jacek Stolarczyk <jacek@mer.chemia.polsl.gliwice.pl>
+msgid ""
+msgstr ""
+"Project-Id-Version: knu \n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: 1998-01-25 15:53+0100\n"
+"Last-Translator: Jacek Stolarczyk <jacek@mer.chemia.polsl.pl>\n"
+"Content-Type: text/plain; charset=iso8859-2\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "Pin&g"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "T&rasowanie"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "T³&umaczenie adresów"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "F&inger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"To polecenie jest niedostêpne\n"
+"w pliku konfiguracyjnym.\n"
+"\n"
+"Nic nie mogê zrobiæ...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "&Nowe okno"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "&Zamknij okno"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "Wybierz &wszystko"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "Wyczy¶æ &okno komunikatów"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "&Ustawienia..."
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "In&formacje o %s"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "Informacje o &Qt"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+"Knu\n"
+"Wersja %s\n"
+"\n"
+"Bertrand"
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "Informacje o knu..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "Narzêdzia sieciowe"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "&Komputer:"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "S&tart!"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "St&op"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Nie odnaleziono polecenia. \n"
+"Proszê ustawiæ w³a¶ciw± ¶cie¿kê w menu Edycja -> Ustawienia."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Wyst±pi³ b³±d w pliku\n"
+"%s/%src\n"
+"W grupie [%s],\n"
+"nie mo¿na odnale¼æ linii \"path=\".\n"
+"\n"
+"Proszê ustawiæ w³a¶ciw± ¶cie¿kê\n"
+"w menu Edycja->Ustawienia.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "B³êdna ¶cie¿ka"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Polecenie"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "¦&cie¿ka:"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "&Dodatkowe parametry:"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "To polecenie zosta³o zablokowane w pliku konfiguracyjnym."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - konfiguracja"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "Nazwa komputera"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Utraconych"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Otrz"
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Wys³"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Najlepszy"
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "¦red"
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Najgorszy"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "T³umacz a&dresy"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "hos&t"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "&Maksymalna liczba hopów:"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "address (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "name (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "name server (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "mail exchanger (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "alias (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "start of authority (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "any record (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "&Szukaj:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "domy¶lny serwer"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "Ser&wer:"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "&U¿ytkownik"
+
+#~ msgid "&Matt's traceroute"
+#~ msgstr "Trasowanie &Matta"
+
+#~ msgid "&Contents"
+#~ msgstr "Pomo&c"
+
+#~ msgid "Server:"
+#~ msgstr "Serwer:"
+
+#~ msgid ""
+#~ "You have a problem in your ~/.kde/share/config/knurc configuration file.\n"
+#~ "In the ["
+#~ msgstr ""
+#~ "Masz problem w pliku ~/.kde/share/config/knurc configuration file.\n"
+#~ "W grupie ["
+
+#~ msgid "] group, I cannotfind a correct \"path=\" entry."
+#~ msgstr "] nie mo¿na znale¼æ poprawnej linii \"path=\"."

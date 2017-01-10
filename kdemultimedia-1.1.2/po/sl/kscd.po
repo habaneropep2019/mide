@@ -1,0 +1,608 @@
+# KDEMULTIMEDIA translation to Slovenian language.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Marko Samastur <markos@elite.org>, 1999.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kdemultimedia\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: 1999-03-29 22:22+0100\n"
+"Last-Translator: Marko Samastur <markos@elite.org>\n"
+"Language-Team: Slovenian <ftp://ftp.lugos.si/pub/lugos/localization/kde-sl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "CDDB korenski imenik"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "Po¹lji CDDB prispevki na:"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "CDDB stre¾nik"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "Obnovi"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "Vkljuèi oddaljen CDDB"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "Privzeto"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "Uporabi HTTP proksi za dostop do CDDB"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "Urejevalnik CD baze"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"Celoten èas:\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"Celoten èas:\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "Uporabite ta urejevalnik za zaznamek te skladbe"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "Uporabite ta urejevalnik za zaznamek naslova"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "Prosim izberite kategoriji ali pritisnite Preklièi"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "V katero kategorijo sodi CD"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "Po¹iljam cddb vnos: %s\n"
+
+#: CDDialog.cpp:508
+#, fuzzy, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"Nisem mogel odvesti vsebine v:\n"
+" %s"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "V katero kategorijo ¾elite shraniti ta CDDB vnos?"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"Nisem mogel pisati v datoteko:\n"
+"%s\n"
+"Prosim preverite dovoljenja in ustvarite imenike kategorij."
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "Kscd napaka"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "Nepravilen vnos v bazo"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Polje avtor / naslov ni izpolnjeno.\n"
+"Prosim popravite svoj vnos in poiskusite znova."
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"Polje avtor / naslov ni pravilno izpolnjeno.\n"
+"Prosim loèite avtorja od naslova CD-ja s po¹evnico\n"
+"kot npr.: Queen / Greatest Hits\n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Vsi naslovi skladb ne smejo biti prazni.\n"
+"Prosim popravite vnos in poiskusite znova."
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "Notranja napaka"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Prosim obvestite avtorja po epo¹ti."
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "Nepravilen seznam skladb\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "Nalo¾i"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "Urejevalnik predvajanih skladb"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "Uredi naslov skladbe"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "Avtor / naslov CD-ja"
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "Skladba / Èas / Naslov"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "Ekst. informacije"
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "CD ID"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "Po¹lji"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "Priredi kscd"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "Barva LED:"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "Barva ozadja:"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "Naprava CDROM:"
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Unix po¹tni ukaz:"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "WWW-brskalnik"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "Uporabi kfm kot brskalnik"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "Uporabi lasten brskalnik:"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "Prika¾i nasvete orodij"
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "Vklopi sidranje v Kplo¹èi"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr "Zapri predvajanje na podstavku"
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr "Samodejno zasidraj ob skrèenju"
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr "Prekini predvajanje ob izhodu"
+
+#: configdlg.cpp:190
+msgid "Eject on Finish"
+msgstr "Izvr¾i na koncu"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "Predvajaj/Premor"
+
+#: docking.cpp:75
+msgid "Forward"
+msgstr "Naprej"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "Nazaj"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "Naslednja"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "Prej¹nja"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "Izvr¾i"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "Skrèi"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr ""
+"Nisem na¹el ujemajoèega CD-ja. Prosim izberite ustrezni CD s spodaj "
+"predstavljenega izbirnega seznama."
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "Prosim izberite naslov plo¹èe ali pritisnite Preklièi"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr "Posnetek je bil uspe¹no poslan"
+
+#: kscd.cpp:236
+msgid "Error connecting to server."
+msgstr "Napaka pri povezavi na stre¾nik"
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr "Nepovezan."
+
+#: kscd.cpp:242
+msgid "Connection timed out."
+msgstr "Èas za povezava je potekel."
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr "Èas za stre¾nikov poseg je potekel."
+
+#: kscd.cpp:248
+#, fuzzy, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+"Stre¾nik je dejal:\n"
+"\"%s\""
+
+#: kscd.cpp:250
+#, fuzzy, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+"Napaka #%d pri po¹iljanju sporoèila preko SMTP.\n"
+"\n"
+"%s"
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "Glasnost: --"
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Uèinki"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "Nakupi"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Magic"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "Predvajaj v zanki"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "Izbor skladb"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "30 sekund naprej"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "30 sekund nazaj"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "Naslednja skladba"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "Prej¹nja skladba"
+
+#: kscd.cpp:570
+msgid "Quit Kscd"
+msgstr "Zapusti Kscd"
+
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "Ciklaj èasovni prikaz"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Prikroji Kscd"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "Izvr¾i CD"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "Umetnik na spletu"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "Nakljuèno predvajanje"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "CDDB dialog"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "CD kontrola glasnosti"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "Predvajam"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr "%02d : <Neznan>"
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "Premor"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "Nakljuèno"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Èudno...."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "Ustavljeno"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "V zanki"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "Izvraèam"
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "kscd nastavitve"
+
+#: kscd.cpp:1008
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Avtorske pravice (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Trenutno vzdr¾uje:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd vsebuje kodo:\n"
+"workman 1.4 beta 3\n"
+"Avtorske pravice (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Posebna zahvala gre Ti Kan in Steve Scherf, da sta izumila koncept CDDB "
+"podatkovne baze. Obi¹èite http://www.cddb.com za veè informacij o CDDB.\n"
+"\n"
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"KSCD Magic baziran na Synaesthesia od Paula Harrisona "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+
+#: kscd.cpp:1025
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Hvala Vadimu Zaliva <lord@crocodile.org>\n"
+"za njegovo delo na http proksi kodi.\n"
+"\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr "SMTP nastavitve"
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Kscd opcije"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Magic"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "Glas: %02d%%"
+
+#: kscd.cpp:1223
+#, fuzzy, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"Napaka pri branju ali dostopanju CD-ja.\n"
+"Prosim preverite, da imate potrebna dovoljenja na:\n"
+"%s"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "Pripravljen"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "Izvr¾en"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "Nezmo¾en dobiti seznam stre¾nikov CDDB."
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "Ujemajoè vnos CDDB ni bil na¹en."
+
+#: kscd.cpp:1834 kscd.cpp:1844
+msgid "Error getting CDDB entry."
+msgstr "Napaka pri sprejemu vnosa CDDB."
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "Poizvedba CDDB je potekla."
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "Skl Ostal"
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Skup Sek"
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Skup Ostal"
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "Skl Sek"
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "Ne morem zagnati kscdmagic."
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"KSCD Magic se je nenormalno konèal.\n"
+"Ali ste preprièani, da je name¹èen kscdmagic?"
+
+#: kscd.cpp:2368
+msgid "Enter the local CDDB base Directory"
+msgstr "Vnesite lokalni korenski imenik CDDB"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: prikaz opcij ukazne vrstice\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: vklopi odhro¹èevanje izhoda.\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "Magic Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "©irina Magicovega okna:"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "Vi¹ina Magicovega okna:"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "MAGIC jasnost:"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr "Dovoli predloge preko SMTP"
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr "SMTP Naslov:Vrata"
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr "Va¹ epo¹tni naslov"
+
+#, fuzzy

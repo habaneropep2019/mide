@@ -1,0 +1,24 @@
+TODO
+====
+o deal with interfaces different from ppp0
+o button for clearing volume accounting
+o better FAQ
+o modem-setup wizard
+o provider-setup wizard
+o Create an own dialer communicating with slots. This will allow non-X kppp´s
+o Separate GUI and non-GUI code in different classes
+
+
+Dropped
+=======
+o MS-CHAP support (since this relies on pppd, we cannot do it)
+o separate setup and dialer (very difficult, both parts would require to be 
+  be SUID)
+
+Done
+====
+o signal catching for accounting
+o help users with those "pppd died unexpected..." bugs
+o CHAP support
+o All modem related code should be put in one class
+o replace "$" in config entries with "$$"

@@ -1,0 +1,65 @@
+This file lists known bugs in KPaint 0.4.3
+==========================================
+- resize from 15x15 to 200x300 results in 1200x1800 in statusbar
+	and 200x300 in infodialog at 600% zoom
+- spraycan sprays little pix in zoom.
+- Filenames aren't accepted <:-} unbekannt.xpm is default
+- xpmfiles aren't written.
+- Toolbar 2x same tool clicked is deselected -> wrong
+
+
+This file lists known bugs in KPaint 0.3.1
+==========================================
+
+Fixed Makefile.in problem
+Does not delete temporary files from network access
+Custom bitmap fills still broken.
+
+12 August 1997
+
+This file lists known bugs in KPaint 0.3
+========================================
+
+Custom bitmap fills still broken.
+Missing -lkfm in Makefile.in
+
+28 July 1997
+
+This file lists known bugs in KPaint 0.2
+========================================
+
+Custom bitmap fills are broken, do not use.
+
+You still can't set the filetype (all of the info is there but it's not quite
+sorted out). Fixed in 0.3.
+
+The lastWindowClosed() signal doesn't seem to be working, don't know why yet.
+Fixed in 0.3 (Still don't know why so I've worked around it).
+
+
+This file lists known bugs in KPaint 0.1
+========================================
+
+KPaint aborts with a bad window error when displaying modal dialogs a second
+time under kwm 0.4.4, this does not occur with fvwm95-2. I think this is a bug
+in kwm. Fixed in kwm 0.4.6.
+
+Gets confused if right button is pressed whilst drawing, ie. with the left
+button pressed too. (This may be related to my XFree86 ChordMiddle setting)
+
+The tool properties dialog may show problems with qt-1.1 as it forgets to give
+a repaint event when show is called for a dialog. I've added a fix for now,
+but you should upgrade to Qt 1.2. If you are using Qt 1.2 you can add -DNEWQT
+to the compiler defines to remove the fix. Now requires Qt 1.2 for other things
+so I've removed the fix in 0.2.
+
+moorer@cs.man.ac.uk
+19 May 1997
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+DlgEdit {
+	ClassHeader {NNTPConfigDlg.h}
+	ClassSource {NNTPConfigDlg.cpp}
+	ClassName {NNTPConfigDlg}
+	DataHeader {NNTPConfigDlgData.h}
+	DataSource {NNTPConfigDlgData.cpp}
+	DataName {NNTPConfigDlgData}
+	DataInherited {TRUE}
+		WindowBaseClass {QDialog}
+		IsModal {TRUE}
+		WindowCaption {KRN-NNTP configuration}
+}
+WidgetLayout {
+		Rect {5 100 430 270}
+		Grid {10}
+
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {TRUE}
+		Text {OK}
+		Rect {30 230 100 30}
+		Name {PushButton_1}
+		Variable {b1}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		Rect {300 230 100 30}
+		Name {PushButton_2}
+		Variable {b2}
+}
+LineEdit {
+		Text {}
+		Rect {120 20 300 30}
+		Name {LineEdit_1}
+		Variable {servername}
+}
+Label {
+		Text {NNTP Server}
+		Rect {10 20 100 30}
+		Name {Label_1}
+}
+CheckBox {
+		Checked {FALSE}
+		Text {Connect on Startup}
+		Rect {270 50 150 30}
+		Name {CheckBox_1}
+		Variable {connectatstart}
+}
+CheckBox {
+		Checked {FALSE}
+		Text {Authenticate}
+		Rect {10 50 170 30}
+		Name {CheckBox_2}
+		Variable {authenticate}
+}
+Label {
+		Text {User Name}
+		Rect {120 90 70 30}
+		Name {Label_2}
+}
+Label {
+		Text {Password}
+		Rect {120 130 60 30}
+		Name {Label_3}
+}
+LineEdit {
+		Text {}
+		Rect {200 90 150 30}
+		Name {LineEdit_2}
+		Variable {username}
+}
+LineEdit {
+		Text {}
+		Rect {200 130 150 30}
+		Name {LineEdit_3}
+		Variable {password}
+}
+Label {
+		Text {SMTP server}
+		Rect {10 180 100 30}
+		Name {Label_4}
+}
+LineEdit {
+		Text {}
+		Rect {120 180 300 30}
+		Name {LineEdit_4}
+		Variable {smtpserver}
+}}

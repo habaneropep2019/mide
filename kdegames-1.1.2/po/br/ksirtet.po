@@ -1,0 +1,290 @@
+# Breton translation of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Jañ-Mai Drapier <jdrapier@club-internet.fr>, 1998
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ksirtet-1.1\n"
+"POT-Creation-Date: 1998-10-01 13:29+0200\n"
+"PO-Revision-Date: 1999-03-29 18:10+0200\n"
+"Last-Translator: Romuald Texier <texierr@worldnet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+
+#: board.cpp:65 dialogs.cpp:137
+msgid "Anonymous"
+msgstr "Dizanv"
+
+#: board.cpp:97
+msgid "Game paused"
+msgstr "C'hoari ehanet"
+
+#: board.cpp:102
+msgid "Press to resume"
+msgstr "Stokit evit kenderc'hel"
+
+#: board.cpp:119 net.cpp:208
+msgid "Game over"
+msgstr "Echu an abadenn"
+
+#: board.cpp:123
+msgid "Press Return to replay"
+msgstr "Stokit Enkas evit c'hoari adarre"
+
+#: board.cpp:127
+msgid "Press to start game"
+msgstr "Stokit evit loc'hañ ar c'hoari"
+
+#: board.cpp:371
+msgid "Highscores file not writable !"
+msgstr "Restr ar merkoù uhelañ n'eo ket skrivadus !"
+
+#: net.cpp:129
+msgid "Illegal port"
+msgstr "Porzh direizh"
+
+#: net.cpp:135
+msgid "Null address"
+msgstr "Chomlec'h null"
+
+#: net.cpp:142
+msgid "Unknown address"
+msgstr "Chomlec'h dianav"
+
+#: net.cpp:157
+msgid "Cannot create socket"
+msgstr "N'hell ket krouiñ a lugell"
+
+#: net.cpp:196
+msgid "at"
+msgstr "e"
+
+#: net.cpp:233
+msgid "Connect error"
+msgstr "Fazi kevreañ"
+
+#: net.cpp:243 net.cpp:299
+msgid "Server unreachable"
+msgstr "Servijer antizabl"
+
+#: net.cpp:266
+msgid "The server has died"
+msgstr "Marv eo ar servijer"
+
+#: net.cpp:267
+msgid "Cancel from server"
+msgstr "Nullañ a-berzh ar servijer"
+
+#: net.cpp:273 net.cpp:333
+msgid "Unknown data from server"
+msgstr "Roadoù dianav digant ar servijer"
+
+#: net.cpp:312
+msgid "Cannot send to server"
+msgstr "N'hellan ket kas d'ar servijer"
+
+#: net.cpp:324
+msgid "Client timeout (No message from server)"
+msgstr "Amzer-hont arval (kemennad ebet digant ar servijer)"
+
+#: net.cpp:329
+msgid "Server has vanished"
+msgstr "Servijer aet da get"
+
+#: net.cpp:366
+msgid "Bind error"
+msgstr "Fazi ereañ"
+
+#: net.cpp:371
+msgid "Listen error"
+msgstr "Fazi selaou"
+
+#: net.cpp:390
+msgid "Unknown message from unknown player (??)"
+msgstr "Kemennad dianav digant ur c'hoarier dianav (??)"
+
+#: net.cpp:449 net.cpp:490
+msgid "Unknown message from client"
+msgstr "Kemennad dianav digant an arval"
+
+#: net.cpp:486
+msgid "Client has died"
+msgstr "Marv eo an arval"
+
+#: net.cpp:487
+msgid "Cancel from client"
+msgstr "Nullañ a-berzh an arval"
+
+#: net.cpp:494
+msgid "Timeout"
+msgstr "Amzer-hont"
+
+#: net.cpp:520
+msgid "No message from client"
+msgstr "Kemennd ebet digant an arval"
+
+#: net.cpp:525
+msgid "Client has vanished"
+msgstr "Arval aet da get"
+
+#: net.cpp:529
+msgid "Unknown data from client"
+msgstr "Roadoù dianav digant an arval"
+
+#: net.cpp:533
+msgid "End message from client"
+msgstr "Kemennad diwezh digant an arval"
+
+#: net.cpp:550
+msgid "Cannot send to client"
+msgstr "N'hellan ket kas d'an arval"
+
+#: dialogs.cpp:61
+msgid "High Scores"
+msgstr "Merkoù uhelañ"
+
+#: dialogs.cpp:84 dialogs.cpp:93
+msgid "Hall of Fame"
+msgstr "Taolenn a enor"
+
+#: dialogs.cpp:156
+msgid "No option yet !"
+msgstr "Dibab ebet c'hoazh !"
+
+#: dialogs.cpp:175 dialogs.cpp:232
+msgid "Network Dialog"
+msgstr "Kendiviz rouedad"
+
+#: dialogs.cpp:178
+msgid "Server"
+msgstr "Servijer"
+
+#: dialogs.cpp:179
+msgid "Client"
+msgstr "Arval"
+
+#: dialogs.cpp:183
+msgid "Player name :"
+msgstr "Anv ar c'hoarier :"
+
+#: dialogs.cpp:185
+msgid "Server address :"
+msgstr "Chomlec'h ar servijer :"
+
+#: dialogs.cpp:187
+msgid "Port :"
+msgstr "Porzh :"
+
+#: dialogs.cpp:199
+msgid "Connect"
+msgstr "Kevreañ"
+
+#: dialogs.cpp:202
+msgid "Connecting ..."
+msgstr "O kevreañ ..."
+
+#: dialogs.cpp:205
+msgid "Play !"
+msgstr "C'hoari !"
+
+#: dialogs.cpp:252
+msgid "Network game"
+msgstr "C'hoari dre rouedad"
+
+#: dialogs.cpp:256
+msgid "Server mode"
+msgstr "Mod servijer"
+
+#: dialogs.cpp:258
+msgid "Client mode"
+msgstr "Mod arval"
+
+#: dialogs.cpp:336
+msgid "Waiting for other player(s) ..."
+msgstr "O c'hortoz choarier(ien) all ..."
+
+#: field.cpp:27
+msgid "New game"
+msgstr "C'hoari nevez"
+
+#: field.cpp:28
+msgid "Pause game"
+msgstr "Ehanañ ar c'hoari"
+
+#: field.cpp:30
+msgid "High scores"
+msgstr "Merkoù uhelañ"
+
+#: field.cpp:31
+msgid "Move left"
+msgstr "Fiñval a-gleiz"
+
+#: field.cpp:32
+msgid "Move right"
+msgstr "Fiñval a-zehoù"
+
+#: field.cpp:33
+msgid "Drop down"
+msgstr "Leuskel en traoñ"
+
+#: field.cpp:34
+msgid "One line down"
+msgstr "Ul linenn a-is"
+
+#: field.cpp:35
+msgid "Rotate left"
+msgstr "Treiñ a-gleiz"
+
+#: field.cpp:36
+msgid "Rotate right"
+msgstr "Treiñ a-zehoù"
+
+#: field.cpp:51
+msgid "Score"
+msgstr "Merk"
+
+#: field.cpp:55
+msgid "Lines removed"
+msgstr "Linennoù lamet"
+
+#: field.cpp:59
+msgid "Level"
+msgstr "Live"
+
+#: field.cpp:63
+msgid "Next tile"
+msgstr "Teolenn a heul"
+
+#: field.cpp:185
+msgid "&Restart game"
+msgstr "&Adkregiñ ar c'hoari"
+
+#: field.cpp:186
+msgid "&Pause game"
+msgstr "&Ehanañ ar c'hoari"
+
+#: field.cpp:187
+msgid "&Multiplayer game"
+msgstr "C'hoari gant &meur a zen"
+
+#: field.cpp:189
+msgid "&High scores"
+msgstr "Merkoù &Uhelañ"
+
+#: main.cpp:25 main.cpp:74
+msgid "Hide menu"
+msgstr "Skoachañ al lañser"
+
+#: main.cpp:30
+msgid "&Keys"
+msgstr "&Stokelloù"
+
+#: main.cpp:35
+msgid "by"
+msgstr "gant"
+
+#: main.cpp:71
+msgid "Show menu"
+msgstr "Diskouez al lañser"

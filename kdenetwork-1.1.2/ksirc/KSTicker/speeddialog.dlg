@@ -1,0 +1,117 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {speeddialog.h}
+	ClassSource {speeddialog.cpp}
+	ClassName {SpeedDialog}
+	DataHeader {speeddialogData.h}
+	DataSource {speeddialogData.cpp}
+	DataName {speeddialogData}
+	WindowBaseClass {QDialog}
+	IsModal {FALSE}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {270 120}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+Slider {
+		Orientation {Horizontal}
+		MinValue {10}
+		MaxValue {200}
+		Initial {30}
+		LineStep {10}
+		PageStep {50}
+		Tracking {TRUE}
+		Tickmarks {NoMarks}
+		TickInterval {0}
+		Rect {90 10 100 20}
+		Name {Slider_1}
+		Variable {sliderTick}
+		Signal {[Protected]  valueChanged --> updateTick  (int)}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Slider {
+		Orientation {Horizontal}
+		MinValue {1}
+		MaxValue {10}
+		Initial {3}
+		LineStep {1}
+		PageStep {2}
+		Tracking {TRUE}
+		Tickmarks {NoMarks}
+		TickInterval {0}
+		Rect {90 45 100 20}
+		Name {Slider_2}
+		Variable {sliderStep}
+		Signal {[Protected]  valueChanged --> updateStep  (int)}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LCDNumber {
+		Digits {3}
+		SmallDecimalPoint {FALSE}
+		Mode {Dec}
+		SegmentStyle {Outline}
+		Style {33}
+		Rect {200 5 60 30}
+		Name {LCDNumber_1}
+		Variable {lcdTick}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LCDNumber {
+		Digits {3}
+		SmallDecimalPoint {FALSE}
+		Mode {Dec}
+		SegmentStyle {Outline}
+		Style {33}
+		Rect {200 40 60 30}
+		Name {LCDNumber_2}
+		Variable {lcdStep}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Tick Interval}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 5 80 30}
+		Name {Label_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Step Size}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 40 80 30}
+		Name {Label_2}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Close}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {140 80 120 30}
+		Name {PushButton_2}
+		Signal {[Protected]  pressed --> terminate  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

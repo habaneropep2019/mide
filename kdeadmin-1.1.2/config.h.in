@@ -1,0 +1,140 @@
+/* config.h.in.  Generated automatically from configure.in by autoheader.  */
+
+/* Define if you have the ANSI C header files.  */
+#undef STDC_HEADERS
+
+/* Define if you can safely include both <sys/time.h> and <time.h>.  */
+#undef TIME_WITH_SYS_TIME
+
+/* Define if the C++ compiler supports BOOL */
+#undef HAVE_BOOL
+
+/* defines if having libjpeg (always 1) */
+#undef HAVE_LIBJPEG
+
+/* defines which to take for ksize_t */
+#undef ksize_t
+
+/* define if you have setenv */
+#undef HAVE_FUNC_SETENV
+
+/* define if you have fgetpwent */
+#undef HAVE_FGETPWENT
+
+/* define if you have fgetgrent */
+#undef HAVE_FGETGRENT
+
+/* Define to 1 if NLS is requested.  */
+#undef ENABLE_NLS
+
+/* if you have IRIX */
+#undef HAVE_IRIX
+
+/* if you have Linux */
+#undef HAVE_LINUX
+
+/* define if you have PAM (Pluggable Authentication Modules); Redhat-Users! */
+#undef HAVE_PAM
+
+ 
+/* define this if you  compile --with-pam for SOLARIS (but not for Linux) */
+#undef PAM_MESSAGE_NONCONST
+
+ 
+/* if defined, changes the default name of the PAM service used by KDE */
+#undef KDE_PAM_SERVICE
+
+/* define if you have the PAM lib. Now, we have two different users, this will c
+hange */
+#undef HAVE_PAM_LIB
+
+/* Default homepage prefix */
+#undef KU_HOMEPREFIX
+
+/* Default use private group */
+#undef KU_USERPRIVATEGROUP
+
+#ifndef HAVE_BOOL
+#define HAVE_BOOL
+typedef int bool;
+#ifdef __cplusplus
+const bool false = 0;
+const bool true = 1;
+#else
+#define false (bool)0;
+#define true (bool)1;
+#endif
+#endif
+
+/*
+ * jpeg.h needs HAVE_BOOLEAN, when the system uses boolean in system
+ * headers and I'm too lazy to write a configure test as long as only
+ * unixware is related
+ */
+#ifdef _UNIXWARE
+#define HAVE_BOOLEAN
+#endif
+
+/* Define if you have the <crypt.h> header file.  */
+#undef HAVE_CRYPT_H
+
+/* Define if you have the <dirent.h> header file.  */
+#undef HAVE_DIRENT_H
+
+/* Define if you have the <fcntl.h> header file.  */
+#undef HAVE_FCNTL_H
+
+/* Define if you have the <linux/quota.h> header file.  */
+#undef HAVE_LINUX_QUOTA_H
+
+/* Define if you have the <linux/unistd.h> header file.  */
+#undef HAVE_LINUX_UNISTD_H
+
+/* Define if you have the <mntent.h> header file.  */
+#undef HAVE_MNTENT_H
+
+/* Define if you have the <ndir.h> header file.  */
+#undef HAVE_NDIR_H
+
+/* Define if you have the <paths.h> header file.  */
+#undef HAVE_PATHS_H
+
+/* Define if you have the <signal.h> header file.  */
+#undef HAVE_SIGNAL_H
+
+/* Define if you have the <sys/dir.h> header file.  */
+#undef HAVE_SYS_DIR_H
+
+/* Define if you have the <sys/fs/ufs_quota.h> header file.  */
+#undef HAVE_SYS_FS_UFS_QUOTA_H
+
+/* Define if you have the <sys/mntent.h> header file.  */
+#undef HAVE_SYS_MNTENT_H
+
+/* Define if you have the <sys/mnttab.h> header file.  */
+#undef HAVE_SYS_MNTTAB_H
+
+/* Define if you have the <sys/ndir.h> header file.  */
+#undef HAVE_SYS_NDIR_H
+
+/* Define if you have the <sys/param.h> header file.  */
+#undef HAVE_SYS_PARAM_H
+
+/* Define if you have the <sys/params.h> header file.  */
+#undef HAVE_SYS_PARAMS_H
+
+/* Define if you have the <sys/quota.h> header file.  */
+#undef HAVE_SYS_QUOTA_H
+
+/* Define if you have the <sys/time.h> header file.  */
+#undef HAVE_SYS_TIME_H
+
+/* Define if you have the <unistd.h> header file.  */
+#undef HAVE_UNISTD_H
+
+/* Name of package */
+#undef PACKAGE
+
+/* Version number of package */
+#undef VERSION
+

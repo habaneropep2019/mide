@@ -1,0 +1,24 @@
+DefaultName localtoast
+
+Server {
+	Port 8080
+	Control {
+		Alias /
+		Location /tmp/mathopd-1.1/examples
+		Types {
+			text/html { html }
+			text/plain { * }
+		}
+		IndexNames { index.html }
+		Specials {
+			CGI { cgi }
+		}
+	}
+}
+
+Log /tmp/mathopd-1.1/examples/logs/log
+ErrorLog /tmp/mathopd-1.1/examples/logs/errors
+ChildLog /tmp/mathopd-1.1/examples/logs/children
+PIDFile /tmp/mathopd-1.1/examples/logs/pid
+
+Umask 022

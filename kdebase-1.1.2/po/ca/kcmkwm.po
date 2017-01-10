@@ -1,0 +1,470 @@
+# KCMKWM CATALAN TRANSLATION
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Sebastià Pla <sastia@redestb.es>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwm\n"
+"POT-Creation-Date: 1999-04-10 01:21+0200\n"
+"PO-Revision-Date: 1998-12-22 00:28+0100\n"
+"Last-Translator: Sebastià Pla <sastia@redestb.es>\n"
+"Language-Team: CATALAN <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: main.cpp:67
+msgid "&Buttons"
+msgstr "&Botons"
+
+#: main.cpp:70
+msgid "&Titlebar"
+msgstr "Barra de &Títol"
+
+#: main.cpp:73
+msgid "Bo&rders"
+msgstr "Vo&res"
+
+#: main.cpp:76
+msgid "&Mouse"
+msgstr "&Ratolí"
+
+#: main.cpp:80
+msgid "&Advanced"
+msgstr "&Avançat"
+
+#: main.cpp:86
+msgid ""
+"usage: kcmkwm [-init | {options,buttons,titlebar,borders,mouse,advanced}]\n"
+msgstr ""
+"us: kcmkwm [-init | {options,buttons,titlebar,borders,mouse,advanced}]\n"
+
+#: main.cpp:123
+msgid "Window manager style"
+msgstr "Estil del gestor de finestres"
+
+#: titlebar.cpp:125
+msgid "Minimize"
+msgstr "Minimitza"
+
+#: titlebar.cpp:129
+msgid "Maximize"
+msgstr "Maximitza"
+
+#: titlebar.cpp:133
+msgid "Sticky"
+msgstr "Apegalós"
+
+#: titlebar.cpp:141
+msgid "Menu"
+msgstr "Menú"
+
+#: titlebar.cpp:178 titlebar.cpp:936
+msgid "Left"
+msgstr "Esquerra"
+
+#: titlebar.cpp:182 titlebar.cpp:946
+msgid "Right"
+msgstr "Dreta"
+
+#: titlebar.cpp:473
+msgid ""
+"The left side of the titlebar is full... disabling the 'maximise' button\n"
+msgstr ""
+"La banda esquerra de la barra és plena... desactivem el botó 'maximitza'\n"
+
+#: titlebar.cpp:506
+msgid ""
+"The right side of the titlebar is full... disabling the 'maximise' button\n"
+msgstr ""
+"La banda dreta de la barra és plena... desactivem el botó 'maximitza'\n"
+
+#: titlebar.cpp:546
+msgid ""
+"The left side of the titlebar is full... disabling the 'minimise' button\n"
+msgstr ""
+"La banda esquerra de la barra és plena... desactivem el botó 'minimitza'\n"
+
+#: titlebar.cpp:579
+msgid ""
+"The right side of the titlebar is full... disabling the 'minimise' button\n"
+msgstr ""
+"La banda dreta de la barra és plena... desactivem el botó 'minimitza'\n"
+
+#: titlebar.cpp:932
+msgid "Title Alignment"
+msgstr "Alineació de títol"
+
+#: titlebar.cpp:941
+msgid "Middle"
+msgstr "Mitjà"
+
+#: titlebar.cpp:969
+msgid "Shaded Vertically"
+msgstr "Degradat verticalment"
+
+#: titlebar.cpp:975
+msgid "Shaded Horizontally"
+msgstr "Degradat horitzontalment"
+
+#: titlebar.cpp:984
+msgid "Plain"
+msgstr "Llisa"
+
+#: titlebar.cpp:992 titlebar.cpp:1017
+msgid "Pixmap"
+msgstr "Pixmap"
+
+#: titlebar.cpp:1005
+msgid "Active title has shaded frame"
+msgstr "El títol actiu té el marc ombrejat"
+
+#: titlebar.cpp:1046
+msgid "Active pixmap:"
+msgstr "Pixmap actiu"
+
+#: titlebar.cpp:1051
+msgid "Inactive pixmap:"
+msgstr "Pixmap inactiu"
+
+#: titlebar.cpp:1057
+msgid "No pixmap under text"
+msgstr "No hi ha pixmap sota el text"
+
+#: titlebar.cpp:1068
+msgid "Mouse action"
+msgstr "Acció del ratolí"
+
+#: titlebar.cpp:1076
+msgid "Left Button double click does:"
+msgstr "El doble clic del botó esquerre provoca:"
+
+#: titlebar.cpp:1086
+msgid "(Un)Maximize"
+msgstr "(Des)Maximitza"
+
+#: titlebar.cpp:1087
+msgid "(Un)Shade"
+msgstr "(Des)Arronsa"
+
+#: titlebar.cpp:1088
+msgid "Iconify"
+msgstr "Iconitza"
+
+#: titlebar.cpp:1089
+msgid "(Un)Sticky"
+msgstr "(Des)Apegalós"
+
+#: titlebar.cpp:1109
+msgid "Title animation"
+msgstr "Animació de títol"
+
+#: titlebar.cpp:1125
+msgid "ms"
+msgstr "ms"
+
+#: titlebar.cpp:1368
+msgid "Window manager setup - ERROR"
+msgstr "Configuració del gestor de finestres - ERROR"
+
+#: titlebar.cpp:1369
+msgid ""
+"There was an error while saving\n"
+"the titlebar pixmaps! Please check permissions."
+msgstr ""
+"Hi ha hagut un error en desar\n"
+"els pixmaps de la barra de títol! Comproveu els permisos."
+
+#: windows.cpp:68
+msgid "Windows"
+msgstr "Finestres"
+
+#: windows.cpp:82
+msgid "Vertical maximization only by default"
+msgstr "Només es maximitza verticalment per omissió"
+
+#: windows.cpp:87
+msgid "Display content in moving windows"
+msgstr "Mostra el contingut en moure les finestres"
+
+#: windows.cpp:92
+msgid "Display content in resizing windows"
+msgstr "Mostra el contingut en dimensionar les finestres"
+
+#: windows.cpp:98
+msgid "Resize animation:"
+msgstr "Animació en dimensionar:"
+
+#: windows.cpp:111
+msgid "None"
+msgstr "Cap"
+
+#: windows.cpp:117
+msgid "Fast"
+msgstr "Ràpid"
+
+#: windows.cpp:128
+msgid "Placement policy"
+msgstr "Política de col·locació"
+
+#: windows.cpp:134
+msgid "Smart"
+msgstr "Astuta"
+
+#: windows.cpp:136
+msgid "Cascade"
+msgstr "Cascada"
+
+#: windows.cpp:138
+msgid "Interactive"
+msgstr "Interactiva"
+
+#: windows.cpp:140
+msgid "Random"
+msgstr "Aleatòria"
+
+#: windows.cpp:142
+msgid "Manual"
+msgstr "Manual"
+
+#: windows.cpp:154
+#, c-format
+msgid ""
+"  Allowed overlap:\n"
+"(% of desktop space)"
+msgstr ""
+"  Encavallament permès:\n"
+"(% de l'espai d'escriptori)"
+
+#: windows.cpp:175
+msgid "Focus policy"
+msgstr "Política de focus"
+
+#: windows.cpp:185
+msgid "Click to focus"
+msgstr "Focus al clic"
+
+#: windows.cpp:187
+msgid "Focus follows mouse"
+msgstr "Focus al ratolí"
+
+#: windows.cpp:189
+msgid "Classic focus follows mouse"
+msgstr "Focus al ratolí clàssic"
+
+#: windows.cpp:191
+msgid "Classic sloppy focus"
+msgstr "Focus descurat clàssic"
+
+#: windows.cpp:203
+msgid "Auto Raise"
+msgstr "Autoelevació"
+
+#: windows.cpp:209
+msgid "Click Raise"
+msgstr "Clic eleva"
+
+#: windows.cpp:216
+msgid "Delay (ms)"
+msgstr "Retard (ms)"
+
+#: desktop.cpp:65
+msgid "Active desktop borders"
+msgstr "Vores de l'escriptori actives"
+
+#: desktop.cpp:74
+msgid "Enable active desktop borders"
+msgstr "Habilita vores de l'escriptori actives"
+
+#: desktop.cpp:81
+msgid "Move pointer towards center after switch"
+msgstr "Mou el punter cap al centre després de canviar"
+
+#: desktop.cpp:87
+msgid "Desktop switch delay:"
+msgstr "Retard en canviar d'escriptori:"
+
+#: desktop.cpp:117
+msgid "Magic Borders"
+msgstr "Vores màgiques"
+
+#: desktop.cpp:126
+msgid ""
+"Border Snap Zone:\n"
+"       (pixels)"
+msgstr ""
+"Zona de salt a les vores:\n"
+"       (pixels)"
+
+#: desktop.cpp:151
+msgid ""
+"Window Snap Zone:\n"
+"       (pixels)"
+msgstr ""
+"Zona de salt a les finestres:\n"
+"       (pixels)"
+
+#: mouse.cpp:54
+msgid "Active"
+msgstr "Activa"
+
+#: mouse.cpp:58
+msgid "Inactive"
+msgstr "Inactiva"
+
+#: mouse.cpp:62
+msgid "Titlebar and frame:"
+msgstr "Barra de títol i marc:"
+
+#: mouse.cpp:66
+msgid "Inactive inner window:"
+msgstr "Finestra interior inactiva:"
+
+#: mouse.cpp:70
+msgid "Inner window, titlebar and frame:"
+msgstr "Finestra interior, barra de títol i marc:"
+
+#: mouse.cpp:74 mouse.cpp:86
+msgid "Left Button"
+msgstr "Botó esquerre"
+
+#: mouse.cpp:78 mouse.cpp:90
+msgid "Middle Button"
+msgstr "Botó mitjà"
+
+#: mouse.cpp:82 mouse.cpp:94
+msgid "Right Button"
+msgstr "Botó dret"
+
+#: mouse.cpp:98
+msgid "ALT + Left Button"
+msgstr "ALT + Botó esquerre"
+
+#: mouse.cpp:102
+msgid "ALT + Middle Button"
+msgstr "ALT + Botó mitjà"
+
+#: mouse.cpp:106
+msgid "ALT + Right Button"
+msgstr "ALT + Botó dret"
+
+#: mouse.cpp:113 mouse.cpp:122 mouse.cpp:132 mouse.cpp:196 mouse.cpp:207
+#: mouse.cpp:218
+msgid "Raise"
+msgstr "Eleva"
+
+#: mouse.cpp:114 mouse.cpp:123 mouse.cpp:133 mouse.cpp:197 mouse.cpp:208
+#: mouse.cpp:219
+msgid "Lower"
+msgstr "Abaixa"
+
+#: mouse.cpp:115 mouse.cpp:124 mouse.cpp:134
+msgid "Operations menu"
+msgstr "Menú d'operacions"
+
+#: mouse.cpp:116 mouse.cpp:125 mouse.cpp:135 mouse.cpp:194 mouse.cpp:205
+#: mouse.cpp:216
+msgid "Toggle raise and lower"
+msgstr "Intercanvia eleva/abaixa"
+
+#: mouse.cpp:126 mouse.cpp:136 mouse.cpp:198 mouse.cpp:209 mouse.cpp:220
+msgid "Nothing"
+msgstr "Res"
+
+#: mouse.cpp:142 mouse.cpp:150 mouse.cpp:158 mouse.cpp:169 mouse.cpp:178
+#: mouse.cpp:187
+msgid "Activate and raise"
+msgstr "Activa i eleva"
+
+#: mouse.cpp:143 mouse.cpp:151 mouse.cpp:159
+msgid "Activate and lower"
+msgstr "Activa i abaixa"
+
+#: mouse.cpp:144 mouse.cpp:152 mouse.cpp:160 mouse.cpp:168 mouse.cpp:177
+#: mouse.cpp:186
+msgid "Activate"
+msgstr "Activa"
+
+#: mouse.cpp:166 mouse.cpp:175 mouse.cpp:184
+msgid "Activate, raise and pass click"
+msgstr "Activa, eleva i passa el clic"
+
+#: mouse.cpp:167 mouse.cpp:176 mouse.cpp:185
+msgid "Activate and pass click"
+msgstr "Activa i passa el clic"
+
+#: mouse.cpp:193 mouse.cpp:204 mouse.cpp:215
+msgid "Move"
+msgstr "Mou"
+
+#: mouse.cpp:195 mouse.cpp:206 mouse.cpp:217
+msgid "Resize"
+msgstr "Dimensiona"
+
+#: advanced.cpp:36
+msgid "Keyboard and Mouse"
+msgstr "Teclat i Ratolí"
+
+#: advanced.cpp:46
+msgid "Ctrl-Tab walks through desktops"
+msgstr "Ctrl-Tab recorre els escriptoris"
+
+#: advanced.cpp:51
+msgid "Alt-Tab is limited to current desktop"
+msgstr "Alt-Tab està limitat a l'escriptori actual"
+
+#: advanced.cpp:56
+msgid "Alt-Tab mode:"
+msgstr "Mode Alt-Tab:"
+
+#: advanced.cpp:63
+msgid "KDE"
+msgstr "KDE"
+
+#: advanced.cpp:64
+msgid "CDE"
+msgstr "CDE"
+
+#: advanced.cpp:69
+msgid "Grab the Right Mouse Button"
+msgstr "Captura el botó dret del ratolí"
+
+#: advanced.cpp:78
+msgid "Filters"
+msgstr "Filtres"
+
+#: advanced.cpp:98
+msgid "Windows will:"
+msgstr "Les finestres:"
+
+#: advanced.cpp:104
+msgid "have tiny decorations"
+msgstr "tindran decoracions minúscules"
+
+#: advanced.cpp:105
+msgid "have no decorations"
+msgstr "no tindran decoracions"
+
+#: advanced.cpp:106
+msgid "never gain focus"
+msgstr "mai guanyaran el focus"
+
+#: advanced.cpp:107
+msgid "start as Sticky"
+msgstr "engegaran en mode apegalós"
+
+#: advanced.cpp:108
+msgid "be excluded from session management"
+msgstr "estaran excloses de la gestió de sessió"
+
+#: advanced.cpp:116
+msgid "if they match the following:"
+msgstr "si casen amb el següent:"
+
+#: advanced.cpp:121
+msgid "Titles"
+msgstr "Títols"
+
+#: advanced.cpp:126
+msgid "Classes"
+msgstr "Classes"

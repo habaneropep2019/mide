@@ -1,0 +1,239 @@
+# Перевод kcmkpanel.
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Denis Pershin <dyp@inetlab.com>, 1998, 1999.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkpanel\n"
+"POT-Creation-Date: 1999-01-28 01:15+0100\n"
+"PO-Revision-Date: 1999-01-15 04:52+0600\n"
+"Last-Translator: Denis Pershin <dyp@inetlab.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: main.cpp:64
+msgid "&Panel"
+msgstr "&Панель"
+
+#: main.cpp:70
+msgid "&Desktops"
+msgstr "&Рабочие столы"
+
+#: main.cpp:73
+msgid "Disk &Navigator"
+msgstr "Путеводитель по диску"
+
+#
+#: main.cpp:79
+msgid "usage: kcmkpanel [-init | {panel,options,desktops,disknav}]\n"
+msgstr "использование: kcmkpanel [-init | {panel,options,desktops, disknav}]\n"
+
+#: main.cpp:113
+msgid "KPanel Configuration"
+msgstr "Настройка KPanel"
+
+#: panel.cpp:59
+msgid "Location"
+msgstr "Расположение"
+
+#: panel.cpp:60
+msgid "&Top"
+msgstr "Верх"
+
+#
+#: panel.cpp:61
+msgid "&Left"
+msgstr "Влево"
+
+#: panel.cpp:62
+msgid "&Bottom"
+msgstr "Низ"
+
+#: panel.cpp:63
+msgid "&Right"
+msgstr "Право"
+
+#: panel.cpp:75
+msgid "Taskbar"
+msgstr "Задачи"
+
+#
+#: panel.cpp:76
+msgid "&Hidden"
+msgstr "Скрыть"
+
+#: panel.cpp:78
+msgid "T&op"
+msgstr "Верх"
+
+#: panel.cpp:80
+msgid "Botto&m"
+msgstr "Низ"
+
+#
+#: panel.cpp:82
+msgid "Top/Le&ft"
+msgstr "Верх/влево"
+
+#: panel.cpp:95
+msgid "Style"
+msgstr "Тип"
+
+#: panel.cpp:97
+msgid "T&iny"
+msgstr "Маленький"
+
+#
+#: panel.cpp:99
+msgid "&Normal"
+msgstr "Нормальный"
+
+#: panel.cpp:101
+msgid "L&arge"
+msgstr "Большой"
+
+#
+#: desktops.cpp:73
+msgid "&Visible"
+msgstr "Видимый"
+
+#
+#: desktops.cpp:82
+msgid "&Width"
+msgstr "Ширина"
+
+#: options.cpp:38
+msgid "Menu Tooltips"
+msgstr "Подсказки у меню"
+
+#
+#: options.cpp:62
+msgid "Show &Menu Tooltips"
+msgstr "Подсказки у меню"
+
+#: options.cpp:84
+msgid "De&lay:"
+msgstr "Задержка"
+
+#: options.cpp:91 options.cpp:160 options.cpp:262
+msgid "Small"
+msgstr "Маленький"
+
+#: options.cpp:98 options.cpp:167 options.cpp:269
+msgid "Large"
+msgstr "Большой"
+
+#: options.cpp:110
+msgid "Visuals"
+msgstr "Видимых"
+
+#
+#: options.cpp:144
+msgid "Auto &Hide Panel"
+msgstr "Авто скрывать панель"
+
+#: options.cpp:153 options.cpp:255
+msgid "Delay:"
+msgstr "Задержка:"
+
+#: options.cpp:184 options.cpp:286 options.cpp:349
+msgid "Speed:"
+msgstr "Скорость:"
+
+#: options.cpp:191 options.cpp:293 options.cpp:356
+msgid "Slow"
+msgstr "Медленно"
+
+#: options.cpp:198 options.cpp:300 options.cpp:363
+msgid "Fast"
+msgstr "Быстро"
+
+#
+#: options.cpp:246
+msgid "Auto Hide &Taskbar"
+msgstr "Авто скрывать задачи"
+
+#: options.cpp:341
+msgid "Animate Show/Hide"
+msgstr "Анимация скрыть/показать"
+
+#: options.cpp:395
+msgid "Others"
+msgstr "Другие"
+
+#
+#: options.cpp:408
+msgid "Personal Menu Entries &First"
+msgstr "Личные вначале"
+
+#
+#: options.cpp:416
+msgid "Menu F&olders First"
+msgstr "Папки вначале"
+
+#: options.cpp:424
+msgid "&Clock shows time in AM/PM format"
+msgstr "Часы показывают время в AM/PM формате"
+
+#: options.cpp:432
+msgid "Clock shows time in &Internet beats"
+msgstr "Часы показывают время как пульс Интернет"
+
+#: disknav.cpp:38
+msgid "History"
+msgstr "История"
+
+#: disknav.cpp:62
+msgid "Edit entries: (drag a folder and create a link)"
+msgstr "Редактировать элементы: (возьмите папку и создайте ссылку)"
+
+#: disknav.cpp:64
+msgid "Edit &Personal..."
+msgstr "Редактировать личные..."
+
+#: disknav.cpp:74
+msgid "Edit &Shared..."
+msgstr "Редактировать общие..."
+
+#: disknav.cpp:112
+msgid "Max recent folder entries:"
+msgstr "Максимальное количество папок в недавних:"
+
+#: disknav.cpp:121
+msgid "Max recent file entries:"
+msgstr "Максимальное количество файлов в недавних:"
+
+#: disknav.cpp:130
+msgid "Max files in a single folder:"
+msgstr "Максимальное количество файлов в одной папке:"
+
+#: disknav.cpp:159
+msgid "Show dot files"
+msgstr "Показывать скрытые файлы"
+
+#: disknav.cpp:166
+msgid "Ignore case when sorting"
+msgstr "Игнорировать регистр при сортировке"
+
+#: disknav.cpp:173
+msgid "Show Shared section"
+msgstr "Показывать общие"
+
+#: disknav.cpp:180
+msgid "Show Personal section"
+msgstr "Показывать личные"
+
+#: disknav.cpp:187
+msgid "Show Recent section"
+msgstr "Показывать недавние"
+
+#: disknav.cpp:194
+msgid "Show Option entry"
+msgstr "Показывать элемент опции"
+
+#: disknav.cpp:210
+msgid "Terminal application:"
+msgstr "Терминальное приложение:"

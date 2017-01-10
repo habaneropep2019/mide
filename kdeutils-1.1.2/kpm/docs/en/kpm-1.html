@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kpm Handbook: General information</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="">
+<META NAME="description" CONTENT="kpm process management">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kpm-2.html">Next</A>
+Previous<A HREF="kpm.html#toc1">Table of Contents</A>
+</P>
+<H3><A NAME="s1">1. General information</A></H3>
+
+<P>
+<H3><A NAME="ss1.1">1.1 What is kpm?</A>
+</H3>
+
+<P>kpm allows you to view and modify the processes of you Linux computer. It
+shows detailed information of running processes, computer resources like RAM,
+swap space, CPU utilization, uptime and so on. You can kill processes and modify
+their priority. If you are running it as super-user, it gives you abilty to
+change scheduling settings too.
+<P>
+<H3><A NAME="ss1.2">1.2 Legal stuff</A>
+</H3>
+
+<P>kpm is heavily based on 
+<A HREF="mailto:f91-men@nada.kth.se">Mattias Engdegård's</A>
+<CODE>qps</CODE>. The main difference between kpm and qps is the KDE interface. kpm
+adheres to most KDE standard, uses the KDE config files and has session
+managment. Some features of qps were removed (i.e. the ability to display Mac
+OS7 style tables or special checkbox widgets). 
+<P>qps (and thus kpm) is published under the GNU General Public License (GNU GPL).
+<P>
+<H3><A NAME="ss1.3">1.3 Requirements for kpm</A>
+</H3>
+
+<P>
+<UL>
+<LI>A Linux 2.0 or higher operating system. kpm makes excessive use of
+Linux's <CODE>/proc</CODE> filesystem. Unfortunatly this is not portable to other
+systems, because every UNIX system seems to have it's own way of gathering
+process information.</LI>
+<LI>K Desktop Environment Beta2 or better</LI>
+<LI>Qt 1.31. Because KDE is based on Qt, this is no problem.</LI>
+<LI>Your Linux kernel must be compiled with <CODE>proc</CODE> filesystem
+support. Since many things like top won't even work without that, this is
+standard for most kernels.</LI>
+</UL>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kpm-2.html">Next</A>
+Previous<A HREF="kpm.html#toc1">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

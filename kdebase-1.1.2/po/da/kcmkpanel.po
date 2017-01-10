@@ -1,0 +1,226 @@
+# Danish translation for KDE Base, kcmpanel
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Thomas Tanghus <tanghus@earthling.net>,1998. 
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDEBASE/kcmkfm\n"
+"POT-Creation-Date: 1999-01-28 01:15+0100\n"
+"PO-Revision-Date: 1999-05-28 23:59-0500\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: da <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:64
+msgid "&Panel"
+msgstr "&Panel"
+
+#: main.cpp:70
+msgid "&Desktops"
+msgstr "&Skriveborde"
+
+#: main.cpp:73
+msgid "Disk &Navigator"
+msgstr "&Disk Navigatør"
+
+#: main.cpp:79
+msgid "usage: kcmkpanel [-init | {panel,options,desktops,disknav}]\n"
+msgstr "brug: kcmkpanel [-init | {panel,options,desktops,disknav}]\n"
+
+#: main.cpp:113
+msgid "KPanel Configuration"
+msgstr "KPanel indstilling"
+
+#: panel.cpp:59
+msgid "Location"
+msgstr "Placering"
+
+#: panel.cpp:60
+msgid "&Top"
+msgstr "&Top"
+
+#: panel.cpp:61
+msgid "&Left"
+msgstr "&Venstre"
+
+#: panel.cpp:62
+msgid "&Bottom"
+msgstr "B&und"
+
+#: panel.cpp:63
+msgid "&Right"
+msgstr "&Højre"
+
+#: panel.cpp:75
+msgid "Taskbar"
+msgstr "Joblinje"
+
+#: panel.cpp:76
+msgid "&Hidden"
+msgstr "&Gemt"
+
+#: panel.cpp:78
+msgid "T&op"
+msgstr "T&op"
+
+#: panel.cpp:80
+msgid "Botto&m"
+msgstr "&Bund"
+
+#: panel.cpp:82
+msgid "Top/Le&ft"
+msgstr "To&p/Venstre"
+
+#: panel.cpp:95
+msgid "Style"
+msgstr "Stil"
+
+#: panel.cpp:97
+msgid "T&iny"
+msgstr "&Mini"
+
+#: panel.cpp:99
+msgid "&Normal"
+msgstr "&Normal"
+
+#: panel.cpp:101
+msgid "L&arge"
+msgstr "&Stor"
+
+#: desktops.cpp:73
+msgid "&Visible"
+msgstr "&Synlig"
+
+#: desktops.cpp:82
+msgid "&Width"
+msgstr "&Bredde"
+
+#: options.cpp:38
+msgid "Menu Tooltips"
+msgstr "Menutips"
+
+#: options.cpp:62
+msgid "Show &Menu Tooltips"
+msgstr "Vis &menutips"
+
+#: options.cpp:84
+msgid "De&lay:"
+msgstr "Pa&use:"
+
+#: options.cpp:91 options.cpp:160 options.cpp:262
+msgid "Small"
+msgstr "Lille"
+
+#: options.cpp:98 options.cpp:167 options.cpp:269
+msgid "Large"
+msgstr "Stor"
+
+#: options.cpp:110
+msgid "Visuals"
+msgstr "Visuelle"
+
+#: options.cpp:144
+msgid "Auto &Hide Panel"
+msgstr "Sk&jul automatisk Panel"
+
+#: options.cpp:153 options.cpp:255
+msgid "Delay:"
+msgstr "Pause:"
+
+#: options.cpp:184 options.cpp:286 options.cpp:349
+msgid "Speed:"
+msgstr "Hastighed:"
+
+#: options.cpp:191 options.cpp:293 options.cpp:356
+msgid "Slow"
+msgstr "Langsom"
+
+#: options.cpp:198 options.cpp:300 options.cpp:363
+msgid "Fast"
+msgstr "Hurtig"
+
+#: options.cpp:246
+msgid "Auto Hide &Taskbar"
+msgstr "Skjul automatisk &joblinje"
+
+#: options.cpp:341
+msgid "Animate Show/Hide"
+msgstr "Animér vis/skjul"
+
+#: options.cpp:395
+msgid "Others"
+msgstr "Andet"
+
+#: options.cpp:408
+msgid "Personal Menu Entries &First"
+msgstr "Personlig menu &først"
+
+#: options.cpp:416
+msgid "Menu F&olders First"
+msgstr "Personlige &kataloger først"
+
+#: options.cpp:424
+msgid "&Clock shows time in AM/PM format"
+msgstr "&Uret viser tiden i AM/PM format"
+
+#: options.cpp:432
+msgid "Clock shows time in &Internet beats"
+msgstr "Uret viser tiden i Internet &slag"
+
+#: disknav.cpp:38
+msgid "History"
+msgstr "Historie"
+
+#: disknav.cpp:62
+msgid "Edit entries: (drag a folder and create a link)"
+msgstr "Redigér indgange: (skab et link ved at trække et katalog)"
+
+#: disknav.cpp:64
+msgid "Edit &Personal..."
+msgstr "Rediger pers&onlige..."
+
+#: disknav.cpp:74
+msgid "Edit &Shared..."
+msgstr "Rediger de&lte..."
+
+#: disknav.cpp:112
+msgid "Max recent folder entries:"
+msgstr "Max antal nylige mappeindgange:"
+
+#: disknav.cpp:121
+msgid "Max recent file entries:"
+msgstr "Max antal nylige filindgange:"
+
+#: disknav.cpp:130
+msgid "Max files in a single folder:"
+msgstr "Max antal filer i et enkel mappe:"
+
+#: disknav.cpp:159
+msgid "Show dot files"
+msgstr "Vis skjulte filer"
+
+#: disknav.cpp:166
+msgid "Ignore case when sorting"
+msgstr "Ignorer små/store bogstaver"
+
+#: disknav.cpp:173
+msgid "Show Shared section"
+msgstr "Vis den delte afdeling"
+
+#: disknav.cpp:180
+msgid "Show Personal section"
+msgstr "Vis den personlige afdeling"
+
+#: disknav.cpp:187
+msgid "Show Recent section"
+msgstr "Vis den nylige afdeling"
+
+#: disknav.cpp:194
+msgid "Show Option entry"
+msgstr "Vis indstillingsindgang"
+
+#: disknav.cpp:210
+msgid "Terminal application:"
+msgstr "Terminalprogram:"

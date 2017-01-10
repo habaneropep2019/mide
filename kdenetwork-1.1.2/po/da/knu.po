@@ -1,0 +1,259 @@
+# Danish translation for KDE Network, knu
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Erik Kjær Pedersen, erik@binghamton.edu 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE NETWORK/knu\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: 1999-02-17 17:00+CET-1\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: da <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "Find r&ute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "Vært&opløsning"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "F&inger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"Der er ingen kommando taget i\n"
+"brug i indstillingsfilen.\n"
+"\n"
+"Så jeg kan ikke gøre noget...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "&Nyt vindue"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "&Luk vindue"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "Udvælg &alt"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "R&yd output vindue"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "Indstillinge&r..."
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "&Om %s"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "Om &Qt"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "Om..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "Netværksværktøj"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "&Vært:"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "&Kør!"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "&Stop"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Kunne ikke finde denne kommandobinærfil. \n"
+"Du kan give dens sti i Rediger->Præferancer...menuen."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Du har et problem i din\n"
+"%s/%src\n"
+"indstillingsfil.\n"
+"i gruppen [%s].\n"
+"Jeg kan ikke finde en gyldig \"sti\" indgang.\n"
+"\n"
+"Brug Rediger->Indstillinger...menuen\n"
+"for at lave indstillingerne igen.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "Fejl i stinavn"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Binær"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "Sti&navn:"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "Ekstra &argumenter:"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "Denne kommando er sat ud af kraft i indstillingsfilen."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - indstillinger"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "Værtnavn"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Tab"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Modt."
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Sendt"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Bedste"
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "Gen.s."
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Værst"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "Lav værts&navneopløsning"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "vær&t"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "&Maximalt antal hop:"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "addresse (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "navn (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "Navneserver (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "Postudveksler (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "alias (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "begyndelse på autoritet (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "vilkårlig oplysning (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "Led e&fter:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "standard server"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "Ser&ver:"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "Br&uger:"

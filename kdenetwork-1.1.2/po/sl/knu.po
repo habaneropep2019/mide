@@ -1,0 +1,263 @@
+# KDENETWORK translation to Slovenian language.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Marko Samastur <markos@elite.org>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdenetwork\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: 1999-08-22 13:15+0200\n"
+"Last-Translator: Roman Maurer <roman.maurer@hermes.si>\n"
+"Language-Team: Slovenian <ftp://ftp.lugos.si/pub/lugos/localization/kde-sl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "&Traceroute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "&Razpoznavanje gostitelja"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "F&inger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"Noben ukaz ni vklopljen v\n"
+"nastavitveni datoteki.\n"
+"\n"
+"Tako da ne morem nièesar narediti...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "&Novo okno"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "&Zapri okno"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "Izberi &vse"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "&Izprazni izhodno okno"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "N&astavitve..."
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "&O %s"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "O &Qt"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+"Knu\n"
+"verzija %s\n"
+"\n"
+"Bertrand"
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "O..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "Omre¾ni pripomoèki"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "G&ostitelj:"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "Pr&ièni!"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "&Stoj"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Tega ukaza ne najdem.\n"
+"Pot do njega lahko doloèite v meniju Uredi->Nastavitve..."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Obstaja te¾ava z va¹o\n"
+"nastavitveno datoteko '%s'.\n"
+"V skupini [%s]\n"
+"ne morem najti veljavnega vnosa \"path=\".\n"
+"\n"
+"Prosim uporabite meni Uredi->Nastavitve...\n"
+"za ponovno nastavitev.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "Napaka v imenu poti"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Binarna"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "I&me poti:"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "Dodatni &argumenti:"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "Ta ukaz je bil izklopljen v nastavitveni datoteki."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - nastavitev"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "Ime gostitelja"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Izguba"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Prjt"
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Psln"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Najbolj¹e"
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "Povpreèno"
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Najslab¹e"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "I¹èi i&me gostitelja"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "gos&titelj"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "Na&jveèje ¹tevilo skokov:"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "naslov (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "ime (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "imenski stre¾nik (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "izmenjevalnik po¹te (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "vzdevek (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "zaèetek avtoritete (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "katerikoli vnos (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "I¹èi &za:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "privzeti stre¾nik"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "S&tre¾nik:"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "&Uporabnik:"
+
+
+
+
+

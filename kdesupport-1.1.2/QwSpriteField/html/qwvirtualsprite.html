@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwVirtualSprite Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwVirtualSprite Class Reference</h1><br clear="all">
+<p>
+A <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> which renders as a masked image.
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>
+Inherits <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>.
+<p>Inherited by <a href="qwpositionedsprite.html">QwPositionedSprite</a>.
+<p><a href="qwvirtualsprite-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwvirtualsprite.html#a0"><strong>QwVirtualSprite</strong></a> () </span>
+<li><span class="fn">virtual <a href="qwvirtualsprite.html#a1"><strong>~QwVirtualSprite</strong></a> () </span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#a3"><strong>width</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#a4"><strong>height</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#a5"><strong>colWidth</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#a6"><strong>colHeight</strong></a> () const</span>
+<li><span class="fn">virtual QwSpritePixmap* <a href="qwvirtualsprite.html#a7"><strong>image</strong></a> () const</span>
+<li><span class="fn">virtual int <a href="qwvirtualsprite.html#a8"><strong>x</strong></a> () const</span>
+<li><span class="fn">virtual int <a href="qwvirtualsprite.html#a9"><strong>y</strong></a> () const</span>
+<li><span class="fn">virtual bool <a href="qwvirtualsprite.html#b0"><strong>at</strong></a> ( int x, int y ) const</span>
+<li><span class="fn">virtual bool <a href="qwvirtualsprite.html#b1"><strong>at</strong></a> ( const QRect &amp; rect ) const</span>
+<li><span class="fn">virtual bool <a href="qwvirtualsprite.html#b2"><strong>at</strong></a> ( const QImage * image, const QRect &amp; rect ) const</span>
+<li><span class="fn">virtual int <a href="qwvirtualsprite.html#b3"><strong>rtti</strong></a> () const</span>
+<li><span class="fn">Pix <a href="qwvirtualsprite.html#b4"><strong>neighbourhood</strong></a> () const</span>
+<li><span class="fn">Pix <a href="qwvirtualsprite.html#b5"><strong>neighbourhood</strong></a> ( int nx, int ny ) const</span>
+<li><span class="fn">Pix <a href="qwvirtualsprite.html#b6"><strong>neighbourhood</strong></a> ( int nx, int ny, QwSpritePixmap * ) const</span>
+<li><span class="fn">void <a href="qwvirtualsprite.html#b7"><strong>next</strong></a> ( Pix &amp; ) const</span>
+<li><span class="fn">void <a href="qwvirtualsprite.html#b8"><strong>end</strong></a> ( Pix &amp; p ) const</span>
+<li><span class="fn">QwSpriteFieldGraphic* <a href="qwvirtualsprite.html#b9"><strong>at</strong></a> ( Pix p ) const</span>
+<li><span class="fn">bool <a href="qwvirtualsprite.html#c0"><strong>exact</strong></a> ( Pix p ) const</span>
+<li><span class="fn">bool <a href="qwvirtualsprite.html#c1"><strong>hitting</strong></a> ( QwSpriteFieldGraphic &amp; ) const</span>
+<li><span class="fn">bool <a href="qwvirtualsprite.html#c2"><strong>wouldHit</strong></a> ( QwSpriteFieldGraphic &amp;, int x, int y, QwSpritePixmap * ) const</span>
+</ul>
+<h2>Static Public Members</h2>
+<ul>
+<li><span class="fn">void <a href="qwvirtualsprite.html#e3"><strong>setPixelCollisionPrecision</strong></a> ( int downshifts ) </span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#e1"><strong>world_to_col</strong></a> ( int i ) </span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#e2"><strong>col_to_world</strong></a> ( int i ) </span>
+</ul>
+<h2>Protected Members</h2>
+<ul>
+<li><span class="fn">virtual void <a href="qwvirtualsprite.html#c5"><strong>makeVisible</strong></a> ( bool yes ) </span>
+<li><span class="fn">virtual void <a href="qwvirtualsprite.html#c6"><strong>draw</strong></a> ( QPainter &amp; ) </span>
+<li><span class="fn">void <a href="qwvirtualsprite.html#c7"><strong>addToChunks</strong></a> () </span>
+<li><span class="fn">void <a href="qwvirtualsprite.html#c8"><strong>removeFromChunks</strong></a> () </span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#c9"><strong>absX</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d0"><strong>absY</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d1"><strong>absX2</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d2"><strong>absY2</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d3"><strong>absColX</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d4"><strong>absColY</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d5"><strong>absColX2</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d6"><strong>absColY2</strong></a> () const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d7"><strong>absX</strong></a> ( int nx ) const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d8"><strong>absY</strong></a> ( int ny ) const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#d9"><strong>absX2</strong></a> ( int nx ) const</span>
+<li><span class="fn">int <a href="qwvirtualsprite.html#e0"><strong>absY2</strong></a> ( int ny ) const</span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+A <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> which renders as a masked image.
+<p>
+QwVirtualSprites are most of the implementation of sprites, except they
+do not define the <a href="qwvirtualsprite.html#a8">x</a>(), <a href="qwvirtualsprite.html#a9">y</a>(), <a href="qwspritefieldgraphic.html#a4">z</a>() and <a href="qwvirtualsprite.html#a7">image</a>() methods.
+This allows for user-defined coordinates systems and animation methods.
+<p>See also:  <a href="qwsprite.html">QwSprite</a>.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a0"></a>QwVirtualSprite::QwVirtualSprite ()</h3>
+<p>Construct a QwVirtualSprite.  Derived classes should call <a href="qwvirtualsprite.html#c7">addToChunks</a>()
+in their constructor once <a href="qwvirtualsprite.html#a8">x</a>(), <a href="qwvirtualsprite.html#a9">y</a>(), and <a href="qwvirtualsprite.html#a7">image</a>() are valid.
+<h3 class="fn"><a name="a1"></a>QwVirtualSprite::~QwVirtualSprite () <code>[virtual]</code></h3>
+<p>Destruct the QwVirtualSprite.  Derived classes must remove the sprite
+from any chunks, as this destructor cannot call the virtual methods
+required to do so.
+<h3 class="fn">int <a name="d3"></a>QwVirtualSprite::absColX () const <code>[protected]</code></h3>
+<p>The left edge, in collision-detection coordinates.
+<p>See also:  <a href="qwvirtualsprite.html#e3">QwVirtualSprite::setPixelCollisionPrecision</a>(int).
+<h3 class="fn">int <a name="d5"></a>QwVirtualSprite::absColX2 () const <code>[protected]</code></h3>
+<p>The right edge, in collision-detection coordinates.
+<p>See also:  <a href="qwvirtualsprite.html#e3">QwVirtualSprite::setPixelCollisionPrecision</a>(int).
+<h3 class="fn">int <a name="d4"></a>QwVirtualSprite::absColY () const <code>[protected]</code></h3>
+<p>The top edge, in collision-detection coordinates.
+<p>See also:  <a href="qwvirtualsprite.html#e3">QwVirtualSprite::setPixelCollisionPrecision</a>(int).
+<h3 class="fn">int <a name="d6"></a>QwVirtualSprite::absColY2 () const <code>[protected]</code></h3>
+<p>The bottom edge, in collision-detection coordinates.
+<p>See also:  <a href="qwvirtualsprite.html#e3">QwVirtualSprite::setPixelCollisionPrecision</a>(int).
+<h3 class="fn">int <a name="c9"></a>QwVirtualSprite::absX () const <code>[protected]</code></h3>
+<p>The absolute horizontal position of the QwVirtualSprite.  This is
+the pixel position of the left edge of the image, as it takes into
+account the hotspot.
+<h3 class="fn">int <a name="d7"></a>QwVirtualSprite::absX ( int nx ) const <code>[protected]</code></h3>
+<p>The absolute horizontal position of the QwVirtualSprite, if it was moved to
+<em>nx.</em>
+<h3 class="fn">int <a name="d1"></a>QwVirtualSprite::absX2 () const <code>[protected]</code></h3>
+<p>The right edge of the sprite image.
+<p>See also:  <a href="qwvirtualsprite.html#c9">absX</a>().
+<h3 class="fn">int <a name="d9"></a>QwVirtualSprite::absX2 ( int nx ) const <code>[protected]</code></h3>
+<p>The right edge of the sprite image, if it was moved to <em>nx.</em>
+<p>See also:  <a href="qwvirtualsprite.html#c9">absX</a>().
+<h3 class="fn">int <a name="d0"></a>QwVirtualSprite::absY () const <code>[protected]</code></h3>
+<p>The absolute vertical position of the QwVirtualSprite.  This is
+the pixel position of the top edge of the image, as it takes into
+account the hotspot.
+<h3 class="fn">int <a name="d8"></a>QwVirtualSprite::absY ( int ny ) const <code>[protected]</code></h3>
+<p>The absolute vertical position of the QwVirtualSprite, if it was
+moved to <em>ny.</em>
+<h3 class="fn">int <a name="d2"></a>QwVirtualSprite::absY2 () const <code>[protected]</code></h3>
+<p>The bottom edge of the sprite image.
+<p>See also:  <a href="qwvirtualsprite.html#d0">absY</a>().
+<h3 class="fn">int <a name="e0"></a>QwVirtualSprite::absY2 ( int ny ) const <code>[protected]</code></h3>
+<p>The bottom edge of the sprite image, <em>if</em> it was moved to <em>ny.</em>
+<p>See also:  <a href="qwvirtualsprite.html#d0">absY</a>().
+<h3 class="fn">void <a name="c7"></a>QwVirtualSprite::addToChunks () <code>[protected]</code></h3>
+<p>Add the sprite to the chunks in its <a href="qwspritefield.html">QwSpriteField</a> which it overlaps.
+<p>This must be called as the values of <a href="qwvirtualsprite.html#a8">x</a>(), <a href="qwvirtualsprite.html#a9">y</a>(), and <a href="qwvirtualsprite.html#a7">image</a>() change
+such that the QwVirtualSprite is removed from chunks it is in,
+the values of x(), y(), and image() change, then it is added
+back into the then covered chunks in the QwSpriteField.
+<p>The <a href="qwpositionedsprite.html">QwPositionedSprite</a> and derived classes deals with this automatically,
+as must other derived classes of QwVirtualSprite.
+<h3 class="fn"><a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>* <a name="b9"></a>QwVirtualSprite::at ( Pix p ) const</h3>
+<p>Returns the <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> at the given traversal point.
+<p>See also:  <a href="qwvirtualsprite.html#b4">neighbourhood</a>(int,int,<a href="qwspritepixmap.html">QwSpritePixmap</a>*).
+<h3 class="fn">bool <a name="b2"></a>QwVirtualSprite::at ( const QImage * yourimage, const QRect &amp; yourarea ) const <code>[virtual]</code></h3>
+<p>Used by the methods associated with
+<a href="qwspritefield.html#b0">QwSpriteField::topAt</a>(int x, int y) to test for an exact hit.
+<p>See also:  <a href="qwvirtualsprite.html#b4">neighbourhood</a>(int,int,<a href="qwspritepixmap.html">QwSpritePixmap</a>*).
+<h3 class="fn">bool <a name="b1"></a>QwVirtualSprite::at ( const QRect &amp; rect ) const <code>[virtual]</code></h3>
+<p>Used by the methods associated with
+<a href="qwspritefield.html#b0">QwSpriteField::topAt</a>(int x, int y) to test for a close hit.
+<p>See also:  <a href="qwvirtualsprite.html#b4">neighbourhood</a>(int,int,<a href="qwspritepixmap.html">QwSpritePixmap</a>*).
+<h3 class="fn">bool <a name="b0"></a>QwVirtualSprite::at ( int px, int py ) const <code>[virtual]</code></h3>
+<p>(override)
+<p>Tests if the given pixel touches the sprite.  This uses pixel-accurate
+detection, using the collision mask of the sprites current image (which
+is by default the image mask).  This test is useful for example to test
+when the user clicks a point with they mouse.  Note however, that
+<a href="qwspritefield.html#b0">QwSpriteField::topAt</a>(int x, int y) and associated methods give a more
+efficient and flexible technique for this purpose.
+<h3 class="fn">int <a name="a6"></a>QwVirtualSprite::colHeight () const</h3>
+<p>The height of the sprite in collision-detection coordinates.
+<h3 class="fn">int <a name="a5"></a>QwVirtualSprite::colWidth () const</h3>
+<p>The width of the sprite in collision-detection coordinates.
+<h3 class="fn">int <a name="e2"></a>QwVirtualSprite::col_to_world ( int i ) <code>[static]</code></h3>
+<p>Convert a coordinate from collision to world coordinates.
+<p>See also:  <a href="qwvirtualsprite.html#e3">setPixelCollisionPrecision</a>(int) and <a href="qwspritefield.html#e1">QwSpriteField::setPositionPrecision</a>.
+<h3 class="fn">void <a name="c6"></a>QwVirtualSprite::draw ( QPainter &amp; painter ) <code>[virtual protected]</code></h3>
+<p>(override)
+<p>Draws the current image of the sprite at its current position,
+as given by <a href="qwvirtualsprite.html#a7">image</a>() and <a href="qwvirtualsprite.html#a8">x</a>(), <a href="qwvirtualsprite.html#a9">y</a>().
+<h3 class="fn">void <a name="b8"></a>QwVirtualSprite::end ( Pix &amp; p ) const</h3>
+<p>Terminate a traversal early.
+<p>See also:  <a href="qwvirtualsprite.html#b4">neighbourhood</a>(int,int,<a href="qwspritepixmap.html">QwSpritePixmap</a>*) and <a href="qwspritefield.html#b3">QwSpriteField::end</a>(Pix&).
+<h3 class="fn">bool <a name="c0"></a>QwVirtualSprite::exact ( Pix p ) const</h3>
+<p>See also:  <a href="qwvirtualsprite.html#b4">neighbourhood</a>(int,int,<a href="qwspritepixmap.html">QwSpritePixmap</a>*) and const.
+<h3 class="fn">int <a name="a4"></a>QwVirtualSprite::height () const</h3>
+<p>The height of the sprite, in its current image.
+<h3 class="fn">bool <a name="c1"></a>QwVirtualSprite::hitting ( <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> &amp; other ) const</h3>
+<p>Test if this sprite is touching the given <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>.
+This is a convenient packaging of <a href="qwvirtualsprite.html#b4">neighbourhood</a>() and related methods.
+<h3 class="fn"><a href="qwspritepixmap.html">QwSpritePixmap</a>* <a name="a7"></a>QwVirtualSprite::image () const <code>[virtual]</code></h3>
+<p>This abstract method should return the pixmap to be drawn
+for the sprite.
+<h3 class="fn">void <a name="c5"></a>QwVirtualSprite::makeVisible ( bool yes ) <code>[virtual protected]</code></h3>
+<p>Adds/removes the sprite from the <a href="qwspritefield.html">QwSpriteField</a> chunks it covers, as
+required by <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>.  This, addToChunks, and the removeFromChunks
+method may be moved up to QwSpriteFieldGraphic.  Either way, this or
+the other two would have to be virtual.
+<h3 class="fn">Pix <a name="b4"></a>QwVirtualSprite::neighbourhood () const</h3>
+<p>Creates an iterator which traverses the <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects which
+collide with this sprite at its current position.
+<p>See also:  neighbourhood(int,int,<a href="qwspritepixmap.html">QwSpritePixmap</a>*).
+<h3 class="fn">Pix <a name="b5"></a>QwVirtualSprite::neighbourhood ( int nx, int ny ) const</h3>
+<p>Creates an iterator which traverses the <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects which
+would collide with this sprite if it was moved to the given position (yet
+kept its current image).
+<p>See also:  <a href="qwvirtualsprite.html#b4">neighbourhood</a>(int,int,<a href="qwspritepixmap.html">QwSpritePixmap</a>*).
+<h3 class="fn">Pix <a name="b6"></a>QwVirtualSprite::neighbourhood ( int nx, int ny, <a href="qwspritepixmap.html">QwSpritePixmap</a> * img ) const</h3>
+<p>Creates an iterator which can traverse the area which the QwVirtualSprite
+would cover if it had the given position and image.  This `would cover'
+concept is useful as it allows you to check for a collision <em>before</em>
+moving the sprite.
+<h3 class="fn">void <a name="b7"></a>QwVirtualSprite::next ( Pix &amp; p ) const</h3>
+<p>Traverse to the next <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> in a collision list.
+<p>See also:  <a href="qwvirtualsprite.html#b4">neighbourhood</a>(int,int,<a href="qwspritepixmap.html">QwSpritePixmap</a>*).
+<h3 class="fn">void <a name="c8"></a>QwVirtualSprite::removeFromChunks () <code>[protected]</code></h3>
+<p>Remove the sprite from the chunks in its <a href="qwspritefield.html">QwSpriteField</a> which it overlaps.
+<p>See also:  <a href="qwvirtualsprite.html#c7">addToChunks</a>().
+<h3 class="fn">int <a name="b3"></a>QwVirtualSprite::rtti () const <code>[virtual]</code></h3>
+<p>Returns 1.
+<p>See also:  <a href="qwspritefieldgraphic.html#b3">QwSpriteFieldGraphic::rtti</a>().
+<h3 class="fn">void <a name="e3"></a>QwVirtualSprite::setPixelCollisionPrecision ( int downshifts ) <code>[static]</code></h3>
+<p>Using this method,
+the resolution of the collision mask can be different to the
+resolution of the pixel coordinates of the sprites.  One possible
+use for this is to have differently scaled graphics being used by
+different players in a multiplayer distributed game, yet for the
+collision detection to be identical for each player.
+<p>See also:  <a href="qwspritepixmapsequence.html#a3">QwSpritePixmapSequence::readCollisionMasks</a>(...).
+<h3 class="fn">int <a name="a3"></a>QwVirtualSprite::width () const</h3>
+<p>The width of the sprite, in its current image.
+<h3 class="fn">int <a name="e1"></a>QwVirtualSprite::world_to_col ( int i ) <code>[static]</code></h3>
+<p>Convert a coordinate from world to collision coordinates.
+<p>See also:  <a href="qwvirtualsprite.html#e3">setPixelCollisionPrecision</a>(int) and <a href="qwspritefield.html#e1">QwSpriteField::setPositionPrecision</a>.
+<h3 class="fn">bool <a name="c2"></a>QwVirtualSprite::wouldHit ( <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> &amp; other, int x, int y, <a href="qwspritepixmap.html">QwSpritePixmap</a> * img ) const</h3>
+<p>Test if this sprite would (exactly) touch the given <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>.
+This is a convenient packaging of <a href="qwvirtualsprite.html#b4">neighbourhood</a>() and related methods.
+<h3 class="fn">int <a name="a8"></a>QwVirtualSprite::x () const <code>[virtual]</code></h3>
+<p>This abstract method should return the horizontal location, measured
+from the left edge of the <a href="qwspritefield.html">QwSpriteField</a>, at
+which to draw the pixmap of the sprite.  Note that the hotspot of the
+pixmap will be taken into account.
+<h3 class="fn">int <a name="a9"></a>QwVirtualSprite::y () const <code>[virtual]</code></h3>
+<p>This abstract method should return the vertical location, measured
+from the top edge of the <a href="qwspritefield.html">QwSpriteField</a>, at
+which to draw the pixmap of the sprite.  Note that the hotspot of the
+pixmap will be taken into account.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

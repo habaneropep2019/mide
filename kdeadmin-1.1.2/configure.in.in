@@ -1,0 +1,164 @@
+# Original Author was Kalle@kde.org
+# I lifted it in some mater. (Stephan Kulow)
+# I used much code from Janos Farkas
+
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(acinclude.m4) dnl a source file from your sub dir
+
+dnl This is so we can use kde-common
+AC_CONFIG_AUX_DIR(admin)
+
+AC_CANONICAL_SYSTEM 
+AC_ARG_PROGRAM
+
+dnl Automake doc recommends to do this only here. (Janos)
+AM_INIT_AUTOMAKE(kdeadmin, 1.1.2) dnl searches for some needed programs
+
+dnl make $KDEDIR the default for the installation
+AC_PREFIX_DEFAULT(${KDEDIR:-/usr/local/kde})
+
+dnl generate the config header
+AM_CONFIG_HEADER(config.h) dnl at the distribution this done
+
+dnl Checks for programs.
+AC_CHECK_COMPILERS
+KDE_PROG_LIBTOOL
+
+dnl for NLS support. Call them in this order!
+dnl WITH_NLS is for the po files
+AM_KDE_WITH_NLS
+
+dnl I need to check for libsocket before testing X
+AC_CHECK_LIB(socket, socket, [LIBSOCKET="-lsocket -lnsl"]) dnl for Solaris
+AC_SUBST(LIBSOCKET)
+AC_PATH_KDE
+
+AC_LANG_CPLUSPLUS
+dnl Checks for libraries. 
+AC_CHECK_LIB(compat, main, [LIBCOMPAT="-lcompat"]) dnl for FreeBSD
+AC_SUBST(LIBCOMPAT)
+AC_CHECK_LIB(c, quotactl, [QUOTACTL="-DQUOTACTL_IN_LIBC"]) dnl for FreeBSD
+AC_SUBST(QUOTACTL)
+AC_CHECK_LIB(crypt, main, [LIBCRYPT="-lcrypt"]) dnl for BSD
+AC_SUBST(LIBCRYPT)
+AC_CHECK_LIB(pwdb, __pwdb_fgetspent, [LIBPWDB="-lpwdb"]) dnl pwdb support for PAM systems
+AC_SUBST(LIBPWDB)
+AC_CHECK_LIB(gen,getspent,[LIBGEN="-lgen"])dnl for UnixWare
+AC_SUBST(LIBGEN)
+LIBKHTMLW="-lkhtmlw -ljscript" dnl this is somewhat historical, since jscript is ways needed
+AC_SUBST(LIBKHTMLW)
+
+AC_FIND_JPEG
+AC_PATH_PAM
+if test "x$no_pam" = "xyes"; then
+        pam_support="no"
+else
+        pam_support="yes"
+        shadow_support="no" # if pam is installed, use it. We can't savely
+                            # test, if it works *sigh*
+fi
+if test "$pam_support" = "yes"; then
+  AC_CHECK_LIB(pam, main, [PASSWDLIB="-lpam -ldl"
+  AC_DEFINE_UNQUOTED(HAVE_PAM_LIB)],
+  [],-ldl)
+fi
+
+
+dnl Checks for header files.
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+AC_CHECK_HEADERS(crypt.h fcntl.h mntent.h linux/quota.h linux/unistd.h \
+                 paths.h sys/fs/ufs_quota.h sys/mntent.h sys/mnttab.h \
+                 sys/quota.h sys/time.h unistd.h sys/params.h sys/param.h \
+                 signal.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_TIME
+
+# kuser begin
+
+case "$host" in 
+*irix*) AC_DEFINE(HAVE_IRIX, 1)
+       ;;
+*linux*) AC_DEFINE(HAVE_LINUX,1)
+       ;;
+esac
+
+AC_ARG_WITH(shadow, [  --without-shadow        Compile without shadow support], enable_shadow="$withval", enable_shadow="yes")
+if test "$enable_shadow" = "yes"; then
+  KU_SHADOW="-D_KU_SHADOW"
+fi
+AC_SUBST(KU_SHADOW)
+
+AC_ARG_WITH(quota, [  --without-quota         Compile without quota support], enable_quota="$withval", enable_quota="yes")
+if test "$enable_quota" = "yes"; then
+  KU_QUOTA="-D_KU_QUOTA"
+fi
+AC_SUBST(KU_QUOTA)
+
+AC_ARG_WITH(nis, [  --with-nis              Compile with NIS support], enable_nis="$withval", enable_nis="no")
+if test "$enable_nis" = "yes"; then
+  KU_NIS="-D_KU_NIS"
+fi
+AC_SUBST(KU_NIS)
+
+AC_ARG_WITH(homeprefix, [ --with-homeprefix        use specified prefix for homedir [default=/home] ], ku_homeprefix="$withval", ku_homeprefix="/home")
+AC_DEFINE_UNQUOTED(KU_HOMEPREFIX, "$ku_homeprefix")
+
+AC_ARG_WITH(private-groups, [ --with-private-groups   use user private groups [default=no] ], ku_userprivategroup="$withval", ku_userprivategroup="no")
+if test "$ku_userprivategroup" = "yes"; then
+  ku_userprivategroup="true"
+else
+  ku_userprivategroup="false"
+fi
+AC_DEFINE_UNQUOTED(KU_USERPRIVATEGROUP, $ku_userprivategroup)
+
+AC_CHECK_FGETPWENT
+AC_CHECK_FGETGRENT
+
+# kuser end
+
+AC_MSG_CHECKING(whether sys/mtio.h defines GMT_EOF and mtget has a member mt_gstat)
+#
+AC_LANG_C
+cat > conftest.c <<EOF
+#include <sys/mtio.h>
+
+int main(int argc, char **argv)
+{
+  struct mtget tapeStatus;
+  GMT_EOF ( tapeStatus.mt_gstat );
+}
+EOF
+
+ac_compile='${CC-cc} -c conftest.c'
+if AC_TRY_EVAL(ac_compile); then
+  AC_MSG_RESULT(yes)
+else
+  DO_NOT_COMPILE="$DO_NOT_COMPILE kdat"
+  AC_MSG_RESULT([no...Skipping kdat])
+fi
+rm -r conftest.*
+
+dnl check if the compiler has bool
+AC_CHECK_BOOL
+
+dnl DO_NOT_COMPILE="$DO_NOT_COMPILE kuser"
+
+dnl Checks for library functions. MISCOBJS is for kdecore
+AC_CHECK_SETENV
+
+dnl output files
+topdir=`pwd`
+AC_SUBST(topdir)
+
+dnl Perform program name transformation
+AC_ARG_PROGRAM
+
+KDE_CREATE_SUBDIRSLIST
+
+dnl this will be replaced by Makefile.am
+AC_OUTPUT()
+
+

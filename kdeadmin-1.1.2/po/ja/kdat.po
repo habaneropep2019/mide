@@ -1,0 +1,945 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1998-12-10 02:17+0100\n"
+"PO-Revision-Date: Thu May 6 1999 21:11:06+0200\n"
+"Last-Translator: Masanori Hanawa <hanawa@es.yamanashi.ac.jp>\n"
+"Language-Team: Japan <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"X-Generator: KTranslator v 0.4.0"
+
+#: ArchiveInfoWidget.cpp:39 BackupProfileWidget.cpp:40
+msgid "Archive name:"
+msgstr "アーカイブ名:"
+
+#: ArchiveInfoWidget.cpp:40 FileInfoWidget.cpp:38 TapeInfoWidget.cpp:43
+msgid "Created on:"
+msgstr "作成日:"
+
+#: ArchiveInfoWidget.cpp:41 FileInfoWidget.cpp:41 TapeFileInfoWidget.cpp:36
+msgid "Size:"
+msgstr "サイズ:"
+
+#: BackupDlg.cpp:74 BackupDlg.cpp:75 KDat.cpp:432
+msgid "KDat: Backup"
+msgstr "KDat: バックアップ"
+
+#: BackupDlg.cpp:87 IndexDlg.cpp:69 VerifyDlg.cpp:78
+msgid "Elapsed time:"
+msgstr "経過時刻:"
+
+#: BackupDlg.cpp:90 BackupDlg.cpp:96 IndexDlg.cpp:72 VerifyDlg.cpp:81
+#: VerifyDlg.cpp:87
+msgid "00:00:00"
+msgstr ""
+
+#: BackupDlg.cpp:93 VerifyDlg.cpp:84
+msgid "Time remaining:"
+msgstr "残り時間:"
+
+#: BackupDlg.cpp:99 VerifyDlg.cpp:90
+msgid "Total kbytes:"
+msgstr "総バイト数(kbytes):"
+
+#: BackupDlg.cpp:105
+msgid "Kbytes written:"
+msgstr "書込み済バイト数(kbytes):"
+
+#: BackupDlg.cpp:108 IndexDlg.cpp:84 VerifyDlg.cpp:99
+msgid "0k"
+msgstr ""
+
+#: BackupDlg.cpp:111 IndexDlg.cpp:93 VerifyDlg.cpp:102
+msgid "Transfer rate:"
+msgstr "転送速度"
+
+#: BackupDlg.cpp:114 IndexDlg.cpp:96 VerifyDlg.cpp:105
+msgid "0k/min"
+msgstr "0k/分"
+
+#: BackupDlg.cpp:117 IndexDlg.cpp:87 VerifyDlg.cpp:110
+msgid "Files:"
+msgstr "ファイル:"
+
+#: BackupDlg.cpp:120 IndexDlg.cpp:78 IndexDlg.cpp:90 IndexDlg.cpp:102
+msgid "0"
+msgstr ""
+
+#: BackupDlg.cpp:123
+msgid "Backup log:"
+msgstr "バックアップログ:"
+
+#: BackupDlg.cpp:130 IndexDlg.cpp:112 VerifyDlg.cpp:131
+msgid "Save Log..."
+msgstr "ログを保存..."
+
+#: BackupDlg.cpp:135 IndexDlg.cpp:117 VerifyDlg.cpp:136
+msgid "Abort"
+msgstr "中止"
+
+#: BackupDlg.cpp:302
+msgid "*** Write failed, giving up."
+msgstr "*** 書込みに失敗しました。 "
+
+#: BackupDlg.cpp:367 BackupDlg.cpp:377 IndexDlg.cpp:335 VerifyDlg.cpp:358
+#: VerifyDlg.cpp:368
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr ""
+
+#: BackupDlg.cpp:380 IndexDlg.cpp:338 VerifyDlg.cpp:371
+#, c-format
+msgid "%s"
+msgstr ""
+
+#: BackupDlg.cpp:384 IndexDlg.cpp:342 VerifyDlg.cpp:375
+#, c-format
+msgid "%s/min"
+msgstr "%s/分"
+
+#: BackupOptDlg.cpp:31 BackupOptDlg.cpp:32
+msgid "KDat: Backup Options"
+msgstr "KDat: バックアップオプション"
+
+#: BackupProfileInfoWidget.cpp:40
+msgid "Backup profile name:"
+msgstr "プロファイル名をバックアップ:"
+
+#: BackupProfileInfoWidget.cpp:51
+msgid "Files >>"
+msgstr "ファイル >>"
+
+#: BackupProfileInfoWidget.cpp:54
+msgid "<< Files"
+msgstr "<< ファイル"
+
+#: BackupProfileWidget.cpp:38 KDat.cpp:152
+msgid "Backup"
+msgstr "バックアップ"
+
+#: BackupProfileWidget.cpp:46
+msgid "Working directory:"
+msgstr "作業ディレクトリ"
+
+#: BackupProfileWidget.cpp:52
+msgid "Backup files:"
+msgstr "バックアップファイル:"
+
+#: BackupProfileWidget.cpp:58
+msgid "Tar Options"
+msgstr "Tarオプション"
+
+#: BackupProfileWidget.cpp:60
+msgid "Stay on one filesystem"
+msgstr "一つのファイルシステム上に留める"
+
+#: BackupProfileWidget.cpp:63
+msgid "GNU listed incremental"
+msgstr "GNU増分リスト"
+
+#: BackupProfileWidget.cpp:67
+msgid "Snapshot file:"
+msgstr "スナップショットファイル:"
+
+#: BackupProfileWidget.cpp:73
+msgid "Remove snapshot file before backup"
+msgstr "バックアップ前にスナップショットファイルを削除"
+
+#: FileInfoWidget.cpp:37 TapeFileInfoWidget.cpp:34
+msgid "File name:"
+msgstr "ファイル名:"
+
+#: FileInfoWidget.cpp:39 TapeFileInfoWidget.cpp:35 TapeInfoWidget.cpp:44
+msgid "Last modified:"
+msgstr "最終更新日時:"
+
+#: FileInfoWidget.cpp:40
+msgid "Last accessed:"
+msgstr "最終アクセス日時:"
+
+#: FileInfoWidget.cpp:42
+msgid "Owner:"
+msgstr "所有者:"
+
+#: FileInfoWidget.cpp:43
+msgid "Group:"
+msgstr "グループ:"
+
+#: IndexDlg.cpp:56 IndexDlg.cpp:57
+msgid "KDat: Index"
+msgstr "KDat: インデクス"
+
+#: IndexDlg.cpp:75
+msgid "Archives:"
+msgstr "アーカイブ:"
+
+#: IndexDlg.cpp:81 VerifyDlg.cpp:96
+msgid "Kbytes read:"
+msgstr "読込み済バイト数(kbytes):"
+
+#: IndexDlg.cpp:99
+msgid "Total files:"
+msgstr "ファイル総数:"
+
+#: IndexDlg.cpp:105
+msgid "Index log:"
+msgstr "インデクスログ:"
+
+#: IndexDlg.cpp:226
+msgid "Rewinding tape."
+msgstr "テープを巻戻し中。"
+
+#: IndexDlg.cpp:228 KDat.cpp:442
+msgid "KDat: Cannot Rewind Tape"
+msgstr "KDat: テープを巻戻せません"
+
+#: IndexDlg.cpp:228
+msgid "Cannot rewind tape.  Indexing aborted."
+msgstr "テープを巻戻せません。インデクス作成を中止しました。"
+
+#: IndexDlg.cpp:232
+msgid "Cannot rewind tape."
+msgstr "テープを巻戻せません。"
+
+#: IndexDlg.cpp:238 KDat.cpp:451 TapeDrive.cpp:222 TapeDrive.cpp:230
+#: TapeDrive.cpp:242 TapeDrive.cpp:254 TapeDrive.cpp:259
+msgid "KDat: Error"
+msgstr "KDat: エラー"
+
+#: IndexDlg.cpp:238 IndexDlg.cpp:242
+msgid "Failed to skip tape ID."
+msgstr "テープIDのスキップに失敗しました。"
+
+#: IndexDlg.cpp:271
+#, c-format
+msgid "Indexing archive %d."
+msgstr "アーカイブ%dのインデクス作成中。"
+
+#: IndexDlg.cpp:274
+#, c-format
+msgid "Archive %d"
+msgstr "アーカイブ %d"
+
+#: IndexDlg.cpp:321
+msgid "Reindexed Tape"
+msgstr "再度インデクスがつけられたテープ"
+
+#: KDat.cpp:81 KDat.cpp:82 KDat.cpp:1101
+msgid "KDat: <no tape>"
+msgstr "KDat: <テープ無し>"
+
+#: KDat.cpp:86 KDat.cpp:122 KDat.cpp:233 KDat.cpp:1141
+msgid "Mount Tape"
+msgstr "テープをマウント"
+
+#: KDat.cpp:87 KDat.cpp:123
+msgid "Recreate Tape Index"
+msgstr "テープインデクスを再作成"
+
+#: KDat.cpp:89 KDat.cpp:129
+msgid "Format Tape..."
+msgstr "テープをフォーマット..."
+
+#: KDat.cpp:92 KDat.cpp:98 KDat.cpp:126
+msgid "Delete Archive"
+msgstr "アーカイブを作成"
+
+#: KDat.cpp:95 KDat.cpp:101 KDat.cpp:121
+msgid "Verify..."
+msgstr "確認..."
+
+#: KDat.cpp:96 KDat.cpp:102 KDat.cpp:120
+msgid "Restore..."
+msgstr "復元..."
+
+#: KDat.cpp:105 KDat.cpp:114 KDat.cpp:119
+msgid "Backup..."
+msgstr "バックアップ..."
+
+#: KDat.cpp:108
+msgid "Delete Tape Index"
+msgstr "テープインデクスを削除"
+
+#: KDat.cpp:111 KDat.cpp:124
+msgid "Create Backup Profile"
+msgstr "バックアッププロファイルを作成"
+
+#: KDat.cpp:116 KDat.cpp:128
+msgid "Delete Backup Profile"
+msgstr "バックアッププロファイルを削除"
+
+#: KDat.cpp:127
+msgid "Delete Index"
+msgstr "インデクスを削除"
+
+#: KDat.cpp:134
+msgid "Preferences..."
+msgstr "設定..."
+
+#: KDat.cpp:141
+#, c-format
+msgid ""
+"KDat Version %s\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+msgstr ""
+
+#: KDat.cpp:148
+msgid "Mount/unmount tape"
+msgstr "テープをマウント/マウント解除"
+
+#: KDat.cpp:154
+msgid "Verify"
+msgstr "確認"
+
+#: KDat.cpp:168
+msgid "Ready."
+msgstr "準備完了。"
+
+#: KDat.cpp:230 KDat.cpp:1138
+msgid "Unmount Tape"
+msgstr "テープをマウント解除"
+
+#: KDat.cpp:399 KDat.cpp:756
+msgid "%m/%d/%y"
+msgstr ""
+
+#: KDat.cpp:400
+#, c-format
+msgid "Archive created on %s"
+msgstr "%sに作成されたアーカイブ"
+
+#: KDat.cpp:418
+msgid "Performing backup..."
+msgstr "バックアップ中..."
+
+#: KDat.cpp:431
+#, c-format
+msgid ""
+"WARNING: The estimated archive size is %dKB.\n"
+"The tape has only %dKB of space!\n"
+"\n"
+"Backup anyway?"
+msgstr "警告: 推定アーカイブサイズは%dKBです。\n"
+"\n"
+"テープには%dKBのスペースしかありません！\n"
+"\n"
+"それでもバックアップしますか？"
+
+#: KDat.cpp:433
+msgid "Backup canceled."
+msgstr "バックアップが中止されました。"
+
+#: KDat.cpp:440 TapeDrive.cpp:520 TapeDrive.cpp:541
+msgid "Rewinding tape..."
+msgstr "テープを巻戻し中..."
+
+#: KDat.cpp:442
+msgid "Cannot rewind tape.  Backup aborted."
+msgstr "テープを巻戻し出来ません。バックアップが中断されました。"
+
+#: KDat.cpp:443 KDat.cpp:452 KDat.cpp:472
+msgid "Backup aborted."
+msgstr "バックアップが中断されました。"
+
+#: KDat.cpp:449
+msgid "Skipping to end of tape..."
+msgstr "テープの終りまでスキップ中..."
+
+#: KDat.cpp:451
+msgid "Cannot get to end of tape."
+msgstr "テープの終りを取得できません。"
+
+#: KDat.cpp:456
+msgid "Backup in progress..."
+msgstr "バックアップ中..."
+
+#: KDat.cpp:470
+msgid "Backup complete."
+msgstr "バックアップが完了しました。"
+
+#: KDat.cpp:591
+msgid "Restore in progress..."
+msgstr "復元中..."
+
+#: KDat.cpp:593
+msgid "Verify in progress..."
+msgstr "確認中..."
+
+#: KDat.cpp:600
+msgid "Restore complete."
+msgstr "復元が完了しました。"
+
+#: KDat.cpp:602
+msgid "Verify complete."
+msgstr "確認が完了しました。"
+
+#: KDat.cpp:606
+msgid "Restore aborted."
+msgstr "復元が中断されました。"
+
+#: KDat.cpp:608
+msgid "Verify aborted."
+msgstr "確認が中断されました。"
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "KDat: No Tape"
+msgstr "KDat: テープなし"
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "There is no tape in the drive."
+msgstr "ドライブにテープがありません。"
+
+#: KDat.cpp:636
+msgid "KDat: Index Tape"
+msgstr "KDat: インデクステープ"
+
+#: KDat.cpp:636
+msgid "The current tape index will be overwritten, continue?"
+msgstr "現在のテープインデクスは上書きされます。続けますか？"
+
+#: KDat.cpp:641 KDat.cpp:1097
+#, c-format
+msgid "KDat: %s"
+msgstr "KDat: %s"
+
+#: KDat.cpp:645
+msgid "Index complete."
+msgstr "インデクス作成が完了しました。"
+
+#: KDat.cpp:647
+msgid "Index aborted."
+msgstr "インデクス作成が中断されました。"
+
+#: KDat.cpp:656
+msgid "KDat: No Archive Selected"
+msgstr "KDat: アーカイブが選択されていません"
+
+#: KDat.cpp:656
+msgid "An archive must be selected in the tree."
+msgstr "ツリー内でアーカイブが一つ選択されている必要があります"
+
+#: KDat.cpp:689
+#, c-format
+msgid ""
+"An archive cannot be removed from the middle of the tape.  If\n"
+"the archive '%s' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%s\n"
+"\n"
+" Delete all listed archives?"
+msgstr ""
+"テープの中程からアーカイブを削除することは出来ません。もし\n"
+"アーカイブ'%s'が削除されれば、\n"
+"それに続くアーカイブも削除されます:\n"
+"%s\n"
+"\n"
+" 全てのリストされたアーカイブを削除しますか？"
+
+#: KDat.cpp:690
+msgid "KDat: Delete Archives?"
+msgstr "KDat: アーカイブを削除しますか？"
+
+#: KDat.cpp:692
+msgid "Archives deleted."
+msgstr "アーカイブを削除しました。"
+
+#: KDat.cpp:701
+#, c-format
+msgid "Really delete the archive '%s'?"
+msgstr "本当にアーカイブ'%s'を削除しますか？"
+
+#: KDat.cpp:702
+msgid "KDat: Delete Archive?"
+msgstr "KDat: アーカイブを削除？"
+
+#: KDat.cpp:704
+msgid "Archive deleted."
+msgstr "アーカイブが削除されました。"
+
+#: KDat.cpp:717
+msgid "KDat: No Tape Index Selected"
+msgstr "KDat: テープインデクスが選択されていません"
+
+#: KDat.cpp:717
+msgid "A tape index must be selected in the tree."
+msgstr "ツリー内でテープインデクスが一つ選択されている必要があります。"
+
+#: KDat.cpp:724
+msgid "KDat: Tape Is Mounted"
+msgstr "KDat: テープがマウントされました"
+
+#: KDat.cpp:724
+msgid ""
+"The index for a mounted tape cannot be deleted.\n"
+"\n"
+"Unmount the tape and try again."
+msgstr ""
+"マウントされたテープのインデクスは削除できません。\n"
+"\n"
+"テープをマウント解除してもう一度試してください。"
+
+#: KDat.cpp:729
+#, c-format
+msgid "Really delete the index for '%s'?"
+msgstr "本当に'%s'のインデクスを削除しますか？"
+
+#: KDat.cpp:730
+msgid "KDat: Delete Tape Index?"
+msgstr "KDat: テープインデクスを削除？ "
+
+#: KDat.cpp:732
+msgid "Tape index deleted."
+msgstr "テープインデクスが削除されました。"
+
+#: KDat.cpp:743
+msgid "KDat: No Tape In Drive"
+msgstr "KDat: ドライブにテープがありません"
+
+#: KDat.cpp:743
+msgid ""
+"There is no tape in the tape drive.\n"
+"Please insert a tape and try again."
+msgstr ""
+"テープドライブにテープがありません。\n"
+"テープを挿入してもう一度試してください。"
+
+#: KDat.cpp:748
+msgid "KDat: Write Protected Tape"
+msgstr "KDat: 書込み保護されたテープです"
+
+#: KDat.cpp:748
+msgid ""
+"The tape in the drive is write protected.\n"
+"Please disable write protection and try again."
+msgstr ""
+"ドライブ内のテープは書込み保護されています。\n"
+"テープの書込み保護を解除してもう一度試してください。"
+
+#: KDat.cpp:752
+msgid "KDat: Format Tape"
+msgstr "KDat: テープをフォーマット"
+
+#: KDat.cpp:752
+msgid "All data will be lost, continue?"
+msgstr "全てのデータが失われます。続けますか？"
+
+#: KDat.cpp:757
+#, c-format
+msgid "Tape created on %s"
+msgstr "%sに作成されたテープ"
+
+#: KDat.cpp:773
+msgid "Formatting tape..."
+msgstr "テープをフォーマット中..."
+
+#: KDat.cpp:776
+msgid "Format complete."
+msgstr "フォーマット完了。"
+
+#: KDat.cpp:790
+#, c-format
+msgid "Backup Profile %d"
+msgstr "バックアッププロファイル %d"
+
+#: KDat.cpp:807
+msgid "Archive"
+msgstr "アーカイブ"
+
+#: KDat.cpp:828
+msgid "KDat: No Backup Profile Selected"
+msgstr "KDat: バックアッププロファイルが選択されていません"
+
+#: KDat.cpp:828
+msgid "A backup profile must be selected in the tree."
+msgstr "ツリー内でバックアッププロファイルが一つ選択される必要があります。"
+
+#: KDat.cpp:836
+#, c-format
+msgid "Really delete backup profile '%s'?"
+msgstr "本当にバックアッププロファイル'%s'を削除しますか？"
+
+#: KDat.cpp:837
+msgid "KDat: Delete Backup Profile?"
+msgstr "KDat: バックアッププロファイルを削除？"
+
+#: KDat.cpp:839
+msgid "Backup profile deleted."
+msgstr "バックアッププロファイルを削除しました。"
+
+#: KDat.cpp:877
+msgid "Tape unmounted."
+msgstr "テープがマウント解除されました。"
+
+#: KDat.cpp:881
+msgid "Reading tape header..."
+msgstr "テープヘッダを読込み中..."
+
+#: KDat.cpp:888 KDat.cpp:890
+msgid "KDat: Unformatted Tape"
+msgstr "KDat: 未フォーマットのテープ"
+
+#: KDat.cpp:888
+msgid "This tape has not been formatted by KDat."
+msgstr "このテープはKDatでフォーマットされていません。"
+
+#: KDat.cpp:890
+msgid ""
+"This tape has not been formatted by KDat.\n"
+"\n"
+"Would you like to format it now?"
+msgstr ""
+"このテープはKDatでフォーマットされていません。\n"
+"\n"
+"今すぐこれをフォーマットしますか？"
+
+#: KDat.cpp:901
+msgid "Tape mounted."
+msgstr "テープがマウントされました"
+
+#: KDat.cpp:976
+#, c-format
+msgid "Estimating backup size: %s, %s"
+msgstr "推定バックアップサイズ: %s, %s"
+
+#: KDat.cpp:1102
+msgid "KDat: <no tape >"
+msgstr "KDat: <テープ無し>"
+
+#: LoggerWidget.cpp:60
+msgid "KDat: Save Log"
+msgstr "KDat: ログを保存"
+
+#: LoggerWidget.cpp:60
+msgid "Log file exists, overwrite?"
+msgstr "ログファイルがあります。上書きしますか？"
+
+#: Node.cpp:1182 Node.cpp:1252
+msgid "<no tape>"
+msgstr "<テープ無し>"
+
+#: Node.cpp:1332
+msgid "Tape Indexes"
+msgstr "テープインデクス"
+
+#: Node.cpp:1466
+msgid "Backup Profiles"
+msgstr "バックアッププロファイル"
+
+#: OptionsDlg.cpp:39 OptionsDlg.cpp:40
+msgid "KDat: Options"
+msgstr "KDat: オプション"
+
+#: OptionsDlg.cpp:44
+msgid "Default tape size:"
+msgstr "標準テープサイズ:"
+
+#: OptionsDlg.cpp:45
+msgid "Tape block size:"
+msgstr "テープブロックサイズ:"
+
+#: OptionsDlg.cpp:46
+msgid "Tape device:"
+msgstr "テープデバイス:"
+
+#: OptionsDlg.cpp:47
+msgid "Tar command:"
+msgstr "Tarコマンド:"
+
+#: OptionsDlg.cpp:70
+msgid "bytes"
+msgstr ""
+
+#: OptionsDlg.cpp:76 OptionsDlg.cpp:82 VerifyOptDlg.cpp:57
+msgid "..."
+msgstr ""
+
+#: OptionsDlg.cpp:85
+msgid "Tape drive options"
+msgstr "テープドライブオプション"
+
+#: OptionsDlg.cpp:87
+msgid "Load tape on mount"
+msgstr "マウントしたテープを読込み"
+
+#: OptionsDlg.cpp:90
+msgid "Lock tape drive on mount"
+msgstr "マウントしたテープドライブをロック"
+
+#: OptionsDlg.cpp:93
+msgid "Eject tape on unmount"
+msgstr "マウント解除したテープを排出"
+
+#: OptionsDlg.cpp:96
+msgid "Variable block size"
+msgstr "可変ブロックサイズ"
+
+#: Tape.cpp:36
+msgid "New Tape"
+msgstr "新規テープ"
+
+#: Tape.cpp:70 Tape.cpp:76 Tape.cpp:85 Tape.cpp:92 Tape.cpp:99 Tape.cpp:103
+msgid "KDat: Format Failed"
+msgstr "KDat: フォーマットに失敗しました"
+
+#: Tape.cpp:70 TapeDrive.cpp:222
+msgid "Rewinding tape failed."
+msgstr "テープの巻戻しに失敗しました"
+
+#: Tape.cpp:76
+msgid "Cannot set tape block size."
+msgstr "テープブロックサイズをセットできません。"
+
+#: Tape.cpp:85
+msgid "Writing magic string failed."
+msgstr "マジックストリングの書込みに失敗しました。"
+
+#: Tape.cpp:92
+msgid "Writing version number failed."
+msgstr "バージョン番号の書込みに失敗しました。"
+
+#: Tape.cpp:99
+msgid "Writing tape ID length failed."
+msgstr "テープID長の書込みに失敗しました。"
+
+#: Tape.cpp:103
+msgid "Writing tape ID failed."
+msgstr "テープIDの書込みに失敗しました。"
+
+#: Tape.cpp:132
+msgid "KDat: Tape Index"
+msgstr "KDat: テープインデクス"
+
+#: Tape.cpp:132
+msgid ""
+"No index file was found for this tape.\n"
+"Recreate the index from tape?"
+msgstr ""
+"このテープ用のインデクスファイルがありません。\n"
+"テープからインデクスを作成しますか？"
+
+#: Tape.cpp:150 Tape.cpp:192 Tape.cpp:471 Tape.cpp:477 Tape.cpp:483
+#: Tape.cpp:490 Tape.cpp:497 Tape.cpp:505 Tape.cpp:512 Tape.cpp:520
+#: Tape.cpp:528 Tape.cpp:535 Tape.cpp:542 Tape.cpp:555 Tape.cpp:567
+#: Tape.cpp:575 Tape.cpp:582 Tape.cpp:589 Tape.cpp:618 Tape.cpp:624
+#: Tape.cpp:630 Tape.cpp:637 Tape.cpp:644 Tape.cpp:652 Tape.cpp:659
+#: Tape.cpp:679 Tape.cpp:685 Tape.cpp:721 Tape.cpp:727
+msgid "KDat: Index File Error"
+msgstr "KDat: インデクスファイルエラー"
+
+#: Tape.cpp:150 TapeDrive.cpp:242
+msgid "Reading version number failed."
+msgstr "バージョン番号の読込みに失敗しました。"
+
+#: Tape.cpp:191
+#, c-format
+msgid ""
+"The tape index file format is version %d.  The index cannot be read by this "
+"version of KDat.  Perhaps the tape index file was created by a newer version "
+"of KDat?"
+msgstr ""
+"テープインデクスファイルフォーマットのバージョンは%dです。 このインデクスは"
+"このバージョンのKDatでは読めません。おそらくテープインデクスファイルは新しい"
+"バージョンのKDatで作成されたのではありませんか？"
+
+#: Tape.cpp:471 Tape.cpp:618 Tape.cpp:679 Tape.cpp:721 TapeDrive.cpp:259
+msgid "Reading tape ID failed."
+msgstr "テープIDの読込みに失敗"
+
+#: Tape.cpp:477 Tape.cpp:624 Tape.cpp:685 Tape.cpp:727
+msgid "Tape ID on tape does not match tape ID in index file."
+msgstr "テープ上のテープIDはインデクスファイル内のテープIDと一致しません。"
+
+#: Tape.cpp:483 Tape.cpp:630
+msgid "Reading creation time failed."
+msgstr "作成時刻の読込みに失敗しました。"
+
+#: Tape.cpp:490 Tape.cpp:637
+msgid "Reading modification time failed."
+msgstr "更新時刻の読込みに失敗しました。"
+
+#: Tape.cpp:497 Tape.cpp:644
+msgid "Reading tape name failed."
+msgstr "テープ名の読込みに失敗しました。"
+
+#: Tape.cpp:505 Tape.cpp:652
+msgid "Reading tape size failed."
+msgstr "テープサイズの読込みに失敗しました。"
+
+#: Tape.cpp:512 Tape.cpp:659
+msgid "Reading archive count failed."
+msgstr "アーカイブカウントの読込みに失敗しました。"
+
+#: Tape.cpp:520
+msgid "Reading archive name failed."
+msgstr "アーカイブ名の読込みに失敗しました。"
+
+#: Tape.cpp:528
+msgid "Reading archive time stamp failed."
+msgstr "アーカイブタイムスタンプの読込みに失敗しました。"
+
+#: Tape.cpp:535
+msgid "Reading archive start block failed."
+msgstr "アーカイブ開始ブロックの読込みに失敗しました。"
+
+#: Tape.cpp:542
+msgid "Reading archive end block failed."
+msgstr "アーカイブ終了ブロックの読込みに失敗しました。"
+
+#: Tape.cpp:555
+msgid "Reading archive file count failed."
+msgstr "アーカイブファイルカウントの読込みに失敗しました。"
+
+#: Tape.cpp:567
+msgid "Reading file name failed."
+msgstr "ファイル名の読込みに失敗しました"
+
+#: Tape.cpp:575
+msgid "Reading file size failed."
+msgstr "ファイルサイズの読込みに失敗しました。"
+
+#: Tape.cpp:582
+msgid "Reading file modification time failed."
+msgstr "ファイル更新時刻の読込みに失敗しました。"
+
+#: Tape.cpp:589
+msgid "Reading file record number failed."
+msgstr "ファイルレコード数の読込みに失敗しました。"
+
+#: TapeDrive.cpp:188
+msgid "Tape mounted readonly."
+msgstr "テープは読込み専用でマウントされました。"
+
+#: TapeDrive.cpp:190
+msgid "Tape mounted read/write."
+msgstr "テープは読み書き用にマウントされました。"
+
+#: TapeDrive.cpp:227
+msgid "Reading magic string..."
+msgstr "マジックストリングを読込み中..."
+
+#: TapeDrive.cpp:230
+msgid "Reading magic string failed."
+msgstr "マジックストリングの読込みに失敗しました。"
+
+#: TapeDrive.cpp:239
+msgid "Reading version number..."
+msgstr "バージョン番号を読込み中..."
+
+#: TapeDrive.cpp:247
+msgid "KDat: Warning"
+msgstr "KDat: 警告 "
+
+#: TapeDrive.cpp:247
+msgid ""
+"Tape was formatted by a more recent version of KDat, consider upgrading."
+msgstr ""
+"テープは新しいバージョンのKDatでフォーマットされています。アップグレードを考えてください。"
+
+#: TapeDrive.cpp:251
+msgid "Reading tape ID..."
+msgstr "テープIDを読込み中..."
+
+#: TapeDrive.cpp:254
+msgid "Reading tape ID length failed."
+msgstr "テープID長の読込みに失敗しました。"
+
+#: TapeDrive.cpp:515
+msgid "Skipping to archive..."
+msgstr "アーカイブをスキップ中..."
+
+#: TapeDrive.cpp:537
+msgid "Skipping to block..."
+msgstr "ブロックをスキップ中..."
+
+#: TapeFileInfoWidget.cpp:37
+msgid "Start record:"
+msgstr "開始レコード:"
+
+#: TapeFileInfoWidget.cpp:38
+msgid "End record:"
+msgstr "終了レコード:"
+
+#: FormatOptDlg.cpp:39 TapeInfoWidget.cpp:40
+msgid "Tape name:"
+msgstr "テープ名:"
+
+#: FormatOptDlg.cpp:40 TapeInfoWidget.cpp:41
+msgid "Tape size:"
+msgstr "テープサイズ:"
+
+#: TapeInfoWidget.cpp:42
+msgid "Tape ID:"
+msgstr "テープID:"
+
+#: TapeInfoWidget.cpp:45
+msgid "Archive count:"
+msgstr "アーカイブカウント:"
+
+#: TapeInfoWidget.cpp:46
+msgid "Space used:"
+msgstr "使用済スペース:"
+
+#: FormatOptDlg.cpp:36 FormatOptDlg.cpp:37
+msgid "KDat: Format Options"
+msgstr "KDat: フォーマットオプション"
+
+#: VerifyDlg.cpp:61 VerifyDlg.cpp:62
+msgid "KDat: Restore"
+msgstr "KDat: 復元"
+
+#: VerifyDlg.cpp:64 VerifyDlg.cpp:65
+msgid "KDat: Verify"
+msgstr "KDat: 確認"
+
+#: VerifyDlg.cpp:113
+msgid "Differences:"
+msgstr "差分:"
+
+#: VerifyDlg.cpp:121
+msgid "Restore log:"
+msgstr "復元ログ:"
+
+#: VerifyDlg.cpp:123
+msgid "Verify log:"
+msgstr "確認ログ:"
+
+#: VerifyDlg.cpp:315
+msgid "failed while reading tape data.\n"
+msgstr "テープデータの読込み中に失敗しました.\n"
+
+#: VerifyOptDlg.cpp:38 VerifyOptDlg.cpp:39
+msgid "KDat: Restore Options"
+msgstr "KDat: 復元オプション"
+
+#: VerifyOptDlg.cpp:41 VerifyOptDlg.cpp:42
+msgid "KDat: Verify Options"
+msgstr "KDat: 確認オプション"
+
+#: VerifyOptDlg.cpp:47
+msgid "Restore to directory:"
+msgstr "ディレクトリに復元中:"
+
+#: VerifyOptDlg.cpp:49
+msgid "Verify in directory:"
+msgstr "ディレクトリ内を確認中:"
+
+#: VerifyOptDlg.cpp:62
+msgid "Restore files:"
+msgstr "ファイルを復元:"
+
+#: VerifyOptDlg.cpp:64
+msgid "Verify files:"
+msgstr "ファイルを確認:"

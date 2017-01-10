@@ -1,0 +1,405 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkpanel\n"
+"POT-Creation-Date: 1999-04-12 02:16+0200\n"
+"PO-Revision-Date: 1998-02-21 05:04+0800\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312 )\n"
+
+#: kfax.cpp:233 kfax.cpp:827
+msgid "Show &Tool Bar"
+msgstr "显示工具条[&T]"
+
+#: kfax.cpp:235 kfax.cpp:820
+msgid "Hide &Tool Bar"
+msgstr "隐藏工具条[&T]"
+
+#: kfax.cpp:238 kfax.cpp:800
+msgid "Show &Status Bar"
+msgstr "显示状态行[&S]"
+
+#: kfax.cpp:240 kfax.cpp:793
+msgid "Hide &Status Bar"
+msgstr "隐藏状态行[&S]"
+
+#: kfax.cpp:395
+#, c-format
+msgid ""
+"\n"
+"KFax %s\n"
+"\n"
+"Copyright 1997-98\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@kde.org"
+msgstr ""
+
+#: kfax.cpp:402
+msgid "Help page"
+msgstr ""
+
+#: kfax.cpp:404
+#, fuzzy
+msgid "&Open Fax..."
+msgstr "打开 &URL"
+
+#: kfax.cpp:405
+msgid "&Add Fax..."
+msgstr ""
+
+#: kfax.cpp:408
+msgid "Open &URL..."
+msgstr "打开 &URL"
+
+#: kfax.cpp:409
+msgid "Save to U&RL..."
+msgstr "保存到 U&RL"
+
+#: kfax.cpp:410
+msgid "&Close Fax"
+msgstr ""
+
+#: kfax.cpp:417
+msgid "&Next Page"
+msgstr ""
+
+#: kfax.cpp:418
+msgid "&Prev Page"
+msgstr ""
+
+#: kfax.cpp:419
+msgid "&First Page"
+msgstr ""
+
+#: kfax.cpp:420
+msgid "&Last Page"
+msgstr ""
+
+#: kfax.cpp:422
+msgid "&Rotate Page"
+msgstr ""
+
+#: kfax.cpp:423
+msgid "&Mirror Page"
+msgstr ""
+
+#: kfax.cpp:424
+msgid "&Flip Page"
+msgstr ""
+
+#: kfax.cpp:426
+msgid "Zoom &in"
+msgstr "放大[&I]"
+
+#: kfax.cpp:427
+msgid "Zoom &out"
+msgstr "缩小[&O]"
+
+#: kfax.cpp:432
+msgid "&Fax Options..."
+msgstr ""
+
+#: kfax.cpp:434
+msgid "&Tool Bar"
+msgstr "工具条[&T]"
+
+#: kfax.cpp:435
+msgid "&Status Bar"
+msgstr "状态行[&S]"
+
+#: kfax.cpp:462
+msgid "Go back"
+msgstr "向后"
+
+#: kfax.cpp:465
+msgid "Go forward"
+msgstr "向前"
+
+#: kfax.cpp:470
+msgid "Go to start"
+msgstr "跳至开头"
+
+#: kfax.cpp:473
+msgid "Go to end"
+msgstr "跳至最后"
+
+#: kfax.cpp:479
+#, fuzzy
+msgid "Zoom in"
+msgstr "放大[&I]"
+
+#: kfax.cpp:482
+#, fuzzy
+msgid "Zoom out"
+msgstr "缩小[&O]"
+
+#: kfax.cpp:487
+msgid "Print document"
+msgstr "打印文件"
+
+#: kfax.cpp:496
+msgid "Go to page ..."
+msgstr "跳至...页"
+
+#: kfax.cpp:554
+msgid "w: 00000 h: 00000"
+msgstr ""
+
+#: kfax.cpp:555
+msgid "Res: XXXXX"
+msgstr ""
+
+#: kfax.cpp:556
+msgid "Type: XXXXXXX"
+msgstr ""
+
+#: kfax.cpp:557
+msgid "P:XXXofXXX"
+msgstr ""
+
+#: kfax.cpp:582
+msgid "Open Location:"
+msgstr "打开位置:"
+
+#: kfax.cpp:598
+msgid "You need to open a Fax first"
+msgstr ""
+
+#: kfax.cpp:604
+msgid "Save to Location:"
+msgstr "保存到位置:"
+
+#: kfax.cpp:811
+msgid "Not yet implemented"
+msgstr ""
+
+#: kfax.cpp:861
+msgid "     There is no document active      "
+msgstr ""
+
+#: kfax.cpp:995
+#, c-format
+msgid ""
+"Invalid page dimensions:\n"
+"Width %.2f Height %.2f\n"
+msgstr ""
+
+#: kfax.cpp:1011
+#, c-format
+msgid "Can't print to \"%s\"\n"
+msgstr ""
+
+#: kfax.cpp:1022
+#, c-format
+msgid "Couldn't create %s\n"
+msgstr ""
+
+#: kfax.cpp:1092
+msgid "Saving ..."
+msgstr "保存中..."
+
+#: kfax.cpp:1099
+msgid "Loading ..."
+msgstr "正在载入..."
+
+#: kfax.cpp:1126 kfax.cpp:1162
+msgid ""
+"Failure in 'copy file()'\n"
+"Couldn't save file!"
+msgstr ""
+
+#: kfax.cpp:1132
+msgid "Saved"
+msgstr ""
+
+#: kfax.cpp:1139 kfax.cpp:1201
+msgid ""
+"KFax is already waiting\n"
+"for an internet job to finish\n"
+"Please wait until has finished\n"
+msgstr ""
+
+#: kfax.cpp:1150 kfax.cpp:1214
+msgid "Could not communicate with KFM"
+msgstr ""
+
+#: kfax.cpp:1191
+#, c-format
+msgid "Loading '%s'"
+msgstr "正在载入'%s'"
+
+#: kfax.cpp:1194
+msgid "Done"
+msgstr ""
+
+#: kfax.cpp:1208
+msgid "Calling KFM"
+msgstr "正在调用 KFM"
+
+#: kfax.cpp:1221
+msgid "Starting Job"
+msgstr "开始任务中"
+
+#: kfax.cpp:1224
+msgid "Connected"
+msgstr "连接上"
+
+#: kfax.cpp:1226
+msgid "Waiting..."
+msgstr "等待中..."
+
+#: kfax.cpp:2077
+msgid "You need to open a fax page first."
+msgstr ""
+
+#: kfax.cpp:2400
+#, c-format
+msgid "P.%d of %d"
+msgstr ""
+
+#: kfax.cpp:2411
+#, c-format
+msgid "W: %d H: %d"
+msgstr ""
+
+#: kfax.cpp:2416
+#, c-format
+msgid "Res: %s"
+msgstr ""
+
+#: kfax.cpp:2416 options.cpp:119
+msgid "Fine"
+msgstr ""
+
+#: kfax.cpp:2416 options.cpp:124
+msgid "Normal"
+msgstr ""
+
+#: kfax.cpp:2424
+msgid "Type: Tiff "
+msgstr ""
+
+#: kfax.cpp:2427
+msgid "Type: Raw "
+msgstr ""
+
+#: kfax.cpp:2738
+msgid ""
+"A file with this name already exists\n"
+"Do you want to overwrite it?\n"
+"\n"
+msgstr ""
+
+#: faxinput.cpp:111
+#, c-format
+msgid ""
+"Unable to open:\n"
+"%s\n"
+msgstr ""
+
+#: print.cpp:51
+msgid "KFax Print Dialog"
+msgstr ""
+
+#: print.cpp:57
+msgid "Print as Postscript to Printer"
+msgstr ""
+
+#: print.cpp:62
+msgid "Print Command:"
+msgstr "打印命令:"
+
+#: print.cpp:71
+msgid "Print as Postscript to File:"
+msgstr ""
+
+#: print.cpp:77
+msgid "Browse"
+msgstr "浏览"
+
+#: print.cpp:86
+msgid "Page Size:"
+msgstr ""
+
+#: print.cpp:105
+msgid "Scale fax to page size"
+msgstr ""
+
+#: print.cpp:111
+msgid "Add Printer Margins (measured in cm):"
+msgstr ""
+
+#: print.cpp:119
+msgid "Horizontal:"
+msgstr ""
+
+#: print.cpp:128
+msgid "Vertical:"
+msgstr ""
+
+#: print.cpp:258
+msgid "Select Filename"
+msgstr ""
+
+#: print.cpp:280
+msgid "You must enter a file name if you wish to print to a file."
+msgstr ""
+
+#: print.cpp:290
+msgid ""
+"You must enter a print command such as \"lpr\"\n"
+" if you wish to print to a printer."
+msgstr ""
+
+#: options.cpp:56
+msgid "KFax Options Dialog"
+msgstr ""
+
+#: options.cpp:74
+msgid "Display Options:"
+msgstr ""
+
+#: options.cpp:80
+msgid "Landscape"
+msgstr ""
+
+#: options.cpp:85
+msgid "Upside Down"
+msgstr ""
+
+#: options.cpp:90
+msgid "Invert"
+msgstr ""
+
+#: options.cpp:109
+msgid "Raw Fax Resolution:"
+msgstr ""
+
+#: options.cpp:114 options.cpp:222
+msgid "Auto"
+msgstr ""
+
+#: options.cpp:144
+msgid "Raw Fax Data are:"
+msgstr ""
+
+#: options.cpp:150
+msgid "LS-Bit first"
+msgstr ""
+
+#: options.cpp:168
+msgid "Raw Facsimili are:"
+msgstr ""
+
+#: options.cpp:202
+msgid "Raw Fax width:"
+msgstr ""
+
+#: options.cpp:212
+msgid "height:"
+msgstr ""
+
+#~ msgid "&About..."
+#~ msgstr "有关[&A]..."
+
+#~ msgid "Version "
+#~ msgstr "版本 "

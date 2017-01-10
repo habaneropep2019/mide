@@ -1,0 +1,28 @@
+Info Module:
+
+  original (means: unsufficient) implementation:
+
+  Matthias Hoelzer (hoelzer@physik.uni-wuerzburg.de)
+  
+
+  various authors contributed the code for non-linux systems, among them:
+
+  Paul Kendall (paul@orion.co.nz) [IRIX]
+  Sebestyen Zoltan (szoli@digo.inf.elte.hu) [FreeBSD]
+  Aubert Pierre (paubert@laninsa.insa-lyon.fr) [HP-UX]
+  Vladimir Kushnir (kushn@olinet.isf.kiev.ua) [FreeBSD]
+  Alex Zepeda (garbanzo@hooked.net) [FreeBSD]
+
+
+Conversion to kcontrol applet:
+
+  Matthias Hoelzer (hoelzer@physik.uni-wuerzburg.de)
+  
+added more informations:
+    (pci,dma,interrupts,Sound,X-Server,devices,ioports,partitions,SCSI)
+    [Linux only, empty functions for the other systems]):
+    Helge Deller (helge.deller@ruhr-uni-bochum.de)
+  
+    Hey!  We've got Sound, XServer, devices, partitions and SCSI info for 
+    FreeBSD now too, compliments of your truly.
+    Alex Zepeda (garbanzo@hooked.net)

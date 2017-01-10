@@ -1,0 +1,672 @@
+# Makefile.in generated automatically by automake 1.4 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# Yow Emacs, this is a -*- makefile -*-
+
+# this 10 paths are KDE specific. Use them:
+# kde_htmldir       Where your docs should go to. (contains lang subdirs)
+# kde_appsdir       Where your application file (.kdelnk) should go to. 
+# kde_icondir       Where your icon should go to.
+# kde_minidir       Where your mini icon should go to.
+# kde_datadir       Where you install application data. (Use a subdir)
+# kde_locale        Where translation files should go to.(contains lang subdirs)
+# kde_cgidir        Where cgi-bin executables should go to.
+# kde_confdir       Where config files should go to.
+# kde_mimedir       Where mimetypes should go to.
+# kde_toolbardir    Where general toolbar icons should go to.
+# kde_wallpaperdir  Where general wallpapers should go to.
+
+# if you use a variable *dir and have *_DATA, it will be installed by
+# make install
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+AS = @AS@
+CC = @CC@
+CPP = @CPP@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DLLTOOL = @DLLTOOL@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_RPATH = @KDE_RPATH@
+LD = @LD@
+LIBBSD = @LIBBSD@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBDL = @LIBDL@
+LIBJPEG = @LIBJPEG@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBSOCKET = @LIBSOCKET@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUU = @LIBUU@
+LIBZ = @LIBZ@
+LIB_KAB = @LIB_KAB@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KDEUTIL = @LIB_KDEUTIL@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KHTML = @LIB_KHTML@
+LIB_KHTMLW = @LIB_KHTMLW@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_MEDIATOOL = @LIB_MEDIATOOL@
+LIB_QT = @LIB_QT@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MSGFMT = @MSGFMT@
+NM = @NM@
+PACKAGE = @PACKAGE@
+PAMINC = @PAMINC@
+PAMLIBPATHS = @PAMLIBPATHS@
+PAMLIBS = @PAMLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+TOPSUBDIRS = @TOPSUBDIRS@
+USE_NLS = @USE_NLS@
+VERSION = @VERSION@
+XGETTEXT = @XGETTEXT@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+install_root = @install_root@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_cgidir = @kde_cgidir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_minidir = @kde_minidir@
+kde_partsdir = @kde_partsdir@
+kde_sounddir = @kde_sounddir@
+kde_toolbardir = @kde_toolbardir@
+kde_wallpaperdir = @kde_wallpaperdir@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+static_libkde = @static_libkde@
+static_libqt = @static_libqt@
+static_libstdc = @static_libstdc@
+topdir = @topdir@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+appsdir = $(kde_appsdir)/Internet
+apps_DATA = Kppp.kdelnk
+
+EXTRA_DIST = $(apps_DATA)
+
+# set the include path for X, qt and KDE
+INCLUDES = $(all_includes)
+# claim, which subdirectories you want to install
+SUBDIRS = docs pixmaps icons logview Rules
+
+# This one gets installed 
+bin_PROGRAMS = kppp
+
+# Which sources should be compiled for kppp.
+kppp_SOURCES = accounts.cpp 		connect.cpp 		conwindow.cpp 		debug.cpp 		edit.cpp 		general.cpp 		iplined.cpp 		main.cpp                 modem.cpp 		modemcmds.cpp 		pppdargs.cpp 		pppdata.cpp 		scriptedit.cpp 		pwentry.cpp 		modeminfo.cpp 		pppstatdlg.cpp 		pppstats.cpp 		miniterm.cpp 		accounting.cpp 		acctselect.cpp 		ruleset.cpp 		docking.cpp 		runtests.cpp 		loginterm.cpp 		ppplog.cpp 		log.cpp 		groupbox.cpp 		newwidget.cpp 		requester.cpp 		opener.cpp 		modemdb.cpp
+
+
+# the library search path
+kppp_LDFLAGS = $(all_libraries) $(KDE_RPATH)
+
+# the libraries to link against. Be aware of the order. First the libraries,
+# that depend on the following ones.
+kppp_LDADD = -lm $(LIB_KDEUI)
+
+# this option you can leave out. Just, if you use "make dist", you need it
+noinst_HEADERS = accounts.h 		kpppconfig.h 		connect.h 		conwindow.h 		debug.h 		edit.h 		general.h 		iplined.h 		main.h                 modem.h 		modemcmds.h 		pppdargs.h 		pppdata.h 		scriptedit.h 		pwentry.h 		modeminfo.h 		pppstatdlg.h 		miniterm.h 		accounting.h 		acctselect.h 		ruleset.h 		docking.h 		runtests.h 		loginterm.h 		auth.h 		version.h 		macros.h 		ppplog.h 		log.h 		groupbox.h 		newwidget.h 		modemdb.h
+
+
+METASOURCES = accounting.moc 	accounts.moc 	acctselect.moc 	connect.moc 	conwindow.moc 	debug.moc 	docking.moc 	edit.moc 	general.moc 	groupbox.moc 	loginterm.moc 	main.moc 	miniterm.moc 	modem.moc 	modemcmds.moc 	modemdb.moc 	modeminfo.moc 	pppdargs.moc 	pppstatdlg.moc 	pwentry.moc 	scriptedit.moc  
+
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = ../config.h
+CONFIG_CLEAN_FILES = 
+PROGRAMS =  $(bin_PROGRAMS)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I..
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+kppp_OBJECTS =  accounts.o connect.o conwindow.o debug.o edit.o \
+general.o iplined.o main.o modem.o modemcmds.o pppdargs.o pppdata.o \
+scriptedit.o pwentry.o modeminfo.o pppstatdlg.o pppstats.o miniterm.o \
+accounting.o acctselect.o ruleset.o docking.o runtests.o loginterm.o \
+ppplog.o log.o groupbox.o newwidget.o requester.o opener.o modemdb.o
+kppp_DEPENDENCIES = 
+CXXFLAGS = @CXXFLAGS@
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+CXXLD = $(CXX)
+CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+DATA =  $(apps_DATA)
+
+HEADERS =  $(noinst_HEADERS)
+
+DIST_COMMON =  README AUTHORS ChangeLog INSTALL Makefile.am Makefile.in \
+NEWS TODO
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = tar
+GZIP_ENV = --best
+SOURCES = $(kppp_SOURCES)
+OBJECTS = $(kppp_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cpp .lo .o .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps kppp/Makefile
+	cd $(top_srcdir) && perl admin/automoc kppp/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-binPROGRAMS:
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+
+distclean-binPROGRAMS:
+
+maintainer-clean-binPROGRAMS:
+
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo " $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	  else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+kppp: $(kppp_OBJECTS) $(kppp_DEPENDENCIES)
+	@rm -f kppp
+	$(CXXLINK) $(kppp_LDFLAGS) $(kppp_OBJECTS) $(kppp_LDADD) $(LIBS)
+.cpp.o:
+	$(CXXCOMPILE) -c $<
+.cpp.lo:
+	$(LTCXXCOMPILE) -c $<
+
+install-appsDATA: $(apps_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(appsdir)
+	@list='$(apps_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(appsdir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(appsdir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(appsdir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(appsdir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-appsDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(apps_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(appsdir)/$$p; \
+	done
+
+# This directory's subdirectories are mostly independent; you can cd
+# into them and run `make' without going through this Makefile.
+# To change the values of `make' variables: instead of editing Makefiles,
+# (1) if the variable is set in `config.status', edit `config.status'
+#     (which will cause the Makefiles to be regenerated when you run `make');
+# (2) otherwise, pass the desired values on the `make' command line.
+
+@SET_MAKE@
+
+all-recursive install-data-recursive install-exec-recursive \
+installdirs-recursive install-recursive uninstall-recursive  \
+check-recursive installcheck-recursive info-recursive dvi-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	target=`echo $@ | sed s/-recursive//`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  echo "Making $$target in $$subdir"; \
+	  if test "$$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$$target-am"; \
+	  else \
+	    local_target="$$target"; \
+	  fi; \
+	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done; \
+	if test "$$dot_seen" = "no"; then \
+	  $(MAKE) $(AM_MAKEFLAGS) "$$target-am" || exit 1; \
+	fi; test -z "$$fail"
+
+mostlyclean-recursive clean-recursive distclean-recursive \
+maintainer-clean-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	rev=''; list='$(SUBDIRS)'; for subdir in $$list; do \
+	  rev="$$subdir $$rev"; \
+	  test "$$subdir" = "." && dot_seen=yes; \
+	done; \
+	test "$$dot_seen" = "no" && rev=". $$rev"; \
+	target=`echo $@ | sed s/-recursive//`; \
+	for subdir in $$rev; do \
+	  echo "Making $$target in $$subdir"; \
+	  if test "$$subdir" = "."; then \
+	    local_target="$$target-am"; \
+	  else \
+	    local_target="$$target"; \
+	  fi; \
+	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done && test -z "$$fail"
+tags-recursive:
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  test "$$subdir" = . || (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) tags); \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS: tags-recursive $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+   if test "$$subdir" = .; then :; else \
+	    test -f $$subdir/TAGS && tags="$$tags -i $$here/$$subdir/TAGS"; \
+   fi; \
+	done; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = kppp
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+	for subdir in $(SUBDIRS); do \
+	  if test "$$subdir" = .; then :; else \
+	    test -d $(distdir)/$$subdir \
+	    || mkdir $(distdir)/$$subdir \
+	    || exit 1; \
+	    chmod 777 $(distdir)/$$subdir; \
+	    (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir=../$(top_distdir) distdir=../$(distdir)/$$subdir distdir) \
+	      || exit 1; \
+	  fi; \
+	done
+info-am:
+info: info-recursive
+dvi-am:
+dvi: dvi-recursive
+check-am: all-am
+check: check-recursive
+installcheck-am:
+installcheck: installcheck-recursive
+install-exec-am: install-binPROGRAMS install-exec-local
+install-exec: install-exec-recursive
+
+install-data-am: install-appsDATA install-data-local
+install-data: install-data-recursive
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-recursive
+uninstall-am: uninstall-binPROGRAMS uninstall-appsDATA
+uninstall: uninstall-recursive
+all-am: Makefile $(PROGRAMS) $(DATA) $(HEADERS)
+all-redirect: all-recursive
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs: installdirs-recursive
+installdirs-am:
+	$(mkinstalldirs)  $(DESTDIR)$(bindir) $(DESTDIR)$(appsdir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-binPROGRAMS mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-tags \
+		mostlyclean-generic
+
+mostlyclean: mostlyclean-recursive
+
+clean-am:  clean-binPROGRAMS clean-compile clean-libtool clean-tags \
+		clean-generic mostlyclean-am
+
+clean: clean-recursive
+
+distclean-am:  distclean-binPROGRAMS distclean-compile distclean-libtool \
+		distclean-tags distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-metasources distclean-recursive
+
+maintainer-clean-am:  maintainer-clean-binPROGRAMS \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-tags maintainer-clean-generic \
+		distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-recursive
+
+.PHONY: mostlyclean-binPROGRAMS distclean-binPROGRAMS clean-binPROGRAMS \
+maintainer-clean-binPROGRAMS uninstall-binPROGRAMS install-binPROGRAMS \
+mostlyclean-compile distclean-compile clean-compile \
+maintainer-clean-compile mostlyclean-libtool distclean-libtool \
+clean-libtool maintainer-clean-libtool uninstall-appsDATA \
+install-appsDATA install-data-recursive uninstall-data-recursive \
+install-exec-recursive uninstall-exec-recursive installdirs-recursive \
+uninstalldirs-recursive all-recursive check-recursive \
+installcheck-recursive info-recursive dvi-recursive \
+mostlyclean-recursive distclean-recursive clean-recursive \
+maintainer-clean-recursive tags tags-recursive mostlyclean-tags \
+distclean-tags clean-tags maintainer-clean-tags distdir info-am info \
+dvi-am dvi check check-am installcheck-am installcheck \
+install-exec-local install-exec-am install-exec install-data-local \
+install-data-am install-data install-am install uninstall-am uninstall \
+all-redirect all-am all installdirs-am installdirs mostlyclean-generic \
+distclean-generic clean-generic maintainer-clean-generic clean \
+mostlyclean distclean maintainer-clean
+
+
+messages:
+	$(XGETTEXT) -C -ktranslate -ki18n -x $(includedir)/kde.pot $(kppp_SOURCES) && mv messages.po ../po/kppp.pot
+
+# just install datas here. Use install-exec-data for scripts and etc.
+# the binary itself is already installed from automake
+# use mkinstalldirs, not "install -d"
+# don't install a list of file. Just one file per install.
+# if you have more of them, create a subdirectory with an extra Makefile 
+install-data-local:
+	@echo ""
+	@echo "Don't forget to send us a phone tarif rules file for your"
+	@echo "telecom company/country/region. Thanks."
+	@echo ""
+	@echo "We will be maintaining an archive on the kppp page at"
+	@echo "http://devel-home.kde.org/kppp/index.html"
+	@echo "WARNING: kppp is by default installed with SETUID bit on!"
+	@echo  "If you are concerned about the SETUID bit, create a modem"
+	@echo "group instead."
+	@echo ""
+	@echo "Happy Dialing! -- the KPPP team"
+	@echo ""
+
+# kppp wants to be installed suid root
+install-exec-local:
+	@(chown root $(bindir)/kppp && chmod 4755 $(bindir)/kppp) || echo "Was not able to make kppp setuid root"
+
+# remove ALL you have installed in install-data-local or install-exec-local
+#uninstall-local:
+#	@(cd Rules && $(MAKE) uninstall)
+
+#distclean-local:
+#	@(cd Rules && $(MAKE) distclean)
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+
+$(srcdir)/accounting.cpp: accounting.moc
+accounting.moc: $(srcdir)/accounting.h
+	$(MOC) $(srcdir)/accounting.h -o accounting.moc
+
+$(srcdir)/accounts.cpp: accounts.moc
+accounts.moc: $(srcdir)/accounts.h
+	$(MOC) $(srcdir)/accounts.h -o accounts.moc
+
+$(srcdir)/acctselect.cpp: acctselect.moc
+acctselect.moc: $(srcdir)/acctselect.h
+	$(MOC) $(srcdir)/acctselect.h -o acctselect.moc
+
+$(srcdir)/connect.cpp: connect.moc
+connect.moc: $(srcdir)/connect.h
+	$(MOC) $(srcdir)/connect.h -o connect.moc
+
+$(srcdir)/conwindow.cpp: conwindow.moc
+conwindow.moc: $(srcdir)/conwindow.h
+	$(MOC) $(srcdir)/conwindow.h -o conwindow.moc
+
+$(srcdir)/debug.cpp: debug.moc
+debug.moc: $(srcdir)/debug.h
+	$(MOC) $(srcdir)/debug.h -o debug.moc
+
+$(srcdir)/docking.cpp: docking.moc
+docking.moc: $(srcdir)/docking.h
+	$(MOC) $(srcdir)/docking.h -o docking.moc
+
+$(srcdir)/edit.cpp: edit.moc
+edit.moc: $(srcdir)/edit.h
+	$(MOC) $(srcdir)/edit.h -o edit.moc
+
+$(srcdir)/general.cpp: general.moc
+general.moc: $(srcdir)/general.h
+	$(MOC) $(srcdir)/general.h -o general.moc
+
+$(srcdir)/groupbox.cpp: groupbox.moc
+groupbox.moc: $(srcdir)/groupbox.h
+	$(MOC) $(srcdir)/groupbox.h -o groupbox.moc
+
+$(srcdir)/loginterm.cpp: loginterm.moc
+loginterm.moc: $(srcdir)/loginterm.h
+	$(MOC) $(srcdir)/loginterm.h -o loginterm.moc
+
+$(srcdir)/main.cpp: main.moc
+main.moc: $(srcdir)/main.h
+	$(MOC) $(srcdir)/main.h -o main.moc
+
+$(srcdir)/miniterm.cpp: miniterm.moc
+miniterm.moc: $(srcdir)/miniterm.h
+	$(MOC) $(srcdir)/miniterm.h -o miniterm.moc
+
+$(srcdir)/modem.cpp: modem.moc
+modem.moc: $(srcdir)/modem.h
+	$(MOC) $(srcdir)/modem.h -o modem.moc
+
+$(srcdir)/modemcmds.cpp: modemcmds.moc
+modemcmds.moc: $(srcdir)/modemcmds.h
+	$(MOC) $(srcdir)/modemcmds.h -o modemcmds.moc
+
+$(srcdir)/modemdb.cpp: modemdb.moc
+modemdb.moc: $(srcdir)/modemdb.h
+	$(MOC) $(srcdir)/modemdb.h -o modemdb.moc
+
+$(srcdir)/modeminfo.cpp: modeminfo.moc
+modeminfo.moc: $(srcdir)/modeminfo.h
+	$(MOC) $(srcdir)/modeminfo.h -o modeminfo.moc
+
+$(srcdir)/pppdargs.cpp: pppdargs.moc
+pppdargs.moc: $(srcdir)/pppdargs.h
+	$(MOC) $(srcdir)/pppdargs.h -o pppdargs.moc
+
+$(srcdir)/pppstatdlg.cpp: pppstatdlg.moc
+pppstatdlg.moc: $(srcdir)/pppstatdlg.h
+	$(MOC) $(srcdir)/pppstatdlg.h -o pppstatdlg.moc
+
+$(srcdir)/pwentry.cpp: pwentry.moc
+pwentry.moc: $(srcdir)/pwentry.h
+	$(MOC) $(srcdir)/pwentry.h -o pwentry.moc
+
+$(srcdir)/scriptedit.cpp: scriptedit.moc
+scriptedit.moc: $(srcdir)/scriptedit.h
+	$(MOC) $(srcdir)/scriptedit.h -o scriptedit.moc
+
+distclean-metasources:
+	-rm -f accounting.moc accounts.moc acctselect.moc connect.moc conwindow.moc debug.moc docking.moc edit.moc general.moc groupbox.moc loginterm.moc main.moc miniterm.moc modem.moc modemcmds.moc modemdb.moc modeminfo.moc pppdargs.moc pppstatdlg.moc pwentry.moc scriptedit.moc 
+
+# DO_NOT_USE_AUTOMOC

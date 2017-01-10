@@ -1,0 +1,680 @@
+# Makefile.in generated automatically by automake 1.4 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+AS = @AS@
+CC = @CC@
+CPP = @CPP@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DLLTOOL = @DLLTOOL@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_RPATH = @KDE_RPATH@
+LD = @LD@
+LIBBSD = @LIBBSD@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBDL = @LIBDL@
+LIBJPEG = @LIBJPEG@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBSOCKET = @LIBSOCKET@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUU = @LIBUU@
+LIBZ = @LIBZ@
+LIB_KAB = @LIB_KAB@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KDEUTIL = @LIB_KDEUTIL@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KHTML = @LIB_KHTML@
+LIB_KHTMLW = @LIB_KHTMLW@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_MEDIATOOL = @LIB_MEDIATOOL@
+LIB_QT = @LIB_QT@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MSGFMT = @MSGFMT@
+NM = @NM@
+PACKAGE = @PACKAGE@
+PAMINC = @PAMINC@
+PAMLIBPATHS = @PAMLIBPATHS@
+PAMLIBS = @PAMLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+TOPSUBDIRS = @TOPSUBDIRS@
+USE_NLS = @USE_NLS@
+VERSION = @VERSION@
+XGETTEXT = @XGETTEXT@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+install_root = @install_root@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_cgidir = @kde_cgidir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_minidir = @kde_minidir@
+kde_partsdir = @kde_partsdir@
+kde_sounddir = @kde_sounddir@
+kde_toolbardir = @kde_toolbardir@
+kde_wallpaperdir = @kde_wallpaperdir@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+static_libkde = @static_libkde@
+static_libqt = @static_libqt@
+static_libstdc = @static_libstdc@
+topdir = @topdir@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+INCLUDES = $(all_includes) -include $(srcdir)/../kplunger/kplunger.h
+
+ksirclibdir = $(libdir)/ksirc
+
+lib_LTLIBRARIES = libpuke.la
+
+ksirclib_LTLIBRARIES = libpframe.la libplined.la libpbutton.la libppushbt.la                   libpprogress.la libptablevw.la libplistbox.la libplabel.la                   libpmenudta.la libppopmenu.la libpalistbox.la libptabdialog.la                   libksirclistbox.la libpkfiledialog.la libpobjfinder.la
+
+
+libpuke_la_SOURCES = controller.cpp pwidget.cpp pobject.cpp 	playout.cpp kdynlib.cpp
+
+libpuke_la_LDFLAGS = -version-info 0:1:0 -export-dynamic
+
+libpframe_la_SOURCES = pframe.cpp 
+libpframe_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libplined_la_SOURCES = plined.cpp
+libplined_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libpbutton_la_SOURCES = pbutton.cpp 
+libpbutton_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libppushbt_la_SOURCES = ppushbt.cpp 
+libppushbt_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libpprogress_la_SOURCES = pprogress.cpp
+libpprogress_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libptablevw_la_SOURCES = ptablevw.cpp
+libptablevw_la_LDFLAGS = -export-dynamic -nostdlib
+
+libplistbox_la_SOURCES = plistbox.cpp 
+libplistbox_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libplabel_la_SOURCES = plabel.cpp
+libplabel_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libpmenudta_la_SOURCES = pmenudta.cpp
+libpmenudta_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libppopmenu_la_SOURCES = ppopmenu.cpp
+libppopmenu_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libpalistbox_la_SOURCES = palistbox.cpp
+libpalistbox_la_LDFLAGS = -export-dynamic -nostdlib
+
+libptabdialog_la_SOURCES = ptabdialog.cpp 
+libptabdialog_la_LDFLAGS = -export-dynamic  -nostdlib
+
+libksirclistbox_la_SOURCES = ksirclistbox.cpp
+libksirclistbox_la_LDFLAGS = -export-dynamic
+
+libpkfiledialog_la_SOURCES = pkfiledialog.cpp
+libpkfiledialog_la_LDFLAGS = -export-dynamic
+
+libpobjfinder_la_SOURCES = pobjfinder.cpp
+libpobjfinder_la_LDFLAGS = -export-dynamic
+
+# no install headers
+
+noinst_HEADERS =  	commands.h plined.h pwidget.h widgethdlr.h 	controller.h pframe.h pmessage.h HOWTO-PUKE.pod 	commands-handler.pl  pboxlayout.pm pwidget.pm 	commands-perl.pl pframe.pm test.pl convert_commands.pl 	plined.pm tester.pl pbase.pm puke.pl ppushbt.h 	pbutton.h pprogress.h ptablevw.h plistbox.h 	plabel.h pobject.h playout.h pmenudta.h ppopmenu.h 	kdynlib.h palistbox.h ptabdialog.h ksirclistbox.h
+
+
+# just to make sure, automake makes them 
+METASOURCES = controller.moc ksirclistbox.moc palistbox.moc pbutton.moc 	pframe.moc plabel.moc playout.moc plined.moc plistbox.moc 	pmenudta.moc pobject.moc ppopmenu.moc pprogress.moc ppushbt.moc 	ptabdialog.moc ptablevw.moc pwidget.moc pkfiledialog.moc
+
+
+# Datafiles to install / uninstall : *.pl *.pm
+data_DATA = commands-handler.pl commands-perl.pl convert_commands.pl 	puke.pl small.pl test.pl tester.pl 	dcc_progress.pm dcc_status.pm ksirclistbox.pm load_all.pm 	palistbox.pm pbase.pm pboxlayout.pm pbutton.pm pframe.pm 	pkfiledialog.pm plabel.pm plined.pm plistbox.pm pmenudta.pm 	ppopmenu.pm pprogress.pm ppushbt.pm ptabdialog.pm ptablevw.pm 	pwidget.pm pkfiledialog.pm pobjfinder.pm
+
+
+# Where to install them
+datadir = $(kde_datadir)/ksirc
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = ../../config.h
+CONFIG_CLEAN_FILES = 
+LTLIBRARIES =  $(ksirclib_LTLIBRARIES) $(lib_LTLIBRARIES)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I../..
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+libpframe_la_LIBADD = 
+libpframe_la_OBJECTS =  pframe.lo
+libplined_la_LIBADD = 
+libplined_la_OBJECTS =  plined.lo
+libpbutton_la_LIBADD = 
+libpbutton_la_OBJECTS =  pbutton.lo
+libppushbt_la_LIBADD = 
+libppushbt_la_OBJECTS =  ppushbt.lo
+libpprogress_la_LIBADD = 
+libpprogress_la_OBJECTS =  pprogress.lo
+libptablevw_la_LIBADD = 
+libptablevw_la_OBJECTS =  ptablevw.lo
+libplistbox_la_LIBADD = 
+libplistbox_la_OBJECTS =  plistbox.lo
+libplabel_la_LIBADD = 
+libplabel_la_OBJECTS =  plabel.lo
+libpmenudta_la_LIBADD = 
+libpmenudta_la_OBJECTS =  pmenudta.lo
+libppopmenu_la_LIBADD = 
+libppopmenu_la_OBJECTS =  ppopmenu.lo
+libpalistbox_la_LIBADD = 
+libpalistbox_la_OBJECTS =  palistbox.lo
+libptabdialog_la_LIBADD = 
+libptabdialog_la_OBJECTS =  ptabdialog.lo
+libksirclistbox_la_LIBADD = 
+libksirclistbox_la_OBJECTS =  ksirclistbox.lo
+libpkfiledialog_la_LIBADD = 
+libpkfiledialog_la_OBJECTS =  pkfiledialog.lo
+libpobjfinder_la_LIBADD = 
+libpobjfinder_la_OBJECTS =  pobjfinder.lo
+libpuke_la_LIBADD = 
+libpuke_la_OBJECTS =  controller.lo pwidget.lo pobject.lo playout.lo \
+kdynlib.lo
+CXXFLAGS = @CXXFLAGS@
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+CXXLD = $(CXX)
+CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+DATA =  $(data_DATA)
+
+HEADERS =  $(noinst_HEADERS)
+
+DIST_COMMON =  Makefile.am Makefile.in
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = tar
+GZIP_ENV = --best
+SOURCES = $(libpframe_la_SOURCES) $(libplined_la_SOURCES) $(libpbutton_la_SOURCES) $(libppushbt_la_SOURCES) $(libpprogress_la_SOURCES) $(libptablevw_la_SOURCES) $(libplistbox_la_SOURCES) $(libplabel_la_SOURCES) $(libpmenudta_la_SOURCES) $(libppopmenu_la_SOURCES) $(libpalistbox_la_SOURCES) $(libptabdialog_la_SOURCES) $(libksirclistbox_la_SOURCES) $(libpkfiledialog_la_SOURCES) $(libpobjfinder_la_SOURCES) $(libpuke_la_SOURCES)
+OBJECTS = $(libpframe_la_OBJECTS) $(libplined_la_OBJECTS) $(libpbutton_la_OBJECTS) $(libppushbt_la_OBJECTS) $(libpprogress_la_OBJECTS) $(libptablevw_la_OBJECTS) $(libplistbox_la_OBJECTS) $(libplabel_la_OBJECTS) $(libpmenudta_la_OBJECTS) $(libppopmenu_la_OBJECTS) $(libpalistbox_la_OBJECTS) $(libptabdialog_la_OBJECTS) $(libksirclistbox_la_OBJECTS) $(libpkfiledialog_la_OBJECTS) $(libpobjfinder_la_OBJECTS) $(libpuke_la_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cpp .lo .o .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps ksirc/puke/Makefile
+	cd $(top_srcdir) && perl admin/automoc ksirc/puke/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-ksirclibLTLIBRARIES:
+
+clean-ksirclibLTLIBRARIES:
+	-test -z "$(ksirclib_LTLIBRARIES)" || rm -f $(ksirclib_LTLIBRARIES)
+
+distclean-ksirclibLTLIBRARIES:
+
+maintainer-clean-ksirclibLTLIBRARIES:
+
+install-ksirclibLTLIBRARIES: $(ksirclib_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(ksirclibdir)
+	@list='$(ksirclib_LTLIBRARIES)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo "$(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(ksirclibdir)/$$p"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(ksirclibdir)/$$p; \
+	  else :; fi; \
+	done
+
+uninstall-ksirclibLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	list='$(ksirclib_LTLIBRARIES)'; for p in $$list; do \
+	  $(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(ksirclibdir)/$$p; \
+	done
+
+mostlyclean-libLTLIBRARIES:
+
+clean-libLTLIBRARIES:
+	-test -z "$(lib_LTLIBRARIES)" || rm -f $(lib_LTLIBRARIES)
+
+distclean-libLTLIBRARIES:
+
+maintainer-clean-libLTLIBRARIES:
+
+install-libLTLIBRARIES: $(lib_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(libdir)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo "$(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(libdir)/$$p"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(libdir)/$$p; \
+	  else :; fi; \
+	done
+
+uninstall-libLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  $(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+libpframe.la: $(libpframe_la_OBJECTS) $(libpframe_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libpframe_la_LDFLAGS) $(libpframe_la_OBJECTS) $(libpframe_la_LIBADD) $(LIBS)
+
+libplined.la: $(libplined_la_OBJECTS) $(libplined_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libplined_la_LDFLAGS) $(libplined_la_OBJECTS) $(libplined_la_LIBADD) $(LIBS)
+
+libpbutton.la: $(libpbutton_la_OBJECTS) $(libpbutton_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libpbutton_la_LDFLAGS) $(libpbutton_la_OBJECTS) $(libpbutton_la_LIBADD) $(LIBS)
+
+libppushbt.la: $(libppushbt_la_OBJECTS) $(libppushbt_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libppushbt_la_LDFLAGS) $(libppushbt_la_OBJECTS) $(libppushbt_la_LIBADD) $(LIBS)
+
+libpprogress.la: $(libpprogress_la_OBJECTS) $(libpprogress_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libpprogress_la_LDFLAGS) $(libpprogress_la_OBJECTS) $(libpprogress_la_LIBADD) $(LIBS)
+
+libptablevw.la: $(libptablevw_la_OBJECTS) $(libptablevw_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libptablevw_la_LDFLAGS) $(libptablevw_la_OBJECTS) $(libptablevw_la_LIBADD) $(LIBS)
+
+libplistbox.la: $(libplistbox_la_OBJECTS) $(libplistbox_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libplistbox_la_LDFLAGS) $(libplistbox_la_OBJECTS) $(libplistbox_la_LIBADD) $(LIBS)
+
+libplabel.la: $(libplabel_la_OBJECTS) $(libplabel_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libplabel_la_LDFLAGS) $(libplabel_la_OBJECTS) $(libplabel_la_LIBADD) $(LIBS)
+
+libpmenudta.la: $(libpmenudta_la_OBJECTS) $(libpmenudta_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libpmenudta_la_LDFLAGS) $(libpmenudta_la_OBJECTS) $(libpmenudta_la_LIBADD) $(LIBS)
+
+libppopmenu.la: $(libppopmenu_la_OBJECTS) $(libppopmenu_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libppopmenu_la_LDFLAGS) $(libppopmenu_la_OBJECTS) $(libppopmenu_la_LIBADD) $(LIBS)
+
+libpalistbox.la: $(libpalistbox_la_OBJECTS) $(libpalistbox_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libpalistbox_la_LDFLAGS) $(libpalistbox_la_OBJECTS) $(libpalistbox_la_LIBADD) $(LIBS)
+
+libptabdialog.la: $(libptabdialog_la_OBJECTS) $(libptabdialog_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libptabdialog_la_LDFLAGS) $(libptabdialog_la_OBJECTS) $(libptabdialog_la_LIBADD) $(LIBS)
+
+libksirclistbox.la: $(libksirclistbox_la_OBJECTS) $(libksirclistbox_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libksirclistbox_la_LDFLAGS) $(libksirclistbox_la_OBJECTS) $(libksirclistbox_la_LIBADD) $(LIBS)
+
+libpkfiledialog.la: $(libpkfiledialog_la_OBJECTS) $(libpkfiledialog_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libpkfiledialog_la_LDFLAGS) $(libpkfiledialog_la_OBJECTS) $(libpkfiledialog_la_LIBADD) $(LIBS)
+
+libpobjfinder.la: $(libpobjfinder_la_OBJECTS) $(libpobjfinder_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(ksirclibdir) $(libpobjfinder_la_LDFLAGS) $(libpobjfinder_la_OBJECTS) $(libpobjfinder_la_LIBADD) $(LIBS)
+
+libpuke.la: $(libpuke_la_OBJECTS) $(libpuke_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(libdir) $(libpuke_la_LDFLAGS) $(libpuke_la_OBJECTS) $(libpuke_la_LIBADD) $(LIBS)
+.cpp.o:
+	$(CXXCOMPILE) -c $<
+.cpp.lo:
+	$(LTCXXCOMPILE) -c $<
+
+install-dataDATA: $(data_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(datadir)
+	@list='$(data_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(datadir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(datadir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-dataDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(data_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(datadir)/$$p; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = ksirc/puke
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am: install-libLTLIBRARIES
+install-exec: install-exec-am
+
+install-data-am: install-ksirclibLTLIBRARIES install-dataDATA
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-ksirclibLTLIBRARIES uninstall-libLTLIBRARIES \
+		uninstall-dataDATA
+uninstall: uninstall-am
+all-am: Makefile $(LTLIBRARIES) $(DATA) $(HEADERS)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(ksirclibdir) $(DESTDIR)$(libdir) \
+		$(DESTDIR)$(datadir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-ksirclibLTLIBRARIES \
+		mostlyclean-libLTLIBRARIES mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-tags \
+		mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+clean-am:  clean-ksirclibLTLIBRARIES clean-libLTLIBRARIES clean-compile \
+		clean-libtool clean-tags clean-generic mostlyclean-am
+
+clean: clean-am
+
+distclean-am:  distclean-ksirclibLTLIBRARIES distclean-libLTLIBRARIES \
+		distclean-compile distclean-libtool distclean-tags \
+		distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-metasources distclean-am
+
+maintainer-clean-am:  maintainer-clean-ksirclibLTLIBRARIES \
+		maintainer-clean-libLTLIBRARIES \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-tags maintainer-clean-generic \
+		distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-ksirclibLTLIBRARIES distclean-ksirclibLTLIBRARIES \
+clean-ksirclibLTLIBRARIES maintainer-clean-ksirclibLTLIBRARIES \
+uninstall-ksirclibLTLIBRARIES install-ksirclibLTLIBRARIES \
+mostlyclean-libLTLIBRARIES distclean-libLTLIBRARIES \
+clean-libLTLIBRARIES maintainer-clean-libLTLIBRARIES \
+uninstall-libLTLIBRARIES install-libLTLIBRARIES mostlyclean-compile \
+distclean-compile clean-compile maintainer-clean-compile \
+mostlyclean-libtool distclean-libtool clean-libtool \
+maintainer-clean-libtool uninstall-dataDATA install-dataDATA tags \
+mostlyclean-tags distclean-tags clean-tags maintainer-clean-tags \
+distdir info-am info dvi-am dvi check check-am installcheck-am \
+installcheck install-exec-am install-exec install-data-am install-data \
+install-am install uninstall-am uninstall all-redirect all-am all \
+installdirs mostlyclean-generic distclean-generic clean-generic \
+maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+
+
+$(srcdir)/HOWTO-PUKE.txt: HOWTO-PUKE.pod
+	pod2text $(srcdir)/HOWTO-PUKE.pod > HOWTO-PUKE.txt
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+
+$(srcdir)/controller.cpp: controller.moc
+controller.moc: $(srcdir)/controller.h
+	$(MOC) $(srcdir)/controller.h -o controller.moc
+
+$(srcdir)/ksirclistbox.cpp: ksirclistbox.moc
+ksirclistbox.moc: $(srcdir)/ksirclistbox.h
+	$(MOC) $(srcdir)/ksirclistbox.h -o ksirclistbox.moc
+
+$(srcdir)/palistbox.cpp: palistbox.moc
+palistbox.moc: $(srcdir)/palistbox.h
+	$(MOC) $(srcdir)/palistbox.h -o palistbox.moc
+
+$(srcdir)/pbutton.cpp: pbutton.moc
+pbutton.moc: $(srcdir)/pbutton.h
+	$(MOC) $(srcdir)/pbutton.h -o pbutton.moc
+
+$(srcdir)/pframe.cpp: pframe.moc
+pframe.moc: $(srcdir)/pframe.h
+	$(MOC) $(srcdir)/pframe.h -o pframe.moc
+
+$(srcdir)/plabel.cpp: plabel.moc
+plabel.moc: $(srcdir)/plabel.h
+	$(MOC) $(srcdir)/plabel.h -o plabel.moc
+
+$(srcdir)/playout.cpp: playout.moc
+playout.moc: $(srcdir)/playout.h
+	$(MOC) $(srcdir)/playout.h -o playout.moc
+
+$(srcdir)/plined.cpp: plined.moc
+plined.moc: $(srcdir)/plined.h
+	$(MOC) $(srcdir)/plined.h -o plined.moc
+
+$(srcdir)/plistbox.cpp: plistbox.moc
+plistbox.moc: $(srcdir)/plistbox.h
+	$(MOC) $(srcdir)/plistbox.h -o plistbox.moc
+
+$(srcdir)/pmenudta.cpp: pmenudta.moc
+pmenudta.moc: $(srcdir)/pmenudta.h
+	$(MOC) $(srcdir)/pmenudta.h -o pmenudta.moc
+
+$(srcdir)/pobject.cpp: pobject.moc
+pobject.moc: $(srcdir)/pobject.h
+	$(MOC) $(srcdir)/pobject.h -o pobject.moc
+
+$(srcdir)/ppopmenu.cpp: ppopmenu.moc
+ppopmenu.moc: $(srcdir)/ppopmenu.h
+	$(MOC) $(srcdir)/ppopmenu.h -o ppopmenu.moc
+
+$(srcdir)/pprogress.cpp: pprogress.moc
+pprogress.moc: $(srcdir)/pprogress.h
+	$(MOC) $(srcdir)/pprogress.h -o pprogress.moc
+
+$(srcdir)/ppushbt.cpp: ppushbt.moc
+ppushbt.moc: $(srcdir)/ppushbt.h
+	$(MOC) $(srcdir)/ppushbt.h -o ppushbt.moc
+
+$(srcdir)/ptabdialog.cpp: ptabdialog.moc
+ptabdialog.moc: $(srcdir)/ptabdialog.h
+	$(MOC) $(srcdir)/ptabdialog.h -o ptabdialog.moc
+
+$(srcdir)/ptablevw.cpp: ptablevw.moc
+ptablevw.moc: $(srcdir)/ptablevw.h
+	$(MOC) $(srcdir)/ptablevw.h -o ptablevw.moc
+
+$(srcdir)/pwidget.cpp: pwidget.moc
+pwidget.moc: $(srcdir)/pwidget.h
+	$(MOC) $(srcdir)/pwidget.h -o pwidget.moc
+
+$(srcdir)/pkfiledialog.cpp: pkfiledialog.moc
+pkfiledialog.moc: $(srcdir)/pkfiledialog.h
+	$(MOC) $(srcdir)/pkfiledialog.h -o pkfiledialog.moc
+
+distclean-metasources:
+	-rm -f controller.moc ksirclistbox.moc palistbox.moc pbutton.moc pframe.moc plabel.moc playout.moc plined.moc plistbox.moc pmenudta.moc pobject.moc ppopmenu.moc pprogress.moc ppushbt.moc ptabdialog.moc ptablevw.moc pwidget.moc pkfiledialog.moc 
+
+# DO_NOT_USE_AUTOMOC

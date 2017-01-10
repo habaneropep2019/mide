@@ -1,0 +1,195 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Andrea Rizzi <rizzi@kde.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "Informazioni su KDE Floppy Formatter"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "Versione "
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Floppy Drive:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Densità:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "File System:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Formatta"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Eliminazione Rapida"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Formattazione Completa"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Crea Etichetta:"
+
+#: floppy.cpp:148
+msgid "KDE Floppy"
+msgstr "KDE Floppy"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "Formattatore Floppy di KDE"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr "DD"
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"Impossibile accedere a %s\n"
+"Assicurati che il dispositivo esista e che\n"
+"tu abbia i permessi di scrittura su di esso."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Impossibile trovare kfdformat\n"
+"kfdformat è una parte della distribuzione di KFloppy.\n"
+"Installa KFloppy correttamente, grazie."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Impossibile trovare kmke2fs\n"
+"kmke2fs è una parte della distribuzione di KFloppy.\n"
+"Installa KFloppy correttamente, grazie."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Impossibile trovare kmkdosfs\n"
+"kmkdosfs è una parte della distribuzione di KFloppy.\n"
+"Installa KFloppy correttamente, grazie."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Annulla"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Impossibile avviare un nuovo programma: fallimento di fork()."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Impossibile accedere al floppy\n"
+"Per favore inserisci un floppy e assicurati di aver\n"
+"selezionato un drive valido.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"Impossibile formattare: %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Blocco %d danneggiato. Continuo ..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"Impossibile creare un filesystem su: %s\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"Il floppy è stato formattato con successo.\n"
+"Blocchi danneggiati: %d\n"
+"Capacità: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Tutti i file sono stati cancellati con successo."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Creazione Filesystem ..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Verifica ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Impossibile eseguire un nuovo programma\n"
+"fallimento di fork()."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Errore nel tentativo di determinare se il floppy sia montato\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s è montato.\n"
+"per favore smonta il floppy prima."

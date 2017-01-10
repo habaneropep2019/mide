@@ -1,0 +1,333 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-31 01:52+0100\n"
+"PO-Revision-Date: Wed Jul 7 1999 15:48:06+0200\n"
+"Last-Translator: Kimiyasu Tomiyama <tomy@truga.com>\n"
+"Language-Team: Japanese <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KTranslator v 0.4.0"
+
+#: viewer.cpp:95
+msgid "no image loaded"
+msgstr "イメージがロードされていません"
+
+#: viewer.cpp:103 viewer.cpp:599
+msgid "Ready"
+msgstr "待機中"
+
+#: viewer.cpp:181
+msgid "Net saving not yet implemented"
+msgstr "ネットの保存はまだ実装されていません"
+
+#: viewer.cpp:189
+#, c-format
+msgid "%s: written"
+msgstr "%s: 書き込まれました"
+
+#: viewer.cpp:227
+msgid "Enter Zoom factor (100 = 1x):"
+msgstr "拡大率を入力して下さい(100 = 1x):"
+
+#: viewer.cpp:231
+msgid "Illegal zoom factor"
+msgstr "拡大率が正しくありません"
+
+#: viewer.cpp:282
+#, c-format
+msgid ""
+"KView -- Graphics viewer. %s\n"
+"\n"
+"Sirtaj S. Kang (taj@kde.org)\n"
+msgstr ""
+"KView -- グラフィックス ビューワ %s\n"
+"\n"
+"Sirtaj S. Kang (taj@kde.org)\n"
+
+#: viewer.cpp:285
+msgid "About KView"
+msgstr "KView は"
+
+#: viewer.cpp:310 viewer.cpp:412
+msgid "&List..."
+msgstr "リスト...(&L)"
+
+#: viewer.cpp:312 viewer.cpp:416
+msgid "&Previous"
+msgstr "前(&P)"
+
+#: viewer.cpp:314 viewer.cpp:418
+msgid "&Next"
+msgstr "次(&N)"
+
+#: viewer.cpp:316 viewer.cpp:421
+msgid "&Slideshow On/Off"
+msgstr "スライドショーのオン / オフ(&S)"
+
+#: viewer.cpp:324
+msgid "&Zoom"
+msgstr "拡大(&Z)"
+
+#: viewer.cpp:325
+msgid "&Transform"
+msgstr "変形(&T)"
+
+#: viewer.cpp:326
+msgid "To &Desktop"
+msgstr "デスクトップに張る(&D)"
+
+#: viewer.cpp:328
+msgid "F&ilter"
+msgstr "フィルタ(&I)"
+
+#: viewer.cpp:332
+msgid "&Images"
+msgstr "イメージ(&I)"
+
+#: viewer.cpp:352
+msgid "&Save As..."
+msgstr "名前をつけて保存...(&S)"
+
+#: viewer.cpp:356
+msgid "&Close Window"
+msgstr "ウインドウを閉じる(&C)"
+
+#: viewer.cpp:362
+msgid "&Full Screen"
+msgstr "フルスクリーン(&F)"
+
+#: viewer.cpp:365
+msgid "&Crop"
+msgstr "切りとり(&C)"
+
+#: viewer.cpp:367
+msgid "&Reset"
+msgstr "リセット(&R)"
+
+#: viewer.cpp:369
+msgid "&Preferences..."
+msgstr "設定...(&P)"
+
+#: viewer.cpp:375
+msgid "&Zoom..."
+msgstr "ズーム(&Z)"
+
+#: viewer.cpp:376
+#, c-format
+msgid "Zoom &in 10%"
+msgstr "10%拡大(&I)"
+
+#: viewer.cpp:378
+#, c-format
+msgid "Zoom &out 10%"
+msgstr "10%縮小(&O)"
+
+#: viewer.cpp:380
+msgid "&Double size"
+msgstr "２倍の大きさ(&D)"
+
+#: viewer.cpp:382
+msgid "&Half size"
+msgstr "1/2倍大きさ(&H)"
+
+#: viewer.cpp:384
+msgid "&Max size"
+msgstr "最大の大きさ(&M)"
+
+#: viewer.cpp:386
+msgid "Max/&aspect"
+msgstr "最大/縦横比固定(&A)"
+
+#: viewer.cpp:392
+msgid "Rotate &clockwise"
+msgstr "時計回りに回転(&C)"
+
+#: viewer.cpp:394
+msgid "Rotate &anti-clockwise"
+msgstr "反時計回りに回転(&A)"
+
+#: viewer.cpp:396
+msgid "Flip &vertical"
+msgstr "垂直方向に反転(&V)"
+
+#: viewer.cpp:398
+msgid "Flip &horizontal"
+msgstr "水平方向に反転(&H)"
+
+#: viewer.cpp:404
+msgid "Desktop &Tile"
+msgstr "デスクトップに敷き詰める (&T)"
+
+#: viewer.cpp:405
+msgid "Desktop &Max"
+msgstr "デスクトップに最大に張る (&M)"
+
+#: viewer.cpp:407
+msgid "Desktop Max&pect"
+msgstr "デスクトップに最大に張る(縦横比固定) (&P)"
+
+#: viewer.cpp:426
+msgid "&How do I..."
+msgstr "何をすべきか... (&H)"
+
+#: viewer.cpp:427
+msgid "&What is a..."
+msgstr "これは何か...(&W)"
+
+#: viewer.cpp:429
+msgid "&About KView..."
+msgstr "KView は...(&A)"
+
+#: viewer.cpp:471 viewer.cpp:478
+msgid "Existing transfer not yet complete."
+msgstr "変換が終了していません"
+
+#: viewer.cpp:493
+msgid "Couldn't get temporary transfer name."
+msgstr "一時的な変換名が得られませんでした"
+
+#: viewer.cpp:532
+msgid "Transfer error: "
+msgstr "変換エラー: "
+
+#: viewer.cpp:618
+msgid "Loading..."
+msgstr "ロード中..."
+
+#: viewer.cpp:632
+#, c-format
+msgid "Couldn't load %s"
+msgstr "%sをロードできません"
+
+#: viewer.cpp:852
+msgid "Printing..."
+msgstr "印刷中..."
+
+#: colour.cpp:32
+msgid "Enter brightness factor (%):"
+msgstr "輝度を入力して下さい (%):"
+
+#: colour.cpp:37
+msgid "Brightness factor must be positive"
+msgstr "輝度は正数にしてください"
+
+#: colour.cpp:44
+msgid "Changing brightness..."
+msgstr "明るさを変更しています..."
+
+#: colour.cpp:58
+msgid "Intensity:Brightness"
+msgstr "光量 : 明るさ"
+
+#: colour.cpp:100
+msgid "Converting to Greyscale..."
+msgstr "モノクロに変換しています..."
+
+#: colour.cpp:129
+msgid "Greyscale"
+msgstr "グレイスケール"
+
+#: colour.cpp:147
+msgid "Smoothing..."
+msgstr "スムーズにしています..."
+
+#: colour.cpp:213
+msgid "Smooth"
+msgstr "スムーズ"
+
+#: colour.cpp:234
+msgid "Enter gamma value ( >0 ):"
+msgstr "ガンマ値を入力して下さい ( >0 ):"
+
+#: colour.cpp:237
+msgid "Bad Gamma value"
+msgstr "ガンマ値が正しくありません"
+
+#: colour.cpp:243
+msgid "Gamma-correcting..."
+msgstr "ガンマ補正中..."
+
+#: colour.cpp:296
+msgid "Intensity:Gamma Correct..."
+msgstr "光量 : ガンマ補正..."
+
+#: colour.cpp:310
+msgid "External.."
+msgstr "外部..."
+
+#: ilistdlg.cpp:56
+msgid "Prev"
+msgstr "前"
+
+#: ilistdlg.cpp:60
+msgid "Shu&ffle"
+msgstr "シャッフル(&F)"
+
+#: ilistdlg.cpp:65
+msgid "Next"
+msgstr "次"
+
+#: ilistdlg.cpp:69
+msgid "Start slide"
+msgstr "スライドの開始"
+
+#: ilistdlg.cpp:85
+msgid "Image List"
+msgstr "イメージリスト"
+
+#: ilistdlg.cpp:259
+msgid "Stop &slide"
+msgstr "スライドの停止(&S)"
+
+#: ilistdlg.cpp:267
+msgid "Start &slide"
+msgstr "スライドの開始(&S)"
+
+#: prefdlg.cpp:32
+msgid "kView Preferences"
+msgstr "kView の設定"
+
+#: prefdlg.cpp:36
+msgid "&Apply"
+msgstr "適用(&A)"
+
+#: prefdlg.cpp:51
+msgid "On Load"
+msgstr "ロードするときに"
+
+#: prefdlg.cpp:58
+msgid "Resize Window"
+msgstr "ウィンドウをリサイズする"
+
+#: prefdlg.cpp:61
+msgid "Resize Image"
+msgstr "イメージをリサイズする"
+
+#: prefdlg.cpp:64
+msgid "No Resize"
+msgstr "リサイズしない"
+
+#: prefdlg.cpp:69
+msgid "Slideshow"
+msgstr "スライドショー"
+
+#: prefdlg.cpp:72
+msgid "Loop"
+msgstr "リピート"
+
+#: prefdlg.cpp:76
+msgid "Slide interval (sec)"
+msgstr "スライド表示間隔 (秒)"
+
+#: prefdlg.cpp:84
+msgid "&Keys"
+msgstr "キー (&K)"

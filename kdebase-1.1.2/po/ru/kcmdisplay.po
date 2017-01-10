@@ -1,0 +1,588 @@
+# Перевод kdisplay.
+# Copyright (C) 1997,1998 Free Software Foundation, Inc.
+# Denis Pershin <dyp@inetlab.com>, 1997, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdisplay 0.5.3\n"
+"POT-Creation-Date: 1999-04-20 01:17+0200\n"
+"PO-Revision-Date: 1999-01-15 02:51+0600\n"
+"Last-Translator: Denis Pershin <dyp@inetlab.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: backgnd.cpp:55
+msgid "Enter new desktop name"
+msgstr "Введите название нового рабочего стола"
+
+#: backgnd.cpp:111 backgnd.cpp:164
+msgid "Desktop"
+msgstr "Рабочий стол"
+
+#
+#: backgnd.cpp:186
+msgid "&Rename ..."
+msgstr "&Переименовать..."
+
+#
+#: backgnd.cpp:197
+msgid "&Common Background"
+msgstr "&Общий фон"
+
+#
+#: backgnd.cpp:225 colorscm.cpp:82
+msgid "Colors"
+msgstr "Цвета"
+
+#
+#: backgnd.cpp:252
+msgid "&One Color"
+msgstr "&Один Цвет"
+
+#
+#: backgnd.cpp:269
+msgid "&Two Color"
+msgstr "&Два Цвета"
+
+#
+#: backgnd.cpp:288
+msgid "Set&up ..."
+msgstr "&Настроить..."
+
+#: backgnd.cpp:297
+msgid "Wallpaper"
+msgstr "Обои"
+
+#
+#: backgnd.cpp:328 backgnd.cpp:1213 backgnd.cpp:1378 backgnd.cpp:1917
+msgid "No wallpaper"
+msgstr "Без обоев"
+
+#
+#: backgnd.cpp:361
+msgid "&Browse..."
+msgstr "&Просмотреть..."
+
+#: backgnd.cpp:369
+msgid "Arrangement:"
+msgstr "Расположение:"
+
+#
+#: backgnd.cpp:376
+msgid "Tiled"
+msgstr "Черепицей"
+
+#: backgnd.cpp:377
+msgid "Mirrored"
+msgstr "Зеркально"
+
+#
+#: backgnd.cpp:378
+msgid "Center Tiled"
+msgstr "Черепицей в центре"
+
+#
+#: backgnd.cpp:379
+msgid "Centred"
+msgstr "В центре"
+
+#
+#: backgnd.cpp:380
+msgid "Centred Brick"
+msgstr "В центре кирпичей"
+
+#
+#: backgnd.cpp:381
+msgid "Centred Warp"
+msgstr "В центре волны"
+
+#
+#: backgnd.cpp:382
+msgid "Centred Maxpect"
+msgstr "Макс. в центре с сохр. осей"
+
+#: backgnd.cpp:383
+msgid "Symmetrical Tiled"
+msgstr "Симметричная черепица"
+
+#: backgnd.cpp:384
+msgid "Symmetrical Mirrored"
+msgstr "Симметричное отражение"
+
+#
+#: backgnd.cpp:385
+msgid "Scaled"
+msgstr "С измененным размером"
+
+#: backgnd.cpp:400
+msgid "Ra&ndom"
+msgstr "Случайно"
+
+#
+#: backgnd.cpp:409
+msgid "Setu&p..."
+msgstr "&Настроить..."
+
+#: backgnd.cpp:419
+msgid "&Dock into the panel"
+msgstr "Разместить в специальной области panel"
+
+#: backgnd.cpp:444
+msgid "Cache size (kB):"
+msgstr "Размер буфера (кБ):"
+
+#
+#: backgnd.cpp:1345
+msgid "Desktop names"
+msgstr "Названия рабочих столов"
+
+#: backgnd.cpp:1390
+msgid "File error"
+msgstr "Ошибка файла"
+
+#: backgnd.cpp:1391
+msgid "Can't load image file"
+msgstr "Ошибка загрузки файла с изображением"
+
+#: backgnd.cpp:1414 backgnd.cpp:1887
+msgid "Unsupported URL"
+msgstr "Не поддерживаемый URL"
+
+#: backgnd.cpp:1415 backgnd.cpp:1888
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE Display Module"
+msgstr "Извините, но данный тип URL не поддерживается Модулем дисплея KDE"
+
+#
+#: backgnd.cpp:1447
+msgid "Two color backgrounds"
+msgstr "Двухцветный фон"
+
+#: backgnd.cpp:1484
+msgid "Blend colors from &top to bottom"
+msgstr "Изменять цвет с&верху вниз"
+
+#: backgnd.cpp:1490
+msgid "Blend colors from &right to left"
+msgstr "Изменять цвет с&права налево"
+
+#: backgnd.cpp:1496
+msgid "Use &pattern"
+msgstr "Использовать &шаблон"
+
+#: backgnd.cpp:1523
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: backgnd.cpp:1534
+msgid "Pattern &name"
+msgstr "&Имя шаблона"
+
+#: backgnd.cpp:1573
+msgid "Current"
+msgstr "Текущий"
+
+#
+#
+#: backgnd.cpp:1633
+msgid "Filled"
+msgstr "Закрашенный"
+
+#: backgnd.cpp:1636
+msgid "Fish net"
+msgstr "Рыбацкая сеть"
+
+#: backgnd.cpp:1639
+msgid "Triangles"
+msgstr "Треугольники"
+
+#: backgnd.cpp:1642
+msgid "Flowers"
+msgstr "Цветы"
+
+#: backgnd.cpp:1645
+msgid "Rattan"
+msgstr "Плетение"
+
+#: backgnd.cpp:1648
+msgid "Cobbled Pavement"
+msgstr "Мостовая"
+
+#: backgnd.cpp:1714
+msgid "Random mode setup"
+msgstr "Настройка случайного режима"
+
+#: backgnd.cpp:1720
+msgid "Pick files from &directory"
+msgstr "Брать файлы из каталога"
+
+#
+#: backgnd.cpp:1734
+msgid "&Browse ..."
+msgstr "&Просмотреть..."
+
+#: backgnd.cpp:1755
+msgid "Timer Delay in seconds :"
+msgstr "Задержка в секундах :"
+
+#: backgnd.cpp:1767
+msgid "In &order"
+msgstr "В порядке"
+
+#: backgnd.cpp:1784
+msgid "Desktops :"
+msgstr "Рабочие столы :"
+
+#: backgnd.cpp:1823
+msgid "&Add"
+msgstr "&Добавить"
+
+#: backgnd.cpp:1995
+msgid "Directory error"
+msgstr "Ошибка каталога"
+
+#: backgnd.cpp:1996
+msgid "Selected directory doesn't exists"
+msgstr "Выбранный каталог не существует"
+
+#: colorscm.cpp:104
+msgid "Color Scheme"
+msgstr "Цветовая схема"
+
+#
+#: colorscm.cpp:115
+msgid "Current scheme"
+msgstr "Текущая схема"
+
+#
+#: colorscm.cpp:117
+msgid "KDE default"
+msgstr "KDE по умолчанию"
+
+#: colorscm.cpp:130
+msgid "&Add ..."
+msgstr "&Добавить..."
+
+#: colorscm.cpp:147
+msgid "&Save changes"
+msgstr "&Записать изменения..."
+
+#: colorscm.cpp:161
+msgid "Widget color"
+msgstr "Цвет управляющего элемента"
+
+#: colorscm.cpp:168
+msgid "Inactive title bar"
+msgstr "Неактивный заголовок"
+
+#: colorscm.cpp:169
+msgid "Inactive title text"
+msgstr "Текст неактивного заголовка"
+
+#
+#: colorscm.cpp:170
+msgid "Inactive title blend"
+msgstr "Цвет перелива неактивного заголовка"
+
+#: colorscm.cpp:171
+msgid "Active title bar"
+msgstr "Активный заголовок"
+
+#: colorscm.cpp:172
+msgid "Active title text"
+msgstr "Текст активного заголовка"
+
+#
+#: colorscm.cpp:173
+msgid "Active title blend"
+msgstr "Цвет перелива активного заголовка"
+
+#: colorscm.cpp:174
+msgid "Background"
+msgstr "Фон"
+
+#: colorscm.cpp:175
+msgid "Text"
+msgstr "Текст"
+
+#: colorscm.cpp:176
+msgid "Select background"
+msgstr "Выбранный фон"
+
+#: colorscm.cpp:177
+msgid "Select text"
+msgstr "Выбранный текст"
+
+#: colorscm.cpp:178
+msgid "Window background"
+msgstr "Фон окна"
+
+#: colorscm.cpp:179 widgetcanvas.cpp:175 widgetcanvas.cpp:176
+msgid "Window text"
+msgstr "Текст в окне"
+
+#: colorscm.cpp:207
+msgid "Contrast"
+msgstr "Контраст"
+
+#
+#: colorscm.cpp:223
+msgid "&Low"
+msgstr "&Низкий"
+
+#: colorscm.cpp:231
+msgid "High"
+msgstr "Высокий"
+
+#: colorscm.cpp:304
+msgid "Error removing"
+msgstr "Ошибка удаления"
+
+#: colorscm.cpp:305
+msgid ""
+"This color scheme could not be removed.\n"
+"Perhaps you do not have permission to alter the file\n"
+"system where the color scheme is stored."
+msgstr ""
+"Эта цветовая схема не может быть удалена.\n"
+"Возможно у вас нет прав на изменение системного\n"
+"файла, где хранятся цветовые схемы."
+
+#: colorscm.cpp:362
+msgid "Naming error"
+msgstr "Ошибка переименования"
+
+#: colorscm.cpp:363
+msgid ""
+"Please choose a unique name for the new color\n"
+"scheme. The one you entered already appears\n"
+"in the color scheme list."
+msgstr ""
+"Пожалуйста выберите уникальное имя для новой цветовой\n"
+"схемы. Которое вы ввели уже существует\n"
+"в списке цветовых схем."
+
+#
+#: savescm.cpp:18
+msgid "Add a color scheme"
+msgstr "Добавить цветовую схему"
+
+#: savescm.cpp:32
+msgid ""
+"&Enter a name for the new color scheme\n"
+"to be added to your personal list.\n"
+"\n"
+"The colors currently used in the preview will\n"
+"be copied into this scheme to begin with."
+msgstr ""
+"Введите имя цветовой схемы,\n"
+"которая будет добавлена в личный список.\n"
+"\n"
+"Цвета используемые в предпросмотре будут\n"
+"скопированы в эту схему."
+
+#: scrnsave.cpp:47
+msgid "Ignore"
+msgstr "Игнорировать"
+
+#: scrnsave.cpp:48
+msgid "Save Screen"
+msgstr "Сохранять экран"
+
+#: scrnsave.cpp:49
+msgid "Lock Screen"
+msgstr "Закрывать экран"
+
+#: scrnsave.cpp:112 scrnsave.cpp:181
+msgid "Screen Saver"
+msgstr "Хранитель экрана"
+
+#
+#
+#: scrnsave.cpp:188 scrnsave.cpp:382 scrnsave.cpp:623 scrnsave.cpp:744
+msgid "No screensaver"
+msgstr "Нет хранителя экрана"
+
+#
+#: scrnsave.cpp:209
+msgid "&Setup ..."
+msgstr "&Настроить..."
+
+#
+#: scrnsave.cpp:217
+msgid "&Test"
+msgstr "&Тест"
+
+#: scrnsave.cpp:230
+msgid "Settings"
+msgstr "Установки"
+
+#: scrnsave.cpp:250
+msgid "&Wait for"
+msgstr "&Ждать"
+
+#
+#: scrnsave.cpp:260
+msgid "min."
+msgstr "мин."
+
+#
+#: scrnsave.cpp:266
+msgid "&Require password"
+msgstr "&Требуется пароль"
+
+#: scrnsave.cpp:272
+msgid "&Accept root password to unlock"
+msgstr "Допускать пароль root'а для разблокирования."
+
+#: scrnsave.cpp:280
+msgid "Show &password as stars"
+msgstr "Показывать звездочки вместо пароля"
+
+#
+#: scrnsave.cpp:288
+msgid "Priority"
+msgstr "Приоритет"
+
+#
+#: scrnsave.cpp:301
+msgid "&High"
+msgstr "&Высокий"
+
+#: scrnsave.cpp:310
+msgid "Low"
+msgstr "Низкий"
+
+#: general.cpp:221
+msgid "Style"
+msgstr "Стиль"
+
+#: general.cpp:229
+msgid "&Draw widgets in the style of Windows 95"
+msgstr "Рисовать элементы в стиле &Windows 95"
+
+#: general.cpp:245
+msgid "&Menubar on top of the screen in the style of MacOS"
+msgstr "Меню наверху экрана, как в MacOS"
+
+#: general.cpp:259
+msgid "&Apply fonts and colors to non-KDE apps"
+msgstr "Применять шрифты и цвета к приложениям не из KDE"
+
+#: general.cpp:529
+msgid "General font"
+msgstr "Общий шрифт"
+
+#: general.cpp:534
+msgid "Fixed font"
+msgstr "Фиксированный шрифт"
+
+#: general.cpp:540
+msgid "Window title font"
+msgstr "Шрифт заголовка"
+
+#
+#: general.cpp:545
+msgid "Panel button font"
+msgstr "Шрифт кнопок панели"
+
+#: general.cpp:550
+msgid "Panel clock font"
+msgstr "Шрифт часов панели"
+
+#
+#: general.cpp:580
+msgid "Sample text"
+msgstr "Текст примера"
+
+#: general.cpp:588
+msgid ""
+"THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\n"
+"the quick brown fox jumps over the lazy dog\n"
+"0 1 2 3 4 5 6 7 8 9   ! \" ё $ % ^ & * ( )"
+msgstr ""
+"съешь еще этих вкусных французских булок\n"
+"СЪЕШЬ ЕЩЕ ЭТИХ ВКУСНЫХ ФРАНЦУЗСКИХ БУЛОК\n"
+"the quick brown fox jumps over the lazy dog\n"
+"THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\n"
+"0 1 2 3 4 5 6 7 8 9   ! \" ё $ % ^ & * ( )"
+
+#
+#: main.cpp:64
+msgid "&Background"
+msgstr "&Фон"
+
+#
+#: main.cpp:67
+msgid "&Screensaver"
+msgstr "&Хранитель экрана"
+
+#
+#: main.cpp:71
+msgid "&Colors"
+msgstr "&Цвета"
+
+#: main.cpp:77
+msgid "&Style"
+msgstr "&Стиль"
+
+#: main.cpp:83
+msgid ""
+"usage: kcmdisplay [-init | {background,screensaver,colors,fonts,style}]\n"
+msgstr ""
+"использование: kcmdisplay [-init | "
+"{background,screensaver,colors,fonts,style}]\n"
+
+#
+#: main.cpp:150
+msgid "Display settings"
+msgstr "Настройка дисплея"
+
+#: widgetcanvas.cpp:104 widgetcanvas.cpp:105
+msgid "Inactive window"
+msgstr "Неактивное окно"
+
+#: widgetcanvas.cpp:132 widgetcanvas.cpp:133
+msgid "Active window"
+msgstr "Активное окно"
+
+#
+#: widgetcanvas.cpp:189 widgetcanvas.cpp:190
+msgid "Selected text"
+msgstr "Выбранный текст"
+
+#: widgetcanvas.cpp:212
+msgid "New"
+msgstr "Новый"
+
+#: fontchooser.cpp:82
+msgid "&Typeface"
+msgstr "&Гарнитура"
+
+#: fontchooser.cpp:89
+msgid "&Bold"
+msgstr "&Жирный"
+
+#: fontchooser.cpp:96
+msgid "&Italic"
+msgstr "&Наклонный"
+
+#: fontchooser.cpp:125
+msgid "&Size"
+msgstr "&Размер"
+
+#: fontchooser.cpp:147
+msgid "&Character set"
+msgstr "&Кодировка"
+
+#
+#
+#: fontchooser.cpp:262
+msgid "default"
+msgstr "по умолчанию"
+
+#: fontchooser.cpp:265
+msgid "any"
+msgstr "любой"

@@ -1,0 +1,9 @@
+#include <details.moc>
+#include <dialogs.moc>
+#include <fieldsel.moc>
+#include <htable.moc>
+#include <infobar.moc>
+#include <prefs.moc>
+#include <pstable.moc>
+#include <qps.moc>
+#include <scheddlg.moc>

@@ -1,0 +1,38 @@
+12/07/1999: fgetpwent/getpwent/fgetgrent/getgrent issue fixed (FreeBSD have no
+             fxx funcs. Thanks to Hans Petter Bieker <zerium@traad.lavvu.no>.
+24/04/1999: change _KU_FIRST_USER to KU_FIRST_USER, and put a define for it into
+	 globals.h  <duncan@kde.org>
+24/04/1999: Bug 'Group properties did show nothing in 'Other Users' listbox.'
+            fixed, documentation in SGML created.
+23/04/1999: User create and delete postpone logic implemented.
+04/04/1999: Bug #1133 'new fixes dont create new user home directory anymore'
+01/04/1999: Bug #895 'Kuser doesn't restore the permissions on /etc/shadow.'
+
+19990328: added #ifdef's to kuser.cpp and kgroup.cpp so that if
+	  _KU_FIRST_USER is defined to be, say, 500, then UID's and GID's
+	  for regular users start at 500.  If _KU_FIRST_USER is not defined,
+	  they start at 1001, the default, as before.   _KU_FIRST_USER can
+	  be defined in kdeadmin/config.h.    (This is to make it easy to
+	  compile kuser for compatibitlity with RedHat, where regular users
+	  start at UID 500, and the User Private Group scheme is used for
+	  GID's.)   <duncan@kde.org>
+
+
+22/12/98: RedHat awared issues added.
+	  Private group mechanism implemented. Works both for
+	  add and delete.
+	
+12/10/98: Simple property dialog added
+
+04/10/98: Use layouts in Edit group dialog (QtArch is rulez!!!)
+
+04/10/98: Patch by Rudolf Weber <rw@weber.ravnet.de> incorporated in part
+          if NIS support.
+          NIS support.
+          It is possible to create homedir when adding user.
+          It is possible to create mailbox when adding user.
+          It is possible to remove homedir when removing user.
+          It is possible to remove processes when removing user.
+          It is possible to remove crontabs when removing user.
+          It is possible to remove mailbox when removing user.
+          Preferences dialog added.

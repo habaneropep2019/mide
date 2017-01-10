@@ -1,0 +1,146 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: klpq \n"
+"POT-Creation-Date: 1999-04-02 02:22+0200\n"
+"PO-Revision-Date: 1999-01-28 02:44+02:00\n"
+"Last-Translator: Piotr Roszatycki <dexter@fnet.pl>\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+
+#: main.cpp:178
+msgid "Sorry, can't open your printcap file."
+msgstr "Nie mo¿na otworzyæ pliku /etc/printcap"
+
+#: main.cpp:183
+msgid "Sorry, unable to parse your printcap."
+msgstr "Nie mo¿na przeanalizowaæ pliku /etc/printcap"
+
+#: main.cpp:184
+msgid "Please email your printcap to Christoph.Neerfeld@home.ivm.de"
+msgstr ""
+"Proszê wys³aæ plik /etc/printcap na adres Christoph.Neerfeld@home.ivm.de"
+
+#: klpq.cpp:90
+msgid "Printer"
+msgstr "Drukarka"
+
+#: klpq.cpp:95
+msgid "Queuing"
+msgstr "Kolejkowanie"
+
+#: klpq.cpp:100
+msgid "Printing"
+msgstr "Drukowanie"
+
+#: klpq.cpp:105
+msgid "Update"
+msgstr "Uaktualnij"
+
+#: klpq.cpp:125
+msgid "Rank"
+msgstr "Lp."
+
+#: klpq.cpp:126
+msgid "Owner"
+msgstr "W³a¶ciciel"
+
+#: klpq.cpp:127
+msgid "Job"
+msgstr "Zadanie"
+
+#: klpq.cpp:129
+msgid "Size"
+msgstr "Rozmiar"
+
+#: klpq.cpp:150 klpq.cpp:228
+msgid "Make Top"
+msgstr "Pierwsze"
+
+#: klpq.cpp:160
+msgid "Auto"
+msgstr "Auto"
+
+#: klpq.cpp:204
+msgid "&Auto update"
+msgstr "&Automatyczne od¶wie¿anie"
+
+#: klpq.cpp:205
+msgid "&Spooler"
+msgstr "&System drukowania"
+
+#: klpq.cpp:208
+#, c-format
+msgid ""
+"Klpq %s\n"
+"(C) by Christoph Neerfeld\n"
+"chris@kde.org"
+msgstr ""
+"Klpq %s\n"
+"(c) Christoph Neerfeld\n"
+"chris@kde.org"
+
+#: klpq.cpp:213
+msgid "&Config"
+msgstr "&Konfiguruj"
+
+#: klpq.cpp:404
+#, c-format
+msgid "Do you really want to remove job No %d"
+msgstr "Czy chcesz usun±æ zadanie %d?"
+
+#: klpq.cpp:424
+#, c-format
+msgid ""
+"Do you really want to move job No\n"
+"%d\n"
+"on top of queue"
+msgstr ""
+"Czy chcesz przesun±æ zadanie %d\n"
+"na pocz±tek kolejki?"
+
+#: klpq.cpp:572 klpq.cpp:578 klpq.cpp:593
+msgid "Permission denied"
+msgstr "Brak praw dostêpu!"
+
+#: klpq.cpp:573 klpq.cpp:579 klpq.cpp:594
+msgid ""
+"This is a privileged command\n"
+"and you do not have permission to execute it."
+msgstr "Brak praw do wykonania polecenia"
+
+#: ConfAutoUpdate.cpp:10
+msgid "Configure Auto Update"
+msgstr "Konfiguruj automatyczne od¶wie¿anie"
+
+#: ConfAutoUpdateData.cpp:17
+msgid "Update frequency in seconds:"
+msgstr "Opó¼nienie w sekundach:"
+
+#: klpqspooler.cpp:199 klpqspooler.cpp:269
+msgid "Can't find your lpc program !"
+msgstr "Nie mo¿na znale¼æ programu lpc!"
+
+#: klpqspooler.cpp:200 klpqspooler.cpp:270
+msgid ""
+"Sorry, I can't find your lpc program.\n"
+"Please check the configuration under Config->Spooler."
+msgstr ""
+"Nie mo¿na znale¼æ programu lpc.\n"
+"Sprawd¼ konfiguracjê w opcji menu Konfiguruj->System drukowania."
+
+#: FirstStart.cpp:21 SpoolerConfig.cpp:21 SpoolerConfigData.cpp:151
+msgid "Select your spooling system"
+msgstr "Wybierz swój system obs³ugi drukowania"
+
+#: FirstStartData.cpp:42
+msgid ""
+"Please select the spooling system you use. Most systems use the BSD spooler. "
+"So if you don't know which spooler is installed on your system, BSD is "
+"probably a good choice."
+msgstr ""
+"Proszê wybraæ system obs³ugi drukowania. Wiêkszo¶æ systemów jest obs³ugiwana "
+"przez BSD spooler. Je¿eli nie ma pewno¶ci co do zainstalowanego systemu "
+"drukowania, najpewniej bêdzie to BSD."
+
+#: SpoolerConfigData.cpp:99
+msgid "Paths of spooling commands:"
+msgstr "¦cie¿ka do poleceñ systemu drukowania:"

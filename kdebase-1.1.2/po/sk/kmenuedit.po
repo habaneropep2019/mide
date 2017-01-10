@@ -1,0 +1,270 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kmenuedit 0.2.3\n"
+"POT-Creation-Date: 1999-01-14 01:18+0100\n"
+"PO-Revision-Date: 1998-03-20 12:20 MET\n"
+"Last-Translator: Juraj Bednár <bednar@isternet.sk>\n"
+"Language-Team: Slovak <bednar@isternet.sk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: kmenuedit.cpp:69
+msgid "Change &Menuname"
+msgstr "Zmeni» názov menu"
+
+#: kmenuedit.cpp:70
+msgid "Reload &Filetypes"
+msgstr "Znovu naèíta» typ&y súborov"
+
+#: kmenuedit.cpp:77
+msgid "by"
+msgstr " "
+
+#: kmenuedit.cpp:179 kmenuedit.cpp:204
+msgid "Changes not saved !"
+msgstr "Zmeny nie sú ulo¾ené!"
+
+#: kmenuedit.cpp:180 kmenuedit.cpp:205
+msgid ""
+"\n"
+"Do you want to save your changes ?"
+msgstr ""
+"\n"
+"Prajete si ulo¾i» va¹e zmeny ?"
+
+#: confmenu.cpp:339 confmenu.cpp:939 kmenuedit.cpp:264
+msgid "EMPTY"
+msgstr "PRÁZDNE"
+
+#: kmenuedit.cpp:343
+msgid "Reload Menus"
+msgstr "Znovu naèíta» menu"
+
+#: kmenuedit.cpp:344
+msgid ""
+"Reloading the menus will discard all changes.\n"
+"Are you sure you want to reload ?"
+msgstr ""
+"Nové naèítanie menu zru¹í v¹etky zmeny.\n"
+"Ste si istý, ¾e si prajete nové naèítanie ?"
+
+#: button.cpp:209 main.cpp:79 main.cpp:92
+msgid "KMenuedit"
+msgstr "KMenuedit"
+
+#: main.cpp:80
+msgid ""
+"The directory for your personal menu does not exist.\n"
+" Do you want to create it now ?"
+msgstr ""
+"Prieèinok pre va¹e osobné menu neexistuje.\n"
+" Prajete si ho teraz vytvori» ?"
+
+#: main.cpp:93
+msgid ""
+"Unable to create directory for personal menu.\n"
+" Select Ok to exit KMenuedit."
+msgstr ""
+"Nie je mo¾né vytvori» prieèinok pre osobné menu.\n"
+" Zvoµte Ok k ukonèeniu KMenueditu."
+
+#: confmenu.cpp:91 entrydialog.cpp:60
+msgid "Separator"
+msgstr "Oddeµovaè"
+
+#: confmenu.cpp:103 confmenu.cpp:335
+msgid "Open/ Close"
+msgstr "Otvori»/ Zavrie»"
+
+#: confmenu.cpp:117
+msgid "Select item for moving"
+msgstr "Zvoµte polo¾ku na presunutie"
+
+#: confmenu.cpp:118
+msgid "Select menu for moving"
+msgstr "Zvoµte menu pre posunutie"
+
+#: confmenu.cpp:120
+msgid "New"
+msgstr "Nová"
+
+#: confmenu.cpp:177 confmenu.cpp:318
+msgid "Warning !"
+msgstr "Pozor !"
+
+#: confmenu.cpp:178
+msgid "If you delete this button you will lose all of its submenus"
+msgstr "Zru¹enie tejto polo¾ky zma¾e v¹etky menu pod òou."
+
+#: confmenu.cpp:297
+msgid "Wrong filename"
+msgstr "Chybné meno súboru"
+
+#: confmenu.cpp:298
+msgid ""
+"A kdelnk-file with this name does already exist. \n"
+"Please choose another filename."
+msgstr ""
+"U¾ existuje kdelnk súbor s takýmto menom. \n"
+"Prosím zvoµte iné meno súboru."
+
+#: confmenu.cpp:319
+msgid "Changing the type of this button will delete all of its submenus"
+msgstr "Zmena typu tejto polo¾ky vyma¾e v¹etky menu pod òou."
+
+#: confmenu.cpp:340 confmenu.cpp:940
+msgid "no command"
+msgstr "¾iadny príkaz"
+
+#: button.cpp:210
+msgid ""
+"Sorry ! You have to save your changes\n"
+"before you can drop this item on another window."
+msgstr ""
+"Je mi µúto, ale musíte ulo¾i» svoje zmeny skôr, ne¾ budete \n"
+"môc» upusti» túto polo¾ku nad iným oknom."
+
+#: DesktopPathDialogData.cpp:37
+msgid "Path for KDE Desktop Entries is not set."
+msgstr "Cesta k polo¾kám menu KDE nenastavená."
+
+#: DesktopPathDialogData.cpp:49
+msgid "I suggest the following entries:"
+msgstr "Navrhujem nasledujúce polo¾ky:"
+
+#: DesktopPathDialogData.cpp:55
+msgid "Path:"
+msgstr "Cesta:"
+
+#: DesktopPathDialogData.cpp:68
+msgid "PersonalPath:"
+msgstr "Osobná cesta:"
+
+#: entrydialog.cpp:61
+msgid "Submenu"
+msgstr "Podmenu"
+
+#: entrydialog.cpp:62 entrydialog.cpp:198 entrydialog.cpp:539
+#: entrydialog.cpp:544
+msgid "Application"
+msgstr "Aplikácia"
+
+#: entrydialog.cpp:63 entrydialog.cpp:200 entrydialog.cpp:543
+msgid "Swallow"
+msgstr "Prehltnú»"
+
+#: entrydialog.cpp:64 entrydialog.cpp:202 entrydialog.cpp:548
+msgid "Link"
+msgstr "Odkaz"
+
+#: entrydialog.cpp:65 entrydialog.cpp:204 entrydialog.cpp:552
+msgid "Device"
+msgstr "Zariadenie"
+
+#: entrydialog.cpp:72
+msgid "Type:"
+msgstr "Typ:"
+
+#: entrydialog.cpp:79
+msgid "File Name:"
+msgstr "Súbor:"
+
+#: entrydialog.cpp:94
+msgid "Name:"
+msgstr "Meno:"
+
+#: entrydialog.cpp:109
+msgid "Icon:"
+msgstr "Ikona:"
+
+#: entrydialog.cpp:141
+msgid "Mini Icon:"
+msgstr "Mini:"
+
+#: entrydialog.cpp:149
+msgid "Comment:"
+msgstr "Komentár:"
+
+#: entrydialog.cpp:196 entrydialog.cpp:538
+msgid "Execute"
+msgstr "Vykona» príkaz"
+
+#: entrydialog.cpp:222
+msgid "Execute:"
+msgstr "Vykona»"
+
+#: entrydialog.cpp:228
+msgid "Working Directory:"
+msgstr "V pracovnom prieèinku"
+
+#: entrydialog.cpp:241
+msgid "Run in terminal"
+msgstr "V termináli"
+
+#: entrydialog.cpp:245
+msgid "Terminal Options:"
+msgstr "Parametre term."
+
+#: entrydialog.cpp:310
+msgid "Binary Pattern:"
+msgstr "Binárny vzor:"
+
+#: entrydialog.cpp:325
+msgid "Application to swallow:"
+msgstr "Apl. na zhltnutie"
+
+#: entrydialog.cpp:331
+msgid "Title of application:"
+msgstr "Titulok aplikácie"
+
+#: entrydialog.cpp:337
+msgid "Application to execute on button press:"
+msgstr "Aplikácia na vykonanie po aktivovaní"
+
+#: entrydialog.cpp:367
+msgid "URL:"
+msgstr "URL"
+
+#: entrydialog.cpp:415
+msgid "Read Only"
+msgstr "Iba èíta»"
+
+#: entrydialog.cpp:420
+msgid "Device:"
+msgstr "Názov"
+
+#: entrydialog.cpp:425
+msgid "Mount Point:"
+msgstr "Pripojenie"
+
+#: entrydialog.cpp:430
+msgid "FS Type:"
+msgstr "Typ FS"
+
+#: entrydialog.cpp:435
+msgid "Unmount Icon:"
+msgstr "Ikona pre odpojenie"
+
+#: MenuNameDialog.cpp:21
+msgid "Change Menunames"
+msgstr "Zmeni» názov menu"
+
+#: MenuNameDialogData.cpp:31
+msgid "Change the name of the menus as displayed in kpanel"
+msgstr "Zmeni» názov menu, ako je zobrazené v Paneli"
+
+#: MenuNameDialogData.cpp:36
+msgid "Personal:"
+msgstr "Osobné:"
+
+#: MenuNameDialogData.cpp:41
+msgid "Default:"
+msgstr "©tandardné:"
+
+#~ msgid "! PROTECTED Button !"
+#~ msgstr "! CHRÁNENÉ tlaèítko !"

@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: knu 0.3.4\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: 1998-06-12 08:33 MET DST\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312 )\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "&Traceroute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "域名解析[&R]"
+
+#
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "F&inger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr ""
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"在配置文件中没有命令被允许\n"
+"执行.\n"
+"什么都不能做 ...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "打开新窗口[&N]"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "关闭窗口[&C]"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "选中所有的[&A]"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "清除输出窗口[&L]"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "偏好[&R]..."
+
+# c-format
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "关于 %s[&A]"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "关于 &Qt"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "关于..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr ""
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "主机[&O]:"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "开始![&G]"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "停止[&S]"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"这个命令没有找到.\n"
+"你可以在 编辑->偏好... 菜单中设置它的路径."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"在你的培植文件\n"
+"%s/%src\n"
+"中有问题.\n"
+"在 [%s] 组中 ,\n"
+"不能找到有效的 \"path=\" 条目.\n"
+"\n"
+"请用 编辑->偏好... 菜单来\n"
+"重新配置.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "在路径名中有错误"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "程序"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "路径名[&N]:"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "附加参数[&A]:"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "在配置文件中此命令已经被禁止了."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - 配置"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr ""
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr ""
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr ""
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr ""
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr ""
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr ""
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr ""
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr ""
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "进行域名解析[&N]"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "主机[&T]"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "最大驿站数目[&M]:"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "地址 (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "名字 (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "名字服务器 (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "邮件交换服务器 (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "别名 (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "权力声明开始 (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "任何记录 (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "搜索[&A]:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "默认服务器"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "服务器[&V]:"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "用户[&U]:"
+
+#
+#~ msgid "&Matt's traceroute"
+#~ msgstr "&Matt 的 traceroute"

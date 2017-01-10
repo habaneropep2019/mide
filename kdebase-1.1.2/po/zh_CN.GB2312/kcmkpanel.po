@@ -1,0 +1,234 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkpanel\n"
+"POT-Creation-Date: 1999-01-28 01:15+0100\n"
+"PO-Revision-Date: 1999-03-28 19:34+0800\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312 )\n"
+"Translator: Wang Jian <larkw@263.net>\n"
+
+#: main.cpp:64
+msgid "&Panel"
+msgstr "面板(&P)"
+
+#: main.cpp:70
+msgid "&Desktops"
+msgstr "桌面(&D)"
+
+#: main.cpp:73
+msgid "Disk &Navigator"
+msgstr "磁盘浏览(&N)"
+
+#: main.cpp:79
+msgid "usage: kcmkpanel [-init | {panel,options,desktops,disknav}]\n"
+msgstr "用法: kcmkpanel [-init | {panel,options,desktops,disknav}]\n"
+
+#: main.cpp:113
+msgid "KPanel Configuration"
+msgstr "KPanel 配置"
+
+#: panel.cpp:59
+msgid "Location"
+msgstr "位置"
+
+#: panel.cpp:60
+msgid "&Top"
+msgstr "顶端(&T)"
+
+#: panel.cpp:61
+msgid "&Left"
+msgstr "左边(&L)"
+
+#: panel.cpp:62
+msgid "&Bottom"
+msgstr "底部(&B)"
+
+#: panel.cpp:63
+msgid "&Right"
+msgstr "右边(&R)"
+
+#: panel.cpp:75
+msgid "Taskbar"
+msgstr "任务条"
+
+#: panel.cpp:76
+msgid "&Hidden"
+msgstr "隐藏(&H)"
+
+#
+#: panel.cpp:78
+msgid "T&op"
+msgstr "顶端(&O)"
+
+#: panel.cpp:80
+msgid "Botto&m"
+msgstr "底部(&M)"
+
+#: panel.cpp:82
+msgid "Top/Le&ft"
+msgstr "顶端/左边(&F)"
+
+#: panel.cpp:95
+msgid "Style"
+msgstr "风格"
+
+#: panel.cpp:97
+msgid "T&iny"
+msgstr "极小(&I)"
+
+#: panel.cpp:99
+msgid "&Normal"
+msgstr "普通(&N)"
+
+#: panel.cpp:101
+msgid "L&arge"
+msgstr "大(&L)"
+
+#: desktops.cpp:73
+msgid "&Visible"
+msgstr "可见(&V)"
+
+#: desktops.cpp:82
+msgid "&Width"
+msgstr "宽度(&W)"
+
+#: options.cpp:38
+msgid "Menu Tooltips"
+msgstr "菜单提示"
+
+#
+#: options.cpp:62
+msgid "Show &Menu Tooltips"
+msgstr "显示菜单提示(&M)"
+
+#: options.cpp:84
+msgid "De&lay:"
+msgstr "延迟(&L):"
+
+#: options.cpp:91 options.cpp:160 options.cpp:262
+msgid "Small"
+msgstr "小"
+
+#: options.cpp:98 options.cpp:167 options.cpp:269
+msgid "Large"
+msgstr "大"
+
+#: options.cpp:110
+msgid "Visuals"
+msgstr "视觉效果"
+
+#: options.cpp:144
+msgid "Auto &Hide Panel"
+msgstr "自动隐藏面板(&H)"
+
+#: options.cpp:153 options.cpp:255
+msgid "Delay:"
+msgstr "延迟:"
+
+#: options.cpp:184 options.cpp:286 options.cpp:349
+msgid "Speed:"
+msgstr "速度:"
+
+#: options.cpp:191 options.cpp:293 options.cpp:356
+msgid "Slow"
+msgstr "慢"
+
+#: options.cpp:198 options.cpp:300 options.cpp:363
+msgid "Fast"
+msgstr "快"
+
+#: options.cpp:246
+msgid "Auto Hide &Taskbar"
+msgstr "自动隐藏任务条(&T)"
+
+#: options.cpp:341
+msgid "Animate Show/Hide"
+msgstr "显示/隐藏动画"
+
+#: options.cpp:395
+msgid "Others"
+msgstr "其他"
+
+#: options.cpp:408
+msgid "Personal Menu Entries &First"
+msgstr "个人菜单优先(&F)"
+
+#: options.cpp:416
+msgid "Menu F&olders First"
+msgstr "个人菜单优先(&O)"
+
+#: options.cpp:424
+msgid "&Clock shows time in AM/PM format"
+msgstr "以AM/PM格式显示时间"
+
+#: options.cpp:432
+msgid "Clock shows time in &Internet beats"
+msgstr "以&Internet拍子显示时间"
+
+#: disknav.cpp:38
+msgid "History"
+msgstr "历史"
+
+#: disknav.cpp:62
+msgid "Edit entries: (drag a folder and create a link)"
+msgstr "编辑入口项: (拖放一个文件夹,建立链接)"
+
+#: disknav.cpp:64
+msgid "Edit &Personal..."
+msgstr "编辑个人菜单(&P)..."
+
+#: disknav.cpp:74
+msgid "Edit &Shared..."
+msgstr "编辑公用菜单(&S)..."
+
+#: disknav.cpp:112
+msgid "Max recent folder entries:"
+msgstr "显示最近打开的文件夹的最大数目:"
+
+#: disknav.cpp:121
+msgid "Max recent file entries:"
+msgstr "显示最近打开的文件的最大数目:"
+
+#: disknav.cpp:130
+msgid "Max files in a single folder:"
+msgstr "一个文件夹中的最大文件数:"
+
+#: disknav.cpp:159
+msgid "Show dot files"
+msgstr "显示隐藏文件"
+
+#: disknav.cpp:166
+msgid "Ignore case when sorting"
+msgstr "排序时忽略大小写"
+
+#: disknav.cpp:173
+msgid "Show Shared section"
+msgstr "显示公用部分"
+
+#: disknav.cpp:180
+msgid "Show Personal section"
+msgstr "显示个人部分"
+
+#: disknav.cpp:187
+msgid "Show Recent section"
+msgstr "显示最近访问部分"
+
+#: disknav.cpp:194
+msgid "Show Option entry"
+msgstr "显示选项"
+
+#: disknav.cpp:210
+msgid "Terminal application:"
+msgstr "终端程序:"
+
+#~ msgid "ms"
+#~ msgstr "毫秒"
+
+#~ msgid "Clock"
+#~ msgstr "时钟"
+
+#~ msgid "&24h"
+#~ msgstr "&24小时"
+
+#~ msgid "&12h AM/PM"
+#~ msgstr "&12小时 上午/下午"

@@ -1,0 +1,329 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-12 01:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: main.cpp:84
+msgid "&Appearance"
+msgstr "&Aspetto"
+
+#: main.cpp:92
+msgid "&Background"
+msgstr "&Sfondo"
+
+#: main.cpp:95
+msgid "&Users"
+msgstr "&Utenti"
+
+#: main.cpp:98
+msgid "&Sessions"
+msgstr "S&essioni"
+
+#: main.cpp:103
+msgid ""
+"usage: kdmconfig [-init | {appearance,font,background,sessions,users}]\n"
+msgstr "utilizzo: kdmconfig [-init | {aspetto,font,sfondo,sessioni,utenti}]\n"
+
+#: main.cpp:142
+msgid "KDM Configuration"
+msgstr "Configurazione KDM"
+
+#: main.cpp:152
+msgid ""
+"Sorry, but you don't have read/write\n"
+"permission to the KDM setup file."
+msgstr ""
+"Spiacente, ma non hai i permessi di lettura/scrittura\n"
+"al file di configurazione di KDM."
+
+#: main.cpp:154
+msgid "Missing privileges"
+msgstr "Mancano i permessi"
+
+#: kdm-appear.cpp:70
+msgid "Greeting string:"
+msgstr "Messaggio di saluto:"
+
+#: kdm-appear.cpp:78
+msgid "KDM logo:"
+msgstr "logo di KDM:"
+
+#: kdm-appear.cpp:105 kdm-users.cpp:135
+msgid "Click or drop an image here"
+msgstr "Fai click o inserisci(Drop) un immagine qui"
+
+#: kdm-appear.cpp:110
+msgid "GUI Style:"
+msgstr "Stile GUI:"
+
+#: kdm-appear.cpp:116
+msgid "Motif"
+msgstr "Motif"
+
+#: kdm-appear.cpp:117
+msgid "Windows"
+msgstr "Windows"
+
+#: kdm-appear.cpp:128
+msgid "Language"
+msgstr "Lingua"
+
+#: kdm-appear.cpp:131
+msgid "Language:"
+msgstr "Lingua:"
+
+#: kdm-appear.cpp:167 kdm-appear.cpp:251 kdm-users.cpp:276
+msgid ""
+"There was an error loading the image:\n"
+">"
+msgstr ""
+"C'e` stato un errore nell'apertura dell'immagine:\n"
+">"
+
+#: kdm-appear.cpp:169 kdm-appear.cpp:188 kdm-users.cpp:196
+msgid "<"
+msgstr "<"
+
+#: kdm-appear.cpp:170 kdm-appear.cpp:189 kdm-appear.cpp:254 kdm-users.cpp:197
+#: kdm-users.cpp:279
+msgid "ERROR"
+msgstr "ERRORE"
+
+#: kdm-appear.cpp:186 kdm-users.cpp:194
+msgid ""
+"There was an error saving the image:\n"
+">"
+msgstr ""
+"C'e` stato un errore nel salvataggio dell'immagine:\n"
+">"
+
+#: kdm-appear.cpp:219 kdm-users.cpp:227
+msgid "Sorry, but \n"
+msgstr "Spiacente, ma\n"
+
+#: kdm-appear.cpp:221 kdm-users.cpp:229
+msgid ""
+"\n"
+"does not seem to be an image file"
+msgstr ""
+"\n"
+"Non sembra un file di immagine"
+
+#: kdm-appear.cpp:222 kdm-users.cpp:230
+msgid ""
+"\n"
+"Please use files with these extensions\n"
+msgstr ""
+"\n"
+"Per cortesia , usa files con queste estensioni\n"
+
+#: kdm-appear.cpp:224 kdm-users.cpp:232
+msgid "Improper File Extension"
+msgstr "Estensione file errata"
+
+#: kdm-appear.cpp:253 kdm-users.cpp:278
+msgid ""
+"<\n"
+"It will not be saved..."
+msgstr ""
+"<\n"
+"Non sarà salvato..."
+
+#: kdm-font.cpp:48
+msgid "Select fonts"
+msgstr "Seleziona font"
+
+#        
+#: kdm-font.cpp:50
+msgid "Example"
+msgstr "Esempio"
+
+#: kdm-font.cpp:52
+msgid "Change font..."
+msgstr "Cambia font..."
+
+#: kdm-font.cpp:57
+msgid "Greeting"
+msgstr "Saluto"
+
+#: kdm-font.cpp:58
+msgid "Fail"
+msgstr "Errore"
+
+#: kdm-font.cpp:59
+msgid "Standard"
+msgstr "Standard"
+
+#: kdm-font.cpp:157
+msgid "Greeting font"
+msgstr "Carattere messaggio di benvenuto"
+
+#
+#: kdm-font.cpp:161
+msgid "Fail font"
+msgstr "Carattere messaggio di errore"
+
+#
+#: kdm-font.cpp:165
+msgid "Standard font"
+msgstr "Carattere Standard"
+
+#: kdm-bgnd.cpp:70
+msgid "Preview"
+msgstr "Anteprima"
+
+#: kdm-bgnd.cpp:95
+msgid "Color"
+msgstr "Colore"
+
+#: kdm-bgnd.cpp:101
+msgid "Solid Color"
+msgstr "Tinta unita"
+
+#: kdm-bgnd.cpp:106
+msgid "Horizontal Blend"
+msgstr "Sfumatura Orizontale"
+
+#: kdm-bgnd.cpp:111
+msgid "Vertical Blend"
+msgstr "Sfumatura Verticale"
+
+#: kdm-bgnd.cpp:130
+msgid "Wallpaper"
+msgstr "immagine di sfondo"
+
+#: kdm-bgnd.cpp:171 kdm-sess.cpp:56
+msgid "None"
+msgstr "Nessuno"
+
+#: kdm-bgnd.cpp:176
+msgid "Tile"
+msgstr "Affiancata"
+
+#: kdm-bgnd.cpp:181
+msgid "Center"
+msgstr "Centrata"
+
+#: kdm-bgnd.cpp:186
+msgid "Scale"
+msgstr "In scala"
+
+#: kdm-bgnd.cpp:191
+msgid "TopLeft"
+msgstr "AltoSinistra"
+
+#: kdm-bgnd.cpp:196
+msgid "TopRight"
+msgstr "AltoDestra"
+
+#: kdm-bgnd.cpp:201
+msgid "BottomLeft"
+msgstr "BassoSinistra"
+
+#: kdm-bgnd.cpp:206
+msgid "BottomRight"
+msgstr "BassoDestra"
+
+#: kdm-bgnd.cpp:211
+msgid "Fancy"
+msgstr "Allegro"
+
+#: kdm-users.cpp:48
+msgid "All users"
+msgstr "Tutti gli utenti"
+
+#: kdm-users.cpp:50
+msgid "Selected users"
+msgstr "Solo utenti selezionati"
+
+#: kdm-users.cpp:52
+msgid "No-show users"
+msgstr "Utenti nascosti"
+
+#: kdm-users.cpp:79
+msgid ""
+"Show only\n"
+"selected users"
+msgstr ""
+"Mostra solo\n"
+"utenti selezionati"
+
+#: kdm-users.cpp:86
+msgid ""
+"Show all users\n"
+" but no-show users"
+msgstr ""
+"Mostra tutti gli utenti\n"
+" esclusi quelli nascosti"
+
+#: kdm-users.cpp:97
+msgid "Show users"
+msgstr "Mostra utenti"
+
+#: kdm-users.cpp:103
+msgid "Sort users"
+msgstr "Mostra utenti in ordine alfabetico"
+
+#: kdm-users.cpp:182 kdm-users.cpp:251
+msgid "No user selected"
+msgstr "Nessun utente selezionato"
+
+#: kdm-users.cpp:183 kdm-users.cpp:252
+msgid "Save image as default image?"
+msgstr "Salvo l'immagine come predefinita?"
+
+#: kdm-sess.cpp:52
+msgid "Allow to shutdown"
+msgstr "Autorizza ad eseguire lo shutdown"
+
+#: kdm-sess.cpp:57
+msgid "All"
+msgstr "Tutti"
+
+#: kdm-sess.cpp:58
+msgid "Root Only"
+msgstr "Solo utente root"
+
+#: kdm-sess.cpp:59
+msgid "Console Only"
+msgstr "Solo console"
+
+#: kdm-sess.cpp:63
+msgid "Commands"
+msgstr "Comandi"
+
+#: kdm-sess.cpp:64
+msgid "Shutdown"
+msgstr "Spegnimento"
+
+#: kdm-sess.cpp:70
+msgid "Restart"
+msgstr "Riavvio"
+
+#: kdm-sess.cpp:77
+msgid "Session types"
+msgstr "Tipo sessioni"
+
+#: kdm-sess.cpp:79
+msgid "New type"
+msgstr "Nuova sessione"
+
+#: kdm-sess.cpp:89
+msgid "Available types"
+msgstr "Sessioni disponibili"
+
+#: klangcombo.cpp:133
+msgid "without name!"
+msgstr "senza nome!"
+
+#~ msgid "&Fonts"
+#~ msgstr "&Font"
+
+#~ msgid "Appearance"
+#~ msgstr "Aspetto"

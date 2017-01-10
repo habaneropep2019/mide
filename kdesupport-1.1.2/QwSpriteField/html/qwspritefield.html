@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwSpriteField Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwSpriteField Class Reference</h1><br clear="all">
+<p>
+A QwSpriteField is a 2D graphic area upon which <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects are drawn.
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>Inherited by <a href="qwimagespritefield.html">QwImageSpriteField</a>.
+<p><a href="qwspritefield-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwspritefield.html#a0"><strong>QwSpriteField</strong></a> () </span>
+<li><span class="fn"><a href="qwspritefield.html#a1"><strong>QwSpriteField</strong></a> ( int w, int h, int chunksize=16, int maxclusters=100 ) </span>
+<li><span class="fn">virtual <a href="qwspritefield.html#a2"><strong>~QwSpriteField</strong></a> () </span>
+<li><span class="fn">void <a href="qwspritefield.html#a3"><strong>update</strong></a> () </span>
+<li><span class="fn">virtual void <a href="qwspritefield.html#a4"><strong>resize</strong></a> ( int width, int height ) </span>
+<li><span class="fn">int <a href="qwspritefield.html#a5"><strong>width</strong></a> () const</span>
+<li><span class="fn">int <a href="qwspritefield.html#a6"><strong>height</strong></a> () const</span>
+<li><span class="fn">int <a href="qwspritefield.html#a7"><strong>chunkSize</strong></a> () const</span>
+<li><span class="fn">void <a href="qwspritefield.html#a8"><strong>retune</strong></a> ( int chunksize, int maxclusters ) </span>
+<li><span class="fn">Pix <a href="qwspritefield.html#a9"><strong>all</strong></a> () </span>
+<li><span class="fn">Pix <a href="qwspritefield.html#b0"><strong>topAt</strong></a> ( int x, int y ) </span>
+<li><span class="fn">Pix <a href="qwspritefield.html#b1"><strong>lookIn</strong></a> ( int x, int y, int w, int h ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#b2"><strong>next</strong></a> ( Pix &amp; ) const</span>
+<li><span class="fn">void <a href="qwspritefield.html#b3"><strong>end</strong></a> ( Pix &amp; p ) const</span>
+<li><span class="fn">QwSpriteFieldGraphic* <a href="qwspritefield.html#b4"><strong>at</strong></a> ( Pix p ) const</span>
+<li><span class="fn">bool <a href="qwspritefield.html#b5"><strong>exact</strong></a> ( Pix p ) const</span>
+<li><span class="fn">void <a href="qwspritefield.html#b6"><strong>protectFromChange</strong></a> ( Pix p ) </span>
+<li><span class="fn">bool <a href="qwspritefield.html#b7"><strong>sameChunk</strong></a> ( int x1, int y1, int x2, int y2 ) const</span>
+<li><span class="fn">void <a href="qwspritefield.html#b8"><strong>setChangedChunk</strong></a> ( int i, int j ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#b9"><strong>setChangedChunkContaining</strong></a> ( int x, int y ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#c0"><strong>addGraphicToChunk</strong></a> ( QwSpriteFieldGraphic *, int i, int j ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#c1"><strong>removeGraphicFromChunk</strong></a> ( QwSpriteFieldGraphic *, int i, int j ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#c2"><strong>addGraphicToChunkContaining</strong></a> ( QwSpriteFieldGraphic *, int x, int y ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#c3"><strong>removeGraphicFromChunkContaining</strong></a> ( QwSpriteFieldGraphic *, int x, int y ) </span>
+<li><span class="fn">void* <a href="qwspritefield.html#c4"><strong>listAtChunkTopFirst</strong></a> ( int i, int j ) const</span>
+<li><span class="fn">void* <a href="qwspritefield.html#c5"><strong>allList</strong></a> () </span>
+<li><span class="fn">void <a href="qwspritefield.html#d0"><strong>addView</strong></a> ( QwAbsSpriteFieldView * ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#d1"><strong>removeView</strong></a> ( QwAbsSpriteFieldView * ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#d2"><strong>updateInView</strong></a> ( QwAbsSpriteFieldView *, const QRect &amp; ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#d3"><strong>addGraphic</strong></a> ( QwSpriteFieldGraphic * ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#d4"><strong>removeGraphic</strong></a> ( QwSpriteFieldGraphic * ) </span>
+</ul>
+<h2>Static Public Members</h2>
+<ul>
+<li><span class="fn">void <a href="qwspritefield.html#e1"><strong>setPositionPrecision</strong></a> ( int downshifts ) </span>
+<li><span class="fn">int <a href="qwspritefield.html#e2"><strong>positionPrecision</strong></a> () </span>
+<li><span class="fn">int <a href="qwspritefield.html#e3"><strong>world_to_x</strong></a> ( int i ) </span>
+<li><span class="fn">int <a href="qwspritefield.html#e4"><strong>x_to_world</strong></a> ( int i ) </span>
+</ul>
+<h2>Protected Members</h2>
+<ul>
+<li><span class="fn">virtual void <a href="qwspritefield.html#d5"><strong>drawBackground</strong></a> ( QPainter &amp;, const QRect &amp; area ) </span>
+<li><span class="fn">virtual void <a href="qwspritefield.html#d6"><strong>drawForeground</strong></a> ( QPainter &amp;, const QRect &amp; area ) </span>
+<li><span class="fn">void <a href="qwspritefield.html#d7"><strong>forceRedraw</strong></a> ( const QRect &amp; ) </span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+A QwSpriteField is a 2D graphic area upon which <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects are drawn.
+<p>
+The QwSpriteField and related classes (primarily <a href="qwspritefieldview.html">QwSpriteFieldView</a> and
+<a href="qwsprite.html">QwSprite</a>, but also the other sprite abstractions)
+provide for multiple concurrent views of a 2D area
+containing moving graphical objects.
+<p>The QwSpriteField is also an indexing mechanism to the sprites it contains,
+providing 2D-area-based iteration and pixelwise collision detection.
+<p>Most of the methods in QwSpriteField are mainly used by the existing
+QwSpriteFieldGraphic classes, so will only be interesting if you intend
+to add a new type of QwSpriteFieldGraphic class.  The methods of primary
+interest to the typical user are, in approximate
+order of decreasing usefulness:
+<p><ul>
+<li> <a href="qwspritefield.html">QwSpriteField</a> (int w, int h, int chunksize, int maxclusters) 
+<li> void <a href="qwspritefield.html#a3">update</a> () 
+<li> int <a href="qwspritefield.html#a5">width</a> () const 
+<li> int <a href="qwspritefield.html#a6">height</a> () const 
+<li> Pix <a href="qwspritefield.html#b0">topAt</a> (int x, int y) 
+<li> Pix <a href="qwspritefield.html#b1">lookIn</a> (int x, int y, int w, int h) 
+<li> QwSpriteFieldGraphic* <a href="qwspritefield.html#b4">at</a> (Pix) const 
+<li> bool <a href="qwspritefield.html#b5">exact</a> (Pix) const 
+<li> void <a href="qwspritefield.html#b2">next</a> (Pix&) 
+<li> void <a href="qwspritefield.html#b3">end</a> (Pix&) 
+<li> void <a href="qwspritefield.html#b6">protectFromChange</a> (Pix) 
+<li> virtual void <a href="qwspritefield.html#d5">drawBackground</a> (QPainter&, const QRect& area) 
+<li> virtual void <a href="qwspritefield.html#d6">drawForeground</a> (QPainter&, const QRect& area) 
+</ul>
+<p>This class provides for very high redraw efficiency.  The properties
+of the mechanism are:
+<p><ul>
+<li>There is no size or number limitation on sprites (except memory).
+<li>QwSprites are fairly light-weight (small in memory size).
+<li>QwVirtualSprites are very light-weight (small in memory size).
+<li>Collision detection is efficient.
+<li>Finding sprites in an area is efficient.
+<li>Only moving sprites are redrawn.
+<li>The number of unmoving sprites on the field has little effect.
+<li>Redraws can be batched (see <a href="qwspritefield.html#a3">update</a>)
+<li>Only visible areas (those in the visible part of a QwSpriteFieldView) are redrawn.
+</ul>
+<p>For example, it is quite feasible to have <em>thousands</em> of sprites used to
+create background scenery, and even animate pieces of that scenery occasionally.
+It is less feasible to have views where the entire scene is in continous
+motion, such as a continously scrolling background.  You will be suprised
+how little animation is required to make a scene look `alive'.
+<p>The various sprite abstractions are:
+<p><ul>
+<dt><b>QwSprite</b>
+<dd>A sprite with a position given by int coordinates.
+<dt><b><a href="qwrealsprite.html">QwRealSprite</a></b>
+<dd>A sprite with a position given by double coordinates.
+<dt><b><a href="qwpositionedsprite.html">QwPositionedSprite</a>&lt;COORD&gt;</b>
+<dd>A sprite with a position given by COORD coordinates.  This
+is a template class.
+<dt><b><a href="qwvirtualsprite.html">QwVirtualSprite</a></b>
+<dd>A sprite with a position determined dynamically.
+</ul>
+<p>QwVirtualSprite is the base class, from which is derived QwPositionedSprite,
+and from that is derived the QwSprite and QwRealSprite classes.  This hierarchy
+provides you with multiple points at which to adapt to your requirements.
+<p>For the purpose of simplified description, we use the term sprite to refer
+to all these and derived classes.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a0"></a>QwSpriteField::QwSpriteField ()</h3>
+<p>Create a QwSpriteField with no size, and default chunksize/maxclusters.
+You will want to call <a href="qwspritefield.html#a4">resize</a>(int,int) at some time after creation.
+<h3 class="fn"><a name="a1"></a>QwSpriteField::QwSpriteField ( int w, int h, int chunksze=16, int maxclust=100 )</h3>
+<p>Constructs a QwSpriteField with size <code>w</code> wide and <code>h</code> high, measured
+in world coordinates (by default, world coordinates equal pixel coordinates).
+<p>The values <code>maxclusters</code> and <code>chunksize</code> effect the grouping heuristics
+used when redrawing the QwSpriteField.
+<p><code>chunksize</code> is the size of square chunk used to break up the
+QwSpriteField into area to be considered for redrawing.  It
+should be about the average size of graphics in the QwSpriteField.
+Chunks too small increase the amount of calculation required
+when drawing.  Chunks too large increase the amount of drawing
+that is needed.
+<p><code>maxclusters</code> is the number of rectangular groups of chunks that
+will be separately drawn.  If the QwSpriteField has a large number
+of small, dispersed graphics, this should be about that number.
+The more clusters the slower the redraw, but also the bigger
+clusters are the slower the redraw, so a balance is needed.
+Testing reveals that a large number of clusters is almost
+always best.
+<h3 class="fn"><a name="a2"></a>QwSpriteField::~QwSpriteField () <code>[virtual]</code></h3>
+<p>Destruct the field.  Does nothing.  Does <em>not</em> destroy <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects in
+the field.
+<h3 class="fn">void <a name="d3"></a>QwSpriteField::addGraphic ( <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> * graphic )</h3>
+<p>(internal)
+This method adds an element to the list of <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects
+in this QwSpriteField.  The QwSpriteFieldGraphic class calls this, so you
+should not need it.
+<h3 class="fn">void <a name="c0"></a>QwSpriteField::addGraphicToChunk ( <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> * g, int x, int y )</h3>
+<p>This method adds a <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> to the list of those which need to
+be drawn if the given chunk is redrawn.  Like SetChangedChunk
+and SetChangedChunkContaining, this method marks the chunk as `dirty'.
+<h3 class="fn">void <a name="c2"></a>QwSpriteField::addGraphicToChunkContaining ( <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> * g, int x, int y )</h3>
+<p>This method adds a <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> to the list of those which need to
+be drawn if the chunk containing the given pixel is redrawn.
+Like SetChangedChunk and SetChangedChunkContaining, this method
+marks the chunk as `dirty'.
+<h3 class="fn">void <a name="d0"></a>QwSpriteField::addView ( <a href="qwabsspritefieldview.html">QwAbsSpriteFieldView</a> * view )</h3>
+<p>For internal use only.
+<h3 class="fn">Pix <a name="a9"></a>QwSpriteField::all ()</h3>
+<p>Provides for traversal of all <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects in the field,
+regardless of whether they are visible, on the field, or anything else.
+No particular ordering it given.  You should iterate to the end of the
+list, or use <a href="qwspritefield.html#b3">end</a>(Pix&).
+<h3 class="fn">void* <a name="c5"></a>QwSpriteField::allList ()</h3>
+<p>Returns the sorted list of all graphics.  You should
+not need this method - it is used internally for iteration.
+<p>See also:  <a href="qwspritefield.html#a9">QwSpriteField::all</a>().
+<h3 class="fn"><a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>* <a name="b4"></a>QwSpriteField::at ( Pix p ) const</h3>
+<p>Returns the <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> for a given point in a traversal.
+<p>See also:  <a href="qwspritefield.html#b0">topAt</a>(int,int) and <a href="qwspritefield.html#b1">lookIn</a>(int,int,int,int).
+<h3 class="fn">int <a name="a7"></a>QwSpriteField::chunkSize () const</h3>
+<p>Returns the chunk size of the sprite field as set at construction.
+<p>See also:  <a href="qwspritefield.html#a0">QwSpriteField::QwSpriteField</a>(...).
+<h3 class="fn">void <a name="d5"></a>QwSpriteField::drawBackground ( QPainter &amp; painter, const QRect &amp; area ) <code>[virtual protected]</code></h3>
+<p>This method is called for all updates of the QwSpriteField.  It renders
+any background graphics.  The default is to simply clear it in the
+background colour to the default painter background (white).  You may
+also override this method to initialize the QPainter which will be passed
+to the draw method of all <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects.
+<p>Note that you should not put <em>dynamic</em> graphics on this background.
+If the graphics for a region change, call <a href="qwspritefield.html#d7">forceRedraw</a>(const QRect&).
+Such a change should be done only very occasionally, as the redraw
+is inefficient.  See the main notes for this class for a discussion
+of redraw efficiency.
+<p>See also:  <a href="qwspritefield.html#d7">forceRedraw</a>(QRect&).
+<h3 class="fn">void <a name="d6"></a>QwSpriteField::drawForeground ( QPainter &amp;, const QRect &amp; ) <code>[virtual protected]</code></h3>
+<p>This method is called for all updates of the QwSpriteField.  It renders
+any foreground graphics.  In general, it is more efficient to use additional
+<a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects on the QwSpriteField rather than adding rendering
+at this point, as this method is <em>always</em> called, whereas
+QwSpriteFieldGraphic objects are only redrawn if they are in the area of change.
+<p>The same warnings regarding change apply to this method
+as given in <a href="qwspritefield.html#d5">drawBackground</a>(QPainter&, const QRect&).
+<p>The default is to do nothing.
+<p>See also:  <a href="qwspritefield.html#d7">forceRedraw</a>(QRect&).
+<h3 class="fn">void <a name="b3"></a>QwSpriteField::end ( Pix &amp; p ) const</h3>
+<p>This should be called if you want to terminate a traversal without
+looking at all results.  It frees memory used for the iteration.
+<h3 class="fn">bool <a name="b5"></a>QwSpriteField::exact ( Pix p ) const</h3>
+<p>Test to see if the <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> which <a href="qwspritefield.html#b4">at</a>(Pix) indicates is
+in a traversal truly <em>is</em> in that traversal.
+<p>The QwSpriteFieldGraphic returned by at(Pix) is very approximate, but is found
+very efficiently.  It should be used as a first-cut to ignore
+QwSpriteFieldGraphic objects you are not interested in.
+<h3 class="fn">void <a name="d7"></a>QwSpriteField::forceRedraw ( const QRect &amp; area ) <code>[protected]</code></h3>
+<p>Forces the given area to be redrawn.  This is useful when the foreground
+or background are changed.
+<h3 class="fn">int <a name="a6"></a>QwSpriteField::height () const</h3>
+<p>Returns the height of the sprite field, in world coordinates.
+<h3 class="fn">void* <a name="c4"></a>QwSpriteField::listAtChunkTopFirst ( int i, int j ) const</h3>
+<p>Returns the sorted list of chunks at the given chunk.  You should
+not need this method - it is used internally for collision detection.
+<p>See also:  <a href="qwspritefield.html#b0">QwSpriteField::topAt</a>(int,int).
+<h3 class="fn">Pix <a name="b1"></a>QwSpriteField::lookIn ( int x, int y, int w, int h )</h3>
+<p><a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects in an <em>area</em> can be traversed using:
+<p><pre>   for (Pix p=lookIn(x,y,w,h); p; next(p)) {
+    <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>* the_graphic = at(p);
+    ...
+    }
+</pre>
+<p>This traverses <em>at least</em> all the graphics in the given rectangle
+<em>at least</em> once.
+<p>See also:  <a href="qwspritefield.html#b0">topAt</a>(int,int) and <a href="qwspritefield.html#b4">at</a>(Pix).
+<h3 class="fn">void <a name="b2"></a>QwSpriteField::next ( Pix &amp; p ) const</h3>
+<p>Look to the next <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> in the traversal.
+<p>See also:  <a href="qwspritefield.html#b0">topAt</a>(int,int) and <a href="qwspritefield.html#b1">lookIn</a>(int,int,int,int).
+<h3 class="fn">int <a name="e2"></a>QwSpriteField::positionPrecision () <code>[static]</code></h3>
+<p>Returns the position precision for all coordinates in the QwSpriteField.
+<p>See also:  <a href="qwspritefield.html#e1">setPositionPrecision</a>(int).
+<h3 class="fn">void <a name="b6"></a>QwSpriteField::protectFromChange ( Pix p )</h3>
+<p>During the traversal, the QwSpriteField must not be modified.
+If you wish to modify it, call this method on the
+Pix.  This will allow the QwSpriteField to be subsequently
+modified without damaging the list of hits.
+<h3 class="fn">void <a name="d4"></a>QwSpriteField::removeGraphic ( <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> * graphic )</h3>
+<p>(internal)
+This method removes an element from the list of <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects
+in this QwSpriteField.  The QwSpriteFieldGraphic class calls this, so you
+should not need it.
+<h3 class="fn">void <a name="c1"></a>QwSpriteField::removeGraphicFromChunk ( <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> * g, int x, int y )</h3>
+<p>This method removes a <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> from the list of those which need to
+be drawn if the given chunk is redrawn.  Like SetChangedChunk
+and SetChangedChunkContaining, this method marks the chunk as `dirty'.
+<h3 class="fn">void <a name="c3"></a>QwSpriteField::removeGraphicFromChunkContaining ( <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> * g, int x, int y )</h3>
+<p>This method removes a <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> from the list of those which need to
+be drawn if the chunk containing the given pixel is redrawn.
+Like SetChangedChunk and SetChangedChunkContaining, this method
+marks the chunk as `dirty'.
+<h3 class="fn">void <a name="d1"></a>QwSpriteField::removeView ( <a href="qwabsspritefieldview.html">QwAbsSpriteFieldView</a> * view )</h3>
+<p>For internal use only.
+<h3 class="fn">void <a name="a4"></a>QwSpriteField::resize ( int w, int h ) <code>[virtual]</code></h3>
+<p>Change the size of the QwSpriteField. This is a slow operation.
+<h3 class="fn">void <a name="a8"></a>QwSpriteField::retune ( int chunksze, int mxclusters )</h3>
+<p>Change the efficiency tuning parameters.  This is a slow operation.
+<h3 class="fn">bool <a name="b7"></a>QwSpriteField::sameChunk ( int x1, int y1, int x2, int y2 ) const</h3>
+<p>Tells if the points (x1,y1) and (x2,y2) are within the same chunk.
+<h3 class="fn">void <a name="b8"></a>QwSpriteField::setChangedChunk ( int x, int y )</h3>
+<p>This method to informs the QwSpriteField that a given chunk is
+`dirty' and needs to be redrawn in the next Update.
+<p>(x,y) is a chunk location.
+<p>The sprite classes call this.  Any new derived class
+of <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> must do so too.  SetChangedChunkContaining can be used
+instead.
+<h3 class="fn">void <a name="b9"></a>QwSpriteField::setChangedChunkContaining ( int x, int y )</h3>
+<p>This method to informs the QwSpriteField that the chunk containing
+a given pixel is `dirty' and needs to be redrawn in the next Update.
+<p>(x,y) is a pixel location.
+<p>The sprite classes call this.  Any new derived class
+of <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> must do so too. SetChangedChunk can be used instead.
+<h3 class="fn">void <a name="e1"></a>QwSpriteField::setPositionPrecision ( int downshifts ) <code>[static]</code></h3>
+<p>The precision of <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> positions (and collisions - see sprite) can
+be set.  A positive precision means world co-ordinates will be
+bit-shifted that many places higher.  So, if the precision is 1,
+world co-ordinate (50,100) is the pixel co-ordinate (25,50); for
+precision 3, (50,100) is pixel (6,12).  Negative positions are
+also allowed, and they imply that world-coordinates are <em>lower</em>
+resolution than pixel co-ordinates. IF ANYONE FINDS A USE FOR NEGATIVES,
+LET ME KNOW, OR I MIGHT REMOVE IT.
+<p>By default, pixel and world coordinates are the same.
+<h3 class="fn">Pix <a name="b0"></a>QwSpriteField::topAt ( int x, int y )</h3>
+<p><a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> objects at a <em>point</em> can be traversed from top
+to bottom using:
+<p><pre>        for (Pix p=topAt(x,y); p; next(p)) {
+        <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>* the_graphic = at(p);
+        if (you_are_interested_in_collisions_with(the_graphic) &amp;&amp; exact(p)) {
+                // Collision!
+                ...
+            }
+        }
+</pre>
+<p>This traverses <em>at least</em> all the graphics at pixel position (x,y).
+<p>The QwSpriteFieldGraphic returned by <a href="qwspritefield.html#b4">at</a>(Pix) is very approximate, but is found
+very efficiently.  It should be used as a first-cut to ignore
+QwSpriteFieldGraphic objects you are not interested in.
+<p><a href="qwspritefield.html#b5">exact</a>(Pix) should be used to further
+examine the QwSpriteFieldGraphic, as depicted above.
+<p>During the traversal, the QwSpriteField must not be modified unless
+<a href="qwspritefield.html#b6">protectFromChange</a>(Pix) is first called on the iterator.  This is for
+efficiency reasons (protecting the list of hits requires extra work).<p><strong>Warning:</strong> Currently, the collision model is not quite correct at this
+level of abstraction, because it cannot check collision exactness
+beyond the rectangular level.  This will change in futures versions.
+For now, you should perhaps use the <a href="qwvirtualsprite.html#b4">QwVirtualSprite::neighbourhood</a>(...)
+methods instead.
+<p>See also:  <a href="qwspritefieldgraphic.html#b3">QwSpriteFieldGraphic::rtti</a>().
+<h3 class="fn">void <a name="a3"></a>QwSpriteField::update ()</h3>
+<p>This method causes all <a href="qwabsspritefieldview.html">QwAbsSpriteFieldView</a> objects currently viewing this
+QwSpriteField to be refreshed in all areas of the QwSpriteField which have
+changed since the last call to this method.
+<p>In a continuously animated QwSpriteField, this method should be called at
+a regular rate.  The best way to accomplish this is to use the QTimer
+class of the Qt toolkit, or the startTimer method of QObject.  It would
+not be useful to call this method excessively (eg. whenever a sprite
+is moved) as the efficiency of the system is derived from a clustering
+and bulk-update mechanism.
+<p>Depending on how you use QwSpriteField and on the hardware, you may get
+improved smoothness by calling qApp->syncX()
+after this method.
+<h3 class="fn">void <a name="d2"></a>QwSpriteField::updateInView ( <a href="qwabsspritefieldview.html">QwAbsSpriteFieldView</a> * view, const QRect &amp; area )</h3>
+<p>For internal use only.
+<h3 class="fn">int <a name="a5"></a>QwSpriteField::width () const</h3>
+<p>Returns the width of the sprite field, in world coordinates.
+<h3 class="fn">int <a name="e3"></a>QwSpriteField::world_to_x ( int i ) <code>[static]</code></h3>
+<p>Convert a coordinate from world to pixel coordinates.
+<p>See also:  <a href="qwspritefield.html#e1">setPositionPrecision</a>(int).
+<h3 class="fn">int <a name="e4"></a>QwSpriteField::x_to_world ( int i ) <code>[static]</code></h3>
+<p>Convert a coordinate from pixel to world coordinates.
+<p>See also:  <a href="qwspritefield.html#e1">setPositionPrecision</a>(int).
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

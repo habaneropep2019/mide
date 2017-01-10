@@ -1,0 +1,81 @@
+
+How to make KLJetTool on a RedHat systems
+=========================================
+
+This file describes the steps necessary to get LJetTool to 
+work on a RedHat Linux system. What needs to be done is to
+teach the printing subsystem how to deal with PJL files that
+are produced by the LJetTool and send to the printer. Unfortunately
+the RedHat Linux system does not recognize PJL out of the box,
+and tries to do weird things with it, rather then sending it
+directly and unmodified to the printer. Therefore we have to 
+teach it how to deal with a PJL file.
+
+I assume other distributions with an equally 'sophisticated'
+printer subsytem such as the RedHat system might also need 
+to be taught how to deal with PJL ( Printer Job Language ) 
+files that are send to the printer.
+
+On a redhat system the script /var/spool/lpd/lp/filter
+is invoked from /etc/printcap, each time something is printed
+using the command 'lpr'. 
+
+
+(A user says: For RedHat 4.2 /etc/magic is now /usr/lib/magic and 
+              /var/spool/lpd/lp/filter is now
+              /usr/lib/rhs/rhs-printfilters/master-filter)
+	      
+The filter runs the program
+'file' on the file to be printed and 'file' will tell the
+'filter' script what sort of document we are dealing with.
+Then depending on the type of the document the right program
+is run to produce output in a format that the printer can
+understand. The program 'file' uses the file /etc/magic
+to determine the type of the document to be printed ( e.g 
+PostScript, dvi, text etc )
+
+For example, if I print a postscript document, myfile.ps, file
+tells the 'filter' script that we are dealing with a postscript
+file and 'filter' will run ghostscript first to convert myfile.ps
+into pcl 5, a language my laserjet understands, before sending the
+file to the printer. 
+
+Unfortunately a RedHat system doesn't recognize a PJL file and
+tries to do wrong things with the PJL file rather than sending 
+it out to the printer unmodified. 
+
+In order to get LJetTool to work on a RedHat system we only need
+to do two things:
+
+a) Add a line to the /etc/magic file so that the program 'file'
+   will correctly recognize a PJL file as a PJL file.
+   
+   Simply add the following two lines to your /etc/magic file.
+   Where in the file /etc/magic add these lines doesn't really matter.
+   
+# HP Printer Job Language, Bernd Wuebben (wuebben@math.cornell.edu)
+0	string		\033%-12345X	 HP PJL printer commands
+
+
+b) teach the /var/spool/lpd/lp/filter script what to do with PJL
+   files. This can be done by adding the following two lines 
+   to the 'filter' script
+
+   *pjl* )
+                                              startpnt="INPUT-to-prdata";;
+					      
+   If you have a look at the filter script it will be clear where to
+   add it ( at about line 220 in the version I have )
+   
+I have included a copy of my filter script as well as my /etc/magic. You
+can use them if you have trouble making the above outlined modifications.
+
+I would love to received instructions for what ( if anything ) needs
+to be done to get LJetTool to work on other systems who use an elaborate
+printing filter subsystem. 
+
+Best Regards,
+Bernd Wuebben
+wuebben@kde.org
+
+   

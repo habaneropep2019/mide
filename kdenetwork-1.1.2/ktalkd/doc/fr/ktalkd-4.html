@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Le manuel de ktalkd: Utilisation</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, ktalkd, talk, otalk, ntalk, discussion, avis">
+<META NAME="description" CONTENT="Le manuel de KTalkD">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-5.html">Page suivante</A>
+<A HREF="ktalkd-3.html">Page précédente</A>
+<A HREF="ktalkd.html#toc4">Table des matières</A>
+</P>
+<H3><A NAME="s4">4. Utilisation</A></H3>
+
+<P>
+<P>Il n'y a pas beaucoup à dire au sujet de ktalkd : c'est un démon. Il ne possède pas d'interface utilisateur.
+<P>
+<P>La boîte de dialogue de l'avis de discussion est triviale: répondre ou ignorer.
+<P>
+<P>Le dialogue de configuration devrait être plutôt trivial, mise à part le réglage de la transmission vers 
+un autre utilisateur (voire même un autre site).
+<P>
+<H3><A NAME="ss4.1">4.1 Choix d'une méthode de transmission</A>
+</H3>
+
+<P>Aucune d'entre elle n'est parfaite, elles ont toutes leurs avantages (+) et leurs inconvénients (-).
+<P>
+<P><B>FWA</B> : Transmission de l'avis seulement. Connexion directe. Déconseillé.
+<UL>
+<LI>       (+) Vous savez qui est l'appelant, mais</LI>
+<LI>       (-) L'appelant devra répondre à un avis provenant de vous. Ennuyeux.</LI>
+<LI>       (-) Ne pas utiliser si vous avez un répondeur sur votre emplacement distant.
+(Le répondeur ne peut pas afficher un avis, cela serait troubalnt!)</LI>
+</UL>
+<P><B>FWR</B> : Transmission de toutes les requêtes, en changeant l'information quand c'est nécessaire.
+Connexion directe.
+<UL>
+<LI>       (+) L'appelant ne saura pas que vous êtes ailleurs, mais</LI>
+<LI>       (-) Vous ne savez pas réellement qui est l'appelant - vous ne connaissez que son nom d'utilisateur,
+(vous pourriez voir "message provenant de Wintalk@my_host")</LI>
+</UL>
+<P><B>FWT</B> : Transmission de toutes les requêtes et acceptation de l'appel. Pas de connexion directe.
+<UL>
+<LI>       (+) Comme ci-dessus, mais fonctionne également si vous et l'appelant n'êtes pas
+en contact direct l'un avec l'autre (par exemple si vous êtes séparés par un pare-feu).</LI>
+<LI>       (+) Vous savez qui vous parle réellement quand vous acceptez l'appel</LI>
+<LI>       (-) Mais comme dans le cas précédent, vous ne voyez pas le nom de sa machine dans l'avis</LI>
+</UL>
+<P>Pour résumer, utilisez <B>FWT</B> si vous voulez l'utiliser derrière un pare-feu (et si ktalkd
+a accès aux deux réseaux), et <B>FWR</B> dans le cas contraire.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-5.html">Page suivante</A>
+<A HREF="ktalkd-3.html">Page précédente</A>
+<A HREF="ktalkd.html#toc4">Table des matières</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

@@ -1,0 +1,155 @@
+# KDEUTILS translation to Slovenian language.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Marko Samastur <markos@elite.org>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: klpq\n"
+"POT-Creation-Date: 1999-04-02 02:22+0200\n"
+"PO-Revision-Date: 1999-07-17 00:30 MEST\n"
+"Last-Translator: Marko Samastur <markos@elite.org>\n"
+"Language-Team: Slovenian <ftp://ftp.lugos.si/pub/lugos/localization/kde-sl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:178
+msgid "Sorry, can't open your printcap file."
+msgstr "Datoteke printcap ¾al ni mo¾no odpreti."
+
+#: main.cpp:183
+msgid "Sorry, unable to parse your printcap."
+msgstr "Datoteke printcap ¾al ni mo¾no razèleniti."
+
+#: main.cpp:184
+msgid "Please email your printcap to Christoph.Neerfeld@home.ivm.de"
+msgstr "Prosim po¹ljite svoj printcap na naslov Christoph.Neerfeld@home.ivm.de"
+
+#: klpq.cpp:90
+msgid "Printer"
+msgstr "Tiskalnik"
+
+#: klpq.cpp:95
+msgid "Queuing"
+msgstr "Èakajoè"
+
+#: klpq.cpp:100
+msgid "Printing"
+msgstr "Tiskam"
+
+#: klpq.cpp:105
+msgid "Update"
+msgstr "Obnovi"
+
+#: klpq.cpp:125
+msgid "Rank"
+msgstr "Rang"
+
+#: klpq.cpp:126
+msgid "Owner"
+msgstr "Lastnik"
+
+#: klpq.cpp:127
+msgid "Job"
+msgstr "Opravilo"
+
+#: klpq.cpp:129
+msgid "Size"
+msgstr "Velikost"
+
+#: klpq.cpp:150 klpq.cpp:228
+msgid "Make Top"
+msgstr "Postavi na vrh"
+
+#: klpq.cpp:160
+msgid "Auto"
+msgstr "Samodejno"
+
+#: klpq.cpp:204
+msgid "&Auto update"
+msgstr "S&amodejno obnovi"
+
+#: klpq.cpp:205
+msgid "&Spooler"
+msgstr "&Èakalnik"
+
+#: klpq.cpp:208
+#, c-format
+msgid ""
+"Klpq %s\n"
+"(C) by Christoph Neerfeld\n"
+"chris@kde.org"
+msgstr ""
+"Klpq %s\n"
+"(C) od Christoph Neerfeld\n"
+"chris@kde.org"
+
+#: klpq.cpp:213
+msgid "&Config"
+msgstr "&Nastavi"
+
+#: klpq.cpp:404
+#, c-format
+msgid "Do you really want to remove job No %d"
+msgstr "Naj res odstranimo opravilo ¹t. %d"
+
+#: klpq.cpp:424
+#, c-format
+msgid ""
+"Do you really want to move job No\n"
+"%d\n"
+"on top of queue"
+msgstr ""
+"Ali resnièno ¾elite prestaviti opravilo ¹t.\n"
+"%d\n"
+"na vrh vrste?"
+
+#: klpq.cpp:572 klpq.cpp:578 klpq.cpp:593
+msgid "Permission denied"
+msgstr "Dovoljenje zavrnjeno"
+
+#: klpq.cpp:573 klpq.cpp:579 klpq.cpp:594
+msgid ""
+"This is a privileged command\n"
+"and you do not have permission to execute it."
+msgstr ""
+"To je priviligiran ukaz in vi\n"
+"nimate potrebnih dovoljenj, da bi ga izvedli."
+
+#: ConfAutoUpdate.cpp:10
+msgid "Configure Auto Update"
+msgstr "Nastavi samodejno obnavljanje"
+
+#: ConfAutoUpdateData.cpp:17
+msgid "Update frequency in seconds:"
+msgstr "Frekvenca obnavljanja v sekundah:"
+
+#: klpqspooler.cpp:199 klpqspooler.cpp:269
+msgid "Can't find your lpc program !"
+msgstr "Programa lpc ni mo¾no najti!"
+
+#: klpqspooler.cpp:200 klpqspooler.cpp:270
+msgid ""
+"Sorry, I can't find your lpc program.\n"
+"Please check the configuration under Config->Spooler."
+msgstr ""
+"Programa lpc ¾al ni mo¾no najti.\n"
+"Prosim preverite nastavitve pod Nastavi->Èakalnik."
+
+#: FirstStart.cpp:21 SpoolerConfig.cpp:21 SpoolerConfigData.cpp:151
+msgid "Select your spooling system"
+msgstr "Izberite va¹ èakalni sistem"
+
+#: FirstStartData.cpp:42
+msgid ""
+"Please select the spooling system you use. Most systems use the BSD spooler. "
+"So if you don't know which spooler is installed on your system, BSD is "
+"probably a good choice."
+msgstr ""
+"Prosim izberite sistem tiskanja, ki ga uporabljate. Veèina sistemov "
+"uporablja sistem BSD. Èe ne veste, kateri sistem imate name¹èen, je BSD "
+"verjetno dobra izbira."
+
+#: SpoolerConfigData.cpp:99
+msgid "Paths of spooling commands:"
+msgstr "Poti do ukazov èakalnika:"

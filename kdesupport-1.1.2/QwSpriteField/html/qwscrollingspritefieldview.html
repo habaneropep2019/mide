@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwScrollingSpriteFieldView Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwScrollingSpriteFieldView Class Reference</h1><br clear="all">
+<p>
+A QWidget which views a <a href="qwspritefield.html">QwSpriteField</a>, and has scrollbars.
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>
+Inherits QWidget and <a href="qwabsspritefieldview.html">QwAbsSpriteFieldView</a>.
+<p><a href="qwscrollingspritefieldview-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwscrollingspritefieldview.html#a0"><strong>QwScrollingSpriteFieldView</strong></a> ( QwSpriteField * viewing=0, QWidget * parent=0, const char * name=0, WFlags f=0 ) </span>
+<li><span class="fn"><a href="qwscrollingspritefieldview.html#a1"><strong>~QwScrollingSpriteFieldView</strong></a> () </span>
+<li><span class="fn">virtual QRect <a href="qwscrollingspritefieldview.html#a2"><strong>viewArea</strong></a> () const</span>
+<li><span class="fn">virtual bool <a href="qwscrollingspritefieldview.html#a3"><strong>preferDoubleBuffering</strong></a> () const</span>
+<li><span class="fn">virtual void <a href="qwscrollingspritefieldview.html#a4"><strong>beginPainter</strong></a> ( QPainter &amp; ) </span>
+<li><span class="fn">virtual void <a href="qwscrollingspritefieldview.html#a5"><strong>flush</strong></a> ( const QRect &amp; area ) </span>
+<li><span class="fn">virtual void <a href="qwscrollingspritefieldview.html#a6"><strong>updateGeometries</strong></a> () </span>
+</ul>
+<h2>Protected Members</h2>
+<ul>
+<li><span class="fn">virtual void <a href="qwscrollingspritefieldview.html#a7"><strong>paintEvent</strong></a> ( QPaintEvent * ) </span>
+<li><span class="fn">virtual void <a href="qwscrollingspritefieldview.html#a8"><strong>resizeEvent</strong></a> ( QResizeEvent * ) </span>
+<li><span class="fn">virtual int <a href="qwscrollingspritefieldview.html#a9"><strong>hSteps</strong></a> () const</span>
+<li><span class="fn">virtual int <a href="qwscrollingspritefieldview.html#b0"><strong>vSteps</strong></a> () const</span>
+</ul>
+<h2>Protected Slots</h2>
+<ul>
+<li><span class="fn">void <a href="qwscrollingspritefieldview.html#b1"><strong>vScroll</strong></a> ( int ) </span>
+<li><span class="fn">void <a href="qwscrollingspritefieldview.html#b2"><strong>hScroll</strong></a> ( int ) </span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+A QWidget which views a <a href="qwspritefield.html">QwSpriteField</a>, and has scrollbars.
+<p>
+While <a href="qwspritefieldview.html">QwSpriteFieldView</a> inside a QwViewport can be used for viewing
+a QwSpriteField, this may cause poor redraw effects if a lot of activity
+is occurring in the QwSpriteField, because scrolling by this method
+is a two part process:  copy some area, then redraw the new area.
+<p>QwScrollingSpriteFieldView avoids this problem by doing these in
+a single operation.  The downside is that it uses an off-screen pixmap
+for the whole visible area of the view and so is not practical if very
+large areas, or large numbers of areas, are required.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a0"></a>QwScrollingSpriteFieldView::QwScrollingSpriteFieldView ( <a href="qwspritefield.html">QwSpriteField</a> * v=0, QWidget * parent=0, const char * name=0, WFlags f=0 )</h3>
+<p>Construct a <a href="qwspritefieldview.html">QwSpriteFieldView</a> which views the given <a href="qwspritefield.html">QwSpriteField</a>.  The
+usual QWidget parameters may also be passed.
+<h3 class="fn"><a name="a1"></a>QwScrollingSpriteFieldView::~QwScrollingSpriteFieldView ()</h3>
+<p>Deconstruct the QwScrollingSpriteFieldView.
+<h3 class="fn">void <a name="a4"></a>QwScrollingSpriteFieldView::beginPainter ( QPainter &amp; painter ) <code>[virtual]</code></h3>
+<p>Configure the QPainter - makes it draw on this widget's offscreen
+pixmap, translated according to the scrollbars.
+<h3 class="fn">void <a name="a5"></a>QwScrollingSpriteFieldView::flush ( const QRect &amp; area ) <code>[virtual]</code></h3>
+<p>Flush the off-screen changes.
+<h3 class="fn">void <a name="b2"></a>QwScrollingSpriteFieldView::hScroll ( int v ) <code>[protected slot]</code></h3>
+<p>Scrolls the view horizontally by the given amount.
+<h3 class="fn">int <a name="a9"></a>QwScrollingSpriteFieldView::hSteps () const <code>[virtual protected]</code></h3>
+<p>The stepping rate for the horizontal scrollbar.  Returns 16.
+<h3 class="fn">void <a name="a7"></a>QwScrollingSpriteFieldView::paintEvent ( QPaintEvent * ev ) <code>[virtual protected]</code></h3>
+<p>(override)
+<p>Repaint the appropriate area of the QwScrollingSpriteFieldView which this
+QwScrollingSpriteFieldView is viewing.
+<h3 class="fn">bool <a name="a3"></a>QwScrollingSpriteFieldView::preferDoubleBuffering () const <code>[virtual]</code></h3>
+<p>Returns FALSE:  double-buffering is not needed, since this class has its
+own offscreen pixmap.
+<h3 class="fn">void <a name="a8"></a>QwScrollingSpriteFieldView::resizeEvent ( QResizeEvent * ) <code>[virtual protected]</code></h3>
+<p>(override)
+<p>Deal with scrollbars.
+<h3 class="fn">void <a name="a6"></a>QwScrollingSpriteFieldView::updateGeometries () <code>[virtual]</code></h3>
+<p>Ensures scrollbars and off-screen pixmap are of the correct
+size given then current widget and field sizes.  The field
+calls this automatically as needed.
+<h3 class="fn">void <a name="b1"></a>QwScrollingSpriteFieldView::vScroll ( int v ) <code>[protected slot]</code></h3>
+<p>Scrolls the view vertically by the given amount.
+<h3 class="fn">int <a name="b0"></a>QwScrollingSpriteFieldView::vSteps () const <code>[virtual protected]</code></h3>
+<p>The stepping rate for the vertical scrollbar.  Returns 16.
+<h3 class="fn">QRect <a name="a2"></a>QwScrollingSpriteFieldView::viewArea () const <code>[virtual]</code></h3>
+<p>Returns the area of
+the viewport.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

@@ -1,0 +1,154 @@
+# Original Author was Kalle@kde.org
+# I lifted it in some mater. (Stephan Kulow)
+# I used much code from Janos Farkas
+
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(acinclude.m4) dnl a source file from your sub dir
+
+dnl This is so we can use kde-common
+AC_CONFIG_AUX_DIR(admin)
+
+AC_CANONICAL_SYSTEM 
+AC_ARG_PROGRAM
+
+dnl Automake doc recommends to do this only here. (Janos)
+AM_INIT_AUTOMAKE(kdemultimedia, 1.1.2) dnl searches for some needed programs
+
+dnl make $KDEDIR the default for the installation
+AC_PREFIX_DEFAULT(${KDEDIR:-/usr/local/kde})
+
+dnl generate the config header
+AM_CONFIG_HEADER(config.h) dnl at the distribution this done
+
+dnl Checks for programs.
+AC_CHECK_COMPILERS
+KDE_PROG_LIBTOOL dnl for libraries
+
+dnl for NLS support. Call them in this order!
+dnl WITH_NLS is for the po files
+AM_KDE_WITH_NLS
+
+dnl I need to check for libsocket before testing X
+AC_CHECK_LIB(socket, socket, [LIBSOCKET="-lsocket -lnsl"]) dnl for Solaris
+AC_SUBST(LIBSOCKET)
+AC_CHECK_LIB(cdaudio, main, [LIBCDAUDIO="-lcdaudio -lmediad -lds"],[],[-lmedia -lds]) dnl for Irix
+AC_SUBST(LIBCDAUDIO)
+AC_CHECK_LIB(fpe, main, [LIBFPE="-lfpe"]) dnl for Irix CDDA
+AC_SUBST(LIBFPE) dnl for Irix CDDA
+AC_CHECK_LIB(cdrom, main, [LIBCDROM="-lcdrom"],[],[-lcdrom]) dnl for kscd FreeBSD
+AC_SUBST(LIBCDROM)
+
+dnl Checks for libraries.
+dnl added by wuebben Nov 27 1997
+AC_CHECK_LIB(Alib, main, [LIBALIB="-lAlib"]) dnl HP-UX network audio server
+AC_SUBST(LIBALIB)
+AC_CHECK_LIB(audio,main,[LIBAUDIO="-laudio"]) dnl SunOS audio driver
+AC_SUBST(LIBAUDIO)
+AC_CHECK_LIB(mme, main, [LIBMME="-lmme";EXTRAINCS="-I/usr/include/mme"]) dnl DEC MMS audio server
+AC_SUBST(LIBMME)
+AC_SUBST(EXTRAINCS)
+AC_SUBST(EXTRALIBS)  
+
+
+AC_PATH_KDE
+
+AC_LANG_CPLUSPLUS
+dnl Checks for libraries. 
+AC_CHECK_LIB(compat, main, [LIBCOMPAT="-lcompat"]) dnl for FreeBSD
+AC_SUBST(LIBCOMPAT)
+AC_CHECK_LIB(crypt, main, [LIBCRYPT="-lcrypt"]) dnl for BSD
+AC_SUBST(LIBCRYPT)
+LIBKHTMLW="-lkhtmlw -ljscript" dnl this is somewhat historical, since jscript is ways needed
+AC_SUBST(LIBKHTMLW)
+
+AC_FIND_JPEG
+
+dnl Checks for header files.
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+AC_CHECK_HEADERS(fcntl.h sys/time.h unistd.h linux/awe_voice.h awe_voice.h /usr/src/sys/i386/isa/sound/awe_voice.h /usr/src/sys/gnu/i386/isa/sound/awe_voice.h sys/stdtypes.h sys/filio.h sys/audioio.h)
+AC_CHECK_FUNCS(usleep)
+
+AC_ARG_WITH(alsa, [  --with-alsa             use an alternative driver for GUS],
+[
+   if test $withval = "yes"; then
+     kde_with_alsa=yes
+   else
+     kde_with_alsa=no
+  fi
+], kde_with_alsa=no)
+
+if test "$ac_header_sys_soundlib_h" = "no"; then
+  kde_with_alsa=no
+fi
+ 
+if test "$kde_with_alsa" = "yes"; then
+  AC_DEFINE(ALSA)
+fi
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_TIME
+
+dnl check if the compiler has bool
+AC_CHECK_BOOL
+
+dnl Checks for library functions. MISCOBJS is for kdecore
+AC_CHECK_SETENV
+
+AC_MSG_CHECKING(if kmid would compile)
+AC_CACHE_VAL(kde_kmid_compiles,
+[
+AC_TRY_COMPILE([
+#ifndef __FreeBSD__
+#include <sys/soundcard.h>
+#else
+#include <machine/soundcard.h>
+#endif
+],
+[
+],
+  kde_mid_compiles=yes,
+kde_mid_compiles=no)
+])
+AC_MSG_RESULT($kde_mid_compiles)
+if test $kde_mid_compiles = no; then
+  DO_NOT_COMPILE="$DO_NOT_COMPILE kmid"
+fi
+
+AC_ARG_ENABLE(kscd-defaults,[  --enable-kscd-defaults  use kscd default configs [default=yes]],
+[
+if test $enableval = "no"; dnl
+  then use_kscd_defaults="no"
+  else use_kscd_defaults="yes"
+fi
+], use_kscd_defaults="yes"
+)
+
+dnl output files
+topdir=`pwd`
+AC_SUBST(topdir)
+
+dnl Perform program name transformation
+AC_ARG_PROGRAM
+
+KDE_CREATE_SUBDIRSLIST
+
+AC_DEFUN(KDE_COPY_KSCD_DEFAULTS,
+[
+if echo $TOPSUBDIRS | grep "kscd" > /dev/null 2> /dev/null; then
+  if test "$use_kscd_defaults" = "yes"; then
+    test -d kscd || mkdir kscd
+    cp $srcdir/kscd/config.h.std kscd/config.h
+  else
+    cd kscd && $srcdir/kscd-script
+    cd $topdir
+  fi
+fi 
+])
+
+
+dnl this will be replaced by Makefile.am
+AC_OUTPUT(Makefile kmedia/Makefile kmid/Makefile kmidi/Makefile kmix/Makefile kscd/Makefile po/Makefile kmedia/docs/Makefile kmedia/pics/Makefile kmid/doc/Makefile kmid/examples/Makefile kmid/maps/Makefile kmid/player/Makefile kmid/toolbarxpm/Makefile kmidi/bitmaps/Makefile kmidi/config/Makefile kmidi/docs/Makefile kmidi/patch/Makefile kmix/docs/Makefile kmix/pics/Makefile kscd/bitmaps/Makefile kscd/docs/Makefile kscd/kscdmagic/Makefile kscd/sbpcdhack/Makefile po/br/Makefile po/ca/Makefile po/cs/Makefile po/da/Makefile po/de/Makefile po/el/Makefile po/eo/Makefile po/es/Makefile po/et/Makefile po/fi/Makefile po/fr/Makefile po/hr/Makefile po/hu/Makefile po/is/Makefile po/it/Makefile po/ja/Makefile po/ko/Makefile po/nl/Makefile po/no/Makefile po/pl/Makefile po/pt/Makefile po/pt_BR/Makefile po/ro/Makefile po/sk/Makefile po/sl/Makefile po/sv/Makefile po/tr/Makefile po/zh_CN.GB2312/Makefile po/zh_TW.Big5/Makefile kmid/doc/en/Makefile kmid/doc/es/Makefile kmidi/docs/de/Makefile )
+
+AC_OUTPUT_COMMANDS(KDE_COPY_KSCD_DEFAULTS)

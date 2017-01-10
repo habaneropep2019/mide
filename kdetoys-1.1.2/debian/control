@@ -1,0 +1,12 @@
+Source: kdetoys
+Section: contrib/games
+Priority: extra
+Maintainer: Stephan Kulow <coolo@kde.org>
+Standards-Version: 2.5.1
+
+Package: kdetoys
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: kdebase
+Description: some toys for the KDE 
+ useless things you'll love :)

@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>KDat Documentation</title>
+  </head>
+
+  <body>
+    <h1>KDat Documentation</h1>
+
+    KDat is a tar-based tape archiver, that is designed to work with multiple
+    archives on a single tape.  KDat was inspired by two separate goals.  The
+    first, was to provide a nice, GUI front-end to tar that supported the fast
+    selective extraction features of the dds2tar program.  The second goal
+    was to answer my wife's question, "How much longer is it going to be
+    backing up?!?".
+    <p>
+      KDat is distrubuted under the <a href="gpl.html">GNU Public License</a>,
+      version 2.
+      
+    <h2>Features</h2>
+
+    <ul>
+      <li>Simple graphical interface to local filesystem and tape contents.
+      <li>Multiple archives on the same physical tape.
+      <li>Complete index of archives and files is stored on local hard disk.
+      <li>Selective restore of files from an archive.
+      <li>Backup profiles for frequently used backups.
+    </ul>
+
+    <h2>Using KDat</h2>
+
+    <ul>
+      <li><a href="#mounting">Mounting/unmounting a tape</a>
+      <li><a href="#formatting">Formatting a tape</a>
+      <li><a href="#backup">Backing up files to tape</a>
+      <li><a href="#verify">Verifying tape files against local files</a>
+      <li><a href="#restore">Restoring files from tape</a>
+      <li><a href="#indexing">Recreating an index from tape</a>
+      <li><a href="#profile">Creating a backup profile</a>
+      <li><a href="#options">Configuring user preferences</a>
+      <li><a href="#tapeformat">KDat tape format</a>
+    </ul>
+
+    <h3><a name="mounting">Mounting/unmounting a tape</a></h3>
+
+    Before a tape can be used it must be mounted by KDat.  There are
+    three ways to mount a tape:
+
+    <ol>
+      <li>Select "Mount Tape" from the "File" menu.
+      <li>Click on the tape drive icon on the toolbar.
+      <li>Right-click on the tape drive tree node, and select "Mount Tape".
+    </ol>
+
+    KDat will rewind the tape, and read the header information from
+    the tape.  If KDat does not recognize the header on the tape, you
+    will be prompted to <a href="#formatting">format</a> the tape.
+
+    <p>
+      If KDat recognizes the header it will look for the corresponding
+      tape index on your local disk.  If the tape index cannot be
+      found you will be prompted to <a href="#indexing">recreate the
+	index from tape</a>.
+
+    <p>
+      If all goes well, the tape drive icon will change to indicate
+      that the tape has been mounted, and a message will appear in the
+      status bar.  The contents of the tape can be explored under the
+      tape drive tree node.
+
+    <p>
+      Before ejecting a tape, you must unmount the tape.  There are
+      three ways to unmount the tape:
+
+    <ol>
+      <li>Select "Unmount Tape" from the "File" menu.
+      <li>Click on the tape drive icon on the toolbar.
+      <li>Right-click on the tape drive tree node, and select "Unmount
+	Tape".
+    </ol>
+
+    KDat will acknowledge that the tape has been unmounted by changing 
+    the tape drive icon, and displaying a message in the status bar.
+    The tape may now be safely ejected.
+
+    <h3><a name="formatting">Formatting a tape</a></h3>
+
+    Before a tape can be used by KDat, it must be formatted by KDat.
+    Some types of tapes must be formatted before they can be used to
+    store data.  <b>This is not what KDat does when formatting a
+      tape.</b>  If your tape drive requires that the tapes be
+    formatted before using them, then they must be formatted before
+    they can be "formatted" by KDat.  Typically floppy tape drives
+    require that their media be formatted, but DAT drives do not.
+
+    <p>
+      There are two ways to format a tape:
+
+    <ol>
+      <li>Select "Format Tape..." from the "File" menu.
+      <li>Right-click on the tape drive tree node, and select "Format
+	Tape...".
+    </ol>
+
+    You will be prompted for a name for the tape, and the stated
+    capacity of the tape.  Both of these parameters can be changed
+    after the tape has been formatted.  The tape name is only used
+    to identify the tape to the user; it is not used to identify the
+    tape index associated with the tape.  Instead, a unique tape
+    identifier is automatically generated and written to the tape.
+    The stated capacity of the tape is used by KDat to warn the user
+    if there will not be enough space to complete a backup.
+
+    <p>
+      After entering the tape name and capacity, KDat will proceed to
+      format the tape.  <b>ALL DATA ON THE TAPE WILL BE LOST.</b>
+      Once KDat has finished formatting the tape, the tape will be
+      automatically mounted and is ready for use.
+
+    <h3><a name="backup">Backing up files to tape</a></h3>
+
+    Before initiating a backup, you must select some files to
+    archive.  There are three ways to select files for backup:
+
+    <ol>
+      <li>Highlight a file or directory in the local file tree.
+	Only the selected file or subdirectory will be archived.
+      <li>Highlight a <a href="#profile">backup profile</a> in the
+	tree.
+	Only the files in the backup profile will be archived.
+      <li>Checkmark selected files in the local file tree.
+	Only the checked files and/or subdirectories will be archived.
+    </ol>
+
+    Three are four ways to initiate a backup:
+
+    <ol>
+      <li>Select "Backup..." from the "File" menu.
+      <li>Click on the backup icon in the toolbar.
+      <li>Right-click on a file or directory in the local file tree,
+	and select "Backup...".
+      <li>Right-click on a <a href="#profile">backup profile</a>, and
+	select "Backup...".
+    </ol>
+
+    Once the backup has been initiated, the "Backup Options" dialog
+    will appear.  This dialog gives you a chance to review the
+    selected files, and change the backup options.
+
+    <p>
+      After accepting the backup options, the "Backup" dialog will
+      appear.  This dialog shows the progress of the backup including
+      throughput and time remaining.
+
+    <h3><a name="verify">Verifying tape files against local
+	files</a></h3>
+
+    Before initiating a verify, you must select some files to verify.
+    There are two ways to select files for verification:
+
+    <ol>
+      <li>Highlight a file or directory in one of the archives under
+	the tape drive tree node.
+	Only the selected file or subdirectory will be verified.
+      <li>Checkmark selected files in one of the archives under the
+	tape drive tree node.
+	Only the checked files and/or subdirectories will be verified.
+    </ol>
+
+    There are three ways to initiate a verify:
+
+    <ol>
+      <li>Select "Verify..." from the "File" menu.
+      <li>Click on the verify icon in the toolbar.
+      <li>Right-click on a file or directory in one of the archives,
+	and select "Verify...".
+    </ol>
+
+    Once the verify has been initiated, the "Verify Options" dialog
+    will appear.  This dialog gives you a chance to review the
+    selected files, and change the working directory for the
+    verifyication.
+
+    <p>
+      After accepting the verify options, the "Verify" dialog will
+      appear.  This dialog shows the progress of the verification
+      including throughput and time remaining.
+
+    <h3><a name="restore">Restoring files from tape</a></h3>
+
+    Before initiating a restore, you must select some files to
+    restore.  There are two ways to select files for restoring:
+
+    <ol>
+      <li>Highlight a file or directory in one of the archives under
+	the tape drive tree node.
+	Only the selected file or subdirectory will be restored.
+      <li>Checkmark selected files in one of the archives under the
+	tape drive tree node.
+	Only the checked files and/or subdirectories will be restored.
+    </ol>
+
+    There are three ways to initiate a restore:
+
+    <ol>
+      <li>Select "Restore..." from the "File" menu.
+      <li>Click on the restore icon in the toolbar.
+      <li>Right-click on a file or directory in one of the archives,
+	and select "Restore...".
+    </ol>
+
+    Once the restore has been initiated, the "Restore Options" dialog
+    will appear.  This dialog gives you a chance to review the
+    selected files, and change the working directory for the
+    restore.
+
+    <p>
+      After accepting the restore options, the "Restore" dialog will
+      appear.  This dialog shows the progress of the restore
+      including throughput and time remaining.
+      
+    <h3><a name="indexing">Recreating an index from tape</a></h3>
+
+    Sometimes it may be necessary to receate the tape index file from
+    the tape contents.  <b>This process will overwrite any existing
+      index file for the tape.</b>  There are two way to recreate an
+    index from tape:
+
+    <ol>
+      <li>Select "Recreate Tape Index" from the "File" menu.
+      <li>Right-click on the tape drive tree node, and select
+	"Recreate Tape Index".
+    </ol>
+
+    The "Index" dialog will appear.  This dialog shows KDat's progress 
+    as it creates the index file.
+
+    <h3><a name="profile">Creating and editing a backup profile</a></h3>
+
+    There are two ways to create a backup profile:
+
+    <ol>
+      <li>Select "Create Backup Profile" from the "File" menu.
+      <li>Right-click on the "Backup Profiles" tree node, and select
+	"Create Backup Profile".
+    </ol>
+
+    This should create a new backup profile using the currently
+    checked files and the default backup options.  The following
+    options can be set for the backup profile:
+
+    <dl>
+      <dt>Archive name
+      <dd>The symbolic name for the archive.  It can be changed later.
+      <dt>Working directory
+      <dd>The current working directory to perform the bakcup in.  The 
+	list of files to backup is automatically updated to reflect
+	the selected working directory.
+      <dt>Stay on one filesystem
+      <dd>For each directory that is listed under "Backup files", only 
+	the files under that directory that are on the same filesystem 
+	as the directory will be archived.  Directories on different
+	filesystems can be listed under "Backup files", and each will
+	be treated independently of the others, by tar.
+      <dt>GNU listed incremental
+      <dd>Perform an incremental backup.  A snapshot file is used to
+	determine which files have changed since the last incremental
+	backup.  Only the files that have changed will be archived.
+      <dt>Snapshot file
+      <dd>The name of the file that is used to determine which files
+	have changed since the last incremental backup.
+      <dt>Remove snapshot file before backup.
+      <dd>Remove the snapshot file before invoking tar.  This has the
+	effect of backing up all of the files, and creating the
+	snapshot file for use next time.
+    </dl>
+
+    The list of files to backup can be modified by pressing the "Files 
+    &gt;&gt;" button.  This will make the currently checked files
+    become the list of files to backup.  The "&lt;&lt; Files" button
+    can be used to make the set of checked files be the files listed
+    for backup.
+
+    <p>
+      You must press the "Apply" button to commit any changes made to
+      the backup profile.
+
+    <h3><a name="options">Configuring user preferences</a></h3>
+
+    User preferences can be configured by selecting "Preferences..."
+    from the "Edit" menu.  The following preferences can be
+    configured:
+
+    <dl>
+      <dt>Default tape size
+      <dd>This value will be used as the default tape size when
+	formatting a tape.
+      <dt>Tape block size
+      <dd>The hardware block size for the tape drive.  For floppy tape 
+	drives this value should be 10240 bytes.
+      <dt>Tape device
+      <dd>The full path to your tape device (usually /dev/tape).  This
+	path must point to the <b>non-rewind</b> version of you tape
+	device.
+      <dt>Tar command
+      <dd>The full path to the tar command on your system.
+      <dt>Load tape on mount
+      <dd>If enabled, before trying to mount a tape KDat will issue an 
+	"mt load" command to the tape drive.  Some drives may require
+	this before reading and writing the tape.
+      <dt>Lock tape drive on mount
+      <dd>If enabled, whenever a tape is mounted by KDat, the tape
+	drive will be asked to disable the eject button.  This option
+	may not work with all tape drives.
+      <dt>Eject tape on unmount
+      <dd>If enabled, whenever a tape is unmounted by KDat, the tape
+	will automatically be ejected from the drive.  Do not use this 
+	option with floppy tape drives.
+      <dt>Variable block size
+      <dd>If enabled, KDat will attempt to change the hardware block
+	size used by the tape drive.  Not all drives support variable
+	block size.  Whether this feature is enabled or not, you must
+	tell KDat the block size that your tape drive uses (i.e. 10240 
+	for ftape users).
+    </dl>
+
+    <h3><a name="tapeformat">KDat tape format</a></h3>
+
+    When KDat formats a tape it writes a single file at the beginning
+    of the tape.  This file should only occupy a single tape block.
+    The contents of the file are:
+
+    <ul>
+      <li>(9 bytes) The string literal "KDatMAGIC"
+      <li>(4 bytes) The file format version number (currently 1).
+      <li>(4 bytes) The length in bytes of the tape ID string.
+      <li>(n bytes) The tape ID string.  The format of this string is
+	"&lt;hostname&gt;:&lt;seconds&gt;", where &lt;hostname&gt; is
+	the full name of the machine that the tape was formatted on
+	and &lt;seconds&gt; is the number of seconds since the epoch
+	when the tape was formatted.
+    </ul>
+
+    The tape ID is used to locate a file, with the same name, in the
+    $HOME/.kdat directory.
+
+    Each of the remaining files on the tape are plain-old tar
+    archives.  You should be able to manipulate them directly with GNU 
+    tar.  Even non-GNU tar should work for non-incremental backups.
+
+    <hr>
+    <address><a href="mailto:svyain@mail.tds.net">Sean Vyain</a></address>
+<!-- Created: Wed Aug  5 20:21:33 EST 1998 -->
+<!-- hhmts start -->
+Last modified: Mon Sep  7 22:30:22 EST 1998
+<!-- hhmts end -->
+  </body>
+</html>

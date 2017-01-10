@@ -1,0 +1,32 @@
+/*
+ *   xmcd - Motif(tm) CD Audio Player
+ *
+ *   Copyright (C) 1993-1996  Ti Kan
+ *   E-mail: ti@amb.org
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 2 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, write to the Free Software
+ *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ *
+ */
+
+#define playpause_width 32
+#define playpause_height 16
+static unsigned char playpause_bits[] = {
+   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+   0x06, 0x00, 0xc0, 0x71, 0x1e, 0x00, 0xc0, 0x71, 0x7e, 0x00, 0xc0, 0x71,
+   0xfe, 0x01, 0xc0, 0x71, 0xfe, 0x07, 0xc0, 0x71, 0xfe, 0x07, 0xc0, 0x71,
+   0xfe, 0x01, 0xc0, 0x71, 0x7e, 0x00, 0xc0, 0x71, 0x1e, 0x00, 0xc0, 0x71,
+   0x06, 0x00, 0xc0, 0x71, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+   0x00, 0x00, 0x00, 0x00
+};

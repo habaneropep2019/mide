@@ -1,0 +1,151 @@
+1998-10-09  Bertrand Leconte  <leconteb@arthur.tlse.club-internet.fr>
+
+	* CommandDlg.cpp (resetWaitCursor): added function to allow derivation.
+	replaced ibeam by arrowCursor
+	(installWaitCursor): added function
+
+Tue Jun  9 21:06:15 1998  Bertrand Leconte  <leconteb@arthur>
+
+	* HostDlg.cpp (buildCommandLine): arguments added to exec line 
+
+	* PingDlg.cpp (buildCommandLine): arguments added to exec line 
+
+	* FingerDlg.cpp (buildCommandLine): arguments added to exec line 
+
+	* TracerouteDlg.cpp (buildCommandLine): corrected bug 745
+ 	(reported by Duncan Haldane): arguments added to exec line
+
+	* knu.cpp (createMenu): Replaced "About" with "About knu" (asked
+ 	by Pedro Morais)
+
+Sun Mar  8 18:35:49 1998  Bertrand Leconte  <leconteb@arthur>
+
+	* knu.kdelnk (Exec): Added -caption and %i %m (asked by
+ 	Matthias Ettrich).
+
+Sun Feb  8 17:00:00 1998  Bertrand Leconte  <leconteb@arthur>
+
+	* knu.cpp (TopLevel): added a finger tab
+	
+Tue Nov  4 21:54:31 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* knu.cpp (TopLevel): minimumSize() for the KTabCtl is given
+	to the KTopLevelWidget (bug of ktlw ?)
+	(saveProperties): created for session management
+	(readProperties): created for session management
+	(main): session management support
+
+Fri Oct 24 21:45:17 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* knu.cpp (createMenu): add KStdAccel use
+	(TopLevel): add shortcut for tab
+
+Thu Oct 16 21:39:49 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* knu.cpp (TopLevel): If a function is not enabled (in configfile)
+	the corresponding tab is not displayed.
+	(slotHelp): use invokeHTMLHelp.
+
+	* OptionsDlg.cpp (OptionsDlg): New organization of OptionsDlg.
+	Uses KTabCtl.
+	Derived from QDialog (modal).
+
+Thu Oct  2 22:20:49 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* knu.cpp (main): removed workaround for kprocess(SIGCHLD).
+	(slotAboutQt): added.
+	(slotAbout): uses QMessageBox::about now.
+
+	* CommandDlg.cpp (CommandDlg): Replaced MyMultiLineEdit by
+	QMultiLineEdit.
+
+Wed Aug  6 21:57:53 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* CommandDlg.cpp (slotLauchCommand): suppress setOverrideCursor
+ 	(because setOverrideCursor does not work by toplevel window but by
+ 	application, and in a multi window application, it's not good...)
+
+Fri Aug  1 14:26:31 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* knu.cpp (main): Add management of -caption
+	(slotAbout): new about dialogbox (old removed)
+
+	* CommandDlg.cpp (CommandDlg): Remove layout managment for this class
+	(CommandCfgDlg): New class for config
+	(newConfigWidget): Create the config screen
+
+	* knu.cpp (TopLevel): Added multiple windows management
+	(TopLevel): Manage enabel/disabel close button
+	(TopLevel): Added menuBar
+	(TopLevel): Removed buttons
+	(TopLevel): Added config (preferences) call
+	(slotConfig): New member
+
+Fri Jul 25 10:44:47 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* CommandDlg.cpp (slotLauchCommand): add a newline between command
+	only if there not already one.
+
+	* kprocess.cpp: #include <errno.h>
+
+	* Makefile.in: @LIBSOCKET@ added to LDFLAGS
+
+Fri Jul 25 01:23:14 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* HostDlg.cpp (HostDlg): modified for layout manager
+
+	* TracerouteDlg.cpp (TracerouteDlg): modified for layout manager
+
+	* CommandDlg.cpp (CommandDlg): modified for layout manager
+
+Thu Jul 24 19:30:34 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* HostDlg.cpp: added for hostname services
+
+Sun Jul 20 00:25:07 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* CommandDlg.cpp (buildCommandLine): created (virtual)
+
+	* TracerouteDlg.cpp (buildCommandLine): added to be able to manage
+ 	-n and -m options for traceroute
+	(TracerouteDlg): added lineedit for max hop
+
+Sat Jul 19 00:59:54 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* CommandDlg.cpp (slotLauchCommand): We use now the 
+	KProcess class (with modifications) for out child managment
+	(works very well!)
+
+	* CommandDlg.cpp (tabDeselected): created to be able to
+	kill the command while we change the tab.
+
+Thu Jul 17 23:39:43 1997  Bertrand Leconte  <leconteb@arthur>
+
+	* CommandDlg.cpp (slotLauchCommand): SOCK_DGRAM -> SOCK_STREAM
+	(tabSelected): created to manage focus
+	(slotLauchCommand): put waitCursor while command running
+
+	* TracerouteDlg.cpp: added
+	
+Thu Jul 10 00:06:05 1997    <leconteb@arthur>
+
+	* CommandDlg.cpp (executeCommand): added function 
+	(from slotLauchCommand)
+	(executeCommand): get the path in configfile
+
+Wed Jul  9 00:08:33 1997    <leconteb@arthur>
+
+	* CommandDlg.cpp (CommandDlg): Remove CommandDlgData.
+	(checkInput): renamed from validHostName
+	(slotLauchCommand): Don't hard code pathname to commands. Use 
+	the PATH now.
+
+Tue Jul  8 22:55:59 1997    <leconteb@arthur>
+
+	* knu.cpp (closeEvent): delete toplevel object to be able
+	to kill our child
+
+	* CommandDlg.cpp (slotLauchCommand): don't lauch the command
+	if there is already a command running
+	
+

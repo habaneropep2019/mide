@@ -1,0 +1,223 @@
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Logi Ragnarsson <logir@hi.is>, 1998.
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-03-30 01:17+0200\n"
+"PO-Revision-Date: 1999-02-13 10:42+0100\n"
+"Last-Translator: Logi Ragnarsson <logir@hi.is>\n"
+"Language-Team: is\n"
+
+#: info.cpp:50
+#, c-format
+msgid "screen #%d"
+msgstr "skjáflötur númer %d"
+
+#: info.cpp:52
+#, c-format
+msgid "  dimensions          : %dx%d pixels (%dx%d mm)\n"
+msgstr "  stærð               : %dx%d punktar (%dx%d mm)\n"
+
+#: info.cpp:56
+#, c-format
+msgid "  resolution          : %dx%d dots per inch\n"
+msgstr "  upplausn            : %dx%d punktar á tommu\n"
+
+#: info.cpp:61
+#, c-format
+msgid "  depths (%d)          : "
+msgstr "  litadýpt (%d)        : "
+
+#: info.cpp:85
+#, c-format
+msgid "name of display       : %s"
+msgstr "nafn skjás            : %s"
+
+#: info.cpp:87
+#, c-format
+msgid "version number        : %i.%i"
+msgstr "útgáfunúmer           : %i.%i"
+
+#: info.cpp:89
+#, c-format
+msgid "vendor string         : %s"
+msgstr "einkenni framleiðanda : %s"
+
+#: info.cpp:91
+#, c-format
+msgid "vendor release number : %i"
+msgstr "útfærslunúmer         : %i"
+
+#: info.cpp:93
+#, c-format
+msgid "default screen number : %i"
+msgstr "sjálfgefinn skjáflötur : %i"
+
+#: info.cpp:95
+#, c-format
+msgid "number of screens     : %i"
+msgstr "fjöldi skjáflata      : %i"
+
+#: info.cpp:181
+msgid ""
+"No Information available\n"
+" or\n"
+"this system is not yet supported :-("
+msgstr ""
+"Annað hvort eru engar upplýsingar fánlegar,\n"
+"eða þá að þetta kerfi er ennþá óstutt."
+
+#: info_fbsd.cpp:73
+#, c-format
+msgid "%s, unknown speed"
+msgstr "%s, óþekktur hraði"
+
+#: info_fbsd.cpp:75
+#, c-format
+msgid "%s running at %s MHz"
+msgstr "%s á %s MHz"
+
+#: info_fbsd.cpp:213
+msgid "Ahh couldn't open fstab!"
+msgstr "Ekki tókst að opna fstab-skrána!"
+
+#: info_fbsd.cpp:220 info_fbsd.cpp:221
+msgid "Device"
+msgstr "Reklar"
+
+#: info_fbsd.cpp:223 info_fbsd.cpp:224
+msgid "Mount Point"
+msgstr "Tengipunktur"
+
+#: info_fbsd.cpp:226 info_fbsd.cpp:227
+msgid "FS Type"
+msgstr "Tegund skráakerfis"
+
+#: info_fbsd.cpp:229 info_fbsd.cpp:230
+msgid "Mount Options"
+msgstr "Tengi"
+
+#: info_hpux.cpp:54
+msgid "unknown CPU type"
+msgstr "óþekktur örgjörvi"
+
+#: info_hpux.cpp:62
+msgid "unavailable"
+msgstr "ekki tiltækt"
+
+#: info_hpux.cpp:67
+msgid "Number of active processor(s)= "
+msgstr "Fjöldi virkra örgjörva= "
+
+#: info_linux.cpp:99
+msgid "Value"
+msgstr "Gildi"
+
+#: info_linux.cpp:114
+msgid "DMA-Channel"
+msgstr "DMA-rás"
+
+#: info_linux.cpp:115 info_linux.cpp:128
+msgid "used by"
+msgstr "hver notar"
+
+#: info_linux.cpp:127
+msgid "I/O-Range"
+msgstr "inn/út-bil"
+
+#: main.cpp:79
+msgid "&Memory"
+msgstr "&Minni"
+
+#: main.cpp:82
+msgid "&Processor"
+msgstr "Ör&gjörvi"
+
+#: main.cpp:85
+msgid "&Interrupts"
+msgstr "Ígri&p"
+
+#: main.cpp:88
+msgid "DMA-C&hannels"
+msgstr "DMA-&rásir"
+
+#: main.cpp:91
+msgid "&IO-Ports"
+msgstr "&Inn/út-gáttir"
+
+#: main.cpp:94
+msgid "PCI-&Bus"
+msgstr "PCI-&braut"
+
+#: main.cpp:97
+msgid "S&ound"
+msgstr "&Hljóð"
+
+#: main.cpp:100
+msgid "&Devices"
+msgstr "R&eklar"
+
+#: main.cpp:103
+msgid "S&CSI"
+msgstr "S&CSI"
+
+#: main.cpp:106
+msgid "P&artitions"
+msgstr "&Disksvæði"
+
+#: main.cpp:109
+msgid "&X-Server"
+msgstr "&X-þjónn"
+
+#: main.cpp:120
+msgid ""
+"usage: kcminfo [-init | "
+"{memory,processor,interrupts,dma,ioports,pci,sound,devices,scsi,partitions,xs"
+"erver}]\n"
+msgstr ""
+"notkun: kcminfo [-init | "
+"{memory,processor,interrupts,dma,ioports,pci,sound,devices,scsi,partitions,xs"
+"erver}]\n"
+
+#: main.cpp:148
+msgid "System Information"
+msgstr "Kerfisupplýsingar"
+
+#: memory.cpp:15
+msgid "Total memory"
+msgstr "Heildarminni"
+
+#: memory.cpp:25
+msgid "Free memory"
+msgstr "Laust minni"
+
+#: memory.cpp:33
+msgid "Shared memory"
+msgstr "Samnýtt minni"
+
+#: memory.cpp:41
+msgid "Buffer memory"
+msgstr "Biðminni"
+
+#: memory.cpp:49
+msgid "Swap memory"
+msgstr "Diskminni"
+
+#: memory.cpp:57
+msgid "Free swap memory"
+msgstr "Laust diskminni"
+
+#: memory.cpp:78
+#, c-format
+msgid "%10ld bytes  = %8.2f MB"
+msgstr "%10ld bæti  = %8.2f MB"
+
+#: memory.cpp:100 memory.cpp:101 memory.cpp:102 memory.cpp:103 memory.cpp:104
+#: memory.cpp:105 memory_fbsd.cpp:25 memory_fbsd.cpp:26 memory_fbsd.cpp:27
+msgid "Not available"
+msgstr "Ekki til"
+
+#: memory_hpux.cpp:23 memory_hpux.cpp:24 memory_hpux.cpp:25 memory_hpux.cpp:26
+#: memory_sgi.cpp:30
+msgid "Not Available"
+msgstr "Ekki til"

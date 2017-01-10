@@ -1,0 +1,249 @@
+# Icelandic translation.
+# Copyright (C) 1998 Bjarni R. Einarsson
+# Bjarni R. Einarsson, <bre@mmedia.is>, 1998
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-01-13 01:34+0100\n"
+"Last-Translator: Bjarni R. Einarsson <bre@mmedia.is> \n"
+"Language-Team: is <kde-isl@mmedia.is>\n"
+
+#: gameboard.cc:55
+msgid "End Turn"
+msgstr "Enda leik"
+
+#: gameboard.cc:203
+msgid ": Select source planet..."
+msgstr ": Veldu upphafsplánetu..."
+
+#: gameboard.cc:221
+msgid ": Select destination planet..."
+msgstr ": Veldu áfangastað..."
+
+#: gameboard.cc:243
+msgid ": How many ships?"
+msgstr ": Hve mörg geimför?"
+
+#: gameboard.cc:267
+msgid "Ruler: Select starting planet."
+msgstr "Reglustika:  Veldu upphaf."
+
+#: gameboard.cc:287
+#, c-format
+msgid ""
+"The distance from Planet %s to Planet %s is %s light years.\n"
+"A ship leaving this turn will arrive on turn %s"
+msgstr ""
+"Fjarlægðin frá plánetu %s til plánetu %s eru %s ljósár.\n"
+"Geimfar sem leggur strax af stað kemst á áfangastað í umferð %s"
+
+#: gameboard.cc:291
+msgid "Distance"
+msgstr "Vegalengd"
+
+#: gameboard.cc:296
+msgid "Ruler: Select ending planet."
+msgstr "Reglustika:  Velja enda."
+
+#: gameboard.cc:311
+#, c-format
+msgid "Turn #: %2d of %2d"
+msgstr "Umferð #: %2d af %2d"
+
+#: gameboard.cc:426
+#, c-format
+msgid "The once mighty empire of %s has fallen in ruins."
+msgstr "Veldi keisarans %s hefur hrunið til grunna."
+
+#: gameboard.cc:428
+msgid "An Empire has fallen..."
+msgstr "Keisaraveldi hefur fallið..."
+
+#: gameboard.cc:438
+#, c-format
+msgid "The fallen empire of %s has staggered back to life."
+msgstr "Keisarinn %s hefur blásið smá lífi aftur í ríkið sitt."
+
+#: gameboard.cc:440
+msgid "Up from the ashes..."
+msgstr "Upp úr rústunum..."
+
+#: gameboard.cc:460
+#, c-format
+msgid "Reinforcements have arrived for planet %s"
+msgstr "Liðsauki hefur er kominn að plánetu %s"
+
+#: gameboard.cc:462
+msgid "Fleet Arrival"
+msgstr "Floti mætir"
+
+#: gameboard.cc:505
+#, c-format
+msgid "Planet %s has held against an attack from %s"
+msgstr "Plánetan %s hefur staðist árás frá %s"
+
+#: gameboard.cc:507
+msgid "Planet Holds"
+msgstr "Pláneta verst"
+
+#: gameboard.cc:515
+#, c-format
+msgid "Planet %s has fallen to %s"
+msgstr "Plánetan %s hefur fallið fyrir %s"
+
+#: gameboard.cc:517
+msgid "Planet Conquered"
+msgstr "Pláneta sigruð"
+
+#: gameboard.cc:579 mainwin.cc:82
+msgid "End Game"
+msgstr "Leikslok"
+
+#: gameboard.cc:580
+msgid "Do you wish to retire this game?"
+msgstr "Vildu gefast upp á þessum leik?"
+
+#: gameboard.cc:586
+msgid "Final Standings"
+msgstr "Lokastaða"
+
+#: gameboard.cc:758
+msgid "Not enough ships to send."
+msgstr "Þú hefur ekki nóg geimför!"
+
+#: mainwin.cc:23
+msgid "GNU-Lactic Conquest"
+msgstr "GNU Alheimsyfirráð"
+
+#: mainwin.cc:47
+#, c-format
+msgid ""
+"Version %s\n"
+"Copyright (c) 1998 by\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE version by Russ Steffen <rsteffen@ia.net>\n"
+"See http://www.ia.net/~rsteffen/konquest.html for more info"
+msgstr ""
+"Útgáfa %s\n"
+"Höfundarréttur (c) 1998,\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE útgáfa eftir Russ Steffen <rsteffen@ia.net>\n"
+"Meiri uppl. eru á http://www.ia.net/~rsteffen/konquest.html\n"
+"\n"
+"Þýðing: Bjarni <bre@mmedia.is>"
+
+#: mainwin.cc:88
+msgid "Measure Distance"
+msgstr "Mæla vegalengd"
+
+#: mainwin.cc:92
+msgid "Show Standings"
+msgstr "Sýna stöðu"
+
+#: newgamedlg.cc:31
+msgid "Preview Map"
+msgstr "Kort í boði"
+
+#: newgamedlg.cc:35
+msgid "&Reject Map"
+msgstr "Hafna &korti"
+
+#: newgamedlg.cc:41
+msgid "&Player List"
+msgstr "&Listi leikmanna"
+
+#: newgamedlg.cc:48
+msgid "&Add"
+msgstr "&Bæta við"
+
+#: newgamedlg.cc:54
+msgid "&Clear"
+msgstr "&Hreinsa"
+
+#: newgamedlg.cc:70
+msgid "&Start Game"
+msgstr "&Hefja leik"
+
+#: newgamedlg.cc:162
+#, c-format
+msgid "Number of Neutral Planets: %2d"
+msgstr "Fjöldi hlutlausra pláneta: %2d"
+
+#: newgamedlg.cc:174
+#, c-format
+msgid "Number of turns: %2d"
+msgstr "Fjöldi umferða: %2d"
+
+#: planet_info.cc:81 planet_info.cc:116 planet_info.cc:131
+msgid "Planet Name : "
+msgstr "Nafn plánetu : "
+
+#: planet_info.cc:84 planet_info.cc:134
+msgid "Owner : "
+msgstr "Eigandi : "
+
+#: planet_info.cc:87
+msgid "Ships : "
+msgstr "Geimför : "
+
+#: planet_info.cc:90
+msgid "Production : "
+msgstr "Afköst : "
+
+#: planet_info.cc:93
+msgid "Kill Percent : "
+msgstr "Stríðshæfni : "
+
+#: planet_info.cc:137
+#, c-format
+msgid "Ships : %d"
+msgstr "Geimför : %d"
+
+#: planet_info.cc:140
+#, c-format
+msgid "Production : %d"
+msgstr "Afköst : %d"
+
+#: planet_info.cc:143
+#, c-format
+msgid "Kill Percent : %.3f"
+msgstr "Stríðshæfni : %.3f"
+
+#: gameenddlg.cc:14
+msgid ""
+"This is the last turn.\n"
+"Do you wish to add more turns?"
+msgstr ""
+"Þetta er lokaumferðin.\n"
+"Viltu fjölga umferðum?"
+
+#: gameenddlg.cc:64
+#, c-format
+msgid "Add %d turns"
+msgstr "Bæta við %d umferðum"
+
+#: scoredlg.cc:18
+msgid "Player"
+msgstr "Leikmaður"
+
+#: scoredlg.cc:19
+msgid "Ships Built"
+msgstr "Geimför smíðuð"
+
+#: scoredlg.cc:20
+msgid "Planets Conquered"
+msgstr "Plánetur sigraðar"
+
+#: scoredlg.cc:21
+msgid "Fleets Launched"
+msgstr "Flotar sendir"
+
+#: scoredlg.cc:22
+msgid "Fleets Destroyed"
+msgstr "Eyddir flotar"
+
+#: scoredlg.cc:23
+msgid "Ships Destroyed"
+msgstr "Eydd geimför"

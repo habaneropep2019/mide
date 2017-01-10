@@ -1,0 +1,32 @@
+# KDE Config File
+
+[International Keyboard]
+Authors=Paul Ionescu <ipaul@romsys.ro>
+
+Language=Romanian
+Language[cs]=Rumunskı
+Language[da]=Rumænsk
+Language[de]=Rumänisch
+Language[es]=Rumano
+Language[fr]=Roumain
+Language[hu]=Román
+Language[is]=Rúmenska
+Language[it]=Rumeno
+Language[no]=Rumensk
+Language[pl]=Rumuñski
+Language[pt_BR]=Romeno
+Language[ro]=Româneascã
+Language[ru]=òÕÍÙÎÓËÉÊ
+Language[sk]=Rumunskı
+Comment=Romanian keyboard layout \t(diacriticele sunt mapate pe ALTGR+[q,a,s,t,i] ) 
+Label=Ro
+Locale=ro
+#Charset=iso8859-2
+
+[KeyboardMap]
+#CapsSymbols=acircumflex,icircumflex,0xba,
+keysym0=q,q,Q,acircumflex,Acircumflex,
+keysym1=i,i,I,icircumflex,Icircumflex,
+keysym2=a,a,A,atilde,Atilde,
+keysym3=s,s,S,0xba,0xaa,
+keysym4=t,t,T,thorn,,

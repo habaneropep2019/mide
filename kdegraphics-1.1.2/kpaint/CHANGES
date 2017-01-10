@@ -1,0 +1,21 @@
+0.4.3	Use KFileDialog (control with the USE_KFILEDLG define)
+	Removed excess voids
+	Converted class comments to kdoc format and generated classdocs
+	Use new RESTORE macro and menu/tool/status bar factories
+	Changed 'Save Image...' to 'Save Image' (it doesn't have dialog)
+	Added myapp macro (like kapp)
+	Geometry manages everything!
+
+0.4.2   [Robert Williams]  Renamed Paint.kdelnk to kpaint.kdelnk
+        [Robert Williams]  Added -caption "%c" to kpaint.kdelnk
+        [Robert Williams]  I put APPVERSTR as the first #define
+        [Robert Williams]  Added getHelpMenu()
+
+0.3.1	Fixed error in Makefile.in (missing -lkfm)
+	Fixed help menu labels
+
+0.3.2	Made Makefile.in more portable
+	Now deletes temp files sensibly
+	Fixed up the image info dialog a little
+	
+0.3.3	Fixed makefiles and added doc and toolpics makefiles

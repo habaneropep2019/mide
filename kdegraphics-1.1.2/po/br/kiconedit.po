@@ -1,0 +1,1109 @@
+# Breton translation of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Romuald Texier <texierr@worldnet.fr>, 1998
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kiconedit-1.1\n"
+"POT-Creation-Date: 1999-01-10 01:46+0100\n"
+"PO-Revision-Date: 1999-03-31 06:58+0200\n"
+"Last-Translator: Romuald Texier <texierr@worldnet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+
+#: utils.cpp:65
+#, c-format
+msgid "copyFile - There was an error opening destination file: %s"
+msgstr "copyFile - Ur fazi zo bet en ur zigeriñ ar restr dehaezadur : %s"
+
+#: utils.cpp:72
+#, c-format
+msgid "copyFile - There was an error reading source file: %s"
+msgstr "copyFile - Ur fazi zo bet en ul lenn ar rest orin : %s"
+
+#: utils.cpp:80
+#, c-format
+msgid "copyFile - There was an error writing to destination file: %s"
+msgstr "copyFile - Ur fazi zo bet en ur skrivañ er restr dehaezadur : %s"
+
+#: utils.cpp:93
+#, c-format
+msgid "copyFile - There was an error opening source file: %s"
+msgstr "copyFile - Ur fazi zo bet en ur zigeriñ ar rest orin : %s"
+
+#: utils.cpp:105
+#, c-format
+msgid "removeFile - There was an error removing the file: %s"
+msgstr "removeFile - Ur fazi zo bet en ur zilemel ar restr : %s"
+
+#: kiconedit.cpp:239 kiconeditslots.cpp:62 kiconeditslots.cpp:121
+msgid ""
+"The current file has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"Kemmet eo bet restr-mañ.\n"
+"Hag e fell deoc'h e enrollañ ?"
+
+#: kiconedit.cpp:373
+msgid "Select All"
+msgstr "Diuz pep tra"
+
+#: kiconedit.cpp:391
+msgid "New &Window"
+msgstr "&Prenest nevez"
+
+#: kiconedit.cpp:396
+msgid "&New..."
+msgstr "Ne&vez ..."
+
+#: kiconedit.cpp:402
+msgid "Open recent"
+msgstr "Digoret nevez 'zo"
+
+#: kiconedit.cpp:423
+msgid "&Exit"
+msgstr "Er-m&aez"
+
+#: kiconedit.cpp:431
+msgid "Cu&t"
+msgstr "&Troc'hañ"
+
+#: kiconedit.cpp:440
+msgid "Paste as &new"
+msgstr "Pegañ evel &nevez"
+
+#: kiconedit.cpp:443
+msgid "Clea&r"
+msgstr "Ka&rzhañ"
+
+#: kiconedit.cpp:447
+msgid "Select &all"
+msgstr "Diuz pep tr&a"
+
+#: kiconedit.cpp:454
+msgid "1:1"
+msgstr "1:1"
+
+#: kiconedit.cpp:455
+msgid "1:5"
+msgstr "1:5"
+
+#: kiconedit.cpp:456
+msgid "1:10"
+msgstr "1:10"
+
+#: kiconedit.cpp:461
+msgid "Zoom &in"
+msgstr "&Tostoc'h"
+
+#: kiconedit.cpp:462
+msgid "Zoom &out"
+msgstr "&Pelloc'h"
+
+#: kiconedit.cpp:463
+msgid "Zoom factor"
+msgstr "Feur zoomiñ"
+
+#: kiconedit.cpp:470
+msgid "&Resize"
+msgstr "&Adventañ"
+
+#: kiconedit.cpp:472
+msgid "&GrayScale"
+msgstr "&SkeulLouet"
+
+#: kiconedit.cpp:477
+msgid "&Icon"
+msgstr "Ar&lun"
+
+#: kiconedit.cpp:481
+msgid "Freehand"
+msgstr "Gant an dorn"
+
+#: kiconedit.cpp:482
+msgid "Rectangle"
+msgstr "Hirgarrezenn"
+
+#: kiconedit.cpp:483
+msgid "Filled rectangle"
+msgstr "Higarrezenn leun"
+
+#: kiconedit.cpp:484
+msgid "Circle"
+msgstr "Kelc'h"
+
+#: kiconedit.cpp:485
+msgid "Filled circle"
+msgstr "Kelc'h leun"
+
+#: kiconedit.cpp:486
+msgid "Ellipse"
+msgstr "Elipsenn"
+
+#: kiconedit.cpp:487
+msgid "Filled ellipse"
+msgstr "Elipsenn leun"
+
+#: kiconedit.cpp:488 kiconedit.cpp:687
+msgid "Spray"
+msgstr "Bombezenn"
+
+#: kiconedit.cpp:489 kiconedit.cpp:689
+msgid "Flood fill"
+msgstr "Leuniañ"
+
+#: kiconedit.cpp:490
+msgid "Line"
+msgstr "Linenn"
+
+#: kiconedit.cpp:491
+msgid "Eraser (Transparent)"
+msgstr "Diverker (treuzwelus)"
+
+#: kiconedit.cpp:494
+msgid "&Tools"
+msgstr "&Binvioù"
+
+#: kiconedit.cpp:498
+msgid "&Configure"
+msgstr "&Kefluniadur"
+
+#: kiconedit.cpp:500
+msgid "Toggle &Grid"
+msgstr "&Roued/diroued"
+
+#: kiconedit.cpp:503
+msgid "Toggle &toolbar"
+msgstr "Gwintañ &Barrenn ar binvioù"
+
+#: kiconedit.cpp:506
+msgid "Toggle &drawing tools"
+msgstr "Gwintañ ar &Binvioù tresañ"
+
+#: kiconedit.cpp:509
+msgid "Toggle &statusbar"
+msgstr "Gwintañ barrenn a &stad"
+
+#: kiconedit.cpp:513
+msgid "&Save options"
+msgstr "&Enrollañ an dibaboù"
+
+#: kiconedit.cpp:520
+msgid ""
+"KDE Icon Editor\n"
+"\n"
+"A graphics drawing program for creating\n"
+"icons using the KDE icon palette\n"
+"\n"
+"Copyright 1998 by Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018"
+msgstr ""
+"KDE  aozer arlunioù\n"
+"\n"
+"Ur goulev tresañ evit krouiñ\n"
+"arlunioù oc'h implij pennlivioù KDE\n"
+"\n"
+"Gwirioù eilañ 1998 gant Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018"
+
+#: kiconedit.cpp:570
+msgid "What is ...?"
+msgstr "Petra eo ...?"
+
+#: kiconedit.cpp:579
+msgid "Drag source"
+msgstr "Stlejañ an tarzh"
+
+#: kiconedit.cpp:584
+msgid "New File"
+msgstr "Restr nevez"
+
+#: kiconedit.cpp:588
+msgid "Save the file"
+msgstr "Enrollañ ar restr"
+
+#: kiconedit.cpp:591
+msgid "Print icon"
+msgstr "Moulañ an arlun"
+
+#: kiconedit.cpp:606
+msgid "Select area"
+msgstr "Diuz un dachenn"
+
+#: kiconedit.cpp:612
+msgid "Resize"
+msgstr "Adventañ"
+
+#: kiconedit.cpp:615
+msgid "GrayScale"
+msgstr "SkeulLouet"
+
+#: kiconedit.cpp:622
+msgid "Zoom out"
+msgstr "Pelloc'h"
+
+#: kiconedit.cpp:625
+msgid "Zoom in"
+msgstr "Tostoc'h"
+
+#: kiconedit.cpp:629
+msgid "Toggle grid"
+msgstr "Gwintañ ar roued"
+
+#: kiconedit.cpp:640
+msgid "New Window"
+msgstr "Prenestr nevez"
+
+#: kiconedit.cpp:668
+msgid "Find pixel"
+msgstr "Kavout ur piksel"
+
+#: kiconedit.cpp:670
+msgid "Draw freehand"
+msgstr "Tresañ gant an dorn"
+
+#: kiconedit.cpp:673
+msgid "Draw line"
+msgstr "Tresañ ul linenn"
+
+#: kiconedit.cpp:675
+msgid "Draw rectangle"
+msgstr "Tresañ ur hirgarrezenn"
+
+#: kiconedit.cpp:677
+msgid "Draw filled rectangle"
+msgstr "Tresañ un hirgarrezenn leun"
+
+#: kiconedit.cpp:679
+msgid "Draw circle"
+msgstr "Tresañ ur c'helc'h"
+
+#: kiconedit.cpp:681
+msgid "Draw filled circle"
+msgstr "Tresañ ur c'helc'h leun"
+
+#: kiconedit.cpp:683
+msgid "Draw ellipse"
+msgstr "Tresañ un elipsenn"
+
+#: kiconedit.cpp:685
+msgid "Draw filled ellipse"
+msgstr "Tresañ un elipsenn leun"
+
+#: kiconedit.cpp:692
+msgid "Erase"
+msgstr "Diverkañ"
+
+#: kiconedit.cpp:715
+msgid "System Colors"
+msgstr "Livioù ar reizhiad"
+
+#: kiconedit.cpp:745
+msgid "Custom Colors"
+msgstr "Liviou diouzhoc'h"
+
+#: kiconedit.cpp:786
+msgid ""
+"Icon draw grid\n"
+"\n"
+"The icon grid is the area where you draw the icons.\n"
+"You can zoom in and out using the magnifying glasses on the toolbar.\n"
+"(Tip: Hold the magnify button down for a few seconds to zoom to a predefined "
+"scale"
+msgstr ""
+"Roued tresañ arlun\n"
+"\n"
+"Ar roued arlun eo an dachenn ma tresit an arlunioù enni.\n"
+"Tu zo deoc'h tostaat pe bellaat gant ar gwerennoù greskiñ.\n"
+"(Tun : dalc'hit an nozelenn greskiñ e-pad ur mare evit zoomiñ\n"
+"betek ur skeul raktermenet.)"
+
+#: kiconedit.cpp:791
+msgid ""
+"Rulers\n"
+"\n"
+"This is a visual represantation of the current cursor position"
+msgstr ""
+"Reolennoù\n"
+"\n"
+"a ziskouez pelec'h emañ ar reti"
+
+#: kiconedit.cpp:795
+msgid ""
+"Statusbar\n"
+"\n"
+"The statusbar gives information of the status of the current icon. The "
+"fields are:\n"
+"\n"
+"\t- Cursor position\n"
+"\t- Size\n"
+"\t- Zoom factor\n"
+"\t- Number of colors\n"
+"\t- Application messages"
+msgstr ""
+"Barrenn a stad\n"
+"\n"
+"Reiñ a ra titouroù war an arlun o vezañ treset.\n"
+"An tachennoù a zo :\n"
+"\n"
+"\t- Lec'hiadur ar reti\n"
+"\t- Ment\n"
+"\t- Skeul ar zoom\n"
+"\t- Niver a livioù\n"
+"\t- Kemennoù an arload"
+
+#: kiconedit.cpp:804
+msgid ""
+"Preview\n"
+"\n"
+"This is a 1:1 preview of the current icon"
+msgstr ""
+"Raksell\n"
+"\n"
+"Setu ur sell eus an arlun er skeul 1:1"
+
+#: kiconedit.cpp:807
+msgid ""
+"System colors\n"
+"\n"
+"Here you can select colors from the KDE Icon Palette."
+msgstr ""
+"Livioù ar reizhiad\n"
+"\n"
+"Amañ e diuzit livioù diwar bennlivioù KDE."
+
+#: kiconedit.cpp:810
+msgid ""
+"Custom colors\n"
+"\n"
+"Here you can build a palette of custom colors.\n"
+"Just double-click on a box to edit the color"
+msgstr ""
+"Livioù diouzhoc'h\n"
+"\n"
+"Amañ e c'hellit sevel ho pochad livioù deoc'h.\n"
+"Daouglikit en ur voestig evit aozañ al liv"
+
+#: kiconedit.cpp:816
+msgid ""
+"New\n"
+"\n"
+"Create a new icon either from a template or by specifying the size"
+msgstr ""
+"Nevez\n"
+"\n"
+"Krouit un arlun nevez, pe diwar ur patrom, pe un ur dermeniñ ur vent"
+
+#: kiconedit.cpp:819
+msgid ""
+"Open\n"
+"\n"
+"Open an existing icon"
+msgstr ""
+"Digeriñ\n"
+"\n"
+"Digeriñ un arlun a zo c'hoazh"
+
+#: kiconedit.cpp:822
+msgid ""
+"Save\n"
+"\n"
+"Save the current icon"
+msgstr ""
+"Enrollañ\n"
+"\n"
+"Enrollañ an arlun-red"
+
+#: kiconedit.cpp:825
+msgid ""
+"Print\n"
+"\n"
+"Opens a print dialog to let you print the current icon. (Doesn't realy work "
+"as expected"
+msgstr ""
+"Moulañ\n"
+"\n"
+"a zigor ur prenestr-kendiviz a-benn moulañ an arlun.\n"
+"Ne ya ket en-dro dres evel a soñjer"
+
+#: kiconedit.cpp:829
+msgid ""
+"Cut\n"
+"\n"
+"Cut the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Troc'hañ\n"
+"\n"
+"Troc'hañ an diuzadur-red a-ziwar an arlun\n"
+"\n"
+"(Tun : tu zo deoc'h diuz tachennoù kelc'hiek pe hirgarezennek)"
+
+#: kiconedit.cpp:833
+msgid ""
+"Copy\n"
+"\n"
+"Copy the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Eilañ\n"
+"\n"
+"Eilañ an diuzadur-red diwar an arlun\n"
+"\n"
+"(Tun : tu zo deoc'h diuz tachennoù kelc'hiek pe hirgarezennek)"
+
+#: kiconedit.cpp:837
+msgid ""
+"Paste\n"
+"\n"
+"Paste the contents of the clipboard into the current icon.\n"
+"\n"
+"If the contents is larger than the current icon you can paste it in a new "
+"window.\n"
+"\n"
+"(Tip: Select \"Paste transparent pixels\" in the configuration dialog if you "
+"also want to paste transparent)"
+msgstr ""
+"Pegañ\n"
+"\n"
+"Pegañ endalc'had ar golver e-barzh an arlun.\n"
+"\n"
+"Ma vez brasoc'h an endalc'had-se eget an arlun, e c'hellit pegañ e-barzh\n"
+"ur prenestr nevez.\n"
+"\n"
+"(Tun : Diuzit \"Pegañ pikseloù treuzwelus\" er prenestr-kefluniañ ma "
+"felldeoc'h pegañ treuzwelus ivez)"
+
+#: kiconedit.cpp:844
+msgid ""
+"Select\n"
+"\n"
+"Select a section of the icon using the mouse.\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Diuz\n"
+"\n"
+"Diuz ul lodenn eus an arlun gant al logodenn.\n"
+"\n"
+"(Tun : tu zo deoc'h diuz tachennoù kelc'hiek pe hirgarezennek)"
+
+#: kiconedit.cpp:848
+msgid ""
+"Resize\n"
+"\n"
+"Smoothly resizes the icon while trying to preserve the contents"
+msgstr ""
+"Adventañ\n"
+"\n"
+"Adventañ an arlun en un doare flour en ur virout an endalc'had"
+
+#: kiconedit.cpp:851
+msgid ""
+"Gray scale\n"
+"\n"
+"Gray scale the current icon.\n"
+"(Warning: The result is likely to contain colors not in the icon palette"
+msgstr ""
+"Skeul louet\n"
+"\n"
+"a laka pep tra louet.\n"
+"(Evezh : livioù nevez a zeuio war-wel)"
+
+#: kiconedit.cpp:855
+msgid ""
+"Zoom out\n"
+"\n"
+"Zoom out by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Pellaat\n"
+"\n"
+"Pellaat eus ur c'hammad.\n"
+"\n"
+"(Tun : gwaskit an nozelenn e-pad ur mare evit zoomiñ betek ur skeul "
+"raktermenet.)"
+
+#: kiconedit.cpp:859
+msgid ""
+"Zoom in\n"
+"\n"
+"Zoom in by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Tostaat\n"
+"\n"
+"Tostaat eus ur c'hammad.\n"
+"\n"
+"(Tun : gwaskit an nozelenn e-pad ur mare evit zoomiñ betek ur skeul "
+"raktermenet.)"
+
+#: kiconedit.cpp:863
+msgid ""
+"Toggle grid\n"
+"\n"
+"Toggles the grid in the icon edit grid on/off"
+msgstr ""
+"Gwintañ ar Roued\n"
+"\n"
+"Diskouez pe guzh ar roued en dachenn aozañ"
+
+#: kiconedit.cpp:866
+msgid ""
+"New window\n"
+"\n"
+"Opens a new Icon Editor window."
+msgstr ""
+"Prenestr nevez\n"
+"\n"
+"a zigor un prenestr aozer arlun nevez."
+
+#: kiconedit.cpp:869
+msgid ""
+"Whats is...?\n"
+"\n"
+"Well since you're reading this I guess you found out ;-)"
+msgstr ""
+"Petra eo ... ?\n"
+"\n"
+"Gant m'emaoc'h o lenn kement-mañ, e kav din ho peus kavet ;-)"
+
+#: kiconedit.cpp:872
+msgid ""
+"Drag source\n"
+"\n"
+"From this button you can drag out a copy of the current icon and drop it on "
+"a drop enabled window, eg. another Icon Editor.\n"
+"\n"
+"(Note: The drag source uses the QT XDND protocol which is not yet standard "
+"in KDE)"
+msgstr ""
+"Stlejañ an tarzh\n"
+"\n"
+"Diwar an nozelenn-mañ e c'hellit stlejañ un eilenn eus an arlun ha laoskel "
+"anezhi war\n"
+"ur prenestr gouest d'he resevel, d.k. un aozer arlunioù all.\n"
+"\n"
+"(Evezhiadenn : amañ e reer gant komenad XDND eus QT, n'eo reolataet\n"
+"e KDE c'hoazh)"
+
+#: kiconedit.cpp:880
+msgid ""
+"Free hand\n"
+"\n"
+"Draw non-linear lines"
+msgstr ""
+"Gant an dorn\n"
+"\n"
+"Tresañ linennoù ameeun"
+
+#: kiconedit.cpp:883
+msgid ""
+"Flood fill\n"
+"\n"
+"Fill adjoining pixels with the same color with the current color"
+msgstr ""
+"Leuniañ\n"
+"\n"
+"Leuniañ pikseloù amezeg gant al liv en implij"
+
+#: kiconedit.cpp:886
+msgid ""
+"Rectangle\n"
+"\n"
+"Draw a rectangle"
+msgstr ""
+"Hirgarezenn\n"
+"\n"
+"a dres un higarezenn"
+
+#: kiconedit.cpp:889
+msgid ""
+"Filled rectangle\n"
+"\n"
+"Draw a filled rectangle"
+msgstr ""
+"Hirgarezenn leun\n"
+"\n"
+" a dres un hirgarezenn leun"
+
+#: kiconedit.cpp:892
+msgid ""
+"Circle\n"
+"\n"
+"Draw a circle"
+msgstr ""
+"Kelc'h\n"
+"\n"
+"a dres ur c'helc'h"
+
+#: kiconedit.cpp:895
+msgid ""
+"Filled circle\n"
+"\n"
+"Draw a filled circle"
+msgstr ""
+"Kelc'h leun\n"
+"\n"
+"a dres ur c'helc'h leun"
+
+#: kiconedit.cpp:898
+msgid ""
+"Ellipse\n"
+"\n"
+"Draw an ellipse"
+msgstr ""
+"Elipsenn\n"
+"\n"
+"a dres un elipsenn"
+
+#: kiconedit.cpp:901
+msgid ""
+"Filled ellipse\n"
+"\n"
+"Draw a filled ellipse"
+msgstr ""
+"Elipsenn leun\n"
+"\n"
+"a dres un elipsenn leun"
+
+#: kiconedit.cpp:904
+msgid ""
+"Line\n"
+"\n"
+"Draw a straight line vertically, horizontically or in 45 dgr. angles"
+msgstr ""
+"Linenn\n"
+"\n"
+"a dres un eeunenn a-serzh, a-led pe a-dreuz (45 derez)"
+
+#: kiconedit.cpp:907
+msgid ""
+"Spray\n"
+"\n"
+"Draw scattered pixels in the current color"
+msgstr ""
+"Bombezenn\n"
+"\n"
+"a dres ur vombezenn gant al liv en implij"
+
+#: kiconedit.cpp:910
+msgid ""
+"Find\n"
+"\n"
+"The color of the pixel clicked on will be the current drawcolor"
+msgstr ""
+"Kavout\n"
+"\n"
+"Liv ar piksel kliket warnañ a zeu da vezañ al liv en implij"
+
+#: kiconedit.cpp:913
+msgid ""
+"Erase\n"
+"\n"
+"Erase pixels. Set the pixels to be transparent\n"
+"\n"
+"(Tip: If you want to draw transparent with a different tool then first click "
+"on \"Erase\" then on the tool you want to use)"
+msgstr ""
+"Diverkañ\n"
+"\n"
+"a ziverk pikseloù. Lakaat a ra anezho da vezañ treuzwelus\n"
+"\n"
+"(Tun : m'ho peus c'hoant tresañ treuzwelus gant ur benveg all,  klikit war\n"
+"\"Diverkañ\" da gentañ, war ar benveg ho peus ezhomm da c'houde)"
+
+#: kicongrid.cpp:66
+msgid "width"
+msgstr "ledander"
+
+#: kicongrid.cpp:71
+msgid "height"
+msgstr "uhelder"
+
+#: kicongrid.cpp:684
+msgid "There was an error loading a blank image.\n"
+msgstr "Ur fazi zo bet o kargañ ur skeudenn wenn.\n"
+
+#: kicongrid.cpp:830
+msgid "All selected"
+msgstr "Pep tra diuzet"
+
+#: kicongrid.cpp:841
+msgid "Cleared"
+msgstr "Skarzhet"
+
+#: kicongrid.cpp:883
+msgid "Selected area cutted"
+msgstr "Tachenn diuzet bet troc'het"
+
+#: kicongrid.cpp:886
+msgid "Selected area copied"
+msgstr "Tachenn diuzet bet eilet"
+
+#: kicongrid.cpp:964
+msgid ""
+"There was an copying:\n"
+"to the clipboard!"
+msgstr ""
+"Ur fazi zo bet en ur eilañ\n"
+"d'ar golver !"
+
+#: kicongrid.cpp:985
+msgid ""
+"The clipboard image is larger than the current image!\n"
+"Paste as new image?"
+msgstr ""
+"Ledanoc'h eo skeudenn ar pouez-paper eget an arlun !\n"
+"Pegañ evel skeudenn nevez ?"
+
+#: kicongrid.cpp:998
+msgid "Pasting"
+msgstr "O pegañ"
+
+#: kicongrid.cpp:1030 kicongrid.cpp:1057
+msgid "Done pasting"
+msgstr "Pegañ graet"
+
+#: kicongrid.cpp:1035 kicongrid.cpp:1061
+msgid "Invalid pixmap data in clipboard!\n"
+msgstr "Roadennoù piksmap direizh er golver !\n"
+
+#: kiconcombiview.cpp:81
+msgid "Folders:"
+msgstr "Renkelloù :"
+
+#: kiconcombiview.cpp:82
+msgid "Contents:"
+msgstr "Endalc'had :"
+
+#: kicondetaillist.cpp:50
+msgid "Name"
+msgstr "Anv"
+
+#: kicondetaillist.cpp:52
+msgid "Size"
+msgstr "Ment"
+
+#: kicondetaillist.cpp:55
+msgid "Permissions"
+msgstr "Aotreoù"
+
+#: kicondetaillist.cpp:57
+msgid "Date"
+msgstr "Deizhiad"
+
+#: kicondetaillist.cpp:60
+msgid "Owner"
+msgstr "Perc'henn"
+
+#: kicondetaillist.cpp:62
+msgid "Group"
+msgstr "Strollad"
+
+#: kicon.cpp:48
+msgid "There was an error removing temporary backup file:\n"
+msgstr "Ur fazi zo bet en ur skarzhañ ar restr gwareziñ padennek :\n"
+
+#: kicon.cpp:74 kicon.cpp:258 kicon.cpp:342 kicon.cpp:445
+msgid ""
+"We've got a KFM job running.\n"
+"Please wait."
+msgstr ""
+"Emañ ul labour KFM o vezañ sevenet.\n"
+"Gortozit, mar plij."
+
+#: kicon.cpp:97
+msgid "The URL:\n"
+msgstr "An URL :\n"
+
+#: kicon.cpp:99
+msgid ""
+"\n"
+"seems to be malformed.\n"
+msgstr ""
+"\n"
+"a seblant bezañ siek.\n"
+
+#: kicon.cpp:100 kicon.cpp:146 kicon.cpp:169 kicon.cpp:181 kicon.cpp:194
+#: kicon.cpp:207 kicon.cpp:218 kicon.cpp:399 kicon.cpp:432
+msgid "ERROR"
+msgstr "FAZI"
+
+#: kicon.cpp:116
+msgid "The KDE Icon Editor has found a recover file for:\n"
+msgstr "Kavet en deus aozer arlunioù KDE ur restr adtapout evit :\n"
+
+#: kicon.cpp:118 kicon.cpp:285
+msgid ""
+"\n"
+"Do you want to open this?"
+msgstr ""
+"\n"
+"C'hoant ho peus digeriñ se ?"
+
+#: kicon.cpp:143
+msgid "The file:\n"
+msgstr "Ar restr :\n"
+
+#: kicon.cpp:145
+msgid ""
+"\n"
+"doesn't exist or isn't readable.\n"
+msgstr ""
+"\n"
+"n'eus ket anezhañ pe a zo dilennadus.\n"
+
+#: kicon.cpp:160
+msgid ""
+"The Icon Editor is already downloading a non-local file.\n"
+"Please wait.\n"
+msgstr ""
+"Emañ aozer arlunioù KDE o kargañ ur restr a-bell c'hoazh.\n"
+"Gortozit, mar plij.\n"
+
+#: kicon.cpp:170
+msgid "Couldn't initiate KFM!"
+msgstr "Ne m'eus ket gallet loc'hañ KFM !"
+
+#: kicon.cpp:178
+msgid "There was a KFM error creating a backup for:\n"
+msgstr "Ur fazi KFM zo bet en ur grouiñ ur restr gwareziñ evit \n"
+
+#: kicon.cpp:191 kicon.cpp:396
+msgid "There was an error creating a backup for:\n"
+msgstr "Ur fazi zo bet en ur grouiñ ur restr gwareziñ evit \n"
+
+#: kicon.cpp:204
+msgid "KIcon: There was a error locking:\n"
+msgstr "KIcon : fazi en ur brennañ :\n"
+
+#: kicon.cpp:215 kicon.cpp:291
+msgid "KIcon: There was a QT error loading:\n"
+msgstr "KIcon : fazi Qt en ur gargañ :\n"
+
+#: kicon.cpp:261
+msgid ""
+"*|All files (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|GIF files (*.gif)\n"
+"*jpg|JPEG files (*.jpg)\n"
+msgstr ""
+"*|pep restr (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|restroù GIF (*.gif)\n"
+"*jpg|restroù JPEG (*.jpg)\n"
+
+#: kicon.cpp:283
+msgid "The KDE Icon Editor has found a recover\n"
+msgstr "Kavet en deus aozer arlunioù KDE ur restr\n"
+
+#: kicon.cpp:284
+msgid "file for an unsaved icon."
+msgstr "adtapout evit un arlun dienroll."
+
+#: kicon.cpp:409
+msgid "Couldn't initiate KFM"
+msgstr "N'eus ket gellet loc'hañ KFM"
+
+#: kicon.cpp:422
+msgid "Done saving"
+msgstr "Enrollañ kaset da benn"
+
+#: kicon.cpp:429
+msgid "There was an error saving:\n"
+msgstr "Ur fazi zo bet en ur enrollañ :\n"
+
+#: kresize.cpp:29
+msgid "Size:"
+msgstr "Ment :"
+
+#: kresize.cpp:64
+msgid "Select size:"
+msgstr "Diuzit ar ment :"
+
+#: knew.cpp:34
+msgid "Standard file"
+msgstr "Restr boas"
+
+#: knew.cpp:39
+msgid "Source file"
+msgstr "Restr orin"
+
+#: knew.cpp:44
+msgid "Compressed file"
+msgstr "Restr gwasket"
+
+#: knew.cpp:49
+msgid "Standard folder"
+msgstr "Renkell voas"
+
+#: knew.cpp:54
+msgid "Standard package"
+msgstr "Pakad boas"
+
+#: knew.cpp:59
+msgid "Mini folder"
+msgstr "Renkellig"
+
+#: knew.cpp:64
+msgid "Mini package"
+msgstr "Pakadig"
+
+#: knew.cpp:156 knew.cpp:258 knew.cpp:308
+msgid "Create from scratch"
+msgstr "Krouiñ diwar netra"
+
+#: knew.cpp:158 knew.cpp:313
+msgid "Create from template"
+msgstr "Krouiñ diwar batrom"
+
+#: kiconconfig.cpp:120 knew.cpp:194
+msgid "Templates:"
+msgstr "Patromoù :"
+
+#: knew.cpp:252
+msgid "Select icontype"
+msgstr "Diuzit ar seurt arlun"
+
+#: knew.cpp:263
+msgid "Create new icon"
+msgstr "Krouiñ un arlun nevez"
+
+#: debug.cpp:20
+msgid "Fatal!"
+msgstr "Sac'hus !"
+
+#: kiconeditslots.cpp:403
+msgid "Sorry - not implemented."
+msgstr "Ho tigarez - n'eo ket kefloueraet c'hoazh."
+
+#: kiconeditslots.cpp:471 kiconeditslots.cpp:478
+#, c-format
+msgid "Colors: %u"
+msgstr "Livioù: %u"
+
+#: kiconconfig.cpp:30
+msgid "Template"
+msgstr "Patrom"
+
+#: kiconconfig.cpp:31
+msgid "Description:"
+msgstr "Termenadur :"
+
+#: kiconconfig.cpp:33
+msgid "Path:"
+msgstr "Hent :"
+
+#: kiconconfig.cpp:63
+msgid "&Browse..."
+msgstr "&Furchal ..."
+
+#: kiconconfig.cpp:136
+msgid "&Add"
+msgstr "&Ouzhpennañ"
+
+#: kiconconfig.cpp:248
+msgid "Color or pixmap"
+msgstr "Liv pe piksmap"
+
+#: kiconconfig.cpp:256
+msgid "Colored background"
+msgstr "Drekleur livet"
+
+#: kiconconfig.cpp:261
+msgid "Pixmap background"
+msgstr "Drekleur piksmap"
+
+#: kiconconfig.cpp:276
+msgid "&Color..."
+msgstr "&Liv ..."
+
+#: kiconconfig.cpp:279
+msgid "&Pixmap..."
+msgstr "&Piksmap ..."
+
+#: kiconconfig.cpp:287
+msgid "&Built-in"
+msgstr "&Hini enframmet"
+
+#: kiconconfig.cpp:291
+msgid "Example"
+msgstr "Skouer"
+
+#: kiconconfig.cpp:399
+msgid "Main Toolbar"
+msgstr "Barrenn binvioù pennañ"
+
+#: kiconconfig.cpp:402
+msgid "Drawing tools"
+msgstr "Binvioù tresañ"
+
+#: kiconconfig.cpp:406
+msgid ""
+"Note: Other settings of the toolbars can be reached\n"
+"from the toolbar \"handle\" or from the \"Options\" menu"
+msgstr ""
+"Evezhiadenn : neuziadoù all a c'hall bezañ tizhet\n"
+"gant \"dornikell\" ar barrenn binvioù pe lañser an dibaboù"
+
+#: kiconconfig.cpp:425 kiconconfig.cpp:438
+msgid "Show Icon"
+msgstr "Diskouez an arlun"
+
+#: kiconconfig.cpp:430 kiconconfig.cpp:443
+msgid "Show Icon and Text"
+msgstr "Diskouez an arlun hag ar skrid"
+
+#: kiconconfig.cpp:434 kiconconfig.cpp:447
+msgid "Show Text"
+msgstr "Diskouez ar skrid"
+
+#: kiconconfig.cpp:505
+msgid "Paste mode"
+msgstr "Mod pegañ"
+
+#: kiconconfig.cpp:507
+msgid "Paste transparent pixels"
+msgstr "Pegañ pikseloù treuzwelus"
+
+#: kiconconfig.cpp:511
+msgid "Show rulers"
+msgstr "Diskouez reolennoù"
+
+#: kiconconfig.cpp:593
+msgid "Keys"
+msgstr "Stokelloù"
+
+#: kiconconfig.cpp:598
+msgid "Configure keys"
+msgstr "Kefluniañ ar stokelloù"
+
+#: kiconconfig.cpp:605
+msgid "Templates"
+msgstr "Patromoù"
+
+#: kiconconfig.cpp:610
+msgid "Configure Icon templates"
+msgstr "Kenfluniañ patromoù an arlunioù"
+
+#: kiconconfig.cpp:622
+msgid "Configure background"
+msgstr "Kefluniañ an drekleur"
+
+#: kiconconfig.cpp:630
+msgid "Toolbars"
+msgstr "Barrennoù binvioù"
+
+#: kiconconfig.cpp:642
+msgid "Icon grid"
+msgstr "Roued an arlun"

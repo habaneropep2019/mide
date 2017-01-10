@@ -1,0 +1,13 @@
+Source: kdeutils
+Section: contrib/utils
+Priority: extra
+Maintainer: Stephan Kulow <coolo@kde.org>
+Standards-Version: 2.5.1
+
+Package: kdeutils
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: kdebase
+Description: collection of useful kde utilities 
+ this collection includes karm kcalc kedit khexdit kjots knotes ark
+ (calculator, editor, hex editor ...)

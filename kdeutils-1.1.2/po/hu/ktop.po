@@ -1,0 +1,661 @@
+# KTranslator Generated File
+
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-03-19 01:51+0100\n"
+"Content-Type: text/plain; charset=\n"
+"Date: 1997-12-07 12:23:22-0500\n"
+"From: root,,, <root@petit>\n"
+"Xgettext-Options: -C -ktranslate -kktr\n"
+"Files: ktop.cpp memory.cpp settings.cpp cpu.cpp widgets.cpp\n"
+
+# settings.cpp:88
+#: ktop.cpp:66
+#
+msgid "88888 Processes"
+msgstr "88888 folyamat"
+
+#: ktop.cpp:67
+msgid "Memory: 888888 kB used, 888888 kB free"
+msgstr "Memória: 8888888 kb használva, 8888888 kb szabad"
+
+#: ktop.cpp:69
+msgid "Swap: 888888 kB used, 888888 kB free"
+msgstr "Lapozó: 8888888 kb használva, 8888888 kb szabad"
+
+# ktop.cpp:81
+#: ktop.cpp:76
+#
+msgid "KDE Task Manager"
+msgstr "KDE Feladatkezelõ"
+
+# settings.cpp:88
+#: ktop.cpp:137
+#, c-format
+msgid "%d Processes"
+msgstr "%d folyamat"
+
+#: ktop.cpp:142
+#, c-format
+msgid "Memory: %d kB used, %d kB free"
+msgstr "Memória: %d kb használva, %d kb szabad"
+
+#: ktop.cpp:147
+#, c-format
+msgid "Swap: %d kB used, %d kB free"
+msgstr "Lapozó: %d kb használva, %d kb szabad"
+
+#: MainMenu.cpp:51
+#, c-format
+msgid ""
+"KDE Task Manager (KTop) Version %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+msgstr ""
+"KDE Feladatkezelõ (KTop) %s verzió\n"
+"\n"
+"Szerzõi jogok:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+
+#: MainMenu.cpp:64
+msgid "Manual Refresh"
+msgstr "Kézi frissítés"
+
+# widgets.cpp:98
+#: MainMenu.cpp:65
+#
+msgid "Slow Refresh"
+msgstr "Lassú frissítés"
+
+#: MainMenu.cpp:66
+msgid "Medium Refresh"
+msgstr "Közepes frissítés"
+
+# widgets.cpp:98
+#: MainMenu.cpp:67
+#
+msgid "Fast Refresh"
+msgstr "Gyors frissítés"
+
+# widgets.cpp:98
+#: MainMenu.cpp:79
+#
+msgid "&Refresh Rate"
+msgstr "F&rissítés"
+
+# widgets.cpp:100
+#: MainMenu.cpp:80
+#
+msgid "&Process"
+msgstr "&Futó folyamatok"
+
+#: ProcessMenu.cpp:44
+msgid "Renice Task..."
+msgstr "Feladat prioritása..."
+
+#: ProcessMenu.cpp:47
+msgid "send SIGINT\t(ctrl-c)"
+msgstr "SIGINT küldése\t((ctrl-c)"
+
+#: ProcessMenu.cpp:48
+msgid "send SIGQUIT\t(core)"
+msgstr "SIGQUIT küldése\t(core)"
+
+#: ProcessMenu.cpp:49
+msgid "send SIGTERM\t(term.)"
+msgstr "SIGTERM küldése\t(term.)"
+
+#: ProcessMenu.cpp:50
+msgid "send SIGKILL\t(term.)"
+msgstr "SIGKILL küldése\t(term.)"
+
+#: ProcessMenu.cpp:52
+msgid "send SIGUSR1\t(user1)"
+msgstr "SIGUSR1 küldése\t(user1)"
+
+#: ProcessMenu.cpp:53
+msgid "send SIGUSR2\t(user2)"
+msgstr "SIGUSR2 küldése\t(user2)"
+
+# ktop.cpp:81
+#: ProcessMenu.cpp:74 ProcessMenu.cpp:86 ProcessMenu.cpp:150
+#: ProcessMenu.cpp:158 ProcessMenu.cpp:176
+#
+msgid "Task Manager"
+msgstr "Feladatkezelõ"
+
+#: ProcessMenu.cpp:75
+msgid "You need to select a process first!"
+msgstr "Elõször feladatot kell választani!"
+
+#: ProcessMenu.cpp:85 ProcessMenu.cpp:149
+#, c-format
+msgid "The process %d is no longer persistent."
+msgstr "A(z) %d folyamat már nem él."
+
+#: ProcessMenu.cpp:98
+msgid "SIGINT"
+msgstr "SIGINT"
+
+#: ProcessMenu.cpp:101
+msgid "SIGQUIT"
+msgstr "SIGQUIT"
+
+#: ProcessMenu.cpp:104
+msgid "SIGTERM"
+msgstr "SIGTERM"
+
+#: ProcessMenu.cpp:107
+msgid "SIGKILL"
+msgstr "SIGKILL"
+
+#: ProcessMenu.cpp:110
+msgid "SIGUSR1"
+msgstr "SIGUSR1"
+
+#: ProcessMenu.cpp:113
+msgid "SIGUSR2"
+msgstr "SIGUSR2"
+
+#: ProcessMenu.cpp:116
+msgid "Unkown Signal"
+msgstr "Ismeretlen szignál"
+
+#: ProcessMenu.cpp:122
+#, c-format
+msgid ""
+"Send signal %s to process %d?\n"
+"(Process name: %s  Owner: %s)\n"
+msgstr ""
+"Küldjem a %s szignált a %d feladatnak?\n"
+"(Feladat neve: %s Tulajdonos: %s)\n"
+
+#: ProcessMenu.cpp:126
+msgid "Abort"
+msgstr "Megszakít"
+
+#: ProcessMenu.cpp:159 ProcessMenu.cpp:177
+msgid ""
+"Renice error...\n"
+"Specified process does not exist\n"
+"or permission denied."
+msgstr ""
+"Új prioritás hiba...\n"
+"A megadott folyamat nem létezik\n"
+"vagy hozzáférés megtagadva."
+
+# widgets.cpp:145 widgets.cpp:155
+#: TaskMan.cpp:80
+#
+msgid "Processes &List"
+msgstr "Folyamatok &listája"
+
+# widgets.cpp:142 widgets.cpp:156
+#: TaskMan.cpp:81
+#
+msgid "Performance &Meter"
+msgstr "Teljesít&mény"
+
+# widgets.cpp:100
+#: ProcListPage.cpp:42
+#
+msgid "Running Processes"
+msgstr "Futó folyamatok"
+
+#: ProcListPage.cpp:49
+msgid "Show Tree"
+msgstr "Show Tree"
+
+# settings.cpp:88
+#: ProcListPage.cpp:60
+#
+msgid "All processes"
+msgstr "Összes folymat"
+
+#: ProcListPage.cpp:61
+msgid "System processes"
+msgstr "Rendszer folyamatok"
+
+# settings.cpp:88
+#: ProcListPage.cpp:62
+#
+msgid "User processes"
+msgstr "Felhasználói folymatok"
+
+# widgets.cpp:100
+#: ProcListPage.cpp:63
+#
+msgid "Own processes"
+msgstr "Saját folyamatok"
+
+# widgets.cpp:98
+#: ProcListPage.cpp:79
+#
+msgid "Refresh Now"
+msgstr "Frissítés most"
+
+# widgets.cpp:97
+#: ProcListPage.cpp:85
+msgid "Kill task"
+msgstr "Feladat kilövése"
+
+#: ProcessList.cpp:227
+msgid "Remove Column"
+msgstr "Oszlop eltávolítása"
+
+#: ProcessList.cpp:228
+msgid "Add Column"
+msgstr "Oszlop hozzáadása"
+
+#: ProcessList.cpp:229
+msgid "Help on Column"
+msgstr "Segítség az oszlopról"
+
+# settings.cpp:84
+#: ProcessList.cpp:691 ProcessList.cpp:692
+msgid "Name"
+msgstr "Név"
+
+#: ProcessList.cpp:695 ProcessList.cpp:696
+msgid "PID"
+msgstr "PID"
+
+#: ProcessList.cpp:699
+msgid "User ID"
+msgstr "Felhasználó ID"
+
+#: ProcessList.cpp:700
+msgid "CPU"
+msgstr "CPU"
+
+#: ProcessList.cpp:701
+msgid "Time"
+msgstr "Idõ"
+
+#: ProcessList.cpp:702
+msgid "Nice"
+msgstr "Prioriás"
+
+#: ProcessList.cpp:703
+msgid "Status"
+msgstr "Állapot"
+
+# widgets.cpp:134
+#: ProcessList.cpp:704
+msgid "Memory"
+msgstr "Memória"
+
+#: ProcessList.cpp:705
+msgid "Resident"
+msgstr "Rezidens"
+
+#: ProcessList.cpp:706
+msgid "Shared"
+msgstr "Osztott"
+
+#: ProcessList.cpp:707
+msgid "Command line"
+msgstr "Parancssor"
+
+#: OSProcessList.cpp:76 OSProcessList.cpp:104
+msgid ""
+"Cannot open directory '/proc'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Nem nyitható meg a '/proc'!\n"
+"A kernelbe bele kell fordítani a /proc\n"
+"fájlrendszer támogatást!"
+
+#: OSProcessList.cpp:266
+msgid "Cannot read status of processes\n"
+msgstr "Nem olvasható a folyamatok állapota\n"
+
+#: OSProcessList.cpp:367
+msgid "Your OS is not supported yet.  Sorry"
+msgstr "A jelenlegi operációs rendszer nem támogatott. Bocs."
+
+#: OSProcess.cpp:123 OSProcess.cpp:154 OSProcess.cpp:171
+#, c-format
+msgid "Cannot open %s!\n"
+msgstr "%s  nem nyitható meg!\n"
+
+#: OSProcess.cpp:183
+msgid "Run"
+msgstr "Fut"
+
+#: OSProcess.cpp:186
+msgid "Sleep"
+msgstr "Alszik"
+
+#: OSProcess.cpp:189
+msgid "Disk"
+msgstr "Lemez"
+
+#: OSProcess.cpp:192
+msgid "Zombie"
+msgstr "Zombi"
+
+#: OSProcess.cpp:198
+msgid "Swap"
+msgstr "Lapozó"
+
+#: OSProcess.cpp:201
+msgid "????"
+msgstr "????"
+
+#: OSProcess.cpp:320
+#, c-format
+msgid "Could not set new nice level for process %d"
+msgstr "Nem állítható be új prioritás a %d folyamatnál"
+
+#: OSProcess.cpp:334
+#, c-format
+msgid "Cound not send signal %d to process %d"
+msgstr "Nem tudok %d szignált küldeni a %d folyamatnak"
+
+# widgets.cpp:113
+#: PerfMonPage.cpp:49
+#
+msgid "CPU Load History"
+msgstr "A CPU terhelés története"
+
+# widgets.cpp:113
+#: PerfMonPage.cpp:52
+#
+msgid "System Load History"
+msgstr "A rendszer terhelés története"
+
+#: PerfMonPage.cpp:55 PerfMonPage.cpp:113
+msgid "User (%)"
+msgstr "Felhasználói (%)"
+
+#: PerfMonPage.cpp:56 PerfMonPage.cpp:114
+msgid "Nice (%)"
+msgstr "Kiemelt (%)"
+
+#: PerfMonPage.cpp:57 PerfMonPage.cpp:115
+msgid "System (%)"
+msgstr "Rendszer (%)"
+
+# widgets.cpp:136
+#: PerfMonPage.cpp:64
+#
+msgid "Memory Usage History"
+msgstr "A memória használat története"
+
+#: PerfMonPage.cpp:66
+msgid "Program (kB)"
+msgstr "Program (kb)"
+
+#: PerfMonPage.cpp:67
+msgid "Buffer (kB)"
+msgstr "Puffer (kb)"
+
+# settings.cpp:92 settings.cpp:213
+#: PerfMonPage.cpp:68
+#
+msgid "Cache (kB)"
+msgstr "Gyorstár (kb)"
+
+#: PerfMonPage.cpp:69
+msgid "Swap (kB)"
+msgstr "Lapozó (kb)"
+
+# widgets.cpp:113
+#: PerfMonPage.cpp:109
+#, c-format
+msgid "CPU%d Load History"
+msgstr "A %d.CPU terhelés története"
+
+#: OSStatus.cpp:98
+msgid ""
+"Cannot open file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Nem nyitható meg a '/proc/stat' fájl!\n"
+"A kernelbe bele kell fordítani a /proc\n"
+"fájlrendszer támogatást!"
+
+#: OSStatus.cpp:120 OSStatus.cpp:303 OSStatus.cpp:378
+msgid ""
+"Cannot open file '/proc/meminfo'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Nem nyitható meg a '/proc/meminfo' fájl!\n"
+"A kernelbe bele kell fordítani a /proc\n"
+"fájlrendszer támogatást!"
+
+#: OSStatus.cpp:311
+msgid "Cannot read memory info file '/proc/meminfo'!\n"
+msgstr "Nem olvasható a '/proc/meminfo' fájl!\n"
+
+#: OSStatus.cpp:354
+#, c-format
+msgid ""
+"Cannot read info for %s from file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Nem ovashtó információ a %s számára a '/proc/stat' fájlból!\n"
+"A kernelbe bele kell fordítani a /proc\n"
+"fájlrendszer támogatást!"
+
+#: OSStatus.cpp:386
+msgid "Cannot read swap info from '/proc/meminfo'!\n"
+msgstr "Nem olvasható a lapozó információ a '/proc/meminfo' fájlból\n"
+
+#: OSStatus.cpp:575 OSStatus.cpp:588 OSStatus.cpp:615 OSStatus.cpp:624
+msgid ""
+"Your system is not currently supported.\n"
+"Sorry"
+msgstr ""
+"Az Ön rendszere jelenleg nem támogatott.\n"
+"Sajnálom"
+
+# widgets.cpp:100
+#: ReniceDlg.cpp:32
+#
+msgid "Renice Process"
+msgstr "Folyamat prioritása"
+
+#: ReniceDlg.cpp:39
+#, c-format
+msgid ""
+"You are about the change the scheduling priority of\n"
+"process %d. Be aware that only the Superuser (root)\n"
+"can decrease the nice level of a process. The smaller\n"
+"the number is the higher is the priority.\n"
+"\n"
+"Please enter the desired nice level:"
+msgstr ""
+"A %d folyamat prioritásának megváltoztatására készül.\n"
+"Fontos tudni, hogy csak a Superuser (root) tudja csökkenteni\n"
+"egy folyamat prioritását. A kisebb szám, nagyobb prioritást\n"
+"jelent.\n"
+"\n"
+"Adja meg a kívánt prioritást:"
+
+# widgets.cpp:145 widgets.cpp:155
+#, fuzzy
+#~ msgid "Processes &Tree"
+#~ msgstr "Folyamatok"
+
+# widgets.cpp:142 widgets.cpp:156
+#, fuzzy
+#~ msgid "&Performance"
+#~ msgstr "Teljesítmény"
+
+# widgets.cpp:98
+#, fuzzy
+#~ msgid "Refresh rate: Medium"
+#~ msgstr "Frissítés"
+
+# widgets.cpp:98
+#, fuzzy
+#~ msgid "Refresh rate: Fast"
+#~ msgstr "Frissítés"
+
+# widgets.cpp:97
+#, fuzzy
+#~ msgid "Kill Task"
+#~ msgstr "Feladat kilövése"
+
+# settings.cpp:74
+#, fuzzy
+#~ msgid "Sort by ID"
+#~ msgstr "Rendezési mód"
+
+# settings.cpp:74
+#, fuzzy
+#~ msgid "Sort by Name"
+#~ msgstr "Rendezési mód"
+
+# settings.cpp:85
+#, fuzzy
+#~ msgid "Sort by Owner (UID)"
+#~ msgstr "Tulajdonos (UID)"
+
+# widgets.cpp:111
+#~ msgid "CPU load"
+#~ msgstr "CPU terhelés"
+
+# widgets.cpp:113
+#, fuzzy
+#~ msgid "Swap history"
+#~ msgstr "A CPU terhelés története"
+
+# settings.cpp:83
+#, fuzzy
+#~ msgid "procID"
+#~ msgstr "Folyamat azonosító"
+
+# widgets.cpp:145 widgets.cpp:155
+#, fuzzy
+#~ msgid "Processes List"
+#~ msgstr "Folyamatok"
+
+# widgets.cpp:145 widgets.cpp:155
+#, fuzzy
+#~ msgid "Processes Tree"
+#~ msgstr "Folyamatok"
+
+# ktop.cpp:92
+#, fuzzy
+#~ msgid "About..."
+#~ msgstr "Névjegy..."
+
+# settings.cpp:90 settings.cpp:211
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+# ktop.cpp:158
+#~ msgid "About Taskmanager"
+#~ msgstr "A Feledatkezelõrõl"
+
+# ktop.cpp:88
+#~ msgid "Quit"
+#~ msgstr "Kilépés"
+
+# ktop.cpp:91 ktop.cpp:105
+#~ msgid "Help"
+#~ msgstr "Súgó"
+
+# ktop.cpp:96
+#~ msgid "Process viewer settings..."
+#~ msgstr "A folyamat nézegetõ beállításai"
+
+# ktop.cpp:102
+#~ msgid "File"
+#~ msgstr "File"
+
+# ktop.cpp:103
+#~ msgid "Settings"
+#~ msgstr "Beállítások"
+
+# settings.cpp:67
+#~ msgid "Process viewer settings"
+#~ msgstr "A folyamat nézegetõ beállításai"
+
+# settings.cpp:69
+#~ msgid "Update interval"
+#~ msgstr "Frissítési intervallum"
+
+# settings.cpp:76
+#~ msgid "Slow"
+#~ msgstr "Lassú"
+
+# settings.cpp:77
+#~ msgid "Medium"
+#~ msgstr "Közepes"
+
+# settings.cpp:78
+#~ msgid "High"
+#~ msgstr "Magas"
+
+# settings.cpp:79
+#~ msgid "Custom"
+#~ msgstr "Beállított"
+
+# settings.cpp:86
+#~ msgid "Load (%CPU)"
+#~ msgstr "Terhelés (%CPU)"
+
+# settings.cpp:87
+#~ msgid "Misc settings"
+#~ msgstr "Vegyes beállítások"
+
+# settings.cpp:176
+#~ msgid "Error"
+#~ msgstr "Hiba"
+
+# settings.cpp:177
+#~ msgid "The update interval value mustbe greater than zero"
+#~ msgstr "A frissítési intervallumnak nullánál nagyobbnak kell lennie"
+
+# settings.cpp:184
+#~ msgid "Warning"
+#~ msgstr "Figyelmeztetés"
+
+# settings.cpp:185
+#~ msgid ""
+#~ "You have specified a very fast update ratio.\n"
+#~ "This may generate a noticeable load onyour system."
+#~ msgstr ""
+#~ "Nagyon gyors frissítési arányt határoztál meg.\n"
+#~ "Ez figyelemre méltó terhelést hozhat létre a rendszereden."
+
+# settings.cpp:209
+#~ msgid "Performance monitor settings"
+#~ msgstr "A teljesítmény figyelõ beállításai"
+
+# widgets.cpp:95
+#~ msgid "Properties..."
+#~ msgstr "Tulajdonságok..."
+
+# widgets.cpp:171
+#~ msgid "General"
+#~ msgstr "Általános"
+
+# widgets.cpp:515
+#~ msgid "Sorry"
+#~ msgstr "Bocs"
+
+# widgets.cpp:516
+#~ msgid "Not yet implemented.\n"
+#~ msgstr "Nincs még implementálva.\n"
+
+# widgets.cpp:533
+#~ msgid "Not implemented yet"
+#~ msgstr "Nincs még implementálva"

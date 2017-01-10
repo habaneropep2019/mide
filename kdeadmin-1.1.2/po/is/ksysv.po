@@ -1,0 +1,439 @@
+# Icelandic translation.
+# Copyright (C) 1998 Bjarni R. Einarsson
+# Bjarni R. Einarsson, <bre@mmedia.is>, 1998
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"Last-Translator: Bjarni R. Einarsson <bre@mmedia.is>\n"
+"Language-Team: is <kde-isl@mmedia.is>\n"
+
+# main.cpp:225
+#: main.cpp:236
+msgid ": Error"
+msgstr ": Villa"
+
+# main.cpp:226
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr "Ofurpaurinn má einn breyta kerfisþrepum."
+
+# OldView.cpp:105
+#: OldView.cpp:105
+msgid "Available"
+msgstr "Í boði"
+
+# OldView.cpp:106
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "Þjónu&stur"
+
+# OldView.cpp:110 OldView.cpp:115
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+"Þessar <bold>þjónustur</bold> standa til boða.\n"
+"Dragðu þjónustu á <bold>ræsihluta</bold> kerfisþreps til að ræsa hana.\n"
+"\n"
+"Dragðu hana sömuleiðis á <bold>stöðvunarhluta</bold> til að stöðva hana."
+
+# OldView.cpp:143
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "Kerfisþrep &%i"
+
+# OldView.cpp:146
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "Kerfisþrep %i"
+
+# OldView.cpp:149
+#: OldView.cpp:149
+msgid "Start"
+msgstr "Ræsa"
+
+# OldView.cpp:249
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Dragðu þjónustu hingað til að\n"
+"ræsa hana í kerfisþrepi %i"
+
+# OldView.cpp:250
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Dragðu þjónustu hingað til að\n"
+"stöðva hana í kerfisþrepi %i"
+
+# OldView.cpp:340
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr "** SKRIFA UPPSETNINGU **\n"
+
+# OldView.cpp:343
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr "** KERFISÞREP %i **\n"
+
+# OldView.cpp:517
+#: OldView.cpp:517
+msgid "Reading configuration: "
+msgstr "Les uppsetningu:"
+
+# OldView.cpp:619
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr "** Stöðva "
+
+# OldView.cpp:624
+#: OldView.cpp:624
+msgid " stop"
+msgstr " stövða"
+
+# OldView.cpp:639
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr "** Ræsi "
+
+# OldView.cpp:644
+#: OldView.cpp:644
+msgid " start"
+msgstr " ræsa"
+
+# OldView.cpp:661
+#: OldView.cpp:661
+msgid "** Re-starting "
+msgstr "** Endurræsi "
+
+# OldView.cpp:666
+#: OldView.cpp:666
+msgid " restart"
+msgstr " endurræsa"
+
+# OldView.cpp:811
+#: OldView.cpp:811
+msgid "P&roperties..."
+msgstr "&Eiginleikar..."
+
+# OldView.cpp:831
+#: OldView.cpp:831
+msgid "S&top"
+msgstr "S&töðva"
+
+# OldView.cpp:833
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "&Endurræsa"
+
+# TopWidget.cpp:136
+#: TopWidget.cpp:136
+msgid "&New Configuration"
+msgstr "&Ný uppsetning"
+
+# TopWidget.cpp:137
+#: TopWidget.cpp:137
+msgid "&Save Configuration"
+msgstr "&Vista uppsetningu"
+
+# TopWidget.cpp:143
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr "Prenta s&kýrslu..."
+
+# TopWidget.cpp:170
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr "Sýna &tækjaslá"
+
+# TopWidget.cpp:171
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr "Sýna &stöðuslá"
+
+# TopWidget.cpp:172
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr "Sýna s&kýrslu"
+
+# TopWidget.cpp:174
+#: TopWidget.cpp:174
+msgid "&Configure..."
+msgstr "Sti&llingar..."
+
+# TopWidget.cpp:177
+#: TopWidget.cpp:177
+msgid "&Save Options"
+msgstr "&Vista stillingar"
+
+# TopWidget.cpp:215
+#: TopWidget.cpp:215
+msgid "New"
+msgstr "Nýtt"
+
+# TopWidget.cpp:244
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "Birta/fela úttak ferla"
+
+# TopWidget.cpp:261
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"Það á eftir að vista breytingar.\n"
+"Viltu örugglega hætta samt?"
+
+# TopWidget.cpp:263
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "Já!"
+
+# TopWidget.cpp:264
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "Nei, ekki strax."
+
+# TopWidget.cpp:292
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "Afmá breytingar"
+
+# TopWidget.cpp:293
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "Viltu virkilega afmá allar óvistaðar breytingar?"
+
+# TopWidget.cpp:307
+#: TopWidget.cpp:307
+msgid "Save configuration"
+msgstr "Vista uppsetningu"
+
+# TopWidget.cpp:308
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"Þú ert í þann mund að vista breytingar sem þú hefur gert á uppsetningu init "
+"kerfisins.\n"
+"Mistök hvað þetta varðar geta leitt til þess að ræsiferli vélarinnar "
+"mislukkist næst.\n"
+"\n"
+"Ertu viss um að allt sé í lagi?"
+
+# TopWidget.cpp:313
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr "&Já, vistaðu!"
+
+# TopWidget.cpp:314
+#: TopWidget.cpp:314
+msgid "No, &don't save."
+msgstr "&Nei, ekki strax."
+
+# TopWidget.cpp:397
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "Um Qt"
+
+# TopWidget.cpp:472
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "Breytt"
+
+# TopWidget.cpp:589
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr "Gat ekki smíðað raðnúmer.  Breyttu þessu handvirkt."
+
+# prefs.cpp:48
+#: prefs.cpp:48
+#, c-format
+msgid "%s - Preferences"
+msgstr "%s - Stillingar"
+
+# prefs.cpp:58
+#: prefs.cpp:58
+msgid "Directory containing your init-scripts (&services)"
+msgstr "Mappan sem innihalda init &ferlin þín (þjónustur)"
+
+# prefs.cpp:79
+#: prefs.cpp:79
+msgid "Directory containing your &runlevel-directories"
+msgstr "Mappa sem inniheldur &keyrsluþrepamöppurnar þínar"
+
+# prefs.cpp:117
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr "Litur fyrir &nýjar færslur"
+
+# prefs.cpp:118
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr "Litur fyrir &breyttar færslur"
+
+# prefs.cpp:148
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr "&Slóðir"
+
+# prefs.cpp:149
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr "&Litir"
+
+# trash.cpp:55 trash.cpp:56
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "Dragðu hingað til að fjarlægja þjónustu"
+
+# PropDlg.cpp:52
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr "&Nafn"
+
+# PropDlg.cpp:54
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr "&Vísar á"
+
+# PropDlg.cpp:56
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr "&Raðnúmer"
+
+# PropDlg.cpp:113
+#: PropDlg.cpp:113
+#, c-format
+msgid "%s - Properties"
+msgstr "%s - Eiginleikar"
+
+# IOCore.cpp:48
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr "MISTÓKST að fjarlægja %s úr %s: \"%s\"\n"
+
+# IOCore.cpp:53
+#: IOCore.cpp:53
+#, c-format
+msgid "removed %s from %s\n"
+msgstr "fjarlægði %s úr %s\n"
+
+# IOCore.cpp:80
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr "smíðaði %s í %s\n"
+
+# IOCore.cpp:84
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr "MISTÓKST að smíða %s í %s: \"%s\"\n"
+
+# About.cpp:46
+#: About.cpp:46
+#, c-format
+msgid "About %s"
+msgstr "Um %s"
+
+# About.cpp:64
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr "KDE SysV Init stjóri"
+
+# About.cpp:81
+#: About.cpp:81
+#, c-format
+msgid "Version %s (KDE %s)"
+msgstr "Útgáfa %s (KDE %s)"
+
+# About.cpp:89
+#: About.cpp:89
+msgid "© 1997-1999 "
+msgstr "© 1997-1999 "
+
+# About.cpp:99
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr "Peter Putzer"
+
+# About.cpp:103
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr "Sendu villulýsingar/ánægjuyfirlýsingar/peningahrúgur/..."
+
+# About.cpp:115
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ".  Allur réttur áskilinn."
+
+# About.cpp:122
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp © 1997 Martin Jones.\n"
+"Uses the KDE libraries © 1997-1999 The KDE Team.\n"
+"Uses the Qt library © 1992-1998 Troll Tech AS."
+msgstr ""
+"IPC hlutar úr kdhelp © 1997 Martin Jones.\n"
+"Notar KDE stefjasöfnin © 1997-1999 KDE hópurinn.\n"
+"Notar Qt stefjasafnið © 1992-1998 Troll Tech AS."
+
+# About.cpp:129
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+"Stjóri til að breyta uppsetningum kerfisþrepa í SysV stíl, sem líkist\n"
+"aðeins \"tksysv\" frá RedHat, nema ksysv skilur dregna hluti og notkun\n"
+"lyklaborðsins."
+
+# About.cpp:142
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""
+"Þetta forrit er frjáls hugbúnaður; þú mátt dreifa og/eða breyta því "
+"samkvæmt\n"
+"skilmálum útgáfu 2 af \"GNU General Public License\" frá \"Free "
+"SoftwareFoundation\".\n"
+"\n"
+"Þýðing: Bjarni R. Einarsson <bre@mmedia.is>"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details.)"

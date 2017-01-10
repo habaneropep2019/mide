@@ -1,0 +1,50 @@
+- now compiles with EGCS   ( Robert Williams )
+
+new in version 0.3.0
+- added lots of keyboard shortcuts
+- added klocale->translate()
+
+new in version 0.2.6
+- icons should be visible in the toolbar
+
+new in version 0.2.5
+- you may save books and pages to an ascii file
+- more kde conforming due to the use of KTopLevelWidget
+
+new in version 0.2.4
+- uses kfontdialog to set the font of the editor widget
+- you may select an URL in your text and press the right mouse button
+  to execute a program with this URL. The program to execute is
+  configurable for http and ftp URLs.
+- some code cleanup
+
+new in version 0.2.3
+- compiles with libkde-970510   NOTE: this version is needed !
+- shouldn't segfault, if you delete pages
+- double clicking on an entry in the subjectlist closes the subjectlist window
+- fixed fonds -> fonts ;)
+
+new in version 0.2.2
+- compiles with libkde-0.7.2
+- several bug fixes
+
+new in version 0.2.1
+
+- should compile cleanly with libqt1.2 and libkde-0.7.1 and later
+
+new in version 0.2.0
+
+- changed the layout to be more KDE conforming (toolbar, statusbar,...)
+- folders are now called books and entries are pages
+- added subject to each page
+- you may popup a window with a list of all subjects and use it to find
+  pages more easily
+- further reduced the minimum size of the window
+
+new in version 0.1.1
+
+- does not delete empty lines anymore
+- you may insert TABs into your text
+- the minimum size of the window is smaller now
+- the size of the window is saved and read the next 
+  time kjots is started

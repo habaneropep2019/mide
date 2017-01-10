@@ -1,0 +1,1711 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: korganizer\n"
+"POT-Creation-Date: 1999-05-01 04:22+0200\n"
+"PO-Revision-Date: 1999-04-23 19:09+0100\n"
+"Last-Translator: Antonio Larrosa <larrosa@kde.org>\n"
+"Language-Team: Spanish <kde-es@kyb.ml.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"First-Translator: Antonio Larrosa <larrosa@kde.org>\n"
+
+#: alarmdaemon.cpp:38 alarmdaemon.cpp:43 calobject.cpp:372 calobject.cpp:385
+#: eventwindetails.cpp:341 eventwindetails.cpp:361 searchdialog.cpp:80
+#: topwidget.cpp:959 topwidget.cpp:967 topwidget.cpp:1110 topwidget.cpp:1136
+#: topwidget.cpp:1140
+msgid "KOrganizer Error"
+msgstr "Error de KOrganizer"
+
+#: calobject.cpp:373 calobject.cpp:386
+msgid ""
+"An error has occurred parsing the contents of the clipboard.\n"
+"You can only paste a valid vCalendar into KOrganizer.\n"
+msgstr ""
+"Ha ocurrido un error procesando los contenidos del portapapeles.\n"
+"Sólo puedes pegar un vCalendar válido en KOrganizer.\n"
+
+#: calobject.cpp:434
+msgid "found a VEvent with no DTSTART/DTEND! Skipping"
+msgstr "se encontró un VEvent sin DTSTART/DTEND! Saltando..."
+
+#: catdlg.cpp:19
+msgid "KOrganizer Categories"
+msgstr "Categorías de KOrganizer"
+
+#: catdlg.cpp:30
+msgid "Available Categories"
+msgstr "Categorías Disponibles"
+
+#: catdlg.cpp:36 eventwin.cpp:297 optionsdlg.cpp:228 optionsdlg.cpp:234
+#: optionsdlg.cpp:240
+msgid "Appointment"
+msgstr "Cita"
+
+#: catdlg.cpp:37
+msgid "Business"
+msgstr "Negocios"
+
+#: catdlg.cpp:38
+msgid "Meeting"
+msgstr "Reunión"
+
+#: catdlg.cpp:39
+msgid "Phone Call"
+msgstr "Llamada de Teléfono"
+
+#: catdlg.cpp:40
+msgid "Education"
+msgstr "Educación"
+
+#: catdlg.cpp:41
+msgid "Holiday"
+msgstr "Fiesta"
+
+#: catdlg.cpp:42
+msgid "Vacation"
+msgstr "Vacaciones"
+
+#: catdlg.cpp:43
+msgid "Special Occasion"
+msgstr "Ocasión Especial"
+
+#: catdlg.cpp:44 optionsdlg.cpp:34
+msgid "Personal"
+msgstr "Personal"
+
+#: catdlg.cpp:45
+msgid "Travel"
+msgstr "Viaje"
+
+#: catdlg.cpp:55
+msgid "&Add >>"
+msgstr "&Añadir >>"
+
+#: catdlg.cpp:57
+msgid "<< &Remove"
+msgstr "<< &Borrar"
+
+#: catdlg.cpp:66
+msgid "Selected Categories"
+msgstr "Categorías Seleccionadas"
+
+#: catdlg.cpp:78
+msgid "New Category:"
+msgstr "Nueva Categoría"
+
+#: editeventwin.cpp:116 todoeventwin.cpp:108
+msgid "General"
+msgstr "General"
+
+#: editeventwin.cpp:117 todoeventwin.cpp:109
+msgid "Details"
+msgstr "Detalles"
+
+#: editeventwin.cpp:119
+msgid "Recurrence"
+msgstr "Recurrencia"
+
+#: editeventwin.cpp:195 editeventwin.cpp:406 todoeventwin.cpp:162
+#: todoeventwin.cpp:182
+#, c-format
+msgid "Owner: %s"
+msgstr "Propietario : %s"
+
+#: editeventwin.cpp:810
+msgid "Duration: all day"
+msgstr "Duración: todo el día"
+
+#: editeventwin.cpp:818
+#, c-format
+msgid "Duration: %i hour(s), %i minute(s)"
+msgstr "Duración: %i hora(s), %i minuto(s)"
+
+#: editeventwin.cpp:820
+#, c-format
+msgid "Duration: %i hour(s)"
+msgstr "Duración: %i hora(s)"
+
+#: editeventwin.cpp:822
+#, c-format
+msgid "Duration: %i minute(s)"
+msgstr "Duración: %i minuto(s)"
+
+#: eventwidget.cpp:193
+msgid "Toggle Alarm"
+msgstr "(Des)Activar Alarma"
+
+#: eventwingeneral.cpp:42 eventwinrecur.cpp:28 wingeneral.cpp:34
+msgid "Appointment Time"
+msgstr "Fecha de la Cita"
+
+#: eventwingeneral.cpp:47 wingeneral.cpp:39
+msgid "Start Time:"
+msgstr "Fecha Comienzo:"
+
+#: eventwingeneral.cpp:58 wingeneral.cpp:48
+msgid "End Time:"
+msgstr "Fecha Final:"
+
+#: eventwingeneral.cpp:80 wingeneral.cpp:64
+msgid "No time associated"
+msgstr "Sin fecha asociada"
+
+#: eventwingeneral.cpp:91 wingeneral.cpp:75
+msgid "Recurring event"
+msgstr "Evento recurrente"
+
+#: eventwingeneral.cpp:99 todowingeneral.cpp:77
+msgid "Summary:"
+msgstr "Sumario:"
+
+#: eventwingeneral.cpp:110
+msgid "Show Time As:"
+msgstr "Mostrar Tiempo Como:"
+
+#: eventwingeneral.cpp:117
+msgid "Busy"
+msgstr "Ocupado"
+
+#: eventwingeneral.cpp:118
+msgid "Free"
+msgstr "Libre"
+
+#: eventwingeneral.cpp:133 todowingeneral.cpp:96
+msgid "Owner:"
+msgstr "Propietario:"
+
+#: eventwingeneral.cpp:139 todowingeneral.cpp:102
+msgid "Private"
+msgstr "Privado"
+
+#: eventwindetails.cpp:199 eventwingeneral.cpp:145 todowingeneral.cpp:108
+msgid "Categories..."
+msgstr "Categorías..."
+
+#: eventwingeneral.cpp:164
+msgid "Reminder:"
+msgstr "Recordatorio:"
+
+#: eventwindetails.cpp:39
+msgid "Attendee Information"
+msgstr "Información del Acompañante "
+
+#: eventwindetails.cpp:46
+msgid "Name"
+msgstr "Nombre"
+
+#: eventwindetails.cpp:47
+msgid "Email"
+msgstr "Email"
+
+#: eventwindetails.cpp:48
+msgid "Role"
+msgstr "Papel"
+
+#: eventwindetails.cpp:49
+msgid "Status"
+msgstr "Status"
+
+#: eventwindetails.cpp:50
+msgid "RSVP"
+msgstr "RSVP"
+
+#: eventwindetails.cpp:65
+msgid "Attendee Name:"
+msgstr "Nombre del Acompañante"
+
+#: eventwindetails.cpp:77
+msgid "Email Address:"
+msgstr "Dirección de Email:"
+
+#: eventwindetails.cpp:92
+msgid "Role:"
+msgstr "Papel:"
+
+#: eventwindetails.cpp:98
+msgid "Attendee"
+msgstr "Acompañante"
+
+#: eventwindetails.cpp:99
+msgid "Organizer"
+msgstr "Organizador"
+
+#: eventwindetails.cpp:100
+msgid "Owner"
+msgstr "Propietario"
+
+#: eventwindetails.cpp:101
+msgid "Delegate"
+msgstr "Delegado"
+
+#: eventwindetails.cpp:106
+msgid "Status:"
+msgstr "Status:"
+
+#: eventwindetails.cpp:112
+msgid "Needs Action"
+msgstr "Necesita Acción"
+
+#: eventwindetails.cpp:113
+msgid "Accepted"
+msgstr "Aceptado"
+
+#: eventwindetails.cpp:114
+msgid "Sent"
+msgstr "Enviado"
+
+#: eventwindetails.cpp:115
+msgid "Tentative"
+msgstr "Tentativo"
+
+#: eventwindetails.cpp:116
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#: eventwindetails.cpp:117
+msgid "Declined"
+msgstr "Denegado"
+
+#: eventwindetails.cpp:118 todowingeneral.cpp:35 todowingeneral.cpp:52
+msgid "Completed"
+msgstr "Completado"
+
+#: eventwindetails.cpp:119
+msgid "Delegated"
+msgstr "Delegado"
+
+#: eventwindetails.cpp:126
+msgid "Request Response"
+msgstr "Pedir Respuesta"
+
+#: eventwindetails.cpp:132
+msgid "&Add"
+msgstr "&Añadir"
+
+#: eventwindetails.cpp:136
+msgid "Address &Book..."
+msgstr "&Libro de Direcciones..."
+
+#: eventwindetails.cpp:163
+msgid "Attach..."
+msgstr "Adjuntar..."
+
+#: eventwindetails.cpp:183
+msgid "Save As..."
+msgstr "Guardar como..."
+
+#: eventwindetails.cpp:218
+msgid "Priority:"
+msgstr "Prioridad:"
+
+#: eventwindetails.cpp:224
+msgid "Low (1)"
+msgstr "Baja (1)"
+
+#: eventwindetails.cpp:225
+msgid "Normal (2)"
+msgstr "Normal (2)"
+
+#: eventwindetails.cpp:226
+msgid "High (3)"
+msgstr "Alta (3)"
+
+#: eventwindetails.cpp:227
+msgid "Maximum (4)"
+msgstr "Maxima (4)"
+
+#: eventwindetails.cpp:342
+msgid "Unable to open address book."
+msgstr "Incapaz de abrir el libro de direcciones."
+
+#: eventwindetails.cpp:362
+msgid "Error getting entry from address book."
+msgstr "Error obteniendo entrada del libro de direcciones."
+
+#: eventwinrecur.cpp:30
+msgid "Start:  "
+msgstr "Comienzo:"
+
+#: eventwinrecur.cpp:31
+msgid "End:  "
+msgstr "Final:"
+
+#: eventwinrecur.cpp:61
+msgid "Recurrence Rule"
+msgstr "Regla de Recurrencia:"
+
+#: eventwinrecur.cpp:67
+msgid "Daily"
+msgstr "Diaria"
+
+#: eventwinrecur.cpp:68
+msgid "Weekly"
+msgstr "Semanal"
+
+#: eventwinrecur.cpp:69
+msgid "Monthly"
+msgstr "Mensual"
+
+#: eventwinrecur.cpp:70
+msgid "Yearly"
+msgstr "Anual"
+
+#: eventwinrecur.cpp:95
+msgid "Enable Advanced Rule:"
+msgstr "Activar Regla Avanzada:"
+
+#: eventwinrecur.cpp:128
+msgid "Recurrence Range"
+msgstr "Rango de Recurrencia"
+
+#: eventwinrecur.cpp:132
+msgid "Begin On:"
+msgstr "Comenzar En:"
+
+#: eventwinrecur.cpp:134
+msgid "No Ending Date"
+msgstr "Sin Fecha de Final"
+
+#: eventwinrecur.cpp:135
+msgid "End after"
+msgstr "Terminar en"
+
+#: eventwinrecur.cpp:137
+msgid "occurrence(s)"
+msgstr "ocurrencia(s)"
+
+#: eventwinrecur.cpp:138
+msgid "End by:"
+msgstr "Terminar el:"
+
+#: eventwinrecur.cpp:181
+msgid "Exceptions"
+msgstr "Excepciones"
+
+#: eventwinrecur.cpp:267 eventwinrecur.cpp:297
+msgid "Recur every"
+msgstr "Repetir cada"
+
+#: eventwinrecur.cpp:273
+msgid "day(s)"
+msgstr "dia(s)"
+
+#: eventwinrecur.cpp:303
+msgid "week(s) on:"
+msgstr "semana(s) en:"
+
+#: eventwinrecur.cpp:305 kagenda.cpp:106
+msgid "Sun"
+msgstr "Dom"
+
+#: eventwinrecur.cpp:306 kagenda.cpp:105
+msgid "Mon"
+msgstr "Lun"
+
+#: eventwinrecur.cpp:307 kagenda.cpp:105
+msgid "Tue"
+msgstr "Mar"
+
+#: eventwinrecur.cpp:308 kagenda.cpp:105
+msgid "Wed"
+msgstr "Mie"
+
+#: eventwinrecur.cpp:309 kagenda.cpp:106
+msgid "Thu"
+msgstr "Jue"
+
+#: eventwinrecur.cpp:310 kagenda.cpp:106
+msgid "Fri"
+msgstr "Vie"
+
+#: eventwinrecur.cpp:311 kagenda.cpp:106
+msgid "Sat"
+msgstr "Sab"
+
+#: eventwinrecur.cpp:361 eventwinrecur.cpp:365
+msgid "Recur on the"
+msgstr "Repetir en el"
+
+#: eventwinrecur.cpp:363
+msgid "day"
+msgstr "dia"
+
+#: eventwinrecur.cpp:369 eventwinrecur.cpp:481
+msgid "every"
+msgstr "cada"
+
+#: eventwinrecur.cpp:371
+msgid "month(s)"
+msgstr "mes(es)"
+
+#: eventwinrecur.cpp:383 eventwinrecur.cpp:424
+msgid "1st"
+msgstr "1er"
+
+#: eventwinrecur.cpp:384 eventwinrecur.cpp:425
+msgid "2nd"
+msgstr "2º"
+
+#: eventwinrecur.cpp:385 eventwinrecur.cpp:426
+msgid "3rd"
+msgstr "3º"
+
+#: eventwinrecur.cpp:386 eventwinrecur.cpp:427
+msgid "4th"
+msgstr "4º"
+
+#: eventwinrecur.cpp:387 eventwinrecur.cpp:428
+msgid "5th"
+msgstr "5º"
+
+#: eventwinrecur.cpp:388
+msgid "6th"
+msgstr "6º"
+
+#: eventwinrecur.cpp:389
+msgid "7th"
+msgstr "7º"
+
+#: eventwinrecur.cpp:390
+msgid "8th"
+msgstr "8º"
+
+#: eventwinrecur.cpp:391
+msgid "9th"
+msgstr "9º"
+
+#: eventwinrecur.cpp:392
+msgid "10th"
+msgstr "10º"
+
+#: eventwinrecur.cpp:393
+msgid "11th"
+msgstr "11º"
+
+#: eventwinrecur.cpp:394
+msgid "12th"
+msgstr "12º"
+
+#: eventwinrecur.cpp:395
+msgid "13th"
+msgstr "13º"
+
+#: eventwinrecur.cpp:396
+msgid "14th"
+msgstr "14º"
+
+#: eventwinrecur.cpp:397
+msgid "15th"
+msgstr "15º"
+
+#: eventwinrecur.cpp:398
+msgid "16th"
+msgstr "16º"
+
+#: eventwinrecur.cpp:399
+msgid "17th"
+msgstr "17º"
+
+#: eventwinrecur.cpp:400
+msgid "18th"
+msgstr "18º"
+
+#: eventwinrecur.cpp:401
+msgid "19th"
+msgstr "19º"
+
+#: eventwinrecur.cpp:402
+msgid "20th"
+msgstr "20º"
+
+#: eventwinrecur.cpp:403
+msgid "21st"
+msgstr "21er"
+
+#: eventwinrecur.cpp:404
+msgid "22nd"
+msgstr "22º"
+
+#: eventwinrecur.cpp:405
+msgid "23rd"
+msgstr "23º"
+
+#: eventwinrecur.cpp:406
+msgid "24th"
+msgstr "24º"
+
+#: eventwinrecur.cpp:407
+msgid "25th"
+msgstr "25º"
+
+#: eventwinrecur.cpp:408
+msgid "26th"
+msgstr "26º"
+
+#: eventwinrecur.cpp:409
+msgid "27th"
+msgstr "27º"
+
+#: eventwinrecur.cpp:410
+msgid "28th"
+msgstr "28º"
+
+#: eventwinrecur.cpp:411
+msgid "29th"
+msgstr "29º"
+
+#: eventwinrecur.cpp:412
+msgid "30th"
+msgstr "30º"
+
+#: eventwinrecur.cpp:413
+msgid "31st"
+msgstr "31er"
+
+#: eventwinrecur.cpp:466
+msgid "Recur in the month of"
+msgstr "Repetir en el mes de"
+
+#: eventwinrecur.cpp:467
+msgid "Recur on this day"
+msgstr "Repetir en este día"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:469 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "January"
+msgstr "Enero"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:470 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "February"
+msgstr "Febrero"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:471 kdatenav.cpp:68 kdatenav.cpp:259
+msgid "March"
+msgstr "Marzo"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:472 kdatenav.cpp:69 kdatenav.cpp:259
+msgid "April"
+msgstr "Abril"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:473 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "May"
+msgstr "Mayo"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:474 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "June"
+msgstr "Junio"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:475 kdatenav.cpp:69 kdatenav.cpp:261
+msgid "July"
+msgstr "Julio"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:476 kdatenav.cpp:70 kdatenav.cpp:261
+msgid "August"
+msgstr "Agosto"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:477 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "September"
+msgstr "Septiembre"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:478 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "October"
+msgstr "Octubre"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:479 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "November"
+msgstr "Noviembre"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:480 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "December"
+msgstr "Deciembre"
+
+#: eventwinrecur.cpp:484
+msgid "year(s)"
+msgstr "año(s)"
+
+#: kagenda.cpp:212
+msgid "All Day Event"
+msgstr "Evento de Todo el Día"
+
+#: kagenda.cpp:830
+msgid "New appointment"
+msgstr "Nueva cita"
+
+#: kagenda.cpp:967 kagenda.cpp:975
+msgid "am"
+msgstr "am"
+
+#: kagenda.cpp:971
+msgid "pm"
+msgstr "pm"
+
+#: kdatenav.cpp:44
+msgid "Previous Year"
+msgstr "Año Anterior"
+
+#: kdatenav.cpp:50
+msgid "Previous Month"
+msgstr "Mes Anterior"
+
+#: kdatenav.cpp:56
+msgid "Next Month"
+msgstr "Mes Siguiente"
+
+#: kdatenav.cpp:62
+msgid "Next Year"
+msgstr "Año siguiente"
+
+#: kmonthview.cpp:386
+msgid "New Event"
+msgstr "Nuevo Evento"
+
+#: kpbutton.cpp:22 kpbutton.cpp:40 kpbutton.cpp:90
+msgid "KPButton: pixmap is empty, perhaps some missing file"
+msgstr "KPButton: pixmap está vacío, quizás falta un fichero"
+
+#: baselistview.cpp:28
+msgid "Date"
+msgstr "Fecha"
+
+#: baselistview.cpp:29
+msgid "Time"
+msgstr "Hora"
+
+#: baselistview.cpp:30 calprinter.cpp:365
+msgid "Summary"
+msgstr "Sumario"
+
+#: baselistview.cpp:77
+msgid "started "
+msgstr "comenzado "
+
+#: baselistview.cpp:80
+msgid "ends "
+msgstr "finaliza"
+
+#: baselistview.cpp:85
+#, c-format
+msgid "repeats %d times"
+msgstr "repetir %d veces"
+
+#: baselistview.cpp:89
+msgid "repeats forever"
+msgstr "repetir para siempre"
+
+#: listview.cpp:14
+msgid "Edit Event"
+msgstr "Editar Evento"
+
+#: listview.cpp:17
+msgid "Delete Event  "
+msgstr "Borrar Evento  "
+
+#: listview.cpp:20
+msgid "Show Dates"
+msgstr "Mostrar Fechas"
+
+#: listview.cpp:22
+msgid "Hide Dates"
+msgstr "Esconder Fechas"
+
+#: main.cpp:29
+msgid "No default calendar, and none was specified on the command line.\n"
+msgstr ""
+"Sin calendario por defecto, y no se especificó ninguno en la linea de "
+"comandos.\n"
+
+#: main.cpp:33
+msgid "Error reading from default calendar.\n"
+msgstr "Error leyendo del calendario por defecto.\n"
+
+#: searchdialog.cpp:22
+msgid "Search For:"
+msgstr "Buscar:"
+
+#: searchdialog.cpp:32 topwidget.cpp:494
+msgid "&Search"
+msgstr "&Buscar"
+
+#: searchdialog.cpp:81
+msgid ""
+"Invalid search expression, cannot perform\n"
+"the search.  Please enter a search expression\n"
+"using the wildcard characters '*' and '?'\n"
+"where needed."
+msgstr ""
+"Expresión de búsqueda inválida, no se puede realizar\n"
+"la búsqueda. Por favor, introduce una expresión de\n"
+"búsqueda usando los caracteres comodines '*' y '?'\n"
+"donde sea necesario."
+
+#: topwidget.cpp:391
+msgid "&Open"
+msgstr "&Abrir"
+
+#: topwidget.cpp:394
+msgid "Open &Recent"
+msgstr "Abrir &Reciente"
+
+#: topwidget.cpp:410
+msgid "Save &As"
+msgstr "Guardar &Como"
+
+#: topwidget.cpp:415
+msgid "&Import From Ical"
+msgstr "&Importar de Ical"
+
+#: topwidget.cpp:417
+msgid "&Merge Calendar"
+msgstr "&Unir Calendarios"
+
+#: topwidget.cpp:420
+msgid "Archive Old Entries"
+msgstr "Archivar Viejas Entradas"
+
+#: topwidget.cpp:427
+msgid "Print Setup"
+msgstr "Configuración de Impresión"
+
+#: calprinter.cpp:844 topwidget.cpp:431
+msgid "&Print"
+msgstr "&Impresión"
+
+#: topwidget.cpp:433
+msgid "Print Pre&view"
+msgstr "Vista Previa de Impresión"
+
+#: topwidget.cpp:455
+msgid "&List"
+msgstr "&Lista"
+
+#: topwidget.cpp:459
+msgid "&Day"
+msgstr "&Día"
+
+#: topwidget.cpp:462
+msgid "W&ork Week"
+msgstr "Semana L&aboral"
+
+#: topwidget.cpp:465
+msgid "&Week"
+msgstr "&Semana"
+
+#: topwidget.cpp:468
+msgid "&Month"
+msgstr "&Mes"
+
+#: topwidget.cpp:471
+msgid "&To-do list"
+msgstr "&Lista de &Tareas"
+
+#: topwidget.cpp:479
+msgid "New &Appointment"
+msgstr "Nueva &Cita"
+
+#: topwidget.cpp:481
+msgid "New E&vent"
+msgstr "Nuevo &Evento"
+
+#: topwidget.cpp:483
+msgid "&Edit Appointment"
+msgstr "&Editar Cita"
+
+#: topwidget.cpp:486
+msgid "&Delete Appointment"
+msgstr "&Borrar Cita"
+
+#: topwidget.cpp:488
+msgid "Delete To-do"
+msgstr "Borrar To-do"
+
+#: topwidget.cpp:498
+msgid "&Mail Appointment"
+msgstr "&Enviar Cita por Correo"
+
+#: topwidget.cpp:504
+msgid "Go to &Today"
+msgstr "Ir a &Hoy"
+
+#: topwidget.cpp:508
+msgid "&Previous Day"
+msgstr "Dia &Anterior"
+
+#: topwidget.cpp:512
+msgid "&Next Day"
+msgstr "Dia &Siguiente"
+
+#: topwidget.cpp:516
+msgid "Show &Tool Bar"
+msgstr "Mostrar &Barra de Herramientas"
+
+#: topwidget.cpp:520
+msgid "Show St&atus Bar"
+msgstr "Mostrar B&arra de Estado"
+
+#: topwidget.cpp:525
+msgid "&Edit Options"
+msgstr "&Editar Opciones"
+
+#: topwidget.cpp:533
+msgid "&About"
+msgstr "&Sobre"
+
+#: topwidget.cpp:535
+msgid "Send &Bug Report"
+msgstr "Enviar &Informe de Problemas"
+
+#: topwidget.cpp:543
+msgid "&Actions"
+msgstr "&Acciones"
+
+#: topwidget.cpp:562
+msgid "Open A Calendar"
+msgstr "Abrir Un Calendario"
+
+#: topwidget.cpp:568
+msgid "Save This Calendar"
+msgstr "Guardar Este Calendario"
+
+#: topwidget.cpp:585
+msgid "New Appointment"
+msgstr "Nueva Cita"
+
+#: topwidget.cpp:591
+msgid "Delete Appointment"
+msgstr "Borrar Cita"
+
+#: topwidget.cpp:597
+msgid "Search For an Appointment"
+msgstr "Buscar una Cita"
+
+#: topwidget.cpp:603
+#, fuzzy
+msgid "Mail Appointment"
+msgstr "Cita"
+
+#: topwidget.cpp:622
+msgid "Go to Today"
+msgstr "Ir a Hoy"
+
+#: topwidget.cpp:628
+msgid "Previous Day"
+msgstr "Dia Anterior"
+
+#: topwidget.cpp:634
+msgid "Next Day"
+msgstr "Dia Siguiente"
+
+#: topwidget.cpp:650
+msgid "List View"
+msgstr "Vista de Lista"
+
+#: topwidget.cpp:655
+msgid "Schedule View"
+msgstr "Vista de Horario"
+
+#: topwidget.cpp:662
+msgid "Month View"
+msgstr "Vista de Mes"
+
+#: topwidget.cpp:668
+msgid "To-do list view"
+msgstr "Vista de To-do"
+
+#: topwidget.cpp:750
+msgid "we don't handle updates for that view, yet.\n"
+msgstr "no manejamos actualizaciones para esa vista, todavía.\n"
+
+#: topwidget.cpp:842
+msgid "we don't handle that view yet.\n"
+msgstr "no manejamos esa vista todavía.\n"
+
+#: topwidget.cpp:960
+msgid "You did not specify a valid file name."
+msgstr "No especificó un nombre de fichero válido."
+
+#: topwidget.cpp:968
+msgid ""
+"The file you specified is a directory,\n"
+"and cannot be opened. Please try again,\n"
+"this time selecting a valid calendar file."
+msgstr ""
+"El fichero que especificó es un directorio,\n"
+"y no puede ser abierto. Por favor intente de nuevo,\n"
+"esta vez seleccionando un fichero de calendario válido."
+
+#: topwidget.cpp:995
+msgid "KOrganizer Warning"
+msgstr "Advertencia de KOrganizer"
+
+#: topwidget.cpp:996
+msgid ""
+"This calendar has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"El calendario ha sido modificado.\n"
+"¿Quieres guardar los cambios?"
+
+#: topwidget.cpp:998
+msgid "&Yes"
+msgstr "&Si"
+
+#: topwidget.cpp:998
+msgid "&No"
+msgstr "&No"
+
+#: topwidget.cpp:1007 topwidget.cpp:1597
+msgid "KOrganizer Confirmation"
+msgstr "Confirmación de KOrganizer"
+
+#: topwidget.cpp:1008
+msgid "This item will be permanently deleted."
+msgstr "Este elemento será borrado permanéntemente"
+
+#: topwidget.cpp:1111
+msgid ""
+"You have no ical file in your home directory.\n"
+"Import cannot proceed.\n"
+msgstr ""
+"No tienes un fichero ical en tu directorio personal.\n"
+"No se puede importar.\n"
+
+#: topwidget.cpp:1124
+msgid "KOrganizer Info"
+msgstr "Información de KOrganizer"
+
+#: topwidget.cpp:1125
+msgid ""
+"KOrganizer succesfully imported and merged your\n"
+".calendar file from ical into the currently\n"
+"opened calendar.\n"
+msgstr ""
+"KOrganizer importó y unió satisfactóriamente tu\n"
+"fichero .calendar de ical en el calendario\n"
+"abierto actualmente.\n"
+
+#: topwidget.cpp:1130
+msgid "ICal Import Successful With Warning"
+msgstr "Importación de ICal Satisfactoria con Mensajes de Precaución"
+
+#: topwidget.cpp:1131
+msgid ""
+"KOrganizer encountered some unknown fields while\n"
+"parsing your .calendar ical file, and had to\n"
+"discard them.  Please check to see that all\n"
+"your relevant data was correctly imported.\n"
+msgstr ""
+"KOrganizer encontró algunos campos desconocidos mientras\n"
+"procesaba tu fichero .calendar de ical, y ha tenido\n"
+"que ignorarlos. Por favor, mira que todos tus datos\n"
+"relevantes fueron importados correctamente.\n"
+
+#: topwidget.cpp:1137
+msgid ""
+"KOrganizer encountered some error parsing your\n"
+".calendar file from ical.  Import has failed.\n"
+msgstr ""
+"KOrganizer encontró algunos errores procesando tu\n"
+"fichero .calendar de ical. No se ha podido importar.\n"
+
+#: topwidget.cpp:1141
+msgid ""
+"KOrganizer doesn't think that your .calendar\n"
+"file is a valid ical calendar. Import has failed.\n"
+msgstr ""
+"KOrganizer no cree que tu fichero .calendar\n"
+" es un calendario válido de ical. No se ha podido importar.\n"
+
+#: topwidget.cpp:1305 topwidget.cpp:1332 topwidget.cpp:1683 topwidget.cpp:1693
+msgid "KOrganizer error"
+msgstr "Error de KOrganizer"
+
+#: topwidget.cpp:1306 topwidget.cpp:1333
+msgid ""
+"Unfortunately, we don't handle cut/paste for\n"
+"that view yet.\n"
+msgstr ""
+"Desafortunadamente, no manejamos cortar/pegar en\n"
+"esa vista todavía.\n"
+
+#: topwidget.cpp:1549
+msgid "don't handle deletes from that view, yet.\n"
+msgstr "no manejamos borrados de esa lista, todavía.\n"
+
+#: topwidget.cpp:1598
+msgid ""
+"This event recurs over multiple dates.\n"
+"Are you sure you want to delete the\n"
+"selected event, or just this instance?\n"
+msgstr ""
+"Este evento se repite por multiples fechas.\n"
+"Estás seguro de que quieres borrar el evento\n"
+"seleccionado, ¿o sólo éste?\n"
+
+#: topwidget.cpp:1601
+msgid "&All"
+msgstr "&Todos"
+
+#: topwidget.cpp:1601
+msgid "&This"
+msgstr "&Este"
+
+#: topwidget.cpp:1616
+msgid "no date selected, or invalid date\n"
+msgstr "no hay fecha seleccionada, o fecha inválida\n"
+
+#: topwidget.cpp:1684
+msgid "Can't generate mail from this view\n"
+msgstr "No se puede generar un correo desde esta vista\n"
+
+#: topwidget.cpp:1694
+msgid ""
+"Can't generate mail:\n"
+" No attendees defined!\n"
+msgstr ""
+"No se puede generar correo:\n"
+" No hay destinatarios definidos!\n"
+
+#: topwidget.cpp:1833
+msgid "New Calendar"
+msgstr "Nuevo Calendario"
+
+#: eventwin.cpp:313 eventwin.cpp:319 topwidget.cpp:1839
+msgid "modified"
+msgstr "modificado"
+
+#: eventwin.cpp:325 topwidget.cpp:1844
+msgid "KOrganizer"
+msgstr "KOrganizer"
+
+#: calprinter.cpp:47
+msgid "Korganizer Configuration Options"
+msgstr "Opciones de Configuración de KOrganizer"
+
+#: calprinter.cpp:361 todowingeneral.cpp:60
+msgid "Priority"
+msgstr "Prioridad"
+
+#: calprinter.cpp:369
+msgid "Due"
+msgstr "Por"
+
+#: calprinter.cpp:453
+#, c-format
+msgid "To-Do items: %s %.2d"
+msgstr "Elementos To-Do: %s %.2d"
+
+#: calprinter.cpp:791
+msgid "Date Range"
+msgstr "Rango de Fecha"
+
+#: calprinter.cpp:811
+msgid "View Type"
+msgstr "Tipo de Vista"
+
+#: calprinter.cpp:816
+msgid "Day"
+msgstr "Día"
+
+#: calprinter.cpp:821
+msgid "Week"
+msgstr "Semana"
+
+#: calprinter.cpp:825
+msgid "Month"
+msgstr "Mes"
+
+#: calprinter.cpp:829
+msgid "To-Do"
+msgstr "To-Do"
+
+#: calprinter.cpp:843
+msgid "&Preview"
+msgstr "&Anterior"
+
+#: koarchivedlg.cpp:19
+msgid "Archive / Delete Past Appointments - KOrganizer"
+msgstr "Archivo / Borrar Citar Pasadas - KOrganizer"
+
+#: optionsdlg.cpp:37
+msgid "Time & Date"
+msgstr "Hora y Fecha"
+
+#: optionsdlg.cpp:43
+msgid "Colors"
+msgstr "Colores"
+
+#: optionsdlg.cpp:46
+msgid "Views"
+msgstr "Vistas"
+
+#: optionsdlg.cpp:52
+msgid "Printing"
+msgstr "Impresión"
+
+#: optionsdlg.cpp:65
+msgid "KOrganizer Configuration"
+msgstr "Configuración de KOrganizer"
+
+#: optionsdlg.cpp:93
+msgid "Your name:"
+msgstr "Tu nombre:"
+
+#: optionsdlg.cpp:97
+msgid "Email address:"
+msgstr "Dirección de email:"
+
+#: optionsdlg.cpp:101
+msgid "Additional:"
+msgstr "Adicional:"
+
+#: optionsdlg.cpp:105
+msgid "Auto-save Calendar"
+msgstr "Auto-guardar Calendario"
+
+#: optionsdlg.cpp:109
+msgid "Confirm Appointment/To-Do Deletes"
+msgstr "Confirmar Borrados de Citas/Tareas"
+
+#: optionsdlg.cpp:113
+msgid "Holidays:"
+msgstr "Fiestas:"
+
+#: optionsdlg.cpp:139
+msgid "1 minute"
+msgstr "1 minuto"
+
+#: optionsdlg.cpp:139
+msgid "5 minutes"
+msgstr "5 minutos"
+
+#: optionsdlg.cpp:140
+msgid "10 minutes"
+msgstr "10 minutos"
+
+#: optionsdlg.cpp:140
+msgid "15 minutes"
+msgstr "15 minutos"
+
+#: optionsdlg.cpp:141
+msgid "30 minutes"
+msgstr "30 minutos"
+
+#: optionsdlg.cpp:148
+msgid "Time Format:"
+msgstr "Formato de Hora:"
+
+#: optionsdlg.cpp:149
+msgid "24 hour"
+msgstr "24 horas"
+
+#: optionsdlg.cpp:150
+msgid "AM / PM"
+msgstr "AM / PM"
+
+#: optionsdlg.cpp:154
+msgid "Date Format:"
+msgstr "Formato de Fecha:"
+
+#: optionsdlg.cpp:155
+msgid "Day.Month.Year (31.01.2000)"
+msgstr "Dia.Mes.Año (31.01.2000)"
+
+#: optionsdlg.cpp:156
+msgid "Month/Day/Year (01/31/2000)"
+msgstr "Mes/Dia/Año (01/31/2000)"
+
+#: optionsdlg.cpp:157
+msgid "Month-Day-Year (01-31-2000)"
+msgstr "Mes-Dia-Año (01-31-2000)"
+
+#: optionsdlg.cpp:161
+msgid "Time Zone:"
+msgstr "Zona Horaria:"
+
+#: optionsdlg.cpp:168
+msgid "Default Appointment Time:"
+msgstr "Hora de Cita por Defecto:"
+
+#: optionsdlg.cpp:178
+msgid "Default Alarm Time:"
+msgstr "Hora de Alarma por Defecto:"
+
+#: optionsdlg.cpp:186
+msgid "Week Starts on Monday"
+msgstr "Las Semanas empiezan en Lunes"
+
+#: optionsdlg.cpp:203
+msgid "Day Begins At:"
+msgstr "El Dia Comienza a las:"
+
+#: optionsdlg.cpp:213
+msgid "Hour size in schedule view"
+msgstr "Tamaño de la hora en vista de horario"
+
+#: optionsdlg.cpp:217
+msgid "Show events that recur daily in Date Navigator"
+msgstr "Mostrar eventos diarios en el Navegador de Fechas"
+
+#: optionsdlg.cpp:229
+msgid "List view font"
+msgstr "Fuente de Vista de Lista"
+
+#: optionsdlg.cpp:235
+msgid "Schedule view font"
+msgstr "Fuente de Vista de Horario"
+
+#: optionsdlg.cpp:241
+msgid "Month view font"
+msgstr "Fuente de Vista de Mes"
+
+#: optionsdlg.cpp:246
+msgid "12345"
+msgstr "12345"
+
+#: optionsdlg.cpp:246
+msgid "Time bar font"
+msgstr "Fuente de barra horaria:"
+
+#: optionsdlg.cpp:251
+msgid "Things to do"
+msgstr "Cosas que hacer"
+
+#: optionsdlg.cpp:252
+msgid "To-Do list font"
+msgstr "Lista de &Tareas"
+
+#: optionsdlg.cpp:273
+msgid "Use system default colors"
+msgstr "Usar colores por defecto del sistema"
+
+#: optionsdlg.cpp:278
+msgid "Appointment & Checklist items"
+msgstr "Elementos de Citas y Chequeos"
+
+#: optionsdlg.cpp:279
+msgid "Background"
+msgstr "Fondo"
+
+#: optionsdlg.cpp:282
+msgid "Text"
+msgstr "Texto"
+
+#: optionsdlg.cpp:285
+msgid "Handle Selected"
+msgstr "Asa Seleccionada"
+
+#: optionsdlg.cpp:288
+msgid "Handle Unselected"
+msgstr "Asa no Seleccionada"
+
+#: optionsdlg.cpp:291
+msgid "Handle Active Apt."
+msgstr "Asa Activada Apt."
+
+#: optionsdlg.cpp:296
+msgid "Sheet background"
+msgstr "Fondo de Hoja"
+
+#: optionsdlg.cpp:299
+msgid "Calendar Background"
+msgstr "Fondo de Calendario"
+
+#: optionsdlg.cpp:302
+msgid "Calendar Date Text"
+msgstr "Texto de Fecha de Calendario"
+
+#: optionsdlg.cpp:305
+msgid "Calendar Date Selected"
+msgstr "Fecha de Calendario Seleccionada"
+
+#: optionsdlg.cpp:344
+msgid "Printer Name"
+msgstr "Nombre de la Impresora"
+
+#: optionsdlg.cpp:374
+msgid "Paper Size"
+msgstr "Tamaño de Papel"
+
+#: optionsdlg.cpp:376
+msgid "A4"
+msgstr "A4"
+
+#: optionsdlg.cpp:377
+msgid "B5"
+msgstr "B5"
+
+#: optionsdlg.cpp:378
+msgid "Letter"
+msgstr "Carta"
+
+#: optionsdlg.cpp:379
+msgid "Legal"
+msgstr "Legal"
+
+#: optionsdlg.cpp:380
+msgid "Executive"
+msgstr "Ejecutivo"
+
+#: optionsdlg.cpp:384
+msgid "Paper Orientation"
+msgstr "Orientación del Papel"
+
+#: optionsdlg.cpp:386
+msgid "Portrait"
+msgstr "Normal"
+
+#: optionsdlg.cpp:388
+msgid "Landscape"
+msgstr "Apaisado"
+
+#: optionsdlg.cpp:395
+msgid "Preview Program"
+msgstr "Programa de Previsualización"
+
+#: kpropdlg.cpp:124
+msgid "Prev"
+msgstr "Anterior"
+
+#: kpropdlg.cpp:125
+msgid "Next"
+msgstr "Siguiente"
+
+#: aboutdlg.cpp:20
+msgid "KOrganizer Virtual Postcard"
+msgstr "Postal Virtual de KOrganizer"
+
+#: aboutdlg.cpp:24
+msgid ""
+"Please send a postcard to me, so I can see who is\n"
+"using KOrganizer! Tell me how great the program is,\n"
+"and how you just can't live without it.  Or, report\n"
+"a bug which is stopping you from doing useful work.\n"
+"The postcard will simply include anything you wish to\n"
+"type in the comment area below.\n"
+msgstr ""
+"Por favor mándame una postal, para ver quién está\n"
+"usando KOrganizer! Cuéntame lo fantástico que es el programa,\n"
+"y como no puedes vivir sin el. O infórmame del problema\n"
+"que te está impidiendo hacer un trabajo util.\n"
+"La postal simplemente incluirá todo lo que quieras\n"
+"escribir en el area de comentarios abajo.\n"
+
+#: aboutdlg.cpp:104
+msgid "About KOrganizer"
+msgstr "Sobre KOrganizer"
+
+#: aboutdlg.cpp:137
+msgid "by Preston Brown and"
+msgstr "por Preston Brown y"
+
+#: aboutdlg.cpp:156
+msgid "License Agreement:"
+msgstr "Acuerdo de Licencia:"
+
+#: aboutdlg.cpp:162
+msgid ""
+"\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n"
+msgstr ""
+"\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n"
+
+#: aboutdlg.cpp:197
+msgid "&Send Postcard"
+msgstr "&Mandar Postal"
+
+#: aboutdlg.cpp:233
+msgid "many more, thank you!"
+msgstr "muchos mas, gracias !"
+
+#: aboutdlg.cpp:255
+msgid "Could not load movie"
+msgstr "No se pudo cargar la película"
+
+#: kotodoview.cpp:27
+msgid "To-Do Items"
+msgstr "Tareas"
+
+#: kotodoview.cpp:91 kotodoview.cpp:99
+msgid "New To-Do"
+msgstr "Nueva Tarea"
+
+#: kotodoview.cpp:94
+msgid "Purge Completed "
+msgstr "Limpieza Completada "
+
+#: kotodoview.cpp:101
+msgid "Edit To-Do"
+msgstr "Editar Tareas"
+
+#: kotodoview.cpp:104
+msgid "Delete To-Do"
+msgstr "Borrar Tarea"
+
+#: kotodoview.cpp:106
+msgid "Purge Completed"
+msgstr "Limpieza Completada"
+
+#: kotodoview.cpp:108
+msgid "Sort by Priority"
+msgstr "Ordenar por Prioridad"
+
+#: eventwin.cpp:91
+msgid "Save and Close"
+msgstr "Guardar y Cerrar"
+
+#: eventwin.cpp:111
+msgid "Previous Event"
+msgstr "Evento Previo"
+
+#: eventwin.cpp:117
+msgid "Next Event"
+msgstr "Evento Siguiente"
+
+#: eventwin.cpp:128
+msgid "Delete Event"
+msgstr "Borrar Evento"
+
+#: eventwin.cpp:286
+msgid "New"
+msgstr "Nuevo"
+
+#: eventwin.cpp:293
+msgid "Todo"
+msgstr "Todo"
+
+#: eventwin.cpp:309
+msgid "readonly"
+msgstr "solo lectura"
+
+#: todowingeneral.cpp:41
+msgid "% Completed"
+msgstr "% Completado"
+
+#: todowingeneral.cpp:48
+#, c-format
+msgid "0 %"
+msgstr "0 %"
+
+#: todowingeneral.cpp:49
+#, c-format
+msgid "25 %"
+msgstr "25 %"
+
+#: todowingeneral.cpp:50
+#, c-format
+msgid "50 %"
+msgstr "50 %"
+
+#: todowingeneral.cpp:51
+#, c-format
+msgid "75 %"
+msgstr "75 %"
+
+#: todowingeneral.cpp:67
+msgid "1 (Highest)"
+msgstr "1 (La mas alta)"
+
+#: todowingeneral.cpp:68
+msgid "2"
+msgstr "2"
+
+#: todowingeneral.cpp:69
+msgid "3"
+msgstr "3"
+
+#: todowingeneral.cpp:70
+msgid "4"
+msgstr "4"
+
+#: todowingeneral.cpp:71
+msgid "5 (lowest)"
+msgstr "5 (La mas baja)"
+
+#: alarmdaemon.cpp:39 alarmdaemon.cpp:44
+msgid "Can't load docking tray icon!"
+msgstr "No se pudo cargar el icono para empotrar en el panel!"
+
+#: alarmdaemon.cpp:48
+msgid "Alarms Enabled"
+msgstr "Alarmas Activadas"
+
+#: alarmdaemon.cpp:51
+msgid "Exit Applet"
+msgstr "Salir de la Carpeta"
+
+#: alarmdaemon.cpp:54
+msgid "KOrganizer Control Applet"
+msgstr "Carpeta de Control de KOrganizer"
+
+#: alarmdaemon.cpp:156
+#, c-format
+msgid "KOrganizer Alarm: %s\n"
+msgstr "Alarma de KOrganizer: %s\n"
+
+#: alarmdaemon.cpp:157
+msgid ""
+"The following events triggered alarms:\n"
+"\n"
+msgstr ""
+"Los siguientes eventos accionaron alarmas:\n"
+"\n"
+
+#~ msgid "New Appointment - KOrganizer"
+#~ msgstr "Nueva Cita - KOrganizer"
+
+#~ msgid "Edit Todo - KOrganizer (Readonly)"
+#~ msgstr "Editar Todo - KOrganizer (Sólo Lectura)"
+
+#~ msgid "Edit Appointment - KOrganizer (Readonly)"
+#~ msgstr "Editar Cita - KOrganizer (Sólo Lectura)"
+
+#~ msgid "Edit Todo - KOrganizer"
+#~ msgstr "Editar Todo - KOrganizer"
+
+#~ msgid "Edit Appointment - KOrganizer"
+#~ msgstr "Editar Cita - KOrganizer"
+
+#, fuzzy
+#~ msgid "&Mail Appointment..."
+#~ msgstr "&Editar Cita"
+
+#~ msgid "Previous"
+#~ msgstr "Anterior"
+
+#~ msgid "Modified Calendar Warning"
+#~ msgstr "Advertencia de Calendario Modificado"
+
+#~ msgid ""
+#~ "You are opening a new calendar, but the currentone has been modified.\n"
+#~ "Are you sure you want todo this? All changes will be lost!\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Estás abriendo un nuevo calendario, pero el actual ha sido modificado.\n"
+#~ "¿Estás seguro de que quieres hacer esto? Todos los cambios se perderán!\n"
+#~ "\n"
+
+#~ msgid "KOrganizer Modified Calendar Warning"
+#~ msgstr "Advertencia de Calendario Modificado de KOrganizer"
+
+#~ msgid ""
+#~ "You are opening a new calendar, but the current one has been modified.\n"
+#~ "Are you sure you want to do this? All changes will be lost!\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Estás abriendo un nuevo calendario, pero el actual ha sido modificado.\n"
+#~ "¿Estás seguro de que quieres hacer esto? Todos los cambios se perderán!\n"
+#~ "\n"
+
+#~ msgid "&Don't Save"
+#~ msgstr "&No Guardar"
+
+#, fuzzy
+#~ msgid ""
+#~ "Are you sure you want to delete\n"
+#~ "the selected to do item?\n"
+#~ "\n"
+#~ msgstr ""
+#~ "¿Estás seguro de que quieres borrar\n"
+#~ "el evento seleccionado?\n"
+
+#~ msgid ""
+#~ "Are you sure you want to delete\n"
+#~ "the selected event?\n"
+#~ "\n"
+#~ msgstr ""
+#~ "¿Estás seguro de que quieres borrar\n"
+#~ "el evento seleccionado?\n"
+
+#~ msgid "%s%s- KOrganizer"
+#~ msgstr "%s%s- KOrganizer"
+
+#~ msgid "New Calendar%s- KOrganizer"
+#~ msgstr "Nuevo Calendario%s- KOrganizer"
+
+#~ msgid "%s - KOrganizer"
+#~ msgstr "%s - KOrganizer"
+
+#~ msgid "New Calendar - KOrganizer"
+#~ msgstr "Nuevo Calendario - KOrganizer"
+
+#~ msgid "Test"
+#~ msgstr "Prueba"
+
+#~ msgid "Category Dialog"
+#~ msgstr "Dialogo de Categorías"
+
+#~ msgid "Attendee Name"
+#~ msgstr "Nombre del Acompañante"
+
+#~ msgid "Low"
+#~ msgstr "Baja"
+
+#~ msgid "Resources..."
+#~ msgstr "Recursos..."
+
+#~ msgid "Day/Month/Year"
+#~ msgstr "Dia/Mes/Año"
+
+#~ msgid "Year/Month/Day"
+#~ msgstr "Año/Mes/Dia"
+
+#~ msgid "Pri"
+#~ msgstr "Pri"
+
+#~ msgid "Todo Descrip."
+#~ msgstr "Descripción de la Tarea"
+
+#~ msgid "Not implemented yet."
+#~ msgstr "No implementado todavía."
+
+#~ msgid "Not Implemented Yet"
+#~ msgstr "No Implementado Todavía"
+
+#~ msgid "Location:"
+#~ msgstr "Lugar:"
+
+#~ msgid "Transparency:"
+#~ msgstr "Transparencia:"

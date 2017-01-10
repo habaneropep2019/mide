@@ -1,0 +1,1110 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Sári Gábor <saga@mail.externet.hu>\, 1999.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kiconedit 0.3.0-1\n"
+"POT-Creation-Date: 1999-08-17 01:26+0200\n"
+"PO-Revision-Date: 1999-08-04 11:46+0100\n"
+"Last-Translator: Sári Gábor <saga@mail.externet.hu>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8-bit\n"
+""
+
+#: utils.cpp:65
+#, c-format
+msgid "copyFile - There was an error opening destination file: %s"
+msgstr "copyFile - Hiba történt a cél fájl megnyitásakor: %s"
+
+#: utils.cpp:72
+#, c-format
+msgid "copyFile - There was an error reading source file: %s"
+msgstr "copyFile - Hiba történt a forrás fájl olvasásakor: %s"
+
+#: utils.cpp:80
+#, c-format
+msgid "copyFile - There was an error writing to destination file: %s"
+msgstr "copyFile - Hiba történt a cél fájl írásakor: %s"
+
+#: utils.cpp:93
+#, c-format
+msgid "copyFile - There was an error opening source file: %s"
+msgstr "copyFile - Hiba történt a forrás fájl megnyitásakor: %s"
+
+#: utils.cpp:105
+#, c-format
+msgid "removeFile - There was an error removing the file: %s"
+msgstr "removeFile - Hiba történt a fájl eltávolításakor: %s"
+
+#: kiconedit.cpp:239 kiconeditslots.cpp:62 kiconeditslots.cpp:121
+msgid ""
+"The current file has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"Az aktuális fájl módosításra került.\n"
+"Kimented?"
+
+#: kiconedit.cpp:373
+msgid "Select All"
+msgstr "Kijelöl mindet"
+
+#: kiconedit.cpp:391
+msgid "New &Window"
+msgstr "Új &ablak"
+
+#: kiconedit.cpp:396
+msgid "&New..."
+msgstr "Ú&j..."
+
+#: kiconedit.cpp:402
+msgid "Open recent"
+msgstr "&Elõzõek megnyitása"
+
+#: kiconedit.cpp:423
+msgid "&Exit"
+msgstr "&Kilépés"
+
+#: kiconedit.cpp:431
+msgid "Cu&t"
+msgstr "Ki&vág"
+
+#: kiconedit.cpp:440
+msgid "Paste as &new"
+msgstr "Bei&lleszt újba"
+
+#: kiconedit.cpp:443
+msgid "Clea&r"
+msgstr "Tö&rlés"
+
+#: kiconedit.cpp:447
+msgid "Select &all"
+msgstr "Kijelöl mind&ent"
+
+#: kiconedit.cpp:454
+msgid "1:1"
+msgstr "1:1"
+
+#: kiconedit.cpp:455
+msgid "1:5"
+msgstr "1:5"
+
+#: kiconedit.cpp:456
+msgid "1:10"
+msgstr "1:10"
+
+#: kiconedit.cpp:461
+msgid "Zoom &in"
+msgstr "&Nagyítás"
+
+#: kiconedit.cpp:462
+msgid "Zoom &out"
+msgstr "&Kicsinyítés"
+
+#: kiconedit.cpp:463
+msgid "Zoom factor"
+msgstr "Méretarány"
+
+#: kiconedit.cpp:470
+msgid "&Resize"
+msgstr "Átmé&retezés"
+
+#: kiconedit.cpp:472
+msgid "&GrayScale"
+msgstr "&Szürkeskála"
+
+#: kiconedit.cpp:477
+msgid "&Icon"
+msgstr "&Ikon"
+
+#: kiconedit.cpp:481
+msgid "Freehand"
+msgstr "Szabadkézi rajz"
+
+#: kiconedit.cpp:482
+msgid "Rectangle"
+msgstr "Téglalap"
+
+#: kiconedit.cpp:483
+msgid "Filled rectangle"
+msgstr "Kitöltött téglalap"
+
+#: kiconedit.cpp:484
+msgid "Circle"
+msgstr "Kör"
+
+#: kiconedit.cpp:485
+msgid "Filled circle"
+msgstr "Kitöltött kör"
+
+#: kiconedit.cpp:486
+msgid "Ellipse"
+msgstr "Ellipszis"
+
+#: kiconedit.cpp:487
+msgid "Filled ellipse"
+msgstr "Kitöltött ellipszis"
+
+#: kiconedit.cpp:488 kiconedit.cpp:687
+msgid "Spray"
+msgstr "Festékszóró"
+
+#: kiconedit.cpp:489 kiconedit.cpp:689
+msgid "Flood fill"
+msgstr "Kitöltés"
+
+#: kiconedit.cpp:490
+msgid "Line"
+msgstr "Vonal"
+
+#: kiconedit.cpp:491
+msgid "Eraser (Transparent)"
+msgstr "Radír (Áttetszõ)"
+
+#: kiconedit.cpp:494
+msgid "&Tools"
+msgstr "Eszközök"
+
+#: kiconedit.cpp:498
+msgid "&Configure"
+msgstr "&Beállítások"
+
+#: kiconedit.cpp:500
+msgid "Toggle &Grid"
+msgstr "&Rács"
+
+#: kiconedit.cpp:503
+msgid "Toggle &toolbar"
+msgstr "&Eszközsor"
+
+#: kiconedit.cpp:506
+msgid "Toggle &drawing tools"
+msgstr "Raj&zeszközök"
+
+#: kiconedit.cpp:509
+msgid "Toggle &statusbar"
+msgstr "Állapo&tsor"
+
+#: kiconedit.cpp:513
+msgid "&Save options"
+msgstr "Beállítá&sok elmentése"
+
+#: kiconedit.cpp:520
+msgid ""
+"KDE Icon Editor\n"
+"\n"
+"A graphics drawing program for creating\n"
+"icons using the KDE icon palette\n"
+"\n"
+"Copyright 1998 by Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018"
+msgstr ""
+"KDE Ikon Szerkesztõ\n"
+"\n"
+"Grafikus rajzoló program ikonok létrehozásához,\n"
+"a KDE ikon készletének bõvítéséhez.\n"
+"\n"
+"Copyright 1998 by Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018"
+
+#: kiconedit.cpp:570
+msgid "What is ...?"
+msgstr "Mi ez...?"
+
+#: kiconedit.cpp:579
+msgid "Drag source"
+msgstr "Forrás megragadása"
+
+#: kiconedit.cpp:584
+msgid "New File"
+msgstr "Új fájl"
+
+#: kiconedit.cpp:588
+msgid "Save the file"
+msgstr "Mentés"
+
+#: kiconedit.cpp:591
+msgid "Print icon"
+msgstr "Nyomtatás..."
+
+#: kiconedit.cpp:606
+msgid "Select area"
+msgstr "Terület kijelölése"
+
+#: kiconedit.cpp:612
+msgid "Resize"
+msgstr "Átméretezés"
+
+#: kiconedit.cpp:615
+msgid "GrayScale"
+msgstr "Szürkeskála"
+
+#: kiconedit.cpp:622
+msgid "Zoom out"
+msgstr "Kicsinyítés"
+
+#: kiconedit.cpp:625
+msgid "Zoom in"
+msgstr "Nagyítás"
+
+#: kiconedit.cpp:629
+msgid "Toggle grid"
+msgstr "Rács ki/be"
+
+#: kiconedit.cpp:640
+msgid "New Window"
+msgstr "Új ablak"
+
+#: kiconedit.cpp:668
+msgid "Find pixel"
+msgstr "Pixel kijelölés"
+
+#: kiconedit.cpp:670
+msgid "Draw freehand"
+msgstr "Szabadkézi rajzolás"
+
+#: kiconedit.cpp:673
+msgid "Draw line"
+msgstr "Vonal rajzolás"
+
+#: kiconedit.cpp:675
+msgid "Draw rectangle"
+msgstr "Téglalap rajzolás"
+
+#: kiconedit.cpp:677
+msgid "Draw filled rectangle"
+msgstr "Kitöltött téglalap rajzolás"
+
+#: kiconedit.cpp:679
+msgid "Draw circle"
+msgstr "Kör rajzolás"
+
+#: kiconedit.cpp:681
+msgid "Draw filled circle"
+msgstr "Kitöltött kör rajzolás"
+
+#: kiconedit.cpp:683
+msgid "Draw ellipse"
+msgstr "Ellipszis rajzolás"
+
+#: kiconedit.cpp:685
+msgid "Draw filled ellipse"
+msgstr "Kitöltött ellipszis rajzolás"
+
+#: kiconedit.cpp:692
+msgid "Erase"
+msgstr "Törlés, radírozás"
+
+#: kiconedit.cpp:715
+msgid "System Colors"
+msgstr "Rendszer színek"
+
+#: kiconedit.cpp:745
+msgid "Custom Colors"
+msgstr "Saját színek"
+
+#: kiconedit.cpp:786
+msgid ""
+"Icon draw grid\n"
+"\n"
+"The icon grid is the area where you draw the icons.\n"
+"You can zoom in and out using the magnifying glasses on the toolbar.\n"
+"(Tip: Hold the magnify button down for a few seconds to zoom to a predefined "
+"scale"
+msgstr ""
+"Ikon szerkesztõ rács\n"
+"\n"
+"Ez az a terület amelyben az ikonok szerkeszthetõk.\n"
+"A nagyításhoz használd az eszközsoron levõ nagyítás ikont.\n"
+"(Tipp: Tartsd lenyomva az ikont egy pár pillanatig, ésfeltûnnek az elõre "
+"definiált méretarányok."
+
+#: kiconedit.cpp:791
+msgid ""
+"Rulers\n"
+"\n"
+"This is a visual represantation of the current cursor position"
+msgstr ""
+"Vonalzó\n"
+"\n"
+"Itt a kurzor kurzor aktuális pozíciója látható."
+
+#: kiconedit.cpp:795
+msgid ""
+"Statusbar\n"
+"\n"
+"The statusbar gives information of the status of the current icon. The "
+"fields are:\n"
+"\n"
+"\t- Cursor position\n"
+"\t- Size\n"
+"\t- Zoom factor\n"
+"\t- Number of colors\n"
+"\t- Application messages"
+msgstr ""
+"Állapotsor\n"
+"\n"
+"Az állapotsorban folyamatosan információk láthatók.\n"
+"A megjelenõ infók az alábbiak:\n"
+"\n"
+"\t- A kurzor pozíciója,\n"
+"\t- Ikon mérete pixelben,\n"
+"\t- Megjelenítés méretaránya,\n"
+"\t- Az ikon színeinek száma,\n"
+"\t- A program üzenetei."
+
+#: kiconedit.cpp:804
+msgid ""
+"Preview\n"
+"\n"
+"This is a 1:1 preview of the current icon"
+msgstr ""
+"Megtekintés\n"
+"\n"
+"Itt az ikon 1:1 méretarányú képe látható."
+
+#: kiconedit.cpp:807
+msgid ""
+"System colors\n"
+"\n"
+"Here you can select colors from the KDE Icon Palette."
+msgstr ""
+"Rendszer színek\n"
+"\n"
+"Itt választhat színeket a KDE Ikon palettájából."
+
+#: kiconedit.cpp:810
+msgid ""
+"Custom colors\n"
+"\n"
+"Here you can build a palette of custom colors.\n"
+"Just double-click on a box to edit the color"
+msgstr ""
+"Saját színek\n"
+"\n"
+"Itt saját színpalettát definiálhat.\n"
+"\n"
+"A színek dupla kattintással szerkeszthetõek."
+
+#: kiconedit.cpp:816
+msgid ""
+"New\n"
+"\n"
+"Create a new icon either from a template or by specifying the size"
+msgstr ""
+"Új ikon\n"
+"\n"
+"Új ikon létrehozása minták alapján, vagy méretmegadással."
+
+#: kiconedit.cpp:819
+msgid ""
+"Open\n"
+"\n"
+"Open an existing icon"
+msgstr ""
+"Megnyitás\n"
+"\n"
+"Létezõ ikon megnyitása."
+
+#: kiconedit.cpp:822
+msgid ""
+"Save\n"
+"\n"
+"Save the current icon"
+msgstr ""
+"Mentés\n"
+"\n"
+"Az aktuális ikon kimentése."
+
+#: kiconedit.cpp:825
+msgid ""
+"Print\n"
+"\n"
+"Opens a print dialog to let you print the current icon. (Doesn't realy work "
+"as expected"
+msgstr ""
+"Nyomtatás\n"
+"\n"
+"Megjeleníti a Nyomtatás ablakot, melybõl kinyomtatható az aktuális ikon.\n"
+"Nem egészen úgy mûködik, ahogy gondolnád."
+
+#: kiconedit.cpp:829
+msgid ""
+"Cut\n"
+"\n"
+"Cut the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Kivágás\n"
+"\n"
+"Kiollózza az ikon kijelölt területét a vágólapra.\n"
+"\n"
+"(Megjegyzés: Téglalap és kör alakú területek jelölhetõek ki)"
+
+#: kiconedit.cpp:833
+msgid ""
+"Copy\n"
+"\n"
+"Copy the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Másolás\n"
+"\n"
+"Másolatot készít a vágólapra az ikon kijelölt területérõl.\n"
+"\n"
+"(Megjegyzés: Téglalap és kör alakú területek jelölhetõek ki)"
+
+#: kiconedit.cpp:837
+msgid ""
+"Paste\n"
+"\n"
+"Paste the contents of the clipboard into the current icon.\n"
+"\n"
+"If the contents is larger than the current icon you can paste it in a new "
+"window.\n"
+"\n"
+"(Tip: Select \"Paste transparent pixels\" in the configuration dialog if you "
+"also want to paste transparent)"
+msgstr ""
+"Beillesztés\n"
+"\n"
+"Beilleszti a vágólap tartalmát az ikon megadott pontjára.\n"
+"\n"
+"Amennyiben a vágólap tartalma nagyobb az aktuális ikon méreténél a "
+"beillesztés egy új ablakba történik.\n"
+"\n"
+"(Tipp: Válassza ki a \"Beillesztés áttetszõ pixelekkel\" pontot a beállítás "
+"menüben, ha a beillesztést átlátszó háttérrel akarja.)"
+
+#: kiconedit.cpp:844
+msgid ""
+"Select\n"
+"\n"
+"Select a section of the icon using the mouse.\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Kijelölés\n"
+"\n"
+"Terület kijelölése az egér segítségével.\n"
+"\n"
+"(Megjegyzés: Téglalap és kör alakú területek jelölhetõek ki)"
+
+#: kiconedit.cpp:848
+msgid ""
+"Resize\n"
+"\n"
+"Smoothly resizes the icon while trying to preserve the contents"
+msgstr ""
+"Átméretezés\n"
+"\n"
+"Az ikon átméretezése méretarányosan."
+
+#: kiconedit.cpp:851
+msgid ""
+"Gray scale\n"
+"\n"
+"Gray scale the current icon.\n"
+"(Warning: The result is likely to contain colors not in the icon palette"
+msgstr ""
+"Szürkeskála\n"
+"\n"
+"Átalakítja az aktuális ikont szürkeskálába.\n"
+"\n"
+"(Figyelem: The result is likely to contain colors not in the icon palette)"
+
+#: kiconedit.cpp:855
+msgid ""
+"Zoom out\n"
+"\n"
+"Zoom out by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Kicsinyítés\n"
+"\n"
+"Kicsinyítés egy fokozattal.\n"
+"\n"
+"(Tipp: Tartsa lenyomva az ikont egy pár pillanatig, és feltûnnek az elõre definiált méretarányok."
+
+#: kiconedit.cpp:859
+msgid ""
+"Zoom in\n"
+"\n"
+"Zoom in by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Nagyítás\n"
+"\n"
+"Nagyítás egy fokozattal.\n"
+"\n"
+"(Tipp: Tartsa lenyomva az ikont egy pár pillanatig, és feltûnnek az elõre definiált méretarányok."
+
+#: kiconedit.cpp:863
+msgid ""
+"Toggle grid\n"
+"\n"
+"Toggles the grid in the icon edit grid on/off"
+msgstr ""
+"Rács\n"
+"\n"
+"A szerkesztést segítõ rácsok ki és bekapcsolása."
+
+#: kiconedit.cpp:866
+msgid ""
+"New window\n"
+"\n"
+"Opens a new Icon Editor window."
+msgstr ""
+"Új ablak\n"
+"\n"
+"Új Ikon Szerkesztõ ablak megnyitása."
+
+#: kiconedit.cpp:869
+msgid ""
+"Whats is...?\n"
+"\n"
+"Well since you're reading this I guess you found out ;-)"
+msgstr ""
+"Segítség\n"
+"\n"
+"Segít felfedezni a program különbözõ elemeit.\n"
+"\n"
+"Miután megnyomta ezt a gombot, kattintson a kívánt képelemre."
+
+#: kiconedit.cpp:872
+msgid ""
+"Drag source\n"
+"\n"
+"From this button you can drag out a copy of the current icon and drop it on "
+"a drop enabled window, eg. another Icon Editor.\n"
+"\n"
+"(Note: The drag source uses the QT XDND protocol which is not yet standard "
+"in KDE)"
+msgstr ""
+"Forrás megragadása\n"
+"\n"
+"E gomb segítségével áthúzható az aktuális ikon egy másik szerkesztõablakba "
+"vagy egy másik Ikon Szerkesztõbe.\n"
+"\n"
+"(Megjegyzés: Ez a lehetõség a QT XDND protokol segítségével történik, ami "
+"nem része a standard KDE-nek)"
+
+#: kiconedit.cpp:880
+msgid ""
+"Free hand\n"
+"\n"
+"Draw non-linear lines"
+msgstr ""
+"Szabadkézi rajz\n"
+"\n"
+"Szabadkézi rajzolás."
+
+#: kiconedit.cpp:883
+msgid ""
+"Flood fill\n"
+"\n"
+"Fill adjoining pixels with the same color with the current color"
+msgstr ""
+"Kitöltés\n"
+"\n"
+"Zárt terület kitöltés aktuális színnel."
+
+#: kiconedit.cpp:886
+msgid ""
+"Rectangle\n"
+"\n"
+"Draw a rectangle"
+msgstr ""
+"Téglalap\n"
+"\n"
+"Téglalap rajzolás."
+
+#: kiconedit.cpp:889
+msgid ""
+"Filled rectangle\n"
+"\n"
+"Draw a filled rectangle"
+msgstr ""
+"Kitöltött téglalap\n"
+"\n"
+"Kitöltött téglalap rajzolás."
+
+#: kiconedit.cpp:892
+msgid ""
+"Circle\n"
+"\n"
+"Draw a circle"
+msgstr ""
+"Kör\n"
+"\n"
+"Kör rajzolás."
+
+#: kiconedit.cpp:895
+msgid ""
+"Filled circle\n"
+"\n"
+"Draw a filled circle"
+msgstr ""
+"Kitöltött kör\n"
+"\n"
+"Kitöltött kör rajzolás."
+
+#: kiconedit.cpp:898
+msgid ""
+"Ellipse\n"
+"\n"
+"Draw an ellipse"
+msgstr ""
+"Ellipszis\n"
+"\n"
+"Ellipszis rajzolás."
+
+#: kiconedit.cpp:901
+msgid ""
+"Filled ellipse\n"
+"\n"
+"Draw a filled ellipse"
+msgstr ""
+"Kitöltött ellipszis\n"
+"\n"
+"Kitöltött ellipszis rajzolás."
+
+#: kiconedit.cpp:904
+msgid ""
+"Line\n"
+"\n"
+"Draw a straight line vertically, horizontically or in 45 dgr. angles"
+msgstr ""
+"Vonal\n"
+"\n"
+"Egyenes vonal rajzolás vízszintesen, függõlegesen vagy 45°-ban."
+
+#: kiconedit.cpp:907
+msgid ""
+"Spray\n"
+"\n"
+"Draw scattered pixels in the current color"
+msgstr ""
+"Festékszóró\n"
+"\n"
+"Szétszóródó pixelek rejzolása."
+
+#: kiconedit.cpp:910
+msgid ""
+"Find\n"
+"\n"
+"The color of the pixel clicked on will be the current drawcolor"
+msgstr ""
+"Kijelölés\n"
+"\n"
+"The color of the pixel clicked on will be the current drawcolor"
+
+#: kiconedit.cpp:913
+msgid ""
+"Erase\n"
+"\n"
+"Erase pixels. Set the pixels to be transparent\n"
+"\n"
+"(Tip: If you want to draw transparent with a different tool then first click "
+"on \"Erase\" then on the tool you want to use)"
+msgstr ""
+"Törlés, radír\n"
+"\n"
+"A kijelölt pixelek törlése.\n"
+"A pixel színe átlátszó lesz."
+
+#: kicongrid.cpp:66
+msgid "width"
+msgstr "szélesség"
+
+#: kicongrid.cpp:71
+msgid "height"
+msgstr "magasság"
+
+#: kicongrid.cpp:684
+msgid "There was an error loading a blank image.\n"
+msgstr "Hiba üres kép beolvasása közben.\n"
+
+#: kicongrid.cpp:830
+msgid "All selected"
+msgstr "Az összes pixel kijelölésre került"
+
+#: kicongrid.cpp:841
+msgid "Cleared"
+msgstr "Törölve"
+
+#: kicongrid.cpp:883
+msgid "Selected area cutted"
+msgstr "A kijelölt terület kivágásra került"
+
+#: kicongrid.cpp:886
+msgid "Selected area copied"
+msgstr "A kijelölt terület átmásolásra került"
+
+#: kicongrid.cpp:964
+msgid ""
+"There was an copying:\n"
+"to the clipboard!"
+msgstr ""
+"Hiba történt a vágólapra másoláskor!"
+
+#: kicongrid.cpp:985
+msgid ""
+"The clipboard image is larger than the current image!\n"
+"Paste as new image?"
+msgstr ""
+"A vágólapon lévõ kép nagyobb az aktuális képnél!\n"
+"Beillesszem egy új ablakba?"
+
+#: kicongrid.cpp:998
+msgid "Pasting"
+msgstr "Beillesztés"
+
+#: kicongrid.cpp:1030 kicongrid.cpp:1057
+msgid "Done pasting"
+msgstr "Beillesztés rendben"
+
+#: kicongrid.cpp:1035 kicongrid.cpp:1061
+msgid "Invalid pixmap data in clipboard!\n"
+msgstr "Hibás pixmap adat a vágólapon!\n"
+
+#: kiconcombiview.cpp:81
+msgid "Folders:"
+msgstr "Könyvtár:"
+
+#: kiconcombiview.cpp:82
+msgid "Contents:"
+msgstr "Tartalom:"
+
+#: kicondetaillist.cpp:50
+msgid "Name"
+msgstr "Név"
+
+#: kicondetaillist.cpp:52
+msgid "Size"
+msgstr "Méret"
+
+#: kicondetaillist.cpp:55
+msgid "Permissions"
+msgstr "Jogok"
+
+#: kicondetaillist.cpp:57
+msgid "Date"
+msgstr "Dátum"
+
+#: kicondetaillist.cpp:60
+msgid "Owner"
+msgstr "Tulajdonos"
+
+#: kicondetaillist.cpp:62
+msgid "Group"
+msgstr "Csoport"
+
+#: kicon.cpp:48
+msgid "There was an error removing temporary backup file:\n"
+msgstr "Hiba átmeneti állomány eltávolítása közben:\n"
+
+#: kicon.cpp:74 kicon.cpp:258 kicon.cpp:342 kicon.cpp:445
+msgid ""
+"We've got a KFM job running.\n"
+"Please wait."
+msgstr ""
+"Egy KFM munka már folyamatban van.\n"
+"Kérlek várj."
+
+#: kicon.cpp:97
+msgid "The URL:\n"
+msgstr "Az URL:\n"
+
+#: kicon.cpp:99
+msgid ""
+"\n"
+"seems to be malformed.\n"
+msgstr ""
+"\n"
+"hibásnak tûnik.\n"
+
+#: kicon.cpp:100 kicon.cpp:146 kicon.cpp:169 kicon.cpp:181 kicon.cpp:194
+#: kicon.cpp:207 kicon.cpp:218 kicon.cpp:399 kicon.cpp:432
+msgid "ERROR"
+msgstr "HIBA"
+
+#: kicon.cpp:116
+msgid "The KDE Icon Editor has found a recover file for:\n"
+msgstr "Az Ikon Szerkesztõ biztonsági másolatot talált:\n"
+
+#: kicon.cpp:118 kicon.cpp:285
+msgid ""
+"\n"
+"Do you want to open this?"
+msgstr ""
+"\n"
+"Szeretnéd ezt megnyitni?"
+
+#: kicon.cpp:143
+msgid "The file:\n"
+msgstr "A fájl:\n"
+
+#: kicon.cpp:145
+msgid ""
+"\n"
+"doesn't exist or isn't readable.\n"
+msgstr ""
+"\n"
+"nem létezik, vagy nem olvasható.\n"
+
+#: kicon.cpp:160
+msgid ""
+"The Icon Editor is already downloading a non-local file.\n"
+"Please wait.\n"
+msgstr ""
+"Az Ikon Szerkesztõ letölt egy távoli fájlt.\n"
+"Várj egy kicsit.\n"
+
+#: kicon.cpp:170
+msgid "Couldn't initiate KFM!"
+msgstr "Nem sikerült a KFM-et inicializálni!"
+
+#: kicon.cpp:178
+msgid "There was a KFM error creating a backup for:\n"
+msgstr "KFM hiba történt másolt létrehozásakor:\n"
+
+#: kicon.cpp:191 kicon.cpp:396
+msgid "There was an error creating a backup for:\n"
+msgstr "Hiba történt másolt létrehozásakor:\n"
+
+#: kicon.cpp:204
+msgid "KIcon: There was a error locking:\n"
+msgstr "KIcon: Zárolási hiba:\n"
+
+#: kicon.cpp:215 kicon.cpp:291
+msgid "KIcon: There was a QT error loading:\n"
+msgstr "KIcon: QT betöltési hiba:\n"
+
+#: kicon.cpp:261
+msgid ""
+"*|All files (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|GIF files (*.gif)\n"
+"*jpg|JPEG files (*.jpg)\n"
+msgstr ""
+"*|Minden fájl (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|GIF fájlok (*.gif)\n"
+"*jpg|JPEG fájlok (*.jpg)\n"
+
+#: kicon.cpp:283
+msgid "The KDE Icon Editor has found a recover\n"
+msgstr "A KDE Ikon Szerkesztõ talált egy biztonsági\n"
+
+#: kicon.cpp:284
+msgid "file for an unsaved icon."
+msgstr "másolatot egy elmentetlen ikonról."
+
+#: kicon.cpp:409
+msgid "Couldn't initiate KFM"
+msgstr "Nem lehet inicializálni a KFM-et"
+
+#: kicon.cpp:422
+msgid "Done saving"
+msgstr "Mentés rendben"
+
+#: kicon.cpp:429
+msgid "There was an error saving:\n"
+msgstr "Hiba történt a mentés közben:\n"
+
+#: kresize.cpp:29
+msgid "Size:"
+msgstr "Méret:"
+
+#: kresize.cpp:64
+msgid "Select size:"
+msgstr "Méret:"
+
+#: knew.cpp:34
+msgid "Standard file"
+msgstr "Normál fájl"
+
+#: knew.cpp:39
+msgid "Source file"
+msgstr "Forrás fájl"
+
+#: knew.cpp:44
+msgid "Compressed file"
+msgstr "Tömörített fájl"
+
+#: knew.cpp:49
+msgid "Standard folder"
+msgstr "Normál mappa"
+
+#: knew.cpp:54
+msgid "Standard package"
+msgstr "Normál csomag"
+
+#: knew.cpp:59
+msgid "Mini folder"
+msgstr "Miniatûr mappa"
+
+#: knew.cpp:64
+msgid "Mini package"
+msgstr "Miniatûr csomag"
+
+#: knew.cpp:156 knew.cpp:258 knew.cpp:308
+msgid "Create from scratch"
+msgstr "Megadott méretû új ikon"
+
+#: knew.cpp:158 knew.cpp:313
+msgid "Create from template"
+msgstr "Létrehozás minta alapján"
+
+#: kiconconfig.cpp:120 knew.cpp:194
+msgid "Templates:"
+msgstr "Minták:"
+
+#: knew.cpp:252
+msgid "Select icontype"
+msgstr "Ikontípus kiválasztása"
+
+#: knew.cpp:263
+msgid "Create new icon"
+msgstr "Új ikon"
+
+#: debug.cpp:20
+msgid "Fatal!"
+msgstr "Hiba!"
+
+#: kiconeditslots.cpp:403
+msgid "Sorry - not implemented."
+msgstr "Sajna, még nem mûködik."
+
+#: kiconeditslots.cpp:471 kiconeditslots.cpp:478
+#, c-format
+msgid "Colors: %u"
+msgstr "Színek: %u"
+
+#: kiconconfig.cpp:30
+msgid "Template"
+msgstr "Sablon"
+
+#: kiconconfig.cpp:31
+msgid "Description:"
+msgstr "Megnevezés:"
+
+#: kiconconfig.cpp:33
+msgid "Path:"
+msgstr "Útvonal:"
+
+#: kiconconfig.cpp:63
+msgid "&Browse..."
+msgstr "&Böngészés..."
+
+#: kiconconfig.cpp:136
+msgid "&Add"
+msgstr "&Hozzáadás"
+
+#: kiconconfig.cpp:248
+msgid "Color or pixmap"
+msgstr "Színes vagy pixmap"
+
+#: kiconconfig.cpp:256
+msgid "Colored background"
+msgstr "Egyszínû háttér"
+
+#: kiconconfig.cpp:261
+msgid "Pixmap background"
+msgstr "Pixmap háttér"
+
+#: kiconconfig.cpp:276
+msgid "&Color..."
+msgstr "Színek..."
+
+#: kiconconfig.cpp:279
+msgid "&Pixmap..."
+msgstr "&Pixmap..."
+
+#: kiconconfig.cpp:287
+msgid "&Built-in"
+msgstr "&Beépített"
+
+#: kiconconfig.cpp:291
+msgid "Example"
+msgstr "Megtekintés"
+
+#: kiconconfig.cpp:399
+msgid "Main Toolbar"
+msgstr "Fõ eszközsor"
+
+#: kiconconfig.cpp:402
+msgid "Drawing tools"
+msgstr "Rajzeszközök"
+
+#: kiconconfig.cpp:406
+msgid ""
+"Note: Other settings of the toolbars can be reached\n"
+"from the toolbar \"handle\" or from the \"Options\" menu"
+msgstr ""
+"Megjegyzés: Az eszközsor egyéb beállításai az eszközsor\n"
+"\"handle\" opcióján vagy a \"Beállítások\" menün keresztül érhetõk el."
+
+#: kiconconfig.cpp:425 kiconconfig.cpp:438
+msgid "Show Icon"
+msgstr "Ikonok"
+
+#: kiconconfig.cpp:430 kiconconfig.cpp:443
+msgid "Show Icon and Text"
+msgstr "Ikonok és szövegek"
+
+#: kiconconfig.cpp:434 kiconconfig.cpp:447
+msgid "Show Text"
+msgstr "Szöveg"
+
+#: kiconconfig.cpp:505
+msgid "Paste mode"
+msgstr "Beillesztési mód"
+
+#: kiconconfig.cpp:507
+msgid "Paste transparent pixels"
+msgstr "Beillesztés áttetszõ pixelekkel"
+
+#: kiconconfig.cpp:511
+msgid "Show rulers"
+msgstr "Vonalzó látszik"
+
+#: kiconconfig.cpp:593
+msgid "Keys"
+msgstr "Billentyûk"
+
+#: kiconconfig.cpp:598
+msgid "Configure keys"
+msgstr "Billentyûk konfigurálása"
+
+#: kiconconfig.cpp:605
+msgid "Templates"
+msgstr "Sablonok"
+
+#: kiconconfig.cpp:610
+msgid "Configure Icon templates"
+msgstr "Ikon sablonok szerkesztése"
+
+#: kiconconfig.cpp:622
+msgid "Configure background"
+msgstr "Háttér beállítása"
+
+#: kiconconfig.cpp:630
+msgid "Toolbars"
+msgstr "Eszközök"
+
+#: kiconconfig.cpp:642
+msgid "Icon grid"
+msgstr "Ikon rács"

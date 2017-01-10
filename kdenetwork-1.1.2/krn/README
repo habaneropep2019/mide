@@ -1,0 +1,62 @@
+*************************************************************************
+INTRODUCTION:
+*************************************************************************
+
+This is the 0.3.5 release of KRN, a news reader for the KDE project.
+It doesn't do much yet, but it lets you connect to a server, 
+subscribe/unsubscribe to newsgroups, and even read them (sometimes :-).
+
+Krn is released under the GPL, so it comes with no warranty, etc,etc.
+Read the COPYING file if you want the lawyerspeak.
+
+*************************************************************************
+NEW ON THIS VERSION
+*************************************************************************
+
+Well, I don't really remember, but I think this list is more-or-less
+adequate:
+
+* Threading (about 99.99% correct now).
+* Message display options.
+* Automatic retrieval from the web of old/expired articles!
+* Lots of bugfixes.
+
+*************************************************************************
+IMPORTANT:
+*************************************************************************
+
+1) Krn needs a server that supports the XOVER extension, which should
+   be almost every server out there which is not *very* outdated.
+   BUT there seems to be a problem with krn's detection of XOVER support
+   so if krn gives you a "your server doesn't support XOVER" error, let me
+   know, and we can check out if that's really true.
+
+3) I really need testers. Krn works quite well for me, but some people have
+   BIG problems. So, don't just throw it away, become a developer!
+   Debug and win fame and fortune! 8-)
+
+4) krn has a web page at: http://ultra7.unl.edu.ar/krn where you can get the
+   latest/greatest/buggiest version of krn almost every day.
+
+5) krn uses the very excellent and generally nice MIME++ library developed
+   by Doug Sauder <dwsauder@fwb.gulf.net> with the author's permission. 
+
+
+**************************************************************************
+NOT SO IMPORTANT:
+**************************************************************************
+
+The biggest unimplemented things are:
+
+* Posting
+
+(wow! this list has gotten a lot shorter! :-)
+
+If you want help... look at the tooltips :-).
+
+If you like it and wanna help, send me a mail.
+
+Roberto Alsina
+ralsina@unl.edu.ar
+
+PS: it should compile fine on other OSs, but I only tested it on Linux.

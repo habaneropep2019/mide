@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmktalkd\n"
+"POT-Creation-Date: 1998-12-12 15:20+0100\n"
+"PO-Revision-Date: 1998-12-23 20:57 CET\n"
+"Last-Translator: Miroslav Flídr <flidr@kky.zcu.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:58
+msgid "&Announcement"
+msgstr "&Oznámení"
+
+#: main.cpp:61
+msgid "Ans&wering machine"
+msgstr "&Záznamník"
+
+#: main.cpp:64
+msgid "&Forward"
+msgstr "Pøe&smìrování"
+
+#: main.cpp:70
+msgid "usage: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+msgstr ""
+"Pou¾ití: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+
+#: main.cpp:111
+msgid "KTalkd Configuration"
+msgstr "Nastavení programu KTalkd"
+
+#: soundpage.cpp:46
+msgid "&Announcement program"
+msgstr "&Oznamovací program"
+
+#: soundpage.cpp:53
+msgid "&Talk client"
+msgstr "&Talk klient"
+
+#: soundpage.cpp:57
+msgid "&Play sound"
+msgstr "&Pøehrávat zvuk"
+
+#: soundpage.cpp:59
+msgid "&Sound File"
+msgstr "Z&vukový soubor"
+
+#: soundpage.cpp:61
+msgid "Additional WAV files can be dropped onto the sound list."
+msgstr "Dal¹í WAV soubory je mo¾no upustit nad seznamem zvukù"
+
+#: soundpage.cpp:76
+msgid "&Test"
+msgstr "T&est"
+
+#: soundpage.cpp:156
+msgid "Unsupported URL"
+msgstr "Nepodporované URL"
+
+#: soundpage.cpp:157
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE System Sound "
+"Module"
+msgstr ""
+"Lituji, ale tento typ URL není momentálnì podporován modulem systémových "
+"zvukù"
+
+#: soundpage.cpp:164
+#, c-format
+msgid ""
+"Sorry, but \n"
+"%s\n"
+"does not seem to be a WAV--file."
+msgstr ""
+"Lituji, ale nezdá se, ¾e by\n"
+"%s\n"
+"byl WAv souborem"
+
+#: soundpage.cpp:167
+msgid "Improper File Extension"
+msgstr "Nesprávná koncovka souborù"
+
+#: soundpage.cpp:175
+#, c-format
+msgid ""
+"The file\n"
+"%s\n"
+"is already in the list"
+msgstr ""
+"Soubor\n"
+"%s je ji¾ v seznamu"
+
+#: soundpage.cpp:179
+msgid "File Already in List"
+msgstr "Soubor je ji¾ v seznamu"
+
+#: answmachpage.cpp:39
+msgid "&Activate answering machine"
+msgstr "Aktivovat &záznamník"
+
+#: answmachpage.cpp:44
+msgid "&Mail address"
+msgstr "Po¹tovní &adresa"
+
+#: answmachpage.cpp:51
+msgid "Mail sub&ject"
+msgstr "Pøed&mìt zprávy"
+
+#: answmachpage.cpp:54
+#, c-format
+msgid "Use %s for the caller name"
+msgstr "Pou¾ijte %s jako jméno volajícího"
+
+#: answmachpage.cpp:60
+msgid "Mail &first line"
+msgstr "P&rvní øádka zprávy"
+
+#: answmachpage.cpp:64
+#, c-format
+msgid "Use first %s for caller name, and second %s for caller hostname"
+msgstr "Pou¾íjte první %s pro jméno volajícího a druhé %s pro jméno hostitele"
+
+#: answmachpage.cpp:68
+msgid "&Receive a mail even if no message left"
+msgstr "&Pøijmout zprávu, i kdy¾ není zanechána zpráva"
+
+#: answmachpage.cpp:74
+msgid "&Banner displayed on answering machine startup :"
+msgstr "&Text vypisovaný pøi startu záznamníku :"
+
+#: answmachpage.cpp:83
+msgid ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+msgstr ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+
+#: answmachpage.cpp:171 answmachpage.cpp:189
+#, c-format
+msgid "Message from %s"
+msgstr "Zpráva od %s"
+
+#: answmachpage.cpp:172 answmachpage.cpp:191
+#, c-format
+msgid "Message left in the answering machine, by %s@%s"
+msgstr "Zprávu zanechál v záznamníku %s@%s"
+
+#: forwmachpage.cpp:34
+msgid "Activate &forward"
+msgstr "Aktivovat &pøesmìrování"
+
+#: forwmachpage.cpp:39
+msgid "&Destination (user or user@host)"
+msgstr "&Cíl (u¾ivatel nebo u¾ivatel@hostitel)"
+
+#: forwmachpage.cpp:49
+msgid "Forward &method"
+msgstr "&Metoda pøesmìrování"
+
+#: forwmachpage.cpp:54
+msgid ""
+"FWA : Forward announcement only. Direct connection. Not recommended.\n"
+"FWR : Forward all requests, changing info when necessary. Direct "
+"connection.\n"
+"FWT : Forward all requests and take the talk. No direct connection.\n"
+"\n"
+"Recommended use : FWT it you want to use it behind a firewall (and if "
+"ktalkd\n"
+"can access both networks), and FWR otherwise.\n"
+"\n"
+"See Help for further explanations.\n"
+msgstr ""
+"FWA : Pouze oznámení pøesmìrování. Pøímé spojení. Nedoporuèuje se.\n"
+"FWR : Pøesmìrovat v¹echny po¾adavky, zmìnit informace podle potøeby. Pøímé "
+"spojení.\n"
+"FWT : Pøesmìrovat v¹echny po¾adavky a brát v¹echny hovory. ®ádné pøímé "
+"spojení.\n"
+"\n"
+"Doporuèené pou¾ití: FWT jestli¾e jej chece pou¾ívat za firewallem (a má-li "
+"ktald\n"
+"pøístup k oboum sítím), jinak FWR.\n"
+"\n"
+"Nahlédnìte do nápovìdy pro podrobnìj¹í výklad.\n"

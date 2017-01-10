@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Guida al ktalkd: Introduzione</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KTalkd, talkd,daemon,talk,kde,it,doc">
+<META NAME="description" CONTENT="La Guida di KTalkd">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-2.html">Avanti</A>
+Indietro<A HREF="ktalkd.html#toc1">Indice Generale</A>
+</P>
+<H3><A NAME="s1">1. Introduzione</A></H3>
+
+<P>
+<P><CODE>ktalkd</CODE> è un evoluto demone del talk - il programma che gestisce le richieste di talk in arrivo,
+le annuncia e ti permette di rispondere con il programma cliente.
+GLOSSARIO : In queste pagine, se qualcuno vuole chiamarti, tu sarai definito come "chiamato".
+<P><CODE>ktalkd</CODE> ha le seguenti funzionalità:
+<P>
+<DL>
+<DT><B>KDE o non KDE</B><DD><P>Questo è il problema. :) Piu' seriamente vuol dire che è possibile compilare
+<CODE>ktalkd</CODE> con o senza il supporto del KDE.
+Durante la compilazione sarà verificato se X o le Qt o il KDE sono installati, specificando a configure l'opzione '--without-X', viene disabilitato il supporto del KDE. 
+<P>
+<DT><B>Risposta automatica</B><DD><P>Se il chiamato non è loggato o non risponde dopo il secondo annuncio,
+il messaggio viene loggato e viene inviata una mail al chiamato.
+<P>
+<DT><B>Suono</B><DD><P>Se si desidera, un suono verrà emesso insieme all'annuncio.
+<P>
+<DT><B>Annuncio su X</B><DD><P>Se è stato compilato con il supporto KDE, ktalkd userà
+<B>ktalkdlg</B>, una finestra di dialogo stile KDE, per gli annunci.
+Se ktalk è in esecuzione, sarà chiesto a lui di fare l'annuncio.
+(Novità dalla 0.8.8).
+<P>
+<DT><B>Annuncio su display multipli</B><DD><P>Se hai settato il display su un terminale remoto (ad esempio con il comando
+<CODE>"export DISPLAY=..."</CODE> ), l'annuncio sarà visualizzato anche su questo display. Rispondi su quello che piu' ti piace!
+<P>
+<DT><B>Inoltrare   <I>(Novità dalla 0.8.0)</I></B><DD><P>Puoi inoltrare la richiesta di talk ad un altro utente su un'altra macchina
+nel caso fossi assente. Ci sono 3 differenti modi per inoltrare il talk.
+Vedi nella sezione 'Utilizzo'.
+<P>
+<DT><B>Configurazione</B><DD><P>Se è stato compilato con il supporto KDE, leggerà i settaggi
+dai file di configurazione del KDE, quelli di sistema
+($KDEDIR/share/config/ktalkdrc) e quelli personali (nella home).
+I settaggi di sistema devono essere editati manualmente dall'amministratore,
+ma per l'utente esiste un'interfaccia grafica per configurazione.  
+E' chiamata <B>kcmktalkd</B> e si trova nel Centro di controllo KDE.
+Sui sistemi non KDE, <CODE>ktalkd</CODE> leggerà invece i settaggi dal file /etc/talkd.conf.
+<P>
+<DT><B>Internazionalizzazione</B><DD><P>Sotto KDE, l'annuncio sarà nella tua lingua se impostata nel KDE, ma
+soprattutto se qualcuno ha già tradotto <B>ktalkdlg</B>.
+Lo stesso vale per l'interfaccia per la configurazione, <B>kcmktalkd</B>.
+<P>
+<DT><B>Supporto per otalk e ntalk   <I>(Novità dalla 0.8.1)</I></B><DD><P>ktalkd ora supporta entrambi i protocolli, anche quando inoltra. Anche
+ktalk li supporta entrambi.
+</DL>
+<P>
+<P>Spero che questo demone per il talk ti piacerà,
+<P>David Faure
+<P>
+<A HREF="mailto:faure@kde.org">faure@kde.org</A><P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-2.html">Avanti</A>
+Indietro<A HREF="ktalkd.html#toc1">Indice Generale</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

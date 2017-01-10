@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kppp Handbook: Configuring an Account</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KPPP Dialer Internet PPP IP PAP CHAP">
+<META NAME="description" CONTENT="KPPP Internet Dialer">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-5.html">Next</A>
+<A HREF="kppp-3.html">Previous</A>
+<A HREF="kppp.html#toc4">Table of Contents</A>
+</P>
+<H3><A NAME="s4">4. Configuring an Account</A></H3>
+
+<P>
+<H3><A NAME="ss4.1">4.1 Dial</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Connection Name</B><DD><P>You must give the account a name. You can use anything
+here, but if you have multiple accounts it must be unique.
+<P>
+<DT><B>Phone Number</B><DD><P>Specify the phone number to dial. You may use characters such as ``-'' to make the number more legible.
+If you concatenate a series of numbers (separated by a colon) <EM>kppp</EM> will try these numbers in a cyclic order whenever it receives a busy signal.
+Example: "1111111:2222222:3333333"
+<P>
+<DT><B>Authentication</B><DD><P>Choose the appropriate method of authentication
+that <EM>kppp</EM> should use to log into the server. Check with your provider
+whether he offers PAP or CHAP support or if you have to use a script
+or terminal-based login method.
+<P>
+<DT><B>Store password</B><DD><P>Check this option if you want <EM>kppp</EM> to remember
+your password at the next session. 
+<P>
+<DT><B>Execute Program upon Connect</B><DD><P><EM>kppp</EM> will attempt to execute the command specified here once a ppp link has been set up. 
+<P>
+<DT><B>Execute Program before Disconnect</B><DD><P><EM>kppp</EM> will run the command before closing the connection. This will be useful if you have to change any route or address before you leave the net.
+<P>
+<DT><B>Execute Program upon Disconnect</B><DD><P>analogue with previous item.
+<P>
+<A NAME="pppd arguments"></A> <DT><B>Edit pppd arguments</B><DD><P>This will bring up the pppd arguments dialog. You may use
+this dialog to add any desired options that you want <EM>kppp</EM> to hand to pppd.
+See the pppd man page for a list of available options. Unless you know exactly what you are doing you should
+restrain from tinkering with the pppd options.
+</DL>
+<H3><A NAME="ss4.2">4.2 IP</A>
+</H3>
+
+<P>
+<P>
+<DL>
+<DT><B>Dynamic IP Address</B><DD><P>Check this if your ISP uses dynamic IP address assignment.
+That is your IP address will most likely change every time you establish a connection.
+<P>
+<DT><B>Static IP Address</B><DD><P>Check this is your ISP has given you a static IP address.
+In that case you will also need to fill in that address and any Subnet Mask
+if applicable. Ask your ISP if unsure.
+<P>
+<A NAME="Auto-configure hostname"></A> <DT><B>Auto-configure Hostname from this IP</B><DD><P>Select this option if you want 
+<EM>kppp</EM> to set the hostname and domain for your machine after successful
+setup of a ppp link on connect.
+This is done by querying the defined Domain Name Server with the ip
+assigned for the ppp link.
+This option is useful for those stand-alone machines which want to
+use protocols like talk which require the hostname to be the same as your
+machine is known in the Internet.
+It overrides the Domain Name Option in the  DNS Section.
+The machine defaults are restored to the original values 
+when you close the ppp link 
+Be careful when choosing this option: It may prove useful to you, but
+it may also cause lots of undesired side effect. Just play with it ...
+</DL>
+<P>
+<P>
+<H3><A NAME="ss4.3">4.3 DNS</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Domain Name</B><DD><P>Specify the domain name for your machine.
+As with DNS Addresses it is restored to the original specified in <CODE>/etc/resolv.conf</CODE>
+when the connection goes down.
+If it is left blank no changes are made to the domain name specified
+in <CODE>/etc/resolv.conf</CODE>
+<P>
+<DT><B>DNS Servers</B><DD><P>Add the Domain Name servers assigned to you by your ISP.
+You must specify at least a Domain Name server for your OS to be able
+to resolve human readable IP addresses such as ftp.kde.org. The DNS server
+addresses supplied must be in numeric form, e.g 128.231.231.233. The
+addresses will be added at runtime to <CODE>/etc/resolv.config</CODE>.
+<P>
+<DT><B>Disable existing DNS Servers during Connection</B><DD><P>Select this option if 
+you want <EM>kppp</EM> to disable already existing nameserver entries
+in <CODE>/etc/resolv.conf</CODE> during connection.
+</DL>
+<P>
+<P>
+<H3><A NAME="ss4.4">4.4 Gateway</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Default Gateway</B><DD><P>Check this if you want pppd to use the default Gateway
+for your machine. 
+<P>
+<DT><B>Static Gateway</B><DD><P>Check this if you want to specify the Gateway to be used.
+</DL>
+<P>
+<P>
+<DL>
+<DT><B>Assign the Default Route to this Gateway</B><DD><P>You almost certainly will need
+this. Leave it on unless you really know what you are doing.
+</DL>
+<P>
+<H3><A NAME="ss4.5">4.5 Login Script</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Edit Script</B><DD><P>Use this dialog to compose a dial in script for your ISP
+dialup connection. Use the mini-terminal and the information supplied by
+your ISP to understand which sequence of actions needs to be executed.
+<P>
+<UL>
+<LI>Expect: <EM>kppp</EM> will wait for the specified string to be received.</LI>
+<LI>Send: <EM>kppp</EM> will send the specified string.</LI>
+<LI>Scan: <EM>kppp</EM> will scan the the input stream for the specified string and 
+store any character after the string up to the first newline in an internal
+buffer. Trailing and leading whitespace will be stripped off.</LI>
+<LI>Save: permanently store the previously scanned string in the specified register. So far, the only valid register is 'password'.  </LI>
+<LI>Pause: pause for the specified number of seconds</LI>
+<LI>Hangup: <EM>kppp</EM> will send the hangup command to the modem</LI>
+<LI>Answer: <EM>kppp</EM> will set the modem into answer mode</LI>
+<LI>Timeout: change the default timeout to the specified number of seconds
+dynamically during script execution. You can change the timeout several times
+during script execution if necessary.
+</LI>
+<LI>Prompt: Prompt the <EM>kppp</EM> user to enter a string, given the specified
+string as a hint.  The user will see what is typed. 
+If the specified string includes the mark ## the mark will be replaced with
+the current content of the internal scan buffer.
+</LI>
+<LI>PWPrompt: Prompt the <EM>kppp</EM> user to enter a string, given the specified
+string as a hint.  An asterisk will be printed for each character typed.
+</LI>
+<LI>ID: If the ID field on <EM>kppp</EM>'s main dialog is filled in, send that ID.
+If the ID field is not filled in, prompt the <EM>kppp</EM> user to enter an ID, 
+given the specified string as a hint. The user will see what is typed.
+On a second pass, such as in a loop on the second iteration, a prompt
+will be displayed, given the specified string as a hint.
+</LI>
+<LI>Password: If the password field on <EM>kppp</EM>'s main dialog is filled in, send that 
+password. If the password  field is not filled in, prompt the <EM>kppp</EM> user to enter 
+a password given the specified
+string as a hint.  An asterisk will be printed for each character typed.
+On a second pass, such as in a loop on the second iteration, a prompt
+will be displayed, given the specified string as a hint.
+</LI>
+<LI>LoopStart: <EM>kppp</EM> will wait for the specified string to be received.
+It will save the string for use by LoopEnd
+</LI>
+<LI>LoopEnd: <EM>kppp</EM> will wait for the specified string to be received to
+exit the loop.  If the string given by the corresponding LoopStart is
+received first, it will trigger a jump to the line after the LoopStart,
+enabling repetition of username/password style paired dialogs.</LI>
+<LI>Mode: Sets a different mode. The only available arguments are
+`7bit' and `8bit'. `7bit' can be used to emulate the 7E1 modus of
+<EM>CompuServe</EM> servers that will produce garbage characters otherwise.
+`8bit' is the default.</LI>
+</UL>
+<P>
+</DL>
+<P>
+<H4>Example scripts</H4>
+
+<P>
+<P>Here is a simple script I could use to connect to my ISP:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+Expect      ID:                        # wait for ID:
+Send        myid                       # you have to substitute myid with your id
+Expect      word:                      # wait for 'password'
+Send        4u3fjkl                    # send my password '4u3fjkl'
+Expect      granted                    # My ISP send 'Permission granted' on login success.
+Send        ppp                        # This starts a ppp connection for 
+                                       # me on the ISP side.
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Here a script for the same account with ID and password prompt: This 
+script will prompt for ID and password each time, no matter what is
+typed into the ID and password field on <EM>kppp</EM>'s main dialog. This script
+also illustrated the use of the LoopStart/LoopEnd structure. If something
+goes wrong during the login procedure, for example if I mistype the password,
+my ISP will print an error message and restart the id/password loop by issuing
+the string "ID:" again. If the string "ID" is caught before the LoopEnd keyword
+was parsed, <EM>kppp</EM> will start the script again after the LoopStart keyword.
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+LoopStart   ID:                        # wait for ID:
+Prompt      Enter ID:                  # Prompt me for my ID and send it off.
+Expect      word:                      # wait for 'password'
+PWPrompt    Enter Password:            # Prompt me for my password and send it off.
+LoopEnd     granted                    # My ISP send 'Permission granted' on login success.
+Send        ppp                        # This starts a ppp connection for me
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Here is the script that I actually use to connect to my ISP: This 
+script will prompt for ID and password only if I haven't filled in 
+the respective fields on <EM>kppp</EM>'s main dialog.
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+LoopStart   ID:                        # wait for ID:
+ID          Enter ID:                  # Prompt me for my ID and send it off.
+Expect      word:                      # wait for 'password'
+Password    Enter Password             # Prompt me for my password and send it off.
+LoopEnd     granted                    # My ISP send 'Permission granted' on login success.
+Send        ppp                        # This starts a ppp connection for me
+                                       # on the ISP side
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Here is a script that I use to connect to an ISP which is using some sort of
+challenge/response authentication. Usually you got a hardware token (a smart
+card with a display and calculator like keypad) from the ISP. You have to know
+a password to use the token. After dialling in your ISP displays your challenge.
+You have to type in the challenge to your token and get a dynamic password
+as a response. Then you have to enter that password.
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+LoopStart   ID:                        # wait for ID:
+ID          Enter ID:                  # Prompt me for my ID and send it off.
+Scan        Challenge:                 # Scan for 'Challenge' and store everything behind up to the next newline.
+Expect      Password:                  # wait for 'password'
+Prompt      Your token is ## - Enter Password  # Prompt me for my password and send it off.
+LoopEnd     granted                    # My ISP sends 'Permission granted' on login success.
+Send        ppp                        # This starts a ppp connection for me
+                                       # on the ISP side
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>The following log shows the login procedure of a fictitious ISP that provides a new password on each login. The new password has to be verified and recorded for the next session.
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+University of Lummerland
+
+Login:mylogin
+Password: 
+The password for your next session is: YLeLfkZb
+Please record and enter it for verification.
+Verification:YLeLfkZb
+
+1 = telnet
+2 = SLIP
+3 = PPP
+
+Your choice:
+</PRE>
+</CODE></BLOCKQUOTE>
+<P><EM>kppp</EM> can be used to do that cumbersome task for you (eliminating the risk of losing that little sheet of paper that holds your current password at the same time). The key part of the following script is a combination of the Scan/Save keywords:     
+<BLOCKQUOTE><CODE>
+<PRE>
+Expect      Login:                     # wait for login prompt
+ID                                     # send ID
+Expect      Password:                  # wait for password prompt
+Password                               # send password
+Scan        is:                        # wait for '... next session is:' and
+                                       # scan the preceding password
+Save        password                   # save the new password for next login
+Expect      Verification:              # wait for 'Verification:'
+Password                               # send new password
+Expect      choice:                    # wait for a prompt that let's you choose
+                                       # between different options (telnet, SLIP, PPP)
+Send        3                          # choose option 3, i.e. PPP
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<H3><A NAME="ss4.6">4.6 Accounting</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Accounting Setup</B><DD><P>Use the ``Enable accounting'' button to enable/disable
+phone cost accounting. Select a rule  appropriate for your region. If
+you can't find a rule for your region you will have to write one by following
+the supplied <CODE>TEMPLATE</CODE> in <CODE>${KDEDIR}/share/apps/kppp/Rules/</CODE>. Don't
+be afraid though it is really easy. Don't forget to submit your newly created
+rules file to me. The newly created rules file can be checked for valid
+syntax with the -r rule_file command line option to <EM>kppp</EM> and
+must be installed in <CODE>${KDEDIR}/share/apps/kppp/Rules</CODE> or in 
+<CODE>${HOME}/.kde/share/apps/kppp/Rules</CODE> before you will be able to
+select it in this
+dialog.
+</DL>
+<P>
+<P>
+<H3><A NAME="ss4.7">4.7 Volume accounting</A>
+</H3>
+
+<P>
+<A NAME="volaccounting"></A> <H4>What is volume accounting?</H4>
+
+<P>It basically means to count the number of bytes transmitted from or to the
+Internet. <EM>kppp</EM> can count incoming bytes, outgoing bytes or both. It´s up to
+you what you want (or must) use.
+<P>
+<H4>Why should I use volume accounting?</H4>
+
+<P>Because nowadays, many Internet Service Providers begin to bill their
+customers depending on the number of bytes transferred. Or very often those
+ISP give you an arbitrary transfer limit, and charge you for every megabyte
+above this limit. <EM>kppp</EM> shows you your current volume and can help you keeping
+your bills to the minimum. Of course, if you do not have volume limits and you
+are curious, you can use it too...
+<P>
+<H4>What type of volume accounting should I select?</H4>
+
+<P>That depends on your provider. Many of them only count how many megabytes you
+get from Internet and ignore how much you send. In that case you should choose
+"Bytes in". If you have to pay for both you should select "Bytes in and
+out". "Bytes out" is not of much use and is only here for completeness.
+<P>
+<H4>Drawbacks</H4>
+
+<P>Unfortunately there´s a drawback on volume accounting. <EM>kppp</EM> will just count the
+number of bytes regardless their origin. Many providers set their limit only
+for internet access, not for their own network. So, if you do a little web
+surfing and you use a proxy-cache, the proxy will reside inside the network of
+your provider and he will not charge you for bytes transferred from his proxy
+cache. However, <EM>kppp</EM> will not know that these IP packets are coming from the
+proxy and thus count them. So, if you use a proxy, or your provider uses a
+caching news server (like nntpcached), the volume reported by <EM>kppp</EM> may be
+higher.
+<P>
+<P>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-5.html">Next</A>
+<A HREF="kppp-3.html">Previous</A>
+<A HREF="kppp.html#toc4">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

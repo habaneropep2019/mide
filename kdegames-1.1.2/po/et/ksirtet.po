@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Hasso Tepper <hasso@ewsound.estnet.ee>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1998-10-01 13:29+0200\n"
+"PO-Revision-Date: 1999-06-27 18:30+0200\n"
+"Last-Translator: Hasso Tepper <hasso@ewsound.estnet.ee>\n"
+"Language-Team: Estonian <linux-ee@eenet.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: board.cpp:65 dialogs.cpp:137
+msgid "Anonymous"
+msgstr "Anonüümne"
+
+#: board.cpp:97
+msgid "Game paused"
+msgstr "Mäng peatatud"
+
+#: board.cpp:102
+msgid "Press to resume"
+msgstr "Jätkamiseks vajuta"
+
+#: board.cpp:119 net.cpp:208
+msgid "Game over"
+msgstr "Mäng läbi"
+
+#: board.cpp:123
+msgid "Press Return to replay"
+msgstr "Vajuta ENTER klahvi uuesti mängimiseks"
+
+#: board.cpp:127
+msgid "Press to start game"
+msgstr "Mängu käivitamiseks vajuta"
+
+#: board.cpp:371
+msgid "Highscores file not writable !"
+msgstr "Edetabellisse pole võimalik kirjutada !"
+
+#: net.cpp:129
+msgid "Illegal port"
+msgstr "Vale port"
+
+#: net.cpp:135
+msgid "Null address"
+msgstr "Aadress puudub"
+
+#: net.cpp:142
+msgid "Unknown address"
+msgstr "Tundmatu aadress"
+
+#: net.cpp:157
+msgid "Cannot create socket"
+msgstr "Pesa loomine pole võimalik"
+
+#: net.cpp:196
+msgid "at"
+msgstr "at"
+
+#: net.cpp:233
+msgid "Connect error"
+msgstr "Viga ühenduse loomisel"
+
+#: net.cpp:243 net.cpp:299
+msgid "Server unreachable"
+msgstr "Serveriga pole võimalik ühendust saada"
+
+#: net.cpp:266
+msgid "The server has died"
+msgstr "Server suri"
+
+#: net.cpp:267
+msgid "Cancel from server"
+msgstr "Katkestus serveri poolt"
+
+#: net.cpp:273 net.cpp:333
+msgid "Unknown data from server"
+msgstr "Tundmatud andmed serverist"
+
+#: net.cpp:312
+msgid "Cannot send to server"
+msgstr "Serverisse pole võimalik andmeid saata"
+
+#: net.cpp:324
+msgid "Client timeout (No message from server)"
+msgstr "Aeg läbi (mitte mingit teadet serverilt)"
+
+#: net.cpp:329
+msgid "Server has vanished"
+msgstr "Server on kadunud"
+
+#: net.cpp:366
+msgid "Bind error"
+msgstr "Viga nime lahendamisel"
+
+#: net.cpp:371
+msgid "Listen error"
+msgstr "Viga kuulamisel"
+
+#: net.cpp:390
+msgid "Unknown message from unknown player (??)"
+msgstr "Tundmatu sõnum tundmatult mängijalt (??)"
+
+#: net.cpp:449 net.cpp:490
+msgid "Unknown message from client"
+msgstr "Tundmatu sõnum kliendilt"
+
+#: net.cpp:486
+msgid "Client has died"
+msgstr "Klient suri"
+
+#: net.cpp:487
+msgid "Cancel from client"
+msgstr "Katkestus kliendi poolt"
+
+#: net.cpp:494
+msgid "Timeout"
+msgstr "Aeg läbi"
+
+#: net.cpp:520
+msgid "No message from client"
+msgstr "Mitte mingit teadet kliendilt"
+
+#: net.cpp:525
+msgid "Client has vanished"
+msgstr "Klient on kadunud"
+
+#: net.cpp:529
+msgid "Unknown data from client"
+msgstr "Tundmatud andmed kliendilt"
+
+#: net.cpp:533
+msgid "End message from client"
+msgstr "Sõnumi lõpp kliendilt"
+
+#: net.cpp:550
+msgid "Cannot send to client"
+msgstr "Andmeid pole võimalik kliendile saata"
+
+#: dialogs.cpp:61
+msgid "High Scores"
+msgstr "Edetabel"
+
+#: dialogs.cpp:84 dialogs.cpp:93
+msgid "Hall of Fame"
+msgstr "Kuulsuste hall"
+
+#: dialogs.cpp:156
+msgid "No option yet !"
+msgstr "Veel pole valikut !"
+
+#: dialogs.cpp:175 dialogs.cpp:232
+msgid "Network Dialog"
+msgstr "Võrgu dialoog"
+
+#: dialogs.cpp:178
+msgid "Server"
+msgstr "Server"
+
+#: dialogs.cpp:179
+msgid "Client"
+msgstr "Klient"
+
+#: dialogs.cpp:183
+msgid "Player name :"
+msgstr "Mängija nimi :"
+
+#: dialogs.cpp:185
+msgid "Server address :"
+msgstr "Serveri aadress :"
+
+#: dialogs.cpp:187
+msgid "Port :"
+msgstr "Port :"
+
+#: dialogs.cpp:199
+msgid "Connect"
+msgstr "Ühenda"
+
+#: dialogs.cpp:202
+msgid "Connecting ..."
+msgstr "Ühendamine..."
+
+#: dialogs.cpp:205
+msgid "Play !"
+msgstr "Mängi !"
+
+#: dialogs.cpp:252
+msgid "Network game"
+msgstr "Võrgumäng"
+
+#: dialogs.cpp:256
+msgid "Server mode"
+msgstr "Serveri mood"
+
+#: dialogs.cpp:258
+msgid "Client mode"
+msgstr "Kliendi mood"
+
+#: dialogs.cpp:336
+msgid "Waiting for other player(s) ..."
+msgstr "Teis(t)e mängija(te) ootamine ..."
+
+#: field.cpp:27
+msgid "New game"
+msgstr "Uus mäng"
+
+#: field.cpp:28
+msgid "Pause game"
+msgstr "Peata mäng"
+
+#: field.cpp:30
+msgid "High scores"
+msgstr "Edetabel"
+
+#: field.cpp:31
+msgid "Move left"
+msgstr "Liigu vasakule"
+
+#: field.cpp:32
+msgid "Move right"
+msgstr "Liigu paremale"
+
+#: field.cpp:33
+msgid "Drop down"
+msgstr "Viska alla"
+
+#: field.cpp:34
+msgid "One line down"
+msgstr "Üks rida alla"
+
+#: field.cpp:35
+msgid "Rotate left"
+msgstr "Keeruta vasakule"
+
+#: field.cpp:36
+msgid "Rotate right"
+msgstr "Keeruta paremale"
+
+#: field.cpp:51
+msgid "Score"
+msgstr "Skoor"
+
+#: field.cpp:55
+msgid "Lines removed"
+msgstr "Eemaldatud ridu"
+
+#: field.cpp:59
+msgid "Level"
+msgstr "Tase"
+
+#: field.cpp:63
+msgid "Next tile"
+msgstr "Järgmine kivi"
+
+#: field.cpp:185
+msgid "&Restart game"
+msgstr "&Käivita mäng uuesti"
+
+#: field.cpp:186
+msgid "&Pause game"
+msgstr "&Peata mäng"
+
+#: field.cpp:187
+msgid "&Multiplayer game"
+msgstr "&Mängimine mitmekesi"
+
+#: field.cpp:189
+msgid "&High scores"
+msgstr "&Edetabel"
+
+#: main.cpp:25 main.cpp:74
+msgid "Hide menu"
+msgstr "Peida menüü"
+
+#: main.cpp:30
+msgid "&Keys"
+msgstr "&Klahvid"
+
+#: main.cpp:35
+msgid "by"
+msgstr "by"
+
+#: main.cpp:71
+msgid "Show menu"
+msgstr "Näita menüüd"

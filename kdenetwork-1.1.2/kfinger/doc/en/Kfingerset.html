@@ -1,0 +1,67 @@
+<HTML>
+<TITLE>Kfinger Help - Setup</TITLE>
+<BODY>
+<STRONG>Kfinger Setup window</STRONG><BR>
+<IMG SRC="setupw.gif" ALT="KFinger Setup Window"><BR>
+<P>
+In kfinger Setup tab dialog you find:<BR>
+<A HREF="#userserver">User & Server</A><BR>
+<A HREF="#time">Time</A><BR>
+<A HREF="#talk">Talk</A><BR>
+<P><BR>
+<A NAME="userserver"></A>
+<STRONG>USER & SERVER Lists</STRONG><P>
+To add an item to the server list (or user list) you only have to write the
+ name you want to add in the line editor, and than to press "Add". If you
+ want to insert an item in a particular position you must select the position 
+ in the list pressing the Mouse left button on the desired position.<BR>
+To remove an item select it with the Left Button of your mouse, than press "Remove"<BR>
+<P>  
+
+<A NAME="time"></A>
+<STRONG>AUTO FINGER WAIT-TIME</STRONG><P>
+Here you have the check box that (de)activate the auto finger (i.e. Kfinger execute
+ the finger every nnn seconds).<BR>
+Using the "slider" you can select the wait time between the finger sessions.<BR>
+<P>
+<A NAME="talk"></A>
+<STRONG>TALK LAUNCHER SETUP</STRONG><P>
+The talk launcher permit you to see who is logged on a server and than to talk with him
+only clicking on Talk Launcher button & selecting the desired user.<BR>
+Kfinger execute "Ktalk userVar@ServerVar"<BR>
+To get the two Var Ktalk use 3 methods:<BR>
+<A HREF="#fout">-Scanf from finger output(FINGER OUTPUT)</A><BR>
+<A HREF="#fval">-Using the same value in ToolBar ComboBox(FINGER SERVER or USER)</A><BR>
+<A HREF="#fixed">-Using a fixed value(FIXED)</A><BR>
+<IMG SRC="formatw.gif" ALT="KFinger Talk settings"><BR>
+<BR>
+<A NAME="fout"></A>
+<STRONG>Finger output</STRONG><BR>
+To select how Kfinger have to get from finger output the values you must press "Format.."<BR>
+Kfinger could read 2 Vars, with C function scanf, from finger output; the two vars
+are an integer(var2) and a string(var1). You must specify a format string for scanf
+and an offset for the read string (how many characters must be ignored before start 
+to read).<BR>
+Than you have to create a format string for the output.<BR>
+<P>EXAMPLE:<BR>
+I have the following output with kfinger and I want to obtain a talkLauncher list where
+the username is "root" and the server is "portNNN-ISDN.InterService.com" :<BR><BR>
+<PRE> Name           tty      idle<BR>  
+Jack01           1        10<BR>
+Mary             3         0<BR> 
+robert           4         0<BR>
+</PRE><P>
+You can set:<BR>
+Lines to skip: 1<BR>
+User: Fixed to "root"<BR>
+Server: Finger output with the following settings:<BR>
+<IMG SRC="formatex.gif" ALT="Example"><BR>
+
+<BR>
+<HR>
+ <A href="mailto:bilibao@ouverture.it">Andrea Rizzi<BR>Bilibao@ouverture.it</A> 
+
+
+</BODY>
+</HTML>
+

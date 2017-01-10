@@ -1,0 +1,849 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-04-14 03:36+0200\n"
+"Content-Type: text/plain; charset=\n"
+"Date: 1998-04-03 19:18:58+0000\n"
+"From: antonio <antonio@jupiter.arrakis.es>\n"
+"Xgettext-Options: -C -ki18n\n"
+"Files: kmidframe.cpp kmidclient.cpp kdisptext.cpp kslidertime.cpp "
+"midicfgdlg.cpp collectdlg.cpp kaskdlg.cpp main.cpp\n"
+
+#: kmidframe.cpp:64
+msgid "Play/Pause"
+msgstr "Soita/Tauko"
+
+#: kmidframe.cpp:68 kmidframe.cpp:209
+msgid "Previous Song"
+msgstr "Edellinen kappale"
+
+#: kmidframe.cpp:70 kmidframe.cpp:228
+msgid "Next Song"
+msgstr "Seuraava kappale"
+
+#: kmidframe.cpp:72 kmidframe.cpp:142
+msgid "See &Text events"
+msgstr "Näytä &Tekstitapahtumat"
+
+#: kmidframe.cpp:74 kmidframe.cpp:148
+msgid "See &Lyrics events"
+msgstr "Näytä &sanatapahtumat"
+
+#: kmidframe.cpp:76
+msgid "Scroll down karaoke"
+msgstr "Selaa alas karaokea"
+
+#: kmidframe.cpp:78
+msgid "Scroll up karaoke"
+msgstr "Selaa ylös karaokea"
+
+#: kmidframe.cpp:80
+msgid "Scroll page down karaoke"
+msgstr "Selaa sivu alas karaokea"
+
+#: kmidframe.cpp:82
+msgid "Scroll page up karaoke"
+msgstr "Selaa sivu ylös karaokea"
+
+#: kmidframe.cpp:91
+msgid "&Save Lyrics ..."
+msgstr "&Tallenna sanat ..."
+
+#: kmidframe.cpp:97
+msgid "&Play"
+msgstr "&Soita"
+
+#: kmidframe.cpp:99
+msgid "P&ause"
+msgstr "&Tauko"
+
+#: kmidframe.cpp:100
+msgid "&Stop"
+msgstr "P&ysäytä"
+
+#: kmidframe.cpp:104
+msgid "P&revious Song"
+msgstr "&Edellinen kappale"
+
+#: kmidframe.cpp:107
+msgid "&Next Song"
+msgstr "Se&uraava kappale"
+
+#: kmidframe.cpp:111
+msgid "&Loop"
+msgstr "S&ilmukoi"
+
+#: kmidframe.cpp:117
+msgid "&Organize ..."
+msgstr "&Järjestä ..."
+
+#: kmidframe.cpp:120
+msgid "In order mode"
+msgstr "Järjestyksessä"
+
+#: kmidframe.cpp:123
+msgid "Shuffle mode"
+msgstr "Sekoitettuna"
+
+#: kmidframe.cpp:127
+msgid "AutoAdd to Collection"
+msgstr "Lisää automaattisesti kokoelmiin"
+
+#: kmidframe.cpp:133
+msgid "&General Midi file"
+msgstr "&General Midi tiedosto"
+
+#: kmidframe.cpp:137
+msgid "&MT-32 file"
+msgstr "&MT-32 tiedosto"
+
+#: kmidframe.cpp:154
+msgid "&Automatic Text chooser"
+msgstr "&Automaattinen tekstinvalitsin"
+
+#: kmidframe.cpp:160
+msgid "Show &Volume Bar"
+msgstr "Näytä &äänipylväs"
+
+#: kmidframe.cpp:165
+msgid "Show &Channel View"
+msgstr "Näytä &kanavat"
+
+#: kmidframe.cpp:170
+msgid "Channel View &Options"
+msgstr "Kanavanäytön &optiot"
+
+#: kmidframe.cpp:174
+msgid "&Font Change ..."
+msgstr "&Kirjasimen vaihtaminen ..."
+
+#: kmidframe.cpp:176
+msgid "Configure &Keys ..."
+msgstr "Aseta &Näppäimiä ..."
+
+#: kmidframe.cpp:179
+msgid "Midi &Setup ..."
+msgstr "&Midi asetukset ..."
+
+#: kmidframe.cpp:184
+#, c-format
+msgid ""
+"%s\n"
+"\n"
+"(C) 1997,98 Antonio Larrosa Jimenez\n"
+"larrosa@kde.org\t\tantlarr@arrakis.es\n"
+"Malaga (Spain)\n"
+"\n"
+"Midi/Karaoke file player\n"
+"KMid's homepage is at : http://www.arrakis.es/~rlarrosa/kmid.html\n"
+"\n"
+"KMid comes with ABSOLUTELY NO WARRANTY; for details view file COPYING\n"
+"This is free software, and you are welcome to redistribute it\n"
+"under certain conditions\n"
+msgstr ""
+"%s\n"
+"\n"
+"(C) 1997,98 Antonio Larrosa Jimenez\n"
+"larrosa@kde.org\t\tantlarr@arrakis.es\n"
+"Malaga (Espanja)\n"
+"\n"
+"Midi/Karaoke soittaja\n"
+"KMid:n kotisivu löytyy osoitteesta : "
+"http://www.arrakis.es/~rlarrosa/kmid.html\n"
+"\n"
+"KMid comes with ABSOLUTELY NO WARRANTY; for details view file COPYING\n"
+"This is free software, and you are welcome to redistribute it\n"
+"under certain conditions\n"
+
+#: kmidframe.cpp:197
+msgid "&Song"
+msgstr "&Kappale"
+
+#: kmidframe.cpp:198
+msgid "&Collections"
+msgstr "K&okoelmat"
+
+#: kmidframe.cpp:212
+msgid "Rewind"
+msgstr "Takaisin"
+
+#: kmidframe.cpp:218
+msgid "Pause"
+msgstr "Tauko"
+
+#: kmidframe.cpp:222
+msgid "Play"
+msgstr "Soita"
+
+#: kmidframe.cpp:225
+msgid "Forward"
+msgstr "Eteen"
+
+#: kmidframe.cpp:234
+msgid "Show Channel View"
+msgstr "Näytä kanavat"
+
+#: kmidframe.cpp:239
+msgid "Show Volume Bar"
+msgstr "Näytä äänipylväs"
+
+#: kmidframe.cpp:562
+msgid ""
+"Couldn't open /dev/sequencer to get some info\n"
+"Probably there is another program using it"
+msgstr ""
+"En saanut avattua /dev/sequencer -laitetta.\n"
+"Mahdollisesti joku muu ohjelma käyttää sitä"
+
+#: kmidframe.cpp:681 kmidframe.cpp:682
+#, c-format
+msgid ""
+"File %s already exists\n"
+"Do you want to overwrite it ?"
+msgstr ""
+"Tiedosto %s on jo olemassa\n"
+"Haluatko kirjoittaa sen päälle?"
+
+#: kmidclient.cpp:96
+msgid "Tempo :"
+msgstr "Tempo :"
+
+#: kmidclient.cpp:272
+#, c-format
+msgid "The file %s doesn't exist or can't be opened"
+msgstr "Tiedostoa %s ei ole olemassa tai sitä ei saada avattua"
+
+#: kmidclient.cpp:276
+#, c-format
+msgid "The file %s is not a midi file"
+msgstr "Tiedosto %s ei ole miditiedosto"
+
+#: kmidclient.cpp:278
+msgid ""
+"Ticks per cuarter note is negative, please, send this file to "
+"antlarr@arrakis.es"
+msgstr ""
+
+#: kmidclient.cpp:280
+msgid "Not enough memory !!"
+msgstr "Muistia ei ole tarpeeksi !!"
+
+#: kmidclient.cpp:282
+msgid "This file is corrupted or not well built"
+msgstr "Tämä tiedosto on viallinen tai huonosti rakennettu"
+
+#: kmidclient.cpp:283
+msgid "Unknown error message"
+msgstr "Tuntematon virhe"
+
+#: kmidclient.cpp:467
+msgid "You must load a file before playing it"
+msgstr "Sinun on ladattava tiedosto ennen sen soittamista"
+
+#: kmidclient.cpp:473
+msgid "A song is already being played"
+msgstr "Kappaletta soitetaan jo"
+
+#: kmidclient.cpp:479
+msgid ""
+"Couldn't open /dev/sequencer\n"
+"Probably there is another program using it"
+msgstr ""
+"En saanut avattua /dev/sequencer -laitetta.\n"
+"Mahdollisesti joku muu ohjelma käyttää sitä"
+
+#: midicfgdlg.cpp:36
+msgid "Configure Midi devices"
+msgstr "Aseta Midi-laitteita"
+
+#: midicfgdlg.cpp:46
+msgid "Select the midi device you want to use :"
+msgstr "Valitse midilaite jota haluat käyttää :"
+
+#: midicfgdlg.cpp:66
+msgid "Use the midi map :"
+msgstr "Käytä midikarttaa :"
+
+#: midicfgdlg.cpp:83 midicfgdlg.cpp:93 midicfgdlg.cpp:125
+msgid "None"
+msgstr "Ei mikään"
+
+#: collectdlg.cpp:39
+msgid "Collections Manager"
+msgstr "Kokoelmahallinta"
+
+#: collectdlg.cpp:47
+msgid "Available collections :"
+msgstr "Olemassaolevat kokoelmat :"
+
+#: collectdlg.cpp:67
+msgid "Songs in selected collection:"
+msgstr "Kappaleet valitussa kokoelmassa:"
+
+#: collectdlg.cpp:81
+msgid "New"
+msgstr "Uusi"
+
+#: collectdlg.cpp:154
+msgid "Enter the name of the new collection"
+msgstr "Anna uuden kokoelman nimi"
+
+#: collectdlg.cpp:155
+msgid "New Collection"
+msgstr "Uusi kokoelma"
+
+#: collectdlg.cpp:162 collectdlg.cpp:188 collectdlg.cpp:229
+#, c-format
+msgid "The name '%s' is already used"
+msgstr "Nimi %s on jo käytössä"
+
+#: collectdlg.cpp:180
+msgid "Enter the name of the copy collection"
+msgstr "Anna kokoelman kopion nimi"
+
+#: collectdlg.cpp:181
+msgid "Copy Collection"
+msgstr "Kopioi kokoelma"
+
+#: collectdlg.cpp:222
+msgid "Enter the new name for the selected collection"
+msgstr "Anna uusi nimi kokoelmalle"
+
+#: collectdlg.cpp:223
+msgid "Change Collection Name"
+msgstr "Vaihda kokoelman nimeä"
+
+#: channelview.cpp:33
+msgid "ChannelView"
+msgstr "Kanavanäkymä"
+
+#: channel.cpp:87
+msgid "Channel"
+msgstr "Kanava"
+
+#: channelcfgdlg.cpp:16
+msgid "Configure Channel View"
+msgstr "Aseta kanavanäkymää"
+
+#: channelcfgdlg.cpp:26
+msgid "Choose look mode"
+msgstr "Valitse näkymätila"
+
+#: channelcfgdlg.cpp:27
+msgid "3D look"
+msgstr "3D näkymä"
+
+#: channelcfgdlg.cpp:28
+msgid "3D - filled"
+msgstr "3D - täytetty"
+
+#: instrname.i18n:6
+msgid "Acoustic Grand Piano"
+msgstr "Akustinen piano"
+
+#: instrname.i18n:7
+msgid "Bright Acoustic Piano"
+msgstr "Kirkas akustinen piano"
+
+#: instrname.i18n:8
+msgid "Electric Grand Piano"
+msgstr "Sähköpiano"
+
+#: instrname.i18n:9
+msgid "Honky-Tonk"
+msgstr ""
+
+#: instrname.i18n:10
+msgid "Rhodes Piano"
+msgstr "Rhodes -piano"
+
+#: instrname.i18n:11
+msgid "Chorused Piano"
+msgstr ""
+
+#: instrname.i18n:12
+msgid "Harpsichord"
+msgstr ""
+
+#: instrname.i18n:13
+msgid "Clavinet"
+msgstr ""
+
+#: instrname.i18n:14
+msgid "Celesta"
+msgstr ""
+
+#: instrname.i18n:15
+msgid "Glockenspiel"
+msgstr ""
+
+#: instrname.i18n:16
+msgid "Music Box"
+msgstr ""
+
+#: instrname.i18n:17
+msgid "Vibraphone"
+msgstr ""
+
+#: instrname.i18n:18
+msgid "Marimba"
+msgstr ""
+
+#: instrname.i18n:19
+msgid "Xylophone"
+msgstr "Ksylofoni"
+
+#: instrname.i18n:20
+msgid "Tubular Bells"
+msgstr ""
+
+#: instrname.i18n:21
+msgid "Dulcimer"
+msgstr ""
+
+#: instrname.i18n:22
+msgid "Hammond Organ"
+msgstr ""
+
+#: instrname.i18n:23
+msgid "Percussive Organ"
+msgstr ""
+
+#: instrname.i18n:24
+msgid "Rock Organ"
+msgstr "Rokkiurku"
+
+#: instrname.i18n:25
+msgid "Church Organ"
+msgstr "Kirkkourku"
+
+#: instrname.i18n:26
+msgid "Reed Organ"
+msgstr ""
+
+#: instrname.i18n:27
+msgid "Accordion"
+msgstr ""
+
+#: instrname.i18n:28
+msgid "Harmonica"
+msgstr "Harmonikka"
+
+#: instrname.i18n:29
+msgid "Tango Accordion"
+msgstr ""
+
+#: instrname.i18n:30
+msgid "Acoustic Guitar (Nylon)"
+msgstr "Akustinen kitara (Nylon)"
+
+#: instrname.i18n:31
+msgid "Acoustic Guitar (Steel)"
+msgstr "Akustinen kitara (Teräs)"
+
+#: instrname.i18n:32
+msgid "Electric Guitar (Jazz)"
+msgstr "Sähkökitara (Jazz)"
+
+#: instrname.i18n:33
+msgid "Electric Guitar (Clean)"
+msgstr "Sähkökitara (Puhdas)"
+
+#: instrname.i18n:34
+msgid "Electric Guitar (Muted)"
+msgstr "Sähkökitara (vaimennettu)"
+
+#: instrname.i18n:35
+msgid "Overdriven Guitar"
+msgstr "Yliajettu kitara"
+
+#: instrname.i18n:36
+msgid "Distortion Guitar"
+msgstr "Särökitara"
+
+#: instrname.i18n:37
+msgid "Guitar Harmonics"
+msgstr "Kitaran harmoonisia"
+
+#: instrname.i18n:38
+msgid "Acoustic Bass"
+msgstr "Akustinen basso"
+
+#: instrname.i18n:39
+msgid "Electric Bass (Finger)"
+msgstr "Sähköbasso (Sormi)"
+
+#: instrname.i18n:40
+msgid "Electric Bass (Pick)"
+msgstr "Sähköbasso"
+
+#: instrname.i18n:41
+msgid "Fretless Bass"
+msgstr ""
+
+#: instrname.i18n:42
+msgid "Slap Bass 1"
+msgstr ""
+
+#: instrname.i18n:43
+msgid "Slap Bass 2"
+msgstr ""
+
+#: instrname.i18n:44
+msgid "Synth Bass 1"
+msgstr "Syntetisaattoribasso 1"
+
+#: instrname.i18n:45
+msgid "Synth Bass 2"
+msgstr "Syntetisaattoribasso 2"
+
+#: instrname.i18n:46
+msgid "Violin"
+msgstr "Viulu"
+
+#: instrname.i18n:47
+msgid "Viola"
+msgstr ""
+
+#: instrname.i18n:48
+msgid "Cello"
+msgstr "Sello"
+
+#: instrname.i18n:49
+msgid "Contrabass"
+msgstr "Kontrabasso"
+
+#: instrname.i18n:50
+msgid "Tremolo Strings"
+msgstr ""
+
+#: instrname.i18n:51
+msgid "Pizzicato Strings"
+msgstr ""
+
+#: instrname.i18n:52
+msgid "Orchestral Harp"
+msgstr "Orkesteriharppu"
+
+#: instrname.i18n:53
+msgid "Timpani"
+msgstr ""
+
+#: instrname.i18n:54
+msgid "String Ensemble 1"
+msgstr ""
+
+#: instrname.i18n:55
+msgid "String Ensemble 2"
+msgstr ""
+
+#: instrname.i18n:56
+msgid "Synth Strings 1"
+msgstr ""
+
+#: instrname.i18n:57
+msgid "Synth Strings 2"
+msgstr ""
+
+#: instrname.i18n:58
+msgid "Choir Aahs"
+msgstr ""
+
+#: instrname.i18n:59
+msgid "Voice Oohs"
+msgstr ""
+
+#: instrname.i18n:60
+msgid "Synth Voice"
+msgstr ""
+
+#: instrname.i18n:61
+msgid "Orchestra Hit"
+msgstr ""
+
+#: instrname.i18n:62
+msgid "Trumpet"
+msgstr "Trumpetti"
+
+#: instrname.i18n:63
+msgid "Trombone"
+msgstr ""
+
+#: instrname.i18n:64
+msgid "Tuba"
+msgstr "Tuuba"
+
+#: instrname.i18n:65
+msgid "Muted Trumpet"
+msgstr "Vaimennettu trumpetti"
+
+#: instrname.i18n:66
+msgid "French Horn"
+msgstr "Ranskalainen torvi"
+
+#: instrname.i18n:67
+msgid "Brass Section"
+msgstr ""
+
+#: instrname.i18n:68
+msgid "Synth Brass 1"
+msgstr ""
+
+#: instrname.i18n:69
+msgid "Synth Brass 2"
+msgstr ""
+
+#: instrname.i18n:70
+msgid "Soprano Sax"
+msgstr "Sopraanosaksofoni"
+
+#: instrname.i18n:71
+msgid "Alto Sax"
+msgstr "Alttosaksofoni"
+
+#: instrname.i18n:72
+msgid "Tenor Sax"
+msgstr "Tenorisaksofoni"
+
+#: instrname.i18n:73
+msgid "Baritone Sax"
+msgstr "Baritonisaksofoni"
+
+#: instrname.i18n:74
+msgid "Oboe"
+msgstr "Oboe"
+
+#: instrname.i18n:75
+msgid "English Horn"
+msgstr "Englantilainen torvi"
+
+#: instrname.i18n:76
+msgid "Bassoon"
+msgstr ""
+
+#: instrname.i18n:77
+msgid "Clarinet"
+msgstr "Klarinetti"
+
+#: instrname.i18n:78
+msgid "Piccolo"
+msgstr "Pikkolo"
+
+#: instrname.i18n:79
+msgid "Flute"
+msgstr "Huilu"
+
+#: instrname.i18n:80
+msgid "Recorder"
+msgstr "Äänitys"
+
+#: instrname.i18n:81
+msgid "Pan Flute"
+msgstr "Panhuilu"
+
+#: instrname.i18n:82
+msgid "Blown Bottle"
+msgstr "Puhalluspullo"
+
+#: instrname.i18n:83
+msgid "Shakuhachi"
+msgstr ""
+
+#: instrname.i18n:84
+msgid "Whistle"
+msgstr "Vislaus"
+
+#: instrname.i18n:85
+msgid "Ocarina"
+msgstr ""
+
+#: instrname.i18n:86
+msgid "Lead 1 - Square Wave"
+msgstr ""
+
+#: instrname.i18n:87
+msgid "Lead 2 - Saw Tooth"
+msgstr ""
+
+#: instrname.i18n:88
+msgid "Lead 3 - Calliope"
+msgstr ""
+
+#: instrname.i18n:89
+msgid "Lead 4 - Chiflead"
+msgstr ""
+
+#: instrname.i18n:90
+msgid "Lead 5 - Charang"
+msgstr ""
+
+#: instrname.i18n:91
+msgid "Lead 6 - Voice"
+msgstr ""
+
+#: instrname.i18n:92
+msgid "Lead 7 - Fifths"
+msgstr ""
+
+#: instrname.i18n:93
+msgid "Lead 8 - Bass+Lead"
+msgstr ""
+
+#: instrname.i18n:94
+msgid "Pad 1 - New Age"
+msgstr ""
+
+#: instrname.i18n:95
+msgid "Pad 2 - Warm"
+msgstr ""
+
+#: instrname.i18n:96
+msgid "Pad 3 - Polysynth"
+msgstr ""
+
+#: instrname.i18n:97
+msgid "Pad 4 - Choir"
+msgstr ""
+
+#: instrname.i18n:98
+msgid "Pad 5 - Bow"
+msgstr ""
+
+#: instrname.i18n:99
+msgid "Pad 6 - Metallic"
+msgstr ""
+
+#: instrname.i18n:100
+msgid "Pad 7 - Halo"
+msgstr ""
+
+#: instrname.i18n:101
+msgid "Pad 8 - Sweep"
+msgstr ""
+
+#: instrname.i18n:102
+msgid "FX 1 - Rain"
+msgstr ""
+
+#: instrname.i18n:103
+msgid "FX 2 - Soundtrack"
+msgstr ""
+
+#: instrname.i18n:104
+msgid "FX 3 - Crystal"
+msgstr ""
+
+#: instrname.i18n:105
+msgid "FX 4 - Atmosphere"
+msgstr ""
+
+#: instrname.i18n:106
+msgid "FX 5 - Brightness"
+msgstr ""
+
+#: instrname.i18n:107
+msgid "FX 6 - Goblins"
+msgstr ""
+
+#: instrname.i18n:108
+msgid "FX 7 - Echoes"
+msgstr ""
+
+#: instrname.i18n:109
+msgid "FX 8 - Sci-fi"
+msgstr ""
+
+#: instrname.i18n:110
+msgid "Sitar"
+msgstr ""
+
+#: instrname.i18n:111
+msgid "Banjo"
+msgstr "Banjo"
+
+#: instrname.i18n:112
+msgid "Shamisen"
+msgstr ""
+
+#: instrname.i18n:113
+msgid "Koto"
+msgstr ""
+
+#: instrname.i18n:114
+msgid "Kalimba"
+msgstr ""
+
+#: instrname.i18n:115
+msgid "Bagpipe"
+msgstr "Säkkipilli"
+
+#: instrname.i18n:116
+msgid "Fiddle"
+msgstr ""
+
+#: instrname.i18n:117
+msgid "Shannai"
+msgstr ""
+
+#: instrname.i18n:118
+msgid "Tinkle Bell"
+msgstr ""
+
+#: instrname.i18n:119
+msgid "Agogo"
+msgstr ""
+
+#: instrname.i18n:120
+msgid "Steel Drum"
+msgstr "Teräsrumpu"
+
+#: instrname.i18n:121
+msgid "Wook Block"
+msgstr "Puupala"
+
+#: instrname.i18n:122
+msgid "Taiko Drum"
+msgstr ""
+
+#: instrname.i18n:123
+msgid "Melodic Tom"
+msgstr ""
+
+#: instrname.i18n:124
+msgid "Synth Drum"
+msgstr ""
+
+#: instrname.i18n:125
+msgid "Reverse Cymbal"
+msgstr ""
+
+#: instrname.i18n:126
+msgid "Guitar Fret Noise"
+msgstr ""
+
+#: instrname.i18n:127
+msgid "Breath Noise"
+msgstr "Hengitysääni"
+
+#: instrname.i18n:128
+msgid "Seashore"
+msgstr "Merenranta"
+
+#: instrname.i18n:129
+msgid "Bird Tweet"
+msgstr "Linnunviserrys"
+
+#: instrname.i18n:130
+msgid "Telephone"
+msgstr "Puhelin"
+
+#: instrname.i18n:131
+msgid "Helicopter"
+msgstr "Helikopteri"
+
+#: instrname.i18n:132
+msgid "Applause"
+msgstr "Aplodit"
+
+#: instrname.i18n:133
+msgid "Gunshot"
+msgstr "Laukaus"

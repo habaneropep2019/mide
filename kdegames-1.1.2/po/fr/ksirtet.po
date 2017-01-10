@@ -1,0 +1,292 @@
+# ksirtet.po
+# First-Translator : 1998-10-01
+#   Laurent Montel <montell@club-internet.fr>
+# Update : 1999-03-16
+#   Philippe Thomin <Philippe.Thomin@univ-valenciennes.fr>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ksirtet\n"
+"POT-Creation-Date: 1998-10-01 13:29+0200\n"
+"PO-Revision-Date: 1999-03-16 16:34+0100\n"
+"Last-Translator: Philippe Thomin <Philippe.Thomin@univ-valenciennes.fr>\n"
+"Language-Team: Français\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: MIME\n"
+
+#: board.cpp:65 dialogs.cpp:137
+msgid "Anonymous"
+msgstr "Anonyme"
+
+#: board.cpp:97
+msgid "Game paused"
+msgstr "Partie suspendue"
+
+#: board.cpp:102
+msgid "Press to resume"
+msgstr "Appuyez pour reprendre"
+
+#: board.cpp:119 net.cpp:208
+msgid "Game over"
+msgstr "Fini"
+
+#: board.cpp:123
+msgid "Press Return to replay"
+msgstr "Appuyez sur entrée"
+
+#: board.cpp:127
+msgid "Press to start game"
+msgstr "Appuyez pour commencer"
+
+#: board.cpp:371
+msgid "Highscores file not writable !"
+msgstr "Mise à jour des meilleurs scores impossible !"
+
+#: net.cpp:129
+msgid "Illegal port"
+msgstr "Port illégal"
+
+#: net.cpp:135
+msgid "Null address"
+msgstr "Adresse nulle"
+
+#: net.cpp:142
+msgid "Unknown address"
+msgstr "Adresse inconnue"
+
+#: net.cpp:157
+msgid "Cannot create socket"
+msgstr "Impossible de créer le socket"
+
+#: net.cpp:196
+msgid "at"
+msgstr "chez"
+
+#: net.cpp:233
+msgid "Connect error"
+msgstr "Erreur de connexion"
+
+#: net.cpp:243 net.cpp:299
+msgid "Server unreachable"
+msgstr "Serveur inaccessible"
+
+#: net.cpp:266
+msgid "The server has died"
+msgstr "Le serveur est mort"
+
+#: net.cpp:267
+msgid "Cancel from server"
+msgstr "Annulation en provenance du serveur"
+
+#: net.cpp:273 net.cpp:333
+msgid "Unknown data from server"
+msgstr "Données inconnues en provenance du serveur"
+
+#: net.cpp:312
+msgid "Cannot send to server"
+msgstr "Impossible d'envoyer au serveur"
+
+#: net.cpp:324
+msgid "Client timeout (No message from server)"
+msgstr "Timeout client (Aucun message en provenance du serveur)"
+
+#: net.cpp:329
+msgid "Server has vanished"
+msgstr "Le serveur a disparu"
+
+#: net.cpp:366
+msgid "Bind error"
+msgstr "Erreur de liaison (Bind)"
+
+#: net.cpp:371
+msgid "Listen error"
+msgstr "Erreur d'écoute (Listen)"
+
+#: net.cpp:390
+msgid "Unknown message from unknown player (??)"
+msgstr "Message inconnu de la part d'un joueur inconnu (??)"
+
+#: net.cpp:449 net.cpp:490
+msgid "Unknown message from client"
+msgstr "Message inconnu de la part du client"
+
+#: net.cpp:486
+msgid "Client has died"
+msgstr "Le client est mort"
+
+#: net.cpp:487
+msgid "Cancel from client"
+msgstr "Annulation en provenance du client"
+
+#: net.cpp:494
+msgid "Timeout"
+msgstr "Timeout"
+
+#: net.cpp:520
+msgid "No message from client"
+msgstr "Pas de message en provenance client"
+
+#: net.cpp:525
+msgid "Client has vanished"
+msgstr "Le client a disparu"
+
+#: net.cpp:529
+msgid "Unknown data from client"
+msgstr "Données inconnues en provenance du client"
+
+#: net.cpp:533
+msgid "End message from client"
+msgstr "Message de fin en provenance du client"
+
+#: net.cpp:550
+msgid "Cannot send to client"
+msgstr "Impossible d'envoyer au client"
+
+#: dialogs.cpp:61
+msgid "High Scores"
+msgstr "Meilleurs scores"
+
+#: dialogs.cpp:84 dialogs.cpp:93
+msgid "Hall of Fame"
+msgstr "Panthéon"
+
+#: dialogs.cpp:156
+msgid "No option yet !"
+msgstr "Pas encore d'options !"
+
+#: dialogs.cpp:175 dialogs.cpp:232
+msgid "Network Dialog"
+msgstr "Réseau"
+
+#: dialogs.cpp:178
+msgid "Server"
+msgstr "Serveur"
+
+#: dialogs.cpp:179
+msgid "Client"
+msgstr "Client"
+
+#: dialogs.cpp:183
+msgid "Player name :"
+msgstr "Nom du joueur :"
+
+#: dialogs.cpp:185
+msgid "Server address :"
+msgstr "Adresse du serveur :"
+
+#: dialogs.cpp:187
+msgid "Port :"
+msgstr "Port :"
+
+#: dialogs.cpp:199
+msgid "Connect"
+msgstr "Connecter"
+
+#: dialogs.cpp:202
+msgid "Connecting ..."
+msgstr "En cours de connexion ..."
+
+#: dialogs.cpp:205
+msgid "Play !"
+msgstr "Jouer !"
+
+#: dialogs.cpp:252
+msgid "Network game"
+msgstr "Partie en réseau"
+
+#: dialogs.cpp:256
+msgid "Server mode"
+msgstr "Mode serveur"
+
+#: dialogs.cpp:258
+msgid "Client mode"
+msgstr "Mode client"
+
+#: dialogs.cpp:336
+msgid "Waiting for other player(s) ..."
+msgstr "En attente d'autres joueurs..."
+
+#: field.cpp:27
+msgid "New game"
+msgstr "Nouvelle partie"
+
+#: field.cpp:28
+msgid "Pause game"
+msgstr "Pause"
+
+#: field.cpp:30
+msgid "High scores"
+msgstr "Panthéon"
+
+#: field.cpp:31
+msgid "Move left"
+msgstr "Déplacer à gauche"
+
+#: field.cpp:32
+msgid "Move right"
+msgstr "Déplacer à droite"
+
+#: field.cpp:33
+msgid "Drop down"
+msgstr "Laisser tomber"
+
+#: field.cpp:34
+msgid "One line down"
+msgstr "Une ligne vers le bas"
+
+#: field.cpp:35
+msgid "Rotate left"
+msgstr "Tourner à gauche"
+
+#: field.cpp:36
+msgid "Rotate right"
+msgstr "Tourner à droite"
+
+#: field.cpp:51
+msgid "Score"
+msgstr "Score"
+
+#: field.cpp:55
+msgid "Lines removed"
+msgstr "Lignes effacées"
+
+#: field.cpp:59
+msgid "Level"
+msgstr "Niveau"
+
+#: field.cpp:63
+msgid "Next tile"
+msgstr "Prochaine piece"
+
+#: field.cpp:185
+msgid "&Restart game"
+msgstr "&Redémarrer la partie"
+
+#: field.cpp:186
+msgid "&Pause game"
+msgstr "&Suspendre"
+
+#: field.cpp:187
+msgid "&Multiplayer game"
+msgstr "&Multijoueur"
+
+#: field.cpp:189
+msgid "&High scores"
+msgstr "&Panthéon"
+
+#: main.cpp:25 main.cpp:74
+msgid "Hide menu"
+msgstr "Cacher le menu"
+
+#: main.cpp:30
+msgid "&Keys"
+msgstr "&Raccourcis clavier"
+
+#: main.cpp:35
+msgid "by"
+msgstr "par"
+
+#: main.cpp:71
+msgid "Show menu"
+msgstr "Montrer le menu"

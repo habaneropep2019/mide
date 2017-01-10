@@ -1,0 +1,252 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: knu\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: 1999-01-10 13:40+MET\n"
+"Last-Translator: Thomas Diehl <th_diehl@csi.com>\n"
+"Translator: Stephan Kulow <coolo@kde.org>\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "&Traceroute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "Rechner-&Namen"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "&Finger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"Es sind alle Kommandos in der\n"
+"Konfigurationsdatei ausgeschaltet.\n"
+"\n"
+"Dann kann das Programm nichts tun...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "&Neues Fenster"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "&Fenster schließen"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "&Alle auswählen"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "&Lösche Ausgabe-Fenster"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "&Einstellungen..."
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "&Über %s"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "Über &Qt"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "Über..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "Netzwerk Dienstprogramme"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "&Rechner:"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "&Start"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "St&op"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Das Programm für dieses Kommando wurde nicht gefunden.\n"
+"Der Pfad kann in \"Bearbeiten->Einstellungen\" geändert werden."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Sie haben ein Problem in Ihrer\n"
+"%s/%src\n"
+"Konfigurationsdatei.\n"
+"In der [%s] Gruppe\n"
+"kann ich keinen gültigen \"path=\"-Eintrag finden.\n"
+"\n"
+"Bitte benutzen Sie \"Bearbeiten->Einstellungen\",\n"
+"um neu zu konfigurieren.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "Fehler im Pfadnamen"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Programm"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "Pfa&d:"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "&Zusätzliche Argumente:"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "Dieses Kommando wurde in der Konfigurationsdatei ausgeschaltet."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " -  Konfiguration"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "Rechner"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Verlust"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Empfangen"
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Verschickt"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Bestes"
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "Schnitt"
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Schlechtestes"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "Löse Rechner-Namen auf"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "Rech&ner"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "Ma&ximale Anzahl an Sprüngen"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "Adresse (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "Name (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "Namen-Server (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "Server für Mail (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "Alias (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "Start der Autentifizierung (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "Alle Einträge (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "Su&che nach:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "Standard-Server"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "Ser&ver:"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "&Benutzer:"

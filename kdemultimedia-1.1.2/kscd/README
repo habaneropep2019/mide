@@ -1,0 +1,59 @@
+KSCD 1.2.3
+==========
+
+        * Fixed DOCKING!
+
+Basically, this version finishes a whole lot more that has been
+missing/broken since the last version that bernd did, (1.2.0).
+
+ Sam Maloney, <thufir@illogic.ml.org>    
+
+KSCD 1.2.0t1
+============
+
+	* Fixed CDDB code big time.
+	* Submissions now fixed.
+	* Server requests fixed.
+	* Local storing of CDDB records. (automatic)
+
+KSCD have been broken and NOT updated, since the release of KDE 1.0, and
+that is a long time ago, so i decided to fix MAJOR problems with the CDDB
+code, now it is permitted to use and upload to the CDDB database.
+
+Sam Maloney, <thufir@illogic.ml.org>
+
+KSCD 0.8
+========
+
+Sat Jan 17 17:50:37 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* KSCD 0.8
+	* CDDB submissions enabled.
+
+
+Remember if kscd seems to have trouble with your cd drive, do a 'make clean'
+then 'make' and answer the questions posed by the kscd-script to configure
+kscd suitable for your cdrom drive. 
+
+Bernd
+
+KSCD 0.6
+========
+
+	CDDB support, web integration
+	
+Bernd
+
+KSCD 0.4
+========
+
+This is version 0.4 of kscd. Kscd is now easier to build than
+ever with its new configuration script. Supprt was added
+for Irix and Sun/Solaris cdda. 
+
+Please see the html documentation in the docs directory for 
+information about kscd.
+
+Thank you,
+Bernd Wuebben
+wuebben@kde.org

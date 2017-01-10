@@ -1,0 +1,325 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdmconfig\n"
+"POT-Creation-Date: 1999-01-12 01:14+0100\n"
+"PO-Revision-Date: 1999-03-29 19:04+0800\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312 )\n"
+"Translator: Wang Jian <larkw@263.net>\n"
+
+#: main.cpp:84
+msgid "&Appearance"
+msgstr "外观(&A)"
+
+#: main.cpp:92
+msgid "&Background"
+msgstr "背景(&B)"
+
+#: main.cpp:95
+msgid "&Users"
+msgstr "使用者(&U)"
+
+#: main.cpp:98
+msgid "&Sessions"
+msgstr "会话(&S)"
+
+#: main.cpp:103
+msgid ""
+"usage: kdmconfig [-init | {appearance,font,background,sessions,users}]\n"
+msgstr ""
+"用法: kdmconfig [-init | {appearance,font,background,sessions,users}]\n"
+
+#: main.cpp:142
+msgid "KDM Configuration"
+msgstr "KDM 配置"
+
+#: main.cpp:152
+msgid ""
+"Sorry, but you don't have read/write\n"
+"permission to the KDM setup file."
+msgstr ""
+"抱歉, 你没有权限 \n"
+"读/写 KDM 设置文件"
+
+#: main.cpp:154
+msgid "Missing privileges"
+msgstr "没有优先级"
+
+#: kdm-appear.cpp:70
+msgid "Greeting string:"
+msgstr "问候字符串:"
+
+#: kdm-appear.cpp:78
+msgid "KDM logo:"
+msgstr "KDM 标志:"
+
+#: kdm-appear.cpp:105 kdm-users.cpp:135
+msgid "Click or drop an image here"
+msgstr "点击或拖放一个图形至此"
+
+#: kdm-appear.cpp:110
+msgid "GUI Style:"
+msgstr "图形用户界面风格"
+
+#: kdm-appear.cpp:116
+msgid "Motif"
+msgstr "Motif"
+
+#: kdm-appear.cpp:117
+msgid "Windows"
+msgstr "Windows"
+
+#: kdm-appear.cpp:128
+msgid "Language"
+msgstr "语言"
+
+#: kdm-appear.cpp:131
+msgid "Language:"
+msgstr "语言:"
+
+#: kdm-appear.cpp:167 kdm-appear.cpp:251 kdm-users.cpp:276
+msgid ""
+"There was an error loading the image:\n"
+">"
+msgstr ""
+"读取图像时发生错误:\n"
+">"
+
+#: kdm-appear.cpp:169 kdm-appear.cpp:188 kdm-users.cpp:196
+msgid "<"
+msgstr "<"
+
+#: kdm-appear.cpp:170 kdm-appear.cpp:189 kdm-appear.cpp:254 kdm-users.cpp:197
+#: kdm-users.cpp:279
+msgid "ERROR"
+msgstr "错误"
+
+#: kdm-appear.cpp:186 kdm-users.cpp:194
+msgid ""
+"There was an error saving the image:\n"
+">"
+msgstr ""
+"保存图像时发生错误:\n"
+">"
+
+#: kdm-appear.cpp:219 kdm-users.cpp:227
+msgid "Sorry, but \n"
+msgstr "对不起, 但是\n"
+
+#: kdm-appear.cpp:221 kdm-users.cpp:229
+msgid ""
+"\n"
+"does not seem to be an image file"
+msgstr ""
+"\n"
+"不是一个图形文件"
+
+#: kdm-appear.cpp:222 kdm-users.cpp:230
+msgid ""
+"\n"
+"Please use files with these extensions\n"
+msgstr ""
+"\n"
+"请使用这些扩展名的文件\n"
+
+#: kdm-appear.cpp:224 kdm-users.cpp:232
+msgid "Improper File Extension"
+msgstr "不正确的文件扩展名"
+
+#: kdm-appear.cpp:253 kdm-users.cpp:278
+msgid ""
+"<\n"
+"It will not be saved..."
+msgstr ""
+"<\n"
+"不会保存..."
+
+#: kdm-font.cpp:48
+msgid "Select fonts"
+msgstr "选择字体"
+
+#: kdm-font.cpp:50
+msgid "Example"
+msgstr "例子"
+
+#: kdm-font.cpp:52
+msgid "Change font..."
+msgstr "改变字体..."
+
+#: kdm-font.cpp:57
+msgid "Greeting"
+msgstr "问候"
+
+#: kdm-font.cpp:58
+msgid "Fail"
+msgstr "失败"
+
+#: kdm-font.cpp:59
+msgid "Standard"
+msgstr "标准"
+
+#: kdm-font.cpp:157
+msgid "Greeting font"
+msgstr "问候字体"
+
+#: kdm-font.cpp:161
+msgid "Fail font"
+msgstr "失败字体"
+
+#: kdm-font.cpp:165
+msgid "Standard font"
+msgstr "标准"
+
+#: kdm-bgnd.cpp:70
+msgid "Preview"
+msgstr "预览"
+
+#: kdm-bgnd.cpp:95
+msgid "Color"
+msgstr "颜色"
+
+#: kdm-bgnd.cpp:101
+msgid "Solid Color"
+msgstr "纯色"
+
+#: kdm-bgnd.cpp:106
+msgid "Horizontal Blend"
+msgstr "水平混色"
+
+#: kdm-bgnd.cpp:111
+msgid "Vertical Blend"
+msgstr "垂直混色"
+
+#: kdm-bgnd.cpp:130
+msgid "Wallpaper"
+msgstr "墙纸"
+
+#: kdm-bgnd.cpp:171 kdm-sess.cpp:56
+msgid "None"
+msgstr "无"
+
+#: kdm-bgnd.cpp:176
+msgid "Tile"
+msgstr "平铺"
+
+#: kdm-bgnd.cpp:181
+msgid "Center"
+msgstr "正中"
+
+#: kdm-bgnd.cpp:186
+msgid "Scale"
+msgstr "放大至全屏幕"
+
+#: kdm-bgnd.cpp:191
+msgid "TopLeft"
+msgstr "左上角"
+
+#: kdm-bgnd.cpp:196
+msgid "TopRight"
+msgstr "右上角"
+
+#: kdm-bgnd.cpp:201
+msgid "BottomLeft"
+msgstr "左下角"
+
+#: kdm-bgnd.cpp:206
+msgid "BottomRight"
+msgstr "右下角"
+
+#: kdm-bgnd.cpp:211
+msgid "Fancy"
+msgstr "奇特的"
+
+#: kdm-users.cpp:48
+msgid "All users"
+msgstr "全部用户"
+
+#: kdm-users.cpp:50
+msgid "Selected users"
+msgstr "已选中的用户"
+
+#: kdm-users.cpp:52
+msgid "No-show users"
+msgstr "不显示的用户"
+
+#: kdm-users.cpp:79
+msgid ""
+"Show only\n"
+"selected users"
+msgstr ""
+"只显示\n"
+"选中的用户"
+
+#: kdm-users.cpp:86
+msgid ""
+"Show all users\n"
+" but no-show users"
+msgstr ""
+"除了隐藏用户外,\n"
+"显示全部用户"
+
+#: kdm-users.cpp:97
+msgid "Show users"
+msgstr "显示用户"
+
+#: kdm-users.cpp:103
+msgid "Sort users"
+msgstr "用户排序"
+
+#: kdm-users.cpp:182 kdm-users.cpp:251
+msgid "No user selected"
+msgstr "没有选择用户"
+
+#: kdm-users.cpp:183 kdm-users.cpp:252
+msgid "Save image as default image?"
+msgstr "保存为默认图形?"
+
+#: kdm-sess.cpp:52
+msgid "Allow to shutdown"
+msgstr "允许关机"
+
+#: kdm-sess.cpp:57
+msgid "All"
+msgstr "全部"
+
+#: kdm-sess.cpp:58
+msgid "Root Only"
+msgstr "只允许超级用户"
+
+#: kdm-sess.cpp:59
+msgid "Console Only"
+msgstr "只允许控制台上"
+
+#: kdm-sess.cpp:63
+msgid "Commands"
+msgstr "命令"
+
+#: kdm-sess.cpp:64
+msgid "Shutdown"
+msgstr "关机"
+
+#: kdm-sess.cpp:70
+msgid "Restart"
+msgstr "重新开始"
+
+#: kdm-sess.cpp:77
+msgid "Session types"
+msgstr "会话类型"
+
+#: kdm-sess.cpp:79
+msgid "New type"
+msgstr "新类型"
+
+#: kdm-sess.cpp:89
+msgid "Available types"
+msgstr "可用类型"
+
+#: klangcombo.cpp:133
+msgid "without name!"
+msgstr "没有名称!"
+
+#~ msgid "&Fonts"
+#~ msgstr "字体[&F]"
+
+#~ msgid "Appearance"
+#~ msgstr "外观"

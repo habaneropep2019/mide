@@ -1,0 +1,94 @@
+/* config.h.in.  Generated automatically from configure.in by autoheader.  */
+
+/* Define if you have the ANSI C header files.  */
+#undef STDC_HEADERS
+
+/* Define if you can safely include both <sys/time.h> and <time.h>.  */
+#undef TIME_WITH_SYS_TIME
+
+/* Define if the C++ compiler supports BOOL */
+#undef HAVE_BOOL
+
+/* defines if having libgif (always 1) */
+#undef HAVE_LIBGIF
+
+/* defines if having libjpeg (always 1) */
+#undef HAVE_LIBJPEG
+
+/* defines if having libtiff */
+#undef HAVE_LIBTIFF
+
+/* defines if you have libpng */
+#undef HAVE_LIBPNG
+
+/* defines which to take for ksize_t */
+#undef ksize_t
+
+/* define if you have setenv */
+#undef HAVE_FUNC_SETENV
+
+/* Define to 1 if NLS is requested.  */
+#undef ENABLE_NLS
+
+#ifndef HAVE_BOOL
+#define HAVE_BOOL
+typedef int bool;
+#ifdef __cplusplus
+const bool false = 0;
+const bool true = 1;
+#else
+#define false (bool)0;
+#define true (bool)1;
+#endif
+#endif
+#ifndef HAVE_FUNC_SETENV
+#define HAVE_FUNC_SETENV
+int setenv(const char *name, const char *value, int overwrite);
+int unsetenv(const char *name);
+#endif
+
+/*
+ * jpeg.h needs HAVE_BOOLEAN, when the system uses boolean in system
+ * headers and I'm too lazy to write a configure test as long as only
+ * unixware is related
+ */
+#ifdef _UNIXWARE
+#define HAVE_BOOLEAN
+#endif
+
+/* Define if you have the usleep function.  */
+#undef HAVE_USLEEP
+
+/* Define if you have the <dirent.h> header file.  */
+#undef HAVE_DIRENT_H
+
+/* Define if you have the <fcntl.h> header file.  */
+#undef HAVE_FCNTL_H
+
+/* Define if you have the <ndir.h> header file.  */
+#undef HAVE_NDIR_H
+
+/* Define if you have the <paths.h> header file.  */
+#undef HAVE_PATHS_H
+
+/* Define if you have the <stdlib.h> header file.  */
+#undef HAVE_STDLIB_H
+
+/* Define if you have the <sys/dir.h> header file.  */
+#undef HAVE_SYS_DIR_H
+
+/* Define if you have the <sys/ndir.h> header file.  */
+#undef HAVE_SYS_NDIR_H
+
+/* Define if you have the <sys/time.h> header file.  */
+#undef HAVE_SYS_TIME_H
+
+/* Define if you have the <unistd.h> header file.  */
+#undef HAVE_UNISTD_H
+
+/* Name of package */
+#undef PACKAGE
+
+/* Version number of package */
+#undef VERSION
+

@@ -1,0 +1,370 @@
+<!--  $Id: kmidi.sgml,v 1.6 1998/06/18 03:14:15 greglee Exp $ -->
+<!doctype linuxdoc system>
+<article>
+<title>The KMidi Handbook
+<author>Bernd Johannes Wuebben, <tt>wuebben@kde.org</tt>; Greg Lee, <tt>lee@hawaii.edu</tt>
+<date>Version 1.1, 17 June 1998
+<abstract>
+This Handbook describes KMidi Version 1.1
+</abstract>
+<toc>
+<sect>Introduction
+<p>
+
+KMidi is a midi file player and midi to wav file converter.
+
+If you have already given up on midi on Linux/Unix try this! Without
+expensive hard-ware such as a Gravis Ultrasound or Sound Blaster AWE64
+you will get fantastic sound comparable to what you get with the above
+mentioned hard-ware. FOR FREE!
+
+The catch:
+
+<itemize>
+
+<item> KMidi will use your CPU time, typically about 10-30% at 32000 Hz on my
+Pentium 120. If you have a slower machine, simply use the commandline options to
+reduce the sample frequency. You should be able to get very decent
+sound even on a 486 without straining your CPU.
+
+<item>You need the sound patches. You can get a full set of general midi
+sound patches  at any  Ultrasound archive. Typical storage requirements
+around 10 megs. 
+
+</itemize>
+
+Believe me, for the sound you are going to get this is a small price to pay!
+
+KMidi supports at the moment (Version 1.1) the following platforms:
+
+<itemize>
+<item>Linux
+<item>FreeBSD
+<item>DEC OSF/1
+<item>HP UX
+<item>SUN
+<item>SUN SOLARIS
+</itemize>
+
+The non-KDE alternative version of TiMidity may also work on all these
+platforms, but this version has only been tested on Linux.
+
+Ports to other platforms should be easy. Please contact me if you ported
+kmidi to another platform.
+
+KMidi uses Tuukka Toivonen's  TiMidity 0.2i engine 
+Copyright (C) 1995 <url url="mailto:toivonen@clinet.fi" name="Tukka Toivonen">.
+In fact, an enhanced version of Tuukka's original program with five
+other alternative user interfaces is included with the KMidi
+distribution.  (See below for information on compiling TiMidity.)
+KMidi and TiMidity use AWE SoundFont extensions done by
+<url url="mailto:iwai@dragon.mm.t.u-tokyo.ac.jp" name="Takashi Iwai">
+and AMD InterWave extensions done by
+<url url="mailto:lee@hawaii.edu" name="Greg Lee">,
+which enable you to use SoundFonts (.sbk/.sf2 files)
+and IW patchsets (.fff/.dat files) in addition to Gravis/Forte .pat files.
+
+For details about usage that may not be covered in this
+manual, see the timidity(1) man page.
+
+I realize this is a rough release, and I am sure that if you try
+hard enough you will be able to get KMidi to crash, but I think
+KMidi is already more than usable and will hopefull give you hours
+of fun. Remember Midi files are typically around 50k or less and
+are therefore so easily downloaded that you will never run out of great midi's
+to play.
+
+Have fun with KMidi!
+
+<p>
+<tt>Bernd Johannes Wuebben</tt>,
+<htmlurl url="mailto:wuebben@kde.org" name="wuebben@kde.org">
+
+
+<sect>Installation
+<p>
+<sect1>How to obtain KMidi
+<p>
+KMidi is part  of the KDE project <url url="http://www.kde.org">.
+KMidi can be found on <url url="ftp://ftp.kde.org/pub/kde/">, the main ftp site
+of the KDE project. It's home site is
+<htmlurl url="http://math.cornell.edu/~wuebben/kde.html" name="http://math.cornell.edu/~wuebben/kde.html">
+
+<sect1>Requirements
+<p>
+In order to successfully compile KMidi, you need the latest versions of <tt> libkdecore</tt>
+and <tt> libkdeui</tt>. All required libraries as well as KMidi itself can be found
+on <url url="ftp://ftp.kde.org/pub/kde/">. 
+<p>
+To compile the "dumb" commandline interface of TiMidity, any
+standard Unix-type system should do, or even Win95.
+The other interfaces have special requirements
+(see the various README files in the distribution).
+The Motif interface works reasonably well with Lesstif.
+
+<sect1>Compilation and installation
+<p>
+
+If you previously installed KMidi, it would be wise to back up files in the
+configuration directory (probably $KDEDIR/share/apps/kmidi/config/) before
+installing this version, since files there might be overwritten.
+Similarly, before installing the non-KDE version of TiMidity, back up
+/usr/local/lib/timidity/*.
+On the other hand, for a completely fresh install you should remove any files in these two
+directories, since the old files might not be replaced by new versions.
+<p>
+
+If you have the entire kdemultimedia distribution, cd to the kdemultimedia
+directory and
+
+<tscreen><verb>
+% ./configure
+</verb></tscreen>
+
+Then to make all the multimedia programs, stay in that directory, or
+to make just KMidi, cd to the kmidi directory, and
+
+<tscreen><verb>
+% make
+% make install
+</verb></tscreen>
+
+For the non-KDE version of TiMidity, edit the file Makefile.tim as
+required (depending on what user interfaces you want compiled in),
+then
+
+<tscreen><verb>
+% make clean
+% make -f Makefile.tim
+% make -f Makefile.tim install.bin
+% make -f Makefile.tim install.lib
+% make -f Makefile.tim install.man
+</verb></tscreen>
+
+
+Should you run into problems please report them to me.
+<p>
+
+<sect1>Where to get a full set of patches?<label id="patches"><p>
+
+There are three sorts of patches that KMidi/TiMidity can use: GUS patches, IW <tt>fonts</tt>,
+and AWE32 SoundFonts.  A set of samples and parameters for a single instrument, a patch,
+is in a separate file for GUS patches, but IW fonts have all the samples for a related
+set of patches together in a <tt>.dat</tt> file and all the parameters collected in one
+<tt>.fff</tt> file.  AWE SoundFonts put everything in a single <tt>.sf2</tt> file (or <tt>.sbk</tt>).
+First, here are some places to get GUS patches:
+
+<url url="mailto:goemon@anime.net" name="Dan Hollis">
+has put together a patch set. Please visit his page at
+<url url="http://www.anime.net/~goemon/timidity/" name="http://www.anime.net/~goemon/timidity"> and
+help him make this the best set available.<p>
+
+<bf>New:</bf> I have uploaded the above patchset to ftp.kde.org. It is currently in
+<tt>ftp://fiwi02.wiwi.uni-tuebingen.de/pub/kde/stable/Beta2/apps/multimedia/sound/</tt>
+but I expect we will  move it  around a bit until we found a good location for it.
+So just poke around a bit on ftp.kde.org, if the set can no longer be found at the
+above mentioned location by the time you read this.
+
+Patches can also be found packaged as dep or rpm modules on the Sunsite
+archive:
+<p>
+
+<itemize>
+<item> Debian: <url url="ftp://sunsite.unc.edu/pub/Linux/./distributions/debian/bo/source/sound/timidity-patches_0.1.tar.gz" name="timidity-patches_0.1.tar.gz">
+
+<item> RPM:
+<url url="ftp://sunsite.unc.edu/pub/Linux/distributions/redhat/contrib/oldrpms/contrib-2.0.x/RPMS/timidity-patches-1-1.i386.rpm" name="timidity-patches-1-1.i386.rpm">
+<item> RPM:
+<url url="ftp://sunsite.unc.edu/pub/Linux/distributions/redhat/contrib/oldrpms/contrib-2.0.x/SRPMS/timidity-patches-1-1.src.rpm-try2" name="timidity-patches-1-1.src.rpm-try2">
+
+</itemize><p>
+
+I have not tried the above (yet), and personally use the Midia patch set together
+with a few additional patches and a couple of additional drum sets.
+
+The Midia patch set can be found at:
+<url url="ftp://archive.cs.umbc.edu/pub/midia/">
+
+For additional patches and drum sets: (get the gsdrum and wow patches)
+<url url="ftp://ftp.cdrom.com/pub/gus/sound/patches/files/">
+
+Vincent Pagel has put together a collection of patches. This link
+can only be reached during night hours (Paris).
+<url url="ftp://sig.enst.fr/pub/midi/instruments/">
+
+The config file that goes with his patch set can be found here:
+<url url="ftp://sig.enst.fr/pub/midi/timidity_pagel.cfg">
+
+
+Also check the TimidityPage:
+<url url="http://www.clinet.fi/~toivonen/timidity/">
+
+and Takashi's Page:
+<url url="http://bahamut.mm.t.u-tokyo.ac.jp/~iwai/midi.html#TiMidity">
+<p>
+
+Takashi's page recommends the 8 meg AWE32 SoundFont <tt>chaos8m.sf2</tt> 
+and the 12 meg AWE32 SoundFont <tt>chaos12m.sf2</tt> 
+available at <url url="http://soback.kornet.nm.kr/~chaos/sbawe32/sbawe32.htm">,
+which are very nice.  (They are packaged as self-decompressing <tt>.exe</tt>
+files.)
+
+There are several free IW fonts at
+<url url="ftp://sdc.wtm.tudelft.nl/pub/music/soundbank/">.
+The only IW font I know of with stereo patches (which KMidi/TiMidity
+can play) costs $33 on a cd; see
+<url url="http://sdc.wtm.tudelft.nl/utopia/">.
+
+
+<sect2>Patch set installation<p>
+
+Each of the above patch sets (you need only one) should come with a .cfg
+configuration file similar to the .cfg files which come with KMidi 
+and reside in <tt>KDEDIR/share/apps/kmidi/config</tt>  <p>
+
+KMidi has configurations files ready made for you for a number
+of common patch sets, such as the media patch set. 
+
+In order to complete the installation of a complete patch set 
+edit the file timidity.cfg and source the appropriate config files for the patch 
+set/sets you downloaded. ( If you have a look at timidity.cfg it
+will be totally obvious what I am talking about)
+ 
+That's it. Now you can go ahead and and play the other midis that are in the
+KMidi distribution ( and any others of course)
+<p>
+
+<sect2>Miscellaneous<p>
+Ocassionally you will see that KMidi can't find a patch for 
+a particular instrument. ( Open the Info Window in order to
+see this information ) In that case, all you have to do 
+is go out and get yourself the missing patch and install
+it by moving the patch into the patch/ directory and editing
+your patch set .cfg file to tell KMidi that the new patch
+is available now. 
+<p>
+
+Sometimes a particular instrument doesn't sound all that well. 
+In that case, simply go out and get yourself a different patch from any of the
+Ultrasound archives and replace the not so optimal patch by a
+better one. As you can see, it is totally up to you how good
+every instrument will sound. You can even make your own patches
+with the pat2wav utility which is included in the KMidi distribution.
+
+
+
+
+<p>
+<sect> Usage <p>
+<sect1> General Usage
+<p>
+Simply click on the "eject" button to open the playlist manager. Select a midi file
+by double clicking on it. For your convenience I have included a few midi files
+in the midis directory of the distribution.
+For real usage you will need to get yourself a full general midi set of
+patches.
+<p>
+<sect1>Midi file names<p>
+KMidi will replace any '_' in the midi file name by spaces and curtail the .mid .MID
+ending if present.
+
+
+<sect1>Command Line Options
+<p>
+
+<tscreen><verb>
+wuebben: ./kmidi -h
+ KMidi version 0.3  MIDI to WAVE player/converter
+ Copyright (C) 1995 Bernd Johannes Wuebben <wuebben@math.cornell.edu>
+
+ KMidi is free software and comes with ABSOLUTELY NO WARRANTY.
+
+Usage:
+  kmidi [options] filename [...]
+
+Options:
+  -o file Output to another file (or device) (Use "-" for stdout)
+  -O mode Select output mode and format (see below for list)
+  -s f    Set sampling frequency to f (Hz or kHz)
+  -a      Enable the antialiasing filter
+  -f      Disable fast decay mode
+  -p n    Allow n-voice polyphony
+  -A n    Amplify volume by n percent (may cause clipping)
+  -C n    Set ratio of sampling and control frequencies
+
+  -L dir  Append dir to search path
+  -c file Read extra configuration file       
+  -I n    Use program n as the default
+  -P file Use patch file for all programs
+  -D n    Play drums on channel n
+  -Q n    Ignore channel n
+  -F      Enable fast panning
+  -U      Unload instruments from memory between MIDI files
+
+  -i mode Select user interface (see below for list)
+  -B n    Set number of buffer fragments
+  -h      Display this help message
+
+Available output modes (-O option):
+
+  -Od     Linux dsp device
+  -Ow     RIFF WAVE file
+  -Or     raw waveform data
+
+Output format options (append to -O? option):
+
+   `8'    8-bit sample width                 
+   `1'    16-bit sample width
+   `U'    uLaw encoding
+   `l'    linear encoding
+   `M'    monophonic
+   `S'    stereo
+   `s'    signed output
+   `u'    unsigned output
+   `x'    byte-swapped output
+
+Available interfaces (-i option):
+
+  -iq     kmidi qt  interface
+  -id     dumb interface
+
+Interface options (append to -i? option):
+
+   `v'    more verbose (cumulative)
+   `q'    quieter (cumulative)
+   `t'    trace playing                   
+
+</verb></tscreen>
+
+<sect>Questions and Answers<p>
+<sect1>Where to get a full patch set?<p>
+Please refer to the corresponding <ref id="patches" name="section"> 
+in the kmidi installation chapter.
+
+<sect>Copyright<p>
+<tscreen><verb>
+
+KMidi Copyright 1997 Bernd Johannes Wuebben <wuebben@math.cornell.edu>
+
+KMidi uses Tuukka Toivonen's timidity 0.2i engine,
+Copyright (C) 1995 Tukka Toivonen <toivonen@clinet.fi>
+
+Takashi Iwai <iwai@dragon.mm.t.u-tokyo.ac.jp> latest sound font patches.
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+</verb></tscreen
+<p>
+</article>

@@ -1,0 +1,182 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {general.h}
+	ClassSource {general.cpp}
+	ClassName {general}
+	DataHeader {generalData.h}
+	DataSource {generalData.cpp}
+	DataName {generalData}
+	WindowBaseClass {QWidget}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {450 300}
+MinSize {450 300}
+MaxSize {450 300}
+Grid {10}
+
+ButtonGroup {
+		Title {}
+		Alignment {Left}
+		Style {49}
+		Rect {10 10 430 170}
+		Name {ButtonGroup_4}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ButtonGroup {
+		Title {}
+		Alignment {Left}
+		Style {49}
+		Rect {10 190 430 90}
+		Name {ButtonGroup_3}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {TRUE}
+		Text {Auto Create Windows}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {20 20 170 30}
+		Name {CheckBox_1}
+		Variable {CB_AutoCreateWin}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {TRUE}
+		Text {Beep on Notify}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {240 20 170 30}
+		Name {CheckBox_3}
+		Variable {CB_BeepNotify}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {TRUE}
+		Text {Nick Completion}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {20 50 170 30}
+		Name {CheckBox_4}
+		Variable {CB_NickCompletion}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {TRUE}
+		Text {Colour Picker Popup}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {240 50 170 30}
+		Name {CheckBox_5}
+		Variable {CB_ColourPicker}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {TRUE}
+		Text {Auto Rejoin}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {240 90 160 20}
+		Name {CheckBox_6}
+		Variable {CB_AutoRejoin}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {FALSE}
+		Text {Enable Background Pixmap}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {20 200 190 30}
+		Name {CheckBox_8}
+		Variable {CB_BackgroundPix}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {20 240 260 30}
+		Name {LineEdit_6}
+		Variable {SLE_BackgroundFile}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Browse}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {290 240 90 30}
+		Name {PushButton_7}
+		Variable {PB_BackgroundBrowse}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {TRUE}
+		Text {Display Topic in Caption}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {20 80 210 30}
+		Name {CheckBox_9}
+		Variable {CB_DisplayTopic}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {TRUE}
+		Text {Use MDI Mode (Must restart to take effect, experimental!!)}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {20 110 410 30}
+		Name {CheckBox_10}
+		Variable {CB_MDIMode}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+User {
+		UserClassHeader {kintegerline.h}
+		UserClassName {KIntegerLine}
+		Rect {20 140 150 30}
+		Name {KILWindowLength}
+		Variable {KIL_WindowLength}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Window History Length}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {180 140 250 30}
+		Name {ScrollBackLineLabel}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

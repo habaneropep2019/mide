@@ -1,0 +1,247 @@
+
+In order to use KMidi you need so called (sound) patch files (see below).  
+There are several user interfaces provided for, including a "dumb" command 
+line version and a KDE version, done by Bernd Wuebben (see below).  The 
+patches can be GUS, i.e. Gravis/Forte, type files, Gravis InterWave 
+sound fonts, or AWE sbk/sf2 sound fonts.  The InterWave font support was 
+done by Greg Lee  and the AWE support was done by Takashi Iwai
+(see README.sf2).
+
+PLEASE READE THE SECTION TITLED "NOTES" FURTHER BELOW!
+thanks,
+Bernd
+
+
+KMidi 0.4
+=========
+
+New:
+
+     o timidity is back (use Makefile.tim; see "further notes" below)
+     o support for GUS InterWave fonts (.fff/.dat files)
+     o multiple AWE soundfonts (.sf2 files)
+     o support for stereo or linked instruments in sound fonts
+     o strict checking of patch declarations for soundfonts
+       (no need to use "order" or "font" statements in cfg files)
+     o sbk2cfg utility constructs cfg files for AWE soundfonts
+     o use patches in bank 8, etc. (bugfix)
+     o buffered output to /dev/dsp0 (Linux/FreeBSD) or /dev/audio (Sun)
+     o select patch set from command line with "-#<n>"
+     o use experimental cutoff filters, AWE fonts only ("-q" disables this)
+     o lyrics displayed in time (timidity "dumb" interface only)
+     o primitive chorus depth and reverberation
+     o vibrato works better for AWE soundfonts
+     o set polyphony in cfg file
+
+Greg Lee
+lee@hawaii.edu
+
+KMidi 0.3
+=========
+
+New: Support for the following platforms:
+
+     o Linux
+     o FreeBSD
+     o DEC OSF/1
+     o HP_UX
+     o SUN 
+     o SUN SOLARIS
+
+and of course bug fixes ;-)
+
+Bernd
+wuebben@kde.org
+
+     
+KMidi 0.2
+
+This is the first public release of KMidi a midi to
+wav player/converter. 
+
+If you have  already given up on midi on Linux/Unix try this! Without
+expensive hard-ware such as a Gravis-Ultra sound or Sound-Blaster AWE 64
+you will get fantastic sound comparable to what you get with the above
+mentioned hard-ware. FOR FREE!
+
+The catch:
+
+a) KMidi will use your CPU time: anywhere from 10 to 90% on my Pentium 120
+   at 32000 Hz. Typically about 30%, but it depends on the particular midi 
+   played. If you have a weaker machine, simply use the commandline options to
+   reduce the sample frequency. You should be able to get very decent
+   sound even on a 486 without straining your CPU.
+
+b) You need the sound patches. You can get a full set of general midi
+   sound patches  at any  ultra sound archive. Typical storage requirements
+   around 10 megs. 
+
+Belive me for the sound you are going to get this is a small price to pay!
+
+KMidi uses Tuukka Toivonen's  timidity 0.2i engine 
+Copyright (C) 1995 Tuukka Toivonen <toivonen@clinet.fi>  
+together with Takashi Iwai latest  sound font patches 
+( This means you can also use sound fonts with KMidi)
+
+Where to get patches:
+(see also the html documentation)
+
+Check out the timidiy home-page (see below) which has a number of links and 
+recommendations. Patches can also be found packaged as deb or rpm modules in 
+the Redhat and Debian  contribution directories. 
+
+TimidityPage:
+http://www.clinet.fi/~toivonen/timidity/
+
+Takahis's Page:
+http://bahamut.mm.t.u-tokyo.ac.jp/~iwai/midi.html#TiMidity
+
+I realize this is a rough release, and I am sure that if you try
+hard enough you will be able to get KMidi to crash, but I think
+KMidi is already more than usable and will hopefull give you hours
+of fun. Rememeber Midi files are typically around 50k or leas and
+are therefore so easily downloaded that you will never run out of great midi's
+to play.
+
+TODO:
+
+o Make the myriad of command line options available through a configuration
+  dialog.
+o Elaborate visual display of notes played ( This one is going to be FUN!!!)
+
+
+Best Regard,
+Bernd
+wuebben@kde.org
+wuebben@math.cornell.edu
+
+
+---------------------------------------------------------------
+NOTES:
+---------------------------------------------------------------
+
+Compiling the command line version of TiMidity can be done, under Linux, by
+saying:
+
+	% make clean
+	% make -f Makefile.tim
+	% make -f Makefile.tim install.lib
+	% make -f Makefile.tim install.bin
+
+The executable will be "timidity". This should also work on Sunos.  I
+haven't tried other systems.  For details, see INSTALL.tim and Makefile.tim.
+This uses /usr/local/lib/timidity as the config directory.  If you want
+a single directory for cfg files, used by both kmidi and timidity, change
+the definition of TIMID_DIR in Makefile.tim and/or in config.h.
+
+
+----------------------------------------------------------------
+
+Obtaining patch files:
+
+     A. GUS .pat files.  See the FAQ and Bernd's .html doc.  Sets of GUS
+	patches that were mainly derived from the commercial Gravis/Forte
+	ones have become hard to find.
+
+     B. IW sound fonts.  There was a free trial version of the Utopia font
+	available for a while (with some stereo patches), but the trial
+	version has been withdrawn and now one has to pay $33 for a cd.
+	(See http://sdc.wtm.tudelft.nl/utopia/)  If I had them anymore, the
+	trial version files would be (after unpacking):
+
+		      50631 Mar 31 17:08 utop_dm.fff
+		      44295 Mar 31 17:08 utop_ds.fff
+		   41685764 Mar 31 18:37 utop_im.dat
+		      42407 Mar 31 17:08 utop_im.fff
+		    9679116 Mar 25 14:11 utop_is.dat
+		       7501 Mar 31 17:08 utop_is.fff
+		   17368442 Mar 31 17:43 utopia_d.dat
+
+	A sort of precursor to Utopia done by Kevin Boyle is still freely
+	available on various ftp sites:
+
+		    9727328 Apr  2 18:25 megadrum.dat
+		      32296 Apr  2 17:34 megadrum.fff
+		   18834162 Apr  3 04:13 megainst.dat
+		      39438 Apr  2 17:34 megainst.fff
+
+	(For a time, at least, I'll keep copies of Megainst on my system:
+	ftp://moore5651.lll.hawaii.edu/pub/music .)  Megainst, "Pilabank",
+	and SoundCanvas drumsets are available at
+	ftp://sdc.wtm.tudelft.nl/pub/music/soundbank/
+
+		      45411 Aug  1  1987 pilabank.fff
+		   10146046 Aug  1  1987 pilabank.dat
+		        663 Apr 16  1996 brush.fff
+		     152686 Apr 16  1996 brush.dat
+		       2013 Apr 16  1996 elec.fff
+		     781724 Apr 16  1996 elec.dat
+		       1626 Apr 16  1996 pwr.fff
+		     537454 Apr 16  1996 pwr.dat
+		       1241 Apr 16  1996 room.fff
+		     352346 Apr 16  1996 room.dat
+		      11662 Apr 16  1996 std.fff
+		    5730160 Apr 16  1996 std.dat
+
+     C. AWE sound fonts.  At http://soback.kornet.nm.kr/~chaos/sbawe32/sbawe32.htm
+	you can get (as self-unpacking .exe's):
+
+		   12323512 May 19 01:30 chaos12m.sf2
+		    8624378 May 19 01:32 chaos8m.sf2
+
+	There are others at ftp://lysator.liu.se/pub/awe32/soundfonts, e.g.:
+
+		    2090170 May 18 15:37 2mbgmgs.sf2
+
+-------------------------------------------------------------------
+
+Using patch files requires setting up .cfg files:
+
+     A. See the other docs for GUS .pat files -- there are example .cfg files.
+     B. IW sound fonts need .cfg setups just like GUS patches, except that
+	 i. drum/bank statements must be followed by "fff" (e.g., bank 0 fff),
+	ii. after the various patches are named, put: "fff <basename of font>"
+	    (e.g., "fff megainst").  This loads the font.
+	See the example files megainst and megadrum.  You can use several
+	IW fonts.
+     C. AWE sound fonts are similar to IW fonts, except use the keyword "sbk"
+	instead of "fff".  After the patches have been named, say:
+	"sbk <filename of sf2/sbk font>".  Alternatively, say:
+	"soundfont <filename>".
+
+The banks/drumsets and names of patches must be given, since those that are not
+declared will not be loaded from files (GUS patch files or sound fonts) even
+though the patches are available.  This way it's easy to exclude certain
+patches from a sound font so as to load better ones from a subseqently loaded
+font.  Just don't declare them before you've asked to load the font.  It is,
+thus, unnecessary to use the "font" and "order" statements implemented by
+Takashi Iwai and described in README.sf.
+
+When the same patch of the same bank or drumset is declared more than once,
+only the first declaration counts.  So put your best fonts first.
+
+There is a utility sbk2cfg to construct a cfg file for a sbk/sf2 sound font,
+which spits out all the patches that are present in the font.  Also, I've
+included sample cfg files for chaos8m.sf2 and chaos12m.sf2.
+
+If you have several patch sets and you've set up timidity.cfg appropriately,
+you can select among them with the command line switch "-#<n>".  If a "source"
+statement in a cfg file is preceded, e.g., by a line "if 2", then the
+"source" statement will be skipped over unless "-#2" was given on the
+command line.  A line "else" will cause the next "source" statement to
+be skipped if any non-zero n was requested by "-#<n>".
+
+Instead of using the command line "-p" to raise or lower the number of
+simultaneously playing notes, you can do in a cfg file, e.g., put: "voices 48"
+in timidity.cfg.
+
+----------------------------------------------
+
+I'm sorry my part of this document isn't more coherent and comprehensive.  For
+more information you'll just have to browse through the various other files
+here, or even read the source.  If I were to list known bugs and deficiences of
+this version, it would just tire you out reading through it all.
+
+						Greg Lee, lee@hawaii.edu
+						May 25, 1998
+

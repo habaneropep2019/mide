@@ -1,0 +1,69 @@
+<!doctype linuxdoc system>
+
+<article>
+
+<!-- Title information -->
+
+<title>KDE System Sounds Help
+<author>The KDE Team,  documentation by Duncan.
+<date>v0.3 (September 3, 1999)
+
+<!-- Table of Contents -->
+<toc>
+
+<!-- Begin the document -->
+
+<sect>Configuration of System Sounds.
+
+<p>
+This screen allows ``<bf>System Sounds</bf>'' to be configured,
+so that when one of certain <bf>Events</bf> (such as
+opening a window, changing the desktop, etc.) occurs, a sound file
+associated with that event is played.
+<p>
+Currently, only sound files in <tt>*.wav</tt> format are supported by the 
+KDE System Sound Module.    
+
+
+<itemize>
+<item>
+Activate the ``<bf>enable system sounds</bf>'' option to 
+use the <bf>System Sounds</bf> feature.
+</itemize>
+
+
+The <bf>Sounds</bf> box lists
+files from the default location
+<tt>$KDEDIR/share/sounds</tt>, where
+a set of  <tt>*.wav</tt> files designed as  ``System Sounds''
+for various events
+is provided. 
+
+If other suitable
+<tt>*.wav</tt> sound files are available to you,
+they can also be added to this list 
+dragging them from a File Manager (<tt>kfm</tt>) window onto the sound list 
+box.
+
+In addition,
+some of the  ``Themes'' packages install and activate
+their own System Sounds.  (Themes are installed
+with the Theme Manager, in the Settings->Desktop menu of the KDE
+Control Center).  
+
+
+
+<itemize>
+<item>
+To associate a sound to an event, use the pointer to
+highlight its entry in the <bf>Sounds</bf> list.  (You may now hear the
+selected sound  by
+clicking on the <bf>Test</bf> button.)   Then highlight the
+entry in the <bf>Events</bf> list that 
+you wish to associate with it and click on <bf>Apply</bf> (or
+<bf>OK</bf> if you are finished).
+</itemize>
+
+
+</article>
+

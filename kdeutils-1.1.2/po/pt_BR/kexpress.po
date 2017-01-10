@@ -1,0 +1,575 @@
+# KEXPRESS TRADUZIDO PARA O PORTUGUES
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Rafael Muller <rafael.muller@linuxbr.com.br>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.9\n"
+"POT-Creation-Date: 1999-01-24 02:46+0100\n"
+"PO-Revision-Date: 1999-02-11 07:23+0300\n"
+"Last-Translator: Rafael Muller <rafael.muller@linuxbr.com.br>\n"
+"Language-Team: Português <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: kfileio.cpp:25
+msgid "File I/O Error"
+msgstr "Erro I/O do arquivo"
+
+#: kfileio.cpp:46
+#, c-format
+msgid ""
+"The specified file does not exist:\n"
+"%s"
+msgstr ""
+"O arquivo especificado não existe:\n"
+"%s"
+
+#: kfileio.cpp:53
+#, c-format
+msgid ""
+"This is a directory and not a file:\n"
+"%s"
+msgstr ""
+"Isso é um diretório e não um arquivo:\n"
+"%s"
+
+#: kfileio.cpp:60
+#, c-format
+msgid ""
+"You do not have read permissions to the file:\n"
+"%s"
+msgstr ""
+"Você não tem perimissão de leitura do arquivo:\n"
+"%s"
+
+#: kfileio.cpp:71
+#, c-format
+msgid ""
+"Could not read file:\n"
+"%s"
+msgstr ""
+"Não foi possível ler o arquivo:\n"
+"%s"
+
+#: kfileio.cpp:74
+#, c-format
+msgid ""
+"Could not open file:\n"
+"%s"
+msgstr ""
+"Não foi possível abrir o arquivo:\n"
+"%s"
+
+#: kfileio.cpp:77
+#, c-format
+msgid ""
+"Error while reading file:\n"
+"%s"
+msgstr ""
+"Erro lendo o arquivo:\n"
+"%s"
+
+#: kfileio.cpp:97
+#, c-format
+msgid "Could only read %u bytes of %u."
+msgstr "Só é possível ler %u bytes de %u."
+
+#: kfileio.cpp:126
+#, c-format
+msgid ""
+"File %s exists.\n"
+"Do you want to replace it ?"
+msgstr ""
+"O arquivo %s já existe.\n"
+"Você deseja substituir ele ?"
+
+#: kfileio.cpp:146
+#, c-format
+msgid ""
+"Failed to make a backup copy of %s.\n"
+"Continue anyway ?"
+msgstr ""
+"Não foi possível fazer backup de %s.\n"
+"Continuar assim mesmo ?"
+
+#: kfileio.cpp:158 kfileio.cpp:178
+#, c-format
+msgid ""
+"Could not write to file:\n"
+"%s"
+msgstr ""
+"Não foi possível escrever no arquivo:\n"
+"%s"
+
+#: kfileio.cpp:161
+#, c-format
+msgid ""
+"Could not open file for writing:\n"
+"%s"
+msgstr ""
+"Não foi possível abrir o arquivo para escrita:\n"
+"%s"
+
+#: kfileio.cpp:165
+#, c-format
+msgid ""
+"Error while writing file:\n"
+"%s"
+msgstr ""
+"Erro escrevendo arquivo:\n"
+"%s"
+
+#: kfileio.cpp:184
+#, c-format
+msgid "Could only write %d bytes of %d."
+msgstr "Só é possível escrever %d bytes de %d."
+
+#: kxaccpre.cpp:37
+msgid "Manage Accounts"
+msgstr "Administrar Contas"
+
+#: kxaccpre.cpp:61
+msgid "Account"
+msgstr "Conta"
+
+#: kxaccpre.cpp:62
+msgid "You did not choose a name for this account"
+msgstr "Você não escolheu um nome para esta conta"
+
+#: kxaccpre.cpp:133
+msgid "Settings"
+msgstr "Configurações"
+
+#: kxaccpre.cpp:137
+msgid "Identity"
+msgstr "Identidade"
+
+#: kxaccpre.cpp:140 kxserverdata.cpp:44
+msgid "Server"
+msgstr "Servidor"
+
+#: kxaccpre.cpp:150
+msgid "Do you really want to delete this Account?"
+msgstr "Você tem certeza que quer deletar esta conta?"
+
+#: kxaccpre.cpp:157
+msgid "Couldn't delete, there are files I don't know in the directory"
+msgstr "Não foi possível deletar, existem arquivos desconhecidos no diretório"
+
+#: kxaccpredata.cpp:35
+msgid "Accounts"
+msgstr "Contas"
+
+#: kxaccpredata.cpp:63
+msgid "New"
+msgstr "Novo"
+
+#: kxentrylist.cpp:49
+msgid "Folder"
+msgstr "Pasta"
+
+#: kxentrylist.cpp:78
+msgid "Archive"
+msgstr "Arquivo"
+
+#: kxgenoptsdata.cpp:41
+msgid "Show Headers"
+msgstr "Mostrar cabeçalhos"
+
+#: kxgenoptsdata.cpp:53
+msgid "Max. number of Headers to download:"
+msgstr "Nº. máximo de cabeçalhos para descarregar:"
+
+#: kxgenoptsdata.cpp:78
+msgid "Show Threads"
+msgstr "Mostrar linhas"
+
+#: kxgenoptsdata.cpp:91
+msgid "keep articles"
+msgstr "manter artigos"
+
+#: kxgenoptsdata.cpp:117
+msgid "days"
+msgstr "dias"
+
+#: kxgenoptsdata.cpp:130
+msgid "Reply-Prefix:"
+msgstr "Prefixo de Resposta:"
+
+#: kxgenoptsdata.cpp:142
+msgid "include Signature"
+msgstr "incluir Assinatura"
+
+#: kxgenoptsdata.cpp:167
+msgid "all"
+msgstr "todos"
+
+#: kxgenoptsdata.cpp:179
+msgid "normal"
+msgstr "normal"
+
+#: kxgenoptsdata.cpp:191
+msgid "short"
+msgstr "pequeno"
+
+#: kxgenoptsdata.cpp:203
+msgid "Keep Threads together while expiring"
+msgstr "Manter linhas juntas enquanto estiver finalizando"
+
+#: kxgenoptsdata.cpp:215
+msgid "Expand Threads"
+msgstr "Expandir linhas"
+
+#: kxheaderlist.cpp:479 kxmainwin.cpp:715 kxmainwin.cpp:775 kxmainwin.cpp:781
+#: kxmainwin.cpp:803 kxmainwin.cpp:809
+msgid "Loader"
+msgstr "Carregador"
+
+#: kxheaderlist.cpp:480
+msgid "You did not choose a group"
+msgstr "Você não escolheu um grupo"
+
+#: kxidentdata.cpp:42
+msgid "Account:"
+msgstr "Conta:"
+
+#: kxidentdata.cpp:51
+msgid "Name:"
+msgstr "Nome:"
+
+#: kxidentdata.cpp:69
+msgid "Organisation:"
+msgstr "Organização:"
+
+#: kxidentdata.cpp:96
+msgid "eMail Address:"
+msgstr "Endereço do e-mail:"
+
+#: kxidentdata.cpp:105
+msgid "Reply Address:"
+msgstr "Endereço de resposta:"
+
+#: kxmainwin.cpp:60
+#, c-format
+msgid ""
+"kexpress [%s]\n"
+"\n"
+"by Peter Wichert <peter.wichert@t-online.de>\n"
+"\n"
+"Special thanks to\n"
+"Carsten Pfeiffer, for testing and helpful tips\n"
+"\n"
+"This program is covered by the GPL."
+msgstr ""
+"kexpress [%s]\n"
+"\n"
+"feito por Peter Wichert <peter.wichert@t-online.de>\n"
+"\n"
+"Traduzido por Rafael Muller <rafael.muller@linuxbr.com.br>\n"
+"\n"
+"Agradecimentos"
+"Carsten Pfeiffer, por testar o kexpress e pelas suas dicas\n"
+"Ao pessoal da LIE-BR, pelos seus 'tutoriais' e dicas\n"
+"\n"
+"Este programa é coberto pela GPL."
+
+#: kxmainwin.cpp:160
+msgid "Send pending"
+msgstr "Enviar pendência"
+
+#: kxmainwin.cpp:162
+msgid "Delete pending"
+msgstr "Deletar pendência"
+
+#: kxmainwin.cpp:166
+msgid "Exit and expire"
+msgstr "Sair e encerrar"
+
+#: kxmainwin.cpp:168
+msgid "Exit"
+msgstr "Sair"
+
+#: kxmainwin.cpp:172
+msgid "New Message..."
+msgstr "Nova mensagem..."
+
+#: kxmainwin.cpp:174
+msgid "Reply..."
+msgstr "Responder ao autor..."
+
+#: kxmainwin.cpp:178
+msgid "Search..."
+msgstr "Procurar..."
+
+#: kxmainwin.cpp:182
+msgid "Unmark all"
+msgstr "Desmarcar todas"
+
+#: kxmainwin.cpp:184
+msgid "Mark all read"
+msgstr "Marcar todas como lidas"
+
+#: kxmainwin.cpp:188
+msgid "Download server ..."
+msgstr "Descarregar servidor..."
+
+#: kxmainwin.cpp:190
+msgid "Download newsgroup ..."
+msgstr "Descarregar grupo de notícias..."
+
+#: kxmainwin.cpp:192
+msgid "Download marked ..."
+msgstr "Descarregar item marcado..."
+
+#: kxmainwin.cpp:196
+msgid "Accounts..."
+msgstr "Contas..."
+
+#: kxmainwin.cpp:198
+msgid "General Options..."
+msgstr "Opções Gerais..."
+
+#: kxmainwin.cpp:200
+msgid "Newsgroups..."
+msgstr "Grupos De Notícias"
+
+#: kxmainwin.cpp:209
+msgid "&Messages"
+msgstr "&Mensagens"
+
+#: kxmainwin.cpp:225
+msgid "New Message"
+msgstr "Nova Mensagem"
+
+#: kxmainwin.cpp:229
+msgid "Reply"
+msgstr "Responder"
+
+#: kxmainwin.cpp:235
+msgid "Save as"
+msgstr "Salvar como"
+
+#: kxmainwin.cpp:248
+msgid "Abort current transfer"
+msgstr "Abortar transferência atual"
+
+#: kxmainwin.cpp:287
+msgid "Welcome to kexpress"
+msgstr "Bem-Vindo ao kexpress"
+
+#: kxmainwin.cpp:368
+msgid "General"
+msgstr "Geral"
+
+#: kxmainwin.cpp:372
+msgid "General Options"
+msgstr "Opções gerais"
+
+#: kxcomposer.cpp:159 kxcomposer.cpp:192 kxmainwin.cpp:465 kxmainwin.cpp:476
+#: kxmainwin.cpp:511 kxmainwin.cpp:526 kxmainwin.cpp:571 kxmainwin.cpp:584
+#: kxmainwin.cpp:592 kxmainwin.cpp:633 kxmainwin.cpp:648 kxmessage.cpp:300
+msgid "Composer"
+msgstr "Compositor"
+
+#: kxmainwin.cpp:466 kxmainwin.cpp:512 kxmainwin.cpp:585
+msgid "You must choose a server first"
+msgstr "Você precisa escolher um servidor primeiro"
+
+#: kxmainwin.cpp:477 kxmainwin.cpp:527
+msgid "There are no pending messages"
+msgstr "Não há mensagens pendentes"
+
+#: kxmainwin.cpp:593 kxmainwin.cpp:649
+msgid "Your Name/eMail-adress is not set"
+msgstr "Seu nome/endereco do e-mail não está configurado"
+
+#: kxmainwin.cpp:634
+msgid "You must choose a newsgroup first"
+msgstr "Você precisa escolher um grupo de notícias primeiro"
+
+#: kxmainwin.cpp:716 kxmainwin.cpp:804
+msgid "You did not choose a server"
+msgstr "Você não escolheu um servidor"
+
+#: kxmainwin.cpp:776
+msgid "You did not choose a Server"
+msgstr "Você nao escolheu um Servidor"
+
+#: kxmainwin.cpp:782
+msgid "Load bodies of new articles of this group now ?"
+msgstr "Carregar corpos de novos artigos deste grupo agora ?"
+
+#: kxmainwin.cpp:810
+msgid "Load bodies of marked articles now ?"
+msgstr "Carregar corpos dos artigos selecionados agora ?"
+
+#: kxnewsclient.cpp:198
+msgid "Sender"
+msgstr "Remetente"
+
+#: kxnewsclient.cpp:199
+msgid ""
+"There seems to be an authorisation problem\n"
+"check user/password"
+msgstr ""
+"Houve problemas de autorização\n"
+"por favor cheque o nome de usuário e senha"
+
+#: kxnewsclient.cpp:277
+#, c-format
+msgid "loading headers of %s"
+msgstr "Carregando cabecalhos de %s"
+
+#: kxnewsclient.cpp:345 kxnewsclient.cpp:541 kxnewsclient.cpp:696
+#: kxnewsclient.cpp:744 kxnewsclient.cpp:790
+msgid "Ready"
+msgstr "Pronto"
+
+#: kxnewsclient.cpp:509
+msgid "NNTP-Server does not response"
+msgstr "Serivodr NNTP não responde"
+
+#: kxnewsclient.cpp:524
+msgid "loading grouplist, please wait ..."
+msgstr "Carregando lista de grupo, aguarde..."
+
+#: kxnewsclient.cpp:685
+#, c-format
+msgid "loading %s"
+msgstr "carregando %s"
+
+#: kxnewsclient.cpp:733
+#, c-format
+msgid "loading header of %s"
+msgstr "carregando cabecalho de %s"
+
+#: kxnewsclient.cpp:779
+#, c-format
+msgid "loading body of %s"
+msgstr "carregando corpo de %s"
+
+#: kxngdialog.cpp:47
+msgid "Choose Newsgroups"
+msgstr "Escolha o Grupo de Notícias"
+
+#: kxngdialog.cpp:319
+msgid "Newsgroups"
+msgstr "Grupo de Notícias"
+
+#: kxngdialog.cpp:320
+msgid "You don't have any newsgroups. Get them now?"
+msgstr "Você não participa de nenhum grupo de notícias. Deseja se inscrever agora?"
+
+#: kxngdialogdata.cpp:73
+msgid "Searchstring"
+msgstr "Pesquisar Sequência"
+
+#: kxngdialogdata.cpp:82
+msgid "All Groups"
+msgstr "Todos grupos"
+
+#: kxngdialogdata.cpp:91
+msgid "Subscribed"
+msgstr "Subescrito"
+
+#: kxngdialogdata.cpp:100
+msgid "New List"
+msgstr "Nova lista"
+
+#: kxserverdata.cpp:35
+msgid "Authorisation"
+msgstr "Autorização"
+
+#: kxserverdata.cpp:52
+msgid "NNTP-Server:"
+msgstr "Servidor NNTP:"
+
+#: kxserverdata.cpp:70
+msgid "Port:"
+msgstr "Porta:"
+
+#: kxserverdata.cpp:88
+msgid "Password:"
+msgstr "Senha:"
+
+#: kxserverdata.cpp:97
+msgid "User:"
+msgstr "Nome de Usuário:"
+
+#: kxcomposer.cpp:93
+msgid "Send message"
+msgstr "Enviar mensagem"
+
+#: kxcomposer.cpp:106
+msgid "Insert File..."
+msgstr "Inserir Arquivo..."
+
+#: kxcomposer.cpp:109
+msgid "&Send now"
+msgstr "&Enviar agora"
+
+#: kxcomposer.cpp:110
+msgid "S&end later"
+msgstr "Env&iar depois"
+
+#: kxcomposer.cpp:160
+msgid "You did not set all neccessary headers"
+msgstr "Você não preencheu todos os cabecalhos necessários"
+
+#: kxcomposer.cpp:193
+msgid "You did not send your message, really exit?"
+msgstr "Você ainda não mandou sua mensagem. Tem certeza que quer sair?"
+
+#: kxmessage.cpp:301
+msgid "Could not store this Message, check if spool-directory exists"
+msgstr "Não foi possível armazenar esta mensagem, cheque se o diretório existe"
+
+#: kxloadopts.cpp:33
+msgid "Load New Messages"
+msgstr "Carregar novas mensagens"
+
+#: kxloadopts.cpp:53
+msgid "Load Headers only"
+msgstr "Carregar somente cabeçalhos"
+
+#: kxloadopts.cpp:66
+msgid "Load Headers + Articles"
+msgstr "Carregar cabecalhos + artigos"
+
+#: kxsearch.cpp:40
+msgid "Search Message"
+msgstr "Procurar mensagem"
+
+#: kxsearch.cpp:132
+msgid "Search"
+msgstr "Procurar"
+
+#: kxsearch.cpp:133
+msgid "String not found"
+msgstr "Sequência não encontrada"
+
+#: kxsearchdata.cpp:42
+msgid "Search for"
+msgstr "Procurar por"
+
+#: kxsearchdata.cpp:67
+msgid "Searchstring:"
+msgstr "Procurar por sequência:"
+
+#: kxsearchdata.cpp:106
+msgid "Subject"
+msgstr "Assunto"
+
+#: kxsearchdata.cpp:118
+msgid "From"
+msgstr "De"
+
+#: kxsearchdata.cpp:130
+msgid "Body"
+msgstr "Corpo"
+
+#: kxsearchdata.cpp:142
+msgid "ignore case"
+msgstr "ignorar caso"

@@ -1,0 +1,64 @@
+1.0.2 Harri Porten <porten@kde.org>
+  * fixed bug #1656. Solaris 2.7 needs <sys/socket.h>. Report & patch
+    by Becker_Stefan@nmp.nokia.com
+
+1.0.1 Mario Weilguni <mweilguni@kde.org>
+  * fixed bug #315 (lines not removed when pressing pause)
+  * fixed bug #316 (hidden pushbutton still accepting keyboard commands)
+
+1.0.0
+  * final cleanup before 1.0 !
+
+0.2.12
+  * some cleanups
+  * blink full lines
+  * accelerated drop for dropped down pieces
+  * one more time for ace players : the main score box was too small
+
+0.2.11
+  * [Robert Williams]  Added version.h and ChangeLog
+  * [Robert Williams]  Added getCaption()
+
+0.2.10
+  * included in the CVS tree
+  * KTopLevelWidget & KMenubar
+
+0.2.7
+  * some cleanups + international support
+  * net fix : use 'uname' rather than 'getenv("HOSTNAME")' 
+
+0.2.6
+  * no more NULLs (for the sake of 64bits)
+  * a nicer highscores dialog (there should be no more truncated score
+    for ace players :)
+
+0.2.5
+  * just a minor change to allow compile in Linux/Alpha
+ 
+0.2.4
+  * minor changes
+  * "kexample 0.31" compliance
+ 
+0.2.3
+  * adapted for libkdecore 0.7
+  * hide/show menubar + popup menu (ala kvt)
+  * more compliant to the Style Guide
+ 
+0.2.2
+  * use kdehelp
+  * use of KConfig and clean the highscore dialog
+  * use of kmsgbox for about :) [it is nice]
+
+0.2.1
+  * use of KKeyCode for the management of keys
+
+0.2
+  * many things : network game + extension for other similar game
+
+0.1
+  * get rid of the grab stuff from the original version
+  * small reorganisation
+  * change of the key-bindings (cf help)
+  * [Asger] the real scoring
+  * [Asger] get rid of some needless stuff in GenericTetris
+  * highscores

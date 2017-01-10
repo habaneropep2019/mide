@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>KDE Disk Navigator: Notes</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="kdisknav, disk navigator">
+<META NAME="description" CONTENT="KDiskNavigator documentation">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kdisknav-6.html">Next</A>
+<A HREF="kdisknav-4.html">Previous</A>
+<A HREF="kdisknav.html#toc5">Table of Contents</A>
+</P>
+<H3><A NAME="s5">5. Notes</A></H3>
+
+<P>
+<P>
+<LI>Disk Navigator menus are updated automatically when directory
+contents change, except the first menu, that is updated through the
+Options dialog.
+</LI>
+<LI>The contents of the "Recent" section are saved in the
+&nbsp;/.kde/share/config/kpanelrc configuration file. If you want to clear this
+section, you can clear the <CODE>RecentFolders</CODE> and <CODE>RecentFiles</CODE>
+entries in this file after logging out from KDE.
+</LI>
+<LI>Documents and applications not accessed through the KPanel are not added 
+to the "Recent" section. This limitation will disappear in future
+versions of Disk Navigator.
+</LI>
+<LI>Due to efficiency reasons, most files are not displayed with the same icon
+you would see in a file manager window. With the current version, only
+<CODE>.kdelnk</CODE> files have the corresponding icon displayed. Other files
+are displayed with two different icons to distinguish between data files
+and executables.
+</LI>
+<LI>Copying <CODE>~/.kde</CODE> and $KDEDIR: if you are using symbolic links to define
+filesystem entry points in the Shared/Personal sections, you must be careful 
+when copying the KDE directory, since the <CODE>cp</CODE> command with the
+<CODE>-r</CODE>
+option follows symbolic links. Under Linux you can use the <CODE>-d</CODE>
+option to avoid this problem.
+However, you are recommended to change all symbolic links to corresponding 
+KDE URL files.
+Symbolic links are stored under <CODE>$KDEDIR/share/disknav</CODE> (Shared) and
+<CODE>~/.kde/share/disknav</CODE> (Personal).
+</LI>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kdisknav-6.html">Next</A>
+<A HREF="kdisknav-4.html">Previous</A>
+<A HREF="kdisknav.html#toc5">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

@@ -1,0 +1,606 @@
+# KARCHIE.PO
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-03-05 02:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Elvis Pfützenreuter <epx@netville.com.br>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: KAMenu.cpp:75
+msgid "O&pen in editor"
+msgstr "A&brir em editor"
+
+#: KAMenu.cpp:76 KAView.cpp:154
+msgid "&Open Dir"
+msgstr "Ab&rir Dir"
+
+#: KAMenu.cpp:77 KAView.cpp:155
+msgid "&Download..."
+msgstr "&Receber..."
+
+#: KAMenu.cpp:80
+msgid "&Load List..."
+msgstr "&Carregar Lista..."
+
+#: KAMenu.cpp:81
+msgid "&Save List..."
+msgstr "Sa&lvar Lista..."
+
+#: KAMenu.cpp:82
+msgid "Expor&t List..."
+msgstr "Expor&tar Lista..."
+
+#: KAMenu.cpp:84
+msgid "&Exit"
+msgstr "&Sair"
+
+#: KAMenu.cpp:100
+msgid "&Exact"
+msgstr "&Exato"
+
+#: KAMenu.cpp:101
+msgid "&Substring"
+msgstr "&Sub-cadeia"
+
+#: KAMenu.cpp:102
+msgid "Substring &case insensitive"
+msgstr "Sub-cadeia insensível à &caixa"
+
+#: KAMenu.cpp:103
+msgid "&Regular expression"
+msgstr "Expressão &regular"
+
+#: KAMenu.cpp:104 KASettings.cpp:422
+msgid "Exact, then substring"
+msgstr "Exato, então sub-cadeia"
+
+#: KAMenu.cpp:105
+msgid "Exact, then substring case ins."
+msgstr "Exato, então sub-cadeia insens. caixa"
+
+#: KAMenu.cpp:106 KASettings.cpp:424
+msgid "Exact, then regular expression"
+msgstr "Exato, então expressão regular"
+
+#: KAMenu.cpp:114
+msgid "n&ormal"
+msgstr "n&ormal"
+
+#: KAMenu.cpp:115
+msgid "&nice"
+msgstr "&leve"
+
+#: KAMenu.cpp:116
+msgid "&very nice"
+msgstr "&muito leve"
+
+#: KAMenu.cpp:117
+msgid "&even more nice"
+msgstr "&ainda mais leve"
+
+#: KAMenu.cpp:118
+msgid "n&icest"
+msgstr "le&víssimo"
+
+#: KAMenu.cpp:125
+msgid "Show &File discription"
+msgstr "Mostrar &Descrição do Arquivo"
+
+#: KAMenu.cpp:128
+msgid "Archie&server"
+msgstr "&Servidor Archie"
+
+#: KAMenu.cpp:129
+msgid "Search&mode"
+msgstr "&Modo de Pesquisa"
+
+#: KAMenu.cpp:130
+msgid "&Nicelevel"
+msgstr "&Nível de leveza"
+
+#: KAMenu.cpp:132
+msgid "&All..."
+msgstr "&Tudo..."
+
+#: KAMenu.cpp:139
+msgid "for &Filename"
+msgstr "por &Nome de arquivo"
+
+#: KAMenu.cpp:140
+msgid "for &Path/Location"
+msgstr "por &Caminho/Localização"
+
+#: KAMenu.cpp:141
+msgid "for &Hostname"
+msgstr "por nome de &Host"
+
+#: KAMenu.cpp:143
+msgid "&STOP"
+msgstr "&PARAR"
+
+#: KAMenu.cpp:160
+msgid "by &Hostname"
+msgstr "por &Nome de host"
+
+#: KAMenu.cpp:161
+msgid "by &Domain"
+msgstr "por &Domínio"
+
+#: KAMenu.cpp:162
+msgid "by D&ate"
+msgstr "por D&ata"
+
+#: KAMenu.cpp:163
+msgid "by &Filesize"
+msgstr "por taman&ho de arquivo"
+
+#: KAMenu.cpp:169
+msgid "KArchie ver. "
+msgstr "KArchie ver. "
+
+#: KAMenu.cpp:171
+msgid ""
+"\n"
+"\n"
+"by Jörg Habenicht <j.habenicht@europemail.com>\n"
+"\n"
+"based on the work of:\n"
+"  - archie prospero client by\n"
+"      Clifford Neuman and\n"
+"      Brendan Kehoe (brendan@cygnus.com)\n"
+"  - and xarchie by\n"
+"      George Ferguson (ferguson@cs.rochester.edu)\n"
+"(See README files and copyright.h).\n"
+"My own code is based on the GPL"
+msgstr ""
+"\n"
+"\n"
+"por Jörg Habenicht <j.habenicht@europemail.com>\n"
+"\n"
+"baseado no trabalho de:\n"
+"  - cliente archie prospero por\n"
+"      Clifford Neuman e\n"
+"      Brendan Kehoe (brendan@cygnus.com)\n"
+"  - e xarchie por\n"
+"      George Ferguson (ferguson@cs.rochester.edu)\n"
+"(Veja arquivos README e copyright.h).\n"
+"Meu próprio código é baseado no GPL"
+
+#: KAMenu.cpp:184
+msgid "&Settings"
+msgstr "&Configurações"
+
+#: KAMenu.cpp:185
+msgid "&Query"
+msgstr "Cons&ulta"
+
+#: KAMenu.cpp:186
+msgid "S&ort"
+msgstr "C&lassificar"
+
+#: KAQuery.cpp:180
+msgid "Query setup"
+msgstr "Configuração da consulta"
+
+#: KAQuery.cpp:289
+msgid "Query aborted"
+msgstr "Consulta abortada"
+
+#: KAQuery.cpp:296 KArchie.cpp:793
+msgid "Success"
+msgstr "Sucesso"
+
+#: KAQuery.cpp:297
+msgid "Port unknown"
+msgstr "Porta desconhecida"
+
+#: KAQuery.cpp:298
+msgid "Can't open local UDP port"
+msgstr "Impossível abrir porta UDP local"
+
+#: KAQuery.cpp:299
+msgid "Can't resolve hostname"
+msgstr "Impossível resolver nome do host"
+
+#: KAQuery.cpp:300
+msgid "Didn't send entire message"
+msgstr "A mensagem não foi mandada inteira"
+
+#: KAQuery.cpp:301
+msgid "Timed out"
+msgstr "Tempo excessivo"
+
+#: KAQuery.cpp:302
+msgid "Recvfrom failed"
+msgstr "Recebimento de dados falhou"
+
+#: KAQuery.cpp:303
+msgid "Reply: sendto failed"
+msgstr "Réplica: remessa de dados falhou"
+
+#: KAQuery.cpp:304
+msgid "Link exists with same name"
+msgstr "Existe ligação com o mesmo nome"
+
+#: KAQuery.cpp:306
+msgid "Link already exists"
+msgstr "A ligação já existe"
+
+#: KAQuery.cpp:307
+msgid "Replacing existing link"
+msgstr "Substituindo ligação existente"
+
+#: KAQuery.cpp:308
+msgid "Prv entry not in dir->ulinks"
+msgstr "Item privado não está em dir->ulinks"
+
+#: KAQuery.cpp:309
+msgid "Temporary not found"
+msgstr "Temporário não encontrado"
+
+#: KAQuery.cpp:310
+msgid "Namespace not closed w/ object::"
+msgstr "Namespace não fechado com objeto::"
+
+#: KAQuery.cpp:311
+msgid "No alias for namespace NS#:"
+msgstr "Não há apelido para o namespace NS#:"
+
+#: KAQuery.cpp:312
+msgid "Specified namespace not found"
+msgstr "Namespace especificado não encontrado"
+
+#: KAQuery.cpp:313
+msgid "File access method not supported"
+msgstr "Método de acesso a arquivo não suportado"
+
+#: KAQuery.cpp:314
+msgid "Delete cached copy on close"
+msgstr "Apagar cópia em cache ao fechar"
+
+#: KAQuery.cpp:315
+msgid "Unable to retrieve file"
+msgstr "Impossível buscar arquivo"
+
+#: KAQuery.cpp:317
+msgid "Directory already exists"
+msgstr "Diretório já existe"
+
+#: KAQuery.cpp:319 KAQuery.cpp:337
+msgid "Link with name already exists"
+msgstr "Ligação com nome já existe"
+
+#: KAQuery.cpp:320
+msgid "Not a virtual system"
+msgstr "Não é um sistema virtual"
+
+#: KAQuery.cpp:321
+msgid "Can't find directory"
+msgstr "Impossível encontrar diretório"
+
+#: KAQuery.cpp:322
+msgid "Not a directory name"
+msgstr "Não é um nome de diretório"
+
+#: KAQuery.cpp:323
+msgid "Object not found"
+msgstr "Objeto não encontrado"
+
+#: KAQuery.cpp:324
+msgid "Object has moved"
+msgstr "Objeto foi movido"
+
+#: KAQuery.cpp:325
+msgid "File not found"
+msgstr "Arquivo não encontrado"
+
+#: KAQuery.cpp:326
+msgid "Directory in path not found"
+msgstr "Diretório do caminho não encontrado"
+
+#: KAQuery.cpp:327
+msgid "Symbolic links nested too deep"
+msgstr "Ligações simbólicas excessivamente aninhadas"
+
+#: KAQuery.cpp:328
+msgid "Can't read environment"
+msgstr "Impossível ler ambiente"
+
+#: KAQuery.cpp:329
+msgid "Can't traverse an external file"
+msgstr "Impossível analisar um arquivo externo"
+
+#: KAQuery.cpp:330
+msgid "Exceeded max forward depth"
+msgstr "Profundidade máxima de passagem adiante excedida"
+
+#: KAQuery.cpp:331
+msgid "Authentication required"
+msgstr "Autenticação é requerida"
+
+#: KAQuery.cpp:332
+msgid "Not authorized"
+msgstr "Não autorizado"
+
+#: KAQuery.cpp:333
+msgid "Not found"
+msgstr "Não encontrado"
+
+#: KAQuery.cpp:334
+msgid "Bad version number"
+msgstr "Número de versão inválido"
+
+#: KAQuery.cpp:335
+msgid "Not a directory"
+msgstr "Não é um diretório"
+
+#: KAQuery.cpp:336
+msgid "Identical link already exists"
+msgstr "Já existe ligação idêntica"
+
+#: KAQuery.cpp:338
+msgid "Command not implemented on server"
+msgstr "Comando não implementado no servidor"
+
+#: KAQuery.cpp:339
+msgid "Bad format for response"
+msgstr "Formato de resposta inválido"
+
+#: KAQuery.cpp:340
+msgid "Protocol error"
+msgstr "Erro de protocolo"
+
+#: KAQuery.cpp:341
+msgid "Unspecified server failure"
+msgstr "Falha não-especificada no servidor"
+
+#: KAQuery.cpp:343
+msgid "Generic Failure"
+msgstr "Falha Geral"
+
+#: KAQuery.cpp:347
+msgid "No warning"
+msgstr "Sem aviso"
+
+#: KAQuery.cpp:348
+msgid "You are using an old version of this program"
+msgstr "Você está usando uma versão antiga deste programa"
+
+#: KAQuery.cpp:349
+msgid "From server: "
+msgstr "Do servidor: "
+
+#: KAQuery.cpp:351
+msgid "Unrecognized line in response from server"
+msgstr "Linha não reconhecida na resposta do servidor"
+
+#: KAQuery.cpp:409
+msgid "Query running"
+msgstr "Consulta em andamento"
+
+#: KAQuery.cpp:453
+msgid "Query finished"
+msgstr "Consulta terminou"
+
+#: KASettings.cpp:59
+msgid "&Host"
+msgstr "&Host"
+
+#: KASettings.cpp:72
+msgid "&Timeout (seconds)"
+msgstr "&Tempo máximo (segundos)"
+
+#: KASettings.cpp:83
+msgid "Maximal &retries"
+msgstr "Nú&mero de Tentativas"
+
+#: KASettings.cpp:284
+msgid "&Nice Level"
+msgstr "&Nível de leveza"
+
+#: KASettings.cpp:291
+msgid "max. &Hits"
+msgstr "Número de &Hits"
+
+#: KASettings.cpp:418
+msgid "Exact"
+msgstr "Exato"
+
+#: KASettings.cpp:419
+msgid "Substring"
+msgstr "Sub-cadeia"
+
+#: KASettings.cpp:420
+msgid "Substring case insensitive"
+msgstr "Sub-cadeia insensível a maiúsculas/minúsculas"
+
+#: KASettings.cpp:421
+msgid "Regular expression"
+msgstr "Expressão regular"
+
+#: KASettings.cpp:423
+msgid "Exact, then substring case insensitive"
+msgstr "Exato, então sub-cadeia insensível a caixa"
+
+#: KASettings.cpp:427
+msgid "Normal"
+msgstr "Normal"
+
+#: KASettings.cpp:428
+msgid "Nice"
+msgstr "Leve"
+
+#: KASettings.cpp:429
+msgid "Very nice"
+msgstr "Muito leve"
+
+#: KASettings.cpp:430
+msgid "Even more nice"
+msgstr "Ainda mais leve"
+
+#: KASettings.cpp:431
+msgid "Nicest"
+msgstr "Levíssimo"
+
+#: KASettings.cpp:525
+msgid "KArchie Settings"
+msgstr "Configurações"
+
+#: KASettings.cpp:536
+msgid "Archie server settings"
+msgstr "Configurações do servidor Archie"
+
+#: KASettings.cpp:543
+msgid "Search init"
+msgstr "Iniciar Procura"
+
+#: KASettings.cpp:567
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: KAStatusBar.cpp:50
+msgid "    0 hits"
+msgstr "    0 items"
+
+#: KAStatusBar.cpp:51
+msgid "    0. try"
+msgstr "    0. tente"
+
+#: KAStatusBar.cpp:52
+msgid "Host: none                               "
+msgstr "Host: nenhum                             "
+
+#: KAStatusBar.cpp:53
+msgid "Status: ready                        "
+msgstr "Status: pronto                       "
+
+#: KAStatusBar.cpp:81
+#, c-format
+msgid "Status: %s"
+msgstr "Status: %s"
+
+#: KAStatusBar.cpp:91
+#, c-format
+msgid "Hosts: %s"
+msgstr "Hosts: %s"
+
+#: KAStatusBar.cpp:101
+#, c-format
+msgid "%d hits"
+msgstr "%d sucessos"
+
+#: KAStatusBar.cpp:111
+#, c-format
+msgid "Progress: %d"
+msgstr "Progresso: %d"
+
+#: KAStatusBar.cpp:121
+#, c-format
+msgid "%d try."
+msgstr "%d tentativas."
+
+#: KAView.cpp:66
+msgid "Searchstring, press <ENTER> to start search"
+msgstr "Procura de texto, pressione <ENTER> para iniciar busca"
+
+#: KAView.cpp:68
+msgid "Search &Term"
+msgstr "Procurar &Term"
+
+#: KAView.cpp:134
+msgid "Host"
+msgstr "Host"
+
+#: KAView.cpp:135
+msgid "Path"
+msgstr "Caminho"
+
+#: KAView.cpp:268
+msgid "Host:"
+msgstr "Host:"
+
+#: KAView.cpp:270
+msgid "Path:"
+msgstr "Caminho:"
+
+#: KAView.cpp:272
+msgid "File:"
+msgstr "Arquivo:"
+
+#: KAView.cpp:274
+msgid "Size:"
+msgstr "Tamanho:"
+
+#: KAView.cpp:276
+msgid "Mode:"
+msgstr "Modo:"
+
+#: KAView.cpp:278
+msgid "Date:"
+msgstr "Data:"
+
+#: KArchie.cpp:441 KArchie.cpp:483
+#, c-format
+msgid ""
+"Couldn't open \n"
+"\"%s\""
+msgstr ""
+"Impossível abrir \n"
+"\"%s\""
+
+#: KArchie.cpp:446 KArchie.cpp:488
+msgid "KArchie: bad file"
+msgstr "KArchie: arquivo ruim"
+
+#: KArchie.cpp:720
+msgid "Malformed url"
+msgstr "URL inválida"
+
+#: KArchie.cpp:724
+msgid "Maybe bad list entry, please select an other file"
+msgstr "Talvez o registro da lista esteja ruim, selecione um outro arquivo"
+
+#: KArchie.cpp:725
+msgid "KArchie: bad URL"
+msgstr "KArchie: URL inválida"
+
+#: KArchie.cpp:744
+msgid "KArchie: Wrong fileselection"
+msgstr "KArchie: seleção errada de arquivo"
+
+#: KArchie.cpp:745
+msgid "The selected file is not writeable"
+msgstr "O arquivo selecionado não pode ser escrito"
+
+#: KArchie.cpp:752
+msgid "KArchie: Overwrite file ?"
+msgstr "KArchie: Sobreescrever arquivo ?"
+
+#: KArchie.cpp:753
+msgid ""
+"The selected file is not write protected\n"
+"Should it be overwritten ?"
+msgstr ""
+"O arquivo selecionado não é protegido contra gravação.\n"
+"Deve ser sobreescrito ?"
+
+#: KArchie.cpp:766
+msgid "KArchie: bad selection"
+msgstr "KArchie: má seleção"
+
+#: KArchie.cpp:767
+msgid ""
+"No file selected !\n"
+"Please select a file in the list of queryresults\n"
+"or do a query."
+msgstr ""
+"Nenhum arquivo selecionado !\n"
+"Selecione um arquivo dentre os resultados da consulta\n"
+"ou faça uma nova consulta."

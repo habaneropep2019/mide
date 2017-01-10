@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KMENUEDIT\n"
+"POT-Creation-Date: 1999-01-14 01:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: kmenuedit.cpp:69
+msgid "Change &Menuname"
+msgstr "&Vaihda valikon nimeä"
+
+#: kmenuedit.cpp:70
+msgid "Reload &Filetypes"
+msgstr "Uudelleenlataa &tiedostotyypit"
+
+#: kmenuedit.cpp:77
+msgid "by"
+msgstr " "
+
+#: kmenuedit.cpp:179 kmenuedit.cpp:204
+msgid "Changes not saved !"
+msgstr "Muutoksia ei talletettu !"
+
+#: kmenuedit.cpp:180 kmenuedit.cpp:205
+msgid ""
+"\n"
+"Do you want to save your changes ?"
+msgstr ""
+"\n"
+"Haluatko tallentaa muutokset ?"
+
+#: confmenu.cpp:339 confmenu.cpp:939 kmenuedit.cpp:264
+msgid "EMPTY"
+msgstr "TYHJÄ"
+
+#: kmenuedit.cpp:343
+msgid "Reload Menus"
+msgstr "Uudelleenlataa valikot"
+
+#: kmenuedit.cpp:344
+msgid ""
+"Reloading the menus will discard all changes.\n"
+"Are you sure you want to reload ?"
+msgstr ""
+"Valikoiden lataaminen kumoaa muutokset.\n"
+"Oletko varma, että haluat ladata valikot ?"
+
+#: button.cpp:209 main.cpp:79 main.cpp:92
+msgid "KMenuedit"
+msgstr "Valikkomuokkain"
+
+#: main.cpp:80
+msgid ""
+"The directory for your personal menu does not exist.\n"
+" Do you want to create it now ?"
+msgstr ""
+"Hakemistoa henkilökohtaisille valikoille ei ole olemassa.\n"
+" Haluatko luoda sen nyt ?"
+
+#: main.cpp:93
+msgid ""
+"Unable to create directory for personal menu.\n"
+" Select Ok to exit KMenuedit."
+msgstr ""
+"En pysty luomaan hakemistoa henkilökohtaiselle valikolle.\n"
+" Valitse Ok poistuaksesi Valikkomuokkaimesta."
+
+#: confmenu.cpp:91 entrydialog.cpp:60
+msgid "Separator"
+msgstr "Erotin"
+
+#: confmenu.cpp:103 confmenu.cpp:335
+msgid "Open/ Close"
+msgstr "Avaa / Sulje"
+
+#: confmenu.cpp:117
+msgid "Select item for moving"
+msgstr "Valitse siirrettävä tietue"
+
+#: confmenu.cpp:118
+msgid "Select menu for moving"
+msgstr "Valitse siirrettävä valikko"
+
+#: confmenu.cpp:120
+msgid "New"
+msgstr "Uusi"
+
+#: confmenu.cpp:177 confmenu.cpp:318
+msgid "Warning !"
+msgstr "Varoitus !"
+
+#: confmenu.cpp:178
+msgid "If you delete this button you will lose all of its submenus"
+msgstr "Jos tuhoat tämän napin, menetät sen kaikki alivalikot"
+
+#: confmenu.cpp:297
+msgid "Wrong filename"
+msgstr "Väärä tiedostonimi"
+
+#: confmenu.cpp:298
+msgid ""
+"A kdelnk-file with this name does already exist. \n"
+"Please choose another filename."
+msgstr ""
+"kdelnk-tiedosto samalla nimellä on jo olemassa. \n"
+"Valitse toinen tiedostonimi."
+
+#: confmenu.cpp:319
+msgid "Changing the type of this button will delete all of its submenus"
+msgstr "Napin tyypin muuttaminen tuhoaa kaikki sen alivalikot"
+
+#: confmenu.cpp:340 confmenu.cpp:940
+msgid "no command"
+msgstr "ei komentoa"
+
+#: button.cpp:210
+msgid ""
+"Sorry ! You have to save your changes\n"
+"before you can drop this item on another window."
+msgstr ""
+"Sinun pitää tallentaa muutoksesi\n"
+"ennen kuin voit pudottaa tämän toiseen ikkunaan."
+
+#: DesktopPathDialogData.cpp:37
+msgid "Path for KDE Desktop Entries is not set."
+msgstr "Polkua KDE:n tietueisiin ei ole asetettu."
+
+#: DesktopPathDialogData.cpp:49
+msgid "I suggest the following entries:"
+msgstr "Suosittelen seuraavia asetuksia:"
+
+#: DesktopPathDialogData.cpp:55
+msgid "Path:"
+msgstr "Polku:"
+
+#: DesktopPathDialogData.cpp:68
+msgid "PersonalPath:"
+msgstr "Henkilökohtainen Polku:"
+
+#: entrydialog.cpp:61
+msgid "Submenu"
+msgstr "Alivalikko"
+
+#: entrydialog.cpp:62 entrydialog.cpp:198 entrydialog.cpp:539
+#: entrydialog.cpp:544
+msgid "Application"
+msgstr "Sovellus"
+
+#: entrydialog.cpp:63 entrydialog.cpp:200 entrydialog.cpp:543
+msgid "Swallow"
+msgstr "Nielaise"
+
+#: entrydialog.cpp:64 entrydialog.cpp:202 entrydialog.cpp:548
+msgid "Link"
+msgstr "Linkki"
+
+#: entrydialog.cpp:65 entrydialog.cpp:204 entrydialog.cpp:552
+msgid "Device"
+msgstr "Laite"
+
+#: entrydialog.cpp:72
+msgid "Type:"
+msgstr "Tyyppi:"
+
+#: entrydialog.cpp:79
+msgid "File Name:"
+msgstr "Tiedosto:"
+
+#: entrydialog.cpp:94
+msgid "Name:"
+msgstr "Nimi:"
+
+#: entrydialog.cpp:109
+msgid "Icon:"
+msgstr "Kuvake:"
+
+#: entrydialog.cpp:141
+msgid "Mini Icon:"
+msgstr "Pienoiskuvake:"
+
+#: entrydialog.cpp:149
+msgid "Comment:"
+msgstr "Kommentti:"
+
+#: entrydialog.cpp:196 entrydialog.cpp:538
+msgid "Execute"
+msgstr "Käynnistä"
+
+#: entrydialog.cpp:222
+msgid "Execute:"
+msgstr "Suorita:"
+
+#: entrydialog.cpp:228
+msgid "Working Directory:"
+msgstr "Työhakemisto:"
+
+#: entrydialog.cpp:241
+msgid "Run in terminal"
+msgstr "Aja päätteessä"
+
+#: entrydialog.cpp:245
+msgid "Terminal Options:"
+msgstr "Päätteen asetukset:"
+
+#: entrydialog.cpp:310
+msgid "Binary Pattern:"
+msgstr "Binäärikuvio:"
+
+#: entrydialog.cpp:325
+msgid "Application to swallow:"
+msgstr "Nielaistava sovellus:"
+
+#: entrydialog.cpp:331
+msgid "Title of application:"
+msgstr "Sovelluksen otsikko:"
+
+#: entrydialog.cpp:337
+msgid "Application to execute on button press:"
+msgstr "Suoritettava sovellus nappia painettaessa:"
+
+#: entrydialog.cpp:367
+msgid "URL:"
+msgstr "URL:"
+
+#: entrydialog.cpp:415
+msgid "Read Only"
+msgstr "Vain luku"
+
+#: entrydialog.cpp:420
+msgid "Device:"
+msgstr "Laite:"
+
+#: entrydialog.cpp:425
+msgid "Mount Point:"
+msgstr "Liitospiste:"
+
+#: entrydialog.cpp:430
+msgid "FS Type:"
+msgstr "Tiedostojärjestelmä:"
+
+#: entrydialog.cpp:435
+msgid "Unmount Icon:"
+msgstr "Irrotuskuvake:"
+
+#: MenuNameDialog.cpp:21
+msgid "Change Menunames"
+msgstr "Vaihda valikkonimiä"
+
+#: MenuNameDialogData.cpp:31
+msgid "Change the name of the menus as displayed in kpanel"
+msgstr "Vaihda panelissa näytettyjen valikkojen nimiä"
+
+#: MenuNameDialogData.cpp:36
+msgid "Personal:"
+msgstr "Henkilökohtainen:"
+
+#: MenuNameDialogData.cpp:41
+msgid "Default:"
+msgstr "Oletus:"

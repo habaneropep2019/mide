@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwSpriteFieldView Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwSpriteFieldView Class Reference</h1><br clear="all">
+<p>
+A QWidget which views a <a href="qwspritefield.html">QwSpriteField</a>
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>
+Inherits QWidget and <a href="qwabsspritefieldview.html">QwAbsSpriteFieldView</a>.
+<p><a href="qwspritefieldview-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwspritefieldview.html#a0"><strong>QwSpriteFieldView</strong></a> ( QwSpriteField * viewing=0, QWidget * parent=0, const char * name=0, WFlags f=0 ) </span>
+<li><span class="fn"><a href="qwspritefieldview.html#a1"><strong>~QwSpriteFieldView</strong></a> () </span>
+<li><span class="fn">virtual QRect <a href="qwspritefieldview.html#a2"><strong>viewArea</strong></a> () const</span>
+<li><span class="fn">virtual bool <a href="qwspritefieldview.html#a3"><strong>preferDoubleBuffering</strong></a> () const</span>
+<li><span class="fn">virtual void <a href="qwspritefieldview.html#a4"><strong>beginPainter</strong></a> ( QPainter &amp; ) </span>
+<li><span class="fn">virtual void <a href="qwspritefieldview.html#a5"><strong>flush</strong></a> ( const QRect &amp; area ) </span>
+</ul>
+<h2>Protected Members</h2>
+<ul>
+<li><span class="fn">virtual void <a href="qwspritefieldview.html#a6"><strong>paintEvent</strong></a> ( QPaintEvent * ) </span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+A QWidget which views a <a href="qwspritefield.html">QwSpriteField</a>
+<p>
+This is where QwSpriteField meets a QWidget - this class displays
+a QwSpriteField.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a0"></a>QwSpriteFieldView::QwSpriteFieldView ( <a href="qwspritefield.html">QwSpriteField</a> * v=0, QWidget * parent=0, const char * name=0, WFlags f=0 )</h3>
+<p>Construct a QwSpriteFieldView which views the given <a href="qwspritefield.html">QwSpriteField</a>.  The
+usual QWidget parameters may also be passed.
+<h3 class="fn"><a name="a1"></a>QwSpriteFieldView::~QwSpriteFieldView ()</h3>
+<p>Deconstruct the QwSpriteFieldView.
+<h3 class="fn">void <a name="a4"></a>QwSpriteFieldView::beginPainter ( QPainter &amp; painter ) <code>[virtual]</code></h3>
+<p>Configure the QPainter - just makes it draw on this widget.
+<h3 class="fn">void <a name="a5"></a>QwSpriteFieldView::flush ( const QRect &amp; ) <code>[virtual]</code></h3>
+<p>Nothing.
+<h3 class="fn">void <a name="a6"></a>QwSpriteFieldView::paintEvent ( QPaintEvent * ev ) <code>[virtual protected]</code></h3>
+<p>(override)
+<p>Repaint the appropriate area of the <a href="qwspritefield.html">QwSpriteField</a> which this
+QwSpriteFieldView is viewing.
+<h3 class="fn">bool <a name="a3"></a>QwSpriteFieldView::preferDoubleBuffering () const <code>[virtual]</code></h3>
+<p>Returns TRUE:  double-buffering <em>is</em> best for widget views of a <a href="qwspritefield.html">QwSpriteField</a>.
+<h3 class="fn">QRect <a name="a2"></a>QwSpriteFieldView::viewArea () const <code>[virtual]</code></h3>
+<p>Returns the area of
+the widget, clipped by the area of the widget's parent (if any).
+This should suffice for most cases.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

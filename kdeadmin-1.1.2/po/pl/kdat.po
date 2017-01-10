@@ -1,0 +1,941 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdat \n"
+"POT-Creation-Date: 1998-12-10 02:17+0100\n"
+"PO-Revision-Date: 1998-04-16 22:04+02:00\n"
+"Last-Translator: Krzysztof P. Jasiutowicz <kpjas@priv.onet.pl>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: ArchiveInfoWidget.cpp:39 BackupProfileWidget.cpp:40
+msgid "Archive name:"
+msgstr "Nazwa archiwum:"
+
+#: ArchiveInfoWidget.cpp:40 FileInfoWidget.cpp:38 TapeInfoWidget.cpp:43
+msgid "Created on:"
+msgstr "Utworzone:"
+
+#: ArchiveInfoWidget.cpp:41 FileInfoWidget.cpp:41 TapeFileInfoWidget.cpp:36
+msgid "Size:"
+msgstr "Wielko¶æ:"
+
+#: BackupDlg.cpp:74 BackupDlg.cpp:75 KDat.cpp:432
+msgid "KDat: Backup"
+msgstr "KDat: Backup"
+
+#: BackupDlg.cpp:87 IndexDlg.cpp:69 VerifyDlg.cpp:78
+msgid "Elapsed time:"
+msgstr "Czas, który up³yn±³:"
+
+#: BackupDlg.cpp:90 BackupDlg.cpp:96 IndexDlg.cpp:72 VerifyDlg.cpp:81
+#: VerifyDlg.cpp:87
+msgid "00:00:00"
+msgstr "00:00:00"
+
+#: BackupDlg.cpp:93 VerifyDlg.cpp:84
+msgid "Time remaining:"
+msgstr "Pozostaj±cy czas:"
+
+#: BackupDlg.cpp:99 VerifyDlg.cpp:90
+msgid "Total kbytes:"
+msgstr "Suma kbyte-ów:"
+
+#: BackupDlg.cpp:105
+msgid "Kbytes written:"
+msgstr "Zapisano kbyte-ów:"
+
+#: BackupDlg.cpp:108 IndexDlg.cpp:84 VerifyDlg.cpp:99
+msgid "0k"
+msgstr "0k"
+
+#: BackupDlg.cpp:111 IndexDlg.cpp:93 VerifyDlg.cpp:102
+msgid "Transfer rate:"
+msgstr "Prêdko¶æ transferu:"
+
+#: BackupDlg.cpp:114 IndexDlg.cpp:96 VerifyDlg.cpp:105
+msgid "0k/min"
+msgstr "0k/min"
+
+#: BackupDlg.cpp:117 IndexDlg.cpp:87 VerifyDlg.cpp:110
+msgid "Files:"
+msgstr "Plików:"
+
+#: BackupDlg.cpp:120 IndexDlg.cpp:78 IndexDlg.cpp:90 IndexDlg.cpp:102
+msgid "0"
+msgstr "0"
+
+#: BackupDlg.cpp:123
+msgid "Backup log:"
+msgstr "Log backup-u"
+
+#: BackupDlg.cpp:130 IndexDlg.cpp:112 VerifyDlg.cpp:131
+msgid "Save Log..."
+msgstr "Zapisz log..."
+
+#: BackupDlg.cpp:135 IndexDlg.cpp:117 VerifyDlg.cpp:136
+msgid "Abort"
+msgstr "Anuluj"
+
+#: BackupDlg.cpp:302
+msgid "*** Write failed, giving up."
+msgstr "*** Zapis nieudany, rezygnujê."
+
+#: BackupDlg.cpp:367 BackupDlg.cpp:377 IndexDlg.cpp:335 VerifyDlg.cpp:358
+#: VerifyDlg.cpp:368
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#: BackupDlg.cpp:380 IndexDlg.cpp:338 VerifyDlg.cpp:371
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: BackupDlg.cpp:384 IndexDlg.cpp:342 VerifyDlg.cpp:375
+#, c-format
+msgid "%s/min"
+msgstr "%s/min"
+
+#: BackupOptDlg.cpp:31 BackupOptDlg.cpp:32
+msgid "KDat: Backup Options"
+msgstr "KDat: Opcje backup-u"
+
+#: BackupProfileInfoWidget.cpp:40
+msgid "Backup profile name:"
+msgstr "Nazwa profilu backup-u:"
+
+#: BackupProfileInfoWidget.cpp:51
+msgid "Files >>"
+msgstr "Pliki >>"
+
+#: BackupProfileInfoWidget.cpp:54
+msgid "<< Files"
+msgstr "<< Pliki"
+
+#: BackupProfileWidget.cpp:38 KDat.cpp:152
+msgid "Backup"
+msgstr "Backup"
+
+#: BackupProfileWidget.cpp:46
+msgid "Working directory:"
+msgstr "Katalog roboczy:"
+
+#: BackupProfileWidget.cpp:52
+msgid "Backup files:"
+msgstr "Pliki backup-u:"
+
+#: BackupProfileWidget.cpp:58
+msgid "Tar Options"
+msgstr "Opcje tar-a"
+
+#: BackupProfileWidget.cpp:60
+msgid "Stay on one filesystem"
+msgstr "W ramach jednego filesystemu"
+
+#: BackupProfileWidget.cpp:63
+msgid "GNU listed incremental"
+msgstr "GNU listed incremental"
+
+#: BackupProfileWidget.cpp:67
+msgid "Snapshot file:"
+msgstr "Plik snapshot-u:"
+
+#: BackupProfileWidget.cpp:73
+msgid "Remove snapshot file before backup"
+msgstr "Usuñ plik snapshot-u przed backup-em"
+
+#: FileInfoWidget.cpp:37 TapeFileInfoWidget.cpp:34
+msgid "File name:"
+msgstr "Nazwa pliku:"
+
+#: FileInfoWidget.cpp:39 TapeFileInfoWidget.cpp:35 TapeInfoWidget.cpp:44
+msgid "Last modified:"
+msgstr "Ostatnio zmodyfikowany:"
+
+#: FileInfoWidget.cpp:40
+msgid "Last accessed:"
+msgstr "Ostani dostêp:"
+
+#: FileInfoWidget.cpp:42
+msgid "Owner:"
+msgstr "W³a¶ciciel:"
+
+#: FileInfoWidget.cpp:43
+msgid "Group:"
+msgstr "Grupa:"
+
+#: IndexDlg.cpp:56 IndexDlg.cpp:57
+msgid "KDat: Index"
+msgstr "KDat: Indeks"
+
+#: IndexDlg.cpp:75
+msgid "Archives:"
+msgstr "Archiwa:"
+
+#: IndexDlg.cpp:81 VerifyDlg.cpp:96
+msgid "Kbytes read:"
+msgstr "Kbyte-y przeczytane:"
+
+#: IndexDlg.cpp:99
+msgid "Total files:"
+msgstr "Suma plików:"
+
+#: IndexDlg.cpp:105
+msgid "Index log:"
+msgstr "Log indeksu:"
+
+#: IndexDlg.cpp:226
+msgid "Rewinding tape."
+msgstr "Cofanie ta¶my."
+
+#: IndexDlg.cpp:228 KDat.cpp:442
+msgid "KDat: Cannot Rewind Tape"
+msgstr "KDat: nie mo¿na cofn±æ ta¶my"
+
+#: IndexDlg.cpp:228
+msgid "Cannot rewind tape.  Indexing aborted."
+msgstr "Nie mo¿na cofn±æ ta¶my. Indeksowanie przerwane."
+
+#: IndexDlg.cpp:232
+msgid "Cannot rewind tape."
+msgstr "Nie mo¿na cofn±æ ta¶my."
+
+#: IndexDlg.cpp:238 KDat.cpp:451 TapeDrive.cpp:222 TapeDrive.cpp:230
+#: TapeDrive.cpp:242 TapeDrive.cpp:254 TapeDrive.cpp:259
+msgid "KDat: Error"
+msgstr "KDat: B³±d"
+
+#: IndexDlg.cpp:238 IndexDlg.cpp:242
+msgid "Failed to skip tape ID."
+msgstr "Nieudane pominiêcie ID ta¶my."
+
+#: IndexDlg.cpp:271
+#, c-format
+msgid "Indexing archive %d."
+msgstr "Indeksujê archiwum %d."
+
+#: IndexDlg.cpp:274
+#, c-format
+msgid "Archive %d"
+msgstr "Archiwum %d"
+
+#: IndexDlg.cpp:321
+msgid "Reindexed Tape"
+msgstr "Ta¶ma reindeksowana"
+
+#: KDat.cpp:81 KDat.cpp:82 KDat.cpp:1101
+msgid "KDat: <no tape>"
+msgstr "KDat: <brak ta¶my>"
+
+#: KDat.cpp:86 KDat.cpp:122 KDat.cpp:233 KDat.cpp:1141
+msgid "Mount Tape"
+msgstr "Zamontuj ta¶mê"
+
+#: KDat.cpp:87 KDat.cpp:123
+msgid "Recreate Tape Index"
+msgstr "Odtworzenie indeksu ta¶my"
+
+#: KDat.cpp:89 KDat.cpp:129
+msgid "Format Tape..."
+msgstr "Formatuj ta¶mê..."
+
+#: KDat.cpp:92 KDat.cpp:98 KDat.cpp:126
+msgid "Delete Archive"
+msgstr "Skasuj archiwum"
+
+#: KDat.cpp:95 KDat.cpp:101 KDat.cpp:121
+msgid "Verify..."
+msgstr "Weryfikacja..."
+
+#: KDat.cpp:96 KDat.cpp:102 KDat.cpp:120
+msgid "Restore..."
+msgstr "Odtworzenie..."
+
+#: KDat.cpp:105 KDat.cpp:114 KDat.cpp:119
+msgid "Backup..."
+msgstr "Backup..."
+
+#: KDat.cpp:108
+msgid "Delete Tape Index"
+msgstr "Skasuj indeks ta¶my"
+
+#: KDat.cpp:111 KDat.cpp:124
+msgid "Create Backup Profile"
+msgstr "Utwórz profil backup-u"
+
+#: KDat.cpp:116 KDat.cpp:128
+msgid "Delete Backup Profile"
+msgstr "Skasuj profil backup-u"
+
+#: KDat.cpp:127
+msgid "Delete Index"
+msgstr "Skasuj indeks"
+
+#: KDat.cpp:134
+msgid "Preferences..."
+msgstr "Preferencje..."
+
+#: KDat.cpp:141
+#, c-format
+msgid ""
+"KDat Version %s\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+msgstr ""
+"KDat Wersja %s\n"
+"\n"
+"KDat tape archiver u¿ywaj±cy tar-a.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+
+#: KDat.cpp:148
+msgid "Mount/unmount tape"
+msgstr "Zamontuj/odmontuj ta¶mê"
+
+#: KDat.cpp:154
+msgid "Verify"
+msgstr "Weryfikuj"
+
+#: KDat.cpp:168
+msgid "Ready."
+msgstr "Gotowe."
+
+#: KDat.cpp:230 KDat.cpp:1138
+msgid "Unmount Tape"
+msgstr "Odmontuj ta¶mê"
+
+#: KDat.cpp:399 KDat.cpp:756
+msgid "%m/%d/%y"
+msgstr "%m/%d/%y"
+
+#: KDat.cpp:400
+#, c-format
+msgid "Archive created on %s"
+msgstr "Archiwum utworzone %s"
+
+#: KDat.cpp:418
+msgid "Performing backup..."
+msgstr "Wykonujê backup..."
+
+#: KDat.cpp:431
+#, c-format
+msgid ""
+"WARNING: The estimated archive size is %dKB.\n"
+"The tape has only %dKB of space!\n"
+"\n"
+"Backup anyway?"
+msgstr ""
+"OSTRZE¯ENIE: szacunkowa wielko¶æ archium %dKB.\n"
+"Na ta¶mie jest tylko %dKB miejsca!\n"
+"\n"
+"Backup-owaæ?"
+
+#: KDat.cpp:433
+msgid "Backup canceled."
+msgstr "Backup przerwany."
+
+#: KDat.cpp:440 TapeDrive.cpp:520 TapeDrive.cpp:541
+msgid "Rewinding tape..."
+msgstr "Cofam ta¶mê..."
+
+#: KDat.cpp:442
+msgid "Cannot rewind tape.  Backup aborted."
+msgstr "Nie mo¿na cofnaæ ta¶my. Backup przerwany."
+
+#: KDat.cpp:443 KDat.cpp:452 KDat.cpp:472
+msgid "Backup aborted."
+msgstr "Backup przerwany."
+
+#: KDat.cpp:449
+msgid "Skipping to end of tape..."
+msgstr "Przeskakujê na koniec ta¶my..."
+
+#: KDat.cpp:451
+msgid "Cannot get to end of tape."
+msgstr "Nie mo¿na dotrzeæ do koñca ta¶my."
+
+#: KDat.cpp:456
+msgid "Backup in progress..."
+msgstr "Backup trwa..."
+
+#: KDat.cpp:470
+msgid "Backup complete."
+msgstr "Backup zakoñczony."
+
+#: KDat.cpp:591
+msgid "Restore in progress..."
+msgstr "Odtwarzanie trwa..."
+
+#: KDat.cpp:593
+msgid "Verify in progress..."
+msgstr "Werfikacja trwa..."
+
+#: KDat.cpp:600
+msgid "Restore complete."
+msgstr "Odtwarzanie zakoñczone."
+
+#: KDat.cpp:602
+msgid "Verify complete."
+msgstr "Weryfikacja zakoñczona."
+
+#: KDat.cpp:606
+msgid "Restore aborted."
+msgstr "Odtwarzanie przerwane."
+
+#: KDat.cpp:608
+msgid "Verify aborted."
+msgstr "Weryfikacja przerwana."
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "KDat: No Tape"
+msgstr "KDat: Brak ta¶my."
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "There is no tape in the drive."
+msgstr "Brak ta¶my w napêdzie."
+
+#: KDat.cpp:636
+msgid "KDat: Index Tape"
+msgstr "KDat: Indeksowanie ta¶my"
+
+#: KDat.cpp:636
+msgid "The current tape index will be overwritten, continue?"
+msgstr "Aktualny indeks ta¶my bêdzie nadpisany, kontynuowaæ?"
+
+#: KDat.cpp:641 KDat.cpp:1097
+#, c-format
+msgid "KDat: %s"
+msgstr "KDat: %s"
+
+#: KDat.cpp:645
+msgid "Index complete."
+msgstr "Indeksowanie zakoñczone."
+
+#: KDat.cpp:647
+msgid "Index aborted."
+msgstr "Indeksowanie przerwane."
+
+#: KDat.cpp:656
+msgid "KDat: No Archive Selected"
+msgstr "KDat: Nie wybrano archium"
+
+#: KDat.cpp:656
+msgid "An archive must be selected in the tree."
+msgstr "Nale¿y wybraæ archiwum w drzewie."
+
+#: KDat.cpp:689
+#, c-format
+msgid ""
+"An archive cannot be removed from the middle of the tape.  If\n"
+"the archive '%s' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%s\n"
+"\n"
+" Delete all listed archives?"
+msgstr ""
+"Archiwum nie mo¿e byæ usuniête ze ¶rodka ta¶my.  Je¶li\n"
+"archiwum '%s' zostanie usuniête\n"
+"nastêpuj±ce archiwa te¿ zostan± usuniête:\n"
+"%s\n"
+"\n"
+" Usun±æ wszystkie wypisane archiwa?"
+
+#: KDat.cpp:690
+msgid "KDat: Delete Archives?"
+msgstr "KDat: Usun±æ archiwa?"
+
+#: KDat.cpp:692
+msgid "Archives deleted."
+msgstr "Archiwa usuniête."
+
+#: KDat.cpp:701
+#, c-format
+msgid "Really delete the archive '%s'?"
+msgstr "Naprawdê usun±æ archiwum '%s'?"
+
+#: KDat.cpp:702
+msgid "KDat: Delete Archive?"
+msgstr "KDat: Usun±æ archiwum?"
+
+#: KDat.cpp:704
+msgid "Archive deleted."
+msgstr "Archiwum usuniête."
+
+#: KDat.cpp:717
+msgid "KDat: No Tape Index Selected"
+msgstr "KDat: Nie wybrano indeksu ta¶my"
+
+#: KDat.cpp:717
+msgid "A tape index must be selected in the tree."
+msgstr "Nale¿y wybraæ indeks ta¶my w drzewie."
+
+#: KDat.cpp:724
+msgid "KDat: Tape Is Mounted"
+msgstr "KDat: ta¶ma zamontowana"
+
+#: KDat.cpp:724
+msgid ""
+"The index for a mounted tape cannot be deleted.\n"
+"\n"
+"Unmount the tape and try again."
+msgstr ""
+"Indeks zamontowanek ta¶my nie mo¿e byæ usuniêty.\n"
+"\n"
+"Odmontuj ta¶mê i spróbuj ponownie."
+
+#: KDat.cpp:729
+#, c-format
+msgid "Really delete the index for '%s'?"
+msgstr "Naprawdê usun±æ indeks '%s'?"
+
+#: KDat.cpp:730
+msgid "KDat: Delete Tape Index?"
+msgstr "KDat: Usun±æ indeks ta¶my?"
+
+#: KDat.cpp:732
+msgid "Tape index deleted."
+msgstr "Indeks ta¶my usuniêty."
+
+#: KDat.cpp:743
+msgid "KDat: No Tape In Drive"
+msgstr "KDat: Brak ta¶my w napêdzie"
+
+#: KDat.cpp:743
+msgid ""
+"There is no tape in the tape drive.\n"
+"Please insert a tape and try again."
+msgstr ""
+"Nie ma ta¶my w napêdzie.\n"
+"Proszê w³o¿yæ ta¶mê i spróbowaæ ponownie."
+
+#: KDat.cpp:748
+msgid "KDat: Write Protected Tape"
+msgstr "KDat: ta¶ma zabezpieczona przed zapisem"
+
+#: KDat.cpp:748
+msgid ""
+"The tape in the drive is write protected.\n"
+"Please disable write protection and try again."
+msgstr ""
+"Ta¶ma w napêdzie jest zabezpieczona przed zapisem.\n"
+"Proszê usun±æ zabezpieczenie i spróbowaæ ponownie."
+
+#: KDat.cpp:752
+msgid "KDat: Format Tape"
+msgstr "KDat: Formatuj ta¶mê"
+
+#: KDat.cpp:752
+msgid "All data will be lost, continue?"
+msgstr "Wszystkie dane bêd± stracone, kontynuowaæ?"
+
+#: KDat.cpp:757
+#, c-format
+msgid "Tape created on %s"
+msgstr "Ta¶ma utworzona %s"
+
+#: KDat.cpp:773
+msgid "Formatting tape..."
+msgstr "Formatujê ta¶mê..."
+
+#: KDat.cpp:776
+msgid "Format complete."
+msgstr "Formatowanie zakoñczone."
+
+#: KDat.cpp:790
+#, c-format
+msgid "Backup Profile %d"
+msgstr "Profil backup-u %d"
+
+#: KDat.cpp:807
+msgid "Archive"
+msgstr "Archiwum"
+
+#: KDat.cpp:828
+msgid "KDat: No Backup Profile Selected"
+msgstr "KDat: Nie wybrano profilu backup-u"
+
+#: KDat.cpp:828
+msgid "A backup profile must be selected in the tree."
+msgstr "Nale¿y wybraæ profil backup-u w drzewie."
+
+#: KDat.cpp:836
+#, c-format
+msgid "Really delete backup profile '%s'?"
+msgstr "Naprawdê usun±æ profil backup-u '%s'?"
+
+#: KDat.cpp:837
+msgid "KDat: Delete Backup Profile?"
+msgstr "KDat: Usun±æ profil backup-u?"
+
+#: KDat.cpp:839
+msgid "Backup profile deleted."
+msgstr "Profil backup-u usuniêty."
+
+#: KDat.cpp:877
+msgid "Tape unmounted."
+msgstr "Ta¶ma odmontowana."
+
+#: KDat.cpp:881
+msgid "Reading tape header..."
+msgstr "Czytam nag³ówek ta¶my..."
+
+#: KDat.cpp:888 KDat.cpp:890
+msgid "KDat: Unformatted Tape"
+msgstr "KDat: Ta¶ma niesformatowana"
+
+#: KDat.cpp:888
+msgid "This tape has not been formatted by KDat."
+msgstr "Ta ta¶ma nie zosta³a sformatowana przez KDat."
+
+#: KDat.cpp:890
+msgid ""
+"This tape has not been formatted by KDat.\n"
+"\n"
+"Would you like to format it now?"
+msgstr ""
+"Ta¶ma nie zosta³a sformatowana przez KDat.\n"
+"\n"
+"Chcia³by¶ j± teraz sformatowaæ?"
+
+#: KDat.cpp:901
+msgid "Tape mounted."
+msgstr "Ta¶ma zamontowana."
+
+#: KDat.cpp:976
+#, c-format
+msgid "Estimating backup size: %s, %s"
+msgstr "Szacunkowa wielko¶æ backup-u: %s, %s"
+
+#: KDat.cpp:1102
+msgid "KDat: <no tape >"
+msgstr "KDat: <brak ta¶my>"
+
+#: LoggerWidget.cpp:60
+msgid "KDat: Save Log"
+msgstr "KDat: Zapisz log"
+
+#: LoggerWidget.cpp:60
+msgid "Log file exists, overwrite?"
+msgstr "Plik z logiem istnieje, nadpisaæ?"
+
+#: Node.cpp:1182 Node.cpp:1252
+msgid "<no tape>"
+msgstr "<brak ta¶my>"
+
+#: Node.cpp:1332
+msgid "Tape Indexes"
+msgstr "Indeksy ta¶my"
+
+#: Node.cpp:1466
+msgid "Backup Profiles"
+msgstr "Profile backup-u"
+
+#: OptionsDlg.cpp:39 OptionsDlg.cpp:40
+msgid "KDat: Options"
+msgstr "KDat: Opcje"
+
+#: OptionsDlg.cpp:44
+msgid "Default tape size:"
+msgstr "Domy¶lna wielko¶æ ta¶my:"
+
+#: OptionsDlg.cpp:45
+msgid "Tape block size:"
+msgstr "Rozmiar bloku ta¶my:"
+
+#: OptionsDlg.cpp:46
+msgid "Tape device:"
+msgstr "Urz±dzenie ta¶my:"
+
+#: OptionsDlg.cpp:47
+msgid "Tar command:"
+msgstr "Polecenie tar:"
+
+#: OptionsDlg.cpp:70
+msgid "bytes"
+msgstr "bajtów"
+
+#: OptionsDlg.cpp:76 OptionsDlg.cpp:82 VerifyOptDlg.cpp:57
+msgid "..."
+msgstr "..."
+
+#: OptionsDlg.cpp:85
+msgid "Tape drive options"
+msgstr "Opcje napêdu ta¶my"
+
+#: OptionsDlg.cpp:87
+msgid "Load tape on mount"
+msgstr "Za³aduj ta¶mê przy montowaniu"
+
+#: OptionsDlg.cpp:90
+msgid "Lock tape drive on mount"
+msgstr "Zablokuj napêd ta¶my przy montowaniu"
+
+#: OptionsDlg.cpp:93
+msgid "Eject tape on unmount"
+msgstr "Wysuñ ta¶mê przy odmontowywaniu"
+
+#: OptionsDlg.cpp:96
+msgid "Variable block size"
+msgstr "Zmienny rozmiar bloku"
+
+#: Tape.cpp:36
+msgid "New Tape"
+msgstr "Nowa ta¶ma"
+
+#: Tape.cpp:70 Tape.cpp:76 Tape.cpp:85 Tape.cpp:92 Tape.cpp:99 Tape.cpp:103
+msgid "KDat: Format Failed"
+msgstr "KDat: Formatowanie nieudane"
+
+#: Tape.cpp:70 TapeDrive.cpp:222
+msgid "Rewinding tape failed."
+msgstr "Cofniêcie ta¶my nieudane"
+
+#: Tape.cpp:76
+msgid "Cannot set tape block size."
+msgstr "Nie mo¿na ustawiæ rozmiar bloku ta¶my."
+
+#: Tape.cpp:85
+msgid "Writing magic string failed."
+msgstr "Zapis magic string nieudany."
+
+#: Tape.cpp:92
+msgid "Writing version number failed."
+msgstr "Zapis numeru wersji nieudany."
+
+#: Tape.cpp:99
+msgid "Writing tape ID length failed."
+msgstr "Zapis tape ID length nieudany."
+
+#: Tape.cpp:103
+msgid "Writing tape ID failed."
+msgstr "Zapis tape ID nieudany."
+
+#: Tape.cpp:132
+msgid "KDat: Tape Index"
+msgstr "KDat: Index ta¶my"
+
+#: Tape.cpp:132
+msgid ""
+"No index file was found for this tape.\n"
+"Recreate the index from tape?"
+msgstr ""
+"Plik indeksowy nieobecny na tej ta¶mie.\n"
+"Odtworzyæ indeks z ta¶my?"
+
+#: Tape.cpp:150 Tape.cpp:192 Tape.cpp:471 Tape.cpp:477 Tape.cpp:483
+#: Tape.cpp:490 Tape.cpp:497 Tape.cpp:505 Tape.cpp:512 Tape.cpp:520
+#: Tape.cpp:528 Tape.cpp:535 Tape.cpp:542 Tape.cpp:555 Tape.cpp:567
+#: Tape.cpp:575 Tape.cpp:582 Tape.cpp:589 Tape.cpp:618 Tape.cpp:624
+#: Tape.cpp:630 Tape.cpp:637 Tape.cpp:644 Tape.cpp:652 Tape.cpp:659
+#: Tape.cpp:679 Tape.cpp:685 Tape.cpp:721 Tape.cpp:727
+msgid "KDat: Index File Error"
+msgstr "KDat: B³±d pliku indeksowego"
+
+#: Tape.cpp:150 TapeDrive.cpp:242
+msgid "Reading version number failed."
+msgstr "Odczyt numeru wersji nieudany."
+
+#: Tape.cpp:191
+#, c-format
+msgid ""
+"The tape index file format is version %d.  The index cannot be read by this "
+"version of KDat.  Perhaps the tape index file was created by a newer version "
+"of KDat?"
+msgstr ""
+"Wersja pliku indeksowego ta¶my %d. Ten indeks nie mo¿e byæ odczytany przez "
+"t± wersjê KDat.  Mo¿e indeks ta¶my zosta³ utworzony przez nowsz± wersjê KDat?"
+
+#: Tape.cpp:471 Tape.cpp:618 Tape.cpp:679 Tape.cpp:721 TapeDrive.cpp:259
+msgid "Reading tape ID failed."
+msgstr "Odczyt tape ID nieudany."
+
+#: Tape.cpp:477 Tape.cpp:624 Tape.cpp:685 Tape.cpp:727
+msgid "Tape ID on tape does not match tape ID in index file."
+msgstr "Tape ID na ta¶mie nie zgadza siê z tape ID w pliku indeksowym."
+
+#: Tape.cpp:483 Tape.cpp:630
+msgid "Reading creation time failed."
+msgstr "Odczyt czasu utworzenia nieudany."
+
+#: Tape.cpp:490 Tape.cpp:637
+msgid "Reading modification time failed."
+msgstr "Odczyt czasu modyfikacji nieudany."
+
+#: Tape.cpp:497 Tape.cpp:644
+msgid "Reading tape name failed."
+msgstr "Odczyt nazwy ta¶my nieudany."
+
+#: Tape.cpp:505 Tape.cpp:652
+msgid "Reading tape size failed."
+msgstr "Odczyt rozmiaru ta¶my nieudany."
+
+#: Tape.cpp:512 Tape.cpp:659
+msgid "Reading archive count failed."
+msgstr "Odczyt liczby archiwów nieudany."
+
+#: Tape.cpp:520
+msgid "Reading archive name failed."
+msgstr "Odczyt nazwy archiwum nieudany."
+
+#: Tape.cpp:528
+msgid "Reading archive time stamp failed."
+msgstr "Odczyt time stamp archiwum nieudany."
+
+#: Tape.cpp:535
+msgid "Reading archive start block failed."
+msgstr "Odczyt bloku startowego archiwum nieudany."
+
+#: Tape.cpp:542
+msgid "Reading archive end block failed."
+msgstr "Odczyt bloku koñcowego archiwum nieudany."
+
+#: Tape.cpp:555
+msgid "Reading archive file count failed."
+msgstr "Odczyt liczby plików archiwum nieudany."
+
+#: Tape.cpp:567
+msgid "Reading file name failed."
+msgstr "Odczyt nazwy pliku nieudany."
+
+#: Tape.cpp:575
+msgid "Reading file size failed."
+msgstr "Odczyt rozmiaru pliku nieudany."
+
+#: Tape.cpp:582
+msgid "Reading file modification time failed."
+msgstr "Odczyt czasu modyfikacji pliku nieudany."
+
+#: Tape.cpp:589
+msgid "Reading file record number failed."
+msgstr "Odczyt numeru file record nieudany."
+
+#: TapeDrive.cpp:188
+msgid "Tape mounted readonly."
+msgstr "Ta¶ma zamontowana jako readonly."
+
+#: TapeDrive.cpp:190
+msgid "Tape mounted read/write."
+msgstr "Ta¶ma zamontowana jako read/write."
+
+#: TapeDrive.cpp:227
+msgid "Reading magic string..."
+msgstr "Odczyt magic string..."
+
+#: TapeDrive.cpp:230
+msgid "Reading magic string failed."
+msgstr "Odczyt magic string nieudany."
+
+#: TapeDrive.cpp:239
+msgid "Reading version number..."
+msgstr "Odczyt numeru wersji..."
+
+#: TapeDrive.cpp:247
+msgid "KDat: Warning"
+msgstr "KDat: Ostrze¿enie"
+
+#: TapeDrive.cpp:247
+msgid ""
+"Tape was formatted by a more recent version of KDat, consider upgrading."
+msgstr "Ta¶ma zformatowana nowsz± wersj± KDat-a, rozwa¿ upgrade."
+
+#: TapeDrive.cpp:251
+msgid "Reading tape ID..."
+msgstr "Odczyt ID ta¶my..."
+
+#: TapeDrive.cpp:254
+msgid "Reading tape ID length failed."
+msgstr "Odczyt tape ID length nieudany."
+
+#: TapeDrive.cpp:515
+msgid "Skipping to archive..."
+msgstr "Przeskok do archiwum..."
+
+#: TapeDrive.cpp:537
+msgid "Skipping to block..."
+msgstr "Przeskok do bloku..."
+
+#: TapeFileInfoWidget.cpp:37
+msgid "Start record:"
+msgstr "Rekord pocz±tkowy:"
+
+#: TapeFileInfoWidget.cpp:38
+msgid "End record:"
+msgstr "Rekord koñcowy:"
+
+#: FormatOptDlg.cpp:39 TapeInfoWidget.cpp:40
+msgid "Tape name:"
+msgstr "Nazwa ta¶my:"
+
+#: FormatOptDlg.cpp:40 TapeInfoWidget.cpp:41
+msgid "Tape size:"
+msgstr "Rozmiar ta¶my:"
+
+#: TapeInfoWidget.cpp:42
+msgid "Tape ID:"
+msgstr "Tape ID:"
+
+#: TapeInfoWidget.cpp:45
+msgid "Archive count:"
+msgstr "Liczba archiwów:"
+
+#: TapeInfoWidget.cpp:46
+msgid "Space used:"
+msgstr "Zu¿yto:"
+
+#: FormatOptDlg.cpp:36 FormatOptDlg.cpp:37
+msgid "KDat: Format Options"
+msgstr "KDat: Opcje formatowania"
+
+#: VerifyDlg.cpp:61 VerifyDlg.cpp:62
+msgid "KDat: Restore"
+msgstr "KDat: Odtwarzanie"
+
+#: VerifyDlg.cpp:64 VerifyDlg.cpp:65
+msgid "KDat: Verify"
+msgstr "KDat: Weryfikacja"
+
+#: VerifyDlg.cpp:113
+msgid "Differences:"
+msgstr "Ró¿nice:"
+
+#: VerifyDlg.cpp:121
+msgid "Restore log:"
+msgstr "Log odtwarzania:"
+
+#: VerifyDlg.cpp:123
+msgid "Verify log:"
+msgstr "Log weryfikacji:"
+
+#: VerifyDlg.cpp:315
+msgid "failed while reading tape data.\n"
+msgstr "nieudany odczyt danych z ta¶my.\n"
+
+#: VerifyOptDlg.cpp:38 VerifyOptDlg.cpp:39
+msgid "KDat: Restore Options"
+msgstr "KDat: Opcje odtwarzania"
+
+#: VerifyOptDlg.cpp:41 VerifyOptDlg.cpp:42
+msgid "KDat: Verify Options"
+msgstr "KDat: Opcje weryfikacji"
+
+#: VerifyOptDlg.cpp:47
+msgid "Restore to directory:"
+msgstr "Odtwarzanie do katalogu:"
+
+#: VerifyOptDlg.cpp:49
+msgid "Verify in directory:"
+msgstr "Weryfikacja katalogu:"
+
+#: VerifyOptDlg.cpp:62
+msgid "Restore files:"
+msgstr "Odtwarzanie plików:"
+
+#: VerifyOptDlg.cpp:64
+msgid "Verify files:"
+msgstr "Weryfikacja plików:"

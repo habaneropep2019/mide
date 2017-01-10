@@ -1,0 +1,64 @@
+%define version @VERSION@
+%define name kdesupport
+Name: %{name}
+Summary: K Desktop Environment - Support Libraries
+Version: %{version}
+Release: 1
+Source: ftp.kde.org:/pub/kde/stable/1.0pre/distribution/tgz/source/%{name}-%{version}-1.src.tar.gz
+Group: X11/KDE/Base
+Copyright: GPL/LGPL
+BuildRoot: /tmp/realhot_%{name}
+Requires: qt >= 1.33
+Distribution: KDE
+Packager: Kalle Dalheimer <kalle@kde.org>
+Vendor: The KDE Team
+
+%description
+Support Libraries for the K Desktop Environment.
+
+Included with this package are:
+
+giflib23: library routine for working with GIF images
+jpeglib6a: the Independent JPEG Group's free JPEG software
+mimelib: libraries for working eith messages in the MIME format 
+
+%prep
+rm -rf $RPM_BUILD_ROOT
+
+%setup -n kdesupport-%{version}
+
+%build
+export KDEDIR=/opt/kde
+./configure --prefix=$KDEDIR 
+make 
+
+%install
+export KDEDIR=/opt/kde
+make prefix=$RPM_BUILD_ROOT$KDEDIR install
+
+# Generieren der Fileliste
+cd $RPM_BUILD_ROOT
+find . -type d | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' > $RPM_BUILD_DIR/file.list.%{name}
+find . -type f | sed 's,^\.,\%attr(-\,root\,root) ,' >> $RPM_BUILD_DIR/file.list.%{name}
+find . -type l | sed 's,^\.,\%attr(-\,root\,root) ,' >> $RPM_BUILD_DIR/file.list.%{name}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%post
+
+if [ -f /opt/kde/lib/libgdbm.so ]
+ then
+  grep -q '/opt/kde/lib' /etc/ld.so.conf || echo "/opt/kde/lib" >> /etc/ld.so.conf
+  /sbin/ldconfig
+ else
+  echo "You used a different prefix than /opt. You must add <prefix>/kde/lib to the file /etc/ld.so.conf manually and run /sbin/ldconfig afterwards"
+fi
+
+%postun
+mv /etc/ld.so.conf /etc/ld.so.conf.orig
+grep -v '^/opt/kde/lib$' /etc/ld.so.conf.orig > /etc/ld.so.conf
+rm /etc/ld.so.conf.orig
+/sbin/ldconfig
+
+%files -f ../file.list.%{name}

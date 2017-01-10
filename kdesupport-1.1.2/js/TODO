@@ -1,0 +1,97 @@
+
+		    TODO Virtual Machine & JS API
+		    =============================
+
+* XXXXX the license must be changed from the *.{c,h} files.
+
+* The `jumps' method seems to be broken on some combination of gcc and
+  linux.
+
+* compilation / configuration
+
+  - `--with-*' options to enable / disable features like: crc32,
+    regexp, compiler, getcwd, popen
+
+* There are still some memory leaks that occur when the dynamic memory
+  allocation fails and we have some previously allocated stuffs on
+  stack variables.  Find a nice solution for this.
+
+* options to the js.h API to define / undefine system built-ins at the
+  interpreter creation time
+
+* functions to the js.h API to do the evaluation in two phases:
+
+	bc = js_compile_file_to_bc (interp, file);
+	js_execute_bc (interp, bc)
+
+* System
+
+  methods: readln(), printf()
+
+* object Function
+
+  implement
+
+* object Date
+
+  methods: parse, getTimezoneOffset, UTC
+  constructor with 1 argument
+
+* object Object
+
+  properties: constructor
+  methods: eval, toString, unwatch, valueOf, watch
+
+  Check that all built-in objects implement toString().  The other
+  methods and all properties are currently unimplemented.
+
+* Added the flags JS_ATTRIB_READONLY, JS_ATTRIB_DONTENUM, etc. for the
+  object properties.
+
+* Built-ins
+
+  Allow users to overwrite the default methods.  Basicly, we have all
+  that is needed for this.  I just want to think this one for a while,
+  because the default __proto__ lookup will slow the built-in method
+  dispatching.
+
+* String.format() might be handy
+
+* operands: shift_rright
+
+* operand delete_property: support for the with-chains
+
+* RegExp.multiline property
+
+* fix regex.{c,h} to be re-entrant
+
+* String.{,un}pack(): implement all missing type specifiers
+
+* Debugging information handling for the switch dispatch method.
+
+* allow user-defined global methods for the JavaScript extension
+
+* Tcl extension
+
+* Garbage collection should be re-implemented.  Incremental?
+  Generational?  Maybe, maybe not.
+
+* Garbage collection (slot recycling) for constants.  The current
+  implementation leaks the constant slots when functions (and
+  therefore the constants) are freed.
+
+* tests for built-in objects and methods.  Do this at the same time
+  when the documentation is updated.
+
+* byte-code operand profiling shows the following facts:
+
+	operand		#hits	relative hits
+	----------------------------------------
+	store_property  1048    21.38
+	load_property	741     15.12
+	call_method	531     10.83
+	store_local	272     5.55
+	...
+
+  maybe the implementation of the object properties could be
+  optimized

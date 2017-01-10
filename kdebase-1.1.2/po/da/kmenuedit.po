@@ -1,0 +1,267 @@
+# Danish translations for KDE Base, kmenuedit
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Thomas Tanghus, <tanghus@earthling.net1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE BASE/kmenuedit\n"
+"POT-Creation-Date: 1999-01-14 01:18+0100\n"
+"PO-Revision-Date: 1999-01-26 13:22+0100\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: da <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: kmenuedit.cpp:69
+msgid "Change &Menuname"
+msgstr "Skift &menunavn"
+
+#: kmenuedit.cpp:70
+msgid "Reload &Filetypes"
+msgstr "Genindlæs &filtyper"
+
+#: kmenuedit.cpp:77
+msgid "by"
+msgstr "ved"
+
+#: kmenuedit.cpp:179 kmenuedit.cpp:204
+msgid "Changes not saved !"
+msgstr "Ændringer ikke gemt!"
+
+#: kmenuedit.cpp:180 kmenuedit.cpp:205
+msgid ""
+"\n"
+"Do you want to save your changes ?"
+msgstr ""
+"\n"
+"Vil du gemme dine ændringer?"
+
+#: confmenu.cpp:339 confmenu.cpp:939 kmenuedit.cpp:264
+msgid "EMPTY"
+msgstr "TOM"
+
+#: kmenuedit.cpp:343
+msgid "Reload Menus"
+msgstr "Genindlæs menuer"
+
+#: kmenuedit.cpp:344
+msgid ""
+"Reloading the menus will discard all changes.\n"
+"Are you sure you want to reload ?"
+msgstr ""
+"Hvis du genindlæser menuerne vil du miste alle dine ændringer.\n"
+"Er du sikker på du vil genindlæse dem?"
+
+#: button.cpp:209 main.cpp:79 main.cpp:92
+msgid "KMenuedit"
+msgstr "KMenuedit"
+
+#: main.cpp:80
+msgid ""
+"The directory for your personal menu does not exist.\n"
+" Do you want to create it now ?"
+msgstr ""
+"Kataloget til din personlige menu eksisterer ikke.\n"
+"Vil du oprette den nu?"
+
+#: main.cpp:93
+msgid ""
+"Unable to create directory for personal menu.\n"
+" Select Ok to exit KMenuedit."
+msgstr ""
+"Kan ikke oprette katalog til din personlige menu.\n"
+"Vælg Ok for at afslutte Menu Editoren."
+
+#: confmenu.cpp:91 entrydialog.cpp:60
+msgid "Separator"
+msgstr "Adskiller"
+
+#: confmenu.cpp:103 confmenu.cpp:335
+msgid "Open/ Close"
+msgstr "Åben/Luk"
+
+#: confmenu.cpp:117
+msgid "Select item for moving"
+msgstr "Vælg det der skal flyttes"
+
+#: confmenu.cpp:118
+msgid "Select menu for moving"
+msgstr "Vælg menu der skal flyttes"
+
+#: confmenu.cpp:120
+msgid "New"
+msgstr "Ny"
+
+#: confmenu.cpp:177 confmenu.cpp:318
+msgid "Warning !"
+msgstr "Advarsel!"
+
+#: confmenu.cpp:178
+msgid "If you delete this button you will lose all of its submenus"
+msgstr "Hvis du sletter denne knap vil du miste all dens undermenuer"
+
+#: confmenu.cpp:297
+msgid "Wrong filename"
+msgstr "Forkert filnavn"
+
+#: confmenu.cpp:298
+msgid ""
+"A kdelnk-file with this name does already exist. \n"
+"Please choose another filename."
+msgstr ""
+"En kdelnk fil med dette navn eksisterer allerede.\n"
+"Vælg venlist et andet navn."
+
+#: confmenu.cpp:319
+msgid "Changing the type of this button will delete all of its submenus"
+msgstr "Hvis du ændrer typen på denne knap vil du miste alle dens undermenuer"
+
+#: confmenu.cpp:340 confmenu.cpp:940
+msgid "no command"
+msgstr "ingen kommando"
+
+#: button.cpp:210
+msgid ""
+"Sorry ! You have to save your changes\n"
+"before you can drop this item on another window."
+msgstr ""
+"Du bliver nødt til at gemme dine ændringer\n"
+"før du kan placere dette element i et andet vindue"
+
+#: DesktopPathDialogData.cpp:37
+msgid "Path for KDE Desktop Entries is not set."
+msgstr "Stien til KDE Desktop Entries er ikke sat."
+
+#: DesktopPathDialogData.cpp:49
+msgid "I suggest the following entries:"
+msgstr "Jeg foreslår de følgende indgange:"
+
+#: DesktopPathDialogData.cpp:55
+msgid "Path:"
+msgstr "Sti:"
+
+#: DesktopPathDialogData.cpp:68
+msgid "PersonalPath:"
+msgstr "Personlig Sti:"
+
+#: entrydialog.cpp:61
+msgid "Submenu"
+msgstr "Undermenu"
+
+#: entrydialog.cpp:62 entrydialog.cpp:198 entrydialog.cpp:539
+#: entrydialog.cpp:544
+msgid "Application"
+msgstr "Anvendelse"
+
+#: entrydialog.cpp:63 entrydialog.cpp:200 entrydialog.cpp:543
+msgid "Swallow"
+msgstr "Slug"
+
+#: entrydialog.cpp:64 entrydialog.cpp:202 entrydialog.cpp:548
+msgid "Link"
+msgstr "Link"
+
+#: entrydialog.cpp:65 entrydialog.cpp:204 entrydialog.cpp:552
+msgid "Device"
+msgstr "Enhed"
+
+#: entrydialog.cpp:72
+msgid "Type:"
+msgstr "Type:"
+
+#: entrydialog.cpp:79
+msgid "File Name:"
+msgstr "Filnavn:"
+
+#: entrydialog.cpp:94
+msgid "Name:"
+msgstr "Navn:"
+
+#: entrydialog.cpp:109
+msgid "Icon:"
+msgstr "Ikon:"
+
+#: entrydialog.cpp:141
+msgid "Mini Icon:"
+msgstr "Mini ikon:"
+
+#: entrydialog.cpp:149
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#: entrydialog.cpp:196 entrydialog.cpp:538
+msgid "Execute"
+msgstr "Kør"
+
+#: entrydialog.cpp:222
+msgid "Execute:"
+msgstr "Kør:"
+
+#: entrydialog.cpp:228
+msgid "Working Directory:"
+msgstr "Arbejdskatalog:"
+
+#: entrydialog.cpp:241
+msgid "Run in terminal"
+msgstr "Kør i terminal"
+
+#: entrydialog.cpp:245
+msgid "Terminal Options:"
+msgstr "Terminal indstillinger:"
+
+#: entrydialog.cpp:310
+msgid "Binary Pattern:"
+msgstr "Filnavne:"
+
+#: entrydialog.cpp:325
+msgid "Application to swallow:"
+msgstr "Anvendelse til swallow:"
+
+#: entrydialog.cpp:331
+msgid "Title of application:"
+msgstr "Anvendelsens navn"
+
+#: entrydialog.cpp:337
+msgid "Application to execute on button press:"
+msgstr "Anvendelse der udføres ved tryk på knap:"
+
+#: entrydialog.cpp:367
+msgid "URL:"
+msgstr "URL:"
+
+#: entrydialog.cpp:415
+msgid "Read Only"
+msgstr "Kun læsbar"
+
+#: entrydialog.cpp:420
+msgid "Device:"
+msgstr "Enhed:"
+
+#: entrydialog.cpp:425
+msgid "Mount Point:"
+msgstr "Monteringspunkt:"
+
+#: entrydialog.cpp:430
+msgid "FS Type:"
+msgstr "FS Type:"
+
+#: entrydialog.cpp:435
+msgid "Unmount Icon:"
+msgstr "Afmonteringsikon:"
+
+#: MenuNameDialog.cpp:21
+msgid "Change Menunames"
+msgstr "Skift menunavne"
+
+#: MenuNameDialogData.cpp:31
+msgid "Change the name of the menus as displayed in kpanel"
+msgstr "Skift navn på menuen som det bliver vist i Panelet"
+
+#: MenuNameDialogData.cpp:36
+msgid "Personal:"
+msgstr "Personlig:"
+
+#: MenuNameDialogData.cpp:41
+msgid "Default:"
+msgstr "Standard:"

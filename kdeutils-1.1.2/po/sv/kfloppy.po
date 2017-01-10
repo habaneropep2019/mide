@@ -1,0 +1,198 @@
+# Copyright (C) 1998 Free Software Foundation, Inc. 
+# Karl Backström <backstrom@kde.org>, 1998
+# Anders Bengtsson <d96-abe@nada.kth.se>, 1998
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date:  1998-12-29 22:00+0100\n"
+"Last-Translator: Karl Backström <backstrom@kde.org>\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "Om KDE KFloppy"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "Version "
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Diskettenhet:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Täthet:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Filsystem:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Formatera"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Snabbradering"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Fullständig formatering"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Ange etikett:"
+
+#: floppy.cpp:148
+msgid "KDE Floppy"
+msgstr "KDE-diskett"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "KDE Diskettformaterare"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr "DD"
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"Kan ej komma åt %s\n"
+"Se till att enheten existerar och att\n"
+"du har skrivrättigheter."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Hittade inte kfdformat\n"
+"kfdformat distribueras med KFloppy.\n"
+"Se till att KFloppy är korrekt installerat."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Hittade inte kmke2fs\n"
+"kmke2fs distribueras med KFloppy.\n"
+"Se till att KFloppy är korrekt installerat."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Hittade inte kmkdosfs\n"
+"kmkdosfs distribueras med KFloppy.\n"
+"Se till att KFloppy är korrekt installerat."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Avbryt"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Kan inte starta ett nytt program: fork() misslyckades."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Kommer inte åt disketten eller diskettenheten.\n"
+"Se till att en diskett sitter i och att\n"
+"diskettenheten du valt är giltig.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"Kunde ej formatera: %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Block %d är trasigt. Fortsätter ..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"Gick ej att skapa ett filsystem på: %s\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"Disketten är formaterad.\n"
+"Dåliga block markerade: %d\n"
+"Kapacitet: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Alla filer togs bort."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Skapar filsystem ..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Verifierar ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Kan inte starta ett nytt program\n"
+"fork() misslyckades."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Fel uppstod vid försök att kontrollera om disketten är monterad\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s är monterad.\n"
+"Avmontera disketten först."

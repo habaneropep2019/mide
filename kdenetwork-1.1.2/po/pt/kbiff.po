@@ -1,0 +1,261 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kbiff\n"
+"POT-Creation-Date: 1999-06-05 11:50-0700\n"
+"PO-Revision-Date: 1998-11-07 00:00+0000\n"
+"Last-Translator: Pedro Morais <morais@kde.org>\n"
+"Language-Team: pt\n"
+"MIME-Version:\n"
+"Content-Type:\n"
+"Content-Transfer-Encoding:\n"
+
+#: kbiff.cpp:629
+msgid "&UnDock"
+msgstr "&DesAtracar"
+
+#: kbiff.cpp:631
+msgid "&Dock"
+msgstr "&Atracar"
+
+#: kbiff.cpp:632
+msgid "&Setup..."
+msgstr "&Configuração..."
+
+#: kbiff.cpp:634
+msgid "&Help..."
+msgstr "&Ajuda..."
+
+#: kbiff.cpp:638
+msgid "&Check Mail Now"
+msgstr "&Verificar Correio Agora"
+
+#: kbiff.cpp:640
+msgid "&Read Mail Now"
+msgstr "&Ler Correio Agora"
+
+#: kbiff.cpp:646
+msgid "&Stop"
+msgstr "&Parar"
+
+#: notify.cpp:33 notify.cpp:50
+msgid "You have new mail!"
+msgstr "Tem correio novo!"
+
+#: notify.cpp:58 notify.cpp:103
+#, c-format
+msgid "New Messages: %d"
+msgstr "Novas Mensagens: %d"
+
+#: notify.cpp:63
+#, c-format
+msgid "Mailbox: %s"
+msgstr "Caixa: %s"
+
+# This is on a button.  It launches the user's mail client
+#: notify.cpp:73
+msgid "Mailer"
+msgstr ""
+
+#: setupdlg.cpp:83
+msgid "KBiff Setup"
+msgstr "Configuração do KBiff"
+
+#: setupdlg.cpp:86
+msgid "Profile:"
+msgstr "Perfil:"
+
+#: setupdlg.cpp:102
+msgid "&New..."
+msgstr "&Novo..."
+
+#: setupdlg.cpp:109
+msgid "&Rename..."
+msgstr "&Renomear..."
+
+#: setupdlg.cpp:143
+msgid "General"
+msgstr "Geral"
+
+#: setupdlg.cpp:144
+msgid "New Mail"
+msgstr "Novo Correio"
+
+#: setupdlg.cpp:145 status.cpp:33
+msgid "Mailbox"
+msgstr "Caixa"
+
+#: setupdlg.cpp:391
+msgid "New Profile"
+msgstr "Novo Perfil"
+
+#: setupdlg.cpp:423
+#, c-format
+msgid "Rename Profile: %s"
+msgstr "Renomear Perfil: %s"
+
+#: setupdlg.cpp:463
+#, c-format
+msgid "Delete Profile: %s"
+msgstr "Apagar Perfil: %s"
+
+#: setupdlg.cpp:464
+msgid "Are you sure you wish to delete this profile?\n"
+msgstr "Tem a certeza que quer apagar este perfil?\n"
+
+#: setupdlg.cpp:524
+msgid "Poll (sec):"
+msgstr "Intervalo (seg):"
+
+#: setupdlg.cpp:529
+msgid "Mail client:"
+msgstr "Cliente de correio:"
+
+#: setupdlg.cpp:542
+msgid "Dock in panel"
+msgstr "Ícone no painel"
+
+#: setupdlg.cpp:547
+msgid "Use session management"
+msgstr "Utilizar gestor de sessões"
+
+#: setupdlg.cpp:552
+msgid "Icons:"
+msgstr "Ícones:"
+
+#: setupdlg.cpp:570
+msgid "No Mail:"
+msgstr "Sem Correio:"
+
+#: setupdlg.cpp:579
+msgid "Old Mail"
+msgstr "Correio Antigo:"
+
+#: setupdlg.cpp:589
+msgid "New Mail:"
+msgstr "Correio Novo:"
+
+# This is the icon that is displayed when KBiff could not make a connection
+# to a remote server
+#: setupdlg.cpp:599
+msgid "No Conn.:"
+msgstr ""
+
+#: setupdlg.cpp:756
+msgid "Run Command"
+msgstr "Executar Comando"
+
+#: setupdlg.cpp:763 setupdlg.cpp:783 setupdlg.cpp:1178
+msgid "Browse"
+msgstr "Procurar"
+
+#: setupdlg.cpp:769
+msgid "Play Sound"
+msgstr "Tocar Som"
+
+#: setupdlg.cpp:789
+msgid "System Beep"
+msgstr "Campaínha"
+
+#: setupdlg.cpp:794
+msgid "Notify"
+msgstr "Avisar"
+
+# If this is checked, then KBiff will popup a list of mailboxes with the
+# number of new mail whenever the user puts the cursor of a KBiff icon.
+#: setupdlg.cpp:798
+msgid "Floating Status"
+msgstr ""
+
+#: setupdlg.cpp:948
+msgid "Advanced Options"
+msgstr "Opções Avançadas"
+
+#: setupdlg.cpp:952
+msgid "Mailbox URL:"
+msgstr "URL Caixa:"
+
+#: setupdlg.cpp:956
+msgid "Port:"
+msgstr "Porto:"
+
+#: setupdlg.cpp:960
+msgid "PREAUTH"
+msgstr "PREAUTH"
+
+#: setupdlg.cpp:967
+msgid "Keep Alive"
+msgstr "Keep Alive"
+
+# If this is selected, then KBiff will do all of it's network work in an
+# asynchronous mode.  That is, it will not wait for the response to any
+# given command... it will receive the response as an event, later.
+#: setupdlg.cpp:974
+msgid "Asynchronous"
+msgstr ""
+
+#: setupdlg.cpp:1123 setupdlg.cpp:1152
+msgid "Mailbox:"
+msgstr "Caixa:"
+
+#: setupdlg.cpp:1136 setupdlg.cpp:1474
+msgid "New Mailbox"
+msgstr "Nova Caixa"
+
+#: setupdlg.cpp:1143
+msgid "Delete Mailbox"
+msgstr "Apagar Caixa"
+
+#: setupdlg.cpp:1149
+msgid "Protocol:"
+msgstr "Protocolo:"
+
+#: setupdlg.cpp:1155
+msgid "Server:"
+msgstr "Servidor:"
+
+#: setupdlg.cpp:1158
+msgid "User:"
+msgstr "Utilizador:"
+
+#: setupdlg.cpp:1161
+msgid "Password:"
+msgstr "Password:"
+
+#: setupdlg.cpp:1195
+msgid "Store password"
+msgstr "Guardar password"
+
+#: setupdlg.cpp:1198
+msgid "Advanced"
+msgstr "Avançado"
+
+#: setupdlg.cpp:1675
+msgid "KBiff"
+msgstr "KBiff"
+
+#: setupdlg.cpp:1697
+#, c-format
+msgid ""
+"Version %s\n"
+"\n"
+"Copyright (C) 1999\n"
+"Kurt Granroth"
+msgstr ""
+"Versão %s\n"
+"\n"
+"Copyright (C) 1999\n"
+"Kurt Granroth"
+
+#: setupdlg.cpp:1746
+msgid "New Name:"
+msgstr "Novo Nome:"
+
+#: setupdlg.cpp:1772
+msgid "New Name"
+msgstr "Novo Nome"
+
+# This displays the number of new messages for a given mailbox
+#: status.cpp:34
+#, fuzzy
+msgid "New"
+msgstr "&Novo"

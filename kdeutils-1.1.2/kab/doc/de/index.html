@@ -1,0 +1,231 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (X11; I; Linux 2.0.33 i586) [Netscape]">
+   <TITLE>Kurzanleitung zum KDE-Adressbuch</TITLE>
+</HEAD>
+<BODY>
+
+<H1>
+Kurzanleitung zum KDE-Adre&szlig;buch</H1>
+Das Adre&szlig;buch soll eine einfache M&ouml;glichkeit zum Verwalten von
+Angaben &uuml;ber Personen, mit denen der Benutzer in Kontakt steht, erm&ouml;glichen.
+Dabei wird angestrebt, die gespeicherten Daten soweit wie m&ouml;glich
+anderen Applikationen zur Verf&uuml;gung zu stellen, so da&szlig; es nicht
+notwendig ist (oder sei sollte), die Daten in den Datens&auml;tzen verschiedener
+Programme aufzubewahren.
+<BR>Die Anleitung gliedert sich in eine Funktions&uuml;bersicht, eine Erl&auml;uterung
+der einzelnen Funktionen und einen technischen Anhang.
+<BR>Interessierte Benutzer sollten zus&auml;tzlich den Abschnitt &uuml;ber
+die Behandlung von Programmfehlern lesen, um, insofern sich die Ursache
+von Fehlern eingrenzen l&auml;&szlig;t, diese dem Autor mitteilen zu k&ouml;nnen.
+Ein stabiles Programm ist der Lohn der (h&auml;ufig gro&szlig;en) M&uuml;he
+der freiwilligen Tester, wof&uuml;r ich mich im voraus bedanke.&nbsp;
+<HR>
+<H1>
+<A NAME="Inhalt"></A>Inhalt</H1>
+
+<H2>
+<A NAME="Funktionsübersicht"></A>Funktions&uuml;bersicht</H2>
+Das Adre&szlig;buch stellt die folgenden Grundfunktionen zur Verf&uuml;gung:
+<UL>
+<LI>
+Verwalten von Personendaten wie Namen, Vornamen, Postanschriften, Telefonnummern,
+Emailadressen und Geburtstagen,</LI>
+
+<LI>
+Bereitstellen dieser Daten f&uuml;r andere KDE-Anwendungen,</LI>
+
+<LI>
+Starten des vom Benutzer gew&auml;hlten&nbsp; Email-Programms zum Editieren
+einer Email an die angezeigte Person,</LI>
+
+<LI>
+Starten des vom Benutzer gew&auml;hlten Talk-Programms f&uuml;r direkte
+Kommunikation mit demjenigen welchen, und</LI>
+
+<LI>
+Anzeigen der Homepage der ausgew&auml;hlten Person &uuml;ber KDE's Browser
+kfm oder einen anderen Web-Browser.</LI>
+</UL>
+Es gibt einige weitere Details, aber das sind die Hauptfunktionen. Ziel
+der Entwicklung war das Bereitstellen einfach zu bedienender, stabiler
+Grundfunktionalit&auml;t.
+<H2>
+<A NAME="Funktionen"></A>Erl&auml;uterung der einzelnen Funktionen</H2>
+
+<H3>
+<A NAME="Die Oberfläche"></A>Die Oberfl&auml;che</H3>
+Nach dem Start zeigt das Adre&szlig;buch ein Fenster an, dessen Hauptteil
+eine Visitenkarte abbildet. Jeder Eintrag stellt die Daten einer Person
+dar, mit den Tasten "&lt;-" und "->" kann zwischen den Eintr&auml;gen hin-
+und hergeschaltet werden. Ein neu angelegtes Adre&szlig;buch zeigt ein
+leeres Feld an.
+<BR>Die Funktion der einzelnen Schaltfl&auml;chen wird erl&auml;utert,
+wenn der Mauszeiger &uuml;ber ihnen stehengelassen wird. Die Funktionen
+der Schaltfl&auml;chen sind auch &uuml;ber das Menu erreichbar.
+<BR>Die Statuszeile am Boden des Fensters zeigt die Anzahl der Eintr&auml;ge
+und die laufende Nummer des aktuellen Eintrages sowie Meldungen des Programms
+an.
+<H3>
+<A NAME="Der Einstieg"></A>Der Einstieg</H3>
+Die neu angelegte Datenbank ist leer. Um die Daten einer Person abzulegen,
+mu&szlig; ein neuer Eintrag angelegt werden. Dazu klickt man auf das Feld
+mit der stilisierten Karteikarte, worauf sich ein Dialog &ouml;ffnet, in
+dem die einzelnen Daten eingetragen werden k&ouml;nnen. Die Bedeutung der
+Datenfelder ist weitgehend selbsterkl&auml;rend. Sind alle Daten korrekt
+eingegeben, wird "OK" angeklickt. Der Eintrag wird in die Datenbank &uuml;bernommen.
+<BR>Die von Ihnen eingegebenen Daten werden automatisch vom Programm gespeichert
+- wenn das Adre&szlig;buch das n&auml;chste Mal gestartet wird, erscheinen
+alle Eintr&auml;ge so, wie Sie sie verlassen haben.
+<H3>
+<A NAME="Emails versenden"></A>Emails versenden</H3>
+Insofern Sie zu einem Eintrag eine Email-Adresse angegeben haben, k&ouml;nnen
+Sie durch Aktivieren des Menupunktes "Editieren->Email versenden" (oder
+der Tastenkombination STRG und M) das KDE Email-Programm starten, welches
+Ihnen anbietet, den Text der Email einzugeben.
+<BR><I>(Hinweis: dazu ist es m&ouml;glicherweise notwendig, das Email-Kommando
+und die Email-Parameter zu setzen. Dazu editiert man (leider noch) die
+<A HREF="#kab's Dateien">Adre&szlig;buch-Datendatei</A> mit einem Editor
+und ver&auml;ndert dort die entsprechenden Werte. Setzen Sie keine nicht
+notwendigen Leerzeichen, ver&auml;ndern Sie die Schl&uuml;ssel (links vom
+Gleichheitszeichen) nicht und beachten Sie die gro&szlig;- und Kleinschreibung.
+Das Schl&uuml;sselwort </I>&lt;person><I> in den Email-Parametern wird
+mit der Email-Adresse ersetzt, das Schl&uuml;sselwort </I>&lt;subject><I>
+mit einem eventuellen Thema.)</I>
+<H3>
+<A NAME="Browser aufrufen"></A>Browser aufrufen</H3>
+Ein Datensatz, der die Internet-Adresse der Homepage des betreffenden enth&auml;lt,
+erm&ouml;glicht es Ihnen, durch Aktivieren des Menupunkts "Editieren->Browser
+starten" (oder der Tastenkombination STRG und B) die Seite vom Dateimanager
+anzeigen zu lassen.
+<H3>
+<A NAME="Einträge durchsuchen"></A>Eintr&auml;ge durchsuchen</H3>
+Unter dem Menupunkt "Datei->Eintr&auml;ge durchsuchen" k&ouml;nnen Sie
+bestimmte Datenfelder der Eintr&auml;ge nach Mustern durchsuchen. Geben
+Sie zum Beispiel "Meier" ein und selektieren Sie das Datenfeld "Name",
+um alle Eintr&auml;ge, deren Name "Meier" ist, herauszufinden. Die Suchergebnisse
+werden im Programmfenster angezeigt, durch Anklicken eines Eintrags in
+der Liste wird dieser dargestellt.
+<BR>Sie k&ouml;nnen f&uuml;r die Suche Muster verwenden. Diese Muster entsprechen
+denen, die Sie (m&ouml;glicherweise) aus dem Filtern von Verzeichnisansichten
+kennen, also etwa ein Stern f&uuml;r eine beliebige Zeichenfolge. Das Suchmuster
+"*er" angewandt auf das Namensfeld findet alle Eintr&auml;ge, bei denen
+der Name auf "er" endet.
+<H2>
+<A NAME="Die einzelnen Datenfelder"></A>Die einzelnen Datenfelder</H2>
+Die Anzahl der verschiedenen m&ouml;glichen Daten einer Person ist verh&auml;ltnism&auml;&szlig;ig
+gro&szlig;, gleichzeitig machen bestimmte Daten nicht bei allen Personen
+Sinn. Deshalb zeigt das Adre&szlig;buch nur die Daten im Visitenkartenfeld
+an, die Angaben enthalten. Beginnen Sie einen neuen Eintrag oder editieren
+Sie einen bereits eingegebenen, so sehen Sie einen Dialog aus mehreren
+Teilen, die Angaben zu bestimmten Bereichen enthalten.
+<BR>Die Bedeutung der Felder <I>Titel</I>, <I>Vorname</I>, <I>zweiter Name</I>
+und <I>Name</I> braucht wohl nicht erl&auml;utert zu werden. Der <I>formatierte
+Name</I> dient dazu, den als Namen angezeigten Text festzulegen. Normalerweise
+setzt das Programm diesen aus den vorher genannten Feldern zusammen. Sollte
+es dabei Fehler machen oder f&uuml;r eine bestimmte Person vom Standardvorgehen
+abgewichen werden, gibt man die Schreibweise im Feld "<I>Formatierter Name</I>"
+an. Sobald dieses Feld Daten enth&auml;lt, ersetzen diese die normalerweise
+angezeigte Namenszeile.
+<BR>Die Felder <I>Organisation</I>, <I>Position</I>, <I>Abteilung</I> und
+<I>Bereich</I> dienen zur Beschreibung zum Beispiel von Mitarbeitern von
+Unternehmen, mit denen man in Kontakt steht.
+<BR>Des Kontakte-Formular enth&auml;lt Angaben zu den verschiedenen M&ouml;glichkeiten,
+die Person zu erreichen. Wenn Sie eine <I>Email-Adresse</I> eingeben, k&ouml;nnen
+Sie nach dem Abspeichern eine <A HREF="#Emails versenden">Email an die
+Person verschicken</A>. Geben Sie die Adresse der <I>Homepage</I> der Person
+ein, k&ouml;nnen Sie nach dem Abspeichern einen <A HREF="#Browser aufrufen">Browser
+aufrufen</A>, der diese anzeigt.
+<BR>Im letzten Teil k&ouml;nnen Sie den <I>Geburtstag</I> des Betreffenden
+und einen <I>Kommentar</I> eingeben. Zum Eingeben des Geburtstages doppelklicken
+Sie auf das Geburtstagsfeld, es erscheint ein Dialog, in dem Sie ein Datum
+ausw&auml;hlen k&ouml;nnen.
+<H2>
+<A NAME="Konfiguration"></A>Konfiguration</H2>
+Die Konfiguration ist noch nicht komfortabel implementiert. Risikofreudige
+Anwender k&ouml;nnen die <A HREF="#kab's Dateien">Adre&szlig;buchdatenbank</A>
+editieren, wodurch die meisten Konfigurationsm&ouml;glichkeiten bereits
+jetzt zur Verf&uuml;gung stehen, sollten die Datei vorher aber absichern.
+Viel Gl&uuml;ck.
+<BR>Ich werde in der Zwischenzeit die grafische Konfiguration programmieren.
+<H2>
+<A NAME="kab's Dateien"></A>kab's Dateien</H2>
+<I>kab</I> erstellt einige Dateien in Ihrem Home-Verzeichnis, die allerdings
+versteckt sind. Sie finden sie im Verzeichnis
+<UL><TT>$HOME/.kde/share/apps/kab/</TT></UL>
+Das Verzeichnis enth&auml;lt die Datei <TT>addressbook.database</TT>, welche
+wiederum die Adressen enth&auml;lt, und (insofern Sie <I>kab</I> bereits
+mindestens zum zweiten Mal gestartet haben) eine zweite Datei namens <TT>addressbook.database.backup</TT>.
+Solange Sie <I>kab</I> nutzen, k&ouml;nnen sich im Datenverzeichnis weitere
+Dateien befinden, die <I>kab</I> zum Betrieb ben&ouml;tigt.
+<H2>
+<A NAME="Das Backup-File"></A>Das Backup-File</H2>
+<I>kab</I> erstellt bei jedem Start eine Kopie Ihrer Adre&szlig;buch-Datei
+in seinem (versteckten) <A HREF="#kab's Dateien">Datenverzeichnis</A>.
+Diese Datei enth&auml;lt den Stand Ihres Adre&szlig;buchs, den kab <I>beim
+letzten Start des Programms</I> vorgefunden hat. Wenn Sie <I>kab</I> jetzt
+im Augenblick gestartet haben, enth&auml;lt die Datei den Stand beim Start
+des jetzt laufenden Prozesses.
+<BR>Sollten Sie aufgrund eines Programmabsturzes oder einer "gewaltsamen"
+Beendigung des Programms nach dem <A HREF="#Fehlerbehandlung">Abfangen
+eines Fehlers</A> bef&uuml;rchten, da&szlig; Ihre Adre&szlig;buch-Datenbank
+besch&auml;digt wurde, kopieren Sie Sich die Backup-Datei an einen sicheren
+(anderen!) Ort, <I>bevor (!) Sie </I>kab<I> ein weiteres Mal starten</I>
+(zum Kopieren &ouml;ffnen Sie kab's Datenverzeichnis mit dem KDE Dateimanager
+und ziehen die Backup-Datei auf den Desktop. Best&auml;tigen Sie mit "Kopieren".)
+Ist Ihre Datei tats&auml;chlich besch&auml;digt worden, &uuml;berschreiben
+Sie die Adre&szlig;buch-Datei mit Ihrer Kopie des Backups.
+<H2>
+<A NAME="Fehlerbehandlung"></A>Fehlerbehandlung</H2>
+Wenn Sie den folgenden Dialog sehen, ist ein Fehler in <I>kab</I> entdeckt
+worden.
+<CENTER><IMG SRC="fehler.gif" ALT="(Fehler-Anzeige)" NOSAVE HEIGHT=213 WIDTH=413 ALIGN=RIGHT></CENTER>
+Sie haben nun drei M&ouml;glichkeiten, darauf zu reagieren:
+<OL>
+<LI>
+Sie ignorieren den Fehler. <I>kab</I> f&auml;ngt viele Fehler ab, die nicht
+wirklich kritisch sind. Trotzdem ist es m&ouml;glich (und auch recht wahrscheinlich),
+da&szlig; der Fehler kritisch ist. In diesem Fall wird das Programm Fehler
+begehen, die Ihre Daten gef&auml;hrden k&ouml;nnen. Speichern Sie also
+nach einer Fehlermeldung ab und beenden Sie <I>kab</I>. Nach einem Neustart
+k&ouml;nnten Ihre Daten noch vorhanden sein (sollte Ihnen ein solcher Fehler
+das erste Mal auffallen, lesen Sie in jedem Fall den Abschnitt <A HREF="#Das Backup-File">Das
+Backup-File</A>).</LI>
+
+<LI>
+Sie beenden da&szlig; Programm (was hier auf eine recht rigide Weise erfolgt).
+Alle &Auml;nderungen, die Sie eingegeben haben und die noch nicht abgespeichert
+wurden, sind unwiederbringlich verloren. Nun, nicht ganz unwiederbringlich,
+siehe Abschnitt <A HREF="#Das Backup-File">Das Backup-File</A>.</LI>
+
+<LI>
+Sie senden eine Email an den <A HREF="mailto:mirko@kde.org">Autor</A> des
+Programs. Diese Funktion sollten Sie nur nutzen, wenn dieser (genau dieser)
+Fehler bei Ihnen zum ersten Mal auftritt. Das Programm wird selbst&auml;ndig
+einige Informationen &uuml;ber den Fehler hinzuf&uuml;gen. Details &uuml;ber
+Ihren Rechner werden nicht ausspioniert, versprochen.</LI>
+</OL>
+Das Versenden einer Email kann fehlschlagen, wenn kab bereits zu sehr durcheinandergeraten
+ist. In diesem Fall k&ouml;nnen Sie Sich die kryptischen Angaben notieren,
+die im Fehlerfenster angezeigt werden und mit Ihrem Lieblingsmailprogramm
+an den Autor versenden.
+<H2>
+Technischer Anhang</H2>
+Sp&auml;ter.
+<BR>
+<HR>
+<OL>
+<LI>
+vCard ist ein Warenzeichen von Versit. Versit ist eine Initiative von Apple,
+AT&amp;T, IBM und Siemens.</LI>
+</OL>
+
+<HR WIDTH="100%">
+<ADDRESS>
+<A HREF="mailto:mirko@kde.org">Mirko Sucker</A></ADDRESS>
+
+<BR><!-- Created: Wed Feb  4 20:39:53 MET 1998 --><!-- hhmts start -->Last
+modified: Wed Feb 4 20:52:25 MET 1998&nbsp;<!-- hhmts end -->
+</BODY>
+</HTML>

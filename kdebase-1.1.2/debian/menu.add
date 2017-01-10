@@ -1,0 +1,23 @@
+?package(kdebase):\
+	needs=wm\
+	section=WindowManagers\
+	title="KDE WindowManager"\
+	command=kde
+?package(kdebase):\
+	needs=x11\
+	section=Apps/KDE/Tools\
+	title="KDE Filemanager"\
+	command=kfm\
+	icon=/usr/share/pixmaps/kfm_home.xpm
+?package(kdebase):\
+	needs=x11\
+	section=Apps/KDE/Viewers\
+	title="KDE Help"\
+	command=kdehlp
+?package(kdebase):\
+	needs=x11\
+	section=Apps/KDE/Tools\
+	title="KDE Fontmanager"\
+	command=kfontmanager
+
+

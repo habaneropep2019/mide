@@ -1,0 +1,192 @@
+# Russian messages for kcmktalkd.
+# Copyright (C) 1998 KDE Team.
+# Const Kaplinsky <const@ce.cctpu.edu.ru>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmktalkd\n"
+"POT-Creation-Date: 1998-12-12 15:20+0100\n"
+"PO-Revision-Date: 1998-12-31 07:14+07:00\n"
+"Last-Translator: Const Kaplinsky <const@ce.cctpu.edu.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:58
+msgid "&Announcement"
+msgstr "&Анонс"
+
+#: main.cpp:61
+msgid "Ans&wering machine"
+msgstr "А&втоответчик"
+
+#: main.cpp:64
+msgid "&Forward"
+msgstr "&Переадресация"
+
+#: main.cpp:70
+msgid "usage: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+msgstr ""
+"использование: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+
+#: main.cpp:111
+msgid "KTalkd Configuration"
+msgstr "Конфигурация KTalkd"
+
+#: soundpage.cpp:46
+msgid "&Announcement program"
+msgstr "&Программа анонсирования"
+
+#: soundpage.cpp:53
+msgid "&Talk client"
+msgstr "&Клиент talk"
+
+#: soundpage.cpp:57
+msgid "&Play sound"
+msgstr "&Проигрывание звука"
+
+#: soundpage.cpp:59
+msgid "&Sound File"
+msgstr "&Звуковой файл"
+
+#: soundpage.cpp:61
+msgid "Additional WAV files can be dropped onto the sound list."
+msgstr "В список звуков могут быть включены дополнительные WAV-файлы."
+
+#: soundpage.cpp:76
+msgid "&Test"
+msgstr "&Тест"
+
+#: soundpage.cpp:156
+msgid "Unsupported URL"
+msgstr "Не поддерживаемый тип URL"
+
+#: soundpage.cpp:157
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE System Sound "
+"Module"
+msgstr ""
+"Извините, этот тип URL в настоящее время не поддерживается системным "
+"звуковым модулем KDE"
+
+#: soundpage.cpp:164
+#, c-format
+msgid ""
+"Sorry, but \n"
+"%s\n"
+"does not seem to be a WAV--file."
+msgstr ""
+"Извините, но похоже, что \n"
+"%s\n"
+"не является корректным WAV-файлом."
+
+#: soundpage.cpp:167
+msgid "Improper File Extension"
+msgstr "Неверное расширение файла"
+
+#: soundpage.cpp:175
+#, c-format
+msgid ""
+"The file\n"
+"%s\n"
+"is already in the list"
+msgstr ""
+"Файл\n"
+"%s\n"
+"уже присутствует в списке"
+
+#: soundpage.cpp:179
+msgid "File Already in List"
+msgstr "Файл уже присутствует в списке"
+
+#: answmachpage.cpp:39
+msgid "&Activate answering machine"
+msgstr "&Включить автоответчик"
+
+#: answmachpage.cpp:44
+msgid "&Mail address"
+msgstr "&Адрес E-mail"
+
+#: answmachpage.cpp:51
+msgid "Mail sub&ject"
+msgstr "&Тема письма"
+
+#: answmachpage.cpp:54
+#, c-format
+msgid "Use %s for the caller name"
+msgstr "Используйте %s для имени вызывающего"
+
+#: answmachpage.cpp:60
+msgid "Mail &first line"
+msgstr "&Первая строка"
+
+#: answmachpage.cpp:64
+#, c-format
+msgid "Use first %s for caller name, and second %s for caller hostname"
+msgstr "Используйте %s для имени вызывающего, %s для имени его машины"
+
+#: answmachpage.cpp:68
+msgid "&Receive a mail even if no message left"
+msgstr "&Получать почту даже при отсутствии сообщения"
+
+#: answmachpage.cpp:74
+msgid "&Banner displayed on answering machine startup :"
+msgstr "&Заставка, отображаемая при запуске автоответчика :"
+
+#: answmachpage.cpp:83
+msgid ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+msgstr ""
+"Человек, которого Вы вызываете, не отвечает.\n"
+"Оставьте, пожалуйста, сообщение для доставки по E-Mail.\n"
+"Просто начинайте набирать текст и по окончании\n"
+"завершайте сеанс обычным образом."
+
+#: answmachpage.cpp:171 answmachpage.cpp:189
+#, c-format
+msgid "Message from %s"
+msgstr "Сообщение от %s"
+
+#: answmachpage.cpp:172 answmachpage.cpp:191
+#, c-format
+msgid "Message left in the answering machine, by %s@%s"
+msgstr "На автоответчике оставлено сообщение от %s@%s"
+
+#: forwmachpage.cpp:34
+msgid "Activate &forward"
+msgstr "Разрешить &переадресацию"
+
+#: forwmachpage.cpp:39
+msgid "&Destination (user or user@host)"
+msgstr "&Адресат (пользователь или пользователь@машина)"
+
+#: forwmachpage.cpp:49
+msgid "Forward &method"
+msgstr "&Метод переадресации"
+
+#: forwmachpage.cpp:54
+msgid ""
+"FWA : Forward announcement only. Direct connection. Not recommended.\n"
+"FWR : Forward all requests, changing info when necessary. Direct "
+"connection.\n"
+"FWT : Forward all requests and take the talk. No direct connection.\n"
+"\n"
+"Recommended use : FWT it you want to use it behind a firewall (and if "
+"ktalkd\n"
+"can access both networks), and FWR otherwise.\n"
+"\n"
+"See Help for further explanations.\n"
+msgstr ""
+"FWA : Переадресовывать только анонсы. Прямое соединение. Не рекомендуется.\n"
+"FWR : Переадресовывать все запросы, корректируя информацию. Прямое "
+"соединение.\n"
+"FWT : Переадресовывать все запросы и вести разговор. Без прямого "
+"соединения.\n"
+"\n"
+"Рекомендуется: FWT, если нужно использовать через firewall (и при этом\n"
+"ktalkd имеет доступ к обеим сетям), или FWR в противном случае.\n"
+"\n"
+"Для более подробных разъяснений смотрите Помощь.\n"

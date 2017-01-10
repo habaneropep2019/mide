@@ -1,0 +1,31 @@
+[Common]
+Name=Hayes Compatible
+Reset=Z
+Init=ATV1
+Volume0=M0L0
+Volume1=M1L1
+Volume2=M1L3
+PreInitDelay=50
+PostInitDelay=30
+InitResponse=OK
+BlindDialOn=X3
+BlindDialOff=X4
+ToneDial=DT
+PulseDial=DP
+ConnectResponse=CONNECT
+BusyResponse=BUSY
+NoCarrierResponese=NO CARRIER
+NoDialTone=NO DIALTONE
+SupportsCD=true
+
+[!Zyxel Omni TA128]
+Vendor=Zyxel
+Reset=&F
+
+[Zyxel Omni TA128/X75]
+Parent=!Zyxel Omni TA128
+Init=B20 V1 E1
+
+[Zyxel Omni TA128/sync.PPP]
+Parent=!Zyxel Omni TA128
+Init=B40 V1 E1

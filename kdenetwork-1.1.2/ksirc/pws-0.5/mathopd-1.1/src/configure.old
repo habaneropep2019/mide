@@ -1,0 +1,79 @@
+#!/bin/sh
+
+CC="gcc"
+CFLAGS="-O -Wall"
+CPPFLAGS=""
+LDLIBS=""
+
+if hash gcc 2>/dev/null
+then
+	echo "Hurrah... we have $CC."
+else
+	echo "Hmm... no $CC found. Falling back to cc."
+	CC="cc"
+	CFLAGS="-O"
+fi
+
+case `uname -sr` in
+SunOS\ 4*)
+	echo "Configuring for SunOS"			# Mathop
+	CPPFLAGS="-DSUNOS"
+	;;
+SunOS\ 5*)
+	echo "Configuring for Solaris"			# Mathop
+	CPPFLAGS="-DSOLARIS"
+	LDLIBS="-lsocket -lnsl"
+	;;
+ULTRIX*)
+	echo "Configuring for Ultrix"			# Etaoin
+	CPPFLAGS="-DULTRIX"
+	;;
+OSF1*)
+	echo "Configuring for Digital Unix"		# Etaoin
+	CPPFLAGS="-DOSF"
+	;;
+IRIX*)
+	echo "Configuring for Irix"			# Etaoin
+	CPPFLAGS="-DIRIX"
+	;;
+HP-UX*)
+	echo "Configuring for HP-UX"			# Etaoin
+	CPPFLAGS="-DHPUX"
+	;;
+Linux*)
+	echo "Configuring for Linux"			# Mathop
+	CPPFLAGS="-DLINUX"
+	;;
+FreeBSD*)
+	echo "Configuring for FreeBSD"			# Mathop
+	CPPFLAGS="-DFREEBSD"
+	;;
+*)
+	echo "Unknown system. Using default settings.
+Please inspect the Makefile for possible changes.
+And send me a bug report.
+
+Michiel Boland <boland@diva.nl>"
+	;;
+esac
+
+cat << EOF > Makefile
+BIN=mathopd
+OBJS=main.o config.o core.o request.o imap.o cgi.o dump.o
+DEPENDS=mathopd.h Makefile
+
+CC=${CC}
+CFLAGS=${CFLAGS}
+CPPFLAGS=${CPPFLAGS}
+LDFLAGS=${LDFLAGS}
+LDLIBS=${LDLIBS}
+RM=rm -f
+
+\$(BIN): \$(OBJS)
+	\$(CC) \$(LDFLAGS) -o \$(BIN) \$(OBJS) \$(LDLIBS)
+\$(OBJS): \$(DEPENDS)
+.c.o:
+	\$(CC) -c \$(CFLAGS) \$(CPPFLAGS) \$<
+clean:
+	\$(RM) \$(BIN) \$(OBJS)
+EOF

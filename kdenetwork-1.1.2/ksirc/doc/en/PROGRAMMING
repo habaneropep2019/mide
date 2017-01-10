@@ -1,0 +1,770 @@
+                    programming your sirc client
+	            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Warning: to understand this you need to know perl (the programming
+language; type "man perl" for more info on it), and to have read the
+README thoroughly.
+
+For a real usable example of sirc script, look at the file n0thing.pl;
+if you wonder how you could do something in sirc script, try
+understanding the functions defined in there.
+
+
+Commands:
+
+From /loaded scripts and .sircrc.pl, you can define new commands
+and give their implementation in perl. 
+
+These scripts are actually files of perl code, and they get loaded
+right into sirc's context.
+
+To define a new command, all you need to do is define a sub with the 
+name cmd_yourcommandname which does whatever you want it to do, and call 
+&addcmd("yourcommandname");
+
+You can also define some help for the command, by calling
+&addhelp("yourcommandname", "First line of help\nSecond line of help...");
+
+Your sub gets all of its arguments in the global variable $args 
+(unparsed), its own name in $cmd, and the whole command line in $line.
+
+It can also use a number of routines from the sirc client:
+
+  &load("file");	 loads a sirc script, searching in @loadpath.
+			 the ".pl" extension is optional.
+
+  &dosplat;		 turns a * into the current channel name, if it's
+  			 the first word of $args
+
+  &getarg;		 to get the first word of $args in $newarg and
+  			 the rest in $args
+
+  &yetonearg;		 same thing, removing a trailing : in $args if
+  			 there's one
+
+  &eq("txt1", "txt2");   tests case-insensitive equality
+
+  &sl("text");		 to send a line of text to the server (the
+			 trailing "\n" gets added automatically)
+
+  &tell("txt");		 sends text to the screen, adding a "\n", and
+  			 only if not in silent mode
+
+  &print("txt");  	 sends text to the screen, adding a "\n", regardless
+  			 of silent mode
+
+  &getuserline("str", "prompt");
+  			 prints "str" on the screen, puts "prompt" as a
+			 temporary prompt if using ssfe, and prompts the
+			 users for a line, returning it in $_
+
+  &getuserpass("str", "prompt");
+			 same for prompting passwords; ssfe will not echo
+			 the password
+
+  &dostatus;	   	 redisplays the status line
+
+  &msg("nck", "msg");	 sends a message, printing it.  the destination
+			 can be a nick, a channel, or a =nick (DCC CHAT)
+
+  &notice("nck", "msg"); sends a notice, printing it.  the destination
+			 can be a channel or a nick
+
+  &say("msg");		 says somethign on the current channel, printing it
+
+  &describe("nck", "msg");  sends a /describe, printing it
+
+  &me("msg");            does an action on the current channel, printing it
+
+  &connect($fh, "host", port);
+  			 opens a tcp connection with the given host and
+			 port.  the first argument ($fh) must be a
+			 variable and &connect sets it to the value of
+			 the file handle associated with the connection.
+			 &tell's a message and returns 0 if there's an
+			 error, otherwise returns 1.
+
+  &listen($fh, port);	 opens listening socket bound to the given port;
+			 lets the system pick a port if the specified
+			 port is 0 (or the second argument is not passed
+			 at all).  the first argument must be a variable
+			 and &listen sets it to the value of the file
+			 handle associated with the listening socket.
+			 &tell's a message and returns 0 if there's an
+			 error, otherwise returns the port on which the
+			 socket listens.
+
+  &accept($nfh, $ofh);   accepts a connection on the file handle $ofh
+			 (which must refer to a listening socket), and
+			 returns it in $nfh;  $nfh must be a variable
+			 and will be changed by &accept.  $ofh is
+			 automatically closed by &accept.  returns a
+			 boolean value, but does not print an error
+			 message in any case.
+
+  &resolve("address");   resolves a hostname into a packed in_addr (i.e
+			 a 4-byte string representing the IP address).
+			 the argument can be a hostname, an IP address
+			 written in dotted quad notation, or a (large)
+			 number representing the address, "read" as a
+			 32-bit number in network order.  if the
+			 resolution fails, returns a false result ("" or
+			 0 or undef).
+
+			 to get a dotted quad from what &resolve returns,
+			 use join(".", unpack("C4", &resolve("whatever")))
+
+  &newfh;		 returns a fresh name for use as a filehandle
+
+  &doset("variable", "value");
+  			 sets a value to a SET variable; the value is
+			 validated, and this has no effect if the value
+			 is incorrect or the variable does not exist.
+			 this is the only way scripts should ever change
+			 the values of SET variables, except possibly
+			 those that they define themselves.
+
+  &docommand("command"); interprets a command line as if it were typed at
+  			 the keyboard.  a *single* leading "/" will 
+			 disable alias/function expansion on the 
+			 command.
+			 *warning* this calls the command dispatcher 
+			 recursively from itself, which is pretty bad.
+			 there is a test against loops (a limit on
+			 recursion, set to 20), but it's mostly up to
+			 *you* to make sure your scripts work.
+			 perl being a language with strong and powerful
+			 control structures (unlike ircII...), recursion
+			 at this level should be avoided whenever
+			 possible.
+
+
+You have access to the a number of global variables;  note that some have
+been removed because they have been turned into SET variables, to be
+read in %set and written to with &doset.  
+
+Unless otherwise specified, these variables should be treated as
+read-only by scripts.
+
+  $version		 sirc's version - should always be a number, and
+			 never be modified by a user function
+
+  $add_ons		 additional modules loaded; scripts can add a
+			 "+scriptname" to it
+
+  $restrict		 set to true if sirc is running in restricted
+			 (secure) mode, which disallows access to the
+			 shell and to the filesystem
+
+  $maxrecursion		 number of times &docommand may be called recursively
+			 before giving a "max recursion exceeded" error (you
+			 can change this one, but it is not guaranteed to
+			 work on future versions where this might become a
+			 SET variable)
+
+  $nick			 your current nick
+
+  $server		 your current server
+
+  @channels		 list of channels you're on
+
+  $talkchannel		 your current channel (or '' if none)
+
+  %mode			 associative array with the modes of the different
+  			 channels we're on.  the channel names are all in
+			 lower case, and the mode is a string of letters
+			 without +'s or -'s, and without 'k' or 'l' either
+			 since those are treated separately.  the value
+			 for channels without any mode is '', while the
+			 value for channels we're not on is undef.
+
+  %chankey		 keys to channels, undef if none or we're not on
+  			 the channel.  channel names are in lower case.
+
+  %limit		 limits to channels, undef if none or we're not
+  			 on the channel.  channel names in lower case.
+
+  %haveops		 associative array of booleans, true if we have ops
+  			 on the channel.  channel names are...  you know how
+
+  $umode		 user mode, string of letters without +'s or -'s
+
+  $query		 whoever you're querying, or '' if no-one
+
+  %aliases		 associative array of defined substitution aliases;
+  			 the alias name is in CAPS
+
+  %set			 associative array of SET variable values; the
+			 variable name is in CAPS too
+
+  %notify		 associative array of the notify list; the value
+  			 for a given nick is 0 for "absent", or the time
+			 of the most recent notification for this nick
+
+  $bindaddr		 this is the IP address of the machine to which
+			 outgoing connections are bound, as far as sirc
+			 can tell.  it changes when the "localhost" SET
+			 variable changes, and is set to the IP of the
+			 proxy machine when sirc is running with socks
+			 support loaded.  $bindaddr is a 4-byte string
+			 representing a packed in_addr; you can get an
+			 integer out of it (as used by DCC CHAT/SEND)
+			 with unpack("N", $binaddr); and a dotted quad
+			 with join(".", unpack("C4", $bindaddr));
+
+
+
+Unless otherwise specified, commands and hooks should never modify the
+parameters that are passed to them (i.e. do somethign like
+$_[1]="some value".  If they wish to modify local copies of them, they
+should start with local(...)=@_;
+
+Also, if your script is going to use global variables, please make sure 
+they're not likely to clash with sirc's own (same goes for file 
+descriptor names, and procedures).  A good convention would be to give 
+all these variables and procedures a name that starts with the script 
+name, or with a few letters from it.  For example, in n0thing.pl all the 
+script's global variables and internal procedures have names that start 
+with "n_".
+
+Example, which could be put into a file and /load'ed directly, of
+a command that will yeek on a channel if you specify one, and at a
+nick if you do too:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sub cmd_yeek {
+  &dosplat;		# if the 1st arg is *, replace it with $talkchannel
+  &getarg;		# get 1st arg in $newarg
+  local($channel)=($talkchannel);	# by default we talk to $talkchannel
+  if ($newarg =~ /^[\#\&]/) {		# if the 1st arg starts with # or &
+    $channel=$newarg;			# talk there instead
+    &getarg;				# and get an extra arg
+  }
+  if ($newarg) {	# look at whether we specified who we're yeeking at
+    &describe($channel, "look at $newarg and *yeeeks*");
+  } else {		# or not
+    &describe($channel, "*yeeks* at the crowd");
+  }
+}
+
+# \cb is the way to specify ^B in perl
+&addcmd("yeek");
+&addhelp("yeek", "Usage: \cbYEEK\cb [<channel>] [<nick>]
+Yeeks at the given nickname or at the whole channel.
+Examples: /yeek someone
+          /yeek * someone
+ 	  /yeek #channel
+ 	  /yeek #channel someone");
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Hooks: 
+
+From /load'ed scripts, as well as from .sircrc.pl, you have
+the possibility to define subs to be called when specified events
+occur.  This is the equivalent of ircII's /on's.
+
+To declare a hook, you must define a subroutine called "hook_somename"
+which does whatever you want done when a hook of type "hook_type" is
+triggered, and then call &addhook("hook_type", "somename");
+
+To remove a hook, you call &remhook("hook_type", "somename");
+
+Numeric hooks are also available, for every 3-digit number; to declare
+one of those, define a soubroutine called "hook_somename" which does
+what you want, and call &addhook("xxx", "somename"), where xxx is the
+number of the numeric reply.  To remove one of these, you call
+&remhook("xxx", "somename");
+
+Subs called from hooks have access to the same functions and variables
+listed above for functions, plus a few specific ones (wherever
+applicable):
+
+$who		is the nick that triggered the hook
+$user           is the corresponding username
+$host		is the corresponding hostname
+
+Hooks can also set the variable $silent if they want to provide the
+display for the event (via &print) and inhibit the default.  This
+is the direct equivalent of the "^" switch on ircII /on's, except
+for "raw_irc".
+
+Hooks marked with a * can also set the special variable $skip and cause
+the line to be ignored by the client.  This is in general a bad idea,
+use $silent whenever possible.  Only the hooks where this provides some
+actual additional functionality have this possibility.  For "raw_irc"
+this is the equivalent of "^" switch on ircII's /on raw_irc.
+
+The following hooks are available, and get called with the following
+arguments:
+
+action		activated by a ctcp action;
+		1st arg is the nick or channel it was sent to
+		2nd arg is the message
+
+command      *	activated by the user typing a command (regardless of
+		whether it is a /command or just a line of text)
+		1st arg is the user's line
+		this hook is special in that (like "print" and
+		"status"), it is explicitly allowed to modify its
+		argument ($_[0]) to change what command should be
+		interpreted.
+		setting $skip=1 in the hook will make sirc ignore the
+		command
+
+chat_disconnect activated when a dcc chat is lost (but not when the
+		user closes one with DCC CLOSE CHAT)
+		1st arg is the nick associated with the chat
+
+ctcp	     *	activated by any ctcp, BEFORE the client parses
+		and eventually answers the ctcp.
+		1st arg is the nick or channel it was sent to
+		2nd arg is the ctcp command
+		3rd arg are the arguments
+
+ctcp_reply	activated by ctcp replies;
+		1st arg is the nick or channel it was sent to
+		2nd arg is the ctcp command
+		3rd arg are the arguments
+
+dcc_chat	activated by received text over a dcc chat
+		1st arg is the nick
+		2nd arg is the text
+
+dcc_disconnect  activated when a dcc get or send is finished or closed
+		(even when the user closes one with DCC CLOSE GET/SEND)
+		1st arg is the nick associated with the chat
+		2nd arg is the filename
+		3rd arg is the number of bytes transferred
+		4th arg is the number of seconds the transfer took
+
+dcc_request	activated by a received dcc chat or send request, and
+		after the client has processed the request.  this is
+		the hook to use if you want to implement any kind of
+		auto-dcc.
+		1st arg is the type ("CHAT" or "SEND")
+		2nd arg is the machine address (a 32-bit integer)
+		3rd arg is the port
+		for a DCC SEND offer:
+		  4th arg is the file name
+		  5th arg is the file lenght
+
+disconnect	activated by losing the connection to the server, or
+		breaking it with /disconnect (but not with /server).
+		no arguments are passed
+
+input	     *	activated whenever the client wants to ask the user
+		for a line through &getuserline (i.e. when you got
+		disconnected, or need a new nick, or some script called
+		&getuserline).
+		1st arg is the "long" prompt
+		2nd arg is the "short" one
+		if the hook sets $skip, then &getuserline won't ask
+		the user for anything, and the contents of $_ will
+		be returned
+
+invite		activated by invites;
+		1st arg is the channel you're invited to
+
+join		activated by joins;
+		1st arg is the channel that $who is joining
+
+kick		activated by kicks;
+		1st arg is the nick of the person who got kicked
+		2nd arg is the channel that they got kicked from
+		3rd arg is the reason
+
+leave		activated by parts;
+		1st arg is the channel that $who is leaving
+
+mode		activated by mode changes;
+		1st arg is the channel or user the change applies to
+		2nd arg is the mode change itself
+
+msg		activated by msgs;
+		1st arg is the message
+
+nick		activated by nick changes
+		1st arg is $who's new nick
+
+notice		activated by notices
+		1st arg is the nick or channel it was sent to
+		2nd arg is the message
+
+server_notice	activated by notices from servers
+		1st arg is the nick or channel it was sent to
+		2nd arg is the message
+
+notify_signon	activated by a notify signon
+		1st arg is the nick
+		$user and $host are *not* set to anything meaningful
+
+notify_signoff	activated by a notify signoff
+		1st arg is the nick
+		$user and $host are *not* set to anything meaningful
+
+print	     *	activated by the printing of any line to the screen
+		1st arg is the line to print
+		this hook is special in that (like "status" and
+		"command") it is explicitly allowed to modify its
+		argument ($_[0]) to change what line should be
+		printed.
+		setting $skip=1 in the hook will prevent the line from
+		being actually printed
+
+public		activated by non-ctcp messages to a channel;
+		1st arg is the channel
+		2nd arg is the message
+
+raw_irc	     *	activated by any server line
+		$who    is the originator (user or server)
+		$user   is his username ('' if it comes from a server)
+		$host   is his hostname (same comment)
+		1st arg is the command
+		2nd arg are the arguments
+
+send_action	activated when we send a /me or a /de
+		($who, $user and $host do not apply here)
+		1st arg is the nick/channel
+		2nd arg	is the action
+
+send_ctcp	activated when we send a ctcp
+		1st arg is the nick or channel the ctcp is being sent to
+		2nd arg is the complete ctcp text (type and arguments)
+
+send_dcc_chat	activated when we send text over a dcc chat
+		($who, $user and $host do not apply here)
+		1st arg is the nick we're sending to
+		2nd arg is the text
+
+send_text	activated when we send a /msg or speak on a channel
+		($who, $user and $host do not apply here)
+		1st arg is the nick/channel
+		2nd arg is the msg
+
+send_notice	activated when we send a notice
+		($who, $user and $host do not apply here)
+		1st arg is the nick/channel
+		2nd arg is the notice
+
+signoff		activated when someone signs off
+		1st arg	is the quitting comment
+
+status		activated when sirc redraws the status line (as a
+		result of &dostatus being called, either internally
+		or by a script).
+		1st arg is the proposed status line
+		this hook is special in that (like "print" and
+		"command") it is explicitly allowed to modify its
+		argument ($_[0]) to change what should go to the status
+		line
+
+topic		activated when someone changes the topic
+		1st arg is the channel
+		2nd arg is the new topic
+
+<3-digit nb>  * activated by that particular server numeric reply
+		1st arg is whatever the server sent after the number,
+	 	unparsed (which means there's still a : in front of the
+	 	last argument)
+
+
+Example, which could be put into a file and /load'ed directly, of
+a hook that will rejoin a channel whenever you are kicked:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# auto-rejoin hook
+
+sub hook_kicked {
+  local($kicked, $where_from, $reason)=@_;
+  					# local vars with the args
+  if (&eq($kicked, $nick)) {		# if *we* got kicked
+    &sl("JOIN $where_from");		# send a JOIN to the server
+  }
+}
+&addhook("kick", "kicked");	  	# activate the hook
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Another example, to display the username and hostname with each message
+(which is better done with /set printuh anyway):
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# userhost-on message hook
+
+sub hook_uhmsg {
+  &tell("[\cb${who}!${user}\@${host}\cb] $_[0]");  # print everything
+  $silent=1;			# disable the default display
+}
+&addhook("msg", "uhmsg");	  	# activate the hook
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+SET variables:
+
+A script can access SET variables:
+
+. to read them, you just need to look at $set{"VARIABLE"}, where the
+  variable name is written in caps
+
+. to set them, call &doset("variable", "value");  the variable name
+  can be in either case (case is not significant) and the value is
+  checked
+
+A script can also add its own SET variables, providing a default value
+and a hook to check and set a new value.  To do this, the script must:
+
+. set the variable to a default value, with $set{"VAR"}="whatever";
+  sirc will not let the user /set a variable if a value for it in %set
+  does not exist
+
+. define a sub called set_somename, and call &addset("var", "somename");
+  the variable name can be passed in either case.
+
+The subs that serve as hooks for SET variables get called with the
+proposed value as the first argument.  They may (or not) change the
+actual value in $set{"VAR"}, to the value given or to another one.  By
+convention, they should not &tell anything, and should ignore invalid
+values.  
+
+What goes in $set{"VAR"} must still be human-readable; for things like
+toggles, it is suggested that the values in $set{"VAR"} should be "on",
+"off" or similar, and that &doset can set a variable (internal to the
+script) to 0 or 1, which will be the one actually checked by the script.
+
+
+Userhost requests:
+
+Sometimes in a function you need to know the full username and hostname 
+for some nick.  If this happens in a hook, and the nick is the one who 
+did the action, then the nick is in $who and the userhost data is 
+already in $user and $host.
+
+Otherwise, you have to call the perl function &userhost giving it three 
+arguments: the nickname, what you want evaluated when the data is 
+available, and what you want evaluated if the nick is not found on IRC; 
+if the third argument is ommited, sirc will print the default message 
+"*?* somenickname not found on IRC".
+
+Unlike with earlier versions of sirc, it is possible to do more than
+one userhost request in a short time before getting the answers from
+the server.
+
+
+Example: a function that prints someone's country code
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# country code
+
+sub printcountry {		# prints $host's country code
+
+  if ($host =~ /\.([^.]+)$/) {  # match the last part of the host
+    local($c)=($1); 		# put it in local var $c
+    $c="USA" if $c =~ /^edu$/i;	# if it's a .edu, say it's USA
+    $c="USA (probably)" if $c =~ /^com$/i || $c =~ /^org$/i || $c =~ /^net$/i;
+				# if it's a .org, .com or .net, it's
+				# probably in the USA too
+    if ($c =~ /^\d+$/) {	# if it's a number
+      &tell("*** out of luck, $who has an IP address :p");
+				# complain, it's an IP
+    } else {			# otherwise
+      &tell("*** $who is in $c");
+				# announce the result
+    }
+  }
+}
+
+sub cmd_country {		# this is the command
+
+  &getarg;			# get the argument in $newarg
+  if ($newarg) {		# if it's there
+    &userhost($newarg, "&printcountry;");
+				# request a userhost with &printcountry as
+				# action to take
+  } else {			# otherwise
+    &tell("*** Whose?");	# complain
+  }
+}
+
+&addcmd("country");		# install the command
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Timers:
+
+It is possible in sirc to specify an action to be done but delayed, a 
+certain number of seconds later, just like with ircII's /timer function.
+This is only precise up to the second.
+
+To do this, you call the function &timer with the number of seconds to 
+wait as the first argument, and the string to be evaluated as the second 
+argument.
+
+A third argument can be supplied; it needs to be a non-zero number, and 
+will be used as the reference number for the timer.  Setting a timer when 
+another with the same reference number exists will delete the first 
+timer.  If no number is specified, the timer cannot be deleted.
+
+To delete a timer with reference number $n, call &deltimer($n);
+
+This is simple enough, but if you really need an example, here comes:
+to print "hello" in 10 seconds, you'd do &timer(10, "&tell('hello')");
+
+If you want to be able to cancel it, you'd do 
+&timer(10, "&tell('hello')", 6); and then to cancel it you'd do 
+&deltimer(6);  It goes without saying that the '6' is arbitrary.
+
+
+Adding file handles to the main select() loop:
+
+As of sirc 2.2, scripts can add file handles to the main loop, and set
+hooks on them to get control when data is available.
+
+It is up to the script to first open the file handle, which can refer to
+a network connection, a tty, a pipe (as in open(FH, "program |")), etc.
+
+When dealing with network sockets, it is strongly suggested to use the
+API provided by sirc (&connect, &listen, &accept, &resolve, &newfh and
+$bindaddr) rather than using the raw perl functions.  This will have the
+effect of making these scripts work transparently over socks proxies,
+when the socks module is loaded.  If you need some extra functionality,
+though (such as UDP sockets, or accepting multiple connections from the
+same listening socket), you can use perl's own functions.
+
+To get control back when data is available over a filehandle, you add
+it to the set of fh's sirc select()s from, with
+
+&addsel($fh, "somename", flag);  where sel_somename is the sub that will
+get control back when there is something to read, and flag is 1 if you
+want sirc to buffer the connection and break it into lines for you, and
+0 if you don't want sirc to touch the data at all.
+
+The convention for sel_somename subs is different in the two cases:
+
+. for buffered filehandles, it is passed a single argument containing
+  a line that was read, including the final \n.  if the connection is
+  closed or broken, this argument is '' and the filehandle has been
+  already closed and removed from the set of fh's to select() on.  if
+  you close it yourself, you must use &remsel to tell sirc to remove
+  it from the set.
+
+. for unbuffered filehandles, no arguments are passed; the hook is called
+  when select() indicates that the fh is ready for reading, and it is
+  up to the hook to read from it (making sure not to block, so sysread
+  should be used and not <>), and eventually close it and remove it
+  with &remsel.
+
+To remove a filehandle from the set of fh's being select()ed on, call
+&remsel($fh);  where $fh is the filehandle.
+
+Note that sirc never does any checking that a filehandle you give it is
+valid.  Having a closed or invalid fh in the set of select()able ones,
+or not actually reading the data on an unbuffered sel_* hook, will cause
+sirc to hog the CPU by not blocking in select().
+
+For an example of a nontrivial use of all of this, see the script ftp.pl
+which implements an ftp client inside sirc (it can be found at the sirc
+webpage at http://www.eleves.ens.fr:8080/home/espel/sirc/sirc.html).
+
+
+Bots:
+
+It is possible to make bots in sirc script, just like you make bots in 
+ircII.  It's even probably not a bad idea, since you have a proper and 
+powerful programming language (perl) at your disposition, with all the 
+boring network programming and parsing of server stuff already done for 
+you.
+
+However, sirc was never meant as a bot client, and I have no intention
+of filling it up with bells and whistles for bot support, so I've only
+provided minimal support for this, with the -l and -q options.
+
+The idea is, you program your bot as a set of internal functions and
+hooks and a calls to &addhook and to &docommand, and then load the sirc
+this way (obviously without ssfe):
+
+nohup sirc -d -q -l <botfile> -i <bot's ircname> <nick> <server> >/dev/null &
+
+All of this without the <>'s, of course.  The >/dev/null is there to
+suppress the output, since you won't be reading it on the screen
+anyway.
+
+In the bot, make sure you catch (with a numeric hook) the lines that 
+tell "nick in use" or "invalid nick", and send lines to the server with 
+some random nick, and get them skipped, or the bot will freeze trying to 
+ask the user for a nick.  You should also set up a hook on "disconnect", and 
+make it do a &docommand("server 0") or "server some.server".
+
+Also remember that the file gets loaded even before the server connection
+is made, so calls to &sl and most &docommand's at that point will fail.
+
+Here's an example of a bot that connects, joins a channel, reconnects if 
+disconnected, responds to a few commands, ops its owner, and logs all it 
+sees except public stuff to a file; you'd load this one, assuming you 
+saved it in a file called "mybot" and want to call it BubbleBot, with:
+
+nohup sirc -d -q -l mybot -i "bot in sirc" BubbleBot some.server.edu >/dev/null
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$botowner="espel\@clipper.ens.fr";	# change it to your address
+
+$logfile=$ENV{'HOME'}."/.botlog";
+&docommand("log on");
+
+sub hook_publicstuff {		# don't print the public chatter (so it
+  $silent=1;			# doesn't fill the logfile
+}
+&addhook("public", "publicstuff");
+
+sub hook_connected {
+  &sl("JOIN #BotTub");
+}
+&addhook("376", "connected");   # join on the "end of MOTD" numeric
+
+srand;				# init random number generator
+
+sub hook_badnick {
+  local($n);
+  $n="B".(int(rand(1000000))+4587454);  # send a garbage nick...
+  &sl("NICK $n");
+  $skip=1;
+}
+&addhook("432", "badnick");             # if told that ours is taken
+&addhook("433", "badnick");
+
+sub hook_disc {         # if we got disconnectedj
+  sleep(30);		# wait 30 seconds (so we don't bring the machine
+			# down to a crawl if the server is down)
+  &docommand("server 1"); # reconnect to the same server
+}
+&addhook("disconnect", "disc");
+
+sub hook_joined {	# whenever someone joins
+  local($ch)=($_[0]);
+  $ch =~ tr/A-Z/a-z/;	# put channel in lowercase
+  if (&eq($botowner, "$user\@$host") && $haveops{$ch}) {
+    &sl("MODE $ch +o $who");	# op if that's the owner and we have ops
+  }
+}
+&addhook("join", "joined");
+
+sub hook_message {
+  if (&eq($botowner, "$user\@$host")) {  # if it's a msg from the owner
+    if ($_[0] =~ /^die$/i) {             # die -> die
+      &docommand("quit");
+    } elsif ($_[0] =~ /^say /i) {        # say <something> -> say it
+      &say($');
+    } elsif ($_[0] =~ /^nick /i) {       # nick <nick> -> change nicks
+      &sl("NICK $'");
+    }
+# add more commands here
+  }
+}
+&addhook("msg", "message");
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ [snip snip] ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

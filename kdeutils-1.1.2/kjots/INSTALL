@@ -1,0 +1,42 @@
+kjots (version 0.3.0) - a note taker
+------------------------------------
+
+NOTE:
+If you upgrade from a version _before_ 0.2.2:
+ Edit your .kjotsrc file and remove the last ',' at the
+ end of the lines:
+ Folders=item1, item2,
+                     ^ - remove it !
+ Hotlist=item1, item2,
+                     ^ - remove it !
+
+You need:
+- qt 1.33
+- kdelibs 1.0 or newer
+
+What to do:
+
+See the installation instructions for kdeapps.
+
+this will install:
+
+$(KDEDIR)/bin/kjots
+$(KDEDIR)/doc/HTML/kjots/
+$(KDEDIR)/doc/HTML/kjots/kjots.html
+$(KDEDIR)/apps/Utilities/
+$(KDEDIR)/apps/Utilities/Kjots.kdelnk
+$(KDEDIR)/lib/pics/jots.xpm
+$(KDEDIR)/lib/pics/filedel.xpm
+$(KDEDIR)/lib/pics/OpenBook.xpm
+
+How to configure:
+
+If you don't get the icons in the toolbar then check
+your config files .kderc or .kde/config/kjotsrc
+
+You need a valid entry like:
+[KDE Setup]
+IconPath=$KDEDIR/lib/pics:$KDEDIR/lib/pics/toolbar
+
+Kjots will create a valid entry if it is missing. But if
+there is already such an entry it won't change it.

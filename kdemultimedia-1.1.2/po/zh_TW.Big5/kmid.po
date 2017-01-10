@@ -1,0 +1,903 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-14 03:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: kmidframe.cpp:64
+#, fuzzy
+msgid "Play/Pause"
+msgstr "暫停"
+
+#: kmidframe.cpp:68 kmidframe.cpp:209
+msgid "Previous Song"
+msgstr "前一首"
+
+#: kmidframe.cpp:70 kmidframe.cpp:228
+msgid "Next Song"
+msgstr "下一首"
+
+#: kmidframe.cpp:72 kmidframe.cpp:142
+msgid "See &Text events"
+msgstr "顯示文字[&T]"
+
+#: kmidframe.cpp:74 kmidframe.cpp:148
+msgid "See &Lyrics events"
+msgstr "顯示歌詞[&L]"
+
+#: kmidframe.cpp:76
+msgid "Scroll down karaoke"
+msgstr ""
+
+#: kmidframe.cpp:78
+msgid "Scroll up karaoke"
+msgstr ""
+
+#: kmidframe.cpp:80
+msgid "Scroll page down karaoke"
+msgstr ""
+
+#: kmidframe.cpp:82
+msgid "Scroll page up karaoke"
+msgstr ""
+
+#: kmidframe.cpp:91
+msgid "&Save Lyrics ..."
+msgstr "儲存歌詞[&S] ..."
+
+#: kmidframe.cpp:97
+msgid "&Play"
+msgstr "播放[&P]"
+
+#: kmidframe.cpp:99
+msgid "P&ause"
+msgstr "暫停[&a]"
+
+#: kmidframe.cpp:100
+msgid "&Stop"
+msgstr "停止[&S]"
+
+#: kmidframe.cpp:104
+msgid "P&revious Song"
+msgstr "前一首[&r]"
+
+#: kmidframe.cpp:107
+msgid "&Next Song"
+msgstr "下一首[&N]"
+
+#: kmidframe.cpp:111
+msgid "&Loop"
+msgstr "循環[&L]"
+
+#: kmidframe.cpp:117
+msgid "&Organize ..."
+msgstr "整理[&O] ..."
+
+#: kmidframe.cpp:120
+msgid "In order mode"
+msgstr "順序播放"
+
+#: kmidframe.cpp:123
+msgid "Shuffle mode"
+msgstr "亂數選曲"
+
+#: kmidframe.cpp:127
+msgid "AutoAdd to Collection"
+msgstr "自動加入到收集中"
+
+#: kmidframe.cpp:133
+msgid "&General Midi file"
+msgstr "&General Midi 檔案"
+
+#: kmidframe.cpp:137
+msgid "&MT-32 file"
+msgstr "&MT-32 檔案"
+
+#: kmidframe.cpp:154
+msgid "&Automatic Text chooser"
+msgstr "自動文字選取[A]"
+
+#: kmidframe.cpp:160
+msgid "Show &Volume Bar"
+msgstr ""
+
+#: kmidframe.cpp:165
+msgid "Show &Channel View"
+msgstr ""
+
+#: kmidframe.cpp:170
+msgid "Channel View &Options"
+msgstr ""
+
+#: kmidframe.cpp:174
+msgid "&Font Change ..."
+msgstr "更換字型[&F]"
+
+#: kmidframe.cpp:176
+msgid "Configure &Keys ..."
+msgstr ""
+
+#: kmidframe.cpp:179
+#, fuzzy
+msgid "Midi &Setup ..."
+msgstr "&Midi 設定 ..."
+
+#: kmidframe.cpp:184
+#, fuzzy, c-format
+msgid ""
+"%s\n"
+"\n"
+"(C) 1997,98 Antonio Larrosa Jimenez\n"
+"larrosa@kde.org\t\tantlarr@arrakis.es\n"
+"Malaga (Spain)\n"
+"\n"
+"Midi/Karaoke file player\n"
+"KMid's homepage is at : http://www.arrakis.es/~rlarrosa/kmid.html\n"
+"\n"
+"KMid comes with ABSOLUTELY NO WARRANTY; for details view file COPYING\n"
+"This is free software, and you are welcome to redistribute it\n"
+"under certain conditions\n"
+msgstr ""
+"%s\n"
+"\n"
+"(C) 1997,98 版權所有 Antonio Larrosa Jimenez (antlarr@arrakis.es)\n"
+"於西班牙 馬拉加\n"
+"\n"
+"MIDI/卡拉 OK 檔播放器\n"
+"\n"
+"comes with ABSOLUTELY NO WARRANTY; 請參照 COPYING 檔中的保証細節\n"
+"此程式是免費軟體，您可以合法的將它散播給它人\n"
+
+#: kmidframe.cpp:197
+msgid "&Song"
+msgstr "歌曲[&S]"
+
+#: kmidframe.cpp:198
+msgid "&Collections"
+msgstr "收集[&S]"
+
+#: kmidframe.cpp:212
+msgid "Rewind"
+msgstr "倒帶"
+
+#: kmidframe.cpp:218
+msgid "Pause"
+msgstr "暫停"
+
+#: kmidframe.cpp:222
+msgid "Play"
+msgstr "播放"
+
+#: kmidframe.cpp:225
+msgid "Forward"
+msgstr "快轉"
+
+#: kmidframe.cpp:234
+msgid "Show Channel View"
+msgstr ""
+
+#: kmidframe.cpp:239
+msgid "Show Volume Bar"
+msgstr ""
+
+#: kmidframe.cpp:562
+msgid ""
+"Couldn't open /dev/sequencer to get some info\n"
+"Probably there is another program using it"
+msgstr ""
+"無法開啟 /dev/sequencer 來取得資料\n"
+"可能有其它程式正在使用它"
+
+#: kmidframe.cpp:681 kmidframe.cpp:682
+#, c-format
+msgid ""
+"File %s already exists\n"
+"Do you want to overwrite it ?"
+msgstr ""
+"檔案 %s 已經存在\n"
+"您要覆蓋\這個檔案嗎?"
+
+#: kmidclient.cpp:96
+msgid "Tempo :"
+msgstr "速度 :"
+
+#: kmidclient.cpp:272
+#, c-format
+msgid "The file %s doesn't exist or can't be opened"
+msgstr "無法開啟檔案 %s 或該檔不存在"
+
+#: kmidclient.cpp:276
+#, c-format
+msgid "The file %s is not a midi file"
+msgstr "檔案 %s 不是一個 MIDI 檔"
+
+#: kmidclient.cpp:278
+msgid ""
+"Ticks per cuarter note is negative, please, send this file to "
+"antlarr@arrakis.es"
+msgstr "這個檔案的四分音符“滴答”數為負數，請將此檔傳到 antlarr@arrakis.es"
+
+#: kmidclient.cpp:280
+msgid "Not enough memory !!"
+msgstr "記憶體不足 !!"
+
+#: kmidclient.cpp:282
+msgid "This file is corrupted or not well built"
+msgstr "這個檔案已經損壞或是沒有建立好"
+
+#: kmidclient.cpp:283
+msgid "Unknown error message"
+msgstr "未知的錯誤"
+
+#: kmidclient.cpp:467
+msgid "You must load a file before playing it"
+msgstr "在播放之前請先載入一個檔案"
+
+#: kmidclient.cpp:473
+msgid "A song is already being played"
+msgstr "一首曲子已經在播放中"
+
+#: kmidclient.cpp:479
+msgid ""
+"Couldn't open /dev/sequencer\n"
+"Probably there is another program using it"
+msgstr ""
+"無法開啟 /dev/sequencer\n"
+"可能有其它程式正在使用它"
+
+#: midicfgdlg.cpp:36
+msgid "Configure Midi devices"
+msgstr "設定 Midi 裝置"
+
+#: midicfgdlg.cpp:46
+msgid "Select the midi device you want to use :"
+msgstr "請選擇您想要使用的 MIDI 裝置 :"
+
+#: midicfgdlg.cpp:66
+msgid "Use the midi map :"
+msgstr "使用此 MIDI 對照:"
+
+#: midicfgdlg.cpp:83 midicfgdlg.cpp:93 midicfgdlg.cpp:125
+msgid "None"
+msgstr "無"
+
+#: collectdlg.cpp:39
+msgid "Collections Manager"
+msgstr "收集管理"
+
+#: collectdlg.cpp:47
+msgid "Available collections :"
+msgstr "已經有的收集 :"
+
+#: collectdlg.cpp:67
+msgid "Songs in selected collection:"
+msgstr "在目前這個收集中的歌曲:"
+
+#: collectdlg.cpp:81
+msgid "New"
+msgstr "新建"
+
+#: collectdlg.cpp:154
+msgid "Enter the name of the new collection"
+msgstr "請輸入這個新收集的名稱"
+
+#: collectdlg.cpp:155
+msgid "New Collection"
+msgstr "新的收集"
+
+#: collectdlg.cpp:162 collectdlg.cpp:188 collectdlg.cpp:229
+#, c-format
+msgid "The name '%s' is already used"
+msgstr "'%s' 這個名稱已經用過了"
+
+#: collectdlg.cpp:180
+msgid "Enter the name of the copy collection"
+msgstr "請輸入欲複製的收集名稱"
+
+#: collectdlg.cpp:181
+msgid "Copy Collection"
+msgstr "複製收集"
+
+#: collectdlg.cpp:222
+msgid "Enter the new name for the selected collection"
+msgstr "請輸入一個新的名稱給這個收集"
+
+#: collectdlg.cpp:223
+msgid "Change Collection Name"
+msgstr "更改收集的名稱"
+
+#: channelview.cpp:33
+#, fuzzy
+msgid "ChannelView"
+msgstr "取消"
+
+#: channel.cpp:87
+#, fuzzy
+msgid "Channel"
+msgstr "取消"
+
+#: channelcfgdlg.cpp:16
+msgid "Configure Channel View"
+msgstr ""
+
+#: channelcfgdlg.cpp:26
+msgid "Choose look mode"
+msgstr ""
+
+#: channelcfgdlg.cpp:27
+msgid "3D look"
+msgstr ""
+
+#: channelcfgdlg.cpp:28
+msgid "3D - filled"
+msgstr ""
+
+#: instrname.i18n:6
+msgid "Acoustic Grand Piano"
+msgstr ""
+
+#: instrname.i18n:7
+msgid "Bright Acoustic Piano"
+msgstr ""
+
+#: instrname.i18n:8
+msgid "Electric Grand Piano"
+msgstr ""
+
+#: instrname.i18n:9
+msgid "Honky-Tonk"
+msgstr ""
+
+#: instrname.i18n:10
+msgid "Rhodes Piano"
+msgstr ""
+
+#: instrname.i18n:11
+msgid "Chorused Piano"
+msgstr ""
+
+#: instrname.i18n:12
+msgid "Harpsichord"
+msgstr ""
+
+#: instrname.i18n:13
+msgid "Clavinet"
+msgstr ""
+
+#: instrname.i18n:14
+#, fuzzy
+msgid "Celesta"
+msgstr "刪除"
+
+#: instrname.i18n:15
+msgid "Glockenspiel"
+msgstr ""
+
+#: instrname.i18n:16
+msgid "Music Box"
+msgstr ""
+
+#: instrname.i18n:17
+msgid "Vibraphone"
+msgstr ""
+
+#: instrname.i18n:18
+msgid "Marimba"
+msgstr ""
+
+#: instrname.i18n:19
+msgid "Xylophone"
+msgstr ""
+
+#: instrname.i18n:20
+msgid "Tubular Bells"
+msgstr ""
+
+#: instrname.i18n:21
+msgid "Dulcimer"
+msgstr ""
+
+#: instrname.i18n:22
+msgid "Hammond Organ"
+msgstr ""
+
+#: instrname.i18n:23
+msgid "Percussive Organ"
+msgstr ""
+
+#: instrname.i18n:24
+msgid "Rock Organ"
+msgstr ""
+
+#: instrname.i18n:25
+msgid "Church Organ"
+msgstr ""
+
+#: instrname.i18n:26
+msgid "Reed Organ"
+msgstr ""
+
+#: instrname.i18n:27
+msgid "Accordion"
+msgstr ""
+
+#: instrname.i18n:28
+msgid "Harmonica"
+msgstr ""
+
+#: instrname.i18n:29
+msgid "Tango Accordion"
+msgstr ""
+
+#: instrname.i18n:30
+msgid "Acoustic Guitar (Nylon)"
+msgstr ""
+
+#: instrname.i18n:31
+msgid "Acoustic Guitar (Steel)"
+msgstr ""
+
+#: instrname.i18n:32
+msgid "Electric Guitar (Jazz)"
+msgstr ""
+
+#: instrname.i18n:33
+msgid "Electric Guitar (Clean)"
+msgstr ""
+
+#: instrname.i18n:34
+msgid "Electric Guitar (Muted)"
+msgstr ""
+
+#: instrname.i18n:35
+msgid "Overdriven Guitar"
+msgstr ""
+
+#: instrname.i18n:36
+msgid "Distortion Guitar"
+msgstr ""
+
+#: instrname.i18n:37
+msgid "Guitar Harmonics"
+msgstr ""
+
+#: instrname.i18n:38
+msgid "Acoustic Bass"
+msgstr ""
+
+#: instrname.i18n:39
+msgid "Electric Bass (Finger)"
+msgstr ""
+
+#: instrname.i18n:40
+msgid "Electric Bass (Pick)"
+msgstr ""
+
+#: instrname.i18n:41
+msgid "Fretless Bass"
+msgstr ""
+
+#: instrname.i18n:42
+msgid "Slap Bass 1"
+msgstr ""
+
+#: instrname.i18n:43
+msgid "Slap Bass 2"
+msgstr ""
+
+#: instrname.i18n:44
+msgid "Synth Bass 1"
+msgstr ""
+
+#: instrname.i18n:45
+msgid "Synth Bass 2"
+msgstr ""
+
+#: instrname.i18n:46
+msgid "Violin"
+msgstr ""
+
+#: instrname.i18n:47
+msgid "Viola"
+msgstr ""
+
+#: instrname.i18n:48
+msgid "Cello"
+msgstr ""
+
+#: instrname.i18n:49
+msgid "Contrabass"
+msgstr ""
+
+#: instrname.i18n:50
+msgid "Tremolo Strings"
+msgstr ""
+
+#: instrname.i18n:51
+msgid "Pizzicato Strings"
+msgstr ""
+
+#: instrname.i18n:52
+msgid "Orchestral Harp"
+msgstr ""
+
+#: instrname.i18n:53
+msgid "Timpani"
+msgstr ""
+
+#: instrname.i18n:54
+msgid "String Ensemble 1"
+msgstr ""
+
+#: instrname.i18n:55
+msgid "String Ensemble 2"
+msgstr ""
+
+#: instrname.i18n:56
+msgid "Synth Strings 1"
+msgstr ""
+
+#: instrname.i18n:57
+msgid "Synth Strings 2"
+msgstr ""
+
+#: instrname.i18n:58
+msgid "Choir Aahs"
+msgstr ""
+
+#: instrname.i18n:59
+msgid "Voice Oohs"
+msgstr ""
+
+#: instrname.i18n:60
+msgid "Synth Voice"
+msgstr ""
+
+#: instrname.i18n:61
+msgid "Orchestra Hit"
+msgstr ""
+
+#: instrname.i18n:62
+msgid "Trumpet"
+msgstr ""
+
+#: instrname.i18n:63
+msgid "Trombone"
+msgstr ""
+
+#: instrname.i18n:64
+msgid "Tuba"
+msgstr ""
+
+#: instrname.i18n:65
+msgid "Muted Trumpet"
+msgstr ""
+
+#: instrname.i18n:66
+msgid "French Horn"
+msgstr ""
+
+#: instrname.i18n:67
+msgid "Brass Section"
+msgstr ""
+
+#: instrname.i18n:68
+msgid "Synth Brass 1"
+msgstr ""
+
+#: instrname.i18n:69
+msgid "Synth Brass 2"
+msgstr ""
+
+#: instrname.i18n:70
+msgid "Soprano Sax"
+msgstr ""
+
+#: instrname.i18n:71
+msgid "Alto Sax"
+msgstr ""
+
+#: instrname.i18n:72
+msgid "Tenor Sax"
+msgstr ""
+
+#: instrname.i18n:73
+msgid "Baritone Sax"
+msgstr ""
+
+#: instrname.i18n:74
+msgid "Oboe"
+msgstr ""
+
+#: instrname.i18n:75
+msgid "English Horn"
+msgstr ""
+
+#: instrname.i18n:76
+msgid "Bassoon"
+msgstr ""
+
+#: instrname.i18n:77
+msgid "Clarinet"
+msgstr ""
+
+#: instrname.i18n:78
+msgid "Piccolo"
+msgstr ""
+
+#: instrname.i18n:79
+msgid "Flute"
+msgstr ""
+
+#: instrname.i18n:80
+msgid "Recorder"
+msgstr ""
+
+#: instrname.i18n:81
+msgid "Pan Flute"
+msgstr ""
+
+#: instrname.i18n:82
+msgid "Blown Bottle"
+msgstr ""
+
+#: instrname.i18n:83
+msgid "Shakuhachi"
+msgstr ""
+
+#: instrname.i18n:84
+msgid "Whistle"
+msgstr ""
+
+#: instrname.i18n:85
+msgid "Ocarina"
+msgstr ""
+
+#: instrname.i18n:86
+msgid "Lead 1 - Square Wave"
+msgstr ""
+
+#: instrname.i18n:87
+msgid "Lead 2 - Saw Tooth"
+msgstr ""
+
+#: instrname.i18n:88
+msgid "Lead 3 - Calliope"
+msgstr ""
+
+#: instrname.i18n:89
+msgid "Lead 4 - Chiflead"
+msgstr ""
+
+#: instrname.i18n:90
+msgid "Lead 5 - Charang"
+msgstr ""
+
+#: instrname.i18n:91
+msgid "Lead 6 - Voice"
+msgstr ""
+
+#: instrname.i18n:92
+msgid "Lead 7 - Fifths"
+msgstr ""
+
+#: instrname.i18n:93
+msgid "Lead 8 - Bass+Lead"
+msgstr ""
+
+#: instrname.i18n:94
+msgid "Pad 1 - New Age"
+msgstr ""
+
+#: instrname.i18n:95
+msgid "Pad 2 - Warm"
+msgstr ""
+
+#: instrname.i18n:96
+msgid "Pad 3 - Polysynth"
+msgstr ""
+
+#: instrname.i18n:97
+msgid "Pad 4 - Choir"
+msgstr ""
+
+#: instrname.i18n:98
+msgid "Pad 5 - Bow"
+msgstr ""
+
+#: instrname.i18n:99
+msgid "Pad 6 - Metallic"
+msgstr ""
+
+#: instrname.i18n:100
+msgid "Pad 7 - Halo"
+msgstr ""
+
+#: instrname.i18n:101
+msgid "Pad 8 - Sweep"
+msgstr ""
+
+#: instrname.i18n:102
+msgid "FX 1 - Rain"
+msgstr ""
+
+#: instrname.i18n:103
+msgid "FX 2 - Soundtrack"
+msgstr ""
+
+#: instrname.i18n:104
+msgid "FX 3 - Crystal"
+msgstr ""
+
+#: instrname.i18n:105
+msgid "FX 4 - Atmosphere"
+msgstr ""
+
+#: instrname.i18n:106
+msgid "FX 5 - Brightness"
+msgstr ""
+
+#: instrname.i18n:107
+msgid "FX 6 - Goblins"
+msgstr ""
+
+#: instrname.i18n:108
+msgid "FX 7 - Echoes"
+msgstr ""
+
+#: instrname.i18n:109
+msgid "FX 8 - Sci-fi"
+msgstr ""
+
+#: instrname.i18n:110
+msgid "Sitar"
+msgstr ""
+
+#: instrname.i18n:111
+msgid "Banjo"
+msgstr ""
+
+#: instrname.i18n:112
+msgid "Shamisen"
+msgstr ""
+
+#: instrname.i18n:113
+msgid "Koto"
+msgstr ""
+
+#: instrname.i18n:114
+msgid "Kalimba"
+msgstr ""
+
+#: instrname.i18n:115
+msgid "Bagpipe"
+msgstr ""
+
+#: instrname.i18n:116
+#, fuzzy
+msgid "Fiddle"
+msgstr "檔案[&F]"
+
+#: instrname.i18n:117
+msgid "Shannai"
+msgstr ""
+
+#: instrname.i18n:118
+msgid "Tinkle Bell"
+msgstr ""
+
+#: instrname.i18n:119
+msgid "Agogo"
+msgstr ""
+
+#: instrname.i18n:120
+msgid "Steel Drum"
+msgstr ""
+
+#: instrname.i18n:121
+msgid "Wook Block"
+msgstr ""
+
+#: instrname.i18n:122
+msgid "Taiko Drum"
+msgstr ""
+
+#: instrname.i18n:123
+msgid "Melodic Tom"
+msgstr ""
+
+#: instrname.i18n:124
+msgid "Synth Drum"
+msgstr ""
+
+#: instrname.i18n:125
+msgid "Reverse Cymbal"
+msgstr ""
+
+#: instrname.i18n:126
+msgid "Guitar Fret Noise"
+msgstr ""
+
+#: instrname.i18n:127
+msgid "Breath Noise"
+msgstr ""
+
+#: instrname.i18n:128
+msgid "Seashore"
+msgstr ""
+
+#: instrname.i18n:129
+msgid "Bird Tweet"
+msgstr ""
+
+#: instrname.i18n:130
+msgid "Telephone"
+msgstr ""
+
+#: instrname.i18n:131
+msgid "Helicopter"
+msgstr ""
+
+#: instrname.i18n:132
+#, fuzzy
+msgid "Applause"
+msgstr "暫停"
+
+#: instrname.i18n:133
+msgid "Gunshot"
+msgstr ""
+
+#~ msgid "&Open ..."
+#~ msgstr "開啟[&O] ..."
+
+#~ msgid "&Quit"
+#~ msgstr "離開[&Q]"
+
+#~ msgid "&File"
+#~ msgstr "檔案[&F]"
+
+#~ msgid "&Options"
+#~ msgstr "選項[&O]"
+
+#~ msgid "&Help"
+#~ msgstr "說明[&H]"
+
+#~ msgid "Stop"
+#~ msgstr "停止"
+
+#~ msgid "Error"
+#~ msgstr "錯誤"
+
+#~ msgid "Warning"
+#~ msgstr "警告"
+
+#~ msgid "OK"
+#~ msgstr "確定"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Browse..."
+#~ msgstr "瀏覽..."
+
+#~ msgid "Copy"
+#~ msgstr "複製"
+
+#~ msgid "Delete"
+#~ msgstr "刪除"
+
+#~ msgid "Add"
+#~ msgstr "加入"
+
+#~ msgid "Remove"
+#~ msgstr "移除"

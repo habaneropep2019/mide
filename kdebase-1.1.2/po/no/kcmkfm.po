@@ -1,0 +1,257 @@
+# Norwegian translations for KDE Base, kfm
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Hans Petter Bieker <zerium@webindex.no>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE BASE/kfm\n"
+"POT-Creation-Date: 1999-03-04 18:41+0100\n"
+"PO-Revision-Date: 1998-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Hans Petter Bieker <zerium@webindex.no>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:61
+msgid "&Font"
+msgstr "&Skrifttype"
+
+#: main.cpp:63
+msgid "&Color"
+msgstr "F&arger"
+
+#: main.cpp:65
+msgid "&Other"
+msgstr "&Andre"
+
+# kkfmoptdlg.cpp:19
+#: main.cpp:68
+msgid "&Proxy"
+msgstr "&Proxy"
+
+#: main.cpp:70
+msgid "&HTTP"
+msgstr "&HTTP"
+
+# kkfmoptdlg.cpp:21
+#: main.cpp:73
+msgid "User &Agent"
+msgstr "Bruker&agent"
+
+#: main.cpp:76
+msgid "Coo&kies"
+msgstr "Coo&kier"
+
+# kfmtree.cpp:398
+#: main.cpp:80
+msgid "&Desktop Icons"
+msgstr "&Skrivebordikoner"
+
+#: main.cpp:89
+#, c-format
+msgid ""
+"usage: %s [-init | {font,color,misc,proxy,http,useragent,cookies,icons}]\n"
+msgstr ""
+"bruk: %s [-init | {font,color,misc,proxy,http,useragent,cookies,icons}]\n"
+
+# main.cpp:65 main.cpp:199
+#: main.cpp:178
+msgid "KFM Configuration"
+msgstr "KFM Konfigurasjon"
+
+#: htmlopts.cpp:64
+msgid "Small"
+msgstr "Liten"
+
+#: htmlopts.cpp:69
+msgid "Medium"
+msgstr "Middels"
+
+#: htmlopts.cpp:74
+msgid "Large"
+msgstr "Stor"
+
+# htmlopts.cpp:51
+#: htmlopts.cpp:83
+msgid "Standard Font"
+msgstr "Standard skrifttype"
+
+# htmlopts.cpp:68
+#: htmlopts.cpp:97
+msgid "Fixed Font"
+msgstr "Fast skrifttype"
+
+#: htmlopts.cpp:114
+msgid "Default Charset"
+msgstr "Standard tegnsett"
+
+#: htmlopts.cpp:122 htmlopts.cpp:276
+msgid "Use language charset"
+msgstr "Bruk språktegnsett"
+
+# htmlopts.cpp:214
+#: htmlopts.cpp:330
+msgid "Background Color:"
+msgstr "Bakgrunnsfarge:"
+
+# htmlopts.cpp:222
+#: htmlopts.cpp:342
+msgid "Normal Text Color:"
+msgstr "Normal tekstfarge:"
+
+# htmlopts.cpp:230
+#: htmlopts.cpp:354
+msgid "URL Link Color:"
+msgstr "URL-lenkefarge:"
+
+# htmlopts.cpp:238
+#: htmlopts.cpp:366
+msgid "Followed Link Color:"
+msgstr "Farge på brukte lenker:"
+
+# htmlopts.cpp:246
+#: htmlopts.cpp:378
+msgid "Change cursor over link."
+msgstr "Endre markør over lenke."
+
+#: htmlopts.cpp:384
+msgid "Underline links"
+msgstr "Understrek lenker"
+
+#: htmlopts.cpp:391
+msgid "Always use my colors"
+msgstr "Bruk alltid mine farger"
+
+#: miscopts.cpp:25
+msgid "&Allow per-URL settings"
+msgstr "&Godta pr-URL-innstillinger"
+
+#: miscopts.cpp:33
+msgid "Tree &view follows navigation"
+msgstr "Tre&visning følger navigasjon"
+
+#: miscopts.cpp:43
+msgid "Terminal"
+msgstr "Terminal"
+
+#: miscopts.cpp:57
+msgid "Editor"
+msgstr "Redigerer"
+
+# kproxydlg.cpp:14
+#: kproxydlg.cpp:50
+msgid "Don't forget to save your settings!"
+msgstr "Ikke glem å lagre innstillingene!"
+
+# kfmprops.cpp:437
+#: kproxydlg.cpp:58
+msgid "Use proxy"
+msgstr "Bruk proxy"
+
+#: kproxydlg.cpp:67
+msgid "HTTP Proxy:"
+msgstr "HTTP-proxy:"
+
+#: kproxydlg.cpp:82 kproxydlg.cpp:113
+msgid "Port:"
+msgstr "Port:"
+
+# kkfmoptdlg.cpp:19
+#: kproxydlg.cpp:98
+msgid "FTP Proxy:"
+msgstr "FTP-proxy:"
+
+# kproxydlg.cpp:43
+#: kproxydlg.cpp:128
+msgid "No Proxy for:"
+msgstr "Ingen proxy for:"
+
+#: khttpoptdlg.cpp:38
+msgid "Accept languages:"
+msgstr "Aksepter språk:"
+
+#: khttpoptdlg.cpp:52
+msgid "Accept character sets:"
+msgstr "Aksepter tegnsett:"
+
+#: khttpoptdlg.cpp:65
+msgid "Assume HTML"
+msgstr "Anta HTML"
+
+# useragentdlg.cpp:20
+#: useragentdlg.cpp:45
+msgid "On server:"
+msgstr "På tjener:"
+
+# useragentdlg.cpp:31
+#: useragentdlg.cpp:67
+msgid "login as:"
+msgstr "logg inn som:"
+
+#: useragentdlg.cpp:87
+msgid "&Add"
+msgstr "&Legg til"
+
+# useragentdlg.cpp:52
+#: useragentdlg.cpp:107
+msgid "Known bindings:"
+msgstr "Kjente tilordninger:"
+
+#: kcookiesdlg.cpp:49
+msgid "&Enable Cookies"
+msgstr "&Slå på cookier"
+
+#: kcookiesdlg.cpp:56
+msgid "Default accept policy"
+msgstr "Standard godtagningspolitikk"
+
+#: kcookiesdlg.cpp:65 kcookiesdlg.cpp:115
+msgid "Accept"
+msgstr "Godta"
+
+#: kcookiesdlg.cpp:70 kcookiesdlg.cpp:120
+msgid "Ask"
+msgstr "Spør"
+
+#: kcookiesdlg.cpp:75 kcookiesdlg.cpp:125
+msgid "Reject"
+msgstr "Forkast"
+
+#: kcookiesdlg.cpp:90
+msgid "Domain specific settings:"
+msgstr "Domene-spesifikke innstillinger:"
+
+#: kcookiesdlg.cpp:97
+msgid "Change domain accept policy"
+msgstr "Endre politikk for godtatte domener"
+
+#: kcookiesdlg.cpp:239
+msgid "You must enter a domain first !"
+msgstr "Du må først oppgi et domene!"
+
+# htmlopts.cpp:321
+#: rootopts.cpp:73
+msgid "Horizontal Root Grid Spacing:"
+msgstr "Avstand mellom horisontale bunngitter:"
+
+# htmlopts.cpp:335
+#: rootopts.cpp:84
+msgid "Vertical Root Grid Spacing:"
+msgstr "Avstand mellom vertikale bunngitter:"
+
+#: rootopts.cpp:95
+msgid "&Transparent Text for Desktop Icons."
+msgstr "&Gjennomsiktig tekst for skrivebordikoner."
+
+#: rootopts.cpp:106
+msgid "Icon foreground color:"
+msgstr "Forgrunnsfarge for ikon:"
+
+#: rootopts.cpp:118
+msgid "Icon background color:"
+msgstr "Bakgrunnsfarge for ikon:"
+
+#: rootopts.cpp:131
+msgid "Show &Hidden Files on Desktop"
+msgstr "Vis &skjulte filer på skrivebord"

@@ -1,0 +1,198 @@
+TODO:
+============================================================================
+This file contains a list of possible features that may or may not be added
+to KBiff.  The 'Notes' section gives some thoughts on the topic and the
+'Doability' section gives some hints as to whether or not I think it'll
+be implemented (hint: Very High means "almost definitely" and "Very Low"
+means "*I* am not going to do it").
+
+-----------------------------------------------------------------------------
+Feature:
+    Default for IMAP4 should be 'inbox'
+
+Description:
+    Nearly all IMAP users will set KBiff to 'inbox' as that is the alias for
+    their system mailbox (/var/spool/mail/...).  This should be set as a
+    default.
+         
+Notes:
+    Check if "current" mailbox is IMAP4.  If not, set mailbox to 'inbox'.  This
+    will change some mailboxes that it shouldn't...  but it might not be too
+    bad.
+
+Doability:
+    Moderate
+-----------------------------------------------------------------------------
+Feature: 
+    Client command should accept some variables.
+
+Description:
+    Currently, the same "mail client" command gets executed no matter which
+    mailbox has new mail.  It would be very handy if some variables that
+    represented mailbox information were defined.  For instance, a user
+    should be able to enter 'mutt -f %n' to get a mailbox with new mail.
+
+Notes:
+    Cool feature and very doable.  Would take some parsing of the command
+    somewhere before executeCommand
+
+Doability:
+    High
+-----------------------------------------------------------------------------
+Feature:
+    Support for Kerberos IMAP4 and POP3.
+
+Description:
+    KBiff has no support for Kerberos authentication for either IMAP4 or
+    POP3.  
+
+Notes:
+    This would be nice.. but as I don't have any access to a kerberos-enabled
+    server, I won't be doing this myself.  I belive that RFC 1731 will have
+    the necessary info.
+
+Doability:
+    Moderate
+-----------------------------------------------------------------------------
+Feature:
+    Display number of new messages on icon
+
+Description:
+    KBiff has only one way of showing the number of new messages -- the notify
+    mailbox.  Several users have noted that it would be nice if this number
+    was displayed on the icon for quick reference.
+
+Notes:
+    This is easily done from a programming point of view... but no so easily
+    done conceptually.  The problem is that each KBiff instance can monitor
+    a (theoretically) infinite number of mailboxes -- when a value of, say,
+    15 is shown on the icon... which mailbox does it refer to?
+
+    One possibilities for this is to sum all mailboxes.
+
+Doability:
+    Low to High
+-----------------------------------------------------------------------------
+Feature:
+    Display number of new messages in tooltip (or some sort of popup).
+
+Description:
+    The tooltip (or some popup) should popup displaying each mailbox and
+    the number of new and read messages in each box.
+
+Notes:
+    Should be pretty easy.
+
+Doability:
+    DONE
+-----------------------------------------------------------------------------
+Feature:
+    Notify message box should have button to start mail client.
+
+Description:
+    Currently, the Notify box only allows the user to click OK to dismiss it.
+    It would be nice if it could also start up the mail client if the user
+    so desired.
+
+Notes:
+    Easy to do now.. *may* be harder if 'variable' feature is implemented.
+
+Doability:
+    DONE
+-----------------------------------------------------------------------------
+Feature:
+    'Hooks' for passwords
+
+Description:
+    The method KBiff uses to 'scramble' POP3 and IMAP4 passwords is terrible.
+    I *don't* want to have encryption internally, though.  Therefore, a 'hook'
+    that would allow another program to pass KBiff the password to use would
+    be *very* handy.
+
+Notes:
+    Shouldn't be too bad if KBiff started the external program with the
+    mailbox info as stdin and accepted the stdout as the password.
+
+Doability:
+    Moderate to High
+-----------------------------------------------------------------------------
+Feature:
+    Add comstat/biff protocol
+
+Description:
+    There is a comstat/biff protocol at port 512(udp) that can be triggered
+    when new mail arrives (procmail does this in some cases).  It would be
+    nice if KBiff could intercept this as yet another way of checking for
+    mail.
+
+Notes:
+    Cute idea and shouldn't be hard.  Don't think I'll do it anytime soon,
+    though.
+
+Doability:
+    Low to Moderate
+-----------------------------------------------------------------------------
+Feature:
+    NNTP support
+
+Description:
+    KBiff already support POP3 and IMAP4.. why not NNTP too!  It could treat
+    newsgroups as if they were mailboxes.
+
+Notes:
+    Shouldn't be all that hard.
+
+Doability:
+    DONE
+-----------------------------------------------------------------------------
+Feature:
+    Split kbiffmonitor code
+
+Description:
+    KBiffMonitor works fine with only a couple of protocols.. but as more
+    protocols gets added (IMAP4-K4, KPOP, COMSAT, NNTP, etc), it could get
+    very hairy.
+
+Notes:
+    This could be done something like so:
+
+                       KBiffProtocol
+                            |
+                   +--------+--------------+
+               KBiffLocal              KBiffRemote
+                   |                       |
+           +-------+--+          +---------+---------+
+           |          |          |         |         |
+      KBiffMaildir KBiffMbox  KBiffPop KBiffImap KBiffNntp
+
+Doability:
+    Moderate to High
+-----------------------------------------------------------------------------
+Feature:
+    Client/Server
+
+Description:
+    It would be nice if KBiff could either query or be queried about the
+    status of mailboxes.
+
+Notes:
+    This could be done if KBiff was made into a CORBA component.  Maybe
+    something with KOM and signals/slots?
+
+Doability:
+    High
+-----------------------------------------------------------------------------
+Feature:
+    Button to "test" new mail sound
+
+Description:
+    Testing if the new mail sound works is tough.  A button off to the
+    side to test it would be nice.
+
+Notes:
+    Very easy to code... Maybe put a little button with a musical note in
+    it on the left side of the edit box?
+
+Doability:
+    DONE
+-----------------------------------------------------------------------------

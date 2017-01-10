@@ -1,0 +1,250 @@
+diff -u -N -r workman/DOCS/changelog.linux ../1.3a-mB/workman/DOCS/changelog.linux
+--- workman/DOCS/changelog.linux	Thu Jan  1 01:00:00 1970
++++ ../1.3a-mB/workman/DOCS/changelog.linux	Sat Jun 14 20:12:05 1997
+@@ -0,0 +1,19 @@
++Read ../README.linux for more details. This isn't a true release, this
++is a hack.
++
++I call this "WorkMan 1.3a mB" (this should indicate, that this is a
++milliByte hacked version).
++
++1.3a mB
++
++  - Incorporated security patch 1.3 -> 1.3a
++  - end of disc now detected by frame # (similar to following problem)
++  - new end of track detection included. For some reason, abpcd does not
++    return CDROM_AUDIO_COMPLETED, so I worked around.
++
++    
++1.3 mB (unreleased)
++
++  Worked around the "old disc displayed" problem. I think this is a
++  driver bug. Mail correspondence is not at its end. Maybe the drivers
++  will change sometimes.
+diff -u -N -r workman/Makefile.linux ../1.3a-mB/workman/Makefile.linux
+--- workman/Makefile.linux	Mon Jun  5 02:03:59 1995
++++ ../1.3a-mB/workman/Makefile.linux	Sun Jun 15 10:10:26 1997
+@@ -6,6 +6,12 @@
+ # will cause WorkMan to not work on IDE drives.
+ #
+ #PASS = -DLINUX_SCSI_PASSTHROUGH
++#
++# 
++# comment the following out to disable the hack
++# see README.linux for more details
++#
++HACK = -DSBPCD_HACK
+ 
+ # Set these to the locations of your XView include files and libraries.
+ INCDIR = $(OPENWINHOME)/include
+@@ -55,7 +61,7 @@
+ 
+ # Compiler flags.
+ 
+-CFLAGS = -g -O6 -m486 -fwritable-strings -Dlinux $(PASS)
++CFLAGS = -g -O6 -m486 -fwritable-strings -Dlinux $(PASS) $(HACK)
+ CPPFLAGS = -I$(INCDIR)
+ LDFLAGS = -L$(LIBDIR) -L$(XLIBDIR) $(LIBLOC)
+ LDLIBS = -lxview -lolgx -lX11
+diff -u -N -r workman/README.linux ../1.3a-mB/workman/README.linux
+--- workman/README.linux	Thu Jan  1 01:00:00 1970
++++ ../1.3a-mB/workman/README.linux	Sun Jun 15 10:18:32 1997
+@@ -0,0 +1,33 @@
++(don't forget to read the original README)
++
++SPECIAL NOTES ON WORKMAN 1.3a mB (hacked)
++-----------------------------------------
++
++The package you have is WorkMan 1.3 hacked for smoother working with
++several drives under Linux.
++
++The changes in the code are enabled with HACK = -DSBPCD-HACK in 
++Makefile.linux. In this distribution, this is the default. If you use
++one of the following drives, workman sould now work more correctly:
++
++ - Any drive handled through the sbpcd driver
++ - Any drive handled through the mcdx driver
++
++"work more correctly" includes the following:
++ - Autodetection of inserted CDs is working. (The correct data is
++   displayed, not old data from the previous disc. "-C" no longer needed).
++ - disc and track repeat are working at the cost of some unplayed frames.
++   (No 'hanging' on the last second(s) of a track).
++ 
++I decided to make /dev/sbpcd the default device if the hack is enabled.
++
++To disable this hack, please comment out the define in Makefile.linux.
++After that, you have plain vanilla WorkMan 1.3a.
++
++For other platforms than Linux, *nothing* has changed in this version
++compared to WorkMan 1.3a.
++
++The original Author will not support this hacked version. Direct any
++questions / flames / tips on this version directly to me.
++
++ -dirk (milliByte@DeathsDoor.com)
+diff -u -N -r workman/cdrom.c ../1.3a-mB/workman/cdrom.c
+--- workman/cdrom.c	Mon Jun  5 00:20:07 1995
++++ ../1.3a-mB/workman/cdrom.c	Sun Jun 15 10:05:03 1997
+@@ -206,7 +206,13 @@
+ 	int			ret = 1;
+ 
+ 	/* Open the drive.  This returns 1 if the device isn't ready. */
++
++#if linux & SBPCD_HACK
++	status = wmcd_open(&drive, 0);
++#else
+ 	status = wmcd_open(&drive);
++#endif
++
+ 	if (status < 0)
+ 		return (status);
+ 	if (status > 0)
+@@ -242,6 +248,22 @@
+ 	{
+ 		cur_pos_rel = cur_pos_abs = 0;
+ 
++#if linux & SBPCD_HACK
++		/*
++		 * new code to re-open device if a new cd is inserted.
++		 * this works around sbpcd and mcdx misbehaviour.
++		 *
++		 * I had to change wmcd_open, because for some reason
++		 * closing the device here leads to "bad file number". 
++		 * If I find another (more elegant) way to do this 
++		 * (or if I changed the driver) I'll spread it.
++		 *
++		 * inserted by milliByte@DeathsDoor.com on 1997-06-10
++		 */
++		do {
++		  status = wmcd_open( &drive, 1 );
++		} while ( status != 0 );
++#endif
+ 		if ((cd = read_toc()) == NULL)
+ 			if (exit_on_eject)
+ 				exit(-1);
+diff -u -N -r workman/plat_linux.c ../1.3a-mB/workman/plat_linux.c
+--- workman/plat_linux.c	Sun May 22 19:29:58 1994
++++ ../1.3a-mB/workman/plat_linux.c	Mon Jun 16 09:12:07 1997
+@@ -18,7 +18,11 @@
+ 
+ #include "struct.h"
+ 
++#ifdef SBPCD_HACK
++#define DEFAULT_CD_DEVICE	"/dev/sbpcd"
++#else
+ #define DEFAULT_CD_DEVICE	"/dev/sr0"
++#endif
+ 
+ #define max(a,b) ((a) > (b) ? (a) : (b))
+  
+@@ -116,13 +120,21 @@
+ 	struct cdrom_subchnl		sc;
+ 	struct itimerval		old_timer, new_timer;
+ 
++#ifdef SBPCD_HACK
++	static int prevpos = 0;
++#endif
++	
+ 	/* If we can't get status, the CD is ejected, so default to that. */
+ 	*mode = EJECTED;
+ 
+ 	/* Is the device open? */
+ 	if (d->fd < 0)
+ 	{
++#ifdef SBPCD_HACK
++		switch (wmcd_open(d,0)) {
++#else
+ 		switch (wmcd_open(d)) {
++#endif
+ 		case -1:	/* error */
+ 			return (-1);
+ 
+@@ -144,6 +156,17 @@
+ 		*pos = sc.cdsc_absaddr.msf.minute * 60 * 75 +
+ 			sc.cdsc_absaddr.msf.second * 75 +
+ 			sc.cdsc_absaddr.msf.frame;
++#ifdef SBPCD_HACK
++		if( *pos < prevpos )
++                  {
++                    if( (prevpos - *pos) < 75 )
++                    {
++                      *mode = TRACK_DONE;
++                    }
++                  }
++                  
++                prevpos = *pos;
++#endif
+ 		break;
+ 
+ 	case CDROM_AUDIO_PAUSED:
+@@ -407,10 +430,19 @@
+ 
+ /*
+  * Open the CD device and figure out what kind of drive is attached.
++ * new parameter "i" introduced for Linux platform with some special drivers
++ * inserted by milliByte@DeathsDoor.com 1997-06-10
+  */
+ int
++#ifdef SBPCD_HACK
++wmcd_open(d, i)
++#else
+ wmcd_open(d)
++#endif
+ 	struct wm_drive	*d;
++#ifdef SBPCD_HACK
++	int i;
++#endif
+ {
+ 	int		fd;
+ 	static int	warned = 0;
+@@ -423,9 +455,14 @@
+ 		cd_device = DEFAULT_CD_DEVICE;
+ 
+ 	if (d->fd >= 0)		/* Device already open? */
++#ifdef SBPCD_HACK
++             if( i == 1)     /* ... but re-open it, please */
++                close( d->fd );
++             else
++#endif
+ 		return (0);
+ 	
+-	d->fd = open(cd_device, 0);
++	d->fd = open(cd_device, O_RDONLY | O_NONBLOCK);
+ 	if (d->fd < 0)
+ 	{
+ 		if (errno == EACCES)
+diff -u -N -r workman/setup.c ../1.3a-mB/workman/setup.c
+--- workman/setup.c	Sun Jun 15 10:08:04 1997
++++ ../1.3a-mB/workman/setup.c	Wed Jun 11 20:18:37 1997
+@@ -667,7 +667,11 @@
+ 
+ 	ip->message1 = xv_create(ip->controls3, PANEL_MESSAGE,
+ 		XV_Y, 8,
++#ifdef SBPCD_HACK
++		PANEL_LABEL_STRING, "WorkMan 1.3a mB",
++#else
+ 		PANEL_LABEL_STRING, "WorkMan 1.3a",
++#endif
+ 		PANEL_LABEL_BOLD, TRUE, NULL);
+ 	ip->message2 = xv_create(ip->controls3, PANEL_MESSAGE,
+ 		PANEL_LABEL_STRING, "\"The Civilized CD Player\"",
+@@ -704,10 +708,18 @@
+ 		PANEL_LABEL_STRING, "koreth@Hyperion.COM",
+ 		PANEL_LABEL_BOLD, FALSE, NULL);
+ 	ip->message5 = xv_create(ip->controls3, PANEL_MESSAGE,
++#ifdef SBPCD_HACK
++		PANEL_LABEL_STRING, "Modified by Dirk Foersterling",
++#else
+ 		PANEL_LABEL_STRING, "Send mail if you'd like to be",
++#endif
+ 		PANEL_LABEL_BOLD, FALSE, NULL);
+ 	ip->message6 = xv_create(ip->controls3, PANEL_MESSAGE,
++#ifdef SBPCD_HACK
++		PANEL_LABEL_STRING, "milliByte@DeathsDoor.com",
++#else
+ 		PANEL_LABEL_STRING, "notified of future revisions!",
++#endif
+ 		PANEL_LABEL_BOLD, FALSE, NULL);
+ 
+ 	ip->drive = xv_create(ip->controls3, PANEL_MESSAGE,

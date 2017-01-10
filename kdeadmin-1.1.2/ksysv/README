@@ -1,0 +1,41 @@
+/****************************************************************************
+*                                                                           *
+*	                    SYSTEM V INIT EDITOR			    *
+*  	                     for the KDE Project			    *
+* 									    *
+****************************************************************************/
+
+
+** DESCRIPTION
+ksysv lets you edit your SysV-style init configuration using drag'n'drop.
+
+** INSTALLATION
+Just do a <make && make install>.
+
+** CONFIGURATION
+Through the GUI (Options/Configure...)
+
+** CONTACT
+If something doesn't work (or does work :-) ) correctly, contact me:
+  Peter Putzer, putzer@kde.org
+
+** CAVEATS / ADDITIONAL NOTES
+Make a backup of your /etc/rc.d tree before using this program.
+This program needs to be set suid root to be usable from non-root accounts.
+Making programs suid generally is _NOT_ a good idea, and besides
+only root should fiddle with files in /etc anyway. So don't use it if you're
+not root.
+
+REMEMBER:
+No warranties!
+
+** BUGS
+See the BUGS file.
+
+** LICENCE
+ This program is licenced under the GNU General Public Licence, GPL for short. 
+ See the file COPYING for details. No warranties!
+
+** SPECIAL THANKS
+ To Emanuel Pirker for his template for this README
+

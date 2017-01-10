@@ -1,0 +1,539 @@
+# Danish translation for KDE Base, kcmdisplay
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Thomas Tanghus <tanghus@earthling.net>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE BASE/kcmdisplay\n"
+"POT-Creation-Date: 1999-04-20 01:17+0200\n"
+"PO-Revision-Date: 1999-05-28 17:00+CET-1\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: backgnd.cpp:55
+msgid "Enter new desktop name"
+msgstr "Indtast nyt skrivebordnavn"
+
+#: backgnd.cpp:111 backgnd.cpp:164
+msgid "Desktop"
+msgstr "Skrivebord"
+
+#: backgnd.cpp:186
+msgid "&Rename ..."
+msgstr "O&mdøb..."
+
+#: backgnd.cpp:197
+msgid "&Common Background"
+msgstr "Fælles baggr&und"
+
+#: backgnd.cpp:225 colorscm.cpp:82
+msgid "Colors"
+msgstr "Farver"
+
+#: backgnd.cpp:252
+msgid "&One Color"
+msgstr "&Een farve"
+
+#: backgnd.cpp:269
+msgid "&Two Color"
+msgstr "T&o farver"
+
+#: backgnd.cpp:288
+msgid "Set&up ..."
+msgstr "I&ndstillinger..."
+
+#: backgnd.cpp:297
+msgid "Wallpaper"
+msgstr "Tapet"
+
+#: backgnd.cpp:328 backgnd.cpp:1213 backgnd.cpp:1378 backgnd.cpp:1917
+msgid "No wallpaper"
+msgstr "Intet tapet"
+
+#: backgnd.cpp:361
+msgid "&Browse..."
+msgstr "&Gennemsøg..."
+
+#: backgnd.cpp:369
+msgid "Arrangement:"
+msgstr "Arrangement:"
+
+#: backgnd.cpp:376
+msgid "Tiled"
+msgstr "Fliselagt"
+
+#: backgnd.cpp:377
+msgid "Mirrored"
+msgstr "Spejlet"
+
+#: backgnd.cpp:378
+msgid "Center Tiled"
+msgstr "Centreret fliselagt"
+
+#: backgnd.cpp:379
+msgid "Centred"
+msgstr "Centreret"
+
+#: backgnd.cpp:380
+msgid "Centred Brick"
+msgstr "Centreret på mursten"
+
+#: backgnd.cpp:381
+msgid "Centred Warp"
+msgstr "Centreret forvrænget"
+
+#: backgnd.cpp:382
+msgid "Centred Maxpect"
+msgstr "Centreret stort"
+
+#: backgnd.cpp:383
+msgid "Symmetrical Tiled"
+msgstr "Fliselagt symmetrisk"
+
+#: backgnd.cpp:384
+msgid "Symmetrical Mirrored"
+msgstr "Spejlet symmetrisk"
+
+#: backgnd.cpp:385
+msgid "Scaled"
+msgstr "Skaleret"
+
+#: backgnd.cpp:400
+msgid "Ra&ndom"
+msgstr "&Tilfældigt"
+
+#: backgnd.cpp:409
+msgid "Setu&p..."
+msgstr "&Indstillinger..."
+
+#: backgnd.cpp:419
+msgid "&Dock into the panel"
+msgstr "&Vis i panelet"
+
+#: backgnd.cpp:444
+msgid "Cache size (kB):"
+msgstr "Cache-størrelse (kB):"
+
+#: backgnd.cpp:1345
+msgid "Desktop names"
+msgstr "Skrivebordsnavne"
+
+#: backgnd.cpp:1390
+msgid "File error"
+msgstr "Filfejl"
+
+#: backgnd.cpp:1391
+msgid "Can't load image file"
+msgstr "Kan ikke åbne billedfil"
+
+#: backgnd.cpp:1414 backgnd.cpp:1887
+msgid "Unsupported URL"
+msgstr "URL ikke understøttet"
+
+#: backgnd.cpp:1415 backgnd.cpp:1888
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE Display Module"
+msgstr "Denne slags URL er ikke understøttet i Skærmindstillinger"
+
+#: backgnd.cpp:1447
+msgid "Two color backgrounds"
+msgstr "To-farvede baggrunde"
+
+#: backgnd.cpp:1484
+msgid "Blend colors from &top to bottom"
+msgstr "&Lodret farveovergang - top til bund"
+
+#: backgnd.cpp:1490
+msgid "Blend colors from &right to left"
+msgstr "&Vandret farveovergang - højre til venstre"
+
+#: backgnd.cpp:1496
+msgid "Use &pattern"
+msgstr "&Brug mønster"
+
+#: backgnd.cpp:1523
+msgid "Preview"
+msgstr "Eksempel"
+
+#: backgnd.cpp:1534
+msgid "Pattern &name"
+msgstr "&Mønster"
+
+#: backgnd.cpp:1573
+msgid "Current"
+msgstr "Nuværende"
+
+#: backgnd.cpp:1633
+msgid "Filled"
+msgstr "Udfyldt"
+
+#: backgnd.cpp:1636
+msgid "Fish net"
+msgstr "Fiskenet"
+
+#: backgnd.cpp:1639
+msgid "Triangles"
+msgstr "Trekanter"
+
+#: backgnd.cpp:1642
+msgid "Flowers"
+msgstr "Blomster"
+
+#: backgnd.cpp:1645
+msgid "Rattan"
+msgstr "Fletværk"
+
+#: backgnd.cpp:1648
+msgid "Cobbled Pavement"
+msgstr "Toppede brosten"
+
+#: backgnd.cpp:1714
+msgid "Random mode setup"
+msgstr "Opsætning for tilfældig tilstand"
+
+#: backgnd.cpp:1720
+msgid "Pick files from &directory"
+msgstr "Tag fil fra &katalog"
+
+#: backgnd.cpp:1734
+msgid "&Browse ..."
+msgstr "&Gennemsøg..."
+
+#: backgnd.cpp:1755
+msgid "Timer Delay in seconds :"
+msgstr "Forsinkelse i sekunder:"
+
+#: backgnd.cpp:1767
+msgid "In &order"
+msgstr "I &rækkefølge"
+
+#: backgnd.cpp:1784
+msgid "Desktops :"
+msgstr "Skriveborde:"
+
+#: backgnd.cpp:1823
+msgid "&Add"
+msgstr "&Tilføj"
+
+#: backgnd.cpp:1995
+msgid "Directory error"
+msgstr "Navngivelsesfejl"
+
+#: backgnd.cpp:1996
+msgid "Selected directory doesn't exists"
+msgstr "Det valgte katalog eksisterer ikke"
+
+#: colorscm.cpp:104
+msgid "Color Scheme"
+msgstr "Farveskema"
+
+#: colorscm.cpp:115
+msgid "Current scheme"
+msgstr "Nuværende skema"
+
+#: colorscm.cpp:117
+msgid "KDE default"
+msgstr "KDE standard"
+
+#: colorscm.cpp:130
+msgid "&Add ..."
+msgstr "&Tilføj..."
+
+#: colorscm.cpp:147
+msgid "&Save changes"
+msgstr "&Gem ændringer"
+
+#: colorscm.cpp:161
+msgid "Widget color"
+msgstr "Komponentfarve"
+
+#: colorscm.cpp:168
+msgid "Inactive title bar"
+msgstr "Inaktiv titelbjælke"
+
+#: colorscm.cpp:169
+msgid "Inactive title text"
+msgstr "Inaktiv titeltekst"
+
+#: colorscm.cpp:170
+msgid "Inactive title blend"
+msgstr "Inaktiv titel overgang"
+
+#: colorscm.cpp:171
+msgid "Active title bar"
+msgstr "Aktiv titelbjælke"
+
+#: colorscm.cpp:172
+msgid "Active title text"
+msgstr "Aktiv titeltekst"
+
+#: colorscm.cpp:173
+msgid "Active title blend"
+msgstr "Aktiv titel overgang"
+
+#: colorscm.cpp:174
+msgid "Background"
+msgstr "Baggrund"
+
+#: colorscm.cpp:175
+msgid "Text"
+msgstr "Tekst"
+
+#: colorscm.cpp:176
+msgid "Select background"
+msgstr "Vælg baggrund"
+
+#: colorscm.cpp:177
+msgid "Select text"
+msgstr "Markeret tekst"
+
+#: colorscm.cpp:178
+msgid "Window background"
+msgstr "Vinduesbaggrund"
+
+#: colorscm.cpp:179 widgetcanvas.cpp:175 widgetcanvas.cpp:176
+msgid "Window text"
+msgstr "Vinduestekst"
+
+#: colorscm.cpp:207
+msgid "Contrast"
+msgstr "Kontrast"
+
+#: colorscm.cpp:223
+msgid "&Low"
+msgstr "La&v"
+
+#: colorscm.cpp:231
+msgid "High"
+msgstr "Høj"
+
+#: colorscm.cpp:304
+msgid "Error removing"
+msgstr "Kunne ikke fjerne"
+
+#: colorscm.cpp:305
+msgid ""
+"This color scheme could not be removed.\n"
+"Perhaps you do not have permission to alter the file\n"
+"system where the color scheme is stored."
+msgstr ""
+"Farveskemaet kunne ikke fjernes.\n"
+"Måske har du ikke tilladelse til at ændre det\n"
+"katalog hvor farveskemaet er gemt."
+
+#: colorscm.cpp:362
+msgid "Naming error"
+msgstr "Navngivelsesfejl"
+
+#: colorscm.cpp:363
+msgid ""
+"Please choose a unique name for the new color\n"
+"scheme. The one you entered already appears\n"
+"in the color scheme list."
+msgstr ""
+"Navnet findes allerede. Vælg venligst et entydigt\n"
+"navn for det nye farveskema."
+
+#: savescm.cpp:18
+msgid "Add a color scheme"
+msgstr "Tilføj et farveskema"
+
+#: savescm.cpp:32
+msgid ""
+"&Enter a name for the new color scheme\n"
+"to be added to your personal list.\n"
+"\n"
+"The colors currently used in the preview will\n"
+"be copied into this scheme to begin with."
+msgstr ""
+"Indtast et navn for det nye farveskema,\n"
+"der skal tilføjes din personlige liste.\n"
+"\n"
+"De farver, der for øjeblikket fremvises, vil blive\n"
+"kopieret ind i dette skema."
+
+#: scrnsave.cpp:47
+msgid "Ignore"
+msgstr "Ignorer"
+
+#: scrnsave.cpp:48
+msgid "Save Screen"
+msgstr "Start pauseskærm"
+
+#: scrnsave.cpp:49
+msgid "Lock Screen"
+msgstr "Lås skærm"
+
+#: scrnsave.cpp:112 scrnsave.cpp:181
+msgid "Screen Saver"
+msgstr "Pauseskærm"
+
+#: scrnsave.cpp:188 scrnsave.cpp:382 scrnsave.cpp:623 scrnsave.cpp:744
+msgid "No screensaver"
+msgstr "Ingen pauseskærm"
+
+#: scrnsave.cpp:209
+msgid "&Setup ..."
+msgstr "&Indstillinger..."
+
+#: scrnsave.cpp:217
+msgid "&Test"
+msgstr "&Test"
+
+#: scrnsave.cpp:230
+msgid "Settings"
+msgstr "Indstillinger"
+
+#: scrnsave.cpp:250
+msgid "&Wait for"
+msgstr "&Vent i"
+
+#: scrnsave.cpp:260
+msgid "min."
+msgstr "min."
+
+#: scrnsave.cpp:266
+msgid "&Require password"
+msgstr "K&ræver kodeord"
+
+#: scrnsave.cpp:272
+msgid "&Accept root password to unlock"
+msgstr "&Accepter at root kodeord låser op"
+
+#: scrnsave.cpp:280
+msgid "Show &password as stars"
+msgstr "Vis &kodeord som stjerner"
+
+#: scrnsave.cpp:288
+msgid "Priority"
+msgstr "Prioritet"
+
+#: scrnsave.cpp:301
+msgid "&High"
+msgstr "&Høj"
+
+#: scrnsave.cpp:310
+msgid "Low"
+msgstr "Lav"
+
+#: general.cpp:221
+msgid "Style"
+msgstr "Stil"
+
+#: general.cpp:229
+msgid "&Draw widgets in the style of Windows 95"
+msgstr "&Tegn komponenter i Windows 95-stil"
+
+#: general.cpp:245
+msgid "&Menubar on top of the screen in the style of MacOS"
+msgstr "&Menuen i toppen af skærmen i Macintosh-stil"
+
+#: general.cpp:259
+msgid "&Apply fonts and colors to non-KDE apps"
+msgstr "&Anvend indstillinger på ikke-KDE programmer"
+
+#: general.cpp:529
+msgid "General font"
+msgstr "Generel skrift"
+
+#: general.cpp:534
+msgid "Fixed font"
+msgstr "Fast bredde-skrift"
+
+#: general.cpp:540
+msgid "Window title font"
+msgstr "Skrifttype for vinduestitel"
+
+#: general.cpp:545
+msgid "Panel button font"
+msgstr "Skrift for panelknapper"
+
+#: general.cpp:550
+msgid "Panel clock font"
+msgstr "Skrift for panelur"
+
+#: general.cpp:580
+msgid "Sample text"
+msgstr "Teksteksempel"
+
+#: general.cpp:588
+msgid ""
+"THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\n"
+"the quick brown fox jumps over the lazy dog\n"
+"0 1 2 3 4 5 6 7 8 9   ! \" £ $ % ^ & * ( )"
+msgstr ""
+"THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG ÆØÅ\n"
+"0 1 2 3 4 5 6 7 8 9 !@#$%^&*()_+|"
+
+#: main.cpp:64
+msgid "&Background"
+msgstr "&Baggrund"
+
+#: main.cpp:67
+msgid "&Screensaver"
+msgstr "&Pauseskærm"
+
+#: main.cpp:71
+msgid "&Colors"
+msgstr "&Farver"
+
+#: main.cpp:77
+msgid "&Style"
+msgstr "Sti&l"
+
+#: main.cpp:83
+msgid ""
+"usage: kcmdisplay [-init | {background,screensaver,colors,fonts,style}]\n"
+msgstr ""
+"brug: kcmdisplay [-init | {background,screensaver,colors,fonts,style}]\n"
+
+#: main.cpp:150
+msgid "Display settings"
+msgstr "Skærmindstillinger"
+
+#: widgetcanvas.cpp:104 widgetcanvas.cpp:105
+msgid "Inactive window"
+msgstr "Inaktivt vindue"
+
+#: widgetcanvas.cpp:132 widgetcanvas.cpp:133
+msgid "Active window"
+msgstr "Aktivt vindue"
+
+#: widgetcanvas.cpp:189 widgetcanvas.cpp:190
+msgid "Selected text"
+msgstr "Markeret tekst"
+
+#: widgetcanvas.cpp:212
+msgid "New"
+msgstr "Ny"
+
+#: fontchooser.cpp:82
+msgid "&Typeface"
+msgstr "Skrif&ttype"
+
+#: fontchooser.cpp:89
+msgid "&Bold"
+msgstr "Fe&d"
+
+#: fontchooser.cpp:96
+msgid "&Italic"
+msgstr "Ku&rsiv"
+
+#: fontchooser.cpp:125
+msgid "&Size"
+msgstr "Stø&rrelse"
+
+#: fontchooser.cpp:147
+msgid "&Character set"
+msgstr "Te&gnsæt"
+
+#: fontchooser.cpp:262
+msgid "default"
+msgstr "standard"
+
+#: fontchooser.cpp:265
+msgid "any"
+msgstr "alle"

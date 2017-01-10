@@ -1,0 +1,329 @@
+# Danish translations for KDE Graphics/kview
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Erik Kjær Pedersen <erik@binghamton.edu>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE GRAPHICS/kview\n"
+"POT-Creation-Date: 1999-01-31 01:52+0100\n"
+"PO-Revision-Date: 1999-02-16 14:50+0200\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: da <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: viewer.cpp:95
+msgid "no image loaded"
+msgstr "intet billede indlæst"
+
+#: viewer.cpp:103 viewer.cpp:599
+msgid "Ready"
+msgstr "Klar"
+
+#: viewer.cpp:181
+msgid "Net saving not yet implemented"
+msgstr "Netgemning foreløbig ikke implementeret"
+
+#: viewer.cpp:189
+#, c-format
+msgid "%s: written"
+msgstr "%s: skrevet"
+
+#: viewer.cpp:227
+msgid "Enter Zoom factor (100 = 1x):"
+msgstr "Indskriv forstørringsfaktor (100 = 1x):"
+
+#: viewer.cpp:231
+msgid "Illegal zoom factor"
+msgstr "Ulovliv forstørringsfaktor"
+
+#: viewer.cpp:282
+#, c-format
+msgid ""
+"KView -- Graphics viewer. %s\n"
+"\n"
+"Sirtaj S. Kang (taj@kde.org)\n"
+msgstr ""
+"KView -- Grafik viser. %s\n"
+"\n"
+"Sirtaj S. Kang (taj@kde.org)\n"
+
+#: viewer.cpp:285
+msgid "About KView"
+msgstr "Om KView"
+
+#: viewer.cpp:310 viewer.cpp:412
+msgid "&List..."
+msgstr "&Liste..."
+
+#: viewer.cpp:312 viewer.cpp:416
+msgid "&Previous"
+msgstr "&Forrige"
+
+#: viewer.cpp:314 viewer.cpp:418
+msgid "&Next"
+msgstr "&Næste"
+
+#: viewer.cpp:316 viewer.cpp:421
+msgid "&Slideshow On/Off"
+msgstr "&Lysbilledfremvisning til/fra"
+
+#: viewer.cpp:324
+msgid "&Zoom"
+msgstr "For&stør"
+
+#: viewer.cpp:325
+msgid "&Transform"
+msgstr "&Omgør"
+
+#: viewer.cpp:326
+msgid "To &Desktop"
+msgstr "Til &skrivebord"
+
+#: viewer.cpp:328
+msgid "F&ilter"
+msgstr "F&ilter"
+
+#: viewer.cpp:332
+msgid "&Images"
+msgstr "&Billeder"
+
+#: viewer.cpp:352
+msgid "&Save As..."
+msgstr "&Gem som..."
+
+#: viewer.cpp:356
+msgid "&Close Window"
+msgstr "&Luk vindue"
+
+#: viewer.cpp:362
+msgid "&Full Screen"
+msgstr "&Fuld skærm"
+
+#: viewer.cpp:365
+msgid "&Crop"
+msgstr "&Beskær"
+
+#: viewer.cpp:367
+msgid "&Reset"
+msgstr "&Nulstil"
+
+#: viewer.cpp:369
+msgid "&Preferences..."
+msgstr "&Indstillinger..."
+
+#: viewer.cpp:375
+msgid "&Zoom..."
+msgstr "&Forstør..."
+
+#: viewer.cpp:376
+#, c-format
+msgid "Zoom &in 10%"
+msgstr "For&stør 10%"
+
+#: viewer.cpp:378
+#, c-format
+msgid "Zoom &out 10%"
+msgstr "F&ormindsk 10%"
+
+#: viewer.cpp:380
+msgid "&Double size"
+msgstr "&Dobbel størrelse"
+
+#: viewer.cpp:382
+msgid "&Half size"
+msgstr "&Halver størrelse"
+
+#: viewer.cpp:384
+msgid "&Max size"
+msgstr "&Maks størrelse"
+
+#: viewer.cpp:386
+msgid "Max/&aspect"
+msgstr "Maks/&aspekt"
+
+#: viewer.cpp:392
+msgid "Rotate &clockwise"
+msgstr "Roter &klokkevis"
+
+#: viewer.cpp:394
+msgid "Rotate &anti-clockwise"
+msgstr "Roter &Mod klokken"
+
+#: viewer.cpp:396
+msgid "Flip &vertical"
+msgstr "Drej &lodret"
+
+#: viewer.cpp:398
+msgid "Flip &horizontal"
+msgstr "Drej &vandret"
+
+#: viewer.cpp:404
+msgid "Desktop &Tile"
+msgstr "Arbejdsplads &flise"
+
+#: viewer.cpp:405
+msgid "Desktop &Max"
+msgstr "Arbejdsplads &max"
+
+#: viewer.cpp:407
+msgid "Desktop Max&pect"
+msgstr "Arbejdsplads Maks&pekt"
+
+#: viewer.cpp:426
+msgid "&How do I..."
+msgstr "&Hvordan gør jeg..."
+
+#: viewer.cpp:427
+msgid "&What is a..."
+msgstr "H&vad er en ..."
+
+#: viewer.cpp:429
+msgid "&About KView..."
+msgstr "&Om KView..."
+
+#: viewer.cpp:471 viewer.cpp:478
+msgid "Existing transfer not yet complete."
+msgstr "Eksisterende overføring ikke fuldført."
+
+#: viewer.cpp:493
+msgid "Couldn't get temporary transfer name."
+msgstr "Kunne ikke få midlertidigt overføringsnavn."
+
+#: viewer.cpp:532
+msgid "Transfer error: "
+msgstr "Overføringsfejl: "
+
+#: viewer.cpp:618
+msgid "Loading..."
+msgstr "Indlæser..."
+
+#: viewer.cpp:632
+#, c-format
+msgid "Couldn't load %s"
+msgstr "Kunne ikke indlæse %s"
+
+#: viewer.cpp:852
+msgid "Printing..."
+msgstr "Udskriver..."
+
+#: colour.cpp:32
+msgid "Enter brightness factor (%):"
+msgstr "Opgiv skarphedsfaktor (%):"
+
+#: colour.cpp:37
+msgid "Brightness factor must be positive"
+msgstr "Skarphedsfaktor skal være positiv"
+
+#: colour.cpp:44
+msgid "Changing brightness..."
+msgstr "Ændrer skarphed..."
+
+#: colour.cpp:58
+msgid "Intensity:Brightness"
+msgstr "Intensitet:Skarphed"
+
+#: colour.cpp:100
+msgid "Converting to Greyscale..."
+msgstr "Omformer til gråskala..."
+
+#: colour.cpp:129
+msgid "Greyscale"
+msgstr "Gråskala"
+
+#: colour.cpp:147
+msgid "Smoothing..."
+msgstr "Udjævner..."
+
+#: colour.cpp:213
+msgid "Smooth"
+msgstr "Jævn"
+
+#: colour.cpp:234
+msgid "Enter gamma value ( >0 ):"
+msgstr "Indskriv gamma-værdi ( >0 ):"
+
+#: colour.cpp:237
+msgid "Bad Gamma value"
+msgstr "Ugyldig gamma-værdi"
+
+#: colour.cpp:243
+msgid "Gamma-correcting..."
+msgstr "Gamma-korrigerer..."
+
+#: colour.cpp:296
+msgid "Intensity:Gamma Correct..."
+msgstr "Intensitet:Gamma-korrektion..."
+
+#: colour.cpp:310
+msgid "External.."
+msgstr "Ekstern.."
+
+#: ilistdlg.cpp:56
+msgid "Prev"
+msgstr "Forrige"
+
+#: ilistdlg.cpp:60
+msgid "Shu&ffle"
+msgstr "&Bland"
+
+#: ilistdlg.cpp:65
+msgid "Next"
+msgstr "Næste"
+
+#: ilistdlg.cpp:69
+msgid "Start slide"
+msgstr "Start lysbillede"
+
+#: ilistdlg.cpp:85
+msgid "Image List"
+msgstr "Billedliste"
+
+#: ilistdlg.cpp:259
+msgid "Stop &slide"
+msgstr "Stop &lysbillede"
+
+#: ilistdlg.cpp:267
+msgid "Start &slide"
+msgstr "Start &lystbillede"
+
+#: prefdlg.cpp:32
+msgid "kView Preferences"
+msgstr "kView indstillingerger"
+
+#: prefdlg.cpp:36
+msgid "&Apply"
+msgstr "&Anvend"
+
+#: prefdlg.cpp:51
+msgid "On Load"
+msgstr "Om belastning"
+
+#: prefdlg.cpp:58
+msgid "Resize Window"
+msgstr "&Ændr vinduesstørrelse"
+
+#: prefdlg.cpp:61
+msgid "Resize Image"
+msgstr "Ændr størrelse på billede"
+
+#: prefdlg.cpp:64
+msgid "No Resize"
+msgstr "Ingen størrelsesændring"
+
+#: prefdlg.cpp:69
+msgid "Slideshow"
+msgstr "Lysbilledfremvisning"
+
+#: prefdlg.cpp:72
+msgid "Loop"
+msgstr "Sløjfe"
+
+#: prefdlg.cpp:76
+msgid "Slide interval (sec)"
+msgstr "Interval mellem billeder (sek)"
+
+#: prefdlg.cpp:84
+msgid "&Keys"
+msgstr "&Nøgler"

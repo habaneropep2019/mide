@@ -1,0 +1,393 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: knotes\n"
+"POT-Creation-Date: 1999-03-09 01:44+0100\n"
+"PO-Revision-Date: 1999-03-09 22:00 CET\n"
+"Last-Translator: Francois-Xavier Duranceau "
+"<Francois-Xavier.Duranceau@loria.fr>\n"
+"Language-Team: Français\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; \n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: knotes.cpp:265
+msgid "Hello"
+msgstr "Salut"
+
+#: knotes.cpp:303
+msgid "Text Color..."
+msgstr "Couleur du texte..."
+
+#: knotes.cpp:304
+msgid "Background Color..."
+msgstr "Couleur du fond..."
+
+#: knotes.cpp:310
+msgid "New Note"
+msgstr "Nouvelle note"
+
+#: knotes.cpp:312
+msgid "Delete Note"
+msgstr "Supprimer la note"
+
+#: knotes.cpp:314
+msgid "Rename Note..."
+msgstr "Renommer la note..."
+
+#: knotes.cpp:316
+msgid "Alarm ..."
+msgstr "Alarme..."
+
+#: knotes.cpp:319
+msgid "Calendar"
+msgstr "Calendrier"
+
+#: knotes.cpp:321
+msgid "Mail Note ..."
+msgstr "Expédier la note..."
+
+#: knotes.cpp:323
+msgid "Print Note"
+msgstr "Imprimer la note"
+
+#: knotes.cpp:326
+msgid "Save Notes"
+msgstr "Enregistrer les notes"
+
+#: knotes.cpp:332
+msgid "3D Frame"
+msgstr "Cadre en 3D"
+
+#: configdlg.cpp:128 knotes.cpp:333
+msgid "Auto Indent"
+msgstr "Indentation auto"
+
+#: knotes.cpp:336
+msgid "Font..."
+msgstr "Police..."
+
+#: knotes.cpp:337
+msgid "Colors"
+msgstr "Couleurs"
+
+#: knotes.cpp:339
+msgid "Change Defaults ..."
+msgstr "Modifier les valeurs par défaut..."
+
+#: knotes.cpp:340
+msgid "Dock in panel"
+msgstr "Placer sur le tableau de bord"
+
+#: knotes.cpp:368
+msgid "Insert Date"
+msgstr "Insérer la date"
+
+#: knotes.cpp:371
+msgid "Operations"
+msgstr "Opérations"
+
+#: knotes.cpp:445 knotes.cpp:449 knotes.cpp:618 knotes.cpp:845 knotes.cpp:849
+#: timer.cpp:87 timer.cpp:110
+msgid "Note: "
+msgstr "Note : "
+
+#: knotes.cpp:477
+msgid ""
+"Could not save a KNote.\n"
+"Quit anyways?"
+msgstr ""
+"Impossible d'enregistrer la note.\n"
+"Désirez-vous néanmoins quitter ?"
+
+#: knotes.cpp:495
+msgid "Could not save KNote Alarms\n"
+msgstr "Impossible d'enregistrer les alarmes KNote\n"
+
+#: knotes.cpp:556 knotes.cpp:661
+#, c-format
+msgid ""
+"Could not pipe the contents of this KNote into:\n"
+" %s"
+msgstr ""
+"Impossible de rediriger le contenu de cette note vers :\n"
+" %s"
+
+#: knotes.cpp:717
+msgid ""
+"You have exeeded the arbitrary and unjustly set limit of 50 knotes.\n"
+" Please complain to the author."
+msgstr ""
+"Vous avez atteint la limite arbitraire et injustement fixée à 50 KNotes.\n"
+"S'il vous plaît, plaignez-vous en à l'auteur."
+
+#: knotes.cpp:893
+msgid "Question"
+msgstr "Question"
+
+#: knotes.cpp:894
+msgid ""
+"Are you sure you want to delete this\n"
+"note permanently?"
+msgstr ""
+"Etes-vous certain de vouloir supprimer cette\n"
+"note définitivement ?"
+
+#: knotes.cpp:1072
+#, c-format
+msgid ""
+"Could not load:\n"
+" %s"
+msgstr ""
+"Impossible de charger :\n"
+" %s"
+
+#: knotes.cpp:1331
+msgid "KNotes Configuraton"
+msgstr "Configuration de KNotes"
+
+#: knotes.cpp:1348
+#, c-format
+msgid ""
+"KNotes %s\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@math.cornell.edu\n"
+"wuebben@kde.org\n"
+"Copyright (C) 1997\n"
+"\n"
+"With contributions by:\n"
+"Matthias Ettrich <ettrich@kde.org>\n"
+"\n"
+"\n"
+msgstr ""
+"KNotes %s\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@math.cornell.edu\n"
+"wuebben@kde.org\n"
+"Copyright (C) 1997\n"
+"\n"
+"Avec la contribution de :\n"
+"Matthias Ettrich <ettrich@kde.org>\n"
+"\n"
+"\n"
+
+#: configdlg.cpp:46 knotes.cpp:1375
+msgid "Defaults"
+msgstr "Par défaut"
+
+#: knotes.cpp:1376
+msgid "More ..."
+msgstr "Plus..."
+
+#: knotes.cpp:1535
+msgid ""
+"KNotes is already waiting\n"
+"for an internet job to finish\n"
+"Please wait until it has finished\n"
+"Alternatively stop the running one."
+msgstr ""
+"KNotes attend déjà la fin d'une tâche\n"
+"utilisant la connexion Internet.\n"
+"Veuillez attendre la fin de cette tâche\n"
+"ou stoppez-la manuellement."
+
+#: knotes.cpp:1549
+msgid "Could not start or find KFM"
+msgstr "Impossible de trouver ou de lancer KFM"
+
+#: knotes.cpp:1571
+msgid ""
+"Could not save the KNotes.\n"
+"Close anyways?"
+msgstr ""
+"Impossible d'enregistrer les KNotes.\n"
+"Désirez-vous malgré tout fermer l'application?"
+
+#: knotes.cpp:1683
+#, c-format
+msgid ""
+"Found an alarm to which the underlying\n"
+"KNotes file:\n"
+"%s\n"
+" no longer exists.\n"
+"\n"
+"I will correct the Problem for you."
+msgstr ""
+"J'ai trouvé une alarme pour laquelle le fichier\n"
+"KNotes sous-jacent :\n"
+"%s\n"
+" n'existe plus.\n"
+"\n"
+"Je vais réparer le problème pour vous."
+
+#: knotes.cpp:1691
+msgid "Inconsistency"
+msgstr "Inconsistence"
+
+#: configdlg.cpp:50
+msgid "Text Color:"
+msgstr "Couleur du texte :"
+
+#: configdlg.cpp:64
+msgid "Background Color:"
+msgstr "Couleur du fond :"
+
+#: configdlg.cpp:83
+msgid "Width:"
+msgstr "Largeur :"
+
+#: configdlg.cpp:93
+msgid "Height:"
+msgstr "Hauteur :"
+
+#: configdlg.cpp:104
+msgid "Print Command:"
+msgstr "Impression :"
+
+#: configdlg.cpp:112
+msgid "Mail Command:"
+msgstr "Commande mail :"
+
+#: configdlg.cpp:123
+msgid "3d Frame"
+msgstr "Cadre en 3 dimensions"
+
+#: fontdlg.cpp:45
+msgid "Set Default Font"
+msgstr "Police par défaut"
+
+#: fontdlg.cpp:54
+msgid "Family:"
+msgstr "Famille :"
+
+#: fontdlg.cpp:64
+msgid "Point Size:"
+msgstr "Taille en points :"
+
+#: fontdlg.cpp:75
+msgid "Style:"
+msgstr "Style :"
+
+#: fontdlg.cpp:87
+msgid "Weight:"
+msgstr "Epaisseur :"
+
+#: fontdlg.cpp:93 fontdlg.cpp:117 fontdlg.cpp:150
+msgid "Bold"
+msgstr "Gras"
+
+#: fontdlg.cpp:95 fontdlg.cpp:119 fontdlg.cpp:152
+msgid "Normal"
+msgstr "Normal"
+
+#: mail.cpp:40
+msgid "Mail Note to:"
+msgstr "Envoyer la note à..."
+
+#: mail.cpp:49
+msgid "Subject:"
+msgstr "Sujet :"
+
+#: mail.cpp:51
+msgid "Mail"
+msgstr "Expédier"
+
+#: mail.cpp:92
+msgid "You must specify a Recipient"
+msgstr "Vous devez préciser un destinataire"
+
+#: alarm.cpp:58
+#, c-format
+msgid "Alarm Timer for: %s"
+msgstr "Alarme pour : %s"
+
+#: alarm.cpp:72
+msgid "Unset"
+msgstr "Désactiver"
+
+#: alarm.cpp:74
+msgid "Set"
+msgstr "Activer"
+
+#: alarm.cpp:153
+msgid "I am afraid you already missed your appointment."
+msgstr "J'ai bien peur que vous ayez déjà raté votre rendez-vous."
+
+#: bwdatetime.cpp:44
+msgid "Day:"
+msgstr "Jour :"
+
+#: bwdatetime.cpp:50
+msgid "Month:"
+msgstr "Mois :"
+
+#: bwdatetime.cpp:57
+msgid "Year:"
+msgstr "Année :"
+
+#: bwdatetime.cpp:72
+msgid "Time:"
+msgstr "Heure :"
+
+#: bwdatetime.cpp:85
+msgid "AM"
+msgstr "AM"
+
+#: bwdatetime.cpp:86
+msgid "PM"
+msgstr "PM"
+
+#: bwdatetime.cpp:161
+msgid "The Time you selected is invalid"
+msgstr "L'heure sélectionnée est incorrecte"
+
+#: bwdatetime.cpp:176
+msgid "The Date you selected is invalid"
+msgstr "La date sélectionnée est incorrecte"
+
+#: renamedlg.cpp:39
+msgid "Rename this note to"
+msgstr "Renommer cette note en"
+
+#: renamedlg.cpp:44
+msgid "Rename"
+msgstr "Renommer"
+
+#: renamedlg.cpp:79
+msgid ""
+"The name \"xyalarms\" is reserved for internal usage.\n"
+"Please choose a different name"
+msgstr ""
+"Le nom \"xyalarms\" est réservé pour un usage interne.\n"
+"Veuillez choisir un nom différent"
+
+#: renamedlg.cpp:92
+msgid ""
+"A KNotes note with this name already exists\n"
+"Please choose a different name"
+msgstr ""
+"Il existe déjà une note de ce nom.\n"
+"Veuillez choisir un nom différent."
+
+#: docking.cpp:48
+#, c-format
+msgid "Could not load %s !"
+msgstr "Impossible de charger %s !"
+
+#: docking.cpp:68
+msgid "Change Defaults"
+msgstr "Configuration par défaut"
+
+#: docking.cpp:73
+msgid "Exit Knotes"
+msgstr "Quitter Knotes"
+
+#: docking.cpp:92
+msgid "New Knote"
+msgstr "Nouvelle note"
+
+#~ msgid "No Frame"
+#~ msgstr "Sans cadre"

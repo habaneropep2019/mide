@@ -1,0 +1,381 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-03-09 01:44+0100\n"
+"PO-Revision-Date: Sun Jul 11 1999 19:02:15+0200\n"
+"Last-Translator: 石倉 大基 <ishikura@math.titech.ac.jp>\n"
+"Language-Team: japanese <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"X-Generator: KTranslator v 0.5.0"
+
+#: knotes.cpp:265
+msgid "Hello"
+msgstr "やあ"
+
+#: knotes.cpp:303
+msgid "Text Color..."
+msgstr "文字の色..."
+
+#: knotes.cpp:304
+msgid "Background Color..."
+msgstr "背景の色..."
+
+#: knotes.cpp:310
+msgid "New Note"
+msgstr "新しいノートを開く"
+
+#: knotes.cpp:312
+msgid "Delete Note"
+msgstr "ノートを消す"
+
+#: knotes.cpp:314
+msgid "Rename Note..."
+msgstr "ノートの名前を変える..."
+
+#: knotes.cpp:316
+msgid "Alarm ..."
+msgstr "アラーム..."
+
+#: knotes.cpp:319
+msgid "Calendar"
+msgstr "カレンダーの表示"
+
+#: knotes.cpp:321
+msgid "Mail Note ..."
+msgstr "ノートを送信 ..."
+
+#: knotes.cpp:323
+msgid "Print Note"
+msgstr "ノートを印刷"
+
+#: knotes.cpp:326
+msgid "Save Notes"
+msgstr "ノートを保存"
+
+#: knotes.cpp:332
+msgid "3D Frame"
+msgstr "枠有り"
+
+#: configdlg.cpp:128 knotes.cpp:333
+msgid "Auto Indent"
+msgstr "自動字下げの切替え"
+
+#: knotes.cpp:336
+msgid "Font..."
+msgstr "フォントの選択..."
+
+#: knotes.cpp:337
+msgid "Colors"
+msgstr "色の選択"
+
+#: knotes.cpp:339
+msgid "Change Defaults ..."
+msgstr "デフォルトの変更..."
+
+#: knotes.cpp:340
+msgid "Dock in panel"
+msgstr "パネルに格納"
+
+#: knotes.cpp:368
+msgid "Insert Date"
+msgstr "日付の挿入"
+
+#: knotes.cpp:371
+msgid "Operations"
+msgstr "操作一覧"
+
+#: knotes.cpp:445 knotes.cpp:449 knotes.cpp:618 knotes.cpp:845 knotes.cpp:849
+#: timer.cpp:87 timer.cpp:110
+msgid "Note: "
+msgstr "注意:"
+
+#: knotes.cpp:477
+msgid ""
+"Could not save a KNote.\n"
+"Quit anyways?"
+msgstr ""
+"ノートをセーブできません \n"
+"とにかく終了しますか？"
+
+#: knotes.cpp:495
+msgid "Could not save KNote Alarms\n"
+msgstr "KNote アラームを保存できません\n"
+
+#: knotes.cpp:556 knotes.cpp:661
+#, c-format
+msgid ""
+"Could not pipe the contents of this KNote into:\n"
+" %s"
+msgstr ""
+" %sにこのノートの文脈をパイプできません"
+
+#: knotes.cpp:717
+msgid ""
+"You have exeeded the arbitrary and unjustly set limit of 50 knotes.\n"
+" Please complain to the author."
+msgstr ""
+"50枚以上ノートは作れません\n"
+"あきらめてください"
+
+#: knotes.cpp:893
+msgid "Question"
+msgstr "質問"
+
+#: knotes.cpp:894
+msgid ""
+"Are you sure you want to delete this\n"
+"note permanently?"
+msgstr ""
+"このノートを消してもいいですか？\n"
+" "
+
+#: knotes.cpp:1072
+#, c-format
+msgid ""
+"Could not load:\n"
+" %s"
+msgstr ""
+" %sをロードできません"
+
+#: knotes.cpp:1331
+msgid "KNotes Configuraton"
+msgstr "KNotes コンフィグレーション"
+
+#: knotes.cpp:1348
+#, c-format
+msgid ""
+"KNotes %s\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@math.cornell.edu\n"
+"wuebben@kde.org\n"
+"Copyright (C) 1997\n"
+"\n"
+"With contributions by:\n"
+"Matthias Ettrich <ettrich@kde.org>\n"
+"\n"
+"\n"
+msgstr ""
+
+#: configdlg.cpp:46 knotes.cpp:1375
+msgid "Defaults"
+msgstr "デフォルト"
+
+#: knotes.cpp:1376
+msgid "More ..."
+msgstr "さらに ..."
+
+#: knotes.cpp:1535
+msgid ""
+"KNotes is already waiting\n"
+"for an internet job to finish\n"
+"Please wait until it has finished\n"
+"Alternatively stop the running one."
+msgstr ""
+"KNotes はインターネットの\n"
+"作業が終るのを待っています。\n"
+"しばらくお待ちいただくか、\n"
+"それを強制終了させてください。"
+
+#: knotes.cpp:1549
+msgid "Could not start or find KFM"
+msgstr "KFMを起動もしくは見付けられません"
+
+#: knotes.cpp:1571
+msgid ""
+"Could not save the KNotes.\n"
+"Close anyways?"
+msgstr ""
+"KNotes をセーブできません。\n"
+"とにかく終了しますか？"
+
+#: knotes.cpp:1683
+#, c-format
+msgid ""
+"Found an alarm to which the underlying\n"
+"KNotes file:\n"
+"%s\n"
+" no longer exists.\n"
+"\n"
+"I will correct the Problem for you."
+msgstr ""
+"問題のあるアラームを見つけました。\n"
+"それは、以下のファイルに依存しています。\n"
+"%s\n"
+"そして、このファイルはすでに存在しません。\n"
+"\n"
+"問題は自動的に解決されました。"
+
+#: knotes.cpp:1691
+msgid "Inconsistency"
+msgstr "一致しません"
+
+#: configdlg.cpp:50
+msgid "Text Color:"
+msgstr "文字の色:"
+
+#: configdlg.cpp:64
+msgid "Background Color:"
+msgstr "背景の色:"
+
+#: configdlg.cpp:83
+msgid "Width:"
+msgstr "幅:"
+
+#: configdlg.cpp:93
+msgid "Height:"
+msgstr "高さ:"
+
+#: configdlg.cpp:104
+msgid "Print Command:"
+msgstr "印刷のコマンド:"
+
+#: configdlg.cpp:112
+msgid "Mail Command:"
+msgstr "メール送信のコマンド:"
+
+#: configdlg.cpp:123
+msgid "3d Frame"
+msgstr "枠有り"
+
+#: fontdlg.cpp:45
+msgid "Set Default Font"
+msgstr "デフォルトフォントの設定"
+
+#: fontdlg.cpp:54
+msgid "Family:"
+msgstr "ファミリー:"
+
+#: fontdlg.cpp:64
+msgid "Point Size:"
+msgstr "ポイントサイズ:"
+
+#: fontdlg.cpp:75
+msgid "Style:"
+msgstr "スタイル:"
+
+#: fontdlg.cpp:87
+msgid "Weight:"
+msgstr "ウェイト:"
+
+#: fontdlg.cpp:93 fontdlg.cpp:117 fontdlg.cpp:150
+msgid "Bold"
+msgstr "ボールド"
+
+#: fontdlg.cpp:95 fontdlg.cpp:119 fontdlg.cpp:152
+msgid "Normal"
+msgstr "ノーマル"
+
+#: mail.cpp:40
+msgid "Mail Note to:"
+msgstr "ノートの送信先:"
+
+#: mail.cpp:49
+msgid "Subject:"
+msgstr "サブジェクト:"
+
+#: mail.cpp:51
+msgid "Mail"
+msgstr "メール"
+
+#: mail.cpp:92
+msgid "You must specify a Recipient"
+msgstr "受取人を指定してください"
+
+#: alarm.cpp:58
+#, c-format
+msgid "Alarm Timer for: %s"
+msgstr " %sのアラーム設定"
+
+#: alarm.cpp:72
+msgid "Unset"
+msgstr "解除する"
+
+#: alarm.cpp:74
+msgid "Set"
+msgstr "設定する"
+
+#: alarm.cpp:153
+msgid "I am afraid you already missed your appointment."
+msgstr "約束した時間はもう過ぎたんじゃないですか? (^^;"
+
+#: bwdatetime.cpp:44
+msgid "Day:"
+msgstr "日:"
+
+#: bwdatetime.cpp:50
+msgid "Month:"
+msgstr "月:"
+
+#: bwdatetime.cpp:57
+msgid "Year:"
+msgstr "年:"
+
+#: bwdatetime.cpp:72
+msgid "Time:"
+msgstr "時間:"
+
+#: bwdatetime.cpp:85
+msgid "AM"
+msgstr "AM"
+
+#: bwdatetime.cpp:86
+msgid "PM"
+msgstr "PM"
+
+#: bwdatetime.cpp:161
+msgid "The Time you selected is invalid"
+msgstr "無効な時間です"
+
+#: bwdatetime.cpp:176
+msgid "The Date you selected is invalid"
+msgstr "無効な日付けです"
+
+#: renamedlg.cpp:39
+msgid "Rename this note to"
+msgstr "新しい名前"
+
+#: renamedlg.cpp:44
+msgid "Rename"
+msgstr "決定"
+
+#: renamedlg.cpp:79
+msgid ""
+"The name \"xyalarms\" is reserved for internal usage.\n"
+"Please choose a different name"
+msgstr ""
+"\"xyalarms\" というのは内部で使われています。\n"
+"別の名前にしてください。"
+
+#: renamedlg.cpp:92
+msgid ""
+"A KNotes note with this name already exists\n"
+"Please choose a different name"
+msgstr ""
+"この名前は使われています。\n"
+"別の名前にしてください。"
+
+#: docking.cpp:48
+#, c-format
+msgid "Could not load %s !"
+msgstr "%s を開けません!"
+
+#: docking.cpp:68
+msgid "Change Defaults"
+msgstr "デフォルトの変更"
+
+#: docking.cpp:73
+msgid "Exit Knotes"
+msgstr "Knotes の終了"
+
+#: docking.cpp:92
+msgid "New Knote"
+msgstr "新しい Knote"

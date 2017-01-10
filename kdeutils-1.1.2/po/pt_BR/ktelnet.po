@@ -1,0 +1,504 @@
+msgid ""
+msgstr ""
+"Date: 1998-05-01 20:02:19+0200\n"
+"From: Martin Haefner <mh@jeff_clever>\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Xgettext-Options: -C -ki18n\n"
+"Files: appearance.cc configtab.cc exitwidget.cc kcmdlineargs.cc kfdird.cc linkdirselect.cc main.cc mainwidget.cc mywidget.cc panelwindow.cc sessiondata.cc startupwidget.cc\n"
+
+#: appearance.cc:37
+msgid "Window"
+msgstr "Janela"
+
+#: appearance.cc:45
+msgid "Menus"
+msgstr "Menus"
+
+#: appearance.cc:52
+msgid "Minimum Window"
+msgstr "Janela mínima"
+
+#: appearance.cc:60
+msgid "Standard Window"
+msgstr "Janela padrão"
+
+#: appearance.cc:68
+msgid "Full Window"
+msgstr "Janela Cheia"
+
+#: appearance.cc:76
+msgid "Show Menubar"
+msgstr "Mostrar barra de menu"
+
+#: appearance.cc:84
+msgid "Show Buttonbar"
+msgstr "Mostrar barra de botões"
+
+#: configtab.cc:31
+msgid "Configure KTelnet"
+msgstr "Configurar KTelnet"
+
+#: configtab.cc:38
+msgid "Appearance"
+msgstr "Aparência"
+
+#: configtab.cc:39 startupwidget.cc:39
+msgid "StartUp"
+msgstr "Iniciar"
+
+#: configtab.cc:40
+msgid "On Exit"
+msgstr "Ao Sair"
+
+#: configtab.cc:44 kfdird.cc:52 linkdirselect.cc:90 mainwidget.cc:154
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: configtab.cc:45
+msgid "Apply"
+msgstr "Aplicar"
+
+#: exitwidget.cc:38
+msgid "Exit"
+msgstr "Sair"
+
+#: exitwidget.cc:45
+msgid "Exit on Connect"
+msgstr "Sair ao Conectar"
+
+#: exitwidget.cc:53
+msgid "AutoSave options on exit"
+msgstr "Auto-salvar opções ao sair"
+
+#: exitwidget.cc:59
+msgid "AutoSave sessions on exit"
+msgstr "Auto-salvar sessões ao sair"
+
+#: exitwidget.cc:67
+msgid "X Hosts"
+msgstr "Máquinas X"
+
+#: exitwidget.cc:72
+msgid "Call xhost for remote"
+msgstr "Chamar xhost para remoto"
+
+#: kfdird.cc:50
+msgid "Directories:"
+msgstr "Diretórios:"
+
+#: kfdird.cc:51 linkdirselect.cc:82
+msgid "OK"
+msgstr "OK"
+
+#: kfdird.cc:171 kfdird.cc:196 kfdird.cc:214
+msgid "Sorry"
+msgstr "Desculpe"
+
+#: kfdird.cc:172 kfdird.cc:197 kfdird.cc:215
+msgid "Cannot open or read directory."
+msgstr "Impossível abrir ou ler diretório."
+
+#: linkdirselect.cc:35
+msgid "Create KDE Link"
+msgstr "Criar vínculo KDE"
+
+#: linkdirselect.cc:42
+msgid "Save to location"
+msgstr "Salvar para localização"
+
+#: linkdirselect.cc:49
+msgid "Desktop"
+msgstr "Ambiente de trabalho"
+
+#: linkdirselect.cc:57
+msgid "Personal application link directory"
+msgstr "Diretório dos vínculos a aplicações pessoais"
+
+#: linkdirselect.cc:65
+msgid "User defined directory"
+msgstr "Diretório definido pelo usuário"
+
+#: linkdirselect.cc:73
+msgid "Browse ..."
+msgstr "Navegar ..."
+
+#: linkdirselect.cc:76
+msgid "Click to select a directory"
+msgstr "Clicar para selecionar um diretório"
+
+#: main.cc:106 sessiondata.cc:38 sessiondata.cc:74 sessiondata.cc:488 sessiondata.cc:500 sessiondata.cc:512
+msgid "Warning"
+msgstr "Aviso"
+
+#: main.cc:107
+msgid ""
+"Your sessions have changed but are not saved yet.\n"
+"Save now?"
+msgstr "Suas sessões mudaram mas ainda não estão salvas.\nSalvar agora ?"
+
+#: main.cc:108 mywidget.cc:150 sessiondata.cc:74
+msgid "Yes"
+msgstr "Sim"
+
+#: main.cc:108 mywidget.cc:151 sessiondata.cc:74
+msgid "No"
+msgstr "Não"
+
+#: mainwidget.cc:35
+msgid "Session:"
+msgstr "Sessão:"
+
+#: mainwidget.cc:36
+msgid "Account:"
+msgstr "Conta:"
+
+#: mainwidget.cc:37
+msgid "Host:"
+msgstr "Máquina:"
+
+#: mainwidget.cc:40
+msgid "Further Options:"
+msgstr "Opções avançadas:"
+
+#: mainwidget.cc:60
+msgid ""
+"Select session, right\n"
+"mousebutton to change name"
+msgstr "Selecione a sessão, clique\ncom o botão direito para mudar nome"
+
+#: mainwidget.cc:65 mainwidget.cc:479
+msgid "Enter new session name"
+msgstr "Digite novo nome de sessão"
+
+#: mainwidget.cc:75
+msgid "Enter remote host"
+msgstr "Digite nome da máquina remota"
+
+#: mainwidget.cc:81
+msgid "Enter account to log in"
+msgstr "Digite a conta de login"
+
+#: mainwidget.cc:85
+msgid "Terminal type:"
+msgstr "Tipo de terminal:"
+
+#: mainwidget.cc:86
+msgid "Connect/Port:"
+msgstr "Conexão/Porta:"
+
+#: mainwidget.cc:87
+msgid "Textsize:"
+msgstr "Tamanho da letra:"
+
+#: mainwidget.cc:88
+msgid "Background Color:"
+msgstr "Cor de fundo:"
+
+#: mainwidget.cc:89
+msgid "Foreground Color:"
+msgstr "Cor de frente:"
+
+#: mainwidget.cc:92
+msgid "Toolbar Icon:"
+msgstr "Ícone da barra de ferramentas:"
+
+#: mainwidget.cc:97
+msgid "Change Terminal"
+msgstr "Mudar Terminal"
+
+#: mainwidget.cc:103
+msgid "Tiny - 6x13"
+msgstr "Diminuto - 6x13"
+
+#: mainwidget.cc:104
+msgid "Small - 7x14"
+msgstr "Pequeno - 7x14"
+
+#: mainwidget.cc:105
+msgid "Medium - 8x13"
+msgstr "Médio - 8x13"
+
+#: mainwidget.cc:106
+msgid "Large - 9x15"
+msgstr "Grande - 9x15"
+
+#: mainwidget.cc:107
+msgid "Huge - 10x20"
+msgstr "Enorme - 10x20"
+
+#: mainwidget.cc:108
+msgid "Change terminal textsize"
+msgstr "Mudar tamanho da letra"
+
+#: mainwidget.cc:115
+msgid "Change connection program"
+msgstr "Mudar programa de conexão"
+
+#: mainwidget.cc:119
+msgid ""
+"Set port number, Telnet default=23\n"
+"Secure Shell default=22\n"
+"Set to \"0\" if not shure"
+msgstr "Configurar número da porta, padrão Telnet=23\nConfigurar para \"0\" se não tiver certeza"
+
+#: mainwidget.cc:123
+msgid "Click to change background color"
+msgstr "Clique para mudar cor de fundo"
+
+#: mainwidget.cc:126
+msgid "Click to change foreground color"
+msgstr "Clique para mudar cor de frente"
+
+#: mainwidget.cc:133
+msgid "Enter additional terminal options here"
+msgstr "Digite aqui opções adicionais do terminal"
+
+#: mainwidget.cc:141 mainwidget.cc:438 mainwidget.cc:581 mainwidget.cc:730 mainwidget.cc:737 mainwidget.cc:765
+msgid "Add to toolbar"
+msgstr "Adicionar à barra de ferramentas"
+
+#: mainwidget.cc:144
+msgid ""
+"Click to add/remove\n"
+"session to toolbar"
+msgstr "Clique para adicionar/remover\nsessão da barra de ferramentas"
+
+#: mainwidget.cc:147
+msgid "Accept"
+msgstr "Aceitar"
+
+#: mainwidget.cc:149
+msgid "Accept the new session"
+msgstr "Aceitar a nova sessão"
+
+#: mainwidget.cc:157
+msgid "Cancel entering a new session"
+msgstr "Cancelar a digitação da nova sessão"
+
+#: mainwidget.cc:164
+msgid "Connect"
+msgstr "Conectar"
+
+#: mainwidget.cc:167
+msgid "Start the remote session"
+msgstr "Iniciar a sessão remota"
+
+#: mainwidget.cc:179
+msgid "Lower Window Size"
+msgstr "Diminuir tamanho da janela"
+
+#: mainwidget.cc:180
+msgid "Raise Window Size"
+msgstr "Aumentar tamanho da janela"
+
+#: mainwidget.cc:459
+msgid ""
+"Enter new session name.\n"
+"Press RETURN to finish."
+msgstr "Digite novo nome de sessão.\nPressione RETURN para finalizar."
+
+#: mainwidget.cc:580 mainwidget.cc:732
+msgid "Remove"
+msgstr "Remover"
+
+#: mywidget.cc:140 sessiondata.cc:128
+msgid "Error"
+msgstr "Erro"
+
+#: mywidget.cc:141
+msgid "You need at least 1 session!"
+msgstr "Você precisa de no mínimo uma sessão !"
+
+#: mywidget.cc:145
+msgid "You attempt to delete session \""
+msgstr "Você tentou remover a sessão \""
+
+#: mywidget.cc:147
+msgid ""
+"\"!\n"
+"\n"
+"Continue deleting?"
+msgstr "\"!\n\nProceder à remoção?"
+
+#: mywidget.cc:149 mywidget.cc:355
+msgid "Delete session"
+msgstr "Remover sessão"
+
+#: mywidget.cc:171
+msgid "Show &menubar"
+msgstr "Mostrar &barra de menu"
+
+#: mywidget.cc:186 mywidget.cc:396
+msgid "Hide &menubar"
+msgstr "Esconder &barra de menu"
+
+#: mywidget.cc:201
+msgid "Show &toolbar"
+msgstr "Mostrar barra de &ferramentas"
+
+#: mywidget.cc:216 mywidget.cc:397
+msgid "Hide &toolbar"
+msgstr "Esconder barra de &ferramentas"
+
+#: mywidget.cc:348
+msgid "Exit the remote login manager"
+msgstr "Sair do gerenciador de login remoto"
+
+#: mywidget.cc:352
+msgid "Define new session"
+msgstr "Definir nova sessão"
+
+#: mywidget.cc:359
+msgid "Save sessions"
+msgstr "Salvar sessões"
+
+#: mywidget.cc:364
+msgid "Panelize the program"
+msgstr "Embutir programa no Painel"
+
+#: mywidget.cc:367
+msgid "Get Help"
+msgstr "Obter Ajuda"
+
+#: mywidget.cc:399
+msgid "On &panel"
+msgstr "No &painel"
+
+#: mywidget.cc:402 mywidget.cc:441
+msgid "&Options"
+msgstr "&Opções"
+
+#: mywidget.cc:403
+msgid "Sa&ve options"
+msgstr "Sal&var opções"
+
+#: mywidget.cc:407
+msgid "&New Session"
+msgstr "&Nova sessão"
+
+#: mywidget.cc:408
+msgid "&Delete Session"
+msgstr "&Remover sessão"
+
+#: mywidget.cc:410
+msgid "&Save Sessions"
+msgstr "&Salvar sessões"
+
+#: mywidget.cc:413
+msgid "&Create kdelnk"
+msgstr "&Criar kdelnk"
+
+#: mywidget.cc:415
+msgid "E&xit"
+msgstr "Sai&r"
+
+#: mywidget.cc:424
+msgid "     formerly Telly"
+msgstr "      antes Telly"
+
+#: mywidget.cc:426
+msgid ""
+"\n"
+"\n"
+"(c) 1997/98 by\n"
+"Spaghetti Code Computing"
+msgstr "\n\n(c) 1997/98 por\nSpaghetti Code Computing"
+
+#: mywidget.cc:428
+msgid ""
+"\n"
+"\n"
+"Written by Martin H\344fner and Cristian Tibirna"
+msgstr "\n\nEscrito por Martin H\344fner e Cristian Tibirna"
+
+#: mywidget.cc:430
+msgid ""
+"\n"
+"\n"
+"Email: mh@ap-dec717c.physik.uni-karlsruhe.de"
+msgstr "\n\nEmail: mh@ap-dec717c.physik.uni-karlsruhe.de"
+
+#: mywidget.cc:431
+msgid ""
+"\n"
+"Homepage: http://ap-dec717c.physik.uni-karlsruhe.de/~mh/ktelnet"
+msgstr "\nHome-page: http://ap-dec717c.physik.uni-karlshure.de/~mh/ktelnet"
+
+#: mywidget.cc:432
+msgid ""
+"\n"
+"\n"
+"Thanks to all translators!"
+msgstr "\n\nObrigado a todos os tradutores!"
+
+#: mywidget.cc:440
+msgid "&File"
+msgstr "&Arquivo"
+
+#: mywidget.cc:443
+msgid "&Help"
+msgstr "&Ajuda"
+
+#: panelwindow.cc:39
+msgid ""
+"Click left to start session\n"
+"Click right to get mainwindow"
+msgstr "Use o botão esquerdo para iniciar sessão\nUse o botão direito para chegar à janela principal"
+
+#: sessiondata.cc:39
+msgid "Something went wrong reading the global resource file! Could not find any terminals. Stop!"
+msgstr "Houve algo de errado na leitura do arquivo global de recursos! Não pude encontrar nenhum terminal. Pare!"
+
+#: sessiondata.cc:74
+msgid ""
+"File already exists!\n"
+"Overwrite it?"
+msgstr "Arquivo já existe!\nSobre-escrever ?"
+
+#: sessiondata.cc:105
+msgid "Connects to "
+msgstr "Conecta a "
+
+#: sessiondata.cc:113
+msgid "Opens Terminal"
+msgstr "Abrir Terminal"
+
+#: sessiondata.cc:121
+msgid "Information"
+msgstr "Informação"
+
+#: sessiondata.cc:122
+msgid "Saved file  "
+msgstr "Salvar arquivo  "
+
+#: sessiondata.cc:124
+msgid ""
+"Perhaps you need to resfresh your desktop\n"
+"or panel to display the KDElnk icon."
+msgstr "Talvez você precise atualizar seu ambiente de trabalho\nou painel para mostrar o ícone KDElnk."
+
+#: sessiondata.cc:129
+msgid ""
+"Could not open file!\n"
+"Maybe you don't have write permissions."
+msgstr "Impossível abrir arquivo!\nTalvez você não tenha permissões de escrita."
+
+#: sessiondata.cc:391
+msgid "ordinaryTerminal"
+msgstr "terminalOrdinário"
+
+#: sessiondata.cc:489
+msgid "Nothing to append!"
+msgstr "Nada a adicionar!"
+
+#: sessiondata.cc:501
+msgid "That doesn't seem to be a real account!"
+msgstr "Não parece ser uma conta real!"
+
+#: sessiondata.cc:513
+msgid "No 2 sessions with same name!"
+msgstr "Não pode haver 2 sessões com o mesmo nome!"
+
+#: startupwidget.cc:46
+msgid "Start on panel"
+msgstr "Iniciar no painel"

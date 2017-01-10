@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Le manuel de ktalkd: Questions et réponses</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, ktalkd, talk, otalk, ntalk, discussion, avis">
+<META NAME="description" CONTENT="Le manuel de KTalkD">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Page suivante</A>
+<A HREF="ktalkd-4.html">Page précédente</A>
+<A HREF="ktalkd.html#toc5">Table des matières</A>
+</P>
+<H3><A NAME="s5">5. Questions et réponses</A></H3>
+
+<P>
+<H3><A NAME="ss5.1">5.1 Pourquoi root ne peut-il pas recevoir les avis KDE ?</A>
+</H3>
+
+<P>Car ce serait une faille dans la sécurité, avec le système de détection d'utilisateur actuel. Vous
+pouvez passer outre cette limitation en ajoutant deux lignes dans les fichiers de configuration de xdm
+(qui sont également ceux de kdm).
+Note : la distribution S.u.S.E de Linux contient ces lignes par défaut.
+<P>
+<P>Ces fichiers de configuration se trouvent dans un répertoire du type /etc/X11/xdm,
+ou /usr/X11R6/lib/X11/xdm sur d'autres systèmes. Ce qui suit suppose qu'ils sont dans /etc/X11/xdm,
+vous devrez donc adapter les commandes dans le cas d'un autre répertoire.
+<P>
+<P>Voici ce qu'il faut faire :
+Editez le fichier Xstartup, ou créez-le, (dans le répertoire de configuration de xdm) de telle sorte
+qu'on y trouve :
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/GiveConsole
+sessreg -a -l $DISPLAY -x /etc/X11/xdm/Xservers $USER
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>ainsi que le fichier Xreset afin qu'on y trouve :
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/TakeConsole
+sessreg -d -l $DISPLAY $USER
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Assurez-vous que <B>xdm-config</B> fasse référence à ces deux fichiers :
+<BLOCKQUOTE><CODE>
+<PRE>
+DisplayManager._0.startup:      /etc/X11/xdm/Xstartup
+DisplayManager._0.reset:        /etc/X11/xdm/Xreset 
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>Cela amènera kdm (ou xdm) à connecter l'utilisateur dans utmp, ce qui est ce qui est correct.
+Il ne revient pas à kvt, pas plus qu'à xterm, de connecter l'utilisateur, mais à xdm et à kdm, à mon avis.
+Quoi qu'il en soit, cela évite de connecter l'utilisateur comme un utilisateur de X quand on utilise 
+startx... Y a-t'il des remarques à ce sujet ?
+<P>
+<H3><A NAME="ss5.2">5.2 Pourquoi ne reçois-je pas, alors que je suis un utilisateur normal, des avis KDE?</A>
+</H3>
+
+<P>Si vous utilisez un système linux (avec /proc actif), c'est qu'il y a une bogue. Veuillez
+m'en envoyer une description afin que je puisse la corriger.
+<P>Si vous n'êtes pas dans ce cas, c'est normal : ktalkd ne peut pas trouver l'utilisateur, car KDE
+ne le connecte pas dans utmp et la détection basée sur linux (/proc) est désactivé.
+La solution est la même que dans la section 5.1, dans la mesure où vous passez par kdm ou par xdm
+pour vous connecter à X.
+Une autre solution est de vous assurer que vous avez toujours un terminal xterm ouvert.
+<P>
+<H3><A NAME="ss5.3">5.3 Comment obtenir des informations de débogage de ktalkd ?</A>
+</H3>
+
+<P>Comme il s'agit d'un démon, il n'y a pas d'affichage de débogage sur la sortie standard.
+Pour obtenir des informations de débogage (par exemple avant de soumettre un rapport d'erreur !),
+modifiez les lignes de inetd.conf qui servent à lancer ktalkd et kotalkd pour en faire :
+<BLOCKQUOTE><CODE>
+<PRE>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd -d
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd -d
+</PRE>
+</CODE></BLOCKQUOTE>
+
+(remarquez l'option <B>-d</B>)
+<P>
+<P>Editez ensuite /etc/syslog.conf afin d'ajouter la ligne suivante :
+<BLOCKQUOTE><CODE>
+<PRE>
+*.*         /var/log/all_messages
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Pour que ça marche, vous devez redémarrer inetd et syslogd :
+<BLOCKQUOTE><CODE>
+<PRE>
+% killall -HUP inetd
+% killall -HUP syslogd
+</PRE>
+</CODE></BLOCKQUOTE>
+
+Pour finir, lancez une session de discussion et allez voir les résultats dans /var/log/all_messages
+<P>Quand vous soumettez un rapport d'erreur, n'oubliez pas d'inclure non seulement les informations de
+débogage, mais également le numéro de version de ktalkd et la sortie de l'instruction "./configure".
+Merci.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Page suivante</A>
+<A HREF="ktalkd-4.html">Page précédente</A>
+<A HREF="ktalkd.html#toc5">Table des matières</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

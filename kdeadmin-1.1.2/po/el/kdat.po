@@ -1,0 +1,946 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kdat\n"
+"POT-Creation-Date: 1998-12-10 02:17+0100\n"
+"PO-Revision-Date: 1999-04-11 18:00+0100\n"
+"Last-Translator: Βλαχιδης Κωστας vlachidis@mailcity.com\n"
+"Language-Team: Greek <linux-howto@hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-7\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ArchiveInfoWidget.cpp:39 BackupProfileWidget.cpp:40
+msgid "Archive name:"
+msgstr "Ονομα συμπιεσμένου αρχείου:"
+
+#: ArchiveInfoWidget.cpp:40 FileInfoWidget.cpp:38 TapeInfoWidget.cpp:43
+msgid "Created on:"
+msgstr "Δημιουργήθηκε την:"
+
+#: ArchiveInfoWidget.cpp:41 FileInfoWidget.cpp:41 TapeFileInfoWidget.cpp:36
+msgid "Size:"
+msgstr "Μέγεθος:"
+
+#: BackupDlg.cpp:74 BackupDlg.cpp:75 KDat.cpp:432
+msgid "KDat: Backup"
+msgstr "ΚDat: Αποθήκευση"
+
+#: BackupDlg.cpp:87 IndexDlg.cpp:69 VerifyDlg.cpp:78
+msgid "Elapsed time:"
+msgstr "Διατρέξας χρόνος:"
+
+#: BackupDlg.cpp:90 BackupDlg.cpp:96 IndexDlg.cpp:72 VerifyDlg.cpp:81
+#: VerifyDlg.cpp:87
+msgid "00:00:00"
+msgstr "00:00:00"
+
+#: BackupDlg.cpp:93 VerifyDlg.cpp:84
+msgid "Time remaining:"
+msgstr "Υπολειπόμενος χρόνος:"
+
+#: BackupDlg.cpp:99 VerifyDlg.cpp:90
+msgid "Total kbytes:"
+msgstr "Συνολικά Κιλομπάϊτς:"
+
+#: BackupDlg.cpp:105
+msgid "Kbytes written:"
+msgstr "Κιλομπάϊτς που γράφηκαν:"
+
+#: BackupDlg.cpp:108 IndexDlg.cpp:84 VerifyDlg.cpp:99
+msgid "0k"
+msgstr "Εντάξει"
+
+#: BackupDlg.cpp:111 IndexDlg.cpp:93 VerifyDlg.cpp:102
+msgid "Transfer rate:"
+msgstr "Ταχύτητα μεταφοράς:"
+
+#: BackupDlg.cpp:114 IndexDlg.cpp:96 VerifyDlg.cpp:105
+msgid "0k/min"
+msgstr "Εντάξει/min"
+
+#: BackupDlg.cpp:117 IndexDlg.cpp:87 VerifyDlg.cpp:110
+msgid "Files:"
+msgstr "Αρχεία:"
+
+#: BackupDlg.cpp:120 IndexDlg.cpp:78 IndexDlg.cpp:90 IndexDlg.cpp:102
+msgid "0"
+msgstr "0"
+
+#: BackupDlg.cpp:123
+msgid "Backup log:"
+msgstr "Λογότυπος αποθήκευσης:"
+
+#: BackupDlg.cpp:130 IndexDlg.cpp:112 VerifyDlg.cpp:131
+msgid "Save Log..."
+msgstr "Λογότυπος Σώσιμο"
+
+#: BackupDlg.cpp:135 IndexDlg.cpp:117 VerifyDlg.cpp:136
+msgid "Abort"
+msgstr "Αναίρεση"
+
+#: BackupDlg.cpp:302
+msgid "*** Write failed, giving up."
+msgstr "Αποτυχία Εγγραφής, επιστροφή."
+
+#: BackupDlg.cpp:367 BackupDlg.cpp:377 IndexDlg.cpp:335 VerifyDlg.cpp:358
+#: VerifyDlg.cpp:368
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#: BackupDlg.cpp:380 IndexDlg.cpp:338 VerifyDlg.cpp:371
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: BackupDlg.cpp:384 IndexDlg.cpp:342 VerifyDlg.cpp:375
+#, c-format
+msgid "%s/min"
+msgstr "%s/min"
+
+#: BackupOptDlg.cpp:31 BackupOptDlg.cpp:32
+msgid "KDat: Backup Options"
+msgstr "KDat: Επιλογές Αποθήκευσης"
+
+#: BackupProfileInfoWidget.cpp:40
+msgid "Backup profile name:"
+msgstr "Ονομα Προφίλ Αποθήκευσης:"
+
+#: BackupProfileInfoWidget.cpp:51
+msgid "Files >>"
+msgstr "Αρχεία >>"
+
+#: BackupProfileInfoWidget.cpp:54
+msgid "<< Files"
+msgstr "<< Αρχεία"
+
+#: BackupProfileWidget.cpp:38 KDat.cpp:152
+msgid "Backup"
+msgstr "Αποθήκευση"
+
+#: BackupProfileWidget.cpp:46
+msgid "Working directory:"
+msgstr "Φάκελλος εργασίας:"
+
+#: BackupProfileWidget.cpp:52
+msgid "Backup files:"
+msgstr "Αρχεία αποθήκευσης:"
+
+#: BackupProfileWidget.cpp:58
+msgid "Tar Options"
+msgstr "Επιλογές συμπίεσης τύπου Tar"
+
+#: BackupProfileWidget.cpp:60
+msgid "Stay on one filesystem"
+msgstr "Παραμονή σε ένα σύστημα αρχείων"
+
+#: BackupProfileWidget.cpp:63
+msgid "GNU listed incremental"
+msgstr "Κατάλογος GNU αλαφαβητικός"
+
+#: BackupProfileWidget.cpp:67
+msgid "Snapshot file:"
+msgstr "Αρχειο Snapshot:"
+
+#: BackupProfileWidget.cpp:73
+msgid "Remove snapshot file before backup"
+msgstr "Αφαίρεση αρχείου Snapshot πριν την αποθήκευση"
+
+#: FileInfoWidget.cpp:37 TapeFileInfoWidget.cpp:34
+msgid "File name:"
+msgstr "Όνομα Αρχείου:"
+
+#: FileInfoWidget.cpp:39 TapeFileInfoWidget.cpp:35 TapeInfoWidget.cpp:44
+msgid "Last modified:"
+msgstr "Τελευταία μεταβολή:"
+
+#: FileInfoWidget.cpp:40
+msgid "Last accessed:"
+msgstr "Τελευταία πρόσβαση:"
+
+#: FileInfoWidget.cpp:42
+msgid "Owner:"
+msgstr "Ιδιοκτήτης:"
+
+#: FileInfoWidget.cpp:43
+msgid "Group:"
+msgstr "Ομάδα"
+
+#: IndexDlg.cpp:56 IndexDlg.cpp:57
+msgid "KDat: Index"
+msgstr "KDat: Δείκτης"
+
+#: IndexDlg.cpp:75
+msgid "Archives:"
+msgstr "Συμπιεσμένα Αρχεία:"
+
+#: IndexDlg.cpp:81 VerifyDlg.cpp:96
+msgid "Kbytes read:"
+msgstr "Κιλομπάϊτς που διαβάστηκαν:"
+
+#: IndexDlg.cpp:99
+msgid "Total files:"
+msgstr "Σύνολο αρχείων:"
+
+#: IndexDlg.cpp:105
+msgid "Index log:"
+msgstr "Λογότυπος Δείκτη:"
+
+#: IndexDlg.cpp:226
+msgid "Rewinding tape."
+msgstr "Ξαναγύρισμα ταινίας πίσω."
+
+#: IndexDlg.cpp:228 KDat.cpp:442
+msgid "KDat: Cannot Rewind Tape"
+msgstr "KDat: Αδυναμία για Ξαναγύρισμα ταινίας πίσω"
+
+#: IndexDlg.cpp:228
+msgid "Cannot rewind tape.  Indexing aborted."
+msgstr "Αδυναμία για γύρισμα ταινίας πίσω .Διαγραφή δεικτών"
+
+#: IndexDlg.cpp:232
+msgid "Cannot rewind tape."
+msgstr "Αδυναμία για Ξαναγύρισμα ταινίας πίσω"
+
+#: IndexDlg.cpp:238 KDat.cpp:451 TapeDrive.cpp:222 TapeDrive.cpp:230
+#: TapeDrive.cpp:242 TapeDrive.cpp:254 TapeDrive.cpp:259
+msgid "KDat: Error"
+msgstr "KDat: Σφάλμα"
+
+#: IndexDlg.cpp:238 IndexDlg.cpp:242
+msgid "Failed to skip tape ID."
+msgstr "Αποτυχία παράλειψης κωδικού ταινίας."
+
+#: IndexDlg.cpp:271
+#, c-format
+msgid "Indexing archive %d."
+msgstr "Δημιουργία δεικτών συμπιεσμένου αρχείου %d."
+
+#: IndexDlg.cpp:274
+#, c-format
+msgid "Archive %d"
+msgstr "Συμπιεσμένο αρχείο %d"
+
+#: IndexDlg.cpp:321
+msgid "Reindexed Tape"
+msgstr "Αναδημιουργία δεικτών ταινίας"
+
+#: KDat.cpp:81 KDat.cpp:82 KDat.cpp:1101
+msgid "KDat: <no tape>"
+msgstr "KDat: <Οχι ταινία>"
+
+#: KDat.cpp:86 KDat.cpp:122 KDat.cpp:233 KDat.cpp:1141
+msgid "Mount Tape"
+msgstr "Μοντάρισμα Ταινίας"
+
+#: KDat.cpp:87 KDat.cpp:123
+msgid "Recreate Tape Index"
+msgstr "Αναδημιουργία δεικτών ταινίας"
+
+#: KDat.cpp:89 KDat.cpp:129
+msgid "Format Tape..."
+msgstr "Φορμάρισμα Ταινίας"
+
+#: KDat.cpp:92 KDat.cpp:98 KDat.cpp:126
+msgid "Delete Archive"
+msgstr "Διαγραφή Συμπιεσμένου αρχείου"
+
+#: KDat.cpp:95 KDat.cpp:101 KDat.cpp:121
+msgid "Verify..."
+msgstr "Επαλήθευση"
+
+#: KDat.cpp:96 KDat.cpp:102 KDat.cpp:120
+msgid "Restore..."
+msgstr "Αποκατάσταση"
+
+#: KDat.cpp:105 KDat.cpp:114 KDat.cpp:119
+msgid "Backup..."
+msgstr "Αποθήκευση"
+
+#: KDat.cpp:108
+msgid "Delete Tape Index"
+msgstr "Διαγραφή Δεικτών Ταινίας"
+
+#: KDat.cpp:111 KDat.cpp:124
+msgid "Create Backup Profile"
+msgstr "Δημιουργία Προφίλ Αποθήκευσης"
+
+#: KDat.cpp:116 KDat.cpp:128
+msgid "Delete Backup Profile"
+msgstr "Διαγραφή Προφίλ Αποθήκευσης"
+
+#: KDat.cpp:127
+msgid "Delete Index"
+msgstr "Διαγραφή Δείκτη"
+
+#: KDat.cpp:134
+msgid "Preferences..."
+msgstr "Προτιμήσεις"
+
+#: KDat.cpp:141
+#, c-format
+msgid ""
+"KDat Version %s\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+msgstr ""
+"KDat Εκδοση %s\n"
+"\n"
+"Το KDat είναι ενα πρόγραμμα αποθήκευσης \n"
+"σε μαγνητικη ταινια βασισμένο στο προγραμμα  tar. \n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+
+#: KDat.cpp:148
+msgid "Mount/unmount tape"
+msgstr "Μοντάρισμα/Ξεμοντάρισμα Ταινίας"
+
+#: KDat.cpp:154
+msgid "Verify"
+msgstr "Επαλήθευση"
+
+#: KDat.cpp:168
+msgid "Ready."
+msgstr "Ετοιμος"
+
+#: KDat.cpp:230 KDat.cpp:1138
+msgid "Unmount Tape"
+msgstr "Ξεμοντάρισμα Ταινίας"
+
+#: KDat.cpp:399 KDat.cpp:756
+msgid "%m/%d/%y"
+msgstr "%m/%d/%y"
+
+#: KDat.cpp:400
+#, c-format
+msgid "Archive created on %s"
+msgstr "Διμιουργία συμπιεσμένου Αρχείου σε/την %s"
+
+#: KDat.cpp:418
+msgid "Performing backup..."
+msgstr "Εκτελείται αποθήκευση..."
+
+#: KDat.cpp:431
+#, c-format
+msgid ""
+"WARNING: The estimated archive size is %dKB.\n"
+"The tape has only %dKB of space!\n"
+"\n"
+"Backup anyway?"
+msgstr ""
+"ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Το εκτιμώμενο μήκος αρχείου είναι %dKB.\n"
+"Η ταινία έχει μόνο  %dKB ελεύθερο χώρο!\n"
+"\n"
+"Να γίνη οπωσδήποτε η αποθήκευση;"
+
+#: KDat.cpp:433
+msgid "Backup canceled."
+msgstr "Ακύρωση Αποθήκευσης"
+
+#: KDat.cpp:440 TapeDrive.cpp:520 TapeDrive.cpp:541
+msgid "Rewinding tape..."
+msgstr "Γύρισμα πίσω ταινίας"
+
+#: KDat.cpp:442
+msgid "Cannot rewind tape.  Backup aborted."
+msgstr "Αδύνατο να γυρίσει πίσω η ταινία. Ακύρωση Αποθήκευσης"
+
+#: KDat.cpp:443 KDat.cpp:452 KDat.cpp:472
+msgid "Backup aborted."
+msgstr "Ακύρωση Αποθήκευσης"
+
+#: KDat.cpp:449
+msgid "Skipping to end of tape..."
+msgstr "Πήδημα στο τέλος της ταινίας"
+
+#: KDat.cpp:451
+msgid "Cannot get to end of tape."
+msgstr "Αδυναμία εύρεσης τέλους ταινίας"
+
+#: KDat.cpp:456
+msgid "Backup in progress..."
+msgstr "Αποθήκευση σε εξέλιξη"
+
+#: KDat.cpp:470
+msgid "Backup complete."
+msgstr ""
+
+#: KDat.cpp:591
+msgid "Restore in progress..."
+msgstr "Αποκατάσταση σε εξέλιξη"
+
+#: KDat.cpp:593
+msgid "Verify in progress..."
+msgstr "Επιβεβαίωση σε εξέλιξη"
+
+#: KDat.cpp:600
+msgid "Restore complete."
+msgstr "Αποπεράτωση αποκατάστασης"
+
+#: KDat.cpp:602
+msgid "Verify complete."
+msgstr "Αποπεράτωση επιβεβαίωσης"
+
+#: KDat.cpp:606
+msgid "Restore aborted."
+msgstr "Ακύρωση αποκατάστασης"
+
+#: KDat.cpp:608
+msgid "Verify aborted."
+msgstr "Ακύρωση επιβεβαίωσης"
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "KDat: No Tape"
+msgstr ""
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "There is no tape in the drive."
+msgstr "Δεν υπάρχει ταινία στον Οδηγό ταινίας"
+
+#: KDat.cpp:636
+msgid "KDat: Index Tape"
+msgstr "KDat: Δημιουργία δεικτών ταινίας"
+
+#: KDat.cpp:636
+msgid "The current tape index will be overwritten, continue?"
+msgstr "Ο τρεχων δείκτης ταινίας θα επανεγγραφή ,να συνεχίσω ;"
+
+#: KDat.cpp:641 KDat.cpp:1097
+#, c-format
+msgid "KDat: %s"
+msgstr "KDat: %s"
+
+#: KDat.cpp:645
+msgid "Index complete."
+msgstr "Αποπεράτωση δημιουργίας δεικτών"
+
+#: KDat.cpp:647
+msgid "Index aborted."
+msgstr "Αποτυχία δημιουργίας δεικτών"
+
+#: KDat.cpp:656
+msgid "KDat: No Archive Selected"
+msgstr "KDat: Δεν επιλέχθηκε Συμπιεσμένο Αρχείο"
+
+#: KDat.cpp:656
+msgid "An archive must be selected in the tree."
+msgstr "Πρέπει να επιλεχθεί ένα αρχείο απο τον δενδροειδή κατάλογο"
+
+#: KDat.cpp:689
+#, c-format
+msgid ""
+"An archive cannot be removed from the middle of the tape.  If\n"
+"the archive '%s' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%s\n"
+"\n"
+" Delete all listed archives?"
+msgstr ""
+"Δεν μπορεί να αποσυρθεί ένα αρχείο από το μέσον της ταινίας.Εάν \n"
+"το αρχείο '%s'έχει διαγραφεί,τότε\n"
+"τα παρακάτω αρχεία θα διαφραφούν επίσης:\n"
+"%s\n"
+"\n"
+" Να διαγραφούν τα παρακάτω συμπιεσμένα αρχεία;"
+
+#: KDat.cpp:690
+msgid "KDat: Delete Archives?"
+msgstr "KDat: Να διαγραφούν συμπιεσμένα αρχεία;"
+
+#: KDat.cpp:692
+msgid "Archives deleted."
+msgstr "Συμπιεσμένα αρχεία διαγράφηκαν"
+
+#: KDat.cpp:701
+#, c-format
+msgid "Really delete the archive '%s'?"
+msgstr "Να διαγράψω σίγουρα το συμπιεσμένο αρχειο'%s';"
+
+#: KDat.cpp:702
+msgid "KDat: Delete Archive?"
+msgstr "KDat: Να διαγράψω το συμπιεσμένο αρχειο ;"
+
+#: KDat.cpp:704
+msgid "Archive deleted."
+msgstr "Συμπιεσμένο αρχείο διαγράφηκε"
+
+#: KDat.cpp:717
+msgid "KDat: No Tape Index Selected"
+msgstr "KDat: Δεν επιλέχθηκε δείκτης Ταινίας"
+
+#: KDat.cpp:717
+msgid "A tape index must be selected in the tree."
+msgstr "Ενας δείκτης Ταινίας πρέπει να επιλεγεί απο τον δενδροειδή κατάλογο."
+
+#: KDat.cpp:724
+msgid "KDat: Tape Is Mounted"
+msgstr "KDat: Η Ταινία μονταρίσθηκε"
+
+#: KDat.cpp:724
+msgid ""
+"The index for a mounted tape cannot be deleted.\n"
+"\n"
+"Unmount the tape and try again."
+msgstr ""
+"Ο Δείκτης μιας μονταρισμένης ταινίας δεν μπορεί να κασταστραφεί.\n"
+"\n"
+"Ξεμοντάρισε την ταινία και ξαναπροσπάθησε."
+
+#: KDat.cpp:729
+#, c-format
+msgid "Really delete the index for '%s'?"
+msgstr "Πράγματι να διαφράψω τον δείκτη του '%s';"
+
+#: KDat.cpp:730
+msgid "KDat: Delete Tape Index?"
+msgstr "KDat: Να διαγραφεί ο δείκτης;"
+
+#: KDat.cpp:732
+msgid "Tape index deleted."
+msgstr "Διαγράφηκε ο δείκτης της ταινίας"
+
+#: KDat.cpp:743
+msgid "KDat: No Tape In Drive"
+msgstr "KDat: Δεν υπάρχει ταινία στον Οδηγό."
+
+#: KDat.cpp:743
+msgid ""
+"There is no tape in the tape drive.\n"
+"Please insert a tape and try again."
+msgstr ""
+"Δεν υπάρχει ταινία στον Οδηγό Ταινίας.\n"
+"Παρακαλώ τοποθετήσατε μία και προσπαθήστε ξανά."
+
+#: KDat.cpp:748
+msgid "KDat: Write Protected Tape"
+msgstr "KDat: Ταινία προστατευμένη γιά εγγραφή"
+
+#: KDat.cpp:748
+msgid ""
+"The tape in the drive is write protected.\n"
+"Please disable write protection and try again."
+msgstr ""
+"Η Ταινία στον Οδηγό έχει προστασία εγγραφής.\n"
+"Παρακαλώ απενεργοποιήσατε την προστασία εγγραφής και ξαναπροσπαθήσατε."
+
+#: KDat.cpp:752
+msgid "KDat: Format Tape"
+msgstr "KDat: Φορμάρισμα Ταινίας"
+
+#: KDat.cpp:752
+msgid "All data will be lost, continue?"
+msgstr "Ολα τα δεδομένα θα χαθούν ,να συνεχισω;"
+
+#: KDat.cpp:757
+#, c-format
+msgid "Tape created on %s"
+msgstr "Δημιουργία/φορμάρισμα ταινίας στο %s"
+
+#: KDat.cpp:773
+msgid "Formatting tape..."
+msgstr "Φορμάρισμα ταινίας"
+
+#: KDat.cpp:776
+msgid "Format complete."
+msgstr "Αποπεράτωση φορμαρίσματος"
+
+#: KDat.cpp:790
+#, c-format
+msgid "Backup Profile %d"
+msgstr "Αποθήκευση προφίλ %d"
+
+#: KDat.cpp:807
+msgid "Archive"
+msgstr "Αρχείο"
+
+#: KDat.cpp:828
+msgid "KDat: No Backup Profile Selected"
+msgstr "KDat: Δεν επιλέχθηκε προφιλ αποθήκευσης"
+
+#: KDat.cpp:828
+msgid "A backup profile must be selected in the tree."
+msgstr "Ενα προφιλ αποθήκευσης πρέπει να επιλεχεί απο τον δενδροειδή κατάλογο"
+
+#: KDat.cpp:836
+#, c-format
+msgid "Really delete backup profile '%s'?"
+msgstr "Πραγματικά να διαγραφεί το προφιλ αποθήκευσης '%s';"
+
+#: KDat.cpp:837
+msgid "KDat: Delete Backup Profile?"
+msgstr "KDat: Να Διαγράφεί το συμπιεσμένο αρχείο αποθήκευσης ;"
+
+#: KDat.cpp:839
+msgid "Backup profile deleted."
+msgstr "Διαγράφηκε το συμπιεσμένο αρχείο αποθήκευσης"
+
+#: KDat.cpp:877
+msgid "Tape unmounted."
+msgstr "Ταινία Ξεμονταρίστηκε"
+
+#: KDat.cpp:881
+msgid "Reading tape header..."
+msgstr "Ανάγνωση επικεφαλίδας ταινίας"
+
+#: KDat.cpp:888 KDat.cpp:890
+msgid "KDat: Unformatted Tape"
+msgstr "KDat: Μη φορμαρισμένη ταινία"
+
+#: KDat.cpp:888
+msgid "This tape has not been formatted by KDat."
+msgstr "Αυτή η ταινία δεν έχει φορμαρισθεί απο το KDat."
+
+#: KDat.cpp:890
+msgid ""
+"This tape has not been formatted by KDat.\n"
+"\n"
+"Would you like to format it now?"
+msgstr ""
+"Αυτή η ταινία δεν έχει φορμαρισθεί απο το KDat.\n"
+"\n"
+"Θέλετε να την φορμάρετε τώρα;"
+
+#: KDat.cpp:901
+msgid "Tape mounted."
+msgstr "Η ταινία μονταρίσθηκε."
+
+#: KDat.cpp:976
+#, c-format
+msgid "Estimating backup size: %s, %s"
+msgstr "Εκτιμώμενο μέγεθος αποθήκευσης: %s, %s"
+
+#: KDat.cpp:1102
+msgid "KDat: <no tape >"
+msgstr "KDat: <Οχι ταινία>"
+
+#: LoggerWidget.cpp:60
+msgid "KDat: Save Log"
+msgstr "KDat: Σώσιμο Λογότυπου"
+
+#: LoggerWidget.cpp:60
+msgid "Log file exists, overwrite?"
+msgstr "Αρχείο Λογοτύπου υπάρχει . Να επικαλυφθεί;"
+
+#: Node.cpp:1182 Node.cpp:1252
+msgid "<no tape>"
+msgstr "<Οχι ταινία>"
+
+#: Node.cpp:1332
+msgid "Tape Indexes"
+msgstr "Δείκτες ταινίας"
+
+#: Node.cpp:1466
+msgid "Backup Profiles"
+msgstr "Αποθήκευση των προφίλ"
+
+#: OptionsDlg.cpp:39 OptionsDlg.cpp:40
+msgid "KDat: Options"
+msgstr "KDat: Δυνατότητες"
+
+#: OptionsDlg.cpp:44
+msgid "Default tape size:"
+msgstr "Εξ'ορισμού μέγεθος αρχείου:"
+
+#: OptionsDlg.cpp:45
+msgid "Tape block size:"
+msgstr "Μέγεθος τμήματος ταινίας:"
+
+#: OptionsDlg.cpp:46
+msgid "Tape device:"
+msgstr "Συσκευή ταινίας:"
+
+#: OptionsDlg.cpp:47
+msgid "Tar command:"
+msgstr "Εντολή τύπου Tar:"
+
+#: OptionsDlg.cpp:70
+msgid "bytes"
+msgstr "Μπάϊτς"
+
+#: OptionsDlg.cpp:76 OptionsDlg.cpp:82 VerifyOptDlg.cpp:57
+msgid "..."
+msgstr "..."
+
+#: OptionsDlg.cpp:85
+msgid "Tape drive options"
+msgstr "Δυνατότητες Οδηγού ταινίας"
+
+#: OptionsDlg.cpp:87
+msgid "Load tape on mount"
+msgstr "Φόρτωση της ταινίας κατά το μοντάρισμα"
+
+#: OptionsDlg.cpp:90
+msgid "Lock tape drive on mount"
+msgstr "Κλείδωμα του Οδηγου ταινίας κατά το μοντάρισμα"
+
+#: OptionsDlg.cpp:93
+msgid "Eject tape on unmount"
+msgstr "Εξαγωγή της ταινίας κατα το ξεμοντάρισμα"
+
+#: OptionsDlg.cpp:96
+msgid "Variable block size"
+msgstr "Μεταβλητό μέγεθος τμήματος"
+
+#: Tape.cpp:36
+msgid "New Tape"
+msgstr "Νέα ταινία"
+
+#: Tape.cpp:70 Tape.cpp:76 Tape.cpp:85 Tape.cpp:92 Tape.cpp:99 Tape.cpp:103
+msgid "KDat: Format Failed"
+msgstr "KDat: Αποτυχια Φορμαρίσματος"
+
+#: Tape.cpp:70 TapeDrive.cpp:222
+msgid "Rewinding tape failed."
+msgstr "Αποτυχία γυρίσματος πίσω της ταινίας"
+
+#: Tape.cpp:76
+msgid "Cannot set tape block size."
+msgstr "Αδυναμία καθορισμού μεγέθους τμήματος ταινίας"
+
+#: Tape.cpp:85
+msgid "Writing magic string failed."
+msgstr "Αποτυχία εγγραφής μαγικής σειρας χαρακτήρων"
+
+#: Tape.cpp:92
+msgid "Writing version number failed."
+msgstr "Αποτυχία εγγραφής αριθμού έκδοσης"
+
+#: Tape.cpp:99
+msgid "Writing tape ID length failed."
+msgstr "Αποτυχία εγγραφής μήκους κωδικού ταινίας"
+
+#: Tape.cpp:103
+msgid "Writing tape ID failed."
+msgstr "Αποτυχία εγγραφής κωδικού ταινίας"
+
+#: Tape.cpp:132
+msgid "KDat: Tape Index"
+msgstr "KDat: Δείκτης Ταινίας"
+
+#: Tape.cpp:132
+msgid ""
+"No index file was found for this tape.\n"
+"Recreate the index from tape?"
+msgstr ""
+"Δεν ανευρέθηκε αρχείο δεικτών γι'αυτή την ταινία.\n"
+"Να αναδημιουργηθούν οι δείκτες απο την ταινία;"
+
+#: Tape.cpp:150 Tape.cpp:192 Tape.cpp:471 Tape.cpp:477 Tape.cpp:483
+#: Tape.cpp:490 Tape.cpp:497 Tape.cpp:505 Tape.cpp:512 Tape.cpp:520
+#: Tape.cpp:528 Tape.cpp:535 Tape.cpp:542 Tape.cpp:555 Tape.cpp:567
+#: Tape.cpp:575 Tape.cpp:582 Tape.cpp:589 Tape.cpp:618 Tape.cpp:624
+#: Tape.cpp:630 Tape.cpp:637 Tape.cpp:644 Tape.cpp:652 Tape.cpp:659
+#: Tape.cpp:679 Tape.cpp:685 Tape.cpp:721 Tape.cpp:727
+msgid "KDat: Index File Error"
+msgstr "KDat: Σφάλμα Αρχέίου Δεικτών"
+
+#: Tape.cpp:150 TapeDrive.cpp:242
+msgid "Reading version number failed."
+msgstr "Αποτυχία ανάγνωσης αριθμού έκδοσης"
+
+#: Tape.cpp:191
+#, c-format
+msgid ""
+"The tape index file format is version %d.  The index cannot be read by this "
+"version of KDat.  Perhaps the tape index file was created by a newer version "
+"of KDat?"
+msgstr ""
+"Η έκδοση του φορμαρίσματος του αρχείου δεικτών είναι η %d.  Οι Δείκτες "
+"δενμπορούν να διαβαστούν απο αυτή την έκδοση του KDat.  Ισως το Αρχείο "
+"Δεικτών ναδημιουργήθηκε απο μία νεότερη έκδοση του KDat."
+
+#: Tape.cpp:471 Tape.cpp:618 Tape.cpp:679 Tape.cpp:721 TapeDrive.cpp:259
+msgid "Reading tape ID failed."
+msgstr "Αποτυχία ανάγνωσης κωδικού ταινίας"
+
+#: Tape.cpp:477 Tape.cpp:624 Tape.cpp:685 Tape.cpp:727
+msgid "Tape ID on tape does not match tape ID in index file."
+msgstr ""
+"Ο κωδικός της ταινίας δεν συμπίπτει με τον κωδικό ταινίας του αρχείου Δεικτών"
+
+#: Tape.cpp:483 Tape.cpp:630
+msgid "Reading creation time failed."
+msgstr "Τέλος χρόνου ανάγνωσης δημιουργίας ."
+
+#: Tape.cpp:490 Tape.cpp:637
+msgid "Reading modification time failed."
+msgstr "Τέλος χρόνου ανάγνωσης μετατροπής."
+
+#: Tape.cpp:497 Tape.cpp:644
+msgid "Reading tape name failed."
+msgstr "Τέλος χρόνου ανάγνωσης ονόματος ταινίας."
+
+#: Tape.cpp:505 Tape.cpp:652
+msgid "Reading tape size failed."
+msgstr "Τέλος χρόνου ανάγνωσης μεγέθους ταινίας."
+
+#: Tape.cpp:512 Tape.cpp:659
+msgid "Reading archive count failed."
+msgstr "Αποτυχία ανάγνωσης αριθμού συμπιεσμένων αρχείων."
+
+#: Tape.cpp:520
+msgid "Reading archive name failed."
+msgstr "Αποτυχία ανάγνωσης ονόματος αρχείου."
+
+#: Tape.cpp:528
+msgid "Reading archive time stamp failed."
+msgstr "Αποτυχία ανάγνωσης μαρκαρίσματος χρόνου συμπιεσμένου αρχείου."
+
+#: Tape.cpp:535
+msgid "Reading archive start block failed."
+msgstr "Αποτυχία ανάγνωσης πρώτου τμήματος συμπιεσμένου αρχείου."
+
+#: Tape.cpp:542
+msgid "Reading archive end block failed."
+msgstr "Αποτυχία ανάγνωσης Αρχείου και τμήματος"
+
+#: Tape.cpp:555
+msgid "Reading archive file count failed."
+msgstr "Αποτυχία ανάγνωσης αρίθμησης συμπιεσμέμου αρχείου"
+
+#: Tape.cpp:567
+msgid "Reading file name failed."
+msgstr "Αποτυχία ανάγνωσης Ονόματος Αρχείου"
+
+#: Tape.cpp:575
+msgid "Reading file size failed."
+msgstr "Αποτυχία ανάγνωσης μεγέθους Αρχείου."
+
+#: Tape.cpp:582
+msgid "Reading file modification time failed."
+msgstr "Αποτυχία ανάγνωσης χρόνου μετατροπής Αρχείου."
+
+#: Tape.cpp:589
+msgid "Reading file record number failed."
+msgstr "Αποτυχία ανάγνωσης αριθμού εγγραφές Αρχείου."
+
+#: TapeDrive.cpp:188
+msgid "Tape mounted readonly."
+msgstr "Ταινία μονταρισμένη μόνο γιά ανάγνωση."
+
+#: TapeDrive.cpp:190
+msgid "Tape mounted read/write."
+msgstr "Ταινία μονταρισμένη γιά ανάγνωση/εγγραφή."
+
+#: TapeDrive.cpp:227
+msgid "Reading magic string..."
+msgstr "Ανάγνωση Μαγικής σειράς χαρακτήρων."
+
+#: TapeDrive.cpp:230
+msgid "Reading magic string failed."
+msgstr "Αποτυχία ανάγνωσης Μαγικής σειράς χαρακτήρων"
+
+#: TapeDrive.cpp:239
+msgid "Reading version number..."
+msgstr "Ανάγνωση αριθμού έκδοσης..."
+
+#: TapeDrive.cpp:247
+msgid "KDat: Warning"
+msgstr "KDat: Γράψιμο"
+
+#: TapeDrive.cpp:247
+msgid ""
+"Tape was formatted by a more recent version of KDat, consider upgrading."
+msgstr ""
+"Η ταινία φορμαρίσθηκε με μία πιό  νεότερη έκδοση του KDat,ενημερωθείτε."
+
+#: TapeDrive.cpp:251
+msgid "Reading tape ID..."
+msgstr "Ανάγνωση κωδικού ταινίας"
+
+#: TapeDrive.cpp:254
+msgid "Reading tape ID length failed."
+msgstr "Αποτυχία ανάγνωσης μήκους κωδικού ταινίας"
+
+#: TapeDrive.cpp:515
+msgid "Skipping to archive..."
+msgstr "Πήδημα στο συμπιεσμένο αρχείο..."
+
+#: TapeDrive.cpp:537
+msgid "Skipping to block..."
+msgstr "Πήδημα στο τμήμα.."
+
+#: TapeFileInfoWidget.cpp:37
+msgid "Start record:"
+msgstr "Έναρξη εγγραφής"
+
+#: TapeFileInfoWidget.cpp:38
+msgid "End record:"
+msgstr "Τέλος Έφφραφής:"
+
+#: FormatOptDlg.cpp:39 TapeInfoWidget.cpp:40
+msgid "Tape name:"
+msgstr "Όνομα Ταινίας:"
+
+#: FormatOptDlg.cpp:40 TapeInfoWidget.cpp:41
+msgid "Tape size:"
+msgstr "Μέγεθος Ταινίας:"
+
+#: TapeInfoWidget.cpp:42
+msgid "Tape ID:"
+msgstr "Κωδικός Ταινίας:"
+
+#: TapeInfoWidget.cpp:45
+msgid "Archive count:"
+msgstr "Αρίθμηση συμπιεσμένων αρχείων:"
+
+#: TapeInfoWidget.cpp:46
+msgid "Space used:"
+msgstr "Χώρος που χρησιμοποιήθηκε:"
+
+#: FormatOptDlg.cpp:36 FormatOptDlg.cpp:37
+msgid "KDat: Format Options"
+msgstr "KDat: Eπιλογές Φορμαρίσματος"
+
+#: VerifyDlg.cpp:61 VerifyDlg.cpp:62
+msgid "KDat: Restore"
+msgstr "KDat: Αποκατάσταση"
+
+#: VerifyDlg.cpp:64 VerifyDlg.cpp:65
+msgid "KDat: Verify"
+msgstr "KDat: Επαλήθευση"
+
+#: VerifyDlg.cpp:113
+msgid "Differences:"
+msgstr "Διαφορές:"
+
+#: VerifyDlg.cpp:121
+msgid "Restore log:"
+msgstr ""
+
+#: VerifyDlg.cpp:123
+msgid "Verify log:"
+msgstr ""
+
+#: VerifyDlg.cpp:315
+msgid "failed while reading tape data.\n"
+msgstr ""
+
+#: VerifyOptDlg.cpp:38 VerifyOptDlg.cpp:39
+msgid "KDat: Restore Options"
+msgstr "KDat: Επιλογές Αποκατάστασης"
+
+#: VerifyOptDlg.cpp:41 VerifyOptDlg.cpp:42
+msgid "KDat: Verify Options"
+msgstr "KDat: Επιλογές Επαλήθευσης"
+
+#: VerifyOptDlg.cpp:47
+msgid "Restore to directory:"
+msgstr "Αποκατάσταση στον κατάλογο:"
+
+#: VerifyOptDlg.cpp:49
+msgid "Verify in directory:"
+msgstr "Επαλήθευση στον κατάλογο:"
+
+#: VerifyOptDlg.cpp:62
+msgid "Restore files:"
+msgstr "Αποκατάσταση αρχείων:"
+
+#: VerifyOptDlg.cpp:64
+msgid "Verify files:"
+msgstr "Επαλήθευση αρχείων:"

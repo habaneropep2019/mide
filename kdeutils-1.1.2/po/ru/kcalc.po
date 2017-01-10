@@ -1,0 +1,165 @@
+# Перевод kcalc.
+# Copyright (C) 1998, 1999 Free Software Foundation, Inc.
+# Denis Pershin <dyp@inetlab.com>, 1998, 1999.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcalc\n"
+"POT-Creation-Date: 1999-03-05 01:58+0100\n"
+"PO-Revision-Date: 1998-02-08 23:11+0600\n"
+"Last-Translator: Denis Pershin <dyp@inetlab.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: kcalc.cpp:99
+msgid "KCalc Setup/Help"
+msgstr "Установка/Помощь KCalc"
+
+#: kcalc.cpp:152
+msgid "Angle"
+msgstr "Угол"
+
+#: kcalc.cpp:192
+msgid "Base"
+msgstr "Основа"
+
+#: kcalc.cpp:1524
+msgid "KCalc Configuraton"
+msgstr "Настройка KCalc'а"
+
+#: kcalc.cpp:1542
+#, c-format
+msgid ""
+"KCalc %s\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@math.cornell.edu\n"
+"wuebben@kde.org\n"
+"Copyright (C) 1996-98\n"
+"\n"
+"\n"
+msgstr ""
+"KCalc %s\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@math.cornell.edu\n"
+"wuebben@kde.org\n"
+"Copyright (C) 1996-98\n"
+"\n"
+"\n"
+
+#: kcalc.cpp:1551
+msgid "Base type: long double\n"
+msgstr "Базовый тип: long double\n"
+
+#: kcalc.cpp:1553
+msgid ""
+"Due to broken glibc's everywhere, I had to reduce KCalc's precision from "
+"'long double' to 'double'. Owners of systems with a working libc should "
+"recompile KCalc with 'long double' precision enabled. See the README for "
+"details."
+msgstr ""
+"В следствии ошибки в GLIBC я вынужден уменьшить точность KCalc'а с 'long "
+"double' до 'double'. Владельцы систем с работающим GLIBC должны "
+"перекомпилировать KCalc с включенной поддержкой 'long double'. Смотрите "
+"README."
+
+#: configdlg.cpp:56 kcalc.cpp:1592
+msgid "Defaults"
+msgstr "Умолчания"
+
+#: kcalc.cpp:1593
+msgid "Display Font"
+msgstr "Шрифт"
+
+#: kcalc.cpp:1909
+#, c-format
+msgid ""
+"KCalc %s\n"
+"Copyright 1997 Bernd Johannes Wuebben <wuebben@kde.org>\n"
+msgstr ""
+"KCalc %s\n"
+"Copyright 1997 Bernd Johannes Wuebben <wuebben@kde.org>\n"
+
+#: kcalc_core.cpp:1115
+msgid "Last stat item erased"
+msgstr "Последний элемент статической памяти удален"
+
+#: kcalc_core.cpp:1155
+msgid "Stat Mem cleared"
+msgstr "Статистическая память очищена"
+
+#: kcalc_core.cpp:1632
+msgid "Stack processing error - right_op"
+msgstr "Ошибка обработки стека - правый операнд"
+
+#: kcalc_core.cpp:1640
+msgid "Stack processing error - function"
+msgstr "Ошибка обработки стека - функция"
+
+#: kcalc_core.cpp:1649
+msgid "Stack processing error - left_op"
+msgstr "Ошибка обработки стека - левый операнд"
+
+#: kcalc_core.cpp:1953 kcalc_core.cpp:1961
+msgid "Emergency"
+msgstr "Внимание"
+
+#: kcalc_core.cpp:1953 kcalc_core.cpp:1961
+msgid "Stack Error!"
+msgstr "Ошибка стека!"
+
+#: configdlg.cpp:61
+msgid "Foreground Color:"
+msgstr "Цвет текста:"
+
+#: configdlg.cpp:78
+msgid "Background Color:"
+msgstr "Цвет фона:"
+
+#: configdlg.cpp:95
+msgid "Precision:"
+msgstr "Точность:"
+
+#: configdlg.cpp:116
+msgid "Set Fixed Precision at:"
+msgstr "Установить фиксированную точность:"
+
+#: configdlg.cpp:145
+msgid "Beep on Error"
+msgstr "Сигнал при ошибке"
+
+#: configdlg.cpp:153
+msgid "Trigonometry Mode"
+msgstr "Тригонометрический режим"
+
+#: configdlg.cpp:158
+msgid "Statistical Mode"
+msgstr "Статистический режим"
+
+#: fontdlg.cpp:44
+msgid "Set Default Font"
+msgstr "Установить шрифт по умолчанию"
+
+#: fontdlg.cpp:53
+msgid "Family:"
+msgstr "Семейство:"
+
+#: fontdlg.cpp:63
+msgid "Point Size:"
+msgstr "Размер точки:"
+
+#: fontdlg.cpp:76
+msgid "Style:"
+msgstr "Стиль:"
+
+#: fontdlg.cpp:91
+msgid "Weight:"
+msgstr "Ширина:"
+
+#: fontdlg.cpp:101 fontdlg.cpp:134
+msgid "Bold"
+msgstr "Жирный"
+
+#: fontdlg.cpp:103 fontdlg.cpp:136
+msgid "Normal"
+msgstr "Нормальный"

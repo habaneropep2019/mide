@@ -1,0 +1,28 @@
+DefaultName localtoast
+
+Control {
+	Types {
+		text/html { html }
+    		image/jpeg { JPG jpg jpeg JPEG }
+		text/plain { * }
+	}
+	IndexNames {Welcome.html info.html}
+	Specials {
+		CGI { cgi pl }
+	}
+}
+
+Server {
+	Port 8080
+	Control {
+		Alias /
+		Location /home/ralsina/html
+	}
+}
+
+Log /home/ralsina/WebLog
+ErrorLog /tmp/mathopd-1.1/examples/logs/errors
+ChildLog /tmp/mathopd-1.1/examples/logs/children
+PIDFile /tmp/mathopd-1.1/examples/logs/pid
+
+Umask 022

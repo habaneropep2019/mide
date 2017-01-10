@@ -1,0 +1,12 @@
+A note about mail.local :
+
+This program is used by the answering machine to let the callee a mail.
+
+It is supplied in case you don't have sendmail nor qmail.
+It is used by the default system-wide configuration file, so that ktalkd works
+for anybody.
+
+If this program doesn't compile, or if you don't want to install it, 
+or also if you want to receive the mail on another machine,
+just edit the config file (ktalkdrc if KDE installed, otherwise talkd.conf)
+so that MailProg is set to either sendmail or qmail (in sendmail mode).

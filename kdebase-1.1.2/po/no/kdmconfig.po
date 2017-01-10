@@ -1,0 +1,325 @@
+# Norwegian translations for KDE Base, kdmconfig
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Hans Petter Bieker <zerium@webindex.no>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE BASE/kdmconfig\n"
+"POT-Creation-Date: 1999-01-12 01:14+0100\n"
+"PO-Revision-Date: 1998-03-22 18:19+0100\n"
+"Last-Translator: Hans Petter Bieker <zerium@webindex.no>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:84
+msgid "&Appearance"
+msgstr "&Utseende"
+
+#: main.cpp:92
+msgid "&Background"
+msgstr "&Bakgrunn"
+
+#: main.cpp:95
+msgid "&Users"
+msgstr "&Brukere"
+
+#: main.cpp:98
+msgid "&Sessions"
+msgstr "&Sesjoner"
+
+#: main.cpp:103
+msgid ""
+"usage: kdmconfig [-init | {appearance,font,background,sessions,users}]\n"
+msgstr ""
+"bruk: kdmconfig [-init | {appearance,font,background,sessions,users}]\n"
+
+#: main.cpp:142
+msgid "KDM Configuration"
+msgstr "KDM-konfigurasjon"
+
+#: main.cpp:152
+msgid ""
+"Sorry, but you don't have read/write\n"
+"permission to the KDM setup file."
+msgstr ""
+"Beklager, men du har ikke lese/skrive-\n"
+"tilgang til KDM-oppsettsfil."
+
+#: main.cpp:154
+msgid "Missing privileges"
+msgstr "Mangler rettigheter"
+
+#: kdm-appear.cpp:70
+msgid "Greeting string:"
+msgstr "Velkomststreng:"
+
+#: kdm-appear.cpp:78
+msgid "KDM logo:"
+msgstr "KDM-logo:"
+
+#: kdm-appear.cpp:105 kdm-users.cpp:135
+msgid "Click or drop an image here"
+msgstr "Klikk eller slipp et bilde her"
+
+#: kdm-appear.cpp:110
+msgid "GUI Style:"
+msgstr "GUI-stil"
+
+#: kdm-appear.cpp:116
+msgid "Motif"
+msgstr "Motif"
+
+#: kdm-appear.cpp:117
+msgid "Windows"
+msgstr "Windows"
+
+#: kdm-appear.cpp:128
+msgid "Language"
+msgstr "Språk"
+
+#: kdm-appear.cpp:131
+msgid "Language:"
+msgstr "Språk:"
+
+#: kdm-appear.cpp:167 kdm-appear.cpp:251 kdm-users.cpp:276
+msgid ""
+"There was an error loading the image:\n"
+">"
+msgstr ""
+"Det var en feil ved innlasting av bildet:\n"
+">"
+
+#: kdm-appear.cpp:169 kdm-appear.cpp:188 kdm-users.cpp:196
+msgid "<"
+msgstr "<"
+
+#: kdm-appear.cpp:170 kdm-appear.cpp:189 kdm-appear.cpp:254 kdm-users.cpp:197
+#: kdm-users.cpp:279
+msgid "ERROR"
+msgstr "FEIL"
+
+#: kdm-appear.cpp:186 kdm-users.cpp:194
+msgid ""
+"There was an error saving the image:\n"
+">"
+msgstr ""
+"Det var en feil ved lagring av bildet:\n"
+">"
+
+#: kdm-appear.cpp:219 kdm-users.cpp:227
+msgid "Sorry, but \n"
+msgstr "Beklager, men \n"
+
+#: kdm-appear.cpp:221 kdm-users.cpp:229
+msgid ""
+"\n"
+"does not seem to be an image file"
+msgstr ""
+"\n"
+"ser ikke ut til å være en bildefil"
+
+#: kdm-appear.cpp:222 kdm-users.cpp:230
+msgid ""
+"\n"
+"Please use files with these extensions\n"
+msgstr ""
+"\n"
+"Vennligst bruk filer med disse etternavn\n"
+
+#: kdm-appear.cpp:224 kdm-users.cpp:232
+msgid "Improper File Extension"
+msgstr "Feil fil-etternavn"
+
+#: kdm-appear.cpp:253 kdm-users.cpp:278
+msgid ""
+"<\n"
+"It will not be saved..."
+msgstr ""
+"<\n"
+"Det vil ikke bli lagret..."
+
+#: kdm-font.cpp:48
+msgid "Select fonts"
+msgstr "Velg skrifttyper"
+
+#: kdm-font.cpp:50
+msgid "Example"
+msgstr "Eksempel"
+
+#: kdm-font.cpp:52
+msgid "Change font..."
+msgstr "Endre skrifttype..."
+
+#: kdm-font.cpp:57
+msgid "Greeting"
+msgstr "Hilsning"
+
+#: kdm-font.cpp:58
+msgid "Fail"
+msgstr "Slo feil"
+
+#: kdm-font.cpp:59
+msgid "Standard"
+msgstr "Standard"
+
+#: kdm-font.cpp:157
+msgid "Greeting font"
+msgstr "Skrifttype for hilsning"
+
+#: kdm-font.cpp:161
+msgid "Fail font"
+msgstr "Skrifttype for feilslag"
+
+#: kdm-font.cpp:165
+msgid "Standard font"
+msgstr "Standard skrifttype"
+
+#: kdm-bgnd.cpp:70
+msgid "Preview"
+msgstr "Forhåndsvis"
+
+#: kdm-bgnd.cpp:95
+msgid "Color"
+msgstr "Farge"
+
+#: kdm-bgnd.cpp:101
+msgid "Solid Color"
+msgstr "Solid farge"
+
+#: kdm-bgnd.cpp:106
+msgid "Horizontal Blend"
+msgstr "Horisontal overgang"
+
+#: kdm-bgnd.cpp:111
+msgid "Vertical Blend"
+msgstr "Vertikal overgang"
+
+#: kdm-bgnd.cpp:130
+msgid "Wallpaper"
+msgstr "Tapet"
+
+#: kdm-bgnd.cpp:171 kdm-sess.cpp:56
+msgid "None"
+msgstr "Ingen"
+
+#: kdm-bgnd.cpp:176
+msgid "Tile"
+msgstr "Flislagt"
+
+#: kdm-bgnd.cpp:181
+msgid "Center"
+msgstr "Sentrert"
+
+#: kdm-bgnd.cpp:186
+msgid "Scale"
+msgstr "Skalert"
+
+#: kdm-bgnd.cpp:191
+msgid "TopLeft"
+msgstr "Øverst til venstre"
+
+#: kdm-bgnd.cpp:196
+msgid "TopRight"
+msgstr "Øverst til høyre"
+
+#: kdm-bgnd.cpp:201
+msgid "BottomLeft"
+msgstr "Nederst til venstre"
+
+#: kdm-bgnd.cpp:206
+msgid "BottomRight"
+msgstr "Nederst til høyre"
+
+#: kdm-bgnd.cpp:211
+msgid "Fancy"
+msgstr "Stilige"
+
+#: kdm-users.cpp:48
+msgid "All users"
+msgstr "Alle brukere"
+
+#: kdm-users.cpp:50
+msgid "Selected users"
+msgstr "Utvalgte brukere"
+
+#: kdm-users.cpp:52
+msgid "No-show users"
+msgstr "Ikke-vis-brukere"
+
+#: kdm-users.cpp:79
+msgid ""
+"Show only\n"
+"selected users"
+msgstr ""
+"Vis bare\n"
+"utvalgte brukere"
+
+#: kdm-users.cpp:86
+msgid ""
+"Show all users\n"
+" but no-show users"
+msgstr ""
+"Vis alle brukere\n"
+" untatt ikke-vis-brukere"
+
+#: kdm-users.cpp:97
+msgid "Show users"
+msgstr "Vis brukere"
+
+#: kdm-users.cpp:103
+msgid "Sort users"
+msgstr "Sorter brukere"
+
+#: kdm-users.cpp:182 kdm-users.cpp:251
+msgid "No user selected"
+msgstr "Ingen bruker valgt"
+
+#: kdm-users.cpp:183 kdm-users.cpp:252
+msgid "Save image as default image?"
+msgstr "Lagre bilde som standard bilde?"
+
+#: kdm-sess.cpp:52
+msgid "Allow to shutdown"
+msgstr "Tillat å avslutte Unix"
+
+#: kdm-sess.cpp:57
+msgid "All"
+msgstr "Alle"
+
+#: kdm-sess.cpp:58
+msgid "Root Only"
+msgstr "Bare root"
+
+#: kdm-sess.cpp:59
+msgid "Console Only"
+msgstr "Bare konsoll"
+
+#: kdm-sess.cpp:63
+msgid "Commands"
+msgstr "Kommandoer"
+
+#: kdm-sess.cpp:64
+msgid "Shutdown"
+msgstr "Avslutt Unix"
+
+#: kdm-sess.cpp:70
+msgid "Restart"
+msgstr "Omstart"
+
+#: kdm-sess.cpp:77
+msgid "Session types"
+msgstr "Sesjonstyper"
+
+#: kdm-sess.cpp:79
+msgid "New type"
+msgstr "Ny type"
+
+#: kdm-sess.cpp:89
+msgid "Available types"
+msgstr "Tilgjengelige typer"
+
+#: klangcombo.cpp:133
+msgid "without name!"
+msgstr "uten navn!"

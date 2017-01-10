@@ -1,0 +1,604 @@
+# KTranslator Generated File
+# KTranslator Generated File
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE 1.1\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: Tue Mar 2 1999 12:59:12+0100\n"
+"Last-Translator: Marcell Lengyel <miketkf@yahoo.com>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"X-Generator: KTranslator v 0.4.\n"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "CDDB Kiinduló Könyvtár"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "CDDB küldemények fogadója:"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "CDDB kiszolgáló:"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "Frissít"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "Távoli CDDB Engedélyezés"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "Alapértékek"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "CDDB elérés HTTP proxy-n keresztül"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "CD Adatbázis Szerkesztõ"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"Teljes Idõ:\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"Teljes Idõ:\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "Használja ezt a szerkesztõt a szám elnevezéséhez"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "Használja ezt a szerkesztõt acím megadásához"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "Válasszon egy kategóriát, vagy nyomja meg az Elvet gombot"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "Melyik kategóriába tartozik ez a CD?"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "Cddb bejegyzés feladása: %s\n"
+
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"Nem tudtam a tartalmat beküldeni:\n"
+"%s"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "Melyik karegória alatt kívánja tárolni ezt a CDDB bejegyzést?"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"Nem írható a fájl: \n"
+"%s\n"
+"Ellenõrizze a jogosultságokat, és hogy a kategória könyvtárak léteznek-e."
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "Kscd Hiba"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "Hibás Adatbázis Bejegyzés"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Az Elõadó / Album Cím mezõ nincs kitöltve.\n"
+"Kérem javítsa ki a mezõt, és próbálja újra."
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"Az Elõadó / Album Cím mezõ nincshelyesen  kitöltve.\n"
+"Válassza el az elõadó nevét az album címétõl egy\n"
+"per jellel, úgy mint: Metallica / Master of Puppets\n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Nem lehet minden számcím üres.\n"
+"Kérem, javítsa ki, és próbálja újra."
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "Belsõ Hiba"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Kérem küldjön e-mailt a szerzõnek."
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "Hibás számlista\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "Betöltés"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "Számlista Szerkesztõ"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "Szám-cím szerkesztés"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "Elõadó / Album Cím"
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "Szám / Idõ / Cím"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "Egyéb Infó"
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "CD azonosító"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "Feltölt"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "Kscd konfigurálás"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "LED színe:"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "Háttér szín:"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "CDROM Eszköz:"
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Unix mail parancs:"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "WWW-Böngészõ"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "Használja kfm-et böngészéshez"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "Használjon más böngészõt:"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "Mutassa a tippeket"
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "KPanelbe dokkolás engedélyezés"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr "Lejátszás a tálca becsukásakor"
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr "Minimalizáláskor autómatikus dokkolás"
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr "Lejátszás megáll kilépéskor"
+
+#: configdlg.cpp:190
+msgid "Eject on Finish"
+msgstr "Lökje ki a lemezt, ha vége van"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "Lejátszás/PillanatÁllj"
+
+#: docking.cpp:75
+msgid "Forward"
+msgstr "Elõre"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "Vissza"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "Következõ"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "Elõzõ"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "Kilök"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "Minimalizálás"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr "Nincs pontos találat. Válassza ki a CD-t az alábbilistából."
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "Válasszon Album Címet, vagy nyomja meg az Elvet gombot"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr "Lemez adatok sikeresen elküldve"
+
+#: kscd.cpp:236
+msgid "Error connecting to server."
+msgstr "Hiba a kiszolgálóhoz kapcsolódáskor."
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr "Nincs kapcsolat."
+
+#: kscd.cpp:242
+msgid "Connection timed out."
+msgstr "A kapcsolat túllépte az idõkeretet (timeout)."
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr "Idõtúllépés a kiszolgáló válaszára várakozáskor."
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+"Kiszolgáló válasza:\n"
+"\"%s\""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+"#%d hiba az üzenet SMTP-n keresztül küldésekor.\n"
+"\n"
+"%s"
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "Han: --"
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Események"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "Beszerzés"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Varázslat"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "Végtelen lejátszás"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "Szám választás"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "30 mp-et elõre"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "30 mp-et vissza"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "Következõ szám"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "Elõzõ szám"
+
+#: kscd.cpp:570
+msgid "Quit Kscd"
+msgstr "Kilépés"
+
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "Idõ kijelzõ váltogatás"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Kscd beállítása"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "CD kilökés"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "Az Elõadó a Web-en"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "Véletlenszerû lejátszás"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "CDDB dolgok"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "CD hangerõ beállító"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "Lejátszás"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr "%02d: <Ismeretlen>"
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "Pillanat állj"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "Véletlenszerû"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Furcsa..."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "Leállítva"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "Ismétlõdjön"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "Kilökés"
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "kscd beállítás"
+
+#: kscd.cpp:1008
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Jelenlegi karbantartó:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd program részeket használt fel innen:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Külön köszönet Ti Kan-nek és Steve Scherf-nek, a CDDB adatbázis \n"
+"feltalálóinak. Látogassa meg a http://www.cddb.com -ot további CDDB "
+"információkért.\n"
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"KSCD Varázslat a Synaesthesia-n alapszik,  szerzõje: Paul Harrison \n"
+"<pfh@yoyo.cc.monash.edu.au>\n"
+
+#: kscd.cpp:1025
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Köszönet  Vadim Zaliva-nak  <lord@crocodile.org>\n"
+"a http proxy kódon végzett munkáért.\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr " SMTP Beállítások"
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Kscd beállítások"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Varázslat"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "Han: %02d%%"
+
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"CDROM olvasási vagy hozzáférési hiba.\n"
+"Ellenõrizze, hogy van-e hozzáférési joga:\n"
+"%s"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "Kész"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "Lemez kilökve"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "A CDDB kiszolgáló listája nem elérhetõ."
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "Nincs egyezõ CDDB bejegyzés."
+
+#: kscd.cpp:1834 kscd.cpp:1844
+msgid "Error getting CDDB entry."
+msgstr "Hiba CDDB bejegyzés keresésekor."
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "CDDB kérés túl sokág tart."
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "Szm még"
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Össz mp"
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Össz még"
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "Szm mp"
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "Nem lehet elindítani a kscdmagic-et."
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"KSCD Varázslat rosszul lépett ki.\n"
+"Biztosan telepítve van a kscdmagic?"
+
+#: kscd.cpp:2368
+msgid "Enter the local CDDB base Directory"
+msgstr "A helyi CDDB adatbázisba írja"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: kiírja a parancssori kapcsolókat\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: bekapcsolja a debug kimenetet.\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "Varázsos Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "Varázs ablak szélessége:"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "Varázs ablak magassága:"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "Varázslat fényessége:"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr "SMTP feladás engedélyezés"
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr "SMTP Cím:Port"
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr "Az Ön e-mail címe"

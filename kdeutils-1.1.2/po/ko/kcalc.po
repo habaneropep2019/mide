@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-03-05 01:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: LinuxKorea Co. <kde@linuxkorea.co.kr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: kcalc.cpp:99
+msgid "KCalc Setup/Help"
+msgstr "KCalc 설정/도움말"
+
+#: kcalc.cpp:152
+msgid "Angle"
+msgstr "호도법"
+
+#: kcalc.cpp:192
+msgid "Base"
+msgstr "진수"
+
+#: kcalc.cpp:1524
+msgid "KCalc Configuraton"
+msgstr "KCalc 설정"
+
+#: kcalc.cpp:1542
+#, c-format
+msgid ""
+"KCalc %s\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@math.cornell.edu\n"
+"wuebben@kde.org\n"
+"Copyright (C) 1996-98\n"
+"\n"
+"\n"
+msgstr ""
+
+#: kcalc.cpp:1551
+msgid "Base type: long double\n"
+msgstr "밑수 유형:\n"
+
+#: kcalc.cpp:1553
+msgid ""
+"Due to broken glibc's everywhere, I had to reduce KCalc's precision from "
+"'long double' to 'double'. Owners of systems with a working libc should "
+"recompile KCalc with 'long double' precision enabled. See the README for "
+"details."
+msgstr ""
+"glibc의 결함때문에 KCalc의 유효 자리수를 'long double' 형에서 'double' "
+"형으로 낮춰야 했읍니다. libc로 작동하는 시스템을 소유한 분들은 'long double' "
+"유효 자리수가 가능하도록 KCalc를 재 컴파일하셔야 합니다. 자세한사항은 "
+"README를 참조하십시오."
+
+#: configdlg.cpp:56 kcalc.cpp:1592
+msgid "Defaults"
+msgstr "기본설정"
+
+#: kcalc.cpp:1593
+msgid "Display Font"
+msgstr "화면 글꼴"
+
+#: kcalc.cpp:1909
+#, c-format
+msgid ""
+"KCalc %s\n"
+"Copyright 1997 Bernd Johannes Wuebben <wuebben@kde.org>\n"
+msgstr ""
+
+#: kcalc_core.cpp:1115
+msgid "Last stat item erased"
+msgstr ""
+
+#: kcalc_core.cpp:1155
+msgid "Stat Mem cleared"
+msgstr "통계 메모리 지움"
+
+#: kcalc_core.cpp:1632
+msgid "Stack processing error - right_op"
+msgstr ""
+
+#: kcalc_core.cpp:1640
+msgid "Stack processing error - function"
+msgstr ""
+
+#: kcalc_core.cpp:1649
+msgid "Stack processing error - left_op"
+msgstr ""
+
+#: kcalc_core.cpp:1953 kcalc_core.cpp:1961
+msgid "Emergency"
+msgstr ""
+
+#: kcalc_core.cpp:1953 kcalc_core.cpp:1961
+msgid "Stack Error!"
+msgstr ""
+
+#: configdlg.cpp:61
+msgid "Foreground Color:"
+msgstr "전면색:"
+
+#: configdlg.cpp:78
+msgid "Background Color:"
+msgstr "배경색:"
+
+#: configdlg.cpp:95
+msgid "Precision:"
+msgstr "유효자리수:"
+
+#: configdlg.cpp:116
+msgid "Set Fixed Precision at:"
+msgstr "소수점 아래 자리수 지정:"
+
+#: configdlg.cpp:145
+msgid "Beep on Error"
+msgstr "오류시 경고음"
+
+#: configdlg.cpp:153
+msgid "Trigonometry Mode"
+msgstr "삼각법 모드"
+
+#: configdlg.cpp:158
+msgid "Statistical Mode"
+msgstr "통계 모드"
+
+#: fontdlg.cpp:44
+msgid "Set Default Font"
+msgstr "기본 글꼴 설정"
+
+#: fontdlg.cpp:53
+msgid "Family:"
+msgstr ""
+
+#: fontdlg.cpp:63
+msgid "Point Size:"
+msgstr "포인트 크기:"
+
+#: fontdlg.cpp:76
+msgid "Style:"
+msgstr ""
+
+#: fontdlg.cpp:91
+msgid "Weight:"
+msgstr ""
+
+#: fontdlg.cpp:101 fontdlg.cpp:134
+msgid "Bold"
+msgstr ""
+
+#: fontdlg.cpp:103 fontdlg.cpp:136
+msgid "Normal"
+msgstr ""

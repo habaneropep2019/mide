@@ -1,0 +1,199 @@
+# KFLOPPY CATALAN TRANSLATION
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Sebastià Pla <sastia@redestb.es>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kfloppy\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: 1998-12-13 12:51+0100\n"
+"Last-Translator: Sebastià Pla <sastia@redestb.es>\n"
+"Language-Team: CATALAN <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "Quant al Formatador de Disquet KDE"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "Versió"
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Unitat de Disquet:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Densitat:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Sistema de fitxers:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Format"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Esborrat ràpid"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Format senzer"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Crea etiqueta:"
+
+#: floppy.cpp:148
+msgid "KDE Floppy"
+msgstr "Disquet KDE"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "Formatador de Disquet KDE"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr "DD"
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"No es pot accedir %s\n"
+"Assegureu-vos que el dispositiu existeix\n"
+"i que hi teniu permís d'escriptura."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"No es pot trobar kfdformat\n"
+"kfdformat és una part de la distribució KFloppy.\n"
+"Si us plau, instal·leu KFloppy correctament."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"No es pot trobar kmke2fs\n"
+"kmke2fs és una part de la distribució KFloppy.\n"
+"Si us plau, instal·leu KFloppy correctament."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"No es pot trobar kmkdosfs\n"
+"kmkdosfs és una part de la distribució KFloppy.\n"
+"Si us plau, instal·leu KFloppy correctament."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Atura"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "No es pot engegar un nou programa: ha fallat fork()."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"No es pot accedir al disquet o a la unitat de disquet\n"
+"Si us plau, inserteu un disquet i assegureu-vos que heu\n"
+"seleccionat una unitat de disquet vàlida.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"No es pot formatar %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "El bloc %d es dolent. Continuem ..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"No es pot crear un sistema de fitxers a: %s\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"El disquet ha estat formatat correctament.\n"
+"Blocs marcats dolents: %d\n"
+"Capacitat en brut: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Tots els fitxers s'han esborrat amb èxit."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "S'està creant el sistema de fitxers ..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "S'està verificant ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"No es pot engegar un nou programa\n"
+"ha fallat fork()."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Error provant de determinar si el disquet és muntat\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s és muntat.\n"
+"Si us plau, primer desmunteu el disquet."

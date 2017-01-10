@@ -1,0 +1,824 @@
+# Makefile.in generated automatically by automake 1.4 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# set the include path for X, qt and KDE, and versit library for vCalendar
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+AS = @AS@
+CC = @CC@
+CPP = @CPP@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DLLTOOL = @DLLTOOL@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_RPATH = @KDE_RPATH@
+LD = @LD@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBDL = @LIBDL@
+LIBJPEG = @LIBJPEG@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBSOCKET = @LIBSOCKET@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBZ = @LIBZ@
+LIB_KAB = @LIB_KAB@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KDEUTIL = @LIB_KDEUTIL@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KHTML = @LIB_KHTML@
+LIB_KHTMLW = @LIB_KHTMLW@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_MEDIATOOL = @LIB_MEDIATOOL@
+LIB_QT = @LIB_QT@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MSGFMT = @MSGFMT@
+NM = @NM@
+NOOPT_CXXFLAGS = @NOOPT_CXXFLAGS@
+PACKAGE = @PACKAGE@
+PAMINC = @PAMINC@
+PAMLIBPATHS = @PAMLIBPATHS@
+PAMLIBS = @PAMLIBS@
+PERL = @PERL@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+TOPSUBDIRS = @TOPSUBDIRS@
+USE_NLS = @USE_NLS@
+VERSION = @VERSION@
+XGETTEXT = @XGETTEXT@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+YACC = @YACC@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+install_root = @install_root@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_cgidir = @kde_cgidir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_minidir = @kde_minidir@
+kde_partsdir = @kde_partsdir@
+kde_sounddir = @kde_sounddir@
+kde_toolbardir = @kde_toolbardir@
+kde_wallpaperdir = @kde_wallpaperdir@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+topdir = @topdir@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+INCLUDES = $(all_includes) 	   -I$(srcdir)/versit 
+
+
+# this gives better compile-time warnings.
+CXXFLAGS =  -pedantic
+
+bin_PROGRAMS = korganizer alarmd
+
+LDFLAGS = $(all_libraries) $(KDE_RPATH)
+korganizer_LDADD = versit/libversit.a $(LIB_KFILE) -lkab
+alarmd_LDADD = versit/libversit.a $(LIB_MEDIATOOL)
+
+########## FILES
+
+# Which sources should be compiled for korganizer.
+korganizer_SOURCES = calobject.cpp catdlg.cpp editeventwin.cpp 	eventwidget.cpp eventwingeneral.cpp eventwindetails.cpp 	eventwinrecur.cpp kagenda.cpp kdated.cpp kdatenav.cpp 	kdpdatebutton.cpp kmonthview.cpp kdpevent.cpp kpbutton.cpp 	kdpquickevt.cpp ksellabel.cpp 	ktimed.cpp baselistview.cpp listview.cpp main.cpp  	searchdialog.cpp topwidget.cpp quickdialog.cpp 	calprinter.cpp kptbutton.cpp 	koarchivedlg.cpp optionsdlg.cpp kpropdlg.cpp kpropcheck.cpp 	kpropcombo.cpp kpropradio.cpp kpropfont.cpp 	kpropcolor.cpp kpropspin.cpp kproptext.cpp 	scanholiday.c parseholiday.c aboutdlg.cpp 	vcaldrag.cpp kpropgroup.cpp komailclient.cpp kotodoview.cpp 	dateedit.cpp datevalidator.cpp todoeventwin.cpp eventwin.cpp         wingeneral.cpp todowingeneral.cpp
+
+
+alarmd_SOURCES = alarmdaemon.cpp alarmmain.cpp calobject.cpp kdpevent.cpp 	scanholiday.c parseholiday.c vcaldrag.cpp
+
+
+METASOURCES = editeventwin.moc calobject.moc kdpevent.moc 	kdatenav.moc eventwidget.moc kagenda.moc 	kpbutton.moc kdpdatebutton.moc 	eventwingeneral.moc eventwindetails.moc eventwinrecur.moc 	catdlg.moc ktimed.moc kdated.moc 	baselistview.moc listview.moc topwidget.moc quickdialog.moc 	ksellabel.moc kmonthview.moc kdpquickevt.moc optionsdlg.moc 	searchdialog.moc alarmdaemon.moc 	calprinter.moc kptbutton.moc 	koarchivedlg.moc kpropdlg.moc kpropcheck.moc 	kpropcombo.moc kpropradio.moc kproptext.moc kpropfont.moc 	kpropcolor.moc kpropspin.moc aboutdlg.moc 	kpropgroup.moc komailclient.moc kotodoview.moc 	dateedit.moc datevalidator.moc todoeventwin.moc eventwin.moc 	wingeneral.moc todowingeneral.moc
+
+
+noinst_HEADERS = kmonthview.h misc.h calobject.h 	kpbutton.h optionsdlg.h catdlg.h kagenda.h kptbutton.h 	quickdialog.h editeventwin.h kdated.h ksellabel.h 	eventwidget.h kdatenav.h ksmalldaydisp.h 	topwidget.h eventwindetails.h kdpdatebutton.h ktimed.h 	version.h eventwingeneral.h kdpevent.h baselistview.h listview.h 	eventwinrecur.h kdpquickevt.h 	searchdialog.h calprinter.h kptbutton.h 	koarchivedlg.h kpropdlg.h kpropcheck.h 	kpropcombo.h kpropradio.h kproptext.h kpropfont.h 	kpropcolor.h kpropspin.h parseholiday.h aboutdlg.h 	vcaldrag.h kpropgroup.h komailclient.h kotodoview.h 	dateedit.h datevalidator.h todoeventwin.h eventwin.h         wingeneral.h todowingeneral.h
+
+
+SUBDIRS = versit 	  pixmaps 	  holidays           doc 	  sounds
+
+
+datadir = $(kde_datadir)/korganizer
+data_SCRIPTS = ical2vcal
+
+kde_conf_DATA = korganizerrc
+
+kdelnkdir = $(kde_appsdir)/Applications
+kdelnk_DATA = korganizer.kdelnk
+
+mimedir = $(kde_mimedir)/text
+mime_DATA = x-vcalendar.kdelnk
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = ../config.h
+CONFIG_CLEAN_FILES =  ical2vcal
+PROGRAMS =  $(bin_PROGRAMS)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I..
+CPPFLAGS = @CPPFLAGS@
+LIBS = @LIBS@
+korganizer_OBJECTS =  calobject.o catdlg.o editeventwin.o eventwidget.o \
+eventwingeneral.o eventwindetails.o eventwinrecur.o kagenda.o kdated.o \
+kdatenav.o kdpdatebutton.o kmonthview.o kdpevent.o kpbutton.o \
+kdpquickevt.o ksellabel.o ktimed.o baselistview.o listview.o main.o \
+searchdialog.o topwidget.o quickdialog.o calprinter.o kptbutton.o \
+koarchivedlg.o optionsdlg.o kpropdlg.o kpropcheck.o kpropcombo.o \
+kpropradio.o kpropfont.o kpropcolor.o kpropspin.o kproptext.o \
+scanholiday.o parseholiday.o aboutdlg.o vcaldrag.o kpropgroup.o \
+komailclient.o kotodoview.o dateedit.o datevalidator.o todoeventwin.o \
+eventwin.o wingeneral.o todowingeneral.o
+korganizer_DEPENDENCIES =  versit/libversit.a
+korganizer_LDFLAGS = 
+alarmd_OBJECTS =  alarmdaemon.o alarmmain.o calobject.o kdpevent.o \
+scanholiday.o parseholiday.o vcaldrag.o
+alarmd_DEPENDENCIES =  versit/libversit.a
+alarmd_LDFLAGS = 
+SCRIPTS =  $(data_SCRIPTS)
+
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+CXXLD = $(CXX)
+CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+CFLAGS = @CFLAGS@
+COMPILE = $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
+DATA =  $(kde_conf_DATA) $(kdelnk_DATA) $(mime_DATA)
+
+HEADERS =  $(noinst_HEADERS)
+
+DIST_COMMON =  Makefile.am Makefile.in ical2vcal.in
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = tar
+GZIP_ENV = --best
+SOURCES = $(korganizer_SOURCES) $(alarmd_SOURCES)
+OBJECTS = $(korganizer_OBJECTS) $(alarmd_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cpp .lo .o .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps src/Makefile
+	cd $(top_srcdir) && perl admin/automoc src/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+ical2vcal: $(top_builddir)/config.status ical2vcal.in
+	cd $(top_builddir) && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+mostlyclean-binPROGRAMS:
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+
+distclean-binPROGRAMS:
+
+maintainer-clean-binPROGRAMS:
+
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo " $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	  else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+korganizer: $(korganizer_OBJECTS) $(korganizer_DEPENDENCIES)
+	@rm -f korganizer
+	$(CXXLINK) $(korganizer_LDFLAGS) $(korganizer_OBJECTS) $(korganizer_LDADD) $(LIBS)
+
+alarmd: $(alarmd_OBJECTS) $(alarmd_DEPENDENCIES)
+	@rm -f alarmd
+	$(CXXLINK) $(alarmd_LDFLAGS) $(alarmd_OBJECTS) $(alarmd_LDADD) $(LIBS)
+
+install-dataSCRIPTS: $(data_SCRIPTS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(datadir)
+	@list='$(data_SCRIPTS)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo " $(INSTALL_SCRIPT) $$p $(DESTDIR)$(datadir)/`echo $$p|sed '$(transform)'`"; \
+	    $(INSTALL_SCRIPT) $$p $(DESTDIR)$(datadir)/`echo $$p|sed '$(transform)'`; \
+	  else if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_SCRIPT) $(srcdir)/$$p $(DESTDIR)$(datadir)/`echo $$p|sed '$(transform)'`"; \
+	    $(INSTALL_SCRIPT) $(srcdir)/$$p $(DESTDIR)$(datadir)/`echo $$p|sed '$(transform)'`; \
+	  else :; fi; fi; \
+	done
+
+uninstall-dataSCRIPTS:
+	@$(NORMAL_UNINSTALL)
+	list='$(data_SCRIPTS)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(datadir)/`echo $$p|sed '$(transform)'`; \
+	done
+.cpp.o:
+	$(CXXCOMPILE) -c $<
+.cpp.lo:
+	$(LTCXXCOMPILE) -c $<
+
+install-kde_confDATA: $(kde_conf_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(kde_confdir)
+	@list='$(kde_conf_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(kde_confdir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(kde_confdir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(kde_confdir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(kde_confdir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-kde_confDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(kde_conf_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(kde_confdir)/$$p; \
+	done
+
+install-kdelnkDATA: $(kdelnk_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(kdelnkdir)
+	@list='$(kdelnk_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(kdelnkdir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(kdelnkdir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(kdelnkdir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(kdelnkdir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-kdelnkDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(kdelnk_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(kdelnkdir)/$$p; \
+	done
+
+install-mimeDATA: $(mime_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(mimedir)
+	@list='$(mime_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(mimedir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(mimedir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(mimedir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(mimedir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-mimeDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(mime_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(mimedir)/$$p; \
+	done
+
+# This directory's subdirectories are mostly independent; you can cd
+# into them and run `make' without going through this Makefile.
+# To change the values of `make' variables: instead of editing Makefiles,
+# (1) if the variable is set in `config.status', edit `config.status'
+#     (which will cause the Makefiles to be regenerated when you run `make');
+# (2) otherwise, pass the desired values on the `make' command line.
+
+@SET_MAKE@
+
+all-recursive install-data-recursive install-exec-recursive \
+installdirs-recursive install-recursive uninstall-recursive  \
+check-recursive installcheck-recursive info-recursive dvi-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	target=`echo $@ | sed s/-recursive//`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  echo "Making $$target in $$subdir"; \
+	  if test "$$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$$target-am"; \
+	  else \
+	    local_target="$$target"; \
+	  fi; \
+	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done; \
+	if test "$$dot_seen" = "no"; then \
+	  $(MAKE) $(AM_MAKEFLAGS) "$$target-am" || exit 1; \
+	fi; test -z "$$fail"
+
+mostlyclean-recursive clean-recursive distclean-recursive \
+maintainer-clean-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	rev=''; list='$(SUBDIRS)'; for subdir in $$list; do \
+	  rev="$$subdir $$rev"; \
+	  test "$$subdir" = "." && dot_seen=yes; \
+	done; \
+	test "$$dot_seen" = "no" && rev=". $$rev"; \
+	target=`echo $@ | sed s/-recursive//`; \
+	for subdir in $$rev; do \
+	  echo "Making $$target in $$subdir"; \
+	  if test "$$subdir" = "."; then \
+	    local_target="$$target-am"; \
+	  else \
+	    local_target="$$target"; \
+	  fi; \
+	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done && test -z "$$fail"
+tags-recursive:
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  test "$$subdir" = . || (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) tags); \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS: tags-recursive $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+   if test "$$subdir" = .; then :; else \
+	    test -f $$subdir/TAGS && tags="$$tags -i $$here/$$subdir/TAGS"; \
+   fi; \
+	done; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = src
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+	for subdir in $(SUBDIRS); do \
+	  if test "$$subdir" = .; then :; else \
+	    test -d $(distdir)/$$subdir \
+	    || mkdir $(distdir)/$$subdir \
+	    || exit 1; \
+	    chmod 777 $(distdir)/$$subdir; \
+	    (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir=../$(top_distdir) distdir=../$(distdir)/$$subdir distdir) \
+	      || exit 1; \
+	  fi; \
+	done
+info-am:
+info: info-recursive
+dvi-am:
+dvi: dvi-recursive
+check-am: all-am
+check: check-recursive
+installcheck-am:
+installcheck: installcheck-recursive
+install-exec-am: install-binPROGRAMS
+install-exec: install-exec-recursive
+
+install-data-am: install-dataSCRIPTS install-kde_confDATA \
+		install-kdelnkDATA install-mimeDATA install-data-local
+install-data: install-data-recursive
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-recursive
+uninstall-am: uninstall-binPROGRAMS uninstall-dataSCRIPTS \
+		uninstall-kde_confDATA uninstall-kdelnkDATA \
+		uninstall-mimeDATA
+uninstall: uninstall-recursive
+all-am: Makefile $(PROGRAMS) $(SCRIPTS) $(DATA) $(HEADERS)
+all-redirect: all-recursive
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs: installdirs-recursive
+installdirs-am:
+	$(mkinstalldirs)  $(DESTDIR)$(bindir) $(DESTDIR)$(datadir) \
+		$(DESTDIR)$(kde_confdir) $(DESTDIR)$(kdelnkdir) \
+		$(DESTDIR)$(mimedir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-binPROGRAMS mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-tags \
+		mostlyclean-generic
+
+mostlyclean: mostlyclean-recursive
+
+clean-am:  clean-binPROGRAMS clean-compile clean-libtool clean-tags \
+		clean-generic mostlyclean-am
+
+clean: clean-recursive
+
+distclean-am:  distclean-binPROGRAMS distclean-compile distclean-libtool \
+		distclean-tags distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-metasources distclean-recursive
+
+maintainer-clean-am:  maintainer-clean-binPROGRAMS \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-tags maintainer-clean-generic \
+		distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-recursive
+
+.PHONY: mostlyclean-binPROGRAMS distclean-binPROGRAMS clean-binPROGRAMS \
+maintainer-clean-binPROGRAMS uninstall-binPROGRAMS install-binPROGRAMS \
+mostlyclean-compile distclean-compile clean-compile \
+maintainer-clean-compile mostlyclean-libtool distclean-libtool \
+clean-libtool maintainer-clean-libtool uninstall-dataSCRIPTS \
+install-dataSCRIPTS uninstall-kde_confDATA install-kde_confDATA \
+uninstall-kdelnkDATA install-kdelnkDATA uninstall-mimeDATA \
+install-mimeDATA install-data-recursive uninstall-data-recursive \
+install-exec-recursive uninstall-exec-recursive installdirs-recursive \
+uninstalldirs-recursive all-recursive check-recursive \
+installcheck-recursive info-recursive dvi-recursive \
+mostlyclean-recursive distclean-recursive clean-recursive \
+maintainer-clean-recursive tags tags-recursive mostlyclean-tags \
+distclean-tags clean-tags maintainer-clean-tags distdir info-am info \
+dvi-am dvi check check-am installcheck-am installcheck install-exec-am \
+install-exec install-data-local install-data-am install-data install-am \
+install uninstall-am uninstall all-redirect all-am all installdirs-am \
+installdirs mostlyclean-generic distclean-generic clean-generic \
+maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+
+
+install-data-local:
+	$(mkinstalldirs) $(datadir)/sounds
+
+# make messages.po. Move this one to ../po/ and "make merge" in po
+messages:
+	$(XGETTEXT) -C -ktranslate -ki18n -x $(includedir)/kde.pot \
+		$(korganizer_SOURCES) $(alarmd_SOURCES) && \
+		mv messages.po ../po/korganizer.pot
+
+$(srcdir)/parseholiday.c: parseholiday.y
+	cd $(srcdir) && bison -d -o parseholiday.c parseholiday.y
+
+$(srcdir)/scanholiday.c: scanholiday.lex parseholiday.h
+	cd $(srcdir) && flex -B -oscanholiday.c scanholiday.lex
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+
+$(srcdir)/editeventwin.cpp: editeventwin.moc
+editeventwin.moc: $(srcdir)/editeventwin.h
+	$(MOC) $(srcdir)/editeventwin.h -o editeventwin.moc
+
+$(srcdir)/calobject.cpp: calobject.moc
+calobject.moc: $(srcdir)/calobject.h
+	$(MOC) $(srcdir)/calobject.h -o calobject.moc
+
+$(srcdir)/kdpevent.cpp: kdpevent.moc
+kdpevent.moc: $(srcdir)/kdpevent.h
+	$(MOC) $(srcdir)/kdpevent.h -o kdpevent.moc
+
+$(srcdir)/kdatenav.cpp: kdatenav.moc
+kdatenav.moc: $(srcdir)/kdatenav.h
+	$(MOC) $(srcdir)/kdatenav.h -o kdatenav.moc
+
+$(srcdir)/eventwidget.cpp: eventwidget.moc
+eventwidget.moc: $(srcdir)/eventwidget.h
+	$(MOC) $(srcdir)/eventwidget.h -o eventwidget.moc
+
+$(srcdir)/kagenda.cpp: kagenda.moc
+kagenda.moc: $(srcdir)/kagenda.h
+	$(MOC) $(srcdir)/kagenda.h -o kagenda.moc
+
+$(srcdir)/kpbutton.cpp: kpbutton.moc
+kpbutton.moc: $(srcdir)/kpbutton.h
+	$(MOC) $(srcdir)/kpbutton.h -o kpbutton.moc
+
+$(srcdir)/kdpdatebutton.cpp: kdpdatebutton.moc
+kdpdatebutton.moc: $(srcdir)/kdpdatebutton.h
+	$(MOC) $(srcdir)/kdpdatebutton.h -o kdpdatebutton.moc
+
+$(srcdir)/eventwingeneral.cpp: eventwingeneral.moc
+eventwingeneral.moc: $(srcdir)/eventwingeneral.h
+	$(MOC) $(srcdir)/eventwingeneral.h -o eventwingeneral.moc
+
+$(srcdir)/eventwindetails.cpp: eventwindetails.moc
+eventwindetails.moc: $(srcdir)/eventwindetails.h
+	$(MOC) $(srcdir)/eventwindetails.h -o eventwindetails.moc
+
+$(srcdir)/eventwinrecur.cpp: eventwinrecur.moc
+eventwinrecur.moc: $(srcdir)/eventwinrecur.h
+	$(MOC) $(srcdir)/eventwinrecur.h -o eventwinrecur.moc
+
+$(srcdir)/catdlg.cpp: catdlg.moc
+catdlg.moc: $(srcdir)/catdlg.h
+	$(MOC) $(srcdir)/catdlg.h -o catdlg.moc
+
+$(srcdir)/ktimed.cpp: ktimed.moc
+ktimed.moc: $(srcdir)/ktimed.h
+	$(MOC) $(srcdir)/ktimed.h -o ktimed.moc
+
+$(srcdir)/kdated.cpp: kdated.moc
+kdated.moc: $(srcdir)/kdated.h
+	$(MOC) $(srcdir)/kdated.h -o kdated.moc
+
+$(srcdir)/baselistview.cpp: baselistview.moc
+baselistview.moc: $(srcdir)/baselistview.h
+	$(MOC) $(srcdir)/baselistview.h -o baselistview.moc
+
+$(srcdir)/listview.cpp: listview.moc
+listview.moc: $(srcdir)/listview.h
+	$(MOC) $(srcdir)/listview.h -o listview.moc
+
+$(srcdir)/topwidget.cpp: topwidget.moc
+topwidget.moc: $(srcdir)/topwidget.h
+	$(MOC) $(srcdir)/topwidget.h -o topwidget.moc
+
+$(srcdir)/quickdialog.cpp: quickdialog.moc
+quickdialog.moc: $(srcdir)/quickdialog.h
+	$(MOC) $(srcdir)/quickdialog.h -o quickdialog.moc
+
+$(srcdir)/ksellabel.cpp: ksellabel.moc
+ksellabel.moc: $(srcdir)/ksellabel.h
+	$(MOC) $(srcdir)/ksellabel.h -o ksellabel.moc
+
+$(srcdir)/kmonthview.cpp: kmonthview.moc
+kmonthview.moc: $(srcdir)/kmonthview.h
+	$(MOC) $(srcdir)/kmonthview.h -o kmonthview.moc
+
+$(srcdir)/kdpquickevt.cpp: kdpquickevt.moc
+kdpquickevt.moc: $(srcdir)/kdpquickevt.h
+	$(MOC) $(srcdir)/kdpquickevt.h -o kdpquickevt.moc
+
+$(srcdir)/optionsdlg.cpp: optionsdlg.moc
+optionsdlg.moc: $(srcdir)/optionsdlg.h
+	$(MOC) $(srcdir)/optionsdlg.h -o optionsdlg.moc
+
+$(srcdir)/searchdialog.cpp: searchdialog.moc
+searchdialog.moc: $(srcdir)/searchdialog.h
+	$(MOC) $(srcdir)/searchdialog.h -o searchdialog.moc
+
+$(srcdir)/alarmdaemon.cpp: alarmdaemon.moc
+alarmdaemon.moc: $(srcdir)/alarmdaemon.h
+	$(MOC) $(srcdir)/alarmdaemon.h -o alarmdaemon.moc
+
+$(srcdir)/calprinter.cpp: calprinter.moc
+calprinter.moc: $(srcdir)/calprinter.h
+	$(MOC) $(srcdir)/calprinter.h -o calprinter.moc
+
+$(srcdir)/kptbutton.cpp: kptbutton.moc
+kptbutton.moc: $(srcdir)/kptbutton.h
+	$(MOC) $(srcdir)/kptbutton.h -o kptbutton.moc
+
+$(srcdir)/koarchivedlg.cpp: koarchivedlg.moc
+koarchivedlg.moc: $(srcdir)/koarchivedlg.h
+	$(MOC) $(srcdir)/koarchivedlg.h -o koarchivedlg.moc
+
+$(srcdir)/kpropdlg.cpp: kpropdlg.moc
+kpropdlg.moc: $(srcdir)/kpropdlg.h
+	$(MOC) $(srcdir)/kpropdlg.h -o kpropdlg.moc
+
+$(srcdir)/kpropcheck.cpp: kpropcheck.moc
+kpropcheck.moc: $(srcdir)/kpropcheck.h
+	$(MOC) $(srcdir)/kpropcheck.h -o kpropcheck.moc
+
+$(srcdir)/kpropcombo.cpp: kpropcombo.moc
+kpropcombo.moc: $(srcdir)/kpropcombo.h
+	$(MOC) $(srcdir)/kpropcombo.h -o kpropcombo.moc
+
+$(srcdir)/kpropradio.cpp: kpropradio.moc
+kpropradio.moc: $(srcdir)/kpropradio.h
+	$(MOC) $(srcdir)/kpropradio.h -o kpropradio.moc
+
+$(srcdir)/kproptext.cpp: kproptext.moc
+kproptext.moc: $(srcdir)/kproptext.h
+	$(MOC) $(srcdir)/kproptext.h -o kproptext.moc
+
+$(srcdir)/kpropfont.cpp: kpropfont.moc
+kpropfont.moc: $(srcdir)/kpropfont.h
+	$(MOC) $(srcdir)/kpropfont.h -o kpropfont.moc
+
+$(srcdir)/kpropcolor.cpp: kpropcolor.moc
+kpropcolor.moc: $(srcdir)/kpropcolor.h
+	$(MOC) $(srcdir)/kpropcolor.h -o kpropcolor.moc
+
+$(srcdir)/kpropspin.cpp: kpropspin.moc
+kpropspin.moc: $(srcdir)/kpropspin.h
+	$(MOC) $(srcdir)/kpropspin.h -o kpropspin.moc
+
+$(srcdir)/aboutdlg.cpp: aboutdlg.moc
+aboutdlg.moc: $(srcdir)/aboutdlg.h
+	$(MOC) $(srcdir)/aboutdlg.h -o aboutdlg.moc
+
+$(srcdir)/kpropgroup.cpp: kpropgroup.moc
+kpropgroup.moc: $(srcdir)/kpropgroup.h
+	$(MOC) $(srcdir)/kpropgroup.h -o kpropgroup.moc
+
+$(srcdir)/komailclient.cpp: komailclient.moc
+komailclient.moc: $(srcdir)/komailclient.h
+	$(MOC) $(srcdir)/komailclient.h -o komailclient.moc
+
+$(srcdir)/kotodoview.cpp: kotodoview.moc
+kotodoview.moc: $(srcdir)/kotodoview.h
+	$(MOC) $(srcdir)/kotodoview.h -o kotodoview.moc
+
+$(srcdir)/dateedit.cpp: dateedit.moc
+dateedit.moc: $(srcdir)/dateedit.h
+	$(MOC) $(srcdir)/dateedit.h -o dateedit.moc
+
+$(srcdir)/datevalidator.cpp: datevalidator.moc
+datevalidator.moc: $(srcdir)/datevalidator.h
+	$(MOC) $(srcdir)/datevalidator.h -o datevalidator.moc
+
+$(srcdir)/todoeventwin.cpp: todoeventwin.moc
+todoeventwin.moc: $(srcdir)/todoeventwin.h
+	$(MOC) $(srcdir)/todoeventwin.h -o todoeventwin.moc
+
+$(srcdir)/eventwin.cpp: eventwin.moc
+eventwin.moc: $(srcdir)/eventwin.h
+	$(MOC) $(srcdir)/eventwin.h -o eventwin.moc
+
+$(srcdir)/wingeneral.cpp: wingeneral.moc
+wingeneral.moc: $(srcdir)/wingeneral.h
+	$(MOC) $(srcdir)/wingeneral.h -o wingeneral.moc
+
+$(srcdir)/todowingeneral.cpp: todowingeneral.moc
+todowingeneral.moc: $(srcdir)/todowingeneral.h
+	$(MOC) $(srcdir)/todowingeneral.h -o todowingeneral.moc
+
+distclean-metasources:
+	-rm -f editeventwin.moc calobject.moc kdpevent.moc kdatenav.moc eventwidget.moc kagenda.moc kpbutton.moc kdpdatebutton.moc eventwingeneral.moc eventwindetails.moc eventwinrecur.moc catdlg.moc ktimed.moc kdated.moc baselistview.moc listview.moc topwidget.moc quickdialog.moc ksellabel.moc kmonthview.moc kdpquickevt.moc optionsdlg.moc searchdialog.moc alarmdaemon.moc calprinter.moc kptbutton.moc koarchivedlg.moc kpropdlg.moc kpropcheck.moc kpropcombo.moc kpropradio.moc kproptext.moc kpropfont.moc kpropcolor.moc kpropspin.moc aboutdlg.moc kpropgroup.moc komailclient.moc kotodoview.moc dateedit.moc datevalidator.moc todoeventwin.moc eventwin.moc wingeneral.moc todowingeneral.moc 
+
+# DO_NOT_USE_AUTOMOC

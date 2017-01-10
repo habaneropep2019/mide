@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Das KMidi Handbuch: Installation</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="kmidi midi">
+<META NAME="description" CONTENT="German documentation for kmidi">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kmidi-3.html">Next</A>
+<A HREF="kmidi-1.html">Previous</A>
+<A HREF="kmidi.html#toc2">Table of Contents</A>
+</P>
+<H3><A NAME="s2">2. Installation</A></H3>
+
+<P>
+<H3><A NAME="ss2.1">2.1 Wie Sie KMidi bekommen</A>
+</H3>
+
+<P>KMidi ist ein Teil des KDE-Projekts 
+<A HREF="http://www.kde.org">http://www.kde.org</A>.
+Sie finden KMidi auf 
+<A HREF="ftp://ftp.kde.org/pub/kde/">ftp://ftp.kde.org/pub/kde/</A>, dem
+Haup-FTP-Server des KDE-Projekts.
+Die Homepage ist
+<A HREF="http://math.cornell.edu/~wuebben/kde.html">http://math.cornell.edu/~wuebben/kde.html</A><P>
+<H3><A NAME="ss2.2">2.2 Anforderungen</A>
+</H3>
+
+<P>Um KMidi erfolgreich kompilieren zu können, benötigen Sie die neuesten
+Versionen von <CODE>libkdecore</CODE> und <CODE>libkdeui</CODE>. Alle benötigten
+Libraries wie auch KMidi selbst finden Sie auf
+<A HREF="ftp://ftp.kde.org/pub/kde/">ftp://ftp.kde.org/pub/kde/</A>.
+<P>
+<H3><A NAME="ss2.3">2.3 Übersetzung und Installation</A>
+</H3>
+
+<P>Wenn Sie Timidity bereits installiert haben, so stellen Sie bitte sicher,
+daß Sie eine Sicherungskopie der Konfigurationsdatei haben, da KMidi diese
+in der Voreinstellung überschreibt.
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+% ./configure
+% make
+% make install
+% make install-patch  (wenn dies Ihre erste Installation ist)
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Sollten Sie auf Probleme stoßen, bitte ich Sie, mir diese zu melden.
+<P>
+<P>
+<H3><A NAME="patches"></A> <A NAME="ss2.4">2.4 Woher bekommt man einen vollständigen Satz Patches?</A>
+</H3>
+
+<P>
+<A HREF="mailto:goemon@anime.net">Dan Hollis</A>
+hat einen Patch-Satz zusammengestellt. Bitte besuchen Sie seine Seite auf
+<A HREF="http://www.anime.net/~goemon/timidity/">http://www.anime.net/~goemon/timidity</A>
+und helfen Sie ihm, diesen zum besten verfügbaren Satz zu machen.
+<P>
+<P>Patches können auch als DEP oder RPM Module im Sunsite Archiv gefunden
+werden:
+<P>
+<P>
+<UL>
+<LI> Debian:
+<A HREF="ftp://sunsite.unc.edu/pub/Linux/./distributions/debian/bo/source/sound/timidity-patches_0.1.tar.gz">timidity-patches_0.1.tar.gz</A></LI>
+<LI> RPM:
+<A HREF="ftp://sunsite.unc.edu/pub/Linux/distributions/redhat/contrib/oldrpms/contrib-2.0.x/RPMS/timidity-patches-1-1.i386.rpm">timidity-patches-1-1.i386.rpm</A></LI>
+<LI> RPM:
+<A HREF="ftp://sunsite.unc.edu/pub/Linux/distributions/redhat/contrib/oldrpms/contrib-2.0.x/SRPMS/timidity-patches-1-1.src.rpm-try2">timidity-patches-1-1.src.rpm-try2</A></LI>
+</UL>
+<P>
+<P>Ich habe die oben genannten (bis jetzt) nicht ausprobiert und verwende
+selbst den Midia Patch-Satz, sowie einige zusätzliche Patches und
+Schlagzeug-Sätze.
+<P>Sie finden den Midia Patch-Satz auf
+<A HREF="ftp://archive.cs.umbc.edu/pub/midia/">ftp://archive.cs.umbc.edu/pub/midia/</A>,
+und weitere (Probieren Sie die gsdrum- und wow-Patches aus!) auf
+<A HREF="ftp://ftp.cdrom.com/pub/gus/sound/patches/files/">ftp://ftp.cdrom.com/pub/gus/sound/patches/files/</A><P>Vincent Pagel hat eine Sammlung von Patches zusammengestellt. Dieser Link
+kann nur während der Nachtstunden in Paris erreicht werden:
+<A HREF="ftp://sig.enst.fr/pub/midi/instruments/">ftp://sig.enst.fr/pub/midi/instruments/</A><P>Sie finden die Konfigurationsdatei, die zu seinem Patch-Satz paßt auf:
+<A HREF="ftp://sig.enst.fr/pub/midi/timidity_pagel.cfg">ftp://sig.enst.fr/pub/midi/timidity_pagel.cfg</A><P>Besuchen Sie auch die TimidityPage
+<A HREF="http://www.clinet.fi/~toivonen/timidity/">http://www.clinet.fi/~toivonen/timidity/</A><P>und Takahis's Page
+<A HREF="http://bahamut.mm.t.u-tokyo.ac.jp/~iwai/midi.html#TiMidity">http://bahamut.mm.t.u-tokyo.ac.jp/~iwai/midi.html#TiMidity</A><P>
+<H4>Patch-Satz Installation</H4>
+
+<P>
+<P>Jeder der oben genannten Patch-Sätze (Sie benötigen nur einen) sollte eine
+<CODE>.cfg</CODE>-Datei enthalten, ähnlich jener, die in KMidi enthalten ist und
+sich in <CODE>/usr/local/lib/timidity</CODE> befindet.
+<P>
+<P>KMidi hat für eine Reihe von verbreiteten Patch-Sätzen - wie den media Satz
+- vorbereitete Konfigurationsdateien für Sie bereit.
+<P>Zum Abschuß der Installation eines Patch-Satzes muß <CODE>timidity.cfg</CODE>
+editiert und die Konfigurationsdatei des heruntergeladenen Patch-Satzes
+eingebunden werde. (Wenn Sie einen Blick in die <CODE>timidity.cfg</CODE>-Datei
+werfen, wird Ihnen völlig klar worüber ich spreche.)
+<P>Das war's. Jetzt koennen Sie auch die anderen MIDIs abspielen die sich im
+KMidi Paket befinden.
+<P>
+<P>
+<H4>Verschiedenes</H4>
+
+<P>
+<P>Gelegentlich werden Sie erleben, daß KMidi einen Patch für ein spezielles
+Instrument nicht findet. (Öffnen Sie das Info Fenster um diese Information
+zu sehen.) In diesem Fall müssen Sie sich nur den fehlenden Patch besorgen
+und ihn installieren, indem Sie ihn in das Verzeichnis <CODE>patch/</CODE>
+kopieren und Ihre Konfigurationsdatei bearbeiten, um KMidi anzuzeigen, daß
+der neue Patch nun verfügbar ist.
+<P>
+<P>Manchmal klingt auch ein spezielles Instrument nicht besonders gut. In
+diesem Fall können Sie sich in einem der Ultrasound-Archive einen neuen
+Patch besorgen und damit den schlechteren ersetzen. Wie Sie sehen können,
+ist es völlig Ihnen überlassen, wie gut jedes Instrument klingt. Sie können
+sogar Ihre eigenen Patches mit dem pat2wav Werkzeug machen, das in der
+KMidi-Distribution enthalten ist.
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kmidi-3.html">Next</A>
+<A HREF="kmidi-1.html">Previous</A>
+<A HREF="kmidi.html#toc2">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

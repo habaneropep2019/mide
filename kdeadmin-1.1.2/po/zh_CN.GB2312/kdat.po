@@ -1,0 +1,945 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeadmin\n"
+"POT-Creation-Date: 1998-12-10 02:17+0100\n"
+"PO-Revision-Date: 1999-3-14 17:00+0800\n"
+"Language-Team: zh_CN.GB2312\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=gb2312-80\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translator: Wang Jian <larkw@263.net>\n"
+
+#: ArchiveInfoWidget.cpp:39 BackupProfileWidget.cpp:40
+msgid "Archive name:"
+msgstr "归档名:"
+
+#: ArchiveInfoWidget.cpp:40 FileInfoWidget.cpp:38 TapeInfoWidget.cpp:43
+msgid "Created on:"
+msgstr "建立时间:"
+
+#: ArchiveInfoWidget.cpp:41 FileInfoWidget.cpp:41 TapeFileInfoWidget.cpp:36
+msgid "Size:"
+msgstr "大小:"
+
+#: BackupDlg.cpp:74 BackupDlg.cpp:75 KDat.cpp:432
+msgid "KDat: Backup"
+msgstr "KDat: 备份"
+
+#: BackupDlg.cpp:87 IndexDlg.cpp:69 VerifyDlg.cpp:78
+msgid "Elapsed time:"
+msgstr "用去时间:"
+
+#: BackupDlg.cpp:90 BackupDlg.cpp:96 IndexDlg.cpp:72 VerifyDlg.cpp:81
+#: VerifyDlg.cpp:87
+msgid "00:00:00"
+msgstr "00:00:00"
+
+#: BackupDlg.cpp:93 VerifyDlg.cpp:84
+msgid "Time remaining:"
+msgstr "剩余时间:"
+
+#: BackupDlg.cpp:99 VerifyDlg.cpp:90
+msgid "Total kbytes:"
+msgstr "千字节总数:"
+
+#: BackupDlg.cpp:105
+msgid "Kbytes written:"
+msgstr "写千字节:"
+
+#: BackupDlg.cpp:108 IndexDlg.cpp:84 VerifyDlg.cpp:99
+msgid "0k"
+msgstr "0k"
+
+#: BackupDlg.cpp:111 IndexDlg.cpp:93 VerifyDlg.cpp:102
+msgid "Transfer rate:"
+msgstr "传输速率:"
+
+#: BackupDlg.cpp:114 IndexDlg.cpp:96 VerifyDlg.cpp:105
+msgid "0k/min"
+msgstr "0k/分钟"
+
+#: BackupDlg.cpp:117 IndexDlg.cpp:87 VerifyDlg.cpp:110
+msgid "Files:"
+msgstr "文件:"
+
+#: BackupDlg.cpp:120 IndexDlg.cpp:78 IndexDlg.cpp:90 IndexDlg.cpp:102
+msgid "0"
+msgstr "0"
+
+#: BackupDlg.cpp:123
+msgid "Backup log:"
+msgstr "备份日志:"
+
+#: BackupDlg.cpp:130 IndexDlg.cpp:112 VerifyDlg.cpp:131
+msgid "Save Log..."
+msgstr "保存日志..."
+
+#: BackupDlg.cpp:135 IndexDlg.cpp:117 VerifyDlg.cpp:136
+msgid "Abort"
+msgstr "中断"
+
+#: BackupDlg.cpp:302
+msgid "*** Write failed, giving up."
+msgstr "*** 不能写,放弃."
+
+#: BackupDlg.cpp:367 BackupDlg.cpp:377 IndexDlg.cpp:335 VerifyDlg.cpp:358
+#: VerifyDlg.cpp:368
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#: BackupDlg.cpp:380 IndexDlg.cpp:338 VerifyDlg.cpp:371
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: BackupDlg.cpp:384 IndexDlg.cpp:342 VerifyDlg.cpp:375
+#, c-format
+msgid "%s/min"
+msgstr "%s/分钟"
+
+#: BackupOptDlg.cpp:31 BackupOptDlg.cpp:32
+msgid "KDat: Backup Options"
+msgstr "KDat: 备份选项"
+
+#: BackupProfileInfoWidget.cpp:40
+msgid "Backup profile name:"
+msgstr "备份配置名:"
+
+#: BackupProfileInfoWidget.cpp:51
+msgid "Files >>"
+msgstr "文件 >>"
+
+#: BackupProfileInfoWidget.cpp:54
+msgid "<< Files"
+msgstr "<< 文件"
+
+#: BackupProfileWidget.cpp:38 KDat.cpp:152
+msgid "Backup"
+msgstr "备份"
+
+#: BackupProfileWidget.cpp:46
+msgid "Working directory:"
+msgstr "工作目录:"
+
+#: BackupProfileWidget.cpp:52
+msgid "Backup files:"
+msgstr "备份文件:"
+
+#: BackupProfileWidget.cpp:58
+msgid "Tar Options"
+msgstr "Tar选项"
+
+#: BackupProfileWidget.cpp:60
+msgid "Stay on one filesystem"
+msgstr "只在同一文件系统内"
+
+#: BackupProfileWidget.cpp:63
+msgid "GNU listed incremental"
+msgstr ""
+
+#: BackupProfileWidget.cpp:67
+msgid "Snapshot file:"
+msgstr "快照文件:"
+
+#: BackupProfileWidget.cpp:73
+msgid "Remove snapshot file before backup"
+msgstr "在备份之前删除快照文件"
+
+#: FileInfoWidget.cpp:37 TapeFileInfoWidget.cpp:34
+msgid "File name:"
+msgstr "文件名:"
+
+#: FileInfoWidget.cpp:39 TapeFileInfoWidget.cpp:35 TapeInfoWidget.cpp:44
+msgid "Last modified:"
+msgstr "最后修改:"
+
+#: FileInfoWidget.cpp:40
+msgid "Last accessed:"
+msgstr "最后读取:"
+
+#: FileInfoWidget.cpp:42
+msgid "Owner:"
+msgstr "属主:"
+
+#: FileInfoWidget.cpp:43
+msgid "Group:"
+msgstr "用户组:"
+
+#: IndexDlg.cpp:56 IndexDlg.cpp:57
+msgid "KDat: Index"
+msgstr "KDat: 索引"
+
+#: IndexDlg.cpp:75
+msgid "Archives:"
+msgstr "归档:"
+
+#: IndexDlg.cpp:81 VerifyDlg.cpp:96
+msgid "Kbytes read:"
+msgstr "读千字节:"
+
+#: IndexDlg.cpp:99
+msgid "Total files:"
+msgstr "所有文件:"
+
+#: IndexDlg.cpp:105
+msgid "Index log:"
+msgstr "索引日志:"
+
+#: IndexDlg.cpp:226
+msgid "Rewinding tape."
+msgstr "正在倒带."
+
+#: IndexDlg.cpp:228 KDat.cpp:442
+msgid "KDat: Cannot Rewind Tape"
+msgstr "KDat: 不能倒带"
+
+#: IndexDlg.cpp:228
+msgid "Cannot rewind tape.  Indexing aborted."
+msgstr "不能倒带. 中止索引."
+
+#: IndexDlg.cpp:232
+msgid "Cannot rewind tape."
+msgstr "不能倒带."
+
+#: IndexDlg.cpp:238 KDat.cpp:451 TapeDrive.cpp:222 TapeDrive.cpp:230
+#: TapeDrive.cpp:242 TapeDrive.cpp:254 TapeDrive.cpp:259
+msgid "KDat: Error"
+msgstr "KDat: 错误"
+
+#: IndexDlg.cpp:238 IndexDlg.cpp:242
+msgid "Failed to skip tape ID."
+msgstr "不能跳过磁带ID."
+
+#: IndexDlg.cpp:271
+#, c-format
+msgid "Indexing archive %d."
+msgstr "正在对归档 %d 索引."
+
+#: IndexDlg.cpp:274
+#, c-format
+msgid "Archive %d"
+msgstr "归档 %d"
+
+#: IndexDlg.cpp:321
+msgid "Reindexed Tape"
+msgstr "重新索引的磁带"
+
+#: KDat.cpp:81 KDat.cpp:82 KDat.cpp:1101
+msgid "KDat: <no tape>"
+msgstr "KDat: <无磁带>"
+
+#: KDat.cpp:86 KDat.cpp:122 KDat.cpp:233 KDat.cpp:1141
+msgid "Mount Tape"
+msgstr "安装磁带"
+
+#: KDat.cpp:87 KDat.cpp:123
+msgid "Recreate Tape Index"
+msgstr "重新建立磁带索引"
+
+#: KDat.cpp:89 KDat.cpp:129
+msgid "Format Tape..."
+msgstr "格式化磁带..."
+
+#: KDat.cpp:92 KDat.cpp:98 KDat.cpp:126
+msgid "Delete Archive"
+msgstr "删除归档"
+
+#: KDat.cpp:95 KDat.cpp:101 KDat.cpp:121
+msgid "Verify..."
+msgstr "校验..."
+
+#: KDat.cpp:96 KDat.cpp:102 KDat.cpp:120
+msgid "Restore..."
+msgstr "数据重建..."
+
+#: KDat.cpp:105 KDat.cpp:114 KDat.cpp:119
+msgid "Backup..."
+msgstr "备份..."
+
+#: KDat.cpp:108
+msgid "Delete Tape Index"
+msgstr "删除磁带索引"
+
+#: KDat.cpp:111 KDat.cpp:124
+msgid "Create Backup Profile"
+msgstr "建立备份配置"
+
+#: KDat.cpp:116 KDat.cpp:128
+msgid "Delete Backup Profile"
+msgstr "删除备份配置"
+
+#: KDat.cpp:127
+msgid "Delete Index"
+msgstr "删除索引"
+
+#: KDat.cpp:134
+msgid "Preferences..."
+msgstr "偏好设置..."
+
+#: KDat.cpp:141
+#, c-format
+msgid ""
+"KDat Version %s\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+msgstr ""
+"KDat Version %s\n"
+"\n"
+"KDat是基于tar命令的磁带归档程序.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+
+#: KDat.cpp:148
+msgid "Mount/unmount tape"
+msgstr "安装/卸载 磁带"
+
+#: KDat.cpp:154
+msgid "Verify"
+msgstr "校验"
+
+#: KDat.cpp:168
+msgid "Ready."
+msgstr "就绪."
+
+#: KDat.cpp:230 KDat.cpp:1138
+msgid "Unmount Tape"
+msgstr "卸载磁带"
+
+#: KDat.cpp:399 KDat.cpp:756
+msgid "%m/%d/%y"
+msgstr "%m/%d/%y"
+
+#: KDat.cpp:400
+#, c-format
+msgid "Archive created on %s"
+msgstr "归档建立时间为 %s"
+
+#: KDat.cpp:418
+msgid "Performing backup..."
+msgstr "正在进行备份..."
+
+#: KDat.cpp:431
+#, c-format
+msgid ""
+"WARNING: The estimated archive size is %dKB.\n"
+"The tape has only %dKB of space!\n"
+"\n"
+"Backup anyway?"
+msgstr ""
+"警告: 归档大小估计为 %dKB.\n"
+"磁带只有 %dKB 空间!\n"
+"\n"
+"继续备份吗?"
+
+#: KDat.cpp:433
+msgid "Backup canceled."
+msgstr "取消备份."
+
+#: KDat.cpp:440 TapeDrive.cpp:520 TapeDrive.cpp:541
+msgid "Rewinding tape..."
+msgstr "正在倒带..."
+
+#: KDat.cpp:442
+msgid "Cannot rewind tape.  Backup aborted."
+msgstr "不能倒带.中止备份."
+
+#: KDat.cpp:443 KDat.cpp:452 KDat.cpp:472
+msgid "Backup aborted."
+msgstr "备份中止."
+
+#: KDat.cpp:449
+msgid "Skipping to end of tape..."
+msgstr "正在跳到磁带结束..."
+
+#: KDat.cpp:451
+msgid "Cannot get to end of tape."
+msgstr "不能到磁带的结束."
+
+#: KDat.cpp:456
+msgid "Backup in progress..."
+msgstr "正在备份..."
+
+#: KDat.cpp:470
+msgid "Backup complete."
+msgstr "完成备份."
+
+#: KDat.cpp:591
+msgid "Restore in progress..."
+msgstr "正在重建数据..."
+
+#: KDat.cpp:593
+msgid "Verify in progress..."
+msgstr "正在校验..."
+
+#: KDat.cpp:600
+msgid "Restore complete."
+msgstr "完成数据重建."
+
+#: KDat.cpp:602
+msgid "Verify complete."
+msgstr "完成校验."
+
+#: KDat.cpp:606
+msgid "Restore aborted."
+msgstr "数据重建中止."
+
+#: KDat.cpp:608
+msgid "Verify aborted."
+msgstr "校验中止"
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "KDat: No Tape"
+msgstr "KDat: 没有磁带"
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "There is no tape in the drive."
+msgstr "驱动器中没有磁带."
+
+#: KDat.cpp:636
+msgid "KDat: Index Tape"
+msgstr "KDat: 索引磁带"
+
+#: KDat.cpp:636
+msgid "The current tape index will be overwritten, continue?"
+msgstr "当前的磁带索引会被覆盖,继续?"
+
+#: KDat.cpp:641 KDat.cpp:1097
+#, c-format
+msgid "KDat: %s"
+msgstr "KDat: %s"
+
+#: KDat.cpp:645
+msgid "Index complete."
+msgstr "完成索引."
+
+#: KDat.cpp:647
+msgid "Index aborted."
+msgstr "索引被中止."
+
+#: KDat.cpp:656
+msgid "KDat: No Archive Selected"
+msgstr "KDat: 没有选中归档"
+
+#: KDat.cpp:656
+msgid "An archive must be selected in the tree."
+msgstr "必须在目录树中选中一个归档."
+
+#: KDat.cpp:689
+#, c-format
+msgid ""
+"An archive cannot be removed from the middle of the tape.  If\n"
+"the archive '%s' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%s\n"
+"\n"
+" Delete all listed archives?"
+msgstr ""
+"不能从磁带中间删除一个归档.如果\n"
+"归档'%s'被删除,那么下面的归档\n"
+"也会被删除:\n"
+"%s\n"
+" 删除列出的归档?"
+
+#: KDat.cpp:690
+msgid "KDat: Delete Archives?"
+msgstr "KDat: 删除这些归档?"
+
+#: KDat.cpp:692
+msgid "Archives deleted."
+msgstr "归档被删除."
+
+#: KDat.cpp:701
+#, c-format
+msgid "Really delete the archive '%s'?"
+msgstr "真的要删除归档'%s'?"
+
+#: KDat.cpp:702
+msgid "KDat: Delete Archive?"
+msgstr "KDat: 删除归档?"
+
+#: KDat.cpp:704
+msgid "Archive deleted."
+msgstr "归档被删除."
+
+#: KDat.cpp:717
+msgid "KDat: No Tape Index Selected"
+msgstr "KDat: 没有选中磁带索引"
+
+#: KDat.cpp:717
+msgid "A tape index must be selected in the tree."
+msgstr "必须在目录树中选中一个磁带索引."
+
+#: KDat.cpp:724
+msgid "KDat: Tape Is Mounted"
+msgstr "KDat: 磁带已经安装了"
+
+#: KDat.cpp:724
+msgid ""
+"The index for a mounted tape cannot be deleted.\n"
+"\n"
+"Unmount the tape and try again."
+msgstr ""
+"不能删除已经安装的磁带的索引.\n"
+"\n"
+"卸载磁带,然后重试."
+
+#: KDat.cpp:729
+#, c-format
+msgid "Really delete the index for '%s'?"
+msgstr "真的要删除'%s'的索引吗?"
+
+#: KDat.cpp:730
+msgid "KDat: Delete Tape Index?"
+msgstr "KDat: 删除磁带索引?"
+
+#: KDat.cpp:732
+msgid "Tape index deleted."
+msgstr "磁带索引被删除."
+
+#: KDat.cpp:743
+msgid "KDat: No Tape In Drive"
+msgstr "KDat: 驱动器中没有磁带"
+
+#: KDat.cpp:743
+msgid ""
+"There is no tape in the tape drive.\n"
+"Please insert a tape and try again."
+msgstr ""
+"驱动器中没有磁带.\n"
+"请插入磁带,然后重试."
+
+#: KDat.cpp:748
+msgid "KDat: Write Protected Tape"
+msgstr "KDat: 磁带是写保护的"
+
+#: KDat.cpp:748
+msgid ""
+"The tape in the drive is write protected.\n"
+"Please disable write protection and try again."
+msgstr ""
+"驱动器中的磁带是写保护的.\n"
+"请去掉写保护,然后重试."
+
+#: KDat.cpp:752
+msgid "KDat: Format Tape"
+msgstr "KDat: 格式化磁带"
+
+#: KDat.cpp:752
+msgid "All data will be lost, continue?"
+msgstr "所有的磁带都会丢失,继续吗?"
+
+#: KDat.cpp:757
+#, c-format
+msgid "Tape created on %s"
+msgstr "磁带建立的时间是 %"
+
+#: KDat.cpp:773
+msgid "Formatting tape..."
+msgstr "正在格式化磁带..."
+
+#: KDat.cpp:776
+msgid "Format complete."
+msgstr "完成格式化."
+
+#: KDat.cpp:790
+#, c-format
+msgid "Backup Profile %d"
+msgstr "备份配置 %d"
+
+#: KDat.cpp:807
+msgid "Archive"
+msgstr "归档"
+
+#: KDat.cpp:828
+msgid "KDat: No Backup Profile Selected"
+msgstr "KDat: 没有选中备份配置"
+
+#: KDat.cpp:828
+msgid "A backup profile must be selected in the tree."
+msgstr "必须选中一个备份配置."
+
+#: KDat.cpp:836
+#, c-format
+msgid "Really delete backup profile '%s'?"
+msgstr "真的要删除备份配置'%s' ?"
+
+#: KDat.cpp:837
+msgid "KDat: Delete Backup Profile?"
+msgstr "KDat: 删除备份配置?"
+
+#: KDat.cpp:839
+msgid "Backup profile deleted."
+msgstr "已删除备份配置."
+
+#: KDat.cpp:877
+msgid "Tape unmounted."
+msgstr "磁带已卸载."
+
+#: KDat.cpp:881
+msgid "Reading tape header..."
+msgstr "正在读取磁带头..."
+
+#: KDat.cpp:888 KDat.cpp:890
+msgid "KDat: Unformatted Tape"
+msgstr "KDat: 没有格式化的磁带"
+
+#: KDat.cpp:888
+msgid "This tape has not been formatted by KDat."
+msgstr "这个磁带没有用KDat格式化."
+
+#: KDat.cpp:890
+msgid ""
+"This tape has not been formatted by KDat.\n"
+"\n"
+"Would you like to format it now?"
+msgstr ""
+"这个磁带没有用KDat格式化.\n"
+"\n"
+"你想现在格式化吗?"
+
+#: KDat.cpp:901
+msgid "Tape mounted."
+msgstr "磁带已安装."
+
+#: KDat.cpp:976
+#, c-format
+msgid "Estimating backup size: %s, %s"
+msgstr "正在估计备份的大小: %s, %s"
+
+#: KDat.cpp:1102
+msgid "KDat: <no tape >"
+msgstr "KDat: <没有磁带>"
+
+#: LoggerWidget.cpp:60
+msgid "KDat: Save Log"
+msgstr "KDat: 保存日志"
+
+#: LoggerWidget.cpp:60
+msgid "Log file exists, overwrite?"
+msgstr "日志文件已存在,覆盖吗?"
+
+#: Node.cpp:1182 Node.cpp:1252
+msgid "<no tape>"
+msgstr "<没有磁带>"
+
+#: Node.cpp:1332
+msgid "Tape Indexes"
+msgstr "磁带索引"
+
+#: Node.cpp:1466
+msgid "Backup Profiles"
+msgstr "备份配置"
+
+#: OptionsDlg.cpp:39 OptionsDlg.cpp:40
+msgid "KDat: Options"
+msgstr "KDat: 选项"
+
+#: OptionsDlg.cpp:44
+msgid "Default tape size:"
+msgstr "默认磁带大小:"
+
+#: OptionsDlg.cpp:45
+msgid "Tape block size:"
+msgstr "磁带块大小:"
+
+#: OptionsDlg.cpp:46
+msgid "Tape device:"
+msgstr "磁带设备:"
+
+#: OptionsDlg.cpp:47
+msgid "Tar command:"
+msgstr "Tar 命令:"
+
+#: OptionsDlg.cpp:70
+msgid "bytes"
+msgstr "字节"
+
+#: OptionsDlg.cpp:76 OptionsDlg.cpp:82 VerifyOptDlg.cpp:57
+msgid "..."
+msgstr "..."
+
+#: OptionsDlg.cpp:85
+msgid "Tape drive options"
+msgstr "磁带驱动器选项"
+
+#: OptionsDlg.cpp:87
+msgid "Load tape on mount"
+msgstr "安装磁带时装载磁带"
+
+#: OptionsDlg.cpp:90
+msgid "Lock tape drive on mount"
+msgstr "安装磁带时锁住磁带"
+
+#: OptionsDlg.cpp:93
+msgid "Eject tape on unmount"
+msgstr "卸载磁带时弹出磁带"
+
+#: OptionsDlg.cpp:96
+msgid "Variable block size"
+msgstr "可变块大小"
+
+#: Tape.cpp:36
+msgid "New Tape"
+msgstr "新磁带"
+
+#: Tape.cpp:70 Tape.cpp:76 Tape.cpp:85 Tape.cpp:92 Tape.cpp:99 Tape.cpp:103
+msgid "KDat: Format Failed"
+msgstr "KDat: 不能格式化"
+
+#: Tape.cpp:70 TapeDrive.cpp:222
+msgid "Rewinding tape failed."
+msgstr "不能倒带."
+
+#: Tape.cpp:76
+msgid "Cannot set tape block size."
+msgstr "不能设置磁带块大小."
+
+#: Tape.cpp:85
+msgid "Writing magic string failed."
+msgstr "不能写magic字符串."
+
+#: Tape.cpp:92
+msgid "Writing version number failed."
+msgstr "不能写版本号."
+
+#: Tape.cpp:99
+msgid "Writing tape ID length failed."
+msgstr "不能写磁带ID长度."
+
+#: Tape.cpp:103
+msgid "Writing tape ID failed."
+msgstr "不能写磁带ID."
+
+#: Tape.cpp:132
+msgid "KDat: Tape Index"
+msgstr "KDat: 磁带索引"
+
+#: Tape.cpp:132
+msgid ""
+"No index file was found for this tape.\n"
+"Recreate the index from tape?"
+msgstr ""
+"没有找到和这个磁带对应的索引文件.\n"
+"从磁带重新建立索引?"
+
+#: Tape.cpp:150 Tape.cpp:192 Tape.cpp:471 Tape.cpp:477 Tape.cpp:483
+#: Tape.cpp:490 Tape.cpp:497 Tape.cpp:505 Tape.cpp:512 Tape.cpp:520
+#: Tape.cpp:528 Tape.cpp:535 Tape.cpp:542 Tape.cpp:555 Tape.cpp:567
+#: Tape.cpp:575 Tape.cpp:582 Tape.cpp:589 Tape.cpp:618 Tape.cpp:624
+#: Tape.cpp:630 Tape.cpp:637 Tape.cpp:644 Tape.cpp:652 Tape.cpp:659
+#: Tape.cpp:679 Tape.cpp:685 Tape.cpp:721 Tape.cpp:727
+msgid "KDat: Index File Error"
+msgstr "KDat: 索引文件错"
+
+#: Tape.cpp:150 TapeDrive.cpp:242
+msgid "Reading version number failed."
+msgstr "不能读取版本号."
+
+#: Tape.cpp:191
+#, c-format
+msgid ""
+"The tape index file format is version %d.  The index cannot be read by this "
+"version of KDat.  Perhaps the tape index file was created by a newer version "
+"of KDat?"
+msgstr ""
+"磁带索引文件格式版本为 "
+"%d.你用的KDat不能读取索引文件.也许,磁带索引文件是用新版本的KDat生成的?"
+
+#: Tape.cpp:471 Tape.cpp:618 Tape.cpp:679 Tape.cpp:721 TapeDrive.cpp:259
+msgid "Reading tape ID failed."
+msgstr "不能读取磁带ID."
+
+#: Tape.cpp:477 Tape.cpp:624 Tape.cpp:685 Tape.cpp:727
+msgid "Tape ID on tape does not match tape ID in index file."
+msgstr "磁带ID和索引文件中的磁带ID不匹配."
+
+#: Tape.cpp:483 Tape.cpp:630
+msgid "Reading creation time failed."
+msgstr "不能读取建立时间."
+
+#: Tape.cpp:490 Tape.cpp:637
+msgid "Reading modification time failed."
+msgstr "不能读取修改时间."
+
+#: Tape.cpp:497 Tape.cpp:644
+msgid "Reading tape name failed."
+msgstr "不能读取磁带名."
+
+#: Tape.cpp:505 Tape.cpp:652
+msgid "Reading tape size failed."
+msgstr "不能读取磁带大小."
+
+#: Tape.cpp:512 Tape.cpp:659
+msgid "Reading archive count failed."
+msgstr "不能读取归档计数."
+
+#: Tape.cpp:520
+msgid "Reading archive name failed."
+msgstr "不能读取归档名."
+
+#: Tape.cpp:528
+msgid "Reading archive time stamp failed."
+msgstr "不能读取归档时戳"
+
+#: Tape.cpp:535
+msgid "Reading archive start block failed."
+msgstr "不能读取归档开始块."
+
+#: Tape.cpp:542
+msgid "Reading archive end block failed."
+msgstr "不能读取归档结束块."
+
+#: Tape.cpp:555
+msgid "Reading archive file count failed."
+msgstr "不能读取归档文件计数."
+
+#: Tape.cpp:567
+msgid "Reading file name failed."
+msgstr "不能读取文件名."
+
+#: Tape.cpp:575
+msgid "Reading file size failed."
+msgstr "不能读取文件大小."
+
+#: Tape.cpp:582
+msgid "Reading file modification time failed."
+msgstr "不能读取文件修改时间."
+
+#: Tape.cpp:589
+msgid "Reading file record number failed."
+msgstr "不能读取文件记录号."
+
+#: TapeDrive.cpp:188
+msgid "Tape mounted readonly."
+msgstr "磁带以只读方式安装."
+
+#: TapeDrive.cpp:190
+msgid "Tape mounted read/write."
+msgstr "磁带以读写方式安装."
+
+#: TapeDrive.cpp:227
+msgid "Reading magic string..."
+msgstr "正在读取magic字符串..."
+
+#: TapeDrive.cpp:230
+msgid "Reading magic string failed."
+msgstr "不能读取magic字符串"
+
+#: TapeDrive.cpp:239
+msgid "Reading version number..."
+msgstr "正在读版本号..."
+
+#: TapeDrive.cpp:247
+msgid "KDat: Warning"
+msgstr "KDat: 警告"
+
+#: TapeDrive.cpp:247
+msgid ""
+"Tape was formatted by a more recent version of KDat, consider upgrading."
+msgstr "格式化磁带所用的KDat是更新版本的,请考虑升级你所用的KDat."
+
+#: TapeDrive.cpp:251
+msgid "Reading tape ID..."
+msgstr "读取磁带ID..."
+
+#: TapeDrive.cpp:254
+msgid "Reading tape ID length failed."
+msgstr "不能读取磁带ID长度."
+
+#: TapeDrive.cpp:515
+msgid "Skipping to archive..."
+msgstr "跳至归档..."
+
+#: TapeDrive.cpp:537
+msgid "Skipping to block..."
+msgstr "跳至块..."
+
+#: TapeFileInfoWidget.cpp:37
+msgid "Start record:"
+msgstr "开始记录:"
+
+#: TapeFileInfoWidget.cpp:38
+msgid "End record:"
+msgstr "结束记录:"
+
+#: FormatOptDlg.cpp:39 TapeInfoWidget.cpp:40
+msgid "Tape name:"
+msgstr "磁带名:"
+
+#: FormatOptDlg.cpp:40 TapeInfoWidget.cpp:41
+msgid "Tape size:"
+msgstr "磁带容量:"
+
+#: TapeInfoWidget.cpp:42
+msgid "Tape ID:"
+msgstr "磁带 ID:"
+
+#: TapeInfoWidget.cpp:45
+msgid "Archive count:"
+msgstr "归档计数:"
+
+#: TapeInfoWidget.cpp:46
+msgid "Space used:"
+msgstr "已使用空间:"
+
+#: FormatOptDlg.cpp:36 FormatOptDlg.cpp:37
+msgid "KDat: Format Options"
+msgstr "KDat: 格式化选项"
+
+#: VerifyDlg.cpp:61 VerifyDlg.cpp:62
+msgid "KDat: Restore"
+msgstr "KDat: 重建数据"
+
+#: VerifyDlg.cpp:64 VerifyDlg.cpp:65
+msgid "KDat: Verify"
+msgstr "KDat: 校验"
+
+#: VerifyDlg.cpp:113
+msgid "Differences:"
+msgstr "差别:"
+
+#: VerifyDlg.cpp:121
+msgid "Restore log:"
+msgstr "重建日志:"
+
+#: VerifyDlg.cpp:123
+msgid "Verify log:"
+msgstr "校验日志:"
+
+#: VerifyDlg.cpp:315
+msgid "failed while reading tape data.\n"
+msgstr "不能读取磁带数据.\n"
+
+#: VerifyOptDlg.cpp:38 VerifyOptDlg.cpp:39
+msgid "KDat: Restore Options"
+msgstr "KDat: 重建选项"
+
+#: VerifyOptDlg.cpp:41 VerifyOptDlg.cpp:42
+msgid "KDat: Verify Options"
+msgstr "KDat: 校验选项"
+
+#: VerifyOptDlg.cpp:47
+msgid "Restore to directory:"
+msgstr "重建到目录:"
+
+#: VerifyOptDlg.cpp:49
+msgid "Verify in directory:"
+msgstr "校验目录:"
+
+#: VerifyOptDlg.cpp:62
+msgid "Restore files:"
+msgstr "重建文件:"
+
+#: VerifyOptDlg.cpp:64
+msgid "Verify files:"
+msgstr "校验文件:"

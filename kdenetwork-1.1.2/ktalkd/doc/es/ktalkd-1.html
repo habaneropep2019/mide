@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Manual del Ktalkd: Introducción</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, Spanish, ktalkd, talk">
+<META NAME="description" CONTENT="El Manual de KTalkd">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-2.html">Página siguiente</A>
+Página anterior<A HREF="ktalkd.html#toc1">Índice general</A>
+</P>
+<H3><A NAME="s1">1. Introducción</A></H3>
+
+<P>
+<P><CODE>ktalkd</CODE> es un demonio de talk mejorado - el programa procesa las
+peticiones entrantes de talk, las anuncia y te permite responderlas con un
+cliente de talk.
+GLOSARIO : En estas páginas, si alguien quiere hablar contigo, se te
+designará como "llamado".
+<P><CODE>Ktalkd</CODE> tiene las siguientes características :
+<P>
+<DL>
+<DT><B>KDE o no KDE</B><DD><P>Esta es la cuestión. :) Más en serio, esto significa que <CODE>Ktalkd</CODE> puede
+ser compilado con o sin el soporte de KDE.
+Para usarlo sin KDE, el proceso de compilación detectará si las X, las Qt o
+las KDE no están instaladas, pero puedes forzar un demonio "no-KDE" si usas
+la opción de configuración '--without-X'.
+<P>
+<DT><B>Máquina contestadora</B><DD><P>Si el llamado no esta conectado, o no responde tras el segundo anuncio, una
+"Máquina contestadora" arrancará, coje el mensaje y lo envía por correo al
+llamado.
+<P>
+<DT><B>Sonido</B><DD><P>Si se quiere, puede sonar un sonido con el anuncio.
+<P>
+<DT><B>Anuncio en X</B><DD><P>Si se compila con las KDE instaladas, Ktalkd usará <B>ktalkdlg</B>, 
+un cuadro de KDE para el anuncio.
+<P>
+<DT><B>Anuncios en varios monitores</B><DD><P>Si estás conectado de forma remota (ej. con un comando
+<CODE>"export DISPLAY=..."</CODE>), el aviso de X se hará en este
+monitor también. ¡ Responde donde quieras !
+<P>
+<DT><B>Reenvíando   <I>(Nuevo desde 0.8.0)</I></B><DD><P>Puedes configurar un reenvío a otro usuario incluso a otra máquina si estás
+fuera. Hay tres métodos de reenvío diferentes. Mira en la sección "Uso".
+<P>
+<DT><B>Configuración</B><DD><P>Si se compila con KDE, lee la información de los archivos de configuración
+de KDE, el entorno ($KDEDIR/share/config/ktalkdrc) y el del usuario, en su
+propio directorio principal.
+<P>El entorno uno debe de ser editado de forma manual por el administrador,
+pero ahora hay un cuadro de configuración para el usuario uno. Se llama <B>kcmktalkd</B> 
+y puede encontrarse en el Centro de Control KDE después de instalar <CODE>Ktalkd</CODE>.
+En sistemas sin KDE, <CODE>ktalkd</CODE> leerá /etc/talkd.conf.
+<P>
+<DT><B>Internacionalización</B><DD><P>Bajo KDE, el anuncio estará en tu idioma siempre y cuando así lo configures
+y alguien haya traducido el <B>ktalkdlg</B> a tu idioma. Lo mismo para el
+cuadro de configuración <B>kcmktalkd</B>.
+<P>
+<DT><B>Soporte para otalk y ntalk   <I>(Nuevo desde 0.8.1)</I></B><DD><P>Ktalkd ahora soporta ambos protocolos, aun cuando se reenvíe. Ktalkd soporta
+también los dos.
+</DL>
+<P>
+<P>Espero que disfrutes este demonio de talk,
+<P>David Faure
+<P>
+<A HREF="mailto:David.Faure@insa-lyon.fr">David.Faure@insa-lyon.fr</A><P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-2.html">Página siguiente</A>
+Página anterior<A HREF="ktalkd.html#toc1">Índice general</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

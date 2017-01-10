@@ -1,0 +1,148 @@
+<!doctype linuxdoc system>
+
+<!-- The KArchie Handbook.
+
+ -->
+
+<article>
+
+<!-- Title information -->
+
+<title>The KArchie Handbook
+<author>Jörg Habenicht, <tt/j.habenicht@europemail/
+<date>June 9th 1998
+<abstract>This Handbook describes KArchie
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+
+<sect>Introduction
+
+<p>
+I'm proud to introduce you to introduce you <tt>KArchie</tt>, the prospero client for the K Desktop Environment. This piece of software shall give you easy search and access to files stored in the anonymous FTP directories in the world wide internet. Please send bug reports to <htmlurl url="mailto:j.habenicht@europemail.com" name="j.habenicht@europemail.com">
+<p>
+<tt>Jörg Habenicht</tt>
+<p>
+
+<sect>Installation
+<p>
+<sect1>How to obtain KArchie
+<p>
+KArchie is a part of the KDE project <url url="http://www.kde.org">.
+It can be found on <url url="ftp://ftp.kde.org/pub/kde/">, the main ftp site
+of the KDE project, in the kdenonbeta snapshots. Please consider using your nearest mirror ftp site to get the load away from the server.
+
+
+<sect1>Compilation and installation
+<p>
+
+In order to compile and install KArchie on your system, type the following in the base directory of the KArchie distribution:
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+Since KArchie uses <tt>autoconf</tt> you should have not trouble compiling it.
+Should you run into problems, please report them to my email address <htmlurl url="mailto:j.habenicht@europemail.com" name="j.habenicht@europemail.com"> .
+
+
+<sect>Getting KArchie started
+<p>
+This section gives you a small introduction to the first usage of KArchie.
+More information can be obtained in the Features section.
+<sect1> First view
+<p>
+After starting the programm, you will see the main window with a single line editor, the empty file list, where the results will be stored, and the file view with a more detailed discription of the currently selected file.
+
+<sect1> Start query
+<p>
+To start an initial query, simply type in the name of the programm you are searching in the <tt>Search Term</tt> field and press <tt>ENTER</tt>. In the statusbar below you see the programm status changing to <tt>query running</tt> and the number of retries or hits increasing.
+
+<sect1> Query results
+<p>
+If your search has been successfull, you see a full list of files and a detailed file description in the description field below. You may now select a file in a FTP server near to your host and open the server directory with menu <tt>File->OpenDir</tt> or download the file to your computer with menu <tt>File->Download..</tt>
+
+
+<p>
+<sect>Features and Details
+<sect1>Configuring
+<sect2>Archiehost
+<p>
+The menu item <tt>Settings->Archieserver</tt> selects the server to query
+for. Please consider the netload and select the nearest servers to you.
+<p>
+TIP: If you want to add a new server supporting archie service, edit in the karchierc file in section [HostConfig] the Hosts= line.
+<sect2>Searchmode
+<p>
+The searchmode gives you the possibility to select the sort of searchstring you have. If for example you are shure to have the right filename then you may select exact. 
+
+
+<sect2>Nicelevel
+<!-- lower to be nice to others -->
+
+<sect1>Advanced Configuring
+<sect2>Timeout
+<p>
+The timeout value represents the time in seconds karchie waits for incoming data. If your working on a slow modem line or a heavy traffic network, rising the value may give you less query aborts.
+
+<sect2>Retries
+<p>
+The retries value is the level above whitch karchie aborts the query. Rise this value, if you want to query up to infinite times for your results.
+
+<p>
+
+<sect1>Drag and Drop
+<p>
+<tt>!! to be implemented !!</tt>
+You can drag and drop files right away from the file list to the KDE desktop, initialising a file download.
+<p>
+
+<sect1>Keyboard
+<p>
+KArchie will be keyboard controllable.
+The menu is usable as usual with ALT keys and Cursor keys.
+ALT-T or the TAB key selects the <tt>Search Term</tt> label, ENTER starts a filename query.
+<p>
+
+<sect1>more..
+<p>
+<tt>!! to be implemented !!</tt>
+Clicking with the right mouse button on the file list selects the file under the mouse pointer and opens a menu similar to the file menu. You may then select for file download or opening the server directory.
+<p>
+
+
+<sect>Frequently Asked Questions and answers
+<p>
+Please send me some, because I have none :)
+
+<sect>Authors and recend versions
+<p>
+Archie was developed out of the prospero service, a service to give one a
+remote directory structure. With this directory service, the archie client
+looked for the queried filename. A graphical widget for X11 was developed
+with xarchie. I wanted to add some usefull features like session management,
+nice GUI and the use of KDE-kfm and got karchie.
+Please look at the README's for further information.
+I haven't written the email adresses for archie and xarchie here, because I
+don't wont to bother them with my bugs.
+
+<sect1>archie
+<p>
+Programmatic Prospero interface to Archie.
+The prospero distribution is written by Clifford Neuman and 
+the archie client by Brendan Kehoe
+
+<sect1>xarchie
+<p>
+written by George Ferguson
+
+<sect1>karchie
+<p>
+Old archie, new interface:
+karchie from Jörg Habenicht <tt>j.habenicht@europemail.com</tt>
+<p>
+</article>

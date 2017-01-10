@@ -1,0 +1,115 @@
+/* config.h.in.  Generated automatically from configure.in by autoheader.  */
+
+/* Define if the `long double' type works.  */
+#undef HAVE_LONG_DOUBLE
+
+/* Define if you have the ANSI C header files.  */
+#undef STDC_HEADERS
+
+/* Define if you can safely include both <sys/time.h> and <time.h>.  */
+#undef TIME_WITH_SYS_TIME
+
+/* Define if the C++ compiler supports BOOL */
+#undef HAVE_BOOL
+
+/* defines if having libgif (always 1) */
+#undef HAVE_LIBGIF
+
+/* defines if having libjpeg (always 1) */
+#undef HAVE_LIBJPEG
+
+/* defines if having libtiff */
+#undef HAVE_LIBTIFF
+
+ 
+/* defines if having libpng */
+#undef HAVE_LIBPNG
+
+/* defines which to take for ksize_t */
+#undef ksize_t
+
+/* Define to 1 if NLS is requested.  */
+#undef ENABLE_NLS
+
+/* Define if you have an SGI like STL implementation */
+#undef HAVE_SGI_STL
+
+/* Define if you have an HP like STL implementation */
+#undef HAVE_HP_STL
+
+#undef HAVE_FUNC_ISINF
+
+#undef KDEMAXPATHLEN
+
+#ifndef HAVE_BOOL
+#define HAVE_BOOL
+typedef int bool;
+#ifdef __cplusplus
+const bool false = 0;
+const bool true = 1;
+#else
+#define false (bool)0;
+#define true (bool)1;
+#endif
+#endif
+
+/*
+ * jpeg.h needs HAVE_BOOLEAN, when the system uses boolean in system
+ * headers and I'm too lazy to write a configure test as long as only
+ * unixware is related
+ */
+#ifdef _UNIXWARE
+#define HAVE_BOOLEAN
+#endif
+
+/* Define if you have the fabsl function.  */
+#undef HAVE_FABSL
+
+/* Define if you have the socket function.  */
+#undef HAVE_SOCKET
+
+/* Define if you have the strdup function.  */
+#undef HAVE_STRDUP
+
+/* Define if you have the <dirent.h> header file.  */
+#undef HAVE_DIRENT_H
+
+/* Define if you have the <fcntl.h> header file.  */
+#undef HAVE_FCNTL_H
+
+/* Define if you have the <ieeefp.h> header file.  */
+#undef HAVE_IEEEFP_H
+
+/* Define if you have the <ndir.h> header file.  */
+#undef HAVE_NDIR_H
+
+/* Define if you have the <sys/dir.h> header file.  */
+#undef HAVE_SYS_DIR_H
+
+/* Define if you have the <sys/ndir.h> header file.  */
+#undef HAVE_SYS_NDIR_H
+
+/* Define if you have the <sys/resource.h> header file.  */
+#undef HAVE_SYS_RESOURCE_H
+
+/* Define if you have the <sys/stat.h> header file.  */
+#undef HAVE_SYS_STAT_H
+
+/* Define if you have the <sys/time.h> header file.  */
+#undef HAVE_SYS_TIME_H
+
+/* Define if you have the <sys/types.h> header file.  */
+#undef HAVE_SYS_TYPES_H
+
+/* Define if you have the <sys/user.h> header file.  */
+#undef HAVE_SYS_USER_H
+
+/* Define if you have the <unistd.h> header file.  */
+#undef HAVE_UNISTD_H
+
+/* Name of package */
+#undef PACKAGE
+
+/* Version number of package */
+#undef VERSION
+

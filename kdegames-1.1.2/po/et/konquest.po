@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Hasso Tepper <hasso@ewsound.estnet.ee>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-13 01:34+0100\n"
+"PO-Revision-Date: 1999-06-27 19:15+0200\n"
+"Last-Translator: Hasso Tepper <hasso@ewsound.estnet.ee>\n"
+"Language-Team: Estonian <linux-ee@eenet.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: gameboard.cc:55
+msgid "End Turn"
+msgstr "Käigu lõpp"
+
+#: gameboard.cc:203
+msgid ": Select source planet..."
+msgstr ": Vali lähteplaneet..."
+
+#: gameboard.cc:221
+msgid ": Select destination planet..."
+msgstr ": Vali sihtplaneet..."
+
+#: gameboard.cc:243
+msgid ": How many ships?"
+msgstr ": Mitu laeva?"
+
+#: gameboard.cc:267
+msgid "Ruler: Select starting planet."
+msgstr "Mõõtmine: Vali planeet kust mõõta."
+
+#: gameboard.cc:287
+#, c-format
+msgid ""
+"The distance from Planet %s to Planet %s is %s light years.\n"
+"A ship leaving this turn will arrive on turn %s"
+msgstr ""
+"Vahemaa planeedist %s planeedini %s on %s valguasaastat.\n"
+"Laev, mis lahkub sellel käigul, jõuab kohale käigul %s"
+
+#: gameboard.cc:291
+msgid "Distance"
+msgstr "Vahemaa"
+
+#: gameboard.cc:296
+msgid "Ruler: Select ending planet."
+msgstr "Mõõtmine: Vali planeet kuhuni mõõta."
+
+#: gameboard.cc:311
+#, c-format
+msgid "Turn #: %2d of %2d"
+msgstr "Käik #: %2d/%2d"
+
+#: gameboard.cc:426
+#, c-format
+msgid "The once mighty empire of %s has fallen in ruins."
+msgstr "Kunagine võimas %s impeerium on langenud varemetesse."
+
+#: gameboard.cc:428
+msgid "An Empire has fallen..."
+msgstr "Impeerium on hukkunud..."
+
+#: gameboard.cc:438
+#, c-format
+msgid "The fallen empire of %s has staggered back to life."
+msgstr "Hukkunud impeerium %s on taas ellu tagasi vankunud"
+
+#: gameboard.cc:440
+msgid "Up from the ashes..."
+msgstr "Tuhast tõusnusd..."
+
+#: gameboard.cc:460
+#, c-format
+msgid "Reinforcements have arrived for planet %s"
+msgstr "Planeet %s jaoks on saabunud tugijõud"
+
+#: gameboard.cc:462
+msgid "Fleet Arrival"
+msgstr "Laevastiku saabumine"
+
+#: gameboard.cc:505
+#, c-format
+msgid "Planet %s has held against an attack from %s"
+msgstr "Planeet %s on tagasi tõrjunud planeet %s rünnaku"
+
+#: gameboard.cc:507
+msgid "Planet Holds"
+msgstr "Planeet peab vastu"
+
+#: gameboard.cc:515
+#, c-format
+msgid "Planet %s has fallen to %s"
+msgstr "Planeet %s on langenud %s'le"
+
+#: gameboard.cc:517
+msgid "Planet Conquered"
+msgstr "Planeet on vallutatud"
+
+#: gameboard.cc:579 mainwin.cc:82
+msgid "End Game"
+msgstr "Mängu lõpp"
+
+#: gameboard.cc:580
+msgid "Do you wish to retire this game?"
+msgstr "Soovid sa mängust lahkuda?"
+
+#: gameboard.cc:586
+msgid "Final Standings"
+msgstr "Lõplik seis"
+
+#: gameboard.cc:758
+msgid "Not enough ships to send."
+msgstr "Saatmiseks pole piisavalt laevu."
+
+#: mainwin.cc:23
+msgid "GNU-Lactic Conquest"
+msgstr "GNU-Lactic Conquest"
+
+#: mainwin.cc:47
+#, c-format
+msgid ""
+"Version %s\n"
+"Copyright (c) 1998 by\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE version by Russ Steffen <rsteffen@ia.net>\n"
+"See http://www.ia.net/~rsteffen/konquest.html for more info"
+msgstr ""
+"Versioon %s\n"
+"Copyright (c) 1998 by\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE versioon kirjutatud Russ Steffen'i <rsteffen@ia.net> poolt.\n"
+"Kui soovid rohkem infot, külasta http://www.ia.net/~rsteffen/konquest.html"
+
+#: mainwin.cc:88
+msgid "Measure Distance"
+msgstr "Mõõda kaugust"
+
+#: mainwin.cc:92
+msgid "Show Standings"
+msgstr "Näita seisu"
+
+#: newgamedlg.cc:31
+msgid "Preview Map"
+msgstr "Kaarti eelvaatlus"
+
+#: newgamedlg.cc:35
+msgid "&Reject Map"
+msgstr "&Keeldu kaartist"
+
+#: newgamedlg.cc:41
+msgid "&Player List"
+msgstr "&Mängijate nimekiri"
+
+#: newgamedlg.cc:48
+msgid "&Add"
+msgstr "&Lisa"
+
+#: newgamedlg.cc:54
+msgid "&Clear"
+msgstr "&Puhasta"
+
+#: newgamedlg.cc:70
+msgid "&Start Game"
+msgstr "&Käivita mäng"
+
+#: newgamedlg.cc:162
+#, c-format
+msgid "Number of Neutral Planets: %2d"
+msgstr "Neutraalsete planeetide arv: %2d"
+
+#: newgamedlg.cc:174
+#, c-format
+msgid "Number of turns: %2d"
+msgstr "Käikude arv: %2d"
+
+#: planet_info.cc:81 planet_info.cc:116 planet_info.cc:131
+msgid "Planet Name : "
+msgstr "Planeedi nimi : "
+
+#: planet_info.cc:84 planet_info.cc:134
+msgid "Owner : "
+msgstr "Omanik : "
+
+#: planet_info.cc:87
+msgid "Ships : "
+msgstr "Laevu : "
+
+#: planet_info.cc:90
+msgid "Production : "
+msgstr "Tootmine : "
+
+#: planet_info.cc:93
+msgid "Kill Percent : "
+msgstr "Tapetute % : "
+
+#: planet_info.cc:137
+#, c-format
+msgid "Ships : %d"
+msgstr "Laevu : %d"
+
+#: planet_info.cc:140
+#, c-format
+msgid "Production : %d"
+msgstr "Tootmine : %d"
+
+#: planet_info.cc:143
+#, c-format
+msgid "Kill Percent : %.3f"
+msgstr "Tapetute % : %.3f"
+
+#: gameenddlg.cc:14
+msgid ""
+"This is the last turn.\n"
+"Do you wish to add more turns?"
+msgstr ""
+"See on viimane käik.\n"
+"Soovid sa käike juurde lisada?"
+
+#: gameenddlg.cc:64
+#, c-format
+msgid "Add %d turns"
+msgstr "Lisa %d käiku"
+
+#: scoredlg.cc:18
+msgid "Player"
+msgstr "Mängija"
+
+#: scoredlg.cc:19
+msgid "Ships Built"
+msgstr "Ehitatud laevu"
+
+#: scoredlg.cc:20
+msgid "Planets Conquered"
+msgstr "Vallutatud planeete"
+
+#: scoredlg.cc:21
+msgid "Fleets Launched"
+msgstr "Teele saadetud laevastikke"
+
+#: scoredlg.cc:22
+msgid "Fleets Destroyed"
+msgstr "Hävitatud laevastikke"
+
+#: scoredlg.cc:23
+msgid "Ships Destroyed"
+msgstr "Hävitatud laevu"

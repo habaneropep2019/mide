@@ -1,0 +1,270 @@
+# KTranslator Generated File
+
+# KTranslator Generated File
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Marcell Lengyel <miketkf@yahoo.com>, 1998.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdenetwork 990422\n"
+"POT-Creation-Date: 1999-06-05 11:50-0700\n"
+"PO-Revision-Date: Thu Apr 22 1999 09:37:55+0100\n"
+"Last-Translator: Marcell Lengyel <miketkf@yahoo.com>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"X-Generator: KTranslator v 0.4.0\n"
+
+#: kbiff.cpp:629
+msgid "&UnDock"
+msgstr "&KiDokkolás"
+
+#: kbiff.cpp:631
+msgid "&Dock"
+msgstr "&BeDokkolás"
+
+#: kbiff.cpp:632
+msgid "&Setup..."
+msgstr "&Beállítások..."
+
+#: kbiff.cpp:634
+msgid "&Help..."
+msgstr "&Segítség..."
+
+#: kbiff.cpp:638
+msgid "&Check Mail Now"
+msgstr "Új &levelek keresése"
+
+#: kbiff.cpp:640
+msgid "&Read Mail Now"
+msgstr "L&evél olvasás"
+
+#: kbiff.cpp:646
+msgid "&Stop"
+msgstr "&Allj"
+
+#: notify.cpp:33 notify.cpp:50
+msgid "You have new mail!"
+msgstr "Új levele érkezett!"
+
+#: notify.cpp:58 notify.cpp:103
+#, c-format
+msgid "New Messages: %d"
+msgstr "Új Levelek: %d"
+
+#: notify.cpp:63
+#, c-format
+msgid "Mailbox: %s"
+msgstr "Postaláda: %s"
+
+# This is on a button.  It launches the user's mail client
+#: notify.cpp:73
+msgid "Mailer"
+msgstr "Levelezõ"
+
+#: setupdlg.cpp:83
+msgid "KBiff Setup"
+msgstr "KBiff Beállítások"
+
+#: setupdlg.cpp:86
+msgid "Profile:"
+msgstr "Profil:"
+
+#: setupdlg.cpp:102
+msgid "&New..."
+msgstr "&Új..."
+
+#: setupdlg.cpp:109
+msgid "&Rename..."
+msgstr "Á&tnevez..."
+
+#: setupdlg.cpp:143
+msgid "General"
+msgstr "Általános"
+
+#: setupdlg.cpp:144
+msgid "New Mail"
+msgstr "Új Levél"
+
+#: setupdlg.cpp:145 status.cpp:33
+msgid "Mailbox"
+msgstr "Postaláda"
+
+#: setupdlg.cpp:391
+msgid "New Profile"
+msgstr "Új Profil"
+
+#: setupdlg.cpp:423
+#, c-format
+msgid "Rename Profile: %s"
+msgstr "Profil Átnevezése: %s"
+
+#: setupdlg.cpp:463
+#, c-format
+msgid "Delete Profile: %s"
+msgstr "Profil Törlése: %s"
+
+#: setupdlg.cpp:464
+msgid "Are you sure you wish to delete this profile?\n"
+msgstr "Biztos benne, hogy törölni akarja ezt a profilt?\n"
+
+#: setupdlg.cpp:524
+msgid "Poll (sec):"
+msgstr "Ellenõrzés (mp):"
+
+#: setupdlg.cpp:529
+msgid "Mail client:"
+msgstr "Levél olvasó:"
+
+#: setupdlg.cpp:542
+msgid "Dock in panel"
+msgstr "Dokkoljon a panelba"
+
+#: setupdlg.cpp:547
+msgid "Use session management"
+msgstr "Vegyen részt a session management-ben"
+
+#: setupdlg.cpp:552
+msgid "Icons:"
+msgstr "Ikonok:"
+
+#: setupdlg.cpp:570
+msgid "No Mail:"
+msgstr "Nincs Üzenet"
+
+#: setupdlg.cpp:579
+msgid "Old Mail"
+msgstr "Régi Üzenet"
+
+#: setupdlg.cpp:589
+msgid "New Mail:"
+msgstr "Új Üzenet"
+
+# This is the icon that is displayed when KBiff could not make a connection
+# to a remote server
+#: setupdlg.cpp:599
+msgid "No Conn.:"
+msgstr "Nincs kapcs:"
+
+#: setupdlg.cpp:756
+msgid "Run Command"
+msgstr "Parancs"
+
+#: setupdlg.cpp:763 setupdlg.cpp:783 setupdlg.cpp:1178
+msgid "Browse"
+msgstr "Kiválaszt"
+
+#: setupdlg.cpp:769
+msgid "Play Sound"
+msgstr "Hang Lejátszás"
+
+#: setupdlg.cpp:789
+msgid "System Beep"
+msgstr "Csipogás"
+
+#: setupdlg.cpp:794
+msgid "Notify"
+msgstr "Figyelmeztetés"
+
+# If this is checked, then KBiff will popup a list of mailboxes with the
+# number of new mail whenever the user puts the cursor of a KBiff icon.
+#: setupdlg.cpp:798
+msgid "Floating Status"
+msgstr "Lebegõ állapot"
+
+#: setupdlg.cpp:948
+msgid "Advanced Options"
+msgstr "Haladó Beállítások"
+
+#: setupdlg.cpp:952
+msgid "Mailbox URL:"
+msgstr "Postaláda URL címe:"
+
+#: setupdlg.cpp:956
+msgid "Port:"
+msgstr "Port:"
+
+#: setupdlg.cpp:960
+msgid "PREAUTH"
+msgstr "PREAUTH"
+
+#: setupdlg.cpp:967
+msgid "Keep Alive"
+msgstr "Életben tartás"
+
+# If this is selected, then KBiff will do all of it's network work in an
+# asynchronous mode.  That is, it will not wait for the response to any
+# given command... it will receive the response as an event, later.
+#: setupdlg.cpp:974
+msgid "Asynchronous"
+msgstr "Asszinkron"
+
+#: setupdlg.cpp:1123 setupdlg.cpp:1152
+msgid "Mailbox:"
+msgstr "Postaláda:"
+
+#: setupdlg.cpp:1136 setupdlg.cpp:1474
+msgid "New Mailbox"
+msgstr "Új Postaláda"
+
+#: setupdlg.cpp:1143
+msgid "Delete Mailbox"
+msgstr "Postaláda Törlés"
+
+#: setupdlg.cpp:1149
+msgid "Protocol:"
+msgstr "Protokol:"
+
+#: setupdlg.cpp:1155
+msgid "Server:"
+msgstr "Kiszolgáló:"
+
+#: setupdlg.cpp:1158
+msgid "User:"
+msgstr "Felhasználó:"
+
+#: setupdlg.cpp:1161
+msgid "Password:"
+msgstr "Jelszó:"
+
+#: setupdlg.cpp:1195
+msgid "Store password"
+msgstr "Jelszó tárolása"
+
+#: setupdlg.cpp:1198
+msgid "Advanced"
+msgstr "Haladóknak"
+
+#: setupdlg.cpp:1675
+msgid "KBiff"
+msgstr "KBiff"
+
+#: setupdlg.cpp:1697
+#, c-format
+msgid ""
+"Version %s\n"
+"\n"
+"Copyright (C) 1999\n"
+"Kurt Granroth"
+msgstr ""
+"%s-ás verzió\n"
+"\n"
+"Copyright (C) 1999\n"
+"Kurt Granroth"
+
+#: setupdlg.cpp:1746
+msgid "New Name:"
+msgstr "Új Név:"
+
+#: setupdlg.cpp:1772
+msgid "New Name"
+msgstr "Új Név"
+
+# This displays the number of new messages for a given mailbox
+#: status.cpp:34
+#
+msgid "New"
+msgstr "Új"

@@ -1,0 +1,12 @@
+
+It should be reasonably easy to get kmidi to work on any platform
+with sound support. 
+
+o Check linux_a.c, dec_a.c, sun_a.c etc for pointers as to how to write
+  a new yourplatform_a.c file.
+  
+o Do a grep for AU_LINUX and see where any of those special defines
+  would make sense for your platform.
+  
+Bernd
+wuebben@kde.org

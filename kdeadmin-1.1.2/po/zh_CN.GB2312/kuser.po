@@ -1,0 +1,868 @@
+# kuser
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Almir Uzunovic <auzunovi@sava.utic.net.ba>, 1998
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-06-03 18:02+0700\n"
+"PO-Revision-Date: 1999-03-15 20:00-0500\n"
+"Last-Translator:  Wang Jian <larkw@263.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=gb2312-80\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mainWidget.cpp:20
+msgid "&Preferences..."
+msgstr "偏好设定(&P)..."
+
+#
+#: mainWidget.cpp:26 mainWidget.cpp:33
+msgid "&Edit..."
+msgstr "编辑(&E)..."
+
+#
+#: mainWidget.cpp:27 mainWidget.cpp:34
+msgid "&Delete..."
+msgstr "删除(&D)..."
+
+#
+#: mainWidget.cpp:28 mainWidget.cpp:35
+msgid "&Add..."
+msgstr "添加(&A)..."
+
+#
+#: mainWidget.cpp:29
+msgid "&Set password..."
+msgstr "设置密码(&S)..."
+
+# , c-format
+#: mainWidget.cpp:38
+#, fuzzy, c-format
+msgid ""
+"KUser version %s\n"
+"KDE project\n"
+"This program was created by\n"
+"Denis Pershin\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+msgstr ""
+"KUser version %s\n"
+"KDE project\n"
+"This program was created by\n"
+"Denis Y. Pershin\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+
+#
+#: mainWidget.cpp:49
+msgid "&User"
+msgstr "用户(&U)"
+
+#
+#: mainWidget.cpp:50
+msgid "&Group"
+msgstr "用户组(&G)"
+
+#: mainWidget.cpp:60
+msgid "Add user"
+msgstr "添加用户"
+
+#: mainWidget.cpp:62
+msgid "Delete user"
+msgstr "删除用户"
+
+#: mainWidget.cpp:64
+msgid "Edit user"
+msgstr "编辑用户信息"
+
+#: grpnamedlg.cpp:17 mainWidget.cpp:69
+msgid "Add group"
+msgstr "添加用户组"
+
+#: mainWidget.cpp:71
+msgid "Delete group"
+msgstr "删除用户组"
+
+#: mainWidget.cpp:73
+msgid "Edit group"
+msgstr "编辑用户组信息"
+
+#: mainWidget.cpp:96
+msgid "Ready"
+msgstr "就绪"
+
+#: editGroup.cpp:37
+msgid "Group properties"
+msgstr "用户组特性..."
+
+#: editGroupData.cpp:41
+#, fuzzy
+msgid "Users not in Group"
+msgstr "使用私有组"
+
+#: editGroupData.cpp:55
+#, fuzzy
+msgid "Users in Group"
+msgstr "使用私有组"
+
+#: kuservw.cpp:49 propdlg.cpp:56
+msgid "User login"
+msgstr "用户登录名"
+
+#: kuservw.cpp:50
+msgid "Full Name"
+msgstr "全名"
+
+#: kgroupvw.cpp:49
+msgid "GID"
+msgstr "GID"
+
+#: kgroupvw.cpp:50
+msgid "Group name"
+msgstr "用户组名称"
+
+#: kdatectl.cpp:28
+msgid "January"
+msgstr "一月"
+
+#: kdatectl.cpp:29
+msgid "February"
+msgstr "二月"
+
+#: kdatectl.cpp:30
+msgid "March"
+msgstr "三月"
+
+#: kdatectl.cpp:31
+msgid "April"
+msgstr "四月"
+
+#: kdatectl.cpp:32
+msgid "May"
+msgstr "五月"
+
+#: kdatectl.cpp:33
+msgid "June"
+msgstr "六月"
+
+#: kdatectl.cpp:34
+msgid "July"
+msgstr "七月"
+
+#: kdatectl.cpp:35
+msgid "August"
+msgstr "八月"
+
+#: kdatectl.cpp:36
+msgid "September"
+msgstr "九月"
+
+#: kdatectl.cpp:37
+msgid "October"
+msgstr "十月"
+
+#: kdatectl.cpp:38
+msgid "November"
+msgstr "十一月"
+
+#: kdatectl.cpp:39
+msgid "December"
+msgstr "十二月"
+
+# c-format
+#: kgroup.cpp:143 kuser.cpp:454
+#, c-format
+msgid "Error opening %s for reading"
+msgstr "打开 %s 读时发生错误"
+
+# , c-format
+#: kuser.cpp:520
+#, c-format
+msgid ""
+"No /etc/passwd entry for %s.\n"
+"Entry will be removed at the next `Save'-operation."
+msgstr ""
+"没有 %s 对应的/etc/passwd条目.\n"
+"在下一次`保存'操作时条目会被去掉."
+
+# , c-format
+#: kgroup.cpp:183 kuser.cpp:615 kuser.cpp:693
+#, c-format
+msgid "Error opening %s for writing"
+msgstr "打开 %s 写时发生错误"
+
+#: kuser.cpp:663
+msgid "Unable to build password database"
+msgstr "不能生成口令数据库"
+
+# , c-format
+#: kuser.cpp:704
+#, c-format
+msgid "No shadow entry for %s."
+msgstr "没有 %s 对应的shadow条目."
+
+#: kuser.cpp:761
+msgid "You have more than 65534 users!?!? You have ran out of uid space!"
+msgstr "你有多于65534个用户!?!? 你已经用完了所有的 uid!"
+
+# , c-format
+#: kuser.cpp:801
+#, c-format
+msgid "Directory %s already exists"
+msgstr "目录 %s 已经存在"
+
+# , c-format
+#: kuser.cpp:808
+#, c-format
+msgid ""
+"Cannot create home directory\n"
+"Error: %s"
+msgstr ""
+"不能建立用户主目录\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:815
+#, c-format
+msgid ""
+"Cannot change owner of home directory\n"
+"Error: %s"
+msgstr ""
+"不能改变用户主目录的属主\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:822
+#, c-format
+msgid ""
+"Cannot change permissions on home directory\n"
+"Error: %s"
+msgstr ""
+"不能改变用户主目录的权限\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:855
+#, fuzzy, c-format
+msgid ""
+"Cannot change permissions on mailbox: %s\n"
+"Error: %s"
+msgstr ""
+"不能改变文件 %s 的权限\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:893
+#, fuzzy, c-format
+msgid ""
+"Cannot change owner of directory %s\n"
+"Error: %s"
+msgstr ""
+"不能改变用户主目录的属主\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:900
+#, fuzzy, c-format
+msgid ""
+"Cannot change permissions on directory %s\n"
+"Error: %s"
+msgstr ""
+"不能改变用户主目录的权限\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:927
+#, c-format
+msgid ""
+"Cannot change owner of file %s\n"
+"Error: %s"
+msgstr ""
+"不能改变文件 %s 的属主\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:934
+#, c-format
+msgid ""
+"Cannot change permissions on file %s\n"
+"Error: %s"
+msgstr ""
+"不能改变文件 %s 的权限\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:949 kuser.cpp:957
+#, c-format
+msgid "Directory %s does not exist"
+msgstr "目录 %s 不存在"
+
+# , c-format
+#: kuser.cpp:984
+#, c-format
+msgid ""
+"Cannot remove home directory %s\n"
+"Error: %s"
+msgstr ""
+"不能删除用户主目录 %s\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:1007
+#, c-format
+msgid ""
+"Cannot remove crontab %s\n"
+"Error: %s"
+msgstr ""
+"不能删除crontab %s\n"
+"错误: %s"
+
+# , c-format
+#: kuser.cpp:1024
+#, c-format
+msgid ""
+"Cannot remove mailbox %s\n"
+"Error: %s"
+msgstr ""
+"不能删除邮件箱 %s\n"
+"错误: %s"
+
+#: kuser.cpp:1044
+msgid "Cannot fork()"
+msgstr "不能fork()"
+
+#: kgroup.cpp:240
+msgid "You have more than 65534 groups!?!? You have ran out of gid space!"
+msgstr "你有多于65534个用户组!?!? 你已经用完了所有的 gid!"
+
+#: main.cpp:48
+msgid "Only root is allowed to manage users."
+msgstr "只有 root 可以管理用户."
+
+#: main.cpp:58
+msgid "KDE User Manager"
+msgstr "KDE用户管理器"
+
+#: maindlg.cpp:152 maindlg.cpp:190 maindlg.cpp:495
+msgid "WARNING"
+msgstr "警告"
+
+#: maindlg.cpp:153
+msgid "Do you really want to delete user ?"
+msgstr "你确定要删除用户吗 ?"
+
+#: maindlg.cpp:191
+msgid ""
+"You are using private groups.\n"
+"Do you want delete user's private group ?"
+msgstr ""
+"你在使用私有用户组.\n"
+"你要删除用户的私有组吗?"
+
+#: maindlg.cpp:321
+msgid "Data was modified"
+msgstr "数据被修改了"
+
+#: maindlg.cpp:322
+msgid "Would you like to save changes ?"
+msgstr "你要保存改动吗?"
+
+#: maindlg.cpp:324
+msgid "Discard changes"
+msgstr "放弃改动"
+
+#: maindlg.cpp:362
+msgid "Edit defaults"
+msgstr "编辑默认值"
+
+# , c-format
+#: maindlg.cpp:390
+#, c-format
+msgid "Null pointer tmpKG in mainDlg::groupSelected(%d)\n"
+msgstr "Null pointer tmpKG in mainDlg::groupSelected(%d)\n"
+
+# , c-format
+#: maindlg.cpp:408
+#, c-format
+msgid "Null pointer tmpKU in mainDlg::userSelected(%d)\n"
+msgstr "Null pointer tmpKU in mainDlg::userSelected(%d)\n"
+
+# , c-format
+#: maindlg.cpp:418
+#, c-format
+msgid "Null pointer tmpQ in mainDlg::selected(%d)\n"
+msgstr "Null pointer tmpQ in mainDlg::selected(%d)\n"
+
+#: maindlg.cpp:496
+msgid "Do you really want to delete group ?"
+msgstr "你确定要删除用户组吗 ?"
+
+#: propdlg.cpp:55
+msgid "User name"
+msgstr "用户名"
+
+#: propdlg.cpp:59
+msgid "User identificator"
+msgstr "用户身份证明"
+
+#: propdlg.cpp:60
+msgid "User id"
+msgstr "用户ID"
+
+#: propdlg.cpp:64
+msgid "Set password"
+msgstr "设置密码"
+
+#: propdlg.cpp:69 propdlg.cpp:70
+msgid "Full name"
+msgstr "全名"
+
+#: propdlg.cpp:73 propdlg.cpp:96
+msgid "Login shell"
+msgstr "登录 shell"
+
+#: propdlg.cpp:75 userDefaultsPage.cpp:30
+msgid "<Empty>"
+msgstr "<空>"
+
+#: propdlg.cpp:101 propdlg.cpp:102
+msgid "Home directory"
+msgstr "用户主目录"
+
+#: propdlg.cpp:109 propdlg.cpp:110
+msgid "Office"
+msgstr "办公室"
+
+#: propdlg.cpp:112
+msgid "Office description"
+msgstr "办公地点说明"
+
+#: propdlg.cpp:116 propdlg.cpp:117
+msgid "Office phone"
+msgstr "办公室电话"
+
+#: propdlg.cpp:119
+msgid "Office phone number"
+msgstr "办公室电话号码"
+
+#: propdlg.cpp:123 propdlg.cpp:124
+msgid "Home phone"
+msgstr "家庭电话"
+
+#: propdlg.cpp:126
+msgid "Home phone number"
+msgstr "家庭电话号码"
+
+#: propdlg.cpp:127 propdlg.cpp:186
+msgid "User info"
+msgstr "用户信息"
+
+#
+#: propdlg.cpp:135 propdlg.cpp:136
+msgid "Login class"
+msgstr "登录 class"
+
+#: propdlg.cpp:138
+msgid "Login resource class"
+msgstr ""
+
+#
+#: propdlg.cpp:145
+msgid "Password never expires"
+msgstr "口令永不过期"
+
+#
+#: propdlg.cpp:146
+msgid "Date when password expires"
+msgstr "口令过期的日期"
+
+#: propdlg.cpp:154 propdlg.cpp:224
+msgid "Account never expires"
+msgstr "帐号永不过期"
+
+#: propdlg.cpp:155
+msgid "Date when account expires"
+msgstr "帐号过期的日期"
+
+#: propdlg.cpp:163 propdlg.cpp:230
+msgid "Extended"
+msgstr "扩展"
+
+#: propdlg.cpp:169
+msgid "The first office"
+msgstr "第一办公地点"
+
+#: propdlg.cpp:170
+msgid "Office1"
+msgstr "办公室1"
+
+#: propdlg.cpp:172
+msgid "First office description"
+msgstr "第一办公地点说明"
+
+#: propdlg.cpp:176
+msgid "The second office"
+msgstr "第二办公地点"
+
+#: propdlg.cpp:177
+msgid "Office2"
+msgstr "办公室2"
+
+#: propdlg.cpp:179
+msgid "Second office description"
+msgstr "第二办公地点说明"
+
+#: propdlg.cpp:182
+msgid "Postal address"
+msgstr "邮政地址"
+
+#: propdlg.cpp:183
+msgid "Address"
+msgstr "地址"
+
+#: propdlg.cpp:184
+msgid "Full postal address"
+msgstr "完整的邮政地址"
+
+#: propdlg.cpp:197
+msgid "Last password change"
+msgstr "最近一次口令改动"
+
+#: propdlg.cpp:199
+#, fuzzy
+msgid "Password change not allowed"
+msgstr "不允许修改口令"
+
+#: propdlg.cpp:200
+#, fuzzy
+msgid ""
+"Date before which password cannot\n"
+"be changed"
+msgstr "允许修改口令的日期"
+
+#
+#: propdlg.cpp:205
+#, fuzzy
+msgid "Password will not expire"
+msgstr "口令永不过期"
+
+#
+#: propdlg.cpp:206
+#, fuzzy
+msgid ""
+"Date when password expires and\n"
+"must be changed"
+msgstr "口令过期的日期"
+
+#: propdlg.cpp:212
+msgid "No warning will be given"
+msgstr ""
+
+#: propdlg.cpp:213
+#, fuzzy
+msgid ""
+"Date after which warning about pending\n"
+"password expiration will be given"
+msgstr "警告用户密码过期的日期"
+
+#: propdlg.cpp:218
+#, fuzzy
+msgid "Account will remain enabled"
+msgstr "帐号从建立起开始生效"
+
+#: propdlg.cpp:219
+#, fuzzy
+msgid ""
+"Date when account will be disabled\n"
+"if password has expired"
+msgstr "警告用户密码过期的日期"
+
+#: propdlg.cpp:225
+#, fuzzy
+msgid ""
+"Date when account expires and will\n"
+"be disabled"
+msgstr "帐号过期的日期"
+
+#: propdlg.cpp:239
+#, fuzzy
+msgid "Filesystem with quotas"
+msgstr "文件软配额"
+
+#: propdlg.cpp:248
+#, fuzzy
+msgid "Filesystem with quotas:"
+msgstr "文件软配额"
+
+#: propdlg.cpp:254 propdlg.cpp:255
+#, fuzzy
+msgid "Disk space soft quota"
+msgstr "文件软配额"
+
+#: propdlg.cpp:260 propdlg.cpp:261
+#, fuzzy
+msgid "Disk space hard quota"
+msgstr "文件硬配额"
+
+#: propdlg.cpp:264 propdlg.cpp:265
+#, fuzzy
+msgid "Disk space usage"
+msgstr "文件使用情况"
+
+#: propdlg.cpp:271 propdlg.cpp:272
+msgid "Time limit allowed for Disk space over soft quota"
+msgstr ""
+
+#: propdlg.cpp:278 propdlg.cpp:279
+#, fuzzy
+msgid "File number soft quota"
+msgstr "文件软配额"
+
+#: propdlg.cpp:284 propdlg.cpp:285
+#, fuzzy
+msgid "File number hard quota"
+msgstr "文件硬配额"
+
+#: propdlg.cpp:288 propdlg.cpp:289
+#, fuzzy
+msgid "File number usage"
+msgstr "文件使用情况"
+
+#: propdlg.cpp:295 propdlg.cpp:296
+msgid "Time limit allowed for File number over soft quota"
+msgstr ""
+
+#: propdlg.cpp:299
+msgid "Quota"
+msgstr "配额"
+
+#: propdlg.cpp:313
+msgid "Groups not belonged to"
+msgstr ""
+
+#: propdlg.cpp:339
+msgid "Groups belonged to"
+msgstr ""
+
+#: propdlg.cpp:350
+msgid "Primary group"
+msgstr "主要用户组"
+
+#: propdlg.cpp:354
+msgid "Groups"
+msgstr "用户组"
+
+#: propdlg.cpp:365
+#, fuzzy
+msgid "User properties"
+msgstr "用户组特性..."
+
+# , c-format
+#: addUser.cpp:93 propdlg.cpp:681
+#, c-format
+msgid "User with UID %u already exists"
+msgstr "已经存在 UID 为 %u 的用户"
+
+# , c-format
+#: misc.cpp:48
+#, c-format
+msgid "Can't create backup file for %s"
+msgstr "不能为 %s 建立备份文件"
+
+# , c-format
+#: misc.cpp:165
+#, c-format
+msgid "File %s does not exist."
+msgstr "文件 %s 不存在."
+
+# , c-format
+#: misc.cpp:173
+#, c-format
+msgid "Can not open file %s for reading."
+msgstr "不能打开文件 %s 读."
+
+# , c-format
+#: misc.cpp:181
+#, c-format
+msgid "Can not open file %s for writing."
+msgstr "不能打开文件 %s 写."
+
+#: usernamedlg.cpp:15
+msgid "Enter username"
+msgstr "输入用户名"
+
+#: usernamedlg.cpp:22
+msgid "Username:"
+msgstr "用户名:"
+
+# , c-format
+#: usernamedlg.cpp:72
+#, c-format
+msgid "User with name %s already exists."
+msgstr "用户名为 %s 的用户已经存在."
+
+#: usernamedlg.cpp:79
+msgid "You have to enter a user name."
+msgstr "必须输入一个用户名."
+
+#: pwddlg.cpp:24
+msgid "Enter password"
+msgstr "输入口令"
+
+#: pwddlg.cpp:31
+msgid "Password"
+msgstr "口令"
+
+#: pwddlg.cpp:49
+msgid "Retype password"
+msgstr "再次输入口令"
+
+#: pwddlg.cpp:105
+msgid ""
+"Passwords are not identical.\n"
+"Try again"
+msgstr ""
+"两次口令不一样.\n"
+"重新输入"
+
+#: grpnamedlg.cpp:24
+msgid "Group name:"
+msgstr "用户组名称:"
+
+#: grpnamedlg.cpp:30
+msgid "Group number:"
+msgstr "用户组号码:"
+
+# , c-format
+#: grpnamedlg.cpp:98
+#, c-format
+msgid "Group with name %s already exists."
+msgstr "已经存在名为 %s 的用户组."
+
+# , c-format
+#: grpnamedlg.cpp:105
+#, c-format
+msgid "Group with gid %d already exists."
+msgstr "已经存在 GID 为 %d 的用户组."
+
+#: kerror.cpp:35
+msgid "Message"
+msgstr "消息"
+
+#: addUser.cpp:32 addUser.cpp:52
+msgid "Create home directory"
+msgstr "建立用户主目录"
+
+#: addUser.cpp:38 addUser.cpp:58
+msgid "Copy skeleton"
+msgstr "拷贝配置框架"
+
+#: addUser.cpp:43 addUser.cpp:63 userDefaultsPageData.cpp:115
+#, fuzzy
+msgid "User Private Group"
+msgstr "使用私有组"
+
+# , c-format
+#: addUser.cpp:135
+#, c-format
+msgid "Directory %s already exists (uid = %d, gid = %d)"
+msgstr "目录 %s 已经存在 (uid= %d, gid = %d)"
+
+# , c-format
+#: addUser.cpp:138
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s 不是一个目录"
+
+# , c-format
+#: addUser.cpp:164
+#, c-format
+msgid "Mailbox %s already exist (uid=%d)"
+msgstr "邮件箱 %s 已经存在 (uid=%d)"
+
+# , c-format
+#: addUser.cpp:167
+#, c-format
+msgid "%s exists but is not a regular file"
+msgstr "%s 已经存在,但不是一个普通文件"
+
+#: editDefaults.cpp:32
+msgid "User"
+msgstr "用户"
+
+#: userDefaultsPageData.cpp:39
+msgid "Shell"
+msgstr "Shell"
+
+#: userDefaultsPageData.cpp:64
+msgid "Base of home directories"
+msgstr "用户主目录"
+
+#: userDefaultsPageData.cpp:89
+msgid "Create home dir"
+msgstr "建立用户主目录"
+
+#: userDefaultsPageData.cpp:102
+msgid "Copy skeleton to home dir"
+msgstr "拷贝配置框架到用户主目录"
+
+#, fuzzy
+#~ msgid "Disk space  hard quota"
+#~ msgstr "文件硬配额"
+
+#, fuzzy
+#~ msgid "Other Users"
+#~ msgstr "用户"
+
+#, fuzzy
+#~ msgid "Group Users"
+#~ msgstr "用户组"
+
+#, fuzzy
+#~ msgid "Password change not required"
+#~ msgstr "不需要修改口令"
+
+#, fuzzy
+#~ msgid ""
+#~ "Date after which password change\n"
+#~ "is required"
+#~ msgstr "需要修改密码的日期"
+
+#, fuzzy
+#~ msgid "User will not be warned"
+#~ msgstr "永远不警告用户口令过期"
+
+#, fuzzy
+#~ msgid "Date when account becomes active"
+#~ msgstr "帐号过期的日期"
+
+#~ msgid "Quota filesystem"
+#~ msgstr "文件系统空间配额"
+
+#~ msgid "File time limit"
+#~ msgstr "文件时间限制"
+
+#~ msgid "iNode soft quota"
+#~ msgstr "iNode软配额"
+
+#~ msgid "iNode hard quota"
+#~ msgstr "iNode硬配额"
+
+#~ msgid "iNode usage"
+#~ msgstr "iNode使用情况"
+
+#~ msgid "iNode time limit"
+#~ msgstr "iNode时间限制"
+
+#~ msgid "Users"
+#~ msgstr "用户"
+
+#~ msgid "Date before account inactive"
+#~ msgstr "在帐号被禁止的日期"
+
+#~ msgid "Edit User"
+#~ msgstr "编辑用户信息"
+
+#~ msgid "Quotas are not compiled into this kernel."
+#~ msgstr "文件系统空间配额没有编译进内核."

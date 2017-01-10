@@ -1,0 +1,257 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"Content-Type: text/plain; charset=\n"
+"Date: 1997-10-28 22:45:13+0100\n"
+"From: Bertrand Leconte,,, <leconteb@arthur>\n"
+"Xgettext-Options: -C -k_\n"
+"Files: knu.cpp CommandDlg.cpp OptionsDlg.cpp ktabctl.cpp PingDlg.cpp "
+"TracerouteDlg.cpp HostDlg.cpp\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "&Traceroute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "&Rezolucija raèunala"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "F&inger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"Nijedna naredba nije omoguæ†ena\n"
+"u postavnoj datoteci.\n"
+"\n"
+"Stoga ne mogu uèiniti ni¹ta...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "&Novi prozor"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "&Zatvori prozor"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "Iz&aberi sve"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "&Oèisti izlazni prozor"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "P&odesi..."
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "&O %s"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "O &Qt-u"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+"Knu\n"
+"Inaèica %s\n"
+"\n"
+"Bertrand"
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "O programu..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "Mre¾ni uslu¾ni programi"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "&Raèunalo:"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "&Idi!"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "&Stani"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Ova izvr¹na datoteka nije naðena. \n"
+"Mo¾ete zadati stazu u izborniku Uredi->Podesi..."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Postoji problem u va¹oj\n"
+"%s/%src\n"
+"postavnoj datoteci.\n"
+"U [%s] grupi,\n"
+"ne mogu naæi ispravni \"path=\" unos.\n"
+"\n"
+"Molim koristite Uredi->Podesi... i\n"
+"da provjerite unesene vrijednosti.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "Pogre¹na putanja"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Izvr¹na datoteka"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "&Naziv staze"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "Dodatni &argumenti:"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "Ova naredba je onemoguæena u postavnoj datoteci."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - postava"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "Ime raèunala"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Gubitak"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Rcv"
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Snt"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Najbolje"
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "Prosjeèno"
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Najgore"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "Izvr¹i rezoluciju raèunala"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "raèuna&lo"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "&Najveæi broj skokova:"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "adresa (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "naziv (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "poslu¾itelj naziva (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "izmjenjivaè po¹te (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "zamjensko ime (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "start of authority (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "bilo koji slog (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "Tr&a¾i:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "podrazumijevani poslu¾itelj"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "Pos&lu¾itelj:"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "&Korisnik:"
+
+#~ msgid "&Matt's traceroute"
+#~ msgstr "&Mattov Traceroute"

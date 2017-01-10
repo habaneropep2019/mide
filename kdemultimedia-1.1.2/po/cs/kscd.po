@@ -1,0 +1,604 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kscd 1.2.0\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: 1998-12-18 11:37+01:00\n"
+"Last-Translator: Stanislav Vi¹òovský <stano@mail.kolej.mff.cuni.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "Výchozí adresáø CDDB:"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "Pøíspìvky do CDDB posílat na:"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "CDDB server:"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "Aktualizovat"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "Pou¾ít vzdálenou CDDB"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "Implicitní"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "Pou¾ít proxy pro pøístup k CDDB"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "Editor databáze CD"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"Celkový èas:\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"Celkový èas:\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "Pou¾ijte editor pro poznámky k této písni/stopì"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "Pou¾ijte editor pro poznámky k tomuto titulu"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "Vyberte kategorii nebo stisknìte Zru¹it"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "Do které kategorie patøí toto CD?"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "Posílám polo¾ku CDDB: %s\n"
+
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"Nepodaøilo se pøedat obsah do:\n"
+" %s"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "Do jaké katogorie chcete ulo¾it tuto polo¾ku CDDB?"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"Není mo¾né zapisovat do souboru:\n"
+"%s\n"
+"Prosim, ovìøte pøístupová práva a ujistìte se, ¾e adresáøe pro kategorie "
+"existují."
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "Chyba Kscd"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "Nesprávná polo¾ka databáze"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr "Není vyplnìn interpret/titul.Prosím, doplòte tyto informace."
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"Interpret/Titul není správnì vyplnìn.\n"
+"Prosím, oddìlte interpreta of titulu pomocí lomítka,\n"
+"napø. Peter Gabriel / Greatest Hits\n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Musí být vyplòen alespoò jeden název písnì.\n"
+"Opravte, prosím názvy."
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "Interní chyba"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Po¹lete, prosím, e-mail s touto chybou autorovi programu."
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "Nesprávné poøadí písní.\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "Naèíst"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "Editor poøadí písní"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "Uprav název písnì"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "Interpret / Titul"
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "Stopa / Èas / Titul"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "Podrobnìji"
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "ID disku"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "Poslat"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "Nastav kscd"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "Barva LED:"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "Barva pozadí:"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "Zaøízení CD-ROM:"
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Pøíkaz pro mail:"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "WWW prohlí¾eè"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "Pou¾ij kfm jako prohlí¾eè"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "Vlastní prohlí¾eè:"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "Zobrazovat tipy"
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "Povolit vsazení do KPanelu"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr "Hrát pøi uzavøení"
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr "Automaticky dokovat pøi minimalizaci"
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr "Pøestat hrát pøi ukonèení"
+
+#: configdlg.cpp:190
+msgid "Eject on Finish"
+msgstr "Vysunout pøi ukonèení"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "Start/Pauza"
+
+#: docking.cpp:75
+msgid "Forward"
+msgstr "Dopøedu"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "Zpìt"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "Dal¹í"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "Pøedchozí"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "Vysuò"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "Minimalizuj"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr ""
+"Nepodaøilo se najít odpovídající data. Prosím, vyberte pøíslu¹né CDz tohoto "
+"seznamu mo¾ností."
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "Vyberte, prosím, titul nebo stisknìte Zru¹it"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr "Záznam úspì¹nì odeslán"
+
+#: kscd.cpp:236
+msgid "Error connecting to server."
+msgstr "Chyba pøi pøipojování k serveru."
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr "Není spojeno."
+
+#: kscd.cpp:242
+msgid "Connection timed out."
+msgstr "Spojení vypr¹elo."
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr "Timeout pøi èekání na interakci se serverem."
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+"Server øekl:\n"
+"\"%s\""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+"Chyba #%d pøi odesílání zprávy pøe SMTP.\n"
+"\n"
+"%s"
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "Hlas: --"
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Vystoupení"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "Nákupy"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Magic"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "Opakovat CD"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "Výbìr stopy"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "o 30s dopøedu"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "o 30s zpìt"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "Dal¹í stopa"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "Pøedchozí stopa"
+
+#: kscd.cpp:570
+msgid "Quit Kscd"
+msgstr "Ukonèit Kscd"
+
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "Pøepínaè módu displeje"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Nastav Kscd"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "Vysuò CD"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "Interpret na Webu"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "Náhodné poøadí"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "Dialogové okno CDDB"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "Nastavení hlasitosti CD"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "Hraji"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr "%02d: (neznámý)"
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "Pauza"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "Náhodnì"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Divné...."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "Zastaven"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "Dokola"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "Vysouvám"
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "Nastavení kscd"
+
+#: kscd.cpp:1008
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"V souèasné dobì spravováno:\n"
+"Samem Maloneym <thufir@illogic.ml.org>\n"
+"\n"
+"kscd obsahuje kód z programu\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Speciálnì dìkuji Ti Kan a Stevu Scherfovi, stvoøitelùm koncepce CDDB "
+"databáze. Dal¹í informace na http://www.cddb.com.\n"
+"\n"
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"KSCD Magic je zalo¾en na Synaesthesia od Paula Harrisona "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+
+#: kscd.cpp:1025
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Dìkuji Vadimu Zalivovi <lord@crocodile.org>\n"
+"za práci na kódu pro http proxy.\n"
+"\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr "Nastavení SMTP"
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Volby Kscd"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Magic"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "Hlas: %02d%%"
+
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"Chyba pøi pøístupu nebo ètení CDROM.\n"
+"Ovìøte, prosím, svá pøístupová práva k:\n"
+"%s"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "Pøipraven"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "Otevøen"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "Nepovedlo se získat data z CDDB serveru."
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "®ádná odpovídající polo¾ka CDDB."
+
+#: kscd.cpp:1834 kscd.cpp:1844
+msgid "Error getting CDDB entry."
+msgstr "Chyba pøi získávání CDDB polo¾ky."
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "CDDB timeout."
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "Sto Zbyt"
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Tot Sec"
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Tot Zbyt"
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "Sto Sec"
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "Nepovedlo se spustit kscdmagic."
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"KSCD Magic ukonèen s chybou.\n"
+"Máte KSCD Magic nainstalován?"
+
+#: kscd.cpp:2368
+msgid "Enter the local CDDB base Directory"
+msgstr "Vlo¾te adresáø lokální CDDB databáze:"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: výpis voleb pøíkazové øádky\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: povolit výpis debug informací.\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "Magic Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "©íøka magického okna:"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "Vý¹ka magického okna:"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "Magický jas:"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr "Umo¾nit odesílání pomoví SMTP"
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr "SMTP Adresa:Port"
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr "Va¹e e-malová adresa"

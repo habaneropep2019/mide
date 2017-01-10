@@ -1,0 +1,360 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"PO-Revision-Date: Thu May 6 1999 21:12:52+0200\n"
+"Last-Translator: Masanori Hanawa <hanawa@es.yamanashi.ac.jp>\n"
+"Language-Team: Japan <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"X-Generator: KTranslator v 0.4.0"
+
+#: main.cpp:236
+msgid ": Error"
+msgstr ": エラー"
+
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr "ランレベルの管理はrootだけに許されています。"
+
+#: OldView.cpp:105
+msgid "Available"
+msgstr "利用可能"
+
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "サービス(&S)"
+
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+"<bold>利用可能なサービス</bold>は次の通りです\n"
+"サービスを開始するには、ランレベルの<bold>\"開始\"</bold>セクションに"
+"ドラッグしてください。\n"
+"\n"
+"サービスを停止するには、<bold>\"停止\"</bold> セクションに同じことをしてください。"
+
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "ランレベル &%i"
+
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "ランレベル %i"
+
+#: OldView.cpp:149
+msgid "Start"
+msgstr "開始"
+
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"ランレベル%iに入ったときにサービスを開始するには\n"
+"ここにドラッグしてください。"
+
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"ランレベル%iに入ったときにサービスを停止するには\n"
+"ここにドラッグしてください。"
+
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr "** 設定を書込み中 **\n"
+
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr "** ランレベル %i **\n"
+
+#: OldView.cpp:517
+msgid "Reading configuration: "
+msgstr "読込んだ設定:"
+
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr "** 停止中"
+
+#: OldView.cpp:624
+msgid " stop"
+msgstr " 停止"
+
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr "** 開始中"
+
+#: OldView.cpp:644
+msgid " start"
+msgstr " 開始"
+
+#: OldView.cpp:661
+msgid "** Re-starting "
+msgstr "** 再起動中 "
+
+#: OldView.cpp:666
+msgid " restart"
+msgstr " 再起動"
+
+#: OldView.cpp:811
+msgid "P&roperties..."
+msgstr "設定(&P)..."
+
+#: OldView.cpp:831
+msgid "S&top"
+msgstr "停止(&t)"
+
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "再起動(&R)"
+
+#: TopWidget.cpp:136
+msgid "&New Configuration"
+msgstr "新しい設定(&N)"
+
+#: TopWidget.cpp:137
+msgid "&Save Configuration"
+msgstr "設定を保存(&S)"
+
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr "ログを印刷(&L)..."
+
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr "ツールバーを表示(&T)"
+
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr "ステータスバーを表示(&S)"
+
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr "ログを表示(&L)"
+
+#: TopWidget.cpp:174
+msgid "&Configure..."
+msgstr "設定(&C)..."
+
+#: TopWidget.cpp:177
+msgid "&Save Options"
+msgstr "オプションを保存(&S)"
+
+#: TopWidget.cpp:215
+msgid "New"
+msgstr "新規作成"
+
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "スクリプト出力をON/OFF"
+
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"保存されていない変更があります。\n"
+"本当に終了しますか？"
+
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "はい、終了します！"
+
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "いいえ、終了しません。"
+
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "変更をクリア"
+
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "本当に全ての未保存の変更をクリアしますか？"
+
+#: TopWidget.cpp:307
+msgid "Save configuration"
+msgstr "設定を保存"
+
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"変更した設定をinit設定に保存しようとしています。\n"
+"誤った設定はあなたのシステムを起動不能にするかも知れないことを "
+"認識してください。\n"
+"\n"
+"続けますか？"
+
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr "はい、保存します！(&s)"
+
+#: TopWidget.cpp:314
+msgid "No, &don't save."
+msgstr "いいえ、保存しません(&d)。"
+
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "Qtについて"
+
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "変更しました"
+
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr "ソート番号を生成できませんでした。手動で変更してください。"
+
+#: prefs.cpp:48
+#, c-format
+msgid "%s - Preferences"
+msgstr "%s - 初期設定"
+
+#: prefs.cpp:58
+msgid "Directory containing your init-scripts (&services)"
+msgstr "あなたのinitスクリプト(サービス)を含むディレクトリ(&s)"
+
+#: prefs.cpp:79
+msgid "Directory containing your &runlevel-directories"
+msgstr "あなたのランレベルディレクトリを含むディレクトリ(&r)"
+
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr "新しいエントリ用の色(&n)"
+
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr "変更されたエントリ用の色(&h)"
+
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr "パス(&P)"
+
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr "色(&C)"
+
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "サービスを削除するにはここにドラッグ"
+
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr "名前(&N)"
+
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr "以下を指す(&P)"
+
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr "ソート番号(&S)"
+
+#: PropDlg.cpp:113
+#, c-format
+msgid "%s - Properties"
+msgstr "%s - プロパティ"
+
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr "%sから%sを削除するのに失敗しました: \"%s\"\n"
+
+#: IOCore.cpp:53
+#, c-format
+msgid "removed %s from %s\n"
+msgstr "%sから%sを削除しました\n"
+
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr "%sを%s内に作成しました\n"
+
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr "%s内に％エスを作成するのに失敗しました: \"%s\"\n"
+
+#: About.cpp:46
+#, c-format
+msgid "About %s"
+msgstr "%sについて"
+
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr ""
+
+#: About.cpp:81
+#, c-format
+msgid "Version %s (KDE %s)"
+msgstr "バージョン %s (KDE %s)"
+
+#: About.cpp:89
+msgid "1997-1999 "
+msgstr ""
+
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr ""
+
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr ""
+
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ""
+
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp 1997 Martin Jones.\n"
+"Uses the KDE libraries 1997-1999 The KDE Team.\n"
+"Uses the Qt library 1992-1998 Troll Tech AS."
+msgstr ""
+
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""

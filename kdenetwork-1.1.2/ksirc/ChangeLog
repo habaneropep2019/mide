@@ -1,0 +1,501 @@
+1998-03-29  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Fixed problem with "/names" opening a zillion windows and
+	joining every channel in existance.
+
+	* toplevel.cpp: re-writting parse-input to do better checking and
+ 	error handling.  Now uses an internal EString, a QString class
+	which emits exceptions on error conditions.  Currently only 1
+	exception exists, the estringOutOfBounds exception to indicate
+	find returned a value out of the bounds of the string.  Other
+	exception handling include failure cases like parse errors.
+
+	* Added better puke support and more widgets.  Currently 8
+ 	diffrent widgets exist, and 1 layout manager.
+
+1998-03-13  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Nick list sorting works much better, still broken when
+	there's only a couple of entries, but it's better.
+
+        * Fixed /names problem.
+
+1998-03-07  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Majour update comes in the form of the puke sub directory.  This
+ 	contains the starting frame work for full control of ksirc from
+ 	perl scripts.  Right now it implements a small widget set (ha!
+  	small!! a widget, a frame and a lineedit).  Ground work is all set
+ 	to start adding more. :)
+
+	* puke/pwidget.pm (close): Wow it's been a while since this was
+ 	updated =)
+
+
+	
+1998-02-17  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Default rules added: 
+	                       + Filter ksirc colours
+			       + Filter mirc colours
+			       + Colourize nicks
+			       + Colourize your nick
+
+	* KSPrefs/defaultfilters.cpp: Added default filters
+ 	configure/prefrences dialog.
+
+	* baserules.cpp (defaultRules): Added basic default filter rules.
+
+1998-02-16  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Numberous other changes in toplevel.cpp to support changes to
+ 	nick list.
+
+	* alistbox.cpp (nickListItem): New nick list item keeps all nicks
+ 	in special items with setable colours and op/voice status falgs.
+	(findNick): New findNick() function allows quick searchin of nick
+ 	list via binary search.
+	(item): Returns nickListItem now.
+
+1998-02-07  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Misc bug fixes and updates.
+
+1998-02-01  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* KSCutDialog/KSCutDialog.cpp (scrollToBot): Added copy button,
+ 	and made it scroll to the bottom better.
+
+	* ahistlineedit.cpp (mousePressEvent): Fixed paste problem, added
+ 	copy button for poor soles who have problem with highlighting and
+ 	copying.
+
+	* dsirc (donumeric): Fixed dcc chat messages going to the wrong window.
+
+1998-01-30  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* When talking to a nick doesn't show nick list.
+
+	* toplevel.cpp (KSircTopLevel): Fixed a few bugs with drawing and
+ 	reszing.
+
+	* New freeze slot for irc listitems, should speed up global
+ 	changes, etc.
+
+	* Misc changes and fixes.  
+
+	* toplevel.cpp (parse_input): If we see a nick change that's
+ 	pertinent to us, ie we're talking to a nick and he changes nicks,
+ 	try and follow the nick change.
+
+1998-01-28  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* toplevel.cpp (parse_input): Clears screan before displaying the
+ 	prompt.  Needed minor changes everywhere.
+	(parse_input): Added ssfe 'R' message to rejoin a channel.
+
+	* servercontroller.cpp (saveProperties): Added KDE session
+ 	management.
+
+1998-01-25  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Handles +v on nicks in channels.
+
+	* Big fixes throughout.
+
+	* irclistbox.cpp (updateScrollBars): General cleanup of scroll
+ 	bars, they work correctly now.
+
+1998-01-24  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+        * Ran ksirc through gprof and inlined a few small functions to
+ 	help in performance.
+
+	* toplevel.cpp: Fixed Menubar being offset.
+
+	* irclistitem.cpp (setupPainterText): Majour update to painting
+ 	routine.  Now pre draws the "line" in a QPixmap buffer, and simply
+ 	dumps the pixmap to the screen in a paintevent.  Essentially
+ 	double buffered, much faster, very nice.
+
+1998-01-21  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* toplevel.cpp (UserParseMenu): User menus no longer support %s,
+ 	but rather the perl variable $$dest_nick, this means you can now
+ 	use any sirc variable available, and as many times as you like.
+  	This is going to break a lot of things!
+
+	* servercontroller.cpp (ProcMessage): Disabled Connections->Join
+	Channel when last server connection is closed.
+	Added icon, thanks to Druppy for making it.
+
+	* toplevel.cpp (showTicker): Fixed bug in starting ticker, was -5
+	instead of -i.
+
+	* KSTicker/ksticker.cpp (timerEvent): Added colour printing
+	support and double support.  Little cleaner, looks ok.
+
+1998-01-20  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* ksircprocess.cpp (KSircProcess): Added sirc.help.gz and
+ 	SIRCLIBDIR infor so help now works correctly!!!!  ADDED /help!!
+
+	* Moved all UserMenu support into the prefrences list box, and all
+ 	that it entails.  Not 100% clean, but it's pretty good.
+
+	* toplevel.cpp (control_message): Added support for changing the
+ 	font size of the line edit.
+
+	* cleaned up support for the user menu in toplevel, and remove all
+ 	the extra classes.
+
+1998-01-18  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* KSPrefs/ksprefs.cpp: New Preferences and settings window.  The
+	basic window and idea has been set out, it simply needs more pages 
+	plugged into it now.
+
+	* ksircprocess.cpp (KSircProcess): Added support for the new
+	startup settings, etc.
+
+	* ksircprocess/servercontroller/toplevel: Now starts with channel
+	name !no_channel so that deletes go through correctly. (we never
+	delete !default).
+
+	* servercontroller.h: Updated and fixed so the window resizes
+ 	correctly.
+
+1998-01-15  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Ticker now starts with data right away, heck, I just plug it
+ 	with the last 5 lines!
+
+	* FilterRuleEditor.cpp (moveRule): Fixed error with $$var being
+ 	nuked.
+
+	* Updated the entire messaging system between ServerController and
+ 	ksirc process, they can now talk freely without a zillion signals
+ 	and slots.  Communications is fully bidirectional and should work
+ 	well.
+
+	* toplevel.cpp (parse_input): Now deals with ssfe#p correctly!!!
+ 	Finally!!!! (prompts, for say nicks and passwords, try /oper :) )
+
+1998-01-13  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* servercontroller.cpp (notify_nick_online): Added grahical notify
+ 	list.  It uses the server controller and adds an Online brancs
+ 	with the nicks of people currently online on each server.
+
+1998-01-12  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Fixed filters.pl so being "away" doesn't mess up the lag'o'meter.
+
+	* Updated docs added keys.help and updates servercontroller for it.
+
+1998-01-10  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* toplevel.cpp (KSircTopLevel): Menus updated and working correctly.
+
+	* filters.pl (hook_ctcp_lag): Added feature for lag monitoring up
+ 	in the upper right hand corner.  Menus are broken though :(
+
+1998-01-09  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* toplevel.cpp (pasteToWindow): Fixed ut & paste to work correctly.
+
+1998-01-02  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* alistbox.cpp (inSort): Fixed sorting routine.  Stripped it made
+ 	it work, it's faster, etc.  SHould work better.
+
+	* toplevel.cpp: Added new Willy power tab completion.
+
+1998-01-01  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Various bug fixes as per the BUGLIST.
+
+	* Fixed scroll to bottom, no longer scroll to bottom when you're
+ 	scrolled up, except when you hit enter.
+
+1997-12-31  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Fixed mem leak in KSTicker.  Leaked 1 byte per message.
+
+	* Cleaned up the cut&paste code, made it a little consistend with X.
+
+1997-12-30  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Added support for multiple op/deop'ings.  Seems ok, except for
+ 	when a non-op changes their nick they might be shown as an op.
+  	Looking into it.
+
+	* Generic bug fixing and re-orginization since the 26th.  Check
+ 	the cvs logs.
+
+	* Added full cut&paste support.  Seems to work ok.
+
+1997-12-26  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* toplevel.cpp (resizeEvent): fixed resize problem.
+	(parse_input): Added `sirc clear handeling.
+	(parse_input): I think I fixed the auto create auto joining windows
+
+	* Added filter rule control mechanisim where each module is
+ 	queired and can suply it's own filter rules.  Usefull for DCC and
+ 	bolding etc.  Be carefull with toplevel, since there's multiple
+ 	instances each will suppy it's rule, and should ONLY be used if
+ 	each toplevel needs a filter rule.
+
+	* irclistitem.cpp (colourDrawText): Added ~~ to escape and print a
+ 	single ~. ~~ is always garunteed to print ~.
+
+	* ioBroadcast.cpp (defaultRules): Added a a default rule to seek
+ 	out stray ~[bcui]nick@someplace due to bad idents and to escape
+ 	the ~.
+
+1997-12-25  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Added listing of OPs at the top of list box with a seperator
+ 	dividing ops from non-ops. Toplevel now tracks nick change and op
+ 	status.
+
+1997-12-24  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Added code to look fro same fg and bg and change the bg so you
+ 	can see the text.
+
+	* Cleaned up nick completion, etc.
+
+$Revision: 1.31 $
+	
+$Log: ChangeLog,v $
+Revision 1.31  1998/03/30 04:59:32  asj
+Updated parsing and puke.
+
+Revision 1.30  1998/03/13 21:33:48  asj
+Misc changes, see the ChangeLog.
+
+Revision 1.29  1998/03/08 17:18:48  asj
+Modifications to Puke.
+
+Revision 1.28  1998/02/17 20:51:59  asj
+1998-02-17  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* Default rules added:
+	                       + Filter ksirc colours
+			       + Filter mirc colours
+			       + Colourize nicks
+			       + Colourize your nick
+
+	* KSPrefs/defaultfilters.cpp: Added default filters
+ 	configure/prefrences dialog.
+
+	* baserules.cpp (defaultRules): Added basic default filter rules.
+
+Revision 1.27  1998/02/07 17:14:51  asj
+Basic updates for beta.
+
+Revision 1.26  1998/02/01 22:13:28  asj
+Bug fixes and other minor updates.
+
+Revision 1.25  1998/01/31 03:42:49  asj
+Fixed minor bug in writing when not scrolling.
+
+Revision 1.24  1998/01/30 22:44:01  asj
+1998-01-30  Andrew Stanley-Jones  <asj@chowtown.cban.com>
+
+	* toplevel.cpp (parse_input): If we see a nick change that's
+ 	pertinent to us, ie we're talking to a nick and he changes nicks,
+ 	try and follow the nick change.
+
+Revision 1.23  1998/01/29 05:23:35  asj
+	* toplevel.cpp (parse_input): Clears screan before displaying the
+ 	prompt.  Needed minor changes everywhere.
+	(parse_input): Added ssfe 'R' message to rejoin a channel.
+
+	* servercontroller.cpp (saveProperties): Added KDE session
+ 	management.
+
+Revision 1.22  1998/01/26 00:57:53  asj
+	* Handles +v on nicks in channels.
+
+	* Big fixes throughout.
+
+	* irclistbox.cpp (updateScrollBars): General cleanup of scroll
+ 	bars, they work correctly now.
+
+Revision 1.21  1998/01/25 00:31:04  asj
+       * Ran ksirc through gprof and inlined a few small functions to
+ 	help in performance.
+
+	* toplevel.cpp: Fixed Menubar being offset.
+
+	* irclistitem.cpp (setupPainterText): Majour update to painting
+ 	routine.  Now pre draws the "line" in a QPixmap buffer, and simply
+ 	dumps the pixmap to the screen in a paintevent.  Essentially
+ 	double buffered, much faster, very nice.
+
+Revision 1.20  1998/01/22 05:51:41  asj
+Checking in kspainter
+
+Revision 1.19  1998/01/22 05:32:46  asj
+        * servercontroller.cpp (ProcMessage): Disabled Connections->Join
+        Channel when last server connection is closed.
+        Added icon, thanks to Druppy for making it.
+
+        * toplevel.cpp (showTicker): Fixed bug in starting ticker, was -5
+        instead of -i.
+
+        * KSTicker/ksticker.cpp (timerEvent): Added colour printing
+        support and double support.  Little cleaner, looks ok.
+
+Revision 1.18  1998/01/19 16:27:34  asj
+Fixed help so it works correctly now.
+
+Revision 1.17  1998/01/19 16:15:39  asj
+	* Moved all UserMenu support into the prefrences list box, and all
+ 	that it entails.  Not 100% clean, but it's pretty good.
+
+	* toplevel.cpp (control_message): Added support for changing the
+ 	font size of the line edit.
+
+	* cleaned up support for the user menu in toplevel, and remove all
+ 	the extra classes.
+
+Revision 1.16  1998/01/18 17:19:11  asj
+	* KSPrefs/ksprefs.cpp: New Preferences and settings window.  The
+	basic window and idea has been set out, it simply needs more pages
+	plugged into it now.
+
+	* ksircprocess.cpp (KSircProcess): Added support for the new
+	startup settings, etc.
+
+	* ksircprocess/servercontroller/toplevel: Now starts with channel
+	name !no_channel so that deletes go through correctly. (we never
+	delete !default).
+
+	* servercontroller.h: Updated and fixed so the window resizes
+ 	correctly.
+
+Revision 1.15  1998/01/16 05:51:02  asj
+	* Ticker now starts with data right away, heck, I just plug it
+ 	with the last 5 lines!
+
+	* FilterRuleEditor.cpp (moveRule): Fixed error with $$var being
+ 	nuked.
+
+	* Updated the entire messaging system between ServerController and
+ 	ksirc process, they can now talk freely without a zillion signals
+ 	and slots.  Communications is fully bidirectional and should work
+ 	well.
+
+	* toplevel.cpp (parse_input): Now deals with ssfe#p correctly!!!
+ 	Finally!!!! (prompts, for say nicks and passwords, try /oper :) )
+
+Revision 1.14  1998/01/14 05:11:49  asj
+Added grahical notify
+list.  It uses the server controller and adds an Online branch
+with the nicks of people currently online on each server.
+
+This meant adding new ioNotify to filter and catch messages.
+Adding notify_forw_* in ksircprocess to add the server and forward to
+the serverctronoller. Added servercontroller notify_* routines to add
+and delete nick, etc.
+
+Revision 1.13  1998/01/11 19:48:00  asj
+Fixed deleting of toplevel windows.  Toplevel windows are now always deleted
+on close, etc.
+
+Fixed segfaulting in ktreelist when everything was mostly deleted.  Added
+a clear() call when there are no process's.  Hopefully this will stop
+ktreelist from trying to paint "nothing".
+
+Added html documention and help, hopefully this works ok.
+
+Revision 1.12  1998/01/10 18:34:41  asj
+Updated filters.pl to do better searching for SYS_gettimeofday
+
+Revision 1.11  1998/01/10 17:46:51  asj
+Added lag-o-meter.
+
+This meant updating filters.pl to have support for the /lag command.
+It uses the syscall() interface. I've wrapped it in enough eval{}'s
+so it should be ok.  Problems will result for people who don't have
+sys/syscall.ph though and don't use linux!!!
+
+ioLAG.cpp is pretty simple, and I think pretty safe.
+
+updated ksircprocess, etc for ioLAG.cpp
+
+Revision 1.10  1998/01/03 01:45:12  asj
+Added ChangeLog update.
+
+Revision 1.9  1998/01/03 01:44:11  asj
+Applied wilton's patch, made it work to my taste.  We need to edit the
+ksiticker and add it's own colour support, this looks real shitty on my
+machine.
+
+I think the list box's ordering works seemy corretly now.
+
+Revision 1.8  1998/01/01 21:02:11  asj
+Various bug fixed all over the place.  Added ksirc.pl, documentation update, etc.
+
+Revision 1.7  1997/12/31 04:27:09  asj
+Misc bug fixes, updates.  Fixed mem leak in KSTicer, etc.
+
+Revision 1.6  1997/12/27 04:20:50  asj
+1. Fixed resive screw up in mainw
+
+2. added clear responce in toplevel.cpp, now resets screen.  Fixed irclistbox
+to handle this.  (needed it anyways)
+
+3. Auto create should be working better.
+
+4. Fixed problem in auto create and auto following invites, most annoying.
+
+5. Added filter control mechanism where each ksircmessagereceiver can
+reply with a default set of filter rules it requires.
+
+6. cleaed up ~ a little bit. ~~ now prints a single ~.  This is usefull
+for scripts which can look for stray ~ which may be taken as a control
+character when they're only inline in the text.
+
+Default filter rules now include:
+
+* Italics, bold, and underline ascii to ksirc conversion.
+
+* DCC redirected to DCC module.
+
+Revision 1.5  1997/12/26 05:56:20  asj
+Removed annoying $$
+
+Revision 1.4  1997/12/26 05:55:30  asj
+Test of interpolation.
+
+Revision 1.3  1997/12/26 05:54:36  asj
+Added ordering of ops to the top of the nick list.  Design is pretty simple:
+
+1. Added a seperator with know uniq text.
+
+2. If the nick is an op (passed by a flag) add them before the sep
+
+3. If not after the sep.
+
+Adding in each section is done alphabertically, again pretty easy.
+Step through each nick and use strcmp, if is returns <, then we should
+keep going since our word is furthur down the alphabet.  If it's >=
+stop, backup one and add the word into that location.
+
+We have to check for the end of the list since we can't insert max+1, it
+has to be -1.
+
+The Seperator is a custom list item of height 3 and width of the listbox.
+It simply draws a straight line, and off it goes.
+
+Revision 1.2  1997/12/25 07:54:42  asj
+Added Revision...
+
+Revision 1.1  1997/12/25 07:52:51  asj
+Minor updates, added ChangeLog
+$

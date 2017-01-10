@@ -1,0 +1,57 @@
+
+
+korn 0.3
+--------
+
+An xbiff-like program to monitor multiple mailboxes.
+
+
+WHAT
+----
+
+korn monitors a number of mailboxes for incoming messages and displays the
+number of new letters received in the box since it was last read. 
+
+Optionally, korn can be configured to run a shell command whenever new
+mail is received (I use it to play audio) and to run a command when the
+mailbox button is double clicked (I use it to pop up the mailbox). 
+
+I know, I know, it's an awfully shabby program.
+
+Changes since 0.2:
+
+Swallow bugfix
+Disabled position memory by default
+Added --nomouse to disable mouse events (for swallowing)
+Compiles cleanly with new libs
+
+WHO
+---
+
+Sirtaj S. Kang (taj@kde.org)
+
+WHY
+----
+
+... did i write it? 
+
+	Wanted something to replace "xbuffy", my previous mailbox monitor,
+	with something written in Qt. Don't want Xt no more.
+
+... is it called korn.
+
+	dunno really. had to begin with a k. didn't want to call it "kbuffy".
+	And KORN is a cool band.
+
+WHERE
+-----
+	original: ftp://ftp.ph.unimelb.edu.au/pub/users/taj/kde/korn-0.3.tgz
+	KDE: ftp://ftp.kde.org/pub/kde/apps/
+
+HOW
+___
+	Gunzip/Untar the tarball
+	cd korn-0.3
+	./configure
+	make
+	make install

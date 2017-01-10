@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kppp Handbook: Installation</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KPPP Dialer Internet PPP IP PAP CHAP">
+<META NAME="description" CONTENT="KPPP Internet Dialer">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-3.html">Next</A>
+<A HREF="kppp-1.html">Previous</A>
+<A HREF="kppp.html#toc2">Table of Contents</A>
+</P>
+<H3><A NAME="s2">2. Installation</A></H3>
+
+<P>
+<P> <CODE> PLEASE DON'T FORGET TO READ THE FREQUENTLY ASKED QUESTIONS! THANK YOU! </CODE>
+<P>
+<H3><A NAME="ss2.1">2.1 How to obtain <EM>kppp</EM></A>
+</H3>
+
+<P><EM>kppp</EM> is an application for the KDE project 
+<A HREF="http://www.kde.org">http://www.kde.org</A>.
+It is part of the kdenetwork package that can be found on 
+<A HREF="ftp://ftp.kde.org/pub/kde/">ftp://ftp.kde.org/pub/kde/</A>, the main ftp site
+of the KDE project.
+<P>
+The homepage linked to from
+<A HREF="http://www.kde.org/apphomepages.html">http://www.kde.org/apphomepages.html</A> is currently located at
+<A HREF="http://devel-home.kde.org/kppp/index.html">http://devel-home.kde.org/kppp/index.html</A>.
+<P>
+<H3><A NAME="ss2.2">2.2 Requirements</A>
+</H3>
+
+<P>In order to successfully compile <EM>kppp</EM>, you need the latest versions of <CODE>libkdecore</CODE>
+and <CODE>libkdeui</CODE>. All required libraries as well as <EM>kppp</EM> itself can be found
+on 
+<A HREF="ftp://ftp.kde.org/pub/kde/">ftp://ftp.kde.org/pub/kde/</A>. 
+<P>
+<H3><A NAME="ss2.3">2.3 Compilation and installation</A>
+</H3>
+
+<P>
+<P> <CODE> PLEASE DON'T FORGET TO READ THE FREQUENTLY ASKED QUESTIONS! THANK YOU! </CODE>
+<P>
+<P>I haven't been able to test <EM>kppp</EM> on anything else but Linux, but you should
+be able to get pppd to work on a variety of platforms including but not
+limited to SVR4, Solaris 2, Linux, FreeBSD, NetBSD, SunOS 4, AIX 4, OSF/1 as long
+as you have pppd installed on those systems.
+<P>
+<P>If wish to compile <EM>kppp</EM> on a platform  different from Linux, please check briefly the
+first couple of lines of  pppstats.cpp and make sure the defines and includes are O.K.
+Most likely however they should be fine. Please inform me of any necessary changes.
+<P>
+<P>In order to compile and install <EM>kppp</EM> on your system, type the following in the base 
+directory of the <EM>kppp</EM> distribution:
+<BLOCKQUOTE><CODE>
+<PRE>
+% ./configure
+% make
+% make install
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>This will install <EM>kppp</EM> with the 
+<A HREF="kppp-7.html#setuid">setuid</A>
+ bit on.
+<P>
+<P>
+<P>Make sure that the pppd's option file which usually resides in <CODE>/etc/ppp/</CODE>
+exists, but is empty. pppd requires it to exist, but it must be empty otherwise
+pppd will not take its options from <EM>kppp</EM>.
+<P>
+<P>
+<P><B>Again:</B> Should you run into problems, please report them to me. 
+<P>
+<P>
+<H3><A NAME="ss2.4">2.4 Preparing Your Linux System for a PPP Connection</A>
+</H3>
+
+<P>In order for <EM>kppp</EM>/pppd to work your kernel must have ppp support compiled in. If this is
+not the case get yourself the latest version of 
+<A HREF="ftp://sunsite.unc.edu/pub/Linux/system/Network/serial/ppp/">pppd</A>
+from any of the popular Linux archives and recompile your kernel with ppp
+support enabled. Don't fret since this sounds scarier than it actually is.
+Don't forget to install pppd afterwards. If unsure whether you
+have a kernel with ppp support issue <CODE>dmesg</CODE> at the command prompt
+and look for something like this:
+<P>
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+PPP: version 2.3.0 (demand dialling)
+TCP compression code copyright 1989 Regents of the University of California
+PPP Dynamic channel allocation code copyright 1995 Caldera, Inc.
+PPP line discipline registered
+</PRE>
+</CODE></BLOCKQUOTE>
+<P><B>Update:</B> <EM>kppp</EM> since version 1.5.32 tries to find out
+itself if the kernel supports PPP. If not, you will be notified
+on start of <EM>kppp</EM>. This feature is not well tested, so you
+should not rely on it for now.
+<P>
+<P>There were changes in the kernel PPP from Linux version 1.2.x to 2.0.x
+which forced the programming of a new pppd daemon. In most distributions,
+the pppd daemon can be found in <CODE>/usr/sbin</CODE>. For kernel versions 1.2.x, the
+correct version of the pppd daemon is 2.1; for kernel versions 2.0.x, the
+correct version is 2.2. or newer; for kernel versions 2.1.x and
+2.2.x you need pppd version 2.3. If you don't know what version of the
+pppd daemon your system has, you can type:
+<P>
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+% pppd --version
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>None of the pppd daemons actually have a --version option, but putting
+the option in will cause the pppd daemon to error out from a unrecognised
+option and print out a list of options, which includes the version of the
+pppd daemon. 
+<P>
+<P>
+<H3><A NAME="ss2.5">2.5 More about ppp/pppd</A>
+</H3>
+
+<P>The following sites may be of interest for further information about the 
+ppp protocol, pppd and networking in general:
+<UL>
+<LI> Linux PPP FAQ: 
+<A HREF="http://metalab.unc.edu/mdw/FAQ/PPP-FAQ.html">http://metalab.unc.edu/mdw/FAQ/PPP-FAQ.html</A></LI>
+<LI> Linux PPP HOWTO: 
+<A HREF="http://metalab.unc.edu/mdw/HOWTO/PPP-HOWTO.html">http://metalab.unc.edu/mdw/HOWTO/PPP-HOWTO.html</A></LI>
+<LI> 
+<A HREF="http://www.thoughtport.com:8080/PPP/index.html">http://www.thoughtport.com:8080/PPP/index.html</A></LI>
+<LI> The Network Administrators' Guide: 
+<A HREF="http://metalab.unc.edu/mdw/LDP/nag/nag.html">http://metalab.unc.edu/mdw/LDP/nag/nag.html</A></LI>
+</UL>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-3.html">Next</A>
+<A HREF="kppp-1.html">Previous</A>
+<A HREF="kppp.html#toc2">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

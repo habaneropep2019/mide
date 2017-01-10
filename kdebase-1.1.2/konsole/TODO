@@ -1,0 +1,101 @@
+Here is a list of little projects
+
+- deflicker, setting all the attributes separately
+  both when creating and changing to a session
+  creates 3 setimage and 1 paint events.
+
+- when manipulating binary files, sometimes one
+  screws up ones terminal settings.  xterm has
+  a convenient 'hard reset' menu choice. Further
+  killing individual sessions would be nice to have.
+
+- when removing and adding the menu, the window
+  remains the same size, meaning that the number of
+  rows changes.  For applications that do not take
+  kindly to this, it would be nice if the window
+  changed sizes and the number of rows remained the same.
+  [Additionally, some clients are very sensible about
+   resizing. Evtl. an option to keep the size of the
+   konsole's screens would be nice-to-have].
+
+- make resizing more clever
+  to see the issue, 'ls /dev', make window smaller
+  and then larger again.
+
+- introduce the concept of "logical lines" for resizing and
+  cut'n'paste.
+
+- complete command line options
+  - emit undecodeable sequences only on on demand (-d).
+  - font, menu, scrollbar, ... other configs
+  - deal with unrecognized options
+
+- complete session awareness
+  - save *all* konsole sessions, not only the primary.
+
+- implement kvt features
+  - awareness of gui style change
+
+- improve/complete documentation
+
+- check through FIXMEs
+- clean up code
+
+- dynamic buffer adjustment or configurability.
+- clear buffer facility.
+
+- write configuration utility at least for *.schema files.
+
+- evtl. handle *.kdelnk files using regular setup utilities
+  and a rpc client. Should become a parameter in any case.
+
+- allow reloading the configuration files at runtime.
+
+! announce konsole-1.0 ------------------------------------
+
+- check for other codes/features (Linux console, xterm)
+  - change xterm title hack to respect icon instruction?
+  - secure keyboard? (check other security issues)
+  - media copy (print)
+  - double high, double width (vt100)
+  - reverse wraparound?
+  - add secondary buffer to linux console (the real one).
+
+- Linux console improvements
+  - Attributes
+    - underline --> intensive foreground
+    - blink     --> intensive background
+  - Linux console knows some extra tricks mapping graphical
+    characters.
+
+- Fonts
+  - produce font families instead of doing underline and bold
+    in the program?
+  - use scalable font?
+  - allow fonts being configured freely
+  - fix national characters in Linux console emulation.
+
+- add configuration for function keys
+
+- /dev/console?
+
+- selecting lines that wraps insert a '\n' in the middle of the
+  line when pasting. A related problem occures with resizing.
+
+- reintegrate kom (modem stuff).
+
+- fix non-numeric keypad (It's a QT issue really)
+
+- check for VT100 SETUP (doc/More/vt100-setup.txt)
+
+- VT100 keypad codes (doc/missing.keys, pass vttest section 5)
+- proper schema manager?
+
+- It might be nice to be able to resize the terminal emulation screen 
+  size and widget screen size independently, so that one could use a
+  132 column xterm emulation, showing only 60 columns on the screen,
+  with horizontal scrolling to follow the cursor.  Default would be
+  to have the two slaved like now, but one could use the menubar to 
+  disassociate them.  This would allow, for example, one to read reports 
+  that are too wide for the screen, or the use of normal tools on
+  very narrow screens. 

@@ -1,0 +1,198 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kfloppy\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: 1999-02-10 18:00+0200\n"
+"Last-Translator: Yiannis Belias <orion@hellug.gr>\n"
+"Language-Team: Greek <linux-howto@hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-7\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "Σχετικά με το KFloppy"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "'Εκδοση"
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Οδηγός Δισκέττας:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Πυκνότητα:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Σύστημα Αρχείων:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Διαμόρφωση"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Γρήγορη Διαγραφή"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Πλήρης Διαμόρφωση"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Δημιουργία Ετικέττας:"
+
+#: floppy.cpp:148
+msgid "KDE Floppy"
+msgstr "Δισκέττα KDE"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "Διαμορφωτής Δισκέττας του KDE"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr "DD"
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"Πρόσβαση στο %s αδύνατη\n"
+"Βεβαιωθήτε ότι η συσκευή υπάρχει και έχετε\n"
+"σε αυτή δικαιώματα εγγραφής."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Δε βρίσκω το kfdformat\n"
+"Το kfdformat είναι μέρος της διανομής του KFloppy.\n"
+"Παρακαλώ εγκαταστήστε ολόκληρο το KFloppy."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Δε βρίσκω το kmke2fs\n"
+"Το kmke2fs είναι μέρος της διανομής του KFloppy.\n"
+"Παρακαλώ εγκαταστήστε ολόκληρο το KFloppy."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Δε βρίσκω το kmkdosfs\n"
+"Το kmkdosfs είναι μέρος της διανομής του KFloppy.\n"
+"Παρακαλώ εγκαταστήστε ολόκληρο το KFloppy."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Εγκαταλείπω"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Δε μπορώ να ξεκινήσω νέο πρόγραμμα: η fork() απέτυχε."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Δεν έχω πρόσβαση στη δισκέττα ή τον οδηγό δισκέττας\n"
+"Παρακαλώ εισάγετε μια δισκέττα και βεβαιωθήτε ότι\n"
+"έχετε επιλέξει έγκυρο οδηγό δισκέττας.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"Δε μπορώ να διαμορφώσω το: %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, fuzzy, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Το μπλοκ %d είναι χτυπημένο. Συννεχίζω ..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"Δεν μπορώ να δημιουργήσω σύστημα αρχείων στο: %s\n"
+"%s"
+
+#: floppy.cpp:759
+#, fuzzy, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"Η διαμόρφωση της δισκέττας ήταν επιτυχής.\n"
+"Μπλοκ marked bad: %d\n"
+"Raw Capacity: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "'Ολα τα αρχεία διαγράφηκαν με επιτυχία."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Δημιουργία Συστήματος Αρχείων ..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Επαλήθευση ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Δε μπορώ να ξεκινήσω νέο πρόγραμμα\n"
+"η fork() απέτυχε."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr ""
+"Σφάλμα κατά την προσπάθεια να καθορίσω αν η δισκέττα είναι "
+"προσαρτημένη(mounted)\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"Το %s είναι προσαρτημένο(mounted).\n"
+"Παρακαλώ αποπροσαρτήστε(unmount) πρώτα τη δισκέττα."

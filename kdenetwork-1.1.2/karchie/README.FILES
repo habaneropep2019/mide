@@ -1,0 +1,18 @@
+This software consists in parts of the distribution archie-1.4.1
+and xarchie-2.0.10, please look at copyright.h, too.
+archie is written by Clifford Neuman and Brendan Kehoe (brendan@cygnus.com)
+xarchie is written by George Ferguson (ferguson@cs.rochester.edu)
+
+used Files
+archie: aquery.c, perrno.h, pfs.h, 
+xarchie: dirsend.c, get_pauth.c, get_vdir.c, pauthent.h, pcompat.h,
+pmachine.h, pprot.h, ptalloc.c, selectdefs.h, stcopy.c, stringdefs.h,
+support.c, vl_comp.c, vlalloc.c
+
+dirsend.c had to be slightly modified to work with KArchie,
+look at #if defined(KARCHIE) .
+
+Have fun with
+KArchie :)
+
+Jörg Habencht (j.habenicht@europemail.com)

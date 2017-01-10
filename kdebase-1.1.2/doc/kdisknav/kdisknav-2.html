@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>KDE Disk Navigator: Features &amp; Tips</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="kdisknav, disk navigator">
+<META NAME="description" CONTENT="KDiskNavigator documentation">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kdisknav-3.html">Next</A>
+<A HREF="kdisknav-1.html">Previous</A>
+<A HREF="kdisknav.html#toc2">Table of Contents</A>
+</P>
+<H3><A NAME="s2">2. Features &amp; Tips</A></H3>
+
+<P>
+<P>
+<LI>On the top of each folder submenu there is an entry "Open Folder".
+When this entry is selected, a KFM window referring to the current
+folder is displayed. 
+If you hold down the Shift key when selecting this entry, Disk
+Navigator opens a terminal with the current directory corresponding to the
+folder submenu.
+</LI>
+<LI>Disk Navigator can be used to quickly access files in any mounted filesystem,
+including local files, remote files (eg. NFS mounts), removable media
+(CD-ROM, Iomega Zip, floppy drive), etc. You can create folders in the
+Disk Navigator menu to group related filesystem entries (eg. "Remote 
+Filesystems", "Removable Media", "Development Stuff", etc.).
+</LI>
+<LI>When you click on a file in a folder submenu, the action performed is
+exactly the same performed when the file is clicked in a KFM window.
+</LI>
+<LI>Slow devices: accessing a folder on a slow device can stop Disk Navigator
+for a while (eg. entering a folder with a large number of files on a slow
+CD-ROM reader). Since you may want to place entry points to slow devices on
+the root menu, you might accidentally enter such slow entries.
+To avoid this problem, you can add a "Removable Media" folder to the 
+Shared/Personal sections, and create URL files or links pointing to the slow
+devices in this folder.
+See the "Options" section to see how to customize the Shared/Personal sections.
+</LI>
+<LI>URL vs. Links: starting version 0.3, Disk Navigator supports KDE URL files 
+to define filesystem entry points.
+Disk Navigator, in particular, supports local aliases, i.e. URL files referring
+to local files (not, for instance, ftp URLs).
+For more information, see section "Adding, Changing and Removing
+Filesystem Entries". Currently, you can use both URL files and filesystem links
+(hard or symbolic). Using symbolic links, however, can be source of problems
+if you try to make a copy of the KDE directory using the <CODE>-r</CODE> option
+of the <CODE>cp</CODE> command (recursive copy). Linux users can get rid of such
+problem using the <CODE>-d</CODE> option in conjunction with <CODE>-r</CODE> so that
+<CODE>cp</CODE> will not follow symbolic links. Unexperienced users should
+always use URL files to define new entries in the Disk Navigator menu.
+</LI>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kdisknav-3.html">Next</A>
+<A HREF="kdisknav-1.html">Previous</A>
+<A HREF="kdisknav.html#toc2">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

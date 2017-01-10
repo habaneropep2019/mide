@@ -1,0 +1,124 @@
+**********************************************************************
+		KKK  KK  MMM    MMM  IIIIII  DDDDD
+		KKK KK   MMMMMMMMMM   IIII   DDDDDDD
+		KKKKK    MMMMMMMMMM    II    DDD  DD
+	Console	KKKKKK   MMM MM MMM   IIII   DDDDDDD
+		KKK KKK  MMM    MMM  IIIIII  DDDDD
+
+				ConsoleKMID
+
+
+	This info is up to date if you have KMid version 1.7
+
+________________________________________________		
+If you are looking for a KMid README file, then this is NOT the one you are
+looking for. Please look the online documentation, that is, the html help 
+
+I've left this file only for help on the small cousin of KMid, ConsoleKMid.
+
+		- Antonio Larrosa
+------------------------------------------------
+
+Index
+-------
+ 1. What is ConsoleKMid ?
+ 2. Requirements of consoleKMid
+ 3. Compiling consoleKMid
+ 4. Installing
+ 5. Running
+ 6. How do I use a Midi Mapper ?
+ 7. Where can I download KMid and consoleKMid from ?
+ 8. To do list
+
+1. What is ConsoleKMid ?
+------------------------
+   ConsoleKMid is a small program for Unix in console mode, which uses the same
+   player engine of KMid. Of course it doesn't have the same friendly
+   interface of KMid but it works to play midi files.
+
+   If you have the rpm distribution, you will not find the consolekmid program
+   unless you have compiled it from the src.rpm distribution
+   
+
+2. Requirements of consoleKMid
+-------------------------------
+
+   A UNIX machine, a soundcard and a /dev/sequencer device well installed. 
+   If you have a GUS, you need a properly installed driver from the Linux 
+   Ultrasound Project, AWE cards are also supported, but you will probably
+   need to compile consoleKMid in order to get an AWE card to work.
+   FM devices are also supported. 
+   I have only tested KMid in Linux, but I have had sucessful reports getting 
+   KMid to work on FreeBSD
+   If you sucessfully run KMid in other unices, please tell me !
+
+   Currently GUS cards make a little sound when using the oss driver, but are
+   not supported officially, I'm looking to find people with GUS cards that 
+   want to help me to provide such support (either programming or testing), 
+   as I think that if nobody has worried about it it's because there's no 
+   need for it ;-) 
+    
+3. Compiling consoleKMid
+-----------------
+   Do a configure from the parent directory, then go to the player directory,
+   and do a 'make' . Simple , isn't it ?
+
+   By default it will use the external midi device, if you want to use another
+   one (fm, awe, or anything else), edit the file main.cc and change the value
+   of DEFAULT_DEVICE to the one you want, or specify the -d option as in :
+
+      consolekmid -d 1 mymidifile.mid
+
+4. Installing 
+-----------------
+   No installing of consoleKMid is actually done, just copy the consoleKMid file
+   yourself to where you want (usually /usr/local/bin ). To use the fm device,
+   you should specify in fmout.cc the path to where the fm patches are installed
+   ( /etc by default)
+
+5. Running
+--------------
+   Well, it's quite easy, just type "consolekmid" and it should run :-)
+
+6. How do I use a Midi Mapper ?
+-------------------------------
+   A Midi Mapper is the feature you have been waiting for in Linux for years,
+   (at least I have been :-) it makes a non General Midi synth, appear to the
+   computer as General Midi compliant. Thus, a GM synth is emulated with a
+   nonGM.
+   Look the KMid docs for more info on creating/using a midi map.
+   If you want to use one with consolekmid, you can use the -M option,
+   use it like this example :
+
+      consolekmid -M /opt/kde/share/apps/kmid/maps/YamahaPSS790.map mymidifile
+
+   You can also edit main.cc in the player directory and change the value of
+   DEFAULT_MAP to whatever you want, so that you don't need to specify the
+   -M option each time you run consolekmid. 
+
+   If you want to define a new map for your midi keyboard, I recommend you to
+   start by copying the file yamaha790.map and modifying it. And remember to
+   send it to me so that it will be included in future revisions and other
+   people can use it !
+
+7. Where can I download KMid and consoleKMid from ?
+---------------------------------------------------
+
+   KMid's homepage is at :
+   http://www.arrakis.es/~rlarrosa/kmid.html
+
+   From there you can download latest versions as well as know the latest
+   changes and improvements of KMid and consoleKMid
+	 
+8. To do list
+---------------
+   Support ALSA
+   GUS support is nearly done (and also SoftOSS) but still need little 
+	improvements
+   Better AWE support and use Soundfonts
+   The KMidServer and make KMid use it.
+
+-------
+21-3-1999
+Antonio Larrosa Jimenez
+larrosa@kde.org

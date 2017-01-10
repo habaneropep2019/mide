@@ -1,0 +1,425 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-12 02:16+0200\n"
+"PO-Revision-Date: Thu Apr 22 1999 20:42:16+0200\n"
+"Last-Translator: Taiki Komoda <tklab@ma6.seikyou.ne.jp>\n"
+"Language-Team: Japanese <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"X-Generator: KTranslator v 0.4.0"
+
+#: kfax.cpp:233 kfax.cpp:827
+msgid "Show &Tool Bar"
+msgstr "ツールバーを表示(&T)"
+
+#: kfax.cpp:235 kfax.cpp:820
+msgid "Hide &Tool Bar"
+msgstr "ツールバーを隠す (&T)"
+
+#: kfax.cpp:238 kfax.cpp:800
+msgid "Show &Status Bar"
+msgstr "ステータスバーを表示 (&S)"
+
+#: kfax.cpp:240 kfax.cpp:793
+msgid "Hide &Status Bar"
+msgstr "ステータスバーを隠す (&S)"
+
+#: kfax.cpp:395
+#, c-format
+msgid ""
+"\n"
+"KFax %s\n"
+"\n"
+"Copyright 1997-98\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@kde.org"
+msgstr ""
+"\n"
+"KFax %s\n"
+"\n"
+"Copyright 1997-98\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@kde.org"
+
+#: kfax.cpp:402
+msgid "Help page"
+msgstr "ヘルプ"
+
+#: kfax.cpp:404
+msgid "&Open Fax..."
+msgstr "Faxを開く (&O)"
+
+#: kfax.cpp:405
+msgid "&Add Fax..."
+msgstr "Faxに追加 (&A)"
+
+#: kfax.cpp:408
+msgid "Open &URL..."
+msgstr "URLを開く (&U)"
+
+#: kfax.cpp:409
+msgid "Save to U&RL..."
+msgstr "場所に保存 (&R)"
+
+#: kfax.cpp:410
+msgid "&Close Fax"
+msgstr "Faxを閉じる (&C)"
+
+#: kfax.cpp:417
+msgid "&Next Page"
+msgstr "次のページ (&N)"
+
+#: kfax.cpp:418
+msgid "&Prev Page"
+msgstr "前のページ (&P)"
+
+#: kfax.cpp:419
+msgid "&First Page"
+msgstr "最初のページ (&F)"
+
+#: kfax.cpp:420
+msgid "&Last Page"
+msgstr "最後のページ (&L)"
+
+#: kfax.cpp:422
+msgid "&Rotate Page"
+msgstr "ページを回転 (&R)"
+
+#: kfax.cpp:423
+msgid "&Mirror Page"
+msgstr "ページの鏡像 (&M)"
+
+#: kfax.cpp:424
+msgid "&Flip Page"
+msgstr "ページをフリップ (&F)"
+
+#: kfax.cpp:426
+msgid "Zoom &in"
+msgstr "拡大 (&I)"
+
+#: kfax.cpp:427
+msgid "Zoom &out"
+msgstr "縮小 (&O)"
+
+#: kfax.cpp:432
+msgid "&Fax Options..."
+msgstr "Faxの設定 (&F)"
+
+#: kfax.cpp:434
+msgid "&Tool Bar"
+msgstr "ツールバー (&T)"
+
+#: kfax.cpp:435
+msgid "&Status Bar"
+msgstr "ステータスバー (&S)"
+
+#: kfax.cpp:462
+msgid "Go back"
+msgstr "戻る"
+
+#: kfax.cpp:465
+msgid "Go forward"
+msgstr "進む"
+
+#: kfax.cpp:470
+msgid "Go to start"
+msgstr "最初まで戻る"
+
+#: kfax.cpp:473
+msgid "Go to end"
+msgstr "最後まで進む"
+
+#: kfax.cpp:479
+msgid "Zoom in"
+msgstr "拡大"
+
+#: kfax.cpp:482
+msgid "Zoom out"
+msgstr "縮小"
+
+#: kfax.cpp:487
+msgid "Print document"
+msgstr "文書を印刷"
+
+#: kfax.cpp:496
+msgid "Go to page ..."
+msgstr "指定したページを開く ..."
+
+#: kfax.cpp:554
+msgid "w: 00000 h: 00000"
+msgstr "幅: 00000 高: 00000"
+
+#: kfax.cpp:555
+msgid "Res: XXXXX"
+msgstr "解像度: XXXXX"
+
+#: kfax.cpp:556
+msgid "Type: XXXXXXX"
+msgstr "タイプ: XXXXXXX"
+
+#: kfax.cpp:557
+msgid "P:XXXofXXX"
+msgstr "P:XXXofXXX"
+
+#: kfax.cpp:582
+msgid "Open Location:"
+msgstr "場所を開く:"
+
+#: kfax.cpp:598
+msgid "You need to open a Fax first"
+msgstr "最初にFaxを開いてください"
+
+#: kfax.cpp:604
+msgid "Save to Location:"
+msgstr "場所に保存:"
+
+#: kfax.cpp:811
+msgid "Not yet implemented"
+msgstr "今は使えません"
+
+#: kfax.cpp:861
+msgid "     There is no document active      "
+msgstr " アクティブなドキュメントがありません "
+
+#: kfax.cpp:995
+#, c-format
+msgid ""
+"Invalid page dimensions:\n"
+"Width %.2f Height %.2f\n"
+msgstr ""
+"無効な寸法の指定です:\n"
+"幅 %.2f 高さ %.2f\n"
+
+#: kfax.cpp:1011
+#, c-format
+msgid "Can't print to \"%s\"\n"
+msgstr "\"%s\"を印刷できません\n"
+
+#: kfax.cpp:1022
+#, c-format
+msgid "Couldn't create %s\n"
+msgstr "%sを作れません\n"
+
+#: kfax.cpp:1092
+msgid "Saving ..."
+msgstr "保存中 ..."
+
+#: kfax.cpp:1099
+msgid "Loading ..."
+msgstr "読み込み中 ..."
+
+#: kfax.cpp:1126 kfax.cpp:1162
+msgid ""
+"Failure in 'copy file()'\n"
+"Couldn't save file!"
+msgstr ""
+"'copy file()'に失敗しました\n"
+"ファイルを保存できません!"
+
+#: kfax.cpp:1132
+msgid "Saved"
+msgstr "保存しました"
+
+#: kfax.cpp:1139 kfax.cpp:1201
+msgid ""
+"KFax is already waiting\n"
+"for an internet job to finish\n"
+"Please wait until has finished\n"
+msgstr ""
+"KFaxはインターネット上のジョブが\n"
+"終了するのを待っています\n"
+"しばらくお待ち下さい\n"
+
+#: kfax.cpp:1150 kfax.cpp:1214
+msgid "Could not communicate with KFM"
+msgstr "KFMと通信できませんでした"
+
+#: kfax.cpp:1191
+#, c-format
+msgid "Loading '%s'"
+msgstr "'%s'を読み込み中"
+
+#: kfax.cpp:1194
+msgid "Done"
+msgstr "完了"
+
+#: kfax.cpp:1208
+msgid "Calling KFM"
+msgstr "KFMを呼んでいます"
+
+#: kfax.cpp:1221
+msgid "Starting Job"
+msgstr "ジョブを始めています"
+
+#: kfax.cpp:1224
+msgid "Connected"
+msgstr "接続しました"
+
+#: kfax.cpp:1226
+msgid "Waiting..."
+msgstr "待機中..."
+
+#: kfax.cpp:2077
+msgid "You need to open a fax page first."
+msgstr "FAXのページを最初に開いて下さい。"
+
+#: kfax.cpp:2400
+#, c-format
+msgid "P.%d of %d"
+msgstr "P.%d of %d"
+
+#: kfax.cpp:2411
+#, c-format
+msgid "W: %d H: %d"
+msgstr "幅: %d 高: %d"
+
+#: kfax.cpp:2416
+#, c-format
+msgid "Res: %s"
+msgstr "解像度: %s"
+
+#: kfax.cpp:2416 options.cpp:119
+msgid "Fine"
+msgstr "高画質"
+
+#: kfax.cpp:2416 options.cpp:124
+msgid "Normal"
+msgstr "普通"
+
+#: kfax.cpp:2424
+msgid "Type: Tiff "
+msgstr "Type: Tiff "
+
+#: kfax.cpp:2427
+msgid "Type: Raw "
+msgstr "Type: Raw "
+
+#: kfax.cpp:2738
+msgid ""
+"A file with this name already exists\n"
+"Do you want to overwrite it?\n"
+"\n"
+msgstr ""
+"A file with this name already exists\n"
+"Do you want to overwrite it?\n"
+""
+
+#: faxinput.cpp:111
+#, c-format
+msgid ""
+"Unable to open:\n"
+"%s\n"
+msgstr ""
+"開けません:\n"
+"%s\n"
+
+#: print.cpp:51
+msgid "KFax Print Dialog"
+msgstr "KFax 印刷ダイアログ"
+
+#: print.cpp:57
+msgid "Print as Postscript to Printer"
+msgstr "プリンターにPSファイルを出力"
+
+#: print.cpp:62
+msgid "Print Command:"
+msgstr "印刷コマンド"
+
+#: print.cpp:71
+msgid "Print as Postscript to File:"
+msgstr "ファイルにPSファイルを出力"
+
+#: print.cpp:77
+msgid "Browse"
+msgstr "ブラウズ"
+
+#: print.cpp:86
+msgid "Page Size:"
+msgstr "ページサイズ"
+
+#: print.cpp:105
+msgid "Scale fax to page size"
+msgstr "ページサイズにfaxを合わせる"
+
+#: print.cpp:111
+msgid "Add Printer Margins (measured in cm):"
+msgstr "プリンターに隙間を加える(cm):"
+
+#: print.cpp:119
+msgid "Horizontal:"
+msgstr "横方向"
+
+#: print.cpp:128
+msgid "Vertical:"
+msgstr "縦方向"
+
+#: print.cpp:258
+msgid "Select Filename"
+msgstr "ファイル名を選択"
+
+#: print.cpp:280
+msgid "You must enter a file name if you wish to print to a file."
+msgstr "ファイルに出力する場合はファイル名を入れなければなりません。"
+
+#: print.cpp:290
+msgid ""
+"You must enter a print command such as \"lpr\"\n"
+" if you wish to print to a printer."
+msgstr ""
+"You must enter a print command such as \"lpr\"\n"
+" if you wish to print to a printer."
+
+#: options.cpp:56
+msgid "KFax Options Dialog"
+msgstr "KFax 設定ダイアログ"
+
+#: options.cpp:74
+msgid "Display Options:"
+msgstr "表示オプション"
+
+#: options.cpp:80
+msgid "Landscape"
+msgstr "90度回転"
+
+#: options.cpp:85
+msgid "Upside Down"
+msgstr "上下逆転"
+
+#: options.cpp:90
+msgid "Invert"
+msgstr "白黒逆転"
+
+#: options.cpp:109
+msgid "Raw Fax Resolution:"
+msgstr "Fax解像度"
+
+#: options.cpp:114 options.cpp:222
+msgid "Auto"
+msgstr "自動"
+
+#: options.cpp:144
+msgid "Raw Fax Data are:"
+msgstr "Faxデータ:"
+
+#: options.cpp:150
+msgid "LS-Bit first"
+msgstr "LS-Bitを先に"
+
+#: options.cpp:168
+msgid "Raw Facsimili are:"
+msgstr "Fax形式"
+
+#: options.cpp:202
+msgid "Raw Fax width:"
+msgstr "Fax用紙の幅"
+
+#: options.cpp:212
+msgid "height:"
+msgstr "高さ"

@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1998-10-01 13:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Case Roole <cjr@xs4all.nl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: board.cpp:65 dialogs.cpp:137
+msgid "Anonymous"
+msgstr "Anoniem"
+
+#: board.cpp:97
+msgid "Game paused"
+msgstr "Spel gepauzeerd"
+
+#: board.cpp:102
+msgid "Press to resume"
+msgstr "Druk om te hervatten"
+
+#: board.cpp:119 net.cpp:208
+msgid "Game over"
+msgstr "Spel afgelopen"
+
+#: board.cpp:123
+msgid "Press Return to replay"
+msgstr "Druk Return om opnieuw af te spelen"
+
+#: board.cpp:127
+msgid "Press to start game"
+msgstr "Druk om spel te starten"
+
+#: board.cpp:371
+msgid "Highscores file not writable !"
+msgstr "Topscore bestand is niet schrijfbaar !"
+
+#: net.cpp:129
+msgid "Illegal port"
+msgstr "Illegale poort"
+
+#: net.cpp:135
+msgid "Null address"
+msgstr "Nul adres"
+
+#: net.cpp:142
+msgid "Unknown address"
+msgstr "Onbekend adres"
+
+#: net.cpp:157
+msgid "Cannot create socket"
+msgstr "Kan socket niet aanmaken"
+
+#: net.cpp:196
+msgid "at"
+msgstr "bij"
+
+#: net.cpp:233
+msgid "Connect error"
+msgstr "Verbindingsfout"
+
+#: net.cpp:243 net.cpp:299
+msgid "Server unreachable"
+msgstr "Server niet bereikbaar"
+
+#: net.cpp:266
+msgid "The server has died"
+msgstr "De server is overleden"
+
+#: net.cpp:267
+msgid "Cancel from server"
+msgstr "Afzeggen van server"
+
+#: net.cpp:273 net.cpp:333
+msgid "Unknown data from server"
+msgstr "Onbekende gegevens vanaf server"
+
+#: net.cpp:312
+msgid "Cannot send to server"
+msgstr "Kan niet naar server verzenden"
+
+#: net.cpp:324
+msgid "Client timeout (No message from server)"
+msgstr "Client tijd overschrijding (Geen boodschap van server)"
+
+#: net.cpp:329
+msgid "Server has vanished"
+msgstr "Server is verdwenen"
+
+#: net.cpp:366
+msgid "Bind error"
+msgstr "'Bind' fout"
+
+#: net.cpp:371
+msgid "Listen error"
+msgstr "'Listen' fout"
+
+#: net.cpp:390
+msgid "Unknown message from unknown player (??)"
+msgstr "Onbekende boodschap van onbekende speler (??)"
+
+#: net.cpp:449 net.cpp:490
+msgid "Unknown message from client"
+msgstr "Onbekende boodschap van client"
+
+#: net.cpp:486
+msgid "Client has died"
+msgstr "Client is overleden"
+
+#: net.cpp:487
+msgid "Cancel from client"
+msgstr "Laat zitten van client"
+
+#: net.cpp:494
+msgid "Timeout"
+msgstr "Tijd overschreden"
+
+#: net.cpp:520
+msgid "No message from client"
+msgstr "Geen boodschap van client"
+
+#: net.cpp:525
+msgid "Client has vanished"
+msgstr "Client is verdwenen"
+
+#: net.cpp:529
+msgid "Unknown data from client"
+msgstr "Onbekende gegevens van client"
+
+#: net.cpp:533
+msgid "End message from client"
+msgstr "Einde boodschap van client"
+
+#: net.cpp:550
+msgid "Cannot send to client"
+msgstr "Kan niet verzenden naar client"
+
+#: dialogs.cpp:61
+msgid "High Scores"
+msgstr "Topscore"
+
+#: dialogs.cpp:84 dialogs.cpp:93
+msgid "Hall of Fame"
+msgstr "Hall of Fame"
+
+#: dialogs.cpp:156
+msgid "No option yet !"
+msgstr "Nog geen optie !"
+
+#: dialogs.cpp:175 dialogs.cpp:232
+msgid "Network Dialog"
+msgstr "Netwerk dialoog"
+
+#: dialogs.cpp:178
+msgid "Server"
+msgstr "Server"
+
+#: dialogs.cpp:179
+msgid "Client"
+msgstr "Client"
+
+#: dialogs.cpp:183
+msgid "Player name :"
+msgstr "Spelersnaam :"
+
+#: dialogs.cpp:185
+msgid "Server address :"
+msgstr "Server adres :"
+
+#: dialogs.cpp:187
+msgid "Port :"
+msgstr "Poort :"
+
+#: dialogs.cpp:199
+msgid "Connect"
+msgstr "Verbind"
+
+#: dialogs.cpp:202
+msgid "Connecting ..."
+msgstr "Maak verbinding ..."
+
+#: dialogs.cpp:205
+msgid "Play !"
+msgstr "Speel !"
+
+#: dialogs.cpp:252
+msgid "Network game"
+msgstr "Netwerk spel"
+
+#: dialogs.cpp:256
+msgid "Server mode"
+msgstr "Server modus"
+
+#: dialogs.cpp:258
+msgid "Client mode"
+msgstr "Client modus"
+
+#: dialogs.cpp:336
+msgid "Waiting for other player(s) ..."
+msgstr "Wacht op andere speler(s) ..."
+
+#: field.cpp:27
+msgid "New game"
+msgstr "Nieuw spel"
+
+#: field.cpp:28
+msgid "Pause game"
+msgstr "Pauzeer spel"
+
+#: field.cpp:30
+msgid "High scores"
+msgstr "Topscore"
+
+#: field.cpp:31
+msgid "Move left"
+msgstr "Verplaats links"
+
+#: field.cpp:32
+msgid "Move right"
+msgstr "Verplaats rechts"
+
+#: field.cpp:33
+msgid "Drop down"
+msgstr "Laat vallen"
+
+#: field.cpp:34
+msgid "One line down"
+msgstr "Een regel omlaag"
+
+#: field.cpp:35
+msgid "Rotate left"
+msgstr "Roteer linksom"
+
+#: field.cpp:36
+msgid "Rotate right"
+msgstr "Roteer rechtsom"
+
+#: field.cpp:51
+msgid "Score"
+msgstr "Score"
+
+#: field.cpp:55
+msgid "Lines removed"
+msgstr "Regels verwijderd"
+
+#: field.cpp:59
+msgid "Level"
+msgstr "Niveau"
+
+#: field.cpp:63
+msgid "Next tile"
+msgstr "Volgende tegel"
+
+#: field.cpp:185
+msgid "&Restart game"
+msgstr "Herstart spel"
+
+#: field.cpp:186
+msgid "&Pause game"
+msgstr "Pauzeer spel"
+
+#: field.cpp:187
+msgid "&Multiplayer game"
+msgstr "Meerdere spelers spel"
+
+#: field.cpp:189
+msgid "&High scores"
+msgstr "Topscore"
+
+#: main.cpp:25 main.cpp:74
+msgid "Hide menu"
+msgstr "Verberg menu"
+
+#: main.cpp:30
+msgid "&Keys"
+msgstr "Toetsen"
+
+#: main.cpp:35
+msgid "by"
+msgstr ""
+
+#: main.cpp:71
+msgid "Show menu"
+msgstr "Toon menu"
+
+#~ msgid "Close dialog"
+#~ msgstr "Sluit dialoog"
+
+#~ msgid "Ok dialog"
+#~ msgstr "Ok dialoog"
+
+#~ msgid "Cancel dialog"
+#~ msgstr "Verlaat dialoog"
+
+#~ msgid "You suck !"
+#~ msgstr "Je zuigt !"
+
+#~ msgid "&Contents"
+#~ msgstr "Inhoud"
+
+#~ msgid "About &Qt"
+#~ msgstr "Over &Qt"
+
+#~ msgid "ktetris : about"
+#~ msgstr "ktetris : info"

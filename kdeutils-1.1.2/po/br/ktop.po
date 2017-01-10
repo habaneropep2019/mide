@@ -1,0 +1,450 @@
+# Breton translation of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Jañ-Mai Drapier <jdrapier@club-internet.fr>, 1999
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ktop-1.1\n"
+"POT-Creation-Date: 1999-03-19 01:51+0100\n"
+"PO-Revision-Date: 1999-03-30 18:25+0200\n"
+"Last-Translator: Jañ-Mai Drapier <jdrapier@club-internet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+
+#: ktop.cpp:66
+msgid "88888 Processes"
+msgstr "88888 argerzh"
+
+#: ktop.cpp:67
+msgid "Memory: 888888 kB used, 888888 kB free"
+msgstr "Memor : 888888 ko en implij, 888888 ko dieub"
+
+#: ktop.cpp:69
+msgid "Swap: 888888 kB used, 888888 kB free"
+msgstr "Disloañ : 888888 ko en implij, 888888 ko dieub"
+
+#: ktop.cpp:76
+msgid "KDE Task Manager"
+msgstr "Merour dleadoù KDE"
+
+#: ktop.cpp:137
+#, c-format
+msgid "%d Processes"
+msgstr "%d Argerzh"
+
+#: ktop.cpp:142
+#, c-format
+msgid "Memory: %d kB used, %d kB free"
+msgstr "Memor : %d ko em implij, %d ko dieub"
+
+#: ktop.cpp:147
+#, c-format
+msgid "Swap: %d kB used, %d kB free"
+msgstr "Disloañ : %d ko em implij, %d ko dieub"
+
+#: MainMenu.cpp:51
+#, c-format
+msgid ""
+"KDE Task Manager (KTop) Version %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+msgstr ""
+"Merour dleadoù KDE (KTop) Doare %s\n"
+"\n"
+"Gwirioù eilañ :\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+
+#: MainMenu.cpp:64
+msgid "Manual Refresh"
+msgstr "Freskaat gant an dorn"
+
+#: MainMenu.cpp:65
+msgid "Slow Refresh"
+msgstr "Freskaat gorrek"
+
+#: MainMenu.cpp:66
+msgid "Medium Refresh"
+msgstr "Freskaat etre"
+
+#: MainMenu.cpp:67
+msgid "Fast Refresh"
+msgstr "Freskaat buan"
+
+#: MainMenu.cpp:79
+msgid "&Refresh Rate"
+msgstr "Feur &freskaat"
+
+#: MainMenu.cpp:80
+msgid "&Process"
+msgstr "&Argerzh"
+
+#: ProcessMenu.cpp:44
+msgid "Renice Task..."
+msgstr "'Renice' dlead..."
+
+#: ProcessMenu.cpp:47
+msgid "send SIGINT\t(ctrl-c)"
+msgstr "kas SIGINT\t(ctrl-c)"
+
+#: ProcessMenu.cpp:48
+msgid "send SIGQUIT\t(core)"
+msgstr "kas SIGQUIT\t(core)"
+
+#: ProcessMenu.cpp:49
+msgid "send SIGTERM\t(term.)"
+msgstr "kas SIGTERM\t(term.)"
+
+#: ProcessMenu.cpp:50
+msgid "send SIGKILL\t(term.)"
+msgstr "kas SIGKILL\t(term.)"
+
+#: ProcessMenu.cpp:52
+msgid "send SIGUSR1\t(user1)"
+msgstr "kas SIGUSR1\t(user1)"
+
+#: ProcessMenu.cpp:53
+msgid "send SIGUSR2\t(user2)"
+msgstr "kas SIGUSR2\t(user2)"
+
+#: ProcessMenu.cpp:74 ProcessMenu.cpp:86 ProcessMenu.cpp:150
+#: ProcessMenu.cpp:158 ProcessMenu.cpp:176
+msgid "Task Manager"
+msgstr "Merour dleadoù"
+
+#: ProcessMenu.cpp:75
+msgid "You need to select a process first!"
+msgstr "Dav deoc'h diz un argerzh da gentañ !"
+
+#: ProcessMenu.cpp:85 ProcessMenu.cpp:149
+#, c-format
+msgid "The process %d is no longer persistent."
+msgstr "An argerzh %d ne bad ket mui."
+
+#: ProcessMenu.cpp:98
+msgid "SIGINT"
+msgstr ""
+
+#: ProcessMenu.cpp:101
+msgid "SIGQUIT"
+msgstr ""
+
+#: ProcessMenu.cpp:104
+msgid "SIGTERM"
+msgstr ""
+
+#: ProcessMenu.cpp:107
+msgid "SIGKILL"
+msgstr ""
+
+#: ProcessMenu.cpp:110
+msgid "SIGUSR1"
+msgstr ""
+
+#: ProcessMenu.cpp:113
+msgid "SIGUSR2"
+msgstr ""
+
+#: ProcessMenu.cpp:116
+msgid "Unkown Signal"
+msgstr "Arhent dianav"
+
+#: ProcessMenu.cpp:122
+#, c-format
+msgid ""
+"Send signal %s to process %d?\n"
+"(Process name: %s  Owner: %s)\n"
+msgstr ""
+"Kas arhent %s da argerzh %d ?\n"
+"(Anv an argerzh : %s Perc'henn : %s)\n"
+
+#: ProcessMenu.cpp:126
+msgid "Abort"
+msgstr "Dilezel"
+
+#: ProcessMenu.cpp:159 ProcessMenu.cpp:177
+msgid ""
+"Renice error...\n"
+"Specified process does not exist\n"
+"or permission denied."
+msgstr ""
+"Fazi 'renice'...\n"
+"An argerzh spisaet n'eus ket anezhañ\n"
+"pe aotre nac'het."
+
+#: TaskMan.cpp:80
+msgid "Processes &List"
+msgstr "&Roll an argerzhoù"
+
+#: TaskMan.cpp:81
+msgid "Performance &Meter"
+msgstr "&Muzulier barregezh"
+
+#: ProcListPage.cpp:42
+msgid "Running Processes"
+msgstr "Argerzhoù o ren"
+
+#: ProcListPage.cpp:49
+msgid "Show Tree"
+msgstr "Diskouez ar wezenn"
+
+#: ProcListPage.cpp:60
+msgid "All processes"
+msgstr "An holl argerzhoù"
+
+#: ProcListPage.cpp:61
+msgid "System processes"
+msgstr "Argerzhoù ar reizhiad"
+
+#: ProcListPage.cpp:62
+msgid "User processes"
+msgstr "Argerzhoù an arveriaded"
+
+#: ProcListPage.cpp:63
+msgid "Own processes"
+msgstr "Ho argerzhoù"
+
+#: ProcListPage.cpp:79
+msgid "Refresh Now"
+msgstr "Freskaat bremañ"
+
+#: ProcListPage.cpp:85
+msgid "Kill task"
+msgstr "Lazhañ an dlead"
+
+#: ProcessList.cpp:227
+msgid "Remove Column"
+msgstr "Dilemel ar bann"
+
+#: ProcessList.cpp:228
+msgid "Add Column"
+msgstr "Ouzhpennañ ur bann"
+
+#: ProcessList.cpp:229
+msgid "Help on Column"
+msgstr "Skoazell war ar bann"
+
+#: ProcessList.cpp:691 ProcessList.cpp:692
+msgid "Name"
+msgstr "Anv"
+
+#: ProcessList.cpp:695 ProcessList.cpp:696
+msgid "PID"
+msgstr ""
+
+#: ProcessList.cpp:699
+msgid "User ID"
+msgstr "ID Arveriad"
+
+#: ProcessList.cpp:700
+msgid "CPU"
+msgstr "UTK"
+
+#: ProcessList.cpp:701
+msgid "Time"
+msgstr "Amzer"
+
+#: ProcessList.cpp:702
+msgid "Nice"
+msgstr "Nice"
+
+#: ProcessList.cpp:703
+msgid "Status"
+msgstr "Stad"
+
+#: ProcessList.cpp:704
+msgid "Memory"
+msgstr "Memor"
+
+#: ProcessList.cpp:705
+msgid "Resident"
+msgstr "Trigat"
+
+#: ProcessList.cpp:706
+msgid "Shared"
+msgstr "Rannet"
+
+#: ProcessList.cpp:707
+msgid "Command line"
+msgstr "Linenn urzhiañ"
+
+#: OSProcessList.cpp:76 OSProcessList.cpp:104
+msgid ""
+"Cannot open directory '/proc'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"N'hellan ket digeriñ ar renkell '/proc'!\n"
+"Ret eo kempunañ ar graoñienn gant skor\n"
+"ar reizhiad restroù /proc gweredekaet !"
+
+#: OSProcessList.cpp:266
+msgid "Cannot read status of processes\n"
+msgstr "N'hellan ket lenn stad argerzhoù zo\n"
+
+#: OSProcessList.cpp:367
+msgid "Your OS is not supported yet.  Sorry"
+msgstr "Ho RK n'eo ket ket skoraet c'hoazh. Ho tigarez"
+
+#: OSProcess.cpp:123 OSProcess.cpp:154 OSProcess.cpp:171
+#, c-format
+msgid "Cannot open %s!\n"
+msgstr "N'hellan ket digeriñ %s !\n"
+
+#: OSProcess.cpp:183
+msgid "Run"
+msgstr "Seveniñ"
+
+#: OSProcess.cpp:186
+msgid "Sleep"
+msgstr "Kousket"
+
+#: OSProcess.cpp:189
+msgid "Disk"
+msgstr "Pladenn"
+
+#: OSProcess.cpp:192
+msgid "Zombie"
+msgstr "Tasmant"
+
+#: OSProcess.cpp:198
+msgid "Swap"
+msgstr "Disloet"
+
+#: OSProcess.cpp:201
+msgid "????"
+msgstr ""
+
+#: OSProcess.cpp:320
+#, c-format
+msgid "Could not set new nice level for process %d"
+msgstr "Ne m'eus ket gallet lakaat ul live 'nice' nevez evit %d"
+
+#: OSProcess.cpp:334
+#, c-format
+msgid "Cound not send signal %d to process %d"
+msgstr "Ne m'eus ket gallet kas arhent %d d'an argerzh %d"
+
+#: PerfMonPage.cpp:49
+msgid "CPU Load History"
+msgstr "Istor karg an UTK"
+
+#: PerfMonPage.cpp:52
+msgid "System Load History"
+msgstr "Istor karg ar reizhiad"
+
+#: PerfMonPage.cpp:55 PerfMonPage.cpp:113
+msgid "User (%)"
+msgstr "Arveriad (%)"
+
+#: PerfMonPage.cpp:56 PerfMonPage.cpp:114
+msgid "Nice (%)"
+msgstr ""
+
+#: PerfMonPage.cpp:57 PerfMonPage.cpp:115
+msgid "System (%)"
+msgstr "Reizhiad (%)"
+
+#: PerfMonPage.cpp:64
+msgid "Memory Usage History"
+msgstr "Istor implij ar memor"
+
+#: PerfMonPage.cpp:66
+msgid "Program (kB)"
+msgstr "Goulev (ko)"
+
+#: PerfMonPage.cpp:67
+msgid "Buffer (kB)"
+msgstr "Skurzer (ko)"
+
+#: PerfMonPage.cpp:68
+msgid "Cache (kB)"
+msgstr "Krubuilh (ko)"
+
+#: PerfMonPage.cpp:69
+msgid "Swap (kB)"
+msgstr "Disloañ (ko)"
+
+#: PerfMonPage.cpp:109
+#, c-format
+msgid "CPU%d Load History"
+msgstr "Istor karg UTK%d"
+
+#: OSStatus.cpp:98
+msgid ""
+"Cannot open file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"N'hellan ket digeriñ restr '/proc/stat' !\n"
+"Ret eo kempunañ ar graoñienn gant skor\n"
+"ar reizhiad restroù /proc gweredekaet !"
+
+#: OSStatus.cpp:120 OSStatus.cpp:303 OSStatus.cpp:378
+msgid ""
+"Cannot open file '/proc/meminfo'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"N'hellan ket digeriñ restr 'proc/meminfo' !\n"
+"Ret eo kempunañ ar graoñienn gant skor\n"
+"ar reizhiad restroù /proc gweredekaet !"
+
+#: OSStatus.cpp:311
+msgid "Cannot read memory info file '/proc/meminfo'!\n"
+msgstr "N'hellan ket lenn restr titouriñ ar memor '/proc/meminfo' !\n"
+
+#: OSStatus.cpp:354
+#, c-format
+msgid ""
+"Cannot read info for %s from file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"N'hellan ket lenn a stlenn evit %s diwar restr '/proc/stat' !\n"
+"Ret eo kempunañ ar graoñienn gant skor\n"
+"ar reizhiad restroù /proc gweredekaet !"
+
+#: OSStatus.cpp:386
+msgid "Cannot read swap info from '/proc/meminfo'!\n"
+msgstr "N'hellan ket lenn a stlenn disloañ diwar restr '/proc/meminfo' !\n"
+
+#: OSStatus.cpp:575 OSStatus.cpp:588 OSStatus.cpp:615 OSStatus.cpp:624
+msgid ""
+"Your system is not currently supported.\n"
+"Sorry"
+msgstr ""
+"Ho reizhiad n'eo ket skoraet evit ar mare.\n"
+"Ho tigarez"
+
+#: ReniceDlg.cpp:32
+msgid "Renice Process"
+msgstr "'Renice' argerzh"
+
+#: ReniceDlg.cpp:39
+#, c-format
+msgid ""
+"You are about the change the scheduling priority of\n"
+"process %d. Be aware that only the Superuser (root)\n"
+"can decrease the nice level of a process. The smaller\n"
+"the number is the higher is the priority.\n"
+"\n"
+"Please enter the desired nice level:"
+msgstr ""
+"War bouez kemmañ tevet steuñviñ an argerzh %d\n"
+"emaoc'h. Taolit pled ar gourarveriad (root) hepken\n"
+"a c'hell krennañ live 'nice' un argerzh. Seul izelañ\n"
+"an talvoud seul brasañ an devet.\n"
+"\n"
+"Bizskrivit mar plij al live 'nice' c'hoantaet :"

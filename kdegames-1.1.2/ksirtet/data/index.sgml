@@ -1,0 +1,82 @@
+<!doctype linuxdoc system>
+
+<article>
+<title>The KSirtet Handbook
+<author>Nicolas Hadacek
+<date>Version 1.0.0, 19 June 1998
+<abstract>This documentation was last updated for ksirtet version 1.0.0. 
+Please make any comments and additions to the author.
+</abstract>
+
+<toc>
+
+<sect>Introduction
+<p>
+This program is a clone of the well known game Tetris. You must fit the
+falling pieces to form full lines. You can rotate and translate the falling
+piece. The game ends when no more piece can fall ie when your incomplete lines
+reach the top of the board.
+
+Every time you have destroyed 10 lines, you gain a level and the pieces fall
+quicker (exactly the piece falls from a line each <tt>1/(1+level)</tt> second).
+
+<sect>How to play
+<p>
+
+<sect1>Handling the falling piece
+<p>
+
+This game use keyboard keys to rotate, translate or drop down the falling
+piece. This keys are configurable with the menu item <tt>options->keys</tt>.
+
+<sect1>How to gain points
+<p>
+
+There are two sources of points :
+<itemize>
+<item> Dropping down a piece gives a small amount of points equals to its
+drop height. It is not much but better than one can think perticularly in
+small levels (when the pieces fall slowly).
+
+<item> The biggest part of the score comes from destroying full lines. It is
+very important to note that destroying multiple lines at the same time 
+gives you much more points. A four-lines destruction is called a
+<em>tetris</em> : it gives a maximum amount of points.
+<p>
+The points gained are 40 for a one-liner, 100 for two lines, 300 for three
+lines and 1200 for a tetris. These numbers must be multiplied by the current
+level. Destroying four lines in level 10 gives 12000 points !!
+
+</itemize>
+
+
+<sect>Multiplayer
+<p>
+
+The multiplayer option is in the <bf>alpha stage</bf> (it is been heavily
+reworked), so expect it to be buggy. You can play with 2 or more players.
+
+Basically when destroying a line, a player sends debris at the bottom of the
+game of his next opponent.
+
+<sect>Epilogue
+<p>
+
+<sect1>Developers
+<p>
+<tt>Erik Eng</tt> - Wrote the generic tetris code<p> 
+
+<tt><htmlurl url="mailto:hadacek@kde.org" 
+name="Nicolas Hadacek"></tt><p>
+
+<sect1>Authors
+<p>
+
+<tt><htmlurl url="mailto:hadacek@kde.org" 
+name="Nicolas Hadacek"></tt><p>
+
+<tt><htmlurl url="mailto:rwilliams@kde.org" 
+name="Robert Williams"></tt> - Editor<p>
+
+
+</article>

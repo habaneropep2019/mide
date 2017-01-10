@@ -1,0 +1,1584 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: korganizer\n"
+"POT-Creation-Date: 1999-05-01 04:22+0200\n"
+"PO-Revision-Date: 1999-07-03 15:02+02:00\n"
+"Last-Translator: Miroslav Flídr <flidr@kky.zcu.cz>\n"
+"Language-Team: czech <flidr@kky.zcu.cz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: alarmdaemon.cpp:38 alarmdaemon.cpp:43 calobject.cpp:372 calobject.cpp:385
+#: eventwindetails.cpp:341 eventwindetails.cpp:361 searchdialog.cpp:80
+#: topwidget.cpp:959 topwidget.cpp:967 topwidget.cpp:1110 topwidget.cpp:1136
+#: topwidget.cpp:1140
+msgid "KOrganizer Error"
+msgstr "Chyba KOrganizéru"
+
+#: calobject.cpp:373 calobject.cpp:386
+msgid ""
+"An error has occurred parsing the contents of the clipboard.\n"
+"You can only paste a valid vCalendar into KOrganizer.\n"
+msgstr ""
+"Nastala chyba pøi zpracovávání obsahu clipboardu.\n"
+"Do FOrganizeru je mo¾no vlo¾it pouze platny vCalendar.\n"
+
+#: calobject.cpp:434
+msgid "found a VEvent with no DTSTART/DTEND! Skipping"
+msgstr "nalezen VEvent bez DTSTART/DTEND! Pøeskakuji"
+
+#: catdlg.cpp:19
+msgid "KOrganizer Categories"
+msgstr "Kategorie KOrganizeru"
+
+#: catdlg.cpp:30
+msgid "Available Categories"
+msgstr "Dostupné kategorie"
+
+#: catdlg.cpp:36 eventwin.cpp:297 optionsdlg.cpp:228 optionsdlg.cpp:234
+#: optionsdlg.cpp:240
+msgid "Appointment"
+msgstr "Schùzka"
+
+#: catdlg.cpp:37
+msgid "Business"
+msgstr "Obchod"
+
+#: catdlg.cpp:38
+msgid "Meeting"
+msgstr "Schùze"
+
+#: catdlg.cpp:39
+msgid "Phone Call"
+msgstr "Telefonní hovor"
+
+#: catdlg.cpp:40
+msgid "Education"
+msgstr "¦kolení"
+
+#: catdlg.cpp:41
+msgid "Holiday"
+msgstr "Svátek"
+
+#: catdlg.cpp:42
+msgid "Vacation"
+msgstr "Dovolená"
+
+#: catdlg.cpp:43
+msgid "Special Occasion"
+msgstr "Speciální pøíle¾itost"
+
+#: catdlg.cpp:44 optionsdlg.cpp:34
+msgid "Personal"
+msgstr "Osobní"
+
+#: catdlg.cpp:45
+msgid "Travel"
+msgstr "Cesta"
+
+#: catdlg.cpp:55
+msgid "&Add >>"
+msgstr "&Pøidat >>"
+
+#: catdlg.cpp:57
+msgid "<< &Remove"
+msgstr "<< Odst&ranit"
+
+#: catdlg.cpp:66
+msgid "Selected Categories"
+msgstr "Vybrané kategorie"
+
+#: catdlg.cpp:78
+msgid "New Category:"
+msgstr "Nová kategorie:"
+
+#: editeventwin.cpp:116 todoeventwin.cpp:108
+msgid "General"
+msgstr "V¹eobecné"
+
+#: editeventwin.cpp:117 todoeventwin.cpp:109
+msgid "Details"
+msgstr "Detaily"
+
+#: editeventwin.cpp:119
+msgid "Recurrence"
+msgstr "Opakování"
+
+#: editeventwin.cpp:195 editeventwin.cpp:406 todoeventwin.cpp:162
+#: todoeventwin.cpp:182
+#, c-format
+msgid "Owner: %s"
+msgstr "Vlastník: %s"
+
+#: editeventwin.cpp:810
+msgid "Duration: all day"
+msgstr "Doba trvání: celý den"
+
+#: editeventwin.cpp:818
+#, c-format
+msgid "Duration: %i hour(s), %i minute(s)"
+msgstr "Doba trvání: %i hodin(a/y), %i minut(a/y)"
+
+#: editeventwin.cpp:820
+#, c-format
+msgid "Duration: %i hour(s)"
+msgstr "Doba trvání: %i hodin(a/y)"
+
+#: editeventwin.cpp:822
+#, c-format
+msgid "Duration: %i minute(s)"
+msgstr "Doba trvání: %i minut(a/y)"
+
+#: eventwidget.cpp:193
+msgid "Toggle Alarm"
+msgstr "Vypnout/zapnout signalizaci"
+
+#: eventwingeneral.cpp:42 eventwinrecur.cpp:28 wingeneral.cpp:34
+msgid "Appointment Time"
+msgstr "Èas urèení"
+
+#: eventwingeneral.cpp:47 wingeneral.cpp:39
+msgid "Start Time:"
+msgstr "Zaèátek:"
+
+#: eventwingeneral.cpp:58 wingeneral.cpp:48
+msgid "End Time:"
+msgstr "Konec:"
+
+#: eventwingeneral.cpp:80 wingeneral.cpp:64
+msgid "No time associated"
+msgstr "Bez pøiøazení èasu"
+
+#: eventwingeneral.cpp:91 wingeneral.cpp:75
+msgid "Recurring event"
+msgstr "Opakující se událost"
+
+#: eventwingeneral.cpp:99 todowingeneral.cpp:77
+msgid "Summary:"
+msgstr "Shrnutí:"
+
+#: eventwingeneral.cpp:110
+msgid "Show Time As:"
+msgstr "Zobrazovat jako:"
+
+#: eventwingeneral.cpp:117
+msgid "Busy"
+msgstr "Zaneprázdnìný"
+
+#: eventwingeneral.cpp:118
+msgid "Free"
+msgstr "Volný"
+
+#: eventwingeneral.cpp:133 todowingeneral.cpp:96
+msgid "Owner:"
+msgstr "Vlastník:"
+
+#: eventwingeneral.cpp:139 todowingeneral.cpp:102
+msgid "Private"
+msgstr "Soukromá"
+
+#: eventwindetails.cpp:199 eventwingeneral.cpp:145 todowingeneral.cpp:108
+msgid "Categories..."
+msgstr "Kategorie..."
+
+#: eventwingeneral.cpp:164
+msgid "Reminder:"
+msgstr "Pøipomenout:"
+
+#: eventwindetails.cpp:39
+msgid "Attendee Information"
+msgstr "Informace o úèastnících"
+
+#: eventwindetails.cpp:46
+msgid "Name"
+msgstr "Jméno"
+
+#: eventwindetails.cpp:47
+msgid "Email"
+msgstr "E-mail"
+
+#: eventwindetails.cpp:48
+msgid "Role"
+msgstr "Funkce"
+
+#: eventwindetails.cpp:49
+msgid "Status"
+msgstr "Stav"
+
+#: eventwindetails.cpp:50
+msgid "RSVP"
+msgstr "RSVP"
+
+#: eventwindetails.cpp:65
+msgid "Attendee Name:"
+msgstr "Jméno úèastníka:"
+
+#: eventwindetails.cpp:77
+msgid "Email Address:"
+msgstr "E-mail adresa:"
+
+#: eventwindetails.cpp:92
+msgid "Role:"
+msgstr "Funkce:"
+
+#: eventwindetails.cpp:98
+msgid "Attendee"
+msgstr "Úèastník"
+
+#: eventwindetails.cpp:99
+msgid "Organizer"
+msgstr "Organizátor"
+
+#: eventwindetails.cpp:100
+msgid "Owner"
+msgstr "Vlastník"
+
+#: eventwindetails.cpp:101
+msgid "Delegate"
+msgstr "Delegát"
+
+#: eventwindetails.cpp:106
+msgid "Status:"
+msgstr "Stav:"
+
+#: eventwindetails.cpp:112
+msgid "Needs Action"
+msgstr "Vy¾aduje akci"
+
+#: eventwindetails.cpp:113
+msgid "Accepted"
+msgstr "Pøijato"
+
+#: eventwindetails.cpp:114
+msgid "Sent"
+msgstr "Poslat"
+
+#: eventwindetails.cpp:115
+msgid "Tentative"
+msgstr "Zku¹ební"
+
+#: eventwindetails.cpp:116
+msgid "Confirmed"
+msgstr "Potvrzený"
+
+#: eventwindetails.cpp:117
+msgid "Declined"
+msgstr "Odmítnuto"
+
+#: eventwindetails.cpp:118 todowingeneral.cpp:35 todowingeneral.cpp:52
+msgid "Completed"
+msgstr "Ukonèen"
+
+#: eventwindetails.cpp:119
+msgid "Delegated"
+msgstr "Delegováno"
+
+#: eventwindetails.cpp:126
+msgid "Request Response"
+msgstr "Vy¾adovat odpovìï"
+
+#: eventwindetails.cpp:132
+msgid "&Add"
+msgstr "&Pøidat"
+
+#: eventwindetails.cpp:136
+msgid "Address &Book..."
+msgstr "Kniha &adres..."
+
+#: eventwindetails.cpp:163
+msgid "Attach..."
+msgstr "Pøilo¾it..."
+
+#: eventwindetails.cpp:183
+msgid "Save As..."
+msgstr "Ulo¾it jako..."
+
+#: eventwindetails.cpp:218
+msgid "Priority:"
+msgstr "Priorita:"
+
+#: eventwindetails.cpp:224
+msgid "Low (1)"
+msgstr "Malá (1)"
+
+#: eventwindetails.cpp:225
+msgid "Normal (2)"
+msgstr "Normální (2)"
+
+#: eventwindetails.cpp:226
+msgid "High (3)"
+msgstr "Velká (3)"
+
+#: eventwindetails.cpp:227
+msgid "Maximum (4)"
+msgstr "Maximální (4)"
+
+#: eventwindetails.cpp:342
+msgid "Unable to open address book."
+msgstr "Není mo¾né otevøít knihu adres."
+
+#: eventwindetails.cpp:362
+msgid "Error getting entry from address book."
+msgstr "Chyba pøi získávání záznamu z knihy adres."
+
+#: eventwinrecur.cpp:30
+msgid "Start:  "
+msgstr "Zaèátek:"
+
+#: eventwinrecur.cpp:31
+msgid "End:  "
+msgstr "Konec:"
+
+#: eventwinrecur.cpp:61
+msgid "Recurrence Rule"
+msgstr "Pravidla opkování"
+
+#: eventwinrecur.cpp:67
+msgid "Daily"
+msgstr "Denní"
+
+#: eventwinrecur.cpp:68
+msgid "Weekly"
+msgstr "Týdenní"
+
+#: eventwinrecur.cpp:69
+msgid "Monthly"
+msgstr "Mìsíèní"
+
+#: eventwinrecur.cpp:70
+msgid "Yearly"
+msgstr "Roèní"
+
+#: eventwinrecur.cpp:95
+msgid "Enable Advanced Rule:"
+msgstr "Povolit dokonalej¹í pravidlo:"
+
+#: eventwinrecur.cpp:128
+msgid "Recurrence Range"
+msgstr "Rozsah opakování"
+
+#: eventwinrecur.cpp:132
+msgid "Begin On:"
+msgstr "Zaèít dne:"
+
+#: eventwinrecur.cpp:134
+msgid "No Ending Date"
+msgstr "Bez koncového data"
+
+#: eventwinrecur.cpp:135
+msgid "End after"
+msgstr "Ukonèit po"
+
+#: eventwinrecur.cpp:137
+msgid "occurrence(s)"
+msgstr "opakování(ch)"
+
+#: eventwinrecur.cpp:138
+msgid "End by:"
+msgstr "Ukonèit dnem:"
+
+#: eventwinrecur.cpp:181
+msgid "Exceptions"
+msgstr "Výjimky"
+
+#: eventwinrecur.cpp:267 eventwinrecur.cpp:297
+msgid "Recur every"
+msgstr "Opakovat ka¾dý"
+
+#: eventwinrecur.cpp:273
+msgid "day(s)"
+msgstr "den"
+
+#: eventwinrecur.cpp:303
+msgid "week(s) on:"
+msgstr "týden v:"
+
+#: eventwinrecur.cpp:305 kagenda.cpp:106
+msgid "Sun"
+msgstr "Ne "
+
+#: eventwinrecur.cpp:306 kagenda.cpp:105
+msgid "Mon"
+msgstr "Po "
+
+#: eventwinrecur.cpp:307 kagenda.cpp:105
+msgid "Tue"
+msgstr "Út "
+
+#: eventwinrecur.cpp:308 kagenda.cpp:105
+msgid "Wed"
+msgstr "St "
+
+#: eventwinrecur.cpp:309 kagenda.cpp:106
+msgid "Thu"
+msgstr "Èt "
+
+#: eventwinrecur.cpp:310 kagenda.cpp:106
+msgid "Fri"
+msgstr "Pá "
+
+#: eventwinrecur.cpp:311 kagenda.cpp:106
+msgid "Sat"
+msgstr "So "
+
+#: eventwinrecur.cpp:361 eventwinrecur.cpp:365
+msgid "Recur on the"
+msgstr "Opakovat"
+
+#: eventwinrecur.cpp:363
+msgid "day"
+msgstr "den"
+
+#: eventwinrecur.cpp:369 eventwinrecur.cpp:481
+msgid "every"
+msgstr "ka¾dý"
+
+#: eventwinrecur.cpp:371
+msgid "month(s)"
+msgstr "mìsíc"
+
+#: eventwinrecur.cpp:383 eventwinrecur.cpp:424
+msgid "1st"
+msgstr "1"
+
+#: eventwinrecur.cpp:384 eventwinrecur.cpp:425
+msgid "2nd"
+msgstr "2"
+
+#: eventwinrecur.cpp:385 eventwinrecur.cpp:426
+msgid "3rd"
+msgstr "3"
+
+#: eventwinrecur.cpp:386 eventwinrecur.cpp:427
+msgid "4th"
+msgstr "4"
+
+#: eventwinrecur.cpp:387 eventwinrecur.cpp:428
+msgid "5th"
+msgstr "5"
+
+#: eventwinrecur.cpp:388
+msgid "6th"
+msgstr "6"
+
+#: eventwinrecur.cpp:389
+msgid "7th"
+msgstr "7"
+
+#: eventwinrecur.cpp:390
+msgid "8th"
+msgstr "8"
+
+#: eventwinrecur.cpp:391
+msgid "9th"
+msgstr "9"
+
+#: eventwinrecur.cpp:392
+msgid "10th"
+msgstr "10"
+
+#: eventwinrecur.cpp:393
+msgid "11th"
+msgstr "11"
+
+#: eventwinrecur.cpp:394
+msgid "12th"
+msgstr "12"
+
+#: eventwinrecur.cpp:395
+msgid "13th"
+msgstr "13"
+
+#: eventwinrecur.cpp:396
+msgid "14th"
+msgstr "14"
+
+#: eventwinrecur.cpp:397
+msgid "15th"
+msgstr "15"
+
+#: eventwinrecur.cpp:398
+msgid "16th"
+msgstr "16"
+
+#: eventwinrecur.cpp:399
+msgid "17th"
+msgstr "17"
+
+#: eventwinrecur.cpp:400
+msgid "18th"
+msgstr "18"
+
+#: eventwinrecur.cpp:401
+msgid "19th"
+msgstr "19"
+
+#: eventwinrecur.cpp:402
+msgid "20th"
+msgstr "20"
+
+#: eventwinrecur.cpp:403
+msgid "21st"
+msgstr "21"
+
+#: eventwinrecur.cpp:404
+msgid "22nd"
+msgstr "22"
+
+#: eventwinrecur.cpp:405
+msgid "23rd"
+msgstr "23"
+
+#: eventwinrecur.cpp:406
+msgid "24th"
+msgstr "24"
+
+#: eventwinrecur.cpp:407
+msgid "25th"
+msgstr "25"
+
+#: eventwinrecur.cpp:408
+msgid "26th"
+msgstr "26"
+
+#: eventwinrecur.cpp:409
+msgid "27th"
+msgstr "27"
+
+#: eventwinrecur.cpp:410
+msgid "28th"
+msgstr "28"
+
+#: eventwinrecur.cpp:411
+msgid "29th"
+msgstr "29"
+
+#: eventwinrecur.cpp:412
+msgid "30th"
+msgstr "30"
+
+#: eventwinrecur.cpp:413
+msgid "31st"
+msgstr "31"
+
+#: eventwinrecur.cpp:466
+msgid "Recur in the month of"
+msgstr "Opakovat v mìsíci"
+
+#: eventwinrecur.cpp:467
+msgid "Recur on this day"
+msgstr "Opakovat v tento den"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:469 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "January"
+msgstr "Leden"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:470 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "February"
+msgstr "Únor"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:471 kdatenav.cpp:68 kdatenav.cpp:259
+msgid "March"
+msgstr "Bøezen"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:472 kdatenav.cpp:69 kdatenav.cpp:259
+msgid "April"
+msgstr "Duben"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:473 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "May"
+msgstr "Kvìten"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:474 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "June"
+msgstr "Èerven"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:475 kdatenav.cpp:69 kdatenav.cpp:261
+msgid "July"
+msgstr "Èervenec"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:476 kdatenav.cpp:70 kdatenav.cpp:261
+msgid "August"
+msgstr "Srpen"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:477 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "September"
+msgstr "Záøí"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:478 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "October"
+msgstr "Øíjen"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:479 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "November"
+msgstr "Listopad"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:480 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "December"
+msgstr "Prosinec"
+
+#: eventwinrecur.cpp:484
+msgid "year(s)"
+msgstr "rok"
+
+#: kagenda.cpp:212
+msgid "All Day Event"
+msgstr "Celodenní událost"
+
+#: kagenda.cpp:830
+msgid "New appointment"
+msgstr "Nové urèení"
+
+#: kagenda.cpp:967 kagenda.cpp:975
+msgid "am"
+msgstr "am"
+
+#: kagenda.cpp:971
+msgid "pm"
+msgstr "pm"
+
+#: kdatenav.cpp:44
+msgid "Previous Year"
+msgstr "Pøedchozí rok"
+
+#: kdatenav.cpp:50
+msgid "Previous Month"
+msgstr "Predchozí mìsíc"
+
+#: kdatenav.cpp:56
+msgid "Next Month"
+msgstr "Nasledující mìsíc"
+
+#: kdatenav.cpp:62
+msgid "Next Year"
+msgstr "Následující rok"
+
+#: kmonthview.cpp:386
+msgid "New Event"
+msgstr "Nová událost"
+
+#: kpbutton.cpp:22 kpbutton.cpp:40 kpbutton.cpp:90
+msgid "KPButton: pixmap is empty, perhaps some missing file"
+msgstr "KPButton: pixmapa je prázdná, pravdìpodovnì chybí nìjaký soubor"
+
+#: baselistview.cpp:28
+msgid "Date"
+msgstr "Datum"
+
+#: baselistview.cpp:29
+msgid "Time"
+msgstr "Èas"
+
+#: baselistview.cpp:30 calprinter.cpp:365
+msgid "Summary"
+msgstr "Shrnutí"
+
+#: baselistview.cpp:77
+msgid "started "
+msgstr "zaèalo "
+
+#: baselistview.cpp:80
+msgid "ends "
+msgstr "konèí "
+
+#: baselistview.cpp:85
+#, c-format
+msgid "repeats %d times"
+msgstr "opakuje se %d krát"
+
+#: baselistview.cpp:89
+msgid "repeats forever"
+msgstr "bude se stále opakovat"
+
+#: listview.cpp:14
+msgid "Edit Event"
+msgstr "Upravit událost"
+
+#: listview.cpp:17
+msgid "Delete Event  "
+msgstr "Smazat událost"
+
+#: listview.cpp:20
+msgid "Show Dates"
+msgstr "Zobrazit datumy"
+
+#: listview.cpp:22
+msgid "Hide Dates"
+msgstr "Skrýt datumy"
+
+#: main.cpp:29
+msgid "No default calendar, and none was specified on the command line.\n"
+msgstr "¬ádný implicitní kalendáø a ¾ádný nebyl udán na pøíkazové øádce.\n"
+
+#: main.cpp:33
+msgid "Error reading from default calendar.\n"
+msgstr "Chyba pøi ètení z implicitního kalendáøe.\n"
+
+#: searchdialog.cpp:22
+msgid "Search For:"
+msgstr "Vyhledat:"
+
+#: searchdialog.cpp:32 topwidget.cpp:494
+msgid "&Search"
+msgstr "&Hledat"
+
+#: searchdialog.cpp:81
+msgid ""
+"Invalid search expression, cannot perform\n"
+"the search.  Please enter a search expression\n"
+"using the wildcard characters '*' and '?'\n"
+"where needed."
+msgstr ""
+"Není mo¾né provést vyhledávání pro neplatný \n"
+"vyhledávací výraz. Prosím vlo¾te vyhledávací výraz\n"
+"s pou¾itím znaèek '*' a '?' v místech, kde je jejich\n"
+"pou¾ití nutné. "
+
+#: topwidget.cpp:391
+msgid "&Open"
+msgstr "&Otevøít"
+
+#: topwidget.cpp:394
+msgid "Open &Recent"
+msgstr "Ote&vøít nedávný"
+
+#: topwidget.cpp:410
+msgid "Save &As"
+msgstr "Ulo¾it &jako"
+
+#: topwidget.cpp:415
+msgid "&Import From Ical"
+msgstr "&Importovat z programu Ical"
+
+#: topwidget.cpp:417
+msgid "&Merge Calendar"
+msgstr "&Slouèit kalendáø"
+
+#: topwidget.cpp:420
+msgid "Archive Old Entries"
+msgstr "Archivovat staré záznamy"
+
+#: topwidget.cpp:427
+msgid "Print Setup"
+msgstr "Nastavení tisku"
+
+#: calprinter.cpp:844 topwidget.cpp:431
+msgid "&Print"
+msgstr "&Tisknout"
+
+#: topwidget.cpp:433
+msgid "Print Pre&view"
+msgstr "Ná&hled tisku"
+
+#: topwidget.cpp:455
+msgid "&List"
+msgstr "&Seznam"
+
+#: topwidget.cpp:459
+msgid "&Day"
+msgstr "&Den"
+
+#: topwidget.cpp:462
+msgid "W&ork Week"
+msgstr "Prac&ovní týden"
+
+#: topwidget.cpp:465
+msgid "&Week"
+msgstr "&Týden"
+
+#: topwidget.cpp:468
+msgid "&Month"
+msgstr "&Mìsíc"
+
+#: topwidget.cpp:471
+msgid "&To-do list"
+msgstr "S&eznam úkolù"
+
+#: topwidget.cpp:479
+msgid "New &Appointment"
+msgstr "&Nové urèení"
+
+#: topwidget.cpp:481
+msgid "New E&vent"
+msgstr "No&vá událost"
+
+#: topwidget.cpp:483
+msgid "&Edit Appointment"
+msgstr "&Upravit urèení"
+
+#: topwidget.cpp:486
+msgid "&Delete Appointment"
+msgstr "&Smazat urèení"
+
+#: topwidget.cpp:488
+msgid "Delete To-do"
+msgstr "Smazat úkol"
+
+#: topwidget.cpp:498
+msgid "&Mail Appointment"
+msgstr "Odeslat schùzku"
+
+#: topwidget.cpp:504
+msgid "Go to &Today"
+msgstr "Jdi na dne¹ní den"
+
+#: topwidget.cpp:508
+msgid "&Previous Day"
+msgstr "Pøedchozí den"
+
+#: topwidget.cpp:512
+msgid "&Next Day"
+msgstr "Následující den"
+
+#: topwidget.cpp:516
+msgid "Show &Tool Bar"
+msgstr "Zobrazovat nás&trojovou li¹tu"
+
+#: topwidget.cpp:520
+msgid "Show St&atus Bar"
+msgstr "Zobrazovat &informaèní li¹tu"
+
+#: topwidget.cpp:525
+msgid "&Edit Options"
+msgstr "Nastavení editování"
+
+#: topwidget.cpp:533
+msgid "&About"
+msgstr "&Informace"
+
+#: topwidget.cpp:535
+msgid "Send &Bug Report"
+msgstr "Poslat &hlá¹ení o chybì"
+
+#: topwidget.cpp:543
+msgid "&Actions"
+msgstr "È&innosti"
+
+#: topwidget.cpp:562
+msgid "Open A Calendar"
+msgstr "Otevøít kalendáø"
+
+#: topwidget.cpp:568
+msgid "Save This Calendar"
+msgstr "Ulo¾it tento kalendáø"
+
+#: topwidget.cpp:585
+msgid "New Appointment"
+msgstr "Nové urèení"
+
+#: topwidget.cpp:591
+msgid "Delete Appointment"
+msgstr "Smazat urèení"
+
+#: topwidget.cpp:597
+msgid "Search For an Appointment"
+msgstr "Hledat urèení"
+
+#: topwidget.cpp:603
+msgid "Mail Appointment"
+msgstr "Odeslat schùzku"
+
+#: topwidget.cpp:622
+msgid "Go to Today"
+msgstr "Jdi na dne¹ní den"
+
+#: topwidget.cpp:628
+msgid "Previous Day"
+msgstr "Pøedchozí den"
+
+#: topwidget.cpp:634
+msgid "Next Day"
+msgstr "Následující den"
+
+#: topwidget.cpp:650
+msgid "List View"
+msgstr "Náhled na seznam"
+
+#: topwidget.cpp:655
+msgid "Schedule View"
+msgstr "Rozvrhový náhled"
+
+#: topwidget.cpp:662
+msgid "Month View"
+msgstr "Mìsíèní náhled"
+
+#: topwidget.cpp:668
+msgid "To-do list view"
+msgstr "Náhled na Seznam úkolù"
+
+#: topwidget.cpp:750
+msgid "we don't handle updates for that view, yet.\n"
+msgstr "pro tento náhled není je¹tì podporována aktualizace.\n"
+
+#: topwidget.cpp:842
+msgid "we don't handle that view yet.\n"
+msgstr "tento náhled není je¹tì podporován.\n"
+
+#: topwidget.cpp:960
+msgid "You did not specify a valid file name."
+msgstr "Nezadali jste platné jméno souboru."
+
+#: topwidget.cpp:968
+msgid ""
+"The file you specified is a directory,\n"
+"and cannot be opened. Please try again,\n"
+"this time selecting a valid calendar file."
+msgstr ""
+"Vámi specifikovaný soubor je adresáøem,\n"
+"a nemù¾e být otevøen. Prosím zkuste opakovat\n"
+"zadání a tentokrát s platným jménem souboru."
+
+#: topwidget.cpp:995
+msgid "KOrganizer Warning"
+msgstr "Varování KOrganizeru"
+
+#: topwidget.cpp:996
+msgid ""
+"This calendar has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Tento kalendáø byl modifikován.\n"
+"Pøejete si ulo¾it Va¹e zmìny?"
+
+#: topwidget.cpp:998
+msgid "&Yes"
+msgstr "&Ano"
+
+#: topwidget.cpp:998
+msgid "&No"
+msgstr "&Ne"
+
+#: topwidget.cpp:1007 topwidget.cpp:1597
+msgid "KOrganizer Confirmation"
+msgstr "Potvrzení KOrganizeru"
+
+#: topwidget.cpp:1008
+msgid "This item will be permanently deleted."
+msgstr "Tato polo¾ka bude trvale smazána."
+
+#: topwidget.cpp:1111
+msgid ""
+"You have no ical file in your home directory.\n"
+"Import cannot proceed.\n"
+msgstr ""
+"Nemáte ¾ádný soubor programu ical ve Va¹em domovském adresáøi.\n"
+"Importování nemù¾e pokraèovat.\n"
+
+#: topwidget.cpp:1124
+msgid "KOrganizer Info"
+msgstr "Informace KOrganizeru"
+
+#: topwidget.cpp:1125
+msgid ""
+"KOrganizer succesfully imported and merged your\n"
+".calendar file from ical into the currently\n"
+"opened calendar.\n"
+msgstr ""
+"KOrganizer úspì¹nì importoval a slouèil Vá¹\n"
+"soubor .calendar programu ical do právì\n"
+"otevøeného kalendáøe.\n"
+
+#: topwidget.cpp:1130
+msgid "ICal Import Successful With Warning"
+msgstr "Importování z programu ICal úspì¹né s varováním"
+
+#: topwidget.cpp:1131
+msgid ""
+"KOrganizer encountered some unknown fields while\n"
+"parsing your .calendar ical file, and had to\n"
+"discard them.  Please check to see that all\n"
+"your relevant data was correctly imported.\n"
+msgstr ""
+"KOrganizer narazil na nìjaké neznámé polo¾ky bìhem \n"
+"zpracovávání Vá¹eho souboru .calendar z programu ical,\n"
+"které musí vyøadit. Prosím zkontrolujte, zda v¹echna \n"
+"dùle¾itá data byla správnì importována.\n"
+
+#: topwidget.cpp:1137
+msgid ""
+"KOrganizer encountered some error parsing your\n"
+".calendar file from ical.  Import has failed.\n"
+msgstr ""
+"KOrganizer narazil na nìjaké chyby bìhem zpracovávání Va¹eho \n"
+"souboru .calendar z programu ical. Importování se nezdaøilo.\n"
+
+#: topwidget.cpp:1141
+msgid ""
+"KOrganizer doesn't think that your .calendar\n"
+"file is a valid ical calendar. Import has failed.\n"
+msgstr ""
+"KOrganizer si nemyslí, ¾e Va¹ soubor .calendar je platným\n"
+"kalendáøem programu ical. Importování se nezdaøilo.\n"
+
+#: topwidget.cpp:1305 topwidget.cpp:1332 topwidget.cpp:1683 topwidget.cpp:1693
+msgid "KOrganizer error"
+msgstr "Chyba KOrganizeru"
+
+#: topwidget.cpp:1306 topwidget.cpp:1333
+msgid ""
+"Unfortunately, we don't handle cut/paste for\n"
+"that view yet.\n"
+msgstr ""
+"Nane¹tìstí není vyjmutí/vlo¾ení je¹tì\n"
+"podlorováno v tomto náhledu.\n"
+
+#: topwidget.cpp:1549
+msgid "don't handle deletes from that view, yet.\n"
+msgstr "je¹tì není podporováno mazání z tohoto náhledu.\n"
+
+#: topwidget.cpp:1598
+msgid ""
+"This event recurs over multiple dates.\n"
+"Are you sure you want to delete the\n"
+"selected event, or just this instance?\n"
+msgstr ""
+"Tato událost se opakuje ve více dnech.\n"
+"Jste si jist(a), ¾e chcete smazat vybranou \n"
+"událost, nebo pouze tuto instanci?\n"
+
+#: topwidget.cpp:1601
+msgid "&All"
+msgstr "&V¹echny"
+
+#: topwidget.cpp:1601
+msgid "&This"
+msgstr "&Tuto"
+
+#: topwidget.cpp:1616
+msgid "no date selected, or invalid date\n"
+msgstr "není vybrán ¾ádný datum nebo je datum neplatný\n"
+
+#: topwidget.cpp:1684
+msgid "Can't generate mail from this view\n"
+msgstr "Není mo¾né vytvoøit po¹tu z tohoto náhledu\n"
+
+#: topwidget.cpp:1694
+msgid ""
+"Can't generate mail:\n"
+" No attendees defined!\n"
+msgstr ""
+"Není mo¾né vytvoøit po¹tu:\n"
+" Nejsou definováni úèastníci!\n"
+" \n"
+
+#: topwidget.cpp:1833
+msgid "New Calendar"
+msgstr "Nový kalendáø"
+
+#: eventwin.cpp:313 eventwin.cpp:319 topwidget.cpp:1839
+msgid "modified"
+msgstr "modifikován"
+
+#: eventwin.cpp:325 topwidget.cpp:1844
+msgid "KOrganizer"
+msgstr "KOrganizátor"
+
+#: calprinter.cpp:47
+msgid "Korganizer Configuration Options"
+msgstr "Mo¾nosti nastavení KOrganizeru"
+
+#: calprinter.cpp:361 todowingeneral.cpp:60
+msgid "Priority"
+msgstr "Priorita"
+
+#: calprinter.cpp:369
+msgid "Due"
+msgstr "Do"
+
+#: calprinter.cpp:453
+#, c-format
+msgid "To-Do items: %s %.2d"
+msgstr "Úkoly: %s %.2d"
+
+#: calprinter.cpp:791
+msgid "Date Range"
+msgstr "Rozsah data"
+
+#: calprinter.cpp:811
+msgid "View Type"
+msgstr "Typ náhledu"
+
+#: calprinter.cpp:816
+msgid "Day"
+msgstr "Den"
+
+#: calprinter.cpp:821
+msgid "Week"
+msgstr "Týden"
+
+#: calprinter.cpp:825
+msgid "Month"
+msgstr "Mìsíc"
+
+#: calprinter.cpp:829
+msgid "To-Do"
+msgstr "Úkoly"
+
+#: calprinter.cpp:843
+msgid "&Preview"
+msgstr "&Náhled"
+
+#: koarchivedlg.cpp:19
+msgid "Archive / Delete Past Appointments - KOrganizer"
+msgstr "Archivovat/smazat minulá urèení - KOrganizer"
+
+#: optionsdlg.cpp:37
+msgid "Time & Date"
+msgstr "Èas a datum"
+
+#: optionsdlg.cpp:43
+msgid "Colors"
+msgstr "Barvy"
+
+#: optionsdlg.cpp:46
+msgid "Views"
+msgstr "Náhledy"
+
+#: optionsdlg.cpp:52
+msgid "Printing"
+msgstr "Tisk"
+
+#: optionsdlg.cpp:65
+msgid "KOrganizer Configuration"
+msgstr "Nastavení KOrganizeru"
+
+#: optionsdlg.cpp:93
+msgid "Your name:"
+msgstr "Va¹e jméno:"
+
+#: optionsdlg.cpp:97
+msgid "Email address:"
+msgstr "E-mail adresa:"
+
+#: optionsdlg.cpp:101
+msgid "Additional:"
+msgstr "Dal¹í:"
+
+#: optionsdlg.cpp:105
+msgid "Auto-save Calendar"
+msgstr "Automatické ukládání kalendáøe"
+
+#: optionsdlg.cpp:109
+msgid "Confirm Appointment/To-Do Deletes"
+msgstr "Potvrzovat mazání urèení/úkolù"
+
+#: optionsdlg.cpp:113
+msgid "Holidays:"
+msgstr "Svátky:"
+
+#: optionsdlg.cpp:139
+msgid "1 minute"
+msgstr "1 minuta"
+
+#: optionsdlg.cpp:139
+msgid "5 minutes"
+msgstr "5 minut"
+
+#: optionsdlg.cpp:140
+msgid "10 minutes"
+msgstr "10 minut"
+
+#: optionsdlg.cpp:140
+msgid "15 minutes"
+msgstr "15 minut"
+
+#: optionsdlg.cpp:141
+msgid "30 minutes"
+msgstr "30 minut"
+
+#: optionsdlg.cpp:148
+msgid "Time Format:"
+msgstr "Formát èasu:"
+
+#: optionsdlg.cpp:149
+msgid "24 hour"
+msgstr "24 hodinový"
+
+#: optionsdlg.cpp:150
+msgid "AM / PM"
+msgstr "AM / PM"
+
+#: optionsdlg.cpp:154
+msgid "Date Format:"
+msgstr "Datový formát:"
+
+#: optionsdlg.cpp:155
+msgid "Day.Month.Year (31.01.2000)"
+msgstr "Den.Mìsíc.Rok (31.01.2000)"
+
+#: optionsdlg.cpp:156
+msgid "Month/Day/Year (01/31/2000)"
+msgstr "Mìsíc/Den/Rok (01/31/2000)"
+
+#: optionsdlg.cpp:157
+msgid "Month-Day-Year (01-31-2000)"
+msgstr "Mìsíc-Den-Rok (01-31-2000)"
+
+#: optionsdlg.cpp:161
+msgid "Time Zone:"
+msgstr "Èasová zóna:"
+
+#: optionsdlg.cpp:168
+msgid "Default Appointment Time:"
+msgstr "Implicitní èas urèení"
+
+#: optionsdlg.cpp:178
+msgid "Default Alarm Time:"
+msgstr "Implicitní èas signalizace: "
+
+#: optionsdlg.cpp:186
+msgid "Week Starts on Monday"
+msgstr "Týden zaèíná v pondìlí"
+
+#: optionsdlg.cpp:203
+msgid "Day Begins At:"
+msgstr "Den zaèíná v:"
+
+#: optionsdlg.cpp:213
+msgid "Hour size in schedule view"
+msgstr ""
+
+#: optionsdlg.cpp:217
+msgid "Show events that recur daily in Date Navigator"
+msgstr "Zobrazit v navigátoru termínù události, které se opakují dennì."
+
+#: optionsdlg.cpp:229
+msgid "List view font"
+msgstr "Font náhledu na seznam"
+
+#: optionsdlg.cpp:235
+msgid "Schedule view font"
+msgstr "Font pro rozvrhový náhled"
+
+#: optionsdlg.cpp:241
+msgid "Month view font"
+msgstr "Font pro mìsíèní náhled"
+
+#: optionsdlg.cpp:246
+msgid "12345"
+msgstr "12345"
+
+#: optionsdlg.cpp:246
+msgid "Time bar font"
+msgstr "Font pro èasový pruh"
+
+#: optionsdlg.cpp:251
+msgid "Things to do"
+msgstr "Vìci na práci"
+
+#: optionsdlg.cpp:252
+msgid "To-Do list font"
+msgstr "Font pro seznam úkolù"
+
+#: optionsdlg.cpp:273
+msgid "Use system default colors"
+msgstr "Pou¾ívat implicitní barvy systému"
+
+#: optionsdlg.cpp:278
+msgid "Appointment & Checklist items"
+msgstr "Schùzka & polo¾ky seznamu"
+
+#: optionsdlg.cpp:279
+msgid "Background"
+msgstr "Pozadí"
+
+#: optionsdlg.cpp:282
+msgid "Text"
+msgstr "Text"
+
+#: optionsdlg.cpp:285
+msgid "Handle Selected"
+msgstr "Úchopka oznaèených"
+
+#: optionsdlg.cpp:288
+msgid "Handle Unselected"
+msgstr "Úchopka neoznaèených"
+
+#: optionsdlg.cpp:291
+msgid "Handle Active Apt."
+msgstr "Úchopka aktivních"
+
+#: optionsdlg.cpp:296
+msgid "Sheet background"
+msgstr "Pozadí plochy"
+
+#: optionsdlg.cpp:299
+msgid "Calendar Background"
+msgstr "Pozadí kalendáøe"
+
+#: optionsdlg.cpp:302
+msgid "Calendar Date Text"
+msgstr "Text datumu kalendáøe"
+
+#: optionsdlg.cpp:305
+msgid "Calendar Date Selected"
+msgstr "Vybraný datum kalendáøe"
+
+#: optionsdlg.cpp:344
+msgid "Printer Name"
+msgstr "Jméno tiskárny"
+
+#: optionsdlg.cpp:374
+msgid "Paper Size"
+msgstr "Velikost papíru"
+
+#: optionsdlg.cpp:376
+msgid "A4"
+msgstr "A4"
+
+#: optionsdlg.cpp:377
+msgid "B5"
+msgstr "B5"
+
+#: optionsdlg.cpp:378
+msgid "Letter"
+msgstr "Letter"
+
+#: optionsdlg.cpp:379
+msgid "Legal"
+msgstr "Legal"
+
+#: optionsdlg.cpp:380
+msgid "Executive"
+msgstr "Executive"
+
+#: optionsdlg.cpp:384
+msgid "Paper Orientation"
+msgstr "Orientace papíru"
+
+#: optionsdlg.cpp:386
+msgid "Portrait"
+msgstr "Na vý¹ku"
+
+#: optionsdlg.cpp:388
+msgid "Landscape"
+msgstr "Na ¹íøku"
+
+#: optionsdlg.cpp:395
+msgid "Preview Program"
+msgstr "Program pro náhled"
+
+#: kpropdlg.cpp:124
+msgid "Prev"
+msgstr "Pøedázející"
+
+#: kpropdlg.cpp:125
+msgid "Next"
+msgstr "Následující"
+
+#: aboutdlg.cpp:20
+msgid "KOrganizer Virtual Postcard"
+msgstr "Virtuální pohlednice KOrganizéru"
+
+#: aboutdlg.cpp:24
+msgid ""
+"Please send a postcard to me, so I can see who is\n"
+"using KOrganizer! Tell me how great the program is,\n"
+"and how you just can't live without it.  Or, report\n"
+"a bug which is stopping you from doing useful work.\n"
+"The postcard will simply include anything you wish to\n"
+"type in the comment area below.\n"
+msgstr ""
+"Prosím za¹lete mi pozdrav, abych vidìl, kdo pou¾ívá\n"
+"KOrganizer! Povìzte mi, jak skvìlý je to program\n"
+"a jak bez nìj prostì nemù¾ete ¾ít. Nebo mi nahla¹te\n"
+"chybu, která Vám brání dìlat rozumnou práci.\n"
+"Do pozdravu bude jednodu¹e vlo¾eno v¹e co si napí¹ete\n"
+"do oblasti pod tímto textem.\n"
+
+#: aboutdlg.cpp:104
+msgid "About KOrganizer"
+msgstr "O KOrganizátoru"
+
+#: aboutdlg.cpp:137
+msgid "by Preston Brown and"
+msgstr "napsal Preston Brown a"
+
+#: aboutdlg.cpp:156
+msgid "License Agreement:"
+msgstr "Licenèní ujednání:"
+
+#: aboutdlg.cpp:162
+msgid ""
+"\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n"
+msgstr ""
+"\n"
+"Tento program je volný software; je mo¾né jej redistribuovat nebo \n"
+"modifikovat podle podmínek GNU v¹eobecné veøejné licence jak je \n"
+"publikováva Free Software Fondation; buï verze 2 zmínìné licence \n"
+"nebo (dle va¹eho výbìru) nìkterou pozdìj¹í verzí.\n"
+"\n"
+"Tento program je ¹íøen s nadìjí, ¾e bude u¾iteèný ale BEZ JAKÉKOLI \n"
+"ZÁRUKY; dokonce bez zahrnutí záruky PRODEJNOSTI nebo ZPÙSOBILOSTI \n"
+"K NÌJAKÉMU ÚÈELU. Pro bli¾¹í detaily nahlédnìte do GNU v¹eobecné \n"
+"veøejné licence.\n"
+"\n"
+"Mìli by jste obdr¾et kopii GNU v¹eobecné veøejné licence s tímto \n"
+"programem; není-li tomu tak, napi¹te na adresu Free Software \n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n"
+
+#: aboutdlg.cpp:197
+msgid "&Send Postcard"
+msgstr "Poslat pohlednici"
+
+#: aboutdlg.cpp:233
+msgid "many more, thank you!"
+msgstr "mnohakeré díky!"
+
+#: aboutdlg.cpp:255
+msgid "Could not load movie"
+msgstr "Není mo¾né naèíst film"
+
+#: kotodoview.cpp:27
+msgid "To-Do Items"
+msgstr "Úkoly"
+
+#: kotodoview.cpp:91 kotodoview.cpp:99
+msgid "New To-Do"
+msgstr "Nový úkol"
+
+#: kotodoview.cpp:94
+msgid "Purge Completed "
+msgstr "Proèi¹tìní ukonèeno"
+
+#: kotodoview.cpp:101
+msgid "Edit To-Do"
+msgstr "Upravit úkol"
+
+#: kotodoview.cpp:104
+msgid "Delete To-Do"
+msgstr "Smazat úkol"
+
+#: kotodoview.cpp:106
+msgid "Purge Completed"
+msgstr "Proèi¹tìní ukonèeno"
+
+#: kotodoview.cpp:108
+msgid "Sort by Priority"
+msgstr "Setøídìní podle priority"
+
+#: eventwin.cpp:91
+msgid "Save and Close"
+msgstr "Ulo¾it a zavøít"
+
+#: eventwin.cpp:111
+msgid "Previous Event"
+msgstr "Pøedchozí událost"
+
+#: eventwin.cpp:117
+msgid "Next Event"
+msgstr "Následující událost"
+
+#: eventwin.cpp:128
+msgid "Delete Event"
+msgstr "Zru¹it událost"
+
+#: eventwin.cpp:286
+msgid "New"
+msgstr "Nový"
+
+#: eventwin.cpp:293
+msgid "Todo"
+msgstr "Úkoly"
+
+#: eventwin.cpp:309
+msgid "readonly"
+msgstr "pouze pro ètení"
+
+#: todowingeneral.cpp:41
+msgid "% Completed"
+msgstr "% ukonèeno"
+
+#: todowingeneral.cpp:48
+#, c-format
+msgid "0 %"
+msgstr "0 %"
+
+#: todowingeneral.cpp:49
+#, c-format
+msgid "25 %"
+msgstr "25 %"
+
+#: todowingeneral.cpp:50
+#, c-format
+msgid "50 %"
+msgstr "50 %"
+
+#: todowingeneral.cpp:51
+#, c-format
+msgid "75 %"
+msgstr "75 %"
+
+#: todowingeneral.cpp:67
+msgid "1 (Highest)"
+msgstr "1 (nejvy¹¹í)"
+
+#: todowingeneral.cpp:68
+msgid "2"
+msgstr "2"
+
+#: todowingeneral.cpp:69
+msgid "3"
+msgstr "3"
+
+#: todowingeneral.cpp:70
+msgid "4"
+msgstr "4"
+
+#: todowingeneral.cpp:71
+msgid "5 (lowest)"
+msgstr "5 (nejni¾¹í)"
+
+#: alarmdaemon.cpp:39 alarmdaemon.cpp:44
+msgid "Can't load docking tray icon!"
+msgstr "Není mo¾né naèíst ikonu pro pohlcování!"
+
+#: alarmdaemon.cpp:48
+msgid "Alarms Enabled"
+msgstr "Alarmy povoleny"
+
+#: alarmdaemon.cpp:51
+msgid "Exit Applet"
+msgstr "Ukonèit applet"
+
+#: alarmdaemon.cpp:54
+msgid "KOrganizer Control Applet"
+msgstr "Øídící applet KOrganizeru"
+
+#: alarmdaemon.cpp:156
+#, c-format
+msgid "KOrganizer Alarm: %s\n"
+msgstr "Alarm KOrganizeru: %s\n"
+
+#: alarmdaemon.cpp:157
+msgid ""
+"The following events triggered alarms:\n"
+"\n"
+msgstr "Následující události spustily alarmy:\n\n"

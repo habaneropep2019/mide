@@ -1,0 +1,1593 @@
+# Icelandic translation of korganizer.
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Thorarinn R. Einarsson <thori@mindspring.com>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: korganizer\n"
+"POT-Creation-Date: 1999-05-01 04:22+0200\n"
+"PO-Revision-Date: 1999-09-06 11:15-0500\n"
+"Last-Translator: Thorarinn R. Einarsson <thori@mindspring.com>\n"
+"Language-Team: is <kde-isl@mmedia.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding:iso8859-1\n"
+
+#: alarmdaemon.cpp:38 alarmdaemon.cpp:43 calobject.cpp:372 calobject.cpp:385
+#: eventwindetails.cpp:341 eventwindetails.cpp:361 searchdialog.cpp:80
+#: topwidget.cpp:959 topwidget.cpp:967 topwidget.cpp:1110 topwidget.cpp:1136
+#: topwidget.cpp:1140
+msgid "KOrganizer Error"
+msgstr "KSkipuleggjarinn: Villa"
+
+#: calobject.cpp:373 calobject.cpp:386
+msgid ""
+"An error has occurred parsing the contents of the clipboard.\n"
+"You can only paste a valid vCalendar into KOrganizer.\n"
+msgstr ""
+"Það varð villa við flutning á innihaldi klemmuspjaldsins.\n"
+"Þú getur bara flutt rétt gert vCalendar inn í KSkipuleggjarann.\n"
+
+#: calobject.cpp:434
+msgid "found a VEvent with no DTSTART/DTEND! Skipping"
+msgstr "fann VEvent án DTSTART/DTEND!  Sleppi þessu..."
+
+#: catdlg.cpp:19
+msgid "KOrganizer Categories"
+msgstr "Flokkar KSkipuleggjarans"
+
+#: catdlg.cpp:30
+msgid "Available Categories"
+msgstr "Nothæfir flokkar"
+
+#: catdlg.cpp:36 eventwin.cpp:297 optionsdlg.cpp:228 optionsdlg.cpp:234
+#: optionsdlg.cpp:240
+msgid "Appointment"
+msgstr "Stefnumót"
+
+#: catdlg.cpp:37
+msgid "Business"
+msgstr "Viðskipti"
+
+#: catdlg.cpp:38
+msgid "Meeting"
+msgstr "Fundur"
+
+#: catdlg.cpp:39
+msgid "Phone Call"
+msgstr "Símtal"
+
+#: catdlg.cpp:40
+msgid "Education"
+msgstr "Menntun"
+
+#: catdlg.cpp:41
+msgid "Holiday"
+msgstr "Frídagur"
+
+#: catdlg.cpp:42
+msgid "Vacation"
+msgstr "FRÍ"
+
+#: catdlg.cpp:43
+msgid "Special Occasion"
+msgstr "Sérstakt tilefni"
+
+#: catdlg.cpp:44 optionsdlg.cpp:34
+msgid "Personal"
+msgstr "Persónulegt"
+
+#: catdlg.cpp:45
+msgid "Travel"
+msgstr "Ferðalög"
+
+#: catdlg.cpp:55
+msgid "&Add >>"
+msgstr "&Bæta við >>"
+
+#: catdlg.cpp:57
+msgid "<< &Remove"
+msgstr "<< &Fjarlægja"
+
+#: catdlg.cpp:66
+msgid "Selected Categories"
+msgstr "Valdir flokkar"
+
+#: catdlg.cpp:78
+msgid "New Category:"
+msgstr "Nýr flokkur:"
+
+#: editeventwin.cpp:116 todoeventwin.cpp:108
+msgid "General"
+msgstr "Almennt"
+
+#: editeventwin.cpp:117 todoeventwin.cpp:109
+msgid "Details"
+msgstr "Smáatriði"
+
+#: editeventwin.cpp:119
+msgid "Recurrence"
+msgstr "Endurtekið"
+
+#: editeventwin.cpp:195 editeventwin.cpp:406 todoeventwin.cpp:162
+#: todoeventwin.cpp:182
+#, c-format
+msgid "Owner: %s"
+msgstr "Eigandi: %s"
+
+#: editeventwin.cpp:810
+msgid "Duration: all day"
+msgstr "Lengd: í allan dag"
+
+#: editeventwin.cpp:818
+#, c-format
+msgid "Duration: %i hour(s), %i minute(s)"
+msgstr "Lengd: %i klst, %i mín."
+
+#: editeventwin.cpp:820
+#, c-format
+msgid "Duration: %i hour(s)"
+msgstr "Lengd: %i klst"
+
+#: editeventwin.cpp:822
+#, c-format
+msgid "Duration: %i minute(s)"
+msgstr "Lengd: %i mín."
+
+#: eventwidget.cpp:193
+msgid "Toggle Alarm"
+msgstr "Vekjaraklukku af/á"
+
+#: eventwingeneral.cpp:42 eventwinrecur.cpp:28 wingeneral.cpp:34
+msgid "Appointment Time"
+msgstr "Tími stefnumóts"
+
+#: eventwingeneral.cpp:47 wingeneral.cpp:39
+msgid "Start Time:"
+msgstr "Byrjar kl.:"
+
+#: eventwingeneral.cpp:58 wingeneral.cpp:48
+msgid "End Time:"
+msgstr "Endar kl.:"
+
+#: eventwingeneral.cpp:80 wingeneral.cpp:64
+msgid "No time associated"
+msgstr "Enginn tími valinn"
+
+#: eventwingeneral.cpp:91 wingeneral.cpp:75
+msgid "Recurring event"
+msgstr "Endurtekinn atburður"
+
+#: eventwingeneral.cpp:99 todowingeneral.cpp:77
+msgid "Summary:"
+msgstr "Yfirlit:"
+
+#: eventwingeneral.cpp:110
+msgid "Show Time As:"
+msgstr "Sýna tímabil:"
+
+#: eventwingeneral.cpp:117
+msgid "Busy"
+msgstr "Upptekið"
+
+#: eventwingeneral.cpp:118
+msgid "Free"
+msgstr "Opið"
+
+#: eventwingeneral.cpp:133 todowingeneral.cpp:96
+msgid "Owner:"
+msgstr "Eigandi:"
+
+#: eventwingeneral.cpp:139 todowingeneral.cpp:102
+msgid "Private"
+msgstr "Einka"
+
+#: eventwindetails.cpp:199 eventwingeneral.cpp:145 todowingeneral.cpp:108
+msgid "Categories..."
+msgstr "Flokkar..."
+
+#: eventwingeneral.cpp:164
+msgid "Reminder:"
+msgstr "Áminnir:"
+
+#: eventwindetails.cpp:39
+msgid "Attendee Information"
+msgstr "Uppl. um þátttakanda"
+
+#: eventwindetails.cpp:46
+msgid "Name"
+msgstr "Nafn"
+
+#: eventwindetails.cpp:47
+msgid "Email"
+msgstr "Netfang"
+
+#: eventwindetails.cpp:48
+msgid "Role"
+msgstr "Hlutverk"
+
+#: eventwindetails.cpp:49
+msgid "Status"
+msgstr "Staða"
+
+#: eventwindetails.cpp:50
+msgid "RSVP"
+msgstr "Svar"
+
+#: eventwindetails.cpp:65
+msgid "Attendee Name:"
+msgstr "Nafn þátttakanda:"
+
+#: eventwindetails.cpp:77
+msgid "Email Address:"
+msgstr "Netfang:"
+
+#: eventwindetails.cpp:92
+msgid "Role:"
+msgstr "Hlutverk:"
+
+#: eventwindetails.cpp:98
+msgid "Attendee"
+msgstr "Þátttakandi"
+
+#: eventwindetails.cpp:99
+msgid "Organizer"
+msgstr "Stjórnandi"
+
+#: eventwindetails.cpp:100
+msgid "Owner"
+msgstr "Eigandi"
+
+#: eventwindetails.cpp:101
+msgid "Delegate"
+msgstr "Fulltrúi"
+
+#: eventwindetails.cpp:106
+msgid "Status:"
+msgstr "Staða:"
+
+#: eventwindetails.cpp:112
+msgid "Needs Action"
+msgstr "Þarfnast aðgerða"
+
+#: eventwindetails.cpp:113
+msgid "Accepted"
+msgstr "Samþykkt"
+
+#: eventwindetails.cpp:114
+msgid "Sent"
+msgstr "Sent"
+
+#: eventwindetails.cpp:115
+msgid "Tentative"
+msgstr "Bráðabirgða"
+
+#: eventwindetails.cpp:116
+msgid "Confirmed"
+msgstr "Staðfest"
+
+#: eventwindetails.cpp:117
+msgid "Declined"
+msgstr "Hafnað"
+
+#: eventwindetails.cpp:118 todowingeneral.cpp:35 todowingeneral.cpp:52
+msgid "Completed"
+msgstr "Búið og gert!"
+
+#: eventwindetails.cpp:119
+msgid "Delegated"
+msgstr "Afhent öðrum"
+
+#: eventwindetails.cpp:126
+msgid "Request Response"
+msgstr "Fara fram á svar"
+
+#: eventwindetails.cpp:132
+msgid "&Add"
+msgstr "&Bæta"
+
+#: eventwindetails.cpp:136
+msgid "Address &Book..."
+msgstr "Heimilisfangabók..."
+
+#: eventwindetails.cpp:163
+msgid "Attach..."
+msgstr "Hengja við..."
+
+#: eventwindetails.cpp:183
+msgid "Save As..."
+msgstr "Vista sem..."
+
+#: eventwindetails.cpp:218
+msgid "Priority:"
+msgstr "Forgangur:"
+
+#: eventwindetails.cpp:224
+msgid "Low (1)"
+msgstr "Lítill (1)"
+
+#: eventwindetails.cpp:225
+msgid "Normal (2)"
+msgstr "Venjulegur (2)"
+
+#: eventwindetails.cpp:226
+msgid "High (3)"
+msgstr "Mikill (3)"
+
+#: eventwindetails.cpp:227
+msgid "Maximum (4)"
+msgstr "Hámarks (4)"
+
+#: eventwindetails.cpp:342
+msgid "Unable to open address book."
+msgstr "Gat ekki opnað heimilisfangabók."
+
+#: eventwindetails.cpp:362
+msgid "Error getting entry from address book."
+msgstr "Villa við lestur heimilisfangabókar."
+
+#: eventwinrecur.cpp:30
+msgid "Start:  "
+msgstr "Byrja:  "
+
+#: eventwinrecur.cpp:31
+msgid "End:  "
+msgstr "Enda:  "
+
+#: eventwinrecur.cpp:61
+msgid "Recurrence Rule"
+msgstr "Endurtekningaregla"
+
+#: eventwinrecur.cpp:67
+msgid "Daily"
+msgstr "Daglega"
+
+#: eventwinrecur.cpp:68
+msgid "Weekly"
+msgstr "Vikulega"
+
+#: eventwinrecur.cpp:69
+msgid "Monthly"
+msgstr "Mánaðarlega"
+
+#: eventwinrecur.cpp:70
+msgid "Yearly"
+msgstr "Árlega"
+
+#: eventwinrecur.cpp:95
+msgid "Enable Advanced Rule:"
+msgstr "Virkja æðri reglu:"
+
+#: eventwinrecur.cpp:128
+msgid "Recurrence Range"
+msgstr "Endurtekningarspan"
+
+#: eventwinrecur.cpp:132
+msgid "Begin On:"
+msgstr "Byrja á:"
+
+#: eventwinrecur.cpp:134
+msgid "No Ending Date"
+msgstr "Enginn endadagur"
+
+#: eventwinrecur.cpp:135
+msgid "End after"
+msgstr "Enda eftir"
+
+#: eventwinrecur.cpp:137
+msgid "occurrence(s)"
+msgstr "tilvik"
+
+#: eventwinrecur.cpp:138
+msgid "End by:"
+msgstr "Enda fyrir:"
+
+#: eventwinrecur.cpp:181
+msgid "Exceptions"
+msgstr "Undantekningar"
+
+#: eventwinrecur.cpp:267 eventwinrecur.cpp:297
+msgid "Recur every"
+msgstr "Endurtaka í/á"
+
+#: eventwinrecur.cpp:273
+msgid "day(s)"
+msgstr "dag(a)"
+
+#: eventwinrecur.cpp:303
+msgid "week(s) on:"
+msgstr "viku(r) á:"
+
+#: eventwinrecur.cpp:305 kagenda.cpp:106
+msgid "Sun"
+msgstr "Sun"
+
+#: eventwinrecur.cpp:306 kagenda.cpp:105
+msgid "Mon"
+msgstr "Mán"
+
+#: eventwinrecur.cpp:307 kagenda.cpp:105
+msgid "Tue"
+msgstr "Þri"
+
+#: eventwinrecur.cpp:308 kagenda.cpp:105
+msgid "Wed"
+msgstr "Mið"
+
+#: eventwinrecur.cpp:309 kagenda.cpp:106
+msgid "Thu"
+msgstr "Fim"
+
+#: eventwinrecur.cpp:310 kagenda.cpp:106
+msgid "Fri"
+msgstr "Fös"
+
+#: eventwinrecur.cpp:311 kagenda.cpp:106
+msgid "Sat"
+msgstr "Lau"
+
+#: eventwinrecur.cpp:361 eventwinrecur.cpp:365
+msgid "Recur on the"
+msgstr "Endurtaka"
+
+#: eventwinrecur.cpp:363
+msgid "day"
+msgstr "dag"
+
+#: eventwinrecur.cpp:369 eventwinrecur.cpp:481
+msgid "every"
+msgstr "hver/n/ja/t"
+
+#: eventwinrecur.cpp:371
+msgid "month(s)"
+msgstr "mánuð(i)"
+
+#: eventwinrecur.cpp:383 eventwinrecur.cpp:424
+msgid "1st"
+msgstr "1."
+
+#: eventwinrecur.cpp:384 eventwinrecur.cpp:425
+msgid "2nd"
+msgstr "2."
+
+#: eventwinrecur.cpp:385 eventwinrecur.cpp:426
+msgid "3rd"
+msgstr "3."
+
+#: eventwinrecur.cpp:386 eventwinrecur.cpp:427
+msgid "4th"
+msgstr "4."
+
+#: eventwinrecur.cpp:387 eventwinrecur.cpp:428
+msgid "5th"
+msgstr "5."
+
+#: eventwinrecur.cpp:388
+msgid "6th"
+msgstr "6."
+
+#: eventwinrecur.cpp:389
+msgid "7th"
+msgstr "7."
+
+#: eventwinrecur.cpp:390
+msgid "8th"
+msgstr "8."
+
+#: eventwinrecur.cpp:391
+msgid "9th"
+msgstr "9."
+
+#: eventwinrecur.cpp:392
+msgid "10th"
+msgstr "10."
+
+#: eventwinrecur.cpp:393
+msgid "11th"
+msgstr "11."
+
+#: eventwinrecur.cpp:394
+msgid "12th"
+msgstr "12."
+
+#: eventwinrecur.cpp:395
+msgid "13th"
+msgstr "13."
+
+#: eventwinrecur.cpp:396
+msgid "14th"
+msgstr "14."
+
+#: eventwinrecur.cpp:397
+msgid "15th"
+msgstr "15."
+
+#: eventwinrecur.cpp:398
+msgid "16th"
+msgstr "16."
+
+#: eventwinrecur.cpp:399
+msgid "17th"
+msgstr "17."
+
+#: eventwinrecur.cpp:400
+msgid "18th"
+msgstr "18."
+
+#: eventwinrecur.cpp:401
+msgid "19th"
+msgstr "19."
+
+#: eventwinrecur.cpp:402
+msgid "20th"
+msgstr "20."
+
+#: eventwinrecur.cpp:403
+msgid "21st"
+msgstr "21."
+
+#: eventwinrecur.cpp:404
+msgid "22nd"
+msgstr "22."
+
+#: eventwinrecur.cpp:405
+msgid "23rd"
+msgstr "23."
+
+#: eventwinrecur.cpp:406
+msgid "24th"
+msgstr "24."
+
+#: eventwinrecur.cpp:407
+msgid "25th"
+msgstr "25."
+
+#: eventwinrecur.cpp:408
+msgid "26th"
+msgstr "26."
+
+#: eventwinrecur.cpp:409
+msgid "27th"
+msgstr "27."
+
+#: eventwinrecur.cpp:410
+msgid "28th"
+msgstr "28."
+
+#: eventwinrecur.cpp:411
+msgid "29th"
+msgstr "29."
+
+#: eventwinrecur.cpp:412
+msgid "30th"
+msgstr "30."
+
+#: eventwinrecur.cpp:413
+msgid "31st"
+msgstr "31."
+
+#: eventwinrecur.cpp:466
+msgid "Recur in the month of"
+msgstr "Endurtaka í"
+
+#: eventwinrecur.cpp:467
+msgid "Recur on this day"
+msgstr "Endurtaka á þessum degi"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:469 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "January"
+msgstr "Janúar"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:470 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "February"
+msgstr "Febrúar"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:471 kdatenav.cpp:68 kdatenav.cpp:259
+msgid "March"
+msgstr "Mars"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:472 kdatenav.cpp:69 kdatenav.cpp:259
+msgid "April"
+msgstr "Apríl"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:473 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "May"
+msgstr "Maí"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:474 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "June"
+msgstr "Júní"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:475 kdatenav.cpp:69 kdatenav.cpp:261
+msgid "July"
+msgstr "Júlí"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:476 kdatenav.cpp:70 kdatenav.cpp:261
+msgid "August"
+msgstr "Ágúst"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:477 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "September"
+msgstr "September"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:478 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "October"
+msgstr "Október"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:479 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "November"
+msgstr "Nóvember"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:480 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "December"
+msgstr "Desember"
+
+#: eventwinrecur.cpp:484
+msgid "year(s)"
+msgstr "ár"
+
+#: kagenda.cpp:212
+msgid "All Day Event"
+msgstr "Heilsdagsatburður"
+
+#: kagenda.cpp:830
+msgid "New appointment"
+msgstr "Nýtt stefnumót"
+
+#: kagenda.cpp:967 kagenda.cpp:975
+msgid "am"
+msgstr "f.h."
+
+#: kagenda.cpp:971
+msgid "pm"
+msgstr "e.h."
+
+#: kdatenav.cpp:44
+msgid "Previous Year"
+msgstr "Fyrra ár"
+
+#: kdatenav.cpp:50
+msgid "Previous Month"
+msgstr "Fyrri mánuður"
+
+#: kdatenav.cpp:56
+msgid "Next Month"
+msgstr "Næsti mánuður"
+
+#: kdatenav.cpp:62
+msgid "Next Year"
+msgstr "Næsta ár"
+
+#: kmonthview.cpp:386
+msgid "New Event"
+msgstr "Nýr atburður"
+
+#: kpbutton.cpp:22 kpbutton.cpp:40 kpbutton.cpp:90
+msgid "KPButton: pixmap is empty, perhaps some missing file"
+msgstr "KPButton: Engin mynd.  Það vantar skrá."
+
+#: baselistview.cpp:28
+msgid "Date"
+msgstr "Dags"
+
+#: baselistview.cpp:29
+msgid "Time"
+msgstr "Tími"
+
+#: baselistview.cpp:30 calprinter.cpp:365
+msgid "Summary"
+msgstr "Yfirlit"
+
+#: baselistview.cpp:77
+msgid "started "
+msgstr "byrjaði"
+
+#: baselistview.cpp:80
+msgid "ends "
+msgstr "endar"
+
+#: baselistview.cpp:85
+#, c-format
+msgid "repeats %d times"
+msgstr "endurtekur %d sinni/sinnum"
+
+#: baselistview.cpp:89
+msgid "repeats forever"
+msgstr "endurtekur að eilífu"
+
+#: listview.cpp:14
+msgid "Edit Event"
+msgstr "Breyta atburði"
+
+#: listview.cpp:17
+msgid "Delete Event  "
+msgstr "Þurrka út atburð"
+
+#: listview.cpp:20
+msgid "Show Dates"
+msgstr "Sýna dagana"
+
+#: listview.cpp:22
+msgid "Hide Dates"
+msgstr "Fela dagana"
+
+#: main.cpp:29
+msgid "No default calendar, and none was specified on the command line.\n"
+msgstr "Ekkert almanak valið og ekkert gefið upp á skipanalínu.\n"
+
+#: main.cpp:33
+msgid "Error reading from default calendar.\n"
+msgstr "Villa við lestur á sjálfgefnu almanaki\n"
+
+#: searchdialog.cpp:22
+msgid "Search For:"
+msgstr "Leita að:"
+
+#: searchdialog.cpp:32 topwidget.cpp:494
+msgid "&Search"
+msgstr "&Leita..."
+
+#: searchdialog.cpp:81
+msgid ""
+"Invalid search expression, cannot perform\n"
+"the search.  Please enter a search expression\n"
+"using the wildcard characters '*' and '?'\n"
+"where needed."
+msgstr ""
+"Get ekki framkvæmt leit. Upplýsingar til\n" 
+"leitar eru ónothæfar. Sláðu inn leitarorð\n" 
+"ásamt '*' og/eða '?' þar sem þú telur að\n" 
+"það hjálpi til." 
+
+#: topwidget.cpp:391
+msgid "&Open"
+msgstr "&Opna"
+
+#: topwidget.cpp:394
+msgid "Open &Recent"
+msgstr "Opna nýlegt"
+
+#: topwidget.cpp:410
+msgid "Save &As"
+msgstr "Vista &sem..."
+
+#: topwidget.cpp:415
+msgid "&Import From Ical"
+msgstr "Flytja inn frá Ical..."
+
+#: topwidget.cpp:417
+msgid "&Merge Calendar"
+msgstr "Setja saman almanök..."
+
+#: topwidget.cpp:420
+msgid "Archive Old Entries"
+msgstr "Safnvista eldri atburði..."
+
+#: topwidget.cpp:427
+msgid "Print Setup"
+msgstr "Prentuppsetning..."
+
+#: calprinter.cpp:844 topwidget.cpp:431
+msgid "&Print"
+msgstr "Prenta út"
+
+#: topwidget.cpp:433
+msgid "Print Pre&view"
+msgstr "Prentf&orsýn..."
+
+#: topwidget.cpp:455
+msgid "&List"
+msgstr "Sýna &lista"
+
+#: topwidget.cpp:459
+msgid "&Day"
+msgstr "&Dagur"
+
+#: topwidget.cpp:462
+msgid "W&ork Week"
+msgstr "Vi&nnuvika"
+
+#: topwidget.cpp:465
+msgid "&Week"
+msgstr "&Vika"
+
+#: topwidget.cpp:468
+msgid "&Month"
+msgstr "&Mánuður"
+
+#: topwidget.cpp:471
+msgid "&To-do list"
+msgstr "Ver&kefnalisti"
+
+#: topwidget.cpp:479
+msgid "New &Appointment"
+msgstr "Nýtt &stefnumót"
+
+#: topwidget.cpp:481
+msgid "New E&vent"
+msgstr "Nýr at&burður"
+
+#: topwidget.cpp:483
+msgid "&Edit Appointment"
+msgstr "&Breyta stefnumóti"
+
+#: topwidget.cpp:486
+msgid "&Delete Appointment"
+msgstr "&Þurrka út stefnumót"
+
+#: topwidget.cpp:488
+msgid "Delete To-do"
+msgstr "&Eyða verkefni"
+
+#: topwidget.cpp:498
+msgid "&Mail Appointment"
+msgstr "Senda s&tefnumót"
+
+#: topwidget.cpp:504
+msgid "Go to &Today"
+msgstr "Í dag"
+
+#: topwidget.cpp:508
+msgid "&Previous Day"
+msgstr "Fyrri dagur"
+
+#: topwidget.cpp:512
+msgid "&Next Day"
+msgstr "Næsti dagur"
+
+#: topwidget.cpp:516
+msgid "Show &Tool Bar"
+msgstr "Sýna &tækjaslá"
+
+#: topwidget.cpp:520
+msgid "Show St&atus Bar"
+msgstr "Sýna stöðuslá"
+
+#: topwidget.cpp:525
+msgid "&Edit Options"
+msgstr "Breyta stillingum"
+
+#: topwidget.cpp:533
+msgid "&About"
+msgstr "&Um"
+
+#: topwidget.cpp:535
+msgid "Send &Bug Report"
+msgstr "Senda villuskýrslu"
+
+#: topwidget.cpp:543
+msgid "&Actions"
+msgstr "Aðgerðir"
+
+#: topwidget.cpp:562
+msgid "Open A Calendar"
+msgstr "Opna almanak"
+
+#: topwidget.cpp:568
+msgid "Save This Calendar"
+msgstr "Vista þetta almanak"
+
+#: topwidget.cpp:585
+msgid "New Appointment"
+msgstr "Nýtt stefnumót"
+
+#: topwidget.cpp:591
+msgid "Delete Appointment"
+msgstr "Eyða stefnumóti"
+
+#: topwidget.cpp:597
+msgid "Search For an Appointment"
+msgstr "Leita að stefnumóti"
+
+#: topwidget.cpp:603
+msgid "Mail Appointment"
+msgstr "Senda stefnumót"
+
+#: topwidget.cpp:622
+msgid "Go to Today"
+msgstr "Í d&ag"
+
+#: topwidget.cpp:628
+msgid "Previous Day"
+msgstr "&Fyrri dagur"
+
+#: topwidget.cpp:634
+msgid "Next Day"
+msgstr "N&æsti dagur"
+
+#: topwidget.cpp:650
+msgid "List View"
+msgstr "Listasýn"
+
+#: topwidget.cpp:655
+msgid "Schedule View"
+msgstr "Dagskrársýn"
+
+#: topwidget.cpp:662
+msgid "Month View"
+msgstr "Mánaðarsýn"
+
+#: topwidget.cpp:668
+msgid "To-do list view"
+msgstr "Verkefnalistasýn"
+
+#: topwidget.cpp:750
+msgid "we don't handle updates for that view, yet.\n"
+msgstr "Get ekki uppfært þessa sýn (ennþá).\n"
+
+#: topwidget.cpp:842
+msgid "we don't handle that view yet.\n"
+msgstr "Get ekki framkallað svona sýn (enn).\n"
+
+#: topwidget.cpp:960
+msgid "You did not specify a valid file name."
+msgstr "Þú gafst ekki upp fullgilt skráarnafn."
+
+#: topwidget.cpp:968
+msgid ""
+"The file you specified is a directory,\n"
+"and cannot be opened. Please try again,\n"
+"this time selecting a valid calendar file."
+msgstr ""
+"Þú tilgreindir möppu en ekki skrá og\n" 
+"því var engin skrá opnuð. Veldu nothæfa\n" 
+"almanaksskrá." 
+
+#: topwidget.cpp:995
+msgid "KOrganizer Warning"
+msgstr "KSkipuleggjarinn: Aðvörun"
+
+#: topwidget.cpp:996
+msgid ""
+"This calendar has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Almanakinu sem þú ert að loka hefur verið breytt.\n"
+"Viltu vista breytingarnar?"
+
+#: topwidget.cpp:998
+msgid "&Yes"
+msgstr "&Já"
+
+#: topwidget.cpp:998
+msgid "&No"
+msgstr "&Nei"
+
+#: topwidget.cpp:1007 topwidget.cpp:1597
+msgid "KOrganizer Confirmation"
+msgstr "KSkipuleggjarinn: Staðfesting"
+
+#: topwidget.cpp:1008
+msgid "This item will be permanently deleted."
+msgstr "Þessu verður endanlega eytt."
+
+#: topwidget.cpp:1111
+msgid ""
+"You have no ical file in your home directory.\n"
+"Import cannot proceed.\n"
+msgstr ""
+"Þig vantar ical skrá á heimasvæðið þitt.\n"
+"Innlestur fer því ekki fram.\n"
+
+#: topwidget.cpp:1124
+msgid "KOrganizer Info"
+msgstr "KSkipuleggjarinn uppl."
+
+#: topwidget.cpp:1125
+msgid ""
+"KOrganizer succesfully imported and merged your\n"
+".calendar file from ical into the currently\n"
+"opened calendar.\n"
+msgstr ""
+"KSkipuleggjaranum tókst að flytja inn og sameina\n"
+".calendar skrá frá ical við almanakið sem\n"
+"er núna í notkun.\n"
+
+#: topwidget.cpp:1130
+msgid "ICal Import Successful With Warning"
+msgstr "ICal innflutningur tókst með aðvörun"
+
+#: topwidget.cpp:1131
+msgid ""
+"KOrganizer encountered some unknown fields while\n"
+"parsing your .calendar ical file, and had to\n"
+"discard them.  Please check to see that all\n"
+"your relevant data was correctly imported.\n"
+msgstr ""
+"KSkipuleggjarinn fann einhver óþekkt svæði við\n"
+"lestur á .calendar ical skránni og varð því að\n"
+"sleppa þeimsvæðum.  Vinsamlega gáðu því hvort öll\n"
+"gögn hafi verið flutt inn rétt.\n"
+
+#: topwidget.cpp:1137
+msgid ""
+"KOrganizer encountered some error parsing your\n"
+".calendar file from ical.  Import has failed.\n"
+msgstr ""
+"KSkipuleggjarinn fann villur við lestur á .calendar\n"
+"skránni frá ical.  Innflutingur fer því ekki fram.\n"
+
+#: topwidget.cpp:1141
+msgid ""
+"KOrganizer doesn't think that your .calendar\n"
+"file is a valid ical calendar. Import has failed.\n"
+msgstr ""
+"KSkipuleggjarinn hefur komist að raun um að .calendar skráin\n"
+"þín er ekki nothæft ical almanak og hætti því við innflutning.\n"
+
+#: topwidget.cpp:1305 topwidget.cpp:1332 topwidget.cpp:1683 topwidget.cpp:1693
+msgid "KOrganizer error"
+msgstr "KSkipuleggjarinn: Villa"
+
+#: topwidget.cpp:1306 topwidget.cpp:1333
+msgid ""
+"Unfortunately, we don't handle cut/paste for\n"
+"that view yet.\n"
+msgstr ""
+"Því miður þá er klippa/líma ekki nothæft í\n"
+"þessari sýn ennþá.\n"
+
+#: topwidget.cpp:1549
+msgid "don't handle deletes from that view, yet.\n"
+msgstr "ekki hægt að þurrka út í þessari sýn, ennþá.\n"
+
+#: topwidget.cpp:1598
+msgid ""
+"This event recurs over multiple dates.\n"
+"Are you sure you want to delete the\n"
+"selected event, or just this instance?\n"
+msgstr ""
+"Þessi atburður gerist reglulega.\n"
+"Hvort viltu þurrka út öll tilvik,\n"
+"eða bara þetta einstaka tilvik?\n"
+
+#: topwidget.cpp:1601
+msgid "&All"
+msgstr "Öll"
+
+#: topwidget.cpp:1601
+msgid "&This"
+msgstr "Bara þetta"
+
+# topwidget.cpp:
+#: topwidget.cpp:1616
+msgid "no date selected, or invalid date\n"
+msgstr "engin eða ónothæf dagsetning valin\n"
+
+#: topwidget.cpp:1684
+msgid "Can't generate mail from this view\n"
+msgstr "Get ekki skrifað póst í þessari sýn\n"
+
+#: topwidget.cpp:1694
+msgid ""
+"Can't generate mail:\n"
+" No attendees defined!\n"
+msgstr ""
+"Get ekki sent póst:\n"
+" Enginn þátttakandi valinn!\n"
+
+#: topwidget.cpp:1833
+msgid "New Calendar"
+msgstr "Nýtt almanak"
+
+#: eventwin.cpp:313 eventwin.cpp:319 topwidget.cpp:1839
+msgid "modified"
+msgstr "breytt"
+
+#: eventwin.cpp:325 topwidget.cpp:1844
+msgid "KOrganizer"
+msgstr "KSkipuleggjarinn"
+
+#: calprinter.cpp:47
+msgid "Korganizer Configuration Options"
+msgstr "KSkipuleggjarinn:  Stillingar"
+
+#: calprinter.cpp:361 todowingeneral.cpp:60
+msgid "Priority"
+msgstr "Forgangur"
+
+#: calprinter.cpp:369
+msgid "Due"
+msgstr "Síðustu forvöð"
+
+#: calprinter.cpp:453
+#, c-format
+msgid "To-Do items: %s %.2d"
+msgstr "Klára atriði: %s %.2d"
+
+#: calprinter.cpp:791
+msgid "Date Range"
+msgstr "Tímabil"
+
+#: calprinter.cpp:811
+msgid "View Type"
+msgstr "Sýna gerð"
+
+#: calprinter.cpp:816
+msgid "Day"
+msgstr "Dagur"
+
+#: calprinter.cpp:821
+msgid "Week"
+msgstr "Vika"
+
+#: calprinter.cpp:825
+msgid "Month"
+msgstr "Mánuður"
+
+#: calprinter.cpp:829
+msgid "To-Do"
+msgstr "Verkefni"
+
+#: calprinter.cpp:843
+msgid "&Preview"
+msgstr "Fyrri"
+
+#: koarchivedlg.cpp:19
+msgid "Archive / Delete Past Appointments - KOrganizer"
+msgstr "Safnvista/þurrka út gömul stefnumót - KSkipuleggjarinn"
+
+#: optionsdlg.cpp:37
+msgid "Time & Date"
+msgstr "Tími og dags."
+
+#: optionsdlg.cpp:43
+msgid "Colors"
+msgstr "Litir"
+
+#: optionsdlg.cpp:46
+msgid "Views"
+msgstr "Sýn"
+
+#: optionsdlg.cpp:52
+msgid "Printing"
+msgstr "Prenta út"
+
+#: optionsdlg.cpp:65
+msgid "KOrganizer Configuration"
+msgstr "Stillingar KSkipuleggjarans"
+
+#: optionsdlg.cpp:93
+msgid "Your name:"
+msgstr "Nafnið þitt:"
+
+#: optionsdlg.cpp:97
+msgid "Email address:"
+msgstr "Netfang:"
+
+#: optionsdlg.cpp:101
+msgid "Additional:"
+msgstr "Annað:"
+
+#: optionsdlg.cpp:105
+msgid "Auto-save Calendar"
+msgstr "Vista almanakið sjálfkrafa"
+
+#: optionsdlg.cpp:109
+msgid "Confirm Appointment/To-Do Deletes"
+msgstr "Staðfesta eyðingu á stefnumótum/verkefnum"
+
+#: optionsdlg.cpp:113
+msgid "Holidays:"
+msgstr "Frídagar:"
+
+#: optionsdlg.cpp:139
+msgid "1 minute"
+msgstr "1 mínúta"
+
+#: optionsdlg.cpp:139
+msgid "5 minutes"
+msgstr "5 mínútur"
+
+#: optionsdlg.cpp:140
+msgid "10 minutes"
+msgstr "10 mínútur"
+
+#: optionsdlg.cpp:140
+msgid "15 minutes"
+msgstr "15 mínútur"
+
+#: optionsdlg.cpp:141
+msgid "30 minutes"
+msgstr "30 mínútur"
+
+#: optionsdlg.cpp:148
+msgid "Time Format:"
+msgstr "Tímasnið:"
+
+#: optionsdlg.cpp:149
+msgid "24 hour"
+msgstr "24 tíma"
+
+#: optionsdlg.cpp:150
+msgid "AM / PM"
+msgstr "f.h. / e.h."
+
+#: optionsdlg.cpp:154
+msgid "Date Format:"
+msgstr "Dagsetningarsnið:"
+
+#: optionsdlg.cpp:155
+msgid "Day.Month.Year (31.01.2000)"
+msgstr "Dagur.Mánuður.Ár (31.01.2000)"
+
+#: optionsdlg.cpp:156
+msgid "Month/Day/Year (01/31/2000)"
+msgstr "Mánuður/Dagur/Ár (01/31/2000)"
+
+#: optionsdlg.cpp:157
+msgid "Month-Day-Year (01-31-2000)"
+msgstr "Mánuður-Dagur-Ár (01-31-2000)"
+
+#: optionsdlg.cpp:161
+msgid "Time Zone:"
+msgstr "Tímabelti:"
+
+#: optionsdlg.cpp:168
+msgid "Default Appointment Time:"
+msgstr "Sjálfgefinn tími stefnumóts:"
+
+#: optionsdlg.cpp:178
+msgid "Default Alarm Time:"
+msgstr "Sjálfgefinn vekjaraklukkutími:"
+
+#: optionsdlg.cpp:186
+msgid "Week Starts on Monday"
+msgstr "Vikan byrjar á mánudögum"
+
+#: optionsdlg.cpp:203
+msgid "Day Begins At:"
+msgstr "Dagurinn byrjar kl.:"
+
+#: optionsdlg.cpp:213
+msgid "Hour size in schedule view"
+msgstr "Breidd hverrar klukkustundar á dagskrá"
+
+#: optionsdlg.cpp:217
+msgid "Show events that recur daily in Date Navigator"
+msgstr "Skoða daglega atburði í dagsskrárskoðaranum"
+
+#: optionsdlg.cpp:229
+msgid "List view font"
+msgstr "Letur fyrir listasýn"
+
+#: optionsdlg.cpp:235
+msgid "Schedule view font"
+msgstr "Letur fyrir dagskrársýn"
+
+#: optionsdlg.cpp:241
+msgid "Month view font"
+msgstr "Letur fyrir mánaðarsýn"
+
+#: optionsdlg.cpp:246
+msgid "12345"
+msgstr "12345"
+
+#: optionsdlg.cpp:246
+msgid "Time bar font"
+msgstr "Letur tímabeltis"
+
+#: optionsdlg.cpp:251
+msgid "Things to do"
+msgstr "Þarf að gera"
+
+#: optionsdlg.cpp:252
+msgid "To-Do list font"
+msgstr "Letur verkefnalista"
+
+#: optionsdlg.cpp:273
+msgid "Use system default colors"
+msgstr "Nota sjálfgefna kerfisliti"
+
+#: optionsdlg.cpp:278
+msgid "Appointment & Checklist items"
+msgstr "Stefnumót og verkefni"
+
+#: optionsdlg.cpp:279
+msgid "Background"
+msgstr "Bakgrunnur"
+
+#: optionsdlg.cpp:282
+msgid "Text"
+msgstr "Letur"
+
+#: optionsdlg.cpp:285
+msgid "Handle Selected"
+msgstr "Virk titilslá"
+
+#: optionsdlg.cpp:288
+msgid "Handle Unselected"
+msgstr "Óvirk titilslá"
+
+#: optionsdlg.cpp:291
+msgid "Handle Active Apt."
+msgstr "Virk stefnumót"
+
+#: optionsdlg.cpp:296
+msgid "Sheet background"
+msgstr "Blaðsíðubakgrunnur"
+
+#: optionsdlg.cpp:299
+msgid "Calendar Background"
+msgstr "Dagatalsbakgrunnur"
+
+#: optionsdlg.cpp:302
+msgid "Calendar Date Text"
+msgstr "Dagsetningaletur"
+
+#: optionsdlg.cpp:305
+msgid "Calendar Date Selected"
+msgstr "Valin dagsetning"
+
+#: optionsdlg.cpp:344
+msgid "Printer Name"
+msgstr "Nafn prentara"
+
+#: optionsdlg.cpp:374
+msgid "Paper Size"
+msgstr "Blaðsíðustærð"
+
+#: optionsdlg.cpp:376
+msgid "A4"
+msgstr "A4"
+
+#: optionsdlg.cpp:377
+msgid "B5"
+msgstr "B5"
+
+#: optionsdlg.cpp:378
+msgid "Letter"
+msgstr "21.59 x 27.94 cm (Letter)"
+
+#: optionsdlg.cpp:379
+msgid "Legal"
+msgstr "21.59 x 35.56 cm (Legal)"
+
+#: optionsdlg.cpp:380
+msgid "Executive"
+msgstr "18.415 x 26.67 cm (Exec)"
+
+#: optionsdlg.cpp:384
+msgid "Paper Orientation"
+msgstr "Blaðsíðusnið"
+
+#: optionsdlg.cpp:386
+msgid "Portrait"
+msgstr "Skammsnið"
+
+#: optionsdlg.cpp:388
+msgid "Landscape"
+msgstr "Langsnið"
+
+#: optionsdlg.cpp:395
+msgid "Preview Program"
+msgstr "Forsýn"
+
+#: kpropdlg.cpp:124
+msgid "Prev"
+msgstr "Fyrri"
+
+#: kpropdlg.cpp:125
+msgid "Next"
+msgstr "Næsta"
+
+#: aboutdlg.cpp:20
+msgid "KOrganizer Virtual Postcard"
+msgstr "Póstkort KSkipuleggjarans"
+
+#: aboutdlg.cpp:24
+msgid ""
+"Please send a postcard to me, so I can see who is\n"
+"using KOrganizer! Tell me how great the program is,\n"
+"and how you just can't live without it.  Or, report\n"
+"a bug which is stopping you from doing useful work.\n"
+"The postcard will simply include anything you wish to\n"
+"type in the comment area below.\n"
+msgstr ""
+"Vinsamlega sendu mér póstkort svo ég viti hver er að\n"
+"nota KSkipuleggjarinn!  Segðu mér hvað forritið er frábært\n"
+"og hvernig þú getur ekki lifað án þess.  Þú gætir líka\n"
+"sagt mér frá villunum í því sem hindra eðlilega notkun.\n"
+"Póstkortið má innihalda allt sem þér dettur í hug að\n"
+"skrifa í textasvæðið hér fyrir neðan.\n"
+
+#: aboutdlg.cpp:104
+msgid "About KOrganizer"
+msgstr "Um KSkipuleggjarann"
+
+#: aboutdlg.cpp:137
+msgid "by Preston Brown and"
+msgstr "eftir Preston Brown og"
+
+#: aboutdlg.cpp:156
+msgid "License Agreement:"
+msgstr "Útgáfuleyfi:"
+
+#: aboutdlg.cpp:162
+msgid ""
+"\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n"
+msgstr ""
+"\n"
+"Íslensk þýðing: Þórarinn R. Einarsson (thori@mindspring.com)\n"
+"\n"
+"Þetta forrit er ókeypis hugbúnaður.  Þú getur breytt því og/eða dreift\n"
+"því skv. skilmálum GNU General Public License eins og þeir eru settir\n"
+"fram af Free Software Foundation, annaðhvort útgáfu 2 af því skírteini\n"
+"eða hvaða síðari útgáfu sem er (að þínu vali).\n"
+"\n"
+"Þessu forriti er dreift í þeirri von að það sé gagnlegt,\n"
+"en án NOKKURAR ÁBYRGÐAR; sem þýðir án ábyrgðar að það gagnist\n"
+"þér eða þínum tilgangi.  Vinsamlega skoðaðu GNU General\n"
+"Public License til að lesa nánar um þessi mál.\n"
+"\n"
+"Þú ættir að hafa fengið afrit af GNU General Public License\n"
+"með þessu forriti; ef ekki, skrifaðu þá Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n"
+
+#: aboutdlg.cpp:197
+msgid "&Send Postcard"
+msgstr "Senda póstkort"
+
+#: aboutdlg.cpp:233
+msgid "many more, thank you!"
+msgstr "margir aðrir, takk fyrir!"
+
+#: aboutdlg.cpp:255
+msgid "Could not load movie"
+msgstr "Gat ekki hlaðið inn mynd"
+
+#: kotodoview.cpp:27
+msgid "To-Do Items"
+msgstr "Verkefni"
+
+#: kotodoview.cpp:91 kotodoview.cpp:99
+msgid "New To-Do"
+msgstr "Nýtt verkefni"
+
+#: kotodoview.cpp:94
+msgid "Purge Completed "
+msgstr "Búin að eyða "
+
+#: kotodoview.cpp:101
+msgid "Edit To-Do"
+msgstr "Breyta verkefni"
+
+#: kotodoview.cpp:104
+msgid "Delete To-Do"
+msgstr "Eyða verkefni"
+
+#: kotodoview.cpp:106
+msgid "Purge Completed"
+msgstr "Búin að eyða"
+
+#: kotodoview.cpp:108
+msgid "Sort by Priority"
+msgstr "Flokka eftir forgangi"
+
+#: eventwin.cpp:91
+msgid "Save and Close"
+msgstr "Vista og loka"
+
+#: eventwin.cpp:111
+msgid "Previous Event"
+msgstr "Fyrri atburður"
+
+#: eventwin.cpp:117
+msgid "Next Event"
+msgstr "Næsti atburður"
+
+#: eventwin.cpp:128
+msgid "Delete Event"
+msgstr "Þurrka út atburð"
+
+#: eventwin.cpp:286
+msgid "New"
+msgstr "Ný/r/tt"
+
+#: eventwin.cpp:293
+msgid "Todo"
+msgstr "Verkefni"
+
+#: eventwin.cpp:309
+msgid "readonly"
+msgstr "ritvarið"
+
+#: todowingeneral.cpp:41
+msgid "% Completed"
+msgstr "% búið og gert"
+
+#: todowingeneral.cpp:48
+#, c-format
+msgid "0 %"
+msgstr "0 %"
+
+#: todowingeneral.cpp:49
+#, c-format
+msgid "25 %"
+msgstr "25 %"
+
+#: todowingeneral.cpp:50
+#, c-format
+msgid "50 %"
+msgstr "50 %"
+
+#: todowingeneral.cpp:51
+#, c-format
+msgid "75 %"
+msgstr "75 %"
+
+#: todowingeneral.cpp:67
+msgid "1 (Highest)"
+msgstr "1 (Hæðst)"
+
+#: todowingeneral.cpp:68
+msgid "2"
+msgstr "2"
+
+#: todowingeneral.cpp:69
+msgid "3"
+msgstr "3"
+
+#: todowingeneral.cpp:70
+msgid "4"
+msgstr "4"
+
+#: todowingeneral.cpp:71
+msgid "5 (lowest)"
+msgstr "5 (lægst)"
+
+#: alarmdaemon.cpp:39 alarmdaemon.cpp:44
+msgid "Can't load docking tray icon!"
+msgstr "Get ekki hlaðið táknmynd fyrir spjald!"
+
+#: alarmdaemon.cpp:48
+msgid "Alarms Enabled"
+msgstr "Kveikt á vekjara"
+
+#: alarmdaemon.cpp:51
+msgid "Exit Applet"
+msgstr "Loka smáforriti"
+
+#: alarmdaemon.cpp:54
+msgid "KOrganizer Control Applet"
+msgstr "Smáforrit KSkipuleggjarans"
+
+#: alarmdaemon.cpp:156
+#, c-format
+msgid "KOrganizer Alarm: %s\n"
+msgstr "Vekjari KSkipuleggjarans: %s\n"
+
+#: alarmdaemon.cpp:157
+msgid ""
+"The following events triggered alarms:\n"
+"\n"
+msgstr ""
+"Eftirfarandi atburðir kveiktu á vekjara:\n" 
+"\n" 
+

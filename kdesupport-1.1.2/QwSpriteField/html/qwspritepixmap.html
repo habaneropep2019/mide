@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwSpritePixmap Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwSpritePixmap Class Reference</h1><br clear="all">
+<p>
+A QwSpritePixmap is a sprite frame image
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>
+Inherits QPixmap.
+<p><a href="qwspritepixmap-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwspritepixmap.html#a0"><strong>QwSpritePixmap</strong></a> ( const char * datafilename, const char * maskfilename ) </span>
+<li><span class="fn"><a href="qwspritepixmap.html#a1"><strong>QwSpritePixmap</strong></a> ( const QPixmap &amp;, QPoint hotspot ) </span>
+<li><span class="fn"><a href="qwspritepixmap.html#a2"><strong>~QwSpritePixmap</strong></a> () </span>
+<li><span class="fn">int <a href="qwspritepixmap.html#a3"><strong>hotX</strong></a> () const</span>
+<li><span class="fn">int <a href="qwspritepixmap.html#a4"><strong>hotY</strong></a> () const</span>
+<li><span class="fn">void <a href="qwspritepixmap.html#a5"><strong>setHotSpot</strong></a> ( int x, int y ) </span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+A QwSpritePixmap is a sprite frame image
+<p>
+Note that QwSpritePixmap should be considered an internal class at
+the current time.  This will change (as will the interface) once
+alpha and description support for QImage is clarified.
+<p>See also:  <a href="qwspritepixmapsequence.html">QwSpritePixmapSequence</a>, <a href="qwvirtualsprite.html">QwVirtualSprite</a> and <a href="qwsprite.html">QwSprite</a>.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a1"></a>QwSpritePixmap::QwSpritePixmap ( const QPixmap &amp; pm, QPoint hotspot )</h3>
+<p>Construct a QwSpritePixmap from a QPixmap and a
+<a href="qwspritepixmap.html#a5">hotspot.</a>
+<p>The QwSpritePixmap is a masked QPixmap used internally by
+sprite classes.
+<h3 class="fn"><a name="a0"></a>QwSpritePixmap::QwSpritePixmap ( const char * dataname, const char * maskname )</h3>
+<p>Construct a QwSpritePixmap from two image files.
+<p>The QwSpritePixmap is a masked QPixmap used internally by
+sprite classes.
+<p>The dataname file must be a PPM file of the form:
+<p><pre>P6
+# HOTSPOT x y
+...
+</pre>
+<p>That is, it must have an additional comment which gives the (x,y)
+coordinate of the `hotspot' of the image.
+<p>The `hotspot' position defines the origin pixel in the image
+For example, if the hotspot is (10,5), it will be displayed
+drawn 10 pixels to the left of and 5 pixels above the actual
+(x,y) coordinate of the sprite.
+<p>The maskname can be any monochrome image format, such as PBM.
+No special comments in the file are needed or recognized.
+<p>The maskname may also be 0, in which case the sprite has no mask (it is
+a solid rectangle).  This will also be the case if the file maskname
+does not exist.
+<h3 class="fn"><a name="a2"></a>QwSpritePixmap::~QwSpritePixmap ()</h3>
+<p>Deletes any collision mask.
+<h3 class="fn">int <a name="a3"></a>QwSpritePixmap::hotX () const</h3>
+<p>Returns the X-position <a href="qwspritepixmap.html#a5">hotspot</a> set
+for the pixmap.
+<h3 class="fn">int <a name="a4"></a>QwSpritePixmap::hotY () const</h3>
+<p>Returns the Y-position <a href="qwspritepixmap.html#a5">hotspot</a> set
+for the pixmap.
+<h3 class="fn">void <a name="a5"></a>QwSpritePixmap::setHotSpot ( int x, int y )</h3>
+<p>Sets the hotspot to (<em>x, y).</em>
+<p>The hotspot position defines the origin pixel in the image
+For example, if the hotspot is (10,5), it will be displayed
+drawn 10 pixels to the left of and 5 pixels above the actual
+(x,y) coordinate of the sprite.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

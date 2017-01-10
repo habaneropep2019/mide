@@ -1,0 +1,204 @@
+.\" -*-nroff-*-
+.TH QPS 1 "Mar 30 1997"
+.UC 4
+.SH NAME
+qps \- Qt toolkit based process monitor
+.SH SYNOPSIS
+.B qps
+[
+.I options
+]
+.SH DESCRIPTION
+.PP
+.B qps
+is a monitor that displays the status of the processes currently in existence,
+much like
+.B top(1)
+or
+.B ps(1).
+The user interface uses the Qt toolkit, and most operations should be
+fairly intuitive.
+.PP
+The process list is sorted by the highlighted field (if old style tables are
+used, the title is underlined).
+Click on another title to change; click again to reverse the sorting
+order.
+.PP
+Left-clicking on a process selects or deselects it. Shift-click to select
+multiple processes.
+.PP
+The right mouse button pops up a context menu, which duplicates some
+functions from the main menu for convenience.
+.PP
+To change the time-sharing priority of the selected processes, type the new
+priority in the
+.I Renice...
+dialog. The new nice value should be in the range -20 to 20; 0 is the
+default. A larger number means that the process gets less CPU time.
+Only the super-user may decrease the nice value.
+.PP
+The
+.I Change Scheduling...
+dialog allows the super-user to change the scheduling policy of the
+selected processes (using the Posix.1b real-time extensions present in
+the Linux 2.0.x kernels). Normal processes are set to SCHED_OTHER and
+have static priority 0; (soft) real-time processes have the policy
+SCHED_FIFO or SCHED_RR and a static priority in the range of 1 to 99. (See
+sched_setscheduler(2).)
+.PP
+By default, the process display updates every 5 seconds. To change, type the
+new update period in the
+.I Update Period...
+dialog. The units min, s and ms may be used (if none, seconds are
+assumed). You can force an update by pressing the space bar or
+clicking the
+.I Update
+button.
+.B qps
+will consume a lot of CPU time if the update period is short or zero.
+.PP
+The USER field shows the real user ID. If the effective user ID of a
+process is different from its real user ID, a plus sign (+) is appended to
+the user name; if it is the super-user, an asterisk (*) is appended.
+.PP
+The load, CPU, memory and swap displays in the status bar can be
+toggled between graphic and text representations by clicking on them,
+or by settings in the
+.I Preferences...
+dialog. The load numbers shown are the number of jobs in the run queue
+averaged over 1, 5 and 15 minutes.
+.PP
+.B qps
+may consume a lot of CPU time with short update periods. If iconified, however,
+.B qps
+will use very little CPU.
+.PP
+.B qps
+uses the file /etc/psdevtab for mapping device numbers to tty names. This
+file is usually created by ps(1) from the procps suite when run as root. If it
+doesn't exist or is unreadable, the /dev directory will be scanned instead.
+.PP
+For displaying the WCHAN field as symbols, the kernel symbol file
+System.map is needed.
+.B qps
+will search for it in the following locations:
+.PP
+.nf
+	/boot/System.map-RELEASE
+	/boot/System.map
+	/lib/modules/RELEASE/System.map
+	/usr/src/linux/System.map
+.fi
+.PP
+where RELEASE is the kernel release number, for instance "2.0.29". If the
+System.map file isn't found or unreadable, hexadecimal addresses will be
+displayed instead. The prefixes "sys_" and "do_" are stripped from the
+symbols before they are displayed.
+.PP
+The
+.I Socket Info
+menu item opens a list of TCP and UDP sockets in use by the selected
+processes. Double-clicking on a process has the same effect. Only the
+super-user may view the socket list of processes with a different owner.
+If
+.I Host Name Lookup
+is checked in the
+.I Preferences
+dialog, a host name lookup will be done for each IP address. This may cause
+an occasional freeze, at least before everything has been cached.
+.PP
+.SH KEYBOARD ACCELERATORS
+(valid in the main and socket windows)
+.TP
+.I "Meta-W"
+Close the active window.
+.TP
+.I "Q, Meta-Q"
+Quit
+.B qps.
+.TP
+.I "Space"
+Force an update of the displayed tables.
+.TP
+.I "Control-Z"
+Iconify
+.B qps.
+.SH OPTIONS
+.TP
+.RI \-display \ display
+sets the X display (default is $DISPLAY)
+.TP
+.RI \-geometry \ geometry
+sets the geometry of the main window of qps
+.TP
+.RI \-background \ color
+sets the default background color and an application palette (light and dark
+shades are calculated).
+.TP
+.RI \-foreground \ color
+sets the default foreground color
+.TP
+.RI \-name \ name
+sets the application name
+.TP
+.RI \-title \ title
+sets the application title (caption).
+.TP
+.RI \-style \ style
+sets the application GUI style. Possible values are
+.I motif
+and
+.I windows.
+(
+.B qps
+is tuned for the
+.I motif
+style; other styles may or may not look well.)
+.TP
+.RI \-version
+prints the version of
+.B qps
+and the Qt library, and exits.
+.PP
+.SH AUTHOR
+.PP
+Mattias Engdegard (f91-men@nada.kth.se)
+.SH LICENSE
+.B qps
+is free software and may be redistributed under certain conditions. See the
+GNU General Public License for details.
+.SH FILES
+.br
+.DT
+.ta \w'$HOME/.qps-settings\ \ \ 'u
+/proc	kernel information pseudo-filesystem
+.br
+$HOME/.qps-settings	saved settings between invocations
+.br
+/etc/services	port number to service name mapping
+.br
+/etc/psdevtab	device number to tty name mapping
+.br
+System.map	kernel symbol map for WCHAN
+.br
+.SH SEE ALSO
+ps(1), top(1), kill(1), free(1), renice(8), proc(5), sched_setscheduler(2)
+.SH BUGS
+qps is too big and too slow.
+
+The %CPU number isn't accurate at very short update intervals due to
+timer granularity.
+
+The WCHAN field isn't correct if a process sleeps in a location outside
+those in System.map (for instance, in a kernel module). In these cases,
+the last entry in System.map will be showed (something like _end).
+
+qps doesn't handle more than one process with the same PID.  This
+can occur when using CLONE_PID with the clone() system call.
+
+qps only looks nice with 75dpi fonts, since too many aspects of the geometry
+are hard-coded.
+
+Host name lookup should be done asynchronously by a background process,
+instead of freezing the entire application.
+

@@ -1,0 +1,309 @@
+1998-12-05  Alex Zepeda  <garbanzo@hooked.net>
+
+	* README: Updated to "require" Qt 1.41, marked the uninstalling
+	process as depreciated, and clarified the debugging statement.
+
+1998-12-04  Alex Zepeda  <garbanzo@hooked.net>
+
+	* README: Adjusted the configure switch descriptions so they make more
+	sense, are more accurate, and look nicer.
+
+1998-12-02  Alex Zepeda  <garbanzo@hooked.net>
+
+	* Makefile.cvs: Tweaked this a bit so it looks somewhat prettier
+	and gives some more useful instructions.  This is somewhat similar
+	to the Makfile.cvs that kfte uses.
+
+1998-11-23  Alex Zepeda  <garbanzo@hooked.net>
+
+	* Makefile.cvs: Use admin/automoc.
+
+1998-11-18  Alex Zepeda  <garbanzo@hooked.net>
+
+	* README: Adjusted the grammar, and I also added a see also to the PAM
+	documentation.  Also, I documented the configure "extensions".  Of
+	course I make the glaring assumption people actually read this crap.
+
+	* README.pam: Added a minor mention about PAM and FreeBSD (yay!), also
+	"adjusted" the grammar a bit so it makes more sense.
+
+1998-07-27  Stephan Kulow  <coolo@Acrion.kulow.hl.eunet.de>
+
+	* acinclude.m4.in: fixed some things in the MOC test
+
+	* acinclude.m4.in: fixed this damn msgfmt test
+
+1998-06-02  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: ignore msgfmt, if not GNU gettext
+
+1998-05-28  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: fixed KDE_CHECK_STL. Checks for HP and SGI type
+
+	* acinclude.m4.in: embraced every variable with "" to make 
+	it consistent
+
+	* acinclude.m4.in: various fixes for the koffice checks 
+	(mico, ministl and python)
+
+1998-05-16  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: don't use KDE_CHECK_QT_DIRECT, when 
+	--with-qt-libs are given
+
+1998-04-21  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: cool, I found the trick to suppress the ls 
+	errors
+
+1998-04-20  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: rewrote the qt checking test, since it
+	didn't work under FreeBSD, since it relied on the .so link.
+	The new version is a little bit buggy, but I need some testing
+	to make it perfect
+
+	* acinclude.m4.in: fixed the side effects of the PAM test 
+
+1998-04-18  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: hopefully fixed the PAM test (I rewrote it)
+
+1998-04-16  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: extended the getsockname test inspired 
+	by a patch by Martin Baulig
+
+	* configure.in: added test for utmp file 
+
+	* acinclude.m4.in: made --without-pam default
+	
+
+1998-04-06  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: don't test compiling, linking, running in
+	one step. This proved to be too dangerous for my mail box.
+	
+1998-03-21  Stephan Kulow  <coolo@kde.org>
+
+	* libtool.m4.in: created some new macros to work around this 
+	ugly (because long) help of configure --enable-shared/static
+
+1998-03-05  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: set language to C++ before trying the ksize_t 
+	test
+
+	* configure.in: sorted the Makefile entries alphabeticly (and all 
+	together: we love xemacs! we love xemacs! ;)
+	
+	* configure.in: added sk 
+
+	* acinclude.m4.in: substitute x_libraries to fix the empty -rpath
+	
+1998-03-03  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: add a rpath for every shared library, that is 
+	linked too (especially X11 libraries)
+	
+Tue Feb 24 22:04:59 1998  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: added kde_sounddir and set kde_minidir to
+	kde_icondir/mini to break not too much
+
+Sun Feb 15 18:25:50 1998  Stephan Kulow  <coolo@kde.org>
+
+	* configure.in: added bugfix by Bob Miller <kbob@engr.sgi.com>
+	(correct reset of IFS)
+	
+Wed Feb 11 00:53:11 1998  Stephan Kulow  <coolo@kde.org>
+
+	* configure.in: made shadow under Linux default, since the
+	binaries will work also under non-shadow systems. The only problem 
+	left is PAM, so I disabled shadow in case, PAM is present
+
+Tue Feb 10 16:46:32 1998  Stephan Kulow  <coolo@kde.org>
+
+	* configure.in: added test for nice to find out, if the option
+	-nice works for the screensavers
+
+	* acinclude.m4.in: port to LynxOS. For this I moved all library
+	search routines in KDE_MISC_TESTS, so I don't need to write this
+	in every package
+
+	* README: some grammar fixes
+
+	* acinclude.m4.in: search for the libs in the exec_prefix, when
+	it's present
+	
+Sun Feb  8 14:07:23 1998  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: updated all packages
+
+	* libtool.m4.in: applied patch for libtool.m4.in to show the
+	correct default for shared and static
+	
+
+Sat Feb  7 10:56:00 1998  Stephan Kulow  <coolo@kde.org>
+
+	* configure.in: good news - KDE is relocatable again.
+
+	* libtool.m4.in: updated to latest libtool 1.0i
+
+Fri Feb  6 21:26:51 1998  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: added a AC_PROVIDE for AC_PROG_CC and
+	AC_PROG_CPP to KDE_CHECK_COMPILERS
+
+Thu Feb  5 16:27:47 1998  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: put $QTDIR/bin before /usr/bin in the path to
+	look for moc. I don't know why, but I got a report, that configure
+	found /usr/bin/moc under Solaris
+
+Fri Jan 30 15:47:50 1998  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: export LIBRARY_PATH after reset to the saved
+	value
+	
+	* acinclude.m4.in: unset the LIBRARY_PATH to get a relieable
+	result when trying to find, if Qt compiles without -L
+
+Sat Jan 24 00:45:52 1998  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: fixed another bug in AC_PATH_KDE
+
+Thu Jan 22 14:46:15 1998  Stephan Kulow  <coolo@kde.org>
+
+	* configure.in: fixed an ugly bug in AC_BASE_PATH_KDE
+
+	* kappfinder/kappfinder.in: let kappfinder create by configure to
+	allow the use of the kde_ paths
+
+Wed Jan 21 22:19:35 1998  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in: - added a install_root prefix to all paths, if
+	set, to enable package managers to move the whole installation at once
+	- added --with-install-root to set the install_root prefix
+
+Tue Jan 20 22:41:04 1998  Stephan Kulow  <coolo@kde.org>
+
+	* configure.in: added NOOPT_CXXFLAGS to allow kioslave to be
+	compiled without -O2
+
+Mon Jan 19 21:55:21 1998  Stephan Kulow  <coolo@kde.org>
+
+	* configure.in: some little fixes for the Makefiles
+
+	* acinclude.m4.in: --prefix will no longer override the search for 
+	libraries. If they are present somewhere, they are used (through
+	the methodes in KApplication)
+
+Mon Jan 12 00:30:36 1998  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in fixed an ugly bug, that accoured, when
+	qt_libraries is not set (empty/equals X11/not necessary)
+	
+	* acinclude.m4.in moved the remove of the files after the error
+	detection 
+	
+
+Sun Jan 11 17:27:53 1998  Stephan Kulow  <coolo@kde.org>
+
+	* acinclude.m4.in added a new macro KDE_CHECK_QT_DIRECT to unset
+	the Qt library path, if a Qt program compiles without them
+		
+	* acinclude.m4.in added a return value in the CREATE_KFSSTND
+	macro. Perhaps this has caused the problems
+
+Sat Jan 10 17:40:44 1998  Stephan Kulow  <coolo@kde.org>
+
+	* ChangeLog started to maintain a ChangeLog file again
+	* acinclude.m4.in the AC_CREATE_KFSSTND to get better debug output
+	to find the problem
+	
+
+Old logs, Stephan Kulow made:
+	
+0.1 : first steps with libkde
+0.2 : first release with libkde, khtmlw, kdehelp, acli, kwm, kpanel
+0.3 : added kfm and bugfixes
+0.4 : updated khtmlw, kdehelp, kwm, changed install in all subdirs
+0.5 : support libtool (chooseable shared libs)
+0.6 : split libkde in kdecore and kdeui 
+0.6.1 : Bugfixes
+0.7 : added code from Janos Farkas (configure)
+    : added @{kde,qt}_{includes,libraries}@
+0.7.1: Bugfixes
+0.7.2: Bugfixes
+0.7.3: added @all_includes@ and @all_libraries@
+       replaced all incompatible flags like $(CC) and -DHAVE_UNISTD_H
+0.7.4: changed support for libkde (back in it's own)
+       added kpat
+       updated kpanel, kwm, kghostview
+0.8: removed a bug in kghostview
+	lifted installation process of several apps
+	splitt kdebase into kdelibs and kdeapps	
+	updated khtmlw, kfm and kdehelp
+	added kcalc and kpaint
+	updated kdisplay
+	added kscreensaver
+	added --enable-kscreensaver
+	added --enable-debug (and @CXXFLAGS@ to all Makefile.ins)
+	updated kwm to 0.4.7
+	added make uninstall to every app
+	added kvt
+	added khexdit
+	added .kdelnk for kmines, kedit, ktetris
+	put kwm, kfind's .kdelnk in the right directories
+	replaced --enable-kscreensaver by --disable-kscreensaver
+	updated kpanel to 0.15
+	some bugfixes (thanks Marco)
+	some bugfixes (thanks Martin)
+	changed acinclude.m4, because aclocal won't
+	updated kwm to 0.4.8 (patched it again for Qt-1.2)
+	updated kvt to 0.13 (patch from Matthias)
+	patched kvt and kwm
+	updated kwm to 0.5.0
+	updated kvt for 0.14 (again and again :-)
+	updated kview to 0.10
+	updated kfm to 0.6.3
+ 	patched kscreensaver for FreeBSD (thanks Marc)
+0.9: updated kdisplay to 0.5.3 
+	added klogout
+	patches from Matthias
+	updated kfm to 0.6.4
+	updated kghostview to 0.4
+	added QTINC and QTLIB
+	updated kdehelp to 0.4.11
+	patched kfm to support ktoolbar
+	updated kedit to kedit+
+	added kfontmanager 0.2.1
+0.9.1: changed kpaint's make style
+	bugfixing
+	updated kmines to 0.6.5
+	updated ktetris to 0.2.4
+	changed to Makefiles to depend on Makefile.in
+	changed the Makefiles to let install depend on all
+	added kjots-0.2.2
+	updated kjots-0.2.3
+	updated kfm to 0.6.6
+	updated kjots-0.2.4
+	updated kpaint-0.2
+	updated kedit to 0.5
+	updated kfontmanager to 0.2.2
+	updated kfm to 0.6.7
+	updated ktetris to 0.2.5
+	updated kjots to 0.2.5
+0.10: added HAVE_SQRTL
+	added HAVE_CRYPT_H
+	updated kfind
+	updated kfm to kfm-0.8.1
+	re-introduced automake to kdebase
+	bugfixes for the configure.in
+	added XPM, GL and PAM tests to configure
+	added morph3d to kscreensavers
+	updated kfind to 0.3.2
+	added some patches for SGI
+... lost the time to maintain a Changelog ;)

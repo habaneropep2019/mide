@@ -1,0 +1,4 @@
+#!/usr/bin/perl -ni
+
+s/new\(".+?"\)/new/ixg;
+print;

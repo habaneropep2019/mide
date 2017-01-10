@@ -1,0 +1,721 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Yu-Ting Kuo <Beta2000@yahoo.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+# CDDBSetupData.cpp:44
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "CDDB 主目錄"
+
+# CDDBSetupData.cpp:62
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "將 CDDB 的資料送到:"
+
+# CDDBSetupData.cpp:82
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "CDDB 伺服器:"
+
+# CDDBSetupData.cpp:90
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "更新"
+
+# CDDBSetupData.cpp:108
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "允許\遠端的 CDDB"
+
+# CDDBSetupData.cpp:116
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "內定"
+
+# CDDBSetupData.cpp:133
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "用 HTTP 來連線到 CDDB"
+
+# CDDialog.cpp:55
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "CD 資料庫編輯器"
+
+# CDDialog.cpp:200
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"總共播放時間:\n"
+"%02d:%02d:%02d"
+
+# CDDialog.cpp:202
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"總共時間:\n"
+" %02d:%02d"
+
+# CDDialog.cpp:244
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "用這個編輯器來為此曲加上說明"
+
+# CDDialog.cpp:269
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "用這個編輯器來輸入標題"
+
+# CDDialog.cpp:415 CDDialog.cpp:544
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "請選擇一個類別或按『取消』"
+
+# CDDialog.cpp:416
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "這張 CD 是屬於哪一個類別的?"
+
+# CDDialog.cpp:445
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "提供新的 CDDB 資料:\n"
+
+# CDDialog.cpp:457
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"Could not pipe contents into:\n"
+" %s"
+
+# CDDialog.cpp:545
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "您要把這項 CDDB 資料存到哪一項類別中?"
+
+# CDDialog.cpp:595
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"無法寫入檔案:\n"
+"%s\n"
+"請檢查您的存取權限且類別目錄也存在。"
+
+# CDDialog.cpp:600
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "Kscd 錯誤"
+
+# CDDialog.cpp:759 CDDialog.cpp:774 CDDialog.cpp:788 CDDialog.cpp:810
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "無效的記錄"
+
+# CDDialog.cpp:760
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"這張唱片的作者/標題沒有填寫完整。\n"
+"請重新輸入。"
+
+# CDDialog.cpp:775
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"這張唱片的作者/標題沒有填寫正確。請依照『作者/標題』的格式輸入。\n"
+"例: 劉天華/二胡十大名曲\n"
+
+# CDDialog.cpp:789 CDDialog.cpp:811
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"曲名不能全部空白。\n"
+"請更正錯誤後再繼續。"
+
+# CDDialog.cpp:821
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "程式內部錯誤"
+
+# CDDialog.cpp:822
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"程式錯誤... 請將此訊息告知作者。"
+
+# CDDialog.cpp:851
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "無效的播放清單\n"
+
+# CDDialogData.cpp:74
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "載入"
+
+# CDDialogData.cpp:87
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "播放清單編輯器"
+
+# CDDialogData.cpp:93
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "編輯曲名"
+
+# CDDialogData.cpp:99
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "唱片作者/標題"
+
+# CDDialogData.cpp:105
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "曲別  / 長度 / 曲名 "
+
+# CDDialogData.cpp:111 CDDialogData.cpp:117
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "Ext 資訊"
+
+# CDDialogData.cpp:133
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "唱片 ID"
+
+# CDDialogData.cpp:145
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "上載"
+
+# configdlg.cpp:61
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "設定 kscd 選項"
+
+# configdlg.cpp:68
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "LED 顏色:"
+
+# configdlg.cpp:82
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "背景顏色:"
+
+# configdlg.cpp:101
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "CDROM 裝置:"
+
+# configdlg.cpp:118
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Unix 中信件的指令:"
+
+# configdlg.cpp:126
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "WWW 瀏覽器"
+
+# configdlg.cpp:129
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "用 kfm 來當瀏覽器"
+
+# configdlg.cpp:136
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "使用自定的瀏覽器:"
+
+# configdlg.cpp:148
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "顯示提示"
+
+# configdlg.cpp:154
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "允許\ KPanel 自動排列"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr ""
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr ""
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr ""
+
+# kscd.cpp:796
+#: configdlg.cpp:190
+#, fuzzy
+msgid "Eject on Finish"
+msgstr "退出中"
+
+# docking.cpp:72 kscd.cpp:507
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "播放/暫停"
+
+# kscd.cpp:511
+#: docking.cpp:75
+#, fuzzy
+msgid "Forward"
+msgstr "向後 30 秒"
+
+# docking.cpp:75
+#: docking.cpp:76
+msgid "Backward"
+msgstr "迴轉"
+
+# docking.cpp:76
+#: docking.cpp:77
+msgid "Next"
+msgstr "下一首"
+
+# docking.cpp:77
+#: docking.cpp:78
+msgid "Previous"
+msgstr "前一首"
+
+# docking.cpp:78
+#: docking.cpp:79
+msgid "Eject"
+msgstr "退出"
+
+# docking.cpp:175
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "最小化"
+
+# inexact.cpp:54
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr "無法找到完全相符的資料。請從以下的清單中選取正確的 CD 。"
+
+# inexact.cpp:57
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "請選擇一個唱片標題或按取消"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr ""
+
+# kscd.cpp:1569 kscd.cpp:1604
+#: kscd.cpp:236
+#, fuzzy
+msgid "Error connecting to server."
+msgstr "找不到符合的 CDDB 資料"
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr ""
+
+# kscd.cpp:1625
+#: kscd.cpp:242
+#, fuzzy
+msgid "Connection timed out."
+msgstr "搜尋 CDDB 超過時間限制。"
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr ""
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+
+# kscd.cpp:328
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "Vol: --"
+
+# kscd.cpp:473
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Performances"
+
+# kscd.cpp:476
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "Purchases"
+
+# kscd.cpp:483
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Magic"
+
+# kscd.cpp:509
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "循環 CD"
+
+# kscd.cpp:510
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "選取歌曲"
+
+# kscd.cpp:511
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "向後 30 秒"
+
+# kscd.cpp:512
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "向前 30 秒"
+
+# kscd.cpp:513
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "下一首"
+
+# kscd.cpp:514
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "前一首"
+
+# kscd.cpp:515
+#: kscd.cpp:570
+#, fuzzy
+msgid "Quit Kscd"
+msgstr "離開 Kscd"
+
+# kscd.cpp:516
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "循環時間顯示"
+
+# kscd.cpp:517
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "設定 Kscd"
+
+# kscd.cpp:518
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "退出 CD"
+
+# kscd.cpp:519
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "網路上的演奏家"
+
+# kscd.cpp:520
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "亂數播放"
+
+# kscd.cpp:521
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "CDDB 對話盒"
+
+# kscd.cpp:522
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "CD 音量控制"
+
+# kscd.cpp:573 kscd.cpp:610 kscd.cpp:1118
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "播放中"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr ""
+
+# kscd.cpp:602 kscd.cpp:1151
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "暫停"
+
+# kscd.cpp:607 kscd.cpp:818 kscd.cpp:1114
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "亂數播放"
+
+# kscd.cpp:615
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Strange...."
+
+# kscd.cpp:632
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "停止"
+
+# kscd.cpp:784 kscd.cpp:1116
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "循環"
+
+# kscd.cpp:796
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "退出中"
+
+# kscd.cpp:869
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "kscd 設定"
+
+# kscd.cpp:885
+#: kscd.cpp:1008
+#, fuzzy
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"kscd  contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+
+# kscd.cpp:897
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+
+# kscd.cpp:901
+#: kscd.cpp:1025
+#, fuzzy
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr ""
+
+# kscd.cpp:947
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Kscd 選項"
+
+# kscd.cpp:948
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Magic"
+
+# kscd.cpp:1029 kscd.cpp:1822
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "音量: %02d%%"
+
+# kscd.cpp:1067
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"CDROM 讀取錯誤。\n"
+"請確定您有權限讀取:\n"
+"%s"
+
+# kscd.cpp:1159
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "就緒"
+
+# kscd.cpp:1191
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "已退出"
+
+# kscd.cpp:1447
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "無法取得 CDDB 伺服器的列表。"
+
+# kscd.cpp:1569 kscd.cpp:1604
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "找不到符合的 CDDB 資料"
+
+# kscd.cpp:1569 kscd.cpp:1604
+#: kscd.cpp:1834 kscd.cpp:1844
+#, fuzzy
+msgid "Error getting CDDB entry."
+msgstr "找不到符合的 CDDB 資料"
+
+# kscd.cpp:1625
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "搜尋 CDDB 超過時間限制。"
+
+# kscd.cpp:1797
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "Tra Rem"
+
+# kscd.cpp:1801
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Tot Sec"
+
+# kscd.cpp:1805
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Tot Rem"
+
+# kscd.cpp:1810
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "Tra Sec"
+
+# kscd.cpp:1935
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "無法啟動 kscdmagic."
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+
+# CDDBSetupData.cpp:44
+#: kscd.cpp:2368
+#, fuzzy
+msgid "Enter the local CDDB base Directory"
+msgstr "CDDB 主目錄"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr ""
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr ""
+
+# kscd.cpp:515
+#: mgconfdlg.cpp:52
+#, fuzzy
+msgid "Magic Kscd"
+msgstr "離開 Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr ""
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr ""
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr ""
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr ""
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr ""
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr ""
+
+# kscd.cpp:515
+#, fuzzy
+#~ msgid "Dock Kscd"
+#~ msgstr "離開 Kscd"
+
+# kscd.cpp:578 kscd.cpp:1126 kscd.cpp:1164
+#~ msgid "Track %02d"
+#~ msgstr "第 %02d 首"
+
+# docking.cpp:73 kscd.cpp:508
+#~ msgid "Stop"
+#~ msgstr "停止"
+
+# docking.cpp:81 docking.cpp:177
+#~ msgid "Restore"
+#~ msgstr "還原"

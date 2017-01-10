@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 1998.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KPAT\n"
+"POT-Creation-Date: 1999-02-02 01:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: cardmaps.cpp:63
+msgid "please wait, loading cards..."
+msgstr "odota hetki, lataan kortteja..."
+
+#: cardmaps.cpp:67
+msgid "KPat - a Solitaire game"
+msgstr "KPat - pasianssi"
+
+#: cardmaps.cpp:105
+#, c-format
+msgid "kpat: PANIC, cannot load card pixmap \"%s\"\n"
+msgstr "kpat: PANIIKKI, en saa ladattua kortin kuvaa \"%s\"\n"
+
+#: cardmaps.cpp:205
+#, c-format
+msgid "KPAT: access to invalid card %d, %d\n"
+msgstr "KPAT: viittaus virheelliseen korttiin %d, %d\n"
+
+#: computation.cpp:98
+msgid "Easy 4"
+msgstr "Helppo 4"
+
+#: computation.cpp:99
+msgid "Easy 3"
+msgstr "Helppo 3"
+
+#: computation.cpp:100
+msgid "Easy 2"
+msgstr "Helppo 2"
+
+#: computation.cpp:101
+msgid "Easy 1"
+msgstr "Helppo 1"
+
+#: computation.cpp:102
+msgid "Normal"
+msgstr "Normaali"
+
+#: computation.cpp:103
+msgid "Hard 1"
+msgstr "Vaikea 1"
+
+#: computation.cpp:104
+msgid "Hard 2"
+msgstr "Vaikea 2"
+
+#: computation.cpp:105
+msgid "Hard 3"
+msgstr "Vaikea 3"
+
+#: computation.cpp:106
+msgid "Hard 4"
+msgstr "Vaikea 4"
+
+#: computation.cpp:107
+msgid "Hard 5"
+msgstr "Vaikea 5"
+
+#: klondike.cpp:67
+msgid "Easy rules"
+msgstr "Helpot säännöt"
+
+#: klondike.cpp:68
+msgid "Hard rules"
+msgstr "Vaikeat säännöt"
+
+#: klondike.cpp:94
+msgid ""
+"This will end the current game\n"
+"Are you sure you want to do this?"
+msgstr ""
+"Tämä lopettaa nykyisen pelin\n"
+"Oletko varma että haluat lopettaa?"
+
+#: grandf.cpp:35
+msgid "Try to move card:"
+msgstr "Yritä siirtää korttia:"
+
+#: grandf.cpp:114 mod3.cpp:57
+msgid "Redeal"
+msgstr "Uudelleenjaa"
+
+#: grandf.cpp:148
+msgid "Hint"
+msgstr "Vihje"
+
+#: grandf.cpp:175
+msgid "Only 3 deals allowed"
+msgstr "Vain 3 jakoa sallittu"
+
+#: ten.cpp:40
+msgid "Full Auto"
+msgstr "Täysin automaattinen"
+
+#: pwidget.cpp:96
+msgid "&Restart game"
+msgstr "&Aloita alusta"
+
+#: pwidget.cpp:100
+msgid "&Klondike"
+msgstr "&Klondyke"
+
+#: pwidget.cpp:101 pwidget.cpp:277
+msgid "MicroSolitaire"
+msgstr "MikroPasianssi"
+
+#: pwidget.cpp:102 pwidget.cpp:281
+msgid "Calculation"
+msgstr "Laskenta"
+
+#: pwidget.cpp:103
+msgid "Napoleon's Tomb"
+msgstr "Napoleonin hauta"
+
+#: pwidget.cpp:104 pwidget.cpp:285
+msgid "The Idiot"
+msgstr "Idiootti"
+
+#: pwidget.cpp:105 pwidget.cpp:269
+msgid "Grandfather"
+msgstr "Isoisä"
+
+#: pwidget.cpp:106 pwidget.cpp:257
+msgid "Ten"
+msgstr "Kymmenen"
+
+#: pwidget.cpp:107 pwidget.cpp:261
+msgid "Mod3"
+msgstr "Mod3"
+
+#: pwidget.cpp:108 pwidget.cpp:265
+msgid "Freecell"
+msgstr "Vapaa paikka"
+
+#: pwidget.cpp:110
+msgid "Choose new game"
+msgstr "Valitse uusi peli"
+
+#: pwidget.cpp:116
+msgid "KDE"
+msgstr "KDE"
+
+#: pwidget.cpp:117
+msgid "Classic blue"
+msgstr "Klassinen sininen"
+
+#: pwidget.cpp:118
+msgid "Classic red"
+msgstr "Klassinen punainen"
+
+#: pwidget.cpp:119
+msgid "Technical"
+msgstr "Tekninen"
+
+#: pwidget.cpp:120
+msgid "Card backside"
+msgstr "Kortin takapuoli"
+
+#: pwidget.cpp:121
+msgid "Animation on startup"
+msgstr "Animaatio alussa"
+
+#: pwidget.cpp:126
+msgid "Patience"
+msgstr "Pasianssi"
+
+#: pwidget.cpp:128
+msgid ""
+"\n"
+"\n"
+"by Paul Olav Tvetei\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"tehnyt Paul Olav Tvetei\n"
+"\n"
+
+#: pwidget.cpp:129
+msgid "Additional work done by:\n"
+msgstr "Lisätyötä tehnyt:\n"
+
+#: pwidget.cpp:273
+msgid "Klondike"
+msgstr "Klondyke"
+
+#: pwidget.cpp:289
+msgid "Napoleons Tomb"
+msgstr "Napoleonin hauta"
+
+#: pwidget.cpp:294
+#, c-format
+msgid "kpat: unimplemented game type %d\n"
+msgstr "kpat: toteuttamaton pelin tyyppi %d\n"
+
+#: pwidget.cpp:344
+msgid "Could not load background image!"
+msgstr "En voinut ladata taustakuvaa!"
+
+#: mod3.cpp:137
+msgid "No more cards"
+msgstr "Ei enää kortteja"

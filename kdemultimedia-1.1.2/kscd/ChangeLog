@@ -1,0 +1,233 @@
+1999-04-13  Harri Porten  <porten@kde.org>
+
+	* converted some C++ comments in C file files
+	* incorporated patches from Dag Nygren <dag@newtech.fi>:
+	* plat_scor5.c: support for SCO Openserver 5.0 
+	* cdrom.c: added SONY CDU-76S
+
+1999-03-17  Harri Porten  <porten@kde.org>
+
+	* kscd.cpp: applied patch from Petter Reinholdtsen <pere@hungry.com>
+	(bug#302) that prevents a segfault if cddb directory is invalid.
+	* CDDialog.cpp: fixed length of last title (bug#304).
+
+1999-02-18  Harri Porten  <porten@kde.org>
+
+	* cddb.cpp: work around snprintf() for non-GNUish systems
+	* cdrom.c, cdinfo.c, plat_linux.c: removed forward declaration of
+	strchr(). It broke compilation with recent glibc and wasn't used
+	anyway (bug #666 and #671). 
+
+1998-12-22  Sam Maloney <thufir@illogic.ml.org>
+
+	* Added to last commit, as so the 'autodock' checkbox would be
+	disabled when 'docking' was unchecked, and vice versa.
+
+1998-12-20  Sam Maloney <thufir@illogic.ml.org>
+
+	* Just simple bugfixes to make more stable like...:
+	* Fixed so that when one turns on or off 'enable docking' it
+	adds/removes the dockwidget in the panel (instead of before one
+	would have to restart kscd).
+	* Fixed so that if one turned off 'enable docking' but still had
+	'autodock enabled' on, then it would NOT dock (and remove the
+	widget).
+
+1998-12-12  Christian Esken  <esken@kde.org>
+
+	* Tweaked docking a bit more. Under certain circumstances,
+	dock_widget->dock() correctly does not get called at the start
+	of the program. So if you docked, the window just vanished.	
+	I added a call to dock_widget->dock()  at "appropiate" places.
+
+1998-11-28  Bernd Wuebben  <wuebben@petit.cornell.edu>
+
+	* kscd.cpp: resinstated old look and behavior
+	Sam, we should talk ...
+
+1998-11-20 Sam Maloney <thufir@illogic.ml.org>
+
+	* Fixed bug/"missing thing" were it would just crash when loading
+	  up if it couldn't find the cddb base dir. Now it will use
+	  InexactDialog to prompt the user for the directory. (cancel button
+	  will force it to get from remote). 
+	* NOTE: Im just going fix the inexact dialog box so it can be
+	  single line input, (for the cddb dialog), then ill probably
+	  release 1.2.4, unless anyone has any objections. (to lazy to fix
+	  tonite)
+
+1998-11-11 Sam Maloney <thufir@illogic.ml.org>
+
+	* Fixed bug with debug flag being messed up when docking
+	  (incorrect extern statement)
+	* Worked around a wierd bug thing with docking. (consult
+	  docking.cpp in toggleState() )
+
+1998-11-08 Robert Bossecker <Robert.Bossecker@fresenius.de>
+
+	* Fixed problem with editing EXT info, where if you edited track
+	  x, it would (stupidly) modify x-1. If editing track 1, it would
+	  modify the extinfo for the Title.
+
+1998-11-06 Sam Maloney <thufir@illogic.ml.org>
+
+	* Made smtpMailer a global widget, so it could mail in background. 
+	* Fixed problem were after submitting a record via SMTP, and
+	  having an error, if one tried to exit Kscd, it would close all
+	  widgets, but be stuck in while loop.
+	* Added error/success reporting of SMTP submissions.
+	* Fixed problem with Local Cache, where it would ignore leading
+	  0's in record file names, thus not finding them when looking for 
+	  that record.
+	* Added a timeout when waiting for server interaction.
+
+1998-11-04  Sam Maloney  <thufir@illogic.ml.org>
+
+	* Fixed problem with 'dock' button, when AutoDock is turned on.
+	* Implimented SMTP code, so Kscd no longer requires sendmail/unix
+	  mail program(s) to submit CDDB records.
+	* Added VERY requested feature, of having it retract the tray if
+	  its ejected, when one hits the eject button.
+
+1998-10-14 Alexei Dets   <dets@services.ru>
+
+       * Fixed CD Database Editor close handling.
+
+1998-10-13  Sam Maloney  <thufir@illogic.ml.org>
+
+	* Fixed compilation problems some compilers will notice related to
+ 	last CDDB setup modifs
+	
+1998-10-09  Sam Maloney  <thufir@illogic.ml.org>
+
+	* Added "play on tray close" feature
+	* Many little fixes
+	
+1998-09-23  Sam Maloney  <thufir@illogic.ml.org>
+	
+	* Fixed submission of CDDB records, where it would not include a
+	  'PLAYORDER=' at the bottom of the email.
+	* Switched it over from using 'mail -s <subject> < record', to
+	  using sendmail. (currently adding SMTP suppport, so it uses
+	  no external program for this)
+
+1998-09-21  Sam Maloney  <thufir@illogic.ml.org>
+	
+	* Added automatic storing of CDDB records downloaded from CDDB
+	  server to local harddrive.
+	* Fixed bug with routine connecting signals, over and over again,
+	  causing routines to be called too many time, annoying CDDB
+	  server admins. Happens when a new CDDB (remote) request was
+	  issued.
+	* Added snazyness of having the pulldown track selection box
+	  display ("%02d: %s", tracknumber, trackname) for each item,
+	  instead of just the number. 
+
+Fri May 15 18:28:40 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* docking.cpp: fixed up the docking behaviour
+
+	* Some Layout improvements. -- still not 100% satisfied with the
+	  way the config dialogs look now.
+
+1998-05-12  Vadim Zaliva  <lord@crocodile.org>
+
+	* Options dialog made wider
+	* In CDDB setup dialog added list of email serves. 
+	* Getting SMTP servers from list of servers.
+
+1998-04-29  Vadim Zaliva  <lord@crocodile.org>
+
+	* Corrected problem with not saving "UnixMailCommand" option 
+	  which was disabling CDDB submissions.
+
+1998-04-28  Vadim Zaliva  <lord@crocodile.org>
+
+	* Corrected bug in cddb with current CD information disappearing 
+	  after some time of playing.
+
+1998-04-26  Vadim Zaliva  <lord@crocodile.org>
+
+	* Removed potetial concurency problem in CDDB connection procedure.
+	* Added support for protocol level 3 in CDDB connections.
+
+1998-04-17  Vadim Zaliva  <lord@crocodile.org>
+
+	* User and domain name now calculated once, not per each request.
+
+1998-04-16  Vadim Zaliva  <lord@crocodile.org>
+	
+	* Tested with Netscape Proxy
+	
+	* Tested with Squid-1.1.18 HTTP proxy
+	* Tested with HTTP proxy, w/o HTTP proxy, using CDDBP and HTTP.
+	* Small bug in parsing corrected.
+
+	* State automata and parsing reimplemented
+	* Works over HTTP with and without HTTP proxy.
+	* Tested with M>Wall HTTP proxy
+	
+	* Implemented more sophisticated HTTP encoding for parameters.
+	* kscd.cpp reformated.
+
+	* CDDB over HTTP works, w/o proxy now. Proxy support to be implemeted to-morrow.
+
+1998-04-15  Vadim Zaliva  <lord@crocodile.org>
+
+	* cddb.h, cddb.cpp reformated
+	* tested to work with and without HTTP proxy
+	* tested with squid 1.1.18
+	
+	* Added one more default server, with HTTP protocol
+	* Code for getting servers list via HTTP done and works.
+	* Changed 'cddb' object allocation.
+	* (this is intermediate commit, HTTP only partialy works)
+
+1998-04-14  Vadim Zaliva  <lord@crocodile.org>
+
+	* GUI added for setting HTTP proxy to access CDDB. 
+	* Config options added for HTTP proxy stuff
+	* most includes from cddb.h moved to cddb.cpp,kscd.cpp
+	* new version #1.1.1
+
+Tue Apr 14 05:17:36 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* layout corrections for kscd magic dialog 
+
+Sat Jan 17 21:36:27 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* Enabled CDDB support. A couple of clean ups and fixes.
+
+Tue Jan 13 03:24:49 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* applied Sebestyen Zoltan <szoli@digo.inf.elte.hu> FreeBSD patch.
+
+Thu Jan  1 19:08:22 1998  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* Monster commit: Commit cddb and web integration additions
+	  Let the games begin!
+
+Fri Dec 26 13:48:56 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* headerfile changes in plat_bsd.c
+
+Sat Oct 25 11:13:40 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* fixed the segfault problem when you didn't have acess permissions
+	  to the cdrom device
+
+Thu Aug 14 19:49:18 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* added irix support
+        * added KSCD configuration script
+
+Wed Jun 25 01:24:39 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* added Marc van Kempen's FreeBSD patches
+	  He reports also strange behaviour of kscd when reloading a CD
+	  Is this with the code or with his CD drive ? 
+
+	* Set proper defines that should allow for a smooth compile 
+	  on a SUN/ SUN SOLARIS
+	
+

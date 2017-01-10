@@ -1,0 +1,73 @@
+
+FAQ answers:
+
+*** Why KSirc:
+*** Do I need KDE and the QT libraries installed?!?!?
+*** Why use QT/KDE instead of GTK or other toolkits?
+*** Filters in under 25 words:
+*** How do I Query Someone? (private convertation)
+*** What are all the keystrokes?
+*** How does nick completion work? 
+
+*** Why KSirc:
+
+There's already a lot of good irc clients, so why write another one?
+In my opinion X lacked a flexible and script-able irc client.  While
+"xterm -e irc" works well, it doesn't take advantage of a graphical
+environment.  On the other hand, most X irc clients focus on the
+graphical part and never really develop the scripting side very well.
+KSirc tries to solve these two problems.  It uses sirc and as such
+provides VERY powerful perl scripting while providing the X interface.
+
+*** Do I need KDE and the QT libraries installed?!?!?
+
+No.
+
+Static binary versions are installed and work fine.  If you want to
+compile the source though, you'll need QT and KDE installed.
+
+
+*** Why use QT/KDE instead of GTK or other toolkits?
+
+At the time KSirc started QT/KDE provided the best possible graphical
+interface and programming environment in my opinion.  GTK while
+potentially a useful toolkit in the future doesn't provide a stable
+working environment at the moment.  Plus I don't like what GTK looks
+like.
+
+I once started writing a client in Xforms, but it wasn't flexible
+enough and turned me against most GUI C programming.
+
+
+*** Filters in under 25 words:
+
+Filters allow you to modify, mangle and redirect irc messages.  You
+can send messages which mean a certain format or style into different
+windows (for oper's filter out NickServ kill's etc)
+
+README.filters contains a detailed explanation and examples on how to
+use filters.
+
+*** How do I Query Someone? (private convertation)
+
+/join <nick>
+
+or 
+
+/join =<nick> for a dcc chat, make sure to open the dcc chat first
+
+*** What are all the keystrokes?
+
+Ctrl-Enter - go backwards through nicks that have messaged you
+Ctrl-Shift-Enter - goes forwards
+
+Shft-PageUp/PageDown - scroll forwards and backwards
+
+*** How does nick completion work?
+
+part-nick: at the beginning of the line is expanded to nick:
+
+::part-nick anywhere in the line is expanded to nick.  If part-nick is
+not found the :: is removed and part-nick remains.
+
+

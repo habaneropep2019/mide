@@ -1,0 +1,62 @@
+		qps --- Qt based process status monitor
+
+qps is an X11/Qt version of top or ps.  To compile, you'll need the Qt
+libraries (get them from http://www.troll.no or ftp.troll.no).  A Linux
+binary, dynamically linked to Qt 1.1, is included.  Qt is free for free
+software, and qps is free (see below).
+
+qps is for Linux only, since there is no good standard way of getting
+process status information.  It uses the /proc file system and need not
+be run as root.  Tell me if you are interested in porting it to another
+OS; it shouldn't be too hard.  I have only tried it on the Intel
+architecture; tell me if it runs on other Linuxes as well.  It would be
+especially fun if it works on 64-bit machines (Alpha etc).
+
+Due to my limited understanding of Linux internals, some of the
+information gathered by qps might be wrong, useless or misleading.  For
+instance, the RSS field shows the 'rss' value from /proc/XX/stat, but
+ps(1) sometimes shows the 'resident' value from /proc/XX/statm, which
+might be different.  I might also have overlooked vital information
+that should be displayed.  Please tell me what is missing.  Also, I
+don't know how well qps scales on a large (possibly SMP) system with
+thousands of processes and users.
+
+qps is distributed under the GNU General Public License, and comes
+with no warranty whatsoever. See the file COPYING for details.
+See the file README.QT for more information about Qt and its license.
+
+If you like qps, drop me a mail at f91-men@nada.kth.se.  Feel free to
+send any questions, comments, bug reports etc as well, no matter how
+trivial --- qps is quite a trivial utility itself.
+
+INSTALLING
+
+0. Make sure you have Qt 1.1 or later installed. If not, get them from
+   ftp.troll.no. 
+
+1. A dynamically linked binary for Linux/x86 is included; if it works,
+   jump to step 4.
+
+2. Edit the Makefile to reflect your installation of the Qt library,
+   include files and meta object compiler (moc).
+
+3. make.
+
+4. Put the qps binary and the qps.1 man page somewhere. Note that qps
+   need not (and should not) be setuid root.
+
+5. Enjoy.
+
+WIDGETS AND THE USER INTERFACE
+
+Qt tries to emulate the Motif look and feel on X11 platforms, so qps
+looks a lot like a Motif application.  However, I don't like some of
+the Motif controls; in particular, I find the checkboxes and checked
+menu items visually non-obvious, so I replaced them with my own
+controls.  The process table itself is slightly Mac-inspired, but
+should be intuitive to use.
+
+If you (in spite of my coding style) find anything useful, feel free
+to rip any code out for use in your own projects, as long as it is
+GPL:ed as well.
+

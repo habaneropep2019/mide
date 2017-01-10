@@ -1,0 +1,13 @@
+DefaultName localtoast
+
+Server {
+	Port 8080
+	Control {
+		Alias /
+		Location /tmp/mathopd-1.1/examples
+		Types {
+			text/html { html }
+			text/plain { * }
+		}
+	}
+}

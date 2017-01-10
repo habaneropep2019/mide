@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Le manuel de ktalkd: Introduction</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, ktalkd, talk, otalk, ntalk, discussion, avis">
+<META NAME="description" CONTENT="Le manuel de KTalkD">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-2.html">Page suivante</A>
+Page précédente<A HREF="ktalkd.html#toc1">Table des matières</A>
+</P>
+<H3><A NAME="s1">1. Introduction</A></H3>
+
+<P>
+<P><CODE>ktalkd</CODE> est un démon de discussion amélioré - le programme qui traite les demandes de discussion
+entrantes, les annonce et vous permet d'y répondre à l'aide d'un client de discussion.
+GLOSSAIRE : Dans ces pages, vous êtes désigné comme l' "appelé" lorsqu'une personne désire vous parler.
+<P>
+<P><CODE>ktalkd</CODE> a les caractéristiques suivantes :
+<P>
+<DL>
+<DT><B>Indépendance face à KDE</B><DD><P>KDE or not KDE, that is the question. :) Plus sérieusement, cela signifie que <CODE>ktalkd</CODE> peut être compilé
+avec ou sans les bibliothèques KDE. Pour l'utiliser sans KDE, la phase de compilation détecte si X ou Qt ou
+KDE ne sont pas installés, ou vous pouvez imposer la création d'un démon non-KDE grâce à l'option de
+configuration '--without-X'.
+<P>
+<DT><B>Répondeur téléphonique</B><DD><P>Si l'appelé n'est pas connecté ('login'), ou ne répond pas après le second avis, un répondeur automatique
+est lancé, prend le message, et l'envoie sous forme de mél à l'appelé.
+<P>
+<DT><B>Son</B><DD><P>Si c'est souhaité, un son est joué en même temps que l'avis est affiché.
+<P>
+<DT><B>Avis X</B><DD><P>Si ktalkd est compilé alors que KDE est installé, ktalkd utilisera <B>ktalkdlg</B>, un dialogue KDE,
+pour afficher l'avis. Si <B>ktalk</B> tourne, c'est à lui qu'on demandera de faire
+l'annonce. (Nouveau depuis la version 0.8.8).
+<P>
+<DT><B>Avis multi-écrans</B><DD><P>Si vous êtes connecté à distance (par exemple via une commande <CODE>"export DISPLAY=..."</CODE>), l'avis
+X sera également fait sur cet écran. Répondez sur celui que vous voulez !
+Si vous êtes également connecté sur un terminal de texte, et si vous n'utilisez PAS xterm
+(restriction interne), alors vous verrez également une annonce textuelle, si toutefois vous
+êtes en train d'utiliser le terminal de texte au moment de l'annonce.
+<P>
+<DT><B>Transmission   <I>(Nouveau depuis la version 0.8.0)</I></B><DD><P>Vous pouvez définir une transmission vers un autre usager même sur une autre machine hôte si vous êtes
+absent. Il y a trois méthodes différentes pour faire passer l'information. Rapportez-vous à la section
+'Usage' de cette documentation.
+<P>
+<DT><B>Configuration</B><DD><P>Si le logiciel est compilé pour KDE, il lit sa configuration dans le fichier de configuration KDE,
+celui qui s'applique à l'ensemble du site ($KDEDIR/share/config/ktalkdrc) ou celui qui est spécifique
+à l'utilisateur, dans son répertoire maison. Le fichier général doit être édité à la main par l'administrateur,
+mais il y a à présent un dialogue de configuration pour celui de l'utilisateur.
+Il s'appelle <B>kcmktalkd</B> et peut être trouvé dans le centre de contrôle KDE après avoir installé
+<CODE>ktalkd</CODE>. Sur les systèmes non-KDE, <CODE>ktalkd</CODE> lit /etc/talkd.conf.
+<P>
+<DT><B>Internationalisation</B><DD><P>Sous KDE, l'avis sera fait dans votre langue à condition de l'avoir réglé dans les menus
+de KDE et que quelqu'un ait traduit <B>ktalkdlg</B> dans votre langue.Il en va de même pour le
+dialogue de configuration, <B>kcmktalkd</B>.
+<P>
+<DT><B>Support de otalk et de ntalk   <I>(Nouveau depuis la version 0.8.1)</I></B><DD><P>ktalkd supporte à présent les deux protocoles, même pour les transmissions. Il en va de même de ktalk.
+</DL>
+<P>
+<P>J'espère que vous aurez du plair à utiliser ce démon de discussion,
+<P>David Faure
+<P>
+<A HREF="mailto:faure@kde.org">faure@kde.org</A><P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-2.html">Page suivante</A>
+Page précédente<A HREF="ktalkd.html#toc1">Table des matières</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

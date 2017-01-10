@@ -1,0 +1,184 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Richard Allen <ra@hp.is>, 1999
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmktalkd\n"
+"POT-Creation-Date: 1998-12-12 15:20+0100\n"
+"PO-Revision-Date: 1999-03-26 16:40+0000\n"
+"Last-Translator: Bjarni R. Einarsson <bre@netverjar.is>\n"
+"Language-Team: is <kde-isl@mmedia.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: ISO-8859-1\n"
+
+#: main.cpp:58
+msgid "&Announcement"
+msgstr "&Tilkynning"
+
+#: main.cpp:61
+msgid "Ans&wering machine"
+msgstr "Svarþ&jónusta"
+
+#: main.cpp:64
+msgid "&Forward"
+msgstr "&Framsending"
+
+#: main.cpp:70
+msgid "usage: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+msgstr "notkun: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+
+#: main.cpp:111
+msgid "KTalkd Configuration"
+msgstr "Stillingar KTalkd"
+
+#: soundpage.cpp:46
+msgid "&Announcement program"
+msgstr "Tilkynning&arforrit"
+
+#: soundpage.cpp:53
+msgid "&Talk client"
+msgstr "&Talforrit"
+
+#: soundpage.cpp:57
+msgid "&Play sound"
+msgstr "S&pila hljóð"
+
+#: soundpage.cpp:59
+msgid "&Sound File"
+msgstr "Hljóð&skrá"
+
+#: soundpage.cpp:61
+msgid "Additional WAV files can be dropped onto the sound list."
+msgstr "Sleppa má fleiri WAV skrám á listann."
+
+#: soundpage.cpp:76
+msgid "&Test"
+msgstr "&Prófa"
+
+#: soundpage.cpp:156
+msgid "Unsupported URL"
+msgstr "Óstudd slóð"
+
+#: soundpage.cpp:157
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE System Sound "
+"Module"
+msgstr "Því miður styður KDE hljóðkerfið ekki þessar tegundir slóða "
+
+#: soundpage.cpp:164
+#, c-format
+msgid ""
+"Sorry, but \n"
+"%s\n"
+"does not seem to be a WAV--file."
+msgstr "%s virðist ekki vera WAV skrá"
+
+#: soundpage.cpp:167
+msgid "Improper File Extension"
+msgstr "Óviðeigandi skráarending"
+
+#: soundpage.cpp:175
+#, c-format
+msgid ""
+"The file\n"
+"%s\n"
+"is already in the list"
+msgstr ""
+"Skráin\n"
+"%s\n"
+"er þegar á listanum"
+
+#: soundpage.cpp:179
+msgid "File Already in List"
+msgstr "Skráin er þegar á listanum"
+
+#: answmachpage.cpp:39
+msgid "&Activate answering machine"
+msgstr "&Virkja svarþjónustu"
+
+#: answmachpage.cpp:44
+msgid "&Mail address"
+msgstr "&Netfang þitt"
+
+#: answmachpage.cpp:51
+msgid "Mail sub&ject"
+msgstr "Titill bré&fa"
+
+#: answmachpage.cpp:54
+#, c-format
+msgid "Use %s for the caller name"
+msgstr "'%s' táknar nafn þess sem hringir"
+
+#: answmachpage.cpp:60
+msgid "Mail &first line"
+msgstr "&Fyrsta lína"
+
+#: answmachpage.cpp:64
+#, c-format
+msgid "Use first %s for caller name, and second %s for caller hostname"
+msgstr "Fyrra '%s' táknar nafn notandans og það seinna '%s' táknar vélina hans"
+
+#: answmachpage.cpp:68
+msgid "&Receive a mail even if no message left"
+msgstr "&Senda póst, þó engin skilaboð séu eftir"
+
+#: answmachpage.cpp:74
+msgid "&Banner displayed on answering machine startup :"
+msgstr "Kveðja svarþjónustunnar:"
+
+#: answmachpage.cpp:83
+msgid ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+msgstr ""
+"Móttakandi samtalsins er ekki við í augnablikinu, vinsamlegast\n"
+"skildu eftir skilaboð sem verða send með tölvupósti.\n"
+"Skrifaðu bara skilaboðin og hættu svo eins og venjulega."
+
+#: answmachpage.cpp:171 answmachpage.cpp:189
+#, c-format
+msgid "Message from %s"
+msgstr "Skilaboð frá %s"
+
+#: answmachpage.cpp:172 answmachpage.cpp:191
+#, c-format
+msgid "Message left in the answering machine, by %s@%s"
+msgstr "Skilaboð frá %s@%s á símsvara"
+
+#: forwmachpage.cpp:34
+msgid "Activate &forward"
+msgstr "Virkja framsendingu"
+
+#: forwmachpage.cpp:39
+msgid "&Destination (user or user@host)"
+msgstr "&Móttakandi (notandi eða notandi@lén)"
+
+#: forwmachpage.cpp:49
+msgid "Forward &method"
+msgstr "Framsendingaraðferð"
+
+#: forwmachpage.cpp:54
+msgid ""
+"FWA : Forward announcement only. Direct connection. Not recommended.\n"
+"FWR : Forward all requests, changing info when necessary. Direct "
+"connection.\n"
+"FWT : Forward all requests and take the talk. No direct connection.\n"
+"\n"
+"Recommended use : FWT it you want to use it behind a firewall (and if "
+"ktalkd\n"
+"can access both networks), and FWR otherwise.\n"
+"\n"
+"See Help for further explanations.\n"
+msgstr ""
+"FWA : Framsenda aðeins tilkynninguna. Bein tenging. (Ekki ráðlegt.)\n"
+"FWR : Framsendi allar boðanir, breyti uppl. eftir þörfum.  Bein tenging.\n"
+"FWT : Framsendi allar boðanir og tek á móti tali. Engin bein leið.\n"
+"\n"
+"Mælt er með: FWT ef þú ert á bakvið eldvegg (og ef ktalkd hefur\n"
+"aðgang að báðum netunum), annars er mælt með FWR.\n"
+"\n"
+"Sjá hjálp fyrir frekari útskýringar.\n"

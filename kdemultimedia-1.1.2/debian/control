@@ -1,0 +1,16 @@
+Source: kdemultimedia
+Section: contrib/sound
+Priority: extra
+Maintainer: Stephan Kulow <coolo@kde.org>
+Standards-Version: 2.5.1
+
+Package: kdemultimedia
+Architecture: any
+Depends: ${shlibs:Depends}, cddb
+Suggests: kdebase
+Description: KDE multimedia package
+ This is a collection of kde programs related to multimedia :
+  kmix - a mixer,
+  kscd - a cd program,
+  kmedia - a music player
+  kmid, kmidi - midi player

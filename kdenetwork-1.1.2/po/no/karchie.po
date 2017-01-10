@@ -1,0 +1,606 @@
+# Norwegian translations for KDE Network, karchie
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Hans Petter Bieker <zerium@webindex.no>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE NETWORK/karchie\n"
+"POT-Creation-Date: 1999-03-05 02:18+0100\n"
+"PO-Revision-Date: 1998-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Hans Petter Bieker <zerium@webindex.no>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: KAMenu.cpp:75
+msgid "O&pen in editor"
+msgstr "Åpne i &redigerer"
+
+#: KAMenu.cpp:76 KAView.cpp:154
+msgid "&Open Dir"
+msgstr "Å&pne katalog"
+
+#: KAMenu.cpp:77 KAView.cpp:155
+msgid "&Download..."
+msgstr "Last &ned..."
+
+#: KAMenu.cpp:80
+msgid "&Load List..."
+msgstr "L&ast liste..."
+
+#: KAMenu.cpp:81
+msgid "&Save List..."
+msgstr "&Lagre liste..."
+
+#: KAMenu.cpp:82
+msgid "Expor&t List..."
+msgstr "Ekspor&tliste..."
+
+#: KAMenu.cpp:84
+msgid "&Exit"
+msgstr "&Avslutt"
+
+#: KAMenu.cpp:100
+msgid "&Exact"
+msgstr "&Pakk ut"
+
+#: KAMenu.cpp:101
+msgid "&Substring"
+msgstr "&Understreng"
+
+#: KAMenu.cpp:102
+msgid "Substring &case insensitive"
+msgstr "Understreng sørrelseufølsom"
+
+#: KAMenu.cpp:103
+msgid "&Regular expression"
+msgstr "&Regulært uttrykk"
+
+#: KAMenu.cpp:104 KASettings.cpp:422
+msgid "Exact, then substring"
+msgstr "Pakk ut, så understreng"
+
+#: KAMenu.cpp:105
+msgid "Exact, then substring case ins."
+msgstr "Pakk ut, så understreng sørrelseufølsom"
+
+#: KAMenu.cpp:106 KASettings.cpp:424
+msgid "Exact, then regular expression"
+msgstr "Pakk ut, så rekulært uttrykk"
+
+#: KAMenu.cpp:114
+msgid "n&ormal"
+msgstr "n&ormal"
+
+#: KAMenu.cpp:115
+msgid "&nice"
+msgstr "&fin"
+
+#: KAMenu.cpp:116
+msgid "&very nice"
+msgstr "&veldig fin"
+
+#: KAMenu.cpp:117
+msgid "&even more nice"
+msgstr "&enda mer fin"
+
+#: KAMenu.cpp:118
+msgid "n&icest"
+msgstr "f&inest"
+
+#: KAMenu.cpp:125
+msgid "Show &File discription"
+msgstr "Vis &filbeskrivelse"
+
+#: KAMenu.cpp:128
+msgid "Archie&server"
+msgstr "Archie-&tjener"
+
+#: KAMenu.cpp:129
+msgid "Search&mode"
+msgstr "Søke&modus"
+
+#: KAMenu.cpp:130
+msgid "&Nicelevel"
+msgstr "&Finnivå"
+
+#: KAMenu.cpp:132
+msgid "&All..."
+msgstr "&Alle.."
+
+#: KAMenu.cpp:139
+msgid "for &Filename"
+msgstr "for &filnavn"
+
+#: KAMenu.cpp:140
+msgid "for &Path/Location"
+msgstr "for &sti/sted"
+
+#: KAMenu.cpp:141
+msgid "for &Hostname"
+msgstr "for &vert"
+
+#: KAMenu.cpp:143
+msgid "&STOP"
+msgstr "&STOPP"
+
+#: KAMenu.cpp:160
+msgid "by &Hostname"
+msgstr "med &vert"
+
+#: KAMenu.cpp:161
+msgid "by &Domain"
+msgstr "med &domene"
+
+#: KAMenu.cpp:162
+msgid "by D&ate"
+msgstr "med d&ato"
+
+#: KAMenu.cpp:163
+msgid "by &Filesize"
+msgstr "med &filstørrelse"
+
+#: KAMenu.cpp:169
+msgid "KArchie ver. "
+msgstr "Archie ver. "
+
+#: KAMenu.cpp:171
+msgid ""
+"\n"
+"\n"
+"by Jörg Habenicht <j.habenicht@europemail.com>\n"
+"\n"
+"based on the work of:\n"
+"  - archie prospero client by\n"
+"      Clifford Neuman and\n"
+"      Brendan Kehoe (brendan@cygnus.com)\n"
+"  - and xarchie by\n"
+"      George Ferguson (ferguson@cs.rochester.edu)\n"
+"(See README files and copyright.h).\n"
+"My own code is based on the GPL"
+msgstr ""
+"\n"
+"\n"
+"av Jörg Habenicht <j.habenicht@europemail.com>\n"
+"\n"
+"basert på arbeid fra:\n"
+"  - archie prospero-klient av\n"
+"      Clifford Neuman and\n"
+"      Brendan Kehoe (brendan@cygnus.com)\n"
+"  - og xarchie av\n"
+"      George Ferguson (ferguson@cs.rochester.edu)\n"
+"(Se README-filene og copyright.h).\n"
+"Min egen kode er basert på GPL"
+
+#: KAMenu.cpp:184
+msgid "&Settings"
+msgstr "&Innstillinger"
+
+#: KAMenu.cpp:185
+msgid "&Query"
+msgstr "&Spørring"
+
+#: KAMenu.cpp:186
+msgid "S&ort"
+msgstr "S&orter"
+
+#: KAQuery.cpp:180
+msgid "Query setup"
+msgstr "Spør etter oppsett"
+
+#: KAQuery.cpp:289
+msgid "Query aborted"
+msgstr "Spørring avbrutt"
+
+#: KAQuery.cpp:296 KArchie.cpp:793
+msgid "Success"
+msgstr "Vellykket"
+
+#: KAQuery.cpp:297
+msgid "Port unknown"
+msgstr "Ukjent port "
+
+#: KAQuery.cpp:298
+msgid "Can't open local UDP port"
+msgstr "Kan ikke åpne lokal UDP-port"
+
+#: KAQuery.cpp:299
+msgid "Can't resolve hostname"
+msgstr "Kan ikke løse vertsnavn"
+
+#: KAQuery.cpp:300
+msgid "Didn't send entire message"
+msgstr "Sendte ikke hele meldingen"
+
+#: KAQuery.cpp:301
+msgid "Timed out"
+msgstr "Tiden gikk ut"
+
+#: KAQuery.cpp:302
+msgid "Recvfrom failed"
+msgstr "Recvfrom mislyktes"
+
+#: KAQuery.cpp:303
+msgid "Reply: sendto failed"
+msgstr "Svar: sendto mislyktes"
+
+#: KAQuery.cpp:304
+msgid "Link exists with same name"
+msgstr "Lenk eksisterende med samme navn"
+
+#: KAQuery.cpp:306
+msgid "Link already exists"
+msgstr "Leng eksisterer allerede"
+
+#: KAQuery.cpp:307
+msgid "Replacing existing link"
+msgstr "Ersatt eksisterende lenke"
+
+#: KAQuery.cpp:308
+msgid "Prv entry not in dir->ulinks"
+msgstr "Forrige oppføring ikke i dir->ulinks"
+
+#: KAQuery.cpp:309
+msgid "Temporary not found"
+msgstr "Midlertidig ikke funnet"
+
+#: KAQuery.cpp:310
+msgid "Namespace not closed w/ object::"
+msgstr "Navnemellomrom ikke lukket m/objekt::"
+
+#: KAQuery.cpp:311
+msgid "No alias for namespace NS#:"
+msgstr "Intet alias for navnemellomrom NS#:"
+
+#: KAQuery.cpp:312
+msgid "Specified namespace not found"
+msgstr "Oppgitt navnemellomrom ikke funnet"
+
+#: KAQuery.cpp:313
+msgid "File access method not supported"
+msgstr "Filtilgangsmetode ikke støttet"
+
+#: KAQuery.cpp:314
+msgid "Delete cached copy on close"
+msgstr "Slett melomlagringskopi ved avslutt"
+
+#: KAQuery.cpp:315
+msgid "Unable to retrieve file"
+msgstr "Kunne ikke motta fil"
+
+#: KAQuery.cpp:317
+msgid "Directory already exists"
+msgstr "Katalog eksisterer allerede"
+
+#: KAQuery.cpp:319 KAQuery.cpp:337
+msgid "Link with name already exists"
+msgstr "Lenke med navn eksisterer allerede"
+
+#: KAQuery.cpp:320
+msgid "Not a virtual system"
+msgstr "Ikke et virtuellt system"
+
+#: KAQuery.cpp:321
+msgid "Can't find directory"
+msgstr "Kan ikke finne katalog"
+
+#: KAQuery.cpp:322
+msgid "Not a directory name"
+msgstr "Ikke et katalognavn"
+
+#: KAQuery.cpp:323
+msgid "Object not found"
+msgstr "Objekt ikke funnet"
+
+#: KAQuery.cpp:324
+msgid "Object has moved"
+msgstr "Objekt har flyttet"
+
+#: KAQuery.cpp:325
+msgid "File not found"
+msgstr "Fil ikke funent"
+
+#: KAQuery.cpp:326
+msgid "Directory in path not found"
+msgstr "Katalog i sti ikke funnet"
+
+#: KAQuery.cpp:327
+msgid "Symbolic links nested too deep"
+msgstr "Symbolsk lenke fulgt for dypt"
+
+#: KAQuery.cpp:328
+msgid "Can't read environment"
+msgstr "Kunne ikke lese miljø"
+
+#: KAQuery.cpp:329
+msgid "Can't traverse an external file"
+msgstr "Kan ikke krysse ekstern fil"
+
+#: KAQuery.cpp:330
+msgid "Exceeded max forward depth"
+msgstr "Støtet på maks antall vidresendinger"
+
+#: KAQuery.cpp:331
+msgid "Authentication required"
+msgstr "Autentisering kreves"
+
+#: KAQuery.cpp:332
+msgid "Not authorized"
+msgstr "Ikke bemyndiget"
+
+#: KAQuery.cpp:333
+msgid "Not found"
+msgstr "Ikke funnet"
+
+#: KAQuery.cpp:334
+msgid "Bad version number"
+msgstr "Feil versjonsnummer"
+
+#: KAQuery.cpp:335
+msgid "Not a directory"
+msgstr "Ikke en katalog"
+
+#: KAQuery.cpp:336
+msgid "Identical link already exists"
+msgstr "Identisk lenke eksisterer allerede"
+
+#: KAQuery.cpp:338
+msgid "Command not implemented on server"
+msgstr "Kommando ikke søttet på tjener"
+
+#: KAQuery.cpp:339
+msgid "Bad format for response"
+msgstr "Feil format i respons"
+
+#: KAQuery.cpp:340
+msgid "Protocol error"
+msgstr "Protokollfeil"
+
+#: KAQuery.cpp:341
+msgid "Unspecified server failure"
+msgstr "Uventet tjenerfeil"
+
+#: KAQuery.cpp:343
+msgid "Generic Failure"
+msgstr "Generell feil"
+
+#: KAQuery.cpp:347
+msgid "No warning"
+msgstr "Ingen advarsel"
+
+#: KAQuery.cpp:348
+msgid "You are using an old version of this program"
+msgstr "Du bruker en eldre versjon av dette programmet"
+
+#: KAQuery.cpp:349
+msgid "From server: "
+msgstr "Fra tjener: "
+
+#: KAQuery.cpp:351
+msgid "Unrecognized line in response from server"
+msgstr "Ugjenkjennelig linje i svar fra tjener"
+
+#: KAQuery.cpp:409
+msgid "Query running"
+msgstr "Spørring kjører"
+
+#: KAQuery.cpp:453
+msgid "Query finished"
+msgstr "Spørring fullført"
+
+#: KASettings.cpp:59
+msgid "&Host"
+msgstr "&Vert"
+
+#: KASettings.cpp:72
+msgid "&Timeout (seconds)"
+msgstr "&Tidsbegrensning (sekunder)"
+
+#: KASettings.cpp:83
+msgid "Maximal &retries"
+msgstr "Maks f&orskøk"
+
+#: KASettings.cpp:284
+msgid "&Nice Level"
+msgstr "&Hyggelighetsnivå"
+
+#: KASettings.cpp:291
+msgid "max. &Hits"
+msgstr "maks. &treff"
+
+#: KASettings.cpp:418
+msgid "Exact"
+msgstr "Pakk ut"
+
+#: KASettings.cpp:419
+msgid "Substring"
+msgstr "Understreng"
+
+#: KASettings.cpp:420
+msgid "Substring case insensitive"
+msgstr "Understreng sørrelseufølsom"
+
+#: KASettings.cpp:421
+msgid "Regular expression"
+msgstr "Regulært uttrykk"
+
+#: KASettings.cpp:423
+msgid "Exact, then substring case insensitive"
+msgstr "Pakk ut, så understreng sørrelseufølsom"
+
+#: KASettings.cpp:427
+msgid "Normal"
+msgstr "Normal"
+
+#: KASettings.cpp:428
+msgid "Nice"
+msgstr "Hyggelig"
+
+#: KASettings.cpp:429
+msgid "Very nice"
+msgstr "Veldig hyggelig"
+
+#: KASettings.cpp:430
+msgid "Even more nice"
+msgstr "Enda hyggeligere"
+
+#: KASettings.cpp:431
+msgid "Nicest"
+msgstr "Hyggeligst"
+
+#: KASettings.cpp:525
+msgid "KArchie Settings"
+msgstr "KArchie-innstillinger"
+
+#: KASettings.cpp:536
+msgid "Archie server settings"
+msgstr "Archie-tjenerinnstillinger"
+
+#: KASettings.cpp:543
+msgid "Search init"
+msgstr "Søkestart"
+
+#: KASettings.cpp:567
+msgid "Reset"
+msgstr "Nullstill"
+
+#: KAStatusBar.cpp:50
+msgid "    0 hits"
+msgstr "    0 treff"
+
+#: KAStatusBar.cpp:51
+msgid "    0. try"
+msgstr "    0. forsøk"
+
+#: KAStatusBar.cpp:52
+msgid "Host: none                               "
+msgstr "Vert: ingen                              "
+
+#: KAStatusBar.cpp:53
+msgid "Status: ready                        "
+msgstr "Status: klar                         "
+
+#: KAStatusBar.cpp:81
+#, c-format
+msgid "Status: %s"
+msgstr "Status: %s"
+
+#: KAStatusBar.cpp:91
+#, c-format
+msgid "Hosts: %s"
+msgstr "Vert: %s"
+
+#: KAStatusBar.cpp:101
+#, c-format
+msgid "%d hits"
+msgstr "%d treff"
+
+#: KAStatusBar.cpp:111
+#, c-format
+msgid "Progress: %d"
+msgstr "Fremgang: %d"
+
+#: KAStatusBar.cpp:121
+#, c-format
+msgid "%d try."
+msgstr "%d. forsøk."
+
+#: KAView.cpp:66
+msgid "Searchstring, press <ENTER> to start search"
+msgstr "Søkestreng, trykk linjeskift for å starte"
+
+#: KAView.cpp:68
+msgid "Search &Term"
+msgstr "Søke&term"
+
+#: KAView.cpp:134
+msgid "Host"
+msgstr "Vert"
+
+#: KAView.cpp:135
+msgid "Path"
+msgstr "Sti"
+
+#: KAView.cpp:268
+msgid "Host:"
+msgstr "Vert:"
+
+#: KAView.cpp:270
+msgid "Path:"
+msgstr "Sti:"
+
+#: KAView.cpp:272
+msgid "File:"
+msgstr "Fil:"
+
+#: KAView.cpp:274
+msgid "Size:"
+msgstr "Størrelse:"
+
+#: KAView.cpp:276
+msgid "Mode:"
+msgstr "Modus:"
+
+#: KAView.cpp:278
+msgid "Date:"
+msgstr "Dato:"
+
+#: KArchie.cpp:441 KArchie.cpp:483
+#, c-format
+msgid ""
+"Couldn't open \n"
+"\"%s\""
+msgstr ""
+"Kunne ikke åpne \n"
+"\"%s\""
+
+#: KArchie.cpp:446 KArchie.cpp:488
+msgid "KArchie: bad file"
+msgstr "KArchie: dårlig fil"
+
+#: KArchie.cpp:720
+msgid "Malformed url"
+msgstr "Misdannet url"
+
+#: KArchie.cpp:724
+msgid "Maybe bad list entry, please select an other file"
+msgstr "Kanskje feil listeoppføring, vennligst velg en annen fil"
+
+#: KArchie.cpp:725
+msgid "KArchie: bad URL"
+msgstr "KArchie: feil URL"
+
+#: KArchie.cpp:744
+msgid "KArchie: Wrong fileselection"
+msgstr "KArchie: Feil filvalg"
+
+#: KArchie.cpp:745
+msgid "The selected file is not writeable"
+msgstr "Valgte fil er ikke skrivbar"
+
+#: KArchie.cpp:752
+msgid "KArchie: Overwrite file ?"
+msgstr "KArchie: Overskriv fil ?"
+
+#: KArchie.cpp:753
+msgid ""
+"The selected file is not write protected\n"
+"Should it be overwritten ?"
+msgstr ""
+"Den valgte filen er ikke skrivebeskyttet\n"
+"Skal jeg overskrive ?"
+
+#: KArchie.cpp:766
+msgid "KArchie: bad selection"
+msgstr "KArchie: feil valg"
+
+#: KArchie.cpp:767
+msgid ""
+"No file selected !\n"
+"Please select a file in the list of queryresults\n"
+"or do a query."
+msgstr ""
+"Ingen fil valgt !\n"
+"Vennligst velg en fil i listen over spørringsresultater\n"
+"eller gjør en spørring."

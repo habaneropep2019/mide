@@ -1,0 +1,54 @@
+DlgEdit {
+	ClassHeader {ConfAutoUpdate.h}
+	ClassSource {ConfAutoUpdate.cpp}
+	ClassName {ConfAutoUpdate}
+	DataHeader {ConfAutoUpdateData.h}
+	DataSource {ConfAutoUpdateData.cpp}
+	DataName {ConfAutoUpdateData}
+	DataInherited {TRUE}
+		WindowBaseClass {QDialog}
+		IsModal {TRUE}
+		WindowCaption {Configure Auto Update}
+}
+WidgetLayout {
+		Rect {5 100 288 168}
+		Grid {8}
+
+Label {
+		Text {Update frequency in seconds:}
+		Rect {16 24 180 24}
+		Name {Label_1}
+}
+ScrollBar {
+		Orientation {Horizontal}
+		Rect {24 48 160 16}
+		Name {ScrollBar_1}
+		Variable {s_freq}
+}
+LCDNumber {
+		Digits {5}
+		SmallDecimalPoint {FALSE}
+		Mode {Dec}
+		Style {33}
+		Rect {192 32 72 32}
+		Name {LCDNumber_1}
+		Variable {lcd_freq}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Ok}
+		Rect {32 120 80 24}
+		Name {PushButton_1}
+		Variable {b_ok}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		Rect {176 120 80 24}
+		Name {PushButton_2}
+		Variable {b_cancel}
+}}

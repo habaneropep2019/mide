@@ -1,0 +1,194 @@
+5/12/99
+Hey.  I'm the new maintainer.  Please send any bug reports or suggestions to me
+at <dsweet@chaos.umd.edu>.
+
+David Sweet
+
+
+
+
+
+18/3/98
+Mark Donohoe
+Please direct any bug reports to me (donohoe@kde.org).
+
+KGHOSTVIEW 0.7 - Beta release
+
+This is Tim Theisen's Ghostview program ported to the K
+Desktop Environment. Ghostview is used to view PostScript
+documents on Unix X11 systems. It requires Alladin
+Ghostcript to actually perform rendering. KGhostview also
+uses the Qt toolkit.
+
+REQUIREMENTS
+
+1. Alladin ghostscript
+2. Qt 1.3+
+
+INSTALL
+
+1.   ./configure
+2. make
+3. make install
+
+If Ghostview works for you then so should KGhostview.
+However, all VMS support has been removed and it has only
+been tested on Linux.
+
+For printer support on SYSV, SVR4 and USG systems go into print setup and set
+the spool command to "lp", the printer name to your desired printer
+( eg. "lp0" ) and the environment variable name to "LPDEST".
+
+TODO
+
+- Selection, copy bitmap, extract text, print selection as EPS file.
+- Improve PDF support
+- Finalise kdvi and kghostview standard
+- Generally clean code
+
+CHANGES V0.7.1
+
+- Uses automoc
+- Uses kfile
+- Split view control dialog into a page setup and zoom dialog
+- Automatically resizes window after change to document view
+- Changed toolbar
+
+CHANGES V0.7
+
+- Patch from Jake Hamy <jehamby@lightside.com> which incorporates code from
+  Johanes Plass' GV. This adds (1) Compressed file support, (2) PDF support
+  ( Currently limited by ghostscript's poor handling of this format )
+- Fixed major performance bug which caused gs to be repeatedly restarted
+- Improved print dialog
+  - Print to file
+  - Print all, current, marked, or range of pages
+  - Setup spooler command, printer name
+  - Reverse order of printing
+- Much better keyboard support
+- Improved geometry management
+- Improved warning and error dialogs
+
+CHANGES V0.6.3
+
+- Session management
+- Patch from Markus Duda <Duda@physik.rwth-aachen.de> for pagelist.
+	Fixes a problem with documents that have named rather than numbered
+	pages I believe 
+- Imporvements to page list interface
+- Fixed mix up of Magnification and Orientation on View Control dialog
+- Few geometry management fixes
+- New icon
+
+CHANGES V0.6.2
+
+- Style book compliant dialogs - auto-geometry management
+- Few bug fixes
+
+CHANGES V0.6.1
+
+- Style book compliant menu entries and toolbar buttons
+- Interim fix for XError (Bad window parameter) bug - no longer fatal
+- Overrides KApp. signal management
+- Copyrights
+
+CHANGES V0.6
+
+- Page list; page marking and marked page printing
+- Bug fixes
+- Updates for better KDE compliance
+
+CHANGES V0.5
+
+- Network transparent drag and drop
+- Fixed bug which caused page to be made smaller than it should
+- Fixed printing freeze bug
+- Pixmap backing as standard (as opposed to using backing store)
+- Copyright dialog
+- New flag pixmap
+- Configure interpreter dialog
+- New way of framing content area
+- Updated help
+
+CHANGES V0.4
+
+- Autoconf support
+	
+- KKeyconf support
+	- keyconf is nice but we should have a way of setting keybings for the
+	whole desktop too.
+
+- KWidget support
+	- KWidget revised and extended
+		- KToolBar visual changes
+		- KStatusBar class fleshed out
+		- new KMenuBar may be needed later
+		- code clean ups and geometry setting changes. (Not Windows style
+			compatible.)
+			
+- Lots of code reorganisation
+	- Proper encapsulation has made multiple instances possible.
+	- New display method has simplified things considerably. Hopefully no
+		more display problems.
+	- I took some care about intialising data. Hopefully no more start up
+		crashes.
+	
+- Filled out UI
+	- Shows ghostscript messages
+	- Shows document info ( just a start )
+	- Shrink wrap option
+	- Redisplay activated
+	- Last 4 files
+	- New and Close
+	- Go to start and end implimented
+	
+- Full KConfig support
+
+- .kdelnk file
+
+- SGML help template
+	- Follows the handbook style of Netscape help
+	- HTML generated help included nad installed
+	- PS generated help included
+
+CHANGES V0.3.3
+- Repainting bug is hopefully fixed. It shouldn't eat resources when the
+	window is bigger than the page anymore. Please test.
+- Other bug fixes.
+- Kconfig introduced.
+
+CHANGES V0.3.1
+- Bug fixes
+- Changes to make compliant with kdisplay-0.5.1
+	i.e. desktop congfiguration groups have changed
+
+CHANGES V0.3
+- Works with Kdisplay-0.5 for setting color scheme, fonts
+		etc.
+- "Office 97" toolbar for evaluation
+- More sensible help
+- Some improvements to stability
+- Updated Makefile
+
+CHANGES V0.2
+
+- Dialogs - "Go to page", "Print", "View control"
+- Now a KApp
+- Standard Makefile
+- Fits the kde default look
+- Removed last few XtMalloc, XtFree
+- Removed Xmu stuff - Atoms not cached but who cares ?
+- X pixmaps instead of bitmaps for toolbar
+- Fixed high color problem
+- Can hide toolbar and status bar
+- Basic keyboard support
+
+		+ 		zoom in
+		- 		zoom out
+		Ctrl Q	quit
+		Ctrl G	go to
+		Arrow keys and page up, page down.
+		
+	Will use keyconfig eventually.
+	
+

@@ -1,0 +1,938 @@
+1999-04-01  David Faure  <faure@kde.org>
+
+	* kioserver.cpp, kioslave/main.cpp : added "Volume Management" support for
+	Solaris 2.x, patch from Torsten Kasch <tk@Genetik.Uni-Bielefeld.DE>.
+	It's all ifdef'ed with #ifdef HAVE_VOLMGT.
+	> With these patches you can place a Device.kdelnk on your desktop
+	> with device entries like /dev/diskette0, /dev/diskette1,
+	> /dev/dsk/c0t6d0s2 (for SCSI CD-ROM drives at controller 0, SCSI-ID 6)...
+
+1999-03-27  David Faure  <faure@kde.org>
+
+	* bookmark.cpp : Added support for IE favourites. Very straightforward.
+	(syntax is compatible with kdelnks, it's only a different group name)
+	Patch from Sven Dowideit <svenud@ozemail.com.au>, slightly modified.
+
+1999-03-03  David Faure  <faure@kde.org>
+
+	* * : On startup, use kfmlib to know if kfm is already running.
+	Prevents lots of awful bugs due to wrong pid files (#853).
+	I had to do some renaming to achieve that.
+	kfm.h -> kfmw.h and KfmIpc -> KfmServIpc
+
+1999-02-22  Dirk A. Mueller <dmuell@gmx.net>
+
+	* kioslave/http.cpp : User-Agent settings now support pattern matching. 
+	You can use the standard QRegExp wildcard characters, which are
+          ? match any character
+          * matches any sequence of charaters
+         [] matches a defined set of characters
+        Remember that the first-match of all entries will count. 
+
+1999-02-18  David Faure  <faure@kde.org>
+
+	* kioserver.cpp (getDestNameForLink): Completely changed the behaviour.
+	 The old code resulted in a filename like "ftp:filename.ext"
+	 instead of "ftp://host/path/filename.ext"
+	 Used bookmark code for encoding instead.
+
+1999-02-16  David Faure  <faure@kde.org>
+
+	* kfmgui.cpp (showSource): Added option Editor to choose the preferred 
+	editor used by Show Document / Frame source. Defaults to kedit.
+	Idea from Dawit A.
+
+1999-02-01  David Faure  <faure@kde.org>
+
+	* kfm*: Copy/Paste for text (browser mode) as well as URLs (file
+	manager mode). Enabled/Disabled menu items as one would expect.
+	(Initial patch from Dawit A.)
+
+1999-01-19  David Faure  <faure@kde.org>
+
+	* kiojob.cpp: Show 'not implemented' when trying to download a remote 
+	directory or upload a directory to a remote location.
+	
+	* kioserver.cpp: Use DirectoryEntries cache for isDir, if nothing better.
+
+1999-01-18  David Faure  <faure@kde.org>
+
+	* kbind.cpp: Open Properties when left-clicking a mimetype file.
+	
+	* kfmgui.cpp: Reduce bookmark text size if >40. New function in utils.*
+
+1999-01-15  David Faure  <faure@kde.org>
+
+	* kfmgui.cpp: Patch 15 from Michael Reiher :
+	Passes the current path to kfind so that it sets
+	it as default search path
+
+1999-01-14  David Faure  <faure@kde.org>
+
+	* kfmgui.*: Store bHtmlMode, useful to know which mode we're in.
+	Allow Ctrl+Delete for deleting files, improved Ctrl+A handling.
+
+1999-01-13  David Faure  <faure@kde.org>
+
+	* kiojob.cpp: Patch from Waldo Bastian. Now kfm copies/moves
+	symlinks as symlinks in local->local copies. It also checks for
+ 	pipes/sockets/fifo/device files and refuses to copy/move them.
+
+	* kfmman.cpp (openURL): special case for the cache directory :
+	save contents of the cache to index.html before opening the URL.
+
+	* kfmgui.cpp (slotClearCache): notify windows showing the cache.
+
+	* kfmexec.*: Let the job finish, don't stop it after the first dir
+ 	returned. This fixes lots of problems, including opening ftp locations 
+	twice from minicli (this used to sigsegv), only one directory 
+	displayed instead of all of them, ...
+	
+	* *: replaced .data() with .copy() after localkdedir, before +=.
+
+1999-01-11  David Faure  <faure@kde.org>
+
+	* kioslave/ftp.cpp: Follow links on ftp site. Fix found by 
+	Sven Fischer <herpes@kawo2.rwth-aachen.de> (kb1551).
+	I also removed calls to ksprintf (less secure than +=).
+
+	* kioslave/file.cpp (OpenDir): Added a cache to reduce calls to 
+	getpwuid and getgrgid. Improves speed, esp for NIS users (kb1536).
+	Initial patch from Philipp Hullmann <hullmann@nano.uni-hannover.de>.
+
+	* kbind.cpp: Store and use terminal settings (set in applnks) in
+	KMimeBind.
+	* kbind.h: Made findType private and called getMagicMimeType
+	instead. Fixes the text in the status bar, and the hint for root icons.
+
+1999-01-07  David Faure  <faure@kde.org>
+
+	* kioslave/file.cpp (OpenDir): Added redirection if HTML View set and
+ 	opening index.html or .kde.html
+
+1999-01-06  David Faure  <faure@kde.org>
+
+	* kfmprops.*: Commented out the "Working Directory" line edit. It
+	isn't used at all. Thanks to the old kb1297.
+
+	* kioslave/ftp_proxy.cpp: Lots of fixes.
+
+1999-01-04  David Faure  <faure@kde.org>
+
+	* kfmgui.cpp: Fixed Tree View being initialized even if not shown.
+	This speeds up A LOT navigation in kfm !
+	
+	* kfmserver.cpp: Applied patch from Andreas Pour for better magic
+	file creation. (Removes annoying dialog box at startup).
+
+	* kioslave/tar.cpp: Fixed tar protocol support. Uses sscanf
+	instead of strtok. Should work with GNU tar and non-GNU tar, which 
+	have a different date format.
+	
+1999-01-03  David Faure  <faure@kde.org>
+
+	* kfmgui.cpp: Argh, another late bug. When entering a directory in
+	a window, all other windows had out-of-date history menus (and
+	clicking on one item brought you to another item!). Fixed by
+	connecting an AboutToShow for the Go menu to a new method filling
+	the go menu (slotUpdateHistoryMenu), taken out from slotUpdateHistory. 
+
+	* krenamewin.cpp, kiojob.cpp: Made window always modal.
+	The modal argument is used to know whether to call done(x) or emit
+	result(...). Fixes bug introduced by Preston when copying and
+	overwriting destination. Thanks Torsten Rahn for reporting.
+
+1998-12-22  Alex Zepeda  <garbanzo@hooked.net>
+
+	* kioslave/ftp_proxy.cpp: Add proper line termination to user
+	agent string, so reloading should work?
+	* kioslave/http.cpp, http.h: Initial implementation of selectable
+	user agent strings.  Also, make sure a connections are not persistant,
+	as we're HTTP 1.0 compliant only.  For the time being.
+	* config-kfm.h: Make the user-agent string work w/ the very
+	pedantic egcs.
+
+1998-12-21  David Faure  <faure@kde.org>
+
+	* passworddialog.cpp : Added layout management
+	* More patches from Michael Reiher concerning the tree view
+	* .directory for ~/Desktop, copied at kfm startup (Michael Reiher)
+
+1998-12-20  David Faure  <faure@kde.org>
+
+	* kfmman.cpp : Reload doesn't bring to beginning of the page anymore
+	* Lots of bugfixes :
+	 - Fixes in the tree view (Michael Reiher)
+	 - Using KStdAccel in kfm (allows to change key bindings)
+	 - Desktop icon placement in Mac mode fixed
+	 - Fixed setting of SUID and SGID and group at the same time
+	 - Fix Ctrl+A in the URL qlineedit
+	 - Decode URL before showing them (in the title or in the URL qlineedit)
+	 - Fixes concerning mini-icons for directories (thanks to Michael Reiher)
+	 - Removed useless dialog boxes when kfm is started for the first time
+	    except "creating ~/Desktop".
+	 - Allow show/hide '.*' files from Desktop. (Michael Reiher)
+	* Waldo Bastian : 
+	Handle redirect during COPY (used for images/view document source)
+
+1998-12-15  David Faure  <faure@kde.org>
+
+	* main.cpp : Test for KDE release, and copy new Templates it
+	necessary. Patch from Michael Reiher <michael.reiher@gmx.de>
+	* popup.cpp : Use "Name" field from Template files, not "Comment".
+
+1998-12-14  David Faure  <faure@kde.org>
+
+	* Sven Radej added fusion of global & local mimetypes (same for applications) :
+	"Whenever you open global or local mimelnk dir, first local and then global
+	mimelink dir is scanned and all items are shown like they are in your local
+	dir; duplicated entries from global dir are discarded. You can try to delete
+	or move to trash any of them; if they are your local copy they will be
+	deleted, (although you will continue to see global one). If they are not your
+	local copy normal error is issued (Cannot move, bla, bly permission denied).
+	This works for mime *and* applnk directories."
+
+1998-12-13  Waldo Bastian  <bastian@kde.org>
+
+        * Created popup window asking the user what to do with incoming
+        HTTP-cookies.
+
+        * Fixed timezone bug in kcookiejar.cpp (BSD only). 
+
+1998-12-12  David Faure  <faure@kde.org>
+
+	* popup.cpp, popup.h : Created for the KNewMenu class. Moved code
+	from kfmgui.cpp, root.cpp, kfmtree.cpp, kfmman.cpp
+	This improves maintenance (code in one place), binary size (again), and fixes
+	the "new templates not being shown" bug, reported by Jason Boxman <benefits@cybertechs.com>
+
+1998-12-09  David Faure  <faure@kde.org>
+
+	* Removed all the files containing the old 'configure browser'
+	dialog box. Everything is now in kcmkfm.
+	There are now two menu entries : Configure File Manager... and
+	Configure Browser... which call kcmkfm with different options.
+	
+	* kfmgui.cpp, kfmman.*, kfmtree.*:
+	Patch from Michael Reiher <michael.reiher@gmx.de> to use i18n'ed comments
+        instead of filenames in the 'New' menu. Looks a lot better :)
+
+	* kfmman.cpp: Fixed Visual Schnauzer for files with special chars
+	such as "'". Bug reported by Christian Fertig
+	<fertig@informatik.uni-frankfurt.de>.
+	
+	* kfmgui.cpp: Added slotConfigure, which re-reads the
+	configuration and applies it.
+
+1998-12-07  Alex Zepeda  <garbanzo@hooked.net>
+
+	* kbind.cpp: Quashed another "uninitalized" variable.
+
+1998-12-07  David Faure  <faure@kde.org>
+
+	* Delete showConfigUI from kfmclient options. Added configure
+	instead. Will be used to re-read KFM configuration. Still todo.
+	
+1998-12-03  David Faure  <faure@kde.org>
+
+	* kfmgui.cpp : Added Go menu, with up/back/forward/home and the last 10 history URLs.
+
+1998-12-01  Waldo Bastian <bastian@kde.org>
+    
+        * Added HTTP-cookies. They don't get saved and they are always on 
+        and they scream for some additional configuration.
+
+1998-11-29  Alex Zepeda  <garbanzo@hooked.net>
+
+	* kbind.cpp: Sort include headers, and correctly include a file to
+	get MAX_PATH or whatever we were looking for.
+
+1998-11-28  Kurt Granroth <granroth@kde.org>
+
+   * KFM will now use 'KCursor::handCursor()' if the user chooses the
+	  'change cursor over link' option.
+
+1998-11-28  David Faure  <faure@kde.org>
+
+	* Applied and adapted patches from <rjakob@duffy1.franken.de>:
+	- KFM sets working directory when launching an application.
+	- Default mimetype (not tested)
+	- KFM tree view follow mode (add kfm_tree_follow=On in [Settings] in 
+	  your kfmrc to enable it - at the moment). Some repaint problems, 
+	  but works.
+	* Removed fileentry.cpp / fileentry.h, not used (in this directory)
+
+1998-11-26  David Faure  <faure@kde.org>
+
+	* kioslave/file.cpp : Sort links to dirs with dirs. Fixed sorting of dirs themselves.
+
+1998-11-25  David Faure  <faure@kde.org>
+
+	* kfmman.cpp : Added key navigation (mostly in khtmlw, but also a bit in kfm)
+
+1998-11-21 Lars Knoll <knoll@mpi-hd.mpg.de>
+	* added support for url redirections
+	  (<meta http-equiv="refresh" ...>) command
+
+1998-11-19  David Faure  <faure@kde.org>
+
+	* Deleted the Properties instance when finished with it (in slotApply/Cancel)
+	Thanks to Pietro Iglio <iglio@fub.it> for reporting this memory leak. 
+	* Commit Lars Knoll's change to add document encoding selection.
+	
+1998-11-18  David Faure  <faure@kde.org>
+
+	* Moved global option allowURLProps to kfm class
+ 	  (fixes a bug with session management windows)
+	* Enable/disable menu entry in all windows if option is changed in the dialog box.
+
+1998-11-16  David Faure  <faure@kde.org>
+
+	* Improved first page of properties dialogs.
+	
+1998-11-14  David Faure  <faure@kde.org>
+
+	* Patch from Sven Radej 
+	  - Per-URL kfm settings. Saved in .directory if possible, otherwise in kdelnk.
+	* Added check before trying to clear the cache. Fixes a security problem.
+	
+1998-11-14  Cristian Tibirna  <ctibirna@gch.ulaval.ca>
+
+	* layout management for *all* the Browser Configuration dialog
+		tabs - still a problem with KTabCtl layout width.
+	* added "showConfigUI" option to kfmclient.
+
+1998-11-12  Cristian Tibirna  <ctibirna@gch.ulaval.ca>
+
+	* color selection GUI for the root icons (in htmlopts.cpp, root.cpp,
+ 		kfmgui.cpp and so on :-)
+
+1998-11-10  David Faure  <faure@kde.org>
+
+	* Applied, improved and tested patch from Michael Reiher <michael.reiher@gmx.de>
+	   - Fixes bugs with *bars and adds them to session management data.
+	   - Also adds TreeView to SM.
+	* Added layout management for Exec, Binding & Directories properties pages.
+	
+1998-11-09  David Faure  <faure@kde.org>
+
+	* Applied patches from Rene Beutler <rbeutler@g26.ethz.ch>
+	   - Fixes bindings for multiple selection in root window
+	   - Speeds up a little "Select all"
+
+Fri Jul  3 02:21:39 1998  Torben Weis  <weis@localhost>
+
+	* kfmdlg.cpp (slotSelected): Fixed bug in OpenWithDlg.
+
+	* kfmexec.cpp (slotMimeType): Fixed bug with OpenWithDlg
+	  popuing up when opening remote documents that are not HTML
+	  documents, but images for example.
+
+	* kfm.cpp (Kfm): New Function 'slotShutDown'
+
+	* kfmgui.cpp (slotQuit): Adaptions for shutdown stuff.
+
+	* main.cpp (sig_term_handler): Adaptions for shutdown stuff.
+
+	* kfmview.cpp (slotDropEvent): DnD Fix. Dropping icons from
+	  kmail or ksysv do not crash kfm any more.
+
+	* root.cpp (slotDropEvent): DnD Fix. Dropping icons from
+	  kmail or ksysv do not crash kfm any more.
+
+Sat Jun 27 18:11:23 1998 Carsten Pfeiffer <carpdjih@sp.zrz.tu-berlin.de>
+
+	* kfmman.cpp (openPopupMenu): fixed multiple equal entries in 
+	  popupmenu when several files of same mimetype are selected.
+
+Fri Jun 26 17:20:03 1998    <weis@snoopy.rz.uni-frankfurt.de>
+
+	* open-with.cpp (KAppTreeListItem): Fixed seg fault with
+	  empty directory.
+
+	* kfmgui.cpp (slotPannerChanged): Fixed bug with the panner.
+	  If you resize the panner then the menu item will be set
+	  accordingly. 
+
+Sun Jun 21 00:08:32 1998  Torben Weis  <weis@localhost>
+
+	* kioslave/icon.cpp (Open): Fixed little QString bug
+
+	* kfmexec.cpp (slotMimeType): Made it work with the new goodie.
+
+	* root.cpp (slotPopupOpenWith): Made it work with the new goodie.
+
+	* kfmman.cpp (slotMimeType): Made it work with the new goodie.
+
+	* kfmview.cpp (slotPopupOpenWith): Made it work with the new goodie.
+
+	* kfmprops.cpp (BindingPropsPage): Made it work with the changes
+	  in kbind.cpp/h
+
+	* kbind.h (class KMimeBind): Changed internal data structures.
+	  Some cleanups.
+
+	* kfmdlg.cpp (OpenWithDlg): Added a little goodie :-)
+
+	* bookmark.cpp (KBookmark): Removed debug output
+
+	* main.cpp (main): sockets do now have the name
+	  /tmp/kfm_uid_pid_display and /tmp/kio_uid_pid_display.
+	  This solves problems with sockets names used by other
+	  users. This should solve the problem that is sometimes
+	  unable to connect/create is socket.
+
+	* kioslave/main.cpp (main): Uses KApplication instead of
+	  QApplication now.
+
+	* kioslave/icon.cpp (Open): Uses kapp->localkdedir()
+
+Sat Jun 20 22:04:25 1998  Torben Weis  <weis@localhost>
+
+	* bookmark.cpp (scanIntern): You can now link from the bookmarks
+	  to the home directory without seeing infinite recursion.
+	  ( Some people do crazy things )
+
+	* root.cpp (update): Removed all ".kde" dependencies
+
+	* bookmark.cpp (scanIntern): Fixed bug with too many open files/directories
+
+	* main.cpp (main): Uses kapp->localkdedir.
+
+	* bookmark.cpp (scanIntern): Accept only regular files as
+	  bookmarks. Skip fifos, pipes etc.
+
+	* kfmjob.cpp (browse): Reset error flag. Entering an invalid URL
+	  brings up a window. After that you could not open any other
+	  file. This is fixed now.
+
+	* bookmark.cpp (scanIntern): Check wether a file is really a kde
+	  config file
+	
+	* bookmark.cpp (KBookmarkManager): Uses kapp->localkdedir()
+
+Tue Jun 16 16:04:12 1998  Jacek Konieczny <jajcus@zeus.polsl.gliwice.pl>
+
+	* kioslave/http.cpp
+	  Changed error handling - do not return with FAIL, but read the
+	  data anyway. There may be a good explanation what is happening.
+
+	* kioslave/http.h, kioslave/http.cpp
+	  Added some HTTP options: Charset and Language negotiation
+	  and assuming HTTP data as HTML when no Content-Type field.
+
+	* kkfmoptdlg.cpp, kkfmoptdlg.h, kfmgui.cpp, Makefile.am,
+	  khttpoptdlg.h, khttpoptdlg.cpp
+	  Added HTTP configuration dialog	
+
+Mon Jun 15 03:21:12 1998  Torben Weis  <weis@localhost>
+
+	* kbind.cpp (initMimeTypes): Uses KSimpleConfig in
+	  readonly mode everywhere => hopefully faster.
+	  But it is fast on my machine anyway :-)
+	
+	* kfm.cpp (slotSave): The sockets are deleted if the
+	  session management tells KFM to quit itself.
+
+	* main.cpp (sig_term_handler): If KFM gets the TERM signal
+	  it removes the sockest from the temp directory and saves
+	  the cache index.
+
+	* kfm.cpp (slotInstallSegfaultHandler): Immortality bug fix.
+	  If KFM runs for 60 secs and segfaults then it restarts itself.
+	  You can turn this off with "kfm -debug".
+
+	* xview.cpp: Some cleanups, removed debug code
+
+	* kfmman.cpp (writeEntry): Fixed bug in visual schnauzer
+	  HTML generation. Looks better now.
+
+	* kfmpaths.cpp (initPaths): Added CachePath
+
+	* htmlcache.cpp: Moved cache to "/tmp/kfm-cache-<uid>/".
+	  Cache is cleaned up properly now.
+	  You may log in as the same user in an UNIX cluster on
+	  different machines without disturbing the caches.
+	  Little code cleanups.
+	  Clearing of the cache does now really work.
+	
+Thu Jun 11 15:14:57 1998  Torben Weis  <weis@localhost>
+
+	* kfmgui.cpp: New keyboard shortcuts ( very useful! )
+	  They are documented in the new docu pages.
+	  In addition there is a little docu about bookmarks now.
+
+Tue Jun  9 16:30:00 1998  Jacek Konieczny  <jajcus@zeus.polsl.gliwice.pl>
+
+	* htmlcache.cpp, htmlcache.h, kfmgui.cpp, kfmgui.h
+	  Added "Cache/Always save cache" and "Cache/Never save cache" options
+	  and saving cache settings.
+
+	* kioslave/manage.cpp
+	  Fixed bug which caused KProtocolProxy beeing used even when
+	  proxy was disabled. This made HTTP connection established instead
+	  of FTP.
+
+ 	* kioslave/ftp_proxy.cpp, kioslave/ftp_proxy.h
+	  Reopen support for proxy'ed FTP protocol
+ 
+ 	* kioslave/http.cpp, kioslave/http.h
+	  Reopen support for HTTP protocol
+ 
+	* ipcc/kio.ipc, kfmjob.cpp, kfmjob.h, kiojob.cpp, kiojob.h,
+	  kioslave/main.cpp, kioslave/main.h, kioslave/protocol.cpp,
+	  kioslave/protocol.h
+	  Reload call added to kioslave, and reopen to kprotocol.
+	  Theese are called when reload button is hit to get not
+	  cached version of file
+
+Wed May  6 19:40:40 1998  Torben Weis  <weis@localhost>
+
+	* kiojob.cpp (KIOJob): Hopefully I killed all kioslaves yet :-)
+          I can hit forward and backward buttons like mad and nothing
+	  segfaults. Decreased kioslave kill time to 10 sec ( change that
+	  in kioserver.cpp for slow computers.
+	
+	* kioserver.cpp (slotTimer): Old kioslaves are deleted.
+	  So no kioslaves stays longer then 60sec without doing
+	  anything.
+
+	* kiojob.cpp (cancel): Hopefully less kioslaves now.
+	  Inserted "waitpid" after kill. Now KFM can not create
+	  a new kioslave until the interrupted one is really dead.
+
+	* kfmman.cpp (writeBeginning): KFM has now a "Up" Button.
+	  No one can by accident select the ".." now, since this
+	  always ends up in crazy things.
+
+Sun May  3 15:40:05 1998
+
+        * htmlopts.cpp (getMiscOpts): Fixed the "changed" check
+          
+        * kproxydlg.cpp, kkfmoptdlg.cpp, kfmgui.cpp:
+          Made some code cleanups. Now it looks better :-)
+
+Thu Apr 23 13:15:39 1998    <weis@snoopy.rz.uni-frankfurt.de>
+
+	* kfmprops.cpp (applyChanges): Fixed directory renaming bug.
+
+Sat Apr 18 00:05:41 1998  Torben Weis  <weis@localhost>
+
+	* kioslave/file.cpp (OpenDir): Now the correct error message
+	  is emitted.
+
+	* kfmjob.cpp (slotFinished): Fixed bug with multiple error
+	  messages if directory is not accessible.
+
+	* kURLcompletion.cpp (make_rotation): Fixed completion.
+	  Now we complete diretories "/dir1/dir2/..." instead
+	  of "file:/dir1/dir2/...." to avoid encoding problems.
+
+Thu Apr 16 04:10:25 1998  Torben Weis  <weis@localhost>
+
+	* kfmman.cpp (writeEntry): New View ( short view ).
+
+	* kfmprops.cpp (applyChanges): Sets icon and miniicon equal.
+	  In the past miniicon was not set at all.
+	
+	* kiojob.cpp (move): Serious bug in file moving code solved.
+	  Renaming the destination does now work. The existing file is
+	  not overwritten ( expect the user wants KFM to do so ).
+
+	* kfmgui.cpp (slotQuit): KFM does Session Management, too,
+	  when the user selects the menu item "Quit".
+
+	* kioslave/tar.cpp (ReadDir): Null pointer bug fix. Caused
+	  problems on suns.
+
+	* kbind.cpp (getPixmapFile): Some fixes ( encode/decode ).
+	  Uses KSimpleConfig in read only mode. This is hopefully faster.
+
+	* bookmark.cpp (scanIntern): Fixed bug that added some ugly
+	  lines to every file in the bookmarks tree.
+
+	* kioslave/file.cpp (OpenDir): kioslave just reports file names.
+	  filenames are no URLs => no encoding.
+
+	* kfmman.cpp (writeEntry): KURL encode/decode fixed.
+	  Bookmark files look nicer now.
+
+	* utils.cpp (testNestedURLs): Does no longer assume that
+	  a file contains a directory :-) => No longer: "You dropped
+	  a file over itself" error messages.
+
+	* kiojob.cpp (link): KURL encode/decode bug fixed.
+	             (move): dito
+		     (copy): dito
+	
+Wed Apr 15 19:29:21 1998    <weis@snoopy.rz.uni-frankfurt.de>
+
+	* root.cpp (initFilename): Filenames containing %2f are
+	  displayed with '/' ( yet only Root Icons ). This makes
+	  bookmark handling much easier.
+
+	* kfmgui.cpp (slotURLEntered): Fixed URL encoding bug
+
+	* kioserver.cpp (isDir): Fixed URL encoding bug
+
+	* kfmprops.cpp (supports): Fixed URL encoding bug
+
+Tue Apr 14 18:22:22 1998    <weis@snoopy.rz.uni-frankfurt.de>
+
+	* kiojob.cpp (processError): Fixed spelling error.
+
+	* kioslave Proxy Authorisation from <gadeynew@sebb.bel.alcatel.be>
+	  Edit "Proxy-User=..." and "Proxy-Pass=..." in config file.
+	
+Wen Apr 1 14:08:00 1998  Jacek Konieczny <jajcus@zeus.polsl.gliwice.pl>
+
+	* kkioslave/http.cpp (ProcessHeader): Reverted changes by Torben Weis,
+	  which caused KFM ignore charset setting in Content-Type field of
+	  HTTP header.
+
+Sun Mar 29 21:05:16 1998  Martin Jones  <mjones@kde.org>
+
+	* It seemed kfmView::openURL(...) had gained some more parameters.
+	  This meant that KHTMLView::openURL( const char *) was no longer
+	  overloaded and frames could not be opened.
+	  Added a kfmView::openURL( const char *) and frames are happy
+	  again.
+
+Sat Mar 28 20:11:50 1998  Torben Weis  <weis@localhost>
+
+	* Complete new and cool bookmark management.
+	
+	* kfmserver.cpp (slotOpenURL): kfmclient openURL trash:/
+	  should work now.
+
+Sat Mar 28 11:11:21 1998  Martin Jones  <mjones@kde.org>
+
+	* Added kbooktoken.* so that further changes to the HTML
+	  Tokeniser in khtmlw do not break binary compatability in
+	  kfm.
+	  
+Fri Mar 27 02:50:54 1998  Torben Weis  <weis@localhost>
+
+	* kfmjob.cpp (slotError): Adaptions for new error
+	  handling in kiojob.
+
+	* kiojob.cpp (fatalError): Changed error handling to fix
+	  ftp bug. kiojob allows now error filtering before
+	  errors are processed by kiojob.
+
+	* kioslave/ftp.cpp (OpenConnection): Special hack for 'list'
+	  command. KFM does now no longer assume that a ftp file
+	  is a directory.
+
+	* kioslave/ftp_proxy.cpp (Open): Fixed bug in UserAgent tag.
+
+	* kiojob.cpp (start): Added layout management
+	  for progress dialogs.
+
+	* kioslave/http.cpp (ProcessHeader): Fixed bug that
+	  appeard with the following line:
+	  "Content-Type: text/html; charset=..."
+
+Thu Mar 26 02:40:24 1998  Torben Weis  <weis@localhost>
+
+	* kiojob.cpp (completeURL): If the user enters a URL
+	  like this one: ftp://user:pass@host. then KFM
+	  remebers the password, but does not show it any more.
+
+	* kioslave: Fixed bug that appeard while copying very
+	  large files ( >40MB ). Now the progress indicator
+	  works as expected.
+	
+	* kbind.cpp (runBinding): Fixes for %m and %i and %c
+
+	* Added support for middle mouse button. It opens
+	  a new window now if that makes sense or acts like
+	  the lft mouse button otherwise ( almost ).
+
+Sat Mar 21 17:18:13 1998  Torben Weis  <weis@localhost>
+
+	* kfmgui.cpp (slotShowHistory): KFM can display its history
+	  information using the HTML Widget.
+
+	* kfm.cpp (addToHistory): KFM remembers the history
+	  of all visited URLs.
+	  (saveHTMLHistory): KFM can now save its history
+	  to a HTML file.
+
+	* kfmview.cpp (URLVisited): KFM display visited URLs
+	  with another color now.
+
+	* KFM remebers the position of the scrollbars again.
+	  ( perhaps not everywhere ? )
+	
+Sat Mar 21 09:21:34 1998  Martin Jones  <mjones@kde.org>
+
+	* Added link overlay to icons.
+
+Fri Mar 13 21:42:15 1998  Stephan Kulow  <coolo@kde.org>
+
+	* kfmpaths.cpp: don't write the config paths back. I wrote this
+	once, but I think, adding them them to the default configuration
+	taken $HOME is much better I think. (I struggeled about this some
+	times myself working in a network)
+
+1998-03-13  Stephan Kulow  <coolo@kde.org>
+
+	* kfmview.cpp: fixed a encoding bug for the trash folder.
+	(patch by Marcin Dalecki <dalecki@cyber.cs.net.pl>)
+
+Sun Mar  8 13:23:00 1998  Jacek Konieczny  <jajcus@zeus.polsl.gliwice.pl>
+
+	* Added charset mime type parameter support.
+
+Sat Mar  7 12:44:10 1998  Stephan Kulow  <coolo@kde.org>
+
+	* kkfmoptdlg.cpp: removed the delete statements completly.
+	the parent (tabdlg) already deletes them
+
+	* root.cpp: added a decodeURL for the desktop entries
+
+Thu Mar  5 21:32:33 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* several fixes and improvements. Moved a lot of constants to 
+	  config-kfm.h 
+	* removed the old CHANGES file and replaced it with this standard 
+	  format ChangeLog file. Please use emacs/xemacs Meta-x add-change-log-entry
+	  to add entries to this log file. Thanks.
+
+03/05/98 Bernd
+  - saves the kfmgui sizes on 'save settings'
+  - colors of the treeview are now in sync with the colors 
+    of the html widget
+
+03/05/98 Bernd
+  - configurable root grid sizes
+  - fixed up the config/dekstop file. This file was not updated to 
+    deal with the new grid root scheme -- no wonder that we got
+    complains about the icons not being visible on first start up.
+
+
+03/04/98 Bernd
+  - Introduced a bunch of configuration options: Colors, Fonts, Link Cursor
+  - I love it! :-)
+  - Stephan please have a look at around line 70 in kkfmoptdlg.cpp
+    I had to comment out two delete statements and can't say I understand
+    precicely why.
+  - several configuration dialogs
+
+
+18.02.98 Stephan
+  - I moved the decoding of path() into KURL and fixed some things concerning
+    decoding/encoding.
+    Note: I think, kfm still doesn't handle the whole URL issue good enough,
+    but to change this, would mean to replace the const char* arguments with
+    KURL arguments, I guess
+
+
+16.02.98 Torben
+ - Fixed bug in icon arrangement ( icons should not disappear any more ).
+ - Moved unix domain sockets tp /tmp
+ - Runs "touch" on the sockets every hour to keep /tmp cleaner daemons away
+   from our sockets.
+ - Keyboard support: Cursor keys move among the icons ( IconView only ).
+                     Space selects/deselects icon
+                     Return opens document/directory
+                     ESC open popup menu for icon
+   Uses the key event handling in KHTMLW. Deleted QAccel in kfmgui
+
+
+14.02.98 Stephan
+  - applied patch by Martin Jones, that fixes the text selection in HTML view
+   
+12.02.98 Stephan
+  - fixed the decoding of Directories, that caused directories named as "asds#sdasd" to
+    be shown as permsission denied
+
+
+25.01.98 Lars Hoss
+
+  - Added support for NoProxyFor and FTP. Patched kioslave to work with the
+    new Proxy Manager
+
+22.01.98 Torben
+ - Applied "KURL decoding patch" from Henner
+ - Fixed empty root icon tooltip
+ - Fixed bug in kioslave ( file=0L )
+ - Uses UNIX domain sockets now => Communication is 99.99% secure.
+   Now KFM should work without any loopback device, too.
+ - Use fixed path in kfmsu2. Hardcoded to "/opt/kde". Change if required.
+ - Fixed bug in recursive copy/move
+ - Fixed memory leak in kiojob.cpp
+
+
+17.01.98 Torben
+
+ - Fixed Stephans patch
+ - Fixed bug in kfmprops that caused too long delays while opening the
+   properties dialog. In fact it happend the same as in the above one.
+ - Links on the desktop ( links in the unix sense of links ) are displayed
+   italic now.
+ - Fix for kfmsu2. The display is now set correctly, so KFM can connect to the
+   correct one.
+ - If you have a link on your desktop and open it, then KFM will use readlink
+   to find the destination of the link. This is really needfull, since you
+   want for example /home/pub/diplom/text.lyx instead of /home/weis/Desktop/diplom/text.lyx
+
+
+10.01.98 Stephan
+
+  - take care of .directory, when calculating if Trash is empty
+
+
+09.01.98 Stephan
+  
+  - use the Name field out of .kdelnk files or .directory files for entries
+    on the desktop
+  - copy a .directory file in the created Desktop directories
+
+
+
+08.01.98 Torben
+
+ - Fixed bug that causes seg. fault if one tries to delete multiple files.
+   This was a VERY ugly one and should make kfm a lot more stable.
+ - Spelling mistakes fixed.
+ - Fixed hopefully all EINTR bugs
+ - Deleting multiple files at once caused multiple updates of one directory.
+ - Fixed geometry problem in user dialog
+
+06.01.97 Stephan
+ 
+ - replaced some << constructs with the new function ksprintf
+ - fixed a bug in the passwd dialog
+
+06.01.97 Lars Hoss
+
+ - Added dialog for proxy settings.
+ - Modified KProtocolHTTP to read its proxy settings from kfmrc.
+   The enviroment variable http_proxy is no longer used!
+
+
+04.01.98 Torben
+
+ - Fixed bug in mounting. Please mention: NEVER put symlinks in fstab.
+   This is a correct line:
+     /dev/scd0       /cdrom  iso9660 ro,noauto,user,exec     0       0    
+   but this one
+     /dev/cdrom       /cdrom  iso9660 ro,noauto,user,exec     0       0    
+   causes mount to fail on
+     mount /dev/cdrom
+   since it follows the symlink and can not find /dev/sdc0 in fstab.
+   You may never the less enter /dev/cdrom in the KFM properties dialog.
+ - Fixed bin in Device.kdelnk. Menu should now only contain one entry
+   for mounting.
+ - Fixed sprintf bug hopefully anywhere, to allow handling of URLs of any size.
+   But not too well tested right now.
+ - Applied patch for KURL Completion
+ - Fixed bug in mounting dialog. The error message sometimes disappeared.
+   Plese notice that some mount implementations are buggy. The do sometimes
+   output error messages to stdout instead of stderr, which means that we do
+   not catch this error messages.
+ - Many small bug fixes
+ - Patched KFM for "QString kdedir()". If I get the guy who did this .... grrrrr!!!
+   Dragging multiple files to the tree view odes not crash KFM on my system now,
+   since this dialog box does no longer appear while a drag is initialized.
+
+
+
+18.12.97 Stephan
+
+ - applied patch by Piotr Roszatycki, that added klocale support and 
+   accelerators to the property pages
+
+
+
+17.12.97 Torben
+
+ - Fixed bug in kioslave that caused tar:/ not to work on Alphas.
+ - Now you can no longer delete the current directory. The entry is not any longer
+   in the popup menu when you click on the background of a kfm window with the
+   right mouse button
+ - Popup menus do have pixmaps for the applications now. That looks really cool :-)
+ - TreeView shows/hides dot files now
+ - Clearing the cache works now
+    
+
+15/12/97 David McCanney
+
+ - Changed 'exit.xpm' to 'stop.xpm' in the menubar.  This was confusing some people
+   (like me...)
+ - Changed Help->Help... to Help->Help
+ - Altered the Quit and Delete dialogs so the buttons go [Yes] [No] rather than
+   [No] [Yes]  Everyone can stop moaning now :-p
+
+04.12.97 Torben
+
+ - Warning dialog before rearrangig of icons is done
+ - It should not be possible any more, to copy files or directories over themselves
+   or a directory in one of its children ( at least I hope so :-)
+ - Bernhard Leconte applyed some kfmprops layout patch
+ - Password is deleted before we show the URL in some warning dialog.
+   Before this patch, everyone could see your password if an error occured, ooops :-)
+ - Added additional menu entries to directories on desktop. Now they have the same
+   popup menus as directories in a KFM window
+ - Icons in ~/.kde/share/icons do work as expected now ( they are displayed :-)
+ - ftp://weis@localhost shows the home directory of user weis and
+   ftp://weis@localhost/ shows the root directory now.
+ - Links in tar files are recognized correctly
+ - Fixed bug in kfmexec. Works with local files now, too.
+ - Does detect fifos and socket disregegarding wether the 'x' flag is set or not.
+   And it does not seg fault any more due to such a fifo/socket.
+ - Fixed bug in history handling
+ - Cache content is saved on exit and reloaded on startup of kfm
+ - Extra menu for cache
+ - Overview of files in cache is available now, in fact you can use kfm
+   as a very cool offline browser now.
+ - FTP can handle files with spaces and has no problems with UNIX file system links any more.
+ - HTTP Header files "Host:" does now contain the port number is a special
+   one is given.
+ - You can enter directories in minicli now and KFM will open it
+ - if untrusted pages ( http etc. ) contain links to the local file system,
+   then a warning is displayed and the action is rejected.
+
+
+30.11.97 Torben
+
+ - Applied patch from Alessandro Mirone <alex@greco2.polytechnique.fr>
+   It fixes problems with the size recognition of some ftp file.
+ - Complete rewrite of root icon placing. Fixed many bugs. Now every icon
+   is forced to fit into some grid.
+ - Changed mounting stuff. Usual users can only edit the device entry in
+   the properties dialog, the rest is ignored. Users may only issue
+   commands like "mount <device>", that is why they are not asked for
+   mount points etc. any more. If you are the root user, then everything
+   stays the same
+ - Added MP3 to magic file
+ - Added static patch from Stefan Westerfeld <stefan@space.twc.de> to
+   make things working on AIX
+ - Added '-' to kfmsu2 to make it a login shell
+ - In the properties dialog you can change the owner only if you are root.
+   Everything else does not work anyway.
+ - Applied patch from Henner Zeller <zeller@think.de> to allow editing of
+   'kpanel swallow' stuff in *.kdelnk files
+ - Added Stefan Westerfeld <stefan@space.twc.de> to the list of authors.
+ - Directory Tree does now offer home_directory, desktop_dir and root
+   in level 0
+ - Items in directory tree are sorted now
+ - If KFM calls other apps it uses for example 'file:/home/weis/file.gz#gzip:/'
+   instead of '/home/weis/file.gz#gzip:/', but it still says '/home/weis/file'
+   for local files without subprotocol
+ - If files from the desktop are moved to the trash bin, then existing files
+   in the trashcan are going to be overwritten wthout bothering the user first.
+ - Tooltips on root icons
+ - Changing the font will force the root icons to update => no more display errors
+    
+22.10.97, Torben
+
+ - Added Henner's URL completion mode
+ - Applied patch to kfmman's word wrap function ( Thanks to Paul Kendal )
+ - Changed behaviour of "File->Run"
+ - Added IconLoader to "class KFM", patches KfmProperties to work with this class
+ - Added Henners patch for properties dialog. Permissions are now a joy to change :-)
+ - Removed seg faulting when clicking on URL links on the desktop
+ - Applied patch to make kfm compile on ALPHAS smoothly

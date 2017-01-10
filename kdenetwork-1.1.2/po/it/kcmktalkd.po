@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1998-12-12 15:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: main.cpp:58
+msgid "&Announcement"
+msgstr "&Annuncio"
+
+#: main.cpp:61
+msgid "Ans&wering machine"
+msgstr "Ans&wering machine"
+
+#: main.cpp:64
+msgid "&Forward"
+msgstr "&Inoltra"
+
+#: main.cpp:70
+msgid "usage: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+msgstr "utilizzo: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+
+#: main.cpp:111
+msgid "KTalkd Configuration"
+msgstr "Configurazione KTalkd"
+
+#: soundpage.cpp:46
+msgid "&Announcement program"
+msgstr "Programma &Annuncio"
+
+#: soundpage.cpp:53
+msgid "&Talk client"
+msgstr "&Client Talk"
+
+#: soundpage.cpp:57
+msgid "&Play sound"
+msgstr "Ri&produci suono"
+
+#: soundpage.cpp:59
+msgid "&Sound File"
+msgstr "File &sonoro"
+
+#: soundpage.cpp:61
+msgid "Additional WAV files can be dropped onto the sound list."
+msgstr "File WAV aggiuntivi possono essere trascinati nella soundlist."
+
+#: soundpage.cpp:76
+msgid "&Test"
+msgstr "&Prova"
+
+#: soundpage.cpp:156
+msgid "Unsupported URL"
+msgstr "URL non supportata"
+
+#: soundpage.cpp:157
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE System Sound "
+"Module"
+msgstr ""
+"Mi dispiace ma questo tipo di URL non e' supportata dal KDE Sound System Module"
+
+#: soundpage.cpp:164
+#, c-format
+msgid ""
+"Sorry, but \n"
+"%s\n"
+"does not seem to be a WAV--file."
+msgstr ""
+"Mi dispiace ma \n"
+"%s\n"
+"non sembra essere un file WAV."
+
+#: soundpage.cpp:167
+msgid "Improper File Extension"
+msgstr "Estensione File impropria"
+
+#: soundpage.cpp:175
+#, c-format
+msgid ""
+"The file\n"
+"%s\n"
+"is already in the list"
+msgstr ""
+"Il file\n"
+"%s\n"
+"è già nella lista"
+
+#: soundpage.cpp:179
+msgid "File Already in List"
+msgstr "File già in lista"
+
+#: answmachpage.cpp:39
+msgid "&Activate answering machine"
+msgstr "&Attiva Ans&wering machine"
+
+#: answmachpage.cpp:44
+msgid "&Mail address"
+msgstr "&Indirizzo email"
+
+#: answmachpage.cpp:51
+msgid "Mail sub&ject"
+msgstr "&Oggetto Email"
+
+#: answmachpage.cpp:54
+#, c-format
+msgid "Use %s for the caller name"
+msgstr "Usa %s come nome del chiamante"
+
+#: answmachpage.cpp:60
+msgid "Mail &first line"
+msgstr "P&rima linea della Mail"
+
+#: answmachpage.cpp:64
+#, c-format
+msgid "Use first %s for caller name, and second %s for caller hostname"
+msgstr "Usa prima %s come nome del chiamante e poi %s per il nome dell'host"
+
+#: answmachpage.cpp:68
+msgid "&Receive a mail even if no message left"
+msgstr "&Ricevi una mail anche se non viene lasciato nessun messaggio"
+
+#: answmachpage.cpp:74
+msgid "&Banner displayed on answering machine startup :"
+msgstr "&Banner mostrato all'avvio della answering machine :"
+
+#: answmachpage.cpp:83
+msgid ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+msgstr ""
+"La persona che stai chiamando non risponde.\n"
+"Per favore lascia un messaggio che sara' mandato via E-Mail.\n"
+"Basta semplicemente scrivere il messaggio e uscire normalmente."
+
+#: answmachpage.cpp:171 answmachpage.cpp:189
+#, c-format
+msgid "Message from %s"
+msgstr "Messaggio da %s"
+
+#: answmachpage.cpp:172 answmachpage.cpp:191
+#, c-format
+msgid "Message left in the answering machine, by %s@%s"
+msgstr "Messaggio lasciato alla answering machine, da %s@%s"
+
+#: forwmachpage.cpp:34
+msgid "Activate &forward"
+msgstr "&Inoltra"
+
+#: forwmachpage.cpp:39
+msgid "&Destination (user or user@host)"
+msgstr "&Destinazione (utente o utente@host)"
+
+#: forwmachpage.cpp:49
+msgid "Forward &method"
+msgstr "&Metodo per inoltrare"
+
+#: forwmachpage.cpp:54
+msgid ""
+"FWA : Forward announcement only. Direct connection. Not recommended.\n"
+"FWR : Forward all requests, changing info when necessary. Direct "
+"connection.\n"
+"FWT : Forward all requests and take the talk. No direct connection.\n"
+"\n"
+"Recommended use : FWT it you want to use it behind a firewall (and if "
+"ktalkd\n"
+"can access both networks), and FWR otherwise.\n"
+"\n"
+"See Help for further explanations.\n"
+msgstr ""

@@ -1,0 +1,284 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Richard Allen <ra@hp.is>, 1999
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: knu\n"
+"POT-Creation-Date: 1999-06-22 01:24+0200\n"
+"PO-Revision-Date: 1999-08-11 22:16+0000\n"
+"Last-Translator: Richard Allen <ra@hp.is>\n"
+"Language-Team: is <kde-isl@mmedia.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: ISO-8859-1\n"
+
+#: knu.cpp:174 knu.cpp:358
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:183 knu.cpp:364
+msgid "&Traceroute"
+msgstr "&Leiðarakning"
+
+#: knu.cpp:192 knu.cpp:370
+msgid "Host &resolution"
+msgstr "&Uppfletting vélaheita"
+
+#: knu.cpp:205
+msgid "F&inger"
+msgstr "&Pota"
+
+#: knu.cpp:214 knu.cpp:382
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:223 knu.cpp:388
+msgid "&Whois"
+msgstr "&Whois"
+
+#: knu.cpp:234
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"Það er engin skipun virk\n"
+"í stillingaskránni.\n"
+"\n"
+"Ég get því ekkert gert...\n"
+
+#: knu.cpp:282
+msgid "&New window"
+msgstr "&Nýr gluggi"
+
+#: knu.cpp:285
+msgid "&Close window"
+msgstr "&Loka glugga"
+
+#: knu.cpp:296
+msgid "Select &all"
+msgstr "Velja &allt"
+
+#: knu.cpp:299
+msgid "C&lear output window"
+msgstr "Hreinsa frá&lagsglugga"
+
+#: knu.cpp:302
+msgid "P&references..."
+msgstr "Eiginleika&r..."
+
+#: knu.cpp:308
+msgid ""
+"Knu\n"
+"Version %1\n"
+"\n"
+"Bertrand Leconte\n"
+"<B.Leconte@mail.dotcom.fr>\n"
+msgstr ""
+"Knu\n"
+"Útgáfa %1\n"
+"\n"
+"Bertrand Leconte\n"
+"<B.Leconte@mail.dotcom.fr>\n"
+"\n"
+"Þýðing: Richard Allen <ra@hp.is>\n"
+
+#: knu.cpp:318
+msgid "&About %1"
+msgstr "Um %1"
+
+#: knu.cpp:320
+msgid "About &Qt"
+msgstr "Um &Qt"
+
+#: knu.cpp:376
+msgid "&Finger"
+msgstr "&Pota"
+
+#: knu.cpp:611
+msgid "Network utilities"
+msgstr "Nettól"
+
+#: CommandDlg.cpp:171
+msgid "H&ost:"
+msgstr "&Vél:"
+
+#: CommandDlg.cpp:180
+msgid "&Go!"
+msgstr "&Byrja!"
+
+#: CommandDlg.cpp:190
+msgid "&Stop"
+msgstr "&Stöðva"
+
+#: CommandDlg.cpp:206
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Keyrsluskrá fyrir skipunina fannst ekki. \n"
+"Þú getur gefið upp slóð að henni í Sýsl->Eiginleikar... valmyndinni."
+
+#: CommandDlg.cpp:402
+msgid ""
+"\n"
+"You have a problem in the\n"
+"configuration file of '%1'.\n"
+"In the [%2] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Það er eitthvað að í\n"
+"stillingaskrá '%1' í [%2]\n"
+"hópnum. Það finnst ekki löglegt \"path=\" gildi.\n"
+"\n"
+"Vinsamlegast notið Sýsl->Eiginleikar...\n"
+"valmyndina til að stilla það aftur.\n"
+
+#: CommandDlg.cpp:410
+msgid "Error in pathname"
+msgstr "Villa í skráarslóð"
+
+#: CommandDlg.cpp:566
+msgid "Binary"
+msgstr "Keyrsluskrá"
+
+#: CommandDlg.cpp:575
+msgid "Path&name:"
+msgstr "Skráar&slóð"
+
+#: CommandDlg.cpp:585
+msgid "Additional &arguments:"
+msgstr "Viðbót&ar viðföng:"
+
+#: CommandDlg.cpp:610
+msgid "This command had been disabled in the configuration file."
+msgstr "Búið var að óvirkja þessa skipun í stillingaskránni."
+
+#: OptionsDlg.cpp:77
+msgid " - configuration"
+msgstr " - stillingar"
+
+#: MtrDlg.cpp:105
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:106
+msgid "Hostname"
+msgstr "Vélarheiti"
+
+#: MtrDlg.cpp:107
+msgid "Loss"
+msgstr "Tap"
+
+#: MtrDlg.cpp:109
+msgid "Rcv"
+msgstr "Mótt."
+
+#: MtrDlg.cpp:111
+msgid "Snt"
+msgstr "Sent"
+
+#: MtrDlg.cpp:113
+msgid "Best"
+msgstr "Best"
+
+#: MtrDlg.cpp:115
+msgid "Avg"
+msgstr "Meðal."
+
+#: MtrDlg.cpp:117
+msgid "Worst"
+msgstr "Verst"
+
+#: MtrDlg.cpp:160 PingDlg.cpp:108 TracerouteDlg.cpp:111
+msgid "Make host &name resolution"
+msgstr "Fletta upp &vélarheitum"
+
+#: FingerDlg.cpp:140 HostDlg.cpp:185 WhoisDlg.cpp:105
+msgid "Ser&ver:"
+msgstr "Þ&jónn:"
+
+#: WhoisDlg.cpp:223
+msgid "Servers to ask"
+msgstr "Spyrja þjóna"
+
+#: HostDlg.cpp:371 PingDlg.cpp:235
+msgid "hos&t"
+msgstr "hos&t"
+
+#: HostDlg.cpp:375 PingDlg.cpp:239
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:128
+msgid "&Maximum number of hops:"
+msgstr "&Hámarksfjöldi viðkomustaða:"
+
+#: HostDlg.cpp:140
+msgid "address (A)"
+msgstr "vistfangi (A)"
+
+#: HostDlg.cpp:141
+msgid "name (PTR)"
+msgstr "heiti (PTR)"
+
+#: HostDlg.cpp:142
+msgid "name server (NS)"
+msgstr "nafnaþjóni (NS)"
+
+#: HostDlg.cpp:143
+msgid "mail exchanger (MX)"
+msgstr "póstviðtöku (MX)"
+
+#: HostDlg.cpp:144
+msgid "alias (CNAME)"
+msgstr "samheiti (CNAME)"
+
+#: HostDlg.cpp:145
+msgid "start of authority (SOA)"
+msgstr "grunnheimild (SOA)"
+
+#: HostDlg.cpp:146
+msgid "any record (ANY)"
+msgstr "hverju sem er (ANY)"
+
+#: HostDlg.cpp:151
+msgid "Se&arch for:"
+msgstr "Leita &að:"
+
+#: HostDlg.cpp:163 HostDlg.cpp:327
+msgid "default server"
+msgstr "sjálfgefinn þjónn"
+
+#: FingerDlg.cpp:103
+msgid "&User:"
+msgstr "&Notandi:"
+
+#: mylistmanager.cpp:88
+msgid "Up"
+msgstr "Upp"
+
+#: mylistmanager.cpp:96
+msgid "Down"
+msgstr "Niður"
+
+#~ msgid ""
+#~ "Knu\n"
+#~ "Version %s\n"
+#~ "\n"
+#~ "Bertrand"
+#~ msgstr ""
+#~ "Knu\n"
+#~ "Útgáfa %s\n"
+#~ "\n"
+#~ "Bertrand"
+
+#~ msgid "About..."
+#~ msgstr "Um..."

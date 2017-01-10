@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwAbsSpriteFieldView Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwAbsSpriteFieldView Class Reference</h1><br clear="all">
+<p>
+An abstraction which views a <a href="qwspritefield.html">QwSpriteField</a>
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>Inherited by <a href="qwscrollingspritefieldview.html">QwScrollingSpriteFieldView</a> and <a href="qwspritefieldview.html">QwSpriteFieldView</a>.
+<p><a href="qwabsspritefieldview-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwabsspritefieldview.html#a0"><strong>QwAbsSpriteFieldView</strong></a> ( QwSpriteField * viewing=0 ) </span>
+<li><span class="fn">void <a href="qwabsspritefieldview.html#a1"><strong>view</strong></a> ( QwSpriteField * ) </span>
+<li><span class="fn">virtual QRect <a href="qwabsspritefieldview.html#a2"><strong>viewArea</strong></a> () const</span>
+<li><span class="fn">virtual bool <a href="qwabsspritefieldview.html#a3"><strong>preferDoubleBuffering</strong></a> () const</span>
+<li><span class="fn">virtual void <a href="qwabsspritefieldview.html#a4"><strong>beginPainter</strong></a> ( QPainter &amp; ) </span>
+<li><span class="fn">virtual void <a href="qwabsspritefieldview.html#a5"><strong>flush</strong></a> ( const QRect &amp; area ) </span>
+<li><span class="fn">virtual void <a href="qwabsspritefieldview.html#a6"><strong>updateGeometries</strong></a> () </span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+An abstraction which views a <a href="qwspritefield.html">QwSpriteField</a>
+<p>
+Use one of the derived classes.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a0"></a>QwAbsSpriteFieldView::QwAbsSpriteFieldView ( <a href="qwspritefield.html">QwSpriteField</a> * v=0 )</h3>
+<p>Construct a QwAbsSpriteFieldView which views the given <a href="qwspritefield.html">QwSpriteField</a>.
+<h3 class="fn">void <a name="a4"></a>QwAbsSpriteFieldView::beginPainter ( QPainter &amp; ) <code>[virtual]</code></h3>
+<p>Called to initialize the QPainter - normally calls QPainter::begin().
+<h3 class="fn">void <a name="a5"></a>QwAbsSpriteFieldView::flush ( const QRect &amp; area ) <code>[virtual]</code></h3>
+<p>Called just before the painter is ended.
+<h3 class="fn">bool <a name="a3"></a>QwAbsSpriteFieldView::preferDoubleBuffering () const <code>[virtual]</code></h3>
+<p>Return TRUE if double-buffering is best for this class of widget.
+If any view viewing an area prefers double-buffering, that area will
+be double buffered for all views.
+<h3 class="fn">void <a name="a6"></a>QwAbsSpriteFieldView::updateGeometries () <code>[virtual]</code></h3>
+<p>Called by the field whenever it changes size.
+The default implementation does nothing.
+<h3 class="fn">void <a name="a1"></a>QwAbsSpriteFieldView::view ( <a href="qwspritefield.html">QwSpriteField</a> * v )</h3>
+<p>Change the <a href="qwspritefield.html">QwSpriteField</a> which the <a href="qwspritefieldview.html">QwSpriteFieldView</a> is viewing.
+<h3 class="fn">QRect <a name="a2"></a>QwAbsSpriteFieldView::viewArea () const <code>[virtual]</code></h3>
+<p>viewArea returns the area of `viewing' which this QwAbsSpriteFieldView is
+viewing.
+The tighter this rectangle can
+be defined, the more efficient <a href="qwspritefield.html#a3">QwSpriteField::update</a> will be.
+<p>Return zero-width area if nothing viewed.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

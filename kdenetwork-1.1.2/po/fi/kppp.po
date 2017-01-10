@@ -1,0 +1,2086 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 1998.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KPPP\n"
+"POT-Creation-Date: 1999-04-25 03:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: accounts.cpp:45
+msgid "Account Setup"
+msgstr "Profiilin asetukset"
+
+#: accounts.cpp:66
+msgid "Edit..."
+msgstr "Muokkaa..."
+
+#: accounts.cpp:68
+msgid "Allows you to modify the selected account"
+msgstr "Mahdollistaa valitun profiilin muokkaamisen"
+
+#: accounts.cpp:77
+msgid "New..."
+msgstr "Uusi..."
+
+#: accounts.cpp:81
+msgid ""
+"Create a new dialup connection\n"
+"to the internet"
+msgstr ""
+"Luo uusi soittoyhteys\n"
+"Internettiin"
+
+#: accounts.cpp:89
+msgid ""
+"Makes a copy of the selected account. All\n"
+"settings of the selected account are copied\n"
+"to a new account, that you can modify to fit your\n"
+"needs"
+msgstr ""
+"Tekee kopion valitusta profiilista. Kaikki\n"
+"asetukset kopioidaan uuteen profiiliin, jota\n"
+"voit muokata omiin tarpeisiisi sopivaksi"
+
+#: accounts.cpp:99
+msgid ""
+"Deletes the selected account\n"
+"\n"
+"<red><b>Use with care!"
+msgstr ""
+"Tuhoaa valitun profiilin\n"
+"\n"
+"<red><b>K‰yt‰ varoen!"
+
+#: accounts.cpp:108
+msgid "Phone Costs:"
+msgstr "Puhelinkulut:"
+
+#: accounts.cpp:121
+msgid ""
+"This shows the accumulated phone costs\n"
+"for the selected account.\n"
+"\n"
+"<b>Important</b>: If you have more than one \n"
+"account - beware, this is <b>NOT</b> the sum \n"
+"of the phone costs of all your accounts!"
+msgstr ""
+"N‰ytt‰‰ kertyneet puhelukulut\n"
+"valitulle profiilille.\n"
+"\n"
+"<b>T‰rke‰‰</b>: Jos sinulla on enemm‰n kuin yksi \n"
+"profiili - huomaa t‰m‰ <b>EI</b> ole summa \n"
+"kaikista puhelukuluista!"
+
+#: accounts.cpp:128 conwindow.cpp:54
+msgid "Volume:"
+msgstr "M‰‰r‰:"
+
+#: accounts.cpp:140
+msgid ""
+"This shows the number of bytes transferred\n"
+"for the selected account (not for all of your\n"
+"accounts. You can select what to display in\n"
+"the accounting dialog.\n"
+"\n"
+"<link #volaccounting>More on volume accounting</link>"
+msgstr ""
+"N‰ytt‰‰ siirrettyjen tavujen m‰‰r‰n valitulle\n"
+"profiilille (ei kaikille profiileillesi)\n"
+"Voit asettaa mit‰ n‰ytet‰‰n Laskutus dialogissa.\n"
+"\n"
+"<link #volaccounting>Lis‰‰ laskutuksesta</link>"
+
+#: accounts.cpp:152
+msgid "Reset Costs"
+msgstr "Nollaa kulut"
+
+#: accounts.cpp:158
+msgid "View Logs"
+msgstr "N‰yt‰ lokit"
+
+#: accounts.cpp:224
+msgid "Reset Total"
+msgstr "Nollaa kokonaistulos"
+
+#: accounts.cpp:225
+msgid ""
+"Are you sure you want to reset the accumulated\n"
+"telephone costs for the selected account to zero?"
+msgstr ""
+"Oletko varma, ett‰ haluat nollata kertyneet\n"
+"puhelinkulut valitulla profiililla?"
+
+#: accounts.cpp:259 accounts.cpp:280
+msgid "Maximum number of accounts reached."
+msgstr "Maksimim‰‰r‰ profiileja saavutettu."
+
+#: accounts.cpp:286
+msgid "No account selected."
+msgstr "Profiilia ei ole valittu."
+
+#: accounts.cpp:301
+#, c-format
+msgid ""
+"Are you sure you want to delete\n"
+"the account \"%s\"?"
+msgstr ""
+"Oletko varma, ett‰ haluat tuhota\n"
+"profiilin \"%s\"?"
+
+#: accounts.cpp:306
+msgid "Confirm"
+msgstr "Varmista"
+
+#: accounts.cpp:328
+msgid "New Account"
+msgstr "Uusi profiili"
+
+#: accounts.cpp:331
+msgid "Edit Account: "
+msgstr "Muokkaa profiilia: "
+
+#: accounts.cpp:348
+msgid "Dial"
+msgstr "Soita"
+
+#: accounts.cpp:349
+msgid "IP"
+msgstr "IP"
+
+#: accounts.cpp:350
+msgid "DNS"
+msgstr "DNS"
+
+#: accounts.cpp:351
+msgid "Gateway"
+msgstr "Yhdysk‰yt‰v‰"
+
+#: accounts.cpp:352
+msgid "Login Script"
+msgstr "Sis‰‰nkirjoittautumisohjelma"
+
+#: accounts.cpp:353
+msgid "Accounting"
+msgstr "Laskutus"
+
+#: accounts.cpp:372
+msgid ""
+"You must enter an unique\n"
+"account name"
+msgstr ""
+"Sinun pit‰‰ antaa uniikki\n"
+"profiilinimi"
+
+#: accounts.cpp:377
+msgid "Login script has unbalanced loop Start/End"
+msgstr "Sis‰‰nkirjoittautumisohjelmassa on eri m‰‰r‰ Loop Start/End pareja"
+
+#: connect.cpp:92 connect.cpp:190 main.cpp:1049
+msgid "Connecting to: "
+msgstr "Yhdist‰:"
+
+#: connect.cpp:101 connect.cpp:205 miniterm.cpp:148 modeminfo.cpp:56
+#: modeminfo.cpp:135
+msgid "Sorry, can't create modem lock file."
+msgstr "Valitettavasti en voi luoda modeemin lukitustiedostoa."
+
+#: connect.cpp:106 connect.cpp:163 modeminfo.cpp:61
+msgid "Looking for Modem ..."
+msgstr "Etsin modeemia..."
+
+#: connect.cpp:115 debug.cpp:80 main.cpp:1062
+msgid "Log"
+msgstr "Loki"
+
+#: connect.cpp:199 miniterm.cpp:143 modeminfo.cpp:129
+msgid "Sorry, modem device is locked."
+msgstr "Valitettavasti modeemin laite on lukittu."
+
+#: connect.cpp:251 connect.cpp:252
+msgid "Initializing Modem..."
+msgstr "Alustan modeemia..."
+
+#: connect.cpp:270 connect.cpp:271
+msgid "Setting speaker volume..."
+msgstr "Asetan kaiuttimen ‰‰nt‰..."
+
+#: connect.cpp:289
+msgid "Dialing"
+msgstr "Soitan"
+
+#: connect.cpp:322
+msgid "Line Busy. Hanging up ..."
+msgstr "Linja varattu. Katkaisen ..."
+
+#: connect.cpp:327
+msgid "Line Busy. Waiting: "
+msgstr "Linja varattu. Odotan: "
+
+#: connect.cpp:329 connect.cpp:449 connect.cpp:468
+msgid " seconds"
+msgstr " sekuntia"
+
+#: connect.cpp:347
+msgid "No Dialtone"
+msgstr "Ei soitto‰‰nt‰"
+
+#: connect.cpp:356
+msgid "No Carrier"
+msgstr "Ei linja‰‰nt‰"
+
+#: connect.cpp:394
+msgid "Scanning "
+msgstr "Selaan "
+
+#: connect.cpp:405
+msgid "Saving "
+msgstr "Talletan "
+
+#: connect.cpp:424
+msgid "Sending "
+msgstr "L‰het‰n "
+
+#: connect.cpp:435
+msgid "Expecting "
+msgstr "Odotan "
+
+#: connect.cpp:447
+msgid "Pause "
+msgstr "Paussi"
+
+#: connect.cpp:466
+msgid "Timeout "
+msgstr "Aika loppu "
+
+#: connect.cpp:480 connect.cpp:481
+msgid "Hangup"
+msgstr "Katkaise"
+
+#: connect.cpp:494 connect.cpp:495
+msgid "Answer"
+msgstr "Vastaa"
+
+#: connect.cpp:503
+msgid "ID "
+msgstr "ID"
+
+#: connect.cpp:540
+msgid "Password "
+msgstr "Salasana "
+
+#: connect.cpp:578
+msgid "Prompting "
+msgstr "Kysyn "
+
+#: connect.cpp:615
+msgid "PW Prompt "
+msgstr "Salasana "
+
+#: connect.cpp:641
+msgid "Loop Start "
+msgstr "Loopin alku "
+
+#: connect.cpp:645
+msgid "ERROR: Nested too deep, ignored."
+msgstr "VIRHE: Liian paljon sis‰kk‰isi‰ tasoja, ohitan."
+
+#: connect.cpp:650
+msgid "Loops nested too deeply!"
+msgstr "Loopeissa liian monta sis‰kk‰ist‰ tasoa!"
+
+#: connect.cpp:668
+msgid "LoopEnd without matching Start! Line: "
+msgstr "LoopEnd ilman vastaavaa Start:a! Rivi: "
+
+#: connect.cpp:748
+msgid "Starting pppd ..."
+msgstr "K‰ynnist‰n pppd:n ..."
+
+#: connect.cpp:828
+msgid "Scan Var: "
+msgstr "Selausmuuttuja:"
+
+#: connect.cpp:839
+msgid "Found: "
+msgstr "Lˆysin: "
+
+#: connect.cpp:851
+msgid "Looping: "
+msgstr "Alusta: "
+
+#: connect.cpp:884 modeminfo.cpp:227
+msgid "One Moment Please ..."
+msgstr "Pieni hetki ..."
+
+#: connect.cpp:928
+msgid "Script timed out!"
+msgstr "Ohjelman aikavalvonta!"
+
+#: connect.cpp:947
+msgid "Scanning: "
+msgstr "Selaan: "
+
+#: connect.cpp:957
+msgid "Expecting: "
+msgstr "Odotan: "
+
+#: connect.cpp:984
+msgid "Logging on to Network ..."
+msgstr "Kirjoittaudun verkkoon ..."
+
+#: connect.cpp:1010
+msgid "Running Startup Command ..."
+msgstr "Ajan k‰ynnistyskomennon ..."
+
+#: connect.cpp:1015 connect.cpp:1022
+msgid "Done"
+msgstr "Valmis"
+
+#: connect.cpp:1134
+msgid ""
+"pppd command + command-line arguments exeed\n"
+"2024 characters in length. What are you doing?"
+msgstr ""
+"pppd komento + komentorivin pituus ylitt‰v‰t\n"
+"2024 merkki‰. Mit‰ oikein teet?"
+
+#: conwindow.cpp:43
+msgid "Connected at:"
+msgstr "Yhdistetty:"
+
+#: conwindow.cpp:49
+msgid "Time connected:"
+msgstr "Yhteysaika:"
+
+#: conwindow.cpp:58
+msgid "Session Bill:"
+msgstr "Yhteyden hinta:"
+
+#: conwindow.cpp:60
+msgid "Total Bill:"
+msgstr "Kokonaishinta:"
+
+#: conwindow.cpp:66 docking.cpp:76
+msgid "Disconnect"
+msgstr "Katkaise"
+
+#: conwindow.cpp:70 docking.cpp:74
+msgid "Details"
+msgstr "Yksityiskohdat"
+
+#: debug.cpp:47
+msgid "Login Script Debug Window"
+msgstr "K‰ynnistysohjelman tarkkailuikkuna"
+
+#: edit.cpp:43
+msgid "Dial Setup"
+msgstr "Soiton asetukset"
+
+#: edit.cpp:46
+msgid "Connection Name:"
+msgstr "Yhteden nimi:"
+
+#: edit.cpp:56
+msgid "Type in a unique name for this connection"
+msgstr "Anna uniikki nimi yhteydelle"
+
+#: edit.cpp:59
+msgid "Phone Number:"
+msgstr "Puhelinnumero:"
+
+#: edit.cpp:66
+msgid ""
+"Specifies the phone number to dial. You\n"
+"can supply multiple numbers separated by\n"
+"a colon. When a number is busy or fails,\n"
+"<i>kppp</i>will try the next number and so on"
+msgstr ""
+"M‰‰rittelee puhelinnumeron jonne soitetaan. Voit\n"
+"antaa useita numeroita eroteltuna kaksoispisteell‰.\n"
+"Jos numero on varattu tai yhteys ep‰onnistuu,\n"
+"<i>kppp</i>yritt‰‰ seuraavaa numeroa jne."
+
+#: edit.cpp:75
+msgid "Authentication:"
+msgstr "Tunnistus:"
+
+#: edit.cpp:79
+msgid "Script-based"
+msgstr "Script pohjainen"
+
+#: edit.cpp:80
+msgid "PAP"
+msgstr "PAP"
+
+#: edit.cpp:81
+msgid "Terminal-based"
+msgstr "P‰‰tepohjainen"
+
+#: edit.cpp:82
+msgid "CHAP"
+msgstr "CHAP"
+
+#: edit.cpp:88
+msgid ""
+"Specifies the method used to identify yourself to\n"
+"the PPP server. Most universities still use\n"
+"<b>Terminal</b>- or <b>Script</b>-based authtentication,\n"
+"while most ISP use <b>PAP</b> and/or <b>CHAP</b>. If\n"
+"unsure, contact your ISP.\n"
+"\n"
+"If you can choose between PAP and CHAP,\n"
+"choose CHAP, because it's much safer."
+msgstr ""
+"M‰‰rittelee tavan jolla PPP-palvelin tunnistaa sinut.\n"
+"Useimmat yliopistot k‰ytt‰v‰t <b>P‰‰te-</b> tai\n"
+"<b>Skripti</b>-pohjaista tunnistusta, kun taas\n"
+"useimmat ISP:t k‰ytt‰v‰t <b>PAP</b> tai <b>CHAP</b>\n"
+"tunnistusta, jos olet ep‰varma ota yhteytt‰ ISP:n.\n"
+"\n"
+"Jos voit valita PAP:n ja CHAP:n v‰lill‰ valitse,\n"
+"CHAP koska se on turvallisempi."
+
+#: edit.cpp:97
+msgid "Store password"
+msgstr "Tallenna salasana"
+
+#: edit.cpp:101
+msgid ""
+"When this is turned on, your ISP password\n"
+"will be saved in <i>kppp</i>'s config file, so\n"
+"you do not need to type it in everytime.\n"
+"\n"
+"<b><red>Warning:<black> your password will be stored as\n"
+"plain text in the config file, which is\n"
+"readable only to you. Make sure nobody\n"
+"gains access to this file!"
+msgstr ""
+"Kun t‰m‰ on p‰‰ll‰ palveluntarjoajasi salasana\n"
+"tallennetaan <i>kppp</i>:n asetuksiin, jottei\n"
+"sinun tarvitse antaa sit‰ joka kerta uudelleen.\n"
+"\n"
+"<b><red>Varoitus:<black> salasanasi tallennetaan\n"
+"puhtaana tekstin‰ tiedostoon, jota vain sin‰\n"
+"pystyt lukemaan. Pid‰ huolta ettei kukaan muu\n"
+"saa oikeuksia t‰h‰n tiedostoon!"
+
+#: edit.cpp:110
+msgid ""
+"Execute program\n"
+"upon connect:"
+msgstr ""
+"K‰ynnist‰ ohjelma\n"
+"yhdistett‰ess‰:"
+
+#: edit.cpp:121
+msgid ""
+"Allows you to run a program <b>after</b> a connection\n"
+"is established. When your program is called, all\n"
+"all preparations for an internet connection are\n"
+"finished.\n"
+"\n"
+"Very usefull for fetching mail and news"
+msgstr ""
+"Mahdollistaa yhteyden muodostamisen <b>j‰lkeen</b>\n"
+"ohjelman ajamisen. Kun ohjelmaa kutsutaan kaikki\n"
+"valmistelut on jo tehty ja yhteys on kunnossa.\n"
+"\n"
+"Hyˆdyllinen postin ja uutisten hakemiseen."
+
+#: edit.cpp:129
+msgid ""
+"Execute program\n"
+"before disconnect:"
+msgstr ""
+"K‰ynnist‰ ohjelma\n"
+"ennen katkaisua:"
+
+#: edit.cpp:141
+msgid ""
+"Allows you to run a program <b>before</b> a connection\n"
+"is closed. The connection will stay open until\n"
+"the program exits."
+msgstr ""
+"Mahdollistaa ohjelman ajamisen <b>ennen</b> yhteyden\n"
+"sulkemista. Yhteys pysyy auki kunnes ohjelma loppuu."
+
+#: edit.cpp:145
+msgid ""
+"Execute program\n"
+"upon disconnect:"
+msgstr ""
+"K‰ynnist‰ ohjelma\n"
+"katkaistaessa:"
+
+#: edit.cpp:157
+msgid ""
+"Allows you to run a program <b>after</b> a connection\n"
+"has been closed."
+msgstr ""
+"Mahdollistaa ohjelman ajamisen yhteyden sulkemisen\n"
+"<b>j‰lkeen</b>."
+
+#: edit.cpp:161
+msgid "Edit pppd arguments:"
+msgstr "Muuta pppd:n argumentteja"
+
+#: edit.cpp:166
+msgid "Arguments"
+msgstr "Argumentit"
+
+#: edit.cpp:223
+msgid "IP Setup"
+msgstr "IP-Asetukset"
+
+#: edit.cpp:229
+msgid "IP Address:"
+msgstr "IP-Osoite:"
+
+#: edit.cpp:232
+msgid ""
+"If your computer has a permanent internet\n"
+"address, you must supply your IP address here"
+msgstr ""
+"Jos tietokoneellasi on pysyv‰ internet-\n"
+"osoite sinun tulee antaa se t‰ss‰."
+
+#: edit.cpp:237
+msgid "Subnet Mask:"
+msgstr "Aliverkon peitto:"
+
+#: edit.cpp:240
+msgid ""
+"If your computer has a static Internet address,\n"
+"you must supply a network mask here. In almost\n"
+"all cases this netmask will be <b>255.255.255.0</b>,\n"
+"but your mileage may vary.\n"
+"\n"
+"If unsure, contact your Internet Service Provider"
+msgstr ""
+"Jos tietokoneellasi on kiinte‰ internet-osoite,\n"
+"sinun tulee antaa verkkopeite t‰ss‰. L‰hes kaikissa\n"
+"tapauksissa se on <b>255.255.255.0</b>,\n"
+"mutta se voi olla jokin muukin.\n"
+"\n"
+"Jos olet ep‰varma ota yhteytt‰ palveluntarjoajaasi."
+
+#: edit.cpp:254
+msgid "Dynamic IP Address"
+msgstr "Dynaaminen IP-Osoite"
+
+#: edit.cpp:256
+msgid ""
+"Select this option when your computer gets an\n"
+"internet address (IP) everytime a\n"
+"connection is made.\n"
+"\n"
+"Almost every Internet Service Provider uses\n"
+"this method, so this should be turned on."
+msgstr ""
+"Valitse t‰m‰ optio jos tietokoneesi saa\n"
+"internet osoitteen (IP) joka kerta kun\n"
+"yhteys muodostetaan.\n"
+"\n"
+"L‰hes jokainen palveluntarjoaja k‰ytt‰‰\n"
+"t‰t‰ tapaa, joten t‰m‰ kannattaa olla p‰‰ll‰."
+
+#: edit.cpp:264
+msgid "Static IP Address"
+msgstr "Staattinen IP-Osoite"
+
+#: edit.cpp:268
+msgid ""
+"Select this option when your computer has a\n"
+"fixed internet address (IP). Most computers\n"
+"don't have this, so you should probably select\n"
+"dynamic IP addressing unless you know what you\n"
+"are doing"
+msgstr ""
+"Valitse t‰m‰ optio jos tietokoneellasi on\n"
+"kiinte‰ internet-osoite (IP). Useimmilla tietokoneilla\n"
+"ei ole t‰t‰, joten todenn‰kˆisesti sinun tulisi valita\n"
+"dynaaminen osoite jos et tied‰ mit‰ teet."
+
+#: edit.cpp:274
+msgid "Auto-configure hostname from this IP"
+msgstr "Aseta koneen nimi automaattisesti t‰st‰ IP:t‰"
+
+#: edit.cpp:279
+msgid ""
+"Whenever you connect, this reconfigures\n"
+"your hostname to match the IP address you\n"
+"got from the PPP server. This may be useful\n"
+"if you need to use a protocol which depends\n"
+"on this information, but it can also cause several\n"
+"<link kppp-7.html#autohostname>problems</link>.\n"
+"\n"
+"Don't enable this unless you really need it"
+msgstr ""
+"Aina yhteytt‰ otettaessa t‰m‰ valinta asettaa\n"
+"koneen nimen vastaamaan saamaasi IP-osoitetta.\n"
+"T‰st‰ voi olla hyˆty‰ jos k‰yt‰t palvelua joka\n"
+"vaatii t‰t‰ tietoa. Mutta t‰st‰ voi aiheuta myˆs\n"
+"useita <link kppp-7.html#autohostname>ongelmia</link>.\n"
+"\n"
+"ƒl‰ k‰yt‰ t‰t‰ ellet todella tarvitse sit‰."
+
+#: edit.cpp:396
+msgid "DNS Servers"
+msgstr "DNS-palvelimet"
+
+#: edit.cpp:411
+msgid "Domain Name:"
+msgstr "Verkkoalue:"
+
+#: edit.cpp:422
+msgid ""
+"If you enter a domain name here, this domain\n"
+"name is used for your computer while you are\n"
+"connected. When the connection is closed, the\n"
+"original domain name of your computer is\n"
+"restored.\n"
+"\n"
+"If you leave this field blank, no changes are\n"
+"made to the domain name."
+msgstr ""
+"Jos annat t‰h‰n verkkoalueen nimen t‰t‰\n"
+"nime‰ k‰ytet‰‰n sen ajan kun olet yhteydess‰.\n"
+"Kun yhteys suljetaan alkuper‰inen nimi palautetaan.\n"
+"\n"
+"Jos j‰t‰t kent‰n tyhj‰ksi mit‰‰n muutoksia ei tehd‰."
+
+#: edit.cpp:431
+msgid "DNS IP Address:"
+msgstr "DNS IP-Osoite:"
+
+#: edit.cpp:446
+msgid ""
+"Allows you to specify a new DNS server to be\n"
+"used while you are connected. When the\n"
+"connection is closed, this DNS entry will be\n"
+"removed again.\n"
+"\n"
+"To add a DNS server, type in the IP address of\n"
+"of the DNS server here and click on <b>Add</b>"
+msgstr ""
+"Voit m‰‰ritell‰ DNS-palvelimen osoitteen jota\n"
+"k‰ytet‰‰n yhteyden aikana. Kun yhteys suljetaan\n"
+"vanhat asetukset palautetaan.\n"
+"\n"
+"Lis‰t‰ksesi DNS-palvelimen anna DNS-palvelimen\n"
+"IP-osoite ja paina <b>Lis‰‰</b> nappia."
+
+#: edit.cpp:465
+msgid ""
+"Click this button to add the DNS server\n"
+"specified in the field above. The entry\n"
+"will then be added to the list below"
+msgstr ""
+"Paina t‰t‰ nappia lis‰t‰ksesi DNS-palvelimen\n"
+"joka on m‰‰ritelty yll‰olevassa kent‰ss‰.\n"
+"Tietue lis‰t‰‰n allaolevaan listaan."
+
+#: edit.cpp:477
+msgid ""
+"Click this button to remove the selected DNS\n"
+"server entry from the list below"
+msgstr ""
+"Paina t‰s‰ nappia poistaakseni valitun DNS-\n"
+"palvelimen allaolevalta listalta."
+
+#: edit.cpp:480
+msgid "DNS Address List:"
+msgstr "DNS-Osoitelista"
+
+#: edit.cpp:491
+msgid ""
+"This shows all defined DNS servers to use\n"
+"while you are connected. Use the <b>Add</b> and\n"
+"<b>Remove</b> buttons to modify the list"
+msgstr ""
+"T‰ss‰ n‰kyy kaikki m‰‰ritellyt DNS-palvelimet\n"
+"joita k‰ytet‰‰n yhteyden aikana. K‰yt‰ <b>Lis‰‰</b>\n"
+"ja <b>Poista</b> nappeja muokataksesi listaa"
+
+#: edit.cpp:496
+msgid "Disable existing DNS Servers during Connection"
+msgstr "Poista olemassaolevat DNS-palvelimet yhteyden aikana"
+
+#: edit.cpp:503
+msgid ""
+"When this option is selected, all DNS\n"
+"servers specified in <i>/etc/resolv.conf</i> are\n"
+"temporary disabled while the dialup connection\n"
+"is established. After the connection is\n"
+"closed, the servers will be re-enabled\n"
+"\n"
+"Typically, there is no reason to use this\n"
+"option, but it may become useful under \n"
+"some circumstances"
+msgstr ""
+"Kun t‰m‰ optio on valittu kaikki DNS-palvelimet\n"
+"jotka on m‰‰ritelty <i>/etc/resolv.conf</i>\n"
+"tiedostossa poistetaan yhteyden ajaksi.\n"
+"\n"
+"Normaalisti ei ole tarvetta k‰ytt‰‰ t‰t‰ toimintoa\n"
+"mutta siit‰ voi olla hyˆty‰ joissain tilanteissa."
+
+#: edit.cpp:572
+msgid "Gateway Setup"
+msgstr "Yhdysk‰yt‰v‰n asetukset"
+
+#: edit.cpp:581
+msgid "Default Gateway"
+msgstr "Oletusyhdysk‰yt‰v‰"
+
+#: edit.cpp:584
+msgid ""
+"This makes the PPP peer computer (the computer\n"
+"you are connected to with your modem) to act as\n"
+"a gateway. Your computer will send all packets not\n"
+"going to a computer inside your local net to this\n"
+"computer, which will route this packets.\n"
+"\n"
+"This is the default for most ISPs, so you should\n"
+"probably leave this option on"
+msgstr ""
+"T‰m‰ tekee PPP-is‰nt‰koneesta (koneesta johon\n"
+"olet yhteydess‰) yhdysk‰yt‰v‰n. Koneesi l‰hett‰‰\n"
+"kaikki paketit jotka eiv‰t kuulu paikalliseen\n"
+"verkkoosi is‰nt‰koneelle joka reititt‰‰ ne edelleen.\n"
+"\n"
+"T‰m‰ on oletusarvo useimmilla palveluntarjoajilla\n"
+"joten t‰m‰ optio kannattaa olla p‰‰ll‰."
+
+#: edit.cpp:595
+msgid "Static Gateway"
+msgstr "Staattinen yhdysk‰yt‰v‰"
+
+#: edit.cpp:598
+msgid ""
+"Allows you to specify which computer you want\n"
+"to use as gateway (see <i>Default Gateway</i> above"
+msgstr ""
+"Voit m‰‰ritell‰ mik‰ tietokone toimii yhdysk‰yt‰v‰n‰\n"
+"(katso <i>Oletusk‰yt‰v‰</i> yl‰puolelta."
+
+#: edit.cpp:603
+msgid ""
+"Gateway\n"
+"IP Address:"
+msgstr ""
+"Yhdysk‰yt‰v‰n\n"
+"IP-Osoite:"
+
+#: edit.cpp:605
+msgid "Assign the Default Route to this Gateway"
+msgstr "Aseta oletusreitti t‰lle yhdysk‰yt‰v‰lle"
+
+#: edit.cpp:608
+msgid ""
+"If this option is enabled, all packets not\n"
+"going to the local net are routed through\n"
+"the PPP connection.\n"
+"\n"
+"Normally, you should turn this on"
+msgstr ""
+"Jos optio on p‰‰ll‰ kaikki paketit jotka\n"
+"eiv‰t kuulu paikalliseen verkkoon reititet‰‰n\n"
+"PPP-yhteydelle.\n"
+"\n"
+"Normaalisti t‰m‰n pit‰isi olla p‰‰ll‰."
+
+#: edit.cpp:703
+msgid "Edit Script"
+msgstr "Muokkaa ohjelmaa"
+
+#: general.cpp:50
+msgid "kppp Setup"
+msgstr "kppp Asetukset"
+
+#: general.cpp:56
+msgid "pppd Timeout:"
+msgstr "pppd aikavalvonta:"
+
+#: general.cpp:69
+msgid ""
+"<i>kppp</i> will wait this number of seconds\n"
+"to see if a PPP connection is established.\n"
+"If no connection is made in this time frame,\n"
+"<i>kppp</i> will give up and kill pppd."
+msgstr ""
+"<i>kppp</i> odottaa n‰in monta sekuntia\n"
+"PPP-yhteyden muodostumista. Jos yhteytt‰\n"
+"ei synny t‰ss‰ ajassa <i>kppp</i>,\n"
+"luovuttaa ja lopettaa pppd:n."
+
+#: general.cpp:74 general.cpp:401 general.cpp:490
+msgid "Seconds"
+msgstr "sekuntia"
+
+#: general.cpp:87
+msgid "Dock into Panel on Connect"
+msgstr "Nielaise paneliin yhdistett‰ess‰"
+
+#: general.cpp:89
+msgid ""
+"After a connection is established, the\n"
+"window is minimized and a small icon\n"
+"in the <i>kpanel</i> represents this window.\n"
+"\n"
+"Clicking on this icon will restore the\n"
+"window to it's original location and\n"
+"size."
+msgstr ""
+"Kun yhteys on muodostettu ikkuna piennet‰‰n\n"
+"ja pieni kuvake <i>kpanelissa</i> kuvaa\n"
+"t‰t‰ ikkunaa.\n"
+"\n"
+"Kuvakkeen painaminen palauttaa ikkunan\n"
+"alkuper‰iseen paikkaan alkuper‰isess‰ koossa."
+
+#: general.cpp:102
+msgid "Automatic Redial on Disconnect"
+msgstr "Automaattinen uudelleensoitto katkaistaessa"
+
+#: general.cpp:108
+msgid ""
+"When a connection is established and\n"
+"it somehow gets disconnected, <i>kppp</i>\n"
+"will try to reconnect to the same account.\n"
+"\n"
+"See <link #redial>here</link> for more on this topic."
+msgstr ""
+"Kun yhteys muodostetaan ja se jostain syyst‰\n"
+"katkeaa, <i>kppp</i> yritt‰‰ yhteytt‰ uudelleen\n"
+"samaan profiiliin.\n"
+"\n"
+"Katso <link #redial>t‰‰lt‰</link> lis‰‰ tietoa asiasta."
+
+#: general.cpp:114
+msgid "Show Clock on Caption"
+msgstr "N‰yt‰ kello otsikossa"
+
+#: general.cpp:120
+msgid ""
+"When this option is checked, the window\n"
+"title shows the time since a connection\n"
+"was established. Very useful, so you \n"
+"should turn this on"
+msgstr ""
+"Kun t‰m‰ optio on valittu, ikkunan otsikossa\n"
+"yhteyden keston. Eritt‰in hyˆdyllinen joten\n"
+"t‰m‰ kannattaa olla p‰‰ll‰."
+
+#: general.cpp:125
+msgid "Disconnect on X-server shutdown"
+msgstr "Lopeta yhteys X-palvelimen lopetuksessa"
+
+#: general.cpp:131
+msgid ""
+"Checking this option will close any\n"
+"open connection when the X-server is\n"
+"shut down. You should enable this option\n"
+"unless you know what you are doing.\n"
+"\n"
+"See <link #disxserver>here</link> for more on this."
+msgstr ""
+"Jos valitse t‰m‰n option kaikki\n"
+"yhteydet suljetaan kun X-serveri suljetaan.\n"
+"T‰m‰ optio kannattaa olla p‰‰ll‰, ellet\n"
+"tied‰ mit‰ teet.\n"
+"\n"
+"Katso <link #disxserver>t‰‰lt‰</link> lis‰tietoja asiasta."
+
+#: general.cpp:138
+msgid "Quit on Disconnect"
+msgstr "Lopeta katkaistaessa"
+
+#: general.cpp:144
+msgid ""
+"When this option is turned on, <i>kppp</i>\n"
+"will be closed when you disconnect"
+msgstr ""
+"Kun t‰m‰ optio on p‰‰ll‰ <i>kppp</i>\n"
+"lopetetaan kun katkaiset yhteyden"
+
+#: general.cpp:147
+msgid "Minimize Window on Connect"
+msgstr "Pienenn‰ ikkuna yhdistett‰ess‰"
+
+#: general.cpp:153
+msgid ""
+"Iconifies <i>kppp</i>'s window when a\n"
+"connection is established"
+msgstr ""
+"Pienent‰‰ <i>kppp</i>:n ikkunan, kun\n"
+"yhteys on muodostettu."
+
+#: general.cpp:202
+msgid "About kppp"
+msgstr "Tietoja kppp:ta"
+
+#: general.cpp:210
+msgid ""
+"\n"
+"A dialer and front-end to pppd\n"
+"\n"
+"(c) 1997, 1998\n"
+"    Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"    Harri Porten <porten@kde.org>\n"
+"    Mario Weilguni <mweilguni@kde.org>\n"
+"\n"
+"Original author: Bernd Johannes Wuebben\n"
+"Currently maintained by Harri Porten and Mario\n"
+"Weilguni. Please send all bug reports to the\n"
+"current maintainer.\n"
+"\n"
+"This program is distributed under the GNU GPL\n"
+"(GNU General Public License)."
+msgstr ""
+"\n"
+"Soittaja ja k‰yttˆliittym‰ pppd:lle\n"
+"\n"
+"(c) 1997, 1998\n"
+"    Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"    Harri Porten <porten@kde.org>\n"
+"    Mario Weilguni <mweilguni@kde.org>\n"
+"\n"
+"Alkuper‰inen tekij‰: Bernd Johannes Wuebben\n"
+"Yll‰pit‰j‰t Harri Porten ja Mario Weilguni.\n"
+"L‰het‰ virhekuvaukset yll‰pit‰jille.\n"
+"\n"
+"Ohjelma on GNU GPL (GNU General Public License)\n"
+"lisenssin alainen."
+
+#: general.cpp:238
+msgid "Serial device"
+msgstr "Sarjaliikennelaite"
+
+#: general.cpp:241
+msgid "Modem Device:"
+msgstr "Modeemin Laite:"
+
+#: general.cpp:255
+msgid ""
+"This specifies the serial port your modem is attached \n"
+"to. On Linux/x86, typically this is either /dev/ttyS0 \n"
+"(COM1 under DOS) or /dev/ttyS1 (COM2 under DOS).\n"
+"\n"
+"If you have an internal ISDN card with AT command\n"
+"emulation (most cards under Linux support this), you\n"
+"should select one of the /dev/ttyIx devices."
+msgstr ""
+"T‰m‰ m‰‰rittelee portin johon modeemisi on liitetty. \n"
+"Linux/x86:lla, t‰m‰ on tavallisesti /dev/ttyS0 \n"
+"(COM1 DOS:n alla) tai /dev/ttyS1 (COM2).\n"
+"\n"
+"Jos sinulla on sis‰inen ISDN kortti jossa on AT-komento-\n"
+"emulaatio (useimmat kortit Linuxilla tukevat t‰t‰), valitse\n"
+"yksi /dev/ttyIx laitteista."
+
+#: general.cpp:264
+msgid "Flow Control:"
+msgstr "Vuonohjaus:"
+
+#: general.cpp:270
+msgid "None"
+msgstr "Ei mik‰‰n"
+
+#: general.cpp:279
+msgid ""
+"Specifies how the serial port and modem\n"
+"communicate. You should not change this unless\n"
+"you know what you are doing.\n"
+"\n"
+"<b>Default</b>: CRTSCTS"
+msgstr ""
+"M‰‰rittelee miten sarjaportti ja modeemi\n"
+"kommunikoivat. Sinun ei tule muuttaa t‰t‰\n"
+"ellet tied‰ mit‰ teet.\n"
+"\n"
+"<b>Oletusarvo</b>: CRTSCTS"
+
+#: general.cpp:285
+msgid "Line Termination:"
+msgstr "Linjan Terminointi:"
+
+#: general.cpp:298
+msgid ""
+"Specifies how AT commands are send to your\n"
+"modem. Most modems will work fine with the\n"
+"default <i>CR</i>. If your modem does not react\n"
+"to the init string, you should try different\n"
+"settings here\n"
+"\n"
+"<b>Default</b>: CR"
+msgstr ""
+"M‰‰rittelee miten modeemillesi l‰hetet‰‰n\n"
+"AT-komennot. Useimmat modeemit toimivat hyvin\n"
+"oletuksella <i>CR</i>. Jos modeemisi ei reagoi\n"
+"asetusmerkkijonoon voit kokeilla\n"
+"eri asetuksia t‰ss‰\n"
+"\n"
+"<b>Oletusarvo</b>: CR"
+
+#: general.cpp:306
+msgid "Connection Speed:"
+msgstr "Yhteysnopeus:"
+
+#: general.cpp:349
+msgid ""
+"Specifies the speed your modem and the serial\n"
+"port talk to each other. You should begin with\n"
+"the default of 38400 bits/sec. If everything\n"
+"works you can try to increase this value, but to\n"
+"no more than 115200 bits/sec (unless you know\n"
+"that your serial port supports higher speeds)."
+msgstr ""
+"M‰‰rittelee nopeuden jolla modeemi ja sarja-\n"
+"portti keskustelevat kesken‰‰n. Sinun kannattaa\n"
+"aloittaa oletusarvolla 38400 bit/s. Jos kaikki\n"
+"toimii voit kasvattaa arvoa, muttet yli 115200\n"
+"bit/s (ellet ole varma ett‰ sarjaporttisi tukee\n"
+"suurempia nopeuksia)."
+
+#: general.cpp:364
+msgid "Use Lock File"
+msgstr "K‰yt‰ lukkotiedostoa"
+
+#: general.cpp:375
+msgid ""
+"To prevent other programs from accessing the\n"
+"modem while a connection is established, a\n"
+"file can be created to indicate that the modem\n"
+"is in use. On Linux an example file would be\n"
+"<i>/var/lock/LCK..ttyS1</i>\n"
+"Here you can select whether this locking will\n"
+"be done.\n"
+"\n"
+"<b>Default</b>: On"
+msgstr ""
+"Est‰‰ksesi muita ohjelmia k‰ytt‰m‰st‰ modeemia\n"
+"yhteyden aikana voidaan luoda tiedosto joka kertoo\n"
+"modeemin olevan k‰ytˆss‰. Linuxilla tiedosto on\n"
+"esimerkiksi <i>/var/lock/LCK..ttyS1</i>\n"
+"T‰ss‰ voit valita tehd‰‰nkˆ lukitus vai ei.\n"
+"\n"
+"<b>Oletus</b>: On"
+
+#: general.cpp:386
+msgid "Modem Timeout:"
+msgstr "Modeemin aikavalvonta:"
+
+#: general.cpp:405
+msgid ""
+"This specifies how long <i>kppp</i> waits for a\n"
+"<i>CONNECT</i> response from your modem. The\n"
+"recommended value is 30 seconds."
+msgstr ""
+"T‰ss‰ voi m‰‰ritell‰ kuinka kauan <i>kppp</i> odottaa\n"
+"<i>CONNECT</i> vastausta modeemilta. Suositeltu\n"
+"arvo on 30 sekuntia"
+
+#: general.cpp:466 main.cpp:722
+msgid "Modem"
+msgstr "Modeemi"
+
+#: general.cpp:477
+msgid "Busy Wait:"
+msgstr "Varatun j‰lkeen odotus:"
+
+#: general.cpp:495
+msgid ""
+"Specifies the number of seconds to wait before\n"
+"redial if all dialed numbers are busy. This is\n"
+"necessary because some modems get stuck if the\n"
+"same number is busy too often.\n"
+"\n"
+"The default is 0 seconds, you should not change\n"
+"this unless you need to."
+msgstr ""
+"M‰‰rittelee kuinka monta sekuntia odotetaan ennen\n"
+"uudelleensoittamista jos numero on varattu. T‰m‰\n"
+"on tarpeellinen koska jotkut modeemit j‰‰v‰t jumiin\n"
+"jos sama numero on varattu liian usein.\n"
+"\n"
+"Oletusarvo on 0 sekuntia, sinun ei tule muuttaa t‰t‰\n"
+"ellei sinulla ole tarvetta t‰h‰n."
+
+#: general.cpp:509
+msgid "Modem volume"
+msgstr "ƒ‰nenvoimakkuus"
+
+#: general.cpp:521
+msgid ""
+"Most modems have a speaker which makes\n"
+"a lot of noise when dialing. Here you can\n"
+"either turn this completely off or select a\n"
+"lower volume.\n"
+"\n"
+"If this does not work for your modem,\n"
+"you must modify the modem volume command"
+msgstr ""
+"Useimmissa modeemeissa on kaiutin joka\n"
+"tekee monia ‰‰ni‰ soiton aikana. T‰ss‰\n"
+"voit poistaa ‰‰nen tai valita hiljaisemman\n"
+"‰nenvoimakkuuden.\n"
+"\n"
+"Jos t‰m‰ ei toimi modeemillasi sinun tulee\n"
+"muokata modeemin ‰‰nenvoimakkuuskomentoa."
+
+#: general.cpp:533
+msgid "Modem Asserts CD Line."
+msgstr "Modeemi asettaa CD-linjan."
+
+#: general.cpp:541
+msgid ""
+"This controls how <i>kppp</i> detects that the modem\n"
+"is not responding. Unless you are having\n"
+"problems with this, do not modify this setting.\n"
+"\n"
+"<b>Default</b>: off"
+msgstr ""
+"T‰m‰ kontrolloi miten <i>kppp</i> havaitsee, ett‰\n"
+"modeemi ei vastaa komentoihin. Ellei sinulla ole\n"
+"ongelmia ‰l‰ muuta t‰t‰ asetusta.\n"
+"\n"
+"<b>Oletusarvo</b>: off"
+
+#: general.cpp:554
+msgid "Modem Commands"
+msgstr "Modeemin komennot"
+
+#: general.cpp:556
+msgid ""
+"Allows you to change the AT command for\n"
+"your modem."
+msgstr "Mahdollistaa AT-komentojen muuttamisen."
+
+#: general.cpp:559
+msgid "Query Modem"
+msgstr "Kysele modeemilta"
+
+#: general.cpp:561
+msgid ""
+"Most modems support the ATI command set to\n"
+"find out vendor and revision of your modem.\n"
+"\n"
+"Press this button to query your modem for\n"
+"this information.  It can be useful to help\n"
+"you setup the modem"
+msgstr ""
+"Useimmat modeemit tukevat ATI-komentoja\n"
+"modeemin valmistajan ja version selvitt‰miseksi.\n"
+"\n"
+"Paina nappia hakeaksi modeemilta n‰m‰ tiedot.\n"
+"Tiedoista voi olla apua modeemia asettaessasi."
+
+#: general.cpp:568
+msgid "Terminal"
+msgstr "P‰‰te"
+
+#: general.cpp:570
+msgid ""
+"Opens the built-in terminal program. You\n"
+"can use this if you want to play around\n"
+"with your modem's AT command set"
+msgstr ""
+"Avaa sis‰isen p‰‰teohjelman. Voit\n"
+"k‰ytt‰‰ p‰‰tett‰ jos haluat antaa\n"
+"modeemille AT-komentoja."
+
+#: general.cpp:634
+msgid "Throughput graph"
+msgstr "Nopeusgraafi"
+
+#: general.cpp:643
+msgid "Background color"
+msgstr "Taustan v‰ri"
+
+#: general.cpp:650
+msgid "Text color"
+msgstr "Tekstin v‰ri"
+
+#: general.cpp:657
+msgid "Input bytes color"
+msgstr "Sis‰‰ntulevien v‰ri"
+
+#: general.cpp:664
+msgid "Output bytes color"
+msgstr "Ulosmenevien v‰ri"
+
+#: main.cpp:116
+msgid "Recent changes in kppp"
+msgstr "Muutoksia kppp:ss‰"
+
+#: main.cpp:129
+msgid ""
+"From version 1.4.8 on, kppp has a new feature\n"
+"called \"Quickhelp\". It's similar to a tooltip,\n"
+"but you can activate it whenever you want.\n"
+"\n"
+"To activate it, simply click on a control like\n"
+"a button or a label with the right mouse button.\n"
+"If the item supports Quickhelp, a popup menu\n"
+"will appear leading to Quickhelp.\n"
+"\n"
+"To test it, right-click somewhere in this text."
+msgstr ""
+"L‰htien versiosta 1.4.8 kppp:ss‰ on uusi ominaisuus\n"
+"nimelt‰‰ \"Pika-apu\". Sen on samantyyppinen kuin,\n"
+"tyˆkaluvinkki mutta voit katsoa sit‰ koska haluat.\n"
+"\n"
+"Aktivoidaksesi vinkin, paina hiiren oikeaa nappia\n"
+"napin tai otsikon p‰‰ll‰ josta haluat apua.\n"
+"\n"
+"Kokeillaksesi ominaisuutta paina hiiren oikeaanappia t‰m‰n tekstin p‰‰ll‰."
+
+#: main.cpp:141
+msgid "Don't show this hint again"
+msgstr "ƒl‰ n‰yt‰ t‰t‰ vinkki‰ uudelleen"
+
+#: main.cpp:160
+msgid ""
+"This is an example for <b>QuickHelp</b>.\n"
+"This window will stay open until you\n"
+"click a mouse button or a hit a key.\n"
+msgstr ""
+"T‰m‰ on esimerkki <b>pika-avun</b> k‰ytt‰misest‰.\n"
+"T‰m‰ ikkuna on esilla kunnes painat hiiren\n"
+"nappia tai jotain n‰pp‰int‰.\n"
+
+#: main.cpp:403
+#, c-format
+msgid ""
+"kppp can't create or read from\n"
+"%s."
+msgstr ""
+"kppp ei voi lukea tiedostosta\n"
+"%s."
+
+#: main.cpp:432
+#, c-format
+msgid ""
+"kppp has detected a %s file.\n"
+"\n"
+"Another instance of kppp seems to be running under\n"
+"process-ID %d.\n"
+"\n"
+"Make sure that you are not running another kppp,\n"
+"delete the pid file, and restart kppp."
+msgstr ""
+"kppp on lˆyt‰nyt %s tiedoston.\n"
+"\n"
+"Toinen kppp n‰ytt‰‰ olevan jo k‰ynniss‰\n"
+"prosessi-ID:ll‰ %d.\n"
+"\n"
+"Varmista ettei toinen kppp ole k‰ynniss‰,\n"
+"ja tuhoa tiedosto, ja k‰ynnist‰ kppp uudelleen."
+
+#: main.cpp:438
+msgid "Exit"
+msgstr "Lopeta"
+
+#: main.cpp:501
+msgid "Connect to: "
+msgstr "Yhdist‰: "
+
+#: main.cpp:513
+msgid "Login ID:"
+msgstr "K‰ytt‰j‰ ID:"
+
+#: main.cpp:526
+msgid ""
+"Type in the username that you got from your\n"
+"ISP. This is especially important for PAP\n"
+"and CHAP. You may omit this when you use\n"
+"terminal-based or script-based authentication.\n"
+"\n"
+"<b>Important</b>: case is important here:\n"
+"<i>myusername</i> is not the same as <i>MyUserName</i>!"
+msgstr ""
+"Anna k‰ytt‰j‰nimesi jonka olet saanut palvelun-\n"
+"tarjoajaltasi. T‰m‰ on erityisen t‰rke‰‰ PAP\n"
+"ja CHAP tunnistuksessa. Voit ohittaa t‰m‰m\n"
+"joa k‰yt‰t p‰‰te- tai skriptipohjaista\n"
+"tunnistusta.\n"
+"\n"
+"<b>T‰rke‰‰</b>: kirjaiten koko vaikuttaa:\n"
+"<i>k‰ytt‰j‰nimi</i> ei ole sama kuin <i>K‰ytt‰j‰Nimi</i>!"
+
+#: main.cpp:535
+msgid "Password:"
+msgstr "Salasana:"
+
+#: main.cpp:549
+msgid ""
+"Type in the password that you got from your\n"
+"ISP. This is especially important for PAP\n"
+"and CHAP. You may omit this when you use\n"
+"terminal-based or script-based authentication.\n"
+"\n"
+"<b>Important</b>: case is important here:\n"
+"<i>mypassword</i> is not the same as <i>MyPassword</i>!"
+msgstr ""
+"Anna t‰h‰n salasana jonka sait palveluntarjoaltasi.\n"
+"ISP. T‰m‰ on erityisen t‰rke‰‰ PAP\n"
+"ja CHAP tunnistuksessa. Voit ohittaa t‰m‰m\n"
+"joa k‰yt‰t p‰‰te- tai skriptipohjaista\n"
+"tunnistusta.\n"
+"\n"
+"<b>T‰rke‰‰</b>: kirjaiten koko vaikuttaa:\n"
+"<i>salasana</i> ei ole sama kuin <i>SalaSana</i>!"
+
+#: main.cpp:563
+msgid "Show Log Window"
+msgstr "N‰yt‰ loki-ikkuna"
+
+#: main.cpp:570
+msgid ""
+"This controls whether a log window is shown.\n"
+"A log window shows the communication between\n"
+"<i>kppp</i> and your modem. This will help you\n"
+"in tracking down problems.\n"
+"\n"
+"Turn it off if <i>kppp</i> routinely connects without\n"
+"problems"
+msgstr ""
+"T‰m‰ m‰‰rittelee n‰ytet‰‰nkˆ loki-ikkuna kun.\n"
+"kppp muodostaa yhteytt‰. T‰m‰ auttaa sinua\n"
+"ongelmien etsinn‰ss‰.\n"
+"\n"
+"Laita t‰m‰ pois p‰‰lt‰ jos <i>kppp</i> ottaa yhteyden\n"
+"ilman ongelmia"
+
+#: main.cpp:593
+msgid "Setup"
+msgstr "Asetukset"
+
+#: main.cpp:609
+msgid "Connect"
+msgstr "Yhdist‰"
+
+#: main.cpp:689
+#, c-format
+msgid ""
+"No such Account:\n"
+"%s"
+msgstr ""
+"Profiilia ei ole olemassa:\n"
+"%s"
+
+#: main.cpp:704
+msgid "kppp Configuration"
+msgstr "kppp Asetukset"
+
+#: main.cpp:720
+msgid "Accounts"
+msgstr "Profiilit"
+
+#: main.cpp:721
+msgid "Device"
+msgstr "Laite"
+
+#: main.cpp:723
+msgid "PPP"
+msgstr "PPP"
+
+#: main.cpp:724
+msgid "Graph"
+msgstr "Graafi"
+
+#: main.cpp:871
+msgid "Timeout expired while waiting for the PPP interface to come up!"
+msgstr "Aikavalvonta umpeutui odotettaessa PPP-yhteyden syntymist‰!"
+
+#: main.cpp:876
+msgid "The pppd daemon died unexpectedly!"
+msgstr "pppd -daemoni kuoli odottamatta!"
+
+#: main.cpp:884
+msgid "Details..."
+msgstr "Yksityiskohdat..."
+
+#: main.cpp:916
+msgid ""
+"Sorry. kppp's helper process just died.\n"
+"\n"
+"Since a further execution would be pointless, kppp will shut down right now."
+msgstr ""
+"kppp:n apuprosessi kuoli juuri.\n"
+"\n"
+"Koska toiminnan jatkaminen ei kannata, kppp lopetetaan nyt."
+
+#: main.cpp:950 runtests.cpp:400
+msgid ""
+"Cannot find the PPP daemon!\n"
+"\n"
+"Make sure that pppd is installed and\n"
+"you have entered the correct path."
+msgstr ""
+"En lˆyd‰ pppd-daemonia!\n"
+"\n"
+"Varmista, ett‰ pppd on asennettu\n"
+"ja olet antanut oikean polun."
+
+#: main.cpp:959
+#, c-format
+msgid ""
+"kppp can not execute:\n"
+" %s\n"
+"Please make sure thatyou have given kppp setuid permission and that\n"
+"pppd is executable."
+msgstr ""
+"kppp ei voi suorittaa:\n"
+" %s\n"
+"Varmista, ett‰ kppp:lla on setuid oikeudet ja\n"
+"pppd on suoritettavissa."
+
+#: main.cpp:974
+#, c-format
+msgid ""
+"kppp can not find:\n"
+" %s\n"
+"Please make sure you have setup\n"
+"your modem device properly\n"
+"and/or adjust\n"
+" the location of the modem device on the modem tab of\n"
+"the setup dialog.\n"
+" Thank You"
+msgstr ""
+"kppp ei lˆyd‰:\n"
+" %s\n"
+"Varmista, ett‰ olet asettanut\n"
+"modeemisi oikein\n"
+"ja/tai aseta\n"
+" modeemin sijainti modeemi-lipukkeesta\n"
+"asetukset dialogissa.\n"
+" Kiitos"
+
+#: main.cpp:994
+msgid ""
+"You have selected the authentication\n"
+"method PAP. This requires that you\n"
+"supply a username and a password!"
+msgstr ""
+"Olet valinnut tunnistuksen muodoksi\n"
+"PAP:n. T‰m‰ vaatii sen, ett‰ annat\n"
+"k‰ytt‰j‰nimen sek‰ salasanasi!"
+
+#: main.cpp:1003
+#, c-format
+msgid ""
+"Cannot create PAP authentication\n"
+"file \"%s\""
+msgstr ""
+"En saa luotua PAP-tunnistusta\n"
+"tiedostoon \"%s\""
+
+#: main.cpp:1020
+msgid ""
+"You have selected the authentication\n"
+"method CHAP. This requires that you\n"
+"supply a username and a password!"
+msgstr ""
+"Olet valinnut tunnistuksen muodoksi\n"
+"CHAP:n. T‰m‰ vaatii sen, ett‰ annat\n"
+"k‰ytt‰j‰nimen sek‰ salasanasi!"
+
+#: main.cpp:1029
+#, c-format
+msgid ""
+"Cannot create CHAP authentication\n"
+"file \"%s\""
+msgstr ""
+"En saa luotua CHAP-tunnistusta\n"
+"tiedostoon \"%s\""
+
+#: main.cpp:1041
+msgid "You must specify a telephone number!"
+msgstr "Sinun on annettava puhelinnumero !"
+
+#: main.cpp:1131
+msgid "Quit kPPP?"
+msgstr "Lopeta kPPP?"
+
+#: main.cpp:1132
+msgid "Exiting kPPP will close your PPP Session."
+msgstr "kPPP:n lopetus sulkee PPP-istuntosi."
+
+#: main.cpp:1178
+msgid ""
+"Can not load the accounting\n"
+"ruleset \""
+msgstr ""
+"En saa ladattua laskutus\n"
+"s‰‰ntˆ‰ \""
+
+#: modem.cpp:119
+msgid "Sorry, can't open modem."
+msgstr "En saa avattua modeemia."
+
+#: modem.cpp:125
+msgid "Sorry, can't detect state of CD line."
+msgstr "Valitettavasti en voi tarkastaa CD-linjan tilaa."
+
+#: modem.cpp:131
+msgid "Sorry, the modem is not ready."
+msgstr "Modeemi ei ole valmis"
+
+#: modem.cpp:142 modem.cpp:186
+msgid "Sorry, the modem is busy."
+msgstr "Modeemi on jo k‰ytˆss‰"
+
+#: modem.cpp:192
+msgid "Modem Ready."
+msgstr "Modeemi valmis."
+
+#: modem.cpp:204
+msgid "Can't restore tty settings: tcsetattr()\n"
+msgstr "En saa palautettua tty:n asetuksia: tcsetattr()\n"
+
+#: modem.cpp:345
+msgid "Sorry, the modem doesn't respond."
+msgstr "Valitettavasti modeemi ei vastaa."
+
+#: modem.cpp:446
+msgid "Unknown speed"
+msgstr "Tuntematon nopeus"
+
+#: modemcmds.cpp:44
+msgid "Edit Modem Commands"
+msgstr "Muokkaa modeemin komentoja"
+
+#: modemcmds.cpp:72
+msgid "Pre-Init Delay (sec/100):"
+msgstr "Asetusviive,ennen (sek/100):"
+
+#: modemcmds.cpp:77
+msgid "Initialization String:"
+msgstr "Alustuskomento:"
+
+#: modemcmds.cpp:95
+msgid "Post-Init Delay (sec/100):"
+msgstr "Asetusviive,j‰lkeen (sek/100):"
+
+#: modemcmds.cpp:100
+msgid "Init Response:"
+msgstr "Asetuksen vaste:"
+
+#: modemcmds.cpp:107
+msgid "Dial String:"
+msgstr "Soittorivi:"
+
+#: modemcmds.cpp:114
+msgid "Connect Response:"
+msgstr "Yhteydenmuodostusvaste:"
+
+#: modemcmds.cpp:121
+msgid "Busy Response:"
+msgstr "Varatun linjan vaste:"
+
+#: modemcmds.cpp:128
+msgid "No Carrier Response:"
+msgstr "Ei yhteys‰‰nt‰ vastaus:"
+
+#: modemcmds.cpp:135
+msgid "No Dialtone Response:"
+msgstr "Ei soitto‰‰nt‰ vaste:"
+
+#: modemcmds.cpp:142
+msgid "Hangup String:"
+msgstr "Lopetuskomento:"
+
+#: modemcmds.cpp:149
+msgid "Hangup Response:"
+msgstr "Lopetusvaste:"
+
+#: modemcmds.cpp:156
+msgid "Answer String:"
+msgstr "Vastausmerkkijono:"
+
+#: modemcmds.cpp:163
+msgid "Ring Response:"
+msgstr "Soiton vaste:"
+
+#: modemcmds.cpp:170
+msgid "Answer Response:"
+msgstr "Vastauksen vaste:"
+
+#: modemcmds.cpp:177
+msgid "Escape String:"
+msgstr "Lopetusrivi:"
+
+#: modemcmds.cpp:184
+msgid "Escape Response:"
+msgstr "Lopetusvaste:"
+
+#: modemcmds.cpp:203
+msgid "Guard Time (sec/50):"
+msgstr "Valvonta-aika (sek/50):"
+
+#: modemcmds.cpp:207
+msgid "Volume off/low/high"
+msgstr "ƒ‰nenvoimakkuus"
+
+#: pppdargs.cpp:38
+msgid "Customize pppd Arguments"
+msgstr "Muokkaa pppd:n argumentteja"
+
+#: pppdargs.cpp:51
+msgid "Argument:"
+msgstr "Argumentti:"
+
+#: pppdargs.cpp:80
+msgid "Defaults"
+msgstr "Oletukset"
+
+#: pppdata.cpp:56
+msgid ""
+"The application-specific config file could not be\n"
+"opened neither read-write nor read-only.\n"
+"\n"
+"The superuser might have to change its ownership\n"
+"by issuing the following command in your home directory:\n"
+"\n"
+"chown {YourUsername} .kde/share/config/kppprc"
+msgstr ""
+"Sovelluskohtaista asetustiedostoa ei voitu avata\n"
+"kirjotettavaksi tai edes luettavaksi.\n"
+"\n"
+"P‰‰k‰ytt‰j‰ voi muuttaa tieddoston oikeuksia antamalla\n"
+"seuraavan komennon kotihakemistossasi:\n"
+"\n"
+"chown {K‰ytt‰j‰nimi} .kde/share/config/kppprc"
+
+#: modeminfo.cpp:39
+msgid "ATI Query"
+msgstr "ATI kysely"
+
+#: modeminfo.cpp:117
+msgid "Modem Query timed out."
+msgstr "Modeemin kyselyn aikavalvonta"
+
+#: miniterm.cpp:164 miniterm.cpp:226 modeminfo.cpp:145
+msgid "Modem Ready"
+msgstr "Modeemi valmis"
+
+#: modeminfo.cpp:249
+msgid "Modem Query Results"
+msgstr "Modeemin kyselyn tulos"
+
+#: pppstatdlg.cpp:65
+msgid "kppp Statistics"
+msgstr "kppp statistiikka"
+
+#: pppstatdlg.cpp:71
+msgid "Statistics"
+msgstr "Statistiikka"
+
+#: pppstatdlg.cpp:115
+msgid "Local Addr:"
+msgstr "Oma osoite:"
+
+#: pppstatdlg.cpp:121
+msgid "Remote Addr:"
+msgstr "Et‰p‰‰n osoite:"
+
+#: pppstatdlg.cpp:153
+msgid "bytes in"
+msgstr "tavuja sis‰‰n"
+
+#: pppstatdlg.cpp:154
+msgid "bytes out"
+msgstr "tavuja ulos"
+
+#: pppstatdlg.cpp:156
+msgid "packets in"
+msgstr "paketteja sis."
+
+#: pppstatdlg.cpp:157
+msgid "packets out"
+msgstr "paketteja ulos"
+
+#: pppstatdlg.cpp:159
+msgid "vjcomp in"
+msgstr "vjcomp sis‰‰n"
+
+#: pppstatdlg.cpp:160
+msgid "vjcomp out"
+msgstr "vjcomp ulos"
+
+#: pppstatdlg.cpp:162
+msgid "vjunc in"
+msgstr "vjunc sis‰‰n"
+
+#: pppstatdlg.cpp:163
+msgid "vjunc out"
+msgstr "vjunc ulos"
+
+#: pppstatdlg.cpp:165
+msgid "vjerr"
+msgstr "vjerr"
+
+#: pppstatdlg.cpp:166
+msgid "non-vj"
+msgstr "non-vj"
+
+#: pppstatdlg.cpp:285
+#, c-format
+msgid "%d kb/s"
+msgstr "%d kb/s"
+
+#: pppstatdlg.cpp:432 pppstatdlg.cpp:437
+msgid "unavailable"
+msgstr "ei tietoa"
+
+#: miniterm.cpp:44
+msgid "Kppp Mini-Terminal"
+msgstr "Kppp minip‰‰te"
+
+#: miniterm.cpp:50
+msgid "&Reset Modem"
+msgstr "&Resetoi modeemi"
+
+#: miniterm.cpp:53
+msgid ""
+"MiniTerm - A terminal emulation for KPPP\n"
+"\n"
+"(c) 1997 Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"(c) 1998 Harri Porten <porten@kde.org>\n"
+"(c) 1998 Mario Weilguni <mweilguni@kde.org>\n"
+"\n"
+"This program is published under the GNU GPL\n"
+"(GNU General Public License)"
+msgstr ""
+"MiniTerm - P‰‰teemulaattori KPPP:lle\n"
+"\n"
+"(c) 1997 Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"(c) 1998 Harri Porten <porten@kde.org>\n"
+"(c) 1998 Mario Weilguni <mweilguni@kde.org>\n"
+"\n"
+"T‰m‰ ohjelma on julkaistu GNU GPL\n"
+"(GNU General Public License) lisenssill‰."
+
+#: miniterm.cpp:63
+msgid "&Modem"
+msgstr "&Modeemi"
+
+#: miniterm.cpp:107
+msgid "Close MiniTerm"
+msgstr "Sulje Minip‰‰te"
+
+#: miniterm.cpp:112
+msgid "Reset Modem"
+msgstr "Resetoi modeemi"
+
+#: miniterm.cpp:138
+msgid "Initializing Modem"
+msgstr "Alustan modeemia"
+
+#: miniterm.cpp:205
+msgid "Hanging up ..."
+msgstr "Katkaisen ..."
+
+#: miniterm.cpp:219
+msgid "Resetting Modem"
+msgstr "Resetoin modeemin"
+
+#: acctselect.cpp:47
+msgid "Accounting Setup"
+msgstr "Laskutuksen Asetus"
+
+#: acctselect.cpp:55
+msgid "Enable accounting"
+msgstr "Salli laskutus"
+
+#: acctselect.cpp:73
+msgid "Selected:"
+msgstr "Valittu:"
+
+#: acctselect.cpp:87
+msgid "Volume accounting:"
+msgstr "M‰‰r‰laskutus:"
+
+#: acctselect.cpp:91
+msgid "No accounting"
+msgstr "Ei m‰‰r‰laskutusta"
+
+#: acctselect.cpp:92
+msgid "Bytes in"
+msgstr "Tavuja sis‰‰n"
+
+#: acctselect.cpp:93
+msgid "Bytes out"
+msgstr "Tavuja ulos"
+
+#: acctselect.cpp:94
+msgid "Bytes in and out"
+msgstr "Tavuja sis‰‰n ja ulos"
+
+#: acctselect.cpp:164 acctselect.cpp:270
+msgid "Available rules"
+msgstr "Olemassaolevat s‰‰nnˆt"
+
+#: acctselect.cpp:305
+msgid "(none)"
+msgstr "(ei mik‰‰n)"
+
+#: ruleset.cpp:544
+msgid "kppp: no rulefile specified\n"
+msgstr "kppp: ei s‰‰ntˆtiedostoa m‰‰ritelty\n"
+
+#: ruleset.cpp:550
+#, c-format
+msgid "kppp: rulefile \"%s\" not found\n"
+msgstr "kppp: s‰‰ntˆtiedostoa \"%s\" ei lˆytynyt\n"
+
+#: ruleset.cpp:555
+msgid "kppp: rulefiles must have the extension \".rst\"\n"
+msgstr "kppp: s‰‰ntˆtiedostoilla on oltava p‰‰te \".rst\"\n"
+
+#: ruleset.cpp:564
+msgid "kppp: error parsing the ruleset\n"
+msgstr "kppp: virhe s‰‰ntˆtiedostoa tulkittaessa\n"
+
+#: ruleset.cpp:569
+#, c-format
+msgid "kppp: parse error in line %d\n"
+msgstr "kppp: tulkintavirhe rivill‰ %d\n"
+
+#: ruleset.cpp:575
+msgid "kppp: rulefile does not contain a default rule\n"
+msgstr "kppp: s‰‰ntˆtiedosto ei sis‰ll‰ oletuss‰‰ntˆ‰\n"
+
+#: ruleset.cpp:580
+msgid "kppp: rulefile does not contain a \"name=...\" line\n"
+msgstr "kppp: s‰‰ntˆtiedosto ei sis‰ll‰ \"name=...\" rivi‰\n"
+
+#: ruleset.cpp:584
+msgid "kppp: rulefile is ok\n"
+msgstr "kppp: s‰‰ntˆtiedosto on OK\n"
+
+#: docking.cpp:199
+msgid "Minimize"
+msgstr "Pienenn‰"
+
+#: runtests.cpp:364
+msgid ""
+"You¥re not allowed to dial out with kppp.\n"
+"Contact your system administrator."
+msgstr ""
+"Sinulla ei ole oikeuksia pppd:n\n"
+"k‰ynnistykseen!\n"
+"\n"
+"Ota yhteys j‰rjestelm‰n yll‰pit‰j‰‰n ja\n"
+"pyyd‰ oikeudet pppd ohjelmaan."
+
+#: runtests.cpp:381
+msgid ""
+"This kernel has no PPP support, neither\n"
+"compiled in nor via the kernel module\n"
+"loader.\n"
+"\n"
+"To solve this problem:\n"
+"  * contact your system adminstrator\n"
+"or\n"
+"  * install a kernel with PPP support\n"
+msgstr ""
+"Kerneliss‰ ei ole PPP-tukea, joko\n"
+"k‰‰nnettyn‰ tai modulia ei ole ladattu.\n"
+"\n"
+"Ratkaistaksesi ongelman:\n"
+"  * ota yhteytt‰ j‰rjestelm‰si yll‰pitoon\n"
+"tai\n"
+"  * asenna kerneli PPP tuella\n"
+
+#: runtests.cpp:412
+msgid ""
+"You do not have the permission\n"
+"to start pppd!\n"
+"\n"
+"Contact your system administrator\n"
+"and ask to get access to pppd."
+msgstr ""
+"Sinulla ei ole oikeuksia pppd:n\n"
+"k‰ynnistykseen!\n"
+"\n"
+"Ota yhteys j‰rjestelm‰n yll‰pit‰j‰‰n ja\n"
+"pyyd‰ oikeudet pppd ohjelmaan."
+
+#: runtests.cpp:423 runtests.cpp:437
+msgid ""
+"pppd is not properly installed!\n"
+"\n"
+"The pppd binary must be installed\n"
+"with the SUID bit set. Contact your\n"
+"system administrator."
+msgstr ""
+"pppd ei ole oikein asennettu!\n"
+"\n"
+"pppd ohjelma pit‰‰ olla asennettu\n"
+"SUID-bitti asetettuna. Ota yhteys\n"
+"j‰rjestelm‰n yll‰pit‰j‰‰n."
+
+#: runtests.cpp:472
+msgid ""
+"kppp has detected a 'lock' option in /etc/ppp/options.\n"
+"\n"
+"This option has to be removed since kppp takes care of device locking "
+"itself.\n"
+"Contact your system administrator."
+msgstr ""
+"kppp on huomannut 'lock'-asetuksen tiedostossa /etc/ppp/options.\n"
+"\n"
+"T‰m‰ asetus on poistettava koska kppp hoitaa itse laitteen lukitukset.\n"
+" Ota yhteytt‰ j‰rjestelm‰n yll‰pitoon."
+
+#: runtests.cpp:497
+msgid ""
+"is missing!\n"
+"\n"
+"Ask your system administrator to create\n"
+"a non-empty file that has appropriate\n"
+"read and write permissions."
+msgstr ""
+"puuttuu!\n"
+"\n"
+"Pyyd‰ j‰rjestelm‰si yll‰pit‰j‰‰ luomaan t‰m‰\n"
+"tiedosto sopivilla k‰yttˆoikeuksilla."
+
+#: loginterm.cpp:118
+msgid "Ca&ncel"
+msgstr "&Peruuta"
+
+#: loginterm.cpp:123
+msgid "&Continue"
+msgstr "&Jatka"
+
+#: ppplog.cpp:136
+msgid ""
+"You have launched pppd before the remote server was ready to establish a PPP "
+"connection.\n"
+"Please use the terminal-based login to verify"
+msgstr ""
+"Olet k‰ynnist‰nyt pppd-ohjelman ennenkuin palvelin on valmis muodostamaan "
+"PPP-yhteyden.\n"
+"K‰yt‰ p‰‰tepohjaista kirjautumista varmistaaksesi"
+
+#: ppplog.cpp:141
+msgid "You haven't started the PPP software on the peer system."
+msgstr "Et olet k‰ynnist‰nyt PPP ohjelmistoa vastap‰‰ss‰"
+
+#: ppplog.cpp:144
+msgid "Check that you supplied the correct username and password!"
+msgstr "Tarkista ett‰ annoit oikean k‰ytt‰j‰nimen ja salasanan!"
+
+#: ppplog.cpp:147
+msgid ""
+"You shouldn't pass 'lock' as an argument to pppd. Check /etc/ppp/options and "
+"~/.ppprc"
+msgstr ""
+"Sinun ei tule antaa 'lock' parametria pppd:lle. Tarkista /etc/ppp/options ja "
+"~/.ppprc"
+
+#: ppplog.cpp:151
+msgid ""
+"The remote system does not seem to answer to\n"
+"configuration request! Contact your provider!"
+msgstr ""
+"Vastap‰‰n j‰rjestelm‰ ei n‰yt‰ vastaavan asetuspyyntˆˆsi!\n"
+"Ota yhteytt‰ palveluntarjoajaasi!"
+
+#: ppplog.cpp:155
+msgid ""
+"You have passed an invalid option to pppd. See `man pppd' for a complete "
+"list of valid arguments."
+msgstr ""
+"Olet antanut virheellisen valitsimen pppd:lle. Katso `man pppd' saadaksesi "
+"t‰ydellisen listan valitsimista."
+
+#: ppplog.cpp:170
+#, c-format
+msgid ""
+"Notice that the remote system has sent the following message:\n"
+"\"%s\"\n"
+"This may give you a hint why the the connection has failed."
+msgstr ""
+"Huomaa ett‰ vastap‰‰n j‰rjestelm‰ on l‰hett‰nyt seuraavan viestin:\n"
+"\"%s\"\n"
+"Viesti voi antaa vinkkej‰ miksi yhteys ep‰onnistui."
+
+#: ppplog.cpp:189
+msgid "Sorry. Can't help you here."
+msgstr "Valitettavasti en voi auttaa t‰ss‰."
+
+#: ppplog.cpp:206
+msgid ""
+"KPPP could not prepare a PPP log. It¥s very likely\n"
+"that pppd was started without the \"debug\" option.\n"
+"\n"
+"Without this option it¥s difficult to find out PPP\n"
+"problems, so you should turn on the debug option.\n"
+"\n"
+"Shall I turn it on now?"
+msgstr ""
+"KPPP ei voinut k‰sitell‰ PPP -lokia. Todenn‰kˆisesti\n"
+"pppd k‰ynnistettiin ilman \"debug\" -optiota.\n"
+"\n"
+"Ilman t‰t‰ optiota on vaika selvitt‰‰ PPP:n\n"
+"ongelmia, joten sinun kannattaisi laittaa t‰m‰ p‰‰lle.\n"
+"\n"
+"Laitanko sen p‰‰lle nyt?"
+
+#: ppplog.cpp:217
+msgid ""
+"The \"debug\" option has been added. You\n"
+"should now try to reconnect. If that fails\n"
+"again, you will get a PPP log that may help\n"
+"you to track down the connection problem."
+msgstr ""
+"\"debug\" -optio on lis‰tty. Yrit‰ uudelleen\n"
+"yhteytt‰. Jos se taas ep‰onnistuu saat PPP-\n"
+"lokin josta voi olla apua ongelman j‰ljitt‰misess‰."
+
+#: ppplog.cpp:232
+msgid "PPP log"
+msgstr "PPP loki"
+
+#: ppplog.cpp:236
+msgid "kppp's diagnosis (just guessing):"
+msgstr "kppp:n diagnoosi (arvailua):"
+
+#: ppplog.cpp:241
+msgid "Write to file"
+msgstr "Kirjoita tiedostoon"
+
+#: modemdb.cpp:46
+msgid "Select modem type..."
+msgstr "Valitse modeemityyppi..."
+
+#: modemdb.cpp:48
+msgid ""
+"To setup your modem, first choose its vendor in the list to the left, and "
+"then select the model from the right list. If you don¥t know which modem you "
+"have, you can try out one of the \"Generic\" modems."
+msgstr ""
+"Asettaaksei modeemin, valitse ensin valmistaja vasemmalla olevasta listasta "
+"ja sitten valitse malli oikealta. Jos et tied‰ modeemisi tyyppi‰, voit "
+"yritt‰‰ jotain \"Yleisist‰\" modeemeista."
+
+#: modemdb.cpp:151 modemdb.cpp:153 modemdb.cpp:223 modemdb.cpp:238
+msgid "<Generic>"
+msgstr "<Yleinen>"
+
+#: modemdb.cpp:218
+msgid "Hayes(tm) compatible modem"
+msgstr "Hayes(tm) yhteensopiva modeemi"

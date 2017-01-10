@@ -1,0 +1,751 @@
+<!doctype linuxdoc system>
+<article>
+
+<titlepag>
+<title>KOrganizer Reference Manual</title>
+<author>
+<name>Preston Brown <htmlurl url="mailto:pbrown@kde.org" name="pbrown@kde.org">
+</author>
+<date> Last updated April 16, 1999
+<abstract>
+Online help / Introduction to KOrganizer. Covers through version 1.1.1.
+</abstract>
+</titlepag>
+
+<sect>Introduction
+
+<p>KOrganizer is a program for doing several things.  It is a
+calendar.  It is a program to keep track of your appointments.  It is
+a prioritized todo list. It coordinates scheduling between different
+people or groups.  In short, it is a program which  tries to help you
+keep your life organized, hence the simple, yet appropriate name.  You
+may have encountered similar programs for both UNIX and Windows such
+as <em>plan</em>, <em>Netscape Calendar</em>, <em>Microsoft
+Outlook</em>, and <em>Ecco Pro</em>.  All of these programs fall under
+the same general category of ``PIM,'' or Personal Information Manager,
+and they all more or less try to do the same things, though often with
+different angles of approach.
+
+<sect1>vCalendar Portable Data Format
+<p>KOrganizer is the first free PIM for Unix which implements the
+<em>vCalendar</em> protocol for personal data interchange.  This
+vendor-independent, open standard allows different programs and
+devices to share/synchronize appointment and calendar information
+without proprietary standards.  The data is stored in ASCII and is
+easily human-readable.  While some Windows programs have implemented a
+limited import/export ability from their native formats to vCalendar,
+KOrganizer's <em>native</em> file format on disk is vCalendar, so it
+bypasses this middle-step entirely.  It also allows you to easily
+access your data without the program itself, in the spirit of other
+UNIX programs.
+
+<sect1>3COM PalmPilot Support
+<p>KOrganizer also offers even more convenience if you have a 3COM
+PalmPilot or IBM WorkPad in conjunction with KPilot, a set of
+pilot-access tools for KDE.  With KPilot working in conjunction with
+KOrganizer, you can easily synchronize your desktop and portable
+schedules.  
+
+<p>You will need to have KPilot installed, and have the "todo conduit"
+and "vcalendar conduits" configured in order for your Appointments and
+To Do items to be synchronized back and forth between KOrganizer and
+your Pilot.  However, once this is done, FULL synchronization is
+supported, including recurring appointments, alarms, attached notes,
+etc.
+
+<sect>Starting KOrganizer 
+
+<p>KOrganizer can be started from the command line or from the KDE
+start menu.  If you do choose to start from the command line,
+KOrganizer supports a number of options which allow you to specify X
+Window settings, including:
+
+<descrip>
+
+<tag/-display &lt;display>/Displays KOrganizer on the requested
+display, instead of the default display or the one referred to by the
+DISPLAY environment variable.
+
+<tag/-geometry &lt;geometry>/Explicitly sets the geometry of
+KOrganizer in terms of length and width, and possibly screen position.
+See the X man page for more information on geometry.
+
+<tag/-name &lt;name>/Sets the name of the window to the string
+specified.
+
+<tag/-title &lt;title>/Sets the icon title (when the program is
+minimized) to the string specified.
+
+<tag/-cmap/Uses a private color map for KOrganizer, so that it doesn't
+hog color resources.  Only useful on 8bpp displays.
+
+</descrip>
+
+<p>There are a number of KOrganizer-specific options as well:
+
+<descrip>
+
+<tag/-c, --calendar &lt;calendar>/Specify the name of the calendar to
+load at startup.  If none is specified, it will use the default
+calendar which is stored in preferences (the last calendar loaded when
+KOrganizer was last closed).
+
+<tag/-l, --list/List any appointments or events for today to stdout in
+an ASCII table display.
+
+<tag/-s, --show &lt;numdays>/Similar to the list option above, but
+will display appointments or events from today through the number of
+days specified.
+
+<tag/-h, --help/Displays a concise summary for all command-line
+options.
+
+</descrip>
+
+<sect>KOrganizer Docking Icon (Alarm Daemon)
+
+<p>The "alarm daemon" is a small, separate program from the main
+KOrganizer binary which handles all display of alarms, both visible
+and audible.  It manifests itself as a small calendar icon with a bell
+superimposed on top of it in the task tray area of the KDE panel.
+
+<p><img src="alarmd-panel.gif">
+
+<p>When you run KOrganizer, it checks whether or not the alarm daemon
+is already running, and if it isn't, it will start it automatically.
+The alarm daemon continues to run even after you exit KOrganizer,
+which lets you receive alarm notification without keeping the full
+KOrganizer program resident in memory at all times.  The alarm daemon
+is much more light weight in it's memory requirements.
+
+<p>The alarm daemon has several possible functions.  The main function
+is to start the KOrganizer program.  A single click with the left
+mouse button on the icon will launch KOrganizer.  Currently, the alarm
+daemon will start a new copy of KOrganizer each time you click it;
+therefore you should take care only to click it once.  This will be
+fixed in the next release.
+
+<p>The secondary alarm daemon functions are activated through a right
+click on the icon, which will bring up a popup menu.  Currently, the
+only choices are to enable or disable alarms, and to quit.  These
+options are hopefully self-explanatory.
+
+<sect>Main Program Window
+
+<p>When KOrganizer starts, you are first presented with the main
+KOrganizer window.  The window has several components, including a
+menubar, a toolbar, a month calendar, a current ``view'' of events,
+and a tasklist.  The calendar defaults to displaying today's date.
+
+<sect1>Menus
+
+<p>The menus provide access to all the common operations that can be
+performed on the calendar, including saving, loading, adding and
+deleting appointments, printing, etc. etc.
+
+<sect2>File Menu<label id="sec-file">
+
+<p>The <tt>File</tt> menu provides access to functions involving the
+entire calendar.
+<p>
+
+<descrip>
+
+<tag/New Window/Allows you to open up another main window.  You might
+want to do this if you wish to have two simultaneous but different
+views of a calendar open at once.
+
+<tag/Open/Opens a file dialog allowing you to select a new vCalendar
+to load.  If you have made changes to the current calendar, you will
+be given the option of saving them before loading a new one.
+
+<tag/Open Recent/Provides a list of recently opened calendars for
+quick access, allowing you to bypass the file dialog entirely.
+
+<tag/Close/Closes the current window. If this is the last window, this
+choice has the same effect as Quit.
+
+<tag/Save/Saves the calendar to disk, making sure all changes you
+might have made will be kept.  If the calendar has no name, save will
+behave like <tt>Save As</tt>.
+
+<tag/Save As/Gives you a file dialog so that you may choose a
+different name for your calendar than the one currently assigned to
+it.  Useful if you have made changes to a calendar that you want to
+save, but also want to keep separate from your ``regular'' calendar.
+
+<tag/Import From Ical/If you have used ical, a popular but older
+calendar program for unix using the Tk widget set, you may wish to
+import your appointments, events, and todo items directly to
+KOrganizer.  This action will read the <tt>.calendar</tt> file from
+your home directory and merge any entries it contains into your
+current calendar.  If any errors or suspicious things occur during the
+process, you will be notified via a message box.
+
+<tag/Merge Calendar/If you have a different vCalendar file somewhere,
+and you would like to include its contents into your own calendar,
+this will do just that.  A good time to do this would be if you
+received a vCalendar with a few entries via e-mail, for instance.
+
+<tag/Print Setup/Brings up the print setup dialog and allows you to
+set up how you want printed output to appear.  See <ref id="sec-print"
+name="the section on printing"> for more information.
+
+<tag/Print/Prints the current calendar.
+
+<tag/Print Preview/Prints the current calendar and displays it with
+your print preview program, instead of sending the output  directly to
+the printer.  You can choose the program that you use to preview
+output in the <ref id="sec-optionsdlg" name="Options dialog">.
+
+<tag/Quit/Quits KOrganizer, prompting to save if the current calendar
+has been modified but not yet saved.
+
+</descrip>
+
+<sect2>Edit Menu<label id="sec-edit">
+
+<p>The <tt>Edit</tt> menu provides editing operations on appointments.
+<p>
+
+<descrip>
+
+<tag/Cut/Cuts the currently selected appointment(s) to the clipboard,
+removing them from your calendar.
+
+<tag/Copy/Copies the currently selected appointment(s) to the
+clipboard, leaving them untouched in your calendar.
+
+<tag/Paste/Inserts the contents of the clipboard into your calendar.
+The clipboard must contain a valid vCalendar, provided either by a
+previous Cut/Copy operation or from a selection made outside of
+KOrganizer.  You will be warned if the contents of the clipboard
+cannot be understood.
+
+</descrip>
+
+<sect2>View Menu<label id="sec-view">
+
+<p>Options for changing the current view of your appointments
+<p>
+
+<descrip>
+
+<tag/List/Switches to <ref id="sec-listview" name="List View">.
+
+<tag/Day/Switches to <ref id="sec-dayview" name="Day View">. 
+
+<tag/Work Week/Switches to <ref id="sec-weekview"> name="Week View">,
+but with only the 5 days of a business week selected instead of the
+normal 7.
+
+<tag/Week/Switches to <ref id="sec-weekview" name="Week View">.
+
+<tag/Month/Switches to <ref id="sec-monthview" name="Month View">.
+
+<tag/Todo List/Switches to full screen<ref id="sec-todolist"
+name="Todo View">.
+
+<tag/Update/Updates or refreshes the currently displayed view.
+
+</descrip>
+
+<sect2>Actions Menu<label id="sec-action">
+
+<p>Different actions you can take to modify your calendar.
+<p>
+
+<descrip>
+
+<tag/New Appointment/Brings up the appointment window, allowing you to
+create a new appointment.  By default, the appointment will begin on
+the currently selected date.
+
+<tag/New Event/Brings up the appointment window, allowing you to
+create a new appointment.  The default for this mode is that the
+appointment has no time associated with it; it is merely a reminder of
+something you mean to do on that particular date or range of dates.
+
+<tag/Edit Appointment/Brings up the appointment window with the
+currently selected appointment filled in to the fields and ready for
+editing.
+
+<tag/Delete Appointment/Confirms that you would like to delete the
+currently selected appointment, and upon positive confirmation,
+removes it from your calendar.
+
+<tag/Search/Pops up the <ref id="sec-search" name="Search Window">,
+allowing you to search for appointment(s) by date, a common phrase,
+etc.
+
+<tag/Mail Appointment/This is currently unimplemented.
+
+</descrip>
+
+<sect2>Options Menu<label id="sec-options">
+
+<p>Allows access to configuration options common to the entire program.
+<p>
+
+<descrip>
+
+<tag/Show Tool Bar/Toggles whether or not the tool bar is visible.
+
+<tag/Show Status Bar/Toggles whether or not the status bar (at the
+bottom of the screen) is visible.
+
+<tag/Edit Options/Brings up the  <ref id="sec-optionsdlg"
+name="Options Dialog">, allowing you to change common options like
+date/time formats, fonts, etc.
+
+</descrip>
+
+<sect2>Help Menu<label id="sec-help">
+
+<p>Various methods of getting help on KOrganizer.
+<p>
+
+<descrip>
+
+<tag/Contents/The contents of the KOrganizer online help manual.
+
+<tag/Help On/Gives you context sensitive help information on the
+object that you click on after choosing this.  However, none of the
+help for the different objects has been written as of the time this
+manual was last updated, so this will not be too useful.  Volunteers?
+
+<tag/About/Shameless plug about the authors of KOrganizer.
+
+</descrip>
+
+<sect1>Date Navigator<label id="sec-datenav">
+
+<p><img src="datenavigator.gif">
+
+The small calendar that is in the upper-left corner of the screen
+is the main way provided to navigate among and select from various
+dates.  The single-arrow icons move forwards and backwards in time by
+increments of a month, while the double-arrows allow moving by years
+at a time.  Today's date will be outlined with a gray box.  Dates
+which have appointments scheduled on them will be bold and a different
+color than the regular dates.  Selecting a date is accomplished simply
+by clicking on it; multiple dates may be selected/deselected simply by
+holding down the <tt>control</tt> key while clicking.
+
+<sect1>Views
+
+<p>There are several different ``views'' available for displaying your
+list of events and appointments, including a ``list'' view, a ``day''
+view, a ``week'' view, and a ``month'' view.  KOrganizer is smart
+enough to remember in between sessions what the last active view was,
+and the next time it is started, it will default to that view.
+
+<p>In general, each view will provide a way of displaying your events
+and appointments constrained to a particular time period or style of
+display.  clicking on any appointment will select it for further
+action.  Right clicking an appointment brings up a menu with options
+such as <tt>edit</tt>, <tt>delete</tt>, and so on.  You can also use
+the <tt>Action</tt> menu to perform similar operations.
+
+<sect2>List View<label id="sec-listview">
+
+<p>This view allows you to see all your appointments for the day in
+list-type arrangement.  Appointments are displayed one per line.  The
+first column of the appointment will have a bell icon displayed in it
+if an alarm is set for the appointment.  The second column will
+display a chasing-arrows icon if the appointment repeats multiple
+times.  Holding the mouse over the arrows icon will bring up a tooltip
+with more detailed recurrence information.  The third column displays
+start and end time information, and the fourth column gives a summary
+of the appointment.
+
+<p>The list view is good for displaying many appointments on a single
+day in a compact fashion.  It is also useful if your appointments are
+spread out over a long time period that would not normally fit
+entirely on the screen when using one of the other views.
+
+<sect2>Day View<label id="sec-dayview">
+
+<p>This view presents your appointment information in a chronological
+fashion which also provides visual feedback on the length of each
+appointment.  Time is indicated on the left side of the view.  A
+scrollbar on the right is provided when the entire day cannot fit onto
+the screen at one time (which is the usual case).  Each rectangle in
+the view represents an individual appointment, and displays the
+appointment's start and end time, summary, and whether or not the
+appointment repeats or has any alarms set.
+
+<img src="kagenda-appointment.gif">
+
+<p>A useful shortcut that this view provides for adding appointments
+is the ability to double-click on any open region of time, which will
+automatically create a one hour long appointment and let you start
+editing the description.  The appointment's ``snap'' to half-hour
+increments, rounding off to the closest half hour from where you
+clicked.
+
+<sect2>Week View<label id="sec-weekview">
+
+<p>The week view provides a view very similar to the day view for
+displaying seven days worth of appointments next to each other.  All
+of the functions available for the day view are available in the week
+view.  See the <ref id="sec-dayview" name="Day View"> section for
+further information.
+
+<sect2>Month View<label id="sec-monthview"> 
+
+<p>The month view displays all the appointments for the current month
+in a familar calendar layout.  Each day displays all of the appoints
+that can fit in the area provided (maximizing the window will enable
+you to see more appointments).  Information on repeating and alarm
+status is indicated through icons.
+
+<p>Navigation inside the month view is provided by a set of buttons
+along the right side of the screen.  By pressing the appropriate
+upwards-facing button, you can navigate by week, month, or even year.
+The downwards-facing buttons perform the analogous function, except
+forwards in time versus backwards.
+
+<sect1>Todo List<label id="sec-todolist">
+
+<p>The todo list is unfortunately in a state of flux, so what is
+described here (as far as ``operation'' of the todo list goes) may
+change in the near future.
+
+<p>The todolist provides a place for you to jot down quick (or
+long-term) notes to yourself about things that you need to do.
+Currently, you cannot associate a date due with a todo entry, but this
+is forthcoming.  You can however assign priorities to todos, and they
+will appear sorted in order of priority.  The lower the number, the
+higher the priority, except that zero (0) is defined as ``no
+priority.''
+
+<p>To make a new todo entry, right click in the todo box.  You will
+get a menu with the option to create a new entry.  If you clicked on
+an already existing todo, you will also see a choice to delete that
+entry if you wish.  When you choose <tt>New Todo</tt>, a new todo will
+be created and you will be prompted to enter a short description.
+After doing this, you can change the priority by double-clicking in
+the second column of the todo, which will bring up a list of possible
+priorities.  simply click on one to choose it.  Similarly, if you
+double-click in the description (third) column of an existing todo,
+you will be able to edit the description.  Double clicking on the box
+(first column) will toggle the todo's ``completed'' status.  
+
+<p>You may also pick <tt>Purge Completed</tt> from the right mouse
+button menu to delete all todo entries that you have marked completed.
+This is handy for quick cleanup.
+
+<p>As has already been mentioned, the todo list could be a lot
+friendlier and fancier, and we plan for it to be so.  If you have any
+suggestions for what you would like to see in the todo list, please
+e-mail the authors.
+
+<sect>Appointment Editor Window<label id="sec-apptmntwin">
+
+<p>The appointment editor window is a detailed interface for adding
+new appointments or editing existing ones.  Without using this window,
+you are generally limited to changing only an appointment's
+description (and hopefully, when we have time to implement it, an
+appointment's time and date as well).  While this is good for
+``quick'' access, if you want to change more sophisticated components
+of an appointment such as how often it repeats, when and if an alarm
+should be set, what categories it belongs to, and so on, you will need
+this window.
+
+<p>The appointment editor window is made up of three tabs.  The
+<tt>General</tt> tab has the most common items related to the
+appointment, including times and dates, description, privacy
+information, categories, etc.  The <tt>Details</tt> tab has more
+advanced information, especially information pertaining to group
+scheduling.  Unfortunately, we haven't finished implementing most of
+these features, and for that reason, the documentation will not cover
+the <tt>Details</tt> tab (until that part of the code is completed).
+The last tab is the <tt>Recurrence</tt> tab, which holds all the
+settings for if and how often an event should repeat over a period of
+time.
+
+<p>To save changes to your appointment, press the ``disk'' button on
+the toolbar (it stands for save).  To cancel, either close the window,
+or press the ``cancel'' button on the toolbar.
+
+<p>
+
+<sect1>General Tab<label id="sec-apptgeneral">
+
+<p>
+<descrip>
+<tag/Summary/A Short description of the event or appointment.
+
+<tag/Start and End Time/Set your appointment's starting and ending
+date and time here.  Click on the little calendar icon next to the
+date to pull up an interactive date selector, or type in a date in the
+<em>same format</em> shown.  For changing the time, you can type it in
+directly, or use the pulldown on the combobox to choose the time from
+a list.  You can also use the up and down arrows to scroll through 15
+minute increments of time.
+
+<tag/All day event/Click this checkbox if you don't want to associate
+any time with the appointment at all; instead you want to make more of
+a ``general reminder'' that the appointment occurs on this date.
+
+<tag/Recurring event/If you click this checkbox, the
+<tt>Recurrence</tt> tab will become available, and you will be able to
+set up how often the appointment repeats itself.  By default, it isn't
+checked--the appointment will occur only once.  See <ref
+id="sec-apptrecurrence" name="Recurrence Tab">.
+
+<tag/Reminder/Clicking this checkbox will enable a visual reminder or
+alarm for your appointment.  Type in the number of minutes
+``lead-time'' in the textbox next to it.  Unfortunately, at this time,
+the ``WAV'' and ``PROG'' buttons, which will eventually let you play a
+noise or run a program when the alarm goes off, are not available.
+
+<tag/Show Time As:/Using this combo box, you will be able to switch
+how your appointment's time appears to the ``outside world''--either
+Free or Busy.  This will make more sense when the group scheduling
+features of KOrganizer are completed.
+
+<tag/Description/The large text area beneath the alarm information is
+where you can put any details about the appointment.  Cut and paste in
+airline flight information, details of a meeting, notes about a
+homework assignment, or anything else that requires more detail beyond
+the simple one-line summary.
+
+<tag/Categories/This button will bring up a dialog box which will
+allow you to select a number of categories to place this appointment
+in.  Eventually, you will be able to sort events by category or select
+to only view events in certain categories, but this isn't finished
+yet.  For now, use categories as personal reminders and notes about
+what sort of appointment or event this is.
+
+<tag/Private/If the appointment is of a private or confidential
+nature, you will want to click this textbox. When the group scheduling
+features are completed, only ``public'' events will be world-visible;
+private events will not show up.
+
+</descrip>
+<p>
+
+<sect1>Details Tab<label id="sec-details">
+
+<p>
+
+<descrip>
+This section still needs to be written.  Volunteers?
+</descrip>
+<p>
+
+<sect1>Recurrence Tab<label id="sec-apptrecurrence">
+
+<p>
+
+<descrip>
+
+<tag/Appointment Time/In this area, you can edit an appointment's
+start and end time. Changes made in these areas will be reflected on
+the <tt>General</tt> tab, and vice versa.  See <ref
+id="sec-apptgeneral" name="General Tab">.
+
+<tag/Recurrence Rule/This appears to be a complex section, but it is
+really rather simple.  Choose the repetition period by clicking the
+<tt>Daily, Weekly, Monthly,</tt> or <tt>Yearly</tt> radio button on
+the left side of this area.  When you choose a different period, the
+display to the right of the radio button will change to reflect the
+settings associated with that period.  By default, an appointment will
+set itself up to repeat on a weekly basis.
+
+<p>For <tt>Daily</tt>, simply choose how often to repeat.  By default,
+it is every day (1), but you can change this to every other day (2),
+etc.
+
+<p> For <tt>Weekly</tt>, change the period of weeks if you wish, and
+select which days of the week you want the appointment to occur on.
+
+<p>For <tt>Monthly</tt>, you can either have the appointment occur on
+the same day of the month, or in a specific week on a specific day of
+the month.  You need to choose this.  By default, it assumes you want
+to repeat on the same calendar day of the month (like the 15th for
+instance).  You can also adjust the period, so you can repeat monthly,
+tri-monthly, bi-yearly, etc.  
+
+<p><tt>Yearly</tt> is similar to <tt>Monthly</tt>.  You need to choose
+whether or not you are indicating a calendar day of the year (i.e.,
+the 250th day of the year), or this day of the month in a particular
+month of the year.  By default, KOrganizer assumes you mean the actual
+day of the year.  You can adjust the period to reflect events that
+occur bi-annually, every four years, and so on.
+
+<tag/Recurrence Range/By default, appoints which repeat will do so
+forever; there is no ``end'' to the repetition.  This may or may not
+be desirable, so you are provided with two ways of terminating the
+repetition: either by giving an ending date, or by specifying a total
+number of recurrences.  In this area, you can choose the method that
+is suitable for this appointment.
+
+<tag/Exceptions/You may have a very nice recurrence rule set up, but
+realize that there are a few exceptions.  If you set up your college
+class schedule for instance, you may want to make exceptions for
+holidays and the like.  In this area, you can add, change, and delete
+dates from the list of exceptions (i.e. times when even if the
+recurrence rule matches, the event will <em>not</em> be scheduled).  Pick a
+date with the date selector, and press <tt>Add</tt> to include it.
+For removing dates, hilight them in the box on the right side, and
+then click <tt>Delete</tt>.
+
+<p>
+
+</descrip>
+
+<sect>Search Window<label id="sec-search">
+<p>When you want to find a particular instance of an appointment,
+or remember something you typed in regarding an appointment but
+not the exact date and time, the search window becomes highly useful.
+
+<p>The search dialog is very simple.  It consists of a field where you
+enter your search query, a table where results of the query are
+displayed, and a <tt>Search</tt> button.  Simply type in the string
+that you want too look for (it is case insensitive) and press the
+button.  Wildcard characters (*, ?, and []) are supported for matching
+unknown text.
+
+<p>In the future, KOrganizer will support more searching options, such
+as regular expressions, time ranges and/or date ranges, etc.  Code
+contributions are welcomed and encouraged.
+
+<sect>Options<label id="sec-optionsdlg">T
+<p>The options dialog will allow you to configure a number of different
+areas of KOrganizer.  
+
+<sect1>Personal
+
+<p>The personal options relate to your personal identity, and other
+miscellaneous things that don't fall under any of the other general
+categories.
+
+<descrip>
+
+<tag/Your Name/Refers to your full name.
+
+<tag/Email Address/Your email address, which will be used both to
+identify appointments and events which belong to you, and for group
+scheduling, so others know what address to send appointments to.
+
+<tag/Additional/Additional information about yourself.  Currently this
+field is unused, so you may safely ignore it.
+
+</descrip>
+
+<sect1>Time & Date
+
+<p>
+
+<descrip>
+
+<tag/Time Zone/Specifies your time zone in hours offset from UTC
+(GMT).  For the US East Coast, that means -0500 when Daylight Savings
+are not in effect, and -0400 when they are.  KOrganizer will
+automatically adjust for daylight savings.  In the future, the name of
+the region (i.e. US/Eastern) will be specified instead of the
+harder-to-remember numeric representation.
+
+<tag/Time Format/Here, you may choose either 24 hour or 12 hour
+(am/pm) time representations.  Most widgets and display areas in
+KOrganizer are smart enough to switch between the two, but there are a
+few remaining areas where you may notice that this property has not
+been fully implemented.  This will change before the 1.0 release.
+
+<tag/Default Appointment Time/When you choose <tt>New Appointment</tt>
+from the <ref id="sec-action" name="Action Menu">, or create an
+appointment in some other manner such that KOrganizer cannot guess
+what time you would like it to start at, KOrganizer will put this hour
+in the start time editor as the default value.
+
+<tag/Default Alarm Time/Select the time at which you would like alarms
+to go off preceeding the actual event's scheduled time.  Right now,
+you must choose among the hard-coded times that are available.
+
+</descrip>
+
+<sect1>Fonts
+
+<p>
+
+<descrip>
+
+<tag/List View/The font which appointments are displayed in for <ref
+id="sec-listview" name="List View">.
+
+<tag/Schedule View/The font which appointments are displayed in for
+<ref id="sec-dayview" name="Schedule View">, which includes views such
+as <ref id="sec-dayview" name="Day View"> and <ref id="sec-weekview"
+name="Week View">.
+
+<tag/Month View/The font which appointments are displayed in for <ref
+id="sec-monthview" name="Month View">.
+
+<tag/Time Bar/Currently unimplemented.
+
+<tag/Todo View/The font which appointments are displayed in for the
+<ref id="sec-todolist" name="Todo List">.
+
+</descrip>
+
+<sect1>Colors
+
+<p>Currently, this section is unimplemented.
+
+<sect1>Views
+
+<p>
+
+<descrip>
+
+<tag/Day Begins At/this is the hour for which KOrganizer defaults to
+on the scroll bar when you are in day or week view.  Useful when you
+don't usually have appointments beginning before 8 or 9 o'clock in the
+morning.
+
+</descrip>
+
+<sect1>Printing<label id="sec-print">
+
+<p>
+
+<descrip>
+
+<tag/Paper Size/Specifies the size of paper you want to print on by
+default.  You may also choose each time you print something other than
+the default.  Most likely you will choose A4 in Europe, and Letter
+everywhere else.
+
+<tag/Paper Orientation/Specifies what direction you want prints to be
+facing.  Portait is vertically, Landscape is horizontally.  Disabled at
+the moment, because the various views decide on what the paper orientation
+should be themselves. If this changes, the option will be enabled.
+
+<tag/Preview Program/Tells KOrganizer what program you want to use
+when you choose <tt>Print Preview</tt> from the  <ref id="sec-file"
+name="File Menu">.  Typically you will want to use kghostview,
+ghostview, or gv here.
+
+</descrip>
+
+<sect>Printing
+
+<p>This section remains to be written.
+
+<sect>Common Questions and Answers<label id="sec-qanda">
+<p>There aren't any, yet.
+
+<sect>Thanks and Acknowledgements<label id="sec-thanks">
+
+<p>Thanks goes out to all who have contributed code, documentation,
+and suggestions to KOrganizer, including Ian Dawes, Fester Zigterman,
+Laszlo Boloni, and numerous others.  Thanks to all our alpha 
+testers/beta testers who have sent in bug reports, opinions, and 
+requests for improvements so far.  Thanks to the Linux and the free
+software communities for providing an excellent programming
+environment available to anyone who wishes for no cost.
+
+</article>

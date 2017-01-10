@@ -1,0 +1,72 @@
+[ktalkd]
+# Administrator config file for ktalkd.
+# There is now a configuration dialog box (see "Settings" menu) for the user's
+# ktalkdrc. But how to provide a nice way to set system-wide parameters ?
+
+
+###### SECTION 1 : Administrator settings
+
+# Mail sender (can be mail.local, sendmail(preferred), qmail(as good:)) )
+#  mail.local is included in the dist., just in case you don't have sendmail
+MailProg=$KDEBINDIR/mail.local
+
+# What should I do if somebody tries to talk to a non-existent user ?
+# 0 = Launch answer machine saying 'non-existent user...' 
+#                  and 'I' receive the message (to know that it happened)
+# 1 = 'I' take the talk. (The names of caller & callee appear to 'I')
+# 2 = Do nothing. ('Not logged' will appear to caller).
+NEUBehaviour=2
+
+# (Multi-user secured host : set Behaviour=2).
+# (Multi-user host : set Behaviour=0 and User=root or postmaster)
+# (Almost single-user networked PC : set Behaviour=1 and User=your_user_name)
+
+# If you choose 0, then you can set the following
+#   (no internationalization possible : this file is manually read by ktalkd)
+NEUBanner1=The person you're asking to talk with is unknown at this host.
+NEUBanner2=You may have mistyped the name, or network address. Try again
+NEUBanner3=or leave a message which will be sent to the system administrator.
+
+# Who is 'I' ?  (=> who should take the talk / receive the message)
+NEUUser=
+
+# If NEUBehaviour is 1  ('I' take the talk), which forward method to use ?
+# Choose FWT if your machine is on two separate networks, and if you (NEUUser)
+# plan to set a forward. FWR is ok (and lighter) in all other cases.
+NEUForwardMethod=FWR
+
+
+##### SECTION 2 : Default values that users can overwrite
+
+# Set to 1 to activate answering machine 
+# Warning : if set to 0, no user will be able to activate it.
+# (The value won't overwrite this one).
+Answmach=1
+
+# Set this to 1 to enable X-aware announcement. (Why not ?)
+XAnnounce=1
+
+# External program launched by ktalkd to notify a talk. It can be :
+# ktalkdlg, a pop-up KDE dialog box, which can launch any talk client
+# or ktalk, the KDE talk client.
+# Will be launched with the caller's address as parameter
+#   KDEBINDIR will be set by ktalkd.
+ExtPrg=$KDEBINDIR/ktalkdlg
+
+# Which talk client should ktalkdlg launch ? (Default value)
+# The default is "$KDEBINDIR/kvt -e talk". If installed, use "$KDEBINDIR/ktalk"
+#   KDEBINDIR will be set by ktalkd.
+talkprg=$KDEBINDIR/kvt -e talk
+
+# Set to 1 to enable talk notifications with sound.
+Sound=1
+# Default sound file - ktalkd.wav is included
+SoundFile=ktalkd.wav
+
+# Do you wish to receive an empty mail if the caller didn't leave any message ?
+#   (If "1", you'll only know who called you)
+EmptyMail=1
+
+# Time in seconds between "Ringing your party again" and launching answering
+# machine (not very important) (can't be overriden by users)
+Time=10

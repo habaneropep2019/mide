@@ -1,0 +1,61 @@
+1999-04-02  Harri Porten  <porten@kde.org>
+
+	* kmidi.cpp: prev/next bugfix from John Birch <jb.nz@writeme.com>
+	* linux_a.c: timidity fix from Martin Weghofer
+
+1998-11-04  Sam Maloney  <thufir@illogic.ml.org>
+
+	* There was a problem on my system, where kmidi would look for its
+	  config file in the currenet directory. I fixed it in the config.h
+	  file.
+
+ 1998-10-18  Cristian Tibirna  <ctibirna@gch.ulaval.ca>
+
+	* Fixed a display problem in playlist.cpp
+
+Wed Jun 10 03:51:29 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* Work on the Info Window. Improved resonse time and got rid
+	of most of the flicker.
+
+Wed Jun  3 22:13:05 HST 1998  Greg Lee <lee@hawaii.edu>
+
+	* AWE vibrato
+	* chorus depth and reverberation
+	* lyrics
+
+Mon Jun  1 19:20:00 HST 1998  Greg Lee <lee@hawaii.edu>
+
+	* AWE filters
+
+Fri May 29 15:12:00 HST 1998  Greg Lee <lee@hawaii.edu>
+
+	* merged in my version of TiMidity -- many changes
+
+Sun Jan 18 08:39:01 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* kmidi.cpp: various internal fixes and improvments
+
+Sun Sep 21 15:51:34 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* fought with autconf to get support for 
+
+	  Linux
+	  FreeBSD
+	  DEC OSF/1
+	  HP_UX
+	  SUN
+	  SUN SOLARIS
+
+	 going. Imporved docs, bug fixes.
+
+Wed Jul 23 21:45:52 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* fixed playlist bugs.
+
+Sun Jul 20 20:14:38 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* autoplay of commandline midis ( useful for netscape )
+	* replace of '_'  with ' ' and  chop off .mid and .MID extensions in the
+	  file name display.
+

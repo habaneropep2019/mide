@@ -1,0 +1,71 @@
+
+kscdmagic is based on synaesthesia 
+by Paul Harrison <pfh@yoyo.cc.monash.edu.au>.
+
+Bernd
+wuebben@kde.org
+
+SYNAESTHESIA v1.3
+
+Introduction
+============
+
+This is a program for representing sounds visually (from a CD or line
+input). It goes beyond the usual oscilliscope style program by combining
+an FFT and stereo positioning information to give a two dimensional
+display. Some of the shapes I have observed are:
+  * Drums: clouds of color, fairly high
+  * Clean guitar: several horizontal lines, low down
+  * Rough guitar: a cloud, low down
+  * Trumpet: Lots of horizontal lines everywhere
+  * Flute: A single horizontal line, low down
+  * Voice: A vertical line with some internal structure
+
+Surround sound decoding has been added in version 1.1. Ambient noise is
+shown in orange.
+
+X-Windows support has been added in version 1.3, as well as a major redesign
+of the interface. The intention is to make Synaesthesia a fully functional
+CD player, suitable for use while working.
+
+Usage
+=====
+
+Compile Synaesthesia by typing "make".
+
+You will need to run Synaesthesia as root. Xsynaesthesia can be run
+by any user providing you provide permissions on /dev/dsp, /dev/cdrom,
+and /dev/mixer.
+
+Synaesthesia creates a configuration file you can edit, named
+~/.synaesthesia.  You can edit this to set the default brightness,
+volume and X-Window position.
+
+Run Synaesthesia or Xsynaesthesia with no parameters for further
+information on how to use it.
+
+Authors
+=======
+
+This program is free. If you like it, or have any suggestions, please
+send me (Paul Harrison) an email (pfh@yoyo.cc.monash.edu.au).
+
+Thanks to Asger Alstrup Nielsen (alstrup@diku.dk) for many great 
+suggestions, and for writing optimized 32 bit loops for fading and drawing
+to screen. 
+
+Known Bugs
+==========
+
+Under 2.0.x kernels, the sound device prints "Sound: Recording overrun" in
+an annoying fashion.
+
+Changes
+=======
+
+1.1 - Added surround sound decoding.
+1.2 - Fixed a bug in the ioctl calls to /dev/dsp.
+1.3 - Asger Alstrup Nielsen's optimizations added.
+      Added X-Windows support.
+      More options, redesigned interface. 
+ 

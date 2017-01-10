@@ -1,0 +1,325 @@
+=head1 OVERVIEW
+
+This document describes how to write puke addons and additional
+widgets.  It assumes a good knowledge of C++, perl and X/Qt workings
+under Linux.
+
+=head1 1. Description and Background
+
+=over 6
+
+Puke's a generic protocol allowing dsirc to communicate with ksirc.
+Communications works over a unix domain socket between multiple
+client dsirc process's to a single ksirc process.  All communications
+is done via a variable length message with the following layout:
+
+=begin text
+
+struct PukeMessage {
+unsigned int iHeader;
+int iCommand;
+int iWinId;
+int iArg;
+int iTextSize;
+char *cArg;
+}
+
+=end text
+
+None of the fields except for iCommand, iWinId and iHeader have any restrictions
+on their content and may contain arbitrary values.  iCommand and iWinId must
+contain an int and it used by ksirc to determine the destination and
+handler of the actual command. (and of course it's meaning).  iHeader is a
+fixed pattern used to identify the start of a header message should it loose
+syncronization.  The current pattern used it 2863311530, which is:
+10101010101010101010101010101010.
+
+=item Internal handling by kSirc:
+
+Messages are received by a generic handler, PukeController where the message
+is passed to the iWinId's messageDipatcher for final processing.  The
+iWinId of 1 through 10 are reserved for internal use, and 1 is
+currently set at the window ID for the PukeController itself.
+
+Connect a signal to PukeControllers writeBuffer (signal's generally
+called outputMessage) and pass the fd and PukeMessage to be sent to
+the client.  No parsing of the output message is done.
+
+=item Internal handling by dsirc:
+
+All received messages are handled by an internal callback methods.  3
+sets of callbacks are checked for handlers in the following order:
+
+$PUKE_HANDLER{$cmd}{$winid}
+$PUKE_HANDLER{-$cmd}{$winid}
+$PUKE_DEF_HANDLER{$cmd}
+
+If no handler is found an error is printed.
+
+Output is handled by the PukeSendMessage function.  PBase defines an
+alternate routine sendMessage which should be a lot friendlier.
+
+=head1 2. How to create a new widget
+
+There are 2 parts to creating a widget, the C++ code and the
+supporting perl5-oop object.
+
+=head2 2.1 C++ Widget code
+
+The C++ code must be able to hand all required settings and messages
+for the widget.  Each new widget iherites it's parent and so forth
+allowing for a nice oop layout.  The widget structure the author is
+following is the same as Qt's.  Their seems to work well, why
+re-invent the wheel?
+
+=item 2.1.1 General Layout, etc
+
+Figure where your new widget goes in the heirachy.  If it's a simple
+Qt widget, I recommend using their existing layout.  Man pages list
+what widgets inherit what.
+
+The general idea behind the widget layout should be to be to provide
+all the functionality of the widget to dsirc perl script.  Incoming
+messages are handled via the messageHandler and ALL messages should
+return an ACK with current state info.
+
+New widgets are created as shared objects and loaded on the fly.  This 
+means you don't need to recompile ksirc to use new widgets etc. 
+
+Generally you'll have to inherit PWidget at a minimum.  
+
+Functions you HAVE TO overrite:
+
+B<1. createWidget>
+
+This function creates a new widget of your type and returns a
+*PWidget.
+
+B<2. messageHandler>
+
+This function receives ALL your commands.
+
+B<3. widget() and setWidget(YourWidget *)>
+
+These set and return your widget.
+
+
+If you care about inheritance, which you should, all these functions
+should be virtual.  (Since we are using pointers to PWidget's
+everywhere, it's a good bet you want your children's overriden
+functions called, not yours)
+
+The structure internally will have to hold a local copy of the widget,
+and connect to it's destroy signal so you can know when it has been
+destroyed.
+
+=item 2.1.2 createWidget
+
+createWidget is defined as:
+
+PWidget *createWidget(widgetId *pwi, PWidget *parent);
+
+It is called everytime a new widget of yours is required.  The
+widgetId will be the identifier for your widget and must be kept for
+all future commands.  PWidget::setWidgetId(pwi) should be called to
+set the widget id.  The *parent is the parent of the current widget.
+Generally PWidget->widget() is passed to the contructor of your
+widget.  If it's 0, there is no parent. Simeplfied code for a the
+PFrame is:
+
+=begin text
+
+extern "C" {
+PWidget *createWidget(widgetId *pwi, PWIdget *parent);
+}
+
+PWidget *createWidget(widgetId *pwi, PWIdget *parent){
+	QFrame *f;
+	PFrame *pf = new PFrame(parent);
+	if(parent != 0){
+		f = new QFrame(parent->widget());
+	}
+	else{
+		f = new QPFrame();
+	}
+	pf->setWidget(f);
+	pf->setWidgetId(pwi);
+	return pf;
+}
+
+=end text
+
+Note: you have to check parent for null since calling NULL->widget()
+results in Bad Things (tm).
+
+=item 2.1.3 messageHandler
+
+This receives all commands, etc.  It should process required commands,
+if a command is unkown pass it to the parent.  PFrame example:
+
+=begin text
+
+class PFrame : public PWidget
+...
+void messageHandler(int fd, PukeMessage *pm);
+...
+
+void PFrame::messageHandler(int fd, PukeMessage *pm) {
+  PukeMessage pmRet;
+  switch(pm->iCommand){
+  case PUKE_QFRAME_SET_FRAME:
+    widget()->setFrameStyle(pm->iArg);
+    pmRet.iCommand = PUKE_QFRAME_SET_FRAME_ACK;
+    pmRet.iWinId = pm->iWinId;
+    pmRet.iArg = widget()->frameStyle();
+    pmRet.cArg[0] = 0;
+    emit outputMessage(fd, &pmRet);
+    break;
+  default:
+    PWidget::messageHandler(fd, pm);
+  }
+}
+
+=end text
+
+=item 2.1.4 widget and setWidget
+
+Both these functions should be overriden and return your widget type,
+and set your widget.  For setWidget you should connect required
+signals and eventFilters you are using.
+
+Make sure to call the parents setWidget in setWidget so it can connect 
+filters etc.  
+
+BEWARE: You might get the widget into setWidget being null (from the
+destructor).  
+
+Another PFrame example (APE ;) ):
+
+=begin text
+void PFrame::setWidget(QFrame *_f)
+{
+  frame = _f;
+  PWidget::setWidget(_f);
+
+}
+
+
+QFrame *PFrame::widget()
+{
+  return frame;
+}
+
+=end text
+
+=item 2.1.5 Destructor
+
+Ok, unfortunaly since we have this internal widget floating arround
+the destructor has to a little maigc.
+
+Call the destructor as such:
+
+delete widget();
+setWidget(0);
+
+This will clear the widget from now and all parents and delete it.
+you never want it deleted twice. (deleting 0 won't hurt)
+
+=head2 2.2 The Perl code
+
+Most of the perl oop is pretty straight forward, command simply issue
+a require sendMessage and off everything goes.  There's one problem.
+
+You can't get information back on the current read cycle.  Huh? I can
+hear most people saying.  It means say someone wanted to do $widget =
+$widget->height() and you didn't have the height information locally,
+there's no way to get the information and return it to them.  Why? You
+issue a sendMessage(...) but until dsirc returns to the main select()
+loop, we never know there's more to read.  We can't return to the main
+select loop until we return from our current function.  What does this
+mean?  We have to store all the information locally.
+
+This also brings up another intresting aspect.  Sometimes a widget may
+depend on a prior command before it can complete.  This is the purpose
+of canRun function, and onNext.  It's use will have to be explained
+latter.
+
+To help with this problem, pbase.pm sets up a fairly complicated set
+of message and event queues.  Be warned when you issue a sendMessage,
+it might not get sent right away.
+
+I'll provide example bellow of how I've done certain functions, this
+is certainly not the only way to do it.  Feel free to use any format
+you like aslong as it get's the job done.
+
+Ok, so how do we do this?
+
+=item 2.2.1 Perl oop? where do I start?
+
+Read the perltoot and perlobj man pages.
+
+=item 2.2.2 What to inherit etc.
+
+You probably want to inherit the same object as your C function does.
+At very least you'll want to inherit PWidget.
+
+=item 2.2.3 new and DESTROY
+
+Your new function should look something like (APE?):
+
+=begin text
+
+sub new {
+  my $class = shift;
+  my $self = $class->SUPER::new($class, @_);
+
+  $self->{widgetType} = $::PWIDGET_FRAME;
+
+  if($class eq 'PFrame'){
+    $self->create();
+  }
+
+  return $self;
+}
+
+=end text
+
+$self is the blessed variable and it returned from the super class.
+You should always do it this way.  Setting widgetType defines the type 
+of widget, and needs to be set before calling create.
+
+If we are creating an object of our own class we call create() which
+acutally sends out the correct creation messages, etc.  You can
+override the create function, but do be warned it might not be a good
+idea.  Make sure you understand what and how it does it first!
+
+=item 2.2.4 sendMessage
+
+sendMessage is the main form of communicating with kSirc.  Generable
+arguments are:
+
+=begin text
+
+sendMessage('iCommand' => command number,
+	    'iArg'     => interger argument,
+            'cArg'     => character string,
+            'CallBack' => pointer to sub, generally sub{...}
+           );
+
+=end text
+
+You'll note it's a hash so order doesn't count.  The callback is a 1
+shot call back (should be) so don't count on it getting hit twice.
+The call back's first argument will be a \%ARGS with the return
+arguments.
+
+=item 2.2.5 Final notes on perl
+
+Most of the function calls will just send out messages, etc.  For call 
+backs the general form I've found works well is: sub {$self->blah()}.
+
+=head1 3. Interfacing with the kSirc's main windows and functions
+
+NOT implemented yet.
+
+=back

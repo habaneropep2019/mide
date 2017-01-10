@@ -1,0 +1,445 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-03-19 01:51+0100\n"
+"PO-Revision-Date: Sun Jul 11 1999 19:56:38+0200\n"
+"Last-Translator: 井村 竜一郎 <imura@cs.titech.ac.jp>\n"
+"Language-Team: japanese <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"X-Generator: KTranslator v 0.5.0"
+
+#: ktop.cpp:66
+msgid "88888 Processes"
+msgstr "88888 のプロセス"
+
+#: ktop.cpp:67
+msgid "Memory: 888888 kB used, 888888 kB free"
+msgstr "メモリ: 888888 kB 使用、 888888 kB 未使用"
+
+#: ktop.cpp:69
+msgid "Swap: 888888 kB used, 888888 kB free"
+msgstr "スワップ: 888888 kB 使用, 888888 kB 未使用"
+
+#: ktop.cpp:76
+msgid "KDE Task Manager"
+msgstr "KDE タスク マネージャ"
+
+#: ktop.cpp:137
+#, c-format
+msgid "%d Processes"
+msgstr "%d プロセス"
+
+#: ktop.cpp:142
+#, c-format
+msgid "Memory: %d kB used, %d kB free"
+msgstr "Memory: %d kB 使用, %d kB 未使用"
+
+#: ktop.cpp:147
+#, c-format
+msgid "Swap: %d kB used, %d kB free"
+msgstr "スワップ: %d kB 使用, %d kB 未使用"
+
+#: MainMenu.cpp:51
+#, c-format
+msgid ""
+"KDE Task Manager (KTop) Version %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+msgstr ""
+
+#: MainMenu.cpp:64
+msgid "Manual Refresh"
+msgstr "手動で更新"
+
+#: MainMenu.cpp:65
+msgid "Slow Refresh"
+msgstr "ゆっくり更新"
+
+#: MainMenu.cpp:66
+msgid "Medium Refresh"
+msgstr "中くらいの更新"
+
+#: MainMenu.cpp:67
+msgid "Fast Refresh"
+msgstr "早い更新"
+
+#: MainMenu.cpp:79
+msgid "&Refresh Rate"
+msgstr "リフレッシュ レート(&R)"
+
+#: MainMenu.cpp:80
+msgid "&Process"
+msgstr "プロセス(&P)"
+
+#: ProcessMenu.cpp:44
+msgid "Renice Task..."
+msgstr "タスクの優先度変更..."
+
+#: ProcessMenu.cpp:47
+msgid "send SIGINT\t(ctrl-c)"
+msgstr "SIGINT\t(ctrl-c) を送る"
+
+#: ProcessMenu.cpp:48
+msgid "send SIGQUIT\t(core)"
+msgstr "SIGQUIT\t(core) を送る"
+
+#: ProcessMenu.cpp:49
+msgid "send SIGTERM\t(term.)"
+msgstr "SIGTERM\t(term.) を送る"
+
+#: ProcessMenu.cpp:50
+msgid "send SIGKILL\t(term.)"
+msgstr "SIGKILL\t(term.) を送る"
+
+#: ProcessMenu.cpp:52
+msgid "send SIGUSR1\t(user1)"
+msgstr "SIGUSR1\t(user1) を送る"
+
+#: ProcessMenu.cpp:53
+msgid "send SIGUSR2\t(user2)"
+msgstr "SIGUSR2\t(user2) を送る"
+
+#: ProcessMenu.cpp:74 ProcessMenu.cpp:86 ProcessMenu.cpp:150
+#: ProcessMenu.cpp:158 ProcessMenu.cpp:176
+msgid "Task Manager"
+msgstr "タスク マネージャ"
+
+#: ProcessMenu.cpp:75
+msgid "You need to select a process first!"
+msgstr "先にプロセスを選ぶ必要があります!"
+
+#: ProcessMenu.cpp:85 ProcessMenu.cpp:149
+#, c-format
+msgid "The process %d is no longer persistent."
+msgstr "プロセス %d はもうありません。"
+
+#: ProcessMenu.cpp:98
+msgid "SIGINT"
+msgstr "SIGINT"
+
+#: ProcessMenu.cpp:101
+msgid "SIGQUIT"
+msgstr "SIGQUIT"
+
+#: ProcessMenu.cpp:104
+msgid "SIGTERM"
+msgstr "SIGTERM"
+
+#: ProcessMenu.cpp:107
+msgid "SIGKILL"
+msgstr "SIGKILL"
+
+#: ProcessMenu.cpp:110
+msgid "SIGUSR1"
+msgstr "SIGUSR1"
+
+#: ProcessMenu.cpp:113
+msgid "SIGUSR2"
+msgstr "SIGUSR2"
+
+#: ProcessMenu.cpp:116
+msgid "Unkown Signal"
+msgstr "未知のシグナル"
+
+#: ProcessMenu.cpp:122
+#, c-format
+msgid ""
+"Send signal %s to process %d?\n"
+"(Process name: %s  Owner: %s)\n"
+msgstr ""
+"プロセス %d にシグナル %s を送りますか?\n"
+"(プロセス名: %s 所有者: %s)\n"
+
+#: ProcessMenu.cpp:126
+msgid "Abort"
+msgstr "中断"
+
+#: ProcessMenu.cpp:159 ProcessMenu.cpp:177
+msgid ""
+"Renice error...\n"
+"Specified process does not exist\n"
+"or permission denied."
+msgstr ""
+"Renice エラー...\n"
+"そのようなプロセスが存在しないか\n"
+"権限がありません。"
+
+#: TaskMan.cpp:80
+msgid "Processes &List"
+msgstr "プロセス リスト(&L)"
+
+#: TaskMan.cpp:81
+msgid "Performance &Meter"
+msgstr "パフォーマンス メーター(&M)"
+
+#: ProcListPage.cpp:42
+msgid "Running Processes"
+msgstr "実行中のプロセス"
+
+#: ProcListPage.cpp:49
+msgid "Show Tree"
+msgstr "木表示"
+
+#: ProcListPage.cpp:60
+msgid "All processes"
+msgstr "すべてのプロセス"
+
+#: ProcListPage.cpp:61
+msgid "System processes"
+msgstr "システム プロセス"
+
+#: ProcListPage.cpp:62
+msgid "User processes"
+msgstr "ユーザ プロセス"
+
+#: ProcListPage.cpp:63
+msgid "Own processes"
+msgstr "所有しているプロセス"
+
+#: ProcListPage.cpp:79
+msgid "Refresh Now"
+msgstr "今すぐ更新"
+
+#: ProcListPage.cpp:85
+msgid "Kill task"
+msgstr "タスクを強制終了"
+
+#: ProcessList.cpp:227
+msgid "Remove Column"
+msgstr "コラムを除去"
+
+#: ProcessList.cpp:228
+msgid "Add Column"
+msgstr "コラムを追加"
+
+#: ProcessList.cpp:229
+msgid "Help on Column"
+msgstr "コラムのヘルプ"
+
+#: ProcessList.cpp:691 ProcessList.cpp:692
+msgid "Name"
+msgstr "名前"
+
+#: ProcessList.cpp:695 ProcessList.cpp:696
+msgid "PID"
+msgstr "PID"
+
+#: ProcessList.cpp:699
+msgid "User ID"
+msgstr "ユーザ ID"
+
+#: ProcessList.cpp:700
+msgid "CPU"
+msgstr "CPU"
+
+#: ProcessList.cpp:701
+msgid "Time"
+msgstr "時間"
+
+#: ProcessList.cpp:702
+msgid "Nice"
+msgstr "Nice"
+
+#: ProcessList.cpp:703
+msgid "Status"
+msgstr "状態"
+
+#: ProcessList.cpp:704
+msgid "Memory"
+msgstr "メモリ"
+
+#: ProcessList.cpp:705
+msgid "Resident"
+msgstr "常駐"
+
+#: ProcessList.cpp:706
+msgid "Shared"
+msgstr "共有"
+
+#: ProcessList.cpp:707
+msgid "Command line"
+msgstr "コマンド ライン"
+
+#: OSProcessList.cpp:76 OSProcessList.cpp:104
+msgid ""
+"Cannot open directory '/proc'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"ディレクトリ '/proc' を開けません!\n"
+"/proc ファイルシステムを有効にして\n"
+"カーネルを構築する必要があります!"
+
+#: OSProcessList.cpp:266
+msgid "Cannot read status of processes\n"
+msgstr "プロセスのステータスを読み込めません\n"
+
+#: OSProcessList.cpp:367
+msgid "Your OS is not supported yet.  Sorry"
+msgstr "あなたの OS はまだサポートしてない。すまん。"
+
+#: OSProcess.cpp:123 OSProcess.cpp:154 OSProcess.cpp:171
+#, c-format
+msgid "Cannot open %s!\n"
+msgstr "%s を開けません!\n"
+
+#: OSProcess.cpp:183
+msgid "Run"
+msgstr "実行"
+
+#: OSProcess.cpp:186
+msgid "Sleep"
+msgstr "休眠"
+
+#: OSProcess.cpp:189
+msgid "Disk"
+msgstr "ディスク"
+
+#: OSProcess.cpp:192
+msgid "Zombie"
+msgstr "ゾンビ"
+
+#: OSProcess.cpp:198
+msgid "Swap"
+msgstr "スワップ"
+
+#: OSProcess.cpp:201
+msgid "????"
+msgstr "????"
+
+#: OSProcess.cpp:320
+#, c-format
+msgid "Could not set new nice level for process %d"
+msgstr "プロセス %d に対し新しい nece 値を設定出来ません"
+
+#: OSProcess.cpp:334
+#, c-format
+msgid "Cound not send signal %d to process %d"
+msgstr "シグナル %d をプロセス %d に送れません"
+
+#: PerfMonPage.cpp:49
+msgid "CPU Load History"
+msgstr "CPU 負荷履歴"
+
+#: PerfMonPage.cpp:52
+msgid "System Load History"
+msgstr "システム 負荷履歴"
+
+#: PerfMonPage.cpp:55 PerfMonPage.cpp:113
+msgid "User (%)"
+msgstr "ユーザ (%)"
+
+#: PerfMonPage.cpp:56 PerfMonPage.cpp:114
+msgid "Nice (%)"
+msgstr "Nice (%)"
+
+#: PerfMonPage.cpp:57 PerfMonPage.cpp:115
+msgid "System (%)"
+msgstr "システム (%)"
+
+#: PerfMonPage.cpp:64
+msgid "Memory Usage History"
+msgstr "メモリ 使用履歴"
+
+#: PerfMonPage.cpp:66
+msgid "Program (kB)"
+msgstr "プログラム (kB)"
+
+#: PerfMonPage.cpp:67
+msgid "Buffer (kB)"
+msgstr "バッファ (kB)"
+
+#: PerfMonPage.cpp:68
+msgid "Cache (kB)"
+msgstr "キャッシュ (kB)"
+
+#: PerfMonPage.cpp:69
+msgid "Swap (kB)"
+msgstr "スワップ (kB)"
+
+#: PerfMonPage.cpp:109
+#, c-format
+msgid "CPU%d Load History"
+msgstr "CPU%d 負荷履歴"
+
+#: OSStatus.cpp:98
+msgid ""
+"Cannot open file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"ファイル '/proc/stat' を開けません!\n"
+"/proc ファイルシステムが有効になるように\n"
+"カーネルをコンパイルする必要があります!"
+
+#: OSStatus.cpp:120 OSStatus.cpp:303 OSStatus.cpp:378
+msgid ""
+"Cannot open file '/proc/meminfo'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"ファイル '/proc/meminfo' を開けません!\n"
+"/proc ファイルシステムが有効になるように\n"
+"カーネルをコンパイルする必要があります!"
+
+#: OSStatus.cpp:311
+msgid "Cannot read memory info file '/proc/meminfo'!\n"
+msgstr "メモリのインフォファイル '/proc/meminfo' を読めません!\n"
+
+#: OSStatus.cpp:354
+#, c-format
+msgid ""
+"Cannot read info for %s from file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"ファイル '/proc/stat' から %s の情報を読み込めません!\n"
+"/proc ファイルシステムが有効になるように\n"
+"カーネルをコンパイルする必要があります!"
+
+#: OSStatus.cpp:386
+msgid "Cannot read swap info from '/proc/meminfo'!\n"
+msgstr "'/proc/meminfo' からスワップ情報を読めません!\n"
+
+#: OSStatus.cpp:575 OSStatus.cpp:588 OSStatus.cpp:615 OSStatus.cpp:624
+msgid ""
+"Your system is not currently supported.\n"
+"Sorry"
+msgstr ""
+"あなたのシステムはまだサポートしていません。\n"
+"すまん"
+
+#: ReniceDlg.cpp:32
+msgid "Renice Process"
+msgstr "プロセスの優先度を変える"
+
+#: ReniceDlg.cpp:39
+#, c-format
+msgid ""
+"You are about the change the scheduling priority of\n"
+"process %d. Be aware that only the Superuser (root)\n"
+"can decrease the nice level of a process. The smaller\n"
+"the number is the higher is the priority.\n"
+"\n"
+"Please enter the desired nice level:"
+msgstr ""
+"あなたはプロセス %d のスケジューリング方針を変えようと\n"
+"しています。スーパーユーザ(root)のみがプロセスの nice レベル\n"
+"を下げられることを知ってください。数字が小さくなるほど\n"
+"優先度はあがります。\n"
+"\n"
+"新しい nice レベルを入力してください:"

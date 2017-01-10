@@ -1,0 +1,1573 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 1998.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KORGANIZER\n"
+"POT-Creation-Date: 1999-05-01 04:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: alarmdaemon.cpp:38 alarmdaemon.cpp:43 calobject.cpp:372 calobject.cpp:385
+#: eventwindetails.cpp:341 eventwindetails.cpp:361 searchdialog.cpp:80
+#: topwidget.cpp:959 topwidget.cpp:967 topwidget.cpp:1110 topwidget.cpp:1136
+#: topwidget.cpp:1140
+msgid "KOrganizer Error"
+msgstr "KOrganizer virhe"
+
+#: calobject.cpp:373 calobject.cpp:386
+msgid ""
+"An error has occurred parsing the contents of the clipboard.\n"
+"You can only paste a valid vCalendar into KOrganizer.\n"
+msgstr ""
+"Leikepöydän sisältöä käsiteltäessä tapahtui virhe.\n"
+"Voi liittää vain toimivan VCalenradin KOrganizeriin.\n"
+
+#: calobject.cpp:434
+msgid "found a VEvent with no DTSTART/DTEND! Skipping"
+msgstr "löysin VEventin ilman DTSTART/DTEND:a! Ohitan"
+
+#: catdlg.cpp:19
+msgid "KOrganizer Categories"
+msgstr "KOrganizer kategoriat"
+
+#: catdlg.cpp:30
+msgid "Available Categories"
+msgstr "Olemassaolevat kategoriat"
+
+#: catdlg.cpp:36 eventwin.cpp:297 optionsdlg.cpp:228 optionsdlg.cpp:234
+#: optionsdlg.cpp:240
+msgid "Appointment"
+msgstr "Tapaaminen"
+
+#: catdlg.cpp:37
+msgid "Business"
+msgstr "Liiketoimi"
+
+#: catdlg.cpp:38
+msgid "Meeting"
+msgstr "Tapaaminen"
+
+#: catdlg.cpp:39
+msgid "Phone Call"
+msgstr "Puhelinsoitto"
+
+#: catdlg.cpp:40
+msgid "Education"
+msgstr "Koulutus"
+
+#: catdlg.cpp:41
+msgid "Holiday"
+msgstr "Lomapäivä"
+
+#: catdlg.cpp:42
+msgid "Vacation"
+msgstr "Loma"
+
+#: catdlg.cpp:43
+msgid "Special Occasion"
+msgstr "Erikoistapahtuma"
+
+#: catdlg.cpp:44 optionsdlg.cpp:34
+msgid "Personal"
+msgstr "Henkilökohtainen"
+
+#: catdlg.cpp:45
+msgid "Travel"
+msgstr "Matka"
+
+#: catdlg.cpp:55
+msgid "&Add >>"
+msgstr "&Lisää >>"
+
+#: catdlg.cpp:57
+msgid "<< &Remove"
+msgstr "<< &Poista"
+
+#: catdlg.cpp:66
+msgid "Selected Categories"
+msgstr "Valitut kategoriat"
+
+#: catdlg.cpp:78
+msgid "New Category:"
+msgstr "Uusi kategoria:"
+
+#: editeventwin.cpp:116 todoeventwin.cpp:108
+msgid "General"
+msgstr "Yleistä"
+
+#: editeventwin.cpp:117 todoeventwin.cpp:109
+msgid "Details"
+msgstr "Yksityiskohdat"
+
+#: editeventwin.cpp:119
+msgid "Recurrence"
+msgstr "Uusiutuminen"
+
+#: editeventwin.cpp:195 editeventwin.cpp:406 todoeventwin.cpp:162
+#: todoeventwin.cpp:182
+#, c-format
+msgid "Owner: %s"
+msgstr "Omistaja: %s"
+
+#: editeventwin.cpp:810
+msgid "Duration: all day"
+msgstr "Kesto: koko päivän"
+
+#: editeventwin.cpp:818
+#, c-format
+msgid "Duration: %i hour(s), %i minute(s)"
+msgstr "Kesto: %i tunti(a), %i minuutti(a)"
+
+#: editeventwin.cpp:820
+#, c-format
+msgid "Duration: %i hour(s)"
+msgstr "Kesto: %i tunti(a)"
+
+#: editeventwin.cpp:822
+#, c-format
+msgid "Duration: %i minute(s)"
+msgstr "Kesto: %i minuutti(a)"
+
+#: eventwidget.cpp:193
+msgid "Toggle Alarm"
+msgstr "Vaihda hälytys"
+
+#: eventwingeneral.cpp:42 eventwinrecur.cpp:28 wingeneral.cpp:34
+msgid "Appointment Time"
+msgstr "Tapaamisen aika"
+
+#: eventwingeneral.cpp:47 wingeneral.cpp:39
+msgid "Start Time:"
+msgstr "Alkuaika:"
+
+#: eventwingeneral.cpp:58 wingeneral.cpp:48
+msgid "End Time:"
+msgstr "Loppuaika:"
+
+#: eventwingeneral.cpp:80 wingeneral.cpp:64
+msgid "No time associated"
+msgstr "Aikaa ei annettu"
+
+#: eventwingeneral.cpp:91 wingeneral.cpp:75
+msgid "Recurring event"
+msgstr "Uusiutuva tapahtuma"
+
+#: eventwingeneral.cpp:99 todowingeneral.cpp:77
+msgid "Summary:"
+msgstr "Yhteenveto:"
+
+#: eventwingeneral.cpp:110
+msgid "Show Time As:"
+msgstr "Näytä aika:"
+
+#: eventwingeneral.cpp:117
+msgid "Busy"
+msgstr "Varattu"
+
+#: eventwingeneral.cpp:118
+msgid "Free"
+msgstr "Vapaa"
+
+#: eventwingeneral.cpp:133 todowingeneral.cpp:96
+msgid "Owner:"
+msgstr "Omistaja:"
+
+#: eventwingeneral.cpp:139 todowingeneral.cpp:102
+msgid "Private"
+msgstr "Yksityinen"
+
+#: eventwindetails.cpp:199 eventwingeneral.cpp:145 todowingeneral.cpp:108
+msgid "Categories..."
+msgstr "Kategoriat..."
+
+#: eventwingeneral.cpp:164
+msgid "Reminder:"
+msgstr "Muistutus:"
+
+#: eventwindetails.cpp:39
+msgid "Attendee Information"
+msgstr "Osallistujatiedot"
+
+#: eventwindetails.cpp:46
+msgid "Name"
+msgstr "Nimi"
+
+#: eventwindetails.cpp:47
+msgid "Email"
+msgstr "Sähköposti"
+
+#: eventwindetails.cpp:48
+msgid "Role"
+msgstr "Rooli"
+
+#: eventwindetails.cpp:49
+msgid "Status"
+msgstr "Tila"
+
+#: eventwindetails.cpp:50
+msgid "RSVP"
+msgstr "RSVP"
+
+#: eventwindetails.cpp:65
+msgid "Attendee Name:"
+msgstr "Osallistujan nimi:"
+
+#: eventwindetails.cpp:77
+msgid "Email Address:"
+msgstr "Sähköpostiosoite:"
+
+#: eventwindetails.cpp:92
+msgid "Role:"
+msgstr "Rooli:"
+
+#: eventwindetails.cpp:98
+msgid "Attendee"
+msgstr "Osallistuja"
+
+#: eventwindetails.cpp:99
+msgid "Organizer"
+msgstr "Organisoija"
+
+#: eventwindetails.cpp:100
+msgid "Owner"
+msgstr "Omistaja"
+
+#: eventwindetails.cpp:101
+msgid "Delegate"
+msgstr "Delegaatti"
+
+#: eventwindetails.cpp:106
+msgid "Status:"
+msgstr "Tila:"
+
+#: eventwindetails.cpp:112
+msgid "Needs Action"
+msgstr "Vaatii toimenpiteitä"
+
+#: eventwindetails.cpp:113
+msgid "Accepted"
+msgstr "Hyväksytty"
+
+#: eventwindetails.cpp:114
+msgid "Sent"
+msgstr "Lähetetty"
+
+#: eventwindetails.cpp:115
+msgid "Tentative"
+msgstr "Alustava"
+
+#: eventwindetails.cpp:116
+msgid "Confirmed"
+msgstr "Vahvistettu"
+
+#: eventwindetails.cpp:117
+msgid "Declined"
+msgstr "Kieltäydytty"
+
+#: eventwindetails.cpp:118 todowingeneral.cpp:35 todowingeneral.cpp:52
+msgid "Completed"
+msgstr "Valmis"
+
+#: eventwindetails.cpp:119
+msgid "Delegated"
+msgstr "Delegoitu"
+
+#: eventwindetails.cpp:126
+msgid "Request Response"
+msgstr "Pyydä vastaus"
+
+#: eventwindetails.cpp:132
+msgid "&Add"
+msgstr "&Lisää"
+
+#: eventwindetails.cpp:136
+msgid "Address &Book..."
+msgstr "&Osoitekirja..."
+
+#: eventwindetails.cpp:163
+msgid "Attach..."
+msgstr "Liitä..."
+
+#: eventwindetails.cpp:183
+msgid "Save As..."
+msgstr "Tallenna nimellä..."
+
+#: eventwindetails.cpp:218
+msgid "Priority:"
+msgstr "Prioriteetti:"
+
+#: eventwindetails.cpp:224
+msgid "Low (1)"
+msgstr "Matala (1)"
+
+#: eventwindetails.cpp:225
+msgid "Normal (2)"
+msgstr "Normaali (2)"
+
+#: eventwindetails.cpp:226
+msgid "High (3)"
+msgstr "Korkea (3)"
+
+#: eventwindetails.cpp:227
+msgid "Maximum (4)"
+msgstr "Maksimaalinen (4)"
+
+#: eventwindetails.cpp:342
+msgid "Unable to open address book."
+msgstr "En pysty avaamaan osoitekirjaa."
+
+#: eventwindetails.cpp:362
+msgid "Error getting entry from address book."
+msgstr "Virhe haettaessa osoitekirjatietuetta."
+
+#: eventwinrecur.cpp:30
+msgid "Start:  "
+msgstr "Aloita:  "
+
+#: eventwinrecur.cpp:31
+msgid "End:  "
+msgstr "Lopeta:  "
+
+#: eventwinrecur.cpp:61
+msgid "Recurrence Rule"
+msgstr "Uusiutuvuussääntö"
+
+#: eventwinrecur.cpp:67
+msgid "Daily"
+msgstr "Päivittäin"
+
+#: eventwinrecur.cpp:68
+msgid "Weekly"
+msgstr "Viikoittain"
+
+#: eventwinrecur.cpp:69
+msgid "Monthly"
+msgstr "Kuukausittain"
+
+#: eventwinrecur.cpp:70
+msgid "Yearly"
+msgstr "Vuosittain"
+
+#: eventwinrecur.cpp:95
+msgid "Enable Advanced Rule:"
+msgstr "Käytä edistynyttä sääntöä:"
+
+#: eventwinrecur.cpp:128
+msgid "Recurrence Range"
+msgstr "Uusiutumisväli"
+
+#: eventwinrecur.cpp:132
+msgid "Begin On:"
+msgstr "Aloita:"
+
+#: eventwinrecur.cpp:134
+msgid "No Ending Date"
+msgstr "Ei loppupäivää"
+
+#: eventwinrecur.cpp:135
+msgid "End after"
+msgstr "Lopeta jälkeen"
+
+#: eventwinrecur.cpp:137
+msgid "occurrence(s)"
+msgstr "esiintymiä"
+
+#: eventwinrecur.cpp:138
+msgid "End by:"
+msgstr "Lopeta:"
+
+#: eventwinrecur.cpp:181
+msgid "Exceptions"
+msgstr "Poikkeukset"
+
+#: eventwinrecur.cpp:267 eventwinrecur.cpp:297
+msgid "Recur every"
+msgstr "Uusi joka"
+
+#: eventwinrecur.cpp:273
+msgid "day(s)"
+msgstr "päivä"
+
+#: eventwinrecur.cpp:303
+msgid "week(s) on:"
+msgstr "viikko:"
+
+#: eventwinrecur.cpp:305 kagenda.cpp:106
+msgid "Sun"
+msgstr "Su"
+
+#: eventwinrecur.cpp:306 kagenda.cpp:105
+msgid "Mon"
+msgstr "Ma"
+
+#: eventwinrecur.cpp:307 kagenda.cpp:105
+msgid "Tue"
+msgstr "Ti"
+
+#: eventwinrecur.cpp:308 kagenda.cpp:105
+msgid "Wed"
+msgstr "Ke"
+
+#: eventwinrecur.cpp:309 kagenda.cpp:106
+msgid "Thu"
+msgstr "To"
+
+#: eventwinrecur.cpp:310 kagenda.cpp:106
+msgid "Fri"
+msgstr "Pe"
+
+#: eventwinrecur.cpp:311 kagenda.cpp:106
+msgid "Sat"
+msgstr "La"
+
+#: eventwinrecur.cpp:361 eventwinrecur.cpp:365
+msgid "Recur on the"
+msgstr "Uusiutuu"
+
+#: eventwinrecur.cpp:363
+msgid "day"
+msgstr "päivä"
+
+#: eventwinrecur.cpp:369 eventwinrecur.cpp:481
+msgid "every"
+msgstr "joka"
+
+#: eventwinrecur.cpp:371
+msgid "month(s)"
+msgstr "kuukausi"
+
+#: eventwinrecur.cpp:383 eventwinrecur.cpp:424
+msgid "1st"
+msgstr "1."
+
+#: eventwinrecur.cpp:384 eventwinrecur.cpp:425
+msgid "2nd"
+msgstr "2."
+
+#: eventwinrecur.cpp:385 eventwinrecur.cpp:426
+msgid "3rd"
+msgstr "3."
+
+#: eventwinrecur.cpp:386 eventwinrecur.cpp:427
+msgid "4th"
+msgstr "4."
+
+#: eventwinrecur.cpp:387 eventwinrecur.cpp:428
+msgid "5th"
+msgstr "5."
+
+#: eventwinrecur.cpp:388
+msgid "6th"
+msgstr "6."
+
+#: eventwinrecur.cpp:389
+msgid "7th"
+msgstr "7."
+
+#: eventwinrecur.cpp:390
+msgid "8th"
+msgstr "8."
+
+#: eventwinrecur.cpp:391
+msgid "9th"
+msgstr "9."
+
+#: eventwinrecur.cpp:392
+msgid "10th"
+msgstr "10."
+
+#: eventwinrecur.cpp:393
+msgid "11th"
+msgstr "11."
+
+#: eventwinrecur.cpp:394
+msgid "12th"
+msgstr "12."
+
+#: eventwinrecur.cpp:395
+msgid "13th"
+msgstr "13."
+
+#: eventwinrecur.cpp:396
+msgid "14th"
+msgstr "14."
+
+#: eventwinrecur.cpp:397
+msgid "15th"
+msgstr "15."
+
+#: eventwinrecur.cpp:398
+msgid "16th"
+msgstr "16."
+
+#: eventwinrecur.cpp:399
+msgid "17th"
+msgstr "17."
+
+#: eventwinrecur.cpp:400
+msgid "18th"
+msgstr "18."
+
+#: eventwinrecur.cpp:401
+msgid "19th"
+msgstr "19."
+
+#: eventwinrecur.cpp:402
+msgid "20th"
+msgstr "20."
+
+#: eventwinrecur.cpp:403
+msgid "21st"
+msgstr "21."
+
+#: eventwinrecur.cpp:404
+msgid "22nd"
+msgstr "22."
+
+#: eventwinrecur.cpp:405
+msgid "23rd"
+msgstr "23."
+
+#: eventwinrecur.cpp:406
+msgid "24th"
+msgstr "24."
+
+#: eventwinrecur.cpp:407
+msgid "25th"
+msgstr "25."
+
+#: eventwinrecur.cpp:408
+msgid "26th"
+msgstr "26."
+
+#: eventwinrecur.cpp:409
+msgid "27th"
+msgstr "27."
+
+#: eventwinrecur.cpp:410
+msgid "28th"
+msgstr "28."
+
+#: eventwinrecur.cpp:411
+msgid "29th"
+msgstr "29."
+
+#: eventwinrecur.cpp:412
+msgid "30th"
+msgstr "30."
+
+#: eventwinrecur.cpp:413
+msgid "31st"
+msgstr "31."
+
+#: eventwinrecur.cpp:466
+msgid "Recur in the month of"
+msgstr "Uusintakuukausi"
+
+#: eventwinrecur.cpp:467
+msgid "Recur on this day"
+msgstr "Uusi tänä päivänä"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:469 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "January"
+msgstr "Tammikuu"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:470 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "February"
+msgstr "Helmikuu"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:471 kdatenav.cpp:68 kdatenav.cpp:259
+msgid "March"
+msgstr "Maaliskuu"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:472 kdatenav.cpp:69 kdatenav.cpp:259
+msgid "April"
+msgstr "Huhtikuu"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:473 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "May"
+msgstr "Toukokuu"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:474 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "June"
+msgstr "Kesäkuu"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:475 kdatenav.cpp:69 kdatenav.cpp:261
+msgid "July"
+msgstr "Heinäkuu"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:476 kdatenav.cpp:70 kdatenav.cpp:261
+msgid "August"
+msgstr "Elokuu"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:477 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "September"
+msgstr "Syyskuu"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:478 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "October"
+msgstr "Lokakuu"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:479 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "November"
+msgstr "Marraskuu"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:480 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "December"
+msgstr "Joulukuu"
+
+#: eventwinrecur.cpp:484
+msgid "year(s)"
+msgstr "vuosi"
+
+#: kagenda.cpp:212
+msgid "All Day Event"
+msgstr "Koko päivä"
+
+#: kagenda.cpp:830
+msgid "New appointment"
+msgstr "Uusi tapaaminen"
+
+#: kagenda.cpp:967 kagenda.cpp:975
+msgid "am"
+msgstr "am"
+
+#: kagenda.cpp:971
+msgid "pm"
+msgstr "pm"
+
+#: kdatenav.cpp:44
+msgid "Previous Year"
+msgstr "Edellinen Vuosi"
+
+#: kdatenav.cpp:50
+msgid "Previous Month"
+msgstr "Edellinen Kuukausi"
+
+#: kdatenav.cpp:56
+msgid "Next Month"
+msgstr "Seuraava Kuukausi"
+
+#: kdatenav.cpp:62
+msgid "Next Year"
+msgstr "Seuraava Vuosi"
+
+#: kmonthview.cpp:386
+msgid "New Event"
+msgstr "Uusi tapahtuma"
+
+#: kpbutton.cpp:22 kpbutton.cpp:40 kpbutton.cpp:90
+msgid "KPButton: pixmap is empty, perhaps some missing file"
+msgstr "KPButton: kuva on tyhjä, mahdollisesti tiedostoja puuttuu"
+
+#: baselistview.cpp:28
+msgid "Date"
+msgstr "Päivä"
+
+#: baselistview.cpp:29
+msgid "Time"
+msgstr "Aika"
+
+#: baselistview.cpp:30 calprinter.cpp:365
+msgid "Summary"
+msgstr "Yhteenveto"
+
+#: baselistview.cpp:77
+msgid "started "
+msgstr "aloitettu "
+
+#: baselistview.cpp:80
+msgid "ends "
+msgstr "loppuu "
+
+#: baselistview.cpp:85
+#, c-format
+msgid "repeats %d times"
+msgstr "toista %d kertaa"
+
+#: baselistview.cpp:89
+msgid "repeats forever"
+msgstr "toista loputtomiin"
+
+#: listview.cpp:14
+msgid "Edit Event"
+msgstr "Muokkaa tapahtumaa"
+
+#: listview.cpp:17
+msgid "Delete Event  "
+msgstr "Poista tapahtuma   "
+
+#: listview.cpp:20
+msgid "Show Dates"
+msgstr "Näytä päivät"
+
+#: listview.cpp:22
+msgid "Hide Dates"
+msgstr "Piilota päivät"
+
+#: main.cpp:29
+msgid "No default calendar, and none was specified on the command line.\n"
+msgstr "Ei oletuskalenteria, eikä mitään määritelty komentorivillä.\n"
+
+#: main.cpp:33
+msgid "Error reading from default calendar.\n"
+msgstr "virhe luettaessa oletuskalenteria.\n"
+
+#: searchdialog.cpp:22
+msgid "Search For:"
+msgstr "Etsi:"
+
+#: searchdialog.cpp:32 topwidget.cpp:494
+msgid "&Search"
+msgstr "&Etsi"
+
+#: searchdialog.cpp:81
+msgid ""
+"Invalid search expression, cannot perform\n"
+"the search.  Please enter a search expression\n"
+"using the wildcard characters '*' and '?'\n"
+"where needed."
+msgstr ""
+"Virheellinen hakusana, en voi tehdä\n"
+"hakua. Anna hakusana käyttäen korvausmerkkejä\n"
+"'*' ja '?' tarpeen mukaan."
+
+#: topwidget.cpp:391
+msgid "&Open"
+msgstr "&Avaa"
+
+#: topwidget.cpp:394
+msgid "Open &Recent"
+msgstr "&Avaa edellinen"
+
+#: topwidget.cpp:410
+msgid "Save &As"
+msgstr "Tallenna &nimellä"
+
+#: topwidget.cpp:415
+msgid "&Import From Ical"
+msgstr "&Tuo Ical:ta"
+
+#: topwidget.cpp:417
+msgid "&Merge Calendar"
+msgstr "&Liitä kalenteri"
+
+#: topwidget.cpp:420
+msgid "Archive Old Entries"
+msgstr "Talleta vanhat tapahtumat"
+
+#: topwidget.cpp:427
+msgid "Print Setup"
+msgstr "Tulostimen asetukset"
+
+#: calprinter.cpp:844 topwidget.cpp:431
+msgid "&Print"
+msgstr "&Tulosta"
+
+#: topwidget.cpp:433
+msgid "Print Pre&view"
+msgstr "&Esikatselu"
+
+#: topwidget.cpp:455
+msgid "&List"
+msgstr "&Lista"
+
+#: topwidget.cpp:459
+msgid "&Day"
+msgstr "&Päivä"
+
+#: topwidget.cpp:462
+msgid "W&ork Week"
+msgstr "&Työviikkonäkymä"
+
+#: topwidget.cpp:465
+msgid "&Week"
+msgstr "&Viikko"
+
+#: topwidget.cpp:468
+msgid "&Month"
+msgstr "&Kuukausi"
+
+#: topwidget.cpp:471
+msgid "&To-do list"
+msgstr "&Tehtävää"
+
+#: topwidget.cpp:479
+msgid "New &Appointment"
+msgstr "&Uusi tapaaminen"
+
+#: topwidget.cpp:481
+msgid "New E&vent"
+msgstr "Uusi &tapahtuma"
+
+#: topwidget.cpp:483
+msgid "&Edit Appointment"
+msgstr "&Muokkaa tapaamista"
+
+#: topwidget.cpp:486
+msgid "&Delete Appointment"
+msgstr "&Poista tapaaminen"
+
+#: topwidget.cpp:488
+msgid "Delete To-do"
+msgstr "Poista tehtävä"
+
+#: topwidget.cpp:498
+msgid "&Mail Appointment"
+msgstr "Postita tapaaminen"
+
+#: topwidget.cpp:504
+msgid "Go to &Today"
+msgstr "Siirry tähän päivään"
+
+#: topwidget.cpp:508
+msgid "&Previous Day"
+msgstr "Edellinen Päivä"
+
+#: topwidget.cpp:512
+msgid "&Next Day"
+msgstr "Seuraava Päivä"
+
+#: topwidget.cpp:516
+msgid "Show &Tool Bar"
+msgstr "Näytä t&yökalurivi"
+
+#: topwidget.cpp:520
+msgid "Show St&atus Bar"
+msgstr "Näytä &tilarivi"
+
+#: topwidget.cpp:525
+msgid "&Edit Options"
+msgstr "&Muokkausasetukset"
+
+#: topwidget.cpp:533
+msgid "&About"
+msgstr "&Tietoja"
+
+#: topwidget.cpp:535
+msgid "Send &Bug Report"
+msgstr "Lähetä &virheraportti"
+
+#: topwidget.cpp:543
+msgid "&Actions"
+msgstr "&Toimenpiteet"
+
+#: topwidget.cpp:562
+msgid "Open A Calendar"
+msgstr "Avaa kalenteri"
+
+#: topwidget.cpp:568
+msgid "Save This Calendar"
+msgstr "Tallenna kalenteri"
+
+#: topwidget.cpp:585
+msgid "New Appointment"
+msgstr "Uusi tapaaminen"
+
+#: topwidget.cpp:591
+msgid "Delete Appointment"
+msgstr "Poista tapaaminen"
+
+#: topwidget.cpp:597
+msgid "Search For an Appointment"
+msgstr "Etsi tapaamista"
+
+#: topwidget.cpp:603
+msgid "Mail Appointment"
+msgstr "Postita tapaaminen"
+
+#: topwidget.cpp:622
+msgid "Go to Today"
+msgstr "Siirry tähän päivään"
+
+#: topwidget.cpp:628
+msgid "Previous Day"
+msgstr "Edellinen Päivä"
+
+#: topwidget.cpp:634
+msgid "Next Day"
+msgstr "Seuraava Päivä"
+
+#: topwidget.cpp:650
+msgid "List View"
+msgstr "Listanäkymä"
+
+#: topwidget.cpp:655
+msgid "Schedule View"
+msgstr "Aikataulunäkymä"
+
+#: topwidget.cpp:662
+msgid "Month View"
+msgstr "Kuukausinäkymä"
+
+#: topwidget.cpp:668
+msgid "To-do list view"
+msgstr "Tehtävänäkymä"
+
+#: topwidget.cpp:750
+msgid "we don't handle updates for that view, yet.\n"
+msgstr "emme tue vielä päivityksiä tässä näkymässä.\n"
+
+#: topwidget.cpp:842
+msgid "we don't handle that view yet.\n"
+msgstr "emme tue vielä näkymää.\n"
+
+#: topwidget.cpp:960
+msgid "You did not specify a valid file name."
+msgstr "Et antanut käypää tiedostonimeä."
+
+#: topwidget.cpp:968
+msgid ""
+"The file you specified is a directory,\n"
+"and cannot be opened. Please try again,\n"
+"this time selecting a valid calendar file."
+msgstr ""
+"Määrittelemäsi tiedosto on hakemisto,\n"
+"eikä sitä voida avata. Yritä uudelleen\n"
+"ja valitse kalenteritiedosto."
+
+#: topwidget.cpp:995
+msgid "KOrganizer Warning"
+msgstr "KOrganzer varoitus"
+
+#: topwidget.cpp:996
+msgid ""
+"This calendar has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Kalenteri on muuttunut.\n"
+"Halutako tallentaa muutoksesi?"
+
+#: topwidget.cpp:998
+msgid "&Yes"
+msgstr "&Kyllä"
+
+#: topwidget.cpp:998
+msgid "&No"
+msgstr "&Ei"
+
+#: topwidget.cpp:1007 topwidget.cpp:1597
+msgid "KOrganizer Confirmation"
+msgstr "KOrganizer varmistus"
+
+#: topwidget.cpp:1008
+msgid "This item will be permanently deleted."
+msgstr "Tämä tietue tuhotaan lopullisesti."
+
+#: topwidget.cpp:1111
+msgid ""
+"You have no ical file in your home directory.\n"
+"Import cannot proceed.\n"
+msgstr ""
+"sinulle ole ical tiedostoa kotihakemistossasi.\n"
+"Tuontia ei voida jatkaa.\n"
+
+#: topwidget.cpp:1124
+msgid "KOrganizer Info"
+msgstr "KOrganizer tietoja"
+
+#: topwidget.cpp:1125
+msgid ""
+"KOrganizer succesfully imported and merged your\n"
+".calendar file from ical into the currently\n"
+"opened calendar.\n"
+msgstr ""
+"KOrganizer onnistuneesti toi ja liitti kalenteri-\n"
+"tiedostoosi ical kalenterin\n"
+
+#: topwidget.cpp:1130
+msgid "ICal Import Successful With Warning"
+msgstr "ICal tuonti onnistui varoituksella"
+
+#: topwidget.cpp:1131
+msgid ""
+"KOrganizer encountered some unknown fields while\n"
+"parsing your .calendar ical file, and had to\n"
+"discard them.  Please check to see that all\n"
+"your relevant data was correctly imported.\n"
+msgstr ""
+"Korganizer tapasi tuntemattomia kenttiä tulkitessaan\n"
+"sinun .calendar ical tiedostoa ja hylkäsi ne.\n"
+"Tarkista että kaikki tärkeä tieto tuotiin kalenteriin.\n"
+
+#: topwidget.cpp:1137
+msgid ""
+"KOrganizer encountered some error parsing your\n"
+".calendar file from ical.  Import has failed.\n"
+msgstr ""
+"KOrganizer törmäsi virheeseen tulkitessaan .calendar\n"
+"ical tiedostoasi. Tuonti epäonnistui.\n"
+
+#: topwidget.cpp:1141
+msgid ""
+"KOrganizer doesn't think that your .calendar\n"
+"file is a valid ical calendar. Import has failed.\n"
+msgstr ""
+"KOrganizerin mielestä .calendar ical tiedostosi ei\n"
+"ole ical tiedosto. Tuonti epäonnistui.\n"
+
+#: topwidget.cpp:1305 topwidget.cpp:1332 topwidget.cpp:1683 topwidget.cpp:1693
+msgid "KOrganizer error"
+msgstr "KOrganizer virhe"
+
+#: topwidget.cpp:1306 topwidget.cpp:1333
+msgid ""
+"Unfortunately, we don't handle cut/paste for\n"
+"that view yet.\n"
+msgstr ""
+"Valitettavasti emme vielä tue leikkaa/liimaa\n"
+"toimintoa tässäkohdin.\n"
+
+#: topwidget.cpp:1549
+msgid "don't handle deletes from that view, yet.\n"
+msgstr "tuhoamisia ei tueta tässä näkymässä vielä.\n"
+
+#: topwidget.cpp:1598
+msgid ""
+"This event recurs over multiple dates.\n"
+"Are you sure you want to delete the\n"
+"selected event, or just this instance?\n"
+msgstr ""
+"Tämä tapahtuma on jaettu monelle päivälle.\n"
+"Oletko varma että haluat tuhota tapahtuman\n"
+"vai vain tämän instanssin?\n"
+
+#: topwidget.cpp:1601
+msgid "&All"
+msgstr "&Kaikki"
+
+#: topwidget.cpp:1601
+msgid "&This"
+msgstr "&Tämä"
+
+#: topwidget.cpp:1616
+msgid "no date selected, or invalid date\n"
+msgstr "päivämäärää ei ole valittu tai viallinen päivä\n"
+
+#: topwidget.cpp:1684
+msgid "Can't generate mail from this view\n"
+msgstr "En voi luoda sähköpostia tästä näkymästä\n"
+
+#: topwidget.cpp:1694
+msgid ""
+"Can't generate mail:\n"
+" No attendees defined!\n"
+msgstr ""
+"En voi luoda postia:\n"
+" Ei osallistujia määritelty!\n"
+
+#: topwidget.cpp:1833
+msgid "New Calendar"
+msgstr "Uusi kalenteri"
+
+#: eventwin.cpp:313 eventwin.cpp:319 topwidget.cpp:1839
+msgid "modified"
+msgstr "muutettu"
+
+#: eventwin.cpp:325 topwidget.cpp:1844
+msgid "KOrganizer"
+msgstr "KOrganizer"
+
+#: calprinter.cpp:47
+msgid "Korganizer Configuration Options"
+msgstr "KOrganizer Asetukset"
+
+#: calprinter.cpp:361 todowingeneral.cpp:60
+msgid "Priority"
+msgstr "Prioriteetti"
+
+#: calprinter.cpp:369
+msgid "Due"
+msgstr "Koska"
+
+#: calprinter.cpp:453
+#, c-format
+msgid "To-Do items: %s %.2d"
+msgstr "Tehtämiä: %s %.2d"
+
+#: calprinter.cpp:791
+msgid "Date Range"
+msgstr "Tietoalue"
+
+#: calprinter.cpp:811
+msgid "View Type"
+msgstr "Näyttötyyppi"
+
+#: calprinter.cpp:816
+msgid "Day"
+msgstr "Päivä"
+
+#: calprinter.cpp:821
+msgid "Week"
+msgstr "Viikko"
+
+#: calprinter.cpp:825
+msgid "Month"
+msgstr "Kuukausi"
+
+#: calprinter.cpp:829
+msgid "To-Do"
+msgstr "Tehtävää"
+
+#: calprinter.cpp:843
+msgid "&Preview"
+msgstr "&Esikatselu"
+
+#: koarchivedlg.cpp:19
+msgid "Archive / Delete Past Appointments - KOrganizer"
+msgstr "Talleta / Poista menneitä tapaamista - KOrganizer"
+
+#: optionsdlg.cpp:37
+msgid "Time & Date"
+msgstr "Aika & Päivä"
+
+#: optionsdlg.cpp:43
+msgid "Colors"
+msgstr "Värit"
+
+#: optionsdlg.cpp:46
+msgid "Views"
+msgstr "Näkymät"
+
+#: optionsdlg.cpp:52
+msgid "Printing"
+msgstr "Tulostus"
+
+#: optionsdlg.cpp:65
+msgid "KOrganizer Configuration"
+msgstr "KOrganizer Asetukset"
+
+#: optionsdlg.cpp:93
+msgid "Your name:"
+msgstr "Nimi:"
+
+#: optionsdlg.cpp:97
+msgid "Email address:"
+msgstr "Sähköpostiosoite:"
+
+#: optionsdlg.cpp:101
+msgid "Additional:"
+msgstr "Lisätietoja:"
+
+#: optionsdlg.cpp:105
+msgid "Auto-save Calendar"
+msgstr "Automaattitallenna kalenteri"
+
+#: optionsdlg.cpp:109
+msgid "Confirm Appointment/To-Do Deletes"
+msgstr "Varmista Tapaaminen/Tehtävää tuhoamiset"
+
+#: optionsdlg.cpp:113
+msgid "Holidays:"
+msgstr "Lomat:"
+
+#: optionsdlg.cpp:139
+msgid "1 minute"
+msgstr "1 minuutti"
+
+#: optionsdlg.cpp:139
+msgid "5 minutes"
+msgstr "5 minuuttia"
+
+#: optionsdlg.cpp:140
+msgid "10 minutes"
+msgstr "10 minuuttia"
+
+#: optionsdlg.cpp:140
+msgid "15 minutes"
+msgstr "15 minuuttia"
+
+#: optionsdlg.cpp:141
+msgid "30 minutes"
+msgstr "30 minuuttia"
+
+#: optionsdlg.cpp:148
+msgid "Time Format:"
+msgstr "Aikaformaatti:"
+
+#: optionsdlg.cpp:149
+msgid "24 hour"
+msgstr "24 tuntia"
+
+#: optionsdlg.cpp:150
+msgid "AM / PM"
+msgstr "AM / PM"
+
+#: optionsdlg.cpp:154
+msgid "Date Format:"
+msgstr "Päiväformaatti:"
+
+#: optionsdlg.cpp:155
+msgid "Day.Month.Year (31.01.2000)"
+msgstr "Päivä.Kuukausi.Vuosi (31.01.2000)"
+
+#: optionsdlg.cpp:156
+msgid "Month/Day/Year (01/31/2000)"
+msgstr "Kuukausi/Päivä/Vuosi (01/31/2000)"
+
+#: optionsdlg.cpp:157
+msgid "Month-Day-Year (01-31-2000)"
+msgstr "Kuukausi-Päivä-Vuosi (01-31-2000)"
+
+#: optionsdlg.cpp:161
+msgid "Time Zone:"
+msgstr "Aikavyöhyke:"
+
+#: optionsdlg.cpp:168
+msgid "Default Appointment Time:"
+msgstr "Tapaamisen oletusaika:"
+
+#: optionsdlg.cpp:178
+msgid "Default Alarm Time:"
+msgstr "Hälytyksen oletusaika:"
+
+#: optionsdlg.cpp:186
+msgid "Week Starts on Monday"
+msgstr "Viikko alkaa maanantaina"
+
+#: optionsdlg.cpp:203
+msgid "Day Begins At:"
+msgstr "Päivä alkaa:"
+
+#: optionsdlg.cpp:213
+msgid "Hour size in schedule view"
+msgstr "Tunnin koko aikataulunäkymässä"
+
+#: optionsdlg.cpp:217
+msgid "Show events that recur daily in Date Navigator"
+msgstr "Näytä päivittäiset tapahtumat Päivämääräselaimessa"
+
+#: optionsdlg.cpp:229
+msgid "List view font"
+msgstr "Listanäkymän kirjasin"
+
+#: optionsdlg.cpp:235
+msgid "Schedule view font"
+msgstr "Aikataulunäkymän kirjasin"
+
+#: optionsdlg.cpp:241
+msgid "Month view font"
+msgstr "Kuukausinäkymän kirjasin"
+
+#: optionsdlg.cpp:246
+msgid "12345"
+msgstr "12345"
+
+#: optionsdlg.cpp:246
+msgid "Time bar font"
+msgstr "Aikapalkin kirjasin"
+
+#: optionsdlg.cpp:251
+msgid "Things to do"
+msgstr "Tehtävää"
+
+#: optionsdlg.cpp:252
+msgid "To-Do list font"
+msgstr "Tehtävää kirjasin"
+
+#: optionsdlg.cpp:273
+msgid "Use system default colors"
+msgstr "Käytä järjestelmän oletusvärejä"
+
+#: optionsdlg.cpp:278
+msgid "Appointment & Checklist items"
+msgstr "Tapaamiset & Tarkistuslista"
+
+#: optionsdlg.cpp:279
+msgid "Background"
+msgstr "Tausta"
+
+#: optionsdlg.cpp:282
+msgid "Text"
+msgstr "Teksti"
+
+#: optionsdlg.cpp:285
+msgid "Handle Selected"
+msgstr "Hoida valitut"
+
+#: optionsdlg.cpp:288
+msgid "Handle Unselected"
+msgstr "Hoida valitsemattomat"
+
+#: optionsdlg.cpp:291
+msgid "Handle Active Apt."
+msgstr "Hoida aktiiviset tap."
+
+#: optionsdlg.cpp:296
+msgid "Sheet background"
+msgstr "Lomakkeen tausta"
+
+#: optionsdlg.cpp:299
+msgid "Calendar Background"
+msgstr "Kalenterin tausta"
+
+#: optionsdlg.cpp:302
+msgid "Calendar Date Text"
+msgstr "Kalenterin päiväteksti"
+
+#: optionsdlg.cpp:305
+msgid "Calendar Date Selected"
+msgstr "Kalenterin päivä valittu"
+
+#: optionsdlg.cpp:344
+msgid "Printer Name"
+msgstr "Tulostimen nimi"
+
+#: optionsdlg.cpp:374
+msgid "Paper Size"
+msgstr "Paperikoko"
+
+#: optionsdlg.cpp:376
+msgid "A4"
+msgstr "A4"
+
+#: optionsdlg.cpp:377
+msgid "B5"
+msgstr "B5"
+
+#: optionsdlg.cpp:378
+msgid "Letter"
+msgstr "Letter"
+
+#: optionsdlg.cpp:379
+msgid "Legal"
+msgstr "Leagal"
+
+#: optionsdlg.cpp:380
+msgid "Executive"
+msgstr "Executive"
+
+#: optionsdlg.cpp:384
+msgid "Paper Orientation"
+msgstr "Paperin suunta"
+
+#: optionsdlg.cpp:386
+msgid "Portrait"
+msgstr "Pysty"
+
+#: optionsdlg.cpp:388
+msgid "Landscape"
+msgstr "Vaaka"
+
+#: optionsdlg.cpp:395
+msgid "Preview Program"
+msgstr "Esikatseluhjelma"
+
+#: kpropdlg.cpp:124
+msgid "Prev"
+msgstr "Edellinen"
+
+#: kpropdlg.cpp:125
+msgid "Next"
+msgstr "Seuraava"
+
+#: aboutdlg.cpp:20
+msgid "KOrganizer Virtual Postcard"
+msgstr "KOrganizer virtuaalinen postikortti"
+
+#: aboutdlg.cpp:24
+msgid ""
+"Please send a postcard to me, so I can see who is\n"
+"using KOrganizer! Tell me how great the program is,\n"
+"and how you just can't live without it.  Or, report\n"
+"a bug which is stopping you from doing useful work.\n"
+"The postcard will simply include anything you wish to\n"
+"type in the comment area below.\n"
+msgstr ""
+"Lähetä minulle postikortti, nini tiedän ketkä käyttävät\n"
+"KOrganizeria! Kerro minulle kuinka hyvä ohjelma se on,\n"
+"ja kuinka et voi elää ilman sitä.  Tai ilmoita virheestä\n"
+"joka estää sinua tekemästä työtä. Postikortti sisältää\n"
+"sen mitä kirjoitat allaolevaan kommenttialueeseen.\n"
+
+#: aboutdlg.cpp:104
+msgid "About KOrganizer"
+msgstr "Tietoja Korganizerista"
+
+#: aboutdlg.cpp:137
+msgid "by Preston Brown and"
+msgstr "tehnyt Preston Brown ja"
+
+#: aboutdlg.cpp:156
+msgid "License Agreement:"
+msgstr "Lisenssi:"
+
+#: aboutdlg.cpp:162
+msgid ""
+"\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n"
+msgstr ""
+
+#: aboutdlg.cpp:197
+msgid "&Send Postcard"
+msgstr "&Lähetä postikortti"
+
+#: aboutdlg.cpp:233
+msgid "many more, thank you!"
+msgstr "monta muuta, kiitos!"
+
+#: aboutdlg.cpp:255
+msgid "Could not load movie"
+msgstr "En saanut ladattua elokuvaa"
+
+#: kotodoview.cpp:27
+msgid "To-Do Items"
+msgstr "Tehtävää"
+
+#: kotodoview.cpp:91 kotodoview.cpp:99
+msgid "New To-Do"
+msgstr "Uusi tehtävä"
+
+#: kotodoview.cpp:94
+msgid "Purge Completed "
+msgstr "Tyhjennys valmis"
+
+#: kotodoview.cpp:101
+msgid "Edit To-Do"
+msgstr "Muokkaa tehtävää"
+
+#: kotodoview.cpp:104
+msgid "Delete To-Do"
+msgstr "Poista tehtävä"
+
+#: kotodoview.cpp:106
+msgid "Purge Completed"
+msgstr "Tyhjennys valmis"
+
+#: kotodoview.cpp:108
+msgid "Sort by Priority"
+msgstr "Järjestä prioriteetin mukaan"
+
+#: eventwin.cpp:91
+msgid "Save and Close"
+msgstr "Tallenna ja sulje"
+
+#: eventwin.cpp:111
+msgid "Previous Event"
+msgstr "Edellinen tapahtuma"
+
+#: eventwin.cpp:117
+msgid "Next Event"
+msgstr "Seuraava tapahtuma"
+
+#: eventwin.cpp:128
+msgid "Delete Event"
+msgstr "Tuhoa tapahtuma"
+
+#: eventwin.cpp:286
+msgid "New"
+msgstr "Uusi"
+
+#: eventwin.cpp:293
+msgid "Todo"
+msgstr "Tehtävää"
+
+#: eventwin.cpp:309
+msgid "readonly"
+msgstr "vain luku"
+
+#: todowingeneral.cpp:41
+msgid "% Completed"
+msgstr "% Valmista"
+
+#: todowingeneral.cpp:48
+#, c-format
+msgid "0 %"
+msgstr "0 %"
+
+#: todowingeneral.cpp:49
+#, c-format
+msgid "25 %"
+msgstr "25 %"
+
+#: todowingeneral.cpp:50
+#, c-format
+msgid "50 %"
+msgstr "50 %"
+
+#: todowingeneral.cpp:51
+#, c-format
+msgid "75 %"
+msgstr "75 %"
+
+#: todowingeneral.cpp:67
+msgid "1 (Highest)"
+msgstr "1 (Korkein)"
+
+#: todowingeneral.cpp:68
+msgid "2"
+msgstr "2"
+
+#: todowingeneral.cpp:69
+msgid "3"
+msgstr "3"
+
+#: todowingeneral.cpp:70
+msgid "4"
+msgstr "4"
+
+#: todowingeneral.cpp:71
+msgid "5 (lowest)"
+msgstr "5 (matalin)"
+
+#: alarmdaemon.cpp:39 alarmdaemon.cpp:44
+msgid "Can't load docking tray icon!"
+msgstr "En saa ladattua upotusikonia!"
+
+#: alarmdaemon.cpp:48
+msgid "Alarms Enabled"
+msgstr "Hälyytykset päällä"
+
+#: alarmdaemon.cpp:51
+msgid "Exit Applet"
+msgstr "Lopeta sovelma"
+
+#: alarmdaemon.cpp:54
+msgid "KOrganizer Control Applet"
+msgstr "KOrganizer hallintasovelma"
+
+#: alarmdaemon.cpp:156
+#, c-format
+msgid "KOrganizer Alarm: %s\n"
+msgstr "KOrganizer hälyytys: %s\n"
+
+#: alarmdaemon.cpp:157
+msgid ""
+"The following events triggered alarms:\n"
+"\n"
+msgstr ""
+"Seuraava tapahtuma aiheutti hälyytyksen:\n"
+"\n"
+

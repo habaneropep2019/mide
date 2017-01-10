@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Theodore J. Soldatos <theodore@eexi.gr>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Theodore J. Soldatos <theodore@eexi.gr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "Εύρεση διαδρομής"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "Ανάλυση διεύθυνσης"
+
+#: knu.cpp:181
+#, fuzzy
+msgid "F&inger"
+msgstr "&Finger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr ""
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"Δεν υπάρχει ενεργοποιημένη εντολή\n"
+"στο αρχείο ρυθμίσεων,\n"
+"\n"
+"οπότε δεν μπορώ να κάνω τίποτα...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "Νέο παράθυρο"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "Κλείσιμο παραθύρου"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "Επιλογή όλων"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "Καθαρισμός παραθύρου αποτελεσμάτων"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "Προτιμήσεις..."
+
+#: knu.cpp:281
+#, fuzzy, c-format
+msgid "&About %s"
+msgstr "Για το Qt"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "Για το Qt"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "Σχετικά..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr ""
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "Διεύθυνση"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "Συνέχεια"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "Στοπ"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Το εκτελέσιμο αυτής της εντολής δεν βρέθηκε.\n"
+"Μπορείτε να ορίσετε την τοποθεσία του από το μενού Επεξεργασία->Προτιμήσεις."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Υπάρχει πρόβλημα στο αρχείο παραμέτρων\n"
+"%s/%src\n"
+"\n"
+"Στην ομάδα [%s],\n"
+"δεν μπορώ να βρώ μια έγκυρη αναφορά \"path=\". \n"
+"\n"
+"Παρακαλώ χρησιμοποιήστε το μενού Επεξεργασία->Προτιμήσεις\n"
+"για να το ρυθμίσετε.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "Σφάλμα στην τοποθεσία"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Δυαδικό"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "Τοποθεσία:"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "Επιπλέον ορίσματα:"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "Αυτή η εντολή έχει απενεργοποιηθεί από το αρχείο παραμέτρων."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr "- παράμετροι"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr ""
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr ""
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr ""
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr ""
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr ""
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr ""
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr ""
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr ""
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "Ανάλυση διεύθυνσης υπολογιστή"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr ""
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr ""
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "Μέγιστος αριθμός μεταβάσεων"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "διεύθυνση (Α)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "Όνομα (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "Εξυπηρετητής διεθύνσεων (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "Υπεύθυνος αλληλογραφίας (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "εναλλακτικό όνομα (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "Αρχή (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "Όλες τις εγγραφές (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "Ψάξε για:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "Εξυπηρετητής εξ ορισμού"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "Εξυπηρετητής"
+
+#: FingerDlg.cpp:77
+#, fuzzy
+msgid "&User:"
+msgstr "Χρήστης:"
+
+#, fuzzy
+#~ msgid "&Matt's traceroute"
+#~ msgstr "Εύρεση διαδρομής"
+
+#~ msgid "Server:"
+#~ msgstr "Εξυπηρετητής:"

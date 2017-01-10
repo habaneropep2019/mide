@@ -1,0 +1,195 @@
+# KTranslator Generated File
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kfract-1.1\n"
+"POT-Creation-Date: 1998-11-16 01:58+0100\n"
+"PO-Revision-Date: Thu Feb 11 1999 21:57:17+0200\n"
+"Last-Translator: Romuald Texier <texierr@worldnet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+"X-Generator: KTranslator v 0.4.0\n"
+
+#: kfract.C:73
+msgid "&Load params..."
+msgstr "K&argañ arventennoù ..."
+
+#: kfract.C:74
+msgid "&Save params..."
+msgstr "&Enrollañ arventennoù ..."
+
+#: kfract.C:75
+msgid "Save &pic..."
+msgstr "Enrollañ ar &skeudenn ..."
+
+#: kfract.C:81
+msgid "Mandelbrot..."
+msgstr "Mandelbrot..."
+
+#: kfract.C:82
+msgid "Julia..."
+msgstr "Julia..."
+
+#: kfract.C:86
+msgid "Max. Iterations..."
+msgstr "Muiañ rodelloù ..."
+
+#: kfract.C:87
+msgid "Colour scheme..."
+msgstr "Steuñv al livioù ..."
+
+#: kfract.C:88
+msgid "Colour cycling..."
+msgstr "Korañ al livioù..."
+
+#: kfract.C:89
+msgid "Zoom factor..."
+msgstr "Feur zoomiñ ..."
+
+#: kfract.C:91
+msgid "Fractals Generator"
+msgstr "Ganer fraktaloù"
+
+#: kfract.C:93
+msgid ""
+"\n"
+"\n"
+"by Uwe Thiem"
+msgstr ""
+"\n"
+"\n"
+"gant Uwe Thiem"
+
+#: kfract.C:99
+msgid "&Types"
+msgstr "&Seurtoù"
+
+#: kfract.C:123
+msgid "Open parameters"
+msgstr "Digeriñ arventennoù"
+
+#: kfract.C:127
+msgid "Save parameters"
+msgstr "Enrollañ an arventennoù"
+
+#: kfract.C:131
+msgid "Save picture"
+msgstr "Enrollañ ar skeudenn"
+
+#: kfract.C:136
+msgid "Zoom in"
+msgstr "Tostoc'h"
+
+#: kfract.C:140
+msgid "Zoom out"
+msgstr "Pelloc'h"
+
+#: kfract.C:145
+msgid "Defaults for this type"
+msgstr "Talvoudoù dre ziouer evit ar seurt-mañ"
+
+#: kfract.C:280
+msgid "Oops!"
+msgstr "Opala !"
+
+#: kfract.C:280
+msgid "Oops! Not implemented yet."
+msgstr "Opala ! N'eo ket kefloueraet c'hoazh."
+
+#: kfractdlgs.C:96 kfractdlgs.C:604
+msgid "Iterations:"
+msgstr "Rodelloù :"
+
+#: kfractdlgs.C:107 kfractdlgs.C:615
+msgid "0 - 999"
+msgstr "0 - 999"
+
+#: kfractdlgs.C:129 kfractdlgs.C:637
+msgid "1000 - 100000"
+msgstr "1000 - 100000"
+
+#: kfractdlgs.C:144
+msgid "Bailout"
+msgstr "Paouez"
+
+#: kfractdlgs.C:161
+msgid "Center of picture: Real part"
+msgstr "Kreiz ar skeudenn : lodenn real"
+
+#: kfractdlgs.C:176
+msgid "Center of picture: Imaginary part"
+msgstr "Kreiz ar skeudenn : lodenn ijinek"
+
+#: kfractdlgs.C:192
+msgid "Width of picture:"
+msgstr "Ledander ar skeudenn :"
+
+#: kfractdlgs.C:220 kfractdlgs.C:655 kfractdlgs.C:840
+msgid "Defaults"
+msgstr "Dre ziouer"
+
+#: kfractdlgs.C:408
+msgid "z(0) = c = pixel"
+msgstr "z(0) = c = piksel"
+
+#: kfractdlgs.C:413
+msgid "z(n+1) = z(n)^2 + c"
+msgstr "z(n+1) = z(n)^2 + c"
+
+#: kfractdlgs.C:417
+msgid "Mandelbrot"
+msgstr "Mandelbrot"
+
+#: kfractdlgs.C:476
+msgid "Extra parameter: Real part"
+msgstr "Arventenn ouzhpenn : lodenn real"
+
+#: kfractdlgs.C:492
+msgid "Extra parameter: Imaginary part"
+msgstr "Arventenn ouzhpenn : lodenn ijinek"
+
+#: kfractdlgs.C:505
+msgid "Julia"
+msgstr "Julia"
+
+#: kfractdlgs.C:597
+msgid "Max. Iterations"
+msgstr "Muiañ rodelloù"
+
+#: kfractdlgs.C:733
+msgid "Less colours"
+msgstr "Nebeutoc'h a livioù"
+
+#: kfractdlgs.C:736
+msgid "More colours"
+msgstr "Muioc'h a livioù"
+
+#: kfractdlgs.C:764
+msgid "Colour schemes"
+msgstr "Steuñvioù livioù"
+
+#: kfractdlgs.C:806
+msgid "Zoom in factor:"
+msgstr "Feur tostaat :"
+
+#: kfractdlgs.C:822
+msgid "Zoom out factor:"
+msgstr "feur pellaat :"
+
+#: kfractdlgs.C:849
+msgid "Zoom factors"
+msgstr "Feurioù zoomiñ"
+
+#: fract.C:73
+msgid ""
+"Fract::calcPoint() is an abstract method. You MUST\n"
+"re-write it!\n"
+msgstr ""
+"Fract::calcPoint() a zo un hentenn difetis. DAV deoc'h\n"
+"e adskrivañ !\n"

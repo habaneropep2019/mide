@@ -1,0 +1,105 @@
+                         kppp - a dialer for pppd
+
+kppp is a dialer and front end for pppd. It allows for interactive script
+generation and network connection setup.
+
+Version 0.7.1
+
+o New option to disable existing nameservers in /etc/resolv.conf
+
+o Looping, prompt and password dialogs in the scripting module
+
+This is version 0.5.9
+
+o a bunch of little fixes. 
+
+This is version 0.5.8
+
+o all sorts of little fixes, in particular the 'Costs' file is 
+  now generated again correctly
+  
+  
+New in Verions 0.5.6
+	
+o configurable busy redial pause
+
+New in Verions 0.5.5
+	
+o new copy function on the account dialog
+
+
+New in Verions 0.5.4
+
+o nothing new, sorry. Just bug fixes and work to get kppp to compile
+  with the new kdelibs and Qt 1.3 
+  
+New in Verions 0.5.3
+
+o option to not have kppp terminate the ppp connection on X-server exit
+o leaving the lockfile edit box empty will cause kppp not to create a
+  lockfile
+  
+New in Verions 0.5.2
+
+o if the X-server exits, kppp will terminate in a controlled fashion:
+  accounting will be terminated
+  ppp connection will be terminated
+  
+New in Version 0.5
+
+o Phone cost accounting
+o Configurable Modem Timeout
+o Configurable pppd Timeout
+o Dynamic Scripting Timeout
+o Optional Automatic configuration of host and domainname
+o modem device locking (Kppp should now work with mgetty)
+o domain name configuration
+o vastly improved documentation
+o bug fixes
+
+Special thank to Mario Weilguni and Jesus Fuentes Saavedra for their
+contributions towards kppp-0.5!!
+
+New in Version 0.4
+
+o Better Window Placement
+o KDE compliance -- Color Schemes etc.
+
+New in Verion  0.3:
+
+o mini-terminal: you no longer need a terminal communications program
+  such as minicom or seyon to setup and test you modem and isp connection.
+
+o Statistics Dialog: Ever wanted to know the number of bytes and packets
+  that leave and enter your ppp interface? A complete set of ppp statistics
+  together with your local and remote IP addresses are displayed on the
+  statistics dialog.
+
+o animation: Yes, you may trust your eyes!
+
+o ATI query dialog: Ever wanted to know what sort of modem you own or 
+  use?
+
+o optional display of total time connected on the kppp icon
+
+o Much improved dialing and modem handling: kppp is now ROCK-SOLID on my
+  machine. I hope this will be the case for you too. If not please mail me
+  and describe the problems you are experiencing. Also, see the Makefile
+  for instructions on how to have kppp give you more debugging info.
+
+o Finally: kppp accepts commandline options! For the impatient, you 
+  can have kppp start dialing immediately after start-up
+
+For full help functionality you need "kdehelp" from the kde project. 
+For further info about kppp plese review the files in the docs 
+directory. For installation instructions read INSTALL. 
+There is still much to be done, however I believe you will find kppp
+very useful already !
+
+happy dialing !
+
+Bernd Wuebben
+
+wuebben@math.cornell.edu
+wuebben@kde.org
+

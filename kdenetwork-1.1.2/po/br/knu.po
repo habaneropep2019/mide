@@ -1,0 +1,260 @@
+# Breton translation of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Jañ-Mai Drapier <jdrapier@club-internet.fr>, 1999
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: knu-1.1\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: 1999-03-24 07:23+0100\n"
+"Last-Translator: Jañ-Mai Drapier <jdrapier@club-internet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr ""
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr ""
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "&Dirouestlañ an ostiz"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr ""
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr ""
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"N'eus urzhiad ebet gweredekaet\n"
+"er restr kefluniañ.\n"
+"\n"
+"Neuze n'hellan ober netra...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "Prenestr &Nevez"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "&Serriñ ar prenestr"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "Diuz an &holl"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "&Goullonderiñ ar prenestr diskas"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "&Dibarzhoù..."
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "&Diwar-benn %s"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "Diwar-benn &Qt"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr ""
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+"Knu\n"
+"Doare %s\n"
+"\n"
+"Bertrand"
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "Diwar-benn..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "Mavegoù rouedad"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "&Ostiz :"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "&Kit !"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "&Paouez"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Binarel an urzhiad-mañ zo digavus.\n"
+"Gallout a rit spisaat e hent el lañser Aozañ->Dibarzhoù."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Ur gudenn oc'h eus gant\n"
+"ho restr kefluniañ.\n"
+"%s/%src\n"
+"Er strollad [%s], n'hellan kavout\n"
+"enmont \"path=\" talvoudus ebet\n"
+"\n"
+"Arverit mar plij al lañser\n"
+"Aozañ->Dibarzhoù evit e gefluniañ adarre.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "Fazi en hent tizhout"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Binarel"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "&Hent tizhout :"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "&Arventennoù ouzhpenn :"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "Diweredekaet eo bet an urzhiad-mañ er restr kefluniañ."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - kefluniañ"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr ""
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "Anv ostiz"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Koll"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Rsv"
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Kst"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Gwell"
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "Etre"
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Gwas"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "Dirouestlañ &anv an ostiz"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "&ostiz"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr ""
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "&Muiañ niver a lammoù :"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "chomlec'h (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "anv (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "anv ar servijer (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "eskemmer postel (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "lesanv (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "deroù ar veli (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "forzh pe enrolladur (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "&Klask :"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "servijer dre ziouer"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "&Servijer :"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "&Arveriad :"

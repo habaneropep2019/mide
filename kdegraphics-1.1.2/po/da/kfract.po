@@ -1,0 +1,193 @@
+# Danish translations for KDE Graphics, kfract
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Erik Kjær Pedersen <erik@binghamton.edu>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE GRAPHICS/kfract\n"
+"POT-Creation-Date: 1998-11-16 01:58+0100\n"
+"PO-Revision-Date: 1999-02-16 15:28+0100\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: da <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: kfract.C:73
+msgid "&Load params..."
+msgstr "&Indlæs parametre..."
+
+#: kfract.C:74
+msgid "&Save params..."
+msgstr "&Gem parametre..."
+
+#: kfract.C:75
+msgid "Save &pic..."
+msgstr "Gem &billede..."
+
+#: kfract.C:81
+msgid "Mandelbrot..."
+msgstr "Mandelbrot..."
+
+#: kfract.C:82
+msgid "Julia..."
+msgstr "Julia..."
+
+#: kfract.C:86
+msgid "Max. Iterations..."
+msgstr "Maks. ant. gentagelser..."
+
+#: kfract.C:87
+msgid "Colour scheme..."
+msgstr "Farvevalg..."
+
+#: kfract.C:88
+msgid "Colour cycling..."
+msgstr "Farvegentagelse..."
+
+#: kfract.C:89
+msgid "Zoom factor..."
+msgstr "Forstørringsfaktor..."
+
+#: kfract.C:91
+msgid "Fractals Generator"
+msgstr "Fraktalgenerator"
+
+#: kfract.C:93
+msgid ""
+"\n"
+"\n"
+"by Uwe Thiem"
+msgstr ""
+"\n"
+"\n"
+"\n"
+"af Uwe Thiem"
+
+#: kfract.C:99
+msgid "&Types"
+msgstr "&Typer"
+
+#: kfract.C:123
+msgid "Open parameters"
+msgstr "Åbn parametre"
+
+#: kfract.C:127
+msgid "Save parameters"
+msgstr "Gem parametre"
+
+#: kfract.C:131
+msgid "Save picture"
+msgstr "Gem billede"
+
+#: kfract.C:136
+msgid "Zoom in"
+msgstr "Forstør"
+
+#: kfract.C:140
+msgid "Zoom out"
+msgstr "Formindsk"
+
+#: kfract.C:145
+msgid "Defaults for this type"
+msgstr "Standard for denne type"
+
+#: kfract.C:280
+msgid "Oops!"
+msgstr "Hovsa!"
+
+#: kfract.C:280
+msgid "Oops! Not implemented yet."
+msgstr "Uha! Ikke implementeret endnu."
+
+#: kfractdlgs.C:96 kfractdlgs.C:604
+msgid "Iterations:"
+msgstr "Gentagelser:"
+
+#: kfractdlgs.C:107 kfractdlgs.C:615
+msgid "0 - 999"
+msgstr "0 - 999"
+
+#: kfractdlgs.C:129 kfractdlgs.C:637
+msgid "1000 - 100000"
+msgstr "1000 - 100000"
+
+#: kfractdlgs.C:144
+msgid "Bailout"
+msgstr "Opgiv"
+
+#: kfractdlgs.C:161
+msgid "Center of picture: Real part"
+msgstr "Midten af billedet: Reel del"
+
+#: kfractdlgs.C:176
+msgid "Center of picture: Imaginary part"
+msgstr "Midten av bildet: Imaginær del"
+
+#: kfractdlgs.C:192
+msgid "Width of picture:"
+msgstr "Bredde af billedet:"
+
+#: kfractdlgs.C:220 kfractdlgs.C:655 kfractdlgs.C:840
+msgid "Defaults"
+msgstr "Standard"
+
+#: kfractdlgs.C:408
+msgid "z(0) = c = pixel"
+msgstr "z(0) = c = punkter"
+
+#: kfractdlgs.C:413
+msgid "z(n+1) = z(n)^2 + c"
+msgstr "z(n+1) = z(n)^2 + c"
+
+#: kfractdlgs.C:417
+msgid "Mandelbrot"
+msgstr "Mandelbrot"
+
+#: kfractdlgs.C:476
+msgid "Extra parameter: Real part"
+msgstr "Ekstra parameter: Reel del"
+
+#: kfractdlgs.C:492
+msgid "Extra parameter: Imaginary part"
+msgstr "Ekstra parameter: Imaginær del"
+
+#: kfractdlgs.C:505
+msgid "Julia"
+msgstr "Julia"
+
+#: kfractdlgs.C:597
+msgid "Max. Iterations"
+msgstr "Maks. ant. gentagelser"
+
+#: kfractdlgs.C:733
+msgid "Less colours"
+msgstr "Færre farver"
+
+#: kfractdlgs.C:736
+msgid "More colours"
+msgstr "Flere farver"
+
+#: kfractdlgs.C:764
+msgid "Colour schemes"
+msgstr "Farvevalg"
+
+#: kfractdlgs.C:806
+msgid "Zoom in factor:"
+msgstr "Forstørringsfaktor:"
+
+#: kfractdlgs.C:822
+msgid "Zoom out factor:"
+msgstr "Formindskningsfaktor:"
+
+#: kfractdlgs.C:849
+msgid "Zoom factors"
+msgstr "Forstørringsfaktorer"
+
+#: fract.C:73
+msgid ""
+"Fract::calcPoint() is an abstract method. You MUST\n"
+"re-write it!\n"
+msgstr ""
+"Fract::calcPoint() er en abstrakt metode. Du BLIVER\n"
+"nødt til at skrive den om!\n"

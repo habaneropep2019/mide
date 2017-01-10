@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Kodometer User's Guide</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="odometer kde kodometer">
+<META NAME="description" CONTENT="Documentation for kedit">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+
+<SMALL><I>Armen Nakashian, <CODE><a href="mailto:armen@tourismo.com">armen@tourismo.com</a></CODE></I></SMALL>
+
+<h1>What's Kodometer</h1>
+Kodomter <b>Measures your Desktop Milage</b>.  It tracks the movement
+of your mouse pointer across your desktop, and renders it in
+inches/feet/miles!  It can do cm/meters/km too.  Its most exciting
+feature is the tripometer, and its utter uselessness.
+<p>
+
+<b>Note: The next version will be USEFUL!</b>
+<p>
+
+
+<i>A screen shot. Note the fashionable lack of a titlebar.</i><br>
+<img src="guide.gif" alt="">
+<p>
+
+The <b>Odometer</b> is the total distance traveled by the mouse since
+the last odometer reset.  The <b>Tripometer</b> is the distance
+traveled by the mouse since:
+<ul>
+<li> The Tripometer was reset.
+<li> Kodometer was restarted, with the Auto Reset Trip flag on.
+</ul>
+<p>
+
+<h1>Menu Options</h1>
+
+If you've gotten this far, you already know that there is a
+mouse-button context menu on Kodometer, which contains a number of
+choices.
+
+<dl>
+
+<dt><b>Enable</b>
+    <dd>Toggle mileage tracking.  This is good if you want to cheat on
+    your mileage.  <i>Note: This is illegal in most countries</i>
+    </dd>
+</dt>
+
+<dt><b>Metric Display</b>
+    <dd> Because Kodometer was written by an American, it obnoxiously
+    assumes you want to use Inches/Feet/Miles for measurement.  If
+    you're some sort of Eurotrash that wants to use metric
+    measurements, turn on this option.
+    </dd>
+</dt>
+
+<dt><b>Auto Reset Trip</b>
+    <dd> This option will cause Kodometer to set the Tripometer back
+    to zero every time it starts up. 
+    </dd>
+</dt>
+
+<dt><b>Reset Trip</b>
+    <dd> Set the tripometer to zero.
+    </dd>
+</dt>
+
+
+<dt><b>Reset Odometer</b>
+    <dd> Set the odometer back to zero. <i>You might get in trouble
+    for this!</i>
+    </dd>
+</dt>
+
+</dl>
+
+
+<h1>How It Works</h1>
+
+XWindows displays are usually configured with a screen-size variable.
+That is, how big your screen is in real-world measurements, not
+pixels.  Kodometer grabs this value and uses it come up with a DPI
+(dots per inch) value for your display, and thus can relate the number
+of pixels you've traversed to the number of inches the pointer appears
+to have moved on the screen.
+<p>
+
+But lets be real!  Its horribly <b>inaccurate!</b>  Kodometer makes no
+pretense of being even remotely accurate.  In fact, someone has
+measured the movement of their mouse across the screen with a ruler,
+and found that the distance algorithm is almost 25% off!  The
+original author's response to this complaint was 'who cares?'.
+<p>    
+
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+</BODY>
+</HTML>

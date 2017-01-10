@@ -1,0 +1,471 @@
+# ksysv translation
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Vladimir Vuksan <vuksan@veus.hr>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeadmin\n"
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"PO-Revision-Date: 1999-03-14 20:00-0500\n"
+"Last-Translator: Wang Jian <larkw@263.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=gb2312-80\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:236
+msgid ": Error"
+msgstr ": ´íÎó"
+
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr "Ö»ÓĞrootÓÃ»§²Å¿ÉÒÔ¹ÜÀírunlevel."
+
+#: OldView.cpp:105
+msgid "Available"
+msgstr "¿ÉÓÃ"
+
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "·şÎñ(&S)"
+
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+"ÕâĞ©ÊÇ<bold>¿ÉÓÃµÄ·şÎñ</bold>\n"
+"ÒªÆô¶¯Ò»¸ö·şÎñ,°ÑËüÍÏ·Åµ½Ò»¸örunlevelµÄ<bold>\"Æô¶¯\"</bold>ÇøÓò.\n"
+"\n"
+"ÒªÍ£Ö¹Ò»¸ö·şÎñ,°ÑËüÍÏ·Åµ½<bold>\"Í£Ö¹\"</bold>ÇøÓò."
+
+# , c-format
+# , c-format
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "Runlevel &%i"
+
+# , c-format
+# , c-format
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "Runlevel %i"
+
+#: OldView.cpp:149
+msgid "Start"
+msgstr "Æô¶¯"
+
+# , c-format
+# , c-format
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"½«½øÈë Runlevel %i Ê±ÒªÆô¶¯µÄ\n"
+"·şÎñÍÏ·Åµ½Õâ¶ù"
+
+# , c-format
+# , c-format
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"½«½øÈë Runlevel %i ÊÇÒªÍ£Ö¹µÄ\n"
+"·şÎñÍÏ·Åµ½Õâ¶ù"
+
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr "** ÕıÔÚĞ´ÅäÖÃĞÅÏ¢ **\n"
+
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr "** RUNLEVEL %i **\n"
+
+#: OldView.cpp:517
+#, fuzzy
+msgid "Reading configuration: "
+msgstr "ÕıÔÚ¶ÁÈ¡ÅäÖÃĞÅÏ¢: "
+
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr "** ÕıÔÚÍ£Ö¹ "
+
+#: OldView.cpp:624
+msgid " stop"
+msgstr " Í£Ö¹"
+
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr "** ÕıÔÚÆô¶¯ "
+
+#
+#: OldView.cpp:644
+msgid " start"
+msgstr " Æô¶¯"
+
+#
+#: OldView.cpp:661
+msgid "** Re-starting "
+msgstr "** ÕıÔÚÖØÆô¶¯ "
+
+#
+#: OldView.cpp:666
+msgid " restart"
+msgstr " ÖØÆô¶¯"
+
+# , c-format
+# , c-format
+#
+#: OldView.cpp:811
+msgid "P&roperties..."
+msgstr "ÌØĞÔ(&R)..."
+
+#: OldView.cpp:831
+msgid "S&top"
+msgstr "Í£Ö¹(&T)"
+
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "ÖØÆô¶¯(&R)"
+
+#
+#: TopWidget.cpp:136
+msgid "&New Configuration"
+msgstr "ĞÂ½¨ÅäÖÃ(&N)"
+
+#
+#: TopWidget.cpp:137
+msgid "&Save Configuration"
+msgstr "±£´æÅäÖÃ(&S)"
+
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr "´òÓ¡ÈÕÖ¾(&L)..."
+
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr "ÏÔÊ¾¹¤¾ßÌõ(&T)"
+
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr "ÏÔÊ¾×´Ì¬Ìõ(&S)"
+
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr "ÏÔÊ¾ÈÕÖ¾(&L)"
+
+#
+#: TopWidget.cpp:174
+msgid "&Configure..."
+msgstr "ÅäÖÃ(&C)..."
+
+#
+#: TopWidget.cpp:177
+msgid "&Save Options"
+msgstr "±£´æÑ¡Ïî(&S)"
+
+#: TopWidget.cpp:215
+msgid "New"
+msgstr "ĞÂ½¨"
+
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "´ò¿ª/¹ØÉÏ½Å±¾Êä³ö"
+
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"¸Ä¶¯Î´±£´æ.\n"
+"ÕæµÄÒªÍË³öÂğ ?"
+
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "ÊÇ,ÍË³ö!"
+
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "²»,²»ÍË³ö."
+
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "Çå³ı¸Ä¶¯"
+
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "ÕæµÄÒªÇå³ıËùÓĞµÄ¸Ä¶¯Âğ?"
+
+#
+#: TopWidget.cpp:307
+msgid "Save configuration"
+msgstr "±£´æÅäÖÃ"
+
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"ÄãÏÖÔÚÒª±£´æ¶Ô init ÅäÖÃµÄ¸Ä¶¯.\n"
+"´íÎóµÄÉèÖÃ»áÊ¹ÏµÍ³²»¿ÉÆô¶¯.\n"
+"\n"
+"Òª¼ÌĞøÂğ?"
+
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr ""
+
+#: TopWidget.cpp:314
+#, fuzzy
+msgid "No, &don't save."
+msgstr "²»,²»Òª±£´æ¸Ä¶¯."
+
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "¹ØÓÚ Qt"
+
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "ÉèÖÃ¸Ä±ä"
+
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr "²»ÄÜÉú³ÉÅÅĞòÊı×Ö.ÇëÊÖ¹¤¸Ä¶¯."
+
+#: prefs.cpp:48
+#, c-format
+msgid "%s - Preferences"
+msgstr "%s - Æ«ºÃÉèÖÃ"
+
+#
+#: prefs.cpp:58
+msgid "Directory containing your init-scripts (&services)"
+msgstr "·ÅÖÃinit½Å±¾(ºÍ&services)µÄÄ¿Â¼"
+
+#: prefs.cpp:79
+#, fuzzy
+msgid "Directory containing your &runlevel-directories"
+msgstr "·ÅÖÃ¸÷¸örunlevel½Å±¾µÄÄ¿Â¼"
+
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr "ĞÂ½¨Èë¿ÚµÄÑÕÉ«(&N)"
+
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr "ĞŞ¸ÄµÄÈë¿ÚµÄÑÕÉ«(H)"
+
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr "Â·¾¶(&P)"
+
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr "ÑÕÉ«(&C)"
+
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "°ÑÒªÈ¥µôµÄ·şÎñÍÏ·Åµ½ÕâÀï"
+
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr "Ãû×Ö(&N)"
+
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr "Ö¸Ïò(&P)"
+
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr "ÅÅĞòÊı×Ö(&S)"
+
+# , c-format
+#: PropDlg.cpp:113
+#, c-format
+msgid "%s - Properties"
+msgstr "%s - ÌØĞÔ"
+
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr "²»ÄÜÉ¾³ı %s ´Ó %s: \"%s\"\n"
+
+#: IOCore.cpp:53
+#, c-format
+msgid "removed %s from %s\n"
+msgstr "É¾³ı %s ´Ó %s\n"
+
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr "½¨Á¢ %s ÔÚ %s\n"
+
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr "²»ÄÜ½¨Á¢ %s ÔÚ %s: \"%s\"\n"
+
+#: About.cpp:46
+#, c-format
+msgid "About %s"
+msgstr "¹ØÓÚ %s"
+
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr "KDE SysV Init ±à¼­Æ÷"
+
+#: About.cpp:81
+#, c-format
+msgid "Version %s (KDE %s)"
+msgstr "°æ±¾ %s (KDE %s)"
+
+#: About.cpp:89
+msgid "© 1997-1999 "
+msgstr "  1997-1999 "
+
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr "Peter Putzer"
+
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr "±¨¸æÈ±Ïİ/³ÉÃûÊ·/½ğÇ®/..."
+
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ". °æÈ¨ËùÓĞ."
+
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp © 1997 Martin Jones.\n"
+"Uses the KDE libraries © 1997-1999 The KDE Team.\n"
+"Uses the Qt library © 1992-1998 Troll Tech AS."
+msgstr ""
+"IPC ²¿·ÖÈ¡×Ô kdehelp     1997 Martin Jones.\n"
+"Ê¹ÓÃ KDE ¿â     1997-1999 The KDE Team.\n"
+"Ê¹ÓÃ QT  ¿â     1992-1998 Troll Tech AS."
+
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+"SysV·ç¸ñµÄinitÅäÖÃ±à¼­Æ÷,ÓëRedHat¹«Ë¾µÄ \"tksysv\"ÏàËÆ,\n"
+"µ«ksysvÔÊĞíÍÏ·Å²Ù×÷,Í¬Ê±Ò²¿ÉÒÔÊ¹ÓÃ¼üÅÌ."
+
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""
+"Õâ¸ö³ÌĞòÊÇ×ÔÓÉÈí¼ş;Äã¿ÉÒÔÖØĞÂ·Ö·¢Ëü,»òÕßÔÚ\n"
+"×ÔÓÉÈí¼ş»ù½ğ»áGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤°æ±¾2µÄÌõ¿îÏÂ\n"
+"ĞŞ¸ÄËü.\n"
+"Õâ¸ö³ÌĞò·Ö·¢µÄÄ¿µÄÊÇÎªÁËÆäËûÈË¿ÉÒÔÊ¹ÓÃËü,µ«ÊÇ\n"
+"Ã»ÓĞÈÎºÎ±£Ö¤;Ò²Ã»ÓĞÈÎºÎ±£Ö¤ËüÊ¹ÓÃÓÚÄ³Ò»ÌØ¶¨Ä¿µÄ.\n"
+"Çë²éÔÄGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤À´»ñµÃ¸ü¶àµÄĞÅÏ¢."
+
+#, fuzzy
+#~ msgid "Cannot remove service from list"
+#~ msgstr "²»ÄÜ´ÓÁĞ±íÖĞÈ¥µô½Å±¾"
+
+# , c-format
+# , c-format
+#~ msgid "%s to:"
+#~ msgstr "%s µ½:"
+
+#~ msgid "Runlevel"
+#~ msgstr "Runlevel"
+
+#~ msgid "Action"
+#~ msgstr "¶¯×÷"
+
+#~ msgid "&Clear Changes"
+#~ msgstr "Çå³ı¸Ä¶¯[&C]"
+
+#~ msgid "&Accept Changes"
+#~ msgstr "½ÓÊÜ¸Ä¶¯[&A]"
+
+#~ msgid "&Show Script Output"
+#~ msgstr "ÏÔÊ¾Ö´ĞĞÊ±µÄÊä³ö[&S]"
+
+#~ msgid "About &Qt..."
+#~ msgstr "¹ØÓÚ &Qt..."
+
+#~ msgid "Exit "
+#~ msgstr "ÍË³ö"
+
+#~ msgid "Abort changes"
+#~ msgstr "·ÅÆú¸Ä¶¯"
+
+#~ msgid "Save changes"
+#~ msgstr "±£´æ¸Ä¶¯"
+
+#~ msgid "Save Changes"
+#~ msgstr "±£´æ¸Ä¶¯"
+
+#~ msgid "Yes, commit changes!"
+#~ msgstr "ÊÇ,ÊÇ¸Ä¶¯ÉúĞ§!"
+
+# , c-format
+# , c-format
+#~ msgid ""
+#~ "\n"
+#~ "ERROR: %i\n"
+#~ "while making symlink\n"
+#~ "%s%s%s\n"
+#~ "pointing to\n"
+#~ "%s"
+#~ msgstr ""
+#~ "\n"
+#~ "´íÎó: %i\n"
+#~ "½¨Á¢·ûºÅÁ´½Ó\n"
+#~ "%s%s%s\n"
+#~ "Ö¸Ïò \n"
+#~ "%s"
+
+# , c-format
+# , c-format
+#~ msgid ""
+#~ "Failed to remove\n"
+#~ "%s\n"
+#~ "Please check Permissions."
+#~ msgstr ""
+#~ "²»ÄÜÉ¾³ı\n"
+#~ "%s\n"
+#~ "Çë¼ì²éÈ¨ÏŞÉèÖÃ."
+
+# , c-format
+# , c-format
+#~ msgid ""
+#~ "%s\n"
+#~ "\n"
+#~ "%s is a link to\n"
+#~ "%s"
+#~ msgstr ""
+#~ "%s\n"
+#~ "%s ÊÇ¸öÖ¸Ïò\n"
+#~ "%s \n"
+#~ "µÄÁ´½Ó"

@@ -1,0 +1,609 @@
+# Icelandic translation of karchie.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Richard Allen <ra@hp.is>, 1999
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: karchie\n"
+"POT-Creation-Date: 1999-03-05 02:18+0100\n"
+"PO-Revision-Date: 1999-04-26 22:22-0500\n"
+"Last-Translator: Richard Allen <ra@hp.is>\n"
+"Language-Team: is <kde-isl@mmedia.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: ISO-8859-1\n"
+
+#: KAMenu.cpp:75
+msgid "O&pen in editor"
+msgstr "O&pna í ritli"
+
+#: KAMenu.cpp:76 KAView.cpp:154
+msgid "&Open Dir"
+msgstr "&Opna möppu"
+
+#: KAMenu.cpp:77 KAView.cpp:155
+msgid "&Download..."
+msgstr "&Sækja..."
+
+#: KAMenu.cpp:80
+msgid "&Load List..."
+msgstr "&Lesa lista..."
+
+#: KAMenu.cpp:81
+msgid "&Save List..."
+msgstr "&Vista lista..."
+
+#: KAMenu.cpp:82
+msgid "Expor&t List..."
+msgstr "Fly&tja lista út..."
+
+#: KAMenu.cpp:84
+msgid "&Exit"
+msgstr "&Hætta"
+
+#: KAMenu.cpp:100
+msgid "&Exact"
+msgstr "&Nákvæmur"
+
+#: KAMenu.cpp:101
+msgid "&Substring"
+msgstr "&Hlutstrengur"
+
+#: KAMenu.cpp:102
+msgid "Substring &case insensitive"
+msgstr "Hlutstrengur óháð há-/&lágstöfum"
+
+#: KAMenu.cpp:103
+msgid "&Regular expression"
+msgstr "&Regluleg segð"
+
+#: KAMenu.cpp:104 KASettings.cpp:422
+msgid "Exact, then substring"
+msgstr "Nákvæmur, svo hlutastrengur"
+
+#: KAMenu.cpp:105
+msgid "Exact, then substring case ins."
+msgstr "Nákvæmur, svo hlutastrengur óháður há-/lágstöfum"
+
+#: KAMenu.cpp:106 KASettings.cpp:424
+msgid "Exact, then regular expression"
+msgstr "Nákvæmur, svo reglulega segð"
+
+#: KAMenu.cpp:114
+msgid "n&ormal"
+msgstr "&venjulegur"
+
+#: KAMenu.cpp:115
+msgid "&nice"
+msgstr "&Lágur"
+
+#: KAMenu.cpp:116
+msgid "&very nice"
+msgstr "Læ&gri"
+
+#: KAMenu.cpp:117
+msgid "&even more nice"
+msgstr "&Enn lægri"
+
+#: KAMenu.cpp:118
+msgid "n&icest"
+msgstr "Lægs&tur"
+
+#: KAMenu.cpp:125
+msgid "Show &File discription"
+msgstr "Sýna S&kráarlýsingu"
+
+#: KAMenu.cpp:128
+msgid "Archie&server"
+msgstr "Archi&e-þjónn"
+
+#: KAMenu.cpp:129
+msgid "Search&mode"
+msgstr "Leitar&hamur"
+
+#: KAMenu.cpp:130
+msgid "&Nicelevel"
+msgstr "&Forgangur"
+
+#: KAMenu.cpp:132
+msgid "&All..."
+msgstr "&Allar..."
+
+#: KAMenu.cpp:139
+msgid "for &Filename"
+msgstr "að sk&ráarheiti"
+
+#: KAMenu.cpp:140
+msgid "for &Path/Location"
+msgstr "að s&lóð"
+
+#: KAMenu.cpp:141
+msgid "for &Hostname"
+msgstr "að vélar&heiti"
+
+#: KAMenu.cpp:143
+msgid "&STOP"
+msgstr "&Stöðva"
+
+#: KAMenu.cpp:160
+msgid "by &Hostname"
+msgstr "eftir &vélarheiti"
+
+#: KAMenu.cpp:161
+msgid "by &Domain"
+msgstr "eftir &léni"
+
+#: KAMenu.cpp:162
+msgid "by D&ate"
+msgstr "eftir d&agsetningu"
+
+#: KAMenu.cpp:163
+msgid "by &Filesize"
+msgstr "eftir skrá&arstærð"
+
+#: KAMenu.cpp:169
+msgid "KArchie ver. "
+msgstr "KArchie útg. "
+
+#: KAMenu.cpp:171
+msgid ""
+"\n"
+"\n"
+"by Jörg Habenicht <j.habenicht@europemail.com>\n"
+"\n"
+"based on the work of:\n"
+"  - archie prospero client by\n"
+"      Clifford Neuman and\n"
+"      Brendan Kehoe (brendan@cygnus.com)\n"
+"  - and xarchie by\n"
+"      George Ferguson (ferguson@cs.rochester.edu)\n"
+"(See README files and copyright.h).\n"
+"My own code is based on the GPL"
+msgstr ""
+"\n"
+"\n"
+"eftir Jörg Habenicht <j.habenicht@europemail.com>\n"
+"\n"
+"byggir á forritunum:\n"
+"  - archie prospero client eftir\n"
+"      Clifford Neuman og\n"
+"      Brendan Kehoe (brendan@cygnus.com)\n"
+"  - og xarchie by\n"
+"      George Ferguson (ferguson@cs.rochester.edu)\n"
+"(Sjá README skrár og copyright.h).\n"
+"Minn eigin forritstexti felur undir GPL\n"
+"\n"
+"Þýðing: Richard Allen <ra@hp.is>"
+
+#: KAMenu.cpp:184
+msgid "&Settings"
+msgstr "&Stillingar"
+
+#: KAMenu.cpp:185
+msgid "&Query"
+msgstr "&Leita"
+
+#: KAMenu.cpp:186
+msgid "S&ort"
+msgstr "Röð&un"
+
+#: KAQuery.cpp:180
+msgid "Query setup"
+msgstr "Stilla leit"
+
+#: KAQuery.cpp:289
+msgid "Query aborted"
+msgstr "Hætt við leit"
+
+#: KAQuery.cpp:296 KArchie.cpp:793
+msgid "Success"
+msgstr "Fundið"
+
+#: KAQuery.cpp:297
+msgid "Port unknown"
+msgstr "Óþekkt port"
+
+#: KAQuery.cpp:298
+msgid "Can't open local UDP port"
+msgstr "Gat ekki opnað UDP port"
+
+#: KAQuery.cpp:299
+msgid "Can't resolve hostname"
+msgstr "Gat ekki flett upp vélarheiti"
+
+#: KAQuery.cpp:300
+msgid "Didn't send entire message"
+msgstr "Sendi ekki heilt skilaboð"
+
+#: KAQuery.cpp:301
+msgid "Timed out"
+msgstr "Tími rann út"
+
+#: KAQuery.cpp:302
+msgid "Recvfrom failed"
+msgstr "Móttaka mistókst"
+
+#: KAQuery.cpp:303
+msgid "Reply: sendto failed"
+msgstr "Svörun: sending mistókst"
+
+#: KAQuery.cpp:304
+msgid "Link exists with same name"
+msgstr "Hlekkur er til með sama nafni"
+
+#: KAQuery.cpp:306
+msgid "Link already exists"
+msgstr "Hlekkur er til nú þegar"
+
+#: KAQuery.cpp:307
+msgid "Replacing existing link"
+msgstr "Skrifa yfir gamlan hlekk"
+
+#: KAQuery.cpp:308
+msgid "Prv entry not in dir->ulinks"
+msgstr "Prv færslu vantar í dir->ulinks"
+
+#: KAQuery.cpp:309
+msgid "Temporary not found"
+msgstr "Skissa fannst ekki"
+
+#: KAQuery.cpp:310
+msgid "Namespace not closed w/ object::"
+msgstr "Nafnarúm ólokað m/ object::"
+
+#: KAQuery.cpp:311
+msgid "No alias for namespace NS#:"
+msgstr "Samheiti vantar fyrir nafnarúm NS#:"
+
+#: KAQuery.cpp:312
+msgid "Specified namespace not found"
+msgstr "Tilgreint nafnarúm fannst ekki"
+
+#: KAQuery.cpp:313
+msgid "File access method not supported"
+msgstr "Kann ekki þessa lestraraðferð"
+
+#: KAQuery.cpp:314
+msgid "Delete cached copy on close"
+msgstr "Eyði afriti úr sel við lokun"
+
+#: KAQuery.cpp:315
+msgid "Unable to retrieve file"
+msgstr "Mistókst að sækja skrá"
+
+#: KAQuery.cpp:317
+msgid "Directory already exists"
+msgstr "Mappa er til nú þegar"
+
+#: KAQuery.cpp:319 KAQuery.cpp:337
+msgid "Link with name already exists"
+msgstr "Hlekkur með þessu nafni er til nú þegar"
+
+#: KAQuery.cpp:320
+msgid "Not a virtual system"
+msgstr "Ekki sýndarskráakerfi"
+
+#: KAQuery.cpp:321
+msgid "Can't find directory"
+msgstr "Finn ekki möppu"
+
+#: KAQuery.cpp:322
+msgid "Not a directory name"
+msgstr "Ekki heiti möppu"
+
+#: KAQuery.cpp:323
+msgid "Object not found"
+msgstr "Hlutur fannst ekki"
+
+#: KAQuery.cpp:324
+msgid "Object has moved"
+msgstr "Hlutur var fluttur"
+
+#: KAQuery.cpp:325
+msgid "File not found"
+msgstr "Skrá fannst ekki"
+
+#: KAQuery.cpp:326
+msgid "Directory in path not found"
+msgstr "Mappa úr slóð fannst ekki"
+
+#: KAQuery.cpp:327
+msgid "Symbolic links nested too deep"
+msgstr "Sýndarhlekkir faldaðir of djúpt"
+
+#: KAQuery.cpp:328
+msgid "Can't read environment"
+msgstr "Gat ekki lesið umhverfi"
+
+#: KAQuery.cpp:329
+msgid "Can't traverse an external file"
+msgstr "Gat ekki lesið fjarlæga skrá"
+
+#: KAQuery.cpp:330
+msgid "Exceeded max forward depth"
+msgstr "Fór framúr hámarksdýpt (áfram)"
+
+#: KAQuery.cpp:331
+msgid "Authentication required"
+msgstr "Krafist er auðkenningar"
+
+#: KAQuery.cpp:332
+msgid "Not authorized"
+msgstr "Óauðkennd(ur)"
+
+#: KAQuery.cpp:333
+msgid "Not found"
+msgstr "Fannst ekki"
+
+#: KAQuery.cpp:334
+msgid "Bad version number"
+msgstr "Ógilt útgáfunúmer"
+
+#: KAQuery.cpp:335
+msgid "Not a directory"
+msgstr "Ekki mappa"
+
+#: KAQuery.cpp:336
+msgid "Identical link already exists"
+msgstr "Eins hlekkur er til nú þegar"
+
+#: KAQuery.cpp:338
+msgid "Command not implemented on server"
+msgstr "Þjónn skilur ekki beiðni"
+
+#: KAQuery.cpp:339
+msgid "Bad format for response"
+msgstr "Svar óskiljanlegt"
+
+#: KAQuery.cpp:340
+msgid "Protocol error"
+msgstr "Villa í samskiptum"
+
+#: KAQuery.cpp:341
+msgid "Unspecified server failure"
+msgstr "Ótilgreint bilun þjóns"
+
+#: KAQuery.cpp:343
+msgid "Generic Failure"
+msgstr "Bilun"
+
+#: KAQuery.cpp:347
+msgid "No warning"
+msgstr "Engin viðvörun"
+
+#: KAQuery.cpp:348
+msgid "You are using an old version of this program"
+msgstr "Þú ert að nota gamla útgáfu af þessu forriti"
+
+#: KAQuery.cpp:349
+msgid "From server: "
+msgstr "Frá þjóni: "
+
+#: KAQuery.cpp:351
+msgid "Unrecognized line in response from server"
+msgstr "Svar þjónsins innihélt óþekkta línu"
+
+#: KAQuery.cpp:409
+msgid "Query running"
+msgstr "Leit í gangi"
+
+#: KAQuery.cpp:453
+msgid "Query finished"
+msgstr "Leit lokið"
+
+#: KASettings.cpp:59
+msgid "&Host"
+msgstr "&Vél"
+
+#: KASettings.cpp:72
+msgid "&Timeout (seconds)"
+msgstr "&Hámarkstími (sek)"
+
+#: KASettings.cpp:83
+msgid "Maximal &retries"
+msgstr "&Reynt til þrautar"
+
+#: KASettings.cpp:284
+msgid "&Nice Level"
+msgstr "&Forgangur"
+
+#: KASettings.cpp:291
+msgid "max. &Hits"
+msgstr "hám.fj. &slaga"
+
+#: KASettings.cpp:418
+msgid "Exact"
+msgstr "Nákvæmur"
+
+#: KASettings.cpp:419
+msgid "Substring"
+msgstr "Hlutstrengur"
+
+#: KASettings.cpp:420
+msgid "Substring case insensitive"
+msgstr "Hlutstrengur óháð há-/&lágstöfum"
+
+#: KASettings.cpp:421
+msgid "Regular expression"
+msgstr "Regluleg segð"
+
+#: KASettings.cpp:423
+msgid "Exact, then substring case insensitive"
+msgstr "Nákvæmur, síðan hlutastrengur óháður há-/lágstöfum"
+
+#: KASettings.cpp:427
+msgid "Normal"
+msgstr "Venjulegur"
+
+#: KASettings.cpp:428
+msgid "Nice"
+msgstr "Lágur"
+
+#: KASettings.cpp:429
+msgid "Very nice"
+msgstr "Lægri"
+
+#: KASettings.cpp:430
+msgid "Even more nice"
+msgstr "Enn lægri"
+
+#: KASettings.cpp:431
+msgid "Nicest"
+msgstr "Lægstur"
+
+#: KASettings.cpp:525
+msgid "KArchie Settings"
+msgstr "Stillingar"
+
+#: KASettings.cpp:536
+msgid "Archie server settings"
+msgstr "Stillingar Archie-þjónns"
+
+#: KASettings.cpp:543
+msgid "Search init"
+msgstr "Leita að"
+
+#: KASettings.cpp:567
+msgid "Reset"
+msgstr "Endurstilla"
+
+#: KAStatusBar.cpp:50
+msgid "    0 hits"
+msgstr "    0 slög"
+
+#: KAStatusBar.cpp:51
+msgid "    0. try"
+msgstr "    0. reynd"
+
+#: KAStatusBar.cpp:52
+msgid "Host: none                               "
+msgstr "Vél: engin                               "
+
+#: KAStatusBar.cpp:53
+msgid "Status: ready                        "
+msgstr "Staða: Tilbúin                       "
+
+#: KAStatusBar.cpp:81
+#, c-format
+msgid "Status: %s"
+msgstr "Staða: %s"
+
+#: KAStatusBar.cpp:91
+#, c-format
+msgid "Hosts: %s"
+msgstr "Þjónn: %s"
+
+#: KAStatusBar.cpp:101
+#, c-format
+msgid "%d hits"
+msgstr "%d slög"
+
+#: KAStatusBar.cpp:111
+#, c-format
+msgid "Progress: %d"
+msgstr "Framvinda: %d"
+
+#: KAStatusBar.cpp:121
+#, c-format
+msgid "%d try."
+msgstr "%d reynd."
+
+#: KAView.cpp:66
+msgid "Searchstring, press <ENTER> to start search"
+msgstr "Leitarstreng, sláið á <ENTER> til að hefja leit"
+
+#: KAView.cpp:68
+msgid "Search &Term"
+msgstr "Leita að"
+
+#: KAView.cpp:134
+msgid "Host"
+msgstr "Vél"
+
+#: KAView.cpp:135
+msgid "Path"
+msgstr "Slóð"
+
+#: KAView.cpp:268
+msgid "Host:"
+msgstr "Vél:"
+
+#: KAView.cpp:270
+msgid "Path:"
+msgstr "Slóð:"
+
+#: KAView.cpp:272
+msgid "File:"
+msgstr "Skrá:"
+
+#: KAView.cpp:274
+msgid "Size:"
+msgstr "Stærð:"
+
+#: KAView.cpp:276
+msgid "Mode:"
+msgstr "Heimildir:"
+
+#: KAView.cpp:278
+msgid "Date:"
+msgstr "Dags:"
+
+#: KArchie.cpp:441 KArchie.cpp:483
+#, c-format
+msgid ""
+"Couldn't open \n"
+"\"%s\""
+msgstr ""
+"Gat ekki opnað\n"
+"\"%s\""
+
+#: KArchie.cpp:446 KArchie.cpp:488
+msgid "KArchie: bad file"
+msgstr "KArchie: Gölluð skrá"
+
+#: KArchie.cpp:720
+msgid "Malformed url"
+msgstr "Gölluð slóð"
+
+#: KArchie.cpp:724
+msgid "Maybe bad list entry, please select an other file"
+msgstr "Gæti verið gölluð færsla í listanum. Veljið aðra skrá"
+
+#: KArchie.cpp:725
+msgid "KArchie: bad URL"
+msgstr "KArchie: Gölluð slóð"
+
+#: KArchie.cpp:744
+msgid "KArchie: Wrong fileselection"
+msgstr "KArchie: Röng skrá valin"
+
+#: KArchie.cpp:745
+msgid "The selected file is not writeable"
+msgstr "Skráin sem þú valdir er ritvarin"
+
+#: KArchie.cpp:752
+msgid "KArchie: Overwrite file ?"
+msgstr "KArchie: Skrifa yfir skrána ?"
+
+#: KArchie.cpp:753
+msgid ""
+"The selected file is not write protected\n"
+"Should it be overwritten ?"
+msgstr ""
+"Skráin er ekki ritvarin\n"
+"Á ég að rita yfir hana ?"
+
+#: KArchie.cpp:766
+msgid "KArchie: bad selection"
+msgstr "KArchie: Rangt val"
+
+#: KArchie.cpp:767
+msgid ""
+"No file selected !\n"
+"Please select a file in the list of queryresults\n"
+"or do a query."
+msgstr ""
+"Engin skrá valin!\n"
+"Vinsamlegast veljið skrá úr útkomu fyrirspurnar\n"
+"eða framkvæmið fyrirspurn."

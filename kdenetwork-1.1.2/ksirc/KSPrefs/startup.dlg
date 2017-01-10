@@ -1,0 +1,134 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {startup.h}
+	ClassSource {startup.cpp}
+	ClassName {StartUp}
+	DataHeader {startupdata.h}
+	DataSource {startupdata.cpp}
+	DataName {startupdata}
+	WindowBaseClass {QWidget}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {400 300}
+MinSize {400 300}
+MaxSize {400 300}
+Grid {10}
+
+ButtonGroup {
+		Title {Notify List}
+		Alignment {Left}
+		Style {49}
+		Rect {10 90 380 200}
+		Name {ButtonGroup_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Nick}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 10 100 30}
+		Name {Label_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Real Name}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 50 100 30}
+		Name {Label_2}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {120 10 270 30}
+		Name {LineEdit_1}
+		Variable {SLE_Nick}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {120 50 270 30}
+		Name {LineEdit_2}
+		Variable {SLE_RealName}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ListBox {
+		DragSelect {TRUE}
+		AutoScroll {TRUE}
+		ScrollBar {FALSE}
+		AutoScrollBar {TRUE}
+		BottomScrollBar {FALSE}
+		AutoBottomScrollBar {TRUE}
+		SmoothScrolling {TRUE}
+		MultiSelection {FALSE}
+		Style {51}
+		LineWidth {2}
+		Rect {20 110 170 170}
+		Name {ListBox_1}
+		Variable {LB_Nicks}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Delete}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {200 110 180 30}
+		Name {PushButton_1}
+		Signal {[Protected]  clicked --> nicks_delete  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Add}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {200 150 180 30}
+		Name {PushButton_2}
+		Variable {B_AddNicks}
+		Signal {[Protected]  clicked --> nicks_add  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+LineEdit {
+		Text {}
+		EchoMode {Normal}
+		MaxLength {32767}
+		FrameShown {TRUE}
+		Rect {200 190 180 30}
+		Name {LineEdit_3}
+		Variable {SLE_Nicks}
+		Signal {[Protected]  textChanged --> sle_add_update  (const char*)}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

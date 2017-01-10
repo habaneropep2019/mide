@@ -1,0 +1,255 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: Sun Jul 11 1999 19:08:50+0200\n"
+"Last-Translator: 井村 竜一郎 <imura@cs.titech.ac.jp>\n"
+"Language-Team: japanese <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"X-Generator: KTranslator v 0.5.0"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "&Traceroute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "ホスト名解決(&R)"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "F&inger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "新しいウィンドウ(&N)"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "ウィンドウを閉じる(&C)"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "全てを選択(&a)"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "出力ウィンドウをクリア(&L)"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "設定...(&R)"
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "%sのバージョン情報(&A)"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "&Qt について"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "バージョン情報..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "ネットワークユーティリティ"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "ホスト(&O):"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "実行！"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "停止(&S)"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"このコマンドのバイナリが見つかりませんでした。\n"
+"このコマンドのパスをメニューの 編集->設定... で\n"
+"指定できます。"
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"%s/%src\n"
+"という設定ファイルに問題があります。\n"
+"[%s] グループに、\n"
+"有効な \"path=\" というエントリが見つかりません。\n"
+"\n"
+"メニューの 編集->設定...\n"
+"で設定しなおしてください。\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "パスネームにエラー"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "バイナリ"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "パスネーム(&N):"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "追加するオプション(&A):"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "コンフィグレーションファイルでコマンドが無効になりました。"
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - コンフィグレーション"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "ホストネーム"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Loss"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Rcv"
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Snt"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Best"
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "Avg"
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Worst"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "ホストネームの解決を行う(&N)"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "ホスト(&T)"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "hopsの最大数(&M)"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "アドレス(A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "名前(PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "ネームサーバ(NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "メールエクスチェンジャ(MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "エイリアス(CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "オーソリティゾーンの開始"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "全ての記録(ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "検索(&A)"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "デフォルトサーバ"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "サーバ(&V):"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "ユーザ(&U)"

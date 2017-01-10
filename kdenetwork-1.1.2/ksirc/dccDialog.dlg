@@ -1,0 +1,67 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {dccDialog.h}
+	ClassSource {dccDialog.cpp}
+	ClassName {dccDialog}
+	DataHeader {dccDialogData.h}
+	DataSource {dccDialogData.cpp}
+	DataName {dccDialogData}
+	WindowBaseClass {QFrame}
+	WindowCaption {DCC Files Offered}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {230 250}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+ListBox {
+		DragSelect {TRUE}
+		AutoScroll {TRUE}
+		ScrollBar {FALSE}
+		AutoScrollBar {TRUE}
+		BottomScrollBar {FALSE}
+		AutoBottomScrollBar {TRUE}
+		SmoothScrolling {TRUE}
+		MultiSelection {FALSE}
+		Style {51}
+		LineWidth {2}
+		Rect {10 10 210 190}
+		Name {ListBox_1}
+		Variable {fileList}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Get}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 210 100 30}
+		Name {PushButton_1}
+		Variable {getButton}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Forget}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {120 210 100 30}
+		Name {PushButton_2}
+		Variable {forgetButton}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

@@ -1,0 +1,191 @@
+In this file:
+
+* About kdebase
+* Common Mistakes
+* Common Compiling Errors
+* Configuring
+* Debugging
+* Upgrading
+* Removal/Uninstallation
+* More Info
+
+About kdelibs
+-------------
+
+This is the version 1.1.2 release of the KDE base distribution.  Included
+in this collection of applications are some generally useful programs such
+as a file manager, terminal emulation program, and programs to configure
+all of the K Desktop Environment.
+
+Common Mistakes
+---------------
+
+IMPORTANT: most applications need KDEDIR as the directory where KDE is
+installed.  Please set this in your login file.
+
+If XPM support wasn't configured, it may be that configure has no idea
+where your XPM libraries are.  If so, set XPM_INCLUDE and XPM_LDFLAGS to
+the paths where configure should look for XPM.  But if you haven't
+installed XPM or it didn't come with your system, that's no problem.  You
+will only miss a few screensavers.  The same thing applies with OPENGL
+support.  Here you have to set GL_INCLUDE and GL_LDFLAGS.
+
+If configure claims Qt cannot be found, have a look at http://www.troll.no
+to get a copy of Qt, version 1.42, not 1.44.
+
+Common Compiling Errors
+-----------------------
+
+If you get TOC overflow errors on AIX, and are using gcc 2.7.2, you'll
+need to add -mminimal-toc to your CFLAGS and CXXFLAGS.
+
+Be advised, if you're using FreeBSD and the ill-designed port of Qt that
+comes along with it, this is not a good idea.  The KDE does not, and will
+not depend on Mesa or any other implementations of OpenGL.  If you have
+any further questions on the subject please contact Andreas Klemm
+<andreas@klemm.gtn.com>.
+
+If you would like to include "C2" style secure encryption, define
+HAVE_OSF_C2_PASSWD in config.h, and link kcheckpass with the appropiate
+libraries.  This has been tested on Digital Unix, which requires the
+security library.
+
+If you get errors when running or linking a KDE program to the effect of:
+
+ld-elf.so complains about not finding these symbols:
+ __ti6QFrame
+ __ti7QObject
+ __ti7Qblahblahblah
+
+You're compiling Qt without RunTime Type Info (rtti) support.  Currently
+no KDE 1.1 application uses rtti, so you have two choices:
+
+* Include -fno-rtti in the CXXFLAGS variable when compiling kdelibs,
+kdebase, and any other kde applications.  This will make it impossible to
+use rttin in any KDE app.
+
+*OR*
+
+* Remove any instance of -fno-rtti in the Qt configuration file (usually
+in $QTDIR/configs).  On a FreeBSD machine, this is most likely
+freebsd-g++-shared.
+
+
+Configuring
+-----------
+
+kdebase's configure script supports all the standard GNU autoconf options
+(you can have the various options listed for you by specifying the --help
+switch), plus the following options are also supported.  Note:  the *non*
+default variation is listed, so if you see --enable-debug, the default is
+--disable debug.
+
+`--x-includes=DIR'
+     use X include files in DIR
+
+`--x-libraries=DIR'
+     use X library files in DIR
+
+`--enable-debug'
+     creates debugging code [default=no]
+
+`--enable-strict'
+     Add strict[er] compiler options (may not work!) to the CFLAGS and
+     CXXFLAGS.  This is GNU CC specific for the time being.
+
+`--with-gnu-ld'
+     assume the C compiler uses GNU ld [default=no]
+
+`--disable-libtool-lock'
+     force libtool not to do file locking
+
+`--disable-nls'
+     do not use Native Language Support (i18n)
+
+`--with-qt-dir'
+     where the root of qt is installed 
+
+`--with-qt-includes=DIR'
+     look for the Qt header files in DIR
+
+`--with-qt-libraries=DIR'
+     look for the Qt library in DIR
+
+`--with-extra-includes=DIR'
+     look for include files in DIR in addition to any other
+     `standard' paths
+
+`--with-extra-libs=DIR'
+     look for [extra] libraries in DIR too
+
+`--disable-path-check'
+     don't try to make sure that kdebase is installed into the same
+     base KDE directory as the rest of KDE
+ 
+`--with-install-root=DIR'
+     the root to install to [default=/] (i.e. make / == DIR, so /usr
+     becomes DIR/usr)
+
+`--disable-rpath'
+     do not use the rpath feature of ld
+
+`--with-xdmdir=DIR'
+     use xdm (and config files) from DIR if the xdm config dir can't be
+     found automaticly
+
+`--with-pam[=ARG]'
+     enable support for PAM: ARG=[yes|no|service name]
+
+`--with-shadow'
+     if you want to check for and use shadow password support if it's present
+
+`--without-gl'
+     disable any software which depends on OpenGL
+
+`--without-xpm'
+     disable color pixmap XPM tests
+
+Debugging
+---------
+
+You can use --enable-debug with the configure script, if you want to have
+debug code in your KDE apps and libs.  I recommend to do this, since
+nothing is perfect, and this this makes debugging things a whole lot
+easier.
+
+Upgrading
+---------
+
+If you have an older kdebase installed, just copy all your .k*rc files
+from $HOME to $HOME/.kde/config. In the other case, default values are
+used for most apps.
+
+Removal/Uninstallation
+----------------------
+
+You can use 'make uninstall' if you want to remove the kde from the dirs.
+This feature has not been tested completely, and is depreciated.
+
+More Info
+---------
+
+If your system does not have XPM installed, you may obtain it from
+ftp://avahi.inria.fr/pub/xpm, or you may find it in
+ftp://ftp.freebsd.org/pub/FreeBSD/distfiles
+
+If your system supports PAM (Plugable Authentication Modules), please see
+the README.pam file in this directory for more information about using KDE
+with PAM.
+
+Have a look at the individual subdirectories, if you would like to find
+out more about a specific application included in kdebase.
+
+Please direct any bug reports to http://bugs.kde.org.
+
+If you have problems compiling and installing this package, please contact
+Stephan Kulow <coolo@kde.org>.
+
+If you have discovered a security problem with KDE, or any of its included
+programs or libraries,
+
+General KDE discussions should go to the KDE mailing list (kde@kde.org).

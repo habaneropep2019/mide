@@ -1,0 +1,379 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ksysv\n"
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"PO-Revision-Date: 1999-02-04 09:03+01:00\n"
+"Last-Translator: Miroslav Flídr <flidr@kky.zcu.cz>\n"
+"Language-Team: czech <flidr@kky.zcu.cz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:236
+msgid ": Error"
+msgstr ": Chyba"
+
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr "Pouze superu¾ivateli je povoleno spravovat úrovnì."
+
+#: OldView.cpp:105
+msgid "Available"
+msgstr "Dostupné"
+
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "&Slu¾by"
+
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+"Toto jsou <bold>dostupné slu¾by<bold>\n"
+"Aby se slu¾ba startovala, pøesuòte ji do \n"
+"<bold>\"Start\"<bold> sekce úrovnì.\n"
+"\n"
+"Aby se slu¾ba ukonèovala proveète stejnou \n"
+"operaci v <bold>\"Stop\"</bold> sekci.\""
+
+# , c-format
+# , c-format
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "Úroveò &%i"
+
+# , c-format
+# , c-format
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "Úroveò %i"
+
+#: OldView.cpp:149
+msgid "Start"
+msgstr "Start"
+
+# , c-format
+# , c-format
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Upus»te zde pro spu¹tìní slu¾by\n"
+"pøi vstupu do úrovne %i"
+
+# , c-format
+# , c-format
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Upus»te zde pro zastavení slu¾by\n"
+"pøi vstupu do úrovne %i"
+
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr "** ZAPISUJI NASTAVENÍ **\n"
+
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr "** ÚROVEÑ %i **\n"
+
+#: OldView.cpp:517
+msgid "Reading configuration: "
+msgstr "Naèítání konfigurace: "
+
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr "** Zastavuji "
+
+#: OldView.cpp:624
+msgid " stop"
+msgstr " stop"
+
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr "** Startuji "
+
+#: OldView.cpp:644
+msgid " start"
+msgstr " start"
+
+#: OldView.cpp:661
+msgid "** Re-starting "
+msgstr "** Restartuji "
+
+#: OldView.cpp:666
+msgid " restart"
+msgstr " restart"
+
+# , c-format
+# , c-format
+#: OldView.cpp:811
+msgid "P&roperties..."
+msgstr "&Vlastnosti..."
+
+#: OldView.cpp:831
+msgid "S&top"
+msgstr "S&top"
+
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "&Restart"
+
+#: TopWidget.cpp:136
+msgid "&New Configuration"
+msgstr "&Nové nastavení"
+
+#: TopWidget.cpp:137
+msgid "&Save Configuration"
+msgstr "&Ulo¾it nastavení"
+
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr "Vytisknout &záznam..."
+
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr "Zobrazit nás&trojovou li¹tu"
+
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr "Zobrazit &stavovou li¹tu"
+
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr "Zobrazit &záznamy"
+
+#: TopWidget.cpp:174
+msgid "&Configure..."
+msgstr "&Konfigurovat..."
+
+#: TopWidget.cpp:177
+msgid "&Save Options"
+msgstr "Ulo¾it n&astavení"
+
+#: TopWidget.cpp:215
+msgid "New"
+msgstr "Nový"
+
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "Výpis ze skriptu zapnout/vypnout"
+
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"Nejsou ulo¾ené zmìny.\n"
+"Jste si jisti, ¾e chcete skonèit ?"
+
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "Ano, ukonèit!"
+
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "Ne, neukonèit."
+
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "Zru¹it zmìny"
+
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "Pøejete si skuteènì zru¹it neulo¾ené zmìny?"
+
+#: TopWidget.cpp:307
+msgid "Save configuration"
+msgstr "Ulo¾it nastavení"
+
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"Chystáte se ulo¾it zmìny, které jste udìlali ve va¹í inicializaèní\n"
+"konfiguraci. Prosím uvìdomte si, ¾e nesprávné zmìny mù¾ou zpùsobit,¾e vá¹ "
+"systém nenastartuje.\n"
+"\n"
+"Pøejete si pokraèovat ?"
+
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr "Ano, ulo¾it!"
+
+#: TopWidget.cpp:314
+msgid "No, &don't save."
+msgstr "Ne, neulo¾it."
+
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "Informace o Qt"
+
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "Zmìnìné"
+
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr "Není mo¾né vygenerovat tøídící èíslo. Prosím, zmìñte jej ruènì."
+
+#: prefs.cpp:48
+#, c-format
+msgid "%s - Preferences"
+msgstr "%s - Preference"
+
+#: prefs.cpp:58
+msgid "Directory containing your init-scripts (&services)"
+msgstr "Cesta k adresáøi, který obsahuje inicializaèní skripty (&slu¾by):"
+
+#: prefs.cpp:79
+msgid "Directory containing your &runlevel-directories"
+msgstr "Cesta k adresáøi, který obsahuje ad&resáøe s úrovnìmi:"
+
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr "Barva &nových polo¾ky"
+
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr "Barva z&mìnìných polo¾ek"
+
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr "&Cesty"
+
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr "&Barvy"
+
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "Upus»te zde pro zru¹ení slu¾by"
+
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr "J&méno"
+
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr "&Smìøuje na"
+
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr "&Tøídící èíslo"
+
+# , c-format
+# , c-format
+#: PropDlg.cpp:113
+#, c-format
+msgid "%s - Properties"
+msgstr "%s - Vlastnosti"
+
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr "NEZDAØILO SE odstranit %s z %s: \"%s\"\n"
+
+#: IOCore.cpp:53
+#, c-format
+msgid "removed %s from %s\n"
+msgstr "odebráno %s z %s\n"
+
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr "vytvoøeno %s v %s\n"
+
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr "NEZDAØILO SE vytvoøit %s z %s: \"%s\"\n"
+
+#: About.cpp:46
+#, c-format
+msgid "About %s"
+msgstr "Informace o %s"
+
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr "Editor SysV Initu pro KDE"
+
+#: About.cpp:81
+#, c-format
+msgid "Version %s (KDE %s)"
+msgstr "Verze %s (KDE %s)"
+
+#: About.cpp:89
+msgid "© 1997-1999 "
+msgstr "(c) 1997-1998 "
+
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr "Peter Putzer"
+
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr "Za¹lete chybová hlá¹ení/ úspìchy/ mnoho pìnìz/..."
+
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ". V¹echna práva vyhrazena."
+
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp © 1997 Martin Jones.\n"
+"Uses the KDE libraries © 1997-1999 The KDE Team.\n"
+"Uses the Qt library © 1992-1998 Troll Tech AS."
+msgstr ""
+"IPC èásti pøevzaty z aplikace kdehelp (c) martin Jones.\n"
+"Pou¾ívá KDE knihovny (c) 1997-1999 KDE Team.\n"
+"Pou¾ívá knihovny Qt (c) 1992-1998 Troll Tech AS."
+
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+"Editor pro konfiguraci initu ve stylu SysV, \n"
+"podobný programu \"tksysv\" z distribuce RedHat.\n"
+"Ksysv umo¾ñuje jak drag'n'drop, tak i pou¾ití klávesnice."
+
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""
+"Tento program je volným softwarem; mù¾ete jej redistribuovat \n"
+"a/nebo modifikovat podle ustanovení licence GNU Public Licence,\n"
+"verze 2 jak je publikována Free Software Foundation.\n"
+"\n"
+"Tento program je distribuován v nadìji, ¾e bude u¾iteèný, ale\n"
+"BEZ JAKÉKOLI ZÁRUKY; zamozøejmì bez záruky PRODEJNOSTI nebo\n"
+"VHODNOSTI PRO VA©E ÚÆELY. Pro detaily nahlédnìte do licence\n"
+"GNU Public Licence. "

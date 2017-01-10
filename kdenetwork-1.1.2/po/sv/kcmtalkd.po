@@ -1,0 +1,149 @@
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Karl Backström <backstrom@kde.org>, 1998.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1998-07-20 15:16+0200\n"
+"PO-Revision-Date: 1998-12-29 22:10+0100\n"
+"Last-Translator: Karl Backström <backstrom@kde.org>\n"
+"Language-Team: Sv <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: main.cpp:55
+msgid "&Announcement"
+msgstr "&Annonsering"
+
+#: main.cpp:58
+msgid "Ans&wering machine"
+msgstr "Telefons&varare"
+
+#: main.cpp:64
+msgid "usage: kcmktalkd [-init | soundpage | answmachpage]\n"
+msgstr "användning: kcmktalkd [-init | soundpage | answmachpage]\n"
+
+#: main.cpp:100
+msgid "KTalkd Configuration"
+msgstr "KTalkd-inställningar"
+
+#: soundpage.cpp:47
+msgid "&Announcement program"
+msgstr "&Annonserings program"
+
+#: soundpage.cpp:54
+msgid "&Talk client"
+msgstr "&Talk-klient"
+
+#: soundpage.cpp:58
+msgid "&Play sound"
+msgstr "&Spela upp ljud"
+
+#: soundpage.cpp:60
+msgid "Sound &File"
+msgstr "Ljud&fil"
+
+#: soundpage.cpp:62
+msgid "Additional WAV files can be dropped onto the sound list."
+msgstr "Fler Wav-filer kan släppas över ljudlistan"
+
+#: soundpage.cpp:77
+msgid "&Test"
+msgstr "&Testa"
+
+#: soundpage.cpp:157
+msgid "Unsupported URL"
+msgstr "Ogiltig URL"
+
+#: soundpage.cpp:158
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE System Sound "
+"Module"
+msgstr ""
+"Tyvärr, den här typen av URL är fortfarande ogiltig för KDE system ljuds"
+"modulen"
+
+#: soundpage.cpp:165
+#, c-format
+msgid ""
+"Sorry, but \n"
+"%s\n"
+"does not seem to be a WAV--file."
+msgstr ""
+"Ledsen, men \n"
+"%s\n"
+"verkar inte vara en Wav-fil."
+
+#: soundpage.cpp:168
+msgid "Improper File Extension"
+msgstr "Felaktigt filslut"
+
+#: soundpage.cpp:176
+#, c-format
+msgid ""
+"The file\n"
+"%s\n"
+"is already in the list"
+msgstr ""
+"Filen\n"
+"%s\n"
+"finns redan i listan."
+
+#: soundpage.cpp:180
+msgid "File Already in List"
+msgstr "Filen finns redan i listan"
+
+#: answmachpage.cpp:39
+msgid "&Activate answering machine"
+msgstr "&Aktivera telefonsvararen"
+
+#: answmachpage.cpp:44
+msgid "&Mail address"
+msgstr "&E-post-adress"
+
+#: answmachpage.cpp:51
+msgid "Mail sub&ject"
+msgstr "E-post-&ämne"
+
+#: answmachpage.cpp:54
+#, c-format
+msgid "Use %s for the caller name"
+msgstr "Använd %s som avsändarnamn"
+
+#: answmachpage.cpp:60
+msgid "Mail &first line"
+msgstr "Skicka &första raden"
+
+#: answmachpage.cpp:64
+#, c-format
+msgid "Use first %s for caller name, and second %s for caller hostname"
+msgstr "Använd först %s som avsändarnamn, och sedan %s som avsändarvärdnamn"
+
+#: answmachpage.cpp:68
+msgid "&Receive a mail even if no message left"
+msgstr "&Hämta brev även fast det inte fanns några meddelanden kvar"
+
+#: answmachpage.cpp:74
+msgid "&Banner displayed on answering machine startup :"
+msgstr "&Baner att visa då telefonsvararen startar :"
+
+#: answmachpage.cpp:83
+msgid ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+msgstr ""
+"Personen som du frågade att få tala med svarade inte.\n"
+"Var vänlig lämna ett meddelande som kommer att skickas med E-post.\n"
+"Skriv bara in meddelandet och när du är klar, avsluta som vanlig."
+
+#: answmachpage.cpp:171 answmachpage.cpp:189
+#, c-format
+msgid "Message from %s"
+msgstr "Meddelande från %s"
+
+#: answmachpage.cpp:172 answmachpage.cpp:191
+#, c-format
+msgid "Message left in the answering machine, by %s@%s"
+msgstr "Meddelande kvar i telefonsvararen, från %s@%s"

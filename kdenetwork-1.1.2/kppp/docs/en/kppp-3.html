@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kppp Handbook: Setting up kppp</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KPPP Dialer Internet PPP IP PAP CHAP">
+<META NAME="description" CONTENT="KPPP Internet Dialer">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-4.html">Next</A>
+<A HREF="kppp-2.html">Previous</A>
+<A HREF="kppp.html#toc3">Table of Contents</A>
+</P>
+<H3><A NAME="s3">3. Setting up <EM>kppp</EM></A></H3>
+
+<P>In order to set up <EM>kppp</EM>, start <EM>kppp</EM> and push the <CODE>Setup</CODE> button on <EM>kppp</EM>'s
+main window. A new tab dialog will appear. 
+<P>
+<H3><A NAME="ss3.1">3.1 Accounts</A>
+</H3>
+
+<P>This dialog will display the accounts you have created. You must create at least
+one account.  The ``Reset Button'' will
+reset the accumulated cost for the selected account to zero. Typically you 
+want to press this button once a month after having consolidated your 
+telephone costs. 
+<P>
+<H3><A NAME="ss3.2">3.2 Device</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Modem Device</B><DD><P>Select the device appropriate for your
+hardware. Here are some examples:
+<UL>
+<LI><B>/dev/ttyS0</B> - DOS or Windows users will know this as COM1, COM2 is
+/dev/ttyS1 and so on. These devices are mostly used on Linux systems.</LI>
+<LI><B>/dev/cua0</B> - the first serial line (COM1). COM2 would be /dev/cua1
+and so on. These devices are mostly used on BSD systems, namely FreeBSD, NetBSD
+and OpenBSD.</LI>
+<LI><B>/dev/ttyI0</B> - under Linux, these belong to internal ISDN
+cards. These devices emulate a common Hayes compatible modem. /dev/ttyI0 is for
+the first, /dev/ttyI1 for the second ISDN card and so on. These devices are only
+available in the Linux version</LI>
+<LI><B>/dev/modem</B> - many Linux distributions make a symbolic link from
+the real modem device to /dev/modem. <B>You should avoid using this
+one</B>. Use /dev/ttySx (x is a digit) instead.</LI>
+</UL>
+<P>
+<A NAME="winmodem"></A>
+If you can't get your modem to work at all you should verify that you don't
+have one of those so called <EM>WinModems</EM>. Some manufacturers leave out
+some essential hardware capabilities and let the CPU do the work. At the time
+of writing there are no Linux drivers to support these (mostly internal PCI)
+modems since their Windows counterparts are closed-source and the technical
+specifications are not freely available. The following webpage provides
+additional information and has a Linux compatibility database:
+
+<A HREF="http://www.o2.net/~gromitkc/winmodem.html">http://www.o2.net/~gromitkc/winmodem.html</A>
+<P>
+<DT><B>Flow Control</B><DD><P>Select from Hardware (CRTSCTS), Software (XON/XOFF) and
+no flow control. The recommended setting is Hardware flow control.
+<P>
+<DT><B>Line Termination</B><DD><P>Choose the correct ``Enter'' character sequence for your modem.
+Most modems will use ``CR/LF''. However some modems need a different setting.
+If you experience trouble while running a script: Play with this parameter.
+<P>
+<DT><B>Connection Speed</B><DD><P>Choose from the list of connections speeds supported by
+your serial port. 
+<P>
+<A NAME="lock files"></A>  
+<DT><B>Use Lock File</B><DD><P>Activate this option if you want <EM>kppp</EM> to create a lockfile. Under Linux
+the directory for such a file will be <CODE>/var/lock</CODE>.
+Programs such as mgetty depend on the existence of such lock files and
+<EM>kppp</EM> will not work with mgetty if the lock file is not set.
+<P>
+<DT><B>Modem Timeout</B><DD><P>This is the time in seconds that <EM>kppp</EM> waits for the 
+``CONNECT'' response from your modem after dialing into another modem (typically a modem
+of your IPS's modem pool). I recommend a setting of about 30 seconds.
+</DL>
+<P>
+<H3><A NAME="ss3.3">3.3 Modem</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Modem Commands</B><DD><P>This will bring up a dialog which you will need
+to fill with modem commands appropriate for you particular modem. If you
+own a Hayes compatible modem you most likely won't need to change any of
+the defaults. I encourage you however to read  about the Hayes command
+in the Appendix of this documentation. The information supplied there 
+should also be of help in case  you experience trouble setting up a stable 
+connection with your ISP's modems.
+The two settings "Pre-Init Delay" and "Post-Init Delay" might be of special
+interest to if you experience any modem lock-ups. These will make <EM>kppp</EM>
+pause a bit before and after sending the initialization string. The
+"Pre-Init Delay" will be accompanied by sending a CR unless given a delay
+interval of 0.
+<P>
+If you intend to use the ISDN pseudo devices (/dev/ttyIx) you should remove
+the volume commands, choose ATD as dial string and specify your local phone
+number with AT&amp;Ex (see "man ttyI" for further details).
+<P>
+<DT><B>Query Modem</B><DD><P>Pushing the Query Modem Button will induce <EM>kppp</EM> to ask
+your modem to identify itself. On success your modems response will be
+displayed in a dialog. This may or may not prove to be informative depending
+on your modem.
+<P>
+<DT><B>Terminal</B><DD><P>Pushing the <CODE>Terminal</CODE> button will bring up a mini terminal.
+You can use the mini terminal to test your modem and experiment with  the 
+negotiation protocol for initiating a ppp connection with you ISP. You no 
+longer need a terminal program such as minicom or seyon.
+</DL>
+<P>
+<H3><A NAME="ss3.4">3.4 PPP</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>pppd Timeout</B><DD><P><EM>kppp</EM> will wait this amount of time after running the script
+and starting pppd for pppd to establish a valid ppp link before giving up
+and killing pppd.
+<P>
+<DT><B>Automatic Redial on Disconnect</B><DD><P>Selecting this will have <EM>kppp</EM> try to 
+reconnect in case you inadvertently got disconnected while online.
+<P>
+<DT><B>Show Clock on Caption</B><DD><P>This will have <EM>kppp</EM> display the time connected
+on the caption of the <EM>kppp</EM> window displayed while being online.
+<P>
+<DT><B>Disconnect on X-server shutdown</B><DD><P>Checking this option will cause <EM>kppp</EM>
+to terminate the ppp link, disconnect the modem and terminate accounting
+in an orderly fashion when the X-server shuts down. This is useful if
+you are prone to forget to shut down <EM>kppp</EM> on X-server exit or simply
+don't want to have to worry about disconnecting your connection.
+If you don't want <EM>kppp</EM> to hang up the modem on X-server exit, you should
+leave this checkbox unchecked. Be aware however, that if you have accounting
+enabled, and you don't want <EM>kppp</EM> to hang up on X-server exit,  you will 
+have a nonterminated accounting entry in you accounting logs, when the
+X-server exits and <EM>kppp</EM> terminates.
+<P>
+<DT><B>Minimize Window on Connect</B><DD><P><EM>kppp</EM>'s window will be minimized after a connection has been established. The elapsed connection time will be shown in the taskbar.
+<P>
+<DT><B>Dock into Panel on Connect</B><DD><P>If this option is chosen <EM>kppp</EM> will dock into the panel where it will be symbolized by a small animated icon. Use the left mouse button on this icon to restore <EM>kppp</EM>'s window. The right mouse button will open up a popup-menu
+that offers to restore the window, show further transfer statistics or close the connection.
+This option overrides <EM>Minimise Window on Connect</EM>.
+</DL>
+<P>
+<P>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-4.html">Next</A>
+<A HREF="kppp-2.html">Previous</A>
+<A HREF="kppp.html#toc3">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

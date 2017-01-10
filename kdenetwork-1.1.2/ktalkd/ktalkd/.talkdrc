@@ -1,0 +1,78 @@
+# .talkdrc Config file for ktalkd when used without X/KDE.
+
+# If your E-Mail inbox is not <logid@localhost> (where logid is the
+# name you use to log in), uncomment the next line and place the
+# E-Mail address of your inbox there.
+#Mail: 
+
+# Set to 1 to activate answering machine.
+# Will work only if your administrator has enabled it.
+Answmach: 1
+
+# Change this to customize the message displayed by the answering machine
+# when you receive a request while you're away.  You may have up to 9 lines.
+Msg1: Hello. You're connected with the talk program answering machine.
+Msg2: I'm away from the computer at the moment.
+Msg3: Please leave a message and quit normally at the end of it.
+Msg4:  - -
+Msg5: There's no way to delete across lines.  Even if your talk program
+Msg6: allows you to cursor-around.  Please use only normal keys and
+Msg7: backspace.  Otherwise your note may be unreadable.
+
+# Subject of the mail you'll receive. '%s' will be replaced by the name of
+# the caller, qualified with their hostname.dom, presuming that they have
+# valid DNS.
+Subj: %s tried to "talk" you.
+
+# First line of the mail you'll receive. '%s' will be replaced by the
+# complete address of the caller.
+Head: Message left in the answering machine, by %s:
+
+# Do you wish to receive an empty mail if the caller didn't leave any message ?
+#   (If "1", you'll only know who called you)
+EmptyMail: 1
+
+# Set this to 'off' if all you want is a beep to notify you of talk
+# requests, to 'on' if you want to play an audio file instead.
+Sound: on
+
+# Define this to the full path of the sound file you wish to
+# have played when you recieve talk requests. It may be of
+# any format, as long as the player defined below is capable
+# of playing it.
+SoundFile: /usr/lib/talkd/talk.wav
+
+# Set this to the command you will be using to play audio
+# files. This can be any .wav, .au, .snd or whatever player,
+# just so long as it will play the format that your chosen
+# audio file is in.
+SoundPlayer: /usr/local/bin/wavplay
+SoundPlayerOpt: -q
+# ==> SoundPlayer + SoundPlayerOpt = /usr/local/bin/wavplay -q
+ 
+########### Edit below to set up a forward ###########
+
+# Enable forward by uncommenting and editing this line 
+#Forward: user@host
+
+# Choose forward method :
+# None is perfect, they all have pros (+) and cons (-).
+#
+# FWA : Forward announcement only. Direct connection. Not recommended.
+#        (+) You know who is the caller, but
+#        (-) Caller will have to respond to an announcement from you. Annoying.
+#        (-) Don't use if you have an answering machine on your 'away' location
+#  (The answering machine can't popup an announcement, it would be confusing!)
+#
+# FWR : Forward all requests, changing info when necessary. Direct connection.
+#        (+) Caller won't know that you're away, but
+#        (-) You won't really know who's the caller - only his username,
+#            (so you might see "talk from Wintalk@my_host")
+#
+# FWT : Forward all requests and take the talk. No direct connection.
+#        (+) Same as above, but works also if you and caller can't be in direct 
+#            contact one with the other (e.g. firewall).
+#        (+) You'll be told who's really talking to you when you accept the talk
+#        (-) But as in FWR, you won't know his machine name in the announcement
+#
+#ForwardMethod: FWR

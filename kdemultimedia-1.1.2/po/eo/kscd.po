@@ -1,0 +1,612 @@
+# Esperantaj mesaøoj por "kscd"
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Wolfram Diestel <diestel@rzaix340.rz.uni-leipzig.de>, 1998.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kscd 1.0pre2\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: 1998-07-30 19:00+0100\n"
+"Last-Translator: Wolfram Diestel <diestel@rzaix340.rz-uni-leipzig.de>\n"
+"Language-Team: Esperanto <eo@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-3\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "KDDB-Bazodosierujo"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "Sendu KDDB-erojn al:"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "KDDB-servilo:"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "Aktualigu"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "Ebligu Foran KDDB"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "Implicita¼oj"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "Uzu HTTP-prokurilon por aliri KDDB"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "KD-Datumbanka eraro"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"Tuta tempo:\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"Tuta tempo:\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "Tie æi skribu komentojn pri la peco"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "Tie æi skribu komentojn pri la titolo"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "Bonvolu elekti kategorion aý premu 'Rezignu'"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "Al kiu kategorio apartenas la KD?"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "Sendante KDDB-eron: %s\n"
+
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"Ne eblis dukti la enhavon al:\n"
+" %s"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "Sub kiu kategorio vi þatus sekurigi tiun KDDB-eron?"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"Ne eblis skribi dosieron:\n"
+"%s\n"
+"Bonvolu ekzameni viajn permesojn kaj cu la kategoridosierujo ekzistas."
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "KScd-eraro"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "Nevalida datumbanka ero"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"La artisto/titolo ne estas indikita.\n"
+"Bonvolu korekti la eron kaj reprovu."
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"La artisto/titolo ne estas øuste indikita.\n"
+"Bonvolu dividi ambaý per '/' kiel en 'Peter Gabriel /Greatest Hits\n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Ne æiuj titoloj povas esti malplenaj.\n"
+"Bonvolu korekti la eron kaj reprovu."
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "Interna eraro"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Bonvolu mesaøi al la aýtoro."
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "Nevalida Pecolisto\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "Malfermu"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "Pecolisto-redaktilo"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "Redaktu la titolon"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "Artisto/Titolo de la disko"
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "Peco / Tempo / Titolo"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "Notoj"
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "Diskonumero"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "Alþutu"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "Konfiguru Kscd"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "Lumetkoloro:"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "Fonkoloro:"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "KD-aparato:"
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Uniksa retpoþtkomando:"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "TTT-legilo"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "Uzu Kfm kiel legilo"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "Uzu propran legilon:"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "Montru helpindikojn"
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "Enþaltu gastigon en la panelo"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr ""
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr ""
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr ""
+
+#: configdlg.cpp:190
+#, fuzzy
+msgid "Eject on Finish"
+msgstr "Eligante"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "Ludu/Paýzo"
+
+#: docking.cpp:75
+#, fuzzy
+msgid "Forward"
+msgstr "30s antaýen"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "Malantaýen"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "Sekva"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "Antaýa"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "Eligu"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "Minimumigu"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr ""
+"Neniu ekzakta kongruo troviøis. Bonvolu elekti la øustan KDon el la malsupra "
+"listo."
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "Bonvolu elekti diskotitolon aý premu 'Rezignu'"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr ""
+
+#: kscd.cpp:236
+#, fuzzy
+msgid "Error connecting to server."
+msgstr "Ne troviøis kongrua KDDB-ero."
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr ""
+
+#: kscd.cpp:242
+#, fuzzy
+msgid "Connection timed out."
+msgstr "KDDB-seræo atingis tempolimon."
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr ""
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr ""
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Prezentoj"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "Aæetebloj"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "Kscd-soræo"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "Ripetado"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "Pecoelekto"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "30s antaýen"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "30s malantaýen"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "Sekva peco"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "Antaýa peco"
+
+#: kscd.cpp:570
+#, fuzzy
+msgid "Quit Kscd"
+msgstr "Finu Kscd"
+
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "Þanøu tempindikon"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Konfiguru Kscd-on"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "Eligu KDon"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "La artisto en la reto"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "Hazarda ludo"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "KDDB-dialogo"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "KD-stiro"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "Ludante"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr ""
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "Paýzo"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "Hazardo"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Strange..."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "Haltigita"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "Ripetado"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "Eligante"
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "Kscd-konfiguro"
+
+#: kscd.cpp:1008
+#, fuzzy
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Kopirajto (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Kscd enhavas kodon de:\n"
+"workman 1.4 beta 3\n"
+"Kopirajto (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Apartan dankon al Ti Kan kaj Steve Scherf, la inventintoj de KDDB-koncepto. "
+"Vizitu http://www.cddb.com por pli da informoj pri KDDB.\n"
+"\n"
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"Kscd-soræo bazita su Synaesthesia de Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+
+#: kscd.cpp:1025
+#, fuzzy
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Dankon al Vadim Zaliva <lord@crocodile.org>\n"
+"por lia laboro pri la HTTP-prokura kodo.\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr ""
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Kscd-opcioj"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "KScd-soræo"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr ""
+
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"Eraro dum legado aý aliro de la KD.\n"
+"Bonvolu certigi, ke vi havas permeson por:\n"
+"%s"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "Preta"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "Eligite"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "Ne eblis ricevi liston de KDDB-serviloj."
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "Ne troviøis kongrua KDDB-ero."
+
+#: kscd.cpp:1834 kscd.cpp:1844
+#, fuzzy
+msgid "Error getting CDDB entry."
+msgstr "Ne troviøis kongrua KDDB-ero."
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "KDDB-seræo atingis tempolimon."
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr ""
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr ""
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr ""
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr ""
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "Ne eblis lanæi kscdmagic"
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"KSCD Magic nenormale finiøis.\n"
+"Æu vi estas certa, ke vi øuste instalis kscdmagic?"
+
+#: kscd.cpp:2368
+#, fuzzy
+msgid "Enter the local CDDB base Directory"
+msgstr "KDDB-Bazodosierujo"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: montru komandliniajn opciojn\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: enþaltu malcimigajn mesaøojn.\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "Soræo Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "Laøeco de Soræfenestro:"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "Alteco de Soræfenestro:"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "Soræoheleco:"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr ""
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr ""
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Dock Kscd"
+#~ msgstr "Soræo Kscd"
+
+#~ msgid "Track %02d"
+#~ msgstr "Peco %02d"

@@ -1,0 +1,46 @@
+$Id: INSTALL,v 1.3 1998/02/06 01:42:41 porten Exp $
+
+It is assumed that you have already successfully installed pppd.
+For more info see the PPP-HOWTO as well as the pppfaq in the docs directory
+
+NOTE: You need Qt 1.31 for version 0.5.9
+
+INSTALLATION:
+
+./configure
+
+Now check the kppp/config.h file ( Linux users should be fine )
+then:
+
+make 
+make install
+
+o Once kppp is in place you have to give kppp setuid permission:
+  cd $(KDEDIR)/bin ; chmod +s kppp. This might not 
+  be absolutely necessary ( depending on the permissions 
+  set on the modem device and /etc/resolv.conf but if you can 
+  afford to, this will make your life much easier.
+
+o if you can't give kppp setuid permission, here is the deal:
+  In order for kppp to be able to update /etc/resolv.conf
+  the users of kppp must have write permissions to this file 
+  and of course the modem device. It's up to you to figure
+  the right permissions. ;-)
+
+o make sure that the pppd's option file which usually resides
+  in /etc/ppp/ exists, but is empty. pppd wants it to exist,
+  but we don't want pppd to take any options from it. kppp 
+  will hand pppd the necessary options.
+
+o when you run kppp for the first time you need to create and
+  configure kppp for you ISP account. I hope kppp was written 
+  so that you will have no difficutlies understanding the many 
+  options offered. Please make use of the html help documentation
+  if you have questions.
+
+  
+that's it, 
+happy dialing!
+
+Bernd Wuebben
+wuebben@math.cornell.edu

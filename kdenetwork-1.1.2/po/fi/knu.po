@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 1998.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNU\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "&Traceroute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "Konenimen &selvitys"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "&Finger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"Komentoa ei ole asetettu \n"
+"asetustiedostossa.\n"
+"\n"
+"En voi tehdä mitään...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "&Uusi ikkuna"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "&Sulje ikkuna"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "Valitse &kaikki"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "&Tyhjennä tulosikkuna"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "&Asetukset"
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "Tietoja &Qt:ta"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "Tietoja &Qt:ta"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+"Knu\n"
+"Versio %s\n"
+"\n"
+"Bertrand"
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "Tietoja..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "Verkkotyökalut"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "&Kone:"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "&Aja!"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "&Lopeta"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Ohjelmatiedostoa ei löytynyt. \n"
+"Voit antaa sen polun Editoi->Asetukset... valikoissa."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Asetustiedostossa\n"
+"%s/%src\n"
+"on virhe.\n"
+"Ryhmässä [%s],\n"
+"Ei ole oikeaa \"path=\" tietuetta.\n"
+"\n"
+"Käytä Muokkaa->Asetukset... valikkoa\n"
+"asettaaksesi sen uudelleen.\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "Virhe polkunimessä"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Ohjelma"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "P&olku ja nimi"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "Ylimääräiset optiot:"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "Tämä komento on poistettu asetustiedostossa"
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - asetus"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "Isäntänimi"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Häviö"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Vas"
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Läh"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Paras"
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "Kesk"
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Pahin"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "Tee koneen &nimenselvitys"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "&kone"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "&Maksimimäärä hyppyjä:"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "osoite (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "nimi (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "nimipalvelin (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "postipalvelin (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "alias (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "tunnisteen alku (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "mikä tahansa (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "&Etsi:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "oletuspalvelin"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "Pal&velin"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "&Käyttäjä:"

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+perl -n -i conv-new-remove `find -name '*.cpp' -or -name '*.cc' -or -name '*.C'`

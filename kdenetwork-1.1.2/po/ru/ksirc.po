@@ -1,0 +1,346 @@
+# Russian messages for ksirc.
+# Copyright (C) 1998, 1999 KDE Team.
+# Const Kaplinsky <const@ce.cctpu.edu.ru>, 1998.
+# Denis Pershin <dyp@inetlab.com>, 1999.
+msgid ""
+msgstr ""
+"Project-Id-Version: ksirc\n"
+"POT-Creation-Date: 1999-03-05 02:18+0100\n"
+"PO-Revision-Date: 1999-06-06 13:10+07:00\n"
+"Last-Translator: Const Kaplinsky <const@ce.cctpu.edu.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: FilterRuleEditor.cpp:29
+msgid "Edit Filter Rules"
+msgstr "Редактировать фильтры"
+
+#: FilterRuleEditor.cpp:58 FilterRuleEditor.cpp:79
+#: FilterRuleEditorData.cpp:105
+msgid "&Modify"
+msgstr "&Изменить"
+
+#: FilterRuleEditor.cpp:74
+msgid "Missing Arguments"
+msgstr "Отсутствуют аргументы"
+
+#: FilterRuleEditor.cpp:75
+msgid ""
+"Cannot create a Rule since not\n"
+"all the fields are filled in."
+msgstr ""
+"Ошибка создания правила.\n"
+"Не все поля заполнены."
+
+#: FilterRuleEditorData.cpp:33
+msgid "Description:"
+msgstr "Описание:"
+
+#: FilterRuleEditorData.cpp:51
+msgid "Match:"
+msgstr "Совпадение:"
+
+#: FilterRuleEditorData.cpp:69
+msgid "From:"
+msgstr "От:"
+
+#: FilterRuleEditorData.cpp:78
+msgid "To:"
+msgstr "К:"
+
+#: FilterRuleEditorData.cpp:126
+msgid "New Rule"
+msgstr "Новое правило"
+
+#: FilterRuleEditorData.cpp:145
+msgid "Up"
+msgstr "Вверх"
+
+#: FilterRuleEditorData.cpp:155
+msgid "Down"
+msgstr "Вниз"
+
+#: KSircColour.cpp:33
+msgid "Colour Settings"
+msgstr "Настройки цвета"
+
+#: KSircColourData.cpp:33
+msgid "Generic Text"
+msgstr "Обычный текст"
+
+#: KSircColourData.cpp:62
+msgid "Info"
+msgstr "Инфо"
+
+#: KSircColourData.cpp:71
+msgid "Chan Messages"
+msgstr "Сообщения канала"
+
+#: KSircColourData.cpp:80
+msgid "Errors"
+msgstr "Ошибки"
+
+#: KSircColourData.cpp:115
+msgid "Background"
+msgstr "Фон"
+
+#: dccDialog.cpp:22
+msgid "DCC Files Offered"
+msgstr "Предложенные по DCC файлы"
+
+#: dccDialogData.cpp:38
+msgid "&Get"
+msgstr "&Получить"
+
+#: dccDialogData.cpp:46
+msgid "&Forget"
+msgstr "&Забыть"
+
+#: ksirc.cpp:60
+msgid ""
+"kSirc Alpha releases have an 8 week\n"
+"expiry date.\n"
+"\n"
+"kSirc-ALPHA HAS EXPIRED!!\n"
+"Please upgrade or use a beta release"
+msgstr ""
+"Альфа-версии kSirc имеют срок\n"
+"пригодности в 8 недель.\n"
+"\n"
+"kSirc-ALPHA УСТАРЕЛА!!\n"
+"Пожалуйста, обновите версию"
+
+#: ksirc.cpp:68
+msgid ""
+"kSirc Alpha release have an 8 week\n"
+"expiry date.\n"
+"\n"
+"THIS VERSION WILL EXPIRE IN UNDER 4 WEEKS"
+msgstr ""
+"Альфа-версии kSirc имеют срок\n"
+"пригодности в 8 недель.\n"
+"\n"
+"ЭТА ВЕРСИЯ УСТАРЕЕТ ЧЕРЕЗ 4 НЕДЕЛИ"
+
+#: open_top.cpp:26
+msgid "New Window For"
+msgstr "Новое окно для"
+
+#: open_topData.cpp:39
+msgid "Channel/Nick:"
+msgstr "Канал/Ник:"
+
+#: servercontroller.cpp:160
+msgid "&Dock"
+msgstr "Пристыковать"
+
+#: servercontroller.cpp:168 servercontroller.cpp:750
+msgid "New Server..."
+msgstr "Новый сервер..."
+
+#: servercontroller.cpp:169
+msgid "&Join Channel..."
+msgstr "&Присоединиться к каналу..."
+
+#: servercontroller.cpp:171
+msgid "&Connections"
+msgstr "&Соединения"
+
+#: servercontroller.cpp:188 servercontroller.cpp:739
+msgid "&Colour Preferences..."
+msgstr "&Настройка цвета"
+
+#: servercontroller.cpp:190 servercontroller.cpp:741
+msgid "&Global Fonts..."
+msgstr "&Общие шрифты..."
+
+#: servercontroller.cpp:192 servercontroller.cpp:743
+msgid "&Filter Rule Editor..."
+msgstr "&Редактор правил фильтрации..."
+
+#: servercontroller.cpp:194 servercontroller.cpp:745
+msgid "&Web Server Configuration..."
+msgstr "Конфигурация Web-сервера..."
+
+#: servercontroller.cpp:197 servercontroller.cpp:747
+msgid "&Preferences..."
+msgstr "&Настройки..."
+
+#: servercontroller.cpp:207
+msgid "Help on Colours..."
+msgstr "Помощь по цветам..."
+
+#: servercontroller.cpp:209
+msgid "Help on Filters..."
+msgstr "Помощь по фильтрам..."
+
+#: servercontroller.cpp:211
+msgid "Help on Keys..."
+msgstr "Помощь по клавишам..."
+
+#: servercontroller.cpp:214
+msgid "About kSirc..."
+msgstr "О программе kSirc..."
+
+#: servercontroller.cpp:232
+msgid "Server Control"
+msgstr "Управление сервером"
+
+#: servercontroller.cpp:293 servercontroller.cpp:457
+msgid "Channels"
+msgstr "Каналы"
+
+#: servercontroller.cpp:293 servercontroller.cpp:457
+msgid "Online"
+msgstr "Включен"
+
+#: servercontroller.cpp:695
+msgid "Active Server Connections"
+msgstr "Активные соединения сервера"
+
+#: servercontroller.cpp:736
+msgid "&Undock"
+msgstr "Отстыковать"
+
+#: ssfeprompt.cpp:25
+msgid "Prompt"
+msgstr "Приглашение"
+
+#: toplevel.cpp:140
+msgid "Lag in seconds to the server"
+msgstr "Лаг в секундах до сервера"
+
+#: toplevel.cpp:144
+msgid "&Ticker Mode"
+msgstr "Режим тикера"
+
+#: toplevel.cpp:166
+msgid "&Cut Window..."
+msgstr "&Обрезать окно..."
+
+#: toplevel.cpp:297
+msgid "&Users"
+msgstr "&Пользователи"
+
+#: welcomeWin.cpp:30
+msgid "Welcome to kSirc"
+msgstr "Добро пожаловать в kSirc"
+
+#: welcomeWinData.cpp:35
+msgid "Show Again"
+msgstr "Показать еще раз"
+
+#: welcomeWinData.cpp:44
+msgid "Dissmiss"
+msgstr "Убрать"
+
+#: KSColourPicker/kscolourpicker.cpp:28
+msgid "kSirc Colour Picker"
+msgstr "Выбор цвета kSirc"
+
+#: KSColourPicker/kscolourpickerData.cpp:30
+msgid "Pick"
+msgstr "Выбрать"
+
+#: KSColourPicker/kscolourpickerData.cpp:46
+msgid "Sample Colour"
+msgstr "Образец цвета"
+
+#: KSCutDialog/KSCutDialog.cpp:27
+msgid "Cut Window"
+msgstr "Обрезать окно"
+
+#: KSCutDialog/KSCutDialogData.cpp:39
+msgid "Cop&y"
+msgstr "&Копировать"
+
+#: KSOpenkSirc/open_ksirc.cpp:38
+msgid "Connect to Server"
+msgstr "Соединиться с сервером"
+
+#: KSOpenkSirc/open_ksirc.cpp:186
+msgid "Not Avalable"
+msgstr "Не доступен"
+
+#: KSOpenkSirc/open_ksircData.cpp:37
+msgid "&Connect"
+msgstr "&Соединение"
+
+#: KSOpenkSirc/open_ksircData.cpp:54
+msgid "&Edit Servers"
+msgstr "Редактировать сервера"
+
+#: KSOpenkSirc/open_ksircData.cpp:86
+msgid "Group:"
+msgstr "Группа:"
+
+#: KSOpenkSirc/open_ksircData.cpp:103
+msgid "Server/Quick Connect to:"
+msgstr "Сервер/Быстрое соединение:"
+
+#: KSOpenkSirc/open_ksircData.cpp:120
+msgid "Port:"
+msgstr "Порт:"
+
+#: KSOpenkSirc/open_ksircData.cpp:147
+msgid "Server Desc:"
+msgstr "Описание сервера:"
+
+#: KSPrefs/UserMenuRefData.cpp:61
+msgid "Menu Name"
+msgstr "Имя меню"
+
+#: KSPrefs/UserMenuRefData.cpp:70
+msgid "Type"
+msgstr "Тип"
+
+#: KSPrefs/UserMenuRefData.cpp:79
+msgid "Command"
+msgstr "Команда"
+
+#: KSPrefs/UserMenuRefData.cpp:87
+msgid "OP Only"
+msgstr "Только OP"
+
+#: KSPrefs/UserMenuRefData.cpp:135
+msgid "Modify"
+msgstr "Изменить"
+
+#: KSPrefs/ksprefs.cpp:9
+msgid "kSirc Prefrences"
+msgstr "Настройки kSirc"
+
+#: KSPrefs/ksprefs.cpp:22
+msgid "&General"
+msgstr "&Общие"
+
+#: KSPrefs/ksprefs.cpp:23
+msgid "&StartUp"
+msgstr "&Запуск"
+
+#: KSPrefs/ksprefs.cpp:24
+msgid "Servers/&Channels"
+msgstr "Серверы/&Каналы"
+
+#: KSPrefs/ksprefs.cpp:25
+msgid "&User Menu"
+msgstr "&Меню пользователя"
+
+#: KSPrefs/ksprefs.cpp:26
+msgid "&Default Filters"
+msgstr "&Фильтры по умолчанию"
+
+#: KSTicker/speeddialogData.cpp:79
+msgid "Tick Interval"
+msgstr "Интервал тикера"
+
+#: KSTicker/speeddialogData.cpp:88
+msgid "Step Size"
+msgstr "Размер шага"
+
+#: puke/kdynlib.cpp:70
+#, c-format
+msgid "No such file \"%s\"!"
+msgstr "Нет такого файла: \"%s\"!"

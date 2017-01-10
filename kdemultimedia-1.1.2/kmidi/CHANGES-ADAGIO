@@ -1,0 +1,44 @@
+
+Changes not connected with Adagio:
+
+     1. Made bank or drumset statements in .cfg files global,
+	so that they have scope within subsequently "source"d files.
+     2. Allowed end of line "#" comments in .cfg files.
+     3. In playmidi.c, at the beginning of "dumb_pass_playing_list",
+	I added a statement to decrement the number of file names
+	to expect on the command line when running under Linux.
+	Timidity was segfaulting.  But maybe the Linux system I tested
+	it on had a bad version of "getopt".  I don't know.
+     4. Changed names of #define's FSCALE, FSCALENEG to FRSCALE,
+	FRSCALENEG to avoid conflict with a system #include file.
+     5. Added loading of .fff files and playing stereo patches like
+	those in the Utopia patch set. (See adagio "cfg.doc".)
+     6. Added buffering to Sun & Linux output routines (sun_a.c &
+	linux_a.c); changed Sun open of /dev/audio to accept default
+	data rate when rate request can't be honored.
+     7. Changed interpretation of envelopes so that sustain point is
+	not held when patch mode is not MODES_SUSTAIN; note off event
+	has no effect when .fff file says mode is "one-shot".
+     8. Note played is now determined by patch frequency center and
+	scaling info.
+     9. Selecting "fast decay" no longer also controls speed of
+	envelope attacks (which are now faster).
+    10. Fixed bug in readmidi.c which prevented changing banks.
+    11. Merged in Iwai's support for awe32 soundfonts.  Presets
+	with two instruments are treated like Utopia's stereo
+	patches, i.e. the two are sounded simultaneously.
+
+Adagio changes:
+
+     1. The part of Timidity not connected with the user interface
+	or reading .mid files is compiled as a driver dsp.o for
+	Adagio's back end.  The new routine "read_seq" in playmidi.c
+	emulates part of Hannu Savolainen's /dev/sequencer for Linux.
+	These portions of code are enclosed in "ifdef ADAGIO"s.
+     2. Loops and envelopes for percussion instruments are not stripped
+	off by default.  (I'm just not convinced this is a good thing
+	to do -- maybe change Timidity, too?)
+     3. Minor changes in Makefile and config.h.  (To compile Timidity,
+	just cd to its directory, make clean, and make.)
+
+			-- Greg Lee, lee@Hawaii.edu, August, 1998.

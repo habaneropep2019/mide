@@ -1,0 +1,386 @@
+# KDEBASE translation to Slovenian language.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Marko Samastur <markos@elite.org>, 1999 
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdmconfig\n"
+"POT-Creation-Date: 1999-07-05 01:31+0200\n"
+"PO-Revision-Date: 1999-07-28 16:27 MEST\n"
+"Last-Translator: Bla¾ Zupanèiè <blaz.zupancic@kiss.uni-lj.si>\n"
+"Language-Team: Slovenian <ftp://ftp.lugos.si/pub/lugos/localization/kde-sl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:78
+msgid "&Appearance"
+msgstr "&Izgled"
+
+#: main.cpp:86
+msgid "&Background"
+msgstr "&Ozadje"
+
+#: main.cpp:89
+msgid "&Users"
+msgstr "&Uporabniki"
+
+#: main.cpp:92
+msgid "&Sessions"
+msgstr "&Seje"
+
+#: main.cpp:95
+msgid "&Lilo"
+msgstr "&LILO"
+
+#: main.cpp:100
+msgid ""
+"usage: kdmconfig [-init | {appearance,font,background,sessions,users,lilo}]\n"
+msgstr ""
+"Uporaba: kdmconfig [-init | {appearance,font,background,sessions,users,lilo}]\n"
+
+#: main.cpp:140
+msgid "KDM Configuration"
+msgstr "Nastavitev KDM"
+
+#: main.cpp:146
+msgid ""
+"You have a local config file %1  - \n"
+"I will save your changes into this file.\n"
+"If this isn't your intention, remove it please!"
+msgstr ""
+"Imate lokalno nastavitveno datoteko %1 -\n"
+"Vanjo bom shranil spremembe.\n"
+"Èe tega ne ¾elite, jo prosim odstranite!"
+
+#: main.cpp:149
+msgid "KDM Setup - Wrong filename"
+msgstr "Nastavitev KDM - Napaèno ime datoteke"
+
+#: kdm-appear.cpp:180 kdm-appear.cpp:199 kdm-appear.cpp:236 kdm-appear.cpp:267
+#: kdm-users.cpp:205 kdm-users.cpp:241 kdm-users.cpp:290 main.cpp:150
+#: main.cpp:159
+msgid "&Ok"
+msgstr "&V redu"
+
+#: main.cpp:156
+#, c-format
+msgid ""
+"Sorry, but you don't have read/write\n"
+"permission to the KDM setup file %1."
+msgstr ""
+"Oprostite, toda nimate dovoljenj za branje/pisanje\n"
+"v namestitveno datoteko KDM."
+
+#: main.cpp:158
+msgid "KDM Setup - Missing privileges"
+msgstr "Nastavitev KDM - Manjkajoèi privilegiji"
+
+#: kdm-appear.cpp:79
+msgid "Greeting string:"
+msgstr "Pozdravni niz:"
+
+#: kdm-appear.cpp:87
+msgid "KDM logo:"
+msgstr "Logo KDM:"
+
+#: kdm-appear.cpp:114 kdm-users.cpp:141
+msgid "Click or drop an image here"
+msgstr "Klikni ali spusti sliko tukaj"
+
+#: kdm-appear.cpp:119
+msgid "GUI Style:"
+msgstr "Slog GUI:"
+
+#: kdm-appear.cpp:125
+msgid "Motif"
+msgstr "Motif"
+
+#: kdm-appear.cpp:126
+msgid "Windows"
+msgstr "Windows"
+
+#: kdm-appear.cpp:137
+msgid "Language"
+msgstr "Jezik"
+
+#: kdm-appear.cpp:140
+msgid "Language:"
+msgstr "Jezik:"
+
+#: kdm-appear.cpp:176 kdm-appear.cpp:263 kdm-users.cpp:286
+msgid ""
+"There was an error loading the image:\n"
+">"
+msgstr ""
+"Pri branju slike je pri¹lo do napake:\n"
+">"
+
+#: kdm-appear.cpp:178 kdm-appear.cpp:198 kdm-users.cpp:203
+msgid "<"
+msgstr "<"
+
+#: kdm-appear.cpp:179 kdm-appear.cpp:199 kdm-appear.cpp:266 kdm-users.cpp:204
+#: kdm-users.cpp:289
+msgid "KDM Setup - Error"
+msgstr "Nastavitev KDE - Napaka"
+
+#: kdm-appear.cpp:196 kdm-users.cpp:201
+msgid ""
+"There was an error saving the image:\n"
+">"
+msgstr ""
+"Pri shranjevanju slike je pri¹lo do napake:\n"
+">"
+
+#: kdm-appear.cpp:229
+msgid ""
+"Sorry, but %1\n"
+"does not seem to be an image file\n"
+"Please use files with these extensions:\n"
+"%2"
+msgstr ""
+"Oprostite, toda ka¾e, da %1\n"
+"ne vsebuje slike.\n"
+"Prosim uporabite datoteke z naslednjimi priponami:\n"
+"%2"
+
+#: kdm-appear.cpp:235 kdm-users.cpp:240
+msgid "KDM Setup - Improper File Extension"
+msgstr "Nastavitev KDM - Neprimerna pripona datoteke"
+
+#: kdm-appear.cpp:265 kdm-users.cpp:288
+msgid ""
+"<\n"
+"It will not be saved..."
+msgstr ""
+"<\n"
+"Ne bo shranjena..."
+
+#: kdm-font.cpp:50
+msgid "Select fonts"
+msgstr "Izberi pisavo"
+
+#: kdm-font.cpp:52
+msgid "Example"
+msgstr "Primer"
+
+#: kdm-font.cpp:54
+msgid "Change font..."
+msgstr "Spremeni pisavo..."
+
+#: kdm-font.cpp:59
+msgid "Greeting"
+msgstr "Pozdrav"
+
+#: kdm-font.cpp:60
+msgid "Fail"
+msgstr "Neuspeh"
+
+#: kdm-font.cpp:61
+msgid "Standard"
+msgstr "Standarden"
+
+#: kdm-font.cpp:158
+msgid "Greeting font"
+msgstr "Pisava pri pozdravu"
+
+#: kdm-font.cpp:162
+msgid "Fail font"
+msgstr "Pisava pri neuspehu"
+
+#: kdm-font.cpp:166
+msgid "Standard font"
+msgstr "Standardna pisava"
+
+#: kdm-bgnd.cpp:73
+msgid "Preview"
+msgstr "Predogled"
+
+#: kdm-bgnd.cpp:98
+msgid "Color"
+msgstr "Barva"
+
+#: kdm-bgnd.cpp:104
+msgid "Solid Color"
+msgstr "Enobarven"
+
+#: kdm-bgnd.cpp:109
+msgid "Horizontal Blend"
+msgstr "Vodoravno prelitje"
+
+#: kdm-bgnd.cpp:114
+msgid "Vertical Blend"
+msgstr "Navpièno prelitje"
+
+#: kdm-bgnd.cpp:134
+msgid "Wallpaper"
+msgstr "Tapeta"
+
+#: kdm-bgnd.cpp:173 kdm-sess.cpp:59
+msgid "None"
+msgstr "Brez"
+
+#: kdm-bgnd.cpp:178
+msgid "Tile"
+msgstr "Tlakovano"
+
+#: kdm-bgnd.cpp:183
+msgid "Center"
+msgstr "Centrirano"
+
+#: kdm-bgnd.cpp:188
+msgid "Scale"
+msgstr "Poveèano"
+
+#: kdm-bgnd.cpp:193
+msgid "TopLeft"
+msgstr "Zgoraj levo"
+
+#: kdm-bgnd.cpp:198
+msgid "TopRight"
+msgstr "Zgoraj desno"
+
+#: kdm-bgnd.cpp:203
+msgid "BottomLeft"
+msgstr "Spodaj levo"
+
+#: kdm-bgnd.cpp:208
+msgid "BottomRight"
+msgstr "Spodaj desno"
+
+#: kdm-bgnd.cpp:213
+msgid "Fancy"
+msgstr "Razko¹no"
+
+#: kdm-users.cpp:54
+msgid "All users"
+msgstr "Vsi uporabniki"
+
+#: kdm-users.cpp:56
+msgid "Selected users"
+msgstr "Izbrani uporabniki"
+
+#: kdm-users.cpp:58
+msgid "No-show users"
+msgstr "Nevidni uporabniki"
+
+#: kdm-users.cpp:85
+msgid ""
+"Show only\n"
+"selected users"
+msgstr ""
+"Prika¾i samo\n"
+"izbrane uporabnike"
+
+#: kdm-users.cpp:92
+msgid ""
+"Show all users\n"
+" but no-show users"
+msgstr ""
+"Prika¾i vse uporabnike\n"
+" razen nevidnih"
+
+#: kdm-users.cpp:103
+msgid "Show users"
+msgstr "Prika¾i uporabnike"
+
+#: kdm-users.cpp:109
+msgid "Sort users"
+msgstr "Uredi uporabnike"
+
+#: kdm-users.cpp:188 kdm-users.cpp:260
+msgid "KDM Setup - No user selected"
+msgstr "Nastavitev KDM - Noben uporabnik ni bil izbran"
+
+#: kdm-users.cpp:189 kdm-users.cpp:261
+msgid "Save image as default image?"
+msgstr "®elite shraniti sliko kot privzeto?"
+
+#: kdm-users.cpp:190 kdm-users.cpp:262
+msgid "&Yes"
+msgstr "&Da"
+
+#: kdm-users.cpp:190 kdm-users.cpp:262
+msgid "&No"
+msgstr "&Ne"
+
+#: kdm-users.cpp:235
+msgid "Sorry, but \n"
+msgstr "Oprostite, toda \n"
+
+#: kdm-users.cpp:237
+msgid ""
+"\n"
+"does not seem to be an image file"
+msgstr ""
+"\n"
+"ni videti kot datoteka s sliko"
+
+#: kdm-users.cpp:238
+msgid ""
+"\n"
+"Please use files with these extensions\n"
+msgstr ""
+"\n"
+"Prosim uporabite datoteke s temi priponami\n"
+
+#: kdm-sess.cpp:55
+msgid "Allow to shutdown"
+msgstr "Dovoli zaustavitev sistema"
+
+#: kdm-sess.cpp:60
+msgid "All"
+msgstr "Vsem"
+
+#: kdm-sess.cpp:61
+msgid "Root Only"
+msgstr "Samo uporabniku root"
+
+#: kdm-sess.cpp:62
+msgid "Console Only"
+msgstr "Samo na konzoli"
+
+#: kdm-sess.cpp:66
+msgid "Commands"
+msgstr "Ukazi"
+
+#: kdm-sess.cpp:67
+msgid "Shutdown"
+msgstr "Zaustavitev sistema"
+
+#: kdm-sess.cpp:73
+msgid "Restart"
+msgstr "Ponoven zagon sistema"
+
+#: kdm-sess.cpp:80
+msgid "Console mode"
+msgstr "Konzolni naèin"
+
+#: kdm-sess.cpp:87
+msgid "Session types"
+msgstr "Tipi sej"
+
+#: kdm-sess.cpp:89
+msgid "New type"
+msgstr "Nov tip"
+
+#: kdm-sess.cpp:99
+msgid "Available types"
+msgstr "Mo¾ni tipi"
+
+#: klangcombo.cpp:131
+msgid "without name!"
+msgstr "brez imena!"
+
+#: kdm-lilo.cpp:51
+msgid "Use Lilo for reboot options"
+msgstr "Uporabite LILO za izbire pri ponovnem zagonu"
+
+#: kdm-lilo.cpp:58
+msgid "Lilo command"
+msgstr "Ukaz LILO"
+
+#: kdm-lilo.cpp:63
+msgid "Lilo map file"
+msgstr "Datoteka s karto LILO"

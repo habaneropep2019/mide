@@ -1,0 +1,232 @@
+# KTranslator Generated File
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-03-30 01:17+0200\n"
+"PO-Revision-Date: Sat Feb 27 1999 20:10:30+0200\n"
+"Last-Translator: Paul Ionescu <ipaul@romsys.ro>\n"
+"Language-Team: Romanian <ro@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KTranslator v 0.4.0\n"
+
+#: info.cpp:50
+#, c-format
+msgid "screen #%d"
+msgstr "ecran #%d"
+
+#: info.cpp:52
+#, c-format
+msgid "  dimensions          : %dx%d pixels (%dx%d mm)\n"
+msgstr "  dimensiune         : %dx%d pixeli (%dx%d mm)\n"
+
+#: info.cpp:56
+#, c-format
+msgid "  resolution          : %dx%d dots per inch\n"
+msgstr "  rezoluþie           : %dx%d puncte pe inch\n"
+
+#: info.cpp:61
+#, c-format
+msgid "  depths (%d)          : "
+msgstr "  adâncime (%d)         :"
+
+#: info.cpp:85
+#, c-format
+msgid "name of display       : %s"
+msgstr "numele ecranului                :    %s"
+
+#: info.cpp:87
+#, c-format
+msgid "version number        : %i.%i"
+msgstr "numãrul versiunii               :    %i.%i"
+
+#: info.cpp:89
+#, c-format
+msgid "vendor string         : %s"
+msgstr "identificator fabricant         :    %s"
+
+#: info.cpp:91
+#, c-format
+msgid "vendor release number : %i"
+msgstr "numarul versiunii fabricantului :    %i"
+
+#: info.cpp:93
+#, c-format
+msgid "default screen number : %i"
+msgstr "numãrul ecranului implicit      :    %i"
+
+#: info.cpp:95
+#, c-format
+msgid "number of screens     : %i"
+msgstr "numãrul de ecrane      :%i"
+
+#: info.cpp:181
+msgid ""
+"No Information available\n"
+" or\n"
+"this system is not yet supported :-("
+msgstr ""
+"Nici o informaþie disponibilã\n"
+" sau\n"
+"acest sistem nu este încã suportat :-("
+
+#: info_fbsd.cpp:73
+#, c-format
+msgid "%s, unknown speed"
+msgstr "%s, nu se ºtie viteza"
+
+#: info_fbsd.cpp:75
+#, c-format
+msgid "%s running at %s MHz"
+msgstr "%s rulând la %s MHz"
+
+#: info_fbsd.cpp:213
+msgid "Ahh couldn't open fstab!"
+msgstr "Nu pot deschide /etc/fstab !"
+
+#: info_fbsd.cpp:220 info_fbsd.cpp:221
+msgid "Device"
+msgstr "Dispozitiv"
+
+#: info_fbsd.cpp:223 info_fbsd.cpp:224
+msgid "Mount Point"
+msgstr "Punct de montare"
+
+#: info_fbsd.cpp:226 info_fbsd.cpp:227
+msgid "FS Type"
+msgstr "Tip sistem de fiºiere"
+
+#: info_fbsd.cpp:229 info_fbsd.cpp:230
+msgid "Mount Options"
+msgstr "Opþiuni de montare"
+
+#: info_hpux.cpp:54
+msgid "unknown CPU type"
+msgstr "Procesor de tip necunoscut"
+
+#: info_hpux.cpp:62
+msgid "unavailable"
+msgstr "nu este disponibil"
+
+#: info_hpux.cpp:67
+msgid "Number of active processor(s)= "
+msgstr "Numãrul procesoarelor active = "
+
+#: info_linux.cpp:99
+msgid "Value"
+msgstr "Valoare"
+
+#: info_linux.cpp:114
+msgid "DMA-Channel"
+msgstr "Canal-DMA"
+
+#: info_linux.cpp:115 info_linux.cpp:128
+msgid "used by"
+msgstr "folosit de"
+
+#: info_linux.cpp:127
+msgid "I/O-Range"
+msgstr "regiune I/O"
+
+#: main.cpp:79
+msgid "&Memory"
+msgstr "&Memorie"
+
+#: main.cpp:82
+msgid "&Processor"
+msgstr "&Procesor"
+
+#: main.cpp:85
+msgid "&Interrupts"
+msgstr "&Întreruperi"
+
+#: main.cpp:88
+msgid "DMA-C&hannels"
+msgstr "&Canale-DMA"
+
+#: main.cpp:91
+msgid "&IO-Ports"
+msgstr "&Porturi-I/O"
+
+#: main.cpp:94
+msgid "PCI-&Bus"
+msgstr "&Magistralã-PCI"
+
+#: main.cpp:97
+msgid "S&ound"
+msgstr "&Sunet"
+
+#: main.cpp:100
+msgid "&Devices"
+msgstr "&Dispozitive"
+
+#: main.cpp:103
+msgid "S&CSI"
+msgstr "S&CSI"
+
+#: main.cpp:106
+msgid "P&artitions"
+msgstr "P&artiþii"
+
+#: main.cpp:109
+msgid "&X-Server"
+msgstr "Server de &X"
+
+#: main.cpp:120
+msgid ""
+"usage: kcminfo [-init | "
+"{memory,processor,interrupts,dma,ioports,pci,sound,devices,scsi,partitions,xs"
+"erver}]\n"
+msgstr ""
+"folosire: kcminfo [-init | \n"
+"{memory,processor,interrupts,dma,ioports,pci,sound,devices,scsi,partitions,xs"
+"erver}]\n"
+
+#: main.cpp:148
+msgid "System Information"
+msgstr "Informaþii sistem"
+
+#: memory.cpp:15
+msgid "Total memory"
+msgstr "Memorie totalã"
+
+#: memory.cpp:25
+msgid "Free memory"
+msgstr "Memorie liberã"
+
+#: memory.cpp:33
+msgid "Shared memory"
+msgstr "Memorie partajatã"
+
+#: memory.cpp:41
+msgid "Buffer memory"
+msgstr "Memorie tampon"
+
+#: memory.cpp:49
+msgid "Swap memory"
+msgstr "Memorie de swap"
+
+#: memory.cpp:57
+msgid "Free swap memory"
+msgstr "Memorie liberã de swap"
+
+#: memory.cpp:78
+#, c-format
+msgid "%10ld bytes  = %8.2f MB"
+msgstr "%10ld octeþi = %8.2f MB"
+
+#: memory.cpp:100 memory.cpp:101 memory.cpp:102 memory.cpp:103 memory.cpp:104
+#: memory.cpp:105 memory_fbsd.cpp:25 memory_fbsd.cpp:26 memory_fbsd.cpp:27
+msgid "Not available"
+msgstr "Nu e disponibil"
+
+#: memory_hpux.cpp:23 memory_hpux.cpp:24 memory_hpux.cpp:25 memory_hpux.cpp:26
+#: memory_sgi.cpp:30
+msgid "Not Available"
+msgstr "Nu e disponibil"

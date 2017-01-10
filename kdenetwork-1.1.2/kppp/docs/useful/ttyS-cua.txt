@@ -1,0 +1,46 @@
+From: "Theodore Y. Ts'o" <tytso@mit.edu>
+To: Tony Nugent <tonyn@sctnugen.ppp.gu.edu.au>
+Cc: linux-net@vger.rutgers.edu, linux-ppp@vger.rutgers.edu
+Subject: Re: /dev/cua? Vs /dev/ttyS? (was: Re: co-existance of pppd and mgetty ?)
+Date: Mon, 13 May 1996 19:51:04 +0200
+Status: ROr
+
+   Date: 	Mon, 13 May 1996 07:57:09 +1000
+   From: Tony Nugent <tonyn@sctnugen.ppp.gu.edu.au>
+
+   Can someone kindly explain the difference between the /dev/cua? and
+   /dev/ttyS? devices?
+
+/dev/ttySxx devices are fully POSIX-compliant TTY devices.  If you are
+only going to be using one set of tty devices, you should be using
+/dev/ttySxx. 
+
+/dev/cuaXX devices are different from /dev/ttySXX in two ways --- first
+of all, they will allow you to open the device even if CLOCAL is not set
+and the O_NONBLOCK flag was not given to the open device.  This allows
+programs that don't use the POSIX-mondated interface for opening
+/dev/ttySxx devices to be able to use /dev/cuaXX to make outgoing phone
+calls on their modem (cu stands for "callout", and is taken from SunOS).
+
+The second way in which /dev/cuaXX differs from /dev/ttySXX is that if
+they are used, they will trigger a simplistic kernel-based locking
+scheme:  If /dev/ttySXX is opened by one or more processes, then an
+attempt to open /dev/cuaXX will return EAGAIN.  If /dev/cuaXX is opened
+by one or more processes, then an attempt to open /dev/ttySXX will
+result the open blocking until /dev/cuaXX is closed, and the carrier
+detect line goes high.
+
+While this will allow for simple lockouts between a user using a modem
+for callout and a getty listening on the line for logins, it doesn't
+work if you need to arbitrate between multiple programs wanting to do
+dialout --- for example, users wanting to do dialout and UUCP.
+
+I originally implemented the cuaXX/ttySXX lockout mechanism back before
+FSSTND established a standard convention for the use of tty lock files.
+Now that it's there, people should use the tty lock files and not try
+using /dev/cuaXX.  The only reason why /dev/cuaXX hasn't disappeared yet
+is for backwards compatibility reasons.
+
+						- Ted
+
+

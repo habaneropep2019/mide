@@ -1,0 +1,443 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-03-19 01:51+0100\n"
+"Last-Translator: Peter Ivanyi <ivanyi@internet.sk>\n"
+"Content-Type: text/plain; charset=\n"
+"Date: 1997-12-07 12:23:22-0500\n"
+"From: root,,, <root@petit>\n"
+"Xgettext-Options: -C -ktranslate -kktr\n"
+"Files: ktop.cpp memory.cpp settings.cpp cpu.cpp widgets.cpp\n"
+
+#: ktop.cpp:66
+msgid "88888 Processes"
+msgstr "88888 Procesov"
+
+#: ktop.cpp:67
+msgid "Memory: 888888 kB used, 888888 kB free"
+msgstr "Pamä»: 888888 kB pou¾itých, 888888 kB voµných"
+
+#: ktop.cpp:69
+msgid "Swap: 888888 kB used, 888888 kB free"
+msgstr "Swap: 888888 kB pou¾itých, 888888 kB voµných"
+
+#: ktop.cpp:76
+msgid "KDE Task Manager"
+msgstr "KDE mana¾ér úloh"
+
+#: ktop.cpp:137
+#, c-format
+msgid "%d Processes"
+msgstr "%d Procesov"
+
+#: ktop.cpp:142
+#, c-format
+msgid "Memory: %d kB used, %d kB free"
+msgstr "Pamä»: %d kB pou¾itých, %d kB voµných"
+
+#: ktop.cpp:147
+#, c-format
+msgid "Swap: %d kB used, %d kB free"
+msgstr "Swap: %d kB pou¾itých, %d kB voµných"
+
+#: MainMenu.cpp:51
+#, c-format
+msgid ""
+"KDE Task Manager (KTop) Version %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+msgstr ""
+"KDE Mana¾ér úloh (KTop) Verzia %s\n"
+"\n"
+"Copyright:\n"
+"1996 A. Sanda <alex@darkstar.ping.at>\n"
+"1997 Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 Bernd Johannes Wuebben  <wuebben@kde.org>\n"
+"1998 Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+
+#: MainMenu.cpp:64
+msgid "Manual Refresh"
+msgstr "Manuálne aktualizova»"
+
+#: MainMenu.cpp:65
+msgid "Slow Refresh"
+msgstr "Pomalá aktualizácia"
+
+#: MainMenu.cpp:66
+msgid "Medium Refresh"
+msgstr "Stredne rýchla aktualizácia"
+
+#: MainMenu.cpp:67
+msgid "Fast Refresh"
+msgstr "Rýchla aktualizácia"
+
+#: MainMenu.cpp:79
+msgid "&Refresh Rate"
+msgstr "&Aktualizácia"
+
+#: MainMenu.cpp:80
+msgid "&Process"
+msgstr "&Proces"
+
+#: ProcessMenu.cpp:44
+msgid "Renice Task..."
+msgstr "Renice procesu..."
+
+#: ProcessMenu.cpp:47
+msgid "send SIGINT\t(ctrl-c)"
+msgstr "posla» SIGINT\t(ctrl-c)"
+
+#: ProcessMenu.cpp:48
+msgid "send SIGQUIT\t(core)"
+msgstr "posla» SIGQUIT\t(core)"
+
+#: ProcessMenu.cpp:49
+msgid "send SIGTERM\t(term.)"
+msgstr "po¹ku SIGTERM\t(ukon.)"
+
+#: ProcessMenu.cpp:50
+msgid "send SIGKILL\t(term.)"
+msgstr "posla» SIGTERM\t(ukon.)"
+
+#: ProcessMenu.cpp:52
+msgid "send SIGUSR1\t(user1)"
+msgstr "posla» SIGUSR1\t(u¾ív1)"
+
+#: ProcessMenu.cpp:53
+msgid "send SIGUSR2\t(user2)"
+msgstr "posla» SIGUSR2\t(u¾ív2)"
+
+#: ProcessMenu.cpp:74 ProcessMenu.cpp:86 ProcessMenu.cpp:150
+#: ProcessMenu.cpp:158 ProcessMenu.cpp:176
+msgid "Task Manager"
+msgstr "Mana¾ér úloh"
+
+#: ProcessMenu.cpp:75
+msgid "You need to select a process first!"
+msgstr "Najprv musíte ¹pecifikova» proces!"
+
+#: ProcessMenu.cpp:85 ProcessMenu.cpp:149
+#, c-format
+msgid "The process %d is no longer persistent."
+msgstr "Proces %d u¾ neexistuje."
+
+#: ProcessMenu.cpp:98
+msgid "SIGINT"
+msgstr "SIGINT"
+
+#: ProcessMenu.cpp:101
+msgid "SIGQUIT"
+msgstr "SIGQUIT"
+
+#: ProcessMenu.cpp:104
+msgid "SIGTERM"
+msgstr "SIGTERM"
+
+#: ProcessMenu.cpp:107
+msgid "SIGKILL"
+msgstr "SIGKILL"
+
+#: ProcessMenu.cpp:110
+msgid "SIGUSR1"
+msgstr "SIGUSR1"
+
+#: ProcessMenu.cpp:113
+msgid "SIGUSR2"
+msgstr "SIGUSR2"
+
+#: ProcessMenu.cpp:116
+msgid "Unkown Signal"
+msgstr "Neznámy signál"
+
+#: ProcessMenu.cpp:122
+#, c-format
+msgid ""
+"Send signal %s to process %d?\n"
+"(Process name: %s  Owner: %s)\n"
+msgstr ""
+"Posla» signál %s procesu %d?\n"
+"(Proces menom %s, vlastník %s)\n"
+
+#: ProcessMenu.cpp:126
+msgid "Abort"
+msgstr "Zru¹i»"
+
+#: ProcessMenu.cpp:159 ProcessMenu.cpp:177
+msgid ""
+"Renice error...\n"
+"Specified process does not exist\n"
+"or permission denied."
+msgstr ""
+"Chyba renice...\n"
+"©pecifikovaný proces neexistuje\n"
+"alebo naò nemáte právo."
+
+#: TaskMan.cpp:80
+msgid "Processes &List"
+msgstr "Zoznam &procesov"
+
+#: TaskMan.cpp:81
+msgid "Performance &Meter"
+msgstr "Monitor &výkonu"
+
+#: ProcListPage.cpp:42
+msgid "Running Processes"
+msgstr "Be¾iace procesy"
+
+#: ProcListPage.cpp:49
+msgid "Show Tree"
+msgstr "Ukáza» strom"
+
+#: ProcListPage.cpp:60
+msgid "All processes"
+msgstr "V¹etky procesy"
+
+#: ProcListPage.cpp:61
+msgid "System processes"
+msgstr "Systémové procesy"
+
+#: ProcListPage.cpp:62
+msgid "User processes"
+msgstr "U¾ívateµské procesy"
+
+#: ProcListPage.cpp:63
+msgid "Own processes"
+msgstr "Vlastné procesy"
+
+#: ProcListPage.cpp:79
+msgid "Refresh Now"
+msgstr "Aktualizova» teraz"
+
+#: ProcListPage.cpp:85
+msgid "Kill task"
+msgstr "Ukonèi» úlohu"
+
+#: ProcessList.cpp:227
+msgid "Remove Column"
+msgstr "Odstráni» ståpec"
+
+#: ProcessList.cpp:228
+msgid "Add Column"
+msgstr "Prida» ståpec"
+
+#: ProcessList.cpp:229
+msgid "Help on Column"
+msgstr "Pomocník na ståpec"
+
+#: ProcessList.cpp:691 ProcessList.cpp:692
+msgid "Name"
+msgstr "Meno"
+
+#: ProcessList.cpp:695 ProcessList.cpp:696
+msgid "PID"
+msgstr "PID"
+
+#: ProcessList.cpp:699
+msgid "User ID"
+msgstr "U¾ív ID"
+
+#: ProcessList.cpp:700
+msgid "CPU"
+msgstr "CPU"
+
+#: ProcessList.cpp:701
+msgid "Time"
+msgstr "Èas"
+
+#: ProcessList.cpp:702
+msgid "Nice"
+msgstr "Nice"
+
+#: ProcessList.cpp:703
+msgid "Status"
+msgstr "Stav"
+
+#: ProcessList.cpp:704
+msgid "Memory"
+msgstr "Pamä»"
+
+#: ProcessList.cpp:705
+msgid "Resident"
+msgstr "Rezident"
+
+#: ProcessList.cpp:706
+msgid "Shared"
+msgstr "Zdieµaný"
+
+#: ProcessList.cpp:707
+msgid "Command line"
+msgstr "Príkazový riadok"
+
+#: OSProcessList.cpp:76 OSProcessList.cpp:104
+msgid ""
+"Cannot open directory '/proc'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Nemô¾em otvori» prieèinok '/proc'!\n"
+"Jadro treba skompilova» s podporou\n"
+"pre /proc filesystém!"
+
+#: OSProcessList.cpp:266
+msgid "Cannot read status of processes\n"
+msgstr "Nemô¾em preèíta» stav procesov\n"
+
+#: OSProcessList.cpp:367
+msgid "Your OS is not supported yet.  Sorry"
+msgstr "Bohu¾iaµ, vá¹ operaèný systém e¹te nie je podporovaný."
+
+#: OSProcess.cpp:123 OSProcess.cpp:154 OSProcess.cpp:171
+#, c-format
+msgid "Cannot open %s!\n"
+msgstr "Nemô¾em otvori» %s!\n"
+
+#: OSProcess.cpp:183
+msgid "Run"
+msgstr "Be¾iace"
+
+#: OSProcess.cpp:186
+msgid "Sleep"
+msgstr "Spiace"
+
+#: OSProcess.cpp:189
+msgid "Disk"
+msgstr "Disk"
+
+#: OSProcess.cpp:192
+msgid "Zombie"
+msgstr "Zombie"
+
+#: OSProcess.cpp:198
+msgid "Swap"
+msgstr "Swap"
+
+#: OSProcess.cpp:201
+msgid "????"
+msgstr "????"
+
+#: OSProcess.cpp:320
+#, c-format
+msgid "Could not set new nice level for process %d"
+msgstr "Nemô¾em nastavi» novú nice hodnotu pre proces %d"
+
+#: OSProcess.cpp:334
+#, c-format
+msgid "Cound not send signal %d to process %d"
+msgstr "Nemô¾em posla» signál %d procesu %d"
+
+#: PerfMonPage.cpp:49
+msgid "CPU Load History"
+msgstr "História za»a¾enia CPU"
+
+#: PerfMonPage.cpp:52
+msgid "System Load History"
+msgstr "História za»a¾enia systému"
+
+#: PerfMonPage.cpp:55 PerfMonPage.cpp:113
+msgid "User (%)"
+msgstr "U¾ív (%)"
+
+#: PerfMonPage.cpp:56 PerfMonPage.cpp:114
+msgid "Nice (%)"
+msgstr "Nice (%)"
+
+#: PerfMonPage.cpp:57 PerfMonPage.cpp:115
+msgid "System (%)"
+msgstr "Systém (%)"
+
+#: PerfMonPage.cpp:64
+msgid "Memory Usage History"
+msgstr "História vyu¾itia pamäte"
+
+#: PerfMonPage.cpp:66
+msgid "Program (kB)"
+msgstr "Program (kB)"
+
+#: PerfMonPage.cpp:67
+msgid "Buffer (kB)"
+msgstr "Buffer (kB)"
+
+#: PerfMonPage.cpp:68
+msgid "Cache (kB)"
+msgstr "Ke¹ (kB)"
+
+#: PerfMonPage.cpp:69
+msgid "Swap (kB)"
+msgstr "Swap (kB)"
+
+#: PerfMonPage.cpp:109
+#, c-format
+msgid "CPU%d Load History"
+msgstr "História za»a¾enia CPU%d"
+
+#: OSStatus.cpp:98
+msgid ""
+"Cannot open file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Nemô¾em otvori» súbor '/proc/stat'!\n"
+"Jadro musí by» skompilované s podporou\n"
+"pre /proc filesystém!"
+
+#: OSStatus.cpp:120 OSStatus.cpp:303 OSStatus.cpp:378
+msgid ""
+"Cannot open file '/proc/meminfo'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Nemô¾em otvori» súbor '/proc/meminfo'!\n"
+"Jadro musí by» skompilované s podporou\n"
+"pre /proc filesystém!"
+
+#: OSStatus.cpp:311
+msgid "Cannot read memory info file '/proc/meminfo'!\n"
+msgstr "Nemô¾em èíta» informácie o pamäti '/proc/meminfo'!\n"
+
+#: OSStatus.cpp:354
+#, c-format
+msgid ""
+"Cannot read info for %s from file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Nemô¾em preèíta» info pre %s zo súboru '/proc/stat'!\n"
+"Jadro musí by» skompilované s podporou\n"
+"pre /proc filesystém!"
+
+#: OSStatus.cpp:386
+msgid "Cannot read swap info from '/proc/meminfo'!\n"
+msgstr "Nemô¾em èíta» informácie o swapu z '/proc/meminfo'!\n"
+
+#: OSStatus.cpp:575 OSStatus.cpp:588 OSStatus.cpp:615 OSStatus.cpp:624
+msgid ""
+"Your system is not currently supported.\n"
+"Sorry"
+msgstr ""
+"Vá¹ systém bohu¾iaµ nie je momentálne\n"
+"podporovaný."
+
+#: ReniceDlg.cpp:32
+msgid "Renice Process"
+msgstr "Renice procesu"
+
+#: ReniceDlg.cpp:39
+#, c-format
+msgid ""
+"You are about the change the scheduling priority of\n"
+"process %d. Be aware that only the Superuser (root)\n"
+"can decrease the nice level of a process. The smaller\n"
+"the number is the higher is the priority.\n"
+"\n"
+"Please enter the desired nice level:"
+msgstr ""
+"Práve chcete zmeni» prioritu èasovania procesu %d\n"
+".Nezabudnite, ¾e len Superu¾ívateµ (root) mô¾e zní¾i»\n"
+"nice hodnotu procesu. Èím ni¾¹ie èíslo, tým vy¹¹ia priorita.\n"
+"\n"
+"Prosím zadajte ¾iadanú hodnotu nice:"

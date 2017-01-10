@@ -1,0 +1,167 @@
+<!doctype linuxdoc system>
+
+<!-- The KMedia Handbook.
+
+ -->
+
+<article>
+
+<!-- Title information -->
+
+<title>The KMedia Handbook
+<author>Christian Esken, <tt/esken@kde.org/
+<date>Version 0.60, 27.2.1998
+<abstract>This Handbook describes KMedia Version 0.60
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+
+<sect>Introduction
+
+<p>
+KMedia is KDE's generic media player. The base system comes with the
+ability to play digital audio data (WAV) through KDE's audio server.
+You will need the KDE base system (kdelibs + kdebase) for this.
+It can be extended by writing mediatool compliant player modules.
+
+<p>
+<sect1>New<p>
+<itemize>
+<item>SGML documentation
+</itemize>
+
+
+<P>
+Much fun with KDE's multimedia application wishes
+<p>
+<tt>Christian Esken</tt>
+<p>
+<htmlurl url="mailto:esken@kde.org" name="esken@kde.org">
+<p>
+
+<sect>Installation
+<p>
+<sect1>How to obtain KMedia
+<p>
+KMedia is a core application of the KDE project <url url="http://www.kde.org">.
+KMedia can be found on <url url="ftp://ftp.kde.org/pub/kde/">, the main ftp site
+of the KDE project.
+
+<sect1>Requirements
+<p>
+In order to successfully compile KMedia, you need the latest versions of <tt> libkdecore</tt>
+and <tt> libkdeui</tt>. All required libraries as well as KMedia itself can be found
+on <url url="ftp://ftp.kde.org/pub/kde/">. 
+
+
+
+<sect1>Compilation and installation
+<p>
+
+In order to compile and install KMedia on your system, type the following in the base 
+directory of the KMedia distribution:
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+
+Since KMedia uses <tt>autoconf</tt> you should have not trouble compiling it.
+Should you run into problems please report them to the <sf/KDE/ mailing lists.
+
+<sect>Onscreen Fundamentals
+<p>
+
+KMedia usage is simple. Start the program and drag a WAV file into the
+window. The file will be played immediately. If the file does not get played
+your sound device might be busy.
+
+
+<p>
+
+<sect1>Buttons
+<p>
+The meaning of all buttons should be well known. If you can operate a tape deck or
+CD Player, you should have no problem in using KMedia. Only applicable buttons
+are usable. For example, ejecting a CD makes sense, but not ejecting a WAV Media.
+
+
+
+<sect1>Multiple media players
+<p>
+You can open multiple KMedia windows. Either by using File->New view
+or by starting another media player through kpanel.
+
+If you want KMedia to use a specific output device (e.g. soundcard)
+you can set it in kmedia's configuration dialog. Attention: This is
+currently unimplemented!!!
+You can set  the device using numbers. 0 means the default
+device, 1 the primary, 2 the secondary device and so on.
+
+
+
+
+
+
+<p>
+<sect1> Key Bindings
+<p>
+KMedia honors the following key binding.
+
+
+<itemize>
+<item><tt/Control-N/ Open new media player window
+</itemize>
+
+<sect>The Menu Entries
+<p>
+<sect1>File
+<p>
+<sect2>Open...
+<p>
+Opens a media. A file selector pops up and asks for a Media.
+<p>
+<sect2>New view 
+<p>
+Open new media player window
+<p>
+<sect2>Exit
+<p>
+Closes this media player
+
+
+<sect2>Quit
+<p>
+Quits the Mixer.
+<p>
+
+<sect1>Options
+<sect2>Mixer
+<p>
+Opens a mixer window. You can set the mixer you want in the preferences dialog
+<sect2>Preferences
+<p>
+Opens the KMedia options dialog
+<p>
+
+
+<sect1>Help
+<p>
+<sect2>Help
+<p>
+Invokes the KDE help system with the KMedia help pages displayed.
+<sect2>About kmedia...
+<p>
+Displays essential information about KMedia.
+
+<!--
+<sect>Questions and answers
+-->
+
+
+<p>
+</article>

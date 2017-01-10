@@ -1,0 +1,605 @@
+# KSCD CATALAN TRANSLATION
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Sebastià Pla <sastia@redestb.es>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kscd\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: 1999-02-10 21:42+0100\n"
+"Last-Translator: Sebastià Pla <sastia@redestb.es>\n"
+"Language-Team: CATALAN <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "Directori de la base CDDB"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "Enviaments CDDB a:"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "Servidor CDDB:"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "Actualitza"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "Habilita CDDB remot"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "Omissió"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "Procuració HTTP per l'accés a CDDB"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "Editor de la base de dades de CD"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"Temps total:\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"Temps total:\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "Usa aquest editor per anotar aquesta pista"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "Usa aquest editor per anotar el títol"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "Seleccioneu una categoria o premeu Cancel·la"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "A quina categoria pertany el CD?"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "S'està enviant l'entrada cddb: %s\n"
+
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"No s'ha pogut enviar el contingut a:\n"
+" %s"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "Sota quina categoria voldríeu desar aquesta entrada CDDB?"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"No s'ha pogut escriure en el fitxer:\n"
+"%s\n"
+"Comproveu els permisos i creeu els directoris de categories."
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "Error Kscd"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "L'entrada de la base de dades no és vàlida"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"El camp Artista / Títol del disc no s'ha omplert.\n"
+"Corregiu l'entrada i torneu a provar."
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"El camp Artista / Títol del disc no s'ha omplert correctament.\n"
+"Separeu l'artista del títol del CD amb una barra \n"
+"tal com: Ovidi Montllor / Homenatge a Teresa \n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"No poden estar buits tots els títol de pista.\n"
+"Corregiu l'entrada i torneu a provar."
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "Error intern"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Envieu un emili a l'autor."
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "Repertori no vàlid\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "Carrega"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "Editor del repertori"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "Edita el títol de pista"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "Artista / Títol"
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "Pista / Durada / Títol"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "Info ext"
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "ID de disc"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "Envia"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "Configura kscd"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "Color del LED:"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "Color de fons:"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "Dispositiu CDROM:"
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Comanda de correu:"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "Fullejador WWW"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "Usa kfm com a fullejador"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "Usa un fullejador propi:"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "Mostra les pistes"
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "Habilita l'encastat al plafó"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr "Engega en tancar la safata"
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr "Autoencasta en minimitzar"
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr "Atura en sortir"
+
+#: configdlg.cpp:190
+msgid "Eject on Finish"
+msgstr "Expulsa en acabar"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "Reproducció/Pausa"
+
+#: docking.cpp:75
+msgid "Forward"
+msgstr "Endavant"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "Enrere"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "Següent"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "Anterior"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "Expulsa"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "Minimitza"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr ""
+"No s'ha pogut casar. Seleccioneu el CD apropiat de la llista per triar que "
+"es presenta a sota."
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "Seleccioneu un títol de disc o premeu Cancel·la"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr "S'ha enviat el registre amb èxit"
+
+#: kscd.cpp:236
+msgid "Error connecting to server."
+msgstr "Error en connectar al servidor."
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr "No s'ha connectat."
+
+#: kscd.cpp:242
+msgid "Connection timed out."
+msgstr "La connexió ha expirat."
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr "Expiració mentres s'esperava una interacció amb el servidor."
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+"El servidor ha dit:\n"
+"\"%s\""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+"Error #%d en enviar un missatge via SMTP.\n"
+"\n"
+"%s"
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "Vol: --"
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Concerts"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "Compres"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Màgic"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "Repeteix CD"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "Selecció de pistes"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "Endavant 30 segons"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "Enrere 30 segons"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "Pista següent"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "Pista anterior"
+
+#: kscd.cpp:570
+msgid "Quit Kscd"
+msgstr "Tanca Kscd"
+
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "Cycle Time Display"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Configura Kscd"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "Expulsa el CD"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "L'artista a la Web"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "Reproducció aleatòria"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "Diàleg CDDB"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "Control de volum del CD"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "Reprod."
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr "%02d: <Uh?>"
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "Pausa"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "Aleatòri"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Estrany..."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "Aturat"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "Repetició"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "Expulsió"
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "Configurador kscd"
+
+#: kscd.cpp:1008
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Actualment fa el manteniment:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd conté codi de:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Moltes gràcies a Ti Kan i Steve Scherf, els inventors del concepte de base "
+"de dades CDDB. Visiteu http://www.cddb.com per més informació sobre CDDB.\n"
+"\n"
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"KSCD Màgic està basat en Synaesthesia per Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+
+#: kscd.cpp:1025
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Gràcies a Vadim Zaliva <lord@crocodile.org>\n"
+"pel seu treball al codi de procuració http.\n"
+"\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr "Configuració SMTP"
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Opcions Kscd"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Màgic"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "Vol: %02d%%"
+
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"Error en accedir o llegir el CDROM.\n"
+"Assegureu-vos que teniu permís d'accés a:\n"
+"%s"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "Preparat"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "Expulsat"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "No s'ha pogut obtenir la llista de servidors CDDB."
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "No s'ha trobat cap entrada CDDB."
+
+#: kscd.cpp:1834 kscd.cpp:1844
+msgid "Error getting CDDB entry."
+msgstr "Error en l'obtenció de l'entrada CDDB."
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "La petició CDDB ha expirat."
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "Pis pen"
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Tot seg"
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Tot pen"
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "Pis seg"
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "No es pot engegar kscdmagic."
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"KSCD Màgic ha acabat anormalment.\n"
+"Esteu segur que kscdmagic és instal·lat?"
+
+#: kscd.cpp:2368
+msgid "Enter the local CDDB base Directory"
+msgstr "Introduïu el directori de la base de dades local CDDB"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: mostra les opcions de la línia de comanda\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: habilita la sortida d'errors.\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "Màgic Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "Amplada de la finestra:"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "Alçada de la finestra:"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "Lluminositat MAGIC:"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr "Habilita l'enviament via SMTP"
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr "Adreça:Port SMTP"
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr "Adreça de correu"

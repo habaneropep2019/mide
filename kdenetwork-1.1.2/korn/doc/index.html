@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//SoftQuad//DTD HTML 3.2 + extensions for HoTMetaL PRO 3.0(U) 19961211//EN"
+ "hmpro3.dtd">
+<HTML>
+<HEAD>
+<TITLE>KOrn!</TITLE></HEAD>
+<BODY>
+<TABLE WIDTH="100%" BORDER="0">
+<TR>
+<TD VALIGN="BOTTOM" ALIGN="LEFT">
+<H2><A NAME="_top">KOrn Help</A></H2></TD>
+<TD VALIGN="BOTTOM" ALIGN="RIGHT">
+<P><SMALL>For KOrn version 0.3.</SMALL></P></TD></TR></TABLE>
+<HR>
+<OL>
+<LI><A HREF="#what">What is KOrn?</A></LI>
+<LI><A HREF="#who">For whom is KOrn written?</A></LI>
+<LI><A HREF="#fetch">From where do I get KOrn?</A></LI>
+<LI><A HREF="#setup">How do I set up KOrn?</A></LI>
+<LI><A HREF="#features">Known bugs and limitations</A></LI>
+<LI><A HREF="#contact">Contact Info</A></LI></OL>
+<HR>
+<OL>
+<LI><STRONG><A NAME="what">What is KOrn?</A></STRONG>
+<P>KOrn is a <A HREF="http://www.kde.org/">KDE</A>-compliant X11 program that
+monitors UNIX mailbox files for incoming and unread messsages. It periodically
+scans each mailbox and displays the number of unread messages it contains in a
+small on-screen button. Features include: </P>
+<UL>
+<LI> Per-box scan frequency (poll time)</LI>
+<LI>Horizontal or vertical layout of buttons</LI>
+<LI>Per-box customization of commands to be executed on new mail notification
+and button click</LI>
+<LI>Fairly simple dialog for setup and customization </LI>
+<LI>Doesn't use Xt/Xaw. :-)</LI></UL>
+<P>For those who asked, it is named KOrn because 1. it begins with K, 2. there
+are too many KDE programs with serious-sounding functional names, 3. I attended
+a fabulous <A HREF="http://www.korn.com/">KoRn</A> concert around the time 0.1
+was written.</P></LI>
+<LI><STRONG><A NAME="who">For whom is KOrn written</A></STRONG>
+<P>People who are subscribed to several internet mailing lists and/or filter
+received email messages into separate folders (with  <I>procmail</I>, for
+example). No need to run 10  xbiffs or qbiffs... just run one KOrn .</P></LI>
+<LI><STRONG><A NAME="fetch">From where do I get KOrn?</A></STRONG>
+<P>The latest version of KOrn is <I>0.3.</I> It can be fetched from </P>
+<UL>
+<LI>The KDE FTP Site and mirrors, in
+<A HREF="ftp://ftp.kde.org/pub/kde/unstable/apps/network/">/pub/kde/unstable/apps/network</A></LI>
+<LI>From the author's FTP repository, at
+<A HREF="ftp://ftp.ph.unimelb.edu.au/pub/users/taj/kde/">ftp://ftp.ph.unimelb.edu.au/pub/users/taj/kde/</A></LI></UL>
+<P>You will also require a computer running X11, UNIX and the
+<A HREF="http://www.kde.org/">KDE</A> and <A HREF="http://www.troll.no/">Qt</A>
+libraries. So far it has only been tested on Linux/x86 with XFree86. </P></LI>
+<LI><STRONG><A NAME="setup">How do I set up KOrn?</A></STRONG>
+<P>Compiling and Installation instructions are generic to the KDE.</P>
+<P>To configure KOrn to your taste once it is installed, simply run KOrn (or
+type &quot;korn&quot; at the UNIX command line). You will be lead through a
+(hopefully) simple installation procedure.</P>
+
+<TABLE BORDER="0" WIDTH="100%">
+<TR>
+<TD WIDTH="25%"><B>Field</B></TD>
+<TD><B>Explanation</B></TD></TR>
+<TR>
+<TD VALIGN="TOP" ALIGN="LEFT"><I>Name</I></TD>
+<TD VALIGN="TOP" ALIGN="LEFT"> A short <B>unique</B> reference name for the
+box. Do not put commas in this name.</TD></TR>
+<TR>
+<TD VALIGN="TOP" ALIGN="LEFT"><I>Caption</I></TD>
+<TD VALIGN="TOP" ALIGN="LEFT">The message to be displayed in the tooltip for
+the box.</TD></TR>
+<TR>
+<TD VALIGN="TOP" ALIGN="LEFT"><I>Path</I></TD>
+<TD VALIGN="TOP" ALIGN="LEFT">The pathname of the mailbox to monitor</TD></TR>
+<TR>
+<TD VALIGN="TOP" ALIGN="LEFT"><I>Poll time</I></TD>
+<TD VALIGN="TOP" ALIGN="LEFT">The interval, in seconds, between scans of this
+box. It is not wise to make this value much smaller than 20 seconds, since
+smaller intervals mean higher CPU usage.</TD></TR>
+<TR>
+<TD VALIGN="TOP" ALIGN="LEFT"><I>Notify Command</I></TD>
+<TD VALIGN="TOP" ALIGN="LEFT">The shell command to be executed when new mail is
+received in this box. This is useful for playing sounds, for example.</TD></TR>
+<TR>
+<TD VALIGN="TOP" ALIGN="LEFT"><I>Click Command</I></TD>
+<TD VALIGN="TOP" ALIGN="LEFT">The shell command to be executed when the button
+for the box is
+<UL>
+<LI>double clicked</LI>
+<LI>left-clicked when there is new mail</LI></UL></TD></TR></TABLE>
+<p>
+<strong>Command-line --nomouse option</strong>: If KOrn is executed with the <i>--nomouse</i> option, it will ignore all mouse
+events. This is useful for running KOrn swallowed by KPanel or FVWM.
+</p>
+<P></P>
+</LI>
+
+<LI><STRONG><A NAME="features">Known bugs and limitations</A></STRONG>
+<P></P>
+<UL>
+<LI>Old boxes are not removed from the configuration file when they are
+renamed. A duplicate box entry is created with the new name. This cannot be
+fixed till a method to remove groups in the KDE <I>KConfig</I> class.</LI>
+<LI>Needs to restart completely to reload new configuration.</LI>
+<LI>Lots of others.</LI></UL>
+<P></P></LI>
+
+<LI><STRONG><A NAME="contact">Contact Info</A></STRONG>
+<P>Author, Maintainer: Sirtaj Singh Kang, <A HREF="mailto:taj@kde.org">taj@kde.org</A>,
+<A HREF="http://www.ph.unimelb.edu.au/~ssk/">http://www.ph.unimelb.edu.au/~ssk/</A>.
+</P></LI></OL>
+<HR>
+<P><SMALL>Last updated: 12 June 1997</SMALL></P></BODY></HTML>

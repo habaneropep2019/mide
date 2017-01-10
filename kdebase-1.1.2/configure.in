@@ -1,0 +1,385 @@
+# Original Author was Kalle@kde.org
+# I lifted it in some mater. (Stephan Kulow)
+# I used much code from Janos Farkas
+
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(acinclude.m4) dnl a source file from your sub dir
+
+dnl This is so we can use kde-common
+AC_CONFIG_AUX_DIR(admin)  
+
+AC_CANONICAL_SYSTEM 
+AC_ARG_PROGRAM
+
+dnl Automake doc recommends to do this only here. (Janos)
+AM_INIT_AUTOMAKE(kdebase, 1.1.2) dnl searches for some needed programs
+
+dnl make $KDEDIR the default for the installation
+AC_PREFIX_DEFAULT(${KDEDIR:-/usr/local/kde})
+
+dnl generate the config header
+AM_CONFIG_HEADER(config.h) dnl at the distribution this done
+
+dnl Checks for programs.
+AC_CHECK_COMPILERS
+
+# the following is to allow programs, that are known to 
+# have problems when compiled with -O2
+if test -n "$CXXFLAGS"; then
+  safe_IFS=$IFS
+  IFS=" "
+  NOOPT_CXXFLAGS=""
+  for i in $CXXFLAGS; do
+    if test "$i" = "-O2"; then
+      i=""
+    fi
+    NOOPT_CXXFLAGS="$NOOPT_CXXFLAGS $i"
+  done
+  IFS=$safe_IFS
+fi
+AC_SUBST(NOOPT_CXXFLAGS)
+AM_DISABLE_LIBRARIES
+KDE_PROG_LIBTOOL
+
+dnl WITH_NLS is for the po files
+AM_KDE_WITH_NLS
+AC_PATH_KDE
+
+case $host in 
+*-*-linux* )
+   AC_CHECK_HEADER(elf.h, 
+        shadow_support=yes,
+        shadow_support=no
+     )
+     ;;
+*-sun-solaris2.6)
+    shadow_support=yes
+    ;;
+*-*-freebsd* )
+   SETUIDFLAGS="4755 -o root"
+     ;;
+esac
+
+AC_CHECK_KDM dnl in kdminclude.m4
+
+if test "$shadow_support" = "yes"; then
+  AC_DEFINE(HAVE_SHADOW)
+fi
+
+if test "$SETUIDFLAGS" = ""; then 
+ if test "$shadow_support" = "no"; then
+  SETUIDFLAGS=""
+ else
+  SETUIDFLAGS="-m 4755"
+ fi
+else
+ SETUIDFLAGS="-m $SETUIDFLAGS"
+fi
+AC_SUBST(SETUIDFLAGS)
+
+dnl Image readers/writers
+
+AC_FIND_GIF
+AC_FIND_JPEG
+AC_FIND_TIFF
+KDE_CHECK_KIMGIO 
+
+
+AC_HAVE_GL(GL_SAVERS="kmorph3d.kss kspace.kss kpipes.kss",GL_SAVERS="")
+AC_SUBST(GL_SAVERS)
+AC_HAVE_XPM(XPM_SAVERS="kbat.kss kmatrix.kss",XPM_SAVERS="")
+AC_SUBST(XPM_SAVERS)
+
+dnl Checks for header files.
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+AC_CHECK_HEADERS(fcntl.h sys/time.h unistd.h crypt.h sys/select.h \
+	sys/ioctl.h sys/stropts.h termio.h termios.h lastlog.h malloc.h \
+	sys/sockio.h krb5/krb5.h rpc/rpc.h rpc/key_prot.h sys/m_wait.h \
+	sys/param.h ncurses.h paths.h login_cap.h syslog.h)
+
+kde_have_setupterm=yes
+AC_CHECK_LIB(curses, setupterm, [LIBCURSES=-lcurses],
+  AC_CHECK_LIB(ncurses, setupterm, [LIBCURSES=-lncurses], 
+    AC_CHECK_LIB(mytinfo, setupterm, [LIBCURSES=-lmytinfo],  
+       kde_have_setupterm=no)))
+
+AC_SUBST(LIBCURSES)
+
+if test "$kde_have_setupterm" = "yes"; then
+  AC_DEFINE_UNQUOTED(HAVE_SETUPTERM)
+fi
+
+kde_have_volmgt=yes
+AC_CHECK_LIB(volmgt, volmgt_running, [LIBVOLMGT=-lvolmgt], kde_have_volmgt=no)
+AC_SUBST(LIBVOLMGT)
+if test "$kde_have_volmgt" = "yes"; then
+  AC_DEFINE_UNQUOTED(HAVE_VOLMGT)
+fi
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_LANG_CPLUSPLUS
+AC_HEADER_TIME
+
+dnl check if the compiler has bool
+AC_CHECK_BOOL
+AC_LANG_C
+AC_C_LONG_DOUBLE
+AC_TYPE_GETGROUPS
+
+dnl Checks for library functions. MISCOBJS is for kdecore
+AC_CHECK_FUNCS(socket powl sqrtl strdup getdtablesize vsnprintf setpgid nice seteuid snprintf vsyslog initgroups setgroups getgroups)
+AC_CHECK_SETENV
+AC_CHECK_GETDOMAINNAME
+AC_CHECK_GETHOSTNAME
+AC_CHECK_USLEEP
+AC_CHECK_RANDOM
+AC_CHECK_S_ISSOCK
+AC_CHECK_KDEMAXPATHLEN
+
+dnl output files
+topdir=`pwd`
+AC_SUBST(topdir)
+
+dnl Perform program name transformation
+AC_ARG_PROGRAM
+
+if test -z "$RUN_KAPPFINDER"; then
+RUN_KAPPFINDER="yes"
+fi
+
+AC_SUBST(RUN_KAPPFINDER)
+
+AC_MSG_CHECKING([if it's safe to enable UTMP])
+
+case "$host_os" in
+linux*) utmp_support=yes;
+     ;;
+freebsd*) utmp_support=yes;
+     ;;
+*) utmp_support=no;
+esac
+
+AC_MSG_RESULT($utmp_support)
+
+if test "$utmp_support" = yes; then
+   AC_DEFINE_UNQUOTED(UTMP_SUPPORT)
+fi  
+
+AC_CHECK_UTMP_FILE
+
+AC_OUTPUT(Makefile \
+	applnk/Makefile \
+	applnk/Applications/Makefile \
+	applnk/Games/Makefile \
+	applnk/Graphics/Makefile \
+	applnk/Internet/Makefile \
+	applnk/Multimedia/Makefile \
+	applnk/Settings/Makefile \
+	applnk/Settings/Applications/Makefile \
+	applnk/Settings/Desktop/Makefile \
+	applnk/Settings/Information/Makefile \
+	applnk/Settings/Input_Devices/Makefile \
+	applnk/Settings/Keys/Makefile \
+	applnk/Settings/Network/Makefile \
+	applnk/Settings/Sound/Makefile \
+	applnk/Settings/Windows/Makefile \
+	applnk/System/Makefile \
+	applnk/Utilities/Makefile \
+	config/Makefile \
+	doc/Makefile \
+	doc/kcontrol/Makefile \
+	doc/kcontrol/kcmbell/Makefile \
+	doc/kcontrol/kcmdisplay/Makefile \
+	doc/kcontrol/kcminfo/Makefile \
+	doc/kcontrol/kcminput/Makefile \
+	doc/kcontrol/kcmkeys/Makefile \
+	doc/kcontrol/kcmkfm/Makefile \
+	doc/kcontrol/kcmkwm/Makefile \
+	doc/kcontrol/kcmlocale/Makefile \
+	doc/kcontrol/kcmsamba/Makefile \
+	doc/kcontrol/kcmsyssound/Makefile \
+	doc/kcontrol/kthememgr/Makefile \
+	doc/kcontrol/kcmkpanel/Makefile \
+	doc/kdehelp/Makefile \
+	doc/kdehelp/kwm/Makefile \
+	doc/kdehelp/kpanel/Makefile \
+	doc/kdehelp/quickstart/Makefile \
+	doc/kdm/Makefile \
+	doc/kfind/Makefile \
+	doc/kfm/Makefile \
+	doc/kfontmanager/Makefile \
+	doc/kpanel/Makefile \
+	doc/kmenuedit/Makefile \
+	doc/kvt/Makefile \
+	doc/kwm/Makefile \
+	doc/kdisknav/Makefile \
+	doc/kpager/Makefile \
+	kappfinder/Makefile \
+	kappfinder/apps/Makefile \
+	kappfinder/apps/Development/Makefile \
+	kappfinder/apps/Editors/Makefile \
+	kappfinder/apps/Graphics/Makefile \
+	kappfinder/apps/Internet/Makefile \
+	kappfinder/apps/Office/Makefile \
+	kappfinder/apps/System/Makefile \
+	kappfinder/apps/Toys/Makefile \
+	kappfinder/apps/Utilities/Makefile \
+	kappfinder/apps/WordProcessing/Makefile \
+	kappfinder/kappfinder \
+	kappfinder/pics/Makefile \
+	kappfinder/pics/mini/Makefile \
+	kappfinder/pics/large/Makefile \
+	kaudio/Makefile \
+        kcheckpass/Makefile \
+	kcontrol/Makefile \
+	kcontrol/bell/Makefile \
+	kcontrol/display/Makefile \
+	kcontrol/display/ad/Makefile \
+	kcontrol/display/kcs/Makefile \
+	kcontrol/display/pics/Makefile \
+	kcontrol/display/pics/mini/Makefile \
+	kcontrol/display/pics/large/Makefile \
+	kcontrol/info/Makefile \
+	kcontrol/info/pics/Makefile \
+	kcontrol/input/Makefile \
+	kcontrol/input/pics/Makefile \
+	kcontrol/input/pics/mini/Makefile \
+	kcontrol/input/pics/large/Makefile \
+	kcontrol/kcontrol/Makefile \
+	kcontrol/kcontrol/pics/Makefile \
+	kcontrol/kcontrol/pics/mini/Makefile \
+	kcontrol/kcontrol/pics/large/Makefile \
+	kcontrol/kdm/Makefile \
+	kcontrol/kdm/doc/Makefile \
+	kcontrol/kdm/pics/Makefile \
+	kcontrol/keys/Makefile \
+	kcontrol/kfm/Makefile \
+	kcontrol/kpanel/Makefile \
+	kcontrol/kwm/Makefile \
+	kcontrol/kwm/pics/Makefile \
+	kcontrol/kwm/pics/mini/Makefile \
+	kcontrol/kwm/pics/large/Makefile \
+	kcontrol/locale/Makefile \
+	kcontrol/locale/pics/Makefile \
+	kcontrol/samba/Makefile \
+	kcontrol/sample/Makefile \
+	kcontrol/syssound/Makefile \
+	kcontrol/syssound/sounds/Makefile \
+	kcontrol/themes/Makefile \
+	kcontrol/themes/doc/Makefile \
+	kdehelp/Makefile \
+	kdehelp/index/Makefile \
+	kdehelp/search/Makefile \
+	kdehelp/rman/Makefile \
+	kdm/Makefile \
+	kdm/config/Makefile \
+	kdm/config/kdmrc \
+	kdm/pics/Makefile \
+	kdm/xdmconfig/Makefile \
+	kfind/Makefile \
+	kfind/pics/Makefile \
+	kfm/Makefile \
+	kfm/Desktop/Makefile \
+	kfm/Desktop/Templates/Makefile \
+	kfm/client/Makefile \
+	kfm/kfmexec/Makefile \
+	kfm/kfmsu2 \
+	kfm/kfmwarn/Makefile \
+	kfm/kioslave/Makefile \
+	kfm/pics/Makefile \
+	kfm/config/Makefile	\
+	kfontmanager/Makefile \
+	kikbd/Makefile \
+	kikbd/doc/Makefile \
+	kikbd/doc/en/Makefile \
+	kikbd/doc/ru/Makefile \
+	kikbd/maps/Makefile \
+	kikbd/maps/codes/Makefile \
+	kmenuedit/Makefile \
+	kmenuedit/icons/Makefile \
+	konsole/Makefile \
+	konsole/doc/Makefile \
+ 	konsole/doc/sgml/Makefile \
+	konsole/doc/VT100/Makefile \
+	konsole/include/Makefile \
+	konsole/other/Makefile \
+	konsole/src/Makefile \
+	kpanel/Makefile \
+	kpanel/pics/Makefile \
+	kpanel/pics/mini/Makefile \
+	kpanel/sample_kdelnk_files/Makefile \
+	krootwm/Makefile \
+	kscreensaver/Makefile \
+	kscreensaver/bitmaps/Makefile	\
+	kscreensaver/pixmaps/Makefile	\
+	kstart/Makefile \
+	kvt/Makefile \
+	kwm/Makefile \
+	kwm/pics/Makefile \
+	kwmcom/Makefile \
+	kwmmodules/Makefile \
+	kwmmodules/kbgndwm/Makefile \
+	kwmmodules/kwmpager/Makefile \
+	kwmmodules/kwmsound/Makefile \
+	kwmmodules/kpager/Makefile \
+	mimetypes/Makefile \
+	mimetypes/application/Makefile \
+	mimetypes/audio/Makefile \
+	mimetypes/image/Makefile \
+	mimetypes/inode/Makefile \
+	mimetypes/text/Makefile \
+	mimetypes/text/Makefile \
+	mimetypes/video/Makefile \
+	pics/Makefile \
+	pics/mini/Makefile \
+	pics/large/Makefile \
+	pics/wallpapers/Makefile \
+	po/Makefile \
+	po/br/Makefile \
+	po/ca/Makefile \
+	po/cs/Makefile \
+	po/da/Makefile \
+	po/de/Makefile \
+	po/el/Makefile \
+	po/eo/Makefile \
+	po/es/Makefile \
+	po/et/Makefile \
+	po/fi/Makefile \
+	po/fr/Makefile \
+	po/he/Makefile \
+	po/hr/Makefile \
+	po/hs/Makefile \
+	po/hu/Makefile \
+	po/it/Makefile \
+	po/ja/Makefile \
+	po/ko/Makefile \
+	po/nl/Makefile \
+	po/no/Makefile \
+	po/mk/Makefile \
+	po/pl/Makefile \
+	po/pt/Makefile \
+	po/pt_BR/Makefile \
+	po/ro/Makefile \
+	po/ru/Makefile \
+	po/sk/Makefile \
+	po/sl/Makefile \
+	po/tr/Makefile \
+	po/is/Makefile \
+	po/sv/Makefile \
+	po/br/Makefile \
+	po/zh_TW.Big5/Makefile \
+	po/zh_CN.GB2312/Makefile \
+	po/en_UK/Makefile )
+
+AC_OUTPUT_COMMANDS(
+if test -r kappfinder/kappfinder; then
+   chmod +x kappfinder/kappfinder
+fi
+)
+
+
+
+
+

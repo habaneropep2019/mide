@@ -1,0 +1,247 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-13 01:34+0100\n"
+"PO-Revision-Date: 1999-02-03 02:00+0900\n"
+"Last-Translator: Taiki Komoda <tklab@ma6.seikyou.ne.jp>\n"
+"Language-Team: Japanese <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: gameboard.cc:55
+msgid "End Turn"
+msgstr "交替する"
+
+#: gameboard.cc:203
+msgid ": Select source planet..."
+msgstr ": 出動元の惑星を選択..."
+
+#: gameboard.cc:221
+msgid ": Select destination planet..."
+msgstr ": 出動先の惑星を選択..."
+
+#: gameboard.cc:243
+msgid ": How many ships?"
+msgstr ": 何隻出す?"
+
+#: gameboard.cc:267
+msgid "Ruler: Select starting planet."
+msgstr "測量: 始点となる惑星を選択。"
+
+#: gameboard.cc:287
+#, c-format
+msgid ""
+"The distance from Planet %s to Planet %s is %s light years.\n"
+"A ship leaving this turn will arrive on turn %s"
+msgstr ""
+"惑星 %s から 惑星 %s までの距離は %s 光年です。\n"
+" 今出動すると %s 回目に到着します"
+
+#: gameboard.cc:291
+msgid "Distance"
+msgstr "距離"
+
+#: gameboard.cc:296
+msgid "Ruler: Select ending planet."
+msgstr "測量: 終点となる惑星を選択。"
+
+#: gameboard.cc:311
+#, c-format
+msgid "Turn #: %2d of %2d"
+msgstr "順番 #: %2d / %2d"
+
+#: gameboard.cc:426
+#, c-format
+msgid "The once mighty empire of %s has fallen in ruins."
+msgstr "かつて栄えた%s帝国は崩れ落ちた。 "
+
+#: gameboard.cc:428
+msgid "An Empire has fallen..."
+msgstr "帝国は崩れ落ちた..."
+
+#: gameboard.cc:438
+#, c-format
+msgid "The fallen empire of %s has staggered back to life."
+msgstr "崩れ落ちた%s帝国は何とか生き返った。"
+
+#: gameboard.cc:440
+msgid "Up from the ashes..."
+msgstr "灰からの復活..."
+
+#: gameboard.cc:460
+#, c-format
+msgid "Reinforcements have arrived for planet %s"
+msgstr "惑星%sに援軍が到着した。"
+
+#: gameboard.cc:462
+msgid "Fleet Arrival"
+msgstr "艦隊到着"
+
+#: gameboard.cc:505
+#, c-format
+msgid "Planet %s has held against an attack from %s"
+msgstr "惑星%sは%sからの攻撃に耐えた"
+
+#: gameboard.cc:507
+msgid "Planet Holds"
+msgstr "惑星死守"
+
+#: gameboard.cc:515
+#, c-format
+msgid "Planet %s has fallen to %s"
+msgstr "惑星%sは%sによって陥落した"
+
+#: gameboard.cc:517
+msgid "Planet Conquered"
+msgstr "惑星は占領された"
+
+#: gameboard.cc:579 mainwin.cc:82
+msgid "End Game"
+msgstr "ゲーム終了"
+
+#: gameboard.cc:580
+msgid "Do you wish to retire this game?"
+msgstr "このゲームをやめますか?"
+
+#: gameboard.cc:586
+msgid "Final Standings"
+msgstr "最終結果"
+
+#: gameboard.cc:758
+msgid "Not enough ships to send."
+msgstr "艦隊が足りません"
+
+#: mainwin.cc:23
+msgid "GNU-Lactic Conquest"
+msgstr ""
+
+#: mainwin.cc:47
+#, c-format
+msgid ""
+"Version %s\n"
+"Copyright (c) 1998 by\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE version by Russ Steffen <rsteffen@ia.net>\n"
+"See http://www.ia.net/~rsteffen/konquest.html for more info"
+msgstr ""
+
+#: mainwin.cc:88
+msgid "Measure Distance"
+msgstr "距離を測定"
+
+#: mainwin.cc:92
+msgid "Show Standings"
+msgstr "順位を見る"
+
+#: newgamedlg.cc:31
+msgid "Preview Map"
+msgstr "マップのプレビュー"
+
+#: newgamedlg.cc:35
+msgid "&Reject Map"
+msgstr "マップ拒否 (&R)"
+
+#: newgamedlg.cc:41
+msgid "&Player List"
+msgstr "プレーヤーリスト (&P)"
+
+#: newgamedlg.cc:48
+msgid "&Add"
+msgstr "追加 (&A)"
+
+#: newgamedlg.cc:54
+msgid "&Clear"
+msgstr "全て削除 (&C)"
+
+#: newgamedlg.cc:70
+msgid "&Start Game"
+msgstr "ゲーム開始 (&S)"
+
+#: newgamedlg.cc:162
+#, c-format
+msgid "Number of Neutral Planets: %2d"
+msgstr "中立の惑星の数: %2d"
+
+#: newgamedlg.cc:174
+#, c-format
+msgid "Number of turns: %2d"
+msgstr "順番の回数: %2d"
+
+#: planet_info.cc:81 planet_info.cc:116 planet_info.cc:131
+msgid "Planet Name : "
+msgstr "惑星名 : "
+
+#: planet_info.cc:84 planet_info.cc:134
+msgid "Owner : "
+msgstr "所有者 : "
+
+#: planet_info.cc:87
+msgid "Ships : "
+msgstr "艦隊 : "
+
+#: planet_info.cc:90
+msgid "Production : "
+msgstr "生産 : "
+
+#: planet_info.cc:93
+msgid "Kill Percent : "
+msgstr "攻撃成功率 : "
+
+#: planet_info.cc:137
+#, c-format
+msgid "Ships : %d"
+msgstr "艦隊 : %d"
+
+#: planet_info.cc:140
+#, c-format
+msgid "Production : %d"
+msgstr "生産 : %d"
+
+#: planet_info.cc:143
+#, c-format
+msgid "Kill Percent : %.3f"
+msgstr "攻撃成功率 : %.3f"
+
+#: gameenddlg.cc:14
+msgid ""
+"This is the last turn.\n"
+"Do you wish to add more turns?"
+msgstr ""
+"これが最後の順番です。\n"
+"もっと回数を増やしますか?"
+
+#: gameenddlg.cc:64
+#, c-format
+msgid "Add %d turns"
+msgstr "%d 回追加"
+
+#: scoredlg.cc:18
+msgid "Player"
+msgstr "プレーヤー"
+
+#: scoredlg.cc:19
+msgid "Ships Built"
+msgstr "艦隊生産"
+
+#: scoredlg.cc:20
+msgid "Planets Conquered"
+msgstr "征服した惑星"
+
+#: scoredlg.cc:21
+msgid "Fleets Launched"
+msgstr "出動した援軍"
+
+#: scoredlg.cc:22
+msgid "Fleets Destroyed"
+msgstr "破壊された援軍"
+
+#: scoredlg.cc:23
+msgid "Ships Destroyed"
+msgstr "破壊された艦隊"

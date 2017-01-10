@@ -1,0 +1,417 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kppp Handbook: Questions and answers</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KPPP Dialer Internet PPP IP PAP CHAP">
+<META NAME="description" CONTENT="KPPP Internet Dialer">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-8.html">Next</A>
+<A HREF="kppp-6.html">Previous</A>
+<A HREF="kppp.html#toc7">Table of Contents</A>
+</P>
+<H3><A NAME="s7">7. Questions and answers</A></H3>
+
+<P>
+<H3><A NAME="ss7.1">7.1 Frequently Asked Questions</A>
+</H3>
+
+<P>
+<A NAME="&lt;em/kppp/ FAQ"></A> <H4>I can't get <EM>kppp</EM> to work. <EM>kppp</EM> tells me that pppd has died or that a timeout has expired! </H4>
+
+<P>Did you read the this manual carefully? Here are once more the most common
+pitfalls.
+<P>
+<UL>
+<LI> Click on the "Details" button. <EM>kppp</EM> will you give an excerpt from the
+PPP log messages (may not work on non-Linux systems, or even on some Linux
+distributions). The log will help you to track down the bug.
+</LI>
+<LI> Make sure that pppd is the actual pppd binary not a script
+</LI>
+<LI> Make sure that pppd is setuid root. You may set this mode by issuing <I>chmod u+s pppd</I> as root.
+</LI>
+<LI> Make sure that your <CODE>/etc/ppp/options</CODE> file exists and that it doesn´t contain any conflicting entries. If in doubt: Leave this file empty. 
+</LI>
+<LI> Using the symbolic link <CODE>/dev/modem</CODE> may cause some conflicts.
+Eliminate this source of trouble by using the real device, i.e. <CODE>/dev/cuaX</CODE>
+or <CODE>/dev/ttySX</CODE>.
+NOTE: COM1 equals ttyS0, COM2 is ttyS1 and so on. </LI>
+<LI> Make sure you set the right permission. In case of trouble
+you might want to run it as root first and then later, when
+everything is working o.k give it less harmful permission if you can not
+afford to run <EM>kppp</EM> setuid root. The proper way to proceed would probably
+be creating a "modem" group.
+</LI>
+<LI> You might be launching pppd too early, i.e. before the remote server is
+ready to negotiate a PPP connection. If you are using a login script, you
+should use the built-in terminal to verify your login procedure. Some 
+providers will require you to issue a simple "Send" or "Send ppp" to
+launch PPP. Some users even reported, that they had to append "Pause 1" or
+"Pause 2" to their script to solve timing conflicts.
+</LI>
+</UL>
+<P>If nothing helps, you might obtain some debugging info from your systems log by issuing:
+<BLOCKQUOTE><CODE>
+<PRE>
+# tail /var/log/messages
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<H4><EM>kppp</EM> tells me ``Sorry, can't open the modem''.</H4>
+
+<P>
+<P>This means that <EM>kppp</EM> doesn't have permissions to open the modem
+device or that you selected a modem device on the Modem Tab Dialog that is
+not valid. First make sure you selected the right modem device. Once you are
+sure you have selected the right modem device, you must 
+give <EM>kppp</EM> the right permission to access the modem 
+device and to be able to modify <CODE>/etc/resolv.conf</CODE> in case you want <EM>kppp</EM> to 
+configure DNS correctly for you. If you can afford to run <EM>kppp</EM> setuid root
+this would solve all access problems for you, if not you will have to figure
+out what the right permissions are for your purposes. In order to give
+<EM>kppp</EM> setuid root permissions do the following:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+% su root
+# chown root:root ${KDEDIR}/bin/kppp
+# chmod +s ${KDEDIR}/bin/kppp
+# exit
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>
+<H4><EM>kppp</EM> tells me it can't create a modem lock file.</H4>
+
+<P>This in most instances means that you have installed <EM>kppp</EM>
+without SETUID bit on while you, the person executing <EM>kppp</EM>, 
+doesn't have write access to the lock file directory which
+by default is <CODE>/var/lock</CODE>. This for example is the case on 
+Red Hat systems. Check the modem dialog for the
+precise location you have chosen. The solution is easy --
+either run <EM>kppp</EM> SETUID if you can afford to, or give regular
+users write access to <CODE>/var/lock</CODE> or create a modem group
+that will have access to the <CODE>/var/lock</CODE> file.
+<P>
+<P>
+<A NAME="setuid"></A> <H4>Why is <EM>kppp</EM> installed with the SETUID bit on?</H4>
+
+<P>
+<P>There is no need for the SETUID bit, if you know a bit of Unix systems 
+administration. Simply create a modem group, add all users that you
+want to give access to the modem to that group and make the modem
+device read/writable for that group. Also if you want DNS configuration
+to work with <EM>kppp</EM>, then <CODE>/etc/resolv.conf</CODE> must be read/writable by the
+members of that group. The same counts for
+<CODE>/etc/ppp/pap-secrets</CODE> and <CODE>/etc/ppp/chap-secrets</CODE> if
+you want to use the built-in PAP or CHAP support, respectively.
+<P>Please do not criticise me for installing <EM>kppp</EM> with setuid bit
+on, I simply can no longer handle the amount of mail I used to get from
+desperate users who had problems getting <EM>kppp</EM> to work because they 
+didn't understand enough about Unix and device permissions.
+<P>The <EM>kppp</EM> team has lately done a lot of work to make <EM>kppp</EM> setuid-safe. But it's
+up to you to decide if you install and how you install it.
+<P>You might also want to read the 
+<A HREF="kppp-8.html#security">Security</A> section.
+<P>
+<H4><EM>kppp</EM> just sits there and waits: Expecting OK</H4>
+
+<P>
+<P>
+<UL>
+<LI> Have you played with the CR/LF setting? Try CR, LF or CR/LF.
+</LI>
+<LI> Your modem might need some time to respond to its initialisation.
+Open the "Modem Commands" dialog on the "Modem" tab and adjust the "Pre-Init"
+and "Post-Init" delays. See if you are successful when drastically increasing
+their values and do some fine tuning later.
+</LI>
+</UL>
+<P>
+<H4><A NAME="autohostname"></A> The connection works fine but I can´t start any applications.</H4>
+
+<P>
+<P>You probably have activated the 
+<A HREF="kppp-4.html#Auto-configure hostname">Auto-configure hostname</A>
+ option and the X Server has problems connecting to your newly named host. If you really need this option (chances are that you don´t) you are on your own to setup the appropriate authorisations.
+Issuing <I>xhost +</I> before starting the connection would do the job, but be <B>warned</B> of any security risks that involves since everyone else is granted access to your X Server.
+<P> 
+Another source of trouble (note to Red Hat users): one of the pre-installed
+network scripts might be playing tricks on you. Rename <CODE>/etc/ppp/ip-up</CODE>
+to stop pppd from executing it automatically on every connection.
+<P>
+<P>
+<H4><EM>kppp</EM> reports a successful connection, but Netscape just says "The server does not have a DNS entry"</H4>
+
+<P>Try pinging another server by its IP number, e.g. <CODE>ping 195.0.254.76</CODE>. If that
+works you should
+<P>
+<UL>
+<LI> check if you provided <EM>kppp</EM> with at least one DNS address</LI>
+<LI> check the contents of <CODE>/etc/host.conf</CODE>. There should be a line
+saying something similar to <CODE>order hosts, bind</CODE>. The <CODE>bind</CODE>
+keyword advises the resolver library to include a name server query when
+performing an address lookup.
+</LI>
+</UL>
+<P>
+<P>
+<P>
+<H4>How do I make <EM>kppp</EM> send a \n or a \r?</H4>
+
+<P>Just send an empty string such as in the following script:
+<BLOCKQUOTE><CODE>
+<PRE>
+Send                                   # send an empty string
+Expect      ID:                        
+Send        itsme                     
+Expect      word:                      
+Send        forgot                    
+Expect      granted                    
+Send        ppp                        
+                                       
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<H4><EM>kppp</EM> complains: "Can't create lock file"</H4>
+
+<P>
+<P>This means that you don't have permissions to create a lock file.
+If you chose to use a lock file you must have write permissions to the
+directory (typically /var/lock). This is of course no problem if you have
+given <EM>kppp</EM> setuid permissions. Please read the section on 
+<A HREF="kppp-3.html#lock files">lock files</A>
+.
+<P>
+<P>
+<P>
+<H4>My modem makes much noise when dialling!</H4>
+
+<P>Click on "Setup", "Modem". You can control the modem volume here in three
+steps: off, medium and high. For most modems "medium" and "high" result in the
+same volume. If that doesn't work, make sure that the correct settings for
+your modem are specified in "Setup"/"Modem"/"Modem commands"!
+<P>
+<P>
+<H4>I turned the modem volume "off" and verified the modem commands,but I still hear that noise when dialling!</H4>
+
+<P>The volume initialisation string can get lost if your modem can't cope with
+the speed it revives its command from <EM>kppp</EM>. Increase the value of
+"Post-Init Delay" in "Setup"/"Modem"/"Modem commands"!
+<P>
+<P>Click on "Setup", "Modem". You can control the modem volume here in three
+steps: off, medium and high. For most modems "medium" and "high" result in the
+same volume. If that doesn't work, make sure that the correct settings for
+your modem are specified in "Setup"/"Modem"/"Modem commands"!
+<P>
+<P>
+<H4><EM>kppp</EM> reports an unusual modem speed like 115200, 57600 or similar </H4>
+
+<P>Many modems only report the speed of the serial line and not the speed over
+the telephone line as default. You must configure these modems to report the
+true line speed (add to modem init or dial string). For many modems this
+command is "ATW2". If you want to add it to the dial-string (typical "ATD"), the new dial
+string would be "ATW2D".
+<P>
+<P>
+<H4><EM>kppp</EM> reports "Unknown speed"</H4>
+
+<P>New modems often have very complex connection messages like "CONNECT
+LAP.M/V42.bis/115000:RX/31200:TX", and <EM>kppp</EM> cannot parse this message
+correctly. Turn on "Show Log" and you'll see the connection speed. I'm
+currently working on a solution for this, and the parser is now much better,
+but still not perfect.
+<P>
+<P>
+<H4>Slow connection speed</H4>
+
+<P>If you are not satisfied with the modem speed, make sure you've set the 
+connection speed ("Setup" / "Device" / "Speed") to 57600 or higher. Make sure
+that your serial ports support higher speeds. Many systems based on i486 do
+not work correctly when you set the speed to 115200. If you have a 8250 UART
+chip, it won't work. If you have a 16550 or 16550A it should work flawlessly.
+<P>Additionally, consult your modem manual to look for init strings that enable a
+high speed mode.
+<P>
+<P>
+<H4>REALLY slow connection speed</H4>
+
+<P>If data drips in at a rate of just a few bytes per second you should check
+your hardware setup. If moving your mouse speeds up the transmission this is
+definitely a hardware issue.
+<P>Obtain some information about your serial port with
+<CODE>setserial -a /dev/ttySx</CODE> and check for interrupt conflicts with other
+components of your system.
+<P>
+<P>
+<H4>My phone line needs pulse dialling instead of tone dialling (or vice-versa)</H4>
+
+<P>You must modify you modem dial string. Nearly all modems support the 
+following AT-commands:
+<UL>
+<LI>ATDT - selects tone dial</LI>
+<LI>ATDP - selects pulse dial</LI>
+</UL>
+<P>
+<P>
+<H4><EM>kppp</EM> makes really strange things (whatever)</H4>
+
+<P>Did you compile it or the libraries with gcc-2.8? This version of gcc is
+somewhat broken, and it will not work as expected.
+<P>
+<P>
+<H4>How do I write a telephone cost rules file?</H4>
+
+<P>Just follow the TEMPLATE rules files supplied with <EM>kppp</EM>. You should be
+able to find a copy in the <CODE>${KDEDIR}/share/apps/kppp/Rules</CODE>. 
+Use the <CODE>-r</CODE> <EM>kppp</EM> command line options to check the syntax of your proposed
+rules file.
+<P>
+<P>
+<H4>I have written a telephone cost rules file for my region. Where can I submit it so that others can make use of it?</H4>
+
+<P>I would love to receive any rule files written. I will make them available
+on my <EM>kppp</EM> 
+<A HREF="http://devel-home.kde.org/kppp/index.html">web page</A>.
+Before you send me a new rules file make sure it is not already available on 
+the <EM>kppp</EM> web page. Then email the new rules file one of the current
+maintainers.
+<P>
+<P>
+<H4>Can my phone cost rulefile contain fractional time units, e.g. "(0.17,45.5)"?</H4>
+
+<P>Yes this is possible. But you should not use unusual small time units (below
+tenth of a second), because this would result in higher CPU load (though I
+doubt you'll notice with a modern CPU :-)
+<P>
+<H4>My country observes a moving holiday different from easter.</H4>
+
+<P>In that case you need to write new code that allows for the computation of that
+holiday. Please have a look at ruleset.cpp and emulate the ``easter'' example.
+Then send us the patches.
+<P>
+<P>
+<H4><EM>kppp</EM> tells me "Sorry, the modem is not ready".</H4>
+
+<P>Uncheck the "Modem Asserts CD Line" option you will find on the Modem tab.
+Your hardware seems to be missing support for sensing the "Carrier Detect"
+line.
+<P>
+<P>
+<H4>The connection fails with "Timeout expired while waiting for the PPP interface to come up!"</H4>
+
+<P>The PPP daemon didn't get into contact with the remote server in time.
+Listed below are a few hints that helped several users:
+<UL>
+<LI> Play with the setting of Line Termination (Device tab)</LI>
+<LI> Add a "Pause 1" or "Pause 2" scripting command (even if you're using PAP
+or CHAP)</LI>
+<LI> Increase the pppd timeout (PPP tab)</LI>
+<LI> Use the real device instead of a symbolic /dev/modem link</LI>
+<LI> Toggle the "Use Lock File" setting (Device tab)</LI>
+</UL>
+<P>
+<P>
+<H4>"Sorry, the modem is busy"</H4>
+
+<P>
+<UL>
+<LI> you might be an unlucky owner of a
+<A HREF="kppp-3.html#winmodem">WinModem</A></LI>
+<LI> did you correctly configure the serial port or internal modem ?
+The interrupts might not be set up correctly.</LI>
+<LI> verify that no other software is currently accessing the modem</LI>
+<LI> If you're using a 2.2.5 (or newer) Linux kernel there might be a
+conflict with the serial support module. See
+<A HREF="http://www.suse.de/sdb/en/html/sf_seriell.html">http://www.suse.de/sdb/en/html/sf_seriell.html</A> for further details.</LI>
+</UL>
+<P>
+<H4>How do I disable dial tone detection ?</H4>
+
+<P>Put X3 into your dial string, e.g. ATX3DT.
+<P>
+<H2><A NAME="ss7.2">7.2 How to interpret the system's log</A>
+</H2>
+
+<H3><A NAME="ss7.2">7.2 How to interpret the system's log</A>
+</H3>
+
+<P>
+<H4>Serial line is looped back</H4>
+
+<P>Short answer: You haven't started the PPP software on the peer system.
+<P>See a posting from Al Longyear on 
+<A HREF="http://www.dejanews.com/getdoc.xp?AN=184945314">http://www.dejanews.com/getdoc.xp?AN=184945314</A> for a more detailed explanation.
+<P>
+<P>
+<H4>Signal 15</H4>
+
+<P>If you see the following lines you've probably just received a timeout error
+from <EM>kppp</EM>, too. <EM>kppp</EM> has been waiting for the PPP interface to
+come up and gave up after the specified timeout. pppd was signaled to shut
+down with signal number 15, i.e. SIGTERM.
+<BLOCKQUOTE><CODE>
+<PRE>
+pppd[26921]: pppd 2.3.5 started by me, uid 500
+pppd[26921]: Using interface ppp0
+pppd[26921]: Connect: ppp0 &lt;--> /dev/ttyS0
+pppd[26921]: Terminating on signal 15.
+pppd[26921]: Connection terminated.
+pppd[26921]: Exit.
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<H4>Receive serial link is not 8-bit clean</H4>
+
+<P>The PPP daemon is alarmed by the fact that all data it receives has bit 8 set
+to zero. In most cases this simply indicates that the remote PPP server isn't
+running yet. You might be still confronted with a login prompt that echoes
+back all data sent by your pppd.
+<P>
+<P>
+<H4>can't locate module ppp-compress</H4>
+
+<P>Do you get the following messages ?
+<BLOCKQUOTE><CODE>
+<PRE>
+modprobe: can't locate module ppp-compress-21 
+modprobe: can't locate module ppp-compress-26 
+modprobe: can't locate module ppp-compress-24
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Just add the lines 
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+alias ppp-compress-21 bsd_comp 
+alias ppp-compress-24 ppp_deflate 
+alias ppp-compress-26 ppp_deflate 
+</PRE>
+</CODE></BLOCKQUOTE>
+
+to your /etc/conf.modules file. 
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-8.html">Next</A>
+<A HREF="kppp-6.html">Previous</A>
+<A HREF="kppp.html#toc7">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

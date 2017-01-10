@@ -1,0 +1,258 @@
+# Russian messages for KDE Network Utilities.
+# Copyright (C) 1998, 1999 KDE Team.
+# Const Kaplinsky <const@ce.cctpu.edu.ru>, 1998.
+# Denis Pershin <dyp@inetlab.com>, 1999.
+msgid ""
+msgstr ""
+"Project-Id-Version: knu\n"
+"POT-Creation-Date: 1999-01-23 02:09+0100\n"
+"PO-Revision-Date: 1999-06-06 12:59+07:00\n"
+"Last-Translator: Const Kaplinsky <const@ce.cctpu.edu.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: knu.cpp:150 knu.cpp:309
+msgid "&Ping"
+msgstr "&Ping"
+
+#: knu.cpp:159 knu.cpp:315
+msgid "&Traceroute"
+msgstr "&Traceroute"
+
+#: knu.cpp:168 knu.cpp:321
+msgid "Host &resolution"
+msgstr "&Преобразование имен"
+
+#: knu.cpp:181
+msgid "F&inger"
+msgstr "F&inger"
+
+#: knu.cpp:190 knu.cpp:333
+msgid "&mtr"
+msgstr "&mtr"
+
+#: knu.cpp:201
+msgid ""
+"There is no command enabled\n"
+"in the configuration file.\n"
+"\n"
+"So I can't do anything...\n"
+msgstr ""
+"В файле конфигурации\n"
+"не разрешена ни одна команда.\n"
+"\n"
+"Невозможно что-либо сделать...\n"
+
+#: knu.cpp:246
+msgid "&New window"
+msgstr "&Новое окно"
+
+#: knu.cpp:249
+msgid "&Close window"
+msgstr "&Закрыть окно"
+
+#: knu.cpp:260
+msgid "Select &all"
+msgstr "&Выбрать все"
+
+#: knu.cpp:263
+msgid "C&lear output window"
+msgstr "&Очистить окно"
+
+#: knu.cpp:266
+msgid "P&references..."
+msgstr "&Настройка..."
+
+#: knu.cpp:281
+#, c-format
+msgid "&About %s"
+msgstr "&О программе %s"
+
+#: knu.cpp:283
+msgid "About &Qt"
+msgstr "О библиотеке &Qt"
+
+#: knu.cpp:327
+msgid "&Finger"
+msgstr "&Finger"
+
+#: knu.cpp:466
+#, c-format
+msgid ""
+"Knu\n"
+"Version %s\n"
+"\n"
+"Bertrand"
+msgstr ""
+"Knu\n"
+"Версии %s\n"
+"\n"
+"Bertrand"
+
+#: knu.cpp:469
+msgid "About..."
+msgstr "О программе..."
+
+#: knu.cpp:602
+msgid "Network utilities"
+msgstr "Сетевые утилиты"
+
+#: CommandDlg.cpp:131
+msgid "H&ost:"
+msgstr "&Машина:"
+
+#: CommandDlg.cpp:140
+msgid "&Go!"
+msgstr "&Пуск!"
+
+#: CommandDlg.cpp:150
+msgid "&Stop"
+msgstr "&Стоп"
+
+#: CommandDlg.cpp:166
+msgid ""
+"This command binary was not found. \n"
+"You can give its path in the Edit->Preferences... menu."
+msgstr ""
+"Исполняемый файл этой программы не найден. Вы можете указать\n"
+"путь к программе, выбрав пункт меню Редактирование->Настройка..."
+
+#: CommandDlg.cpp:351
+#, c-format
+msgid ""
+"\n"
+"You have a problem in your\n"
+"%s/%src\n"
+"configuration file.\n"
+"In the [%s] group,\n"
+"I can't find a valid \"path=\" entry.\n"
+"\n"
+"Please use Edit->Preferences... menu\n"
+"to configure it again.\n"
+msgstr ""
+"\n"
+"Проблема с Вашим файлом конфигурации\n"
+"%s/%src\n"
+"В группе [%s]\n"
+"отсутствует корректная запись \"path=\".\n"
+"\n"
+"Для изменения настроек выберите в меню\n"
+"пункт Редактирование->Настройка...\n"
+
+#: CommandDlg.cpp:360
+msgid "Error in pathname"
+msgstr "Ошибка в строке пути"
+
+#: CommandDlg.cpp:516
+msgid "Binary"
+msgstr "Исполняемый файл"
+
+#: CommandDlg.cpp:524
+msgid "Path&name:"
+msgstr "&Путь:"
+
+#: CommandDlg.cpp:533
+msgid "Additional &arguments:"
+msgstr "&Дополнительные аргументы:"
+
+#: CommandDlg.cpp:558
+msgid "This command had been disabled in the configuration file."
+msgstr "Эта команда запрещена в файле конфигурации."
+
+#: OptionsDlg.cpp:69
+msgid " - configuration"
+msgstr " - конфигурация"
+
+#: MtrDlg.cpp:87
+msgid "#"
+msgstr "#"
+
+#: MtrDlg.cpp:88
+msgid "Hostname"
+msgstr "Имя машины"
+
+#: MtrDlg.cpp:89
+msgid "Loss"
+msgstr "Утеряно"
+
+#: MtrDlg.cpp:91
+msgid "Rcv"
+msgstr "Принято"
+
+#: MtrDlg.cpp:93
+msgid "Snt"
+msgstr "Послано"
+
+#: MtrDlg.cpp:95
+msgid "Best"
+msgstr "Лучшее"
+
+#: MtrDlg.cpp:97
+msgid "Avg"
+msgstr "Среднее"
+
+#: MtrDlg.cpp:99
+msgid "Worst"
+msgstr "Худшее"
+
+#: MtrDlg.cpp:142 PingDlg.cpp:100 TracerouteDlg.cpp:98
+msgid "Make host &name resolution"
+msgstr "&Преобразование имен DNS"
+
+#: HostDlg.cpp:331 PingDlg.cpp:227
+msgid "hos&t"
+msgstr "hos&t"
+
+#: HostDlg.cpp:335 PingDlg.cpp:231
+msgid "ns&lookup"
+msgstr "ns&lookup"
+
+#: TracerouteDlg.cpp:115
+msgid "&Maximum number of hops:"
+msgstr "&Максимальное число переходов:"
+
+#: HostDlg.cpp:112
+msgid "address (A)"
+msgstr "адрес (A)"
+
+#: HostDlg.cpp:113
+msgid "name (PTR)"
+msgstr "имя (PTR)"
+
+#: HostDlg.cpp:114
+msgid "name server (NS)"
+msgstr "сервер имен (NS)"
+
+#: HostDlg.cpp:115
+msgid "mail exchanger (MX)"
+msgstr "пересылка почты (MX)"
+
+#: HostDlg.cpp:116
+msgid "alias (CNAME)"
+msgstr "псевдоним (CNAME)"
+
+#: HostDlg.cpp:117
+msgid "start of authority (SOA)"
+msgstr "начало авторизации (SOA)"
+
+#: HostDlg.cpp:118
+msgid "any record (ANY)"
+msgstr "произвольная запись (ANY)"
+
+#: HostDlg.cpp:124
+msgid "Se&arch for:"
+msgstr "&Искать:"
+
+#: HostDlg.cpp:136 HostDlg.cpp:287
+msgid "default server"
+msgstr "сервер по умолчанию"
+
+#: FingerDlg.cpp:95 HostDlg.cpp:145
+msgid "Ser&ver:"
+msgstr "&Сервер:"
+
+#: FingerDlg.cpp:77
+msgid "&User:"
+msgstr "&Пользователь:"

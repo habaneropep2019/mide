@@ -1,0 +1,160 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.05 [en] (X11; I; Linux 2.0.27 i686) [Netscape]">
+   <TITLE>KSmiletris User Manual</TITLE>
+</HEAD>
+<BODY>
+
+<H1>
+KSmiletris User Manual</H1>
+<IMG SRC="ksmiletris.gif" HEIGHT=531 WIDTH=370>
+
+<P>KSmiletris is a Tetris-like game written for the K Desktop Environment
+using the QT and KDE libraries. It has been tested under the Beta 4 release
+of KDE and should be considered stable.
+
+<P>I release it under an <I>open source code</I> license. If you like this
+program, send me a postcard from your hometown <B>:-)</B>.
+<PRE>Sandro Sigala
+Viale De Gasperi, 8
+25041 Darfo Boario Terme
+Brescia, Italy
+</PRE>
+
+<H1>
+How to play</H1>
+The only keys you need to use are the four arrow keys plus the space bar.
+The objective of the game is to control and to place the falling blocks,
+so that two blocks vertically have matching patterns. This sequence and
+the blocks behind are then removed, and the above blocks will fall down.
+<H1>
+Where to find the sources</H1>
+The main FTP site is <A HREF="ftp://ftp.vix.com/guests/ssigala/pub/">ftp.vix.com</A>,
+where you can find the latest sources of this program plus the sources
+of other programs written by me. The other available FTP site is KDE main
+site <A HREF="ftp://ftp.kde.org/pub/kde/">ftp.kde.org</A>, or any other
+mirror.
+<H1>
+License</H1>
+
+<PRE>/****************************************************************
+Copyright (c) 1998 Sandro Sigala &lt;<A HREF="mailto:ssigala@globalnet.it">ssigala@globalnet.it</A>>.
+All rights reserved.
+
+Permission to use, copy, modify, and distribute this software
+and its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of the author not be used in
+advertising or publicity pertaining to distribution of the
+software without specific, written prior permission.
+
+The author disclaim all warranties with regard to this
+software, including all implied warranties of merchantability
+and fitness.&nbsp; In no event shall the author be liable for any
+special, indirect or consequential damages or any damages
+whatsoever resulting from loss of use, data or profits, whether
+in an action of contract, negligence or other tortious action,
+arising out of or in connection with the use or performance of
+this software.
+****************************************************************/
+</PRE>
+
+<H1>
+Credits</H1>
+
+<UL>
+<LI>
+Cristian Tibirna &lt;<A HREF="mailto:ctibirna@gch.ulaval.ca">ctibirna@gch.ulaval.ca</A>>
+for the ~GameWidget() destructor inconsistency bug.</LI>
+
+<LI>
+Christoph Gottfried Berndl &lt;<A HREF="mailto:winniepu@diddl.tuwien.ac.at">winniepu@diddl.tuwien.ac.at</A>>.</LI>
+
+<LI>
+Christopher Menzel &lt;<A HREF="mailto:cmenzel@tamu.edu">cmenzel@tamu.edu</A>>.</LI>
+</UL>
+
+<H1>
+Changes</H1>
+
+<H2>
+Changes from version 0.4 to version 1.0</H2>
+
+<UL>
+<LI>
+Fixed a Makefile bug, that prevented the icons from being distribuited
+in the package.</LI>
+
+<LI>
+Added sounds (the KDE interface is inadequate, though).</LI>
+
+<LI>
+Added the High Score board.</LI>
+</UL>
+
+<H2>
+Changes from version 0.3 to version 0.4</H2>
+
+<UL>
+<LI>
+Updated the <B>configure</B> files synchronizing with the <B>kexample</B>
+example of KDE SDK package.</LI>
+
+<LI>
+As a consequence of the above change, the source files are renamed from
+<B>.cc</B> to <B>.cpp</B>.</LI>
+</UL>
+
+<H2>
+Changes from version 0.2 to version 0.3</H2>
+
+<UL>
+<LI>
+Added a more nice breaking and deleting graphic sequence.</LI>
+</UL>
+
+<H2>
+Changes from version 0.1 to version 0.2</H2>
+
+<UL>
+<LI>
+The ~GameWidget() destructor was defined but not declared. This (correcly)
+generates an error if compiled with EGCS.</LI>
+
+<LI>
+Added automatic save and load of user options.</LI>
+</UL>
+
+<H1>
+To Do</H1>
+
+<UL>
+<LI>
+The KDE audio interface is inadequate for complex sound applications like
+games. Need to find a best method for playing sounds.</LI>
+
+<LI>
+Make the High Score board global, not local (this requires making the score
+data globally writable).</LI>
+
+<LI>
+Add keys redefinition support.</LI>
+
+<LI>
+Comment the source code with <B>kdoc</B>.</LI>
+
+<LI>
+Rewrite this documentation with the KDE SGML tools.</LI>
+
+<LI>
+Internationalization.</LI>
+</UL>
+
+<HR>
+<BR>Send comments to Sandro Sigala &lt;<A HREF="mailto:ssigala@globalnet.it">ssigala@globalnet.it</A>>
+<BR>&nbsp;
+</BODY>
+</HTML>

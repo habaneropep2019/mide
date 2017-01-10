@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The ktalkd Handbook: Questions and Answers</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KTALKD kotalkd talk talkd otalk ntalk ktalkdlg kcmktalkd">
+<META NAME="description" CONTENT="ktalkd documentation">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Next</A>
+<A HREF="ktalkd-4.html">Previous</A>
+<A HREF="ktalkd.html#toc5">Table of Contents</A>
+</P>
+<H3><A NAME="s5">5. Questions and Answers</A></H3>
+
+<P>
+<H3><A NAME="ss5.1">5.1 Why Doesn't Root Receive KDE Announcements ?</A>
+</H3>
+
+<P>Because this would be security hole, with the current user detection.
+You can bypass the limitation by adding two lines in xdm config files
+(which are the same than kdm ones).
+Note : the S.u.S.E linux distribution includes those lines by default.
+<P>
+<P>Those config files are normally in a directory such as /etc/X11/xdm,
+or /usr/X11R6/lib/X11/xdm on other systems. The following supposes
+that they are in /etc/X11/xdm, so you might have to translate them
+for another directory.
+<P>
+<P>Here is what you have to do :
+Edit the file Xstartup, or create it, (in the xdm config directory) so that it reads :
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/GiveConsole
+sessreg -a -l $DISPLAY -x /etc/X11/xdm/Xservers $USER
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>and the file Xreset so that it reads :
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/TakeConsole
+sessreg -d -l $DISPLAY $USER   
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Make sure that <B>xdm-config</B> make reference to those two
+files:
+<BLOCKQUOTE><CODE>
+<PRE>
+DisplayManager._0.startup:      /etc/X11/xdm/Xstartup
+DisplayManager._0.reset:        /etc/X11/xdm/Xreset 
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>This will make kdm (or xdm) log the user into utmp, which is the right 
+thing to do. It's not up to kvt, nor xterm, to log the user, but to
+xdm and kdm, in my opinion. However, this will not log the user as a X 
+user when using startx... Any hint about that ?
+<P>
+<H3><A NAME="ss5.2">5.2 Why Don't I, as a Normal User, Receive KDE Announcements ?</A>
+</H3>
+
+<P>If you're running a linux system (with /proc enabled), this behaviour is a
+bug. Please send me a description of it so that I correct it.
+<P>If you're running linux 2.0.35, this is a known bug in the kernel,
+which doesn't let root read /proc. The solution is the same as in section
+5.1, provided that you run kdm or xdm to log into X. Or upgrade !
+<P>Otherwise, this is normal : ktalkd can't find the user, as KDE doesn't 
+log him into utmp and the linux based (/proc) detection is disabled.
+The solution is the same as in section 5.1, provided that you run kdm
+or xdm to log into X.
+Another solution is to make sure you always have a xterm running.
+<P>
+<H3><A NAME="ss5.3">5.3 How Do I Get Debug Output from Ktalkd ?</A>
+</H3>
+
+<P>As it is a daemon, there is no debug output on standard output. To get 
+debugging output (for instance before submitting me a bug report !), update 
+the lines in inetd.conf which launches ktalkd and kotalkd to be :
+<BLOCKQUOTE><CODE>
+<PRE>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd -d
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd -d
+</PRE>
+</CODE></BLOCKQUOTE>
+
+(notice the <B>-d</B> option)
+<P>
+<P>Then edit /etc/syslog.conf to add the following line :
+<BLOCKQUOTE><CODE>
+<PRE>
+*.*         /var/log/all_messages
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>To make it work, you then have to restart inetd and syslogd :
+<BLOCKQUOTE><CODE>
+<PRE>
+% killall -HUP inetd
+% killall -HUP syslogd
+</PRE>
+</CODE></BLOCKQUOTE>
+
+Finally, run a talk session and see the result in /var/log/all_messages
+<P>When submitting a bug report, never forget to include the debugging output, but 
+also ktalkd's version number and the "./configure" output. Thanks.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Next</A>
+<A HREF="ktalkd-4.html">Previous</A>
+<A HREF="ktalkd.html#toc5">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

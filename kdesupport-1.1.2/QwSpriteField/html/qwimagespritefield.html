@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwImageSpriteField Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwImageSpriteField Class Reference</h1><br clear="all">
+<p>
+A <a href="qwspritefield.html">QwSpriteField</a> with a background image.
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>
+Inherits <a href="qwspritefield.html">QwSpriteField</a>.
+<p><a href="qwimagespritefield-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwimagespritefield.html#a0"><strong>QwImageSpriteField</strong></a> ( const char * imagefile, int w, int h, int chunksize=16, int maxclusters=100 ) </span>
+<li><span class="fn"><a href="qwimagespritefield.html#a1"><strong>QwImageSpriteField</strong></a> ( QPixmap pm, int w, int h, int chunksize=16, int maxclusters=100 ) </span>
+<li><span class="fn">virtual <a href="qwimagespritefield.html#a2"><strong>~QwImageSpriteField</strong></a> () </span>
+</ul>
+<h2>Protected Members</h2>
+<ul>
+<li><span class="fn">virtual void <a href="qwimagespritefield.html#a3"><strong>drawBackground</strong></a> ( QPainter &amp;, const QRect &amp; area ) </span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+A <a href="qwspritefield.html">QwSpriteField</a> with a background image.
+<p>
+Although it is not very useful to provide a complex background drawing
+method for a QwSpriteField (since redraw efficiency is achieved by sprites,
+not static background graphics), if your application requires only a
+simple repeating background image, this class will suffice.
+<p>This class is also intended as documentation-by-example for the
+<a href="qwspritefield.html#d5">QwSpriteField::drawBackground</a> method.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a1"></a>QwImageSpriteField::QwImageSpriteField ( QPixmap pm, int w, int h, int chunksize=16, int maxclusters=100 )</h3>
+<p>Construct an QwImageSpriteField which uses the given image
+as the background image.
+<h3 class="fn"><a name="a0"></a>QwImageSpriteField::QwImageSpriteField ( const char * filename, int w, int h, int chunksize=16, int maxclusters=100 )</h3>
+<p>Construct an QwImageSpriteField which uses the given image file
+as the background image.  Any Qt-supported image format may be used.
+<h3 class="fn"><a name="a2"></a>QwImageSpriteField::~QwImageSpriteField () <code>[virtual]</code></h3>
+<p>Does nothing.
+<h3 class="fn">void <a name="a3"></a>QwImageSpriteField::drawBackground ( QPainter &amp; painter, const QRect &amp; area ) <code>[virtual protected]</code></h3>
+<p>Reimplements <a href="qwspritefield.html#d5">QwSpriteField::drawBackground</a> to draw the image
+as the background.
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

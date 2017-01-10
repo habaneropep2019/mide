@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kppp Handbook: PAP and CHAP</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KPPP Dialer Internet PPP IP PAP CHAP">
+<META NAME="description" CONTENT="KPPP Internet Dialer">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-7.html">Next</A>
+<A HREF="kppp-5.html">Previous</A>
+<A HREF="kppp.html#toc6">Table of Contents</A>
+</P>
+<H3><A NAME="s6">6. PAP and CHAP</A></H3>
+
+<P>
+<P>Starting with version 0.9.1 <EM>kppp</EM> supports directly the most commonly used
+form of PAP authentification. The section 'PAP and CHAP with <EM>kppp</EM>' will
+descripe how to make PAP and CHAP work with <EM>kppp</EM> in general, while the
+section 'PAP with <EM>kppp</EM>' will describe in detail how to take advantage
+of <EM>kppp</EM>'s build in support for the most commonly encountered version of
+PAP wich is  widely used by commercial Internet Service Providers (ISP). 
+<P>
+<H3><A NAME="ss6.1">6.1 PAP with <EM>kppp</EM></A>
+</H3>
+
+<P>
+<P>There are two different ways to use PAP:
+<P>
+<H4>Client side authentication</H4>
+
+<P> 
+This variant is used by many
+commercial ISP´s. It basically means that you (or your computer) must
+authenticate yourself to the ISP´s PPP server. The PPP server must not
+authenticate himself to your computer, but typically this is not necessary
+since you know which computer you are connected to (because the connection was
+established by yourself). So this is no major security issue. <EM>kppp</EM> supports
+this variant directly. See below for instruction how use this one.
+<P>
+<P>If your ISP just gives you a username and a password and tells you to use
+PAP authentication you must use this variant.
+<P>
+<H4>Two way authentication</H4>
+
+<P> 
+Same as above, but your computer requires the
+ISP PPP server to authenticate himself. In order to establish a connection, 
+you must choose the authentication method <I>Script based</I>,
+not <I>PAP</I>, and you will have to manually edit
+<CODE>/etc/ppp/pap-secrets</CODE>. While <EM>kppp</EM> doesn't provide build in support
+for this variant -- it is nevertheless easy to establish a connection
+using this variant of PAP with <EM>kppp</EM>. The details are described in the
+previous section 'Using PAP and CHAP with <EM>kppp</EM>'.
+<P>
+<P>
+<H4>Preparing <EM>kppp</EM> for PAP</H4>
+
+<P>
+<OL>
+<LI> Make sure that the <CODE>/etc/ppp/options</CODE> (and <CODE>~/.ppprc</CODE> if
+you do have such a file) does <B>not</B> contain one of the arguments:
+<UL>
+<LI>+pap</LI>
+<LI>-pap</LI>
+<LI>papcrypt</LI>
+<LI>+chap</LI>
+<LI>+ua</LI>
+<LI>remotename</LI>
+</UL>
+<P>It is very unlikely that one of those arguments is already in there, but just
+to be sure.
+<P>
+</LI>
+<LI>Start <EM>kppp</EM></LI>
+<LI>Click on <I>Setup</I></LI>
+<LI>Choose the account you want to use PAP with and click on <I>Edit</I></LI>
+<LI>Click on the <I>Dial</I> tab.</LI>
+<LI>Select <I>PAP</I> in the checkbox <I>Authentication</I></LI>
+<LI>If you do not want to retype the password each time you dial in, select
+<I>Store password</I>. This will save the password. Make sure that nobody
+other than you has access to your account, otherwise this person will have
+access to your password.</LI>
+<LI>That's it. Close the dialogs, type in your the username and password
+your ISP supplied to you and dial.</LI>
+</OL>
+<P>
+<P>
+<H3><A NAME="PAP"></A> <A NAME="ss6.2">6.2 PAP and CHAP with <EM>kppp</EM> (alternate method)</A>
+</H3>
+
+<P>The following is based on an email by 
+<A HREF="mailto:kbrown@pdq.net">Keith Brown</A>
+and explains how to make <EM>kppp</EM> work for a generic PAP or CHAP account. If
+your ISP just gave you a user id and a password for a PAP account the odds
+are that you can skip this section and that you will get by just reading the 
+next one entitled 'PAP with <EM>kppp</EM>'.
+<P>
+<P>PAP seems a lot more complicated at first glance than it really is.
+The server (the machine you are connecting to) basically tells the client
+(your machine) to authenticate using PAP. The client (pppd) looks in a
+specific file for an entry that contains a matching server name and client's
+name for this connection, and then sends the password it finds there. That's
+about it! Now, here's how to make that happen. I am assuming a pppd version
+of 2.2.0 and a standard installation of configuration files under <CODE>/etc/ppp</CODE>.
+<P>
+<P>For the purposes of illustration, pretend that I have an Internet account
+with 'glob.net', under the user name 'booger', and a password of 'foobar'.
+First, I need to add all this to the file <CODE>/etc/ppp/pap-secrets </CODE>. 
+The format of an entry for our purposes, is:
+<P>
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+USERNAME  SERVERNAME   PASSWORD
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>so I add the line:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+booger  glob  foobar
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>to the file and save it. Note: I can use any name for the server I wish
+as long as I use the same name in the pppd arguments, as we'll see shortly.
+I have shortened it to 'glob'. This name is just used to locate the correct
+password.
+<P>
+<P>Now, I need to set up my connection in <EM>kppp</EM>. The basics are the same
+as any other connection, and I won't go into details here, except to say
+that you probably want to make sure that the <CODE>/etc/ppp/options,</CODE> is empty,
+and you probably don't want any login script either. Now, in the settings
+dialog, at the bottom, is the pppd arguments button. This brings up a dialog
+similar to the one used for editing the login script. Here we enter values that
+will be sent to pppd as command line arguments, and in the case of multiple-value
+arguments, we need to enter each value as a separate entry in the listbox,
+in the correct order.
+<P>
+<P>We can put any other arguments in here we want first.
+Now we need to add arguments that pppd needs to handle PAP authentication.
+In this example I am going to add 'user', 'booger', 'remotename', 'glob',
+in that order. The user argument tells pppd what user name to look for
+in pap-secrets, and send to the server. The remotename is only used by
+pppd to match the entry in the pap-secrets file, and is not sent to the
+server, so once again, it can be anything I want as long as it is consistent
+with the entry in the pap-secrets file.
+<P>
+<P>That's all there is to it. You should now be able to set up your own
+connection to a server with PAP authentication. CHAP should not be much
+different. See the Linux Network Administrators' Guide for chap-secrets
+file format and pppd arguments used. The rest should be gravy, but...your
+mileage, ah you know the rest.
+<P>
+<H3><A NAME="ss6.3">6.3 MS-CHAP</A>
+</H3>
+
+<P>
+<A HREF="mailto:birchallr@aecl.ca">Richard Birchall</A> provided us with
+details about how he configured kppp to connect to a NT RAS server that
+required MS-CHAP authentication:
+<P>Instructions on how to patch pppd and install the DES library can be found in
+the 
+<A HREF="http://www.xs4all.nl/~diedvdyk/PPP-NT-HOWTO/PPP-NT-HOWTO.html">PPP-NT-HOWTO</A> and in README.MSCHAP80 from the pppd package.
+<P>If your NT RAS server is not a PDC (primary domain controller), it is
+necessary to include the NT domain name as part of the username, separated
+by a backslash.   Because the "\" character has a special meaning to pppd,
+it is necessary to use "\\".   This is explained here:
+<A HREF="http://metalab.unc.edu/LDP/FAQ/PPP-FAQ-12.html#ss12.2">http://metalab.unc.edu/LDP/FAQ/PPP-FAQ.html#ss12.2</A><P>My kppp settings:
+<UL>
+<LI>no ID &amp; password</LI>
+<LI>script-based</LI>
+<LI>no pppd arguments</LI>
+<LI>no login script</LI>
+</UL>
+<P>My /etc/ppp/chap-secrets file:
+<BLOCKQUOTE><CODE>
+<PRE>
+NTDOMAIN\\username   *       password
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>My /etc/ppp/options file:
+<BLOCKQUOTE><CODE>
+<PRE>
+debug
+name 'NTDOMAIN\\username'
+remotename *
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-7.html">Next</A>
+<A HREF="kppp-5.html">Previous</A>
+<A HREF="kppp.html#toc6">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

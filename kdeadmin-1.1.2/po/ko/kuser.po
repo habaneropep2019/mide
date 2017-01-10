@@ -1,0 +1,873 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# , fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-06-03 18:02+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: LinuxKorea Co. <kde@linuxkorea.co.kr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+# , fuzzy
+#: mainWidget.cpp:20
+msgid "&Preferences..."
+msgstr "등록정보..."
+
+# , fuzzy
+#: mainWidget.cpp:26 mainWidget.cpp:33
+msgid "&Edit..."
+msgstr "편집..."
+
+# , fuzzy
+#: mainWidget.cpp:27 mainWidget.cpp:34
+msgid "&Delete..."
+msgstr "삭제..."
+
+# , fuzzy
+#: mainWidget.cpp:28 mainWidget.cpp:35
+msgid "&Add..."
+msgstr "추가..."
+
+# , fuzzy
+#: mainWidget.cpp:29
+msgid "&Set password..."
+msgstr "암호 설정..."
+
+# , c-format
+#: mainWidget.cpp:38
+#, fuzzy, c-format
+msgid ""
+"KUser version %s\n"
+"KDE project\n"
+"This program was created by\n"
+"Denis Pershin\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+msgstr ""
+"KUser 버전 %s\n"
+"KDE 프로젝트\n"
+"이 프로그램은 Denis Y. Pershin이\n"
+"만들었습니다\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+
+# , fuzzy
+#: mainWidget.cpp:49
+msgid "&User"
+msgstr "사용자"
+
+# , fuzzy
+#: mainWidget.cpp:50
+msgid "&Group"
+msgstr "그룹"
+
+#: mainWidget.cpp:60
+msgid "Add user"
+msgstr "사용자 추가"
+
+#: mainWidget.cpp:62
+msgid "Delete user"
+msgstr "사용자 삭제"
+
+#: mainWidget.cpp:64
+msgid "Edit user"
+msgstr "사용자 편집"
+
+#: grpnamedlg.cpp:17 mainWidget.cpp:69
+msgid "Add group"
+msgstr "그룹 추가"
+
+#: mainWidget.cpp:71
+msgid "Delete group"
+msgstr "그룹 삭제"
+
+#: mainWidget.cpp:73
+msgid "Edit group"
+msgstr "그룹 편집"
+
+#: mainWidget.cpp:96
+msgid "Ready"
+msgstr "준비"
+
+# , fuzzy
+#: editGroup.cpp:37
+msgid "Group properties"
+msgstr "등록정보..."
+
+#: editGroupData.cpp:41
+msgid "Users not in Group"
+msgstr ""
+
+#: editGroupData.cpp:55
+#, fuzzy
+msgid "Users in Group"
+msgstr "사용자 정보"
+
+#: kuservw.cpp:49 propdlg.cpp:56
+msgid "User login"
+msgstr "로그인 이름"
+
+#: kuservw.cpp:50
+msgid "Full Name"
+msgstr "전체 이름"
+
+#: kgroupvw.cpp:49
+msgid "GID"
+msgstr "GID"
+
+#: kgroupvw.cpp:50
+msgid "Group name"
+msgstr "그룹 이름"
+
+#: kdatectl.cpp:28
+msgid "January"
+msgstr ""
+
+#: kdatectl.cpp:29
+msgid "February"
+msgstr ""
+
+#: kdatectl.cpp:30
+msgid "March"
+msgstr ""
+
+#: kdatectl.cpp:31
+msgid "April"
+msgstr ""
+
+#: kdatectl.cpp:32
+msgid "May"
+msgstr ""
+
+#: kdatectl.cpp:33
+msgid "June"
+msgstr ""
+
+#: kdatectl.cpp:34
+msgid "July"
+msgstr ""
+
+#: kdatectl.cpp:35
+msgid "August"
+msgstr ""
+
+#: kdatectl.cpp:36
+msgid "September"
+msgstr ""
+
+#: kdatectl.cpp:37
+msgid "October"
+msgstr ""
+
+#: kdatectl.cpp:38
+msgid "November"
+msgstr ""
+
+#: kdatectl.cpp:39
+msgid "December"
+msgstr ""
+
+# , fuzzy, c-format
+#: kgroup.cpp:143 kuser.cpp:454
+#, c-format
+msgid "Error opening %s for reading"
+msgstr "쓰기 위해 %s 여는 중 오류"
+
+# , c-format
+#: kuser.cpp:520
+#, c-format
+msgid ""
+"No /etc/passwd entry for %s.\n"
+"Entry will be removed at the next `Save'-operation."
+msgstr ""
+"/etc/passwd에 %s에 대한 항목이 없읍니다\n"
+"항목은 다음번 `저장'이 실행되면 제거될 것입니다."
+
+# , c-format
+#: kgroup.cpp:183 kuser.cpp:615 kuser.cpp:693
+#, c-format
+msgid "Error opening %s for writing"
+msgstr "쓰기 위해 %s 여는 중 오류"
+
+#: kuser.cpp:663
+msgid "Unable to build password database"
+msgstr "암호 데이터베이스를 만들 수 없음"
+
+# , c-format
+#: kuser.cpp:704
+#, c-format
+msgid "No shadow entry for %s."
+msgstr "shadow 파일에 %s에 대한 항목이 없읍니다"
+
+#: kuser.cpp:761
+msgid "You have more than 65534 users!?!? You have ran out of uid space!"
+msgstr "65534명이 넘는 그룹이 있읍니다!?!? uid를 다 사용하셨읍니다!"
+
+# , c-format
+#: kuser.cpp:801
+#, c-format
+msgid "Directory %s already exists"
+msgstr "%s 디렉토리가 이미 존재합니다"
+
+# , c-format
+#: kuser.cpp:808
+#, c-format
+msgid ""
+"Cannot create home directory\n"
+"Error: %s"
+msgstr ""
+"홈 디렉토리를 생성할 수 없습니다\n"
+"오류: %s"
+
+# , c-format
+#: kuser.cpp:815
+#, c-format
+msgid ""
+"Cannot change owner of home directory\n"
+"Error: %s"
+msgstr ""
+"홈 디렉토리의 소유자를 바꿀 수 없습니다\n"
+"오류: %s"
+
+# , c-format
+#: kuser.cpp:822
+#, c-format
+msgid ""
+"Cannot change permissions on home directory\n"
+"Error: %s"
+msgstr ""
+"홈 디렉토리에 대한 권한을 변경할 수 없습니다\n"
+"오류: %s"
+
+# , c-format
+#: kuser.cpp:855
+#, fuzzy, c-format
+msgid ""
+"Cannot change permissions on mailbox: %s\n"
+"Error: %s"
+msgstr ""
+"%s 파일에 대한 권한을 변경할 수 없습니다\n"
+"오류: %s"
+
+# , c-format
+#: kuser.cpp:893
+#, fuzzy, c-format
+msgid ""
+"Cannot change owner of directory %s\n"
+"Error: %s"
+msgstr ""
+"홈 디렉토리의 소유자를 바꿀 수 없습니다\n"
+"오류: %s"
+
+# , c-format
+#: kuser.cpp:900
+#, fuzzy, c-format
+msgid ""
+"Cannot change permissions on directory %s\n"
+"Error: %s"
+msgstr ""
+"홈 디렉토리에 대한 권한을 변경할 수 없습니다\n"
+"오류: %s"
+
+# , c-format
+#: kuser.cpp:927
+#, c-format
+msgid ""
+"Cannot change owner of file %s\n"
+"Error: %s"
+msgstr ""
+"%s 파일의 소유자를 바꿀 수가 없습니다\n"
+"오류: %s"
+
+# , c-format
+#: kuser.cpp:934
+#, c-format
+msgid ""
+"Cannot change permissions on file %s\n"
+"Error: %s"
+msgstr ""
+"%s 파일에 대한 권한을 변경할 수 없습니다\n"
+"오류: %s"
+
+# , c-format
+#: kuser.cpp:949 kuser.cpp:957
+#, c-format
+msgid "Directory %s does not exist"
+msgstr "%s 디렉토리가 존재하지 않습니다"
+
+# , fuzzy, c-format
+#: kuser.cpp:984
+#, c-format
+msgid ""
+"Cannot remove home directory %s\n"
+"Error: %s"
+msgstr ""
+"홈 디렉토리를 생성할 수 없습니다\n"
+"오류: %s"
+
+# , fuzzy, c-format
+#: kuser.cpp:1007
+#, c-format
+msgid ""
+"Cannot remove crontab %s\n"
+"Error: %s"
+msgstr ""
+"%s 파일의 소유자를 바꿀 수가 없습니다\n"
+"오류: %s"
+
+# , fuzzy, c-format
+#: kuser.cpp:1024
+#, c-format
+msgid ""
+"Cannot remove mailbox %s\n"
+"Error: %s"
+msgstr ""
+"%s 파일의 소유자를 바꿀 수가 없습니다\n"
+"오류: %s"
+
+#: kuser.cpp:1044
+msgid "Cannot fork()"
+msgstr ""
+
+#: kgroup.cpp:240
+msgid "You have more than 65534 groups!?!? You have ran out of gid space!"
+msgstr "65534개가 넘는 그룹이 있읍니다!?!? gid를 다 사용하셨읍니다!"
+
+#: main.cpp:48
+msgid "Only root is allowed to manage users."
+msgstr "관리자만이 사용자를 관리할 수 있습니다."
+
+# , fuzzy
+#: main.cpp:58
+msgid "KDE User Manager"
+msgstr "사용자 이름"
+
+#: maindlg.cpp:152 maindlg.cpp:190 maindlg.cpp:495
+msgid "WARNING"
+msgstr "경고"
+
+#: maindlg.cpp:153
+msgid "Do you really want to delete user ?"
+msgstr "정말 사용자를 삭제하시겠습니까 ?"
+
+#: maindlg.cpp:191
+msgid ""
+"You are using private groups.\n"
+"Do you want delete user's private group ?"
+msgstr ""
+
+#: maindlg.cpp:321
+msgid "Data was modified"
+msgstr "데이터가 수정되었습니다"
+
+#: maindlg.cpp:322
+msgid "Would you like to save changes ?"
+msgstr "변경사항을 저장하시겠습니까 ?"
+
+#: maindlg.cpp:324
+msgid "Discard changes"
+msgstr "변경사항 버리기"
+
+# , fuzzy
+#: maindlg.cpp:362
+msgid "Edit defaults"
+msgstr "사용자 편집"
+
+# , c-format
+#: maindlg.cpp:390
+#, c-format
+msgid "Null pointer tmpKG in mainDlg::groupSelected(%d)\n"
+msgstr "Null pointer tmpKG in mainDlg::groupSelected(%d)\n"
+
+# , c-format
+#: maindlg.cpp:408
+#, c-format
+msgid "Null pointer tmpKU in mainDlg::userSelected(%d)\n"
+msgstr "Null pointer tmpKU in mainDlg::userSelected(%d)\n"
+
+# , c-format
+#: maindlg.cpp:418
+#, c-format
+msgid "Null pointer tmpQ in mainDlg::selected(%d)\n"
+msgstr "Null pointer tmpQ in mainDlg::selected(%d)\n"
+
+#: maindlg.cpp:496
+msgid "Do you really want to delete group ?"
+msgstr "정말 그룹을 삭제하시겠습니까?"
+
+#: propdlg.cpp:55
+msgid "User name"
+msgstr "사용자 이름"
+
+#: propdlg.cpp:59
+msgid "User identificator"
+msgstr "사용자 식별자"
+
+#: propdlg.cpp:60
+msgid "User id"
+msgstr "사용자 id"
+
+#: propdlg.cpp:64
+msgid "Set password"
+msgstr "암호 설정"
+
+#: propdlg.cpp:69 propdlg.cpp:70
+msgid "Full name"
+msgstr "전체 이름"
+
+#: propdlg.cpp:73 propdlg.cpp:96
+msgid "Login shell"
+msgstr "로그인 쉘"
+
+#: propdlg.cpp:75 userDefaultsPage.cpp:30
+msgid "<Empty>"
+msgstr "<비어있음>"
+
+#: propdlg.cpp:101 propdlg.cpp:102
+msgid "Home directory"
+msgstr "홈 디렉토리"
+
+#: propdlg.cpp:109 propdlg.cpp:110
+msgid "Office"
+msgstr "사무실"
+
+#: propdlg.cpp:112
+msgid "Office description"
+msgstr "사무실 설명"
+
+#: propdlg.cpp:116 propdlg.cpp:117
+msgid "Office phone"
+msgstr "사무실 전화"
+
+#: propdlg.cpp:119
+msgid "Office phone number"
+msgstr "사무실 전화 번호"
+
+#: propdlg.cpp:123 propdlg.cpp:124
+msgid "Home phone"
+msgstr "집 전화"
+
+#: propdlg.cpp:126
+msgid "Home phone number"
+msgstr "집 전화 번호"
+
+#: propdlg.cpp:127 propdlg.cpp:186
+msgid "User info"
+msgstr "사용자 정보"
+
+#: propdlg.cpp:135 propdlg.cpp:136
+msgid "Login class"
+msgstr "로그인 클래스"
+
+#: propdlg.cpp:138
+msgid "Login resource class"
+msgstr "로그인 리소스 클래스"
+
+#: propdlg.cpp:145
+msgid "Password never expires"
+msgstr "암호 사용기한 없음"
+
+#: propdlg.cpp:146
+msgid "Date when password expires"
+msgstr "암호 사용기한 끝날 날짜"
+
+#: propdlg.cpp:154 propdlg.cpp:224
+msgid "Account never expires"
+msgstr "계정 사용기한 없음"
+
+#: propdlg.cpp:155
+msgid "Date when account expires"
+msgstr "계정 사용기한 끝날 날짜"
+
+#: propdlg.cpp:163 propdlg.cpp:230
+msgid "Extended"
+msgstr "확장기능"
+
+#: propdlg.cpp:169
+msgid "The first office"
+msgstr "본사"
+
+#: propdlg.cpp:170
+msgid "Office1"
+msgstr "사무실1"
+
+#: propdlg.cpp:172
+msgid "First office description"
+msgstr "본사 설명"
+
+#: propdlg.cpp:176
+msgid "The second office"
+msgstr "지사 정보"
+
+#: propdlg.cpp:177
+msgid "Office2"
+msgstr "사무실2"
+
+#: propdlg.cpp:179
+msgid "Second office description"
+msgstr "지사 설명"
+
+#: propdlg.cpp:182
+msgid "Postal address"
+msgstr "우편 주소"
+
+#: propdlg.cpp:183
+msgid "Address"
+msgstr "주소"
+
+#: propdlg.cpp:184
+msgid "Full postal address"
+msgstr "전체 우편 주소"
+
+#: propdlg.cpp:197
+msgid "Last password change"
+msgstr "마지막 암호 변경"
+
+#: propdlg.cpp:199
+#, fuzzy
+msgid "Password change not allowed"
+msgstr "변경 허용되지 않음"
+
+#: propdlg.cpp:200
+#, fuzzy
+msgid ""
+"Date before which password cannot\n"
+"be changed"
+msgstr "변경이 허용되는 날짜"
+
+#: propdlg.cpp:205
+#, fuzzy
+msgid "Password will not expire"
+msgstr "암호 사용기한 없음"
+
+#: propdlg.cpp:206
+#, fuzzy
+msgid ""
+"Date when password expires and\n"
+"must be changed"
+msgstr "암호 사용기한 끝날 날짜"
+
+#: propdlg.cpp:212
+msgid "No warning will be given"
+msgstr ""
+
+#: propdlg.cpp:213
+#, fuzzy
+msgid ""
+"Date after which warning about pending\n"
+"password expiration will be given"
+msgstr ""
+"사용자에게 사용제한 알릴\n"
+"날짜"
+
+#: propdlg.cpp:218
+#, fuzzy
+msgid "Account will remain enabled"
+msgstr "계정 생성일부터 활성화"
+
+#: propdlg.cpp:219
+#, fuzzy
+msgid ""
+"Date when account will be disabled\n"
+"if password has expired"
+msgstr ""
+"사용자에게 사용제한 알릴\n"
+"날짜"
+
+#: propdlg.cpp:225
+#, fuzzy
+msgid ""
+"Date when account expires and will\n"
+"be disabled"
+msgstr "계정 사용기한 끝날 날짜"
+
+#: propdlg.cpp:239
+#, fuzzy
+msgid "Filesystem with quotas"
+msgstr "파일 소프트 쿼타"
+
+#: propdlg.cpp:248
+#, fuzzy
+msgid "Filesystem with quotas:"
+msgstr "파일 소프트 쿼타"
+
+#: propdlg.cpp:254 propdlg.cpp:255
+#, fuzzy
+msgid "Disk space soft quota"
+msgstr "파일 소프트 쿼타"
+
+#: propdlg.cpp:260 propdlg.cpp:261
+#, fuzzy
+msgid "Disk space hard quota"
+msgstr "파일 하드 쿼타"
+
+#: propdlg.cpp:264 propdlg.cpp:265
+#, fuzzy
+msgid "Disk space usage"
+msgstr "파일 사용법"
+
+#: propdlg.cpp:271 propdlg.cpp:272
+msgid "Time limit allowed for Disk space over soft quota"
+msgstr ""
+
+#: propdlg.cpp:278 propdlg.cpp:279
+#, fuzzy
+msgid "File number soft quota"
+msgstr "파일 소프트 쿼타"
+
+#: propdlg.cpp:284 propdlg.cpp:285
+#, fuzzy
+msgid "File number hard quota"
+msgstr "파일 하드 쿼타"
+
+#: propdlg.cpp:288 propdlg.cpp:289
+#, fuzzy
+msgid "File number usage"
+msgstr "파일 사용법"
+
+#: propdlg.cpp:295 propdlg.cpp:296
+msgid "Time limit allowed for File number over soft quota"
+msgstr ""
+
+#: propdlg.cpp:299
+msgid "Quota"
+msgstr "쿼타"
+
+#: propdlg.cpp:313
+msgid "Groups not belonged to"
+msgstr ""
+
+#: propdlg.cpp:339
+msgid "Groups belonged to"
+msgstr ""
+
+#: propdlg.cpp:350
+msgid "Primary group"
+msgstr "Primary 그룹"
+
+#: propdlg.cpp:354
+msgid "Groups"
+msgstr "그룹"
+
+# , fuzzy
+#: propdlg.cpp:365
+#, fuzzy
+msgid "User properties"
+msgstr "등록정보..."
+
+# , c-format
+#: addUser.cpp:93 propdlg.cpp:681
+#, c-format
+msgid "User with UID %u already exists"
+msgstr "UID %u의 사용자가 이미 존재합니다"
+
+# , c-format
+#: misc.cpp:48
+#, c-format
+msgid "Can't create backup file for %s"
+msgstr "%s를 위한 백업 파일을 만들 수 없습니다"
+
+# , c-format
+#: misc.cpp:165
+#, c-format
+msgid "File %s does not exist."
+msgstr "%s 파일이 존재하지 않습니다"
+
+# , c-format
+#: misc.cpp:173
+#, c-format
+msgid "Can not open file %s for reading."
+msgstr "%s 파일 읽을 수 없음"
+
+# , c-format
+#: misc.cpp:181
+#, c-format
+msgid "Can not open file %s for writing."
+msgstr "%s 파일에 쓸 수 없음"
+
+#: usernamedlg.cpp:15
+msgid "Enter username"
+msgstr "사용자이름 입력"
+
+#: usernamedlg.cpp:22
+msgid "Username:"
+msgstr "사용자이름:"
+
+# , c-format
+#: usernamedlg.cpp:72
+#, c-format
+msgid "User with name %s already exists."
+msgstr "%s라는 이름의 사용자가 이미 존재합니다."
+
+#: usernamedlg.cpp:79
+msgid "You have to enter a user name."
+msgstr ""
+
+#: pwddlg.cpp:24
+msgid "Enter password"
+msgstr "암호 입력"
+
+#: pwddlg.cpp:31
+msgid "Password"
+msgstr "암호"
+
+#: pwddlg.cpp:49
+msgid "Retype password"
+msgstr "암호 다시 입력"
+
+#: pwddlg.cpp:105
+msgid ""
+"Passwords are not identical.\n"
+"Try again"
+msgstr ""
+"암호가 일치하지 않습니다.\n"
+"다시 입력하십시오"
+
+#: grpnamedlg.cpp:24
+msgid "Group name:"
+msgstr "그룹 이름:"
+
+#: grpnamedlg.cpp:30
+msgid "Group number:"
+msgstr "그룹 번호:"
+
+# , c-format
+#: grpnamedlg.cpp:98
+#, c-format
+msgid "Group with name %s already exists."
+msgstr "%s라는 이름의 그룹이 이미 존재합니다."
+
+# , c-format
+#: grpnamedlg.cpp:105
+#, c-format
+msgid "Group with gid %d already exists."
+msgstr "%d의 gid를 가진 그룹이 이미 존재합니다."
+
+#: kerror.cpp:35
+msgid "Message"
+msgstr "메시지"
+
+#: addUser.cpp:32 addUser.cpp:52
+msgid "Create home directory"
+msgstr "홈 디렉토리 만들기"
+
+#: addUser.cpp:38 addUser.cpp:58
+msgid "Copy skeleton"
+msgstr "디렉토리 구조 복사"
+
+#: addUser.cpp:43 addUser.cpp:63 userDefaultsPageData.cpp:115
+msgid "User Private Group"
+msgstr ""
+
+# , fuzzy, c-format
+#: addUser.cpp:135
+#, c-format
+msgid "Directory %s already exists (uid = %d, gid = %d)"
+msgstr "%s 디렉토리가 이미 존재합니다"
+
+# , fuzzy, c-format
+#: addUser.cpp:138
+#, c-format
+msgid "%s is not a directory"
+msgstr "홈 디렉토리"
+
+# , fuzzy, c-format
+#: addUser.cpp:164
+#, c-format
+msgid "Mailbox %s already exist (uid=%d)"
+msgstr "%s 디렉토리가 이미 존재합니다"
+
+# , c-format
+#: addUser.cpp:167
+#, c-format
+msgid "%s exists but is not a regular file"
+msgstr ""
+
+#: editDefaults.cpp:32
+msgid "User"
+msgstr "사용자"
+
+#: userDefaultsPageData.cpp:39
+msgid "Shell"
+msgstr ""
+
+# , fuzzy
+#: userDefaultsPageData.cpp:64
+msgid "Base of home directories"
+msgstr "홈 디렉토리 만들기"
+
+# , fuzzy
+#: userDefaultsPageData.cpp:89
+msgid "Create home dir"
+msgstr "홈 디렉토리 만들기"
+
+# , fuzzy
+#: userDefaultsPageData.cpp:102
+msgid "Copy skeleton to home dir"
+msgstr "디렉토리 구조 복사"
+
+#, fuzzy
+#~ msgid "Disk space  hard quota"
+#~ msgstr "파일 하드 쿼타"
+
+#, fuzzy
+#~ msgid "Other Users"
+#~ msgstr "사용자"
+
+#, fuzzy
+#~ msgid "Group Users"
+#~ msgstr "그룹"
+
+#, fuzzy
+#~ msgid "Password change not required"
+#~ msgstr "변경하지 않음"
+
+#, fuzzy
+#~ msgid ""
+#~ "Date after which password change\n"
+#~ "is required"
+#~ msgstr "변경할 날짜"
+
+#, fuzzy
+#~ msgid "User will not be warned"
+#~ msgstr "사용자에게 사용제한 알리지 않음"
+
+#, fuzzy
+#~ msgid "Date when account becomes active"
+#~ msgstr "계정 사용기한 끝날 날짜"
+
+#~ msgid "Quota filesystem"
+#~ msgstr "파일시스템 쿼타"
+
+#~ msgid "File time limit"
+#~ msgstr "파일 시간 제한"
+
+#~ msgid "iNode soft quota"
+#~ msgstr "inode 소프트 쿼타"
+
+#~ msgid "iNode hard quota"
+#~ msgstr "inode 하드 쿼타"
+
+#~ msgid "iNode usage"
+#~ msgstr "inode 사용법"
+
+#~ msgid "iNode time limit"
+#~ msgstr "inode 시간 제한"
+
+#~ msgid "Users"
+#~ msgstr "사용자"
+
+#~ msgid "Date before account inactive"
+#~ msgstr "계정 비활성화 날짜"
+
+#~ msgid "Edit User"
+#~ msgstr "사용자 편집"
+
+#~ msgid "Quotas are not compiled into this kernel."
+#~ msgstr "현재 커널은 쿼타가 지원되지 않습니다."

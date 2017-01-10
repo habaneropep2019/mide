@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The Knu Handbook: The Host resolution tab</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, utilities">
+<META NAME="description" CONTENT="Network Utilities">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="index-5.html">Next</A>
+<A HREF="index-3.html">Previous</A>
+<A HREF="index.html#toc4">Table of Contents</A>
+</P>
+<H3><A NAME="s4">4. The <I>Host resolution</I> tab</A></H3>
+
+<P>
+<H3><A NAME="ss4.1">4.1 What is it?</A>
+</H3>
+
+<P>The <I>Host resolution</I> tab allows the execution of a host
+resolution program (<CODE>
+<A HREF="man:host">host(1)</A></CODE>
+or <CODE>
+<A HREF="man:nslookup">nslookup(8)</A></CODE>).  This
+host resolution program will asks the Domain Name Server the answer to
+the question asked.
+<P>
+<IMG SRC="knu-host.gif">
+<P>
+<H3><A NAME="ss4.2">4.2 Description</A>
+</H3>
+
+<P>This command looks for information about Internet hosts and domain names. It
+gets this information from a set of interconnected servers that are spread
+across the world. This set of interconnected servers are called the Domain
+Name Servers (DNS). The information is stored in the form of <I>resource
+records</I> belonging to hierarchically organized <I>zones</I>.
+<P>By default, the command simply converts between host names and
+Internet addresses. However, with the <I>Search for</I> options, it
+can be used to find all of the information about domain names that is
+maintained by the domain name­server system. The information printed
+consists of various fields of the associated resource records that
+were retrieved.
+<P>The host field can be either host names (domain names) or numeric Internet
+addresses.
+<P>A numeric Internet address consists of four decimal numbers separated by dots,
+e.g. <CODE>192.16.199.1</CODE>, representing the four bytes of the 32-bit address.
+The default action is to look up the associated host name.
+<P>A host name or domain name consists of component names (labels) separated by
+dots, e.g. <CODE>nikhefh.nikhef.nl</CODE>. The default action is to look up all of
+its Internet addresses.
+<P>For single names without a trailing dot, the local domain is automatically
+tacked on the end. Thus a user in domain <CODE>nikhef.nl</CODE> can type in <CODE>nikhapo</CODE>, and it will actually look up <CODE>nikhapo.nikhef.nl</CODE>. In all
+other cases, the name is tried unchanged.  Single names with trailing dot are
+considered top-level domain specifications, e.g. <CODE>nl.</CODE>
+<P>For a more precise description of the behaviour of this command, please see the
+underlying program's man-page <CODE>
+<A HREF="man:host">host(1)</A></CODE>
+or <CODE>
+<A HREF="man:nslookup">nslookup(8)</A></CODE>.
+<P>
+<H3><A NAME="ss4.3">4.3 Options</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Search for</B><DD><P>This allows you to specify a particular type of resource record information to
+be looked up.  Supported types are listed below. 
+<P>
+<DT><B>Server</B><DD><P>This is the name (or the address) of the domain name server to ask.
+</DL>
+<P>
+<H4>Resource type</H4>
+
+<P>The resource type possible are:
+<P><CODE>A</CODE> ___ the host's Internet address.
+<P><CODE>PTR</CODE> _ the host name.
+<P><CODE>NS</CODE> __ the name server for the named zone.
+<P><CODE>MX</CODE> __ the mail exchanger.
+<P><CODE>CNAME</CODE> the canonical name for an alias.
+<P><CODE>SOA</CODE> _ the domain's ``start-of-authority'' information.
+<P><CODE>ANY</CODE> _ all informations available.
+<P>
+<P>
+<H4><I>Host's authors</I></H4>
+
+<P>This program is originally from Rutgers University. It has been rewritten by
+Eric Wassenaar, NIKHEF, &lt;e07@nikhef.nl&gt;.
+<P>
+<H4><I>NsLookup's authors</I></H4>
+
+<P>Andrew Cherenson
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="index-5.html">Next</A>
+<A HREF="index-3.html">Previous</A>
+<A HREF="index.html#toc4">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

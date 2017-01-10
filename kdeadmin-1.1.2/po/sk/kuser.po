@@ -1,0 +1,861 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kuser\n"
+"POT-Creation-Date: 1999-06-03 18:02+0700\n"
+"PO-Revision-Date: 1998-03-20 12:20 MET\n"
+"Last-Translator: Juraj Bednár <bednar@isternet.sk>\n"
+"Language-Team: Slovak <bednar@isternet.sk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mainWidget.cpp:20
+msgid "&Preferences..."
+msgstr "&Vlastnosti..."
+
+#: mainWidget.cpp:26 mainWidget.cpp:33
+msgid "&Edit..."
+msgstr "&Upravi»..."
+
+#: mainWidget.cpp:27 mainWidget.cpp:34
+msgid "&Delete..."
+msgstr "&Zmaza»..."
+
+#: mainWidget.cpp:28 mainWidget.cpp:35
+msgid "&Add..."
+msgstr "&Prida»..."
+
+#: mainWidget.cpp:29
+msgid "&Set password..."
+msgstr "Na&stavi» heslo..."
+
+# , c-format
+#: mainWidget.cpp:38
+#, fuzzy, c-format
+msgid ""
+"KUser version %s\n"
+"KDE project\n"
+"This program was created by\n"
+"Denis Pershin\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+msgstr ""
+"KUser verzia %s\n"
+"KDE projekt\n"
+"Tento program vytvoril\n"
+"Denis Y. Pershin\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+
+#: mainWidget.cpp:49
+msgid "&User"
+msgstr "&U¾ívateµ"
+
+#: mainWidget.cpp:50
+msgid "&Group"
+msgstr "&Skupina"
+
+#: mainWidget.cpp:60
+msgid "Add user"
+msgstr "Prida» u¾ívateµa"
+
+#: mainWidget.cpp:62
+msgid "Delete user"
+msgstr "Zmaza» u¾ívateµa"
+
+#: mainWidget.cpp:64
+msgid "Edit user"
+msgstr "Upravi» u¾ívateµa"
+
+#: grpnamedlg.cpp:17 mainWidget.cpp:69
+msgid "Add group"
+msgstr "Prida» skupinu"
+
+#: mainWidget.cpp:71
+msgid "Delete group"
+msgstr "Zmaza» skupinu"
+
+#: mainWidget.cpp:73
+msgid "Edit group"
+msgstr "Upravi» skupinu"
+
+#: mainWidget.cpp:96
+msgid "Ready"
+msgstr "Pripravený"
+
+#: editGroup.cpp:37
+msgid "Group properties"
+msgstr "Vlastnosti skupiny"
+
+#: editGroupData.cpp:41
+#, fuzzy
+msgid "Users not in Group"
+msgstr "Pou¾i» privátnu skupinu"
+
+#: editGroupData.cpp:55
+#, fuzzy
+msgid "Users in Group"
+msgstr "Pou¾i» privátnu skupinu"
+
+#: kuservw.cpp:49 propdlg.cpp:56
+msgid "User login"
+msgstr "U¾ívateµské meno"
+
+#: kuservw.cpp:50
+msgid "Full Name"
+msgstr "Plné meno"
+
+#: kgroupvw.cpp:49
+msgid "GID"
+msgstr "GID"
+
+#: kgroupvw.cpp:50
+msgid "Group name"
+msgstr "Meno skupiny"
+
+#: kdatectl.cpp:28
+msgid "January"
+msgstr "Január"
+
+#: kdatectl.cpp:29
+msgid "February"
+msgstr "Február"
+
+#: kdatectl.cpp:30
+msgid "March"
+msgstr "Marec"
+
+#: kdatectl.cpp:31
+msgid "April"
+msgstr "Apríl"
+
+#: kdatectl.cpp:32
+msgid "May"
+msgstr "Máj"
+
+#: kdatectl.cpp:33
+msgid "June"
+msgstr "Jún"
+
+#: kdatectl.cpp:34
+msgid "July"
+msgstr "Júl"
+
+#: kdatectl.cpp:35
+msgid "August"
+msgstr "August"
+
+#: kdatectl.cpp:36
+msgid "September"
+msgstr "September"
+
+#: kdatectl.cpp:37
+msgid "October"
+msgstr "Október"
+
+#: kdatectl.cpp:38
+msgid "November"
+msgstr "November"
+
+#: kdatectl.cpp:39
+msgid "December"
+msgstr "December"
+
+# , c-format
+#: kgroup.cpp:143 kuser.cpp:454
+#, c-format
+msgid "Error opening %s for reading"
+msgstr "Chyba pri otváraní %s pre èítanie"
+
+# , c-format
+#: kuser.cpp:520
+#, c-format
+msgid ""
+"No /etc/passwd entry for %s.\n"
+"Entry will be removed at the next `Save'-operation."
+msgstr ""
+"®iadny záznam pre %s v /etc/passwd.\n"
+"Záznam bude odstránený pri nasledujúcej operácii ukladania."
+
+# , c-format
+#: kgroup.cpp:183 kuser.cpp:615 kuser.cpp:693
+#, c-format
+msgid "Error opening %s for writing"
+msgstr "Chyba pri otváraní %s pre zápis"
+
+#: kuser.cpp:663
+msgid "Unable to build password database"
+msgstr "Nemô¾em vytvori» databázu hesiel"
+
+# , c-format
+#: kuser.cpp:704
+#, c-format
+msgid "No shadow entry for %s."
+msgstr "Tieòový záznam pre %s neexistuje."
+
+#: kuser.cpp:761
+msgid "You have more than 65534 users!?!? You have ran out of uid space!"
+msgstr "Máte viac ne¾ 65534 u¾ívateµov!?!? Vyèerpali ste priestor UID!"
+
+# , c-format
+#: kuser.cpp:801
+#, c-format
+msgid "Directory %s already exists"
+msgstr "Prieèinok s menom %s u¾ existuje."
+
+# , c-format
+#: kuser.cpp:808
+#, c-format
+msgid ""
+"Cannot create home directory\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em vytvori» domovský prieèinok\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:815
+#, c-format
+msgid ""
+"Cannot change owner of home directory\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em zmeni» vlastníka domovského prieèinku\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:822
+#, c-format
+msgid ""
+"Cannot change permissions on home directory\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em zmeni» prístupové práva k domovskému prieèinku\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:855
+#, fuzzy, c-format
+msgid ""
+"Cannot change permissions on mailbox: %s\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em zmeni» prístupové práva súboru %s\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:893
+#, c-format
+msgid ""
+"Cannot change owner of directory %s\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em zmeni» vlastníka prieèinku %s\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:900
+#, c-format
+msgid ""
+"Cannot change permissions on directory %s\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em zmeni» prístupové práva k prieèinku %s\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:927
+#, c-format
+msgid ""
+"Cannot change owner of file %s\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em zmeni» vlastníka súboru %s\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:934
+#, c-format
+msgid ""
+"Cannot change permissions on file %s\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em zmeni» prístupové práva súboru %s\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:949 kuser.cpp:957
+#, c-format
+msgid "Directory %s does not exist"
+msgstr "Prieèinok %s neexistuje"
+
+# , c-format
+#: kuser.cpp:984
+#, c-format
+msgid ""
+"Cannot remove home directory %s\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em vytvori» domovský prieèinok %s\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:1007
+#, c-format
+msgid ""
+"Cannot remove crontab %s\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em zru¹i» crontabuµku %s\n"
+"Chyba: %s"
+
+# , c-format
+#: kuser.cpp:1024
+#, c-format
+msgid ""
+"Cannot remove mailbox %s\n"
+"Error: %s"
+msgstr ""
+"Nemô¾em zru¹i» mailbox %s\n"
+"Chyba: %s"
+
+#: kuser.cpp:1044
+msgid "Cannot fork()"
+msgstr "Nemô¾em fork()"
+
+#: kgroup.cpp:240
+msgid "You have more than 65534 groups!?!? You have ran out of gid space!"
+msgstr "Máte viac ne¾ 65534 skupín!?!? Vyèerpali ste priestor pre GID!"
+
+#: main.cpp:48
+msgid "Only root is allowed to manage users."
+msgstr "Iba root mô¾e spravova» u¾ívateµov."
+
+#: main.cpp:58
+msgid "KDE User Manager"
+msgstr "KDE mana¾ér u¾ívateµov"
+
+#: maindlg.cpp:152 maindlg.cpp:190 maindlg.cpp:495
+msgid "WARNING"
+msgstr "POZOR"
+
+#: maindlg.cpp:153
+msgid "Do you really want to delete user ?"
+msgstr "Skutoène si prajete zmaza» u¾ívateµa?"
+
+#: maindlg.cpp:191
+msgid ""
+"You are using private groups.\n"
+"Do you want delete user's private group ?"
+msgstr ""
+"Pou¾ívate private skupiny.\n"
+"Chcete zmaza» u¾ívateµovu privátnu skupinu ?"
+
+#: maindlg.cpp:321
+msgid "Data was modified"
+msgstr "Údaje boli zmenené"
+
+#: maindlg.cpp:322
+msgid "Would you like to save changes ?"
+msgstr "Prajete si ulo¾i» zmeny?"
+
+#: maindlg.cpp:324
+msgid "Discard changes"
+msgstr "Odstráni» zmeny"
+
+#: maindlg.cpp:362
+msgid "Edit defaults"
+msgstr "Upravi» ¹tandardné"
+
+# , c-format
+#: maindlg.cpp:390
+#, c-format
+msgid "Null pointer tmpKG in mainDlg::groupSelected(%d)\n"
+msgstr "Nulový ukazovateµ tmpKG v mainDlg::groupSelected(%d)\n"
+
+# , c-format
+#: maindlg.cpp:408
+#, c-format
+msgid "Null pointer tmpKU in mainDlg::userSelected(%d)\n"
+msgstr "Nulový ukazovateµ tmpKU v mainDlg::groupSelected(%d)\n"
+
+# , c-format
+#: maindlg.cpp:418
+#, c-format
+msgid "Null pointer tmpQ in mainDlg::selected(%d)\n"
+msgstr "Nulový ukazovateµ tmpQ v mainDlg::selected(%d)\n"
+
+#: maindlg.cpp:496
+msgid "Do you really want to delete group ?"
+msgstr "Naozaj si prajete zmaza» skupinu?"
+
+#: propdlg.cpp:55
+msgid "User name"
+msgstr "U¾ívateµské meno"
+
+#: propdlg.cpp:59
+msgid "User identificator"
+msgstr "Identifikátor u¾ívateµa"
+
+#: propdlg.cpp:60
+msgid "User id"
+msgstr "U¾ívateµovo ID"
+
+#: propdlg.cpp:64
+msgid "Set password"
+msgstr "Nastavi» heslo"
+
+#: propdlg.cpp:69 propdlg.cpp:70
+msgid "Full name"
+msgstr "Plné meno"
+
+#: propdlg.cpp:73 propdlg.cpp:96
+msgid "Login shell"
+msgstr "Login shell"
+
+#: propdlg.cpp:75 userDefaultsPage.cpp:30
+msgid "<Empty>"
+msgstr "<Prázdne>"
+
+#: propdlg.cpp:101 propdlg.cpp:102
+msgid "Home directory"
+msgstr "Domovský prieèinok"
+
+#: propdlg.cpp:109 propdlg.cpp:110
+msgid "Office"
+msgstr "Pracovisko"
+
+#: propdlg.cpp:112
+msgid "Office description"
+msgstr "Popis pracoviska"
+
+#: propdlg.cpp:116 propdlg.cpp:117
+msgid "Office phone"
+msgstr "Èíslo do práce"
+
+#: propdlg.cpp:119
+msgid "Office phone number"
+msgstr "Telef. èíslo do práce"
+
+#: propdlg.cpp:123 propdlg.cpp:124
+msgid "Home phone"
+msgstr "Èíslo domov"
+
+#: propdlg.cpp:126
+msgid "Home phone number"
+msgstr "Telef. èíslo domov:"
+
+#: propdlg.cpp:127 propdlg.cpp:186
+msgid "User info"
+msgstr "Informácie o u¾ívateµovi"
+
+#: propdlg.cpp:135 propdlg.cpp:136
+msgid "Login class"
+msgstr "Login trieda"
+
+#: propdlg.cpp:138
+msgid "Login resource class"
+msgstr "Trieda zdrojov"
+
+#: propdlg.cpp:145
+msgid "Password never expires"
+msgstr "Heslo nikdy nestratí platnos»"
+
+#: propdlg.cpp:146
+msgid "Date when password expires"
+msgstr "Dátum skonèenia platnosti hesla"
+
+#: propdlg.cpp:154 propdlg.cpp:224
+msgid "Account never expires"
+msgstr "Konto nikdy nestratí platnos»"
+
+#: propdlg.cpp:155
+msgid "Date when account expires"
+msgstr "Dátum skonèenia platnosti konta"
+
+#: propdlg.cpp:163 propdlg.cpp:230
+msgid "Extended"
+msgstr "Roz¹írené"
+
+#: propdlg.cpp:169
+msgid "The first office"
+msgstr "Prvé pracovisko"
+
+#: propdlg.cpp:170
+msgid "Office1"
+msgstr "Pracovisko1"
+
+#: propdlg.cpp:172
+msgid "First office description"
+msgstr "Popis prvého pracoviska"
+
+#: propdlg.cpp:176
+msgid "The second office"
+msgstr "Druhé pracovisko"
+
+#: propdlg.cpp:177
+msgid "Office2"
+msgstr "Pracovisko2"
+
+#: propdlg.cpp:179
+msgid "Second office description"
+msgstr "Popis druhého pracoviska"
+
+#: propdlg.cpp:182
+msgid "Postal address"
+msgstr "Po¹tová adresa"
+
+#: propdlg.cpp:183
+msgid "Address"
+msgstr "Adresa"
+
+#: propdlg.cpp:184
+msgid "Full postal address"
+msgstr "Úplná po¹tová adresa"
+
+#: propdlg.cpp:197
+msgid "Last password change"
+msgstr "Posledná zmena hesla"
+
+#: propdlg.cpp:199
+#, fuzzy
+msgid "Password change not allowed"
+msgstr "Zmeny nie sú povolené"
+
+#: propdlg.cpp:200
+#, fuzzy
+msgid ""
+"Date before which password cannot\n"
+"be changed"
+msgstr "Dátum, pokiaµ je povolená zmena"
+
+#: propdlg.cpp:205
+#, fuzzy
+msgid "Password will not expire"
+msgstr "Heslo nikdy nestratí platnos»"
+
+#: propdlg.cpp:206
+#, fuzzy
+msgid ""
+"Date when password expires and\n"
+"must be changed"
+msgstr "Dátum skonèenia platnosti hesla"
+
+#: propdlg.cpp:212
+msgid "No warning will be given"
+msgstr ""
+
+#: propdlg.cpp:213
+#, fuzzy
+msgid ""
+"Date after which warning about pending\n"
+"password expiration will be given"
+msgstr ""
+"Dátum, keï bude u¾ívateµ \n"
+"varovaný o vypr¹aní platnosti"
+
+#: propdlg.cpp:218
+#, fuzzy
+msgid "Account will remain enabled"
+msgstr "Konto je aktívne odo dòa vytvorenia"
+
+#: propdlg.cpp:219
+#, fuzzy
+msgid ""
+"Date when account will be disabled\n"
+"if password has expired"
+msgstr ""
+"Dátum, keï bude u¾ívateµ \n"
+"varovaný o vypr¹aní platnosti"
+
+#: propdlg.cpp:225
+#, fuzzy
+msgid ""
+"Date when account expires and will\n"
+"be disabled"
+msgstr "Dátum skonèenia platnosti konta"
+
+#: propdlg.cpp:239
+#, fuzzy
+msgid "Filesystem with quotas"
+msgstr "Slabá kontrola obmedzenie"
+
+#: propdlg.cpp:248
+#, fuzzy
+msgid "Filesystem with quotas:"
+msgstr "Slabá kontrola obmedzenie"
+
+#: propdlg.cpp:254 propdlg.cpp:255
+#, fuzzy
+msgid "Disk space soft quota"
+msgstr "Slabá kontrola obmedzenie"
+
+#: propdlg.cpp:260 propdlg.cpp:261
+#, fuzzy
+msgid "Disk space hard quota"
+msgstr "Tvrdá kontrola obmedzenie"
+
+#: propdlg.cpp:264 propdlg.cpp:265
+#, fuzzy
+msgid "Disk space usage"
+msgstr "Vyu¾itie disku"
+
+#: propdlg.cpp:271 propdlg.cpp:272
+msgid "Time limit allowed for Disk space over soft quota"
+msgstr ""
+
+#: propdlg.cpp:278 propdlg.cpp:279
+#, fuzzy
+msgid "File number soft quota"
+msgstr "Slabá kontrola obmedzenie"
+
+#: propdlg.cpp:284 propdlg.cpp:285
+#, fuzzy
+msgid "File number hard quota"
+msgstr "Tvrdá kontrola obmedzenie"
+
+#: propdlg.cpp:288 propdlg.cpp:289
+#, fuzzy
+msgid "File number usage"
+msgstr "Vyu¾itie disku"
+
+#: propdlg.cpp:295 propdlg.cpp:296
+msgid "Time limit allowed for File number over soft quota"
+msgstr ""
+
+#: propdlg.cpp:299
+msgid "Quota"
+msgstr "Obmedzenie"
+
+#: propdlg.cpp:313
+msgid "Groups not belonged to"
+msgstr ""
+
+#: propdlg.cpp:339
+msgid "Groups belonged to"
+msgstr ""
+
+#: propdlg.cpp:350
+msgid "Primary group"
+msgstr "Hlavná skupina"
+
+#: propdlg.cpp:354
+msgid "Groups"
+msgstr "Skupiny"
+
+#: propdlg.cpp:365
+#, fuzzy
+msgid "User properties"
+msgstr "Vlastnosti skupiny"
+
+# , c-format
+#: addUser.cpp:93 propdlg.cpp:681
+#, c-format
+msgid "User with UID %u already exists"
+msgstr "U¾ívateµ s UID %u u¾ existuje"
+
+# , c-format
+#: misc.cpp:48
+#, c-format
+msgid "Can't create backup file for %s"
+msgstr "Nie je mo¾né vytvori» zálo¾ný súbor pre %s"
+
+# , c-format
+#: misc.cpp:165
+#, c-format
+msgid "File %s does not exist."
+msgstr "Súbor %s neexistuje."
+
+# , c-format
+#: misc.cpp:173
+#, c-format
+msgid "Can not open file %s for reading."
+msgstr "Nie je mo¾né otvori» súbor %s pre èítanie"
+
+# , c-format
+#: misc.cpp:181
+#, c-format
+msgid "Can not open file %s for writing."
+msgstr "Nemô¾em otvori» súbor %s pre zápis"
+
+#: usernamedlg.cpp:15
+msgid "Enter username"
+msgstr "Zadajte u¾ívateµské meno"
+
+#: usernamedlg.cpp:22
+msgid "Username:"
+msgstr "U¾ívateµské meno:"
+
+# , c-format
+#: usernamedlg.cpp:72
+#, c-format
+msgid "User with name %s already exists."
+msgstr "U¾ívateµ s menom %s u¾ existuje."
+
+#: usernamedlg.cpp:79
+msgid "You have to enter a user name."
+msgstr "Musíte zada» meno u¾ívateµa."
+
+#: pwddlg.cpp:24
+msgid "Enter password"
+msgstr "Zadajte heslo"
+
+#: pwddlg.cpp:31
+msgid "Password"
+msgstr "Heslo"
+
+#: pwddlg.cpp:49
+msgid "Retype password"
+msgstr "Zopakujte heslo"
+
+#: pwddlg.cpp:105
+msgid ""
+"Passwords are not identical.\n"
+"Try again"
+msgstr ""
+"Heslá nie sú identické.\n"
+"Skúste znova"
+
+#: grpnamedlg.cpp:24
+msgid "Group name:"
+msgstr "Meno skupiny:"
+
+#: grpnamedlg.cpp:30
+msgid "Group number:"
+msgstr "Èíslo skupiny:"
+
+# , c-format
+#: grpnamedlg.cpp:98
+#, c-format
+msgid "Group with name %s already exists."
+msgstr "Skupina s menom %s u¾ existuje."
+
+# , c-format
+#: grpnamedlg.cpp:105
+#, c-format
+msgid "Group with gid %d already exists."
+msgstr "Skupina s GID %d u¾ existuje."
+
+#: kerror.cpp:35
+msgid "Message"
+msgstr "Správa"
+
+#: addUser.cpp:32 addUser.cpp:52
+msgid "Create home directory"
+msgstr "Vytvori» domovský prieèinok"
+
+#: addUser.cpp:38 addUser.cpp:58
+msgid "Copy skeleton"
+msgstr "Kopírova» ¹ablónu"
+
+#: addUser.cpp:43 addUser.cpp:63 userDefaultsPageData.cpp:115
+msgid "User Private Group"
+msgstr "Pou¾i» privátnu skupinu"
+
+# , c-format
+#: addUser.cpp:135
+#, c-format
+msgid "Directory %s already exists (uid = %d, gid = %d)"
+msgstr "Prieèinok s menom %s u¾ existuje (uid = %d, gid = %d)."
+
+# , c-format
+#: addUser.cpp:138
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s nie je prieèinok"
+
+# , c-format
+#: addUser.cpp:164
+#, c-format
+msgid "Mailbox %s already exist (uid=%d)"
+msgstr "Prieèinok s menom %s u¾ existuje. (uid=%d)"
+
+# , c-format
+#: addUser.cpp:167
+#, c-format
+msgid "%s exists but is not a regular file"
+msgstr "%s existuje, ale nie je súbor"
+
+#: editDefaults.cpp:32
+msgid "User"
+msgstr "U¾ívateµ"
+
+#: userDefaultsPageData.cpp:39
+msgid "Shell"
+msgstr "Shell"
+
+#: userDefaultsPageData.cpp:64
+msgid "Base of home directories"
+msgstr "Základ dom. prieèinkov"
+
+#: userDefaultsPageData.cpp:89
+msgid "Create home dir"
+msgstr "Vytvori» dom.pr."
+
+#: userDefaultsPageData.cpp:102
+msgid "Copy skeleton to home dir"
+msgstr "Kopírova» ¹ablónu"
+
+#, fuzzy
+#~ msgid "Disk space  hard quota"
+#~ msgstr "Tvrdá kontrola obmedzenie"
+
+#, fuzzy
+#~ msgid "Other Users"
+#~ msgstr "U¾ívatelia"
+
+#, fuzzy
+#~ msgid "Group Users"
+#~ msgstr "Skupiny"
+
+#, fuzzy
+#~ msgid "Password change not required"
+#~ msgstr "Zmena nie je vy¾adovaná"
+
+#, fuzzy
+#~ msgid ""
+#~ "Date after which password change\n"
+#~ "is required"
+#~ msgstr "Dátum pred nutnos»ou zmeny"
+
+#, fuzzy
+#~ msgid "User will not be warned"
+#~ msgstr "U¾ívateµ nebude nikdy varovaný"
+
+#, fuzzy
+#~ msgid "Date when account becomes active"
+#~ msgstr "Dátum skonèenia platnosti konta"
+
+#~ msgid "Quota filesystem"
+#~ msgstr "Obmedzenie miesta na disku"
+
+#~ msgid "File time limit"
+#~ msgstr "Èasový limit"
+
+#~ msgid "iNode soft quota"
+#~ msgstr "Slabé iNode obmedzenie"
+
+#~ msgid "iNode hard quota"
+#~ msgstr "Tvrdé iNode obmedzenie"
+
+#~ msgid "iNode usage"
+#~ msgstr "iNode vyu¾itie"
+
+#~ msgid "iNode time limit"
+#~ msgstr "Èasové obmedzenie iNode"
+
+#~ msgid "Users"
+#~ msgstr "U¾ívatelia"
+
+#~ msgid "Date before account inactive"
+#~ msgstr "Zmenu je nutné previes» do"
+
+#~ msgid "Edit User"
+#~ msgstr "Upravi» u¾ívateµa"
+
+#~ msgid "Quotas are not compiled into this kernel."
+#~ msgstr "Obmedzenia nie sú vkompilované do tohto jadra."

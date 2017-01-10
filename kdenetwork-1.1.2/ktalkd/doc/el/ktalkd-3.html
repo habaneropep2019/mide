@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Ôï åã÷åéñßäéï ôïõ  ktalkd : ÅãêáôÜóôáóç</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, KTalkD, talk, ntalk">
+<META NAME="description" CONTENT="The KTalkD manual">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-4.html">Åðüìåíï</A>
+<A HREF="ktalkd-2.html">Ðñïçãïýìåíï</A>
+<A HREF="ktalkd.html#toc3">Ðåñéå÷üìåíá</A>
+</P>
+<H3><A NAME="s3">3. ÅãêáôÜóôáóç</A></H3>
+
+<P>
+<P>
+<H3><A NAME="ss3.1">3.1 Ðùò íá áðïêôÞóåôå ôï ktalkd</A>
+</H3>
+
+<P>
+<P>
+<P>Ôï <CODE>ktalkd</CODE> åßíáé ðëÝïí âáóéêÞ åöáñìïãÞ ôïõ Ýñãïõ KDE 
+<A HREF="http://www.kde.org">http://www.kde.org</A>, ìÝñïò ôïõ ðáêÝôïõ
+<B>kdenetwork</B> .
+<P>
+<P>Ìðïñåßôå íá êáôåâÜóåôå ôï <CODE>ktalkd</CODE> áðü ôï êýñéï ftp site ôïõ Ýñãïõ KDE,
+<A HREF="ftp://ftp.kde.org/pub/kde">ftp://ftp.kde.org/pub/kde</A> Þ áðü ôá mirrors ôïõ .
+<P>
+<H3><A NAME="ss3.2">3.2 ÁðáéôÞóåéò</A>
+</H3>
+
+<P>
+<P>Ãéá íá ìåôáãëùôôéóôåß ôï <CODE>ktalkd</CODE> åðéôõ÷þò, ÷ñåéÜæåóôå ôçí ôåëåõôáßá Ýêäïóç ôùí âéâëéïèçêþí ôïõ KDE 
+üðùò åðßóçò êáé ôçí âéâëéïèÞêç Qt ãéá C++ . 1/4ëåò ïé áðáéôïýìåíåò âéâëéïèÞêåò êáèþò åðßóçò êáé ôï ßäéï ôï 
+ktalkd ìðïñïýí íá âñåèïýí óôï 
+<A HREF="ftp://ftp.kde.org/pub/kde/">ftp://ftp.kde.org/pub/kde/</A>.
+<P>
+<H3><A NAME="ss3.3">3.3 Ìåôáãëþôôéóç êáé ÅãêáôÜóôáóç</A>
+</H3>
+
+<P>
+<P>Ãéá íá ìåôáãëùôôßóåôå êáé íá åãêáôáóôÞóåôå ôï <CODE>ktalkd</CODE> óôï óýóôçìÜ óáò, ãñÜøôå ôá ðáñáêÜôù óôï âáóéêü êáôÜëïãï ôçò
+äéáíïìÞò ôïõ <CODE>ktalkd</CODE> :
+<BLOCKQUOTE><CODE>
+<PRE>
+% ./configure
+% make
+% make install
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Êáèþò ôï <CODE>ktalkd</CODE> åßíáé äáßìïíáò, ôï <CODE>make install</CODE> èá áðáéôÞóåé äéêáéþìáôá root.
+<P>
+<P>Ìçí îå÷Üóåôå íá åíçìåñþóåôå ôï /etc/inetd.conf.
+Ãéá ðáñÜäåéãìá, óå Ýíá óýóôçìá linux, áí ôï kde åßíáé óôï /opt/kde, áëëÜîôå ôéò ãñáììÝò ðïõ ó÷åôßæïíôáé ìå ôï
+talk êáé ôï ntalk óå :
+<BLOCKQUOTE><CODE>
+<PRE>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd
+</PRE>
+</CODE></BLOCKQUOTE>
+
+Óáò ðáñÝ÷åôáé åðßóçò Ýíá script, ðïõ êÜíåé áõôüìáôá ôéò áðáñáßôçôåò áëëáãÝò. 
+Åíçìåñþóôå ôï inetd.conf áñ÷åßï óáò ôñÝ÷ïíôáò áðëÜ 
+<BLOCKQUOTE><CODE>
+<PRE>
+% ./post-install.sh
+</PRE>
+</CODE></BLOCKQUOTE>
+
+1/4ðùò êáé íá Ý÷åé, èá ðñÝðåé íá <B>åðáíåêêéíÞóåôå ôï inetd</B> ìåôÜ áðü áõôü.
+Óôá ðåñéóóüôåñá óõóôÞìáôá Linux, ãßíåôáé ìå :
+<BLOCKQUOTE><CODE>
+<PRE>
+% killall -HUP inetd
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>Ðáñáêáëþ åíçìåñþóôå ìå ãéá ïðïéáäÞðïôå ôñïðïðïßçóç ðïõ ÷ñåéÜóôçêå íá êÜíåôå ãéá íá 
+ìåôáãëùôôßóåôå ôï <CODE>ktalkd</CODE> óôçí ðëáôöüñìá óáò.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-4.html">Åðüìåíï</A>
+<A HREF="ktalkd-2.html">Ðñïçãïýìåíï</A>
+<A HREF="ktalkd.html#toc3">Ðåñéå÷üìåíá</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

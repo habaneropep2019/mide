@@ -1,0 +1,645 @@
+<!doctype linuxdoc system>
+
+<!-- The KMid Handbook.
+
+ -->
+
+<article>
+
+<!-- Title information -->
+
+<title>The KMid Handbook
+<author>Antonio Larrosa Jim&eacute;nez, <tt/larrosa@kde.org/
+<date>Version 1.7, 8/4/1999
+<abstract>This Handbook describes KMid Version 1.7
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+
+<sect>Introduction
+
+<p>
+
+KMid is KDE's midi and karaoke multimedia player. It features some features not found in any other unix midi player, such as realtime graphics and karaoke text
+highlighting among others. KMid runs on Linux and FreeBSD operating systems. It uses the OSS sound driver, so it should run on every system where KDE and OSS compile. KMid also supports the Linux Ultrasound Project Driver , which is required to get sound in GUS cards. I plan to support the ALSA
+driver as soon as it supports a sequencer device.
+<p>
+KMid shows the lyrics in the screen changing its color at the same 
+time the music is playing, so it is very easy to follow the tune of the songs . 
+<p>
+Hope you find KMid as fun to use as I found developing it.
+<p>
+<tt>Antonio Larrosa Jim&eacute;nez</tt>
+<newline>
+<htmlurl url="mailto:larrosa@kde.org" name="larrosa@kde.org">
+<p>
+
+<sect1>KMid's features
+
+<p>
+These are some of KMid's main features :
+<p>
+<itemize>
+<item>It has a very <bf/friendly user interface/ to display karaoke text with <bf/realtime highlighting/ of lyrics.
+<item>It features a graphical view of what is being played on each midi channel, by highlighting the keys pressed in (virtual) keyboards.
+<item>The most powerful <bf/Midi Mapper/ that you will ever find in any operating system.
+<item><bf/Drag&amp;drop/ so you can drop in KMid any midi file from a KFM window.
+<item>You can <bf/change the tempo/ of songs to play them slower or faster at your wish.
+<item>It shows lights to follow the rhythm of the song.
+<item><bf/Customizable fonts/ for karaoke text to be displayed.
+<item>Supports the two standards to introduce lyrics in midi files, that is, lyrics or text events (and guess which one a song uses automatically).
+<item>Session Management. If a song is playing while you logout from KDE, the next time you login, the same song will start playing.
+<item><bf/Adjustable volume/ in realtime.
+<item>It can play broken midi files which make other players core dump !
+<item>It can open <bf>gzipped midi/karaoke files</bf> just as any other file.
+<item>Consumes approximately <bf/0.1%/ of my <bf/CPU/ (depends on the complexity of the song).
+<item>Supports external midi synths, AWE, FM and GUS cards (for the latter you need the LUP driver and gusd installed).
+<item>Runs on Linux and FreeBSD (maybe also other unices ...).
+</itemize>
+<p>
+
+<sect>General usage
+
+<p>
+
+<sect1>Opening songs
+
+<p>
+You can open a song by some different ways. First, you can select <tt/Open.../ from the <tt/File/ menu, then you are presented with a standard open dialog, with which you can select the song you wish to open.
+<p>
+You can drag a file from a KFM window and drop it in the KMid window.
+ You can also Drag&amp;Drop multiple songs at the same time.
+<p>
+If you specify a song in the command line when running KMid, it will
+also be opened.
+<p>
+And the last way is by selecting the song from the list of songs
+of the active collecion.
+<p>
+
+<sect1>Playing songs
+
+<p>
+To play a song, first open it, and then press on the Play button of the toolbar
+, or the <tt/Play/ entry of the <tt/Song/ menu, or just press the <tt/Space/ key.
+ Note that when you open a file using Drag&amp;Drop, KMid will start playing it
+ automatically (if you drop more than one file, they will be added to a collection and they will be played sequencially).
+<p>
+Once KMid is playing a song, you can move the time slider, by pressing
+with the middle mouse button, to go to a specified position.
+<p>
+If a song is playing too fast or too slow for you, you can press on the arrows
+at both sides of the tempo LCD and make it play faster or slower. To get back to the default tempo, just do a double click on the tempo LCD.
+<p>The <tt/Space/ key is used for two things, when music is playing, and you
+press the Space key, it will act as when you press on the pause button or
+the <tt/Pause/ entry of the <tt/Song/ menu, that is, it will pause music .
+ If you press the <tt/Space/ key when no music is being played, kmid will play it.
+<p>
+
+<sect1>Displaying lyrics
+
+<p>
+There are two methods to store lyrics in a song, by using <tt/Text events/
+or <tt/Lyrics events/, some songs use the first, some the second, some use both
+of them, and some  don't include lyrics :-) . KMid lets you choose which events
+to display, and even better, it has an option to automagically select the type of events that a song uses, so that you don't have to change the type manually .
+That way, if you activate the <tt/Automatic Text chooser/ entry of the <tt/Options/ menu the karaoke text will be automatically selected, but you can still change them if you prefer to see the other type.
+<p>
+To select which type to see, you can use the appropiate entries in the
+<tt/Options/ menu, or just press the <tt/1/ and <tt/2/ keys of your keyboard to
+see the <tt/Text events/ or <tt/Lyrics events/ respectively.
+<p>
+
+<sect>Collections
+
+<p>
+A collection is a list of midi files that you put in a set, and which
+ are played one after another . This section will help you to use them, and
+ will give you some useful tips to make a good use of them.
+<p>
+
+<sect1>Creating a collection
+
+<p>
+To create a collection, first open the <tt/Collection Manager/ dialog, by
+ selecting the <tt/Organize .../ entry of the <tt/Collections/ menu .
+ Then click on the <tt/New/ button, and write the name you want the collection
+ to have.
+<p>
+You can also copy a complete collection by selecting it and then pressing
+ the <tt/Copy/ button, which will ask you for the name of the new collection
+ that will have initially the same songs as the selected collection.
+<p>
+Once you have more than one collection, you can change the active collection from the <tt/Collection Manager/, by selecting it.
+<p>
+
+<sect1>The Temporary Collection
+
+<p>
+The Temporary Collection is a collection that is used to hold songs you want to play but that you don't want to add to any collection.
+<p>
+This collection is <bf/not saved/ on exit of the application, so keep it in mind when you add lots of songs to it.
+<p>
+Keep on reading this section for a better understanding of the Temporary Collection.
+<p>
+
+<sect1>Adding songs to a collection (how to use <tt/AutoAdd/)
+
+<p>
+There are some different ways to add a song to a collection.
+<p>
+First of all in each method, you must have selected the collection you
+ want to add songs to in the <tt/Collection Manager/.
+<newline>Then you can press on the 'Add' button to add a song, there will appear
+ an open file dialog so that you can choose which song to add.
+<p>
+The other methods to add a song depend on the state of the AutoAdd option.
+<p>
+If <tt/AutoAdd/ is active, when you open a song (using <tt/File | Open .../ or
+Drag&amp:Drop) it (they) will be added to the active collection without
+user intervention . If <tt/AutoAdd/ is not active, when you open a song the
+Temporary Collection will be activated and cleared, and the opened songs
+will be added to it.
+<p>
+
+<sect1>Removing songs from collections
+
+<p>
+To delete a song from a collection, just open the <tt/Collection Manager/,
+select the appropiate collection, and the song you wish to delete, and then
+click on the <tt/Remove/ button.
+<p>
+
+<sect1>Playing in order or at random
+
+<p>
+You can select the order in which songs will be played . When you select
+<tt/In order mode/ from the <tt/Collections/ menu, songs will be played in the
+same order in which they were added to the collection . When you select
+<tt/Shuffle mode/, KMid will generate a random variable with a discrete
+uniform distribution to really play randomly the songs in the collection .
+It will give values to that random variable while generating the list
+in which order the songs will be played (you surely want to play random
+songs, but don't wwant to play twice the same song, and you want to play the
+last played song when you press on the 'Previous Song' button, don't
+you ? :-) ).
+<p>The random list in which the collection will be played will be
+regenerated each time you add or remove a file in the active collection,
+and when you press on the <tt/Shuffle mode/ entry of the menu.
+<p>
+
+<sect1>Selecting a song from a collection
+
+<p>
+You can select a song to play in the <tt/Collection Manager/, or by
+using the combo box over the karaoke text.
+<p>
+You can also change to the next song by using the <tt/Next Song/ entry of
+the <tt/Song/ menu, the <tt/Next Song/ button of the toolbar, or pressing
+the <tt/right arrow/ key.
+<p>
+To change to the previous song, use the <tt/Previous Song/ entry of
+the <tt/Song/ menu, the <tt/Previous Song/ button of the toolbar, or press
+the <tt/left arrow/ key of your keyboard.
+<p>
+
+<sect1>Deleting a collection
+
+<p>
+To delete a collection, simply open the <tt/Collection Manager/, select the
+ collection you want to delete, and click on <tt/Delete/. Easy, it isn't ?
+<p>
+Please keep in mind that you cannot delete the <tt/Temporary Collection/,
+as anyway, it is not saved when you quit KMid .
+<p>
+
+<sect>Midi Maps
+
+<p>
+
+<sect1>What is a midi map ?
+
+<p>
+A Midi Map is something that maps midi events in other midi events .
+<p>
+This is totally needed if a synthesizer doesn't understand the standard events (that is, if a synthesizer is not General Midi compliant), in this case, a midi map will translate General Midi events in the events that that synthesizer understands.
+<p>
+For example you can make a midi map that converts all the <tt/Change patch to
+ Bright Piano/ events, to <tt/Change patch to Trumpet/ events, and so when a song tries to play a piano, it will play a trumpet instead.
+<p>
+This may sound odd, (why playing a trumpet when the song is made to play
+a piano ?), but it is very useful. The GM standard specifies that when a
+midi keyboard receives an event to change patch to <tt/0/, it will change the
+ current patch to <tt/Grand Piano/, but older synthesizer will change for example to a <tt/Electric Guitar/ when it receives a <tt/0/. This old keyboard,
+ needed to receive a <tt/3/ (for example) to change to a <tt/Piano/. And here comes
+ the midi map in action, changing all <tt/change patch to 0/ to <tt/change patch to 3/ and thus really playing the correct instrument when it has to.
+<p>
+
+<sect1>Do I need a midi map ?
+
+<p>
+Quickly, if you don't have an external synth, NO.
+
+<p>
+If you only have a sound card, midi maps are not needed because all the sound
+ cards are GM compliant (this include AWE cards, GUS cards, FM devices and so on).
+<p>
+If you are playing music through an external synthesizer, and it is
+not GM compliant, you will need to make a midi map for your midi keyboard .
+Although you will perhaps be a whole afternoon doing your map file and
+trying different values for all the options, you will be fully rewarded
+when you finish it, because then you will find all the hidden possibilities
+of your keyboard. For example, I have a low-cost Yamaha PSS-790, which is not
+GM compatible, and doesn't has as many instruments as a GM synthesizer,
+but with KMid's midi mapper, it sounds even better than many soundcards
+(including AWE :-)), due to the sound quality found in external synths (even on non GM compliant ones).
+<p>
+
+<sect1>Creating a midi map
+
+<p>
+There isn't any program to generate midi maps, so you will have to
+ edit a file by hand (using your favourite text editor).
+<p>
+A Midi map is a text file that keeps all the needed translations there will
+ be made when playing music.
+<p>
+It consist of four sections: <tt/PATCHMAP/, <tt/KEYMAP/, <tt/CHANNELMAP/ and <tt/OPTIONS/.
+<p>
+Each section must appear only once, except the <tt/KEYMAP/ section that
+can appear as many times as needed, provided that each appearance use
+a different TextID (continue reading for details) .
+<p>The general structure of a map file is :
+<p>
+<tscreen><verb>
+DEFINE PATCHMAP
+...
+END
+
+DEFINE KEYMAP "Name of Keymap"
+...
+END
+
+DEFINE KEYMAP "Another Keymap"
+...
+END
+
+DEFINE CHANNELMAP
+...
+END
+
+OPTIONS
+...
+END
+</verb></tscreen>
+<p>
+You can see that the <tt/DEFINE/ word is used to specify which section is going
+to be started (except for <tt/OPTIONS/), and <tt/END/ is put at the end of each section.
+<p>
+You can put comments by starting the line with a <tt/#/ character.
+<p>
+Please, don't forget to send me your map file by email, so that future
+releases of KMid will include support for more non General Midi compliant
+keyboards.
+<p>
+
+<sect2>The <tt/PATCHMAP/ section
+
+<p>
+This section is used to specify how patches are going to be mapped, from GM to your keyboard specs . The general usage is :
+<p>
+<tscreen><verb>
+(Name of GM Patch name)=(N) [AllKeysTo M]
+</verb></tscreen>
+<p>
+Where <tt/N/ is the number that you keyboard needs to receive to change the patch to the same that the GM standard does .
+<p>
+Please note that the left side of the equal sign is ignored, so GM patches are supossed to be in order (from 0 to 127) , and so you are not allowed to change
+ the order of the lines nor to omit any of the 128 instruments.
+<p>
+The optional <tt/AllKeysTo M/ is used to map all notes that use that instrument to the <tt/M/ key . For example, suppose that your midi keyboard doesn't have
+a Gun Shot sound (GM patch 127) so you want to map it to a percussion drum (i.e. key 60),
+which sounds similar to a gun shot, then you can put in the 127th line of the <tt/PATCHMAP/ section:
+<p>
+<tscreen><verb>
+Gunshot       =100 AllKeysTo 60
+</verb></tscreen>
+<p>
+So when a midi file tries to play a note with the patch 127 (gun shot), it
+ will be mapped to the patch 100 (your keyboard's percussion patch) and play
+ the note 60 (independently of the key that was goind to be played) .
+<p>Please note that when I use the expression 'Percussion patch', I mean
+ the patch in which each key plays a different drum, cymbal, tom, maracas and so on, and not to a possible sound which some keyboards have and which plays a
+ different tone of the same drum with each key.
+<p>
+
+<sect2>The <tt/KEYMAP/ section
+
+<p>
+The <tt/KEYMAP/ section is used to specify how keys are going to be mapped, within a given channel or instrument . The usage is :
+<p>
+<tscreen><verb>
+DEFINE KEYMAP "Name of Keymap"
+C 0 =0
+C#0 =1
+D 0 =2
+...
+END
+</verb></tscreen>
+<p>
+As with the <tt/PATCHMAP/ section, it is very important the order of the lines, and that they are all there (the 128 keys).
+<p>
+As you can define multiple keymaps for different channels and instruments,
+ you must give a different name to each one in the first line.
+<p>
+Keymaps are mainly used to map keys in the percussion channel . Have a look
+ at the distributed maps to see some examples.
+<p>
+
+<sect2>The <tt/CHANNELMAP/ section
+
+<p>
+This section can be used to map some channels to different ones . For example,
+if you want to swap the first and second channels, you can easily do it within
+the <tt/CHANNELMAP/ section .
+
+<p>
+However it is more usefull for keyboards that need the percussion channel
+to be in a given channel (the GM standard use the channel 10, others use the
+channel 16 and others use channel 9).
+<p>
+Note that midi devices use 16 channels, so the <tt/CHANNELMAP/ section, has
+ 16 lines, from 0 to 15 , as this one :
+<p>
+<tscreen><verb>
+(N) = (M) [Keymap "Name"] [ForcePatch x]
+</verb></tscreen>
+<p>
+<p>Where <tt/N/ is the channel which is mapped to the <tt/M/ channel .
+If the <tt/Keymap/ option is used, the Keymap with name <tt/Name/ will be used in this channel (this Keymap should be defined earlier in the map file !) .
+If the <tt/ForcePatch/ option is used, all events that try to change the patch
+which is used in this channel will be ignored, and patch <tt/x/ will be used instead .
+<p>The <tt/ForcePatch/ option may be useful for example to always use the
+ percussion patch on the percussion channel .
+<p>
+
+<sect2>The <tt/OPTIONS/ section
+
+<p>
+The <tt/OPTIONS/ section has some general options that can be very useful :
+<p>
+<tscreen><verb>
+OPTIONS
+PitchBenderRatio = r
+MapExpressionToVolumeEvents
+END
+</verb></tscreen>
+<p>
+You can specify both options, only one, or none of them.
+<p>
+The <tt/PitchBenderRatio r/ value, has the ratio by which pitch bender events
+will be multiplied . That is, when a midi file tries to send a pitch bender event with a <tt/n/ value, the real value that will be sent is <tt>n*(r/4096)</tt> (the <tt/4096/ value is for not having to put decimal points in the map file).
+<p>
+This is used because the GM standard says that when a midi keyboard receives a Pitch Bender event with a 4096 data value, it should bend the note to a higher one , but some midi keyboards try to bend the initial note by two or more higher notes (even an octave higher !) when they receive a 4096 .
+This can be easily fixed by trying different values so that instead of sending a 4096, KMid sends the appropiate value .
+<p>When the <tt/MapExpressionToVolumeEvents/ option is set in the map file, and
+ a midi file try to send an expression event, KMid will send a volume event
+ which is understood by more non-GM keyboards, and which has a similar effect .
+ There are many midi files which use expression events to fade out at the end
+ of a song, so if you feel that music should be heard softer and softer, you
+ can turn on this option and see if this is what you need, because your midi
+ synthesizer could be ignoring the expression events because it doesn't
+ understand them.
+<p>
+
+<sect1>Using midi maps
+
+<p>
+To use a midi map, simply open the <tt/Midi Setup/ dialog by selecting the
+<tt/Midi Setup .../ entry of the <tt/Options/ menu.
+<p>
+Then click on <tt/Browse .../, select the map file within the open file dialog
+ and enjoy the music ! :-)
+<p>
+
+<sect>Advanced features
+
+<p>
+
+<sect1>The Channel View
+
+<p>
+The Channel view is a window where you are shown a heap of keyboards (one for each midi channel). In these keyboards, the notes that are being played with each instrument are highlighted so that you can see what is each instrument playing.
+<p>
+
+<sect2>Changing instruments
+
+<p>
+You can use the Channel View to change the instrument that each channel is playing. In each channel there is a combo box where you can select it. Once you change it, the green button next to it will change to red to indicate that this is not the default instrument. 
+<p>
+If you want to set again the default instrument, click on the red button, and it will be automatically set.
+<p>
+
+<sect2>Changing the look mode
+
+<p>
+The Channel View has two different ways (for now) to display the played notes, you can select them from the <tt/Channel View Options.../ item in the <tt/Options/ menu.
+<p>
+You can choose between a mode in which played keys are pressed, as if it were a normal piano (<tt/3D look/), or a mode in which keys are also filled with red colour, so that pressed keys are easily recognized (<tt/3D - filled/). If you play the piano, or any other music instrument, you can use this view to learn to play a song by yourself. I've used this technique and it (along with a tempo reduction) is great to
+learn new compositions.
+<p>
+
+<sect1>The Tempo LCD
+
+<p>
+This shows the tempo in which a song is played, that is, the velocity of the song. The higher this number is, the faster the song will play.
+<p>
+You can also change the tempo of the song, so if a song plays too fast for you to follow the lyrics, you can make it play slower. To change the tempo, you can use the arrows that appear at each sides of the LCD.
+<p>
+Once you have changed the tempo, you can get back the default one by doing a double click on the LCD.
+<p>
+
+
+<sect>Key bindings
+
+<p>
+<itemize>
+<item><tt/Space/ - Play the loaded song if it isn't playing, or pause it while it's playing
+<item><tt/Backspace/ - Stop playing
+<item><tt/Right Arrow/ - Next song in current collection
+<item><tt/Left Arrow/ - Previous song in current collection
+<p>
+<item><tt/Up Arrow/ - Scroll lyrics one line up
+<item><tt/Down Arrow/ - Scroll lyrics one line down
+<item><tt/Page Up/ - Scroll lyrics one page up
+<item><tt/Page Down/ - Scroll lyrics one page down
+<item><tt/1/ - Display text events
+<item><tt/2/ - Display lyrics events
+<p>
+<item><tt/Ctrl-O/ - Open a song
+<item><tt/Ctrl-Q/ - Quit KMid
+<item><tt/F1/ - Open this help
+</itemize>
+<p>
+
+<sect>Installation
+
+<p>
+
+<sect1>How to obtain KMid
+
+<p>
+KMid is a core application of the KDE project <url url="http://www.kde.org">.
+KMid can be found on the KDEmultimedia package, which is at <url url="ftp://ftp.kde.org/pub/kde/">, the main ftp site of the KDE project. You can also download it from any of the many ftp mirrors whose list is at <url url="http://www.kde.org/mirrors.html">.
+<p>
+Additionally, KMid can be found on its homepage, which is at <url url="http://www.arrakis.es/~rlarrosa/kmid.html" name="http://www.arrakis.es/~rlarrosa/kmid.html">. In the homepage, you can follow its development, see some information about it, some screenshots, a list of sites from where you can download more karaoke songs, etc.
+<p>
+
+<sect1>Requirements
+
+<p>
+KMid requires to work:
+<p>
+<itemize>
+<item>KDE 
+<newline>
+Well, you probably already have this :-)
+<p>
+<item>A sound card 
+<newline>
+A good soundcard and/or external synthesizer are recommended, as the sound quality depends greatly in your soundcard, it's not the same to play the music using an FM device, than using an AWE card .
+<p>
+If you don't have a soundcard, you can still compile KMid with <tt/MODE_DEMO_ONLYVISUAL/ defined and it will run as if you had one (but you'll get no music, of course :-( ). 
+</itemize>
+<p>
+
+<sect1>Compilation and installation
+
+<p>
+If you downloaded the KDEmultimedia package, or just the KMid package, to compile KMid you must run <tt/configure/, then <tt/make/ and then, to install it, <tt/make install/ (most probably, as root).
+<p>
+I've included some examples that are installed in <tt>$dollar;KDEDIR/share/apps/kmid</tt>
+<p>
+If you run into any problem, don't hesitate to contact any of the KDE mailing list, or send a report directly to me.
+<p>
+
+<sect>Frequently Asked Questions (FAQ)
+
+<p>
+<itemize>
+<item><tt/Q:/ What is exactly a midi file ?
+<newline><tt/A:/A Midi file is a file that contains the information on how to play a song, that is, it contains simply the notes, the rhythm, velocity, etc.
+ This implies that the same midi file, when played in two different devices, can produce very different results, as well as a given staff can be played very differenly by two different musicians.
+<p>
+<item><tt/Q:/I can get better sound with a mp3/wav player, why should I use KMid?
+<newline><tt/A:/Well, I cannot force anyone to use KMid, but a typical midi file occupies 50 Kb. while a typical mp3 file occupies 4 Mb. (and that is a 1:80 compression ratio :-) . And with a good synthesizer device, you can get a comparable sound quality. Evenmore, with a midi file, you can change individual instruments, change the velocity of a song, etc. so you have more overall control. 
+<p>
+<item><tt/Q:/I can't get my AWE card to work with KMid, what can I do ?
+<newline><tt/A:/This can happen when you get a binary distribution (rpm, deb) of KMid. It happens because KMid was compiled without awe support. If it doesn't
+work, then you must download a source code distribution (for example, from <url url="http://www.arrakis.es/~rlarrosa/kmid.html" name="KMid's homepage">)
+<p>
+<item><tt/Q:/I want to add a whole directory to a collection, but having to add the midi files one by one is not funny.
+<newline><tt/A:/I agree, that's why KMid supports Drag&amp;Drop. Just open, in KFM, the directory you want to add, select all the files, drag them and drop them in KMid.
+<newline>Be sure to set the <tt/AutoAdd/ option before, so that the files will be added to the current collection. If you don't do this, files will be added to the Temporary Collection.
+<p>
+<item><tt/Q:/I can't follow the lyrics, it's playing too fast !
+<newline><tt/A:/You can press the left arrow of the tempo LCD to make it play slower. Remember that you can do a double click on the LCD to get the default tempo.
+</itemize>
+<p>
+
+<sect>Final notes
+
+<p>
+
+<sect1>Some tips and tricks
+
+<p>
+
+I will include some tips so that you can take fully advantage from all the features of KMid :
+<p>
+<itemize>
+<item><tt/Opening files/
+<newline>
+I always keep a KDE desktop with a KFM window in my root midi directory, and KMid in this desktop (if playing a midi file) or sticky (if playing a karaoke file :-)). This way, when the active collection finishes, or I want to play some file, I just go to the KFM window, select the desired files and make Drag&amp;Drop to the KMid's window.
+<p>
+Suppose that you want to play some midi files, but don't want to add
+them to any collection, well, just turn off the <tt/AutoAdd to Collection/ option in the <tt/Collections/ menu, and open the files, they will be added to the
+Temporary Collection .
+<p>
+<item><tt/Another method to create a new Collection/
+<newline>
+Suppose that you have midi files A.mid , B.mid and C.mid . At first you
+ only want to play the first midi file, so you unselect <tt/AutoAdd/ and open
+ A.mid . You get then a Temporary Collection with only one midi file .
+<p>
+Then you decide to play also B and C, and make a collection with all them,
+ what do you do ?
+<p>
+Easy, select <tt/AutoAdd/ and open B.mid and C.mid (by any of the multiple
+methods), they will be automatically added to the Temporary Collection, that
+will then have A.mid, B.mid and C.mid . At this point, you can open the
+<tt/Organize Collections/ dialog, select the Temporary Collection, and click on the <tt/Copy/ button, enter the name of the new collection, and you are done .  You already have a new collection, which holds the A,B and C midi files, and that is not deleted when you close KMid.
+</itemize>
+<p>
+
+<sect1>Hall of KMid's friends
+
+<p>
+These are some folks who have sent me midi files or a postcard, thanks to 
+everyone !  Hearing those songs and watching those postcards will keep me 
+programming more and more on kmid.
+<p>
+<itemize>
+<item>Ola Sigurdson  - <tt/Taking Care of Business/ (Bachman Turner Overdrive)
+<item>EG Lim - A really very nice postcard from Penang.
+<item>Guenther Starnberger - <tt/Amadeus/ (Falco) and <tt/Schrei Nach Liebe/ (Die Aerzte)
+<item>Leandro Terr&eacute;s - <tt/All That She Wants/ and <tt/The Sign/ (Ace of Base)
+<item>Nick Stoic - Two midi files
+</itemize>
+<p>
+
+<sect1>About the author
+
+<p>
+KMid has been made by Antonio Larrosa Jim&eacute;nez, in M&aacute;laga (Spain) .
+ I am a student of Mathematics at the University of M&aacute;laga, currently
+ I'm doing the third course, so I don't have much free time for my hobbies, but I always try to get some :-) . My hobbies include : Programming, collecting midi files, playing music and proving theorems ;-) .
+<p>
+If you want to know where to download midi/karaoke files, you have any question, a bug to report, an idea or a feature you'd like to see in KMid or just want
+ to make me happy, feel free to send me an email to : <url url="mailto:larrosa@kde.org" name="larrosa@kde.org"> or <url url="mailto:antlarr@arrakis.es" name="antlarr@arrakis.es">
+<p>
+or write to me by snail-mail at :
+<tscreen><verb>
+ Antonio Larrosa Jimenez
+ Rio Arnoya 10 5B
+ Malaga (Spain)
+</verb></tscreen>
+<p>
+You will really make me happy if you send me a postcard from where you live, or a midi/karaoke file from a local music group of your country . Everyone
+ who sends me a postcard or a midi file will have his/her name in the Hall of
+ KMid's friends of this file (provided they don't oppose to this) . Please
+ contact me before sending me any midi files because I may have it already .
+<p>
+I'd like to stress that KMid has been done completely on free time, without any monetary support from any company nor particular. So plese keep in mind when you use it, that the only think that keep me working on this is getting some feedback from its users (a postcard, or just an email).
+<p>
+I would like to thanks the following persons their help in developing KMid:
+<itemize>
+<item><url url="mailto:P.J.Leonard@bath.ac.uk" name="Paul J. Leonard"> - Support for AWE cards
+<item><url url="mailto:szoli@digo.inf.elte.hu" name="Sebestyen Zoltan"> - FreeBSD port and AWE testing
+<item><url url="mailto:esken@kde.org" name="Christian Esken"> - For organizing the KDE multimedia efforts
+<item><url url="mailto:coolo@kde.org" name="Stephan Kulow"> - Configure scripts and help with automake and CVS
+<item>Jaroslav Kysela  - Help in doing the Linux Ultrasound Project driver support
+<item>Adrian Knoth     - For giving me good news and many suggestions
+<item>Kevin Street     - Patch to support FreeBSD 3.0
+<item>Thanks go also to Jose Luis Sanchez for his testing of GUS support,
+ Ignacio Garcia for testing the AWE support, Hans Petter Bieker, Ola Sigurdson,
+Marc Diefenbruch, Peter Gritsch, Magnus Pfeffer, Urko Lusa, Peter-Paul Witta,
+ Thorsten Westheider, Ulrich Cordes and everyone that sent me a patch, bug report or just an email to give me encouragement.
+<item>And of course to all the fabulous musicians over the net that keep giving us those wonderful midi and karaoke files.
+</itemize>
+
+<p>
+</article>

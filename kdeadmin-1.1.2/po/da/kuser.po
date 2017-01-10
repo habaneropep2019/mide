@@ -1,0 +1,789 @@
+# Danish translations for KDE Admin, kuser
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Erik Kjær Pedersen <erik@binghamton.edu>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE ADMIN/kuser\n"
+"POT-Creation-Date: 1999-06-03 18:02+0700\n"
+"PO-Revision-Date: 1999-07-09 18:55+0100\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: da <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mainWidget.cpp:20
+msgid "&Preferences..."
+msgstr "&Indstillinger..."
+
+#: mainWidget.cpp:26 mainWidget.cpp:33
+msgid "&Edit..."
+msgstr "&Rediger..."
+
+#: mainWidget.cpp:27 mainWidget.cpp:34
+msgid "&Delete..."
+msgstr "&Slet..."
+
+#: mainWidget.cpp:28 mainWidget.cpp:35
+msgid "&Add..."
+msgstr "&Tilføj..."
+
+#: mainWidget.cpp:29
+msgid "&Set password..."
+msgstr "&Sæt kodeord..."
+
+# , c-format
+#: mainWidget.cpp:38
+#,  c-format
+msgid ""
+"KUser version %s\n"
+"KDE project\n"
+"This program was created by\n"
+"Denis Pershin\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+msgstr ""
+"KUser version %s\n"
+"KDE-projekt\n"
+"Dette program blev lavet af \n"
+"Denis Y. Pershin\n"
+"dyb@inetlab.com\n"
+"Copyright 1997(c)"
+
+#: mainWidget.cpp:49
+msgid "&User"
+msgstr "&Bruger"
+
+#: mainWidget.cpp:50
+msgid "&Group"
+msgstr "&Gruppe"
+
+#: mainWidget.cpp:60
+msgid "Add user"
+msgstr "Tilføj bruger"
+
+#: mainWidget.cpp:62
+msgid "Delete user"
+msgstr "Slet bruger"
+
+#: mainWidget.cpp:64
+msgid "Edit user"
+msgstr "Rediger bruger"
+
+#: grpnamedlg.cpp:17 mainWidget.cpp:69
+msgid "Add group"
+msgstr "Tilføj gruppe"
+
+#: mainWidget.cpp:71
+msgid "Delete group"
+msgstr "Slet gruppe"
+
+#: mainWidget.cpp:73
+msgid "Edit group"
+msgstr "Rediger gruppe"
+
+#: mainWidget.cpp:96
+msgid "Ready"
+msgstr "Klar"
+
+#: editGroup.cpp:37
+msgid "Group properties"
+msgstr "Gruppeegenskaber"
+
+#: editGroupData.cpp:41
+msgid "Users not in Group"
+msgstr "Brugere ikke i gruppe"
+
+#: editGroupData.cpp:55
+msgid "Users in Group"
+msgstr "Brugere i gruppe"
+
+#: kuservw.cpp:49 propdlg.cpp:56
+msgid "User login"
+msgstr "Brugeridentitet"
+
+#: kuservw.cpp:50
+msgid "Full Name"
+msgstr "Fuldt navn"
+
+#: kgroupvw.cpp:49
+msgid "GID"
+msgstr "GID"
+
+#: kgroupvw.cpp:50
+msgid "Group name"
+msgstr "Gruppenavn"
+
+#: kdatectl.cpp:28
+msgid "January"
+msgstr "Januar"
+
+#: kdatectl.cpp:29
+msgid "February"
+msgstr "Februar"
+
+#: kdatectl.cpp:30
+msgid "March"
+msgstr "Marts"
+
+#: kdatectl.cpp:31
+msgid "April"
+msgstr "April"
+
+#: kdatectl.cpp:32
+msgid "May"
+msgstr "Maj"
+
+#: kdatectl.cpp:33
+msgid "June"
+msgstr "Juni"
+
+#: kdatectl.cpp:34
+msgid "July"
+msgstr "Juli"
+
+#: kdatectl.cpp:35
+msgid "August"
+msgstr "August"
+
+#: kdatectl.cpp:36
+msgid "September"
+msgstr "September"
+
+#: kdatectl.cpp:37
+msgid "October"
+msgstr "Oktober"
+
+#: kdatectl.cpp:38
+msgid "November"
+msgstr "November"
+
+#: kdatectl.cpp:39
+msgid "December"
+msgstr "December"
+
+# , c-format
+#: kgroup.cpp:143 kuser.cpp:454
+#,  c-format
+msgid "Error opening %s for reading"
+msgstr "Fejl ved indlæsning af %s"
+
+# , c-format
+#: kuser.cpp:520
+#, c-format
+msgid ""
+"No /etc/passwd entry for %s.\n"
+"Entry will be removed at the next `Save'-operation."
+msgstr ""
+"Ingen /etc/passwd indgang opgivet for %s.\n"
+"Indgang fjernes næste gang der gemmes."
+
+# , c-format
+#: kgroup.cpp:183 kuser.cpp:615 kuser.cpp:693
+#, c-format
+msgid "Error opening %s for writing"
+msgstr "Fejl da %s blev åbnet for skrivning"
+
+#: kuser.cpp:663
+msgid "Unable to build password database"
+msgstr "Kunne ikke bygge kodeordsdatabase"
+
+# , c-format
+#: kuser.cpp:704
+#,  c-format
+msgid "No shadow entry for %s."
+msgstr "Ingen 'shadow' indgang for %s."
+
+#: kuser.cpp:761
+msgid "You have more than 65534 users!?!? You have ran out of uid space!"
+msgstr "Du har mere end 65534 brugere!?!? Du har ikke mere uid-plads!"
+
+# , c-format
+#: kuser.cpp:801
+#,  c-format
+msgid "Directory %s already exists"
+msgstr "Kataloget %s findes allerede"
+
+# , c-format
+#: kuser.cpp:808
+#,  c-format
+msgid ""
+"Cannot create home directory\n"
+"Error: %s"
+msgstr ""
+"Kan ikke lave hjemmekatalog\n"
+"Fejl: %s"
+
+# , c-format
+#: kuser.cpp:815
+#,  c-format
+msgid ""
+"Cannot change owner of home directory\n"
+"Error: %s"
+msgstr ""
+"Kan ikke ændre ejer af hjemmekatalog\n"
+"Fejl: %s"
+
+# , c-format
+#: kuser.cpp:822
+#,  c-format
+msgid ""
+"Cannot change permissions on home directory\n"
+"Error: %s"
+msgstr ""
+"Kan ikke ændre tilladelser for hjemmekatalog\n"
+"Fejl: %s"
+
+# , c-format
+#: kuser.cpp:855
+#,  c-format
+msgid ""
+"Cannot change permissions on mailbox: %s\n"
+"Error: %s"
+msgstr ""
+"Kan ikke ændre tilladelser for postboksen %s\n"
+"Fejl: %s"
+
+# , c-format
+#: kuser.cpp:893
+#,  c-format
+msgid ""
+"Cannot change owner of directory %s\n"
+"Error: %s"
+msgstr ""
+"Kan ikke ændre ejer af kataloget %s\n"
+"Fejl: %s"
+
+# , c-format
+#: kuser.cpp:900
+#,  c-format
+msgid ""
+"Cannot change permissions on directory %s\n"
+"Error: %s"
+msgstr ""
+"Kan ikke ændre tilladelser for kataloget %s\n"
+"Fejl: %s"
+
+# , c-format
+#: kuser.cpp:927
+#,  c-format
+msgid ""
+"Cannot change owner of file %s\n"
+"Error: %s"
+msgstr ""
+"Kan ikke ændre ejer af filen %s\n"
+"Fejl:%s"
+
+# , c-format
+#: kuser.cpp:934
+#,  c-format
+msgid ""
+"Cannot change permissions on file %s\n"
+"Error: %s"
+msgstr ""
+"Kan ikke ændre tilladelser for filen %s\n"
+"Fejl: %s"
+
+# , c-format
+#: kuser.cpp:949 kuser.cpp:957
+#,  c-format
+msgid "Directory %s does not exist"
+msgstr "Kataloget %s findes ikke"
+
+# , c-format
+#: kuser.cpp:984
+#,  c-format
+msgid ""
+"Cannot remove home directory %s\n"
+"Error: %s"
+msgstr ""
+"Kan ikke fjerne hjemmekataloget %s\n"
+"Fejl: %s"
+
+# , c-format
+#: kuser.cpp:1007
+#,  c-format
+msgid ""
+"Cannot remove crontab %s\n"
+"Error: %s"
+msgstr ""
+"Kan ikke fjerne crontab %s\n"
+"Fejl: %s"
+
+# , c-format
+#: kuser.cpp:1024
+#,  c-format
+msgid ""
+"Cannot remove mailbox %s\n"
+"Error: %s"
+msgstr ""
+"Kan ikke fjerne postboks %s\n"
+"Fejl: %s"
+
+#: kuser.cpp:1044
+msgid "Cannot fork()"
+msgstr "Kan ikke fork()e"
+
+#: kgroup.cpp:240
+msgid "You have more than 65534 groups!?!? You have ran out of gid space!"
+msgstr "Du har mere end 65534 grupper!?!? Du har ikke mere gid-plads!"
+
+#: main.cpp:48
+msgid "Only root is allowed to manage users."
+msgstr "Kun root har tilladelse til at ændre brugere."
+
+#: main.cpp:58
+msgid "KDE User Manager"
+msgstr "KDE Brugerbehandler"
+
+#: maindlg.cpp:152 maindlg.cpp:190 maindlg.cpp:495
+msgid "WARNING"
+msgstr "ADVARSEL"
+
+#: maindlg.cpp:153
+msgid "Do you really want to delete user ?"
+msgstr "Ønsker du virkelig at slette brugeren ?"
+
+#: maindlg.cpp:191
+msgid ""
+"You are using private groups.\n"
+"Do you want delete user's private group ?"
+msgstr ""
+"Du bruger private grupper.\n"
+"Vil du slette brugerens private gruppe?"
+
+#: maindlg.cpp:321
+msgid "Data was modified"
+msgstr "Data blev ændret"
+
+#: maindlg.cpp:322
+msgid "Would you like to save changes ?"
+msgstr "Ønsker du at gemme ændringer ?"
+
+#: maindlg.cpp:324
+msgid "Discard changes"
+msgstr "Smid ændringer væk"
+
+#: maindlg.cpp:362
+msgid "Edit defaults"
+msgstr "Rediger standard"
+
+# , c-format
+#: maindlg.cpp:390
+#, c-format
+msgid "Null pointer tmpKG in mainDlg::groupSelected(%d)\n"
+msgstr "Nullpointer tmpKG i mainDlg::gruppevalgt(%d)\n"
+
+# , c-format
+#: maindlg.cpp:408
+#, c-format
+msgid "Null pointer tmpKU in mainDlg::userSelected(%d)\n"
+msgstr "Nullpointer tmpKU i mainDlg::brukervalgt(%d)\n"
+
+# , c-format
+#: maindlg.cpp:418
+#, c-format
+msgid "Null pointer tmpQ in mainDlg::selected(%d)\n"
+msgstr "Nullpointer tmpQ i mainDlg::valgt(%d)\n"
+
+#: maindlg.cpp:496
+msgid "Do you really want to delete group ?"
+msgstr "Ønsker du virkelig at slette gruppen ?"
+
+#: propdlg.cpp:55
+msgid "User name"
+msgstr "Brugernavn"
+
+#: propdlg.cpp:59
+msgid "User identificator"
+msgstr "Brugeridentifikation"
+
+#: propdlg.cpp:60
+msgid "User id"
+msgstr "Bruger-id"
+
+#: propdlg.cpp:64
+msgid "Set password"
+msgstr "Sæt kodeord"
+
+#: propdlg.cpp:69 propdlg.cpp:70
+msgid "Full name"
+msgstr "Fuldt navn"
+
+#: propdlg.cpp:73 propdlg.cpp:96
+msgid "Login shell"
+msgstr "Log-på skald"
+
+#: propdlg.cpp:75 userDefaultsPage.cpp:30
+msgid "<Empty>"
+msgstr "<Tom>"
+
+#: propdlg.cpp:101 propdlg.cpp:102
+msgid "Home directory"
+msgstr "Hjemmekatalog"
+
+#: propdlg.cpp:109 propdlg.cpp:110
+msgid "Office"
+msgstr "Kontor"
+
+#: propdlg.cpp:112
+msgid "Office description"
+msgstr "Kontorbeskrivelse"
+
+#: propdlg.cpp:116 propdlg.cpp:117
+msgid "Office phone"
+msgstr "Kontortelefon"
+
+#: propdlg.cpp:119
+msgid "Office phone number"
+msgstr "Kontortelefonnummer"
+
+#: propdlg.cpp:123 propdlg.cpp:124
+msgid "Home phone"
+msgstr "Hjemmetelefon"
+
+#: propdlg.cpp:126
+msgid "Home phone number"
+msgstr "Hjemmetelefonnummer"
+
+#: propdlg.cpp:127 propdlg.cpp:186
+msgid "User info"
+msgstr "Brugerinfo"
+
+#: propdlg.cpp:135 propdlg.cpp:136
+msgid "Login class"
+msgstr "Log-på klasse"
+
+#: propdlg.cpp:138
+msgid "Login resource class"
+msgstr "Log-på ressourceklasse"
+
+#: propdlg.cpp:145
+msgid "Password never expires"
+msgstr "Kodeord udløber aldrig"
+
+#: propdlg.cpp:146
+msgid "Date when password expires"
+msgstr "Dato hvor kodeordet udløber"
+
+#: propdlg.cpp:154 propdlg.cpp:224
+msgid "Account never expires"
+msgstr "Konto ophører aldrig"
+
+#: propdlg.cpp:155
+msgid "Date when account expires"
+msgstr "Dato hvor kontoen ophører"
+
+#: propdlg.cpp:163 propdlg.cpp:230
+msgid "Extended"
+msgstr "Udvidet"
+
+#: propdlg.cpp:169
+msgid "The first office"
+msgstr "Første kontor"
+
+#: propdlg.cpp:170
+msgid "Office1"
+msgstr "Kontor1"
+
+#: propdlg.cpp:172
+msgid "First office description"
+msgstr "Beskrivelse af kontor nr.1"
+
+#: propdlg.cpp:176
+msgid "The second office"
+msgstr "Andre kontorer"
+
+#: propdlg.cpp:177
+msgid "Office2"
+msgstr "Kontor2"
+
+#: propdlg.cpp:179
+msgid "Second office description"
+msgstr "Beskrivelse af kontor nr.2"
+
+#: propdlg.cpp:182
+msgid "Postal address"
+msgstr "Postadresse"
+
+#: propdlg.cpp:183
+msgid "Address"
+msgstr "Adresse"
+
+#: propdlg.cpp:184
+msgid "Full postal address"
+msgstr "Fuld postadresse"
+
+#: propdlg.cpp:197
+msgid "Last password change"
+msgstr "Sidste kodeordsændring"
+
+#: propdlg.cpp:199
+msgid "Password change not allowed"
+msgstr "Ændring af kodeord ikke tilladt"
+
+#: propdlg.cpp:200
+msgid ""
+"Date before which password cannot\n"
+"be changed"
+msgstr ""
+"Dato indtil ændring af kodeord\n"
+"ikke er tilladt"
+
+#: propdlg.cpp:205
+msgid "Password will not expire"
+msgstr "Kodeord udløber aldrig"
+
+#: propdlg.cpp:206
+msgid ""
+"Date when password expires and\n"
+"must be changed"
+msgstr ""
+"Dato hvor kodeordet udløber\n"
+"og skal ændres"
+
+#: propdlg.cpp:212
+msgid "No warning will be given"
+msgstr "Der vil ikke blive givet advarsel"
+
+#: propdlg.cpp:213
+msgid ""
+"Date after which warning about pending\n"
+"password expiration will be given"
+msgstr ""
+"Dato efter hvilken en advarsel om kodeordets\n"
+"udløb vil blive givetophørsdato"
+
+#: propdlg.cpp:218
+msgid "Account will remain enabled"
+msgstr "Konto vil forblive aktiv"
+
+#: propdlg.cpp:219
+msgid ""
+"Date when account will be disabled\n"
+"if password has expired"
+msgstr ""
+"Dato hvor kontoen udlløber hvis koderodet\n"
+"er udløbet"
+
+#: propdlg.cpp:225
+msgid ""
+"Date when account expires and will\n"
+"be disabled"
+msgstr ""
+"Dato hvor kontoen ophører\n"
+"og vil blive lukket"
+
+#: propdlg.cpp:239
+msgid "Filesystem with quotas"
+msgstr "Filsystem med kvotaer"
+
+#: propdlg.cpp:248
+msgid "Filesystem with quotas:"
+msgstr "Filsystem med kvotaer:"
+
+#: propdlg.cpp:254 propdlg.cpp:255
+msgid "Disk space soft quota"
+msgstr "Diskplads med blød kvota"
+
+#: propdlg.cpp:260 propdlg.cpp:261
+msgid "Disk space hard quota"
+msgstr "Diskplads med hård kvota"
+
+#: propdlg.cpp:264 propdlg.cpp:265
+msgid "Disk space usage"
+msgstr "Diskforbrug"
+
+#: propdlg.cpp:271 propdlg.cpp:272
+msgid "Time limit allowed for Disk space over soft quota"
+msgstr "Tilladte tidsgrænse for diskplads over den bløde kvota"
+
+#: propdlg.cpp:278 propdlg.cpp:279
+msgid "File number soft quota"
+msgstr "Blød filkvota"
+
+#: propdlg.cpp:284 propdlg.cpp:285
+msgid "File number hard quota"
+msgstr "Hård filkvota"
+
+#: propdlg.cpp:288 propdlg.cpp:289
+msgid "File number usage"
+msgstr "Filantal forbrug"
+
+#: propdlg.cpp:295 propdlg.cpp:296
+msgid "Time limit allowed for File number over soft quota"
+msgstr "Tilladt tid for filantal over blød kvota"
+
+#: propdlg.cpp:299
+msgid "Quota"
+msgstr "Kvota"
+
+#: propdlg.cpp:313
+msgid "Groups not belonged to"
+msgstr "Tilhører ikke disse grupper"
+
+#: propdlg.cpp:339
+msgid "Groups belonged to"
+msgstr "Tilhører disse grupper"
+
+#: propdlg.cpp:350
+msgid "Primary group"
+msgstr "Primærgruppe"
+
+#: propdlg.cpp:354
+msgid "Groups"
+msgstr "Grupper"
+
+#: propdlg.cpp:365
+msgid "User properties"
+msgstr "Brugeregenskaber"
+
+# , c-format
+#: addUser.cpp:93 propdlg.cpp:681
+#,  c-format
+msgid "User with UID %u already exists"
+msgstr "Bruger med UID %u findes allerede"
+
+# , c-format
+#: misc.cpp:48
+#,  c-format
+msgid "Can't create backup file for %s"
+msgstr "Kan ikke lave backup fil for %s"
+
+# , c-format
+#: misc.cpp:165
+#,  c-format
+msgid "File %s does not exist."
+msgstr "Filen %s findes ikke."
+
+# , c-format
+#: misc.cpp:173
+#,  c-format
+msgid "Can not open file %s for reading."
+msgstr "Kan ikke åbne filen %s for læsning."
+
+# , c-format
+#: misc.cpp:181
+#,  c-format
+msgid "Can not open file %s for writing."
+msgstr "Kan ikke åbne filen %s til skrivning."
+
+#: usernamedlg.cpp:15
+msgid "Enter username"
+msgstr "Indtast brugernavn"
+
+#: usernamedlg.cpp:22
+msgid "Username:"
+msgstr "Brugernavn:"
+
+# , c-format
+#: usernamedlg.cpp:72
+#,  c-format
+msgid "User with name %s already exists."
+msgstr "Bruger med navn %s findes allerede."
+
+#: usernamedlg.cpp:79
+msgid "You have to enter a user name."
+msgstr "Du skal indtaste et brugernavn."
+
+#: pwddlg.cpp:24
+msgid "Enter password"
+msgstr "Opgiv et kodeord"
+
+#: pwddlg.cpp:31
+msgid "Password"
+msgstr "Kodeord"
+
+#: pwddlg.cpp:49
+msgid "Retype password"
+msgstr "Skriv kodeord en gang til"
+
+#: pwddlg.cpp:105
+msgid ""
+"Passwords are not identical.\n"
+"Try again"
+msgstr ""
+"Kodeord er ikke identiske. \n"
+"Prøv igen"
+
+#: grpnamedlg.cpp:24
+msgid "Group name:"
+msgstr "Gruppenavn:"
+
+#: grpnamedlg.cpp:30
+msgid "Group number:"
+msgstr "Gruppenummer:"
+
+# , c-format
+#: grpnamedlg.cpp:98
+#,  c-format
+msgid "Group with name %s already exists."
+msgstr "Gruppe med navnet %s findes allerede"
+
+# , c-format
+#: grpnamedlg.cpp:105
+#,  c-format
+msgid "Group with gid %d already exists."
+msgstr "Gruppe med gid %d findes allerede."
+
+#: kerror.cpp:35
+msgid "Message"
+msgstr "Budskab"
+
+#: addUser.cpp:32 addUser.cpp:52
+msgid "Create home directory"
+msgstr "Opret hjemmekatalog"
+
+#: addUser.cpp:38 addUser.cpp:58
+msgid "Copy skeleton"
+msgstr "Kopier skelet"
+
+#: addUser.cpp:43 addUser.cpp:63 userDefaultsPageData.cpp:115
+msgid "User Private Group"
+msgstr "Bruger privatgruppe"
+
+# , c-format
+#: addUser.cpp:135
+#,  c-format
+msgid "Directory %s already exists (uid = %d, gid = %d)"
+msgstr "Kataloget %s findes allerede (uid = %d, gid = %d)"
+
+# , c-format
+#: addUser.cpp:138
+#,  c-format
+msgid "%s is not a directory"
+msgstr "%s er ikke et katalog"
+
+# , c-format
+#: addUser.cpp:164
+#,  c-format
+msgid "Mailbox %s already exist (uid=%d)"
+msgstr "Postboksen %s findes allerede (uid=%d)"
+
+# , c-format
+#: addUser.cpp:167
+#,  c-format
+msgid "%s exists but is not a regular file"
+msgstr "%s eksisterer, men er ikke en sædvanlig fil"
+
+#: editDefaults.cpp:32
+msgid "User"
+msgstr "Bruger"
+
+#: userDefaultsPageData.cpp:39
+msgid "Shell"
+msgstr "Skald"
+
+#: userDefaultsPageData.cpp:64
+msgid "Base of home directories"
+msgstr "Base for hjemmekataloger"
+
+#: userDefaultsPageData.cpp:89
+msgid "Create home dir"
+msgstr "Opret hjemmekatalog"
+
+#: userDefaultsPageData.cpp:102
+msgid "Copy skeleton to home dir"
+msgstr "Kopier skelet til hjemmekatalog"
+

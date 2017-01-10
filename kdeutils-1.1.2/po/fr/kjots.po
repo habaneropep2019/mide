@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kjots-0.3.1-0\n"
+"POT-Creation-Date: 1998-12-07 01:48+0100\n"
+"PO-Revision-Date: 1999-03-26 16:17+0100\n"
+"Last-Translator: Alain Gibaud <alain.gibaud@univ-valenciennes.fr>\n"
+"Language-Team: Français <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8-bits\n"
+
+# ++Gib: Note du traducteur
+# J'ai déliberement choisi de traduire book par carnet,
+# ce qui me semble plus adapté au contexte que livre ou cahier
+#: KJotsMain.cpp:76
+msgid "Book name:"
+msgstr "Nom du carnet :"
+
+#: KJotsMain.cpp:101
+msgid "Open URL"
+msgstr "Ouvrir l'URL"
+
+#: KJotsMain.cpp:344
+msgid "New Book"
+msgstr "Nouveau carnet"
+
+#: KJotsMain.cpp:354
+msgid "PreviousPage"
+msgstr "Page précédente"
+
+#: KJotsMain.cpp:355
+msgid "NextPage"
+msgstr "Page suivante"
+
+#: KJotsMain.cpp:356
+msgid "ShowSubjectList"
+msgstr "Monter table des matières"
+
+#: KJotsMain.cpp:357
+msgid "AddNewPage"
+msgstr "Ajouter nouvelle page"
+
+# ++Gib: permet le tranfert du curseur dans l'autre 
+# boite de saisie
+#: KJotsMain.cpp:358
+msgid "MoveFocus"
+msgstr "Transférer le curseur"
+
+#: KJotsMain.cpp:359
+msgid "CopySelection"
+msgstr "Copier la sélection"
+
+#: KJotsMain.cpp:371
+msgid "&New Book"
+msgstr "&Nouveau carnet"
+
+#: KJotsMain.cpp:375
+msgid "Save current book"
+msgstr "Enregistrer le carnet courant"
+
+#: KJotsMain.cpp:377
+msgid "Save book to ascii file"
+msgstr "Enregister le carnet en ASCII"
+
+#: KJotsMain.cpp:378
+msgid "Save page to ascii file"
+msgstr "Enregistrer la page en ASCII"
+
+#: KJotsMain.cpp:380 KJotsMain.cpp:661
+msgid "Delete current book"
+msgstr "Effacer le carnet courant"
+
+#: KJotsMain.cpp:394
+msgid "&New Page"
+msgstr "&Nouvelle page"
+
+#: KJotsMain.cpp:396
+msgid "&Delete Page"
+msgstr "&Détrure la page"
+
+#: KJotsMain.cpp:399
+msgid "&Config"
+msgstr "&Configuration"
+
+#: KJotsMain.cpp:400
+msgid "Configure &Keys"
+msgstr "C&onfiguration des raccourcis clavier"
+
+#: KJotsMain.cpp:403
+msgid "Add current book to hotlist"
+msgstr "Ajouter un signet"
+
+#: KJotsMain.cpp:405
+msgid "Remove current book from hotlist"
+msgstr "Enlever un signet"
+
+#: KJotsMain.cpp:410
+msgid "Hot&list"
+msgstr "&Signets"
+
+#: KJotsMain.cpp:412
+msgid "&Books"
+msgstr "&Carnets"
+
+#: KJotsMain.cpp:415
+msgid "by"
+msgstr "par"
+
+#: KJotsMain.cpp:427
+msgid "New"
+msgstr "Nouveau"
+
+#: KJotsMain.cpp:433
+msgid "Previous"
+msgstr "Précédent"
+
+#: KJotsMain.cpp:436
+msgid "Next"
+msgstr "Suivant"
+
+#: KJotsMain.cpp:440
+msgid "Subject List"
+msgstr "Liste des sujets"
+
+#: KJotsMain.cpp:614
+msgid "A book with this name already exists."
+msgstr "Un carnet de ce nom existe déjà."
+
+#: KJotsMain.cpp:662
+msgid "Are you sure you want to delete the current book ?"
+msgstr "Vous êtes sur de vouloir effacer ce carnet ?"
+
+#: KJotsMain.cpp:913 KJotsMain.cpp:942
+msgid "File exists !"
+msgstr "Fichier déjà existant !"
+
+#: KJotsMain.cpp:914 KJotsMain.cpp:943
+msgid ""
+"File already exists. \n"
+" Do you want to overwrite it ?"
+msgstr ""
+"Ce fichier existe déjà. \n"
+" Voulez-vous l'écraser ?"
+
+#: confdialog.cpp:39
+msgid "Configure KJots"
+msgstr "Configuration de KJots"
+
+#: confdialog.cpp:43
+msgid "URL"
+msgstr "URL"
+
+#: confdialog.cpp:72
+msgid "Specify which command to execute"
+msgstr "Commande à exécuter"
+
+#: confdialog.cpp:78
+msgid "for HTTP:"
+msgstr "HTTP :"
+
+# ++gib: PB de taille
+#: confdialog.cpp:84
+msgid "for FTP:"
+msgstr "FTP :"
+
+# ++gib: PB de taille
+#: confdialog.cpp:104
+#, c-format
+msgid "( %u is replaced with the selected URL )"
+msgstr "( %u est remplacé par l'URL sélectionné )"
+
+#: confdialog.cpp:111
+msgid "Font for editor:"
+msgstr "Police :"
+
+# ++Gib: PB de place
+#: confdialog.cpp:117
+msgid "Select"
+msgstr "Choisir"
+
+#: confdialog.cpp:133
+msgid "Dolor Ipse"
+msgstr "L'élève a dépassé le maître."

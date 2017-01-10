@@ -1,0 +1,332 @@
+<!doctype linuxdoc system>
+
+<!-- Das KMidi Handbuch.
+ -->
+
+<article>
+
+<!-- Title information -->
+
+<title>Das KMidi Handbuch
+<author>Bernd Johannes Wuebben, <tt/wuebben@kde.org/,
+übersetzt von Peter Gritsch, <tt/pegri@sbox.tu-graz.ac.at/
+<date>Version 0.3, 21. September 1997
+<abstract>Dieses Handbuch beschreibt KMidi Version 0.3
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+
+<sect>Einleitung
+<p>
+KMidi ist ein MIDI-Player und MIDI-nach-WAV-Konverter.
+
+Probieren Sie ihn aus, wenn sie MIDI auf Linux bereits aufgegeben haben.
+Ohne teure Hardware wie eine Gravis Ultrasound oder Sound Blaster AWE64
+bekommen Sie einen phantastischen Klang, vergleichbar dem, den Sie mit der
+oben genannten Hardware erhalten. <EM>Gratis!</EM>
+<!-- i.O.: FOR FREE! -->
+
+Der Haken:
+<!-- i.O.: The catch: -->
+
+<itemize>
+<item> KMidi verwendet Ihre CPU-Zeit, typischerweise 10-30% bei 32000Hz auf
+einem Pentium 120. Wenn Sie eine langsamere Maschine haben, können Sie
+einfach die Samplefrequenz mit den Kommandozeilen-Optionen reduzieren.
+So sollte es Ihnen auch auf einem 486er möglich sein, einen sehr annehmbaren
+Klang zu bekommen ohne Ihre CPU zu überfordern.
+
+<item> Sie benötigen die Sound Patches. Einen vollständigen Satz von General
+MIDI Patches finden Sie in jedem Ultrasound-Archiv. Die typischen
+Speicheranforderungen sind ca. 10~Megabytes.
+</itemize>
+
+Glauben Sie mir, dies ist ein kleiner Preis für den Klang, den Sie
+bekommen!
+
+KMidi unterstützt zur Zeit (Version 0.3) die folgenden Plattformen:
+
+<itemize>
+<item>Linux
+<item>FreeBSD
+<item>DEC OSF/1
+<item>HP UX
+<item>SUN
+<item>SUN SOLARIS
+</itemize>
+
+Portierungen auf andere Plattformen sollten einfach sein. Kontaktieren Sie
+mich bitte, wenn Sie KMidi auf ein anderes System portiert haben.
+
+KMidi verwendet Tuukka Toivonens timidity 0.2i Engine
+Copyright (C) 1995
+<url url="mailto:toivonen@clinet.fi" name="Tukka Toivonen">
+zusammen mit
+<url url="mailto:iwai@dragon.mm.t.u-tokyo.ac.jp" name="Takashi Iwai">
+aktuellen Sound Font Patches, die es Ihnen erlauben, SoundFonts mit KMidi zu
+verwenden.
+
+Es ist mir bewußt, daß dies ein rohes Release ist, und ich bin mir sicher,
+daß Sie KMidi zum Absturz bringen können, wenn Sie es lange genug versuchen.
+Dennoch glaube ich, daß KMidi bereits mehr als nur brauchbar ist und Ihnen
+viele Stunden Spaß machen kann. Denken Sie daran, daß MIDI-Dateien
+typischerweise ca. 50 Kilobytes groß sind und deshalb so leicht
+heruntergeladen werden können, daß Ihnen niemals großartige MIDIs zum
+Abspielen ausgehen werden.
+
+Viel Spaß mit KMidi!
+<p>
+<tt>Bernd Johannes Wuebben</tt>,
+<htmlurl url="mailto:wuebben@kde.org" name="wuebben@kde.org">
+
+
+<sect>Installation
+<p>
+<sect1>Wie Sie KMidi bekommen
+<p>
+KMidi ist ein Teil des KDE-Projekts <url url="http://www.kde.org">.
+Sie finden KMidi auf <url url="ftp://ftp.kde.org/pub/kde/">, dem
+Haup-FTP-Server des KDE-Projekts.
+Die Homepage ist
+<htmlurl url="http://math.cornell.edu/~wuebben/kde.html"
+name="http://math.cornell.edu/~wuebben/kde.html">
+
+<sect1>Anforderungen
+<p>
+Um KMidi erfolgreich kompilieren zu können, benötigen Sie die neuesten
+Versionen von <tt>libkdecore</tt> und <tt>libkdeui</tt>. Alle benötigten
+Libraries wie auch KMidi selbst finden Sie auf
+<url url="ftp://ftp.kde.org/pub/kde/">.
+
+<sect1>Übersetzung und Installation
+<p>
+Wenn Sie Timidity bereits installiert haben, so stellen Sie bitte sicher,
+daß Sie eine Sicherungskopie der Konfigurationsdatei haben, da KMidi diese
+in der Voreinstellung überschreibt.
+
+<tscreen><verb>
+% ./configure
+% make
+% make install
+% make install-patch  (wenn dies Ihre erste Installation ist)
+</verb></tscreen>
+
+Sollten Sie auf Probleme stoßen, bitte ich Sie, mir diese zu melden.
+<p>
+
+<sect1>Woher bekommt man einen vollständigen Satz Patches?<label id="patches">
+<p>
+<url url="mailto:goemon@anime.net" name="Dan Hollis">
+hat einen Patch-Satz zusammengestellt. Bitte besuchen Sie seine Seite auf
+<url url="http://www.anime.net/~goemon/timidity/"
+name="http://www.anime.net/~goemon/timidity">
+und helfen Sie ihm, diesen zum besten verfügbaren Satz zu machen.<p>
+
+Patches können auch als DEP oder RPM Module im Sunsite Archiv gefunden
+werden:
+<p>
+
+<itemize>
+<item> Debian:
+<url url="ftp://sunsite.unc.edu/pub/Linux/./distributions/debian/bo/source/sound/timidity-patches_0.1.tar.gz" name="timidity-patches_0.1.tar.gz">
+<item> RPM:
+<url url="ftp://sunsite.unc.edu/pub/Linux/distributions/redhat/contrib/oldrpms/contrib-2.0.x/RPMS/timidity-patches-1-1.i386.rpm" name="timidity-patches-1-1.i386.rpm">
+<item> RPM:
+<url url="ftp://sunsite.unc.edu/pub/Linux/distributions/redhat/contrib/oldrpms/contrib-2.0.x/SRPMS/timidity-patches-1-1.src.rpm-try2" name="timidity-patches-1-1.src.rpm-try2">
+</itemize>
+<p>
+
+Ich habe die oben genannten (bis jetzt) nicht ausprobiert und verwende
+selbst den Midia Patch-Satz, sowie einige zusätzliche Patches und
+Schlagzeug-Sätze.
+
+<!-- IMHO BESSER: -->
+Sie finden den Midia Patch-Satz auf
+<url url="ftp://archive.cs.umbc.edu/pub/midia/">,
+und weitere (Probieren Sie die gsdrum- und wow-Patches aus!) auf
+<url url="ftp://ftp.cdrom.com/pub/gus/sound/patches/files/">
+<!-- Was nichts daran aendert, dass ich noch immer nicht gluecklich bin -->
+
+Vincent Pagel hat eine Sammlung von Patches zusammengestellt. Dieser Link
+kann nur während der Nachtstunden in Paris erreicht werden:
+<url url="ftp://sig.enst.fr/pub/midi/instruments/">
+
+Sie finden die Konfigurationsdatei, die zu seinem Patch-Satz paßt auf:
+<url url="ftp://sig.enst.fr/pub/midi/timidity_pagel.cfg">
+
+Besuchen Sie auch die TimidityPage
+<url url="http://www.clinet.fi/~toivonen/timidity/">
+
+und Takahis's Page
+<url url="http://bahamut.mm.t.u-tokyo.ac.jp/~iwai/midi.html#TiMidity">
+
+<sect2>Patch-Satz Installation
+<p>
+
+Jeder der oben genannten Patch-Sätze (Sie benötigen nur einen) sollte eine
+<tt>.cfg</tt>-Datei enthalten, ähnlich jener, die in KMidi enthalten ist und
+sich in <tt>/usr/local/lib/timidity</tt> befindet.
+<p>
+
+KMidi hat für eine Reihe von verbreiteten Patch-Sätzen - wie den media Satz
+- vorbereitete Konfigurationsdateien für Sie bereit.
+
+Zum Abschuß der Installation eines Patch-Satzes muß <tt>timidity.cfg</tt>
+editiert und die Konfigurationsdatei des heruntergeladenen Patch-Satzes
+eingebunden werde. (Wenn Sie einen Blick in die <tt>timidity.cfg</tt>-Datei
+werfen, wird Ihnen völlig klar worüber ich spreche.)
+
+Das war's. Jetzt koennen Sie auch die anderen MIDIs abspielen die sich im
+KMidi Paket befinden.
+<!-- Im Original waren zwei Tippfehler, die mich hoffnungslos
+     durcheinanderbrachten. Bernd schickte mir auf meine Bitte hin folgende
+     Uebersetzung:
+     ``Jetzt koennen sie auch die anderen midis abspielen die sich in
+                     ^                    ^^^^                     ^^
+     dem KMidi packet befinden.''
+     ^^^       ^ ^
+     die ich an den gekennzeichneten Stellen veraendert habe.
+-->
+<p>
+
+<sect2>Verschiedenes
+<p>
+
+Gelegentlich werden Sie erleben, daß KMidi einen Patch für ein spezielles
+Instrument nicht findet. (Öffnen Sie das Info Fenster um diese Information
+zu sehen.) In diesem Fall müssen Sie sich nur den fehlenden Patch besorgen
+und ihn installieren, indem Sie ihn in das Verzeichnis <tt>patch/</tt>
+kopieren und Ihre Konfigurationsdatei bearbeiten, um KMidi anzuzeigen, daß
+der neue Patch nun verfügbar ist.
+
+<p>
+Manchmal klingt auch ein spezielles Instrument nicht besonders gut. In
+diesem Fall können Sie sich in einem der Ultrasound-Archive einen neuen
+Patch besorgen und damit den schlechteren ersetzen. Wie Sie sehen können,
+ist es völlig Ihnen überlassen, wie gut jedes Instrument klingt. Sie können
+sogar Ihre eigenen Patches mit dem pat2wav Werkzeug machen, das in der
+KMidi-Distribution enthalten ist.
+<p>
+
+<sect>Anwendung
+<p>
+<sect1>Allgemeines zur Anwendung
+<p>
+Klicken Sie auf die <bf>Eject</bf>-Schaltfläche um den Playlist-Manager zu
+öffnen. Wählen Sie eine MIDI-Datei durch einen Doppelklick aus.
+Zu Ihrer Annehmlichkeit habe ich ein paar entsprechende Dateien ins
+Verzeichnis <tt>midi/</tt> der Distribution kopiert.
+<!-- Pfeif auf die technische Richtigkeit! -->
+Sie werden jedoch nicht umhinkönnen, sich für echte Anwendungen einen
+vollständigen General Midi Patch-Satz zu besorgen.
+
+<sect1>Dateinamen
+<p>
+KMidi ersetzt jedes ``<tt>_</tt>'' im Namen einer MIDI-Datei mit einem
+Leerzeichen und schneidet gegebenenfalls die Endung ``<tt>.mid</tt>'' oder
+``<tt>.MID</tt>'' ab.
+
+<sect1>Kommandozeilen-Optionen
+<p>
+
+<tscreen><verb>
+Anwendung:
+  kmidi [Optionen] Dateiname [...]
+
+Optionen:
+  -o Datei Ausgabe in eine andere (Geräte-)Datei (Verwenden Sie "-" für
+           die Standardausgabe)
+  -O Modus Wähle Ausgabe-Modus und -Format (siehe unten)
+  -s f     Wähle die Samplingfrequenz f (Hz oder kHz)
+  -a       Schalte den Antialiasing Filter ein
+  -f       Schalte den Fast Decay Modus ab
+  -p n     Erlaube n-stimmige Polyphonie
+  -A n     Verstärke die Laustärke mit n Prozent (Dies kann Clipping
+           bewirken)
+  -C n     Setze das Verhältnis der Sample- und Kontrollfrequenzen
+
+  -L Verz  Füge Verz zum Suchpfad hinzu
+  -c Datei Lies die zusätzliche Konfiguration aus Datei
+  -I n     Verwende das Programm n als Voreinstellung
+  -P Datei Verwende die Patch-Datei für alle Programme
+  -D n     Spiele das Schlagzeug auf Kanal n
+  -Q n     Ignoriere den Kanal n
+  -F       Schalte das schelle Panning ein
+  -U       Loesche die Instrumente zwischen den MIDI Dateien aus dem Speicher
+
+  -i Modus Wähle die Benutzerschnittstelle (siehe unten)
+  -B n     Setze die Anzahl der Puffer-Fragmente
+  -h       Zeige die Hilfe an
+
+Verfügbare Ausgabemodi (-O Option):
+
+  -Od      Linux dsp Gerät
+  -Ow      RIFF WAVE Datei
+  -Or      Rohe Waveform Daten
+
+Ausgabeformat-Optionen (zur -O? Option hinzufügen):
+
+   `8'     8-bit Samplebreite
+   `1'     16-bit Samplebreite
+   `U'     uLaw kodiert
+   `l'     Linear kodiert
+   `M'     Monophon
+   `S'     Stereo
+   `s'     Vorzeichenbehaftete Ausgabe
+   `u'     Vorzeichenlose Ausgabe
+   `x'     Ausgabe mit vertauschten Bytes
+
+Verfügbare Benutzerschnittstellen (-i Option):
+
+  -iq      KMidi Qt Schnittstelle
+  -id      Kommandozeilen-Schnittstelle
+
+Schnittstellen-Optionen (zur -i? Option hinzufügen):
+
+   `v'     geschwätziger (summierend)
+   `q'     schweigsamer (summierend)
+   `t'     verfolge Abspielen
+
+</verb></tscreen>
+
+<sect>Fragen und Antworten
+<p>
+<sect1>Woher bekomme ich einen vollständigen Patch-Satz?
+<p>
+Bitte lesen Sie dazu den entsprechenden <ref id="patches" name="Abschnitt">
+im Kapitel zur Installation von KMidi.
+
+<sect>Lizenzbestimmungen
+<p>
+<tscreen><verb>
+
+KMidi Copyright 1997 Bernd Johannes Wuebben
+                     wuebben@math.cornell.edu
+
+KMidi verwendet Tuukka Toivonens timidity 0.2i Engine,
+Copyright (C) 1995 Tukka Toivonen <toivonen@clinet.fi>
+und 
+Takashi Iwais <iwai@dragon.mm.t.u-tokyo.ac.jp> neueste Sound Font Patches.
+
+Dieses Program ist Freie Software; Sie können sie  weitergeben und/oder
+verändern entsprechend den Bestimmungen der GNU General Public License, wie
+diese von der Free Software Foundation veröffentlicht wurden, entweder
+entsprechend Version 2 der Bestimmungen oder (nach Ihrer Wahl) jeder
+späteren Version.
+
+Dieses Programm wird in der Hoffnung, daß es nützlich ist, aber
+OHNE EINE GARANTIE verbreitet; sogar ohne die implizite Garantie der
+MARKTGÄNGIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK. Lesen Sie die GNU
+General Public License um genauere Datails zu erfahren.
+
+Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
+Programm erhalten haben; wenn nicht, so schreiben Sie an die
+Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+</verb></tscreen
+<p>
+</article>
+

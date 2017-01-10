@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+<TITLE>Kfract Help</TITLE>
+</HEAD>
+
+<BODY>
+
+<CENTER><H1>Help for Kfract 0.1.2</H1></CENTER>
+
+<P>
+</P>
+
+<CENTER><IMG SRC="kfract.gif"></CENTER>
+
+<P>
+Kfract is a generator for fractals. Well, at this early stage it's only capable of mandelbrot 
+sets and julia sets. Nothing fancy like Xfractint. And it's way far from being as fast as 
+Xfractint. But it's much easier to use.
+</P>
+
+<P>
+The code is a mess and reflects my stage of learning Qt und KDE. But it works. ;-)
+</P>
+
+<H3>1 Mouse functions</H1>
+<H4>1.1 Left mouse button</H2>
+Left mouse button let you draw a rectangle which will become the next picture. The
+center of the rectangle will be the center of the new picture. X/Y ratio will be adapted
+to fit into the window.
+<H4>1.2 Middle mouse button</H2>
+Middle mouse button zooms in.
+<H4>1.3 Right mouse button</H2>
+Right mouse button zooms out by.
+
+
+<H3>2 Menu</H1>
+<H4>2.1 File</H2>
+<H5>2.1.1 Load params</H5>
+Loads a by KFract generated parameter file and calculates the picture.
+<H5>2.1.2 Save params</H5>
+Saves the parameters of the current pictures. This file can be loaded later in order to
+re-calculate the picture. It consists of plain ASCII and can be exchanged emong
+different machines of even different architectures as long as KDE is installed.
+<H5>2.1.3 Save pic</H5>
+Saves current picture as BMP. Sorry, no GIF support so far.
+<H5>2.1.4 Quit</H5>
+Well, here you leave Kfract.
+
+
+<H4>2.2 Types</H4>
+Each entry switches to the displayed fractal type. So far implemented:
+<H5>2.2.1 Mandelbrot</H5>
+Switches to mandelbrot set. Parameters (like maximal iteration depth, co-ordinates, width,...) can
+be set.
+<H5>2.2.2 Julia</H5>
+Switches to julia set. Parameters (like maximal iteration depth, co-ordinates, width,...) can be
+set.
+
+
+<H4>2.3 Options</H4>
+<H5>2.3.1  Max. iteration</H5>
+Maximal iteration depth can be set.
+<H5>2.3.2 Colour scheme</H5>
+Here you switch between 2 different colour schemes.
+<H5>2.3.3 Colour cycling</H5>
+Not implemented yet.
+<H5>2.3.4 Zoom factor</H5>
+The factors for zoom in and zoom out can be set.
+
+<H4>2.4 Help</H4>
+<H5>2.4.1 Help</H5>
+Shows this help page. ;-)
+<H5>2.4.2 About</H5>
+Pops up an info box with some information about this program and it's
+author.
+
+
+
+<H3>3 Toolbar</H3>
+<H4>3.1 Open</H4>
+Like <EM>File->Load params</EM>.
+<H4>3.2 Save as parameter file</H4>
+Like <EM>File->Save params</EM>.
+<H4>3.3 Save picture</H4>
+Like <EM>File->Save pic</EM>
+<H4>3.4 Zoom in</H4>
+Zooms in like middle mouse button (MMB) except that the center of the actual picture becomes
+the center of the new picture.
+<H4>3.5 Zoom out</H4>
+Zooms out like right mouse button (RMB) except that the center of the actual picture becomes
+the center of the new picture.
+<H4>3.6 Home</H4>
+Sets all relevant parameters of the actual type to its defaults and re-calculates the set. Parameters
+which are not relevant to the actual type (like colour scheme) stay untouched. If you've got lost here
+you'll find back.
+
+
+<P>
+We are already at the end of the discription. That's really all of it. Please feel free to contact me:
+</P>
+
+<P>
+Uwe Thiem
+<ADDRESS>uwe@uwix.alt.na</ADDRESS>
+</P>
+
+</BODY>
+</HTML>
+
+
+
+
+
+

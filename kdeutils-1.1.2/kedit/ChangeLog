@@ -1,0 +1,91 @@
+1999-02-11  Harri Porten  <porten@kde.org>
+
+	* kedit.cpp: removed accelerator char ´&´ from tooltips.
+	* bug#87: attach all QMessageBoxes to their corresponding
+        dialog widget instead of 'this', ie. KEdit. This makes them always
+        stay on top and prevents screwed textcolors (reported and
+        solution provided by Alex Hayward <xelah@ferret.lmh.ox.ac.uk>)
+	
+1999-02-08  Harri Porten  <porten@kde.org>
+
+	* kedit.cpp: quote filename for printing
+        * keditcl1.cpp: translate "Untitled" to trigger "Save As..."
+        dialog when saving.
+
+1998-10-12  Harri Porten  <porten@kde.org>
+
+	* added an option to turn on/off saving of backup copies
+
+Thu Jun 25 19:12:44 MEST 1998  Matthias Ettrich <ettrich@kde.org>
+
+	* Word wrap fixed
+
+Fri Jan  9 18:04:16 MET 1998 Stefan Taferner <taferner@kde.org>
+
+	* Added standard accelerator keys
+
+Sat Dec  6 03:17:49 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* Finally implemented word wrap correctly. Should work fine now
+	  under both auto-indent-mode and normal-mode. I expect the 	
+	  implementation
+	  to still have a little quirk here and there, but in general it should
+	  work now. It was quite a bit of work for only a few lines of code.
+	  Something is still amiss with the Qt mline widget -- it gave me lots
+	  of problems and most of the implemntation turned out to be an ugly
+	  trial and error procedure.
+
+	* keditcl1.cpp: implemented control-k control-y emacs like kill buffer
+	  threw out KEdit.cpp KEdit.h and introduced keditcl.h keditcl1.cpp
+	  keditcl2.cpp
+
+Fri Oct 24 01:19:54 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* kedit.cpp: lots of clean ups and fixes that were necessary because
+	  of Qt 1.31. I replaced at message and query dialogs with the new 
+	  warning and information dialogs. 
+
+Thu Sep 25 22:37:22 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* non-modal search and replace dialogs
+	* centered about, search and replace dialogs
+	* bug fixes
+
+Sat Aug 30 23:27:51 1997  Teilnehmer 8  <wuebben@kray.dinet.de (Teilnehmer 8)>
+
+	* added Klocale support
+
+Mon Aug  4 19:23:59 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* Better about box with logo ( code from kreversi )
+
+Sat Aug  2 22:55:53 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* KEdit.cpp: various fixes
+	* kedit.cpp  fixed the 'malformed URL' bug that popped up
+	  since KURL had changed its behaviour
+
+Thu Jul 24 20:13:53 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* kedit.cpp: made kedit work with the new libs
+
+Mon Jul 21 22:43:07 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* kedit.cpp: implemented mailing
+
+Sun Jul 20 16:59:27 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* KEdit.cpp: Fixed permissions bug
+	             Change line and column numbering to start at 1 
+		     instead of 0
+
+Mon Jun 16 18:33:56 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* kedit.cpp: files dropped onto kedit are now opened with read and 
+	             write permissions.
+
+Thu May 22 15:02:23 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* KEdit.cpp: the file open dialogs will now remember the last
+	             directory visited.
+

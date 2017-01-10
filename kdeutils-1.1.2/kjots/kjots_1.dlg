@@ -1,0 +1,135 @@
+DlgEdit {
+	ClassHeader {KJotsMain.h}
+	ClassSource {KJotsMain.cpp}
+	ClassName {KJotsMain}
+	DataHeader {KJotsMainData.h}
+	DataSource {KJotsMainData.cpp}
+	DataName {KJotsMainData}
+	DataInherited {TRUE}
+		WindowBaseClass {QWidget}
+}
+WidgetLayout {
+		Rect {5 100 568 472}
+		Grid {8}
+
+Frame {
+		Style {50}
+		Rect {8 72 552 320}
+		Name {Frame_1}
+		Variable {f_text}
+}
+ButtonGroup {
+		Title {}
+		Alignment {Left}
+		Style {49}
+		Rect {8 32 552 32}
+		Name {ButtonGroup_2}
+		Variable {bg_top}
+}
+ButtonGroup {
+		Title {}
+		Alignment {Left}
+		Style {49}
+		Rect {8 424 552 40}
+		Name {ButtonGroup_1}
+		Variable {bg_bot}
+}
+MenuBar {
+		Rect {0 0 568 24}
+		Name {MenuBar_1}
+		Variable {menubar}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Delete}
+		Rect {144 432 64 24}
+		Name {PushButton_2}
+		Variable {b_delete}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Previous}
+		Rect {256 432 64 24}
+		Name {PushButton_3}
+		Variable {b_prev}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Next}
+		Rect {368 432 64 24}
+		Name {PushButton_4}
+		Variable {b_next}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Exit}
+		Rect {480 432 64 24}
+		Name {PushButton_5}
+		Variable {b_exit}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {New}
+		Rect {32 432 64 24}
+		Name {PushButton_1}
+		Variable {b_new}
+}
+ScrollBar {
+		Orientation {Horizontal}
+		Rect {8 400 552 16}
+		Name {ScrollBar_1}
+		Variable {s_bar}
+}
+MultiLineEdit {
+		Line {}
+		ReadOnly {FALSE}
+		Rect {16 88 536 272}
+		Name {MultiLineEdit_1}
+		Variable {me_text}
+}
+Label {
+		Text {Folder:}
+		Rect {24 360 56 24}
+		Name {Label_1}
+		Variable {l_fol_t}
+}
+Label {
+		Text {Date:}
+		Rect {224 360 40 24}
+		Name {Label_2}
+		Variable {l_date_t}
+}
+Label {
+		Text {Time:}
+		Rect {464 360 40 24}
+		Name {Label_3}
+		Variable {l_time_t}
+}
+Label {
+		Text {}
+		Rect {72 360 144 24}
+		Name {Label_4}
+		Variable {l_folder}
+}
+Label {
+		Text {}
+		Rect {256 360 200 24}
+		Name {Label_5}
+		Variable {l_date}
+}
+Label {
+		Text {}
+		Rect {496 360 56 24}
+		Name {Label_6}
+		Variable {l_time}
+}}

@@ -1,0 +1,109 @@
+KDE network utilities
+=====================
+
+Please, tell me on which plateforms ping needs -s as argument to
+be useful... (I know there is Solaris in this case).
+I know:
+  solaris: needs -s
+  linux: nothing
+
+Feedback welcome!
+Please send me (or http://buglist.kde.org) all bug reports.
+
+
+Todo: (you can make code submissions... :-) )
+=====
+- in host tab, put nameservers address (from /etc/resolv.conf) to the 
+	combobox
+- improve/update doc
+- have the host: lineedit of all tools to be a combobox
+  and remember old tries
+
+
+
+What it is?
+===========
+This program allows somebody to make a ping, a traceroute or a hostname
+resolution without lauching a kvt.
+
+It's a tabbed window with a big multilineedit that receive the output
+of a command (ping, traceroute, host, finger, whois, ...).
+
+
+History:
+========
+
+Version 0.0.1:
+--------------
+. Initial coding with ping and traceroute
+
+Version 0.1.0:
+--------------
+. use KProcess-0.1.0 for child managment (KProcess modified to be able to
+communicate with the children)
+. traceroute have now some options (-n and -m)
+. should be more robuts
+. better focus management
+. allows somebody to put the path a a command in the config file if
+the command cannot be found in the PATH (no more hardcoded path).
+. wrote some documentation (from manpages)
+
+Version 0.1.1:
+--------------
+. host resolution (with host)
+. use QBoxLayout for placement
+
+Version 0.2.0:
+--------------
+. Possibility to open more than one window
+. use -caption (as asked)
+. suppression of global waitCursor when a command is running
+. works with KProcess-0.2.1
+. Have a menuBar (and no more buttons on the button)
+. Use kmenubar (and ktoplevelwidget)
+. new about dialog
+
+Version 0.3.0:
+--------------
+. I can use nslookup instead of host for host resolution
+. program i18n (french .po done)
+. configuration dialogtab
+. KFSSTD compliant
+. use automake
+. kdelnk done
+. an icon was designed by me (it's awful, but it's an icon...)
+. you can disable a tab in the config file (it will not be displayed)
+
+Version 0.3.1:
+--------------
+. added documentation for host resolution
+. session management
+
+Version 0.3.2:
+--------------
+. ready for beta testing
+
+Version 0.3.4:
+--------------
+. handle the binary's name modification dynamicaly
+. better fallback to "nslookup" if "host" is not found
+. code clean-up
+. added browse button to the option dialog
+
+Version 0.4.0:
+--------------
+. handle finger
+
+Version 0.5.0:
+--------------
+. added mtr tab (with modifications to mtr-0.21)
+
+Version 0.5.2:
+--------------
+. modified for mtr-0.28
+. memory leak corrected
+. should be able to handle long responses (>1024b)
+
+Author:
+=======
+Bertrand Leconte <B.Leconte@mail.dotcom.fr>

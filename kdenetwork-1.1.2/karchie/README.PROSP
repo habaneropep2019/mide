@@ -1,0 +1,33 @@
+Prospero also allows users to access Archie as if it were part of a
+file system.  Here is an example of how Prospero can be used to access
+Archie in this manner.
+
+  Script started on Mon Jul  1 22:36:42 1991
+  % source /home/ftp/archie/pfs/bin/vfsetup.source
+  % vfsetup guest
+  % venable
+  % cd /archive-sites/archie/regex
+  % cd prospero (This command specifies the query)
+  % ls -l
+  total 0
+  -r--r--r--   0 -               0 -            info-prospero.arc
+  dr-xr-xr-x   0 -               0 -            prospero
+  dr-xr-xr-x   0 -               0 -            prospero-papers
+  -r--r--r--   0 -               0 -            prospero.arc
+  -r--r--r--   0 -               0 -            prospero.tar.Z
+  (Note that the "vls" command could have been used)
+  (to show where the files were actually stored    )
+  % ls prospero (list a result if it is a directory)
+  prog.tar.Z      prospero.tar.Z
+  % cat info-prospero.arc  (The file is automatically retrieved and displayed)
+  >From bcn@n1dmm  Tue Dec  4 02:33:36 1990
+  Received: from n1dmm.cs.washington.edu by june.cs.washington.edu (5.64/7.0jh)
+          id AA24763; Tue, 4 Dec 90 02:33:36 -0800
+  Received: by n1dmm.cs.washington.edu (5.64/7.0h)
+          id AA08497; Tue, 4 Dec 90 02:33:31 -0800
+  Date: Tue, 4 Dec 90 02:33:31 -0800
+  From: bcn@cs.washington.edu (Clifford Neuman)
+  ...
+  % vdisable
+  % exit
+  script done on Mon Jul  1 22:39:33 1991

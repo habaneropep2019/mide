@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmktalkd\n"
+"POT-Creation-Date: 1998-12-12 15:20+0100\n"
+"PO-Revision-Date: 1999-03-23 23:40+MET\n"
+"Last-Translator: Matthias Kiefer <matthias.kiefer@gmx.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: iso-8859-1\n"
+"Translator: Tobias Burnus <burnus@gmx.de>\n"
+
+#: main.cpp:58
+msgid "&Announcement"
+msgstr "&Ansage"
+
+#: main.cpp:61
+msgid "Ans&wering machine"
+msgstr "Anruf&beantworter"
+
+#: main.cpp:64
+msgid "&Forward"
+msgstr "&Weiterleiten"
+
+#: main.cpp:70
+msgid "usage: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+msgstr ""
+"Benutzung: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+
+#: main.cpp:111
+msgid "KTalkd Configuration"
+msgstr "KTalkd-Konfiguration"
+
+#: soundpage.cpp:46
+msgid "&Announcement program"
+msgstr "Ansage-&Programm"
+
+#: soundpage.cpp:53
+msgid "&Talk client"
+msgstr "Talk-&Client"
+
+#: soundpage.cpp:57
+msgid "&Play sound"
+msgstr "K&lang abspielen"
+
+#: soundpage.cpp:59
+msgid "&Sound File"
+msgstr "&Klang-Datei"
+
+#: soundpage.cpp:61
+msgid "Additional WAV files can be dropped onto the sound list."
+msgstr "Zusätzliche WAV-Dateien können in die \"Klänge\" Liste gezogen werden."
+
+#: soundpage.cpp:76
+msgid "&Test"
+msgstr "&Test"
+
+#: soundpage.cpp:156
+msgid "Unsupported URL"
+msgstr "Nicht unterstützte URL"
+
+#: soundpage.cpp:157
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE System Sound "
+"Module"
+msgstr ""
+"Sorry: Dieser URL-Typ wird derzeit vom KDE-Klangsystem-Modul nicht "
+"unterstützt."
+
+#: soundpage.cpp:164
+#, c-format
+msgid ""
+"Sorry, but \n"
+"%s\n"
+"does not seem to be a WAV--file."
+msgstr ""
+"Sorry, aber \n"
+"%s\n"
+"scheint keine WAV-Datei zu sein."
+
+#: soundpage.cpp:167
+msgid "Improper File Extension"
+msgstr "Ungültige Dateierweiterung"
+
+#: soundpage.cpp:175
+#, c-format
+msgid ""
+"The file\n"
+"%s\n"
+"is already in the list"
+msgstr ""
+"Die Datei\n"
+"%s\n"
+"ist bereits in der Liste"
+
+#: soundpage.cpp:179
+msgid "File Already in List"
+msgstr "Datei ist bereits in der Liste"
+
+#: answmachpage.cpp:39
+msgid "&Activate answering machine"
+msgstr "An&rufbeantworter aktivieren"
+
+#: answmachpage.cpp:44
+msgid "&Mail address"
+msgstr "&Mail-Adresse"
+
+#: answmachpage.cpp:51
+msgid "Mail sub&ject"
+msgstr "Mail-Be&treff"
+
+#: answmachpage.cpp:54
+#, c-format
+msgid "Use %s for the caller name"
+msgstr "Benutze %s als Anrufername"
+
+#: answmachpage.cpp:60
+msgid "Mail &first line"
+msgstr "Erste &Zeile mailen"
+
+#: answmachpage.cpp:64
+#, c-format
+msgid "Use first %s for caller name, and second %s for caller hostname"
+msgstr "Benutze erstes %s für Anrufername und zweites %s für seinen Hostname"
+
+#: answmachpage.cpp:68
+msgid "&Receive a mail even if no message left"
+msgstr "&Erhalte Mail, auch wenn keine Nachricht hinterlassen wurde"
+
+#: answmachpage.cpp:74
+msgid "&Banner displayed on answering machine startup :"
+msgstr "Ba&nneranzeige beim Starten des Anrufbeantworters:"
+
+#: answmachpage.cpp:83
+msgid ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+msgstr ""
+"Die Person, mit der Sie sprechen wollten, anwortet nicht.\n"
+"Bitte hinterlassen Sie eine Nachricht, die via Email versandt wird.\n"
+"Fangen Sie einfach an zu schreiben, und beenden Sie danach ganz normal."
+
+#: answmachpage.cpp:171 answmachpage.cpp:189
+#, c-format
+msgid "Message from %s"
+msgstr "Nachricht von %s"
+
+#: answmachpage.cpp:172 answmachpage.cpp:191
+#, c-format
+msgid "Message left in the answering machine, by %s@%s"
+msgstr "Nachricht auf dem Anrufbeantworter hinterlassen von %s@%s"
+
+#: forwmachpage.cpp:34
+msgid "Activate &forward"
+msgstr "W&eiterleitung aktivieren"
+
+#: forwmachpage.cpp:39
+msgid "&Destination (user or user@host)"
+msgstr "Be&stimmung (benutzer oder benutzer@host)"
+
+#: forwmachpage.cpp:49
+msgid "Forward &method"
+msgstr "A&rt der Weiterleitung"
+
+#: forwmachpage.cpp:54
+msgid ""
+"FWA : Forward announcement only. Direct connection. Not recommended.\n"
+"FWR : Forward all requests, changing info when necessary. Direct "
+"connection.\n"
+"FWT : Forward all requests and take the talk. No direct connection.\n"
+"\n"
+"Recommended use : FWT it you want to use it behind a firewall (and if "
+"ktalkd\n"
+"can access both networks), and FWR otherwise.\n"
+"\n"
+"See Help for further explanations.\n"
+msgstr ""
+"FWA: Bloße Ankündigung einer Weiterleitung. Direkte Verbindung. Nicht "
+"empfohlen.\n"
+"FWR : Alle Anfragen weiterleiten, Information nötigenfalls ändern. Direkte "
+"Verbindung.\n"
+"FWT : Alle Anfragen weiterleiten und Anruf annehmen. Keine direkte "
+"Verbindung.\n"
+"\n"
+"Empfohlene Einstellungen: FWT, wenn Sie sich hinter einem Firewall befinden "
+"(und wenn ktalkd\n"
+"beide Netze erreichen kann), ansonsten FWR.\n"
+"\n"
+"Bitte konsultieren Sie die Hilfe für nähere Erläuterungen.\n"

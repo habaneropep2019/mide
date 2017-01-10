@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The KSysV Handbook: Onscreen Fundamentals</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="SysV, System V, Init, Editor">
+<META NAME="description" CONTENT="SysV Init Editor Handbook">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ksysv-3.html">Next</A>
+<A HREF="ksysv-1.html">Previous</A>
+<A HREF="ksysv.html#toc2">Table of Contents</A>
+</P>
+<H3><A NAME="s2">2. Onscreen Fundamentals</A></H3>
+
+<P>Here you learn how to use ksysv, which shouldn't be hard since it was designed
+to be as user-friendly as possible.
+<H3><A NAME="ss2.1">2.1 Mouse</A>
+</H3>
+
+<P>Using ksysv with a mouse or other pointing device is easy:
+just drag an entry from the <B>"Available Services"</B> area onto
+one of the six runlevels to start (or resp. stop) it in that runlevel.
+<P>You can also move scripts between runlevels, or change the position in
+a given runlevel, by dragging it around. Doing so removes the entry from its
+original runlevel (or position). This doesn't happen when you drag an entry
+from the "Available Services" area.
+<P><B>Note:</B> Entries are moved when you drag them to a new area. To copy
+a service to a different runlevel, you have to select "Copy" from the "Edit" or
+context menu and "Paste" it in the target runlevel.
+<P>The <B>sorting number</B> of an entry sometimes cannot be calculated.
+In such a case you have to edit the sorting numbers of surrounding entries before
+re-trying to insert the service.
+<P><B>Note:</B> Sorting numbers can range from 00 to 99, but no higher.
+<P>You can delete entries by dragging them onto the "Trash Can" area (symbolized by
+an icon depicting a garbage bin).
+<P><B>Note:</B> Currently there is <B>no</B> way to recover items dragged onto the
+"Trash Can", so be careful!
+<H3><A NAME="ss2.2">2.2 Keyboard</A>
+</H3>
+
+<P>You can use the &lt;TAB&gt; key to switch focus between different panels ("Available
+Services", "Runlevel 1 Start", "Runlevel 1 Stop", etc.) and the cursor keys to move
+the selection up and down.
+<P>To move an entry to a different runlevel, "Cut" it to the clipboard (using &lt;Ctrl-X&gt;,
+or the key you specified in <B>Settings/Keys/Standard Keys</B>) and "Paste" it in the
+target runlevel (default shortcut: &lt;Ctrl-V&gt;).
+<P>To manually change an entries sorting number or name, press &lt;ENTER&gt; to open the
+properties dialog. Use the &lt;TAB&gt; key to switch between different fields. Close the
+dialog by pressing &lt;ENTER&gt; to accept the modifications, or press &lt;Esc&gt; to cancel
+any changes.
+<H3><A NAME="ss2.3">2.3 The Menu Entries</A>
+</H3>
+
+<P>A one by one description of KSysV´s menu.
+<H4>File</H4>
+
+<P>Because of the danger of data loss, all menu entries under "File" ask for
+confirmation before doing their work.
+<P>
+<P>
+<P><B>New Configuration</B>: clears all changes made and re-reads the runlevels
+from disk.
+<P><B>Save Configuration</B>: makes your changes permanent. Saving does not generate
+backup files, so use with care!
+<P><B>Exit</B>: quits the program.
+<H4>Edit</H4>
+
+<P><B>Cut</B>: cuts the currently selected service to the clipboard.
+<P><B>Copy</B>: same as above, but the entry is copied and not removed from its
+original position.
+<P><B>Paste</B>: pastes content of the clipboard at the current cursor position.
+<H4>Options</H4>
+
+<P><B>Show Tool Bar</B>: allows to switch the toolbar on and off.
+<P><B>Show Status Bar</B>: same as above, but for status bar.
+<P><B>Show Log</B>: enables or disables the logfile window (all operations, error
+messages etc. are stored in the logfile).
+<P><B>Configure...</B>: opens the configuration dialog. There you can set the paths to
+the runlevels, as well as the colors used for new and modified entries.
+<P><B>Save Options</B>: all of the above-mentioned settings are only valid until the next startup, unless you choose to Save Options (will also save the window geometry).
+<H4>Help</H4>
+
+<P><B>Contents</B>: opens the helpbrowser with this document.
+<P><B>About ksysv...</B>: displays a dialog with KSysV´s copyright information.
+<P><B>About KDE...</B>: some information about the KDE project.
+<P ALIGN="RIGHT">
+
+<A HREF="ksysv-3.html">Next</A>
+<A HREF="ksysv-1.html">Previous</A>
+<A HREF="ksysv.html#toc2">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

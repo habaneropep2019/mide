@@ -1,0 +1,2601 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelib\n"
+"POT-Creation-Date: 1999-03-30 01:01+0200\n"
+"PO-Revision-Date: 1999-04-01 19:30+0800\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312 )\n"
+"Translator: Wang Jian <larkw@263.net>\n"
+
+#: kab/AssertDialog.cpp:29
+msgid "(unknown file)"
+msgstr "(Î´ÖªÎÄ¼ş)"
+
+#: kab/AssertDialog.cpp:30
+msgid "(unknown line number)"
+msgstr "(Î´ÖªĞĞºÅ)"
+
+#: kab/AssertDialog.cpp:31
+msgid "(unknown condition)"
+msgstr "(Î´ÖªÌõ¼ş)"
+
+#: kab/AssertDialog.cpp:39
+msgid "You have found a bug in "
+msgstr "Äã·¢ÏÖÁËÒ»¸öbugÔÚ "
+
+#: kab/AssertDialog.cpp:45
+msgid "Ignore the error, possibly causing much more damage"
+msgstr "ºöÂÔ´íÎó,¿ÉÄÜ»áÔì³É¸ü´óµÄËğÊ§"
+
+#: kab/AssertDialog.cpp:47
+msgid "Kill the application, loosing all data"
+msgstr "É±ËÀÕâ¸ö³ÌĞò,Õâ»á¶ªÊ§ËùÓĞÊı¾İ"
+
+#: kab/AssertDialog.cpp:49
+msgid "Send an email to the application maintainer"
+msgstr "·¢¸øÕâ¸ö³ÌĞòµÄÎ¬»¤ÕßÒ»¸öemail"
+
+#: kab/AssertDialog.cpp:51 kab/datepickerdialog.cc:25 kab/kabapi.cc:34
+#: kdeui/kcolordlg.cpp:467 kdeui/kcontrol.cpp:46 kdeui/kcontrol.cpp:51
+#: kdeui/keditcl1.cpp:141 kdeui/keditcl1.cpp:155 kdeui/keditcl1.cpp:170
+#: kdeui/keditcl1.cpp:191 kdeui/keditcl1.cpp:204 kdeui/keditcl1.cpp:1561
+#: kdeui/keditcl1.cpp:1718 kdeui/kfontdialog.cpp:400
+#: kdeui/kiconloaderdialog.cpp:264 kdeui/kmsgbox.cpp:286
+#: kfile/kfiledialog.cpp:252 kfile/kfiledialog.cpp:509
+#: kfile/kfiledialog.cpp:901 kfile/kfiledialogconf.cpp:61 kfmlib/kfm.cpp:411
+#: po/texts.cpp:35
+msgid "OK"
+msgstr "È·¶¨"
+
+#: kab/AssertDialog.cpp:140
+msgid "The following condition failed:\n"
+msgstr "²»Âú×ãÒÔÏÂµÄÌõ¼ş:\n"
+
+#: kab/AssertDialog.cpp:141
+msgid "In file "
+msgstr "ÔÚÎÄ¼ş "
+
+#: kab/AssertDialog.cpp:141
+msgid ", line "
+msgstr ", ĞĞ "
+
+#: kab/AssertDialog.cpp:212 kab/AssertDialog.cpp:217
+msgid "Error handling error"
+msgstr "´íÎó´¦Àí´íÎó"
+
+#: kab/AssertDialog.cpp:213
+msgid "Could not send message."
+msgstr "ÎŞ·¨·¢³öÏûÏ¢."
+
+#: kab/AssertDialog.cpp:218
+msgid "The author did not publish an email address."
+msgstr "×÷ÕßÃ»ÓĞ¹«²¼emailµØÖ·"
+
+#: kab/DialogBase.cpp:36
+msgid ""
+"If you press the OK button, all changes\n"
+"you made will be used to proceed."
+msgstr ""
+"Èç¹ûÄã°´ÏÂ[È·¶¨]°´Å¥,ÄãËù×öµÄËùÓĞ\n"
+"ĞŞ¸Ä½«»áÉúĞ§."
+
+#: kab/DialogBase.cpp:39
+msgid ""
+"When clicking apply, the settings will be\n"
+"handed over to the program, but the dialog\n"
+"will not be closed.Use this to try different settings."
+msgstr ""
+"µ±µã»÷[Ó¦ÓÃ]ºó,ÉèÖÃ»á±»³ÌĞò\n"
+"Ê¹ÓÃ,µ«ÊÇ¶Ô»°¿ò²»»á¹Ø±Õ.\n"
+"¿ÉÒÔÊ¹ÓÃ[Ó¦ÓÃ]À´ÊÔÑé²»Í¬ÉèÖÃ."
+
+#: kab/DialogBase.cpp:44
+msgid ""
+"If you press the Cancel button, all changes\n"
+"you made will be abandoned and the dialog\n"
+"will be closed.\n"
+"The program will be in the state before\n"
+"opening the dialog."
+msgstr ""
+"Èç¹ûÄã°´ÏÂ[È¡Ïû]°´Å¥,ÄãËù×ö\n"
+"µÄĞŞ¸Ä»á±»·ÅÆú,¶Ô»°¿òÒ²»á\n"
+"¹Ø±Õ.\n"
+"³ÌĞò»á±£³ÖÔÚÊ¹ÓÃ¶Ô»°¿òÒÔÇ°µÄ\n"
+"×´Ì¬."
+
+
+#: kab/DialogBase.cpp:57 kdeui/kkeydialog.cpp:242 kdeui/knotebook.cpp:247
+#: kdeui/kwizard.cpp:228 po/texts.cpp:36
+msgid "&OK"
+msgstr "È·¶¨(&O)"
+
+#: kab/DialogBase.cpp:58
+msgid "&Apply"
+msgstr "Ó¦ÓÃ(&A)"
+
+#: kab/DialogBase.cpp:59 kdeui/kkeydialog.cpp:245 kdeui/knotebook.cpp:178
+#: kdeui/kwizard.cpp:159 po/texts.cpp:40
+msgid "&Cancel"
+msgstr "È¡Ïû(&C)"
+
+#: kab/PrintDialog.cpp:26
+msgid "Headline text:"
+msgstr "´ó×Ö±êÌâÎÄ×Ö:"
+
+#: kab/PrintDialog.cpp:27
+msgid "Right footer text:"
+msgstr "ÓÒÒ³½ÅÎÄ×Ö:"
+
+#: kab/PrintDialog.cpp:28
+msgid "Left footer text:"
+msgstr "×óÒ³½ÅÎÄ×Ö:"
+
+#: kab/SearchDialog.cpp:47
+msgid "The title"
+msgstr "±êÌâ"
+
+#: kab/SearchDialog.cpp:48
+msgid "The first name"
+msgstr "ĞÕ"
+
+#: kab/SearchDialog.cpp:49
+msgid "The additional name"
+msgstr "Ãû"
+
+#: kab/SearchDialog.cpp:50
+msgid "The name prefix"
+msgstr "Ãû×ÖÇ°×º"
+
+#: kab/SearchDialog.cpp:51
+msgid "The name"
+msgstr "Â·¾¶"
+
+#: kab/SearchDialog.cpp:52
+msgid "The formatted name"
+msgstr "È«Ãû"
+
+#: kab/SearchDialog.cpp:53
+msgid "The address"
+msgstr "µØÖ·"
+
+#: kab/SearchDialog.cpp:54
+msgid "The town"
+msgstr "³ÇÊĞ"
+
+#: kab/SearchDialog.cpp:55
+msgid "The organization"
+msgstr "×éÖ¯"
+
+#: kab/SearchDialog.cpp:56
+msgid "The role"
+msgstr "Ö°Î»"
+
+#: kab/SearchDialog.cpp:57
+msgid "The org unit"
+msgstr "×éÖ¯µ¥Î»"
+
+#: kab/SearchDialog.cpp:58
+msgid "The org subunit"
+msgstr "·ÖÖ§µ¥Î»"
+
+#: kab/SearchDialog.cpp:59
+msgid "The email address"
+msgstr "EmailµØÖ·"
+
+#: kab/SearchDialog.cpp:60
+msgid "The second email address"
+msgstr "µÚ¶ş¸öEmailµØÖ·"
+
+#: kab/SearchDialog.cpp:61
+msgid "The third email address"
+msgstr "µÚÈı¸öEmailµØÖ·"
+
+#: kab/SearchDialog.cpp:62
+msgid "The telephone number"
+msgstr "µç»°ºÅÂë"
+
+#: kab/SearchDialog.cpp:63
+msgid "The fax number"
+msgstr "´«ÕæºÅÂë"
+
+#: kab/SearchDialog.cpp:64
+msgid "The modem number"
+msgstr "modemºÅÂë"
+
+#: kab/SearchDialog.cpp:65
+msgid "The homepage URL"
+msgstr "Ö÷Ò³URL"
+
+#: kab/SearchDialog.cpp:66
+msgid "The comment"
+msgstr "±¸×¢"
+
+#: kab/SearchDialog.cpp:74
+msgid "kab: Search entries"
+msgstr "kab: ²éÕÒÏîÄ¿"
+
+#: kab/SearchDialogMainWidget.cpp:22
+msgid "matches"
+msgstr "Æ¥ÅäÏî"
+
+#: kab/SearchDialogMainWidget.cpp:23
+msgid "Use shell wildcard patterns here"
+msgstr "Ê¹ÓÃshellÍ¨Åä·û"
+
+#: kab/SearchDialogMainWidget.cpp:24
+msgid "Select field to match the pattern"
+msgstr "Ñ¡ÔñÒªÆ¥ÅäµÄÓò"
+
+#: kab/StringListEditWidget.cpp:30
+msgid "Add a new string"
+msgstr "Ìí¼ÓĞÂµÄ×Ö·û´®"
+
+#: kab/StringListEditWidget.cpp:31
+msgid "Move this string up"
+msgstr "ÏòÉÏÒÆ¶¯×Ö·û´®"
+
+#: kab/StringListEditWidget.cpp:32
+msgid "Move this string down"
+msgstr "ÏòÏÂÒÆ¶¯×Ö·û´®"
+
+#: kab/StringListEditWidget.cpp:33
+msgid "Delete this string"
+msgstr "É¾³ı×Ö·û´®"
+
+#: kab/StringListSelectAndReorderSet.cpp:34
+msgid "Possible values:"
+msgstr "¿ÉÄÜµÄÖµ:"
+
+#: kab/StringListSelectAndReorderSet.cpp:35
+msgid "Selected values:"
+msgstr "Ñ¡ÖĞµÄÖµ:"
+
+#: kdecore/kaccel.cpp:223 kfile/kfiledialog.cpp:558 kfile/kfiledialog.cpp:1217
+#: kfile/kfiledialog.cpp:1377 kfile/kfiledialog.cpp:1411 po/texts.cpp:65
+msgid "Open"
+msgstr "´ò¿ª"
+
+#: kdecore/kaccel.cpp:227
+msgid "New"
+msgstr "ĞÂ½¨"
+
+#: kab/searchresults.cc:30 kdecore/kaccel.cpp:231 po/texts.cpp:80
+msgid "Close"
+msgstr "¹Ø±Õ"
+
+#: kdecore/kaccel.cpp:235 kfile/kfiledialog.cpp:1272
+#: kfile/kfiledialog.cpp:1432 po/texts.cpp:75
+msgid "Save"
+msgstr "±£´æ"
+
+#: kdecore/kaccel.cpp:239 po/texts.cpp:115
+msgid "Print"
+msgstr "´òÓ¡"
+
+#: kdecore/kaccel.cpp:243 po/texts.cpp:52
+msgid "Quit"
+msgstr "ÍË³ö"
+
+#: kdecore/kaccel.cpp:247 po/texts.cpp:69
+msgid "Cut"
+msgstr "¼ôÏÂ"
+
+#: kdecore/kaccel.cpp:251 po/texts.cpp:56
+msgid "Copy"
+msgstr "¿½±´"
+
+#: kdecore/kaccel.cpp:255 po/texts.cpp:58
+msgid "Paste"
+msgstr "Õ³Ìù"
+
+#: kdecore/kaccel.cpp:259 po/texts.cpp:93
+msgid "Undo"
+msgstr "»¹Ô­"
+
+#: kdecore/kaccel.cpp:263 kdeui/keditcl2.cpp:103 kdeui/keditcl2.cpp:120
+#: kdeui/keditcl2.cpp:360 kdeui/keditcl2.cpp:377 kdeui/keditcl2.cpp:676
+#: kdeui/keditcl2.cpp:685 kdeui/keditcl2.cpp:786
+msgid "Find"
+msgstr "²éÕÒ"
+
+#: kdecore/kaccel.cpp:267 kdeui/keditcl2.cpp:423 kdeui/keditcl2.cpp:453
+#: kdeui/keditcl2.cpp:470 kdeui/keditcl2.cpp:789 kspell/kspelldlg.cpp:110
+#: po/texts.cpp:133
+msgid "Replace"
+msgstr "Ìæ»»"
+
+#: kdecore/kaccel.cpp:271 po/texts.cpp:134
+msgid "Insert"
+msgstr "²åÈë"
+
+#: kdecore/kaccel.cpp:275 kfile/kfiledialog.cpp:131
+msgid "Home"
+msgstr "µ½Æğµã"
+
+#: kdecore/kaccel.cpp:279
+msgid "End"
+msgstr "µ½½áÊø"
+
+#: kdecore/kaccel.cpp:283
+msgid "Prior"
+msgstr "ÉÏÒ»Ò³"
+
+#: kdecore/kaccel.cpp:287
+msgid "Next"
+msgstr "ÏÂÒ»Ò³"
+
+#: kdecore/kaccel.cpp:291 kdetest/klocaletest.cpp:102 kdeui/kcolordlg.cpp:463
+#: kdeui/kcontrol.cpp:35 kfile/kfiledialog.cpp:246 kspell/ksconfig.cpp:212
+#: kspell/kspelldlg.cpp:131 po/texts.cpp:44
+msgid "Help"
+msgstr "°ïÖú"
+
+#: kdecore/kaccel.cpp:589 kdecore/kaccel.cpp:653
+msgid "SHIFT"
+msgstr "SHIFT"
+
+#: kdecore/kaccel.cpp:593 kdecore/kaccel.cpp:655
+msgid "CTRL"
+msgstr "CTRL"
+
+#: kdecore/kaccel.cpp:597 kdecore/kaccel.cpp:657
+msgid "ALT"
+msgstr "ALT"
+
+#: kdecore/kapp.cpp:608 po/texts.cpp:137
+msgid "&Contents"
+msgstr "ÄÚÈİ(&C)"
+
+#: kdecore/kapp.cpp:614
+msgid "&About"
+msgstr "¹ØÓÚ(&A)"
+
+#: kdecore/kapp.cpp:621
+msgid "About &KDE..."
+msgstr "¹ØÓÚ&KDE..."
+
+#: kdecore/kapp.cpp:642
+msgid "About KDE"
+msgstr "¹ØÓÚKDE"
+
+#: kdecore/kapp.cpp:644
+msgid ""
+"\n"
+"The KDE Desktop Environment was written by the KDE Team,\n"
+"a world-wide network of software engineers committed to\n"
+"free software development.\n"
+"\n"
+"Visit http://www.kde.org for more information on the KDE\n"
+"Project. Please consider joining and supporting KDE.\n"
+"\n"
+"Please report bugs at http://bugs.kde.org.\n"
+msgstr ""
+"\n"
+"KDE×ÀÃæ»·¾³ÓÉKDEĞ¡×é¿ª·¢. KDEĞ¡×éÊÇÓÉ\n"
+"ÊÀ½ç·¶Î§ÄÚµÄ½øĞĞÃâ·ÑÈí¼ş¿ª·¢µÄÈí¼ş¹¤³ÌÊ¦\n"
+"×é³ÉµÄ.\n"
+"\n"
+"·ÃÎÊhttp://www.kde.org,¿ÉÒÔ»ñµÃ¸ü¶àµÄÓĞ¹ØKDE\n"
+"µÄĞÅÏ¢.Çë¿¼ÂÇ¼ÓÈëºÍÖ§³ÖKDE.\n"
+"\n"
+"ÇëÏòhttp://bugs.kde.org±¨¸æKDEµÄÈ±Ïİ.\n"
+
+#: kdetest/klocaletest.cpp:100 kdeui/keditcl1.cpp:412 kdeui/keditcl1.cpp:433
+#: kdeui/keditcl1.cpp:494 kdeui/keditcl1.cpp:514 kdeui/keditcl1.cpp:1661
+#: kdeui/keditcl2.cpp:106 kdeui/keditcl2.cpp:123 kdeui/keditcl2.cpp:363
+#: kdeui/keditcl2.cpp:380 kdeui/keditcl2.cpp:426 kdeui/keditcl2.cpp:456
+#: kdeui/keditcl2.cpp:473 kdeui/kmsgbox.cpp:303 kdeui/kmsgbox.cpp:319
+#: po/texts.cpp:27
+msgid "Yes"
+msgstr "ÊÇ"
+
+#: kdetest/klocaletest.cpp:101 kdeui/keditcl1.cpp:413 kdeui/keditcl1.cpp:434
+#: kdeui/keditcl1.cpp:495 kdeui/keditcl1.cpp:515 kdeui/keditcl1.cpp:1662
+#: kdeui/keditcl2.cpp:107 kdeui/keditcl2.cpp:124 kdeui/keditcl2.cpp:364
+#: kdeui/keditcl2.cpp:381 kdeui/keditcl2.cpp:427 kdeui/keditcl2.cpp:457
+#: kdeui/keditcl2.cpp:474 kdeui/kmsgbox.cpp:301 kdeui/kmsgbox.cpp:317
+#: po/texts.cpp:28
+msgid "No"
+msgstr "·ñ"
+
+#: kab/datepickerdialog.cc:26 kab/kabapi.cc:37 kab/widget.cc:1390
+#: kab/widget.cc:1432 kdetest/klocaletest.cpp:103 kdeui/kcolordlg.cpp:470
+#: kdeui/kcontrol.cpp:48 kdeui/kcontrol.cpp:55 kdeui/keditcl1.cpp:414
+#: kdeui/keditcl1.cpp:496 kdeui/keditcl2.cpp:895 kdeui/kfontdialog.cpp:403
+#: kdeui/kiconloaderdialog.cpp:265 kdeui/kmsgbox.cpp:321
+#: kfile/kfiledialog.cpp:258 kfile/kfiledialog.cpp:906
+#: kfile/kfiledialogconf.cpp:59 kfmlib/kfm.cpp:415 kspell/kspelldlg.cpp:143
+#: po/texts.cpp:39
+msgid "Cancel"
+msgstr "È¡Ïû"
+
+#: kdeui/kcolordlg.cpp:285
+msgid "Select Color"
+msgstr "Ñ¡ÔñÑÕÉ«"
+
+#: kdeui/kcolordlg.cpp:297
+msgid "System Colors"
+msgstr "ÏµÍ³ÑÕÉ«"
+
+#: kdeui/kcolordlg.cpp:328
+msgid "Custom Colors"
+msgstr "×Ô¶¨ÒåÑÕÉ«"
+
+#: kdeui/kcolordlg.cpp:341
+msgid "Add to Custom Colors"
+msgstr "Ìí¼Óµ½×Ô¶¨ÒåÑÕÉ«ÖĞ"
+
+#: kdeui/kcolordlg.cpp:789 kdeui/kcolordlg.cpp:841
+msgid "Custom..."
+msgstr "×Ô¶¨Òå..."
+
+#
+#: kdeui/kcontrol.cpp:41 kdeui/kcontrol.cpp:58 po/texts.cpp:135
+msgid "Default"
+msgstr "Ä¬ÈÏ"
+
+#: kdeui/kcontrol.cpp:47 kdeui/kcontrol.cpp:53 po/texts.cpp:41
+msgid "Apply"
+msgstr "Ó¦ÓÃ"
+
+#
+#: kdeui/kdatepik.cpp:102
+msgid "January"
+msgstr "Ò»ÔÂ"
+
+#: kdeui/kdatepik.cpp:102
+msgid "February"
+msgstr "¶şÔÂ"
+
+#: kdeui/kdatepik.cpp:103
+msgid "March"
+msgstr "ÈıÔÂ"
+
+#: kdeui/kdatepik.cpp:103
+msgid "April"
+msgstr "ËÄÔÂ"
+
+#: kdeui/kdatepik.cpp:104 kfile/kfileinfo.cpp:225
+msgid "May"
+msgstr "ÎåÔÂ"
+
+#: kdeui/kdatepik.cpp:104
+msgid "June"
+msgstr "ÁùÔÂ"
+
+#: kdeui/kdatepik.cpp:105
+msgid "July"
+msgstr "ÆßÔÂ"
+
+#: kdeui/kdatepik.cpp:105
+msgid "August"
+msgstr "°ËÔÂ"
+
+#: kdeui/kdatepik.cpp:106
+msgid "September"
+msgstr "¾ÅÔÂ"
+
+#: kdeui/kdatepik.cpp:106
+msgid "October"
+msgstr "Ê®ÔÂ"
+
+#: kdeui/kdatepik.cpp:107
+msgid "November"
+msgstr "Ê®Ò»ÔÂ"
+
+#: kdeui/kdatepik.cpp:107
+msgid "December"
+msgstr "Ê®¶şÔÂ"
+
+#: kdeui/kdatepik.cpp:247
+msgid "(invalid)"
+msgstr "(ÎŞĞ§µÄ)"
+
+#: kdeui/kdatetbl.cpp:49
+msgid "Sun"
+msgstr "ĞÇÆÚÌì"
+
+#
+#: kdeui/kdatetbl.cpp:49
+msgid "Mon"
+msgstr "ĞÇÆÚÒ»"
+
+#
+#: kdeui/kdatetbl.cpp:49
+msgid "Tue"
+msgstr "ĞÇÆÚ¶ş"
+
+#
+#: kdeui/kdatetbl.cpp:50
+msgid "Wed"
+msgstr "ĞÇÆÚÈı"
+
+#: kdeui/kdatetbl.cpp:50
+msgid "Thu"
+msgstr "ĞÇÆÚËÄ"
+
+#: kdeui/kdatetbl.cpp:50
+msgid "Fri"
+msgstr "ĞÇÆÚÎå"
+
+#
+#: kdeui/kdatetbl.cpp:51
+msgid "Sat"
+msgstr "ĞÇÆÚÁù"
+
+#: kab/kabapi.cc:138 kab/widget.cc:832 kab/widget.cc:852 kab/widget.cc:1952
+#: kdeui/keditcl1.cpp:139 kdeui/keditcl1.cpp:168 kdeui/keditcl1.cpp:189
+#: kdeui/keditcl1.cpp:202 kdeui/keditcl1.cpp:1559 po/texts.cpp:83
+msgid "Sorry"
+msgstr "¶Ô²»Æğ"
+
+#: kdeui/keditcl1.cpp:140
+msgid "The specified File does not exist"
+msgstr "Ö¸¶¨µÄÎÄ¼ş²»´æÔÚ"
+
+#: kdeui/keditcl1.cpp:153 kdeui/keditcl1.cpp:430 kdeui/keditcl1.cpp:511
+#: kdeui/keditcl1.cpp:1715
+msgid "Sorry:"
+msgstr "¶Ô²»Æğ:"
+
+#: kdeui/keditcl1.cpp:154
+msgid "You have specificated a directory"
+msgstr "±ØĞëÖ¸¶¨Ò»¸öÄ¿Â¼"
+
+#: kdeui/keditcl1.cpp:169 kdeui/keditcl1.cpp:190
+msgid "You do not have read permission to this file."
+msgstr "Ã»ÓĞÈ¨ÏŞ¶ÁÈ¡Õâ¸öÎÄ¼ş"
+
+#: kdeui/keditcl1.cpp:203
+msgid "An Error occured while trying to open this Document"
+msgstr "´ò¿ªÎÄ¼şµÄÊ±ºò·¢Éú´íÎó"
+
+#: kdeui/keditcl1.cpp:373
+msgid "Select Document to Insert"
+msgstr "Ñ¡ÔñÒª²åÈëµÄÎÄ¼ş"
+
+#: kdeui/keditcl1.cpp:409 kdeui/keditcl1.cpp:491 kdeui/keditcl1.cpp:1658
+msgid "Warning:"
+msgstr "¾¯¸æ:"
+
+#: kdeui/keditcl1.cpp:410 kdeui/keditcl1.cpp:492
+msgid ""
+"The current Document has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"µ±Ç°µÄÎÄ¼şÒÑ¾­±»ĞŞ¸Ä.\n"
+"Òª±£´æÂğ?"
+
+#: kdeui/keditcl1.cpp:431
+msgid ""
+"Could not save the document.\n"
+"Open a new document anyways?"
+msgstr ""
+"²»ÄÜ±£´æÕâ·İÎÄ¼ş.\n"
+"Ö±½Ó´ò¿ªÒ»¸öĞÂÎÄ¼şÂğ?"
+
+#: kdeui/keditcl1.cpp:462
+msgid "Select Document to Open"
+msgstr "Ñ¡ÔñÒª´ò¿ªµÄÎÄ¼ş"
+
+#: kdeui/keditcl1.cpp:512
+msgid ""
+"Could not save the document.\n"
+"Create a new document anyways?"
+msgstr ""
+"²»ÄÜ±£´æÕâ·İÎÄ¼ş.\n"
+"Ö±½Ó½¨Á¢Ò»·İĞÂÎÄ¼şÂğ?"
+
+#: kdeui/keditcl1.cpp:547 kdeui/keditcl1.cpp:1700 kdeui/kpopmenu.cpp:10
+#: po/texts.cpp:34
+msgid "Untitled"
+msgstr "Untitled"
+
+#: kdeui/keditcl1.cpp:1560
+msgid "Could not save the document\n"
+msgstr "ÎŞ·¨±£´æÕâ·İÎÄ¼ş.\n"
+
+#: kdeui/keditcl1.cpp:1630
+msgid "Save Document As"
+msgstr "ÎÄµµÁí´æÎª"
+
+#: kdeui/keditcl1.cpp:1659
+msgid ""
+"A Document with this Name exists already\n"
+"Do you want to overwrite it ?"
+msgstr ""
+"´æÔÚÏàÍ¬Ãû×ÖµÄÎÄ¼ş\n"
+"Òª¸²¸ÇÂğ ?"
+
+#: kdeui/keditcl1.cpp:1716
+msgid "You do not have write permission to this file.\n"
+msgstr "Ã»ÓĞÈ¨ÏŞĞ´ÈëÕâ¸öÎÄ¼ş\n"
+
+#: kdeui/keditcl2.cpp:104 kdeui/keditcl2.cpp:361 kdeui/keditcl2.cpp:454
+msgid ""
+"End of document reached.\n"
+"Continue from the beginning?"
+msgstr ""
+"ÒÑµ½ÎÄ¼ş½áÎ².\n"
+"ÓÉ¿ªÍ·¼ÌĞø?"
+
+#: kdeui/keditcl2.cpp:121 kdeui/keditcl2.cpp:378 kdeui/keditcl2.cpp:424
+#: kdeui/keditcl2.cpp:471
+msgid ""
+"Beginning of document reached.\n"
+"Continue from the end?"
+msgstr ""
+"ÒÑµ½ÎÄµµ¿ªÍ·.\n"
+"ÓÉ½áÎ²¼ÌĞø?"
+
+#: kdeui/keditcl2.cpp:682 kdeui/keditcl2.cpp:780
+msgid "Case Sensitive"
+msgstr "´óĞ¡Ğ´Ãô¸Ğ"
+
+#: kdeui/keditcl2.cpp:683 kdeui/keditcl2.cpp:783
+msgid "Find Backwards"
+msgstr "·´Ïò²éÕÒ"
+
+#: kdeui/keditcl2.cpp:688 kdeui/keditcl2.cpp:795
+msgid "Done"
+msgstr "Íê³É"
+
+#: kdeui/keditcl2.cpp:768
+msgid "Find:"
+msgstr "²éÕÒ:"
+
+#: kdeui/keditcl2.cpp:778
+msgid "Replace with:"
+msgstr "ÓÃ...Ìæ»»:"
+
+#: kdeui/keditcl2.cpp:792 kspell/kspelldlg.cpp:38
+msgid "Replace All"
+msgstr "È«²¿Ìæ»»"
+
+#: kdeui/keditcl2.cpp:889
+msgid "Goto Line"
+msgstr "ÌøÖÁĞĞ"
+
+#: kdeui/keditcl2.cpp:894
+msgid "Go"
+msgstr "¿ªÊ¼"
+
+#: kdeui/kfontdialog.cpp:177
+msgid "Select Font"
+msgstr "Ñ¡Ôñ×ÖÌå"
+
+#: kdeui/kfontdialog.cpp:181
+msgid "Requested Font"
+msgstr "ÒªÇóµÄ×ÖÌå"
+
+#: kdeui/kfontdialog.cpp:182
+msgid "Actual Font"
+msgstr "Êµ¼Ê×ÖÌå"
+
+#: kdeui/kfontdialog.cpp:202 kdeui/kfontdialog.cpp:207
+msgid "Family:"
+msgstr "×å:"
+
+#: kdeui/kfontdialog.cpp:214 kdeui/kfontdialog.cpp:219 po/texts.cpp:26
+msgid "Charset:"
+msgstr "×Ö·û¼¯:"
+
+#: kdeui/kfontdialog.cpp:227 kdeui/kfontdialog.cpp:232 kfile/kpreview.cpp:196
+msgid "Size:"
+msgstr "´óĞ¡"
+
+#: kdeui/kfontdialog.cpp:239 kdeui/kfontdialog.cpp:244
+msgid "Weight:"
+msgstr "±Ê»®ÇáÖØ:"
+
+#: kdeui/kfontdialog.cpp:251 kdeui/kfontdialog.cpp:256
+msgid "Style:"
+msgstr "·ç¸ñ:"
+
+#: kdeui/kfontdialog.cpp:284 kfile/kfiledetaillist.cpp:38
+msgid "Size"
+msgstr "´óĞ¡"
+
+#: kdeui/kfontdialog.cpp:322
+msgid "Weight"
+msgstr "±Ê»®ÇáÖØ"
+
+#: kdeui/kfontdialog.cpp:325 kdeui/kfontdialog.cpp:484
+msgid "normal"
+msgstr "Õı³£"
+
+#: kdeui/kfontdialog.cpp:326 kdeui/kfontdialog.cpp:486
+msgid "bold"
+msgstr "´ÖÌå"
+
+#: kdeui/kfontdialog.cpp:336
+msgid "Style"
+msgstr "·ç¸ñ"
+
+#: kdeui/kfontdialog.cpp:339 kdeui/kfontdialog.cpp:497
+#: kdeui/kfontdialog.cpp:526
+msgid "roman"
+msgstr "ÕıÌå"
+
+#: kdeui/kfontdialog.cpp:340 kdeui/kfontdialog.cpp:499
+#: kdeui/kfontdialog.cpp:524
+msgid "italic"
+msgstr "Ğ±Ìå"
+
+#: kdeui/kfontdialog.cpp:348
+msgid "Charset"
+msgstr "×Ö·û¼¯"
+
+#
+#: kdeui/kfontdialog.cpp:367
+msgid "Dolor Ipse"
+msgstr "Dolor Ipse"
+
+#: kdeui/kfontdialog.cpp:519
+msgid "Bold"
+msgstr "´ÖÌå"
+
+#: kdeui/kfontdialog.cpp:521
+msgid "Normal"
+msgstr "Õı³£"
+
+#: kdeui/kiconloaderdialog.cpp:247
+msgid "Select Icon"
+msgstr "Ñ¡ÔñÍ¼±ê"
+
+#: kdeui/kiconloaderdialog.cpp:252
+msgid "Filter:"
+msgstr "¹ıÂË:"
+
+#: kdeui/kkeydialog.cpp:219
+msgid "Configure key bindings"
+msgstr "ÅäÖÃ¼ü¹ØÁª"
+
+#: kdeui/kkeydialog.cpp:232 kdeui/knotebook.cpp:224 kdeui/kwizard.cpp:205
+#: po/texts.cpp:45
+msgid "&Help"
+msgstr "°ïÖú(&H)"
+
+#: kdeui/kkeydialog.cpp:236 po/texts.cpp:136
+msgid "&Defaults"
+msgstr "Ä¬ÈÏÖµ(&D)"
+
+#: kdeui/kkeydialog.cpp:320
+msgid "Current key"
+msgstr "µ±Ç°¼ü"
+
+#: kdeui/kkeydialog.cpp:332
+msgid "&Action"
+msgstr "¶¯×÷(&A)"
+
+#: kdeui/kkeydialog.cpp:366
+msgid "Choose a key for the selected action"
+msgstr "¸øÑ¡ÖĞµÄ¶¯×÷Ñ¡ÔñÒ»¸ö¼ü"
+
+#: kdeui/kkeydialog.cpp:393
+msgid "&No key"
+msgstr "Ã»ÓĞ¼ü(&N)"
+
+#: kdeui/kkeydialog.cpp:401
+msgid "&Default key"
+msgstr "Ä¬ÈÏ¼ü(&D)"
+
+#: kdeui/kkeydialog.cpp:409
+msgid "&Custom key"
+msgstr "×Ô¶¨Òå¼ü(&C)..."
+
+#: kdeui/kkeydialog.cpp:472
+msgid "No keys defined"
+msgstr "Ã»ÓĞ¶¨Òå¼ü"
+
+#: kdeui/kkeydialog.cpp:474
+msgid "Not configurable"
+msgstr "²»ÊÇ¿ÉÅäÖÃµÄ"
+
+#: kdeui/kkeydialog.cpp:530
+msgid "Global Keys"
+msgstr "È«¾Ö¼ü"
+
+#: kdeui/kkeydialog.cpp:562
+msgid "Keys"
+msgstr "¼ü"
+
+#: kdeui/kkeydialog.cpp:637 kdeui/kkeydialog.cpp:976
+msgid "Attention : key already used"
+msgstr "×¢Òâ: ¼üÒÑ¾­Ê¹ÓÃ"
+
+#: kdeui/kkeydialog.cpp:926
+msgid "Press the wanted key"
+msgstr "Çë°´ÏëÓÃµÄ¼ü"
+
+#: kdeui/kkeydialog.cpp:949
+msgid "Undefined key"
+msgstr "Ã»ÓĞ¶¨ÒåµÄ¼ü"
+
+#: kdeui/kkeydialog.cpp:999
+msgid "Return to end edition"
+msgstr "°´[RETURN]½áÊø±à¼­"
+
+#: kdeui/kkeydialog.cpp:1009
+msgid "Incorrect key"
+msgstr "²»ÕıÈ·µÄ¼ü"
+
+#: kdeui/kkeydialog.cpp:1035
+#, c-format
+msgid ""
+"The %s key combination has already been allocated\n"
+"to the global %s action.\n"
+"\n"
+"Please choose a unique key combination."
+msgstr ""
+"¸´ºÏ¼ü%ÒÑ¾­±»ÓÃ×÷È«¾ÖµÄ\n"
+"%s¶¯×÷.\n"
+"\n"
+"ÇëÑ¡ÔñÒ»¸öÎ¨Ò»µÄ¸´ºÏ¼ü."
+
+#: kdeui/kkeydialog.cpp:1039
+msgid "Global key conflict"
+msgstr "È«¾Ö¼ü¶¨Òå³åÍ»"
+
+#: kdeui/kkeydialog.cpp:1062
+#, c-format
+msgid ""
+"The %s key combination has already been allocated\n"
+"to the standard %s action.\n"
+"\n"
+"Please choose a unique key combination."
+msgstr ""
+"¸´ºÏ¼ü%sÒÑ¾­±»ÓÃ×÷±ê×¼µÄ\n"
+"%s¶¯×÷.\n"
+"\n"
+"ÇëÑ¡ÔñÒ»¸öÎ¨Ò»µÄ¸´ºÏ¼ü."
+
+#: kdeui/kkeydialog.cpp:1066
+msgid "Standard key conflict"
+msgstr "±ê×¼¼ü¶¨Òå³åÍ»"
+
+#: kdeui/kkeydialog.cpp:1086
+#, c-format
+msgid ""
+"The %s key combination has already been allocated\n"
+"to the %s action.\n"
+"\n"
+"Please choose a unique key combination."
+msgstr ""
+"¸´ºÏ¼ü%sÒÑ¾­±»ÓÃ×÷\n"
+"%s¶¯×÷.\n"
+"\n"
+"ÇëÑ¡ÔñÒ»¸öÎ¨Ò»µÄ¸´ºÏ¼ü."
+
+#: kdeui/kkeydialog.cpp:1090
+msgid "Key conflict"
+msgstr "¼ü¶¨Òå³åÍ»"
+
+#: kdeui/kmenubar.cpp:306 kdeui/ktoolbar.cpp:860
+msgid "Top"
+msgstr "¶¥²¿"
+
+#: kdeui/kmenubar.cpp:307 kdeui/ktoolbar.cpp:862
+msgid "Bottom"
+msgstr "µ×²¿"
+
+#: kdeui/kmenubar.cpp:308 kdeui/ktoolbar.cpp:863
+msgid "Floating"
+msgstr "¸¡¶¯"
+
+#: kdeui/kmenubar.cpp:457 kdeui/kmenubar.cpp:809 kdeui/ktoolbar.cpp:2090
+msgid "Float"
+msgstr "¸¡¶¯"
+
+#: kdeui/kmenubar.cpp:761 kdeui/ktoolbar.cpp:2071
+msgid "UnFloat"
+msgstr "¹Ì¶¨"
+
+#: kdeui/knotebook.cpp:145
+msgid "Trying to add page when no KWizards are added!"
+msgstr "ÊÔÍ¼ÔÚÃ»ÓĞKWizardsµÄÇé¿öÏÂÌí¼ÓÒ³ !"
+
+#: kdeui/knotebook.cpp:201 kdeui/kwizard.cpp:182
+msgid "&Default"
+msgstr "Ä¬ÈÏ(&D)"
+
+#: kdeui/kquickhelp.cpp:203
+msgid "Quickhelp"
+msgstr "¿ìËÙ°ïÖú"
+
+#: kdeui/ktoolbar.cpp:288 kdeui/ktoolbar.cpp:340
+msgid "KToolBarButton: pixmap is empty, perhaps some missing file"
+msgstr "KToolBarButton: ¿ÕµÄÍ¼±ê, Ò²ĞíÈ±ÉÙÄ³Ğ©ÎÄ¼ş"
+
+#: kdeui/ktoolbar.cpp:859
+msgid "Left"
+msgstr "×ó"
+
+#: kdeui/ktoolbar.cpp:861
+msgid "Right"
+msgstr "ÓÒ"
+
+#: kdeui/kwizard.cpp:531 kdeui/kwizard.cpp:678
+#, c-format
+msgid "Page %d of %d"
+msgstr "µÚ%Ò³,¹²%dÒ³"
+
+#
+#: kfile/kcombiview.cpp:81
+msgid "Folders:"
+msgstr "ÎÄ¼ş¼Ğ:"
+
+#: kfile/kcombiview.cpp:82
+msgid "Contents:"
+msgstr "ÄÚÈİ:"
+
+#: kfile/kfilebookmark.cpp:246
+msgid "<!-- Do not edit this file -->"
+msgstr "<!-- ÇëÎğ±à¼­´ËÎÄ¼ş -->"
+
+#: kab/addressbook.cc:1112 kfile/kfiledetaillist.cpp:36
+msgid "Name"
+msgstr "Ãû³Æ"
+
+#
+#: kfile/kfiledetaillist.cpp:40
+msgid "Permissions"
+msgstr "È¨ÏŞ"
+
+#
+#: kfile/kfiledetaillist.cpp:42
+msgid "Date"
+msgstr "ÈÕÆÚ"
+
+#: kfile/kfiledetaillist.cpp:45
+msgid "Owner"
+msgstr "ÊôÖ÷"
+
+#: kfile/kfiledetaillist.cpp:47
+msgid "Group"
+msgstr "ÓÃ»§×é"
+
+#: kfile/kfiledialog.cpp:122 po/texts.cpp:55
+msgid "Back"
+msgstr "·µ»Ø"
+
+#: kfile/kfiledialog.cpp:125
+msgid "Forward"
+msgstr "ÍùÇ°"
+
+#: kfile/kfiledialog.cpp:128
+msgid "Up to parent"
+msgstr "µ½¸¸Ä¿Â¼"
+
+#: kfile/kfiledialog.cpp:134 po/texts.cpp:54
+msgid "Reload"
+msgstr "Ë¢ĞÂ"
+
+#: kfile/kfiledialog.cpp:156
+msgid "Bookmarks"
+msgstr "ÊéÇ©"
+
+#: kfile/kfiledialog.cpp:160
+msgid "Create new folder"
+msgstr "½¨Á¢ĞÂµÄÎÄ¼ş¼Ğ"
+
+#: kfile/kfiledialog.cpp:163
+msgid "Search for a file"
+msgstr "²éÕÒÎÄ¼ş"
+
+#: kfile/kfiledialog.cpp:166
+msgid "Configure this dialog [development only]"
+msgstr "ÅäÖÃ´Ë¶Ô»°¿ò [½öÓÃÓÚ¿ª·¢]"
+
+#: kfile/kfiledialog.cpp:174
+msgid "The path"
+msgstr "Â·¾¶"
+
+#: kfile/kfiledialog.cpp:199
+msgid "&Location:"
+msgstr "Î»ÖÃ(&L)"
+
+#: kfile/kfiledialog.cpp:212
+msgid "&Filter:"
+msgstr "¹ıÂË(&F)"
+
+#: kfile/kfiledialog.cpp:226
+msgid "Show hidden"
+msgstr "ÏÔÊ¾Òş²ØÎÄ¼ş"
+
+#: kfile/kfiledialog.cpp:504
+msgid "Error: Not local file"
+msgstr "´íÎó: ²»ÊÇ±¾µØÎÄ¼ş"
+
+#: kfile/kfiledialog.cpp:505
+msgid ""
+"The specified directory is not a local directory\n"
+"But the application accepts just local files."
+msgstr ""
+"Ö¸¶¨µÄÄ¿Â¼²»ÊÇÒ»¸ö±¾µØÄ¿Â¼,\n"
+"¶øÕâ¸öÓ¦ÓÃ³ÌĞòÖ»ÄÜÊ¹ÓÃ±¾µØÎÄ¼ş."
+
+#: kfile/kfiledialog.cpp:519 kfile/kfiledialog.cpp:624
+msgid "Error: Cannot Open Directory"
+msgstr "´íÎó: ²»ÄÜ´ò¿ªÄ¿Â¼"
+
+#: kfile/kfiledialog.cpp:520
+msgid ""
+"The specified directory does not exist\n"
+"or was not readable."
+msgstr "Ö¸¶¨µÄÄ¿Â¼²»´æÔÚ»ò²»¿É¶Á"
+
+#: kfile/kfiledialog.cpp:522 kfile/kfiledialog.cpp:627
+msgid "Dismiss"
+msgstr "È¡Ïû"
+
+#: kfile/kfiledialog.cpp:573 kfile/kfiledialog.cpp:1392 po/texts.cpp:77
+msgid "Save As"
+msgstr "Áí´æÎª"
+
+#: kfile/kfiledialog.cpp:596
+msgid "Root Directory"
+msgstr "¸ùÄ¿Â¼"
+
+#: kfile/kfiledialog.cpp:625
+msgid "The specified directory does not exist or was not readable."
+msgstr "Ö¸¶¨µÄÄ¿Â¼²»´æÔÚ»ò²»¿É¶Á"
+
+#: kfile/kfiledialog.cpp:886
+msgid "Create new directory in: "
+msgstr "½¨Á¢Ò»¸öĞÂµÄÄ¿Â¼ÔÚ :"
+
+#: kfile/kfiledialog.cpp:889
+msgid "New Directory"
+msgstr "½¨Á¢ĞÂÄ¿Â¼"
+
+#: kfile/kfiledialog.cpp:961
+msgid "Add to bookmarks"
+msgstr "Ìí¼Óµ½ÊéÇ©ÖĞ"
+
+#: kfile/kfiledialog.cpp:1251
+msgid "Choose Directory"
+msgstr "Ñ¡ÔñÄ¿Â¼"
+
+#: kfile/kfiledialog.cpp:1319
+msgid "directory"
+msgstr "Ä¿Â¼"
+
+#: kfile/kfiledialog.cpp:1321
+msgid "directories"
+msgstr "Ä¿Â¼"
+
+#: kfile/kfiledialog.cpp:1323 kfile/kpreview.cpp:326
+msgid "file"
+msgstr "ÎÄ¼ş"
+
+#: kfile/kfiledialog.cpp:1325
+msgid "files"
+msgstr "ÎÄ¼ş"
+
+# , c-format
+#: kfile/kfiledialog.cpp:1327
+#, c-format
+msgid "%d %s and %d %s"
+msgstr "%d %s ºÍ %d %s"
+
+#: kfile/kfiledialog.cpp:1337
+msgid "one directory"
+msgstr "Ò»¸öÄ¿Â¼"
+
+#: kfile/kfiledialog.cpp:1339
+#, c-format
+msgid "%d directories"
+msgstr "%d Ä¿Â¼"
+
+#: kfile/kfiledialogconf.cpp:42
+msgid "Look and Feel"
+msgstr "Íâ¹Û"
+
+#: kfile/kfiledialogconf.cpp:44
+msgid ""
+"KDE File Selector by:\n"
+"\n"
+"Richard Moore <rich@kde.org>\n"
+"Stephan Kulow <coolo@kde.org>\n"
+"and Daniel Grana <grana@ie.iwi.unibe.ch>\n"
+"\n"
+"with contributions by\n"
+"\n"
+"Mario Weilguni <mweilguni@sime.com>\n"
+"and Martin Jones <mjones@kde.org>"
+msgstr ""
+"KDE ÎÄ¼şÑ¡ÔñÆ÷ÓÉ\n"
+"\n"
+"Richard Moore <rich@kde.org>\n"
+"Stephan Kulow <coolo@kde.org>\n"
+"ºÍ Daniel Grana <grana@ie.iwi.unibe.ch>\n"
+"\n"
+"Íê³É , ²¢ÓÉ\n"
+"Mario Weilguni <mweilguni@sime.com>\n"
+"and Martin Jones <mjones@kde.org>\n"
+"Ğ­Öú"
+
+#: kfile/kfiledialogconf.cpp:57 po/texts.cpp:32
+msgid "About"
+msgstr "¹ØÓÚ"
+
+#: kfile/kfiledialogconf.cpp:71
+msgid "View style"
+msgstr "ÊÓÍ¼·ç¸ñ"
+
+#: kfile/kfiledialogconf.cpp:75
+msgid "Show Short View"
+msgstr "¼ò½à"
+
+#: kfile/kfiledialogconf.cpp:81
+msgid "Show Detail View"
+msgstr "ÏêÏ¸"
+
+#: kfile/kfiledialogconf.cpp:90
+msgid "Misc"
+msgstr "ÆäËû"
+
+#: kfile/kfiledialogconf.cpp:96
+msgid "Show Filter"
+msgstr "ÏÔÊ¾¹ıÂË·û"
+
+#: kfile/kfiledialogconf.cpp:102
+msgid "Show List Labels"
+msgstr "ÏÔÊ¾ÁĞ±í±êºÅ"
+
+#: kfile/kfiledialogconf.cpp:108
+msgid "Show Hidden"
+msgstr "ÏÔÊ¾Òş²ØÎÄ¼ş"
+
+#: kfile/kfiledialogconf.cpp:114
+msgid "Show Status Line"
+msgstr "ÏÔÊ¾×´Ì¬ĞĞ"
+
+#: kfile/kfiledialogconf.cpp:120
+msgid "Use single Click"
+msgstr "Ê¹ÓÃµ¥»÷"
+
+#: kfile/kfiledialogconf.cpp:126
+msgid "Mix dirs and files"
+msgstr "Ä¿Â¼ºÍÎÄ¼ş»ìºÍÏÔÊ¾"
+
+#: kfile/kfiledialogconf.cpp:132
+msgid "Keep dirs first"
+msgstr "ÏÈÏÔÊ¾Ä¿Â¼"
+
+#: kfile/kfilefilter.cpp:35
+msgid "*|All Files"
+msgstr "*|ËùÓĞÎÄ¼ş"
+
+#: kfile/kfileinfo.cpp:97 kfile/kfileinfo.cpp:101
+msgid "unknown"
+msgstr "Î´Öª"
+
+#: kfile/kfileinfo.cpp:221
+msgid "Jan"
+msgstr "Ò»ÔÂ"
+
+#: kfile/kfileinfo.cpp:222
+msgid "Feb"
+msgstr "¶şÔÂ"
+
+#: kfile/kfileinfo.cpp:223
+msgid "Mar"
+msgstr "ÈıÔÂ"
+
+#: kfile/kfileinfo.cpp:224
+msgid "Apr"
+msgstr "ËÄÔÂ"
+
+#: kfile/kfileinfo.cpp:225
+msgid "May"
+msgstr "ÎåÔÂ"
+
+#: kfile/kfileinfo.cpp:226
+msgid "Jun"
+msgstr "ÁùÔÂ"
+
+#: kfile/kfileinfo.cpp:227
+msgid "Jul"
+msgstr "ÆßÔÂ"
+
+#: kfile/kfileinfo.cpp:228
+msgid "Aug"
+msgstr "°ËÔÂ"
+
+#: kfile/kfileinfo.cpp:229
+msgid "Sep"
+msgstr "¾ÅÔÂ"
+
+#: kfile/kfileinfo.cpp:230
+msgid "Oct"
+msgstr "Ê®ÔÂ"
+
+#: kfile/kfileinfo.cpp:231
+msgid "Nov"
+msgstr "Ê®Ò»ÔÂ"
+
+#: kfile/kfileinfo.cpp:232
+msgid "Dec"
+msgstr "Ê®¶şÔÂ"
+
+#: kab/editentry.cc:64 kfile/kpreview.cpp:187
+msgid "Name:"
+msgstr "Ãû³Æ:"
+
+#: kfile/kpreview.cpp:205
+msgid "Date:"
+msgstr "ÈÕÆÚ:"
+
+#: kfile/kpreview.cpp:214
+msgid "Owner:"
+msgstr "ÊôÖ÷:"
+
+#: kfile/kpreview.cpp:223
+msgid "Group:"
+msgstr "ÓÃ»§×é:"
+
+#: kfile/kpreview.cpp:232
+msgid "Type:"
+msgstr "ÀàĞÍ:"
+
+#: kfile/kpreview.cpp:287
+msgid "locked"
+msgstr "Ëø×¡"
+
+#: kfile/kpreview.cpp:311
+msgid "picture"
+msgstr "Í¼Æ¬"
+
+#: kfile/kpreview.cpp:343
+msgid "folder"
+msgstr "ÎÄ¼ş¼Ğ"
+
+# , c-format
+#: kfmlib/kfm.cpp:197
+#, c-format
+msgid ""
+"You dont have the file %s\n"
+"Could not do Authorization"
+msgstr ""
+"ÄãÃ»ÓĞÎÄ¼ş %s\n"
+"ÎŞ·¨½øĞĞÊÚÈ¨"
+
+#
+#: kfmlib/kfm.cpp:200 kfmlib/kfm.cpp:210
+msgid "KFM Error"
+msgstr "KFM´íÎó"
+
+# , c-format
+#: kfmlib/kfm.cpp:208
+#, c-format
+msgid ""
+"The file %s is corrupted\n"
+"Could not do Authorization"
+msgstr ""
+"ÎÄ¼ş %s Ëğ»µÁË\n"
+"²»ÄÜ½øĞĞÊÚÈ¨"
+
+#: kspell/ksconfig.cpp:66
+msgid "Create Root/Affix combinations not in the dictionary"
+msgstr "½¨Á¢×ÖµäÖĞÃ»ÓĞµÄ´Ê¸ù/´Ê×º¸´ºÏ´Ê"
+
+#: kspell/ksconfig.cpp:75
+msgid "Consider run-together words as spelling errors"
+msgstr "°ÑÁ¬ÔÚÒ»ÆğµÄ´Ê×÷ÎªÆ´Ğ´´íÎó"
+
+#: kspell/ksconfig.cpp:92
+msgid "Dictionary"
+msgstr "×Öµä"
+
+#: kspell/ksconfig.cpp:140
+msgid "Encoding:"
+msgstr "±àÂë:"
+
+#: kspell/ksconfig.cpp:147
+msgid "Latin1"
+msgstr "Latin1"
+
+#: kspell/ksconfig.cpp:148
+msgid "7-Bit/ASCII"
+msgstr "7Î»/ASCII"
+
+#: kspell/ksconfig.cpp:292
+msgid "English"
+msgstr "Ó¢Óï"
+
+#: kspell/ksconfig.cpp:298
+msgid "Spanish"
+msgstr "Î÷°àÑÀÓï"
+
+#: kspell/ksconfig.cpp:304
+msgid "German"
+msgstr "µÂÓï"
+
+#: kspell/ksconfig.cpp:311
+msgid "Brazilian Portuguese"
+msgstr "°ÍÎ÷ÆÏÌÑÑÀÓï"
+
+#: kspell/ksconfig.cpp:317
+msgid "Unknown"
+msgstr "Î´Öª"
+
+#
+#: kspell/ksconfig.cpp:348
+msgid "ISpell Default"
+msgstr "ISpellÄ¬ÈÏ"
+
+#: kspell/kspelldlg.cpp:58
+msgid "Misspelled Word:"
+msgstr "´íÎóÆ´Ğ´µÄ´Ê:"
+
+#: kspell/kspelldlg.cpp:68
+msgid "Replacement:"
+msgstr "Ìæ»»Îª:"
+
+#: kspell/kspelldlg.cpp:77
+msgid "Suggestions:"
+msgstr "½¨Òé:"
+
+#: kspell/kspelldlg.cpp:88
+msgid "Ignore"
+msgstr "ºöÂÔ"
+
+#: kspell/kspelldlg.cpp:99
+msgid "Ignore All"
+msgstr "È«²¿ºöÂÔ"
+
+#: kspell/kspelldlg.cpp:120 po/texts.cpp:86
+msgid "Add"
+msgstr "Ìí¼Ó"
+
+#: kspell/kspelldlg.cpp:166 po/texts.cpp:100
+msgid "Stop"
+msgstr "Í£Ö¹"
+
+#: kab/widget.cc:162 kab/widget.cc:1164 kab/widget.cc:1222 kab/widget.cc:1233
+#: kab/widget.cc:1972 kab/widget.cc:2064 kab/widget.cc:2148 kab/widget.cc:2194
+#: kab/widget.cc:2205 po/texts.cpp:24
+msgid "Error"
+msgstr "´íÎó"
+
+#: po/texts.cpp:25
+msgid "Malformed URL"
+msgstr "²»ÕıÈ·µÄURL"
+
+#: po/texts.cpp:29
+msgid "Warning"
+msgstr "¾¯¸æ"
+
+#: po/texts.cpp:30
+msgid "Save a file"
+msgstr "´æ³ÉÎÄ¼ş"
+
+#: po/texts.cpp:31
+msgid "Contents"
+msgstr "ÄÚÈİ"
+
+#: po/texts.cpp:33
+msgid "A&bout..."
+msgstr "¹ØÓÚ(&A)..."
+
+#
+#: po/texts.cpp:37
+msgid "On"
+msgstr "´ò¿ª"
+
+#: po/texts.cpp:38
+msgid "Off"
+msgstr "¹Ø±Õ"
+
+#: po/texts.cpp:42
+msgid "File"
+msgstr "ÎÄ¼ş"
+
+#: po/texts.cpp:43
+msgid "&File"
+msgstr "ÎÄ¼ş(&F)"
+
+#: po/texts.cpp:46
+msgid "Edit"
+msgstr "±à¼­"
+
+#: po/texts.cpp:47
+msgid "&Edit"
+msgstr "±à¼­(&E)"
+
+#: po/texts.cpp:48
+msgid "&Options"
+msgstr "Ñ¡Ïî(&O)"
+
+#: po/texts.cpp:49
+msgid "View"
+msgstr "²é¿´"
+
+#: po/texts.cpp:50
+msgid "&View"
+msgstr "²é¿´(&V)"
+
+#: po/texts.cpp:51
+msgid "E&xit"
+msgstr "ÍË³ö(&X)"
+
+#: po/texts.cpp:53
+msgid "&Quit"
+msgstr "Àë¿ª(&Q)"
+
+#: po/texts.cpp:57
+msgid "&Copy"
+msgstr "¸´ÖÆ(&C)"
+
+#: po/texts.cpp:59
+msgid "&Paste"
+msgstr "Õ³Ìù(&P)"
+
+#: po/texts.cpp:60
+msgid "&New Window..."
+msgstr "ĞÂ½¨´°¿Ú(&N)..."
+
+#: po/texts.cpp:61
+msgid "New &Window..."
+msgstr "ĞÂ½¨´°¿Ú(&W)..."
+
+#: po/texts.cpp:62
+msgid "&New Window"
+msgstr "ĞÂ½¨´°¿Ú(&N)"
+
+#: po/texts.cpp:63
+msgid "New Game"
+msgstr "¿ªÊ¼ĞÂÓÎÏ·"
+
+#: po/texts.cpp:64
+msgid "&New Game"
+msgstr "¿ªÊ¼ĞÂÓÎÏ·(&N)"
+
+#: po/texts.cpp:66
+msgid "Open a file"
+msgstr "´ò¿ªÎÄ¼ş"
+
+#: po/texts.cpp:67
+msgid "Open..."
+msgstr "´ò¿ª..."
+
+#: po/texts.cpp:68
+msgid "&Open..."
+msgstr "´ò¿ª(&O)..."
+
+#: po/texts.cpp:70
+msgid "&Cut"
+msgstr "¼ôÇĞ(&C)"
+
+#: po/texts.cpp:71
+msgid "C&ut"
+msgstr "¼ôÇĞ(&U)"
+
+#: po/texts.cpp:72
+msgid "Font"
+msgstr "×ÖÌå"
+
+#: po/texts.cpp:73
+msgid "&Foreground Color"
+msgstr "Ç°¾°ÑÕÉ«(&F)"
+
+#: po/texts.cpp:74
+msgid "&Background Color"
+msgstr "±³¾°ÑÕÉ«(&B)"
+
+#: po/texts.cpp:76
+msgid "&Save"
+msgstr "±£´æ(&S)"
+
+#: po/texts.cpp:78
+msgid "Save as..."
+msgstr "Áí´æÎª..."
+
+#: po/texts.cpp:79
+msgid "S&ave as..."
+msgstr "Áí´æÎª(&A)..."
+
+#: po/texts.cpp:81
+msgid "&Close"
+msgstr "¹Ø±Õ(&C)"
+
+#: po/texts.cpp:82
+msgid "&Print..."
+msgstr "´òÓ¡(&P)..."
+
+#: po/texts.cpp:84
+msgid "Options"
+msgstr "Ñ¡Ïî"
+
+#: po/texts.cpp:85
+msgid "Remove"
+msgstr "È¥µô"
+
+#: po/texts.cpp:87
+msgid "Change"
+msgstr "ĞŞ¸Ä"
+
+#: po/texts.cpp:88
+msgid "Delete"
+msgstr "É¾³ı"
+
+#: po/texts.cpp:89
+msgid "&Delete"
+msgstr "É¾³ı(&D)"
+
+#: po/texts.cpp:90
+msgid "Clear"
+msgstr "Çå³ı"
+
+#: po/texts.cpp:91
+msgid "Italic"
+msgstr "Ğ±Ìå"
+
+#: po/texts.cpp:92
+msgid "Roman"
+msgstr "ÕıÌå"
+
+#: po/texts.cpp:94
+msgid "&Undo"
+msgstr "»¹Ô­(&U)"
+
+#: po/texts.cpp:95
+msgid "Redo"
+msgstr "ÖØ¸´²Ù×÷"
+
+#: po/texts.cpp:96
+msgid "&Redo"
+msgstr "ÖØ¸´²Ù×÷(&R)"
+
+#: po/texts.cpp:97
+msgid "&Game"
+msgstr "ÓÎÏ·(&G)"
+
+#: po/texts.cpp:98
+msgid "Information"
+msgstr "ĞÅÏ¢"
+
+#: po/texts.cpp:99
+msgid "Browse..."
+msgstr "ä¯ÀÀ..."
+
+#: po/texts.cpp:101
+msgid "&Remove"
+msgstr "È¥µô(&R)"
+
+#
+#: po/texts.cpp:102
+msgid "&Properties..."
+msgstr "ÌØĞÔ(&P)..."
+
+#: po/texts.cpp:103
+msgid "Properties"
+msgstr "ÌØĞÔ"
+
+#: po/texts.cpp:104
+msgid "&Start"
+msgstr "¿ªÊ¼(&S)"
+
+#: po/texts.cpp:105
+msgid "St&op"
+msgstr "Í£Ö¹(&O)"
+
+#: po/texts.cpp:106
+msgid "Miscellaneous"
+msgstr "ÆäËû"
+
+#: po/texts.cpp:107
+msgid "Font Size"
+msgstr "×ÖÌå´óĞ¡"
+
+#: po/texts.cpp:108
+msgid "Fonts"
+msgstr "×ÖÌå"
+
+#: po/texts.cpp:109
+msgid "&Fonts"
+msgstr "×ÖÌå(&F)"
+
+#: po/texts.cpp:110
+msgid "&Reload"
+msgstr "ÖØĞÂÔØÈë(&R)"
+
+#: po/texts.cpp:111
+msgid "Files"
+msgstr "ÎÄ¼ş"
+
+#: kab/widget.cc:1390 kab/widget.cc:1432 po/texts.cpp:112
+msgid "Continue"
+msgstr "¼ÌĞø"
+
+#: po/texts.cpp:113
+msgid "Restore"
+msgstr "»Ö¸´"
+
+#: po/texts.cpp:114
+msgid "Appearance"
+msgstr "Íâ¹Û"
+
+#: po/texts.cpp:116
+msgid "Monday"
+msgstr "ĞÇÆÚÒ»"
+
+#: po/texts.cpp:117
+msgid "Tuesday"
+msgstr "ĞÇÆÚ¶ş"
+
+#: po/texts.cpp:118
+msgid "Wednesday"
+msgstr "ĞÇÆÚÈı"
+
+#
+#: po/texts.cpp:119
+msgid "Thursday"
+msgstr "ĞÇÆÚËÄ"
+
+#
+#: po/texts.cpp:120
+msgid "Friday"
+msgstr "ĞÇÆÚÎå"
+
+#: po/texts.cpp:121
+msgid "Saturday"
+msgstr "ĞÇÆÚÁù"
+
+#
+#: po/texts.cpp:122
+msgid "Sunday"
+msgstr "ĞÇÆÚÌì"
+
+#: po/texts.cpp:123
+msgid "&Update"
+msgstr "¸üĞÂ(&U)"
+
+#: po/texts.cpp:124
+msgid "Layout"
+msgstr "²¼¾Ö"
+
+#: po/texts.cpp:125
+msgid "Highscore"
+msgstr "¸ß·Ö"
+
+#
+#: po/texts.cpp:126
+msgid "&New View"
+msgstr "ĞÂÊÓÍ¼(&N)"
+
+#: po/texts.cpp:127
+msgid "&Insert"
+msgstr "²åÈë(&I)"
+
+#
+#: po/texts.cpp:130
+msgid "&Next >>"
+msgstr "ÏÂÒ»Ò³(&N) >>"
+
+#
+#: po/texts.cpp:131
+msgid "<< &Previous"
+msgstr "<< Ç°Ò»Ò³(&P)"
+
+#: po/texts.cpp:138
+msgid "&About..."
+msgstr "¹ØÓÚ(&A)..."
+
+#: kab/addressbook.cc:90
+msgid ""
+"The directory where user specific data for the\n"
+"addressbook application is stored does not exist.\n"
+"The program will try to create\n"
+"         "
+msgstr ""
+"±£´æµØÖ·²¾³ÌĞòµÄÌØ¶¨ÓÃ»§Êı¾İµÄ\n"
+"Ä¿Â¼²»´æÔÚ.\n"
+"³ÌĞò»á³¢ÊÔ½¨Á¢\n"
+"         "
+
+#: kab/addressbook.cc:94
+msgid "and store all local files in this directory."
+msgstr "²¢ÔÚÕâ¸öÄ¿Â¼ÖĞ±£´æËùÓĞµÄ±¾µØÎÄ¼ş."
+
+#: kab/addressbook.cc:98
+msgid ""
+"The directory could not be created.\n"
+"Probably you do not have used KDE before, so\n"
+"you do not have a local \".kde\" directory\n"
+"in your home directory. Run the KDE filemanager\n"
+"kfm once to automatically create it."
+msgstr ""
+"²»ÄÜ½¨Á¢Ä¿Â¼.\n"
+"Ò²ĞíÄãÒÔÇ°Ã»ÓĞÓÃ¹ıKDE,ËùÒÔ\n"
+"ÔÚÄãµÄÖ÷Ä¿Â¼ÏÂÃ»ÓĞÒ»¸ö\n"
+"\".kde\"Ä¿Â¼.ÔËĞĞKDEÎÄ¼ş\n"
+"¹ÜÀíÆ÷kfm»á×Ô¶¯½¨Á¢Õâ¸öÄ¿Â¼."
+
+#: kab/addressbook.cc:106
+msgid "The directory has been created.\n"
+msgstr "Ä¿Â¼½¨Á¢.\n"
+
+#: kab/addressbook.cc:140
+msgid "No addressbook database file, creating new one."
+msgstr "Ã»ÓĞµØÖ·²¾Êı¾İ¿âÎÄ¼ş,½¨Á¢ĞÂµÄÊı¾İÎÄ¼ş."
+
+#: kab/addressbook.cc:159
+msgid "Tried to load database for creating backup, but failed"
+msgstr "³¢ÊÔ×°ÔØÊı¾İ¿âÒÔ½¨Á¢±¸·İ,µ«ÊÇÊ§°ÜÁË"
+
+#: kab/addressbook.cc:194
+msgid "Unable to save to backup file."
+msgstr "²»ÄÜ±£´æµ½±¸·İÎÄ¼şÖĞ."
+
+#: kab/addressbook.cc:200
+msgid "Unable to reset filename after creating backup."
+msgstr "ÔÚ½¨Á¢±¸·İºó²»ÄÜÖØÖÃÎÄ¼şÃû."
+
+#: kab/addressbook.cc:205
+msgid "Unable to create backup file"
+msgstr "²»ÄÜ½¨Á¢±¸·İÎÄ¼ş"
+
+#: kab/addressbook.cc:263
+msgid "Unable to insert \""
+msgstr "²»ÄÜ²åÈë\""
+
+#: kab/addressbook.cc:264
+msgid "\" into configuration section (ignored)."
+msgstr "\" µ½ÅäÖÃ½ÚÖĞ(ºöÂÔ)."
+
+#: kab/addressbook.cc:666
+msgid "Unable to add a new entry with available key."
+msgstr "²»ÄÜÓÃ¿ÉÓÃµÄ¹Ø¼ü×ÖÌí¼ÓĞÂÏî."
+
+#: kab/addressbook.cc:672
+msgid "Cannot find previously created section."
+msgstr "ÕÒ²»µ½ÒÔÇ°½¨Á¢µÄ½Ú"
+
+#: kab/addressbook.cc:703
+msgid "Unable to create key-value-map for entry."
+msgstr "²»ÄÜ¸øÏîÄ¿½¨Á¢[¹Ø¼ü×Ö-Öµ]¶ÔÓ¦."
+
+#: kab/addressbook.cc:989
+msgid "entry without name"
+msgstr "Ã»ÓĞÃû³ÆµÄÏî"
+
+#: kab/addressbook.cc:1007
+msgid ""
+"Unable to create new database file (probably permission denied), exiting."
+msgstr ""
+"²»ÄÜ½¨Á¢ĞÂµÄÊı¾İ¿âÎÄ¼ş(¿ÉÄÜÊÇÃ»ÓĞÈ¨ÏŞ),ÍË³ö."
+
+#: kab/addressbook.cc:1013
+msgid "Cannot create configuration section, exiting."
+msgstr "²»ÄÜ½¨Á¢ÅäÖÃ½Ú,ÍË³ö."
+
+#: kab/addressbook.cc:1018
+msgid "Cannot create entries section, exiting."
+msgstr "²»ÄÜ½¨Á¢ÏîÄ¿½Ú,ÍË³ö."
+
+#: kab/addressbook.cc:1023
+msgid "Unable to find previously created section, exiting."
+msgstr "ÕÒ²»µ½ÒÔÇ°½¨Á¢µÄ½Ú,ÍË³ö."
+
+#: kab/addressbook.cc:1031
+msgid "Cannot save newly created database."
+msgstr "²»ÄÜ±£´æĞÂ½¨µÄÊı¾İ¿â."
+
+#: kab/addressbook.cc:1037
+msgid "Cannot erase database contents."
+msgstr "²»ÄÜÇå³ıÊı¾İ¿âÄÚÈİ."
+
+#: kab/addressbook.cc:1116
+msgid "First name"
+msgstr "ĞÕ"
+
+#: kab/addressbook.cc:1120
+msgid "Additional name"
+msgstr "Ãû"
+
+#: kab/addressbook.cc:1124
+msgid "Name prefix"
+msgstr "Ãû×ÖÇ°×º"
+
+#: kab/addressbook.cc:1128
+msgid "Formatted name"
+msgstr "È«Ãû"
+
+#: kab/addressbook.cc:1132
+msgid "Comment"
+msgstr "±¸×¢"
+
+#: kab/addressbook.cc:1136
+msgid "Organization"
+msgstr "×éÖ¯"
+
+#: kab/addressbook.cc:1140
+msgid "Unit"
+msgstr "µ¥Î»"
+
+#
+#: kab/addressbook.cc:1144
+msgid "Subunit"
+msgstr "·ÖÖ§µ¥Î»"
+
+#: kab/addressbook.cc:1148
+msgid "Title"
+msgstr "Í·ÏÎ"
+
+#: kab/addressbook.cc:1152
+msgid "Role"
+msgstr "Ö°Î»"
+
+#: kab/addressbook.cc:1156
+msgid "Birthday"
+msgstr "ÉúÈÕ"
+
+#: kab/addressbook.cc:1160
+msgid "Talk addresses"
+msgstr "TalkµØÖ·"
+
+#: kab/addressbook.cc:1164
+msgid "Delivery label"
+msgstr "ÓÊµİµØÖ·"
+
+#: kab/addressbook.cc:1168
+msgid "Email address"
+msgstr "EmailµØÖ·"
+
+#: kab/addressbook.cc:1172
+msgid "Second email address"
+msgstr "µÚ¶ş¸öEmailµØÖ·"
+
+#: kab/addressbook.cc:1176
+msgid "Third email address"
+msgstr "µÚÈı¸öEmailµØÖ·"
+
+#: kab/addressbook.cc:1180
+msgid "Email addresses"
+msgstr "EmailµØÖ·"
+
+#: kab/addressbook.cc:1184
+msgid "Address"
+msgstr "µØÖ·"
+
+#: kab/addressbook.cc:1188
+msgid "City/Town"
+msgstr "³ÇÊĞ/Õò"
+
+#: kab/addressbook.cc:1192
+msgid "Telephone"
+msgstr "µç»°"
+
+#: kab/addressbook.cc:1196
+msgid "Fax number"
+msgstr "´«Õæ"
+
+#
+#: kab/addressbook.cc:1200
+msgid "Modem number"
+msgstr "ModemºÅÂë"
+
+#: kab/addressbook.cc:1204
+msgid "Homepage URL"
+msgstr "Ö÷Ò³URL"
+
+#: kab/addressbook.cc:1208
+msgid "Zip/postal code"
+msgstr "ÓÊÕş±àÂë"
+
+#: kab/addressbook.cc:1212
+msgid "State/province"
+msgstr "Öİ/Ê¡"
+
+#: kab/addressbook.cc:1216
+msgid "Country"
+msgstr "¹ú¼Ò"
+
+#: kab/addressbook.cc:1383
+msgid "(unnamed entry)"
+msgstr "(Î´ÃüÃûµÄÏî)"
+
+#: kab/datepickerdialog.cc:34
+msgid "Select birthday"
+msgstr "Ñ¡ÔñÉúÈÕ"
+
+#: kab/editentry.cc:38
+msgid "Edit the current entry"
+msgstr "±à¼­µ±Ç°µÄÏî"
+
+#: kab/editentry.cc:61
+msgid "Title:"
+msgstr "Í·ÏÎ:"
+
+#: kab/editentry.cc:62
+msgid "First name:"
+msgstr "ĞÕ:"
+
+#: kab/editentry.cc:63
+msgid "Additional Name:"
+msgstr "Ãû:"
+
+#: kab/editentry.cc:65
+msgid "Formatted Name:"
+msgstr "È«Ãû:"
+
+#: kab/editentry.cc:88
+msgid "&Name"
+msgstr "Ãû³Æ(&N)"
+
+#: kab/editentry.cc:103
+msgid "Address:"
+msgstr "µØÖ·:"
+
+#: kab/editentry.cc:104
+msgid "Town/City:"
+msgstr "Õò/³ÇÊĞ:"
+
+#: kab/editentry.cc:105
+msgid "State:"
+msgstr "Öİ:"
+
+#: kab/editentry.cc:106
+msgid "Zip/Postal Code:"
+msgstr "ÓÊÕş±àÂë:"
+
+#: kab/editentry.cc:107
+msgid "Country:"
+msgstr "¹ú¼Ò:"
+
+#: kab/editentry.cc:130
+msgid "&Address"
+msgstr "µØÖ·(&A)"
+
+#: kab/editentry.cc:145
+msgid "Organization:"
+msgstr "×éÖ¯:"
+
+#: kab/editentry.cc:146
+msgid "Department:"
+msgstr "²¿ÃÅ:"
+
+#: kab/editentry.cc:147
+msgid "Sub-Department:"
+msgstr "·ÖÖ§²¿ÃÅ:"
+
+#: kab/editentry.cc:148
+msgid "Job/Role:"
+msgstr "Ö°Î»:"
+
+#: kab/editentry.cc:169
+msgid "&Organization"
+msgstr "×éÖ¯(&O)"
+
+#: kab/editentry.cc:184
+msgid "Telephone:"
+msgstr "µç»°:"
+
+#: kab/editentry.cc:185
+msgid "Fax:"
+msgstr "´«Õæ:"
+
+#: kab/editentry.cc:186
+msgid "Modem:"
+msgstr "Modem:"
+
+#: kab/editentry.cc:187
+msgid "Homepage (URL):"
+msgstr "Ö÷Ò³(URL):"
+
+#: kab/editentry.cc:200 kab/editentry.cc:418
+msgid "Edit email addresses"
+msgstr "±à¼­EmailµØÖ·"
+
+#: kab/editentry.cc:206 kab/editentry.cc:400
+msgid "Edit talk addresses"
+msgstr "±à¼­talkµØÖ·"
+
+#: kab/editentry.cc:218
+msgid "&Contact"
+msgstr "ÁªÏµ(&C)"
+
+#: kab/editentry.cc:239
+msgid "Additional Comment:"
+msgstr "ÆäËû±¸×¢:"
+
+#: kab/editentry.cc:246
+msgid "Birthday:"
+msgstr "ÉúÈÕ:"
+
+#: kab/editentry.cc:249
+msgid "Double click to set date"
+msgstr "Ë«»÷ÉèÖÃÈÕÆÚ"
+
+#: kab/editentry.cc:256
+msgid "O&thers"
+msgstr "ÆäËû(&T)"
+
+#: kab/kabapi.cc:138
+msgid "Your new entry could not be added."
+msgstr "²»ÄÜÌí¼ÓÕâ¸öĞÂµÄÏî."
+
+#: kab/searchresults.cc:33
+msgid "search results"
+msgstr "²éÕÒ½á¹û"
+
+#: kab/widget.cc:144
+msgid "Conversion problem"
+msgstr "×ª»¯ÎÊÌâ"
+
+#: kab/widget.cc:145
+msgid ""
+"Kab could not convert your database to the\n"
+"current file format.\n"
+"You can use it, but not all features will be\n"
+"supported."
+msgstr ""
+"Kab²»ÄÜ°ÑÄãµÄÊı¾İ¿â×ª»¯Îª\n"
+"ÏÖÔÚ²ÉÓÃµÄÎÄ¼ş¸ñÊ½.\n"
+"Äã¿ÉÓÃ¼ÌĞøÊ¹ÓÃËü,µ«ÊÇ²»ÊÇ\n"
+"ËùÓĞµÄÌØĞÔ¶¼Ö§³Ö."
+
+#: kab/widget.cc:163
+msgid ""
+"The application saved the last current entry,\n"
+"but this entry does not exist anymore."
+msgstr ""
+"³ÌĞò±£´æÁËµ±Ç°×îºóµÄÏî,\n"
+"µ«ÊÇËüÏÖÔÚ²»´æÔÚÁË."
+
+#: kab/widget.cc:229
+msgid "kab: Removed bug warning"
+msgstr "kab: Ïû³ıbug¾¯¸æ"
+
+#: kab/widget.cc:230
+msgid ""
+"The version of kab you used before had an\n"
+"error regarding the upgrading of the database\n"
+"for new versions. This error has been removed\n"
+"now and will not affect you anymore.\n"
+"All configuration values have been reset to\n"
+"its default settings."
+msgstr ""
+"ÄãÒÔÇ°ËùÊ¹ÓÃµÄ°æ±¾µÄkabÔÚÉı¼¶\n"
+"µ½ĞÂ°æ±¾µÄÊı¾İ¿âÊ±ÓĞÒ»¸ö´íÎó.\n"
+"Õâ¸ö´íÎóÒÑ¾­±»Ïû³ıÁË,²»»áÓĞ\n"
+"ÒÅÁôµÄÓ°Ïì.\n"
+"ËùÓĞµÄÅäÖÃÖµ¶¼±»ÁËÉèÎªËüµÄ\n"
+"Ä¬ÈÏÖµ."
+
+#: kab/widget.cc:248 kab/widget.cc:314 kab/widget.cc:322
+msgid "File handling error"
+msgstr "ÎÄ¼ş´¦Àí´íÎó"
+
+#: kab/widget.cc:249
+msgid "Unable to open database file r/w."
+msgstr "²»ÄÜ´ò¿ªÊı¾İ¿âÎÄ¼ş¶ÁĞ´."
+
+#: kab/widget.cc:257
+msgid "Email storage conversion"
+msgstr "Email´¢´æ¸ñÊ½×ª»»"
+
+#: kab/widget.cc:258
+msgid ""
+"Kab will move all your email addresses to\n"
+"the new style supporting unlimited numbers\n"
+"of email addresses per entry."
+msgstr ""
+"Kab½«°ÑÄãµÄËùÓĞEmailµØÖ·×ªµ½ĞÂ\n"
+"µÄ¸ñÊ½,Ëü¿ÉÒÔÔÚÒ»¸öÏîÄ¿ÀïÖ§³Ö\n"
+"ÎŞÏŞÖÆ¸öÊıµÄEmailµØÖ·."
+
+#: kab/widget.cc:291
+msgid "kab database update"
+msgstr "kabÊı¾İ¿â¸üĞÂ"
+
+#: kab/widget.cc:292
+msgid ""
+"Please note that kab now supports some new\n"
+"fields in its addresses. These new fields\n"
+"are:\n"
+"° the state field,\n"
+"° the country field and\n"
+"° the postal code field.\n"
+"You will probably need to edit some of your\n"
+"entries to make use of it."
+msgstr ""
+"Çë×¢Òâ,ÏÖÔÚkabÔÚµØÖ·ÖĞÖ§³Ö\n"
+"Ò»Ğ©ĞÂµÄÓò,ÕâĞ´ĞÂÌí¼ÓµÄÓò\n"
+"ÊÇ:\n"
+"  Öİ(Ê¡),\n"
+"  ¹ú¼Ò,\n"
+"  ÓÊÕş´úÂë.\n"
+"Äã¿ÉÄÜĞèÒª±à¼­Ò»Ğ©ÏîÄ¿À´\n"
+"Ê¹ÓÃÕâĞ©ĞÂµÄÓò."
+
+#: kab/widget.cc:315
+msgid "Could not save database after update."
+msgstr "ÔÚ¸üĞÂºóÎŞ·¨±£´æÊı¾İ¿âÎÄ¼ş."
+
+#: kab/widget.cc:323
+msgid "Unable to reopen database file r/o."
+msgstr "²»ÄÜÒÔÖ»¶Á·½Ê½ÖØĞÂ´ò¿ªÊı¾İ¿âÎÄ¼ş."
+
+#: kab/widget.cc:482
+msgid "first entry"
+msgstr "µÚÒ»Ïî"
+
+#: kab/widget.cc:483
+msgid "previous entry"
+msgstr "ÉÏÒ»Ïî"
+
+#: kab/widget.cc:484
+msgid "next entry"
+msgstr "ÏÂÒ»Ïî"
+
+#: kab/widget.cc:485
+msgid "last entry"
+msgstr "×îºóÒ»Ïî"
+
+#: kab/widget.cc:486
+msgid "search entries"
+msgstr "²éÕÒÏîÄ¿"
+
+#: kab/widget.cc:487
+msgid "add a new entry"
+msgstr "Ìí¼ÓĞÂµÄÏî"
+
+#: kab/widget.cc:488
+msgid "change this entry"
+msgstr "¸Ä±äÕâ¸öÏî"
+
+#: kab/widget.cc:489
+msgid "remove this entry"
+msgstr "É¾³ıÕâ¸öÏî"
+
+#: kab/widget.cc:528
+msgid "Switched to first entry."
+msgstr "ÇĞ»»µ½µÚÒ»Ïî."
+
+#: kab/widget.cc:560
+msgid "Switched to last entry."
+msgstr "ÇĞ»»µ½×îºóÒ»Ïî."
+
+#: kab/widget.cc:621 kab/widget.cc:678 kab/widget.cc:860 kab/widget.cc:922
+msgid "Sorry, file changed."
+msgstr "¶Ô²»Æğ,ÎÄ¼ş±»ĞŞ¸ÄÁË."
+
+#
+#: kab/widget.cc:625 kab/widget.cc:682 kab/widget.cc:926
+msgid "Permission denied."
+msgstr "Ã»ÓĞÈ¨ÏŞ"
+
+#: kab/widget.cc:636
+msgid "Remove entry?"
+msgstr "É¾³ıÏî?"
+
+#: kab/widget.cc:637
+msgid "Really remove this entry?"
+msgstr "ÕæµÄÉ¾³ıÕâ¸öÏî?"
+
+#: kab/widget.cc:655
+msgid "Entry deleted."
+msgstr "ÏîÄ¿É¾³ıÁË."
+
+#: kab/widget.cc:694
+msgid "Added a new entry."
+msgstr "Ìí¼ÓĞÂÏî."
+
+#: kab/widget.cc:821
+msgid "Opened browser window."
+msgstr "´ò¿ªä¯ÀÀÆ÷´°¿Ú."
+
+#: kab/widget.cc:824
+msgid "No URL."
+msgstr "Ã»ÓĞURL."
+
+#: kab/widget.cc:828 kab/widget.cc:997 kab/widget.cc:1176 kab/widget.cc:1813
+#: kab/widget.cc:2003 kab/widget.cc:2087
+msgid "No entries."
+msgstr "Ã»ÓĞÏî."
+
+#: kab/widget.cc:833
+msgid "The filemanager is busy, please try again."
+msgstr "ÎÄ¼ş¹ÜÀíÆ÷ÕıÃ¦,ÇëÖØÊÔ."
+
+#: kab/widget.cc:853
+msgid ""
+"The addressbook file is currently\n"
+"locked by another application.\n"
+"kab cannot save it."
+msgstr ""
+"µØÖ·²¾ÎÄ¼şÕı±»ÁíÍâ\n"
+"Ò»¸ö³ÌĞòËø×¡.\n"
+"kab²»ÄÜ±£´æËü."
+
+#: kab/widget.cc:870
+msgid "Database saved successfully."
+msgstr "Êı¾İ³É¹¦±£´æ."
+
+#: kab/widget.cc:875
+msgid "kab: File error"
+msgstr "kab: ÎÄ¼ş´íÎó"
+
+#: kab/widget.cc:875
+msgid "Could not save database."
+msgstr "ÎŞ·¨±£´æÊı¾İ¿â."
+
+#: kab/widget.cc:876
+msgid "&Retry"
+msgstr "ÖØÊÔ(&R)"
+
+#: kab/widget.cc:876
+msgid "&Ignore"
+msgstr "ºöÂÔ(&I)"
+
+#: kab/widget.cc:879
+msgid "Saving cancelled.\n"
+msgstr "È¡Ïû±£´æ.\n"
+
+#: kab/widget.cc:945
+msgid "Entry changed."
+msgstr "ÏîÄ¿±»ĞŞ¸ÄÁË."
+
+#: kab/widget.cc:1041
+msgid "Results"
+msgstr "½á¹û."
+
+#: kab/widget.cc:1041
+msgid "No entry matches this."
+msgstr "Ã»ÓĞÆ¥ÅäµÄÏî."
+
+#: kab/widget.cc:1050 kab/widget.cc:1720 kab/widget.cc:1855 kab/widget.cc:2032
+#: kab/widget.cc:2055 kab/widget.cc:2112
+msgid "Rejected."
+msgstr "¾Ü¾ø."
+
+#: kab/widget.cc:1066
+msgid "Search results window closed."
+msgstr "²éÕÒ½á¹û´°¿Ú¹Ø±Õ."
+
+#: kab/widget.cc:1165
+msgid "The talk command must be configured before!"
+msgstr "talkÃüÁî±ØĞëÒÑ¾­ÅäÖÃºÃ!"
+
+#: kab/widget.cc:1170
+msgid "Talk configuration"
+msgstr "TalkÅäÖÃ"
+
+#: kab/widget.cc:1171
+msgid "Please configure the parameters for the talk command."
+msgstr "ÇëÅäÖÃTalkÃüÁîµÄ²ÎÊı."
+
+#: kab/widget.cc:1184
+msgid "No talk address."
+msgstr "Ã»ÓĞtalkµØÖ·."
+
+#: kab/widget.cc:1192
+msgid "kab: Talk addresses"
+msgstr "kab: TalkµØÖ·"
+
+#: kab/widget.cc:1193
+msgid "Available talk addresses:"
+msgstr "¿ÉÓÃµÄtalkµØÖ·:"
+
+#: kab/widget.cc:1199 kab/widget.cc:1963
+msgid "Cancelled."
+msgstr "ÒÑÈ¡Ïû."
+
+#: kab/widget.cc:1222
+msgid "The talk command parameters are wrong."
+msgstr "TalkÃüÁîµÄ²ÎÊıÊÇ´íÎóµÄ."
+
+#: kab/widget.cc:1234
+msgid ""
+"Talk command failed.\n"
+"Make sure you did setup your talk command and parameter!"
+msgstr ""
+"TalkÃüÁîÊ§°ÜÁË.\n"
+"È·¶¨ÄãÒÑ¾­ÅäÖÃºÃtalkÃüÁîºÍ²ÎÊı!"
+
+#: kab/widget.cc:1237
+msgid "Talk program started."
+msgstr "Talk³ÌĞòÆğ¶¯ÁË."
+
+#: kab/widget.cc:1285
+msgid "Attention: printing is still experimental!"
+msgstr "×¢Òâ: ´òÓ¡»¹ÊÇÊÔÑéµÄÌØĞÔ!"
+
+#: kab/widget.cc:1387 kab/widget.cc:1429
+msgid "Page size problem"
+msgstr "Ò³´óĞ¡ÎÊÌâ"
+
+#: kab/widget.cc:1388 kab/widget.cc:1430
+msgid ""
+"The fields you requested to print do\n"
+"not fit into the page width."
+msgstr ""
+"ÄãÒª´òÓ¡µÄÓò²»ÄÜ\n"
+"Æ¥ÅäÒ³µÄ¿í¶È."
+
+#: kab/widget.cc:1624 kab/widget.cc:2066
+msgid "Printing finished successfully."
+msgstr "´òÓ¡Íê³É."
+
+#: kab/widget.cc:1651
+msgid "kab: Email addresses"
+msgstr "kab: EmailµØÖ·"
+
+#: kab/widget.cc:1652
+msgid "Available email addresses:"
+msgstr "¿ÉÓÃµÄEmailµØÖ·:"
+
+#: kab/widget.cc:1717
+msgid "kab: Select fields to copy"
+msgstr "kab: Ñ¡ÔñÒª¸´ÖÆµÄÓò"
+
+#: kab/widget.cc:1727
+msgid "Nothing selected."
+msgstr "Ã»ÓĞÑ¡ÖĞÈÎºÎÓò."
+
+#: kab/widget.cc:1785 kab/widget.cc:2049
+msgid "KDE addressbook overview"
+msgstr "KDEµØÖ·²¾¼ò½é"
+
+#: kab/widget.cc:1829
+msgid "Name-Email-Link (!!)"
+msgstr "Ãû×Ö-Email-Á´½Ó(!!)"
+
+#: kab/widget.cc:1831
+msgid "Select table columns"
+msgstr "Ñ¡Ôñ±íÁĞ"
+
+#: kab/widget.cc:1836
+msgid "Nothing to export."
+msgstr "Ã»ÓĞÒªµ¼³öµÄÓò."
+
+#: kab/widget.cc:1865
+msgid "Email link"
+msgstr "EmailÁ´½Ó"
+
+#: kab/widget.cc:1952
+msgid "Could not find the users home directory."
+msgstr "²»ÄÜÕÒµ½ÓÃ»§µÄÖ÷Ä¿Â¼."
+
+#: kab/widget.cc:1953
+msgid "Intern error!"
+msgstr "ÄÚ²¿´íÎó!"
+
+#: kab/widget.cc:1973
+msgid "Could not open the file to create the HTML table."
+msgstr "²»ÄÜ´ò¿ªÎÄ¼ş½¨Á¢HTML±í¸ñ."
+
+#: kab/widget.cc:2009
+msgid "Printing cancelled."
+msgstr "´òÓ¡È¡ÏûÁË."
+
+#: kab/widget.cc:2025
+msgid "kab: Select columns for printing"
+msgstr "kab: Ñ¡ÔñÒª´òÓ¡µÄÁĞ"
+
+#: kab/widget.cc:2038
+msgid "Nothing to print."
+msgstr "Ã»ÓĞÒª´òÓ¡µÄÁĞ."
+
+#: kab/widget.cc:2050
+msgid "Page <p>"
+msgstr "Ò³ <p>"
+
+#: kab/widget.cc:2051
+msgid "KDE - the professionals choice."
+msgstr "KDE - ×¨ÒµÈËÔ±µÄÑ¡Ôñ."
+
+#: kab/widget.cc:2064
+msgid "Printing failed!"
+msgstr "´òÓ¡Ê§°Ü!"
+
+#: kab/widget.cc:2095
+msgid "Empty email address."
+msgstr "¿ÕµÄEmailµØÖ·."
+
+#: kab/widget.cc:2114
+msgid "No email address."
+msgstr "Ã»ÓĞEmailµØÖ·."
+
+#: kab/widget.cc:2124
+msgid "Error calling mailer."
+msgstr "µ÷ÓÃÓÊ¼ş³ÌĞòÊ±´íÎó."
+
+#: kab/widget.cc:2126
+msgid "Mailer called."
+msgstr "µ÷ÓÃÁËÓÊ¼ş³ÌĞò."
+
+#: kab/widget.cc:2149
+msgid "The mail command must be configured before!"
+msgstr "MailÃüÁî±ØĞëÅäÖÃ¹ı!"
+
+#: kab/widget.cc:2155
+msgid "Mail configuration"
+msgstr "MailÅäÖÃ"
+
+#: kab/widget.cc:2156
+msgid "Please configure the parameters for the email command."
+msgstr "ÇëÅäÖÃemailÃüÁîµÄ²ÎÊı."
+
+#: kab/widget.cc:2194
+msgid "The email command parameters are wrong."
+msgstr "EmailÃüÁîµÄ²ÎÊıÊÇ´íÎóµÄ."
+
+#: kab/widget.cc:2206
+msgid ""
+"Email command failed.\n"
+"Make sure you did setup your email command and parameter!"
+msgstr ""
+"EmailÃüÁîÊ§°Ü.\n"
+"È·¶¨ÄãÒÑ¾­ÅäÖÃºÃemailÃüÁîºÍ²ÎÊı!"
+
+#: kab/widget.cc:2210
+msgid "Mail program started."
+msgstr "Mail³ÌĞòÆğ¶¯ÁË."
+
+#
+#, fuzzy
+#~ msgid "Never"
+#~ msgstr "Ê®Ò»ÔÂ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not write to\n"
+#~ "%s"
+#~ msgstr "ÎŞ·¨±£´æÕâ·İÎÄ¼ş.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not start process\n"
+#~ "%s"
+#~ msgstr "ÎŞ·¨±£´æÕâ·İÎÄ¼ş.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%s"
+#~ msgstr "²»ÕıÈ·µÄ URL"
+
+#, fuzzy
+#~ msgid ""
+#~ "The file or directory\n"
+#~ "%s\n"
+#~ "does not exist"
+#~ msgstr "Ö¸¶¨µÄÎÄ¼ş²»´æÔÚ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not make directory\n"
+#~ "%s"
+#~ msgstr "Ò»¸öÄ¿Â¼"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not enter directory\n"
+#~ "%s"
+#~ msgstr "ÎŞ·¨±£´æÕâ·İÎÄ¼ş.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not change permissions for\n"
+#~ "%s"
+#~ msgstr "Ã»ÓĞÈ¨ÏŞĞ´ÈëÕâ¸öÎÄ¼ş\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not connect to host\n"
+#~ "%s"
+#~ msgstr "ÎŞ·¨±£´æÕâ·İÎÄ¼ş.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not access\n"
+#~ "%s"
+#~ msgstr "ÎŞ·¨±£´æÕâ·İÎÄ¼ş.\n"
+
+#~ msgid "Ok"
+#~ msgstr "È·¶¨"
+
+#, fuzzy
+#~ msgid "&Browser"
+#~ msgstr "ä¯ÀÀ..."
+
+#, fuzzy
+#~ msgid "The file %s does already exist. Do you really want to overwrite it ?"
+#~ msgstr ""
+#~ "´æÔÚÏàÍ¬Ãû×ÖµÄÎÄ¼ş\n"
+#~ "Òª¸²¸ÇÂğ ?"
+
+#, fuzzy
+#~ msgid "Stalled"
+#~ msgstr "·ç¸ñ"
+
+#, fuzzy
+#~ msgid "Scanning "
+#~ msgstr "¾¯¸æ"
+
+#, fuzzy
+#~ msgid "Creating dir "
+#~ msgstr "½¨Á¢ĞÂµÄÎÄ¼ş¼Ğ"
+
+#, fuzzy
+#~ msgid "Rename"
+#~ msgstr "È¥³ı"
+
+#, fuzzy
+#~ msgid "Resume"
+#~ msgstr "È¥³ı"
+
+#, fuzzy
+#~ msgid "Resume All"
+#~ msgstr "È«²¿Ìæ»»"
+
+#, fuzzy
+#~ msgid "Malformed URL\n"
+#~ msgstr "²»ÕıÈ·µÄ URL"
+
+#, fuzzy
+#~ msgid "Can not write"
+#~ msgstr "ÎŞ·¨±£´æÕâ·İÎÄ¼ş.\n"
+
+#
+#, fuzzy
+#~ msgid "Permission denied!"
+#~ msgstr "È¨ÏŞ"
+
+#
+#, fuzzy
+#~ msgid "Mount"
+#~ msgstr "ĞÇÆÚÒ»"
+
+#
+#, fuzzy
+#~ msgid "Comment:"
+#~ msgstr "ÄÚÈİ:"
+
+#
+#, fuzzy
+#~ msgid "Search"
+#~ msgstr "ÈıÔÂ"
+
+#, fuzzy
+#~ msgid "contains"
+#~ msgstr "ÄÚÈİ"
+
+#~ msgid "&New"
+#~ msgstr "ĞÂ½¨(&N)"
+
+#~ msgid "&New..."
+#~ msgstr "ĞÂµÄ(&N)..."
+
+#~ msgid "Move"
+#~ msgstr "ÒÆ¶¯"
+
+#~ msgid "&Previous"
+#~ msgstr "Ç°Ò»Ò³(&P)"
+
+#~ msgid "&Next"
+#~ msgstr "ÏÂÒ»Ò³(&N)"
+
+#~ msgid "Small"
+#~ msgstr "Ğ¡ĞÍ"
+
+#~ msgid "Medium"
+#~ msgstr "ÖĞĞÍ"
+
+#~ msgid "Large"
+#~ msgstr "´óĞÍ"
+
+#~ msgid "(none)"
+#~ msgstr "(ÎŞ)"
+
+#~ msgid "None"
+#~ msgstr "ÎŞ"
+
+#
+#~ msgid "&Ok"
+#~ msgstr "È·¶¨(&O)"

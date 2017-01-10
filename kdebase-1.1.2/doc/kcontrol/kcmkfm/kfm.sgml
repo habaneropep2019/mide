@@ -1,0 +1,351 @@
+<!doctype linuxdoc system>
+
+<article>
+
+<!-- Title information -->
+
+<title>KDE Control Center - KFM 
+<author>David Faure 
+<htmlurl url="mailto:faure@kde.org" name="faure@kde.org">;
+Documentation by Duncan
+<htmlurl url="mailto:duncan@kde.org"
+name="duncan@kde.org">
+
+<date>v1.04 23 August 1999
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+<sect> KFM Configuration: Fonts
+<p>
+In this dialog, you can customize the Fonts
+used by the File Manager and other KDE applications.
+
+<itemize>
+<item><bf>Font Size</bf>:  select one of three font
+sizes:
+<bf>Small</bf>, <bf>Medium</bf>, or <bf>Large</bf>.
+
+<item>The pull-down ``<bf>Standard Font</bf>'' list allows the
+standard (proportional spacing) font to be chosen.
+
+<item>The pull-down ``<bf>Fixed Font</bf>'' list allows the
+font for displaying text with fixed spacing  to be chosen.
+
+<item>The pull-down ``<bf>Default Charset</bf>'' list allows the
+default character set  for displaying text to be chosen.
+If ``<bf>Use Language Charset</bf>'' is chosen, no default character
+set will be selected, and the character set appropriate
+for your Language setting will be used.
+</itemize>
+
+
+
+<sect> KFM Configuration: Color
+<p>
+In this dialog,  you can customize the File Manager
+color settings.  When you click on a color box, the ``Select
+Color''screen allows you to select a color for the corresponding
+item.
+
+<itemize>
+<item> ``<bf>Background Color</bf>'' 
+is the color of the background
+in a File Manager window.
+
+<item> ``<bf>Normal Text Color</bf>''
+is the color used by the KDE File Manager/Web Browser 
+(KFM)
+for displaying normal 
+text (i.e., text without hypertext links). 
+
+
+<item> ``<bf>URL Link Color</bf>'' is the color
+in which clickable hypertext links are
+shown 
+<it>before</it> the link is followed.
+Note: Directory entries are seen by <tt>kfm</tt> as
+URL hypertext links.
+
+<item> ``<bf>Followed  Link Color</bf>'' is the color
+in which hypertext links are shown, <it>after</it> the
+link has been followed.
+</itemize>
+
+Two further options control how hypertext links are displayed:
+
+<itemize>
+<item>If ``<bf>Change cursor over link</bf>'' is activated, the cursor
+changes from an arrow to a pointing hand when it is
+over a hypertext link.
+
+<item>If ``<bf>Underline links</bf>'' is activated, hypertext
+links are underlined.
+
+</itemize>
+
+<sect> KFM File Manager Configuration: Other
+<p>
+<itemize>
+<item> Activating the ``<bf>Allow  per-URL settings</bf>'' option
+allows you  to save KDE settings 
+(e.g., whether menubar, toolbar, statusbar, and URL are
+shown or hidden, the window size, all the options from the 'View' menu, ...)
+as settings for a given URL. This can be, for example, any directory on your
+disk where you have write access, or any URL 
+(a local directory or even a Web URL) which
+has a shortcut on your desktop or which you have bookmarked.
+
+<item> One of the KFM File Manager features is to display a view of
+the directory tree in the left part of its window if ``<bf>Show Tree</bf>''
+in its ``View''  menu is enabled.
+If the ``<bf>Tree view follows navigation</bf>'' option is activated, 
+the tree view
+of  directories you enter by clicking on their icons in 
+the right part of the File Manger window will appear, 
+and will continue to be displayed after you leave the directory.
+You can then return 
+to a previously-entered  directory easily, by clicking on its
+entry in in the tree.
+</itemize>
+
+You may also specify the terminal and editor applications
+that  may be invoked by the File Manager:
+
+<itemize>
+<item>   
+In the ``<bf>Terminal</bf>'' box, you can enter the command that
+will be  executed to provide a terminal whenever you select
+``Open Terminal'' in the File Manager ``File'' menu, or when an application is
+about to be run in a terminal by the file manager.
+The default terminal application is <tt>konsole</tt>.
+
+<item>
+In the ``<bf>Editor</bf>'' box, you can enter the command that
+will be used to  start an editor to view  <tt>html</tt>
+source when the  File Manager's <bf>View Frame Source</bf>
+or <bf>View Document Source</bf> ``View'' menu items are invoked.
+The default editor is <tt>kedit</tt>.
+</itemize>
+
+
+<sect> KFM Web Browser Configuration: Proxy
+<p>
+
+This screen configures the KFM Web Browser to use a Proxy-server.
+You might want to use a Proxy-server if you are connected to the Internet 
+via a firewall or via a (slow) dial-up connection. 
+Most ISPs have a proxy-server available for their customers. 
+Ask your ISP for the settings mentioned here.
+
+If you chose the  ``<bf>Use proxy</bf>'' option, 
+HTTP and FTP connections
+will by default 
+be made via a proxy-server which runs on the specified proxy-hosts.
+
+If the ``<bf>use proxy</bf>'' option is activated, you can specify  
+the proxy-host to use for HTTP connections in the
+<bf>HTTP Proxy</bf> box. You can
+either specify the hostname or the IP-number of the proxy host.
+The ``<bf>Port</bf>'' box next to it allows you to specify the port on 
+the proxy-host which provides access to the proxy-server. 
+Most HTTP proxy-servers use port 8080.
+
+Use the <bf>FTP proxy</bf> box, and the <bf>Port</bf> box next to it,
+to specify the proxy-host and port to use for 
+FTP connections. (To use the same setting for the FTP and HTTP
+proxy, click on the arrow button next to the HTTP Port; this copies
+the HTTP proxy entries to the FTP ones).
+
+
+The box labeled ``<bf>No proxy for:</bf>'' 
+defines a list of hosts and/or domains for which the proxy 
+should <bf>not</bf> be used. 
+The list may be separated either by commas or by spaces.
+If a part of a  hostname matches an entry in the list, no proxy-server
+will be used for connections to that host.
+
+This option is useful if you want to access hosts which your computer knows 
+about but which are unknown to the proxy-server or which give problems when
+acccessed via the proxy-server. Typically you want to 
+add '<tt>localhost</tt>' here.
+
+
+<sect> KFM Web Browser Configuration: HTTP
+<p>
+
+This screen allows you to configure certain browser options.
+
+Some Web sites are able to send versions of a given  HTML  document in 
+different languages. You can specify your list of preferred languages in the
+``<bf>Accept Languages</bf>'' box. The list is in 
+decreasing order of preference, i.e.,
+ the first language listed is the most preferred.
+You can use the asterisk (``<tt>*</tt>'') to specify 'any' language.
+
+A language should be specified with its 2-digit abbreviation. Examples are:
+<itemize>
+<item> <tt>en</tt> = English
+<item> <tt>de</tt> = German
+<item> <tt>fr</tt> = French
+<item> <tt>nl</tt> = Dutch
+</itemize>
+
+The box ``<bf>Accept character sets:</bf>'' allows you
+to  list the character sets which are accepted by the browser.
+You can use the asterisk  (``<tt>*</tt>'') to specify 'any' charset.
+
+Not all Web Servers send correct information about the contents of documents.
+If the ``<bf>Assume HTML</bf>'' option is activated, all data received via HTTP 
+is assumed to be HTML unless the remote Web Server defined it otherwise. 
+
+If opening a Web Page from a remote Web Site results in 
+a ``<bf>Open with:</bf>'' dialog 
+box, you might want to try this option. 
+
+
+
+<sect> KFM Web Browser Configuration: User Agent
+<p>
+
+When requesting web pages, Web Browsers identify themselves to Web Servers by 
+reporting
+their name and version as a  <bf>User-Agent String</bf>.
+The default User-Agent string for KFM is set to <bf>Konqueror</bf>
+plus version information.
+
+
+You can also configure the KFM Browser to report a different User-Agent String
+to specific web sites,  while reporting the default string to other
+sites. 
+The usefulness of this is that web servers may decide
+on what form to send the information (e.g., frames or
+no frames) depending on which browser application it
+thinks it is talking to.  
+
+The KFM Browser (Konqueror) is perfectly capable of handling frames,
+but may not be recognized by a web site that only sends frames
+to web browsers it thinks can handle them.  In such a case,
+you can configure KFM/Konqueror
+to send a different  <bf>User-Agent String</bf>;
+for example, you might decide
+to tell that site that your browser is
+<bf>Netscape Navigator</bf> (tm), 
+(user-agent string = ``<tt>Mozilla</tt>'' plus version information)
+or <bf>Internet Explorer</bf>(tm).
+
+To create a binding between a User-Agent String and a web site:
+<itemize>
+<item> enter the address of the website in the box labelled 
+``<bf>On server:</bf>''
+<item> enter the desired User-Agent String in the box labelled
+``<bf>login as:</bf>''
+<item> Click on the <bf>Add</bf> button.
+</itemize>
+
+To remove such a binding, click on its entry in the list of 
+<bf>Known bindings</bf> to highlight it, then 
+click on the <bf>Delete</bf> button.
+
+To activate your changes, click on <bf>Apply</bf> or
+<bf>OK</bf>.  To exit without applying the changes, click on
+<bf>Cancel</bf>.
+
+
+<sect> KFM Web Browser Configuration: Cookies
+<p>
+
+``<bf>Cookies</bf>'' are little messages you receive from a 
+remote website which are intended to be stored on your
+system, and  sent
+back by your browser to that site the next time you visit it 
+(or when you visit
+another page on that site). 
+
+Cookies can be used by websites to automatically
+identify you for a longer period of time. A website can use this to store
+your preferences. Cookies can also be used to track your behavior
+on a site. Used as such, some people consider cookies an attack on their
+privacy. KFM offers you a broad range of possibilities to decide which cookies
+to accept and which not to.  
+
+If ``<bf>Enable Cookies</bf>'' is activated,  cookies will be accepted 
+according to the following settings and
+stored cookies will be sent.
+If it is <bf>not</bf> activated, no cookie will ever be sent, 
+and no new cookies will be accepted.
+
+
+You may set specific policies for  how to treat cookies  originating
+from domains listed in the ``<bf>Domain specific settings</bf>'' box.
+
+To add such a domain, type its name in the 
+``<bf>change domain accept policy</bf>'' box, and select one of the
+three policy choices:
+<itemize>
+<item> The ``<bf>Accept</bf>'' policy is to accept all cookies received without 
+notifying the user.
+<item>  The ``<bf>Ask</bf>'' policy is to open a pop-up box to
+ask the user what to do, each time
+a cookie is received.
+<item> The ``<bf>Reject</bf>'' policy is to reject all cookies 
+received without 
+notifying the user.
+</itemize>
+Then click on 
+``<bf>change</bf>'' to add the new entry to the list of domain-specific
+settings.    To modify the entry for an exiting domain in the list,
+click on it to highlight it, then set a new cookie acceptance policy for it, 
+or click on ``<bf>delete</bf>'' to remove it.
+
+
+The ``<bf>default accept policy</bf>'' setting
+sets the acceptance policy for cookies originating from
+a domain not listed in the
+<bf>domain-specific setting</bf> box. 
+
+
+
+
+<sect> KFM Configuration: Desktop Icons
+<p>
+In this dialog, you can control the default spacing of the icons
+on your KDE desktop, and how their names are displayed.
+
+<itemize>
+<item> Specify the ``<bf>Horizontal Root Grid Spacing</bf>'' and
+the  ``<bf>Vertical Root Grid Spacing</bf>'' to chose the hidden
+grid on which the desktop icons will, by default,  be placed.
+
+<item> The icon names appear as text below the icon. 
+By default, the text appears on a small opaque rectangular
+background that hides the Desktop wallpaper below. 
+To remove this background, activate the option
+``<bf>Transparent Text for Desktop Icons</bf>''.
+
+<item> Click on the ``<bf>Icon foreground color</bf>'' box to 
+chose the color of the text giving the icon name.
+
+<item> Click on the box ``<bf>Icon background color</bf>'' to 
+chose the color of the background on  which the icon name is written.
+(Inactive if ``Transparent Text for Desktop Icons'' is selected.)
+
+<item> You may also choose to activate the option ``<bf>Show
+Hidden Files on Desktop</bf>''.
+
+</itemize>
+
+Click on ``<bf>Apply</bf>'' to apply configuration changes to
+your current desktop.   ``<bf>OK</bf>'' applies the changes and  exits,
+while ``<bf>Cancel</bf>'' exits without applying the changes.
+
+</article>
+
+
+
+
+
+
+

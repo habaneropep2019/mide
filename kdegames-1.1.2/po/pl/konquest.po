@@ -1,0 +1,245 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: konquest \n"
+"POT-Creation-Date: 1999-01-13 01:34+0100\n"
+"PO-Revision-Date: 1999-01-28 00:10+0100\n"
+"Last-Translator: Piotr Roszatycki <dexter@fnet.pl>\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+
+#: gameboard.cc:55
+msgid "End Turn"
+msgstr "Koniec tury"
+
+#: gameboard.cc:203
+msgid ": Select source planet..."
+msgstr ": Wybierz planetê pocz±tkow±..."
+
+#: gameboard.cc:221
+msgid ": Select destination planet..."
+msgstr ": Wybierz planetê koñcow±..."
+
+#: gameboard.cc:243
+msgid ": How many ships?"
+msgstr ": Ile statków?"
+
+#: gameboard.cc:267
+msgid "Ruler: Select starting planet."
+msgstr "Gracz: Wybierz planetê startow±."
+
+#: gameboard.cc:287
+#, c-format
+msgid ""
+"The distance from Planet %s to Planet %s is %s light years.\n"
+"A ship leaving this turn will arrive on turn %s"
+msgstr ""
+"Odleg³o¶æ z planety %s do planety %s wynosi %s lat ¶wietlnych.\n"
+"Statek dotrze na miejsce przeznaczenia w turze %s"
+
+#: gameboard.cc:291
+msgid "Distance"
+msgstr "Odleg³o¶æ"
+
+#: gameboard.cc:296
+msgid "Ruler: Select ending planet."
+msgstr "Gracz: Wybierz planetê koñcow±."
+
+#: gameboard.cc:311
+#, c-format
+msgid "Turn #: %2d of %2d"
+msgstr "Tura #: %2d of %2d"
+
+#: gameboard.cc:426
+#, c-format
+msgid "The once mighty empire of %s has fallen in ruins."
+msgstr "Imperium %s leg³o w gruzy."
+
+#: gameboard.cc:428
+msgid "An Empire has fallen..."
+msgstr "Imperium leg³o w gruzy..."
+
+#: gameboard.cc:438
+#, c-format
+msgid "The fallen empire of %s has staggered back to life."
+msgstr "Upad³e imperium %s odrodzi³o siê."
+
+#: gameboard.cc:440
+msgid "Up from the ashes..."
+msgstr "Powsta³e z popio³ów..."
+
+#: gameboard.cc:460
+#, c-format
+msgid "Reinforcements have arrived for planet %s"
+msgstr "Przyby³a flota na planetê %s"
+
+#: gameboard.cc:462
+msgid "Fleet Arrival"
+msgstr "Flota przyby³a"
+
+#: gameboard.cc:505
+#, c-format
+msgid "Planet %s has held against an attack from %s"
+msgstr "Planeta %s odpar³a atak przeciwko %s"
+
+#: gameboard.cc:507
+msgid "Planet Holds"
+msgstr "Atak odparty"
+
+#: gameboard.cc:515
+#, c-format
+msgid "Planet %s has fallen to %s"
+msgstr "Planeta %s zosta³a podbita przez %s"
+
+#: gameboard.cc:517
+msgid "Planet Conquered"
+msgstr "Planeta podbita"
+
+#: gameboard.cc:579 mainwin.cc:82
+msgid "End Game"
+msgstr "Koniec gry"
+
+#: gameboard.cc:580
+msgid "Do you wish to retire this game?"
+msgstr "Czy chcesz zakoñczyæ tê grê?"
+
+#: gameboard.cc:586
+msgid "Final Standings"
+msgstr "Ostateczne wyniki"
+
+#: gameboard.cc:758
+msgid "Not enough ships to send."
+msgstr "Brak tylu statków do wys³ania."
+
+#: mainwin.cc:23
+msgid "GNU-Lactic Conquest"
+msgstr "GNU-Lactic Conquest"
+
+#: mainwin.cc:47
+#, c-format
+msgid ""
+"Version %s\n"
+"Copyright (c) 1998 by\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE version by Russ Steffen <rsteffen@ia.net>\n"
+"See http://www.ia.net/~rsteffen/konquest.html for more info"
+msgstr ""
+"Wersja %s\n"
+"Copyright (c) 1998\n"
+"Projekt Gnu-Lactic Conquest\n"
+"\n"
+"Wersja KDE Russ Steffen <rsteffen@ia.net>\n"
+"Wiêcej informacji pod adresem http://www.ia.net/~rsteffen/konquest.html"
+
+#: mainwin.cc:88
+msgid "Measure Distance"
+msgstr "Wymierz odleg³o¶æ"
+
+#: mainwin.cc:92
+msgid "Show Standings"
+msgstr "Poka¿ wyniki"
+
+#: newgamedlg.cc:31
+msgid "Preview Map"
+msgstr "Poprzednia mapa"
+
+#: newgamedlg.cc:35
+msgid "&Reject Map"
+msgstr "&Odrzuæ mapê"
+
+#: newgamedlg.cc:41
+msgid "&Player List"
+msgstr "&Lista graczy"
+
+#: newgamedlg.cc:48
+msgid "&Add"
+msgstr "&Dodaj"
+
+#: newgamedlg.cc:54
+msgid "&Clear"
+msgstr "&Wyczy¶æ"
+
+#: newgamedlg.cc:70
+msgid "&Start Game"
+msgstr "&Rozpocznij grê"
+
+#: newgamedlg.cc:162
+#, c-format
+msgid "Number of Neutral Planets: %2d"
+msgstr "Ilo¶æ neutralnych planet: %2d"
+
+#: newgamedlg.cc:174
+#, c-format
+msgid "Number of turns: %2d"
+msgstr "Ilo¶æ tur: %2d"
+
+#: planet_info.cc:81 planet_info.cc:116 planet_info.cc:131
+msgid "Planet Name : "
+msgstr "Nazwa planety: "
+
+#: planet_info.cc:84 planet_info.cc:134
+msgid "Owner : "
+msgstr "W³a¶ciciel: "
+
+#: planet_info.cc:87
+msgid "Ships : "
+msgstr "Statki: "
+
+#: planet_info.cc:90
+msgid "Production : "
+msgstr "Produkcja: "
+
+#: planet_info.cc:93
+msgid "Kill Percent : "
+msgstr "Skuteczno¶æ: "
+
+#: planet_info.cc:137
+#, c-format
+msgid "Ships : %d"
+msgstr "Statki: %d"
+
+#: planet_info.cc:140
+#, c-format
+msgid "Production : %d"
+msgstr "Produkcja: %d"
+
+#: planet_info.cc:143
+#, c-format
+msgid "Kill Percent : %.3f"
+msgstr "Skuteczno¶æ: %.3f"
+
+#: gameenddlg.cc:14
+msgid ""
+"This is the last turn.\n"
+"Do you wish to add more turns?"
+msgstr ""
+"To jest ostatnia tura.\n"
+"Czy dodaæ nowe tury?"
+
+#: gameenddlg.cc:64
+#, c-format
+msgid "Add %d turns"
+msgstr "Dodaj %d tur"
+
+#: scoredlg.cc:18
+msgid "Player"
+msgstr "Gracz"
+
+#: scoredlg.cc:19
+msgid "Ships Built"
+msgstr "Zbudowane statki"
+
+#: scoredlg.cc:20
+msgid "Planets Conquered"
+msgstr "Podbite planety"
+
+#: scoredlg.cc:21
+msgid "Fleets Launched"
+msgstr "Wys³ane floty"
+
+#: scoredlg.cc:22
+msgid "Fleets Destroyed"
+msgstr "Zniszczone floty"
+
+#: scoredlg.cc:23
+msgid "Ships Destroyed"
+msgstr "Zniszczone statki"

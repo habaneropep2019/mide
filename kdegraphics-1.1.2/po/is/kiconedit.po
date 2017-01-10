@@ -1,0 +1,1104 @@
+# Icelandic translation.
+# Copyright (C) 1998 Bjarni R. Einarsson
+# Bjarni R. Einarsson, <bre@mmedia.is>, 1998
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-01-10 01:46+0100\n"
+"Last-Translator: Bjarni R. Einarsson <bre@mmedia.is>\n"
+"Language-Team: is <kde-isl@mmedia.is>\n"
+
+#: utils.cpp:65
+#, c-format
+msgid "copyFile - There was an error opening destination file: %s"
+msgstr "afritaSkrá - Upp kom villa við opnun útkomuskrárinnar: %s"
+
+#: utils.cpp:72
+#, c-format
+msgid "copyFile - There was an error reading source file: %s"
+msgstr "afritaSkrá - Upp kom villa við lestur skrárinnar: %s"
+
+#: utils.cpp:80
+#, c-format
+msgid "copyFile - There was an error writing to destination file: %s"
+msgstr "afritaSkrá - Upp kom villa við skrift í skrána: %s"
+
+#: utils.cpp:93
+#, c-format
+msgid "copyFile - There was an error opening source file: %s"
+msgstr "afritaSkrá - Mistókst að opna skrána: %s"
+
+#: utils.cpp:105
+#, c-format
+msgid "removeFile - There was an error removing the file: %s"
+msgstr "eyðaSkrá - Mistókst að eyða skránni: %s"
+
+#: kiconedit.cpp:239 kiconeditslots.cpp:62 kiconeditslots.cpp:121
+msgid ""
+"The current file has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"Virku skránni hefur verið breytt.\n"
+"Viltu vista breytingarnar?"
+
+#: kiconedit.cpp:373
+msgid "Select All"
+msgstr "Velja allt"
+
+#: kiconedit.cpp:391
+msgid "New &Window"
+msgstr "Nýr &gluggi"
+
+#: kiconedit.cpp:396
+msgid "&New..."
+msgstr "&Nýtt..."
+
+#: kiconedit.cpp:402
+msgid "Open recent"
+msgstr "Opna nýlegt"
+
+#: kiconedit.cpp:423
+msgid "&Exit"
+msgstr "&Hætta"
+
+#: kiconedit.cpp:431
+msgid "Cu&t"
+msgstr "&Klippa"
+
+#: kiconedit.cpp:440
+msgid "Paste as &new"
+msgstr "Líma sem &nýtt"
+
+#: kiconedit.cpp:443
+msgid "Clea&r"
+msgstr "&Hreinsa"
+
+#: kiconedit.cpp:447
+msgid "Select &all"
+msgstr "&Velja allt"
+
+#: kiconedit.cpp:454
+msgid "1:1"
+msgstr "1:1"
+
+#: kiconedit.cpp:455
+msgid "1:5"
+msgstr "1:5"
+
+#: kiconedit.cpp:456
+msgid "1:10"
+msgstr "1:10"
+
+#: kiconedit.cpp:461
+msgid "Zoom &in"
+msgstr "Renna &að"
+
+#: kiconedit.cpp:462
+msgid "Zoom &out"
+msgstr "Renna &frá"
+
+#: kiconedit.cpp:463
+msgid "Zoom factor"
+msgstr "Fjarlægð"
+
+#: kiconedit.cpp:470
+msgid "&Resize"
+msgstr "&Breyta stærð"
+
+#: kiconedit.cpp:472
+msgid "&GrayScale"
+msgstr "&Gráskali"
+
+#: kiconedit.cpp:477
+msgid "&Icon"
+msgstr "&Táknmynd"
+
+#: kiconedit.cpp:481
+msgid "Freehand"
+msgstr "Fríhendis"
+
+#: kiconedit.cpp:482
+msgid "Rectangle"
+msgstr "Rétthyrningur"
+
+#: kiconedit.cpp:483
+msgid "Filled rectangle"
+msgstr "Fylltur ferhyrn."
+
+#: kiconedit.cpp:484
+msgid "Circle"
+msgstr "Hringur"
+
+#: kiconedit.cpp:485
+msgid "Filled circle"
+msgstr "Fylltur hringur"
+
+#: kiconedit.cpp:486
+msgid "Ellipse"
+msgstr "Sporaskja"
+
+#: kiconedit.cpp:487
+msgid "Filled ellipse"
+msgstr "Fyllt sporaskja"
+
+#: kiconedit.cpp:488 kiconedit.cpp:687
+msgid "Spray"
+msgstr "Úða"
+
+#: kiconedit.cpp:489 kiconedit.cpp:689
+msgid "Flood fill"
+msgstr "Hella"
+
+#: kiconedit.cpp:490
+msgid "Line"
+msgstr "Lína"
+
+#: kiconedit.cpp:491
+msgid "Eraser (Transparent)"
+msgstr "Strokleður (glært)"
+
+#: kiconedit.cpp:494
+msgid "&Tools"
+msgstr "&Verkfæri"
+
+#: kiconedit.cpp:498
+msgid "&Configure"
+msgstr "&Stillingar"
+
+#: kiconedit.cpp:500
+msgid "Toggle &Grid"
+msgstr "Birta/fela &möskva"
+
+#: kiconedit.cpp:503
+msgid "Toggle &toolbar"
+msgstr "Birta/fela &tækjaslá"
+
+#: kiconedit.cpp:506
+msgid "Toggle &drawing tools"
+msgstr "Birta/fela t&eiknitól"
+
+#: kiconedit.cpp:509
+msgid "Toggle &statusbar"
+msgstr "Birta/fela &stöðuslá"
+
+#: kiconedit.cpp:513
+msgid "&Save options"
+msgstr "&Vista stillingar"
+
+#: kiconedit.cpp:520
+msgid ""
+"KDE Icon Editor\n"
+"\n"
+"A graphics drawing program for creating\n"
+"icons using the KDE icon palette\n"
+"\n"
+"Copyright 1998 by Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018"
+msgstr ""
+"KDE Táknmyndaforrit\n"
+"Teikniforrit til að búa til táknmyndir\n"
+"í KDE táknmyndalitunum\n"
+"\n"
+"Höfundarréttur 1998, Thomas Tanghus\n"
+"tanghus@kde.org\n"
+"http://w1.1358.telia.com/~u135800018\n"
+"\n"
+"Þýðing: Bjarni <bre@mmedia.is>"
+
+#: kiconedit.cpp:570
+msgid "What is ...?"
+msgstr "Hvað er ...?"
+
+#: kiconedit.cpp:579
+msgid "Drag source"
+msgstr "Draga frummynd"
+
+#: kiconedit.cpp:584
+msgid "New File"
+msgstr "Ný skrá"
+
+#: kiconedit.cpp:588
+msgid "Save the file"
+msgstr "Vista skrána"
+
+#: kiconedit.cpp:591
+msgid "Print icon"
+msgstr "Prenta táknmynd"
+
+#: kiconedit.cpp:606
+msgid "Select area"
+msgstr "Velja svæði"
+
+#: kiconedit.cpp:612
+msgid "Resize"
+msgstr "Breyta stærð"
+
+#: kiconedit.cpp:615
+msgid "GrayScale"
+msgstr "Gráskali"
+
+#: kiconedit.cpp:622
+msgid "Zoom out"
+msgstr "Renna frá"
+
+#: kiconedit.cpp:625
+msgid "Zoom in"
+msgstr "Renna að"
+
+#: kiconedit.cpp:629
+msgid "Toggle grid"
+msgstr "Birta/fela möskva"
+
+#: kiconedit.cpp:640
+msgid "New Window"
+msgstr "Nýr gluggi"
+
+#: kiconedit.cpp:668
+msgid "Find pixel"
+msgstr "Finna punkt"
+
+#: kiconedit.cpp:670
+msgid "Draw freehand"
+msgstr "Teikna fríhendis"
+
+#: kiconedit.cpp:673
+msgid "Draw line"
+msgstr "Teikna línu"
+
+#: kiconedit.cpp:675
+msgid "Draw rectangle"
+msgstr "Teikna rétthyrning"
+
+#: kiconedit.cpp:677
+msgid "Draw filled rectangle"
+msgstr "Teikna fylltan rétthyrning"
+
+#: kiconedit.cpp:679
+msgid "Draw circle"
+msgstr "Teikna hring"
+
+#: kiconedit.cpp:681
+msgid "Draw filled circle"
+msgstr "Teikna fylltan hring"
+
+#: kiconedit.cpp:683
+msgid "Draw ellipse"
+msgstr "Teikna sporöskju"
+
+#: kiconedit.cpp:685
+msgid "Draw filled ellipse"
+msgstr "Teikna fyllta sporöskju"
+
+#: kiconedit.cpp:692
+msgid "Erase"
+msgstr "Stroka út"
+
+#: kiconedit.cpp:715
+msgid "System Colors"
+msgstr "Kerfislitir"
+
+#: kiconedit.cpp:745
+msgid "Custom Colors"
+msgstr "Eigin litir"
+
+#: kiconedit.cpp:786
+msgid ""
+"Icon draw grid\n"
+"\n"
+"The icon grid is the area where you draw the icons.\n"
+"You can zoom in and out using the magnifying glasses on the toolbar.\n"
+"(Tip: Hold the magnify button down for a few seconds to zoom to a predefined "
+"scale"
+msgstr ""
+"Vinnslumöskvi\n"
+"\n"
+"Vinnslumöskvinn er svæðið þar sem þú teiknar táknmyndir.  Þú getur rennt\n"
+"að og frá myndinni (stækkað/minnkað) með stækkunarglerinu á tækjaslánni.\n"
+"(Vísbending:  Haltu stækkunarhnappnum inni í örfáar sekúndur, til að renna í "
+"áður skilgreinda fjarlægð)"
+
+#: kiconedit.cpp:791
+msgid ""
+"Rulers\n"
+"\n"
+"This is a visual represantation of the current cursor position"
+msgstr ""
+"Reglustikur\n"
+"\n"
+"Þetta er myndræn framsetning á stöðu bendilsins hverju sinni"
+
+#: kiconedit.cpp:795
+msgid ""
+"Statusbar\n"
+"\n"
+"The statusbar gives information of the status of the current icon. The "
+"fields are:\n"
+"\n"
+"\t- Cursor position\n"
+"\t- Size\n"
+"\t- Zoom factor\n"
+"\t- Number of colors\n"
+"\t- Application messages"
+msgstr ""
+"Stöðuslá\n"
+"\n"
+"Stöðusláin birtir upplýsingar um ástand virku táknmyndarinnar.sviðin eru:\n"
+"\n"
+"\t- Staða bendils\n"
+"\t- Stærð\n"
+"\t- Stækkunarhlutfall\n"
+"\t- Fjöldi lita\n"
+"\t- Skilaboð frá forritinu"
+
+#: kiconedit.cpp:804
+msgid ""
+"Preview\n"
+"\n"
+"This is a 1:1 preview of the current icon"
+msgstr ""
+"Forsýning\n"
+"\n"
+"Þetta er 1:1 mynd af virku táknmyndinni"
+
+#: kiconedit.cpp:807
+msgid ""
+"System colors\n"
+"\n"
+"Here you can select colors from the KDE Icon Palette."
+msgstr ""
+"Kerfislitir\n"
+"\n"
+"Hér getur þú valið staðlaða liti úr KDE táknmyndalitasafninu."
+
+#: kiconedit.cpp:810
+msgid ""
+"Custom colors\n"
+"\n"
+"Here you can build a palette of custom colors.\n"
+"Just double-click on a box to edit the color"
+msgstr ""
+"Eigin litir\n"
+"\n"
+"Hér getur þú valið þína eigin liti til að vinna með.\n"
+"Tvísmelltu á reit til að breyta litnum í honum."
+
+#: kiconedit.cpp:816
+msgid ""
+"New\n"
+"\n"
+"Create a new icon either from a template or by specifying the size"
+msgstr ""
+"Nýtt\n"
+"\n"
+"Búa til nýja táknmynd af ákveðnu sniði eða af ákveðinni stærð"
+
+#: kiconedit.cpp:819
+msgid ""
+"Open\n"
+"\n"
+"Open an existing icon"
+msgstr ""
+"Opna\n"
+"\n"
+"Opna tilbúna táknmynd til meðhöndlunar"
+
+#: kiconedit.cpp:822
+msgid ""
+"Save\n"
+"\n"
+"Save the current icon"
+msgstr ""
+"Vista\n"
+"\n"
+"Vista virku táknmyndina"
+
+#: kiconedit.cpp:825
+msgid ""
+"Print\n"
+"\n"
+"Opens a print dialog to let you print the current icon. (Doesn't realy work "
+"as expected"
+msgstr ""
+"Prenta\n"
+"\n"
+"Birtir valmynd sem gerir þér kleift að prenta út virku táknmyndina (ólíkt "
+"því sem búast mætti við)."
+
+#: kiconedit.cpp:829
+msgid ""
+"Cut\n"
+"\n"
+"Cut the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Klippa\n"
+"\n"
+"Klippa valda svæðið út úr táknmyndinni\n"
+"\n"
+"(Vísbending: Þú getur klippt út bæði rétthyrnd og hringlaga svæði)"
+
+#: kiconedit.cpp:833
+msgid ""
+"Copy\n"
+"\n"
+"Copy the current selection out of the icon\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Afrita\n"
+"\n"
+"Afrita valda svæðið út úr táknmyndinni (á klippiborð)\n"
+"\n"
+"(Vísbending: Þú getur afritað bæði rétthyrnd og hringlaga svæði)"
+
+#: kiconedit.cpp:837
+msgid ""
+"Paste\n"
+"\n"
+"Paste the contents of the clipboard into the current icon.\n"
+"\n"
+"If the contents is larger than the current icon you can paste it in a new "
+"window.\n"
+"\n"
+"(Tip: Select \"Paste transparent pixels\" in the configuration dialog if you "
+"also want to paste transparent)"
+msgstr ""
+"Líma\n"
+"\n"
+"Líma innihald klippiborðsins á virku myndina.\n"
+"\n"
+"Ef innihaldið er stærra en virka táknmydin þá geturðu afritað það inn í "
+"nýjan glugga.\n"
+"\n"
+"(Vísbending: Veldu \"Líma glæra punkta\" í stillyngarvalmyndinni ef þú vilt "
+"geta límt gegnsæjar myndir)"
+
+#: kiconedit.cpp:844
+msgid ""
+"Select\n"
+"\n"
+"Select a section of the icon using the mouse.\n"
+"\n"
+"(Tip: You can make both rectangular and circular selections)"
+msgstr ""
+"Velja\n"
+"\n"
+"Velja afmarkaðan hluta af táknmyndinni með músinni.\n"
+"\n"
+"(Vísbending: Þú getur valið bæði rétthyrnd og hringlaga svæði)"
+
+#: kiconedit.cpp:848
+msgid ""
+"Resize\n"
+"\n"
+"Smoothly resizes the icon while trying to preserve the contents"
+msgstr ""
+"Breyta stærð\n"
+"\n"
+"Breyta stærð myndarinnar jafnt og þétt, og varðveita innihaldið (eftir bestu "
+"getu)."
+
+#: kiconedit.cpp:851
+msgid ""
+"Gray scale\n"
+"\n"
+"Gray scale the current icon.\n"
+"(Warning: The result is likely to contain colors not in the icon palette"
+msgstr ""
+"Gráskali\n"
+"\n"
+"Nota eingöngu gráa tóna í virku myndinni.\n"
+"(Aðvörun: Útkoman mun líklega innihalda liti sem eru ekki í litasafninu)"
+
+#: kiconedit.cpp:855
+msgid ""
+"Zoom out\n"
+"\n"
+"Zoom out by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Renna frá\n"
+"\n"
+"Renna aðeins frá (minnka sýn myndarinnar).\n"
+"\n"
+"(Vísbending:  Haltu hnappnum niðri í nokkrar sekúndur til að renna að áður "
+"skilgreindri stærð)"
+
+#: kiconedit.cpp:859
+msgid ""
+"Zoom in\n"
+"\n"
+"Zoom in by one.\n"
+"\n"
+"(Tip: Hold the button down for a few seconds to zoom to a predefined scale"
+msgstr ""
+"Renna að\n"
+"\n"
+"Renna aðeins að (stækka sýn myndarinnar).\n"
+"\n"
+"(Vísbending:  Haltu hnappnum niðri í nokkrar sekúndur til að renna að áður "
+"skilgreindri stærð)"
+
+#: kiconedit.cpp:863
+msgid ""
+"Toggle grid\n"
+"\n"
+"Toggles the grid in the icon edit grid on/off"
+msgstr ""
+"Birta/fela möskva\n"
+"\n"
+"Kveikir eða slekkur á birtingu möskvans á vinnusvæðinu"
+
+#: kiconedit.cpp:866
+msgid ""
+"New window\n"
+"\n"
+"Opens a new Icon Editor window."
+msgstr ""
+"Nýr gluggi\n"
+"\n"
+"Opnar nýjan glugga."
+
+#: kiconedit.cpp:869
+msgid ""
+"Whats is...?\n"
+"\n"
+"Well since you're reading this I guess you found out ;-)"
+msgstr ""
+"Hvað er...?\n"
+"\n"
+"Nú, leiðbeiningar að sjálfsögðu!  Bentu á eitthvað annað!"
+
+#: kiconedit.cpp:872
+msgid ""
+"Drag source\n"
+"\n"
+"From this button you can drag out a copy of the current icon and drop it on "
+"a drop enabled window, eg. another Icon Editor.\n"
+"\n"
+"(Note: The drag source uses the QT XDND protocol which is not yet standard "
+"in KDE)"
+msgstr ""
+"Draga frummynd\n"
+"\n"
+"Úr þessum hnappi geturðu dregið afrit af virku táknmyndinni og sleppt á "
+"annan glugga sem skilur dregnar myndir, t.d. annan Táknmyndasýslsglugga.\n"
+"\n"
+"(Ath: Þessi aðgerð notar QT XDND samskiptamátann, sem er hefur ekki verið "
+"staðlaður í KDE)"
+
+#: kiconedit.cpp:880
+msgid ""
+"Free hand\n"
+"\n"
+"Draw non-linear lines"
+msgstr ""
+"Fríhendis\n"
+"\n"
+"Teikna fríhendis"
+
+#: kiconedit.cpp:883
+msgid ""
+"Flood fill\n"
+"\n"
+"Fill adjoining pixels with the same color with the current color"
+msgstr ""
+"Hella\n"
+"\n"
+"'Hella' virka litinn oní alla samliggjandi punkta í föstum lit"
+
+#: kiconedit.cpp:886
+msgid ""
+"Rectangle\n"
+"\n"
+"Draw a rectangle"
+msgstr ""
+"Rétthyrningur\n"
+"\n"
+"Teikna rétthyrning"
+
+#: kiconedit.cpp:889
+msgid ""
+"Filled rectangle\n"
+"\n"
+"Draw a filled rectangle"
+msgstr ""
+"Fylltur rétthyrningur\n"
+"\n"
+"Teikna einlitan kassa"
+
+#: kiconedit.cpp:892
+msgid ""
+"Circle\n"
+"\n"
+"Draw a circle"
+msgstr ""
+"Hringur\n"
+"\n"
+"Teikna hring"
+
+#: kiconedit.cpp:895
+msgid ""
+"Filled circle\n"
+"\n"
+"Draw a filled circle"
+msgstr ""
+"Fylltur hringur\n"
+"\n"
+"Teikna einlitaða skífu"
+
+#: kiconedit.cpp:898
+msgid ""
+"Ellipse\n"
+"\n"
+"Draw an ellipse"
+msgstr ""
+"Sporaskja\n"
+"\n"
+"Teikna sporöskju (skekktan hring)"
+
+#: kiconedit.cpp:901
+msgid ""
+"Filled ellipse\n"
+"\n"
+"Draw a filled ellipse"
+msgstr ""
+"Fyllt sporaskja\n"
+"\n"
+"Teikna fyllta sporöskju, þ.e. einlitað sporöskjulaga svæði"
+
+#: kiconedit.cpp:904
+msgid ""
+"Line\n"
+"\n"
+"Draw a straight line vertically, horizontically or in 45 dgr. angles"
+msgstr ""
+"Lína\n"
+"\n"
+"Teikna beina línu lárétt, lóðrétt eða í 45 gráðu halla"
+
+#: kiconedit.cpp:907
+msgid ""
+"Spray\n"
+"\n"
+"Draw scattered pixels in the current color"
+msgstr ""
+"Úða\n"
+"\n"
+"Sprauta punktum á myndina, eins og úr úðabrúsa"
+
+#: kiconedit.cpp:910
+msgid ""
+"Find\n"
+"\n"
+"The color of the pixel clicked on will be the current drawcolor"
+msgstr ""
+"Finna\n"
+"\n"
+"Litur næsta punkts sem smellt er á verður að virka litnum"
+
+#: kiconedit.cpp:913
+msgid ""
+"Erase\n"
+"\n"
+"Erase pixels. Set the pixels to be transparent\n"
+"\n"
+"(Tip: If you want to draw transparent with a different tool then first click "
+"on \"Erase\" then on the tool you want to use)"
+msgstr ""
+"Stroka út\n"
+"\n"
+"Strokar út punkta - stillir þá þ.a. þeir séu glærir\n"
+"\n"
+"(Vísbending: Ef þú vilt teikna glæra punkta með öðru verkfæri en "
+"strokleðrinu, smelltu þá fyrst á \"Stroka út\" og svo á verkfærið sem þú "
+"vilt nota)"
+
+#: kicongrid.cpp:66
+msgid "width"
+msgstr "breidd"
+
+#: kicongrid.cpp:71
+msgid "height"
+msgstr "hæð"
+
+#: kicongrid.cpp:684
+msgid "There was an error loading a blank image.\n"
+msgstr "Það mistókst að lesa inn auða mynd.\n"
+
+#: kicongrid.cpp:830
+msgid "All selected"
+msgstr "Allt valið"
+
+#: kicongrid.cpp:841
+msgid "Cleared"
+msgstr "Hreinsað"
+
+#: kicongrid.cpp:883
+msgid "Selected area cutted"
+msgstr "Valið svæði klippt út"
+
+#: kicongrid.cpp:886
+msgid "Selected area copied"
+msgstr "Valið svæði afritað"
+
+#: kicongrid.cpp:964
+msgid ""
+"There was an copying:\n"
+"to the clipboard!"
+msgstr ""
+"Það varð afritunar:\n"
+"á klippiborðið!"
+
+#: kicongrid.cpp:985
+msgid ""
+"The clipboard image is larger than the current image!\n"
+"Paste as new image?"
+msgstr ""
+"Myndin á klippiborðinu er stærri en virka myndin!\n"
+"Líma í nýja mynd?"
+
+#: kicongrid.cpp:998
+msgid "Pasting"
+msgstr "Lími"
+
+#: kicongrid.cpp:1030 kicongrid.cpp:1057
+msgid "Done pasting"
+msgstr "Líming búin"
+
+#: kicongrid.cpp:1035 kicongrid.cpp:1061
+msgid "Invalid pixmap data in clipboard!\n"
+msgstr "Gögnin á klippiborðinu eru ekki gild mynd!\n"
+
+#: kiconcombiview.cpp:81
+msgid "Folders:"
+msgstr "Möppur:"
+
+#: kiconcombiview.cpp:82
+msgid "Contents:"
+msgstr "Innihald:"
+
+#: kicondetaillist.cpp:50
+msgid "Name"
+msgstr "Nafn"
+
+#: kicondetaillist.cpp:52
+msgid "Size"
+msgstr "Stærð"
+
+#: kicondetaillist.cpp:55
+msgid "Permissions"
+msgstr "Heimildir"
+
+#: kicondetaillist.cpp:57
+msgid "Date"
+msgstr "Dags"
+
+#: kicondetaillist.cpp:60
+msgid "Owner"
+msgstr "Eigandi"
+
+#: kicondetaillist.cpp:62
+msgid "Group"
+msgstr "Hópur"
+
+#: kicon.cpp:48
+msgid "There was an error removing temporary backup file:\n"
+msgstr "Það mistókst að eyða tímabundnu öryggisafriti:\n"
+
+#: kicon.cpp:74 kicon.cpp:258 kicon.cpp:342 kicon.cpp:445
+msgid ""
+"We've got a KFM job running.\n"
+"Please wait."
+msgstr ""
+"KFM ferli er í gangi.\n"
+"Bíddu augnablik."
+
+#: kicon.cpp:97
+msgid "The URL:\n"
+msgstr "Slóðin:\n"
+
+#: kicon.cpp:99
+msgid ""
+"\n"
+"seems to be malformed.\n"
+msgstr ""
+"\n"
+"virðist vera gölluð.\n"
+
+#: kicon.cpp:100 kicon.cpp:146 kicon.cpp:169 kicon.cpp:181 kicon.cpp:194
+#: kicon.cpp:207 kicon.cpp:218 kicon.cpp:399 kicon.cpp:432
+msgid "ERROR"
+msgstr "VILLA"
+
+#: kicon.cpp:116
+msgid "The KDE Icon Editor has found a recover file for:\n"
+msgstr "Öryggisafrit fannst fyrir:\n"
+
+#: kicon.cpp:118 kicon.cpp:285
+msgid ""
+"\n"
+"Do you want to open this?"
+msgstr ""
+"\n"
+"Viltu opna það?"
+
+#: kicon.cpp:143
+msgid "The file:\n"
+msgstr "Skráin:\n"
+
+#: kicon.cpp:145
+msgid ""
+"\n"
+"doesn't exist or isn't readable.\n"
+msgstr ""
+"\n"
+"er annaðhvort ólæsileg eða ekki til.\n"
+
+#: kicon.cpp:160
+msgid ""
+"The Icon Editor is already downloading a non-local file.\n"
+"Please wait.\n"
+msgstr ""
+"Það er nú þegar verið að sækja skrá yfir net.\n"
+"Bíddu augnablik.\n"
+
+#: kicon.cpp:170
+msgid "Couldn't initiate KFM!"
+msgstr "Gat ekki ræst KFM!"
+
+#: kicon.cpp:178
+msgid "There was a KFM error creating a backup for:\n"
+msgstr "Það kom upp KFM villa við öryggisafritun:\n"
+
+#: kicon.cpp:191 kicon.cpp:396
+msgid "There was an error creating a backup for:\n"
+msgstr "Það mistókst að búa til öryggisafrit af:\n"
+
+#: kicon.cpp:204
+msgid "KIcon: There was a error locking:\n"
+msgstr "KIcon: Það mistókst að læsa:\n"
+
+#: kicon.cpp:215 kicon.cpp:291
+msgid "KIcon: There was a QT error loading:\n"
+msgstr "KIcon: QT villa kom upp við lestur:\n"
+
+#: kicon.cpp:261
+msgid ""
+"*|All files (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|GIF files (*.gif)\n"
+"*jpg|JPEG files (*.jpg)\n"
+msgstr ""
+"*|Allar skrár (*)\n"
+"*.xpm|XPM (*.xpm)\n"
+"*.gif|GIF myndir (*.gif)\n"
+"*jpg|JPEG myndir (*.jpg)\n"
+
+#: kicon.cpp:283
+msgid "The KDE Icon Editor has found a recover\n"
+msgstr "Það fannst öryggisafrit\n"
+
+#: kicon.cpp:284
+msgid "file for an unsaved icon."
+msgstr "fyrir óvistaða táknmynd."
+
+#: kicon.cpp:409
+msgid "Couldn't initiate KFM"
+msgstr "Gat ekki ræst KFM"
+
+#: kicon.cpp:422
+msgid "Done saving"
+msgstr "Vistun lokið"
+
+#: kicon.cpp:429
+msgid "There was an error saving:\n"
+msgstr "Það mistókst að vista:\n"
+
+#: kresize.cpp:29
+msgid "Size:"
+msgstr "Stærð:"
+
+#: kresize.cpp:64
+msgid "Select size:"
+msgstr "Velja stærð:"
+
+#: knew.cpp:34
+msgid "Standard file"
+msgstr "Stöðluð skrá"
+
+#: knew.cpp:39
+msgid "Source file"
+msgstr "Frumskrá"
+
+#: knew.cpp:44
+msgid "Compressed file"
+msgstr "Þjöppuð skrá"
+
+#: knew.cpp:49
+msgid "Standard folder"
+msgstr "Stöðluð mappa"
+
+#: knew.cpp:54
+msgid "Standard package"
+msgstr "Staðlaður pakki"
+
+#: knew.cpp:59
+msgid "Mini folder"
+msgstr "Smámappa"
+
+#: knew.cpp:64
+msgid "Mini package"
+msgstr "Smápakki"
+
+#: knew.cpp:156 knew.cpp:258 knew.cpp:308
+msgid "Create from scratch"
+msgstr "Smíða frá grunni"
+
+#: knew.cpp:158 knew.cpp:313
+msgid "Create from template"
+msgstr "Smíða út frá sniði"
+
+#: kiconconfig.cpp:120 knew.cpp:194
+msgid "Templates:"
+msgstr "Snið:"
+
+#: knew.cpp:252
+msgid "Select icontype"
+msgstr "Veltu gerð táknmyndar"
+
+#: knew.cpp:263
+msgid "Create new icon"
+msgstr "Smíða nýja táknmynd"
+
+#: debug.cpp:20
+msgid "Fatal!"
+msgstr "Banvænt!"
+
+#: kiconeditslots.cpp:403
+msgid "Sorry - not implemented."
+msgstr "Óútfært."
+
+#: kiconeditslots.cpp:471 kiconeditslots.cpp:478
+#, c-format
+msgid "Colors: %u"
+msgstr "Litir: %u"
+
+#: kiconconfig.cpp:30
+msgid "Template"
+msgstr "Snið"
+
+#: kiconconfig.cpp:31
+msgid "Description:"
+msgstr "Lýsing:"
+
+#: kiconconfig.cpp:33
+msgid "Path:"
+msgstr "Slóð:"
+
+#: kiconconfig.cpp:63
+msgid "&Browse..."
+msgstr "&Flakka..."
+
+#: kiconconfig.cpp:136
+msgid "&Add"
+msgstr "&Bæta við"
+
+#: kiconconfig.cpp:248
+msgid "Color or pixmap"
+msgstr "Litmynd eða pixmap"
+
+#: kiconconfig.cpp:256
+msgid "Colored background"
+msgstr "Litaður bakgrunnur"
+
+#: kiconconfig.cpp:261
+msgid "Pixmap background"
+msgstr "Pixmap bakgrunnur"
+
+#: kiconconfig.cpp:276
+msgid "&Color..."
+msgstr "&Litur..."
+
+#: kiconconfig.cpp:279
+msgid "&Pixmap..."
+msgstr "&Pixmap..."
+
+#: kiconconfig.cpp:287
+msgid "&Built-in"
+msgstr "Inn&byggt"
+
+#: kiconconfig.cpp:291
+msgid "Example"
+msgstr "Dæmi"
+
+#: kiconconfig.cpp:399
+msgid "Main Toolbar"
+msgstr "Aðaltækjaslá"
+
+#: kiconconfig.cpp:402
+msgid "Drawing tools"
+msgstr "Teiknitól"
+
+#: kiconconfig.cpp:406
+msgid ""
+"Note: Other settings of the toolbars can be reached\n"
+"from the toolbar \"handle\" or from the \"Options\" menu"
+msgstr ""
+"Ath:  Aðrar stillingar tækjaslánna er hægt að nálgast á\n"
+"slánni \"handle\" eða úr valmyndinni \"Stillingar\""
+
+#: kiconconfig.cpp:425 kiconconfig.cpp:438
+msgid "Show Icon"
+msgstr "Birta táknmynd"
+
+#: kiconconfig.cpp:430 kiconconfig.cpp:443
+msgid "Show Icon and Text"
+msgstr "Birta táknmynd og texta"
+
+#: kiconconfig.cpp:434 kiconconfig.cpp:447
+msgid "Show Text"
+msgstr "Birta texta"
+
+#: kiconconfig.cpp:505
+msgid "Paste mode"
+msgstr "Límingarhamur"
+
+#: kiconconfig.cpp:507
+msgid "Paste transparent pixels"
+msgstr "Líma glæra punkta"
+
+#: kiconconfig.cpp:511
+msgid "Show rulers"
+msgstr "Birta reglustikur"
+
+#: kiconconfig.cpp:593
+msgid "Keys"
+msgstr "Hnappar"
+
+#: kiconconfig.cpp:598
+msgid "Configure keys"
+msgstr "Stilla hnappa"
+
+#: kiconconfig.cpp:605
+msgid "Templates"
+msgstr "Snið"
+
+#: kiconconfig.cpp:610
+msgid "Configure Icon templates"
+msgstr "Stilla táknmyndasnið"
+
+#: kiconconfig.cpp:622
+msgid "Configure background"
+msgstr "Stilla bakgrunn"
+
+#: kiconconfig.cpp:630
+msgid "Toolbars"
+msgstr "Tækjaslár"
+
+#: kiconconfig.cpp:642
+msgid "Icon grid"
+msgstr "Möskvi"

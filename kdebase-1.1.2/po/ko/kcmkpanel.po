@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-01-28 01:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: LinuxKorea Co. <kde@linuxkorea.co.kr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: main.cpp:64
+msgid "&Panel"
+msgstr "패널(&P)"
+
+#: main.cpp:70
+msgid "&Desktops"
+msgstr "데스크탑(&D)"
+
+#: main.cpp:73
+msgid "Disk &Navigator"
+msgstr ""
+
+#: main.cpp:79
+#, fuzzy
+msgid "usage: kcmkpanel [-init | {panel,options,desktops,disknav}]\n"
+msgstr "사용법: kcmkpanel [-init | {패널,옵션,데스크탑}]\n"
+
+#: main.cpp:113
+msgid "KPanel Configuration"
+msgstr "KPanel 설정"
+
+#: panel.cpp:59
+msgid "Location"
+msgstr "위치"
+
+#: panel.cpp:60
+msgid "&Top"
+msgstr "위(&T)"
+
+#: panel.cpp:61
+msgid "&Left"
+msgstr "왼쪽(&L)"
+
+#: panel.cpp:62
+msgid "&Bottom"
+msgstr "아래(&B)"
+
+#: panel.cpp:63
+msgid "&Right"
+msgstr ""
+
+#: panel.cpp:75
+msgid "Taskbar"
+msgstr "태스크바"
+
+#: panel.cpp:76
+msgid "&Hidden"
+msgstr "숨김(&H)"
+
+#: panel.cpp:78
+msgid "T&op"
+msgstr "위(&o)"
+
+#: panel.cpp:80
+msgid "Botto&m"
+msgstr "아래(&m)"
+
+#: panel.cpp:82
+msgid "Top/Le&ft"
+msgstr "위/왼쪽(&f)"
+
+#: panel.cpp:95
+msgid "Style"
+msgstr ""
+
+#: panel.cpp:97
+msgid "T&iny"
+msgstr "최소(&i)"
+
+#: panel.cpp:99
+msgid "&Normal"
+msgstr "보통(&N)"
+
+#: panel.cpp:101
+msgid "L&arge"
+msgstr "최대(&a)"
+
+#: desktops.cpp:73
+msgid "&Visible"
+msgstr "가상창 갯수(&V)"
+
+#: desktops.cpp:82
+msgid "&Width"
+msgstr "패널넓이(&W)"
+
+#: options.cpp:38
+msgid "Menu Tooltips"
+msgstr "풍선도움말"
+
+#: options.cpp:62
+msgid "Show &Menu Tooltips"
+msgstr "풍선도움말 보이기(&M)"
+
+#: options.cpp:84
+msgid "De&lay:"
+msgstr "지연시간(&l)"
+
+#: options.cpp:91 options.cpp:160 options.cpp:262
+msgid "Small"
+msgstr ""
+
+#: options.cpp:98 options.cpp:167 options.cpp:269
+#, fuzzy
+msgid "Large"
+msgstr "최대(&a)"
+
+#: options.cpp:110
+msgid "Visuals"
+msgstr ""
+
+#: options.cpp:144
+msgid "Auto &Hide Panel"
+msgstr "패널 자동 감추기(&H)"
+
+#: options.cpp:153 options.cpp:255
+#, fuzzy
+msgid "Delay:"
+msgstr "지연시간(&l)"
+
+#: options.cpp:184 options.cpp:286 options.cpp:349
+msgid "Speed:"
+msgstr ""
+
+#: options.cpp:191 options.cpp:293 options.cpp:356
+msgid "Slow"
+msgstr ""
+
+#: options.cpp:198 options.cpp:300 options.cpp:363
+msgid "Fast"
+msgstr ""
+
+#: options.cpp:246
+msgid "Auto Hide &Taskbar"
+msgstr "태스크바 자동 숨기기(&T)"
+
+#: options.cpp:341
+msgid "Animate Show/Hide"
+msgstr ""
+
+#: options.cpp:395
+msgid "Others"
+msgstr "기타"
+
+#: options.cpp:408
+#, fuzzy
+msgid "Personal Menu Entries &First"
+msgstr "개인 사용자 우선(&F)"
+
+#: options.cpp:416
+#, fuzzy
+msgid "Menu F&olders First"
+msgstr "개인 사용자 우선(&F)"
+
+#: options.cpp:424
+msgid "&Clock shows time in AM/PM format"
+msgstr ""
+
+#: options.cpp:432
+msgid "Clock shows time in &Internet beats"
+msgstr ""
+
+#: disknav.cpp:38
+msgid "History"
+msgstr ""
+
+#: disknav.cpp:62
+msgid "Edit entries: (drag a folder and create a link)"
+msgstr ""
+
+#: disknav.cpp:64
+msgid "Edit &Personal..."
+msgstr ""
+
+#: disknav.cpp:74
+msgid "Edit &Shared..."
+msgstr ""
+
+#: disknav.cpp:112
+msgid "Max recent folder entries:"
+msgstr ""
+
+#: disknav.cpp:121
+msgid "Max recent file entries:"
+msgstr ""
+
+#: disknav.cpp:130
+msgid "Max files in a single folder:"
+msgstr ""
+
+#: disknav.cpp:159
+msgid "Show dot files"
+msgstr ""
+
+#: disknav.cpp:166
+msgid "Ignore case when sorting"
+msgstr ""
+
+#: disknav.cpp:173
+#, fuzzy
+msgid "Show Shared section"
+msgstr "위치"
+
+#: disknav.cpp:180
+#, fuzzy
+msgid "Show Personal section"
+msgstr "위치"
+
+#: disknav.cpp:187
+msgid "Show Recent section"
+msgstr ""
+
+#: disknav.cpp:194
+msgid "Show Option entry"
+msgstr ""
+
+#: disknav.cpp:210
+msgid "Terminal application:"
+msgstr ""
+
+#~ msgid "ms"
+#~ msgstr "ms"
+
+#~ msgid "Clock"
+#~ msgstr "시계"
+
+#~ msgid "&24h"
+#~ msgstr "24시간(&2)"
+
+#~ msgid "&12h AM/PM"
+#~ msgstr "12시간 AM/PM(&1)"

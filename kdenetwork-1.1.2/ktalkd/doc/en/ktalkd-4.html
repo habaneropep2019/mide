@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The ktalkd Handbook: Usage</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KTALKD kotalkd talk talkd otalk ntalk ktalkdlg kcmktalkd">
+<META NAME="description" CONTENT="ktalkd documentation">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-5.html">Next</A>
+<A HREF="ktalkd-3.html">Previous</A>
+<A HREF="ktalkd.html#toc4">Table of Contents</A>
+</P>
+<H3><A NAME="s4">4. Usage</A></H3>
+
+<P>
+<P>To use ktalkd, you need a talk client. The text-based <CODE>talk</CODE> is available on 
+most Unix systems. Try <CODE>talk your_username</CODE> to see what happens when you
+receive a talk request. You can also try the answering machine the same way :
+initiate a talk to yourself, ignore the announcement twice, and you'll see the
+answering machine.
+<P>There is a talk client with a graphical interface for the KDE, <CODE>ktalk</CODE>.
+It's not yet shipped with KDE packages, but you can find it on
+ftp://ftp.kde.org. It should be in
+<A HREF="ftp://ftp.kde.org/pub/kde/stable/latest/apps/network">ftp://ftp.kde.org/pub/kde/stable/latest/apps/network</A><P>
+<P>The announcement dialog box is trivial : respond or ignore.
+<P>The configuration dialog should be rather straight forward, except for setting up a
+forward to another user (or even to another host).
+<P>
+<H3><A NAME="ss4.1">4.1 Choosing a Forwarding Method</A>
+</H3>
+
+<P>None is perfect, they all have pros (+) and cons (-).
+<P>
+<P><B>FWA</B> : Forward announcement only. Direct connection. Not recommended.
+<UL>
+<LI>       (+) You know who the caller is, but</LI>
+<LI>       (-) Caller will have to respond to an announcement from you. Annoying.</LI>
+<LI>       (-) Don't use if you have an answering machine on your 'away' location.
+(The answering machine can't popup an announcement, it would be confusing!)</LI>
+</UL>
+<P><B>FWR</B> : Forward all requests, changing info when necessary. Direct connection.
+<UL>
+<LI>       (+) Caller won't know that you're away, but</LI>
+<LI>       (-) You won't really know who the caller is - only his username, 
+(so you might see "talk from Wintalk@my_host")</LI>
+</UL>
+<P><B>FWT</B> : Forward all requests and take the talk. No direct connection.
+<UL>
+<LI>       (+) Same as above, but also works if you and caller can't be in
+direct contact one with the other (e.g. firewall).</LI>
+<LI>       (+) You'll be told who's really talking to you when you accept the talk</LI>
+<LI>       (-) But as in FWR, you won't know his machine name in the announcement</LI>
+</UL>
+<P>In short, use <B>FWT</B> it you want to use it behind a firewall (and if ktalkd
+can access both networks), and <B>FWR</B> otherwise.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-5.html">Next</A>
+<A HREF="ktalkd-3.html">Previous</A>
+<A HREF="ktalkd.html#toc4">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

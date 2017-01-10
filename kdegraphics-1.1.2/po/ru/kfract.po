@@ -1,0 +1,192 @@
+# Перевод kfract.
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Denis Pershin <dyp@inetlab.com>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kfract\n"
+"POT-Creation-Date: 1998-11-16 01:58+0100\n"
+"PO-Revision-Date: 1998-12-28 01:24+0600\n"
+"Last-Translator: Denis Pershin <dyp@inetlab.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: kfract.C:73
+msgid "&Load params..."
+msgstr "Загрузить параметры..."
+
+#: kfract.C:74
+msgid "&Save params..."
+msgstr "Сохранить параметры..."
+
+#: kfract.C:75
+msgid "Save &pic..."
+msgstr "Сохранить изображение..."
+
+#: kfract.C:81
+msgid "Mandelbrot..."
+msgstr "Мандельброт..."
+
+#: kfract.C:82
+msgid "Julia..."
+msgstr "Джулия..."
+
+#: kfract.C:86
+msgid "Max. Iterations..."
+msgstr "Макс. итераций..."
+
+#: kfract.C:87
+msgid "Colour scheme..."
+msgstr "Цветовая схема..."
+
+#: kfract.C:88
+msgid "Colour cycling..."
+msgstr "Сдвиг цветов..."
+
+#: kfract.C:89
+msgid "Zoom factor..."
+msgstr "Масштаб..."
+
+#: kfract.C:91
+msgid "Fractals Generator"
+msgstr "Генератор фракталов"
+
+#: kfract.C:93
+msgid ""
+"\n"
+"\n"
+"by Uwe Thiem"
+msgstr ""
+"\n"
+"\n"
+"Уве Тайем"
+
+#: kfract.C:99
+msgid "&Types"
+msgstr "Типы"
+
+#: kfract.C:123
+msgid "Open parameters"
+msgstr "Открытие параметров"
+
+#: kfract.C:127
+msgid "Save parameters"
+msgstr "Сохранение параметров"
+
+#: kfract.C:131
+msgid "Save picture"
+msgstr "Сохранение изображения"
+
+#: kfract.C:136
+msgid "Zoom in"
+msgstr "Увеличить"
+
+#: kfract.C:140
+msgid "Zoom out"
+msgstr "Уменьшить"
+
+#: kfract.C:145
+msgid "Defaults for this type"
+msgstr "Умолчания для данного типа"
+
+#: kfract.C:280
+msgid "Oops!"
+msgstr "Опс!"
+
+#: kfract.C:280
+msgid "Oops! Not implemented yet."
+msgstr "Опс! Еще не реализовано."
+
+#: kfractdlgs.C:96 kfractdlgs.C:604
+msgid "Iterations:"
+msgstr "Итераций:"
+
+#: kfractdlgs.C:107 kfractdlgs.C:615
+msgid "0 - 999"
+msgstr "0 - 999"
+
+#: kfractdlgs.C:129 kfractdlgs.C:637
+msgid "1000 - 100000"
+msgstr "1000 - 100000"
+
+#: kfractdlgs.C:144
+msgid "Bailout"
+msgstr "Выход"
+
+#: kfractdlgs.C:161
+msgid "Center of picture: Real part"
+msgstr "Центр: действительная часть"
+
+#: kfractdlgs.C:176
+msgid "Center of picture: Imaginary part"
+msgstr "Центр: комплексная часть"
+
+#: kfractdlgs.C:192
+msgid "Width of picture:"
+msgstr "Ширина изображения:"
+
+#: kfractdlgs.C:220 kfractdlgs.C:655 kfractdlgs.C:840
+msgid "Defaults"
+msgstr "Умолч."
+
+#: kfractdlgs.C:408
+msgid "z(0) = c = pixel"
+msgstr "z(0) = c = точка"
+
+#: kfractdlgs.C:413
+msgid "z(n+1) = z(n)^2 + c"
+msgstr "z(n+1) = z(n)^2 +c"
+
+#: kfractdlgs.C:417
+msgid "Mandelbrot"
+msgstr "Мандельброт"
+
+#: kfractdlgs.C:476
+msgid "Extra parameter: Real part"
+msgstr "Дополн.: действительная часть"
+
+#: kfractdlgs.C:492
+msgid "Extra parameter: Imaginary part"
+msgstr "Дополн.: комплексная часть"
+
+#: kfractdlgs.C:505
+msgid "Julia"
+msgstr "Джулия"
+
+#: kfractdlgs.C:597
+msgid "Max. Iterations"
+msgstr "Макс. итераций"
+
+#: kfractdlgs.C:733
+msgid "Less colours"
+msgstr "Меньше цветов"
+
+#: kfractdlgs.C:736
+msgid "More colours"
+msgstr "Больше цветов"
+
+#: kfractdlgs.C:764
+msgid "Colour schemes"
+msgstr "Цветовые схемы"
+
+#: kfractdlgs.C:806
+msgid "Zoom in factor:"
+msgstr "Увеличение:"
+
+#: kfractdlgs.C:822
+msgid "Zoom out factor:"
+msgstr "Уменьшение:"
+
+#: kfractdlgs.C:849
+msgid "Zoom factors"
+msgstr "Коэффициенты масштабирования"
+
+#: fract.C:73
+msgid ""
+"Fract::calcPoint() is an abstract method. You MUST\n"
+"re-write it!\n"
+msgstr ""
+"Fract::calcPoint() абстрактный метод. Вы ДОЛЖНЫ\n"
+"перекрыть его!\n"

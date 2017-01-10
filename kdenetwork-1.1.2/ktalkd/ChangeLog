@@ -1,0 +1,496 @@
+1999-05-09  David Faure  <faure@kde.org> (1.5.2)
+
+	* find_user.cpp : Check for ':' in ut_host, otherwise it's not a display.
+	Thanks to Manuel Cepedello Boiso <manuel@cauchy.fie.us.es> for reporting & testing
+
+1999-02-27  David Faure  <faure@kde.org>
+	
+	* announce.cpp, ktalkdlg.cpp : Use standard output instead of stderr, 
+	for ktalkdlg->ktalkd communication.
+	Solves problem when Qt/KDE prints a warning before the '#'.
+	Thanks to Andrew Standley-Jones for his help (on irc).
+	
+1999-02-03  David Faure  <faure@kde.org> (1.5.1)
+
+	* readcfg++.cpp : Fixed answmach message stopping at first empty line
+
+1999-02-02  David Faure  <faure@kde.org>
+
+	* kotalkd/vsnprintf.c, SNPRINTF_MISSING : new files for systems
+	without snprintf (e.g. Solaris). vsnprintf.c is _not_ to be
+	compiled on systems with a snprintf implementation.
+
+	* *lsm: Upgraded version number to 1.5.1 (!) in order to be above
+	the old talkd-1.4.4 that I released two years ago and that people
+	keep sending me bug reports about !
+
+1998-12-02  David Faure  <faure@kde.org> (0.9.1)
+
+	* ktalkd/readc*.cpp: Fixed strncpy length arg for NEU_forwardmethod
+
+1998-11-15  David Faure  <faure@kde.org>
+
+	* ktalkd/readc*.cpp, ktalkd/options.*, ktalkd/process.cpp: Added
+	NEU forward method, for multi-networked hosts with forwards
+
+	* ktalkd/includ.h: Improved used of <paths.h> and default settings
+
+	* mail.local/mail.local.c: Used HAVE_VSNPRINTF instead of
+	hardcoded list of OSes.
+
+1998-11-11  David Faure  <faure@kde.org> (0.9.0)
+
+	* ktalkd/talkconn.cpp: Moved static init to TalkConnection::init()
+	Added reply address detection for multiple networked hosts.
+	Thanks to Burkhard Lehner for the method getReplyAddr().
+
+	* acinclude.m4.in (non-KDE version) : Used /usr/local as
+	default_prefix for non-KDE systems.
+
+	* ktalkd/readconf.cpp: Fixed read_user_config (bug with ForwardMethod)
+	Speeds up configuration file parsing.
+
+1998-11-03  David Faure  <faure@kde.org>
+
+	* ktalkd/process.cpp: Fixed a bug, when user config file doesn't
+	exist. Reported by valankar@bigfoot.com.
+	
+1998-10-02  David Faure  <faure@kde.org> (0.8.9)
+
+	* mail.local/mail.local.c: Started using config.h
+
+1998-09-29  David Faure  <faure@kde.org>
+
+	* ktalkd/unixsock.cpp: Support for multiple-display ktalk.
+
+1998-09-13  David Faure  <faure@kde.org>
+
+	* ktalkd/find_user.cpp: Converted the get_display function to use
+	ifstream instead of read() and realloc()...
+
+	* ktalkd/announce.cpp: Do setuid from the beginning of announce().
+ 	Solves socket permissions for sendToKtalk and speeds up X announce.
+
+	* ktalkd/readcfg++.cpp: Handles two user config files : 
+	ktalkdrc & ktalkannouncerc
+
+	* ktalkd/read*: Removed *kdebindir from readconf.h and readconf.cpp.
+	Internal to readcfg++.cpp.
+
+	* ktalkd/options.*: Now a structure instead of a class.
+
+1998-09-07  David Faure  <faure@kde.org>
+
+	* ktalkd/announce.cpp: No text announce on a xterm if X announce was ok
+
+1998-09-03  David Faure  <faure@kde.org> (0.8.8)
+
+	* ktalkd/unixsock.cpp: Added chmod => ktalk can write to the socket.
+
+1998-09-02  David Faure  <faure@kde.org>
+
+	* ktalkd/unixsock.cpp, .h: New. Direct communication with ktalk.
+	* ktalkd/announce.cpp: Call sendToKtalk.
+
+1998-08-29  David Faure  <faure@kde.org>
+
+	* ktalkd/options.cpp: Default values moved from .h to .cpp. 
+	Makes -ansi happier.
+
+1998-08-23  David Faure  <faure@kde.org>
+
+	* ktalkd/process.cpp (process_request): print_response enabled again.
+
+	* ktalkd/find_user.cpp: Removed the 'break;' for xdm, and didn't 
+	override tty. This way, you can have both announcements (text & X).
+
+1998-08-19  David Faure  <faure@kde.org> (0.8.7)
+
+	* ktalkd/mail.local: mail.local is back in the distrib. Has been 
+	forgotten since 0.7.0 !! I added a README.mail.local to explain
+	its purpose.
+	
+	* ktalkd/announce.cpp: Added text announce in addition to X announce.
+
+	* ktalkd/process.cpp: Removed check for the family field of addr. Oops.
+
+	* doc/en/*, *: Updated my email address from
+	  <david.faure@insa-lyon.fr> to <faure@kde.org>
+	
+1998-08-15  David Faure  <faure@kde.org> (0.8.6)
+
+	* ktalkd/machines/talkconn.cpp: Added check for remote protocol.
+	This means that it is now possible to forward to an otalk machine ...
+
+	* ktalk/machines/forwmach.cpp: ... and/or from an otalk machine.
+
+	The first one who sends me an email after testing both, wins :)
+
+	* ktalkd/machines/check_protocol.cpp: Removed. Integrated into 
+	  talkconn.cpp. Thanks to Burkhard Lehner for the example code.
+
+	* ktalk/machines/answmach.cpp: Added a sleep(1) for not logged/NEU.
+
+	* ktalkd/print.cpp: Used c++ overriding to name "message()" the 
+	    former message_s() et message2().
+
+1998-08-12  David Faure  <faure@kde.org> (0.8.5)
+
+	* ktalkd/find_user.cpp: A nasty bug with unsigned int fixed.
+	   Thanks to Rolf Offermanns who found it.
+	   Uncommented the use of ut_host for PTYs (ex : xterms).
+	   Exit the loop if XDM login found (highest priority).
+
+	* kotalkd/includ.h: Added a simpler version of includ.h.
+
+1998-08-10  David Faure  <faure@kde.org> (0.8.4)
+
+	* ktalkd/machines/talkconn.cpp: Support for otalk. (not finished).
+
+	* kotalkd/*.c: Just send to ktalkd, which responds itself.
+
+	* ktalkd/process.cpp: Handle otalk packets (with vers=0)
+
+1998-08-09  David Faure  <faure@kde.org>
+
+	* kotalkd/kotalkd.c: Dies if ktalk protocol detection (-> ntalk detected).
+
+	* ktalkd/machines/forwmach.cpp: Now forwards DELETEs too. (cf. sig_handler).
+
+	* ktalkd/machines/forwmach.cpp: Final cleanup improved. (for forwmachines).
+
+	* ktalkd/options.cpp: Created, to hold systemwide options.
+
+	* ktalkd/*.c: Converted to c++ all c files.
+
+1998-08-07  David Faure  <faure@kde.org> (0.8.3)
+
+	* ktalkd/doc/en/Makefile.am: index.html -> ktalkd.html
+
+1998-08-07  David Faure  <faure@kde.org> (0.8.2)
+
+	* ../acincktalk.m4: Bug fix for the bug fix. Linux detection ok.
+
+1998-08-02  David Faure  <faure@kde.org>
+
+	* doc/en/ktalkd.sgml: Converted all documentation to sgml. Phew.
+
+	* kcmktalkd/forwmachpage.cpp: i18n'ed the explanation for forwards
+
+1998-07-31  David Faure  <faure@kde.org>
+
+	* ../acincktalk.m4: More output printed out and a bug fix  
+	
+1998-07-30  David Faure  <faure@kde.org> (0.8.1)
+
+	* kotalkd/*.c: New way to support otalk protocol : forward everything
+	to local ntalk daemon (possibly ktalkd, but any other should work too)
+
+	* ktalkd/machines/talkconn.cpp (listen): Use SOMAXCONN as arg to listen
+
+1998-07-27  David Faure  <faure@kde.org> (0.8.0)
+
+	* kotalkd/: Created to support otalk protocol. No new source
+	files. Everything is links in it, except Makefile.am and all
+	generated files.
+
+1998-07-26  David Faure  <faure@kde.org>
+
+	* ktalkd/threads.c: Created to manage children processes (register, wait, ...)
+	No more zombie processes waiting 1mn30s to be acknowledged. :)
+
+	* ktalkd/machines/forwmach.*: FWT. Lots of bug fixed. Fully tested now.
+
+	* ktalkd/machines/talkconn.*: Bug fixing.
+
+1998-07-24  David Faure  <faure@kde.org>
+	
+	* ktalkd/machines/forwmach.*: Created the Forwarding machine. FWA. FWR.
+
+	* kcmktalkd/*: Added the 'forward' configuration page.
+
+	* ktalkd/*: Reverted most of the patch from Enrico Scholz.
+	  The forwarding machine is now used for NEU if NEUBehaviour=1.
+
+1998-07-18  David Faure  <faure@kde.org>
+
+	* ktalkd/readcfg++.h: Removed. Now in readconf.h
+
+1998-07-15  David Faure  <faure@kde.org> (0.7.0)
+
+	* ktalkd/machines/talkconn.cpp (set_edit_chars): At last ! Fixed the 
+	   bug in answmach banners, which first appeared 8 months ago, 
+	   erasing half of some lines !
+
+	* ktalkd/table.c, ktalkd/print.c: Improved logs.
+
+	* ktalkd/process.c: Bug fixed : insert_table called even for NEU.
+
+	* ktalkd/machines/*: Converted the answering machine to C++.
+ 	                     Split into 3 classes.
+	     TalkConnection : Handles the protocol.
+	     TalkMachine : Generic talk machine.
+	     AnswMachine : Answering machine. Inherits from TalkMachine.
+
+1998-07-08  David Faure  <faure@kde.org> (0.6.2)
+
+	* ktalkd/*, ktalkdlg.cpp: Applied patch for NEUBehaviour=1 
+	by Enrico Scholz <enrico.scholz@wirtschaft.tu-chemnitz.de> 
+
+	* answmach/init_disp.c: Handle VWERASE if not defined (for AIX)
+	
+1998-07-06  David Faure  <faure@kde.org>
+
+	* ktalkd/announce.c: Small bug fix in text announcement (remotename).
+
+1998-06-15  David Faure  <faure@kde.org>
+	
+	* ktalkd/find_user.c: Added blank after display, needed by announce.c
+	
+	* kcmktalkd/answmachpage.cpp: Override help() to display ktalkd's help.
+
+1998-06-13  David Faure  <faure@kde.org> (0.6.1)
+
+	* includ.h, talkd.h: took talkd.h from ktalk. ktalkd doesn't use the
+	                        system one anymore.
+
+	* answmach/look_up.c: use sockaddr instead of osockaddr
+
+	* acincktalk.m4, configure.in.1: removed the check for osockaddr
+
+	* ktalkd/talkd.c: Use sys/params.h where available, for hostname length
+
+1998-06-11  David Faure  <faure@kde.org> (0.6.0)
+
+	* ktalkd/: Reorganised the directory structure, to ship ktalkd 
+	with ktalkdlg and kcmktalkd in a single package.
+	
+	* talkd.c: Caller's hostname was limited to 32 ! Now 256.
+
+	* Makefile.am: rewrote some of them, for non-KDE users.
+
+1998-06-09  David Faure  <faure@kde.org> (0.5.7)
+
+	* kcmktalkd: First release of the configuration dialog
+	
+1998-05-16  David Faure  <faure@kde.org> (0.5.6)
+
+	* announce.c: Announces with ktalkdlg on ALL displays where the
+           user is found. It works ! 
+
+	* readcfg++.cpp (init_user_config):
+	   Added setenv("HOME",...) because the kdelibs rely on that to find 
+	   the user config file.
+
+1998-05-15  David Faure  <faure@kde.org> (0.5.5)
+
+	* doc/: Made HTML documentation. Phew. Done.
+
+	* readcfg++.cpp (init_user_config):
+	   Removed the un-necessary looking in pwd file. 
+           KDElibs do that for us :)
+
+	* find_user.c:
+	   Disabled X processes scanning if uid < 10. (Security hole)
+	   Corrected a bug (S_ISCHR() is now "& 020") which didn't let you talk
+	   to tty2 if tty1 was "mesg n".
+
+	* announce.c: open user config file before calling announce_proc, so 
+	   that it *is* closed now. It wasn't because of 'return'.
+	
+
+1998-05-06  David Faure  <faure@kde.org>
+
+	* announce.c: now the non-KDE sound works with and without option.
+	* acinclude.m4.in - the ktalkd one : some more corrections for 
+                                             working without X.
+
+1998-04-28  David Faure  <faure@kde.org> (0.5.4)
+
+	* acinclude.m4.in - the one from ktalkd package, not the kdenonbeta one
+	   rewrote X detection, so that it works also without X :)
+
+1998-04-20  David Faure  <faure@kde.org> (0.5.3)
+	
+	* Makefile.am: Removed -lkdeui, not needed.
+	* io.c: Corrected an awful bug 
+                      (NEUBanner displayed instead of OPTinvitelines)
+	* readcfg++.cpp: Added missing "/" before 'ktalkdrc'
+
+1998-04-19  David Faure  <faure@kde.org> (0.5.2)
+
+	* readcfg++.cpp: added check for user config file.
+ 	        (was created with root permission otherwise)
+	* acinclude.m4.in - the ktalkd one: updated
+
+1998-04-15  David Faure  <faure@kde.org> (0.5.1)
+
+	ktalkd doesn't use anymore kdedir() because it's protected.
+	It sets now $KDEBINDIR, for portable ktalkdrc files. KDEBINDIR 
+	is determined by a call to the kde_bindir() function.
+	Makefile doesn't define TALKD_CONF anymore for compilation :
+	ktalkd now opens ktalkdrc from KApplication::kde_configdir().
+
+1998-03-26  David Faure  <faure@kde.org> (0.5.0)
+	ktalkdrc: Extprg is now $KDEDIR/bin/ktalkdlg.
+	KDEDIR is now set when reading global configuration file.
+	Default value for Extprg includes $KDEDIR.
+
+1998-03-25  David Faure  <faure@kde.org> (0.4.8)
+	KDEDIR is now set by ktalkd, not by ktalkdlg.
+	ktalkdrc*:removed path in front of sound files. ktalkdlg now finds them
+	 in kde_sounddir().
+	Added option ExtPrg. Set to ktalkdlg (default) or ktalk.
+
+1998-03-14  David Faure  <faure@kde.org> (0.4.7)
+	Made 2 packages out of ktalkd : ktalkd and ktalkdlg (new name for
+	 atdlg), so that Burkhard Lehner <b_lehner@informatik.uni-kl.de>
+	can improve it to communicate with ktalk.
+
+1998-03-13  David Faure  <faure@kde.org> (0.4.6)
+	Changed S_MESSG size. (Too little for mail first line, if NEU)
+	Used mkstemp instead of popen for the message left to the
+	answering machine. Added option EmptyMail, to avoid getting
+	empty mails.
+
+1998-03-10  David Faure  <faure@kde.org> (0.4.5)
+	Renamed debug to debug_mode (debug exists in qt)
+	Updated configure.in and acinclude.m4 to match CVS ones.
+	Same for ltconfig, ltmain.sh, ...
+	Added new translations (es, it) and changed po structure.
+	Added NEUBanner* options to ktalkdrc.
+
+1998-02-27  D.F. (thanks to Juraj Bednar <bednar@isternet.sk>) (0.4.4)
+        Removed ktalkd-0.4.x/protocols from the distribution. Caused a 
+        bug when compiling.
+
+1998-02-15  D.F. (thanks to B. Lehner<b_lehner@informatik.uni-kl.de>) (0.4.3)
+	added checks for paths.h and protocols/talkd.h (for Solaris)
+	Added default paths (/dev/ and /var/run/utmp) if paths.h not found
+	Included talkd.h in the distribution, for Solaris which doesn't have it
+        Changed AC_CHECK_OSOCKADDR to use this file if protocols/talkd.h absent
+
+1998-02-04  David Faure  <faure@kde.org> (0.4.2)
+	Added user option Answmach.
+	Moved the daemon to $KDEDIR/bin. One must now change inetd.conf 
+	(this way, rpms won't conflict with standard ones, and the old
+	in.ntalkd will remain available). Should I deviate 'talk' protocol
+	too (in addition to 'ntalk') ?
+	Made installation NOT overwrite actual sitewide config file.
+	Merged and updated READMEs.
+
+1998-02-03  David Faure  <faure@kde.org> (0.4.1)
+	Added -rpath option, as it's necessary for ktalkd if $KDEDIR/lib is
+	not set in ld.so.conf (LD_LIBRARY_PATH not read by a daemon)
+
+1998-02-03 David Faure  <faure@kde.org> (0.4.0)
+	Corrected bugs related to new acinclude.m4 : compiling without X
+	and without KDE is possible again.
+	Added memcpy for structs.
+	Made atdlg re-write ktalkdrc for user if necessary.
+	
+1998-01-29  David Faure  <faure@kde.org> (0.3.4)
+	Removed answinfo var., added return val to announce and process_request.
+	Non existent user (NEU) support : either launch answmach or do nothing.
+	(set it in systemwide ktalkdrc). Don't sleep() before answering if NEU
+	or not logged.
+
+1998-01-26  David Faure  <faure@kde.org> (0.3.3)
+	Deutsch translation added by J. Mertin <smurphy@stardust.phantasia.org>
+	Enabled atdlg without sound, following option set.
+	Removed nasty \r\n, not needed.
+	Made banner arrive 16 chars at a time, not the whole at once !
+
+1998-01-25  David Faure  <faure@kde.org> (0.3.2)
+	Changed default configuration : ktalkd.wav will be installed
+	in $KDEDIR/share/apps/ktalkd.  ktalkdrc points to it.
+	Made package install_root capable (e.g. for building rpms).
+
+1998-01-25  David Faure  <faure@kde.org> (0.3.1)
+	atdlg will now play sound itself, using libmediatool.
+	Typos and bugs corrected.
+
+1998-01-24  still me ... :) (0.3.0)
+        Added internationalization to atdlg.cpp. Had to change atdlg params.
+        User must set language in ktalkdrc.
+	Added more user options to ktalkdrc_user: Sound, SoundPlayer, SoundFile.
+	Updated configure.in and acinclude.m4 to stick to kdenetwork as much
+	as possible.
+        
+1998-01-14  David Faure <faure@kde.org> (0.2.5)
+	Moved -DHAVE_KDE from config.h (was a bad hack) to Makefile.am
+	Added AC_CHECK_GETDOMAINNAME and AC_CHECK_GETHOSTNAME...
+	 and some other little changes to get closer to autoconf stuff from
+	 kdenetwork, for future integration. Worked on BSD portability.
+
+1998-01-12  David Faure  <faure@kde.org> (0.2.4)
+	Changed acinclude.m4, to remove NULL, and to make check for osockaddr
+	work better under bsd... Also removed NULL from anywhere in the code.
+
+1998-01-11  David Faure  <faure@kde.org> (0.2.3)
+	Added a macro in acinclude.m4, to check for sockaddr and osockaddr.
+
+1998-01-11  David Faure  <faure@kde.org> (0.2.2)
+	Wrote a new way of finding users, in addition to reading utmp,
+	which reads /proc to find $DISPLAY of processes. (Linux only).
+
+1998-01-08  David Faure  <faure@kde.org> (0.2.1)
+	Removed MSG_EOR as it used in BSD with another meaning.
+
+1997-12-19  David Faure  <faure@kde.org> (0.2.0)
+	Merged patch from Ralph Weichert (check for libbsd, needed under libc5)
+
+1997-12-16  David Faure  <faure@kde.org> (0.1.9)
+	Fixed link command (back to $(LINK), not $(CXXLINK).
+	Fixed process.c (config.h not included => NEW_FIND_USER not defined)
+	Wrote includ.h to resolve struct definitions problems.
+	Started user config file processing (~/.kde/share/config/ktalkdrc)
+
+1997-12-13  David Faure  <faure@kde.org> (0.1.8)
+	Improved configure.in, acinclude.m4, and ktalkd/Makefile.am, to
+	* find out where to install the daemon
+	* compile even without X, Qt, and KDE
+	* remove jpeg/gif dependencies
+
+1997-12-12  David Faure  <faure@kde.org> (0.1.7)
+	Small bugs correction. 	
+
+1997-12-08  David Faure and Ralph Weichert (0.1.6)
+	Added autoconf and automake support. Added support for glibc.
+	Back to c compiling, except for .cpp files, of course.
+
+1997-12-02  David Faure <faure@kde.org> (0.1.5)
+	Read KDE configuration file, $KDEDIR/share/config/ktalkdrc, both by
+	atdlg and ktalkd, in readcfg++.cpp. Made all daemon compile with g++.
+	(Is this right ?)
+
+1997-11-23  David Faure <faure@kde.org> (0.1.4)
+	Re-wrote announcement by answering machine. One line at a time, not
+	one char at a time.
+
+1997-11-22  David Faure <faure@kde.org> (0.1.3)
+	Re-wrote process_etc_file, to read talkd.conf sequentially.
+
+1997-11-21  David Faure <faure@kde.org> (0.1.2c)
+	Merged patch from <Ralph.Weichert@physik.th-darmstadt.de> :
+         Used KDE libs in atdlg. User configurable talk client.
+	Merged patch from Bruce Gingery <bruce@gtcs.com> :
+	 User configurable To: E-Mail address
+	
+1997-10-25  David Faure <faure@kde.org> (0.1.2b)
+	Made atdlg finish after RING_WAIT seconds, so that the re-announce
+	  will display another window (=> compatibility with other clients than
+	  ktalk)
+
+1997-10-22  David Faure <faure@kde.org> (0.1.2)
+	Added to ktalkd (see README for description):
+	 * sound capability
+	 * configuration (/etc/talkd.conf)
+	 * answering machine 
+
+1997-05-14  R. (0.1.1)
+        Improved (I hope) X11 recognition:
+                Local XDM logins (depends on sessreg)
+                Read $DISPLAY variable for PTY logins
+        atdlg is run as user and can use MIT-magic-cookies
+        atdlg will run talk program

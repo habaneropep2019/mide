@@ -1,0 +1,265 @@
+# Danish translation for KDE Network, kbiff
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Erik Kjær Pedersen, erik@binghamton.edu 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE NETWORK/kbiff\n"
+"POT-Creation-Date: 1999-06-05 11:50-0700\n"
+"PO-Revision-Date: 1999-02-17 17:00+CET-1\n"
+"Last-Translator: Erik Kjær Pedersen <erik@binghamton.edu>\n"
+"Language-Team: da <da@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: kbiff.cpp:629
+msgid "&UnDock"
+msgstr "&Ud af panel"
+
+#: kbiff.cpp:631
+msgid "&Dock"
+msgstr "&Vis i panel"
+
+#: kbiff.cpp:632
+msgid "&Setup..."
+msgstr "Op&sætning..."
+
+#: kbiff.cpp:634
+msgid "&Help..."
+msgstr "&Hjælp..."
+
+#: kbiff.cpp:638
+msgid "&Check Mail Now"
+msgstr "&Kig efter post nu"
+
+#: kbiff.cpp:640
+msgid "&Read Mail Now"
+msgstr "&Læs post nu"
+
+#: kbiff.cpp:646
+msgid "&Stop"
+msgstr "&Stop"
+
+#: notify.cpp:33 notify.cpp:50
+msgid "You have new mail!"
+msgstr "Du har ny post!"
+
+#: notify.cpp:58 notify.cpp:103
+#, c-format
+msgid "New Messages: %d"
+msgstr "Nye breve: %d"
+
+#: notify.cpp:63
+#, c-format
+msgid "Mailbox: %s"
+msgstr "Postboks: %s"
+
+# This is on a button.  It launches the user's mail client
+#: notify.cpp:73
+msgid "Mailer"
+msgstr ""
+
+#: setupdlg.cpp:83
+msgid "KBiff Setup"
+msgstr "KBiff opsætning"
+
+#: setupdlg.cpp:86
+msgid "Profile:"
+msgstr "Profil:"
+
+#: setupdlg.cpp:102
+msgid "&New..."
+msgstr "&Ny..."
+
+#: setupdlg.cpp:109
+msgid "&Rename..."
+msgstr "Æ&ndr navn..."
+
+#: setupdlg.cpp:143
+msgid "General"
+msgstr "Generel"
+
+#: setupdlg.cpp:144
+msgid "New Mail"
+msgstr "Ny post"
+
+#: setupdlg.cpp:145 status.cpp:33
+msgid "Mailbox"
+msgstr "Postboks"
+
+#: setupdlg.cpp:391
+msgid "New Profile"
+msgstr "Ny profil"
+
+#: setupdlg.cpp:423
+#, c-format
+msgid "Rename Profile: %s"
+msgstr "Ændr profilnavn: %s"
+
+#: setupdlg.cpp:463
+#, c-format
+msgid "Delete Profile: %s"
+msgstr "Slet profil: %s"
+
+#: setupdlg.cpp:464
+msgid "Are you sure you wish to delete this profile?\n"
+msgstr "Er du sikker på at du vil slette denne profil?\n"
+
+#: setupdlg.cpp:524
+msgid "Poll (sec):"
+msgstr "Træk (sek):"
+
+#: setupdlg.cpp:529
+msgid "Mail client:"
+msgstr "Post klient:"
+
+#: setupdlg.cpp:542
+msgid "Dock in panel"
+msgstr "Dyk ned i panel"
+
+#: setupdlg.cpp:547
+msgid "Use session management"
+msgstr "Brug sessionsbehandling"
+
+#: setupdlg.cpp:552
+msgid "Icons:"
+msgstr "Ikoner:"
+
+#: setupdlg.cpp:570
+msgid "No Mail:"
+msgstr "Ingen post:"
+
+#: setupdlg.cpp:579
+msgid "Old Mail"
+msgstr "Gammel post"
+
+#: setupdlg.cpp:589
+msgid "New Mail:"
+msgstr "Ny post:"
+
+# This is the icon that is displayed when KBiff could not make a connection
+# to a remote server
+#: setupdlg.cpp:599
+msgid "No Conn.:"
+msgstr ""
+
+#: setupdlg.cpp:756
+msgid "Run Command"
+msgstr "Kør kommandoen"
+
+#: setupdlg.cpp:763 setupdlg.cpp:783 setupdlg.cpp:1178
+msgid "Browse"
+msgstr "Blad igennem"
+
+#: setupdlg.cpp:769
+msgid "Play Sound"
+msgstr "Spil lyd"
+
+#: setupdlg.cpp:789
+msgid "System Beep"
+msgstr "Systemlyd"
+
+#: setupdlg.cpp:794
+msgid "Notify"
+msgstr "Varsel"
+
+# If this is checked, then KBiff will popup a list of mailboxes with the
+# number of new mail whenever the user puts the cursor of a KBiff icon.
+#: setupdlg.cpp:798
+msgid "Floating Status"
+msgstr ""
+
+#: setupdlg.cpp:948
+msgid "Advanced Options"
+msgstr "Avancerede indstillinger"
+
+#: setupdlg.cpp:952
+msgid "Mailbox URL:"
+msgstr "Postboks URL:"
+
+#: setupdlg.cpp:956
+msgid "Port:"
+msgstr "Port:"
+
+#: setupdlg.cpp:960
+msgid "PREAUTH"
+msgstr "PREAUTH"
+
+#: setupdlg.cpp:967
+msgid "Keep Alive"
+msgstr "Hold ilive"
+
+# If this is selected, then KBiff will do all of it's network work in an
+# asynchronous mode.  That is, it will not wait for the response to any
+# given command... it will receive the response as an event, later.
+#: setupdlg.cpp:974
+msgid "Asynchronous"
+msgstr ""
+
+#: setupdlg.cpp:1123 setupdlg.cpp:1152
+msgid "Mailbox:"
+msgstr "Postboks:"
+
+#: setupdlg.cpp:1136 setupdlg.cpp:1474
+msgid "New Mailbox"
+msgstr "Ny postboks"
+
+#: setupdlg.cpp:1143
+msgid "Delete Mailbox"
+msgstr "Slet postboks"
+
+#: setupdlg.cpp:1149
+msgid "Protocol:"
+msgstr "Protokol:"
+
+#: setupdlg.cpp:1155
+msgid "Server:"
+msgstr "Server:"
+
+#: setupdlg.cpp:1158
+msgid "User:"
+msgstr "Bruger:"
+
+#: setupdlg.cpp:1161
+msgid "Password:"
+msgstr "Kodeord:"
+
+#: setupdlg.cpp:1195
+msgid "Store password"
+msgstr "Gem kodeord"
+
+#: setupdlg.cpp:1198
+msgid "Advanced"
+msgstr "Avanceret"
+
+#: setupdlg.cpp:1675
+msgid "KBiff"
+msgstr "KBiff"
+
+#: setupdlg.cpp:1697
+#, c-format
+msgid ""
+"Version %s\n"
+"\n"
+"Copyright (C) 1999\n"
+"Kurt Granroth"
+msgstr ""
+"Version %s\n"
+"\n"
+"Copyright (C) 1999\n"
+"Kurt Granroth"
+
+#: setupdlg.cpp:1746
+msgid "New Name:"
+msgstr "Nyt navn:"
+
+#: setupdlg.cpp:1772
+msgid "New Name"
+msgstr "Nyt navn"
+
+# This displays the number of new messages for a given mailbox
+#: status.cpp:34
+#, fuzzy
+msgid "New"
+msgstr "Ny"

@@ -1,0 +1,27 @@
+Another kool game for KDE :)
+
+KAbalone is a game like Reversi. You play against the computer on a
+board. For rules look at the HTML manual.
+
+INSTALLATION:
+If you find this directory (and README) in a kde package bundled with
+other applications, there is nothing to do. By installing the package
+KAbalone should be installed too.
+
+Otherwise get the kdeapps package and unpack it.
+Make the kabalone/ directory (with this README) a subdirectory of
+kdeapps/ and add "kabalone" to the SUBDIRS variable in the toplevel
+Makefile.in of the kdeapps package. By installing the package kdeapps now
+KAbalone should be installed too.
+
+For the german version set the LANG environment variable to "de". Eventually
+you have to manually copy the german HTML help  (in html/de) over the
+english one.
+
+Have fun...
+...and remember: Your computer already is a real thinking machine !
+
+Greetings,
+
+Josef Weidendorfer
+<weidendo@informatik.tu-muenchen.de>

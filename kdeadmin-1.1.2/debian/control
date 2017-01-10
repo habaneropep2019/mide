@@ -1,0 +1,14 @@
+Source: kdeadmin
+Section: contrib/utils
+Priority: extra
+Maintainer: Stephan Kulow <coolo@kde.org>
+Standards-Version: 2.5.1
+
+Package: kdeadmin
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: kdebase
+Description: tools for adminstration written for KDE
+ This package contains two programs: 
+  - kuser to adminstrate user and groups 
+  - ksysv lets you edit your SysV-style init configuration using drag'n'drop 

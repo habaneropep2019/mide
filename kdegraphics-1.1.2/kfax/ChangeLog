@@ -1,0 +1,28 @@
+1999-03-03  Harri Porten  <porten@kde.org>
+
+	* viewfax.cpp: prefix getopt declarations with 'extern'. Bug reported
+	by Oliver Oster <olio@zait.uni-bremen.de>
+
+1999-02-08  Harri Porten  <porten@kde.org>
+
+	* fixed segfault caused by infinite recursion in kfaxerror()
+
+Sun May  3 16:48:13 1998  Bernd Johannes Wuebben  <wuebben@math.cornell.edu>
+
+	* fixed print dialog 
+	  adjusted layout for i18n
+
+Sun Oct  5 22:17:09 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* added support for printing all fax formats at all printer page
+	  sizes.
+
+Sun Aug  3 09:55:52 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* Made kfax work with the new KToolBar etc.
+
+Thu Jul 24 20:44:33 1997  Bernd Johannes Wuebben  <wuebben@petit.cornell.edu>
+
+	* made the necessary changes so that kfax will compile with
+	  the new libs.
+

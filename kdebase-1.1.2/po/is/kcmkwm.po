@@ -1,0 +1,460 @@
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Logi Ragnarsson <logir@imf.au.dk>, 1998.
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-04-10 01:21+0200\n"
+"PO-Revision-Date: 1998-10-26 22:36+0200\n"
+"Last-Translator: Logi Ragnarsson <logir@imf.au.dk>\n"
+"Language-Team: is\n"
+
+#: main.cpp:67
+msgid "&Buttons"
+msgstr "&Hnappar"
+
+#: main.cpp:70
+msgid "&Titlebar"
+msgstr "&Titilrönd"
+
+#: main.cpp:73
+msgid "Bo&rders"
+msgstr "&Kantar"
+
+#: main.cpp:76
+msgid "&Mouse"
+msgstr "&Mús"
+
+#: main.cpp:80
+msgid "&Advanced"
+msgstr "&Flókið"
+
+#: main.cpp:86
+msgid ""
+"usage: kcmkwm [-init | {options,buttons,titlebar,borders,mouse,advanced}]\n"
+msgstr "notkun: kcmkwm [-init | {windows,buttons,titlebar,borders,mouse}]\n"
+
+#: main.cpp:123
+msgid "Window manager style"
+msgstr "Hegðun gluggastjóra"
+
+#: titlebar.cpp:125
+msgid "Minimize"
+msgstr "Lágmarka"
+
+#: titlebar.cpp:129
+msgid "Maximize"
+msgstr "Hámarka"
+
+#: titlebar.cpp:133
+msgid "Sticky"
+msgstr "Klístrað"
+
+#: titlebar.cpp:141
+msgid "Menu"
+msgstr "Valmynd"
+
+#: titlebar.cpp:178 titlebar.cpp:936
+msgid "Left"
+msgstr "Vinstri"
+
+#: titlebar.cpp:182 titlebar.cpp:946
+msgid "Right"
+msgstr "Hægri"
+
+#: titlebar.cpp:473
+msgid ""
+"The left side of the titlebar is full... disabling the 'maximise' button\n"
+msgstr "Vinstri hlið titilrandar er full... Slökkt verður á hámörkunartakka\n"
+
+#: titlebar.cpp:506
+msgid ""
+"The right side of the titlebar is full... disabling the 'maximise' button\n"
+msgstr "Hægri hlið titilrandar er full... Slökkt verður á hámörkunartakka\n"
+
+#: titlebar.cpp:546
+msgid ""
+"The left side of the titlebar is full... disabling the 'minimise' button\n"
+msgstr "Vinstri hlið titilrandar er full... Slökkt verður á lágmörkunartakka\n"
+
+#: titlebar.cpp:579
+msgid ""
+"The right side of the titlebar is full... disabling the 'minimise' button\n"
+msgstr "Hægri hlið titilrandar er full... Slökkt verður á lágmörkunartakka\n"
+
+#: titlebar.cpp:932
+msgid "Title Alignment"
+msgstr "Staða titils"
+
+#: titlebar.cpp:941
+msgid "Middle"
+msgstr "Miðja"
+
+#: titlebar.cpp:969
+msgid "Shaded Vertically"
+msgstr "Skyggð lóðrétt"
+
+#: titlebar.cpp:975
+msgid "Shaded Horizontally"
+msgstr "Skyggð lárétt"
+
+#: titlebar.cpp:984
+msgid "Plain"
+msgstr "Einlitt"
+
+#: titlebar.cpp:992 titlebar.cpp:1017
+msgid "Pixmap"
+msgstr "Með mynd"
+
+#: titlebar.cpp:1005
+msgid "Active title has shaded frame"
+msgstr "Virkur titill með skyggðan ramma"
+
+#: titlebar.cpp:1046
+msgid "Active pixmap:"
+msgstr "Virk bitamynd"
+
+#: titlebar.cpp:1051
+msgid "Inactive pixmap:"
+msgstr "Óvirk bitamynd"
+
+#: titlebar.cpp:1057
+msgid "No pixmap under text"
+msgstr "Engin bitamynd undir texta"
+
+#: titlebar.cpp:1068
+msgid "Mouse action"
+msgstr "Músarvirkni"
+
+#: titlebar.cpp:1076
+msgid "Left Button double click does:"
+msgstr "Áhrif þess að tvísmella með vinstri músatakka:"
+
+#: titlebar.cpp:1086
+msgid "(Un)Maximize"
+msgstr "Há-/lágmarka"
+
+#: titlebar.cpp:1087
+msgid "(Un)Shade"
+msgstr "Rúlla glugga upp/niður"
+
+#: titlebar.cpp:1088
+msgid "Iconify"
+msgstr "Í táknmynd"
+
+#: titlebar.cpp:1089
+msgid "(Un)Sticky"
+msgstr "Klístra/losa"
+
+#: titlebar.cpp:1109
+msgid "Title animation"
+msgstr "Rúllandi titill"
+
+#: titlebar.cpp:1125
+msgid "ms"
+msgstr "ms"
+
+#: titlebar.cpp:1368
+msgid "Window manager setup - ERROR"
+msgstr "Gluggastjórastillingar - VILLA"
+
+#: titlebar.cpp:1369
+msgid ""
+"There was an error while saving\n"
+"the titlebar pixmaps! Please check permissions."
+msgstr ""
+"Ekki tókst að vista bitamyndir á titilrönd!\n"
+"Hugsanlega hefur þú ekki nægar aðgangsheimildir."
+
+#: windows.cpp:68
+msgid "Windows"
+msgstr "Gluggar"
+
+#: windows.cpp:82
+msgid "Vertical maximization only by default"
+msgstr "Sjálfgefið aðeins hámarkað lóðrétt"
+
+#: windows.cpp:87
+msgid "Display content in moving windows"
+msgstr "Sýna innihald glugga á meðan þeir eru færðir"
+
+#: windows.cpp:92
+msgid "Display content in resizing windows"
+msgstr "Sýna innihald á meðan stærð glugga er breytt"
+
+#: windows.cpp:98
+msgid "Resize animation:"
+msgstr "Rúllandi titill"
+
+#: windows.cpp:111
+msgid "None"
+msgstr "Ekkert"
+
+#: windows.cpp:117
+msgid "Fast"
+msgstr "Hratt"
+
+#: windows.cpp:128
+msgid "Placement policy"
+msgstr "Staðsetning nýrra glugga"
+
+#: windows.cpp:134
+msgid "Smart"
+msgstr "Greind"
+
+#: windows.cpp:136
+msgid "Cascade"
+msgstr "Í skálínu"
+
+#: windows.cpp:138
+msgid "Interactive"
+msgstr "Með hjálp notanda"
+
+#: windows.cpp:140
+msgid "Random"
+msgstr "Slembin"
+
+#: windows.cpp:142
+msgid "Manual"
+msgstr "Handvirk"
+
+#: windows.cpp:154
+#, c-format
+msgid ""
+"  Allowed overlap:\n"
+"(% of desktop space)"
+msgstr ""
+"  Leyfilegt snið:\n"
+"(% af skjáborði)"
+
+#: windows.cpp:175
+msgid "Focus policy"
+msgstr "Gluggavirkni"
+
+#: windows.cpp:185
+msgid "Click to focus"
+msgstr "Smella til að virkja"
+
+#: windows.cpp:187
+msgid "Focus follows mouse"
+msgstr "Virkni undir mús"
+
+#: windows.cpp:189
+msgid "Classic focus follows mouse"
+msgstr "Hefðbundin 'undir mús'"
+
+#: windows.cpp:191
+msgid "Classic sloppy focus"
+msgstr "Hefðbundin letileg virkni"
+
+#: windows.cpp:203
+msgid "Auto Raise"
+msgstr "Fleyta sjálfkrafa"
+
+#: windows.cpp:209
+msgid "Click Raise"
+msgstr "Smell fleytir"
+
+#: windows.cpp:216
+msgid "Delay (ms)"
+msgstr "Töf (ms)"
+
+#: desktop.cpp:65
+msgid "Active desktop borders"
+msgstr "Virkir skjáborðskantar"
+
+#: desktop.cpp:74
+msgid "Enable active desktop borders"
+msgstr "Virkja skjáborðskanta"
+
+#: desktop.cpp:81
+msgid "Move pointer towards center after switch"
+msgstr "Færa bendil að miðju eftir skipti"
+
+#: desktop.cpp:87
+msgid "Desktop switch delay:"
+msgstr "Skiptitöf"
+
+#: desktop.cpp:117
+msgid "Magic Borders"
+msgstr "Galdrakantar"
+
+#: desktop.cpp:126
+msgid ""
+"Border Snap Zone:\n"
+"       (pixels)"
+msgstr ""
+"Smellisvæði við kanta:\n"
+"      (punktar)"
+
+#: desktop.cpp:151
+msgid ""
+"Window Snap Zone:\n"
+"       (pixels)"
+msgstr ""
+"Smellisvæði við glugga:\n"
+"      (punktar)"
+
+#: mouse.cpp:54
+msgid "Active"
+msgstr "Virkir"
+
+#: mouse.cpp:58
+msgid "Inactive"
+msgstr "Óvirkir"
+
+#: mouse.cpp:62
+msgid "Titlebar and frame:"
+msgstr "Titill og rammi"
+
+#: mouse.cpp:66
+msgid "Inactive inner window:"
+msgstr "Innri hluti óvirks glugga"
+
+#: mouse.cpp:70
+msgid "Inner window, titlebar and frame:"
+msgstr "Innri hluti glugga, titilrönd og rammi"
+
+#: mouse.cpp:74 mouse.cpp:86
+msgid "Left Button"
+msgstr "Vinstri takki"
+
+#: mouse.cpp:78 mouse.cpp:90
+msgid "Middle Button"
+msgstr "Miðtakki"
+
+#: mouse.cpp:82 mouse.cpp:94
+msgid "Right Button"
+msgstr "Hægri takki"
+
+#: mouse.cpp:98
+msgid "ALT + Left Button"
+msgstr "ALT + vinstri takki"
+
+#: mouse.cpp:102
+msgid "ALT + Middle Button"
+msgstr "ALT + miðtakki"
+
+#: mouse.cpp:106
+msgid "ALT + Right Button"
+msgstr "ALT + hægri takki"
+
+#: mouse.cpp:113 mouse.cpp:122 mouse.cpp:132 mouse.cpp:196 mouse.cpp:207
+#: mouse.cpp:218
+msgid "Raise"
+msgstr "Fleyta"
+
+#: mouse.cpp:114 mouse.cpp:123 mouse.cpp:133 mouse.cpp:197 mouse.cpp:208
+#: mouse.cpp:219
+msgid "Lower"
+msgstr "Sökkva"
+
+#: mouse.cpp:115 mouse.cpp:124 mouse.cpp:134
+msgid "Operations menu"
+msgstr "Aðgerðavalmynd"
+
+#: mouse.cpp:116 mouse.cpp:125 mouse.cpp:135 mouse.cpp:194 mouse.cpp:205
+#: mouse.cpp:216
+msgid "Toggle raise and lower"
+msgstr "Skipta á fleyta og sökkva"
+
+#: mouse.cpp:126 mouse.cpp:136 mouse.cpp:198 mouse.cpp:209 mouse.cpp:220
+msgid "Nothing"
+msgstr "Ekkert"
+
+#: mouse.cpp:142 mouse.cpp:150 mouse.cpp:158 mouse.cpp:169 mouse.cpp:178
+#: mouse.cpp:187
+msgid "Activate and raise"
+msgstr "Virkja og lyfta"
+
+#: mouse.cpp:143 mouse.cpp:151 mouse.cpp:159
+msgid "Activate and lower"
+msgstr "Virkja og sökkva"
+
+#: mouse.cpp:144 mouse.cpp:152 mouse.cpp:160 mouse.cpp:168 mouse.cpp:177
+#: mouse.cpp:186
+msgid "Activate"
+msgstr "Virkja"
+
+#: mouse.cpp:166 mouse.cpp:175 mouse.cpp:184
+msgid "Activate, raise and pass click"
+msgstr "Virkja, fleyta og senda smell"
+
+#: mouse.cpp:167 mouse.cpp:176 mouse.cpp:185
+msgid "Activate and pass click"
+msgstr "Virkja og senda smell"
+
+#: mouse.cpp:193 mouse.cpp:204 mouse.cpp:215
+msgid "Move"
+msgstr "Færa"
+
+#: mouse.cpp:195 mouse.cpp:206 mouse.cpp:217
+msgid "Resize"
+msgstr "Breyta stærð"
+
+#: advanced.cpp:36
+msgid "Keyboard and Mouse"
+msgstr "Lyklaborð og mús"
+
+#: advanced.cpp:46
+msgid "Ctrl-Tab walks through desktops"
+msgstr "Ctrl-Tab flettir í gegnum skjáborð"
+
+#: advanced.cpp:51
+msgid "Alt-Tab is limited to current desktop"
+msgstr "Alt-Tab virkar aðeins innan skjáborðs"
+
+#: advanced.cpp:56
+msgid "Alt-Tab mode:"
+msgstr "Alt-Tab-hamur:"
+
+#: advanced.cpp:63
+msgid "KDE"
+msgstr "KDE"
+
+#: advanced.cpp:64
+msgid "CDE"
+msgstr "CDE"
+
+#: advanced.cpp:69
+msgid "Grab the Right Mouse Button"
+msgstr "Grípa hægri músatakka"
+
+#: advanced.cpp:78
+msgid "Filters"
+msgstr "Síur"
+
+#: advanced.cpp:98
+msgid "Windows will:"
+msgstr "Gluggar munu:"
+
+#: advanced.cpp:104
+msgid "have tiny decorations"
+msgstr "hafa litlar skreytingar"
+
+#: advanced.cpp:105
+msgid "have no decorations"
+msgstr "vera óskreyttir"
+
+#: advanced.cpp:106
+msgid "never gain focus"
+msgstr "aldrei verða virkir"
+
+#: advanced.cpp:107
+msgid "start as Sticky"
+msgstr "límast við gler"
+
+#: advanced.cpp:108
+msgid "be excluded from session management"
+msgstr "vera sleppt úr setustjórn"
+
+#: advanced.cpp:116
+msgid "if they match the following:"
+msgstr "ef þeir falla að:"
+
+#: advanced.cpp:121
+msgid "Titles"
+msgstr "Titlar"
+
+#: advanced.cpp:126
+msgid "Classes"
+msgstr "Klasar"

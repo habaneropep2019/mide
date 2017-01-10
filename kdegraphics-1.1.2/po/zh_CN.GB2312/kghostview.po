@@ -1,0 +1,805 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkpanel\n"
+"POT-Creation-Date: 1999-04-23 02:23+0200\n"
+"PO-Revision-Date: 1998-02-21 05:04+0800\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312 )\n"
+
+#: marklist.cpp:38
+msgid "Mark current page"
+msgstr "标记当前页"
+
+#: marklist.cpp:39
+msgid "Mark all pages"
+msgstr "标记全部页"
+
+#: marklist.cpp:40
+msgid "Mark even pages"
+msgstr "标记偶数页"
+
+#: marklist.cpp:41
+msgid "Mark odd pages"
+msgstr "标记奇数页"
+
+#: marklist.cpp:42
+msgid "Toggle page marks"
+msgstr "切换页标记"
+
+#: marklist.cpp:43
+msgid "Remove page marks"
+msgstr "去除页标记"
+
+#
+#: marklist.cpp:367
+#, fuzzy
+msgid "Page"
+msgstr "页[&P]"
+
+#: copyright.cpp:27
+msgid "Copyright"
+msgstr "版权宣告"
+
+#: copyright.cpp:41 kghostview.cpp:629
+msgid ""
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."
+msgstr ""
+
+#: interpreter.cpp:42
+msgid "General"
+msgstr "一般"
+
+#: interpreter.cpp:79
+msgid "&Interpreter name"
+msgstr "解释器名字[&I]"
+
+#
+#: interpreter.cpp:87
+msgid "&Antialiasing"
+msgstr "平滑[&A]"
+
+#: interpreter.cpp:97
+msgid "Platform &fonts"
+msgstr "平台字体[&F]"
+
+#: interpreter.cpp:107
+msgid "&Messages"
+msgstr "消息[&M]"
+
+#: interpreter.cpp:130
+msgid "Palette"
+msgstr "调色板"
+
+#: interpreter.cpp:152
+msgid "Colo&r"
+msgstr "颜色[&R]"
+
+#: interpreter.cpp:161
+msgid "&Grayscale"
+msgstr "灰度[&G]"
+
+#: interpreter.cpp:169
+msgid "Monochrom&e"
+msgstr "单色[&E]"
+
+#: interpreter.cpp:192
+msgid "Backing"
+msgstr "后退"
+
+#: interpreter.cpp:214
+msgid "&Pixmap"
+msgstr "位图[&P]"
+
+#: interpreter.cpp:224
+msgid "&Backing store"
+msgstr "高速缓存[&B]"
+
+#: interpreter.cpp:314
+msgid "gs"
+msgstr "gs"
+
+#: messages.cpp:29
+msgid "Ghostscript messages"
+msgstr "Ghostscipt 消息"
+
+#: messages.cpp:56
+msgid "&Clear"
+msgstr "清除[&C]"
+
+#: messages.cpp:59
+msgid "&Dismiss"
+msgstr "取消[&D]"
+
+#: info.cpp:45
+msgid "File name :"
+msgstr "文件名 :"
+
+#: info.cpp:53
+msgid "Document title :"
+msgstr "文章标题 :"
+
+#: info.cpp:61
+msgid "Publication date :"
+msgstr "出版日期 :"
+
+#: print.cpp:35
+msgid "Printer setup"
+msgstr "打印机设置"
+
+#
+#: print.cpp:61
+msgid "&Printer name"
+msgstr "打印机名[&P] ..."
+
+#: print.cpp:73
+msgid "&Spooler command"
+msgstr "脱机命令[&S]"
+
+#: print.cpp:85
+msgid "&Environment variable"
+msgstr "环境变量[&E]"
+
+#: print.cpp:145
+msgid "Print to file"
+msgstr "打印到文件"
+
+#: print.cpp:150
+msgid "Pages"
+msgstr "页"
+
+#: print.cpp:176
+msgid "&All"
+msgstr "全部[&A]"
+
+#: print.cpp:185
+msgid "&Current"
+msgstr "当前[&C]"
+
+#: print.cpp:193
+msgid "&Marked"
+msgstr "标记的[&M]"
+
+#: print.cpp:202
+msgid "&Range"
+msgstr "范围[&R]"
+
+#: print.cpp:216
+msgid "to"
+msgstr "到"
+
+#: print.cpp:229
+msgid "Print document in re&verse order"
+msgstr "以反向顺序打印文章"
+
+#
+#: print.cpp:246
+msgid "&Setup ..."
+msgstr "设置[&S] ..."
+
+#: print.cpp:304
+msgid "Range error"
+msgstr "范围错误"
+
+#: print.cpp:305
+msgid ""
+"The range of pages entered for printing\n"
+"can't be understood.\n"
+"\n"
+"The range specified must lie within the page\n"
+"range for this part of the document.\n"
+"Check the status bar for this information.\n"
+msgstr ""
+"输入的打印页码范围不能正确解释.\n"
+"\n"
+"指定的范围必须在文章的这个部分之中.检查状态\n"
+"行中的信息.\n"
+
+#
+#: goto.cpp:54
+msgid "&Section"
+msgstr "章节[&S]"
+
+#
+#: goto.cpp:70
+msgid "&Page"
+msgstr "页[&P]"
+
+#: goto.cpp:123 goto.cpp:130 goto.cpp:147 kghostview.cpp:2315
+#: kghostview.cpp:2327 kghostview.cpp:2332 kghostview.cpp:2615
+#, c-format
+msgid "of %d"
+msgstr "/ %d"
+
+#
+#: kghostview.cpp:1269 kghostview.cpp:2406 viewcontrol.cpp:64
+msgid "Portrait"
+msgstr "竖排格式"
+
+#: kghostview.cpp:1273 kghostview.cpp:2412 viewcontrol.cpp:65
+msgid "Landscape"
+msgstr "从右到左"
+
+#: kghostview.cpp:1277 kghostview.cpp:2408 viewcontrol.cpp:66
+msgid "Upside down"
+msgstr "上下颠倒"
+
+#: kghostview.cpp:1281 kghostview.cpp:2410 viewcontrol.cpp:67
+msgid "Seascape"
+msgstr "从左到右"
+
+#
+#: viewcontrol.cpp:75
+msgid "magnification"
+msgstr "放大"
+
+#
+#
+#: viewcontrol.cpp:85
+msgid "&Media"
+msgstr "介质[&M]"
+
+#
+#: viewcontrol.cpp:93
+msgid "&Orientation"
+msgstr "方向[&O]"
+
+#: viewcontrol.cpp:117
+msgid "&Apply"
+msgstr "应用[&A]"
+
+#: main.cpp:25
+msgid "Usage: "
+msgstr "用法: "
+
+#
+#: main.cpp:27
+#, fuzzy
+msgid ""
+" [filename] [siwtches]\n"
+"\n"
+msgstr ""
+" [filename] [switches]\n"
+"\n"
+
+#: main.cpp:28
+msgid ""
+"See KDE and Qt documentation for\n"
+"command line options.\n"
+msgstr ""
+"See KDE and Qt documentation for\n"
+"command line options.\n"
+
+#: main.cpp:30
+msgid "Error on command line"
+msgstr "Error on command line"
+
+#: kghostview.cpp:206
+msgid "Document information"
+msgstr "文章信息"
+
+#
+#: kghostview.cpp:220 kghostview.cpp:371 kghostview.cpp:460
+msgid "Page Setup"
+msgstr "页面设置"
+
+#: kghostview.cpp:372 kghostview.cpp:465
+msgid "Go To Page"
+msgstr "跳至页数"
+
+#: kghostview.cpp:373 kghostview.cpp:458
+msgid "Zoom In"
+msgstr "缩小"
+
+#: kghostview.cpp:374 kghostview.cpp:459
+msgid "Zoom Out"
+msgstr "放大"
+
+#: kghostview.cpp:375 kghostview.cpp:463
+msgid "Next Page"
+msgstr "下一页"
+
+#: kghostview.cpp:376 kghostview.cpp:464
+msgid "Prev Page"
+msgstr "前一页"
+
+#: kghostview.cpp:377
+msgid "Scroll Up"
+msgstr "往上卷动"
+
+#: kghostview.cpp:378
+msgid "Scroll Down"
+msgstr "往下卷动"
+
+#: kghostview.cpp:379
+msgid "Scroll Left"
+msgstr "往左卷动"
+
+#: kghostview.cpp:380
+msgid "Scroll Right"
+msgstr "往右卷动"
+
+#: kghostview.cpp:381 kghostview.cpp:461
+msgid "Redisplay"
+msgstr "重绘"
+
+#: kghostview.cpp:424 kghostview.cpp:426
+msgid "Not known"
+msgstr "未知"
+
+#: kghostview.cpp:437
+msgid "Configure interpreter"
+msgstr "配置解释器"
+
+#: kghostview.cpp:455
+msgid "New"
+msgstr ""
+
+#: kghostview.cpp:509
+msgid "&New"
+msgstr ""
+
+#: kghostview.cpp:511
+msgid "&Open ..."
+msgstr "打开[&O] ..."
+
+#: kghostview.cpp:512
+msgid "Open &recent"
+msgstr "最近打开的[&R]"
+
+#
+#
+#: kghostview.cpp:520
+msgid "Page Set&up ..."
+msgstr "页面设置[&U] ..."
+
+#: kghostview.cpp:522
+msgid "&Print ..."
+msgstr "打印[&P] ..."
+
+#: kghostview.cpp:530
+msgid "Zoom &in"
+msgstr "缩小[&I]"
+
+#: kghostview.cpp:532
+msgid "Zoom &out"
+msgstr "放大[&O]"
+
+#
+#: kghostview.cpp:534
+msgid "&Zoom ..."
+msgstr "缩放[&Z] ..."
+
+#: kghostview.cpp:539
+msgid "&Info ..."
+msgstr "信息[&I] ..."
+
+#: kghostview.cpp:544
+msgid "&Previous Page"
+msgstr "前一页[&P]"
+
+#: kghostview.cpp:546
+msgid "&Next page"
+msgstr "下一页[&N]"
+
+#: kghostview.cpp:548
+msgid "&Go to page ..."
+msgstr "跳至页...[&G]"
+
+#: kghostview.cpp:551
+msgid "Go to &start"
+msgstr "跳至开头[&S]"
+
+#: kghostview.cpp:553
+msgid "Go to &end"
+msgstr "跳至最后[&E]"
+
+#: kghostview.cpp:555
+msgid "&Read down"
+msgstr "往下读[&R]"
+
+#: kghostview.cpp:560
+msgid "Mark &current page"
+msgstr "标记当前页[&C]"
+
+#: kghostview.cpp:563
+msgid "Mark &all pages"
+msgstr "标记全部页[&A]"
+
+#: kghostview.cpp:565
+msgid "Mark &even pages"
+msgstr "标记偶数页[&E]"
+
+#: kghostview.cpp:567
+msgid "Mark &odd pages"
+msgstr "标记奇数页[&O]"
+
+#: kghostview.cpp:570
+msgid "&Toggle page marks"
+msgstr "切换页标记[&T]"
+
+#: kghostview.cpp:573
+msgid "&Remove page marks"
+msgstr "去除页标记[&R]"
+
+#: kghostview.cpp:584
+msgid "Show &tool bar"
+msgstr "显示工具条[&T]"
+
+#: kghostview.cpp:585
+msgid "Show st&atus bar"
+msgstr "显示状态行[&A]"
+
+#: kghostview.cpp:586
+msgid "Show &page list"
+msgstr "显示页列表[&P]"
+
+#: kghostview.cpp:588
+msgid "Configure &interpreter ..."
+msgstr "配置解释器[&I] ..."
+
+#: kghostview.cpp:589
+msgid "Configure &key bindings ..."
+msgstr "配置按键关联[&K] ..."
+
+#: kghostview.cpp:591
+msgid "&Save options"
+msgstr "保存选项[&S]"
+
+#: kghostview.cpp:598
+msgid "&About this application"
+msgstr "有关这个应用程序[&A]"
+
+#: kghostview.cpp:600
+msgid "&Help for this application"
+msgstr "这个应用程序的帮助[&H]"
+
+#: kghostview.cpp:602
+msgid "&Copyright"
+msgstr "版权[&C]"
+
+#: kghostview.cpp:609
+msgid "&Go"
+msgstr "跳至[&G]"
+
+#: kghostview.cpp:610
+msgid "&Pagemarks"
+msgstr "页标记[&P]"
+
+#: kghostview.cpp:619
+msgid ""
+" - the PostScript document viewer for\n"
+"the K Desktop Environment.\n"
+"\n"
+"Written by Mark Donohoe <donohoe@kde.org>, based on original\n"
+"work by Tim Theisen.\n"
+"\n"
+"Incorporates code from Johanes Plass' gv. This adds compressed and\n"
+"PDF file support.\n"
+"\n"
+"See http://wwwthep.physik.uni-mainz.de/~plass/gv/n"
+msgstr ""
+
+#: kghostview.cpp:676
+msgid "New window ..."
+msgstr "打开新窗口 ..."
+
+#
+#: kghostview.cpp:679
+msgid "Open file ..."
+msgstr "打开文件 ..."
+
+#
+#: kghostview.cpp:687
+msgid "Print document ..."
+msgstr "打印文章 ..."
+
+#
+#: kghostview.cpp:692
+msgid "Zoom in"
+msgstr "缩小"
+
+#
+#: kghostview.cpp:695
+msgid "Zoom out"
+msgstr "放大"
+
+#: kghostview.cpp:700
+msgid "Go back"
+msgstr "向后"
+
+#: kghostview.cpp:703
+msgid "Go forward"
+msgstr "向前"
+
+#: kghostview.cpp:706
+msgid "Go to page ..."
+msgstr "跳至...页"
+
+#: kghostview.cpp:711
+msgid "Go to start"
+msgstr "跳至开头"
+
+#: kghostview.cpp:714
+msgid "Go to end"
+msgstr "跳至最后"
+
+#: kghostview.cpp:717
+msgid "Read down the page"
+msgstr "从此页往下读"
+
+#
+#: kghostview.cpp:722
+msgid "Toggle this page mark"
+msgstr "切换此页标记"
+
+#: kghostview.cpp:744
+msgid "Sc.100 of 100  P.100 of 100"
+msgstr "章节: 100 of 100  页数:100 of 100"
+
+#: kghostview.cpp:745
+#, c-format
+msgid "100 %"
+msgstr "100 %"
+
+#: kghostview.cpp:746
+msgid "Upside Down"
+msgstr "上下颠倒"
+
+#: kghostview.cpp:771
+msgid "Malformed URL."
+msgstr "不正确的 URL"
+
+#: kghostview.cpp:783
+msgid ""
+"Already waiting\n"
+"for an internet job to finish.\n"
+"Please wait until has finished.\n"
+"Alternatively stop the running one."
+msgstr ""
+"正在等待一个 internet\n"
+"任务完成.请等待它完成.也可以停\n"
+"止正在运行的任务."
+
+#: kghostview.cpp:792
+msgid "Could not start or find KFM."
+msgstr "无法运行或找不到 KFM."
+
+#: kghostview.cpp:1318
+msgid "Go to ..."
+msgstr "跳至 ..."
+
+#: kghostview.cpp:1577
+msgid "Version 0.6"
+msgstr "版本: 0.6"
+
+#: kghostview.cpp:1578
+msgid "Sorry, not ready yet"
+msgstr "抱歉, 尚未准备好"
+
+#: kghostview.cpp:1585
+msgid "About kghostview"
+msgstr "关于 kghostview"
+
+#: kghostview.cpp:1586
+msgid ""
+"Version :\t0.6 alpha\n"
+"Author : Mark Donohoe\n"
+"Mail : donohoe@kde.org"
+msgstr ""
+"版本 :\t0.6 alpha\n"
+"作者 : Mark Donohoe\n"
+"Mail : donohoe@kde.org"
+
+#: kghostview.cpp:1638 kghostview.cpp:1758
+msgid "Error printing"
+msgstr "打印错误"
+
+#: kghostview.cpp:1648
+msgid ""
+"You chose to print all pages to a file.\n"
+"This would produce a document identical to\n"
+"that currently loaded into the viewer.\n"
+"There is no need to print all pages into a new file."
+msgstr ""
+"你可以选择打印所有页到文件. 这样会产生和\n"
+"当前打开的文章完全一致的文章 . 不需要把\n"
+"所有的页打印到新文件里 ."
+
+#: kghostview.cpp:1661
+msgid ""
+"No file name was given so\n"
+"nothing could be printed to a file.\n"
+msgstr "没有文件名 , 不能打印到文件.\n"
+
+#: kghostview.cpp:1702
+msgid ""
+"Set Environment variable (to PRINTER or LPDEST for instance)for Printer name "
+"to be taken into account."
+msgstr ""
+
+#: kghostview.cpp:1723
+#, c-format
+msgid "Print failure : %s"
+msgstr "打印失败 : %s"
+
+#: kghostview.cpp:1759
+msgid ""
+"Printing failed because the list of\n"
+"pages to be printed was empty.\n"
+msgstr "打印失败 : 要打印的页列表是空的.\n"
+
+#: kghostview.cpp:2309 kghostview.cpp:2321 kghostview.cpp:2586
+#: kghostview.cpp:2609
+msgid "of 1    "
+msgstr " /1     "
+
+#: kghostview.cpp:2311 kghostview.cpp:2323 kghostview.cpp:2611
+#, c-format
+msgid "of %d    "
+msgstr "/ %d     "
+
+#: kghostview.cpp:2313 kghostview.cpp:2325 kghostview.cpp:2613
+#: kghostview.cpp:2620
+#, c-format
+msgid "of %d  "
+msgstr "/ %d   "
+
+#: kghostview.cpp:2585
+msgid "Sc.1 "
+msgstr "章节.1 "
+
+#: kghostview.cpp:2588
+msgid "P.1 "
+msgstr "页数.1 "
+
+#: kghostview.cpp:2590 kghostview.cpp:2603
+#, c-format
+msgid "P.%d "
+msgstr "页数.%d "
+
+#: kghostview.cpp:2605
+#, c-format
+msgid "Sc.%d "
+msgstr "章节.%d "
+
+#: zoom.cpp:63
+msgid "&Zoom factor"
+msgstr ""
+
+#~ msgid "View Control"
+#~ msgstr "视图控制"
+
+#
+#~ msgid "&Magnification"
+#~ msgstr "放大[&M]"
+
+#~ msgid "&Defaults"
+#~ msgstr "默认[&D]"
+
+#~ msgid "CTRL+O"
+#~ msgstr "CTRL+O"
+
+#~ msgid "CTRL+N"
+#~ msgstr "CTRL+N"
+
+#~ msgid "CTRL+W"
+#~ msgstr "CTRL+W"
+
+#~ msgid "CTRL+S"
+#~ msgstr "CTRL+S"
+
+#~ msgid "CTRL+P"
+#~ msgstr "CTRL+P"
+
+#~ msgid "CTRL+Q"
+#~ msgstr "CTRL+Q"
+
+#~ msgid "CTRL+X"
+#~ msgstr "CTRL+X"
+
+#~ msgid "CTRL+C"
+#~ msgstr "CTRL+C"
+
+#~ msgid "CTRL+V"
+#~ msgstr "CTRL+V"
+
+#~ msgid "CTRL+Z"
+#~ msgstr "CTRL+Z"
+
+#~ msgid "CTRL+F"
+#~ msgstr "CTRL+F"
+
+#~ msgid "CTRL+R"
+#~ msgstr "CTRL+R"
+
+#~ msgid "Insert"
+#~ msgstr "Insert"
+
+#~ msgid "CTRL+Insert"
+#~ msgstr "CTRL+Insert"
+
+#
+#~ msgid "CTRL+Home"
+#~ msgstr "CTRL+Home"
+
+#~ msgid "End"
+#~ msgstr "End"
+
+#~ msgid "CTRL+End"
+#~ msgstr "CTRL+End"
+
+#~ msgid "Prior"
+#~ msgstr "Prior"
+
+#
+#~ msgid "Next"
+#~ msgstr "Next"
+
+#~ msgid "F1"
+#~ msgstr "F1"
+
+#
+#~ msgid "Zoom"
+#~ msgstr "缩放"
+
+#~ msgid "Current key"
+#~ msgstr "当前的键"
+
+#~ msgid "&Action"
+#~ msgstr "动作[&A]"
+
+#~ msgid "&No key"
+#~ msgstr "没有键[&N]"
+
+#~ msgid "&Default key"
+#~ msgstr "默认的键[&D]"
+
+#~ msgid "&Custom key"
+#~ msgstr "自定义键[&C]"
+
+#~ msgid "Print"
+#~ msgstr "打印"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "&View control ..."
+#~ msgstr "视图控制[&V] ..."
+
+#
+#~ msgid "&Fit to page width"
+#~ msgstr "调整宽度[&F]"
+
+#~ msgid "&Redisplay"
+#~ msgstr "重绘[&R]"
+
+#~ msgid "Change view ..."
+#~ msgstr "改变视图 ..."
+
+#~ msgid "Turn antialiasing on"
+#~ msgstr "打开平滑功能"
+
+#~ msgid "Turn antialiasing off"
+#~ msgstr "关闭平滑功能"
+
+#~ msgid "Show Ghostscript messages"
+#~ msgstr "显示 Ghostscript 消息"
+
+#~ msgid "Hide Ghostscript messages"
+#~ msgstr "隐藏 Ghostscript 讯息"
+
+#~ msgid "Force changes to ..."
+#~ msgstr "强制改变 ..."

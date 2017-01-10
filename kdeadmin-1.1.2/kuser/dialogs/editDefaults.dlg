@@ -1,0 +1,164 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {editDefaults.h}
+	ClassSource {editDefaults.cpp}
+	ClassName {editDefaults}
+	DataHeader {editDefaultsData.h}
+	DataSource {editDefaultsData.cpp}
+	DataName {editDefaultsData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowCaption {Properties}
+	WindowFlags {184320}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {490 270}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+TabBar {
+		Tab {User}
+		Shape {RoundedAbove}
+		Rect {5 5 480 225}
+		Name {TabBar_2}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Ok}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {143 235 100 30}
+		Name {PushButton_15}
+		Signal {[Protected]  clicked --> ok  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {248 235 100 30}
+		Name {PushButton_16}
+		Signal {[Protected]  clicked --> cancel  ()}
+		MinimumSize {100 30}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {5 235 133 30}
+		Name {Label_13}
+		MinimumSize {0 30}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {353 235 132 30}
+		Name {Label_14}
+		MinimumSize {0 30}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Box_Layout-1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1{
+	Widget {TabBar_2}
+	BoxStretch {1}
+	Alignment {36}
+}
+Box_Layout-1.2{
+	Direction {LeftToRight}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {0}
+}
+Layout_Widget-1.2.1{
+	Widget {Label_13}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.2{
+	Widget {PushButton_15}
+	BoxStretch {0}
+	Alignment {36}
+}
+Layout_Widget-1.2.3{
+	Widget {PushButton_16}
+	BoxStretch {0}
+	Alignment {36}
+}
+Layout_Widget-1.2.4{
+	Widget {Label_14}
+	BoxStretch {1}
+	Alignment {36}
+}
+}

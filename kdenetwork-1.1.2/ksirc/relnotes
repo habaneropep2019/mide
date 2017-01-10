@@ -1,0 +1,107 @@
+~b~12,4             kSirc Release Notes for 981220                             
+
+Work over the past month or so has concentrated in 2 majour areas,
+memory consumption and Puke. There's also been some minor features
+etc.
+
+~2Misc Features:
+
+~4~b*~C If you bring up a menu, ctrl+letter generates an on the fly accelerator
+~4~b*~C Scroll back size if setable through the Prefrences
+~4~b*~C Setable background pixmap, it ~b~ureally~b~u sucks
+~4~b*~C New icons for the server controller/docking.  Thanks mosfet
+
+~2Memory:
+
+~4~b*~C The last few release kSirc has had a gradual memory leak, fixed.
+~4~b*~C Created KPlunger a generic memory debugger and leak tracker for C++.
+~4~b*~C Fixed a bunch of bufffer problems which caused kSirc die on non-intel
+~4~b*~C Reduced memory footprint, and effeciency.
+
+~2Puke:
+~4~b*~C Reduced endian dependance
+~4~b*~C Lots to come soon
+
+~b~12,4             kSirc Release Notes for 981107                             
+
+This release is mostly a bug fix release.
+
+Bugs Fixed:
+
+~4~b*~C ~3Title Bar now works with not umode set, away, etc
+~4~b*~C ~3Puke now works on most machines I can find.  This means you can stop whinning about dcc being broken.
+~4~b*~C ~3Puke's now pretty much portable.
+~4~b*~C ~3Lots of little bugs all over the place.
+
+~b~12,4             kSirc Release Notes for 981025                             
+
+~2New Features:
+
+~4~b*~C ~3Mini Web Server
+~4~b*~C ~3MDI Mode (very experimental)
+~4~b*~C ~3Better Caption support with optional Topic
+~4~b*~C ~3New Server Picker, thanks Atko
+~4~b*~C ~3Selecting windows in SC brings them to foreground
+~4~b*~C ~3Release notes are displayed to the screen on first run
+~4~b*~C ~3Improved online help with /help
+
+
+~b~12,4             Web Server Notes                                           
+
+Credit: Thanks to Roberto for the PWS config dialog,
+99.9% of the work is his.
+
+The web server setup is a graphical configuration
+for the freely available web server called
+mathopd.  It's run/controlled via kSirc and
+I've some fun running it.
+
+Couple notes to remember, you cannot use ports
+< 1024.  I'm not going to run anything as root,
+since running a web server is dangerous enough,
+much less giving potential root access away.
+
+/url command will show you a valid url
+for you sure.  Replace <port> with the port(s)
+that the web server is running on.
+
+~b~12,4                  MDI Mode                                              
+
+Credit: Timothy Whitfield, ported the MDI interface
+from kEirc into a generic MDI interface for KDE.
+
+Now, if you want to use it, here's a bunch of
+problems I've already seen:
+
+1. Acelerator keys are all messed up.  pgup/dn
+is a good example.  It just doesn't work.
+
+2. If you minimize something, you have to
+double click on the channel name in the server
+controller to bring it back.
+
+3. You cannot minimize the server controller.
+
+4. You can drag windows off the screen in never
+never land.
+
+I'm personally not a big fan of the MDI interface
+but I'll work on making it work right as time permits.
+
+~b~12,4                  OTHER Stuff                                           
+
+There's been a bunch of bug fixes everywhere.
+
+Cut & paste now cleans up correctly most of the time now.
+
+New release notes box, I think it's usefull. What do
+you think?
+
+Caption should be more usefull now.  I think this is the
+best way to display the topic on the screen.
+
+Server controller is in and needs some more work.  Basic
+idea works well though.
+
+/help now displayes all possible functions, instead of just 
+built in ones.  Shows all kSirc commands as well.

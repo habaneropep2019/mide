@@ -1,0 +1,43 @@
+
+       Changes file for krootwm, the KDE root window manager
+       =====================================================
+ Developed and maintained by Matthias Ettrich (ettrich@kde.org)
+
+
+In 0.1:
+-------
+patchlevel 10:
+	- special support for the "Window Maker" window manager
+
+patchlevel 9:
+	- "Unclutter windows" and "Cascade windows" added to the rmb menu (CT)
+patchlevel 8:
+       - hopefully fixed the ocassional freezes bug
+       - hopefully fixed the ocassional freezes bug
+
+patchlevel 7:
+       - new option to have kpanel´s menu on the left mouse button.
+         (see README for details)
+       - internal cleanup: uses KShellProcess now :-)
+
+patchlevel 6:
+       - small fix to save CPU during the root window selection
+
+patchlevel 5:
+       - Added a separator between 'New' and the rest of the menu (D.McC)
+
+patchlevel 4:
+       - RMB somewhat adapted to the KDE progress (KFM still not
+         works)
+       - uses kprocess for execute
+       - miniicons
+
+patchlevel 3:
+       - qt-1.3
+
+patchlevel 2:
+      - small fix to execute(...);
+
+patchlevel 1:
+    
+     - adaption to the current libkfm interface

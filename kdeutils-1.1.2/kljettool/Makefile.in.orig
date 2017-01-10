@@ -1,0 +1,142 @@
+# $Id: Makefile.in.orig,v 1.1 1998/02/03 22:53:13 kulow Exp $
+
+prefix  = @prefix@
+install_root = @install_root@
+exec_prefix = @exec_prefix@
+kde_libraries = @kde_libraries@
+qt_libraries = @qt_libraries@
+top_builddir = ..
+LIBTOOL = @LIBTOOL@
+KDE_RPATH = @KDE_RPATH@
+
+BINDIR  = @kde_bindir@
+DOCSDIR = @kde_htmldir@/en/kljettool
+APPSDIR = @kde_appsdir@/Utilities/
+PICSDIR = @kde_datadir@/kljettool/pics/
+
+install = @INSTALL@
+INSTALL = $(install) -m 0755
+INSTALL_DATA = $(install) -m 0644
+INSTALL_DIR = $(install) -d -m 0755   
+
+###################################################################
+
+CXXFLAGS=	@CXXFLAGS@ -DHAVE_CONFIG_H -I..
+LDFLAGS	=	@LDFLAGS@ @all_libraries@ -lkdecore -lqt -lm -lXext -lX11
+INCDIR	=	@all_includes@
+CXX	=	@CXX@
+MOC	=	@MOC@
+
+
+####### Files
+HEADER = 	Paper.h PaperData.h  Fonts.h FontsData.h Printer.h PrinterData.h\
+		Misc.h MiscData.h Data.h main.h about.h
+SOURCES	=	main.cpp Paper.cpp PaperData.cpp Fonts.cpp FontsData.cpp Printer.cpp\
+		PrinterData.cpp Misc.cpp MiscData.cpp Data.cpp about.cpp
+
+OBJECTS	=	main.o  Paper.o PaperData.o Fonts.o FontsData.o Printer.o PrinterData.o\
+		Misc.o MiscData.o Data.o about.o
+SRCMETA	=	Paper.moc PaperData.moc Fonts.moc FontsData.moc Printer.moc\
+		PrinterData.moc	Misc.moc MiscData.moc Data.moc main.moc about.moc
+TARGET	=	kljettool
+
+####### Implicit rules
+
+.SUFFIXES: .cpp
+
+.cpp.o:
+	$(CXX)  -c $(CXXFLAGS) $(DEFS) $(INCDIR) $<
+
+####### Build rules
+
+all: $(TARGET)
+
+Makefile: Makefile.in
+	cd .. && CONFIG_FILES=kljettool/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+$(TARGET): $(SOURCES) $(SRCMETA) $(OBJECTS) $(HEADER)
+	$(LIBTOOL) --mode=link $(CXX) $(OBJECTS) -o $(TARGET) $(LDFLAGS) $(KDE_RPATH)
+
+depend:
+	@makedepend -I$(INCDIR) $(SOURCES) 2> /dev/null
+clean:
+	-rm -f *.o *.bak *~ *% #*
+	-rm -f $(SRCMETA) $(TARGET)
+
+distclean: clean
+	rm -f Makefile
+
+install: all
+	$(INSTALL_DIR) $(BINDIR)
+	$(INSTALL) $(TARGET) $(BINDIR)
+	(cd docs && $(MAKE) install)
+	$(INSTALL_DATA) ./support/magic $(DOCSDIR)
+	$(INSTALL_DATA) ./support/filter $(DOCSDIR)	
+	$(INSTALL_DATA) ./support/README $(DOCSDIR)		
+	$(INSTALL_DIR) $(PICSDIR)
+	$(INSTALL_DATA) kljetlogo.xpm  $(PICSDIR)
+	$(INSTALL_DIR) $(APPSDIR)
+	$(INSTALL_DATA) KLJetTool.kdelnk $(APPSDIR)
+	@echo ""
+	@echo ""
+	@echo "If you own a RedHat system or if you have trouble getting"
+	@echo "KLJetTool to work on your system, you must read the README"
+	@echo "file in the directory support."
+	@echo ""
+	@echo "thanks,"
+	@echo "Bernd Wuebben"
+	@echo "wuebben@kde.org"
+	@echo ""	
+
+uninstall:
+	rm -f $(BINDIR)/$(TARGET)
+	(cd docs && $(MAKE) uninstall)
+	rm -f $(PICSDIR)/kljetlogo.xpm
+	rm -f $(APPSDIR)/KLJetTool.kdelnk
+	rm -f $(DOCSDIR)/README
+	rm -f $(DOCSDIR)/filter
+	rm -f $(DOCSDIR)/magic
+
+####### Explicit dependencies
+
+
+####### Meta objects
+
+Paper.moc: Paper.h
+	$(MOC) Paper.h -o Paper.moc
+
+PaperData.moc: PaperData.h
+	$(MOC) PaperData.h -o PaperData.moc
+
+Fonts.moc: Fonts.h
+	$(MOC) Fonts.h -o Fonts.moc
+
+FontsData.moc: FontsData.h
+	$(MOC) FontsData.h -o FontsData.moc
+
+Printer.moc: Printer.h
+	$(MOC) Printer.h -o Printer.moc
+
+PrinterData.moc: PrinterData.h
+	$(MOC) PrinterData.h -o PrinterData.moc
+
+Misc.moc: Misc.h
+	$(MOC) Misc.h -o Misc.moc
+
+MiscData.moc: MiscData.h
+	$(MOC) MiscData.h -o MiscData.moc
+
+Data.moc: Data.h
+	$(MOC) Data.h -o Data.moc
+
+main.moc: main.h
+	$(MOC) main.h -o main.moc
+
+about.moc: about.h
+	$(MOC) about.h -o about.moc
+
+
+
+
+
+

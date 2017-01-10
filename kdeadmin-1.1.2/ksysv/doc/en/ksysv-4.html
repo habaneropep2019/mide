@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The KSysV Handbook: Appendix</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="SysV, System V, Init, Editor">
+<META NAME="description" CONTENT="SysV Init Editor Handbook">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ksysv-5.html">Next</A>
+<A HREF="ksysv-3.html">Previous</A>
+<A HREF="ksysv.html#toc4">Table of Contents</A>
+</P>
+<H3><A NAME="s4">4. Appendix</A></H3>
+
+<H3><A NAME="ss4.1">4.1 Questions and Answers</A>
+</H3>
+
+<H4><A NAME="q1"></A> Q1: "I played around with the default runlevel and now my machine reboots all the time"</H4>
+
+<P>Enter <CODE>linux single</CODE> at the LILO prompt
+<BLOCKQUOTE><CODE>
+<PRE>
+LILO: linux single
+</PRE>
+</CODE></BLOCKQUOTE>
+
+and press &lt;ENTER&gt; to boot up in single user mode. Then edit the file
+<CODE>/etc/inittab</CODE> and change the default runlevel to something sane
+(<B>3</B> should usually be OK).
+<H4><A NAME="q2"></A> Q2: "My machine "halts" just after booting"</H4>
+
+<P>See 
+<A HREF="#q1">question Q1</A> above.
+<H4><A NAME="q3"></A> Q3: "I scheduled some services to be run in runlevel X using KSysV, but they aren´t"</H4>
+
+<P>If you´re using <B>SuSE</B> or <B>Delix</B> (DLD) distributions:
+you also have to edit a distribution-specific file in <CODE>/etc</CODE>. Please
+have a look at the manual of your distribution for details.
+<P>
+<P><B>Note:</B>The approach to starting services used by the above-mentioned
+distributions makes configuration of services easy for the proprietary config-tools
+of these distributions, but unfortunately is non-standard. I´m planning to write a generic
+extension for this approach some time in the future, but as I´m currently rather short
+on time, don´t hold your breath for this.
+<P>If you are using a different distribution:
+Please check whether you´ve got all config files needed by the service (and whether they
+are in the right directory, too). Some daemons (for example <B>Apache</B>, aka <CODE>httpd</CODE>) just die silently if their configuration files are not present or misconfigured.
+<H3><A NAME="ss4.2">4.2 Standard Semantics of Runlevels</A>
+</H3>
+
+<P>These vary by distribution, so I´ll just list them all (note that
+this list is by no means comprehensive, so please send me a mail, if
+you know what the different runlevels do for a distribution not included
+in this list.
+<H4>Red Hat</H4>
+
+<P>
+<UL>
+<LI><B>Runlevel 0:</B> halt (shuts down the machine)</LI>
+<LI><B>Runlevel 1:</B> Single user mode (can be entered by typing ´<CODE>linux single</CODE>´ at the <CODE>LILO: </CODE> prompt)</LI>
+<LI><B>Runlevel 2:</B> Multi user text-only, without NFS</LI>
+<LI><B>Runlevel 3:</B> Multi user text-only, with full networking (this is the default runlevel)</LI>
+<LI><B>Runlevel 4:</B> Not used</LI>
+<LI><B>Runlevel 5:</B> Multi user X11, with full networking</LI>
+<LI><B>Runlevel 6:</B> reboot</LI>
+</UL>
+<P ALIGN="RIGHT">
+
+<A HREF="ksysv-5.html">Next</A>
+<A HREF="ksysv-3.html">Previous</A>
+<A HREF="ksysv.html#toc4">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

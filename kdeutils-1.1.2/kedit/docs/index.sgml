@@ -1,0 +1,294 @@
+<!doctype linuxdoc system>
+
+<!-- The KEdit Handbook.
+
+ -->
+
+<article>
+
+<!-- Title information -->
+
+<title>The KEdit Handbook
+<author>Bernd Johannes Wuebben, <tt/wuebben@kde.org/
+<date>Version 0.7.3, Dec 10 1997
+<abstract>This Handbook describes KEdit Version 0.7
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+
+<sect>Introduction
+
+<p>
+KEdit is the default text editor for the KDE Desktop. It is a small editor best used
+in conjunction with kfm for text and configuration file browsing. KEdit may also serve
+well for composition of small plain text documents. It is not meant
+to be a programmers editor, in particular it is not meant to replace any of the
+more powerful editors such as XEmacs or Emacs. KEdit's functionality will intentionally
+remain rather limited to ensure that KEdit will start  up reasonably fast.
+<p>
+<sect1>New<p>
+<itemize>
+<item>Word-wrap works now ( hopefully ;-) )
+<item>Emacs like kill-ring implemented Ctrl-k Ctrl-y
+<item>Paragraph formatting Ctrl-j. Use this in conjunction with
+AutoIndent and this feature becomes quite powerfull.
+</itemize>
+
+<P>
+I hope you will enjoy this editor,
+<p>
+<tt>Bernd Johannes Wuebben</tt>
+<p>
+<htmlurl url="mailto:wuebben@kde.org" name="wuebben@kde.org">
+<p>
+
+<sect>Installation
+<p>
+<sect1>How to obtain KEdit
+<p>
+KEdit is a core application of the KDE project <url url="http://www.kde.org">.
+KEdit can be found on <url url="ftp://ftp.kde.org/pub/kde/">, the main ftp site
+of the KDE project.
+
+<sect1>Requirements
+<p>
+In order to successfully compile KEdit, you need the latest versions of <tt> libkdecore</tt>
+and <tt> libkfm</tt>. All required libraries as well as KEdit itself can be found
+on <url url="ftp://ftp.kde.org/pub/kde/">. 
+
+
+
+<sect1>Compilation and installation
+<p>
+
+In order to compile and install KEdit on your system, type the following in the base 
+directory of the KEdit distribution:
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+
+Since KEdit uses <tt>autoconf</tt> you should have not trouble compiling it.
+Should you run into problems please report them to the <sf/KDE/ mailing lists.
+
+<sect>Onscreen Fundamentals
+<p>
+
+KEdit is very simply to use. I am sure that if you have ever used a text edit you 
+will have no problems with KEdit. 
+
+<p>
+<sect1>Drag and Drop
+<p>
+KEdit makes use of the KDE Drag and Drop protocol. This means that you can darg
+and drop files form the Desktop or kfm or some remote ftp site that you have
+open in one of kfm's windows on to KEdit. 
+
+<sect1>Editing files on the internet
+<p>
+You can open and save files transparently on the internet. Try the the following at the
+command-line prompt to see an example of this.
+
+<tscreen><verb>
+% kedit ftp://ftp.kde.org/pub/kde/Welcome.msg
+</verb></tscreen>
+
+
+<sect1> Printing
+<p>
+KEdit supports printing. You can either print the document your are editing
+or the selection you made directly to your default printer. Optionally you can
+specify the printing command of your choice. There exist a number of
+printing utilities in the Unix world  which are excellent. It would
+make little sense to try reimplement their efforts. Explicitely let me
+mention to you the following two printing utilites.
+<p>
+
+<descrip>
+<tag/GNU enscript./ Markku Rossi has written a powerful reincarnation
+of Adobe's enscript ascii to postscript utility. My favorite usage is
+enscript -2rG text.txt, but GNU enscript goes far beyond that. Make
+sure you have the latest version from <url
+url="http://www.hut.fi/~mtr/genscript/">, or any GNU mirror.
+
+<tag/a2ps/ Akim Demaille and Miguel Santana have written a powerful
+ascii to Postscript conversion utility which will format your output
+depending on the documentype. Whether you want to print out C++
+sources or a email message, the default styles are very nice. Get
+it from:
+<url url="http://www-inf.enst.fr/~demaille/a2ps.html">
+</descrip>
+<p>
+The above two utilities are an absolute must. If you don't have them,
+get them and become familiar with their usage. Learning how to use
+them is no longer a problem due to our great html/texinfo/man viewer
+<tt>kdehelp</tt>. These utilities are your friends when it comes to printing
+in the UNIX world. Due to their power and many options once you know how to use 
+them properly, you will always miss them should they ever not be available 
+to you, even under Windows95.
+<p>
+
+Make sure your system is set up for printing PostScript documents. If you
+don't have a native PostScript printer ( who does?) get yourself
+ghostscript/ghostview version 4.03 or higher  from
+<url url="http://www.cs.wisc.edu/%7Eghost/">. Note, that there are now
+commercial grade ps fonts available that come with the ghostview/ghostscript
+package. These fonts are a must for any quality printing of Postscript documents
+on a non-postscript printer. If you were dissapointed by the results you got
+from ghostscript on your printer so far - get the new fonts, this
+will give you the best possible results. 
+
+<p>
+<sect1> Key Bindings
+<p>
+KEdit honors the following key bindings.
+
+
+<itemize>
+<item><tt/Insert/ Toggle between Insert and Overwrite mode
+<item><tt/Left Arrow/ Move the cursor one character leftwards 
+<item><tt/Right Arrow/ Move the cursor one character rightwards 
+<item><tt/Up Arrow/ Move the cursor one line upwards 
+<item><tt/Down Arrow/ Move the cursor one line downwards 
+<item><tt/Page Up/ Move the cursor one page upwards 
+<item><tt/Page Down/ Move the cursor one page downwards 
+<item><tt/Backspace/ Delete the character to the left of the cursor 
+<item><tt/Home/ Move the cursor to the beginning of the line 
+<item><tt/End/ Move the cursor to the end of the line 
+<item><tt/Delete/ Delete the character to the right of the cursor 
+<item><tt/Shift - Left Arrow/ Mark text one character leftwards 
+<item><tt/Shift - Right Arrow/ Mark text one character rightwards 
+<item><tt/Control-A/ Move the cursor to the beginning of the line 
+<item><tt/Control-B/ Move the cursor one character leftwards 
+<item><tt/Control-C/ Copy the marked text to the clipboard. 
+<item><tt/Control-D/ Delete the character to the right of the cursor 
+<item><tt/Control-E/ Move the cursor to the end of the line 
+<item><tt/Control-F/ Move the cursor one character rightwards 
+<item><tt/Control-H/ Delete the character to the left of the cursor 
+<item><tt/Control-J/ Format Paragraph
+<item><tt/Control-K/ Delete to end of line and place content into the kill-buffer
+<item><tt/Control-N/ Move the cursor one line downwards 
+<item><tt/Control-P/ Move the cursor one line upwards 
+<item><tt/Control-V/ Paste the clipboard text into line edit. 
+<item><tt/Control-X/ Cut the marked text, copy to clipboard. 
+<item><tt/Control-Y/ Yank content of the kill-buffer into the document at the
+                     current cursor position.
+</itemize>
+
+<sect>The Menu Entries
+<p>
+<sect1>File
+<p>
+<sect2>New
+<p>
+Opens a new Document in the editor
+<sect2>Open
+<p>
+Allows the user to open a document
+<sect2>Save
+<p>
+Saves the current Document
+<sect2>Save As
+<p>
+Allows the user to save the document in a new file.
+<sect2>Close
+<p>
+Closes the editor window. If the closed editor window was the last instance open,
+KEdit will exit.
+<sect2>Open URL
+<p>
+Allows the user to open a file on the internet.
+<sect2>Save to URL
+<p>
+Allows the user to save to a file on the internet.
+<sect2>Print
+<p>
+Open the print dialog and lets the user print the whole document or the current selection.
+
+<sect2>Mail <p>
+Brings up a mail dialog. Make sure you have checked and if necessary modified the
+mail command on the 'Misc Options' dialog on the 'Options' menu.
+
+<sect2>New Window
+<p>
+<sect2>Exit
+Exits the Editor. 
+<p>
+
+
+<sect1>Edit
+<p>
+<sect2>Copy 
+<p>
+Copies the current selection to the clip board.
+<sect2>Cut
+<p>
+Deletes the current selection and places it into the clip board
+<sect2>Paste
+<p>
+Inserts the content of the clip board at the current cursor position
+<sect2>Insert File 
+<p>
+Allows the user to insert a file at the current cursor position.
+<sect2>Insert Date
+<p>
+Inserts the current date at the cursor position.
+<sect2>Find
+<p>
+Opens the find dialog. 
+<sect2>Find Again 
+<p>
+Repeats the last find operation , if a find operation has already taken place.
+<sect2>Replace
+<p>
+Opens the replace dialog
+<sect2>Goto Line
+<p>
+Opens the goto line dialog
+
+<sect1>Options
+<p>
+<sect2>Font
+<p>
+Allows the user to choose the font which the editor uses to display the text.
+The font information is not stored with the document, nor can you choose different
+fonts within a document. 
+<sect2>Colors
+<p>
+Allows the user to select fore and background color of KEdit's text display area.
+<sect2>Misc Options
+<p>
+Allows the user to set a fill column as well as to enable word wrap and set the mail
+command suitable for his system.
+<sect2>Auto Indent
+<p>
+Allows the user to switch to auto indent mode and back. In auto indent mode the 
+cursor is placed on a  RETURN or ENTER underneath the first visible character 
+on the first nonempty line above the current line.
+<sect2>Hide/Show Tool-Bar
+<p>
+Allows the user to have the tool bar displayed or hidden.
+<sect2>Hide/Show Status-Bar
+<p>
+Allows the user to have the status bar displayed or hidden.
+
+<sect1>Help
+<p>
+<sect2>Help
+<p>
+Invokes the KDE help system with the KEdit help pages displayed.
+<sect2>About 
+<p>
+Displays essential information about KEdit.
+
+<sect>Questions and answers
+
+
+
+<p>
+</article>

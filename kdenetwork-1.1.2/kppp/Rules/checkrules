@@ -1,0 +1,24 @@
+#!/bin/sh
+
+KPPP=`which kppp` || (echo "cannot find kppp"; exit 1)
+
+cd `dirname $0 2> /dev/null` || (echo "\"dirname\" required"; exit 1)
+
+FILESTOCHECK=`find -name "*.rst" -type f 2> /dev/null` || \
+    (echo "\"find\" required\""; exit 1)
+
+for i in ${FILESTOCHECK}
+do
+	echo -n "checking $i ..."
+	if ${KPPP} -r $i > /dev/null 2>&1
+	then
+		echo ok
+	else
+		echo "failed"
+		echo -n "        "
+		${KPPP} -r $i
+		#exit 1
+	fi
+done
+exit 0
+		

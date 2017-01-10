@@ -1,0 +1,529 @@
+# KDEUTILS translation to Slovenian language.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Marko Samastur <markos@elite.org>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kwrite\n"
+"POT-Creation-Date: 1999-04-17 02:13+0200\n"
+"PO-Revision-Date: 1999-07-17 00:30 MEST\n"
+"Last-Translator: Marko Samastur <markos@elite.org>\n"
+"Language-Team: Slovenian <ftp://ftp.lugos.si/pub/lugos/localization/kde-sl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: highlight.cpp:1715
+msgid "Normal:"
+msgstr "Normalno:"
+
+#: highlight.cpp:1725 kwdialog.cpp:495
+msgid "Selected:"
+msgstr "Izbrani:"
+
+#: highlight.cpp:1732
+msgid "Bold"
+msgstr "Krepko"
+
+#: highlight.cpp:1783
+msgid "Family:"
+msgstr "Dru¾ina:"
+
+#: highlight.cpp:1793
+msgid "Size:"
+msgstr "Velikost:"
+
+#: highlight.cpp:1891
+msgid "Default Item Styles"
+msgstr "Privzeti stili predmetov"
+
+#: highlight.cpp:1895 highlight.cpp:1966
+msgid "Item:"
+msgstr "Predmet:"
+
+#: highlight.cpp:1913
+msgid "Default Font"
+msgstr "Privzeta pisava"
+
+#: highlight.cpp:1950
+msgid "Config Select"
+msgstr "Nastavi Izbor"
+
+#: highlight.cpp:1954
+msgid "Highlight:"
+msgstr "Poudari:"
+
+#: highlight.cpp:1973
+msgid "Highlight Auto Select"
+msgstr "Poudari samodejni izbor"
+
+#: highlight.cpp:1977
+msgid "File Extensions:"
+msgstr "Datoteèni podalj¹ki:"
+
+#: highlight.cpp:1984
+msgid "Mime Types:"
+msgstr "Mime tipi:"
+
+#: highlight.cpp:1991
+msgid "Item Style"
+msgstr "Stil predmet"
+
+#: highlight.cpp:2000
+msgid "Item Font"
+msgstr "Pisava predmeta"
+
+#: kwview.cpp:1069
+msgid "Vertical Selections On"
+msgstr "Vertikalni izbor vklopljen"
+
+#: kwview.cpp:1069
+msgid "Vertical Selections Off"
+msgstr "Vertikalni izbor izklopljen"
+
+#: kwview.cpp:1128
+msgid "The specified File does not exist"
+msgstr "Navedena datoteka ne obstaja"
+
+#: kwview.cpp:1138
+msgid "You have specified a directory"
+msgstr "Navedli ste imenik"
+
+#: kwview.cpp:1148
+msgid "You do not have read permission to this file"
+msgstr "Nimate bralnega dovoljenja za to datoteko"
+
+#: kwview.cpp:1164 kwview.cpp:1194
+msgid "An Error occured while trying to open this Document"
+msgstr "Napaka se je pojavila ob odpiranju dokumenta"
+
+#: kwview.cpp:1178
+msgid "You do not have write permission to this file"
+msgstr "Nimate pisalnega dovoljenja za to datoteko"
+
+#: kwview.cpp:1231
+msgid "Loading..."
+msgstr "Nalagam..."
+
+#: kwview.cpp:1239 kwview.cpp:1360
+msgid "Inserted"
+msgstr "Vne¹en"
+
+#: kwview.cpp:1244 kwview.cpp:1369
+msgid "Read"
+msgstr "Preberi"
+
+#: kwview.cpp:1253 kwview.cpp:1311
+msgid ""
+"KWrite is already waiting\n"
+"for an internet job to finish\n"
+"Please wait until it has finished\n"
+"Alternatively stop the running one."
+msgstr ""
+"KWrite ¾e èaka na konec\n"
+"internetnega opravila.\n"
+"Prosim poèakajte ¹e vi ali\n"
+"ustavite tekoèega."
+
+#: kwview.cpp:1261 kwview.cpp:1319
+msgid "Waiting for KFM..."
+msgstr "Èakam na KFM..."
+
+#: kwview.cpp:1267 kwview.cpp:1332
+msgid "Could not start or find KFM"
+msgstr "Nisem mogel zagnati ali najti KFM"
+
+#: kwview.cpp:1294
+msgid "Saving..."
+msgstr "Shranjujem..."
+
+#: kwview.cpp:1302 kwview.cpp:1379
+msgid "Wrote"
+msgstr "Napisal"
+
+#: kwview.cpp:1408
+msgid ""
+"The current Document has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Trenutni dokument je bil spremenjen.\n"
+"Ali ga ¾elite shraniti?"
+
+#: kwview.cpp:1419
+msgid ""
+"Could not save the document.\n"
+"Open a new document anyways?"
+msgstr ""
+"Dokumenta ni mo¾no shraniti.\n"
+"Naj vseeno odprem novega?"
+
+#: kwview.cpp:1466
+msgid "No changes need to be saved"
+msgstr "Ni sprememb, ki bi jih bilo potrebno shraniti"
+
+#: kwview.cpp:1487
+msgid ""
+"A Document with this Name already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Dokument s tem imenom ¾e obstaja.\n"
+"Ali ga ¾elite prepisati?"
+
+#: kwview.cpp:1690 kwview.cpp:1878
+msgid "End of document reached"
+msgstr "Dose¾en konec dokumenta"
+
+#: kwview.cpp:1691 kwview.cpp:1879
+msgid "Continue from the beginning"
+msgstr "Nadaljuj na zaèetku"
+
+#: kwview.cpp:1693 kwview.cpp:1704 kwview.cpp:1714
+msgid "Find"
+msgstr "Najdi"
+
+#: kwview.cpp:1701 kwview.cpp:1890
+msgid "Beginning of document reached"
+msgstr "Dose¾en zaèetek dokumenta"
+
+#: kwview.cpp:1702 kwview.cpp:1891
+msgid "Continue from the end"
+msgstr "Nadaljuj na koncu"
+
+#: kwview.cpp:1715
+msgid "Search string not found!"
+msgstr "Nisem na¹el iskani niz!"
+
+#: kwview.cpp:1863 kwview.cpp:1877 kwview.cpp:1889
+#, fuzzy
+msgid "replace(s) made"
+msgstr "Opravljeno %1 zamenjav"
+
+#: kwview.cpp:2004 toplevel.cpp:477
+msgid "Line"
+msgstr "Vrstica"
+
+#: kwdialog.cpp:31
+msgid "&Text To Find:"
+msgstr "Najdi &besedilo:"
+
+#: kwdialog.cpp:43
+msgid "&Replace With:"
+msgstr "&Zamenjaj z:"
+
+#: kwdialog.cpp:57
+msgid "&Case Sensitive"
+msgstr "&Obèutljiv na velikost èrk"
+
+#: kwdialog.cpp:61
+msgid "&Whole Words Only"
+msgstr "Samo &cele besede"
+
+#: kwdialog.cpp:65
+msgid "&From Cursor"
+msgstr "Od &utripaèa"
+
+#: kwdialog.cpp:74
+msgid "Find &Backwards"
+msgstr "Najdi o&dzadaj"
+
+#: kwdialog.cpp:78
+msgid "&Selected Text"
+msgstr "&Izbrano besedilo"
+
+#: kwdialog.cpp:91
+msgid "&Prompt On Replace"
+msgstr "&Vpra¹aj pred zamenjavo"
+
+#: kwdialog.cpp:167
+msgid "Replace this occurence?"
+msgstr "Zamenjam to najdi¹èe?"
+
+#: kwdialog.cpp:174
+msgid "&Yes"
+msgstr "&Da"
+
+#: kwdialog.cpp:182
+msgid "&No"
+msgstr "&Ne"
+
+#: kwdialog.cpp:188
+msgid "&All"
+msgstr "&Vsa"
+
+#: kwdialog.cpp:251
+msgid "&Goto Line:"
+msgstr "&Pojdi v vrstico:"
+
+#: kwdialog.cpp:294
+msgid "Edit Options"
+msgstr "Uredi opcije"
+
+#: kwdialog.cpp:295
+msgid "Auto &Indent"
+msgstr "&Samodejen zamik"
+
+#: kwdialog.cpp:297
+msgid "&Backspace Indent"
+msgstr "V&raèalni zamik"
+
+#: kwdialog.cpp:299
+msgid "&Word Wrap"
+msgstr "Pr&elom vrstic"
+
+#: kwdialog.cpp:301
+msgid "Replace &Tabs"
+msgstr "Zamenjaj &tabulatorje"
+
+#: kwdialog.cpp:303
+msgid "Remove Trailing &Spaces"
+msgstr "Od&strani zakljuène presledke"
+
+#: kwdialog.cpp:305
+msgid "Wrap &Cursor"
+msgstr "&Lomi ob utripaèu"
+
+#: kwdialog.cpp:307
+msgid "&Auto Brackets"
+msgstr "S&amodejni oklepaji"
+
+#: kwdialog.cpp:321
+msgid "Select Options"
+msgstr "Izberi opcije"
+
+#: kwdialog.cpp:322
+msgid "&Persistent Selections"
+msgstr "Vztrajne iz&bire"
+
+#: kwdialog.cpp:324
+msgid "&Multiple Selections"
+msgstr "Veè&kratne izbire"
+
+#: kwdialog.cpp:326 toplevel.cpp:233
+msgid "&Vertical Selections"
+msgstr "&Vertikalne izbire"
+
+#: kwdialog.cpp:328
+msgid "&Delete On Input"
+msgstr "&Zbri¹i ob vnosu"
+
+#: kwdialog.cpp:330
+msgid "&Toggle Old"
+msgstr "&Preklopi stare"
+
+#: kwdialog.cpp:345
+msgid "Wrap Words At:"
+msgstr "Prelomi vrstice pri:"
+
+#: kwdialog.cpp:351
+msgid "Tab Width:"
+msgstr "©irina tabulatorja:"
+
+#: kwdialog.cpp:358
+msgid "Undo steps:"
+msgstr "Korakov preklica:"
+
+#: kwdialog.cpp:479
+msgid "Background:"
+msgstr "Ozadje:"
+
+#: kwdialog.cpp:487
+msgid "Text Background:"
+msgstr "Ozadje besedila:"
+
+#: kwdialog.cpp:503
+msgid "Found:"
+msgstr "Najdel:"
+
+#: kwdialog.cpp:511
+msgid "Selected + Found:"
+msgstr "Izbrani + najdeni:"
+
+#: toplevel.cpp:102
+msgid "Message"
+msgstr "Sporoèilo"
+
+#: toplevel.cpp:103
+msgid ""
+"This Document has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Ta dokument je bil spremenjen.\n"
+"Ali ga ¾elite shraniti?"
+
+#: toplevel.cpp:166
+msgid "Ne&w..."
+msgstr "N&ov..."
+
+#: toplevel.cpp:168
+msgid "&Insert..."
+msgstr "Vstav&i..."
+
+#: toplevel.cpp:169
+msgid "Open Recen&t"
+msgstr "O&dpri nedavni"
+
+#: toplevel.cpp:180
+msgid "New &Window"
+msgstr "Novo &okno"
+
+#: toplevel.cpp:181
+msgid "New &View"
+msgstr "Nov &pogled"
+
+#: toplevel.cpp:190
+msgid "&Find..."
+msgstr "&Najdi..."
+
+#: toplevel.cpp:191
+msgid "&Replace..."
+msgstr "&Zamenjaj..."
+
+#: toplevel.cpp:192
+msgid "Find &Again"
+msgstr "Ponovno n&ajdi"
+
+#: toplevel.cpp:193
+msgid "&Goto Line..."
+msgstr "&Pojdi v vrstico..."
+
+#: toplevel.cpp:195
+msgid "U&ndo"
+msgstr "Pr&eklièi"
+
+#: toplevel.cpp:196
+msgid "R&edo"
+msgstr "P&onovno stori"
+
+#: toplevel.cpp:198
+msgid "&Indent"
+msgstr "Zamakn&i"
+
+#: toplevel.cpp:199
+msgid "Uninden&t"
+msgstr "Ra&zveljavi zamik"
+
+#: toplevel.cpp:203
+msgid "&Select All"
+msgstr "&Izberi vse"
+
+#: toplevel.cpp:204
+msgid "&Deselect All"
+msgstr "&Sprosti vse"
+
+#: toplevel.cpp:205
+msgid "In&vert Selection"
+msgstr "In&vertiraj izbor"
+
+#: toplevel.cpp:210
+msgid "&Set Bookmark..."
+msgstr "Na&stavi zaznamek..."
+
+#: toplevel.cpp:211
+msgid "&Add Bookmark"
+msgstr "Dod&aj zaznamek..."
+
+#: toplevel.cpp:212
+msgid "&Clear Bookmarks"
+msgstr "Po&bri¹i zaznamke"
+
+#: toplevel.cpp:224
+msgid "Set Highlight"
+msgstr "Nastavi poudarek"
+
+#: toplevel.cpp:226
+msgid "&Defaults..."
+msgstr "&Privzeto..."
+
+#: toplevel.cpp:227
+msgid "&Highlight..."
+msgstr "Pou&dari..."
+
+#: toplevel.cpp:230
+msgid "&Options..."
+msgstr "&Opcije..."
+
+#: toplevel.cpp:231
+msgid "&Colors..."
+msgstr "&Barve..."
+
+#: toplevel.cpp:234
+msgid "Show &Toolbar"
+msgstr "Prika¾i &orodjarno"
+
+#: toplevel.cpp:235
+msgid "Show &Statusbar"
+msgstr "Prika¾i &statusno vrstico"
+
+#: toplevel.cpp:236
+msgid "Save Config"
+msgstr "Shrani nastavitve"
+
+#: toplevel.cpp:249
+msgid ""
+"KWrite 0.98\n"
+"\n"
+"Copyright 1998\n"
+"Jochen Wilhelmy\n"
+"digisnap@cs.tu-berlin.de"
+msgstr ""
+"KWrite 0.98\n"
+"\n"
+"Avtorske pravice 1998\n"
+"Jochen Wilhelmy\n"
+"digisnap@cs.tu-berlin.de"
+
+#: toplevel.cpp:272
+msgid "&Bookmarks"
+msgstr "&Zaznamki"
+
+#: toplevel.cpp:291
+msgid "New Document"
+msgstr "Nov dokument"
+
+#: toplevel.cpp:295
+msgid "Open Document"
+msgstr "Odpri dokument"
+
+#: toplevel.cpp:299
+msgid "Save Document"
+msgstr "Shrani dokument"
+
+#: toplevel.cpp:478
+msgid "Col"
+msgstr "Stolp"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

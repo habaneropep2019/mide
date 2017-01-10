@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 1998.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KPM\n"
+"POT-Creation-Date: 1999-04-17 02:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: prefs.C:33
+msgid "Graphic Load Display"
+msgstr "Graafinen kuormanäyttö"
+
+#: prefs.C:34
+msgid "Graphic CPU Display"
+msgstr "Graafinen CPU -näyttö"
+
+#: prefs.C:35
+msgid "Graphic Memory Display"
+msgstr "Graafinen muistinäyttö"
+
+#: prefs.C:36
+msgid "Graphic Swap Display"
+msgstr "Graafinen heittovaihtonäyttö"
+
+#: prefs.C:37
+msgid "Load Graph in Icon"
+msgstr "Lataa grafiikka ikonissa"
+
+#: prefs.C:38
+msgid "Dock into kpanel"
+msgstr ""
+
+#: prefs.C:43
+msgid "Green/Black Load Graph"
+msgstr "Vihreä/musta kuormagraafi"
+
+#: prefs.C:45
+msgid "Solid filled graph"
+msgstr "Täytetty graafi"
+
+#: prefs.C:50
+msgid "Host Name Lookup"
+msgstr "Isäntänimen haku"
+
+#: prefs.C:55
+msgid "Auto Save Settings on Exit"
+msgstr "Tallenna asetukset lopetettaessa"
+
+#: prefs.C:67
+msgid "Status Bar"
+msgstr "Tilarivi"
+
+#: prefs.C:69
+msgid "Socket Info Window"
+msgstr "Pistokeikkuna"
+
+#: qps.C:88 qps.C:126
+msgid "Renice..."
+msgstr "Renice..."
+
+#: qps.C:91
+msgid "Change Scheduling..."
+msgstr "Muuta skedulointia..."
+
+#: qps.C:95 qps.C:130
+msgid "Socket Info"
+msgstr "Pistoketiedot"
+
+#: qps.C:100
+msgid "Iconify"
+msgstr "Pienennä"
+
+#: qps.C:108 qps.C:132
+msgid "Terminate"
+msgstr "Lopeta"
+
+#: qps.C:111 qps.C:133
+msgid "Hangup"
+msgstr "Katkaise"
+
+#: qps.C:114 qps.C:134
+msgid "Interrupt"
+msgstr "Keskeytä"
+
+#: qps.C:117 qps.C:136
+msgid "Kill"
+msgstr "Tapa"
+
+#: qps.C:120
+msgid "Other"
+msgstr "Muuta"
+
+#: qps.C:127
+msgid "Scheduling..."
+msgstr "Skedulointi..."
+
+#: qps.C:137
+msgid "Other signals"
+msgstr "Muut signaalit"
+
+#: qps.C:145
+msgid "Remove field"
+msgstr "Poista kenttä"
+
+#: qps.C:147
+msgid "Add field..."
+msgstr "Lisää kenttä..."
+
+#: qps.C:151
+msgid "Help on field..."
+msgstr "Kentän ohje..."
+
+#: qps.C:156
+msgid "Refresh process list"
+msgstr "Päivitä prosessilista"
+
+#: qps.C:159
+msgid "All Processes"
+msgstr "Kaikki prosessit"
+
+#: qps.C:160
+msgid "Your Processes"
+msgstr "Omat prosessit"
+
+#: qps.C:161
+msgid "Non-Root Processes"
+msgstr "Ei root -prosessit"
+
+#: qps.C:162
+msgid "Running Processes"
+msgstr "Käynnissäolevat prosessit"
+
+#: qps.C:164
+msgid "User Fields"
+msgstr "Käyttäjän kentät"
+
+#: qps.C:165
+msgid "Jobs Fields"
+msgstr "Työkentät"
+
+#: qps.C:166
+msgid "Memory Fields"
+msgstr "Muistikentät"
+
+#: qps.C:168
+msgid "Select Fields..."
+msgstr "Valitse kentät..."
+
+#: qps.C:174
+msgid "Update Period..."
+msgstr "Päivitysväli..."
+
+#: qps.C:179
+msgid "Show command path"
+msgstr "Näytä komennon polku"
+
+#: qps.C:181
+msgid "Show ressource info"
+msgstr "Näytä resurssitiedot"
+
+#: qps.C:183
+msgid "Show toolbar"
+msgstr "Näytä työkalurivi"
+
+#: qps.C:187
+msgid "Preferences..."
+msgstr "Asetukset..."
+
+#: qps.C:190
+msgid "Save Settings Now"
+msgstr "Tallenna asetukset"
+
+#: qps.C:195
+msgid ""
+" - A Visual Process Manager (KDE Version)\n"
+"\n"
+"© 1997 Mattias Engdegård (f91-men@nada.kth.se)\n"
+"© 1998 Mario Weilguni (mweilguni@kde.org)\n"
+"\n"
+"kpm is the KDE version of qps, written by Matthias\n"
+"Engdegård. The port to KDE was done by Mario\n"
+"Weilguni. If you are interested on the original\n"
+"qps, you can find it at the following location:\n"
+"    ftp://sunsite.unc.edu/pub/linux/system/status\n"
+"\n"
+"This program is published under the GNU General\n"
+"Public License (GNU GPL). See the file COPYING\n"
+"for details about this."
+msgstr ""
+
+#: qps.C:210
+msgid "&Window"
+msgstr "&Ikkuna"
+
+#: qps.C:211
+msgid "&Process"
+msgstr "&Prosessi"
+
+#: qps.C:212
+msgid "&Signal"
+msgstr "&Signaali"
+
+#: qps.C:308
+msgid "SIGQUIT (quit)"
+msgstr "SIGQUIT (lopeta)"
+
+#: qps.C:309
+msgid "SIGILL (illegal instruction)"
+msgstr "SIGILL (virheellinen komento)"
+
+#: qps.C:310
+msgid "SIGABRT (abort)"
+msgstr "SIGABRT (peruuta)"
+
+#: qps.C:311
+msgid "SIGFPE (floating point exception)"
+msgstr "SIGFPE (liukulukupoikkeus)"
+
+#: qps.C:312
+msgid "SIGSEGV (segmentation violation)"
+msgstr "SIGSEGV (muistisuojausvirhe)"
+
+#: qps.C:313
+msgid "SIGPIPE (broken pipe)"
+msgstr "SIGPIPE (katkennut putki)"
+
+#: qps.C:314
+msgid "SIGALRM (timer signal)"
+msgstr "SIGALRM (ajastinsignaali)"
+
+#: qps.C:315
+msgid "SIGUSR1 (user-defined 1)"
+msgstr "SIGUSR1 (käyttäjän 1)"
+
+#: qps.C:316
+msgid "SIGUSR2 (user-defined 2)"
+msgstr "SIGUSR2 (käyttäjän 2)"
+
+#: qps.C:317
+msgid "SIGCHLD (child death)"
+msgstr "SIGCHLD (lapsi kuoli)"
+
+#: qps.C:318
+msgid "SIGCONT (continue)"
+msgstr "SIGCONT (jatka)"
+
+#: qps.C:319
+msgid "SIGSTOP (stop)"
+msgstr "SIGSTOP (pysäytä)"
+
+#: qps.C:320
+msgid "SIGTSTP (stop from tty)"
+msgstr "SIGTSTP (pysäytä tty:tä)"
+
+#: qps.C:321
+msgid "SIGTTIN (tty input)"
+msgstr "SIGTTIN (tty syöte)"
+
+#: qps.C:322
+msgid "SIGTTOU (tty output)"
+msgstr "SIGTTOU (tty tuloste)"
+
+#: qps.C:622
+#, c-format
+msgid ""
+"You do not have permission to view the\n"
+"open sockets of process %d (%s).\n"
+"Only the owner of the process and the\n"
+"super-user may do that."
+msgstr ""
+"Sinulla ei ole oikeuksia katsoa\n"
+"prosessin %d (%s) avoimia pistokkeita.\n"
+"Vain prosessin omistaja ja pääkäyttäjä\n"
+"voi tehdä tämän."
+
+#: qps.C:627 qps.C:836 qps.C:878 qps.C:884 qps.C:907 qps.C:943 qps.C:987
+msgid "Permission denied"
+msgstr "Oikeudet evätty"
+
+#: qps.C:700
+msgid "qps: change update period"
+msgstr "qps: muuta päivitysväliä"
+
+#: qps.C:701
+msgid "New update period:"
+msgstr "Uusi päivitysväli:"
+
+#: qps.C:716 qps.C:855 scheddlg.C:113
+msgid "Invalid input"
+msgstr "Virheellinen syöte"
+
+#: qps.C:717
+msgid ""
+"The time between updates should be a number, optionally followed\n"
+"by a unit (ms, s or min). If no unit is given, seconds is assumed."
+msgstr ""
+"Aika päivitysten välillä pitää olla numero, voit myös antaa\n"
+"yksikön (ms, s tai min). Jos yksikköä ei anneta oletetaan sekunti."
+
+#: qps.C:831
+#, c-format
+msgid ""
+"You do not have permission to renice the\n"
+"selected process%s.\n"
+"Only the process owner and the super-user\n"
+"are allowed to do that."
+msgstr ""
+"Sinulla ei ole oikeuksia renice:ta prosessia %s\n"
+"Vain prosessin omistaja tai pääkäyttäjä\n"
+"voi tehdä tämän."
+
+#: qps.C:845
+msgid "qps: renice process"
+msgstr "qps: renice prosessi"
+
+#: qps.C:846
+msgid "New nice value:"
+msgstr "Uusi nice arvo:"
+
+#: qps.C:856
+msgid ""
+"The nice value should be\n"
+"in the range -20 to 20."
+msgstr ""
+"Nice arvon tulee olla\n"
+"välillä -20..20."
+
+#: qps.C:873
+#, c-format
+msgid ""
+"You do not have permission to renice process %d (%s).\n"
+"Only the process owner and the super-user are allowed to do that."
+msgstr ""
+"Sinulla ei oile oikeuksia renice:tä prosessia %d (%s).\n"
+"Vain prosessin omistaja ja pääkäyttäjä voi tehdä tämän."
+
+#: qps.C:885
+msgid "Only the super-user may lower the nice value of a process."
+msgstr "Vain pääkäyttäjä voi laskea prosessin nice -arvoa"
+
+#: qps.C:908
+msgid ""
+"Only the super-user may change the\n"
+"scheduling policy and static priority."
+msgstr ""
+"Vain pääkäyttäjä voi vaihtaa\n"
+"skedulointitapaa ja staattista prioriteettia."
+
+#: qps.C:938
+#, c-format
+msgid ""
+"You do not have permission to change the\n"
+"scheduling and/or priority of process %d (%s).\n"
+"Only the super-user may do that."
+msgstr ""
+"Sinulla ei ole oikeuksia muuttaa\n"
+"skedulointia ja/tai prioriteettia prosessille %d (%s).\n"
+"Vain pääkäyttäjä voi tehdä tämän."
+
+#: qps.C:982
+#, c-format
+msgid ""
+"You do not have permission to send a signal to process %d (%s).\n"
+"Only the super-user and the owner of the process may send signals to it."
+msgstr ""
+"Sinulla ei ole oikeuksia lähettää signaalia prosessille %d (%s).\n"
+"Vain pääkäyttäjä sekä prosessin omistaja voivat lähettää sille signaaleja."
+
+#: scheddlg.C:22
+msgid "Change scheduling"
+msgstr "Muuta skedulointia"
+
+#: scheddlg.C:28
+msgid "Scheduling Policy"
+msgstr "Skedulointipolitiikka"
+
+#: scheddlg.C:29
+msgid "SCHED_OTHER (time-sharing)"
+msgstr "SCHED_OTHER (ajanjako)"
+
+#: scheddlg.C:36
+msgid "SCHED_FIFO (real-time)"
+msgstr "SCHED_FIFO (reaaliaika)"
+
+#: scheddlg.C:42
+msgid "SCHED_RR (real-time)"
+msgstr "SCHED_RR (reaaliaika)"
+
+#: scheddlg.C:67
+msgid "Priority (1-99):"
+msgstr "Prioriteetti (1-99):"
+
+#: scheddlg.C:114
+msgid "The priority must be in the range 1..99"
+msgstr "Prioriteetin on oltava välillä 1..99"

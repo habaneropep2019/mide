@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The Kuser Handbook: Usage</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="kuser user management admin tools">
+<META NAME="description" CONTENT="The Kuser Handbook">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="index-4.html">Next</A>
+<A HREF="index-2.html">Previous</A>
+<A HREF="index.html#toc3">Table of Contents</A>
+</P>
+<H3><A NAME="sec-Using"></A> <A NAME="s3">3. Usage</A></H3>
+
+<H3><A NAME="sec1-MainWindow"></A> <A NAME="ss3.1">3.1 Main Window</A>
+</H3>
+
+<P>Kuser is a very simple application. In the main window you can see two lists:
+the list of users and the list of groups. To edit a user or a group you
+just double click on it. The user/group properties dialog will
+appear.
+<P>
+<H3><A NAME="sec1-UserProps"></A> <A NAME="ss3.2">3.2 User Properties Dialog</A>
+</H3>
+
+<P>The user properties dialog has two, three or four tabs.
+<P>
+<P>The number of tabs 
+depends on the type of the user storage system and quota presence.
+Additional tabs will appear if you have shadow passwords, or any other similar
+things such as /etc/master.passwd in BSD flavor Unices.
+<P>
+<H4><A NAME="sec2-userinfo"></A> User Info Tab</H4>
+
+<P>In the 'User Info' tab you can modify: Full name, Login shell (the list of login
+shells is taken from the /etc/shells file), Home directory, Extra info, User
+ID, and
+Password.
+<P>
+<H4><A NAME="sec2-extended"></A> Extended Info Tab</H4>
+
+<P>The 'Extended Info' tab will appear if you have shadow passwords, or any other similar
+things such as /etc/master.passwd in BSD flavor Unices.
+In the 'Extended Info' tab you can modify parameters related to extended account control: Date until
+change allowed, Date before change required, Date user will be warned about
+expiration, Date before account inactivation, Date when account expires, and
+Class (on BSD systems).
+<P>
+<H4><A NAME="sec2-quota"></A> Quota Tab</H4>
+
+<P>You may see the 'Quota' tab only if you have at least one mounted volume with
+quota enabled and a quota file present. There you may modify all quota related
+parameters: File Soft Quota, File Hard Quota, File Time Limit (Grace Period),
+iNode Soft Quota, iNode Hard Quota, iNode Time Limit (Grace Period). All
+this parameters can be changed for each filesystem that has user quota
+enabled. Filesystems can be changed using the 'Quota Filesystem' combobox.
+<P>
+<H4><A NAME="sec2-group"></A> Groups Tab</H4>
+
+<P>The 'Groups' tab contains all the information about user's participation in groups.
+First of all, it shows the user's primary group. Also, you can assign as many
+secondary groups as you wish using the arrow buttons.
+<P>
+<H3><A NAME="sec1-GroupProps"></A> <A NAME="ss3.3">3.3 Group Properties</A>
+</H3>
+
+<P>The Group properties dialog has two list boxes. The right one contains users,
+who are included in the group, and the left one contains the list of
+all other users in the system.
+<P>
+<H3><A NAME="sec1-add"></A> <A NAME="ss3.4">3.4 Adding Users/Groups</A>
+</H3>
+
+<P>Also you can add and delete users using either buttons or the menu.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="index-4.html">Next</A>
+<A HREF="index-2.html">Previous</A>
+<A HREF="index.html#toc3">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

@@ -1,0 +1,195 @@
+kedit 0.7
+=========
+
+Fixed up word wrap in auto-indent and normal mode and implemented emacs
+still ctrl-k ctrl-y kill-ring. KEdit should be quite usable now.
+
+kedit 0.5
+=========
+
+This is release 0.5 of KEdit.
+
+There are quite a number internal as external changes. The biggest
+problem were a number of bugs that the underlying QMultiLineWidget
+exhibits in Qt 1.2.  For anything I started, be it find, replace,
+word-wrap, indent-mode, loading, saving, I hit upon bugs in the
+multiline widget and had to find work-arounds. This is the main
+reason, why this new release took so long. However, the Trolls were
+very responsive to my bug reports and helped me in finding work
+arounds.  The next release of qt, qt 1.3 should have a much better
+multiline widget. Thanks, Trolls!
+
+One of the consequences of this is that find, find/replace, word-warp
+and indent mode don't "feel right". They, as you will notice feel slow
+and sluggish. We have to wait for qt 1.3 for this to improve. However
+Qt 1.3 might well break some of the work arounds in place now, but I
+will make a good effort to bring out a new version of kedit as soon as
+qt 1.3 appears.
+
+I made so many changes, that I wouldn't be surprise if I broke some
+basic functionality. Please test kedit and let me know immediately if
+you think you found a bug. I will fix the problem as soon as
+possible.
+
+Note: You need smgl-tools 0.99 if you want to regenerate the provided
+      documentation in ps, html, dvi format for the sgml source.
+
+Changes:
+	o adopted new kde look
+	o found workaround for faster loading and saving.
+	o find dialog working properly
+	o find/replace dialog working properly
+	o Indent Mode
+	o Goto Line
+	o Fill Column 
+	o Word Wrap
+	o Documentation is now provided in sgml, ps, dvi, and html
+        o Rewrote the underlying kedit widget, so that it can now be used in 
+	  other applications such as kmail.
+	o rewrites, rewrites, rewrites .... still there is more
+          historical baggage left to get rid of....
+
+TODO:
+
+	o recently opened files list
+	o remember last directory the user opened a file in.
+	o Paragraph formatting
+	o Spell Checking (maybe)
+	o Option to turn backup file creation off.
+	o better support for net-files.
+
+Problems:
+
+	o Help will only work with the next release of kdelibs. Alternatively 
+	  you can copy a copy of kedit.html, kedit.gif into 
+	  $(KDEDIR)/docs/HTML
+	
+	o kedit has currently problems to deal with color-scheme changes
+ 	  without restarting kedit. I have made the necessary changes to 
+	  libkdecore to deal with this problem. You will however have to wait
+	  for the next kdelibs release. At that time I will also bring out
+          a new version of kedit that will take advantage of those changes.
+
+
+There is still lots to be done, but I hope you will find kedit a useful
+little editor already.
+
+Best Regards,
+Bernd
+
+wuebben@kde.org
+wuebben@math.cornell.edu
+
+kedit+ 0.4.1
+============
+
+Solved the "tab" problem. kedit+ is now Makefile proof. :-)
+
+kedit+ 0.4
+==========
+
+A few last minute changes to kedit+ 0.2 introduced an embarrassing bug,
+which didn't let you "save as" an "Untitled" document. I fixed that
+bug, and while I was at it I added colors to the Options dialog. 
+Now you can also set the fore- and background colors of kedit+.
+Martin Konold suggested I bump the version number to something larger
+than 0.3.1 which was the last release of kedit.
+
+If you have problems with the pixmaps, please note that you need
+Qt 1.2 or better for kedit+.
+
+Hope you will find this editor useful.
+
+I STILL NEED AN OPEN-FOLDER ICON !!!! PLEAE HELP :-)
+
+Best Regards, Bernd
+
+wuebben@kde.org
+wuebben@math.cornell.edu
+
+kedit+ 0.2
+==========
+
+This is kedit+ a simple text editor for the KDE project. I have taken 
+Alex Sanda's kedit and turned it into what I believe to be
+a useful little editor. I had to rewrite many parts of the original 
+kedit and added, as you will surely notice, many new features.
+Nevertheless, it is still no emacs and will never be one ;-)
+
+I have tried to contact Alex, but haven't heard back from him.
+Should kedit+ become kedit? kedit has not been developed for
+about 4 month .... 
+
+
+HELP WANTED:  I need an open-folder icon !!!
+
+I hope you like kedit+, the next Generation :-)
+
+
+Bernd Wuebben
+wuebben@kde.org
+wuebben@math.cornell.edu
+
+
+========================================================================
+
+     Kedit 0.3.1, small editor for the KDE project.
+     
+     
+Kedit is a small, simple and almost featureless :) editor, just like
+the well-known Notepad. It is suitable only for small editing tasks, or
+as a simple textfile browser.
+
+Currently, kedit is in a very early development stage. It can load,
+save/saveas files, and - of course - it can edit those files :) There is
+some room for improvements, but I really want this editor to be small and
+simple.
+
+Kedit can open multiple windows (so you can edit multiple files), without
+having multiple copies of the whole program in memory.
+
+
+
+Changes
+=======
+
+Version 0.3.1 (Martin Hartig, hartig@mathematik.uni-kl.de, 21.2.97)
+
+- usage of the kdehelp browser, HTML help text added
+
+Version 0.3 (Torben Weiss, weiss@kde.org, 4.2.97 )
+
+- Drag and Drop added
+
+- Added network access. Can load any file kfm can. To use this feature you
+  must run kfm. If none is running kedit will start one on demand.
+
+- Can save files everywhere kfm can, this means right now that you can
+  write to ftp servers.
+
+- Using libkdecore and libkfm. This means you need libkde-0.61 and
+  kfm-0.51 or greater installed
+
+- Fixed some bugs
+
+- Works with any amount of windows now
+
+- Changed some key bindings, but not all
+
+- You can call
+  make
+  make install
+ 
+
+TODO:
+        Implement search again (and maybe replace), including regexp
+        support. At the moment, only the search dialog has been implemented.
+
+        Clean up some stuff, make it more user-friendly(tm).
+        
+	Keybindings: I'am sure, they are currently not kde-conform.
+        
+	Use (a not existing) KFileDialog that lets you enter URLs
+
+
+                         Bernd

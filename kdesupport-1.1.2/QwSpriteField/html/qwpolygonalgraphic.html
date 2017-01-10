@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta name="robots" content="noindex,noarchive">
+<title>Efficient Sprite Classes for Qt - QwPolygonalGraphic Class</title>
+</head><body bgcolor="#ffffff">
+
+<h1 align=center>QwPolygonalGraphic Class Reference</h1><br clear="all">
+<p>
+NOT YET IMPLEMENTED - A <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> which renders itself in a polygonal area.
+<a href="#details">More...</a>
+<p>
+<code>#include &lt;<a href="QwSpriteField-h.html">QwSpriteField.h</a>&gt;</code>
+<p>
+Inherits <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>.
+<p>Inherited by <a href="qwellipse.html">QwEllipse</a>, QwPolygon and <a href="qwrectangle.html">QwRectangle</a>.
+<p><a href="qwpolygonalgraphic-members.html">List of all member functions.</a>
+<h2>Public Members</h2>
+<ul>
+<li><span class="fn"><a href="qwpolygonalgraphic.html#a0"><strong>QwPolygonalGraphic</strong></a> () </span>
+<li><span class="fn">virtual <a href="qwpolygonalgraphic.html#a1"><strong>~QwPolygonalGraphic</strong></a> () </span>
+<li><span class="fn">virtual bool <a href="qwspritefieldgraphic.html#b0"><strong>at</strong></a> ( int, int ) const</span>
+<li><span class="fn">bool <strong>at</strong> ( const class QRect &amp; ) const</span>
+<li><span class="fn">virtual int <a href="qwpolygonalgraphic.html#a4"><strong>rtti</strong></a> () const</span>
+<li><span class="fn">QPoint <strong>position</strong> () const</span>
+<li><span class="fn">int <strong>x</strong> () const</span>
+<li><span class="fn">int <strong>y</strong> () const</span>
+<li><span class="fn">void <strong>z</strong> ( int a ) </span>
+<li><span class="fn">virtual int <a href="qwspritefieldgraphic.html#a4"><strong>z</strong></a> () const</span>
+<li><span class="fn">void <strong>setPen</strong> ( QPen p ) </span>
+<li><span class="fn">void <strong>setBrush</strong> ( QBrush b ) </span>
+<li><span class="fn">void <strong>moveTo</strong> ( int x, int y ) </span>
+<li><span class="fn">void <strong>moveTo</strong> ( QPoint ) </span>
+<li><span class="fn">virtual void <strong>moveBy</strong> ( int dx, int dy ) </span>
+<li><span class="fn">void <strong>moveBy</strong> ( QPoint ) </span>
+</ul>
+<h2>Protected Members</h2>
+<ul>
+<li><span class="fn">virtual void <a href="qwpolygonalgraphic.html#b6"><strong>makeVisible</strong></a> ( bool yes ) </span>
+<li><span class="fn">virtual void <strong>movingBy</strong> ( int dx, int dy ) </span>
+<li><span class="fn">virtual QPointArray <strong>areaPoints</strong> () const</span>
+<li><span class="fn">void <a href="qwpolygonalgraphic.html#b9"><strong>addToChunks</strong></a> () </span>
+<li><span class="fn">void <a href="qwpolygonalgraphic.html#c0"><strong>removeFromChunks</strong></a> () </span>
+<li><span class="fn">void <a href="qwpolygonalgraphic.html#c1"><strong>changeChunks</strong></a> () </span>
+<li><span class="fn">void <strong>drawRects</strong> ( QPainter &amp; p ) </span>
+<li><span class="fn">void <strong>draw</strong> ( class QPainter &amp; ) </span>
+<li><span class="fn">virtual void <strong>drawShape</strong> ( class QPainter &amp; ) </span>
+</ul>
+<hr><h2><a name="details"></a>Detailed Description</h2>
+NOT YET IMPLEMENTED - A <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a> which renders itself in a polygonal area.
+<p>
+QwPolygonalGraphic is an abstract class that is useful for all graphics
+which cover a polygonal area of chunks on the field.
+Sprites, the other branch of QwSpriteFieldGraphic derivatives usually
+cover
+a simple rectangular area and are dealt with specially, but typical
+geometric shapes such as lines and circles would be quite inefficiently
+bounded by rectangular areas - a diagonal line from one corner of the
+field area to the other bound be bounded by a rectangle covering
+the entire area! QwPolygonalGraphic objects allow the area to be
+defined by a polygon - a sequence of points indicating the chunks
+bounding the area covered by the graphic.
+<p>Derived classes should try to define as small as possible an area
+to maximize efficiency, but must <em>definately</em> be contained completely
+within the polygonal area.  Calculating the exact requirements will
+generally be difficult, and hence a certain amount of over-estimation
+could be expected.
+<p>See also:  QwLineGraphic? and QwCircleGraphic?.
+
+<hr><h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="a0"></a>QwPolygonalGraphic::QwPolygonalGraphic ()</h3>
+<p>Construct a QwPolygonalGraphic.
+Derived classes should call <a href="qwpolygonalgraphic.html#b9">addToChunks</a>()
+in their constructor once <a href="qwpolygonalgraphic.html#c8">numAreaPoints</a>() and <a href="qwpolygonalgraphic.html#c9">getAreaPoints</a>() are valid.
+<h3 class="fn"><a name="a1"></a>QwPolygonalGraphic::~QwPolygonalGraphic () <code>[virtual]</code></h3>
+<p>Destruct the QwPolygonalGraphic.  Derived classes <em>must</em> remove the area
+from any chunks, as this destructor cannot call the virtual methods
+required to do so.  That is, they must call <a href="qwspritefieldgraphic.html#a7">hide</a>() in their
+destructor.
+<h3 class="fn">void <a name="b9"></a>QwPolygonalGraphic::addToChunks () <code>[protected]</code></h3>
+<p>Adds the sprite to the appropriate chunks.
+<h3 class="fn">void <a name="c1"></a>QwPolygonalGraphic::changeChunks () <code>[protected]</code></h3>
+<p>Marks the appropriate chunks as changed.
+<h3 class="fn">void <a name="b6"></a>QwPolygonalGraphic::makeVisible ( bool show ) <code>[virtual protected]</code></h3>
+<p>Adds/removes the area from the <a href="qwspritefield.html">QwSpriteField</a> chunks it covers, as
+required by <a href="qwspritefieldgraphic.html">QwSpriteFieldGraphic</a>.
+<p>Reimplemented from <a href="qwspritefieldgraphic.html#b4">QwSpriteFieldGraphic.</a>
+<h3 class="fn">void <a name="c0"></a>QwPolygonalGraphic::removeFromChunks () <code>[protected]</code></h3>
+<p>Removes the sprite from the appropriate chunks.
+<h3 class="fn">int <a name="a4"></a>QwPolygonalGraphic::rtti () const <code>[virtual]</code></h3>
+<p>Returns 2.
+<p>See also:  <a href="qwspritefieldgraphic.html#b3">QwSpriteFieldGraphic::rtti</a>().
+<p>Reimplemented from <a href="qwspritefieldgraphic.html#b3">QwSpriteFieldGraphic.</a>
+<hr><p>
+This file is 
+copyright &copy;</a> 1995-97
+Warwick Allison</a>.
+<p>
+It was generated from the following files:
+<ul>
+<li>QwSpriteField.h
+<li>QwSpriteField-double.cpp<li>QwSpriteField-int.cpp<li>QwSpriteField-mobdouble.cpp<li>QwSpriteField-mobint.cpp<li>QwSpriteField-template.cpp<li>QwSpriteField.cpp</ul>
+<hr><address>
+Generated at 09:21, 1998/12/09 for Qt version 1.4 by the <a href="mailto:warwick@troll.no">warwick</a> at <a href="http://www.troll.no/">Troll Tech</a>
+</address>
+</body></html>

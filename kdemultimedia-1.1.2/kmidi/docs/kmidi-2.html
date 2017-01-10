@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The KMidi Handbook: Installation</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KMidi Midi Player Timidity Midi to Wav">
+<META NAME="description" CONTENT="KMidi Midi Player Timidity Midi To Wav">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kmidi-3.html">Next</A>
+<A HREF="kmidi-1.html">Previous</A>
+<A HREF="kmidi.html#toc2">Table of Contents</A>
+</P>
+<H3><A NAME="s2">2. Installation</A></H3>
+
+<P>
+<H3><A NAME="ss2.1">2.1 How to obtain KMidi</A>
+</H3>
+
+<P>KMidi is part  of the KDE project 
+<A HREF="http://www.kde.org">http://www.kde.org</A>.
+KMidi can be found on 
+<A HREF="ftp://ftp.kde.org/pub/kde/">ftp://ftp.kde.org/pub/kde/</A>, the main ftp site
+of the KDE project. It's home site is
+<A HREF="http://math.cornell.edu/~wuebben/kde.html">http://math.cornell.edu/~wuebben/kde.html</A><P>
+<H3><A NAME="ss2.2">2.2 Requirements</A>
+</H3>
+
+<P>In order to successfully compile KMidi, you need the latest versions of <CODE> libkdecore</CODE>
+and <CODE> libkdeui</CODE>. All required libraries as well as KMidi itself can be found
+on 
+<A HREF="ftp://ftp.kde.org/pub/kde/">ftp://ftp.kde.org/pub/kde/</A>. 
+<P>
+<P>
+<P>
+<P>
+<H3><A NAME="ss2.3">2.3 Compilation and installation</A>
+</H3>
+
+<P>
+<P>If you have Timidity already installed be sure to back up your configuration file
+since by default KMidi will overwrite it!
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+% ./configure
+% make
+% make install
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>make will check if you have already precious config files from a previous installtion
+of kmidi in the config directory ( usuall KDEDIR/share/apps/kmidi/config ). If
+yes it will not overwrite them. So for a completely fresh install you must
+remove the files in the config directory.
+<P>Should you run into problems please report them to me.
+<P>
+<P>
+<H3><A NAME="patches"></A> <A NAME="ss2.4">2.4 Where to get a full set of patches?</A>
+</H3>
+
+<P>
+<P>
+<P>
+<A HREF="mailto:goemon@anime.net">Dan Hollis</A>
+has put together a patch set. Please visit his page at
+<A HREF="http://www.anime.net/~goemon/timidity/">http://www.anime.net/~goemon/timidity</A> and help him make this the best set available.
+<P>
+<P><B>New:</B> I have uploaded the above patchset to ftp.kde.org. It is currently in
+<CODE>ftp://ftp.kde.org/pub/kde/stable/Beta2/apps/multimedia/sound/</CODE>
+but I expect we will  move it  around a bit until we found a good location for it.
+So just poke around a bit on ftp.kde.org, if the set can no longer be found at the
+above mentioned location by the time you read this.
+<P>Patches can also be found packaged as dep or rpm modules on the Sunsite
+archive:
+<P>
+<P>
+<UL>
+<LI> Debian: 
+<A HREF="ftp://sunsite.unc.edu/pub/Linux/./distributions/debian/bo/source/sound/timidity-patches_0.1.tar.gz">timidity-patches_0.1.tar.gz</A>
+</LI>
+<LI> RPM:
+<A HREF="ftp://sunsite.unc.edu/pub/Linux/distributions/redhat/contrib/oldrpms/contrib-2.0.x/RPMS/timidity-patches-1-1.i386.rpm">timidity-patches-1-1.i386.rpm</A></LI>
+<LI> RPM:
+<A HREF="ftp://sunsite.unc.edu/pub/Linux/distributions/redhat/contrib/oldrpms/contrib-2.0.x/SRPMS/timidity-patches-1-1.src.rpm-try2">timidity-patches-1-1.src.rpm-try2</A>
+</LI>
+</UL>
+<P>
+<P>I have not tried the above (yet), and personally use the Midia patch set together
+with a few additional patches and a couple of additional drum sets.
+<P>The Midia patch set can be found at:
+<A HREF="ftp://archive.cs.umbc.edu/pub/midia/">ftp://archive.cs.umbc.edu/pub/midia/</A><P>For additional patches and drum sets: (get the gsdrum and wow patches)
+<A HREF="ftp://ftp.cdrom.com/pub/gus/sound/patches/files/">ftp://ftp.cdrom.com/pub/gus/sound/patches/files/</A><P>Vincent Pagel has put together a collection of patches. This link
+can only be reached during night hours (Paris).
+<A HREF="ftp://sig.enst.fr/pub/midi/instruments/">ftp://sig.enst.fr/pub/midi/instruments/</A><P>The config file that goes with his patch set can be found here:
+<A HREF="ftp://sig.enst.fr/pub/midi/timidity_pagel.cfg">ftp://sig.enst.fr/pub/midi/timidity_pagel.cfg</A><P>
+<P>Also check the TimidityPage:
+<A HREF="http://www.clinet.fi/~toivonen/timidity/">http://www.clinet.fi/~toivonen/timidity/</A><P>and Takahis's Page:
+<A HREF="http://bahamut.mm.t.u-tokyo.ac.jp/~iwai/midi.html#TiMidity">http://bahamut.mm.t.u-tokyo.ac.jp/~iwai/midi.html#TiMidity</A><P>
+<H4>Patch set installation</H4>
+
+<P>
+<P>Each of the above patch sets ( you need only one) should come with a .cfg
+configuration file similar to the .cfg files which come with KMidi 
+and reside in <CODE>KDEDIR/share/apps/kmidi/config</CODE>  
+<P>
+<P>KMidi has configurations files ready made for you for a number
+of common patch sets, such as the media patch set. 
+<P>In order to complete the installation of a complete patch set 
+edit the file timidity.cfg and source the appropriate config files for the patch 
+set/sets you downloaded. ( If you have a look at timidity.cfg it
+will be totally obvious what I am talking about)
+<P>That's it. Now you can go ahead and and play the other midis that are in the
+KMidi distribution ( and any others of course)
+<P>
+<P>
+<H4>Miscellaneous</H4>
+
+<P>Ocassionally you will see that KMidi can't find a patch for 
+a particular instrument. ( Open the Info Window in order to
+see this information ) In that case, all you have to do 
+is go out and get yourself the missing patch and install
+it by moving the patch into the patch/ directory and editing
+your patch set .cfg file to tell KMidi that the new patch
+is available now. 
+<P>
+<P>Sometimes a particular instrument doesn't sound all that well. 
+In that case, simply go out and get yourself a different patch from any of the
+Ultrasound archives and replace the not so optimal patch by a
+better one. As you can see, it is totally up to you how good
+every instrument will sound. You can even make your own patches
+with the pat2wav utility which is included in the KMidi distribution.
+<P>
+<P>
+<P>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kmidi-3.html">Next</A>
+<A HREF="kmidi-1.html">Previous</A>
+<A HREF="kmidi.html#toc2">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

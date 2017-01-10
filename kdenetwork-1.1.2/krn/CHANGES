@@ -1,0 +1,1333 @@
+-----------------------------------------------------------------------------
+Changes made Dec 20
+-----------------------------------------------------------------------------
+* [Roberto] Fixed segfaults on exit (Thanks Sven!)
+            Fixed the missing NNTP.moc dependency (Thanks to the 1E32 people
+            who emailed me about it ;-)
+-----------------------------------------------------------------------------
+Changes made Dec 17
+-----------------------------------------------------------------------------
+* [Roberto] Fixed yet another bug in NNTP::listXover.
+            Previously, it set the last article datum even if it didn't GET
+            info for that article! Shameful bug, actually.
+            Also this makes the bug I described in previous log more benign,
+            since the article won't disappear forever :-)
+            Implemented "are you sure you want to download a zillion
+            articles" option.
+            Fixed a bug in TypeLayout that made check boxes and radio buttons
+            look bad when using a small font. Now all dialogs look and
+            work ok on 640x480.
+            Fixed a segfault when closing NNTPConfigDlg.
+            Decoding now works :-)
+
+-----------------------------------------------------------------------------
+Changes made Dec 15
+-----------------------------------------------------------------------------
+* [Roberto] Long time no sein'! ;-)
+            In honour of the upcoming 1.1, here are some fixes.
+            Fixed the "lost last subscribed group" bug.
+            Added a desperate way to get articles from servers that
+            don't support "article <ID>". Those servers are broken,
+            but KRN should now work with them...
+            ...as long as you don't try to read the same group from TWO
+            broken servers, which will cause minor havoc.
+            Databases are (again) incompatible, sorry!
+            Restored artdlg's geometry memory.
+            Made "show only unread messages" the default, which seems more
+            reasonable.
+            Imported whole bunch of new files from kmail, which should
+            include a lot of bugfixes and new features, in particular
+            this should fix the bug with PGP and comp.os.linux.announce.
+            Switched artdlg and groupdlg to ktmainwindow, not
+            completely yet.
+            Trying to make binary decoding work again (this last worked in
+            beta 3!)
+            Made krnsender remove empty unneeded headers.
+            Removed strtok from listXover, which should make it a tad more
+            robust.
+            Simplified NNTP::PGetTextResponse, removing the observer
+            nonsense. KRN should block a bit less now, and the code be
+            cleaner.
+
+            IMPORTANT------------------------------------------------------
+            There is a bug that I can't track:
+                 1) open a group.
+                 2) get article list.
+                 3) post.
+                 4) get article list.
+                 5) post.
+                 6) get article list.
+            In my test system, it will not show the second post, which will
+            be missing forever! But I have no access to a real news server
+            that let me post, so I would LOVE some help here.
+            END-IMPORTANT--------------------------------------------------
+
+-----------------------------------------------------------------------------
+Changes made Jul 31
+-----------------------------------------------------------------------------
+* [Roberto] Changes to let old KRN build with the latest shortcut changes.
+-----------------------------------------------------------------------------
+Changes made Jul 29
+-----------------------------------------------------------------------------
+* [Roberto] Ok, time to start the big rewrite KRN is needing.
+            Bugfixes still will be done to the old code, but no new features
+            there.
+            Now the makefile has a new target, called newkrn, it requires Qt
+            1.40, since the only piece that's here (a new group dialog) uses
+            QListView instead of KTreeList.
+            Newkrn currently has no net support at all, so don't even bother
+            looking at it.
+            However, the first new feature is that it will allow for an
+            arbitrary number of newsgroup hierarchies.
+            So, you will have ways to see groups per server, per a personal
+            choice, the long awaited sane search that works as grep, the works.
+            If you wanna test it, just put a lot of things that look like
+            text files containing sorted lists of data that look like names
+            of newsgroups into ~/.kde/share/apps/krn/folder, and see.
+
+            Since I am reusing lots of the difficult pieces of the old code,
+            this should advance rather quickly.
+-----------------------------------------------------------------------------
+Changes made Jul 21
+-----------------------------------------------------------------------------
+* [Roberto] Fixed session management.
+-----------------------------------------------------------------------------
+Changes made Jul 20
+-----------------------------------------------------------------------------
+* [Roberto] Fixed some untranslated text, thanks goes to 
+  Wolfram Diestel <diestel@rzaix340.rz.uni-leipzig.de> for pointing this out.
+-----------------------------------------------------------------------------
+Changes made Jun 29
+-----------------------------------------------------------------------------
+* [Roberto] Fixed that damn bug (I still don't understand it) in the config
+            dialogs.
+            Also copied Markus' fix for Uwe's bug.
+-----------------------------------------------------------------------------
+Changes made Jun 24
+-----------------------------------------------------------------------------
+* [Roberto] Massive update from kmail. Described as "stabilization", IIRC.
+-----------------------------------------------------------------------------
+Changes made Jun 22
+-----------------------------------------------------------------------------
+* [Roberto] New kmreaderwin.cpp from kmail
+-----------------------------------------------------------------------------
+Changes made Jun 16
+-----------------------------------------------------------------------------
+* [Roberto] Even more new kmail stuff.
+            I made some *very* minor changes to them, and will put them back
+            in kmail so things are easier to sync. Of course this won't break
+            kmail. And if you excuse me, I will go say a prayer to Kissmycoatl
+            the Aztec god of hubris.
+-----------------------------------------------------------------------------
+Changes made Jun 16
+-----------------------------------------------------------------------------
+* [Roberto] Yet more files from kmail
+*           Bug fix for rules from Hans Zoebelein <zocki@goldfish.cube.net>
+*           Patch to remove getenv ("HOME") from Torsten Neumann
+            <torsten@londo.rhein-main.de> and added him to the about box.
+*           Fixed the "you need to list all groups or search doesn't really
+            work" bug.
+*           Version is now 0.4.8
+-----------------------------------------------------------------------------
+Changes made Jun 12
+-----------------------------------------------------------------------------
+* [Roberto] Yet more new files from the hardworking hands of Stefan ;-)
+*           What happened to my baby????? Half of the stuff ain't working
+            anymore! It doesn't remember geometry, it doesn't use the right
+            fonts, what happened!!!!???? :-(
+*   	    Ok, the geometry was because of the exit(0)
+*           My code to read the font config in the reader was deleted!!!!
+            I don't know who did it, BUT:
+            Please, people, if you are going to delete something that's
+            in a place that says "#ifdef KRN" please tell me, I'm pissed now!
+            :-(
+
+*           UGH, the group tree is broken too :-(
+*           The group tree is sane again. this was entirely my fault.
+            On the other hand, I could blame Johannes Sixt.... nah, it was
+            my fault ;-)
+*           Version is now 0.4.7. Apparently all the most obvious bugs are
+            fixed!
+
+-----------------------------------------------------------------------------
+Changes made Jun 11
+-----------------------------------------------------------------------------
+* [Roberto] Yet more new files from the hardworking hands of Markus ;-)
+-----------------------------------------------------------------------------
+Changes made Jun 10
+-----------------------------------------------------------------------------
+* [Roberto] Wow, long time!
+            Anyway, two patches by Hans Zoebelein <zocki@goldfish.cube.net>.
+            Thanks Hans!
+*           Removed the lock file. Did you knew gdbm does internal locking? ;-)
+*           Integrating *old* patch from Johannes Sixt.
+            Thanks Johannes!
+*           Syncing with latest kmail sources...
+            WARNING!!! I'm afraid I may have reintroduced some outdated
+            charset stuff into KRN!!!!!
+            Can't check it right now, tough :-(
+*           Bumped version to 0.4.6
+*           Ok, so Krn shouldn't print the password to stdout ;-)
+-----------------------------------------------------------------------------
+Changes made Apr 30
+-----------------------------------------------------------------------------
+* [Roberto] Fixed Message-ID bug.
+            It now uses <time(NULL).rand()@server.hostname> That should please
+            anyone.
+-----------------------------------------------------------------------------
+Changes made Apr 25
+-----------------------------------------------------------------------------
+* [Roberto] Made kdecode a independent application.
+*           Trying to fix a bug that puts a empty line in a newsgroup's
+            article file, with dire consequences.
+*           I'm embedding read status in the key for the database.
+            This will make everything incompatible, but it makes the program
+            faster.
+*           Will move ref info into another database. This will decrease
+            memory usage and will be yet another speedup.
+*           Fixed bug in expiring. Body expire setting was read wrong.
+*           Fixed small bug that caused some repeated articles when
+            crossposted.
+*           Adopted the "non-loop" patch from kmail. Seems to work (passed
+            200 messages ok).
+*           Removed unneeded -luulib in krn, since kdecode does that now.
+-----------------------------------------------------------------------------
+Changes made Apr 25
+-----------------------------------------------------------------------------
+* [Roberto] Still fixing MORE bugs in groupdlg.
+            Fixed them all. (Who am I kidding? ;-)
+*           Implemented better "get active groups". Now it merges new groups
+            with current list. This is good for multi-server support.
+-----------------------------------------------------------------------------
+Changes made Apr 24
+-----------------------------------------------------------------------------
+* [Roberto] Still fixing bugs in groupdlg. I think they are all squashed now.
+-----------------------------------------------------------------------------
+Changes made Apr 23
+-----------------------------------------------------------------------------
+* [Roberto] Fixed article counting code. This will never be exact, but who
+            cares. No other news reader is accurate either.
+*           Fixing gaping bug in groupdlg when "all newsgroups" hasn't
+            been opened.
+*           Fixing misc bugs in catchup.
+-----------------------------------------------------------------------------
+Changes made Apr 22
+-----------------------------------------------------------------------------
+* [Roberto] Fixed bug reported by TheQ ("Current"->decode didn't work).
+*           Adopted Markus' new KMReaderWin, but it still loops :-(
+            Reverted to older one.
+-----------------------------------------------------------------------------
+Changes made Apr 21
+-----------------------------------------------------------------------------
+* [Roberto] Combo box that remembers server names.
+            This also caused a bugfix in typelayout (there was no way to
+            create a rw combo box).
+-----------------------------------------------------------------------------
+Changes made Apr 20
+-----------------------------------------------------------------------------
+* [Roberto] Implementing faster sort. This is so HUMBLING ;-)
+-----------------------------------------------------------------------------
+Changes made Apr 18
+-----------------------------------------------------------------------------
+* [Roberto] Fixed a bug: Subjects starting with "{" cause a segfault in
+            KTabListBox. Now I remove the { but that's not nice.
+*           Implemented sane behaviour for "saving multiple". Now it saves
+            all messages in a single file.
+*           Fixed ugly bugs in multiple actions.
+*           Fixed bug in decoding multiparts.
+*           Fixed segfault in decoding dialog.
+*           Made default buttons default.
+-----------------------------------------------------------------------------
+Changes made Apr 17
+-----------------------------------------------------------------------------
+* [Roberto] Disabled URLification of email addresses (infinite loops)
+*           Don't make group actions jump.
+*           Trying to avoid flickering in group actions (Not really worked).
+*           Added a little more disconnection resistance.
+-----------------------------------------------------------------------------
+Changes made Apr 16
+-----------------------------------------------------------------------------
+* [Roberto] Enabled opening of subscribed newsgroups not in active.
+            I need that to read the Mozilla groups.
+*           Moved a line about 2 screens down, and krn becomes 1.5 MB smaller.
+*           Warped version to 0.4.0, which will be the Beta4 version.
+-----------------------------------------------------------------------------
+Changes made Apr 15
+-----------------------------------------------------------------------------
+* [Roberto] Small statusbar fixes.
+*           Fixed ::connect warnings.
+*           Better illusion of multi-threading (doesn't work AT ALL).
+*           Infrastructure for detection of disconnection is there.
+            It catches disconnections on request for articles.
+            Adding it to every other NNTP action is just a matter of patience.
+*           Added "Close" to articles window menu.
+*           Bugfix. Avoid segfault when trying to access a newsgroup that's
+            not in the active file.
+-----------------------------------------------------------------------------
+Changes made Apr 13
+-----------------------------------------------------------------------------
+
+* [Roberto] Now that my KDE finally builds ok (It seems now qt 1.33 is
+            required), I am fixing the bug when opening article windows.
+            I can't make KTMainWindow work at all (get weird errors when
+            inheriting), so I reverted to traditional KTW style.
+*           KTabListBox doesn't seem to resize the last column anymore...
+            Oh, well, that's rather easy to fix.
+*           Just found KSpinBox.... time to remove that ugly score slider!
+*           Fixed the most obvious scoring bugs.
+*           Removed annoying animation on action over multiple items
+-----------------------------------------------------------------------------
+Changes made Apr 5
+-----------------------------------------------------------------------------
+
+* [Roberto] Applied Sven's patch for the segfault on exit.
+*           Applied David Faure's Makefile.am patch.
+*           Article look changes are now immediate (this
+            was long overdue)
+*           Ok. This seems to fix the segfaults. I have no
+            clue about why, tough. No, it didn't. Oh, fuck it.
+*           Reset the article list to the top when init'ing
+            artdlg. The previous behaviour was quite confusing.
+
+-----------------------------------------------------------------------------
+Changes made Apr 3
+-----------------------------------------------------------------------------
+* [Roberto] Fixed yet another expiring bug (minutes DON'T have
+            1 second!)
+*           More usage of toolBar() (removed a couple of private
+            members), now it uses Icon(), too.
+*           Removed some painful debug()s.
+*           Little cleanups of groupdlg's code.
+*           Groups now remove old ID's from their article list,
+            not immediately, but it's done in a way to be not
+            too annoying.
+*           Oops, last changes broke article locking. Fixed.
+*           More debug messages removed.
+*           Bugfix in artdlg's article counter.
+*           Started working to make krn detect disconnections!
+-----------------------------------------------------------------------------
+Changes made Apr 2
+-----------------------------------------------------------------------------
+* [Roberto] Switched to KFileDialog.
+            This caused some weird #include trouble, ended #including
+            qdir.h in a header file.
+* [Roberto] Now uses toolBar() menuBar() and statusBar()
+            It now also segfaults when closing last window, maybe
+            because of all the latest ktopwidget movement :-(
+* [Roberto] New tool bar for the article window. A little more
+            complex, but I think it's cool.
+* [Roberto] Started working in expire status dialog, so Krn
+            exits more gracefully.
+* [Roberto] Fixed a bug in expiring code, and probably
+            introduced another.
+            If I have to convert a string to time_t, is it ok
+            to always use atol()?
+* [Roberto] Ok, now there's a window while this thing expires
+            its database. I know, it's ugly as sin, but it's
+            there, so learn to like it ;-)
+* [Roberto] Bumped version to 0.3.5
+-----------------------------------------------------------------------------
+Changes made Apr 1
+-----------------------------------------------------------------------------
+* [Roberto] Updates.
+* [Roberto] Finally made article databases shrink. That's half of the
+            oldest bug in krn.
+-----------------------------------------------------------------------------
+Changes made Mar 8
+-----------------------------------------------------------------------------
+
+* [Roberto] Well, it's now time to start working in this baby again.
+            Implemented UPDATE_SCORES. The menu was there, but it did nothing.
+
+-----------------------------------------------------------------------------
+Changes made Feb 24
+-----------------------------------------------------------------------------
+
+* [Jacek] Fixed charset dialog 
+* [Jacek] Added more charset config dialog functionality
+ 	  HTML-like unknown characters quoting as an option
+* [Roberto] Global scoring works!!!!!!
+            Per-newsgroup list of scoring rules soon, when this is debugged.
+* [Roberto] Now Krn should build again with gcc 2.7.x.
+* [Roberto] Added Jacek to the credit list, since charsets seems to work
+            (Keep them that way, Jacek! ;-)
+            Bumped version to 0.3.0, since scoring kinda is there.
+
+-----------------------------------------------------------------------------
+Changes made Feb 22
+-----------------------------------------------------------------------------
+
+* [Jacek] Added ugly charset configuration dialog.
+          I hope someone will prepare nicer one, I just
+	  wanted to show what should be configured.
+
+-----------------------------------------------------------------------------
+Changes made Feb 21
+-----------------------------------------------------------------------------
+
+* [Roberto] Finally implementing scoring, if not fully.
+* [Alex]    A FreeBSD patch.
+
+-----------------------------------------------------------------------------
+Changes made Feb 20
+-----------------------------------------------------------------------------
+
+* [Roberto] Adding support for kmreaderwin's configurability
+            So now you should be able to set inline/iconic/smart attachments
+            and brief/standard/full/fancy header display.
+            Bumped version to 0.2.9, so scoring will be 0.3.0
+
+* [Jacek]   Added basic charsets support.
+            Fixed bug that caused Content-Type header not being generated 
+	    correctly
+	    
+-----------------------------------------------------------------------------
+Changes made Feb 18
+-----------------------------------------------------------------------------
+
+* [Roberto] Imported new files from kmail.
+            Fixed bug that made it not build on gcc 2.7.x
+
+-----------------------------------------------------------------------------
+Changes made Feb 18
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed buglet in delayed expansion.
+            Imported more fixes from kmail.
+            Rule editor is now fully functional.
+            Scoring is now trivial to implement, however, my stomach has
+            declared it's independence from my brain, so I'll go home.
+
+-----------------------------------------------------------------------------
+Changes made Feb 17
+-----------------------------------------------------------------------------
+
+* [Roberto] Streamlined decoding process, by popular request.
+* [Roberto] Imported fixes from kmail.
+* [Roberto] Added "Quit" in the article list window.
+
+-----------------------------------------------------------------------------
+Changes made Feb 16
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed bug in binary decoding.
+
+-----------------------------------------------------------------------------
+Changes made Feb 13
+-----------------------------------------------------------------------------
+
+* [Roberto] More work done on making rules be nice and find it's target.
+            Added a chance to pass the "krn locked" dialog.
+            Of course if somebody manages to have two Krn's he will mess
+            his cache so badly it will never work again, but everybody
+            seems to want that ;-)
+            Adopting latest files from kmail.
+
+-----------------------------------------------------------------------------
+Changes made Feb 12
+-----------------------------------------------------------------------------
+
+* [Roberto] Now Krn stores headers and bodies separately.
+            But fear not! It still works with the old style cache, too.
+* [Roberto] Small fixes and a few extra functions. Now I only need to finish
+            the Rule class and scoring is 90% done.
+
+-----------------------------------------------------------------------------
+Changes made Feb 11
+-----------------------------------------------------------------------------
+
+* [Roberto] Adopted latest kmcomposewin.* from kmail
+* [Roberto] Small memory saving.
+* [Roberto] Added "article/lookup in altavista" menu option. It is at least
+            useful for testing, and as soon as I find exactly how DejaNews
+            works it can have very nifty uses...
+* [Roberto] Created NNTP::isHeadCached and isBodyCached. (useful for more
+            sophisticated yet bandwidth saving search/scoring).
+
+-----------------------------------------------------------------------------
+Changes made Feb 10
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed a bug in KMMessage::refsAsAnchor() that broke altavista
+            lookup.
+* [Roberto] Sorting works, except when threading is enabled.
+            In that case, it still works, but an ugly threading side effect
+            hides it.
+            Clicking in a header will sort (unthreaded) by that field.
+* [Roberto] Fixed bugs kb97 and kb101, which are in fact the same:
+            "The tree widget doesn't display + or - signs
+            unless one has expanded and collapsed the tree."
+* [Roberto] Bumped version to 0.2.3, after all sorting is an important
+            feature.
+
+-----------------------------------------------------------------------------
+Changes made Feb 9
+-----------------------------------------------------------------------------
+
+* [Roberto] Used Stefan's cleanupHeaders(), so Krn won't generate empty To:
+            headers when posting to a newsgroup.
+* [Roberto] Fixed a braino (I #ifdef'd the whole mail sending code in kmsender
+            with obvious results).
+* [Roberto] Added "mark tagged as read" and "as unread". Sometimes I wonder
+            how I forget to implement these silly features.
+            Sometimes I know :-)
+* [Roberto] Sorting is *this* close from working.
+
+-----------------------------------------------------------------------------
+Changes made Feb 8
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed a size bug in fontDlg.
+* [Roberto] Working in header sorting.
+* [Roberto] Took a new round of bugfixes from kmail.
+
+-----------------------------------------------------------------------------
+Changes made Feb 7
+-----------------------------------------------------------------------------
+
+* [Roberto] Fix for bug kb59. Netscape can't show the bugs page, but KFM can!
+            Maybe we should have a button "visible only with KFM" ;-)
+
+-----------------------------------------------------------------------------
+Changes made Feb 6
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed (or better, made work) searching in articles bodies.
+* [Roberto] Improved find article dialog, can select regexp modes.
+* [Roberto] Started implementation of rules, which is the beginning
+            for scoring.
+* [Roberto] Fixed bug reported by Johannes Sixt.
+
+-----------------------------------------------------------------------------
+Changes made Feb 5
+-----------------------------------------------------------------------------
+
+* [Roberto] Started implementing a nicer printing system.
+            Rationale: the htmlwidget's printing system is a pain if you want
+            to print more than one message, and a2ps prints *gorgeous* messages.
+            Here is my command line:
+            a2ps -1 --pretty-print=mailfolder --non-printable-format=space
+            Also printing through the HTML widget is still possible.
+* [Roberto] Implemented body search, both for cached only and for cached or
+            uncached articles, and fixed a color bug in continued searches.
+            Still doesn't work right for not cached articles.
+
+-----------------------------------------------------------------------------
+Changes made Feb 3
+-----------------------------------------------------------------------------
+
+* [Roberto] Improved article display options dialog.
+* [Roberto] Enabled the "many newsgroup windows drive me crazy" option.
+            Hey, I even made it the default!.
+* [Roberto] Made the "VertSplit" option available from the GUI (Sorry Bernd,
+            it's not just for you anymore ;-)
+* [Roberto] Reduced Krn's humongous memory appetite (at least some)
+* [Roberto] Implemented last access date for XOVER data, sadly that will break
+            compatibility with yesterday's Krn, so it is now 0.2.1.
+            I feel like if I worked at Microsoft, forcing everybody to get
+            my latest version :-(
+* [Roberto] Since I broke that already, I made tags persistent, so download
+            of tagged articles over multiple groups can be implemented.
+* [Roberto] Added "silent connect" option, so people stop calling Krn pedantic.
+            You are hurting my program's feelings! ;-)
+* [Roberto] Took all the kmail bugfixes.
+
+-----------------------------------------------------------------------------
+Changes made Jan 31
+-----------------------------------------------------------------------------
+
+* [Roberto] Integrated all available bugfixes from everywhere.
+* [Roberto] Improved expiration settings dialog.
+* [Roberto] Improved identity settings dialog.
+* [Roberto] Improved "About Krn" dialog.
+* [Roberto] Improved asker dialog.
+* [Roberto] Improved find article dialog.
+* [Roberto] Improved NNTP options dialog.
+            All these dialogs are now made using KTypeLayout, so they are
+            geometry managed. There is only one other dialog who needs
+            fixing, but it's 5:55AM, and I have been sitting here for 21 Hrs,
+            so I *really* should go sleep, eat,and feed my cat :-)
+            
+-----------------------------------------------------------------------------
+Changes made Jan 23
+-----------------------------------------------------------------------------
+
+* [Roberto] Backported some KMail files
+* [Jacek]   Support for charsets.
+* [Roberto] Made the previous two get along (I hope)
+
+-----------------------------------------------------------------------------
+Changes made Jan 17
+-----------------------------------------------------------------------------
+
+* [Roberto] Another little speedup for group opening.
+
+-----------------------------------------------------------------------------
+Changes made Jan 16
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed a bug that prevented compilation in gcc
+* [Roberto] Fixed a bug in article expiration (expiry?)
+* [Roberto] Added "tagged->print", fixed a little performance problem.
+* [Roberto] Added "tagged->not expire".
+* [Roberto] Implemented pine-style "Append/Overwrite" when saving to an
+            already existing file.
+* [Roberto] Fixed bug in Makefile.am that didn't create ktreeview.moc
+* [Roberto] New dialog to customize expiration times.
+* [Roberto] Changed the "Article" menu to "File" to be more consistent with
+            other KDE apps.
+* [Roberto] Plugged a rather largish memory leak while at the same time
+            speeding up group opening by 500%. Those 5 lines really payed off!
+* [Roberto] Change that 500 to a 50, if you want any articles to appear ;-)
+            The speedup is only big if you have lots of read news you don't
+            wanna see.
+-----------------------------------------------------------------------------
+Changes made Jan 15
+-----------------------------------------------------------------------------
+
+* [Roberto] Switched to Johannes Sixt's KTreeView instead of KTreeList.
+            MUCH faster group list now!
+* [Roberto] Prepared artdlg to allow one-article-window newsreading.
+* [Roberto] Added rudimentary support for signatures (automatically adds
+            ~/.signature).
+
+-----------------------------------------------------------------------------
+Changes made Jan 13
+-----------------------------------------------------------------------------
+
+* [Roberto] I really should write more here.
+            A goddamn awful lot of things changed. i don't remember much.
+
+-----------------------------------------------------------------------------
+Changes made Nov 22
+-----------------------------------------------------------------------------
+
+* [Roberto] Immediate NNTP posting should work now (works here, with dnews).
+* [Roberto] Removed some obsolete files.
+
+-----------------------------------------------------------------------------
+Changes made Nov 21
+-----------------------------------------------------------------------------
+
+* [Roberto] Adopted kpgp.
+* [Roberto] Handle URLs in messages. (mailto, ftp , http, and news).
+* [Roberto] Altavista recovery works again.
+* [Roberto] Hyperlinked references work again.
+* [Roberto] Composer support for NNTP headers.
+* [Roberto] Composer window have all the right data.
+* [Roberto] Force composer window to show the right fields. This is different
+            from kmail, where you are always composing mail because sometimes
+            you are composing mail, sometimes news, sometimes both :-)
+* [Roberto] Imported last kmsender.
+            SMTP immediate sending works.
+            Need to re-implement NNTP and delayed sending.
+            
+-----------------------------------------------------------------------------
+Changes made Nov 20
+-----------------------------------------------------------------------------
+
+* [Roberto] Synced all files shared with kmail.
+            Also adopted kmreaderwin.
+
+-----------------------------------------------------------------------------
+Changes made Nov 19
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed bug in Article::setRead() that affected threading, too.
+* [Roberto] Nicer "find article" behaviour.
+* [Roberto] Switched to kmail's latest kmmessage, kmmsgpart, and kmmsginfo
+            Added use of kmail's KMIdentity, so now identity info is shared :-)
+            Along came also kfileio, which looks nice and will use it.
+            The bad news? Posting is totally broken now.
+            I guess it will stay that way until I import the latest kmcomposewin.
+* [Roberto] Imported latest kmcomposewin from kmail.
+            Haven't added NNTP support yet, though.
+
+-----------------------------------------------------------------------------
+Changes made Nov 18
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed (I think) a couple more leaks as reported by purify.
+            not so impressive results, though (maybe saved .5MB)
+* [Roberto] Fixed a bug in NNTP::ListXover that affected threading
+* [Roberto] More feedback on opening group (shows counter when reading from
+            file, and not only from network).
+* [Roberto] Fixed a focus problem in the "find article" dialog.
+* [Roberto] Small performance hacks, a few bugfixes.
+
+-----------------------------------------------------------------------------
+Changes made Nov 17
+-----------------------------------------------------------------------------
+
+* [Roberto] Purify is your friend! Let the numbers talk:
+            when starting krn, getting a group list and then opening
+            c.o.l.advocacy. 
+            SIZE yesterday:	21252
+            SIZE today:		13204
+            Saved--------------->8MB!!!!
+* [Roberto] A little lower: 12824. That's another 0.5MB :-)            
+
+-----------------------------------------------------------------------------
+Changes made Nov 15
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed a bug that consisted of a 5 byte change in the sources.
+            Gee! only two hours per byte changed! :-(
+* [Roberto] Implemented the "X-NewsReader:" header. I know it's just a
+            foolish ego massage kind of thing, but I needed it :-)
+            
+-----------------------------------------------------------------------------
+Changes made Nov 14
+-----------------------------------------------------------------------------
+
+* [Roberto] Faster newsgroup opening
+* [Roberto & César] Fixed threading bug.
+* [Roberto] Removed some debug info.
+* [Roberto] For some reason now the "update article list" action works :-)
+
+-----------------------------------------------------------------------------
+Changes made Nov 13
+-----------------------------------------------------------------------------
+
+* [Roberto] Major speedup for threading. It's still slow, but not so much.
+            It's kinda ok up to 1000 articles.
+* [Roberto] Fixed bug in listXover.
+* [Roberto] Implemented Arnt's FAST threading algorithm. :-) :-) :-)
+            4950 articles in 2.5 seconds :-) :-) :-)
+            Of course now everything else looks damn slow, but that's minor :-)
+
+-----------------------------------------------------------------------------
+Changes made Nov 12
+-----------------------------------------------------------------------------
+
+* [Roberto] Small patch to the Makefile.am
+* [Roberto] New function middleClick=toggle unread
+* [Roberto] Space jumps to next article when on end of current one.
+* [Roberto] Article count on artdlg.
+* [Roberto] Removed some of kmail imported files.
+* [Roberto] Enabled SMTP (for forwarding/replying).
+* [Roberto] Imported newer kmail's kmsender.
+* [Roberto] Fixed a threading bug (another, yes).
+* [Roberto] Fixed bug in article list refresh.
+* [Roberto] Fixed bug in reference generation for followups.
+
+-----------------------------------------------------------------------------
+Changes made Nov 11
+-----------------------------------------------------------------------------
+
+* [Roberto] Several fixes.
+
+-----------------------------------------------------------------------------
+Changes made Oct 30&31
+-----------------------------------------------------------------------------
+
+* [Roberto] Lots o'bugfixin'
+
+-----------------------------------------------------------------------------
+Changes made Oct 29
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed bug that erased article state when re-getting xover headers
+            for another group.
+* [Roberto] Better behaviour when creating article list (it now keeps the
+            same article as current if possible).
+* [Roberto] Implemented "Find Article in newsgroup" function&dialog.
+
+-----------------------------------------------------------------------------
+Changes made Oct 28
+-----------------------------------------------------------------------------
+
+* [Roberto] Finished implementing "Find group" (Thanks to Johannes Sixt,
+            Juha Tuomala and Magnus Reftel for covering my ignorance :-)
+* [Roberto] Added posting ability in the group list.
+* [Roberto] Changed behaviour in article list: LMB shows article,
+            RMB tags article.
+
+-----------------------------------------------------------------------------
+Changes made Oct 25
+-----------------------------------------------------------------------------
+
+* [Roberto] Made counter appear in all windows (else nobody sees it).
+
+-----------------------------------------------------------------------------
+Changes made Oct 23
+-----------------------------------------------------------------------------
+
+* [Roberto] Changed the counter to KBytes, by popular request.
+* [Roberto] Faster saving when got many articles from listXover().
+            Now the only very slow part is threading (why??).
+* [Roberto] Made small incompatible change to the way articles are stored
+            Sorry!
+* [Roberto] Added more feedback, so krn doesn't look locked.
+* [Roberto] Switched to KDEBUG (not complete yet)
+
+-----------------------------------------------------------------------------
+Changes made Oct 22
+-----------------------------------------------------------------------------
+
+* [Roberto] Started writing real docs.
+* [Roberto] Added "..." to some of the menu options.
+* [Roberto] Changed folder icon so treeview looks more like kcc's.
+* [Roberto] Added default for real name.
+* [Roberto] Added default for email address.
+* [Roberto] Started internationalization....
+* [Roberto] Remembered to update this file ;-).
+* [Roberto] Huge speedup on long NNTP responses (DwString.c_str() is slow).
+* [Roberto] Ergonomized startup dialogs.
+* [Roberto] Added user feedback to several actions.
+* [Roberto] Improved NNTPObserver() (less event hungry).
+* [Roberto] Other things I made in the last week and forgot already :-)
+
+-----------------------------------------------------------------------------
+Changes made Oct 14
+-----------------------------------------------------------------------------
+
+* [Roberto] Made it compatible with Sun again. Several small fixes.
+
+-----------------------------------------------------------------------------
+Changes made Sep 29
+-----------------------------------------------------------------------------
+
+* [Roberto] NNTP Posting. For some reason the articles krn generates don't
+  get threaded correctly! (slrn can thread them).
+* [Roberto] Simple speed up on article reading/fetching/storing.
+
+-----------------------------------------------------------------------------
+Changes made Sep 28
+-----------------------------------------------------------------------------
+
+* [Roberto] Fixed a segfault when exiting.
+
+-----------------------------------------------------------------------------
+Changes made Sep 26
+-----------------------------------------------------------------------------
+
+* [Roberto] Moved most things to the new CVS tree
+* [Roberto] Integrated most of kmail's composer, with small tweaks to allow
+            NNTP. Need to make my own KMSender now.
+* [Roberto] Added Mail&Post function
+* [Roberto] Added Forward function
+* [Roberto] Added Post function
+* [Roberto] Make composer remember its position. Size doesn't work, because
+            it's adjusted manually somewhere.
+* [Roberto] Outgoing spool works, now only the network part is missing.
+* [Roberto] Played a bit with Krn's web site. New screenshot, showing the
+            composer, new toolbar look, new buttons, etc.
+
+-----------------------------------------------------------------------------
+Changes made Sep 25
+-----------------------------------------------------------------------------
+
+* [Roberto] I *think* krn is now fully KFSSTND compliant.
+
+-----------------------------------------------------------------------------
+Changes made Sep 23
+-----------------------------------------------------------------------------
+
+* [Roberto] Added "unexpirable" to the signs of the article list.
+* [Roberto] Added Robert Cope to the credits.
+* [Roberto] Patched "unexpirable" setting to up in article list when toggled.
+* [Roberto] Switched to IconLoader, and made Krn (hope) more KFSSTD compliant
+* [Roberto] Added Robert's catch.xpm
+* [Roberto] Switched to latest ktablistbox
+* [Roberto] Extra button in artdlg (lock)
+* [Roberto] Menu option to show/hide locked articles
+
+-----------------------------------------------------------------------------
+Changes made Sep 22
+-----------------------------------------------------------------------------
+
+* [Roberto] finishing integration of new displaying code (finally!)
+* [Roberto] Uses new ktablistbox.
+* [Roberto] Robert Cope's new expiring code
+* [Roberto] Robert Cope's new window-remembers-geometry code
+
+-----------------------------------------------------------------------------
+Changes made Sep 2
+-----------------------------------------------------------------------------
+
+* [Roberto] By popular request, changed everything to use .moc files.
+  Coolo's Automake is next.
+
+-----------------------------------------------------------------------------
+Changes made Aug 22
+-----------------------------------------------------------------------------
+
+* [Roberto] Started using gdbm. Now reading an article list is FAST.
+* [Roberto] Small bugfixes.
+
+-----------------------------------------------------------------------------
+Changes made Aug 21
+-----------------------------------------------------------------------------
+
+* [Roberto] Implemented Bernd Wuebben's request of a optional vertical split
+  in the article list.
+* [Roberto] Added color selection to article display (I love kcolorbtn!)
+* [Roberto] Cleaning up artdlg.
+
+-----------------------------------------------------------------------------
+Changes made Aug 20
+-----------------------------------------------------------------------------
+
+* [Roberto] Implemented Catchup and, "Tagged" menu in groupdlg.
+* [Roberto] Cleaning up groupdlg. Fixed a segfault. Changed all loops
+  to use iterators (side effects sucked!)
+* [Roberto] Fixed several buglets.
+* [Roberto] Changed menus in groupdlg, moved "Subscribed" and "Tagged" as
+  submenus of Newsgroup. Looks much better this way. Now users shouldn't be
+  able to segfault just using menus :-)
+* [Roberto] Fixed the empty-newsgroup segfault.
+
+-----------------------------------------------------------------------------
+Changes made Aug 19
+-----------------------------------------------------------------------------
+
+* [Roberto] Included all of Stefan Taferner's new kmmessage and friends,
+  as well as his new ktablistbox.
+
+-----------------------------------------------------------------------------
+Changes made Aug 12
+-----------------------------------------------------------------------------
+
+* [Roberto] Kinda improved the progress marker. The interface to it sucks
+  rocks now. Hopefully it's not used that much.
+
+-----------------------------------------------------------------------------
+Changes made Aug 9
+-----------------------------------------------------------------------------
+
+
+* [Roberto] Implemented "Get messages" command.
+* [Roberto] Cleaned groupdlg a little. It's just opinion, though :-)
+* [Roberto] Fixed the progress marker to be either accumulative or
+  self-resetting, so it gives meaningful info in every case.
+
+-- things above this line are not in the aug 9 release.
+
+
+* [Roberto] Placed Aug-9 in the web site.
+* [Roberto] It's still not too fast, but now the threading code is correct,
+  except for the possibility of a reference loop. That should be extremely
+  rare, since at least one article would have to know the ID of a message
+  that has not been posted yet, but I guess it could be done intentionally
+  or by a (very rare) accident.
+* [Roberto] Drew the dialog for visible headers choice.
+
+
+-----------------------------------------------------------------------------
+Changes made Aug 8
+-----------------------------------------------------------------------------
+
+* [Roberto] Moved the "only unread" option under another menu and made it
+  persistent.
+* [Roberto] Added font configuration for message display.
+* [Roberto] Merging Stefan Taferner's new ktablistbox.
+* [Roberto] Added "Get Subjects" command (good for offliners).
+* [Roberto] Progress indicator (byte counter) is ALIVE!!!!!!!!!!!!!!
+  Qt and mime++ rule! I only had to write about 20 lines of code to go from
+  an app which was written in a way that apparently prevented this from
+  working to one that does it in a very nifty way!
+* [Roberto] Removed the horizontal scroller in artdlg, since it was not useful
+  and used too much space. (And because now I *can* remove it, thx, Stefan :-)
+  
+-----------------------------------------------------------------------------
+Changes made Aug 7
+-----------------------------------------------------------------------------
+
+* [Roberto] Getting missing articles from Altavista works!!!!!!!!!!!!!!
+* [Roberto] Changed the header formatting to make it more compact.
+* [Roberto] Fixed bug in multipart formatting.
+
+-----------------------------------------------------------------------------
+Changes made Aug 4
+-----------------------------------------------------------------------------
+
+* [Roberto] Added button for printing.
+* [Magnus]  Fixed kformatter bug.
+
+-----------------------------------------------------------------------------
+Changes made Aug 3
+-----------------------------------------------------------------------------
+
+* [Roberto] Article printing support.
+* [Roberto] Fixed small bug in address formatting.
+* [Roberto] Copying almost works.
+* [Roberto] Small things here and there, preparing for 0.0.3
+
+-----------------------------------------------------------------------------
+Changes made Aug 1
+-----------------------------------------------------------------------------
+
+* [Roberto] Threading. It works, but isn't 100% correct.
+  I don't think anybody would notice.
+  I will rewrite it :-)
+  
+-----------------------------------------------------------------------------
+Changes made Jul 31
+-----------------------------------------------------------------------------
+
+* [Roberto] Kmessage uses the khtmlview. Some cosmetic changes.
+* [Roberto] Fixed Dave Mccaney's bug report.
+* [Roberto] Placed the hook for threading support.
+* [Roberto] Restored keyboard support in artdlg.
+* [Roberto] Restored links in artdlg.
+
+-----------------------------------------------------------------------------
+Changes made Jul 29
+-----------------------------------------------------------------------------
+
+* [Roberto] Incorporated (I hope) all of Magnus's patch
+* [Roberto] Fixed it so it compiles with the latest mimelib
+
+-----------------------------------------------------------------------------
+Changes made Jul 28
+-----------------------------------------------------------------------------
+
+* [Roberto] Just returned, and krn is kinda broken :-( 
+* [Roberto] I'm looking at Coolo's patches for the new mime++. They look ok.
+* [Roberto] Working on patching for the new toolbar and the new html widget.
+
+-----------------------------------------------------------------------------
+Changes made Jul 19
+-----------------------------------------------------------------------------
+
+* [Magnus] Added article composing dialog (posting still not done)
+* [Magnus] Added a hook for searching for lost articles with Altavista
+
+-----------------------------------------------------------------------------
+Changes made Jul 19
+-----------------------------------------------------------------------------
+
+* [Magnus] Added article composing dialog (posting still not done)
+* [Magnus] Added a hook for searching for lost articles with Altavista
+
+-----------------------------------------------------------------------------
+Changes made Jul 11
+-----------------------------------------------------------------------------
+
+* [Roberto] Made krn.kdelnk, and added icon by Nico Schirwing.
+* [Roberto] Now popup in article list works.
+
+-----------------------------------------------------------------------------
+Changes made Jul 9
+-----------------------------------------------------------------------------
+
+* [Magnus]  Added preliminary metamail support
+* [Magnus]  Fixed formatting of HTML parts
+* [Magnus]  Added support for plug-in decoders
+
+-----------------------------------------------------------------------------
+Changes made Jul 8
+-----------------------------------------------------------------------------
+
+* [Magnus]  Added support for plug-in formatters.
+* [Roberto] Changed KDecode. The design was fairly braindead. Now it's just
+            slightly silly.
+* [Roberto] Changing the headers in articlelist & starting work in the
+            scorer/killer.
+* [Magnus]  Added content-decoding, and fixed a bug.
+* [Roberto] Polishing things so krn fits in the CVS tree.
+* [Roberto] Now changes will indicate who made them.
+* [Sander]  Added read/unread switch
+* [Sander]  Several bugs regarding mailgroup handling and stuff fixed
+
+-----------------------------------------------------------------------------
+Changes made Jul 7
+-----------------------------------------------------------------------------
+
+* Basically, implemented binary decoding. Very powerful!
+* Releasing today as 0.0.2, so more people see what's going on.
+  
+-----------------------------------------------------------------------------
+Changes made Jul 6
+-----------------------------------------------------------------------------
+
+* Made online/offline modes more useful.
+* Added a "Should connect?" dialog for operations that need a connection
+* If you open a group and you are connected, it gets a list of new articles.
+  (the empty window was a little confusing ;-)
+* Made cute about dialog. And I mean *cute*.
+* The decoding support is almost done. I'm gonna do some code reuse and
+  make a small main() so that a Kdecode can be built. Two apps for the
+  price of one! 8-)
+* Implemented article saving.
+* Now, as soon as I have attachment saving going, I'll release 0.0.2, put krn
+  in the CVS tree, and have a beer (or two) (or a dozen)!
+
+-----------------------------------------------------------------------------
+Changes made Jul 4
+-----------------------------------------------------------------------------
+
+* Fixed yet another bug in the group list (and it was a hard one!)
+* Got Magnus's Kmessage::tNG (merged)
+* Fixed a couple of bugs reported by Stephan Kulow. One of them is still there.
+* Hyperlinked references work!
+* Working on nicer binary decoding.
+
+-----------------------------------------------------------------------------
+Changes made Jul 3
+-----------------------------------------------------------------------------
+
+* Fixed bug in Article::formHeader() (empty date/from fields)
+* Arranged everything so that krn can be built using just kdesupport.
+* Decoding of simple stuff
+* Some new keybindings by Sander Alberink
+* Bug in NNTP::Open() fixed (thanks Sander)
+* Several other small things
+* New release
+
+-----------------------------------------------------------------------------
+Changes made Jul 2
+-----------------------------------------------------------------------------
+
+* Changed slightly the formatting of the References: header in Kmessage
+* I'm working in the mime++/kdesupport/cvs/mimelib thingie, and hating every
+  minute of it :-/
+
+-----------------------------------------------------------------------------
+Changes made Jul 1
+-----------------------------------------------------------------------------
+
+* More fixes to the group list.
+* Implemented group tagging.
+* Touched up xpms in general (now all are the same size) and created a
+  "tagged" xpm. They are still not really good, but it's better.
+* Fixed xpm loading. Now krn works from any dir after instaling.
+* Got Magnus's new KMessage with decoding support!
+* I'm trying to integrate uulib into krn's tree.
+
+-----------------------------------------------------------------------------
+Changes made Jun 30
+-----------------------------------------------------------------------------
+
+* Fixed yet another bug in the scrollbars.
+* Fixed INN's 'mode reader' peculiarity AGAIN.
+* Implemented the AUTHINFO command (THERE YOU HAVE IT BERND! 8-).
+* Implemented RMB-popup in group list.
+* Fixed the broken hyperlink to other groups.
+* Fixed a few things in the group list window. It's quite nice now (IMHO).
+
+-----------------------------------------------------------------------------
+Changes made Jun 29
+-----------------------------------------------------------------------------
+
+* I am determined to make those damn scrollbars behave.
+  I think they do now.
+* Started with menus/config-dialogs/buttons/keybindings/etc.
+  Now krn has working Identity and NNTP config dialogs.
+  Also, if you haven't configured before, asks the necessary data at startup.
+* Implementing authentication (Not done yet).
+
+-----------------------------------------------------------------------------
+Changes made Jun 28
+-----------------------------------------------------------------------------
+
+* Improved krn's home page a little (GIMP 0.99 is niiiiiiiiice)
+* Saw Tyson-Holyfield. Tasty ear, Mike? yuck!
+* Ok, not much, but really the Jun 27 changes ended around 5AM today ;-)
+
+-----------------------------------------------------------------------------
+Changes made Jun 27
+-----------------------------------------------------------------------------
+
+* Made the Article class garbage collecting, and shared among every
+  article list in krn. It's neat (IMHO), but there seems to be a memory leak
+  somewhere. Honestly, I have no clue as how to find it. ps is not very
+  precise, really.
+* Now.... Krn has memory!!!! It remembers if you read an article.
+  You can find it on another group, or on another server, and it will still
+  remember it.
+* Krn compiles with the mew mime++
+* General code clean up.
+* Totally new NNTP code!
+* BIG memory leaks plugged!
+  (but there is still a 400K leak every time a group opens :-| )
+* whoa, this is starting to look like a newsreader!
+
+-----------------------------------------------------------------------------
+Changes made Jun 26
+-----------------------------------------------------------------------------
+
+* I am doing serious changes to the data structures, trying to clean up
+  everything. It's working so far.
+* Today is memory leak plugging day!
+* Magnus made a new KMessage (now it has scrollbars! :-)
+
+-----------------------------------------------------------------------------
+Changes made Jun 25
+-----------------------------------------------------------------------------
+
+* ARGGGGGGHHHHH! People hate me! And they are right! The Jun-24 package
+  overwrites some pixmaps used by KFM! if you "make install".
+  Fixed (kind of). My most sincere apologies. I replaced the package with the
+  fixed one. SORRY,SORRY,SORRY!
+* Changed KMessage's URL generation to make Kurl happy
+  BTW: Kurl isMalformed is too picky, since news:/group.name is
+  a valid URL with protocol news, hostname unspecified,path group.name
+  Now it's news://servername/group.name instead of news:/group.name
+* Now if you click on a newsgroup name in a message header, the right group
+  opens. It's neat!. And in the process I fixed a huge memory leak :-)
+
+-----------------------------------------------------------------------------
+Changes made Jun 24
+-----------------------------------------------------------------------------
+
+* Included Magnus Reftel's improved KMessage, so now, Magnus, you are
+  officially a krn developer ;)
+* Now krn compiles again. That's no small change methinks.
+* Now it uses the NewsGroup class, it's time to flesh it.
+* Fixed bug in Article::formHeader() [ I hope nobody have mail addresses over
+  2048 bytes ]
+* Stephan Kulow just reported what hopefully will be the last false "no xover"
+  bug.
+* Krn is now officially going to be included in kdeapps (Thx, Stephan!)
+* I think I fixed all bugs getting the group and article lists. I also think
+  I'm an optimist.
+
+-----------------------------------------------------------------------------
+Changes made Jun 23
+-----------------------------------------------------------------------------
+
+* Fixed stupid bug in main.cpp which by chance didn't show on my box.
+  My fault! (Thanks Bernd).
+* Started to implement the Newsgroup class. (This is big)
+* Updated the README according to Stefan Kulow's suggestion
+* Now if you don't set NNTPSERVER krn gives a nice warning before dying
+* I switched to the latest KIconloader and now no icon loads ARGHHHHH!
+  I'll just leave this commented and try when a new KIconLoader appears.
+
+-----------------------------------------------------------------------------
+Changes made Jun 22
+-----------------------------------------------------------------------------
+
+* If I told you, I would have to kill you! :-)
+
+-----------------------------------------------------------------------------
+Changes made Jun 21
+-----------------------------------------------------------------------------
+
+* Small bug in Kmessage (background color not reseted) fixed.
+* Fairly large bug in header display fixed.
+* Display of addresses in the header list normalized with DwMailbox.
+
+-----------------------------------------------------------------------------
+Changes made Jun 20
+-----------------------------------------------------------------------------
+
+* Now krn does autoconf!!!. This should allow integration into the kdeapps
+  package. The problem was not autoconf, it was that I was too stupid to go
+  get the latest kexample.
+* Some code cleanup. Now the only warning using gcc -Wall is in
+  ktablistbox.cpp, and that's Stefan's code, so I consider myself innocent ;)
+* (METACHANGES) Changed the "Changes made Jun 13" section, I got Bernd
+  Wuebben's name wrong :-) Credit given where credit is due.... 
+* I made a linux based terminal server that fits in a floppy (no HD required,
+  as the QNX demo says). I know, nothing to do with krn, but it took quite
+  some time, and it's very neat 8-)
+* I'm testing Magnus's new network code.
+* Announced Krn's (un)impressive home page at http://ultra7.unl.edu.ar/krn
+  in the KDE list.
+* Started looking at KIconLoader to fix the pixmap problems. Sadly, the latest
+  kdelibs won't compile for me, so I'm not sure the docs I have match the
+  class in my installed libs.
+
+-----------------------------------------------------------------------------
+Changes made Jun 19
+-----------------------------------------------------------------------------
+
+* Changed the Makefile to clean the mimepp directory
+* Fixed the historic "this function may return with/without a value" warning
+  Now krn compiles without warnings on gcc -W. gcc -Wall is another story.
+* After Stefan Kulow asked if he could include this on kdeapps, I'm looking
+  again at the autoconf stuff. I guess my brain doesn't match with it,
+  because it makes absolutely no sense to me :-( I'll try harder.
+* Tested it with the "stable" KDE release, and didn't found any difference.
+
+-----------------------------------------------------------------------------
+Changes made Jun 18
+-----------------------------------------------------------------------------
+
+* Small patch for INN servers that need the "mode reader" command
+* Fixed a bug in the NNTP::artList() function for small groups
+* Not much, but today was the KDE IRC gathering
+
+-----------------------------------------------------------------------------
+Changes made Jun 17
+-----------------------------------------------------------------------------
+
+* Implemented 2 new keybindings in artDlg: Space/BackSpace, to page down and
+  up in the message window.
+* Start implementing at least basic menus. Krn looks very stupid without them.
+  Now at least you can exit without killing the window.
+* Use DwDateTime from mime++ to parse the message date and print it in a
+  consistent way (even if ugly).
+* Now Kmessage uses the mime++ library.
+  It understands simple and multipart messages, as well as text/plain and
+  text/html mimetypes!
+  It's also fairly solid (no segfaults that I could see)
+  Just remember: never store the result of a DwSomething.Function()
+  or it will segfault sooner or later, and will take hours to track :-(.
+* Fixed a silly bug in Artdlg::fillTree (I forgot to clear the article list
+  before loading the new one)
+* Fixed yet another 2 stupid warnings that showed up when I changed gcc to g++
+* Modified the Makefile to let mime++ build as part of krn's building
+  process. It's much neater this way.
+* All things considered, a good day of work!
+
+-----------------------------------------------------------------------------
+Changes made Jun 16
+-----------------------------------------------------------------------------
+
+* Integrated Stefan's new ktablistbox widget.
+  Seems to have a small problem with D&D (it leaves droppings all over the
+  place :-)
+* Planning how to use MIME++, which seems to be a cute library that's
+  gonna save me a lot of work.
+* Same thing for uulib, part of uudeview.
+* Downloaded Socket++ lib, but it's probably not worth it.
+* Ok, it wasn't much, but it's Monday and a holiday here, so it *feels*
+  like Sunday :-)
+
+-----------------------------------------------------------------------------
+Changes made Jun 15
+-----------------------------------------------------------------------------
+
+* Come on! It's Sunday!
+
+-----------------------------------------------------------------------------
+Changes made Jun 14
+-----------------------------------------------------------------------------
+
+* Improved artdlg header box. Put separators and pixmaps.
+* Added formHeader method to the Article class, that returns a formatted
+  line to put in the article list.
+* Added read and available status to the Article class.
+* Rewrote Groupdlg::fillTree
+  Now it only inserts the items in the newsgroup tree when you expand
+  the branch. It still doesn't remove them when you collapse, so branching
+  slows down after you open a lot of branches, but ....
+  This REALLY improved startup time (It's very fast now!).
+  As a bonus, this fillTree function is much nicer than the old one.
+  Even I can understand it! :-)
+  Now, the new openGroup function... Nah, it's not nearly as ugly.
+* Fixed a couple of silly warnings.
+* Found a bug: when a group contains no articles, getting the article list
+  causes a segfault.
+
+-----------------------------------------------------------------------------
+Changes made Jun 13
+-----------------------------------------------------------------------------
+
+* Followed Bernd Wuebben suggestion to speed up groupList.
+* Changed the ktreelist to a ktablistbox in artdlg.
+* Added a "Check for unread articles" button in groupdlg.
+  It's still a broken, since I don't mark articles read, and don't count
+  the cache, so it's more of a "Articles available on server" button.
+* All buttons in artdlg do something now, if even say "Not implemented"
+* Added keyboard shortcuts in artdlg to allow keyboard-only navigation:
+	n=next article
+        p=previous article
+        g=get article list
+        f=post followup
+        r=reply by mail
+* Started the Changelog ;-)

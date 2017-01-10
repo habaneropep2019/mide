@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Guida al ktalkd: Utilizzo</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KTalkd, talkd,daemon,talk,kde,it,doc">
+<META NAME="description" CONTENT="La Guida di KTalkd">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-5.html">Avanti</A>
+<A HREF="ktalkd-3.html">Indietro</A>
+<A HREF="ktalkd.html#toc4">Indice Generale</A>
+</P>
+<H3><A NAME="s4">4. Utilizzo</A></H3>
+
+<P>
+<P>Non c'è molto da dire su ktalkd: è un demone. Non ha interfaccia utente.
+<P>La finestra di annuncio è semplice: rispondi o ignora.
+<P>Per la finestra di configurazione dovrebbe essere lo stesso, eccetto
+per l' impostazione dell' inoltramento ad altro utente (o anche ad altra macchina).
+<P>
+<H3><A NAME="ss4.1">4.1 Scegliere il metodo di inoltramento</A>
+</H3>
+
+<P>Nessuno è perfetto, ci sono dei pro(+) e dei contro(-).
+<P>
+<P><B>FWA</B> : inoltramento solo dell'annuncio. Connessione diretta. Non raccomandato.
+<UL>
+<LI>       (+) Puoi sapere chi ti chiama, ma </LI>
+<LI>       (-) Il chiamante dovrà rispondere ad un annuncio proveniente da te. Annoia. </LI>
+<LI>       (-) Non utilizzare se hai una macchina che risponde lì dove non sei disponibile.
+(La macchina che risponde non può visualizzare l'annuncio, ci può essere confusione!)</LI>
+</UL>
+<P><B>FWR</B> : inoltramento di tutte le richieste, cambiando le informazioni quando necessario. Connessione diretta.
+<UL>
+<LI>       (+) Il chimante non sa che non sei disponibile, ma</LI>
+<LI>       (-) Non saprai chi è il chiamante - solo il suo username,
+(così potresti vedere "talk da Wintalk@la_mia_macchina")</LI>
+</UL>
+<P><B>FWT</B> : Inoltra tutte le richeste e prendi il talk.  Connessione non diretta.
+<UL>
+<LI>       (+) Come quello precedente, ma funzione anche se tu e il chimante non potete stare in diretto contatto con gli altri (ad esempio un firewall).</LI>
+<LI>       (+) Sarai avvertito di chi realmente ti sta talkando quando accetterai il talk</LI>
+<LI>       (-) Ma, come in FWR, non vedrai il nome della macchina del chiamante nell'annuncio</LI>
+</UL>
+<P>In breve, scegli <B>FWT</B> se vuoi utilizzarlo attraverso un firewall (e se ktalkd può accedere ad entrambi i network), <B>FWR</B> negli altri casi.
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-5.html">Avanti</A>
+<A HREF="ktalkd-3.html">Indietro</A>
+<A HREF="ktalkd.html#toc4">Indice Generale</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

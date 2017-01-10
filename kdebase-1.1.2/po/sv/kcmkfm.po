@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Karl Backström <backstrom@kde.org>, 1998.
+# Anders Widell <d95-awi@nada.kth.se>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkfm\n"
+"POT-Creation-Date: 1999-03-04 18:41+0100\n"
+"PO-Revision-Date: 1999-01-30 00:44+01:00\n"
+"Last-Translator: Anders Widell <d95-awi@nada.kth.se>\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8BIT\n"
+
+#: main.cpp:61
+msgid "&Font"
+msgstr "&Typsnitt"
+
+#: main.cpp:63
+msgid "&Color"
+msgstr "&Färg"
+
+#: main.cpp:65
+msgid "&Other"
+msgstr "Ö&vrigt"
+
+#: main.cpp:68
+msgid "&Proxy"
+msgstr "&Proxy"
+
+#: main.cpp:70
+msgid "&HTTP"
+msgstr "&HTTP"
+
+#: main.cpp:73
+msgid "User &Agent"
+msgstr "&Webläsar-ID"
+
+#: main.cpp:76
+msgid "Coo&kies"
+msgstr "&Kakor"
+
+#: main.cpp:80
+msgid "&Desktop Icons"
+msgstr "&Skrivbordsikoner"
+
+#: main.cpp:89
+#, c-format
+msgid ""
+"usage: %s [-init | {font,color,misc,proxy,http,useragent,cookies,icons}]\n"
+msgstr ""
+"Användning: %s [-init | "
+"{font,color,misc,proxy,http,useragent,cookies,icons}]\n"
+
+#: main.cpp:178
+msgid "KFM Configuration"
+msgstr "KFM Konfiguration"
+
+#: htmlopts.cpp:64
+msgid "Small"
+msgstr "Liten"
+
+#: htmlopts.cpp:69
+msgid "Medium"
+msgstr "Mellan"
+
+#: htmlopts.cpp:74
+msgid "Large"
+msgstr "Stor"
+
+#: htmlopts.cpp:83
+msgid "Standard Font"
+msgstr "Standardtypsnitt"
+
+#: htmlopts.cpp:97
+msgid "Fixed Font"
+msgstr "Typsnitt med fast breddsteg"
+
+#: htmlopts.cpp:114
+msgid "Default Charset"
+msgstr "Standardteckenkodning"
+
+#: htmlopts.cpp:122 htmlopts.cpp:276
+msgid "Use language charset"
+msgstr "Använd språkets teckenkodning"
+
+#: htmlopts.cpp:330
+msgid "Background Color:"
+msgstr "Bakgrundsfärg:"
+
+#: htmlopts.cpp:342
+msgid "Normal Text Color:"
+msgstr "Normal textfärg:"
+
+#: htmlopts.cpp:354
+msgid "URL Link Color:"
+msgstr "Färg på länkar:"
+
+#: htmlopts.cpp:366
+msgid "Followed Link Color:"
+msgstr "Färg på följda länkar:"
+
+#: htmlopts.cpp:378
+msgid "Change cursor over link."
+msgstr "Ändra muspekaren över länkar"
+
+#: htmlopts.cpp:384
+msgid "Underline links"
+msgstr "Stryk under länkar"
+
+#: htmlopts.cpp:391
+msgid "Always use my colors"
+msgstr "Använd alltid mina färger"
+
+#: miscopts.cpp:25
+msgid "&Allow per-URL settings"
+msgstr "&Tillåt inställningar för enskilda URL:er"
+
+#: miscopts.cpp:33
+msgid "Tree &view follows navigation"
+msgstr "&Katalogträdet följer med när du bläddrar"
+
+#: miscopts.cpp:43
+msgid "Terminal"
+msgstr "Terminal"
+
+#: miscopts.cpp:57
+msgid "Editor"
+msgstr ""
+
+#: kproxydlg.cpp:50
+msgid "Don't forget to save your settings!"
+msgstr "Glöm inte att spara dina inställningar!"
+
+#: kproxydlg.cpp:58
+msgid "Use proxy"
+msgstr "Använd proxy"
+
+#: kproxydlg.cpp:67
+msgid "HTTP Proxy:"
+msgstr "HTTP-proxy:"
+
+#: kproxydlg.cpp:82 kproxydlg.cpp:113
+msgid "Port:"
+msgstr "Port:"
+
+#: kproxydlg.cpp:98
+msgid "FTP Proxy:"
+msgstr "FTP-proxy:"
+
+#: kproxydlg.cpp:128
+msgid "No Proxy for:"
+msgstr "Ingen proxy för:"
+
+#: khttpoptdlg.cpp:38
+msgid "Accept languages:"
+msgstr "Acceptera språk:"
+
+#: khttpoptdlg.cpp:52
+msgid "Accept character sets:"
+msgstr "Acceptera teckenkodningar:"
+
+#: khttpoptdlg.cpp:65
+msgid "Assume HTML"
+msgstr "Antag HTML"
+
+#: useragentdlg.cpp:45
+msgid "On server:"
+msgstr "På servern:"
+
+#: useragentdlg.cpp:67
+msgid "login as:"
+msgstr "logga in som:"
+
+#: useragentdlg.cpp:87
+msgid "&Add"
+msgstr "&Lägg till"
+
+#: useragentdlg.cpp:107
+msgid "Known bindings:"
+msgstr "Kända bindningar:"
+
+#: kcookiesdlg.cpp:49
+msgid "&Enable Cookies"
+msgstr "&Aktivera kakor"
+
+#: kcookiesdlg.cpp:56
+msgid "Default accept policy"
+msgstr "Standardpolicy"
+
+#: kcookiesdlg.cpp:65 kcookiesdlg.cpp:115
+msgid "Accept"
+msgstr "Ta emot"
+
+#: kcookiesdlg.cpp:70 kcookiesdlg.cpp:120
+msgid "Ask"
+msgstr "Fråga"
+
+#: kcookiesdlg.cpp:75 kcookiesdlg.cpp:125
+msgid "Reject"
+msgstr "Vägra ta emot"
+
+#: kcookiesdlg.cpp:90
+msgid "Domain specific settings:"
+msgstr "Domänspecifika inställningar:"
+
+#: kcookiesdlg.cpp:97
+msgid "Change domain accept policy"
+msgstr "Ändra domänpolicy"
+
+#: kcookiesdlg.cpp:239
+msgid "You must enter a domain first !"
+msgstr "Du måste skriva in en domän först !"
+
+#: rootopts.cpp:73
+msgid "Horizontal Root Grid Spacing:"
+msgstr "x-avstånd för skrivbordsikoner:"
+
+#: rootopts.cpp:84
+msgid "Vertical Root Grid Spacing:"
+msgstr "y-avstånd för skrivbordsikoner:"
+
+#: rootopts.cpp:95
+msgid "&Transparent Text for Desktop Icons."
+msgstr "&Rita ej textbakgrund till skrivbordsikoner"
+
+#: rootopts.cpp:106
+msgid "Icon foreground color:"
+msgstr "Förgrundsfärg för ikoner:"
+
+#: rootopts.cpp:118
+msgid "Icon background color:"
+msgstr "Bakgrundsfärg för ikoner:"
+
+#: rootopts.cpp:131
+msgid "Show &Hidden Files on Desktop"
+msgstr "Visa &gömda filer på skrivbordet"

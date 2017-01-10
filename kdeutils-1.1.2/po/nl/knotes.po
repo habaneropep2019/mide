@@ -1,0 +1,388 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-03-09 01:44+0100\n"
+"Content-Type: text/plain; charset=\n"
+"Date: 1998-03-06 22:22:24-0500\n"
+"From: Bernd Johannes Wuebben,201 Lincoln Hall,,256-1036, "
+"<root@petit.cornell.edu>\n"
+"Xgettext-Options: -C -ktranslate -x../../kdelibs/po/kde.pot\n"
+"Files: alarm.cpp bwdatetime.cpp configdlg.cpp fontdlg.cpp knotes.cpp "
+"mail.cpp renamedlg.cpp savealarm.cpp spin.cpp timer.cpp\n"
+
+#: knotes.cpp:265
+msgid "Hello"
+msgstr ""
+
+#: knotes.cpp:303
+msgid "Text Color..."
+msgstr "Tekst Kleur..."
+
+#: knotes.cpp:304
+msgid "Background Color..."
+msgstr "Achtergrond Kleur..."
+
+#: knotes.cpp:310
+msgid "New Note"
+msgstr "Nieuwe Blad"
+
+#: knotes.cpp:312
+msgid "Delete Note"
+msgstr "Verwijder Blad"
+
+#: knotes.cpp:314
+msgid "Rename Note..."
+msgstr "Hernoem Blad..."
+
+#: knotes.cpp:316
+msgid "Alarm ..."
+msgstr "Alarm ..."
+
+#: knotes.cpp:319
+msgid "Calendar"
+msgstr "Kalender"
+
+#: knotes.cpp:321
+msgid "Mail Note ..."
+msgstr "Verzendt blad ..."
+
+#: knotes.cpp:323
+msgid "Print Note"
+msgstr "Druk Blad Af"
+
+#: knotes.cpp:326
+#, fuzzy
+msgid "Save Notes"
+msgstr "Nieuwe Blad"
+
+#: knotes.cpp:332
+msgid "3D Frame"
+msgstr "3D Frame"
+
+#: configdlg.cpp:128 knotes.cpp:333
+msgid "Auto Indent"
+msgstr "Automatisch Indenteren"
+
+#: knotes.cpp:336
+msgid "Font..."
+msgstr "Lettertype..."
+
+#: knotes.cpp:337
+msgid "Colors"
+msgstr "Kleuren"
+
+#: knotes.cpp:339
+msgid "Change Defaults ..."
+msgstr "Wijzig Standaardwaarden ..."
+
+#: knotes.cpp:340
+msgid "Dock in panel"
+msgstr ""
+
+#: knotes.cpp:368
+msgid "Insert Date"
+msgstr "Voer Datum In"
+
+#: knotes.cpp:371
+msgid "Operations"
+msgstr "Opdrachten"
+
+#: knotes.cpp:445 knotes.cpp:449 knotes.cpp:618 knotes.cpp:845 knotes.cpp:849
+#: timer.cpp:87 timer.cpp:110
+msgid "Note: "
+msgstr "Blad:"
+
+#: knotes.cpp:477
+msgid ""
+"Could not save a KNote.\n"
+"Quit anyways?"
+msgstr ""
+"Kan een KNote Blad niet opslaan.\n"
+"Toch afsluiten ?"
+
+#: knotes.cpp:495
+msgid "Could not save KNote Alarms\n"
+msgstr "Kan KNote Alarm gegevens niet opslaan\n"
+
+#: knotes.cpp:556 knotes.cpp:661
+#, c-format
+msgid ""
+"Could not pipe the contents of this KNote into:\n"
+" %s"
+msgstr ""
+"Kan de inhoud van dit KNote Blad niet doorsluiten naar:\n"
+" %s"
+
+# FIXME: 'exeeded' instead of 'exceeded'
+#: knotes.cpp:717
+msgid ""
+"You have exeeded the arbitrary and unjustly set limit of 50 knotes.\n"
+" Please complain to the author."
+msgstr ""
+"U hebt de volslagen willekeurige limiet van 50 knotes overschreden.\n"
+" Wendt u a.u.b. tot de auteur om uw beklag te doen."
+
+#: knotes.cpp:893
+msgid "Question"
+msgstr "Vraag"
+
+#: knotes.cpp:894
+msgid ""
+"Are you sure you want to delete this\n"
+"note permanently?"
+msgstr ""
+"Bent u zeker dat u dit blad permanent\n"
+"wilt wissen ?"
+
+#: knotes.cpp:1072
+#, c-format
+msgid ""
+"Could not load:\n"
+" %s"
+msgstr ""
+"Kan niet laden:\n"
+" %s"
+
+#: knotes.cpp:1331
+msgid "KNotes Configuraton"
+msgstr "KNotes Instellingen"
+
+#: knotes.cpp:1348
+#, c-format
+msgid ""
+"KNotes %s\n"
+"Bernd Johannes Wuebben\n"
+"wuebben@math.cornell.edu\n"
+"wuebben@kde.org\n"
+"Copyright (C) 1997\n"
+"\n"
+"With contributions by:\n"
+"Matthias Ettrich <ettrich@kde.org>\n"
+"\n"
+"\n"
+msgstr ""
+
+#: configdlg.cpp:46 knotes.cpp:1375
+msgid "Defaults"
+msgstr "Standaardwaarden"
+
+#: knotes.cpp:1376
+msgid "More ..."
+msgstr "Meer ..."
+
+#: knotes.cpp:1535
+msgid ""
+"KNotes is already waiting\n"
+"for an internet job to finish\n"
+"Please wait until it has finished\n"
+"Alternatively stop the running one."
+msgstr ""
+"KNotes wacht reeds op de\n"
+"uitvoering van een internet taak.\n"
+"Wacht a.u.b. tot deze is beeindigd.\n"
+"Eventueel kunt u de lopende taak stoppen."
+
+#: knotes.cpp:1549
+msgid "Could not start or find KFM"
+msgstr "Kan KFM niet starten of vinden"
+
+#: knotes.cpp:1571
+msgid ""
+"Could not save the KNotes.\n"
+"Close anyways?"
+msgstr ""
+"Kan de KNote Bladen niet opslaan.\n"
+"Toch afsluiten ?"
+
+#: knotes.cpp:1683
+#, c-format
+msgid ""
+"Found an alarm to which the underlying\n"
+"KNotes file:\n"
+"%s\n"
+" no longer exists.\n"
+"\n"
+"I will correct the Problem for you."
+msgstr ""
+"Vond een alarm waarvoor het bijbehorende\n"
+"KNotes bestand:\n"
+"%s\n"
+" niet meer bestaat.\n"
+"\n"
+"Ik zal het probleem voor u afhandelen."
+
+#: knotes.cpp:1691
+msgid "Inconsistency"
+msgstr "Tegenspraak"
+
+#: configdlg.cpp:50
+msgid "Text Color:"
+msgstr "Tekst Kleur:"
+
+#: configdlg.cpp:64
+msgid "Background Color:"
+msgstr "Achtergrond  Kleur:"
+
+#: configdlg.cpp:83
+msgid "Width:"
+msgstr "Breedte:"
+
+#: configdlg.cpp:93
+msgid "Height:"
+msgstr "Hoogte:"
+
+#: configdlg.cpp:104
+msgid "Print Command:"
+msgstr "Afdruk opdracht:"
+
+#: configdlg.cpp:112
+msgid "Mail Command:"
+msgstr "Mail opdracht:"
+
+#: configdlg.cpp:123
+msgid "3d Frame"
+msgstr "3D Frame"
+
+#: fontdlg.cpp:45
+msgid "Set Default Font"
+msgstr "Stel Standaard Lettertype In"
+
+#: fontdlg.cpp:54
+msgid "Family:"
+msgstr ""
+
+#: fontdlg.cpp:64
+msgid "Point Size:"
+msgstr "Punt Grootte:"
+
+#: fontdlg.cpp:75
+msgid "Style:"
+msgstr ""
+
+#: fontdlg.cpp:87
+#, fuzzy
+msgid "Weight:"
+msgstr "Hoogte:"
+
+#: fontdlg.cpp:93 fontdlg.cpp:117 fontdlg.cpp:150
+msgid "Bold"
+msgstr ""
+
+#: fontdlg.cpp:95 fontdlg.cpp:119 fontdlg.cpp:152
+msgid "Normal"
+msgstr ""
+
+#: mail.cpp:40
+msgid "Mail Note to:"
+msgstr "Verzendt Blad aan:"
+
+#: mail.cpp:49
+msgid "Subject:"
+msgstr "Onderwerp:"
+
+#: mail.cpp:51
+msgid "Mail"
+msgstr "Post"
+
+#: mail.cpp:92
+msgid "You must specify a Recipient"
+msgstr "U moet een ontvanger opgeven"
+
+#: alarm.cpp:58
+#, c-format
+msgid "Alarm Timer for: %s"
+msgstr "Alarm Klok voor: %s"
+
+#: alarm.cpp:72
+msgid "Unset"
+msgstr "Zet af"
+
+#: alarm.cpp:74
+msgid "Set"
+msgstr "Zet aan"
+
+#: alarm.cpp:153
+msgid "I am afraid you already missed your appointment."
+msgstr "Ik ben bang dat u uw afspraak reeds gemist hebt."
+
+#: bwdatetime.cpp:44
+msgid "Day:"
+msgstr "Dag:"
+
+#: bwdatetime.cpp:50
+msgid "Month:"
+msgstr "Maand:"
+
+#: bwdatetime.cpp:57
+msgid "Year:"
+msgstr "Jaar:"
+
+#: bwdatetime.cpp:72
+msgid "Time:"
+msgstr "Tijd:"
+
+#: bwdatetime.cpp:85
+msgid "AM"
+msgstr ""
+
+#: bwdatetime.cpp:86
+msgid "PM"
+msgstr ""
+
+#: bwdatetime.cpp:161
+msgid "The Time you selected is invalid"
+msgstr "De tijd welke u koos is niet geldig"
+
+#: bwdatetime.cpp:176
+msgid "The Date you selected is invalid"
+msgstr "De datum welke u koos is niet geldig"
+
+#: renamedlg.cpp:39
+msgid "Rename this note to"
+msgstr "Hernoem dit blad tot"
+
+#: renamedlg.cpp:44
+msgid "Rename"
+msgstr "Hernoem"
+
+#: renamedlg.cpp:79
+msgid ""
+"The name \"xyalarms\" is reserved for internal usage.\n"
+"Please choose a different name"
+msgstr ""
+"De naam \"xyalarms\" is gereserveerd voor intern gebruik.\n"
+"Kies a.u.b. een andere naam."
+
+#: renamedlg.cpp:92
+msgid ""
+"A KNotes note with this name already exists\n"
+"Please choose a different name"
+msgstr ""
+"Eeen KNotes blad met deze naam bestaat reeds.\n"
+"Kies a.u.b. een andere naam."
+
+#: docking.cpp:48
+#, fuzzy, c-format
+msgid "Could not load %s !"
+msgstr ""
+"Kan niet laden:\n"
+" %s"
+
+#: docking.cpp:68
+#, fuzzy
+msgid "Change Defaults"
+msgstr "Wijzig Standaardwaarden ..."
+
+#: docking.cpp:73
+msgid "Exit Knotes"
+msgstr ""
+
+#: docking.cpp:92
+#, fuzzy
+msgid "New Knote"
+msgstr "Nieuwe Blad"
+
+#~ msgid "No Frame"
+#~ msgstr "Geen Frame"
+
+#~ msgid "Hide Note"
+#~ msgstr "Verberg Blad"

@@ -1,0 +1,604 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 1999-03-19 01:51+0100\n"
+"Content-Type: text/plain; charset=\n"
+"Date: 1997-12-07 12:23:22-0500\n"
+"From: root,,, <root@petit>\n"
+"Xgettext-Options: -C -ktranslate -kktr\n"
+"Files: ktop.cpp memory.cpp settings.cpp cpu.cpp widgets.cpp\n"
+
+# settings.cpp:88
+#: ktop.cpp:66
+#, fuzzy
+msgid "88888 Processes"
+msgstr "Alle processen meenemen"
+
+#: ktop.cpp:67
+msgid "Memory: 888888 kB used, 888888 kB free"
+msgstr ""
+
+#: ktop.cpp:69
+msgid "Swap: 888888 kB used, 888888 kB free"
+msgstr ""
+
+# ktop.cpp:81
+#: ktop.cpp:76
+#, fuzzy
+msgid "KDE Task Manager"
+msgstr "KDE Taskmanager"
+
+# settings.cpp:88
+#: ktop.cpp:137
+#, fuzzy, c-format
+msgid "%d Processes"
+msgstr "Alle processen meenemen"
+
+#: ktop.cpp:142
+#, c-format
+msgid "Memory: %d kB used, %d kB free"
+msgstr ""
+
+#: ktop.cpp:147
+#, c-format
+msgid "Swap: %d kB used, %d kB free"
+msgstr ""
+
+#: MainMenu.cpp:51
+#, c-format
+msgid ""
+"KDE Task Manager (KTop) Version %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+msgstr ""
+
+#: MainMenu.cpp:64
+msgid "Manual Refresh"
+msgstr ""
+
+# widgets.cpp:98
+#: MainMenu.cpp:65
+#, fuzzy
+msgid "Slow Refresh"
+msgstr "Vernieuwen"
+
+#: MainMenu.cpp:66
+msgid "Medium Refresh"
+msgstr ""
+
+# widgets.cpp:98
+#: MainMenu.cpp:67
+#, fuzzy
+msgid "Fast Refresh"
+msgstr "Vernieuwen"
+
+# widgets.cpp:98
+#: MainMenu.cpp:79
+#, fuzzy
+msgid "&Refresh Rate"
+msgstr "Vernieuwen"
+
+# settings.cpp:83
+#: MainMenu.cpp:80
+#, fuzzy
+msgid "&Process"
+msgstr "Proces ID"
+
+#: ProcessMenu.cpp:44
+msgid "Renice Task..."
+msgstr ""
+
+#: ProcessMenu.cpp:47
+msgid "send SIGINT\t(ctrl-c)"
+msgstr ""
+
+#: ProcessMenu.cpp:48
+msgid "send SIGQUIT\t(core)"
+msgstr ""
+
+#: ProcessMenu.cpp:49
+msgid "send SIGTERM\t(term.)"
+msgstr ""
+
+#: ProcessMenu.cpp:50
+msgid "send SIGKILL\t(term.)"
+msgstr ""
+
+#: ProcessMenu.cpp:52
+msgid "send SIGUSR1\t(user1)"
+msgstr ""
+
+#: ProcessMenu.cpp:53
+msgid "send SIGUSR2\t(user2)"
+msgstr ""
+
+# ktop.cpp:81
+#: ProcessMenu.cpp:74 ProcessMenu.cpp:86 ProcessMenu.cpp:150
+#: ProcessMenu.cpp:158 ProcessMenu.cpp:176
+#, fuzzy
+msgid "Task Manager"
+msgstr "KDE Taskmanager"
+
+#: ProcessMenu.cpp:75
+msgid "You need to select a process first!"
+msgstr ""
+
+#: ProcessMenu.cpp:85 ProcessMenu.cpp:149
+#, c-format
+msgid "The process %d is no longer persistent."
+msgstr ""
+
+#: ProcessMenu.cpp:98
+msgid "SIGINT"
+msgstr ""
+
+#: ProcessMenu.cpp:101
+msgid "SIGQUIT"
+msgstr ""
+
+#: ProcessMenu.cpp:104
+msgid "SIGTERM"
+msgstr ""
+
+#: ProcessMenu.cpp:107
+msgid "SIGKILL"
+msgstr ""
+
+#: ProcessMenu.cpp:110
+msgid "SIGUSR1"
+msgstr ""
+
+#: ProcessMenu.cpp:113
+msgid "SIGUSR2"
+msgstr ""
+
+#: ProcessMenu.cpp:116
+msgid "Unkown Signal"
+msgstr ""
+
+#: ProcessMenu.cpp:122
+#, c-format
+msgid ""
+"Send signal %s to process %d?\n"
+"(Process name: %s  Owner: %s)\n"
+msgstr ""
+
+#: ProcessMenu.cpp:126
+msgid "Abort"
+msgstr ""
+
+#: ProcessMenu.cpp:159 ProcessMenu.cpp:177
+msgid ""
+"Renice error...\n"
+"Specified process does not exist\n"
+"or permission denied."
+msgstr ""
+
+# settings.cpp:83
+#: TaskMan.cpp:80
+#, fuzzy
+msgid "Processes &List"
+msgstr "Proces ID"
+
+# settings.cpp:209
+#: TaskMan.cpp:81
+#, fuzzy
+msgid "Performance &Meter"
+msgstr "Instellingen Performance monitor"
+
+#: ProcListPage.cpp:42
+msgid "Running Processes"
+msgstr ""
+
+#: ProcListPage.cpp:49
+msgid "Show Tree"
+msgstr ""
+
+# settings.cpp:88
+#: ProcListPage.cpp:60
+#, fuzzy
+msgid "All processes"
+msgstr "Alle processen meenemen"
+
+#: ProcListPage.cpp:61
+msgid "System processes"
+msgstr ""
+
+# settings.cpp:88
+#: ProcListPage.cpp:62
+#, fuzzy
+msgid "User processes"
+msgstr "Alle processen meenemen"
+
+# settings.cpp:88
+#: ProcListPage.cpp:63
+#, fuzzy
+msgid "Own processes"
+msgstr "Alle processen meenemen"
+
+# widgets.cpp:98
+#: ProcListPage.cpp:79
+#, fuzzy
+msgid "Refresh Now"
+msgstr "Vernieuwen"
+
+# widgets.cpp:97
+#: ProcListPage.cpp:85
+msgid "Kill task"
+msgstr "Taak beeindigen"
+
+#: ProcessList.cpp:227
+msgid "Remove Column"
+msgstr ""
+
+#: ProcessList.cpp:228
+msgid "Add Column"
+msgstr ""
+
+#: ProcessList.cpp:229
+msgid "Help on Column"
+msgstr ""
+
+# settings.cpp:84
+#: ProcessList.cpp:691 ProcessList.cpp:692
+msgid "Name"
+msgstr "Naam"
+
+#: ProcessList.cpp:695 ProcessList.cpp:696
+msgid "PID"
+msgstr ""
+
+#: ProcessList.cpp:699
+msgid "User ID"
+msgstr ""
+
+#: ProcessList.cpp:700
+msgid "CPU"
+msgstr ""
+
+#: ProcessList.cpp:701
+msgid "Time"
+msgstr ""
+
+#: ProcessList.cpp:702
+msgid "Nice"
+msgstr ""
+
+#: ProcessList.cpp:703
+msgid "Status"
+msgstr ""
+
+# widgets.cpp:134
+#: ProcessList.cpp:704
+msgid "Memory"
+msgstr "Geheugen"
+
+#: ProcessList.cpp:705
+msgid "Resident"
+msgstr ""
+
+#: ProcessList.cpp:706
+msgid "Shared"
+msgstr ""
+
+#: ProcessList.cpp:707
+msgid "Command line"
+msgstr ""
+
+#: OSProcessList.cpp:76 OSProcessList.cpp:104
+msgid ""
+"Cannot open directory '/proc'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+
+#: OSProcessList.cpp:266
+msgid "Cannot read status of processes\n"
+msgstr ""
+
+#: OSProcessList.cpp:367
+msgid "Your OS is not supported yet.  Sorry"
+msgstr ""
+
+#: OSProcess.cpp:123 OSProcess.cpp:154 OSProcess.cpp:171
+#, c-format
+msgid "Cannot open %s!\n"
+msgstr ""
+
+#: OSProcess.cpp:183
+msgid "Run"
+msgstr ""
+
+#: OSProcess.cpp:186
+msgid "Sleep"
+msgstr ""
+
+#: OSProcess.cpp:189
+msgid "Disk"
+msgstr ""
+
+#: OSProcess.cpp:192
+msgid "Zombie"
+msgstr ""
+
+#: OSProcess.cpp:198
+msgid "Swap"
+msgstr ""
+
+#: OSProcess.cpp:201
+msgid "????"
+msgstr ""
+
+#: OSProcess.cpp:320
+#, c-format
+msgid "Could not set new nice level for process %d"
+msgstr ""
+
+#: OSProcess.cpp:334
+#, c-format
+msgid "Cound not send signal %d to process %d"
+msgstr ""
+
+# widgets.cpp:113
+#: PerfMonPage.cpp:49
+#, fuzzy
+msgid "CPU Load History"
+msgstr "CPU load geschiedenis"
+
+# widgets.cpp:113
+#: PerfMonPage.cpp:52
+#, fuzzy
+msgid "System Load History"
+msgstr "CPU load geschiedenis"
+
+#: PerfMonPage.cpp:55 PerfMonPage.cpp:113
+msgid "User (%)"
+msgstr ""
+
+#: PerfMonPage.cpp:56 PerfMonPage.cpp:114
+msgid "Nice (%)"
+msgstr ""
+
+#: PerfMonPage.cpp:57 PerfMonPage.cpp:115
+msgid "System (%)"
+msgstr ""
+
+# widgets.cpp:136
+#: PerfMonPage.cpp:64
+#, fuzzy
+msgid "Memory Usage History"
+msgstr "Geheugen geschiedenis"
+
+#: PerfMonPage.cpp:66
+msgid "Program (kB)"
+msgstr ""
+
+#: PerfMonPage.cpp:67
+msgid "Buffer (kB)"
+msgstr ""
+
+# settings.cpp:92 settings.cpp:213
+#: PerfMonPage.cpp:68
+#, fuzzy
+msgid "Cache (kB)"
+msgstr "Cancel"
+
+#: PerfMonPage.cpp:69
+msgid "Swap (kB)"
+msgstr ""
+
+# widgets.cpp:113
+#: PerfMonPage.cpp:109
+#, fuzzy, c-format
+msgid "CPU%d Load History"
+msgstr "CPU load geschiedenis"
+
+#: OSStatus.cpp:98
+msgid ""
+"Cannot open file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+
+#: OSStatus.cpp:120 OSStatus.cpp:303 OSStatus.cpp:378
+msgid ""
+"Cannot open file '/proc/meminfo'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+
+#: OSStatus.cpp:311
+msgid "Cannot read memory info file '/proc/meminfo'!\n"
+msgstr ""
+
+#: OSStatus.cpp:354
+#, c-format
+msgid ""
+"Cannot read info for %s from file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+
+#: OSStatus.cpp:386
+msgid "Cannot read swap info from '/proc/meminfo'!\n"
+msgstr ""
+
+#: OSStatus.cpp:575 OSStatus.cpp:588 OSStatus.cpp:615 OSStatus.cpp:624
+msgid ""
+"Your system is not currently supported.\n"
+"Sorry"
+msgstr ""
+
+#: ReniceDlg.cpp:32
+msgid "Renice Process"
+msgstr ""
+
+#: ReniceDlg.cpp:39
+#, c-format
+msgid ""
+"You are about the change the scheduling priority of\n"
+"process %d. Be aware that only the Superuser (root)\n"
+"can decrease the nice level of a process. The smaller\n"
+"the number is the higher is the priority.\n"
+"\n"
+"Please enter the desired nice level:"
+msgstr ""
+
+# settings.cpp:83
+#, fuzzy
+#~ msgid "Processes &Tree"
+#~ msgstr "Proces ID"
+
+# settings.cpp:209
+#, fuzzy
+#~ msgid "&Performance"
+#~ msgstr "Instellingen Performance monitor"
+
+# widgets.cpp:98
+#, fuzzy
+#~ msgid "Refresh rate: Medium"
+#~ msgstr "Vernieuwen"
+
+# widgets.cpp:98
+#, fuzzy
+#~ msgid "Refresh rate: Fast"
+#~ msgstr "Vernieuwen"
+
+# widgets.cpp:97
+#, fuzzy
+#~ msgid "Kill Task"
+#~ msgstr "Taak beeindigen"
+
+# settings.cpp:74
+#, fuzzy
+#~ msgid "Sort by ID"
+#~ msgstr "Sorteer methode"
+
+# settings.cpp:74
+#, fuzzy
+#~ msgid "Sort by Name"
+#~ msgstr "Sorteer methode"
+
+# settings.cpp:85
+#, fuzzy
+#~ msgid "Sort by Owner (UID)"
+#~ msgstr "Eigenaar"
+
+# widgets.cpp:113
+#, fuzzy
+#~ msgid "Swap history"
+#~ msgstr "CPU load geschiedenis"
+
+# settings.cpp:83
+#, fuzzy
+#~ msgid "Processes Tree"
+#~ msgstr "Proces ID"
+
+# ktop.cpp:92
+#, fuzzy
+#~ msgid "About..."
+#~ msgstr "Info..."
+
+# settings.cpp:90 settings.cpp:211
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+# ktop.cpp:158
+#~ msgid "About Taskmanager"
+#~ msgstr "Over Taskmanager"
+
+# ktop.cpp:88
+#~ msgid "Quit"
+#~ msgstr "Afsluiten"
+
+# ktop.cpp:91 ktop.cpp:105
+#~ msgid "Help"
+#~ msgstr "Help"
+
+# ktop.cpp:96
+#~ msgid "Process viewer settings..."
+#~ msgstr "Instellingen proces viewer..."
+
+# ktop.cpp:102
+#~ msgid "File"
+#~ msgstr "Bestand"
+
+# ktop.cpp:103
+#~ msgid "Settings"
+#~ msgstr "Instellingen"
+
+# settings.cpp:67
+#~ msgid "Process viewer settings"
+#~ msgstr "Proces viewer instellingen"
+
+# settings.cpp:69
+#~ msgid "Update interval"
+#~ msgstr "Update interval"
+
+# settings.cpp:76
+#~ msgid "Slow"
+#~ msgstr "Langzaam"
+
+# settings.cpp:77
+#~ msgid "Medium"
+#~ msgstr "Normaal"
+
+# settings.cpp:78
+#~ msgid "High"
+#~ msgstr "Hoog"
+
+# settings.cpp:79
+#~ msgid "Custom"
+#~ msgstr "Speciaal"
+
+# settings.cpp:86
+#~ msgid "Load (%CPU)"
+#~ msgstr "Load (%CPU)"
+
+# settings.cpp:87
+#~ msgid "Misc settings"
+#~ msgstr "Overige instellingen"
+
+# settings.cpp:176
+#~ msgid "Error"
+#~ msgstr "Fout"
+
+# settings.cpp:177
+#~ msgid "The update interval value mustbe greater than zero"
+#~ msgstr "Het update interval moet groter zijn dan nul"
+
+# settings.cpp:184
+#~ msgid "Warning"
+#~ msgstr "Waarschuwing"
+
+# settings.cpp:185
+#~ msgid ""
+#~ "You have specified a very fast update ratio.\n"
+#~ "This may generate a noticeable load onyour system."
+#~ msgstr ""
+#~ "Je hebt een zeer snelle update frequentie gekozen.\n"
+#~ "Dit zorgt voor een merkbare vertraging van je systeem."
+
+# widgets.cpp:95
+#~ msgid "Properties..."
+#~ msgstr "Eigenschappen..."
+
+# widgets.cpp:171
+#~ msgid "General"
+#~ msgstr "Algemeen"
+
+# widgets.cpp:515
+#~ msgid "Sorry"
+#~ msgstr "Sorry"
+
+# widgets.cpp:516
+#~ msgid "Not yet implemented.\n"
+#~ msgstr "Nog niet geimplementeerd.\n"
+
+# widgets.cpp:533
+#~ msgid "Not implemented yet"
+#~ msgstr "Nog niet geimplementeerd"

@@ -1,0 +1,596 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kikbd\n"
+"POT-Creation-Date: 1999-04-13 01:26+0200\n"
+"PO-Revision-Date: 1999-04-05 15:00+0800\n"
+"Last-Translator: Wang Jian <lark@linux.ustc.edu.cn>\n"
+"Language-Team: zh_CN ( gb2312 )\n"
+"Translator: Wang Jian <larkw@263.net>\n"
+
+#: kikbd.cpp:124
+msgid "KDE International Keyboard already started on this display."
+msgstr "KDE国际键盘已经起动了."
+
+#: kikbd.cpp:295
+#, c-format
+msgid ""
+"X codes \"%s\" file does not exist.\n"
+"Using X default codes."
+msgstr ""
+"X代码\"%s\"文件不存在.\n"
+"使用X的默认代码."
+
+#: kikbd.cpp:321
+#, c-format
+msgid ""
+"Keyboard map \"%s\" does not exists.\n"
+"Skipping this map."
+msgstr ""
+"键盘映射\"%s\"不存在.\n"
+"跳过这个映射."
+
+#: kikbd.cpp:337
+msgid "Setup"
+msgstr "设置"
+
+#: kikbd.cpp:359 kikbd.cpp:372
+#, c-format
+msgid "Can not remove %s from Modifiers.\n"
+msgstr "无法从修饰键中去掉 %s.\n"
+
+#: kikbd.cpp:362
+#, c-format
+msgid "Can not add %s to Modifier number 3.\n"
+msgstr "无法把 %s 添加到修饰键3.\n"
+
+#: kikbd.cpp:384
+#, c-format
+msgid ""
+"Can not set Mode Switch as %s for keyboard %s.\n"
+"Alt symbols disabled"
+msgstr "不能把模式开关设到 %s , 键盘 %s.禁止Alt"
+
+#: kikbd.cpp:406
+msgid ""
+"Can't remove Caps Lock from Modifiers.\n"
+"Caps Lock Emulation disabled"
+msgstr ""
+"不能把大写锁定键从修饰键中去掉.\n"
+"禁止大写锁定模拟"
+
+#: kikbd.cpp:1097
+msgid "Exiting International Keyboard"
+msgstr "正在退出国际键盘"
+
+#: kikbd.cpp:1098
+msgid ""
+"You're about to quit the \"International Keyboard\" tool.\n"
+" Do you want to have it autostarted at your next login?"
+msgstr ""
+"你要退出\"国际键盘\"工具.\n"
+"你想在下次登录时自动起动吗?"
+
+#: keymap.cpp:186
+msgid "KeyMap: can't allocate memory"
+msgstr "KeyMap: 无法申请内存"
+
+#: keymap.cpp:233
+#, c-format
+msgid ""
+"Can't find symbol \"%s\".\n"
+"Maybe your default X codes do not match.\n"
+"You can preset X codes from section \"Advanced\"\n"
+"in the configuration program."
+msgstr ""
+"找不到符号\"%s\".\n"
+"也许你的默认X代码不匹配.\n"
+"你可以在配置程序的\"高级\"\n"
+"部分里预设X代码."
+
+#: keymap.cpp:238
+#, c-format
+msgid "KeyMap: can't find symbol \"%s\"."
+msgstr "KeyMap: 无法找到符号 \"%s\"."
+
+#: keymap.cpp:246
+#, c-format
+msgid "KeyMap: can't read keycode \"%s\"."
+msgstr "KeyMap: 不能读取键码 \"%s\"."
+
+#: keymap.cpp:252
+#, c-format
+msgid "KeyMap: keycode \"%s\" is out of range."
+msgstr "KeyMap: 键码 \"%s\" 越界"
+
+#: kikbdconf.cpp:102
+msgid "Global"
+msgstr "全局"
+
+#: kikbdconf.cpp:102
+msgid "Window"
+msgstr "窗口"
+
+#: kikbdconf.cpp:102
+msgid "Class"
+msgstr "类"
+
+#: kikbdconf.cpp:105 kikbdconf.cpp:117
+msgid "(None)"
+msgstr "(无)"
+
+#: kikbdconf.cpp:106 kikbdconf.cpp:118
+msgid "Right Alt"
+msgstr "右Alt键"
+
+#: kikbdconf.cpp:107 kikbdconf.cpp:119
+msgid "Right Control"
+msgstr "右Ctrl键"
+
+#: kikbdconf.cpp:108
+msgid "Rights (Alt+Shift)"
+msgstr "右Alt+Shift键"
+
+#: kikbdconf.cpp:109
+msgid "Rights (Ctrl+Alt)"
+msgstr "右Ctrl+Alt键"
+
+#: kikbdconf.cpp:110
+msgid "Rights (Ctrl+Shift)"
+msgstr "右Ctrl+Shift键"
+
+#: kikbdconf.cpp:111
+msgid "Lefts  (Alt+Shift)"
+msgstr "左Alt+Shift键"
+
+#: kikbdconf.cpp:112
+msgid "Lefts  (Ctrl+Alt)"
+msgstr "左Ctrl+Alt键"
+
+#: kikbdconf.cpp:113
+msgid "Lefts  (Ctrl+Shift)"
+msgstr "左Ctrl+Shift键"
+
+#: kikbdconf.cpp:114
+msgid "Both Shift's (Shift+Shift)"
+msgstr "两个Shift键"
+
+#: kikbdconf.cpp:120
+msgid "Right Meta"
+msgstr "右Meta键"
+
+#: kikbdconf.cpp:121
+msgid "Left  Alt"
+msgstr "左Alt键"
+
+#: kikbdconf.cpp:122
+msgid "Left  Control"
+msgstr "左Ctrl键"
+
+#: kikbdconf.cpp:123
+msgid "Left  Meta"
+msgstr "左Meta键"
+
+#: kikbdconf.cpp:126
+msgid "Top Left"
+msgstr "左上角"
+
+#: kikbdconf.cpp:127
+msgid "Top Right"
+msgstr "右上角"
+
+#: kikbdconf.cpp:128
+msgid "Bottom Left"
+msgstr "左下角"
+
+#: kikbdconf.cpp:129
+msgid "Bottom Right"
+msgstr "右下角"
+
+#: kikbdconf.cpp:156
+msgid "X default codes"
+msgstr "X默认代码"
+
+#: kikbdconf.cpp:215
+#, c-format
+msgid ""
+"%s\n"
+"Do you want to configure now?"
+msgstr ""
+"%s\n"
+"你想现在配置吗?"
+
+#: kikbdconf.cpp:223
+msgid ""
+"You're using \"International Keyboard\" for the first time.\n"
+"I installed a number of default settings."
+msgstr ""
+"你第一次使用\"国际键盘\".\n"
+"默认设置被安装."
+
+#: kikbdconf.cpp:379
+msgid "unknown"
+msgstr "未知"
+
+#: kikbdconf.cpp:383 kikbdconf.cpp:476
+msgid "default"
+msgstr "默认"
+
+#: kikbdconf.cpp:419
+msgid "Author:  Not specified"
+msgstr "作者: 没有指定"
+
+#: kikbdconf.cpp:421
+msgid "Author"
+msgstr "作者"
+
+#: kikbdconf.cpp:427
+msgid "Description:  "
+msgstr "描述:  "
+
+#: kikbdconf.cpp:430
+msgid "Source:  "
+msgstr "源:  "
+
+#: kikbdconf.cpp:431
+msgid "no file"
+msgstr "没有文件"
+
+#: kikbdconf.cpp:432
+msgid "user file"
+msgstr "用户文件"
+
+#: kikbdconf.cpp:433
+msgid "system file"
+msgstr "系统文件"
+
+#: kikbdconf.cpp:438
+msgid "Statistic:  "
+msgstr "统计数字:  "
+
+#: kikbdconf.cpp:446
+msgid "symbols"
+msgstr "符号"
+
+#: kikbdconf.cpp:454
+msgid "codes"
+msgstr "代码"
+
+#: kikbdconf.cpp:457
+msgid "alternative symbols"
+msgstr "替代符号"
+
+#: kikbdconf.cpp:469
+msgid "Language"
+msgstr "语言"
+
+#: kikbdconf.cpp:473
+msgid "Charset"
+msgstr "字符集"
+
+#: kikbdconf.cpp:519
+msgid "International keyboard ERROR"
+msgstr "国际键盘-错误"
+
+#: kikbdconf.cpp:535
+msgid "International keyboard warning"
+msgstr "国际键盘-警告"
+
+#: kikbdconf.cpp:542 kikbdconf.cpp:547 kikbdconf.cpp:560
+msgid "International keyboard question"
+msgstr "国际键盘-问题"
+
+#: kikbdconf.cpp:549
+msgid "Configure"
+msgstr "配置"
+
+#: kikbdconf.cpp:559
+msgid ""
+"\n"
+"Do you want to continue?"
+msgstr ""
+"\n"
+"你想继续吗?"
+
+#: widgets.cpp:116
+msgid "List of active keyboard maps"
+msgstr "活动键盘映射列表"
+
+#: widgets.cpp:126
+msgid "&Add"
+msgstr "添加(&A)"
+
+#: widgets.cpp:127
+msgid "Add new keyboard map"
+msgstr "添加新的键盘映射"
+
+#: widgets.cpp:131
+msgid "Remove selected keyboard map"
+msgstr "去掉选中的键盘映射"
+
+#: widgets.cpp:136
+msgid "U&p"
+msgstr "上(&P)"
+
+#: widgets.cpp:136
+msgid "Move up selected keyboard map"
+msgstr "上移选中的键盘映射"
+
+#: widgets.cpp:140
+msgid "D&own"
+msgstr "下(&O)"
+
+#: widgets.cpp:140
+msgid "Move down selected keyboard map"
+msgstr "下移选中的键盘映射"
+
+#: widgets.cpp:144
+msgid "&Info"
+msgstr "信息(&I)"
+
+#: widgets.cpp:145
+msgid "Display information for selected keyboard map"
+msgstr "显示选中的键盘映射的信息"
+
+#: widgets.cpp:154
+msgid "Use &hot list"
+msgstr "使用常用列表(&H)"
+
+#: widgets.cpp:155
+msgid ""
+"Use only default and last active keyboard maps when switch key sequence is "
+"used"
+msgstr "当使用切换键序列时只使用默认的和上次使用的键盘映射"
+
+#: widgets.cpp:224
+msgid "Adding Keyboard"
+msgstr "正在添加键盘"
+
+#: widgets.cpp:225
+msgid "There are no keyboard maps left to add"
+msgstr "没有可添加的键盘映射了"
+
+#: widgets.cpp:258
+msgid "Keyboard map information"
+msgstr "键盘映射信息"
+
+#: widgets.cpp:292
+msgid "Add Keyboard"
+msgstr "添加键盘"
+
+#: widgets.cpp:296
+msgid "Available keyboard maps"
+msgstr "可用的键盘映射"
+
+#: widgets.cpp:403
+msgid "Keyboard maps"
+msgstr "键盘映射"
+
+#: widgets.cpp:414
+msgid "Switch and Alt Switch"
+msgstr "开关和Alt开关"
+
+#: widgets.cpp:419
+msgid "Key(s) for switching between keyboard maps"
+msgstr "切换键盘映射所使用的快捷键"
+
+#: widgets.cpp:425
+msgid "Key for activating Alternate symbols in current keyboard map"
+msgstr "在当前键盘映射中用来激活替代符号的键"
+
+#: widgets.cpp:438
+msgid "&Beep"
+msgstr "响铃(&B)"
+
+#: widgets.cpp:439
+msgid "Beep when keyboard map is changed"
+msgstr "在键盘映射改变时响铃"
+
+#: widgets.cpp:442
+msgid "Ad&vanced"
+msgstr "高级(&V)"
+
+#: widgets.cpp:442
+msgid "Advanced options"
+msgstr "高级选项"
+
+#: widgets.cpp:459
+msgid "Advanced"
+msgstr "高级"
+
+#: widgets.cpp:475
+msgid "&Emulate Caps Lock"
+msgstr "模拟大写锁定(&E)"
+
+#: widgets.cpp:476
+msgid ""
+"Emulate XServer Caps Lock. Needed for correct keyboard operation in some "
+"languages"
+msgstr "模拟X服务器大写锁定.某些语言需要此选项才能正确工作"
+
+#: widgets.cpp:482
+msgid "&World Menu"
+msgstr "世界菜单(&W)"
+
+#: widgets.cpp:483
+#, fuzzy
+msgid "Show menu in any window by holding sown the selected Switch key(s)"
+msgstr "在任何窗口中按下选中的切换键后显示菜单"
+
+#: widgets.cpp:491
+msgid "&Save Classes"
+msgstr "保存类别(&S)"
+
+#: widgets.cpp:492
+msgid "Save relations between window classes and keyboard maps on exit"
+msgstr "在退出时保存窗口类和键盘映射的关系"
+
+#: widgets.cpp:498
+msgid "Define X codes"
+msgstr "定义X代码"
+
+#: widgets.cpp:501
+msgid "Input"
+msgstr "输入"
+
+#: widgets.cpp:505
+msgid "Standard behavior. Keyboard map effective for all windows"
+msgstr "标准行为.键盘映射在所有窗口中起作用"
+
+#: widgets.cpp:509
+msgid ""
+"Extended behavior. Keyboard map state is saved for each window independently"
+msgstr "扩展行为.为每个独立的窗口保存键盘映射状态"
+
+#: widgets.cpp:513
+msgid ""
+"Special behavior. Keyboard state is saved for each window class independently"
+msgstr "特殊行为.为每个独立的窗口类保存键盘映射的状态"
+
+#: widgets.cpp:561
+msgid "Button Colors"
+msgstr "按钮颜色"
+
+#: widgets.cpp:571
+msgid "Foreground"
+msgstr "前景"
+
+#: widgets.cpp:572
+msgid "Text label foreground color"
+msgstr "文本标签前景色"
+
+#: widgets.cpp:576
+msgid "Background"
+msgstr "背景"
+
+#: widgets.cpp:577
+msgid "Text label background color"
+msgstr "文本标签背景色"
+
+#: widgets.cpp:581
+msgid "With Caps Lock"
+msgstr "带大写锁定"
+
+#: widgets.cpp:582
+msgid "Background when Emulated Caps Lock active"
+msgstr "在模拟的大写锁定起作用时的背景"
+
+#: widgets.cpp:588
+msgid "With Alternate"
+msgstr "带Alt"
+
+#: widgets.cpp:589
+msgid "Background when Alternate switch key is pressed"
+msgstr "在Alt开关按下时的背景"
+
+#: widgets.cpp:598
+msgid "Button Font"
+msgstr "按钮字体"
+
+#: widgets.cpp:606
+msgid "&Customize Font"
+msgstr "自定义字体(&C)"
+
+#: widgets.cpp:607
+msgid "Customize Font for text label or use global settings"
+msgstr "自定义文本标签字体或使用全局设定"
+
+#: widgets.cpp:611
+msgid "C&hange Font"
+msgstr "改变字体(&H)"
+
+#: widgets.cpp:656
+msgid "&Autostart"
+msgstr "自动启动(&A)"
+
+#: widgets.cpp:657
+msgid "Start up automatically"
+msgstr "自动起动"
+
+#: widgets.cpp:663
+msgid "&Docked"
+msgstr "嵌入(&D)"
+
+#: widgets.cpp:664
+msgid "Dock into special area in the panel"
+msgstr "嵌入到面板的特别区域"
+
+#: widgets.cpp:673
+msgid "Place"
+msgstr "放置"
+
+#: widgets.cpp:680
+msgid "Place in selected corner"
+msgstr "放在选中的角落"
+
+#: kcmikbd.cpp:64
+msgid "&General"
+msgstr "一般(&G)"
+
+#: kcmikbd.cpp:70
+msgid "&Style"
+msgstr "风格(&S)"
+
+#: kcmikbd.cpp:76
+msgid "Start&Up"
+msgstr "启动(&U)"
+
+#: kcmikbd.cpp:80
+msgid "International Keyboard"
+msgstr "国际键盘"
+
+#~ msgid "Up selected keyboard map"
+#~ msgstr "向上调整选中的键盘映射"
+
+#~ msgid "Extended behavior. Each windows remember it's own keyboard map"
+#~ msgstr "扩展行为.每个窗口记住各自使用的键盘映射"
+
+#~ msgid "Special behavior. Each windows class remember it's own keyboard map"
+#~ msgstr "特殊行为.每个窗口类记住各自使用的键盘映射"
+
+#~ msgid "Color of the text label"
+#~ msgstr "文本标签的颜色"
+
+#, fuzzy
+#~ msgid ""
+#~ "%s\n"
+#~ "Do you want to start Configuration?"
+#~ msgstr "你想要起动配置吗 ?"
+
+#~ msgid "Your configuration is empty. Install system default."
+#~ msgstr "你的配置是空的.安装系统默认配置."
+
+#~ msgid "Exit"
+#~ msgstr "退出"
+
+#~ msgid "kikbd warning"
+#~ msgstr "kikbd 警告"
+
+#~ msgid "kikbd configuration error"
+#~ msgstr "kikbd 配置错误"
+
+#~ msgid "kikbd configuration message"
+#~ msgstr "kikbd 配置信息"
+
+#~ msgid "Label"
+#~ msgstr "标签"
+
+#~ msgid "yes"
+#~ msgstr "是"
+
+#~ msgid "true"
+#~ msgstr "是"
+
+#~ msgid "Locale"
+#~ msgstr "语言"
+
+#~ msgid "Delete"
+#~ msgstr "删除"
+
+#~ msgid "Options"
+#~ msgstr "选项"
+
+#~ msgid "Ok"
+#~ msgstr "确定"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"

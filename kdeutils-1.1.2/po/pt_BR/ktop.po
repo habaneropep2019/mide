@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ktop\n"
+"POT-Creation-Date: 1999-03-19 01:51+0100\n"
+"PO-Revision-Date: 1999-02-12 19:45-3\n"
+"Last-Translator: Renato Moutinho Silva <rmsilva@ruralrj.com.br>\n"
+"Language-Team: PORTUGUES <epx@netville.com.br>\n"
+"MIME-Version: 1.1\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: ISO-8859-1\n"
+
+#: ktop.cpp:66
+msgid "88888 Processes"
+msgstr "88888 processos"
+
+#: ktop.cpp:67
+msgid "Memory: 888888 kB used, 888888 kB free"
+msgstr "Memória: 888888 kB utilizados, 888888 kB livres"
+
+#: ktop.cpp:69
+msgid "Swap: 888888 kB used, 888888 kB free"
+msgstr "Virtual: 888888 kB utilizados, 888888 kB livres"
+
+#: ktop.cpp:76
+msgid "KDE Task Manager"
+msgstr "Gerenciador de Tarefas do KDE"
+
+#: ktop.cpp:137
+#, c-format
+msgid "%d Processes"
+msgstr "%d processos"
+
+#: ktop.cpp:142
+#, c-format
+msgid "Memory: %d kB used, %d kB free"
+msgstr "Memória: %d kB utilizados, %d kB livres"
+
+#: ktop.cpp:147
+#, c-format
+msgid "Swap: %d kB used, %d kB free"
+msgstr "Virtual: %d kB utilizados, %d kB livres"
+
+#: MainMenu.cpp:51
+#, c-format
+msgid ""
+"KDE Task Manager (KTop) Version %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+msgstr ""
+"Gerenciador de Tarefas KDE (KTop) Versão %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@axys.de>\n"
+
+#: MainMenu.cpp:64
+msgid "Manual Refresh"
+msgstr "Atualização Manual"
+
+#: MainMenu.cpp:65
+msgid "Slow Refresh"
+msgstr "Atualização Lenta"
+
+#: MainMenu.cpp:66
+msgid "Medium Refresh"
+msgstr "Atualização Média"
+
+#: MainMenu.cpp:67
+msgid "Fast Refresh"
+msgstr "Atualização Rápida"
+
+#: MainMenu.cpp:79
+msgid "&Refresh Rate"
+msgstr "&Taxa de Atualização"
+
+#: MainMenu.cpp:80
+msgid "&Process"
+msgstr "&Processos"
+
+#: ProcessMenu.cpp:44
+msgid "Renice Task..."
+msgstr "Repriorizar Tarefa..."
+
+#: ProcessMenu.cpp:47
+msgid "send SIGINT\t(ctrl-c)"
+msgstr "enviar SIGINT\t(ctrl-c)"
+
+#: ProcessMenu.cpp:48
+msgid "send SIGQUIT\t(core)"
+msgstr "enviar SIGQUIT\t(core)"
+
+#: ProcessMenu.cpp:49
+msgid "send SIGTERM\t(term.)"
+msgstr "enviar SIGTERM\t(term.)"
+
+#: ProcessMenu.cpp:50
+msgid "send SIGKILL\t(term.)"
+msgstr "enviar SIGKILL\t(term.)"
+
+#: ProcessMenu.cpp:52
+msgid "send SIGUSR1\t(user1)"
+msgstr "enviar SIGUSR1\t(user1)"
+
+#: ProcessMenu.cpp:53
+msgid "send SIGUSR2\t(user2)"
+msgstr "enviar SIGUSR2\t(user2)"
+
+#: ProcessMenu.cpp:74 ProcessMenu.cpp:86 ProcessMenu.cpp:150
+#: ProcessMenu.cpp:158 ProcessMenu.cpp:176
+msgid "Task Manager"
+msgstr "Gerenciador de Tarefas"
+
+#: ProcessMenu.cpp:75
+msgid "You need to select a process first!"
+msgstr "Você precisa selecionar um processo."
+
+#: ProcessMenu.cpp:85 ProcessMenu.cpp:149
+#, c-format
+msgid "The process %d is no longer persistent."
+msgstr "O processo %d não é mais persistente."
+
+#: ProcessMenu.cpp:98
+msgid "SIGINT"
+msgstr "SIGINT"
+
+#: ProcessMenu.cpp:101
+msgid "SIGQUIT"
+msgstr "SIGQUIT"
+
+#: ProcessMenu.cpp:104
+msgid "SIGTERM"
+msgstr "SIGTERM"
+
+#: ProcessMenu.cpp:107
+msgid "SIGKILL"
+msgstr "SIGKILL"
+
+#: ProcessMenu.cpp:110
+msgid "SIGUSR1"
+msgstr "SIGUSR1"
+
+#: ProcessMenu.cpp:113
+msgid "SIGUSR2"
+msgstr "SIGUSR2"
+
+#: ProcessMenu.cpp:116
+msgid "Unkown Signal"
+msgstr "Sinal Desconhecido"
+
+#: ProcessMenu.cpp:122
+#, c-format
+msgid ""
+"Send signal %s to process %d?\n"
+"(Process name: %s  Owner: %s)\n"
+msgstr ""
+"Enviar o sinal %s para o processo %d?\n"
+"(Nome do processo: %s Dono: %s)\n"
+
+#: ProcessMenu.cpp:126
+msgid "Abort"
+msgstr "Abortar"
+
+#: ProcessMenu.cpp:159 ProcessMenu.cpp:177
+msgid ""
+"Renice error...\n"
+"Specified process does not exist\n"
+"or permission denied."
+msgstr ""
+"Erro na mudança de prioridade ...\n"
+"O processo especificado não existe\n"
+"ou a permissão foi negada."
+
+#: TaskMan.cpp:80
+msgid "Processes &List"
+msgstr "&Lista de Processos"
+
+#: TaskMan.cpp:81
+msgid "Performance &Meter"
+msgstr "&Medidor de Performance"
+
+#: ProcListPage.cpp:42
+msgid "Running Processes"
+msgstr "Processos Rodando"
+
+#: ProcListPage.cpp:49
+msgid "Show Tree"
+msgstr "Mostrar Árvore"
+
+#: ProcListPage.cpp:60
+msgid "All processes"
+msgstr "Todos os processos"
+
+#: ProcListPage.cpp:61
+msgid "System processes"
+msgstr "Processos do sistema"
+
+#: ProcListPage.cpp:62
+msgid "User processes"
+msgstr "Processos do usuário"
+
+#: ProcListPage.cpp:63
+msgid "Own processes"
+msgstr "Processos próprios"
+
+#: ProcListPage.cpp:79
+msgid "Refresh Now"
+msgstr "Atualizar agora"
+
+#: ProcListPage.cpp:85
+msgid "Kill task"
+msgstr "Matar tarefa"
+
+#: ProcessList.cpp:227
+msgid "Remove Column"
+msgstr "Remover Coluna"
+
+#: ProcessList.cpp:228
+msgid "Add Column"
+msgstr "Adicionar Coluna"
+
+#: ProcessList.cpp:229
+msgid "Help on Column"
+msgstr "Ajuda na Coluna"
+
+#: ProcessList.cpp:691 ProcessList.cpp:692
+msgid "Name"
+msgstr "Nome"
+
+#: ProcessList.cpp:695 ProcessList.cpp:696
+msgid "PID"
+msgstr "PID"
+
+#: ProcessList.cpp:699
+msgid "User ID"
+msgstr "ID do dono"
+
+#: ProcessList.cpp:700
+msgid "CPU"
+msgstr "CPU"
+
+#: ProcessList.cpp:701
+msgid "Time"
+msgstr "Tempo"
+
+#: ProcessList.cpp:702
+msgid "Nice"
+msgstr "Prioridade"
+
+#: ProcessList.cpp:703
+msgid "Status"
+msgstr "Status"
+
+#: ProcessList.cpp:704
+msgid "Memory"
+msgstr "Memória"
+
+#: ProcessList.cpp:705
+msgid "Resident"
+msgstr "Residente"
+
+#: ProcessList.cpp:706
+msgid "Shared"
+msgstr "Compartilhada"
+
+#: ProcessList.cpp:707
+msgid "Command line"
+msgstr "Linha de comando"
+
+#: OSProcessList.cpp:76 OSProcessList.cpp:104
+msgid ""
+"Cannot open directory '/proc'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Não posso abrir o diretório '/proc'!\n"
+"O kernel tem que ser compilado com o suporte\n"
+"ao sistema de arquivos /proc habilitado!"
+
+#: OSProcessList.cpp:266
+msgid "Cannot read status of processes\n"
+msgstr "Não foi possível ler o status dos processos\n"
+
+#: OSProcessList.cpp:367
+msgid "Your OS is not supported yet.  Sorry"
+msgstr "O seu SO não é suportado ainda. Desculpe"
+
+#: OSProcess.cpp:123 OSProcess.cpp:154 OSProcess.cpp:171
+#, c-format
+msgid "Cannot open %s!\n"
+msgstr "Não foi possível abrir %s!\n"
+
+#: OSProcess.cpp:183
+msgid "Run"
+msgstr "Rodando"
+
+#: OSProcess.cpp:186
+msgid "Sleep"
+msgstr "Dormindo"
+
+#: OSProcess.cpp:189
+msgid "Disk"
+msgstr "Disco"
+
+#: OSProcess.cpp:192
+msgid "Zombie"
+msgstr "Zumbi"
+
+#: OSProcess.cpp:198
+msgid "Swap"
+msgstr "Troca"
+
+#: OSProcess.cpp:201
+msgid "????"
+msgstr "????"
+
+#: OSProcess.cpp:320
+#, c-format
+msgid "Could not set new nice level for process %d"
+msgstr "Não foi possível alterar a prioridade do processo %d"
+
+#: OSProcess.cpp:334
+#, c-format
+msgid "Cound not send signal %d to process %d"
+msgstr "Não foi possível enviar o sinal %d para o processo %d"
+
+#: PerfMonPage.cpp:49
+msgid "CPU Load History"
+msgstr "Histórico de carga da CPU"
+
+#: PerfMonPage.cpp:52
+msgid "System Load History"
+msgstr "Histórico de carga do sistema"
+
+#: PerfMonPage.cpp:55 PerfMonPage.cpp:113
+msgid "User (%)"
+msgstr "Usuário (%)"
+
+#: PerfMonPage.cpp:56 PerfMonPage.cpp:114
+msgid "Nice (%)"
+msgstr "Baixa prioridade (%)"
+
+#: PerfMonPage.cpp:57 PerfMonPage.cpp:115
+msgid "System (%)"
+msgstr "Sistema (%)"
+
+#: PerfMonPage.cpp:64
+msgid "Memory Usage History"
+msgstr "Histórico de utilização de memória"
+
+#: PerfMonPage.cpp:66
+msgid "Program (kB)"
+msgstr "Programa (kB)"
+
+#: PerfMonPage.cpp:67
+msgid "Buffer (kB)"
+msgstr "Buffer (kB)"
+
+#: PerfMonPage.cpp:68
+msgid "Cache (kB)"
+msgstr "Cache (kB)"
+
+#: PerfMonPage.cpp:69
+msgid "Swap (kB)"
+msgstr "Troca (kB)"
+
+#: PerfMonPage.cpp:109
+#, c-format
+msgid "CPU%d Load History"
+msgstr "Histórico de carga da CPU%d"
+
+#: OSStatus.cpp:98
+msgid ""
+"Cannot open file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Não foi possível abrir o arquivo '/proc/stat'!\n"
+"O kernel tem que ser compilado com o suporte\n"
+"ao sistema de arquivos /proc habilitado!"
+
+#: OSStatus.cpp:120 OSStatus.cpp:303 OSStatus.cpp:378
+msgid ""
+"Cannot open file '/proc/meminfo'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Não foi possível abrir o arquiv '/proc/meminfo'!\n"
+"O kernel tem que ser compilado com o suporte\n"
+"ao sistema de arquivos /proc habilitado!"
+
+#: OSStatus.cpp:311
+msgid "Cannot read memory info file '/proc/meminfo'!\n"
+msgstr ""
+"Não foi possível ler do arquivo '/proc/meminfo'\n"
+"informações sobre a memória!\n"
+
+#: OSStatus.cpp:354
+#, c-format
+msgid ""
+"Cannot read info for %s from file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Não foi possível ler informações sobre %s.\n"
+"O kernel tem que ser compilado com o suporte\n"
+"ao sistema de arquivos /proc habilitado!"
+
+#: OSStatus.cpp:386
+msgid "Cannot read swap info from '/proc/meminfo'!\n"
+msgstr ""
+"Não foi possível ler do arquivo '/proc/meminfo'\n"
+"informações sobre o arquivo de troca (swap)!\n"
+
+#: OSStatus.cpp:575 OSStatus.cpp:588 OSStatus.cpp:615 OSStatus.cpp:624
+msgid ""
+"Your system is not currently supported.\n"
+"Sorry"
+msgstr ""
+"O seu sistema não é suportado atualmente.\n"
+"Desculpe"
+
+#: ReniceDlg.cpp:32
+msgid "Renice Process"
+msgstr "Alterar a prioridade do processo"
+
+#: ReniceDlg.cpp:39
+#, c-format
+msgid ""
+"You are about the change the scheduling priority of\n"
+"process %d. Be aware that only the Superuser (root)\n"
+"can decrease the nice level of a process. The smaller\n"
+"the number is the higher is the priority.\n"
+"\n"
+"Please enter the desired nice level:"
+msgstr ""
+"Você está prestes a mudar a prioridade de agendamento\n"
+"do processo %d. Esteja ciente de que somente o Super\n"
+"Usuário (root) pode aumentar a prioridade de um processo.\n"
+"Quanto menor o número, maior a prioridade.\n"
+"\n"
+"Entre com a prioridade desejada:"

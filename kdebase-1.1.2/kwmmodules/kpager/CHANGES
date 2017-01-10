@@ -1,0 +1,201 @@
+* Sun Jan 24 10:30:00 CEST 1999
+
+Fixed the Symmetrical Mirrored background mode
+
+* Thu Jan 21 7:45:00 CEST 1999
+
+Fixed a memory leakage bug
+
+* Mon Jan 11 18:40:00 CEST 1999
+
+Made KPager store the "one click mode" and "show name" status
+
+* Mon Jan  4 12:26:00 CEST 1999
+
+Use kcmdisplayrc instead of kdisplayrc
+Fix for common desktop change
+
+* Wed Dic 30 7:50:00 CEST 1998
+
+Fixed a problem with common background changing while it is set.
+
+* Wed Dic 23 7:30:00 CEST 1998
+
+Fixed the last problem (tm) with kbgndwm config readings
+
+* Sun Dic 20 14:20:00 CEST 1998
+
+Fixed a problem : When the common background changed, 
+kpager didn't noticed if changing from wallpaper to a non-wallpaper mode.  
+
+* Sat Dic 19 14:40:00 CEST 1998
+
+Added some pedantic (though needed) comparisons . This made kpager
+core dumps (reported by W.L. IJzerman)
+
+* Fri Dic 18 7:50:00 CEST 1998
+
+Fixed a bug that displayed junk in some circunstances in the 
+Desktop Name area when not showing names.
+
+* Thu Dic 17 7:48:00 CEST 1998
+
+Another fix for common desktop
+(this kbgwm_change event was really kbgwm_reconfigure)
+
+* Tue Dic 15 7:20:00 CEST 1998
+
+Oops, I thought this common desktop was already fixed. 
+I hope now it is.
+
+* Sat Dic 12 14:50:00 CEST 1998
+
+Doing a workaround for resizing window bug
+
+* Fri Dic 11 7:20:00 CEST 1998
+
+Fixed CTRL-Q when menubar was hidden
+Added left/right arrow movement
+Now it's possible to hide desktop names
+
+* Thu Dic 10 7:20:00 CEST 1998
+
+Added sgml documentation
+
+1998-12-07  Alex Zepeda  <garbanzo@hooked.net>
+
+	* Removed unused variable.
+
+* Fri Dic  4 7:20:00 CEST 1998
+
+Finally implemented support for all the kbgndwm background modes
+Some code beautified.
+Raised version number to 0.9
+
+
+* Wed Dic  2 7:23:00 CEST 1998
+
+Many speed improvements, including reducing initialization
+time (in some cases from 17 secs to 4 secs :) )
+Some bug fixes which made kpager core dump in different
+ways (really nobody noticed this ?)
+
+* Tue Dic  1 7:23:00 CEST 1998
+
+Improved speed when updating background pictures (thanks Matt for the new signal !)
+Hopefully the last fixes to the resize of windows 
+(Now you can use kpager to create the largest window ever in the world
+by resizing it and moving the mouse to the lower-right corner of your
+screen :) )
+
+* Mon Nov 30 7:20:00 CEST 1998 
+
+Some fixes.
+Implemented the option to disable the behaviour of
+one click => desktop change (as suggested by Alexxx)
+Finished implementing the resize of windows
+(If the already reported bug about resized windows
+of other desktop is not solved, I'll have to disable
+this before 1.1)
+
+* Sun Nov 29 11:27:00 CEST 1998 
+
+Some more work in the resizing of windows
+
+* Fri Nov 27 22:00:00 CEST 1998 
+
+Added "To Desktop" menu.
+
+* Fri Nov 27 7:20:00 CEST 1998 
+
+Implemented kbgndwm's ability to read wallpapers from a directory
+Yet another "fix" for kpager not to need Qt-1.41
+Some bug fixes
+
+* Wed Nov 18 7:20:00 CEST 1998 
+
+Added Popup menus when right clicking on a window or on desktop
+Added ability to resize windows by using the middle mouse button (not fully
+implemented yet)
+
+* Mon Nov 16 10:30:00 CEST 1998 
+
+KPager now has a one-click way to work
+It also highlights the window the cursor is over (not very useful right
+now but will become useful next week :) )
+It has some big bug fixes (they caused a core dump when setting the sticky bits
+in some cases and a bug in the handling of stacking order )
+
+* Sun Nov 15 15:00:00 CEST 1998 
+
+Updated kpager to the new kbgndwm configure style
+I still have to implement the new kbgndwm draw modes, but the
+old ones already work
+
+* Fri Nov 13 00:05:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+The arrow buttons now move whole desktop view when clicked and
+still scrolls the view when pressed for a while (but faster than before)
+as suggested by David Faure
+Now a single click on a free area activates the desktop and also a double
+click anywhere (just in case you don't have a free area)
+
+
+* Mon Nov 8 7:20:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+Restore latest complete configuration and window position on start (not
+ only on sm)
+Made pixmap draw mode the default
+
+* Thu Oct 29 7:12:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+Now kpager handles changes of number of desktops and desktop names 
+Fixed a small bug with centred backgrounds
+Made kpager more robust
+
+* Sun Oct 25 9:17:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+Arrows dissapear when not needed now
+A new 2-row mode for people used to the traditional kpanel arrangement of desktops
+
+* Fri Oct 16 7:15:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+Fixed a memory leackage bug 
+Improved support for iconified windows ;)
+(both reported by W.L. IJzerman)
+
+* Wed Oct  7 7:45:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+Improved dnd
+Removed a small bug
+
+* Fri Oct  2 7:45:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+Added locales
+Added kaccel support
+Added session management
+
+* Wed Sep 30 7:42:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+Added pixmap draw mode - It's AMAZING !
+Added a test for Qt 1.41 to disable xdnd if there's an older version
+ ( but kpager is not kpager withouth xdnd :( )
+Removed some bugs
+
+* Mon Sep 28 9:12:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+I forgot to add jpeginc.h
+
+* Mon Sep 28 7:40:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+Increased painting speed and removed flickering by adding a buffer
+Added icon draw mode
+Added pattern backgrounds support
+Improved colors usage (using QColorGroup)
+Respond to kbgndwm commands (for configuration changes)
+Other small changes
+
+* Sun Sep 27 10:03:00 CEST 1998  Antonio Larrosa <larrosa@kde.org>
+
+Initial public release
+

@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1998-12-12 15:20+0100\n"
+"PO-Revision-Date: 1999-1-21 00:00+0900\n"
+"Last-Translator: 井村 竜一郎 <imura@cs.titech.ac.jp>\n"
+"Language-Team: 日本 <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:58
+msgid "&Announcement"
+msgstr "通知 (&A)"
+
+#: main.cpp:61
+msgid "Ans&wering machine"
+msgstr "応答装置 (&W)"
+
+#: main.cpp:64
+msgid "&Forward"
+msgstr "転送 (&F)"
+
+#: main.cpp:70
+msgid "usage: kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+msgstr "使用法：kcmktalkd [-init | soundpage | answmachpage | forwmachpage ]\n"
+
+#: main.cpp:111
+msgid "KTalkd Configuration"
+msgstr "KTalkd コンフィグレーション"
+
+#: soundpage.cpp:46
+msgid "&Announcement program"
+msgstr "通知コマンド (&A)"
+
+#: soundpage.cpp:53
+msgid "&Talk client"
+msgstr "会話クライアント (&T)"
+
+#: soundpage.cpp:57
+msgid "&Play sound"
+msgstr "サウンド再生 (&P)"
+
+#: soundpage.cpp:59
+msgid "&Sound File"
+msgstr "サウンドファイル (&S)"
+
+#: soundpage.cpp:61
+msgid "Additional WAV files can be dropped onto the sound list."
+msgstr "サウンドリストにドロップすればWAVファイルを追加できます。"
+
+#: soundpage.cpp:76
+msgid "&Test"
+msgstr "テスト (&T)"
+
+#: soundpage.cpp:156
+msgid "Unsupported URL"
+msgstr "サポートされていないURL"
+
+#: soundpage.cpp:157
+msgid ""
+"Sorry, this type of URL is currently unsupportedby the KDE System Sound "
+"Module"
+msgstr ""
+"このタイプのURLは、現在KDEシステムサウンドモジュールでサポートされていません"
+
+#: soundpage.cpp:164
+#, c-format
+msgid ""
+"Sorry, but \n"
+"%s\n"
+"does not seem to be a WAV--file."
+msgstr ""
+"%s\n"
+"はWAVファイルではないようです。"
+
+#: soundpage.cpp:167
+msgid "Improper File Extension"
+msgstr "不適当な拡張子"
+
+#: soundpage.cpp:175
+#, c-format
+msgid ""
+"The file\n"
+"%s\n"
+"is already in the list"
+msgstr ""
+"%s\n"
+"というファイルは既にリストにあります"
+
+#: soundpage.cpp:179
+msgid "File Already in List"
+msgstr "すでにあるファイル"
+
+#: answmachpage.cpp:39
+msgid "&Activate answering machine"
+msgstr "自動応答装置 (&A)"
+
+#: answmachpage.cpp:44
+msgid "&Mail address"
+msgstr "メールアドレス(&M)"
+
+#: answmachpage.cpp:51
+msgid "Mail sub&ject"
+msgstr "サブジェクト(&J)"
+
+#: answmachpage.cpp:54
+#, c-format
+msgid "Use %s for the caller name"
+msgstr "%s には呼び出した人の名前が入ります"
+
+#: answmachpage.cpp:60
+msgid "Mail &first line"
+msgstr "最初の１行(&F)"
+
+#: answmachpage.cpp:64
+#, c-format
+msgid "Use first %s for caller name, and second %s for caller hostname"
+msgstr "最初の %s に呼び出した人の名前、２番目の %s にその人のホストネームが入ります"
+
+#: answmachpage.cpp:68
+msgid "&Receive a mail even if no message left"
+msgstr "メッセージが残っていなくてもメールを受け取る (&R)"
+
+#: answmachpage.cpp:74
+msgid "&Banner displayed on answering machine startup :"
+msgstr "応答装置が起動した時に表示される見出し (&B)："
+
+#: answmachpage.cpp:83
+msgid ""
+"The person you're asking to talk with is not answering.\n"
+"Please leave a message to be delivered via E-Mail.\n"
+"Just start typing and when you're done, exit normally."
+msgstr ""
+"あなたが話しかけようとしていた人から返事がありません。\n"
+"E-メールで届けるので、メッセージを残しておいてください。\n"
+"書き終ったら、普通に終了してください。"
+
+#: answmachpage.cpp:171 answmachpage.cpp:189
+#, c-format
+msgid "Message from %s"
+msgstr "%s からのメッセージ"
+
+#: answmachpage.cpp:172 answmachpage.cpp:191
+#, c-format
+msgid "Message left in the answering machine, by %s@%s"
+msgstr "%s@%s からのメッセージが残されています。"
+
+#: forwmachpage.cpp:34
+msgid "Activate &forward"
+msgstr "自動転送 (&F)"
+
+#: forwmachpage.cpp:39
+msgid "&Destination (user or user@host)"
+msgstr "転送先 (user もしくは user@host)"
+
+#: forwmachpage.cpp:49
+msgid "Forward &method"
+msgstr "転送方法 (&M)"
+
+#: forwmachpage.cpp:54
+msgid ""
+"FWA : Forward announcement only. Direct connection. Not recommended.\n"
+"FWR : Forward all requests, changing info when necessary. Direct "
+"connection.\n"
+"FWT : Forward all requests and take the talk. No direct connection.\n"
+"\n"
+"Recommended use : FWT it you want to use it behind a firewall (and if "
+"ktalkd\n"
+"can access both networks), and FWR otherwise.\n"
+"\n"
+"See Help for further explanations.\n"
+msgstr ""
+"FWA：通知のみ転送。直に接続。非推奨。\n"
+"FWR：全ての要求を転送。必要ならば情報を変更。直に接続。\n"
+"FWT：全ての要求を転送し、会話をする。直に接続ではない。\n"
+"\n"
+"推奨される使用法：\n"
+"ファイアーウォールを介して使用したい(かつ、ktalkd が\n"
+"両方のネットワークにアクセスできる)時は FWT を、\n"
+"そうでない時は FWR を使用してください。\n"
+"\n"
+"さらに詳しくは、ヘルプを読んでください。\n"

@@ -1,0 +1,45 @@
+%define version @VERSION@
+%define name kdeadmin
+Name: %{name}
+Summary: K Desktop Environment - Adminitrative Tools
+Version: %{version}
+Release: 1
+Source: ftp.kde.org:/pub/kde/stable/1.0pre/distribution/source/%{name}-%{version}-1.src.tar.gz
+Group: X11/KDE/Utilities
+BuildRoot: /tmp/realhot_%{name}
+Copyright: GPL
+Requires: qt >= 1.33
+Distribution: KDE
+Packager: Preston Brown <pbrown@kde.org>
+Vendor: The KDE Team
+
+%description
+Administrative tools for the K Desktop Environment.
+
+Included with this package are:
+
+ksysv: sysV init editor
+kuser: user administration tool
+
+%prep
+rm -rf $RPM_BUILD_ROOT
+
+%setup -n kdeadmin-%{version}
+
+%build
+export KDEDIR=/opt/kde
+./configure --prefix=$KDEDIR --with-install-root=$RPM_BUILD_ROOT
+make
+
+%install
+make install
+
+cd $RPM_BUILD_ROOT
+find . -type d | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' > $RPM_BUILD_DIR/file.list.%{name}
+find . -type f | sed 's,^\.,\%attr(-\,root\,root) ,' >> $RPM_BUILD_DIR/file.list.%{name}
+find . -type l | sed 's,^\.,\%attr(-\,root\,root) ,' >> $RPM_BUILD_DIR/file.list.%{name}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files -f ../file.list.%{name}

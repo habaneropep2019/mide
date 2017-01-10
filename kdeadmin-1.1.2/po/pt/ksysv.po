@@ -1,0 +1,356 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ksysv\n"
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"PO-Revision-Date: 1998-11-20 00:00+00\n"
+"Last-Translator: Pedro Morais <morais@kde.org>\n"
+"Language-Team: pt\n"
+"MIME-Version:\n"
+"Content-Type:\n"
+"Content-Transfer-Encoding:\n"
+
+#: main.cpp:236
+msgid ": Error"
+msgstr ": Erro"
+
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr "Apenas o root pode gerir runlevels."
+
+#: OldView.cpp:105
+msgid "Available"
+msgstr "Disponíveis"
+
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "&Serviços"
+
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+
+# , c-format
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "Runlevel &%i"
+
+# , c-format
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "Runlevel %i"
+
+#: OldView.cpp:149
+msgid "Start"
+msgstr "Iniciar"
+
+# , c-format
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Arraste para aqui para iniciar\n"
+"serviços ao iniciar o Runlevel %i"
+
+# , c-format
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Arraste para aqui para parar\n"
+"serviços ao iniciar o Runlevel %i"
+
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr "** A ESCREVER CONFIGURAÇÃO **\n"
+
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr "** RUNLEVEL %i **\n"
+
+#: OldView.cpp:517
+msgid "Reading configuration: "
+msgstr "A ler configuração: "
+
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr "** A parar "
+
+#: OldView.cpp:624
+msgid " stop"
+msgstr " parar"
+
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr "** A iniciar"
+
+#: OldView.cpp:644
+msgid " start"
+msgstr " iniciar"
+
+#: OldView.cpp:661
+msgid "** Re-starting "
+msgstr "** A reiniciar"
+
+#: OldView.cpp:666
+msgid " restart"
+msgstr " reiniciar"
+
+# , c-format
+#: OldView.cpp:811
+msgid "P&roperties..."
+msgstr "P&ropriedades..."
+
+#: OldView.cpp:831
+msgid "S&top"
+msgstr "&Parar"
+
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "&Reiniciar"
+
+#: TopWidget.cpp:136
+msgid "&New Configuration"
+msgstr "&Nova Configuração"
+
+#: TopWidget.cpp:137
+msgid "&Save Configuration"
+msgstr "&Gravar Configuração"
+
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr "Imprimir &Relatório..."
+
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr "Mostrar Barra de &Ferramentas"
+
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr "Mostrar Barra de &Estado"
+
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr "Mostrar &Relatório"
+
+#: TopWidget.cpp:174
+msgid "&Configure..."
+msgstr "&Configurar..."
+
+#: TopWidget.cpp:177
+msgid "&Save Options"
+msgstr "&Gravar Opções"
+
+#: TopWidget.cpp:215
+msgid "New"
+msgstr "Novo"
+
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "Resultado do script"
+
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"Há alterações não gravadas.\n"
+"Tem a certeza que quer sair?"
+
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "Sim, sair!"
+
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "Não, não sair."
+
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "Limpar Modificações"
+
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "Quer mesmo limpar todas as modificações não gravadas?"
+
+#: TopWidget.cpp:307
+msgid "Save configuration"
+msgstr "Gravar configuração"
+
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"Está prestes a gravar as modificações feitas à configuração do seu init.\n"
+"Por favor tome consciência que configurações erradas podem resultar no\n"
+"sistema ficar sem poder arrancar.\n"
+"\n"
+"Quer mesmo continuar?"
+
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr "&Sim"
+
+#: TopWidget.cpp:314
+msgid "No, &don't save."
+msgstr "&Não"
+
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "Acerca do Qt"
+
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "Modificado"
+
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr "Não consegui gerar número de ordenação. Por favor mude manualmente."
+
+#: prefs.cpp:48
+#, c-format
+msgid "%s - Preferences"
+msgstr "%s - Preferências"
+
+#: prefs.cpp:58
+msgid "Directory containing your init-scripts (&services)"
+msgstr "Caminho para a pasta que contém os seus init-scripts (&serviços)"
+
+#: prefs.cpp:79
+msgid "Directory containing your &runlevel-directories"
+msgstr "Caminho para a pasta que contém as pastas de &runlevel"
+
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr "Cor para &novas entradas"
+
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr "Cor para entradas &alteradas"
+
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr "Ca&minhos"
+
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr "&Cores"
+
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "Arraste para aqui para remover serviços"
+
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr "&Nome"
+
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr "A&ponta para"
+
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr "Número de &ordenação"
+
+# , c-format
+#: PropDlg.cpp:113
+#, c-format
+msgid "%s - Properties"
+msgstr "%s - Propriedades"
+
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr "ERRO ao remover %s de %s: \"%s\"\n"
+
+#: IOCore.cpp:53
+#, c-format
+msgid "removed %s from %s\n"
+msgstr "apaguei %s de %s\n"
+
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr "criei %s em %s\n"
+
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr "ERRO ao criar %s em %s: \"%s\"\n"
+
+#: About.cpp:46
+#, c-format
+msgid "About %s"
+msgstr "Acerca do %s"
+
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr "Editor de SysV Init do KDE"
+
+#: About.cpp:81
+#, c-format
+msgid "Version %s (KDE %s)"
+msgstr "Versão %s (KDE %s)"
+
+#: About.cpp:89
+msgid "© 1997-1999 "
+msgstr "© 1997-1999 "
+
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr "Peter Putzer"
+
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr "Envie comentários..."
+
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ". Todos os direitos reservados."
+
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp © 1997 Martin Jones.\n"
+"Uses the KDE libraries © 1997-1999 The KDE Team.\n"
+"Uses the Qt library © 1992-1998 Troll Tech AS."
+msgstr ""
+
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+"Uma editor para configurações de arranque do estilo SysV,\n"
+"semelhante ao \"tksysv\" da Red Hat,\n"
+"mas o ksysv permite drag-and-drop para além do uso do teclado."
+
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""

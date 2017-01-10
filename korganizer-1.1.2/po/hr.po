@@ -1,0 +1,1538 @@
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Vladimir Vuksan <vuksan@veus.hr>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: korganizer\n"
+"POT-Creation-Date: 1999-06-12 01:15+0100\n"
+"Last-Translator: Vladimir Vuksan <vuksan@veus.hr>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n" 
+
+#: alarmdaemon.cpp:38 alarmdaemon.cpp:43 calobject.cpp:372 calobject.cpp:385
+#: eventwindetails.cpp:341 eventwindetails.cpp:361 searchdialog.cpp:80
+#: topwidget.cpp:959 topwidget.cpp:967 topwidget.cpp:1110 topwidget.cpp:1136
+#: topwidget.cpp:1140
+msgid "KOrganizer Error"
+msgstr ""
+
+#: calobject.cpp:373 calobject.cpp:386
+msgid ""
+"An error has occurred parsing the contents of the clipboard.\n"
+"You can only paste a valid vCalendar into KOrganizer.\n"
+msgstr ""
+
+#: calobject.cpp:434
+msgid "found a VEvent with no DTSTART/DTEND! Skipping"
+msgstr ""
+
+#: catdlg.cpp:19
+msgid "KOrganizer Categories"
+msgstr ""
+
+#: catdlg.cpp:30
+msgid "Available Categories"
+msgstr "Dostupne kategorije"
+
+#: catdlg.cpp:36 eventwin.cpp:297 optionsdlg.cpp:228 optionsdlg.cpp:234
+#: optionsdlg.cpp:240
+msgid "Appointment"
+msgstr "Obveza"
+
+#: catdlg.cpp:37
+msgid "Business"
+msgstr "Posao"
+
+#: catdlg.cpp:38
+msgid "Meeting"
+msgstr "Sastanak"
+
+#: catdlg.cpp:39
+msgid "Phone Call"
+msgstr "Telefonski Razgovor"
+
+#: catdlg.cpp:40
+msgid "Education"
+msgstr "Obrazovanje"
+
+#: catdlg.cpp:41
+msgid "Holiday"
+msgstr "Praznik"
+
+#: catdlg.cpp:42
+msgid "Vacation"
+msgstr "Odmor"
+
+#: catdlg.cpp:43
+msgid "Special Occasion"
+msgstr "Posebna prilika"
+
+#: catdlg.cpp:44 optionsdlg.cpp:34
+msgid "Personal"
+msgstr "Osobno"
+
+#: catdlg.cpp:45
+msgid "Travel"
+msgstr "Putovanje"
+
+#: catdlg.cpp:55
+msgid "&Add >>"
+msgstr "&Dodaj >>"
+
+#: catdlg.cpp:57
+msgid "<< &Remove"
+msgstr "<< &Ukloni"
+
+#: catdlg.cpp:66
+msgid "Selected Categories"
+msgstr "Izabrane kategorije"
+
+#: catdlg.cpp:78
+msgid "New Category:"
+msgstr "Nova kategorija:"
+
+#: editeventwin.cpp:116 todoeventwin.cpp:108
+msgid "General"
+msgstr "Opæenito"
+
+#: editeventwin.cpp:117 todoeventwin.cpp:109
+msgid "Details"
+msgstr "Detalji"
+
+#: editeventwin.cpp:119
+msgid "Recurrence"
+msgstr "Ponavljanje"
+
+#: editeventwin.cpp:195 editeventwin.cpp:406 todoeventwin.cpp:162
+#: todoeventwin.cpp:182
+#, c-format
+msgid "Owner: %s"
+msgstr "Vlasnik: %s"
+
+#: editeventwin.cpp:810
+msgid "Duration: all day"
+msgstr "Trajanje: cijeli dan"
+
+#: editeventwin.cpp:818
+#, c-format
+msgid "Duration: %i hour(s), %i minute(s)"
+msgstr "Trajanje: %i sat(i), %i minuta(e)"
+
+#: editeventwin.cpp:820
+#, c-format
+msgid "Duration: %i hour(s)"
+msgstr "Trajanje: %i sat(i)"
+
+#: editeventwin.cpp:822
+#, c-format
+msgid "Duration: %i minute(s)"
+msgstr "Trajanje: %i minuta(e)"
+
+#: eventwidget.cpp:193
+msgid "Toggle Alarm"
+msgstr "Uklj./Isklj. Alarm"
+
+#: eventwingeneral.cpp:42 eventwinrecur.cpp:28 wingeneral.cpp:34
+msgid "Appointment Time"
+msgstr "Vrijeme obveze"
+
+#: eventwingeneral.cpp:47 wingeneral.cpp:39
+msgid "Start Time:"
+msgstr "Poèetak:"
+
+#: eventwingeneral.cpp:58 wingeneral.cpp:48
+msgid "End Time:"
+msgstr "Kraj:"
+
+#: eventwingeneral.cpp:80 wingeneral.cpp:64
+msgid "No time associated"
+msgstr ""
+
+#: eventwingeneral.cpp:91 wingeneral.cpp:75
+msgid "Recurring event"
+msgstr "Obveza se ponavlja"
+
+#: eventwingeneral.cpp:99 todowingeneral.cpp:77
+msgid "Summary:"
+msgstr "Sa¾etak:"
+
+#: eventwingeneral.cpp:110
+msgid "Show Time As:"
+msgstr ""
+
+#: eventwingeneral.cpp:117
+msgid "Busy"
+msgstr ""
+
+#: eventwingeneral.cpp:118
+msgid "Free"
+msgstr ""
+
+#: eventwingeneral.cpp:133 todowingeneral.cpp:96
+msgid "Owner:"
+msgstr "Vlasnik:"
+
+#: eventwingeneral.cpp:139 todowingeneral.cpp:102
+msgid "Private"
+msgstr "Privatno"
+
+#: eventwindetails.cpp:199 eventwingeneral.cpp:145 todowingeneral.cpp:108
+msgid "Categories..."
+msgstr "Kategorije..."
+
+#: eventwingeneral.cpp:164
+msgid "Reminder:"
+msgstr "Podsjetnik:"
+
+#: eventwindetails.cpp:39
+msgid "Attendee Information"
+msgstr "Informacije o sudioniku"
+
+#: eventwindetails.cpp:46
+msgid "Name"
+msgstr "Ime"
+
+#: eventwindetails.cpp:47
+msgid "Email"
+msgstr "Email"
+
+#: eventwindetails.cpp:48
+msgid "Role"
+msgstr "Uloga"
+
+#: eventwindetails.cpp:49
+msgid "Status"
+msgstr "Status"
+
+#: eventwindetails.cpp:50
+msgid "RSVP"
+msgstr "RSVP"
+
+#: eventwindetails.cpp:65
+msgid "Attendee Name:"
+msgstr "Ime sudionika:"
+
+#: eventwindetails.cpp:77
+msgid "Email Address:"
+msgstr "Email Adresa:"
+
+#: eventwindetails.cpp:92
+msgid "Role:"
+msgstr "Uloga:"
+
+#: eventwindetails.cpp:98
+msgid "Attendee"
+msgstr "Sudionik"
+
+#: eventwindetails.cpp:99
+msgid "Organizer"
+msgstr "Organizator"
+
+#: eventwindetails.cpp:100
+msgid "Owner"
+msgstr "Vlasnik"
+
+#: eventwindetails.cpp:101
+msgid "Delegate"
+msgstr "Delegat"
+
+#: eventwindetails.cpp:106
+msgid "Status:"
+msgstr "Status:"
+
+#: eventwindetails.cpp:112
+msgid "Needs Action"
+msgstr "Zahtjeva akciju"
+
+#: eventwindetails.cpp:113
+msgid "Accepted"
+msgstr "Potvrdio/la"
+
+#: eventwindetails.cpp:114
+msgid "Sent"
+msgstr "Poslano"
+
+#: eventwindetails.cpp:115
+msgid "Tentative"
+msgstr "Okvirno"
+
+#: eventwindetails.cpp:116
+msgid "Confirmed"
+msgstr "Potvrdio/la"
+
+#: eventwindetails.cpp:117
+msgid "Declined"
+msgstr "Odbio/la"
+
+#: eventwindetails.cpp:118 todowingeneral.cpp:35 todowingeneral.cpp:52
+msgid "Completed"
+msgstr ""
+
+#: eventwindetails.cpp:119
+msgid "Delegated"
+msgstr ""
+
+#: eventwindetails.cpp:126
+msgid "Request Response"
+msgstr "Zatra¾i odgovor"
+
+#: eventwindetails.cpp:132
+msgid "&Add"
+msgstr "&Dodaj"
+
+#: eventwindetails.cpp:136
+msgid "Address &Book..."
+msgstr "Ad&resar"
+
+#: eventwindetails.cpp:163
+msgid "Attach..."
+msgstr "Pridru¾i..."
+
+#: eventwindetails.cpp:183
+msgid "Save As..."
+msgstr "Spremi pod drugim imenom..."
+
+#: eventwindetails.cpp:218
+msgid "Priority:"
+msgstr "Prioritet:"
+
+#: eventwindetails.cpp:224
+msgid "Low (1)"
+msgstr "Niski (1)"
+
+#: eventwindetails.cpp:225
+msgid "Normal (2)"
+msgstr "Normalni (2)"
+
+#: eventwindetails.cpp:226
+msgid "High (3)"
+msgstr "Visoki (3)"
+
+#: eventwindetails.cpp:227
+msgid "Maximum (4)"
+msgstr "Najvi¹i (4)"
+
+#: eventwindetails.cpp:342
+msgid "Unable to open address book."
+msgstr "Ne mogu otvoriti adresar."
+
+#: eventwindetails.cpp:362
+msgid "Error getting entry from address book."
+msgstr ""
+
+#: eventwinrecur.cpp:30
+msgid "Start:  "
+msgstr ""
+
+#: eventwinrecur.cpp:31
+msgid "End:  "
+msgstr ""
+
+#: eventwinrecur.cpp:61
+msgid "Recurrence Rule"
+msgstr "Pravilo ponavljanja"
+
+#: eventwinrecur.cpp:67
+msgid "Daily"
+msgstr "Dnevno"
+
+#: eventwinrecur.cpp:68
+msgid "Weekly"
+msgstr "Tjedno"
+
+#: eventwinrecur.cpp:69
+msgid "Monthly"
+msgstr "Mjeseèno"
+
+#: eventwinrecur.cpp:70
+msgid "Yearly"
+msgstr "Godi¹nje"
+
+#: eventwinrecur.cpp:95
+msgid "Enable Advanced Rule:"
+msgstr ""
+
+#: eventwinrecur.cpp:128
+msgid "Recurrence Range"
+msgstr ""
+
+#: eventwinrecur.cpp:132
+msgid "Begin On:"
+msgstr ""
+
+#: eventwinrecur.cpp:134
+msgid "No Ending Date"
+msgstr ""
+
+#: eventwinrecur.cpp:135
+msgid "End after"
+msgstr ""
+
+#: eventwinrecur.cpp:137
+msgid "occurrence(s)"
+msgstr ""
+
+#: eventwinrecur.cpp:138
+msgid "End by:"
+msgstr ""
+
+#: eventwinrecur.cpp:181
+msgid "Exceptions"
+msgstr ""
+
+#: eventwinrecur.cpp:267 eventwinrecur.cpp:297
+msgid "Recur every"
+msgstr "Ponovi svaka"
+
+#: eventwinrecur.cpp:273
+msgid "day(s)"
+msgstr "dan(a)"
+
+#: eventwinrecur.cpp:303
+msgid "week(s) on:"
+msgstr "tjedan(a) na dan(e):"
+
+#: eventwinrecur.cpp:305 kagenda.cpp:106
+msgid "Sun"
+msgstr "Ned"
+
+#: eventwinrecur.cpp:306 kagenda.cpp:105
+msgid "Mon"
+msgstr "Pon"
+
+#: eventwinrecur.cpp:307 kagenda.cpp:105
+msgid "Tue"
+msgstr "Uto"
+
+#: eventwinrecur.cpp:308 kagenda.cpp:105
+msgid "Wed"
+msgstr "Sri"
+
+#: eventwinrecur.cpp:309 kagenda.cpp:106
+msgid "Thu"
+msgstr "Èet"
+
+#: eventwinrecur.cpp:310 kagenda.cpp:106
+msgid "Fri"
+msgstr "Pet"
+
+#: eventwinrecur.cpp:311 kagenda.cpp:106
+msgid "Sat"
+msgstr "Sub"
+
+#: eventwinrecur.cpp:361 eventwinrecur.cpp:365
+msgid "Recur on the"
+msgstr "Ponovi"
+
+#: eventwinrecur.cpp:363
+msgid "day"
+msgstr "dana"
+
+#: eventwinrecur.cpp:369 eventwinrecur.cpp:481
+msgid "every"
+msgstr "svaki(og)"
+
+#: eventwinrecur.cpp:371
+msgid "month(s)"
+msgstr "mjesec(a)"
+
+#: eventwinrecur.cpp:383 eventwinrecur.cpp:424
+msgid "1st"
+msgstr "1og"
+
+#: eventwinrecur.cpp:384 eventwinrecur.cpp:425
+msgid "2nd"
+msgstr "2og"
+
+#: eventwinrecur.cpp:385 eventwinrecur.cpp:426
+msgid "3rd"
+msgstr "3eg"
+
+#: eventwinrecur.cpp:386 eventwinrecur.cpp:427
+msgid "4th"
+msgstr "4og"
+
+#: eventwinrecur.cpp:387 eventwinrecur.cpp:428
+msgid "5th"
+msgstr "5og"
+
+#: eventwinrecur.cpp:388
+msgid "6th"
+msgstr "6og"
+
+#: eventwinrecur.cpp:389
+msgid "7th"
+msgstr "7og"
+
+#: eventwinrecur.cpp:390
+msgid "8th"
+msgstr "8og"
+
+#: eventwinrecur.cpp:391
+msgid "9th"
+msgstr "9og"
+
+#: eventwinrecur.cpp:392
+msgid "10th"
+msgstr "10og"
+
+#: eventwinrecur.cpp:393
+msgid "11th"
+msgstr "11og"
+
+#: eventwinrecur.cpp:394
+msgid "12th"
+msgstr "12og"
+
+#: eventwinrecur.cpp:395
+msgid "13th"
+msgstr "13og"
+
+#: eventwinrecur.cpp:396
+msgid "14th"
+msgstr "14og"
+
+#: eventwinrecur.cpp:397
+msgid "15th"
+msgstr "15og"
+
+#: eventwinrecur.cpp:398
+msgid "16th"
+msgstr "16og"
+
+#: eventwinrecur.cpp:399
+msgid "17th"
+msgstr "17og"
+
+#: eventwinrecur.cpp:400
+msgid "18th"
+msgstr "18og"
+
+#: eventwinrecur.cpp:401
+msgid "19th"
+msgstr "19og"
+
+#: eventwinrecur.cpp:402
+msgid "20th"
+msgstr "20og"
+
+#: eventwinrecur.cpp:403
+msgid "21st"
+msgstr "21og"
+
+#: eventwinrecur.cpp:404
+msgid "22nd"
+msgstr "22og"
+
+#: eventwinrecur.cpp:405
+msgid "23rd"
+msgstr "23eg"
+
+#: eventwinrecur.cpp:406
+msgid "24th"
+msgstr "24og"
+
+#: eventwinrecur.cpp:407
+msgid "25th"
+msgstr "25og"
+
+#: eventwinrecur.cpp:408
+msgid "26th"
+msgstr "26og"
+
+#: eventwinrecur.cpp:409
+msgid "27th"
+msgstr "27og"
+
+#: eventwinrecur.cpp:410
+msgid "28th"
+msgstr "28og"
+
+#: eventwinrecur.cpp:411
+msgid "29th"
+msgstr "29og"
+
+#: eventwinrecur.cpp:412
+msgid "30th"
+msgstr "30og"
+
+#: eventwinrecur.cpp:413
+msgid "31st"
+msgstr "31og"
+
+#: eventwinrecur.cpp:466
+msgid "Recur in the month of"
+msgstr "Ponovi u mjesecu"
+
+#: eventwinrecur.cpp:467
+msgid "Recur on this day"
+msgstr ""
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:469 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "January"
+msgstr "Sijeèanj"
+
+#: calprinter.cpp:327 calprinter.cpp:429 calprinter.cpp:720
+#: eventwinrecur.cpp:470 kdatenav.cpp:68 kdatenav.cpp:258
+msgid "February"
+msgstr "Veljaèa"
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:471 kdatenav.cpp:68 kdatenav.cpp:259
+msgid "March"
+msgstr ""
+
+#: calprinter.cpp:328 calprinter.cpp:430 calprinter.cpp:721
+#: eventwinrecur.cpp:472 kdatenav.cpp:69 kdatenav.cpp:259
+msgid "April"
+msgstr "Travanj"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:473 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "May"
+msgstr "Svibanj"
+
+#: calprinter.cpp:329 calprinter.cpp:431 calprinter.cpp:722
+#: eventwinrecur.cpp:474 kdatenav.cpp:69 kdatenav.cpp:260
+msgid "June"
+msgstr "Lipanj"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:475 kdatenav.cpp:69 kdatenav.cpp:261
+msgid "July"
+msgstr "Srpanj"
+
+#: calprinter.cpp:330 calprinter.cpp:432 calprinter.cpp:723
+#: eventwinrecur.cpp:476 kdatenav.cpp:70 kdatenav.cpp:261
+msgid "August"
+msgstr "Kolovoz"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:477 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "September"
+msgstr "Rujan"
+
+#: calprinter.cpp:331 calprinter.cpp:433 calprinter.cpp:724
+#: eventwinrecur.cpp:478 kdatenav.cpp:70 kdatenav.cpp:262
+msgid "October"
+msgstr "Listopad"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:479 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "November"
+msgstr "Studeni"
+
+#: calprinter.cpp:332 calprinter.cpp:434 calprinter.cpp:725
+#: eventwinrecur.cpp:480 kdatenav.cpp:71 kdatenav.cpp:263
+msgid "December"
+msgstr "Prosinac"
+
+#: eventwinrecur.cpp:484
+msgid "year(s)"
+msgstr ""
+
+#: kagenda.cpp:212
+msgid "All Day Event"
+msgstr "Cijelodnevni dogaðaj"
+
+#: kagenda.cpp:830
+msgid "New appointment"
+msgstr ""
+
+#: kagenda.cpp:967 kagenda.cpp:975
+msgid "am"
+msgstr "ujutro"
+
+#: kagenda.cpp:971
+msgid "pm"
+msgstr "popodne"
+
+#: kdatenav.cpp:44
+msgid "Previous Year"
+msgstr "Prethodna godina"
+
+#: kdatenav.cpp:50
+msgid "Previous Month"
+msgstr "Prethodni mjesec"
+
+#: kdatenav.cpp:56
+msgid "Next Month"
+msgstr "Slijedeæi mjesec"
+
+#: kdatenav.cpp:62
+msgid "Next Year"
+msgstr "Slijedeæa godina"
+
+#: kmonthview.cpp:386
+msgid "New Event"
+msgstr "Nova obveza"
+
+#: kpbutton.cpp:22 kpbutton.cpp:40 kpbutton.cpp:90
+msgid "KPButton: pixmap is empty, perhaps some missing file"
+msgstr ""
+
+#: baselistview.cpp:28
+msgid "Date"
+msgstr "Datum"
+
+#: baselistview.cpp:29
+msgid "Time"
+msgstr "Vrijeme"
+
+#: baselistview.cpp:30 calprinter.cpp:365
+msgid "Summary"
+msgstr "Sa¾etak"
+
+#: baselistview.cpp:77
+msgid "started "
+msgstr "poèinje "
+
+#: baselistview.cpp:80
+msgid "ends "
+msgstr "zavr¹ava "
+
+#: baselistview.cpp:85
+#, c-format
+msgid "repeats %d times"
+msgstr "ponavlja se %d puta"
+
+#: baselistview.cpp:89
+msgid "repeats forever"
+msgstr "ponavlja se zauvijek"
+
+#: listview.cpp:14
+msgid "Edit Event"
+msgstr "Promijeni dogaðaj"
+
+#: listview.cpp:17
+msgid "Delete Event  "
+msgstr "Obri¹i dogaðaj  "
+
+#: listview.cpp:20
+msgid "Show Dates"
+msgstr "Poka¾i datume"
+
+#: listview.cpp:22
+msgid "Hide Dates"
+msgstr "Sakrij datume"
+
+#: main.cpp:29
+msgid "No default calendar, and none was specified on the command line.\n"
+msgstr ""
+
+#: main.cpp:33
+msgid "Error reading from default calendar.\n"
+msgstr ""
+
+#: searchdialog.cpp:22
+msgid "Search For:"
+msgstr "Tra¾i:"
+
+#: searchdialog.cpp:32 topwidget.cpp:494
+msgid "&Search"
+msgstr "&Tra¾i"
+
+#: searchdialog.cpp:81
+msgid ""
+"Invalid search expression, cannot perform\n"
+"the search.  Please enter a search expression\n"
+"using the wildcard characters '*' and '?'\n"
+"where needed."
+msgstr ""
+
+#: topwidget.cpp:391
+msgid "&Open"
+msgstr "&Otvori"
+
+#: topwidget.cpp:394
+msgid "Open &Recent"
+msgstr "Otvori &skora¹nje"
+
+#: topwidget.cpp:410
+msgid "Save &As"
+msgstr "Spremi &pod drugim imenom"
+
+#: topwidget.cpp:415
+msgid "&Import From Ical"
+msgstr "&Uvezi iz icala"
+
+#: topwidget.cpp:417
+msgid "&Merge Calendar"
+msgstr "&Umetni postojeæi kalendar"
+
+#: topwidget.cpp:420
+msgid "Archive Old Entries"
+msgstr "Arhiviraj stare zapise"
+
+#: topwidget.cpp:427
+msgid "Print Setup"
+msgstr "Postava ispisa"
+
+#: calprinter.cpp:844 topwidget.cpp:431
+msgid "&Print"
+msgstr "Is&pi¹i"
+
+#: topwidget.cpp:433
+msgid "Print Pre&view"
+msgstr "Pre&gled prije ispisa"
+
+#: topwidget.cpp:455
+msgid "&List"
+msgstr "&Popis"
+
+#: topwidget.cpp:459
+msgid "&Day"
+msgstr "&Dan"
+
+#: topwidget.cpp:462
+msgid "W&ork Week"
+msgstr "R&adni tjedan"
+
+#: topwidget.cpp:465
+msgid "&Week"
+msgstr "&Tjedan"
+
+#: topwidget.cpp:468
+msgid "&Month"
+msgstr "&Mjesec"
+
+#: topwidget.cpp:471
+msgid "&To-do list"
+msgstr "Popis pos&lova"
+
+#: topwidget.cpp:479
+msgid "New &Appointment"
+msgstr "Nova &obveza"
+
+#: topwidget.cpp:481
+msgid "New E&vent"
+msgstr "Novi &dogaðaj"
+
+#: topwidget.cpp:483
+msgid "&Edit Appointment"
+msgstr "&Promijeni obvezu"
+
+#: topwidget.cpp:486
+msgid "&Delete Appointment"
+msgstr "&Obri¹i obvezu"
+
+#: topwidget.cpp:488
+msgid "Delete To-do"
+msgstr "Obri¹i popis poslova"
+
+#: topwidget.cpp:498
+msgid "&Mail Appointment"
+msgstr "&Po¹alji obavijest o obvezi/sastanku"
+
+#: topwidget.cpp:504
+msgid "Go to &Today"
+msgstr "&Danas"
+
+#: topwidget.cpp:508
+msgid "&Previous Day"
+msgstr "&Prethodni dan"
+
+#: topwidget.cpp:512
+msgid "&Next Day"
+msgstr "&Sljedeæi dan"
+
+#: topwidget.cpp:516
+msgid "Show &Tool Bar"
+msgstr "Poka¾i Alat&e"
+
+#: topwidget.cpp:520
+msgid "Show St&atus Bar"
+msgstr "Poka¾i &status"
+
+#: topwidget.cpp:525
+msgid "&Edit Options"
+msgstr "&Postavke"
+
+#: topwidget.cpp:533
+msgid "&About"
+msgstr "O progr&amu"
+
+#: topwidget.cpp:535
+msgid "Send &Bug Report"
+msgstr ""
+
+#: topwidget.cpp:543
+msgid "&Actions"
+msgstr "&Akcije"
+
+#: topwidget.cpp:562
+msgid "Open A Calendar"
+msgstr "Otvori kalendar"
+
+#: topwidget.cpp:568
+msgid "Save This Calendar"
+msgstr "Spremi ovaj kalendar"
+
+#: topwidget.cpp:585
+msgid "New Appointment"
+msgstr "Nova obveza"
+
+#: topwidget.cpp:591
+msgid "Delete Appointment"
+msgstr "Obri¹i obvezu"
+
+#: topwidget.cpp:597
+msgid "Search For an Appointment"
+msgstr "Tra¾i obvezu"
+
+#: topwidget.cpp:603
+msgid "Mail Appointment"
+msgstr "Po¹alji obavijest o obvezi"
+
+#: topwidget.cpp:622
+msgid "Go to Today"
+msgstr "Danas"
+
+#: topwidget.cpp:628
+msgid "Previous Day"
+msgstr "Prethodni dan"
+
+#: topwidget.cpp:634
+msgid "Next Day"
+msgstr "Slijedeæi dan"
+
+#: topwidget.cpp:650
+msgid "List View"
+msgstr ""
+
+#: topwidget.cpp:655
+msgid "Schedule View"
+msgstr ""
+
+#: topwidget.cpp:662
+msgid "Month View"
+msgstr "Pregled mjeseca"
+
+#: topwidget.cpp:668
+msgid "To-do list view"
+msgstr "Pregled popisa poslova"
+
+#: topwidget.cpp:750
+msgid "we don't handle updates for that view, yet.\n"
+msgstr ""
+
+#: topwidget.cpp:842
+msgid "we don't handle that view yet.\n"
+msgstr ""
+
+#: topwidget.cpp:960
+msgid "You did not specify a valid file name."
+msgstr ""
+
+#: topwidget.cpp:968
+msgid ""
+"The file you specified is a directory,\n"
+"and cannot be opened. Please try again,\n"
+"this time selecting a valid calendar file."
+msgstr ""
+
+#: topwidget.cpp:995
+msgid "KOrganizer Warning"
+msgstr "KOrganizer: Upozorenje"
+
+#: topwidget.cpp:996
+msgid ""
+"This calendar has been modified.\n"
+"Would you like to save it?"
+msgstr ""
+"Ovaj kalendar je mijenjan.\n"
+"®elite li ga spremiti?"
+
+#: topwidget.cpp:998
+msgid "&Yes"
+msgstr "&Da"
+
+#: topwidget.cpp:998
+msgid "&No"
+msgstr "&Ne"
+
+#: topwidget.cpp:1007 topwidget.cpp:1597
+msgid "KOrganizer Confirmation"
+msgstr "Korganizer: Potvrda"
+
+#: topwidget.cpp:1008
+msgid "This item will be permanently deleted."
+msgstr "Slijedeæa stavka æe biti za stalno izbrisana"
+
+#: topwidget.cpp:1111
+msgid ""
+"You have no ical file in your home directory.\n"
+"Import cannot proceed.\n"
+msgstr ""
+
+#: topwidget.cpp:1124
+msgid "KOrganizer Info"
+msgstr "KOrganizer: Info"
+
+#: topwidget.cpp:1125
+msgid ""
+"KOrganizer succesfully imported and merged your\n"
+".calendar file from ical into the currently\n"
+"opened calendar.\n"
+msgstr ""
+
+#: topwidget.cpp:1130
+msgid "ICal Import Successful With Warning"
+msgstr ""
+
+#: topwidget.cpp:1131
+msgid ""
+"KOrganizer encountered some unknown fields while\n"
+"parsing your .calendar ical file, and had to\n"
+"discard them.  Please check to see that all\n"
+"your relevant data was correctly imported.\n"
+msgstr ""
+
+#: topwidget.cpp:1137
+msgid ""
+"KOrganizer encountered some error parsing your\n"
+".calendar file from ical.  Import has failed.\n"
+msgstr ""
+
+#: topwidget.cpp:1141
+msgid ""
+"KOrganizer doesn't think that your .calendar\n"
+"file is a valid ical calendar. Import has failed.\n"
+msgstr ""
+
+#: topwidget.cpp:1305 topwidget.cpp:1332 topwidget.cpp:1683 topwidget.cpp:1693
+msgid "KOrganizer error"
+msgstr ""
+
+#: topwidget.cpp:1306 topwidget.cpp:1333
+msgid ""
+"Unfortunately, we don't handle cut/paste for\n"
+"that view yet.\n"
+msgstr ""
+
+#: topwidget.cpp:1549
+msgid "don't handle deletes from that view, yet.\n"
+msgstr ""
+
+#: topwidget.cpp:1598
+msgid ""
+"This event recurs over multiple dates.\n"
+"Are you sure you want to delete the\n"
+"selected event, or just this instance?\n"
+msgstr ""
+
+#: topwidget.cpp:1601
+msgid "&All"
+msgstr "&Sve"
+
+#: topwidget.cpp:1601
+msgid "&This"
+msgstr "&Ovaj"
+
+#: topwidget.cpp:1616
+msgid "no date selected, or invalid date\n"
+msgstr "nijedan datum nije izabran ili neispravan datum\n"
+
+#: topwidget.cpp:1684
+msgid "Can't generate mail from this view\n"
+msgstr ""
+
+#: topwidget.cpp:1694
+msgid ""
+"Can't generate mail:\n"
+" No attendees defined!\n"
+msgstr ""
+
+#: topwidget.cpp:1833
+msgid "New Calendar"
+msgstr "Novi kalendar"
+
+#: eventwin.cpp:313 eventwin.cpp:319 topwidget.cpp:1839
+msgid "modified"
+msgstr "mijenjan"
+
+#: eventwin.cpp:325 topwidget.cpp:1844
+msgid "KOrganizer"
+msgstr "KOrganizer"
+
+#: calprinter.cpp:47
+msgid "Korganizer Configuration Options"
+msgstr "Postavke"
+
+#: calprinter.cpp:361 todowingeneral.cpp:60
+msgid "Priority"
+msgstr "Prioritet:"
+
+#: calprinter.cpp:369
+msgid "Due"
+msgstr ""
+
+#: calprinter.cpp:453
+#, c-format
+msgid "To-Do items: %s %.2d"
+msgstr "Popis poslova: %s %.2d"
+
+#: calprinter.cpp:791
+msgid "Date Range"
+msgstr "Raspon datuma"
+
+#: calprinter.cpp:811
+msgid "View Type"
+msgstr "Vrsta pregleda"
+
+#: calprinter.cpp:816
+msgid "Day"
+msgstr "Dan"
+
+#: calprinter.cpp:821
+msgid "Week"
+msgstr "Tjedan"
+
+#: calprinter.cpp:825
+msgid "Month"
+msgstr "Mjesec"
+
+#: calprinter.cpp:829
+msgid "To-Do"
+msgstr "Popis poslova"
+
+#: calprinter.cpp:843
+msgid "&Preview"
+msgstr "&Pregled"
+
+#: koarchivedlg.cpp:19
+msgid "Archive / Delete Past Appointments - KOrganizer"
+msgstr ""
+
+#: optionsdlg.cpp:37
+msgid "Time & Date"
+msgstr "Vrijeme & Datum"
+
+#: optionsdlg.cpp:43
+msgid "Colors"
+msgstr "Boje"
+
+#: optionsdlg.cpp:46
+msgid "Views"
+msgstr ""
+
+#: optionsdlg.cpp:52
+msgid "Printing"
+msgstr "Ispis"
+
+#: optionsdlg.cpp:65
+msgid "KOrganizer Configuration"
+msgstr "Postavke"
+
+#: optionsdlg.cpp:93
+msgid "Your name:"
+msgstr "Va¹e ime:"
+
+#: optionsdlg.cpp:97
+msgid "Email address:"
+msgstr "Email adresa:"
+
+#: optionsdlg.cpp:101
+msgid "Additional:"
+msgstr "Dodatno:"
+
+#: optionsdlg.cpp:105
+msgid "Auto-save Calendar"
+msgstr "Automatski spremi kalendar"
+
+#: optionsdlg.cpp:109
+msgid "Confirm Appointment/To-Do Deletes"
+msgstr "Brisanje obveza i popisa poslova mora se potvrditi"
+
+#: optionsdlg.cpp:113
+msgid "Holidays:"
+msgstr "Praznici:"
+
+#: optionsdlg.cpp:139
+msgid "1 minute"
+msgstr "1 minuta"
+
+#: optionsdlg.cpp:139
+msgid "5 minutes"
+msgstr "5 minuta"
+
+#: optionsdlg.cpp:140
+msgid "10 minutes"
+msgstr "10 minuta"
+
+#: optionsdlg.cpp:140
+msgid "15 minutes"
+msgstr "15 minuta"
+
+#: optionsdlg.cpp:141
+msgid "30 minutes"
+msgstr "30 minuta"
+
+#: optionsdlg.cpp:148
+msgid "Time Format:"
+msgstr "Format vremena:"
+
+#: optionsdlg.cpp:149
+msgid "24 hour"
+msgstr "24 sata"
+
+#: optionsdlg.cpp:150
+msgid "AM / PM"
+msgstr "ujutro / popodne"
+
+#: optionsdlg.cpp:154
+msgid "Date Format:"
+msgstr "Format datuma:"
+
+#: optionsdlg.cpp:155
+msgid "Day.Month.Year (31.01.2000)"
+msgstr "Dan.Mjesec.Godina (31.01.2000)"
+
+#: optionsdlg.cpp:156
+msgid "Month/Day/Year (01/31/2000)"
+msgstr "Mjesec/Dan/Godina (01/31/2000)"
+
+#: optionsdlg.cpp:157
+msgid "Month-Day-Year (01-31-2000)"
+msgstr "Mjesec-Dan-Godina (01-31-2000)"
+
+#: optionsdlg.cpp:161
+msgid "Time Zone:"
+msgstr "Vremenska zona:"
+
+#: optionsdlg.cpp:168
+msgid "Default Appointment Time:"
+msgstr ""
+
+#: optionsdlg.cpp:178
+msgid "Default Alarm Time:"
+msgstr ""
+
+#: optionsdlg.cpp:186
+msgid "Week Starts on Monday"
+msgstr "Tjedan poèinje s ponedjeljkom"
+
+#: optionsdlg.cpp:203
+msgid "Day Begins At:"
+msgstr "Dan poèinje u:"
+
+#: optionsdlg.cpp:213
+msgid "Hour size in schedule view"
+msgstr ""
+
+#: optionsdlg.cpp:217
+msgid "Show events that recur daily in Date Navigator"
+msgstr ""
+
+#: optionsdlg.cpp:229
+msgid "List view font"
+msgstr ""
+
+#: optionsdlg.cpp:235
+msgid "Schedule view font"
+msgstr ""
+
+#: optionsdlg.cpp:241
+msgid "Month view font"
+msgstr ""
+
+#: optionsdlg.cpp:246
+msgid "12345"
+msgstr "12345"
+
+#: optionsdlg.cpp:246
+msgid "Time bar font"
+msgstr ""
+
+#: optionsdlg.cpp:251
+msgid "Things to do"
+msgstr "Popis poslova"
+
+#: optionsdlg.cpp:252
+msgid "To-Do list font"
+msgstr "Pismo popisa poslova"
+
+#: optionsdlg.cpp:273
+msgid "Use system default colors"
+msgstr "Koristi uobièajene sistemske boje"
+
+#: optionsdlg.cpp:278
+msgid "Appointment & Checklist items"
+msgstr ""
+
+#: optionsdlg.cpp:279
+msgid "Background"
+msgstr "Pozadina"
+
+#: optionsdlg.cpp:282
+msgid "Text"
+msgstr "Tekst"
+
+#: optionsdlg.cpp:285
+msgid "Handle Selected"
+msgstr ""
+
+#: optionsdlg.cpp:288
+msgid "Handle Unselected"
+msgstr ""
+
+#: optionsdlg.cpp:291
+msgid "Handle Active Apt."
+msgstr ""
+
+#: optionsdlg.cpp:296
+msgid "Sheet background"
+msgstr "Pozadina"
+
+#: optionsdlg.cpp:299
+msgid "Calendar Background"
+msgstr "Pozadina kalendara"
+
+#: optionsdlg.cpp:302
+msgid "Calendar Date Text"
+msgstr ""
+
+#: optionsdlg.cpp:305
+msgid "Calendar Date Selected"
+msgstr ""
+
+#: optionsdlg.cpp:344
+msgid "Printer Name"
+msgstr "Ime pisaèa"
+
+#: optionsdlg.cpp:374
+msgid "Paper Size"
+msgstr "Velièina papira"
+
+#: optionsdlg.cpp:376
+msgid "A4"
+msgstr "A4"
+
+#: optionsdlg.cpp:377
+msgid "B5"
+msgstr "B5"
+
+#: optionsdlg.cpp:378
+msgid "Letter"
+msgstr "Letter"
+
+#: optionsdlg.cpp:379
+msgid "Legal"
+msgstr "Legal"
+
+#: optionsdlg.cpp:380
+msgid "Executive"
+msgstr "Executive"
+
+#: optionsdlg.cpp:384
+msgid "Paper Orientation"
+msgstr "Usmjerenje papira"
+
+#: optionsdlg.cpp:386
+msgid "Portrait"
+msgstr "Uspravno"
+
+#: optionsdlg.cpp:388
+msgid "Landscape"
+msgstr "Polo¾eno"
+
+#: optionsdlg.cpp:395
+msgid "Preview Program"
+msgstr ""
+
+#: kpropdlg.cpp:124
+msgid "Prev"
+msgstr "Prethodna"
+
+#: kpropdlg.cpp:125
+msgid "Next"
+msgstr "Sljedeæa"
+
+#: aboutdlg.cpp:20
+msgid "KOrganizer Virtual Postcard"
+msgstr ""
+
+#: aboutdlg.cpp:24
+msgid ""
+"Please send a postcard to me, so I can see who is\n"
+"using KOrganizer! Tell me how great the program is,\n"
+"and how you just can't live without it.  Or, report\n"
+"a bug which is stopping you from doing useful work.\n"
+"The postcard will simply include anything you wish to\n"
+"type in the comment area below.\n"
+msgstr ""
+
+#: aboutdlg.cpp:104
+msgid "About KOrganizer"
+msgstr "O Korganizeru"
+
+#: aboutdlg.cpp:137
+msgid "by Preston Brown and"
+msgstr "Preston Brown i"
+
+#: aboutdlg.cpp:156
+msgid "License Agreement:"
+msgstr ""
+
+#: aboutdlg.cpp:162
+msgid ""
+"\n"
+"\n"
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n"
+msgstr ""
+
+#: aboutdlg.cpp:197
+msgid "&Send Postcard"
+msgstr "&Po¹alji razglednicu"
+
+#: aboutdlg.cpp:233
+msgid "many more, thank you!"
+msgstr ""
+
+#: aboutdlg.cpp:255
+msgid "Could not load movie"
+msgstr ""
+
+#: kotodoview.cpp:27
+msgid "To-Do Items"
+msgstr "Popis poslova"
+
+#: kotodoview.cpp:91 kotodoview.cpp:99
+msgid "New To-Do"
+msgstr "Novi popis poslova"
+
+#: kotodoview.cpp:94
+msgid "Purge Completed "
+msgstr "Proèi¹æavanje zavr¹eno "
+
+#: kotodoview.cpp:101
+msgid "Edit To-Do"
+msgstr "Promijeni popis poslova"
+
+#: kotodoview.cpp:104
+msgid "Delete To-Do"
+msgstr "Obri¹i popis poslova"
+
+#: kotodoview.cpp:106
+msgid "Purge Completed"
+msgstr "Proèi¹æavanje zavr¹eno "
+
+#: kotodoview.cpp:108
+msgid "Sort by Priority"
+msgstr "Sortiraj po prioritetu"
+
+#: eventwin.cpp:91
+msgid "Save and Close"
+msgstr "Spremi i zatvori"
+
+#: eventwin.cpp:111
+msgid "Previous Event"
+msgstr "Prethodni dogaðaj"
+
+#: eventwin.cpp:117
+msgid "Next Event"
+msgstr "Slijedeæi dogaðaj"
+
+#: eventwin.cpp:128
+msgid "Delete Event"
+msgstr "Obri¹i dogaðaj"
+
+#: eventwin.cpp:286
+msgid "New"
+msgstr "Novi"
+
+#: eventwin.cpp:293
+msgid "Todo"
+msgstr "Popis poslova"
+
+#: eventwin.cpp:309
+msgid "readonly"
+msgstr ""
+
+#: todowingeneral.cpp:41
+msgid "% Completed"
+msgstr "% zavr¹eno"
+
+#: todowingeneral.cpp:48
+#, c-format
+msgid "0 %"
+msgstr "0 %"
+
+#: todowingeneral.cpp:49
+#, c-format
+msgid "25 %"
+msgstr "25 %"
+
+#: todowingeneral.cpp:50
+#, c-format
+msgid "50 %"
+msgstr "50 %"
+
+#: todowingeneral.cpp:51
+#, c-format
+msgid "75 %"
+msgstr "75 %"
+
+#: todowingeneral.cpp:67
+msgid "1 (Highest)"
+msgstr ""
+
+#: todowingeneral.cpp:68
+msgid "2"
+msgstr "2"
+
+#: todowingeneral.cpp:69
+msgid "3"
+msgstr "3"
+
+#: todowingeneral.cpp:70
+msgid "4"
+msgstr "4"
+
+#: todowingeneral.cpp:71
+msgid "5 (lowest)"
+msgstr ""
+
+#: alarmdaemon.cpp:39 alarmdaemon.cpp:44
+msgid "Can't load docking tray icon!"
+msgstr ""
+
+#: alarmdaemon.cpp:48
+msgid "Alarms Enabled"
+msgstr "Alarm ukljuèen"
+
+#: alarmdaemon.cpp:51
+msgid "Exit Applet"
+msgstr "Ugasi alarm"
+
+#: alarmdaemon.cpp:54
+msgid "KOrganizer Control Applet"
+msgstr ""
+
+#: alarmdaemon.cpp:156
+#, c-format
+msgid "KOrganizer Alarm: %s\n"
+msgstr "Korganizer: Alarm: %s\n"
+
+#: alarmdaemon.cpp:157
+msgid ""
+"The following events triggered alarms:\n"
+"\n"
+msgstr ""
+"Slijedeæi dogaðaj pokrenuo je alarm:\n"
+"\n"

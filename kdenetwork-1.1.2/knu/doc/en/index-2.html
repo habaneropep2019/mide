@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The Knu Handbook: The Ping tab</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, utilities">
+<META NAME="description" CONTENT="Network Utilities">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="index-3.html">Next</A>
+<A HREF="index-1.html">Previous</A>
+<A HREF="index.html#toc2">Table of Contents</A>
+</P>
+<H3><A NAME="s2">2. The <I>Ping</I> tab</A></H3>
+
+<P>
+<H3><A NAME="ss2.1">2.1 What is it?</A>
+</H3>
+
+<P>The <CODE>
+<A HREF="man:ping">ping(8)</A></CODE> command sends ICMP <CODE>ECHO_REQUEST</CODE> packets to network hosts to check for network reachability.
+A response from a host (or anything that have an IP address) says that this
+host is running at least a TCP/IP network stack and indicates that the network
+route to go to this host is opened. The <I>ping</I> tab allows the execution
+of the <CODE>ping(8)</CODE> command.
+<P>
+<IMG SRC="knu-ping.gif">
+<P>
+<H3><A NAME="ss2.2">2.2 Description</A>
+</H3>
+
+<P>Ping uses the ICMP protocol's mandatory <CODE>ECHO_REQUEST</CODE> datagram to
+elicit an ICMP <CODE>ECHO_RESPONSE</CODE> from a host or gateway. <CODE>ECHO_REQUEST</CODE> datagrams (``<I>pings</I>'') have an IP and ICMP header, followed by a
+<CODE>struct timeval</CODE> and then an arbitrary number of <I>pad</I> bytes used
+to fill out the packet.
+<P>
+<H3><A NAME="ss2.3">2.3 Options</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Make host name resolution</B><DD><P>Print addresses numerically rather than
+symbolically and numerically (this saves a nameserver address-to-name lookup).
+</DL>
+
+When using ping for fault isolation, it should first be run on the local host,
+to verify that the local network interface is up and running.  Then, hosts and
+gateways further and further away should be ``<I>pinged</I>''. Round-trip
+times and packet loss statistics are computed.  If duplicate packets are
+received, they are not included in the packet loss calculation, although the
+round trip time of these packets is used in calculating the
+minimum/average/maximum round-trip time numbers.  When the program is
+terminated, a brief summary is displayed.
+<P><B>This program is intended for use in network testing, measurement and
+management.  Because of the load it can impose on the network, it is unwise to
+use ping during normal operations or for too long.</B>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="index-3.html">Next</A>
+<A HREF="index-1.html">Previous</A>
+<A HREF="index.html#toc2">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

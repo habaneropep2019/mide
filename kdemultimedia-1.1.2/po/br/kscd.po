@@ -1,0 +1,605 @@
+# Breton translation of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Romuald Texier <texierr@worldnet.fr>, 1999
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kscd.po\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: 1999-03-12 15:55+0100\n"
+"Last-Translator: Romuald Texier <texierr@worldnet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+"X-Generator: KTranslator v 0.4.0\n"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "Renkell an diaz CDDB"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "Kas kinnigoù evit CDDB da :"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "Servijer CDDB :"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "Hizivaat"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "Aotren un diaz CDDB a-bell"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "Dre ziouer"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "Implij proksi HTTP evit moned ouzh CDDB"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "Aozer diaz CD"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"Pad hollek :\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"Pad hollek :\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "Grit gant an aozer-mañ evit notennañ ar pezh-mañ"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "Grit gant an aozer-mañ evit notennañ an titl"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "Diuzit ur rumm pe gwaskit Nullañ"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "E pe rumm e vez lakaet ar bladenn-mañ ?"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "Kinnig an enmont CDDB : %s\n"
+
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"Ne m'eus ket gallet korzañ an endalc'had e :\n"
+" %s"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "E pe rumm ho peus c'hoant enrollañ an enmont CDDB-mañ ?"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"N'eus ket tu skrivañ er restr :\n"
+"%s\n"
+"Gwiriekait ho aotreoù ha savit ho renkelloù rumm, mar plij."
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "Fazi Kscd"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "Enmont diaz direizh"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Tachenn Arzour(ez) / titl ar bladenn n'eo ket bet leuniet.\n"
+"Dafaziit an enmont ha klaskit en-dro, mar plij."
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"An dachenn Arzour(ez) / Titl n'eo ket reizh.\n"
+"Mar plij, disrannit an arzour(ez) diouzh an titl gant an\n"
+"arouezenn '/' evel e : Glenmor / An Distro\n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Ne c'hell ket titloù an holl pezhioù bezañ goullo.\n"
+"Difaziit an enmont ha klaskit en-dro, mar plij."
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "Fazi diabarzh"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Kasit ur postel d'an aozer, mar plij."
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "Roll selaou direizh\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "Kargañ"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "Aozer roll selaou"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "Aozañ titl ar pezh"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "Arzour(ez) / Titl ar bladenn"
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "Pezh / Pad / Titl"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "Titour ouzhpenn"
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "ID ar bladenn"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "Ezkargañ"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "Kefluniañ Kscd"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "Liv al LED :"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "Liv an drekleur :"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "Ardivink CDROM : "
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Urzhiad postel Unix  :"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "Furcher WWW"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "Implij kfm da furcher"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "Implij ur furcher all :"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "Diskouez lagadennoù"
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "Aotren ensoc'hañ e KPanel"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr "Seniñ pa gloz an diretenn"
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr "Ensoc'hañ pa vez arlunet"
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr "Paouez seniñ en ur guitaat"
+
+#: configdlg.cpp:190
+msgid "Eject on Finish"
+msgstr "Stlepel kuit pa vez echu"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "Seniñ/Ehanañ"
+
+#: docking.cpp:75
+msgid "Forward"
+msgstr "War-raok"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "War-gil"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "A heul"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "Kent"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "Stlepel kuit"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "Arlunañ"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr ""
+"N'eus pladenn ebet peurheñvel ouzh ho hini en diaz. Diuzit unan e-touez\n"
+"ar re ginniget a-is, mar plij."
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "Diuzit titl ur bladenn pe gwaskit Nullañ mar plij"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr "Kinnig degemeret mat"
+
+#: kscd.cpp:236
+msgid "Error connecting to server."
+msgstr "Fazi en ur zaremprediñ ar servijer."
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr "Ankevreet"
+
+#: kscd.cpp:242
+msgid "Connection timed out."
+msgstr "Kouezhet eo ar gevreadenn"
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr "Dilezet eo bet ar gevreadenn."
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+"Lavarout a reas ar servijer :\n"
+"\"%s\""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+"Fazi #%d en ur gas ur c'hemenn dre SMTP.\n"
+"\n"
+"%s"
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "Nerzh : --"
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Sonadegoù"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "E gwerzh"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Hud"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "Seniñ ar CD a-zol"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "Diuz an pezh"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "30 eil. war-raok"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "30 eil. war-gil"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "Pezh a heul"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "Pezh kent"
+
+#: kscd.cpp:570
+msgid "Quit Kscd"
+msgstr "E-maez Kscd"
+
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "Skorañ diskwel amzer"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Kefluniañ Kscd"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "Stlepel CD kuit"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "An arzour(ez) war ar gwiad"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "Seniñ dre zegouezh"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "Kendiviz CDDB"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "Renerezh nerzh ar CD"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "O seniñ"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr "%02d: <Dianav>"
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "Ehan"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "Dre zegouezh"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Iskis ..."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "Paouezet"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "A-zol"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "O stlepel"
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "Kefluniadur Kscd"
+
+#: kscd.cpp:1008
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Gwirioù eilañ (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Ratreet bremañ gant :\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd a zo ennañ kod eus :\n"
+"workman 1.4 beta 3\n"
+"Gwirioù eilañ (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Trugarez da Ti Kan ha Steve Scherf, ijinerien meizad an diaz CDDB.\n"
+"Gweladennit http://www.cddb.com evit kaout muioc'h a ditouroù diwar-benn "
+"CDDB.\n"
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"KSCD Hud diazezet war Synaesthesia gant Paul Harrison \n"
+"<pfh@yoyo.cc.monash.edu.au>\n"
+
+#: kscd.cpp:1025
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Trugarez da Vadim Zaliva <lord@crocodile.org>\n"
+"evit e labour war god ar proksi http.\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr "Kefluniañ SMTP"
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Dibaboù Kscd"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Hud"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "Nerzh : %02d%%"
+
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"Fazi lenn pe moned ouzh ar CDROM.\n"
+"Bezit sur ho peus aotreoù moned ouzh :\n"
+"%s"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "Prest"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "Stlapet kuit"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "N'eus ket tu tapout ar roll CDDB."
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "N'eus enmont klotus ebet en diaz."
+
+#: kscd.cpp:1834 kscd.cpp:1844
+msgid "Error getting CDDB entry."
+msgstr "Fazi en ur dapout an enmont CDDB."
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "Dilezet eo bet ar goulenn digant CDDB."
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "Pez Chom"
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Pad Hol"
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Hol Cho"
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "Pad Pez"
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "N'hellan ket loc'han kscdmagic"
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"Marvet eo KSCD Magic en un doare direizh.\n"
+"Ha sur oc'h emañ staliet kscdmagic ?"
+
+#: kscd.cpp:2368
+msgid "Enter the local CDDB base Directory"
+msgstr "Roit renkell an diaz lec'hel CDDB"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: diskouez arventennoù al linenn urzhiañ\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: bevaat an diskas dizraenañ\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "Kscd Hud"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "Ledander ar prenestr Hud"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "Uhelder ar prenestr Hud"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "Lufr Hud :"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr "Aotren kinnig dre SMTP "
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr "SMTP Chomlec'h:Porzh"
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr "Ho chomlec'h postel"

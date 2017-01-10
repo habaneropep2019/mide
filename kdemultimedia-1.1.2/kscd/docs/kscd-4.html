@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The Kscd Handbook: Onscreen Fundamentals</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KSCD CD player CDDB">
+<META NAME="description" CONTENT="KSCD CD player CDDB">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kscd-5.html">Next</A>
+<A HREF="kscd-3.html">Previous</A>
+<A HREF="kscd.html#toc4">Table of Contents</A>
+</P>
+<H3><A NAME="s4">4. Onscreen Fundamentals</A></H2>
+<P>
+<H3><A NAME="s4.1">4.1  Basic Operation</></H3>
+<P>
+<CENTER><IMG SRC="kscd1.gif" USEMAP="#helpmap"></CENTER>
+<MAP NAME="helpmap">
+<AREA SHAPE="RECT" COORDS="0,25,90,79" HREF="kscd-4.html#sss4.1.4">
+<AREA SHAPE="RECT" COORDS="91,25,310,91" HREF="kscd-4.html#sss4.1.3">
+<AREA SHAPE="RECT" COORDS="311,25,403,134" HREF="kscd-4.html#sss4.1.1">
+<AREA SHAPE="RECT" COORDS="0,80,45,107" HREF="kscd-4.html#sss4.1.7">
+<AREA SHAPE="RECT" COORDS="46,80,90,106" HREF="kscd-4.html#sss4.1.2">
+<AREA SHAPE="RECT" COORDS="91,92,312,106" HREF="kscd-4.html#sss4.1.9">
+<AREA SHAPE="RECT" COORDS="0,107,91,136" HREF="kscd-4.html#sss4.1.8">
+<AREA SHAPE="RECT" COORDS="92,108,135,136" HREF="kscd-4.html#sss4.1.6">
+<AREA SHAPE="RECT" COORDS="136,108,182,136" HREF="kscd-4.html#sss4.1.11">
+<AREA SHAPE="RECT" COORDS="183,108,226,136" HREF="kscd-4.html#sss4.1.5">
+<AREA SHAPE="RECT" COORDS="227,108,315,136" HREF="kscd-4.html#sss4.1.10">
+</MAP>
+<P>This is the main window of kscd. You should see something like this when 
+you start <B>kscd</B>. The controls in this window are explained below, in no
+particular order. Click on a control to find out more about how to use it.
+<CENTER><HR WIDTH="80%"></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.1"><IMG SRC="kscd2.gif"></A></CENTER>
+<P>This is the main control panel for <B>kscd</B>. The function of these buttons 
+should be familiar to anyone who has ever used a CD player. The uppermost 
+button in the above diagram toggles between playing and pausing the CD. The left 
+button in the second row stops playing the CD. The right button in the second row 
+toggles looping, so that the CD will start playing again from the beginning when the 
+end of the last audio track is reached. The buttons in the third row advance 
+the CD backward <I>(left)</I> or forward <I>(right)</I> 30 seconds. The buttons
+in the fourth row skip forward <I>(right)</I> or backward  <I>(left)</I> to the
+beginning of the next or previous track. <CENTER><HR WIDTH="80%"></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.2"><IMG SRC="kscd2a.gif"></A></CENTER>
+<P>This button ejects the CD. Note that the eject button on your CD-ROM drive 
+may not respond if an audio CD is in the drive and <B>kscd</B> is started. Some 
+very old CD-ROM drives may not support software eject. You may also have to close 
+the CD-ROM drive manually after inserting a new disc.
+<CENTER><HR WIDTH="80%"></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.3"><IMG SRC="kscd3.gif"></A></CENTER>
+<P>This is the status display. Starting at the top, from right to left, is the
+main time display <I>(See below for a discussion of the various possible time 
+display modes)</I>, the status of the CD-ROM drive, the total play time of the
+audio CD, the current volume setting, and the current and maximum track 
+numbers (<I>curr.</I>/<I>max.</I>). The bottommost two lines of text display 
+the artist and title of the CD, and then the title of the track, assuming that
+appropriate entries exist in the local or network CDDB <I>(CD Data Base.)</I>
+<CENTER><HR WIDTH=80%></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.4"><IMG SRC="kscd4.gif"></A></CENTER>
+<P>This button toggles between the possible main time display modes. By default, 
+<B>kscd</B> displays the elapsed time of the current track, if the CD is 
+playing, or either --:-- or 00:00 if the CD is not playing. Pressing this button 
+toggles in sequence between remaining track time, total elapsed time, and total 
+remaining time.
+<CENTER><HR WIDTH="80%"></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.5"><IMG SRC="kscd5.gif"></A></CENTER>
+<P>This button opens the <B>kscd</B> configuration panel. This allows you
+to configure <B>kscd</B> to work on your machine. See <A
+HREF="kscd-4.html#ss4.2">Section 4.2 Configuring <B>kscd</B></A> for details
+about configuring <B>kscd</B>. 
+<CENTER><HR WIDTH=80%></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.6"><IMG SRC="kscd6.gif"></A></CENTER>
+<P>This button opens the CDDB <I>(Compact Disc Data Base)</I> entry editor
+panel. The CDDB can identify your CD and often download a list of tracks for
+that CD or load it from the filesystem. See <A HREF="kscd-4.html#ss4.3">
+Section 4.3 The CD Database Editor</A> for details about using this
+tool.<CENTER><HR WIDTH=80%></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.7"><IMG SRC="kscd7.gif"></A></CENTER>
+<P>This button will help you search for information about the artist on the
+Internet. You can find out about performance dates, purchase information,
+and other information by pressing this button and choosing the appropriate
+option in the pop-up menu that appears.
+<CENTER><HR WIDTH=80%></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.8"><IMG SRC="kscd9.gif"></A></CENTER>
+<P>This button closes <B>kscd</B>.
+<CENTER><HR WIDTH=80%></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.9"><IMG SRC="kscd10.gif"></A></CENTER>
+<P>This slider controls the volume of the audio output of the CD. Right is
+louder, left is quieter. If you are playing your CD through your sound card, 
+the sound card mixer will affect the playback volume as well.
+<CENTER><HR WIDTH=80%></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.10"><IMG SRC="kscd11.gif"></A></CENTER>
+<P>This combo box lets you directly select a track to play.
+<CENTER><HR WIDTH=80%></CENTER>
+<P>
+<CENTER><A NAME="sss4.1.11"><IMG SRC="kscd15.gif"></A></CENTER>
+<P>This button plays the CD tracks in random order.
+<CENTER><HR WIDTH=80%></CENTER>
+<P>
+<H3><A NAME="ss4.2">4.2 Configuring <B>kscd</B></A></H3> <P>
+<P>The primary configuration window for <B>kscd</B> is a tabbed dialog with three 
+major sections.
+<DL>
+<LI><A HREF="kscd-4.html#sss4.2.1">CDDB</A></LI>
+<LI><A HREF="kscd-4.html#sss4.2.2">Kscd Options</A></LI>
+<LI><A HREF="kscd-4.html#sss4.2.3">About</A></LI>
+</DL>
+<CENTER><HR WIDTH=80%></CENTER>
+<H4><A NAME="sss4.2.1">The CDDB tab</A></H4>
+<CENTER><IMG SRC="kscd13.gif" HEIGHT=478></CENTER>
+<P>The CDDB tab sets up the <A HREF="kscd-5.html">CDDB <I>(Compact Disc Data
+Base)</I></A> functions of <B>kscd</B>. The &quot;Enable Remote CDDB&quot;
+checkbox turns on or off CDDB lookups over the Internet.
+<P>The &quot;CDDB Base Directory"&quot; text field lets you choose the
+directory where you want CDDB entries to be stored locally.
+<P>The &quot;Send CDDB submissions to:&quot; field contains the e-mail 
+address to submit CDDB entries to. The default address is
+&quot;xmcd-cddb@amb.org&quot;. As of version 8.0, CDDB entries from kscd are
+accepted for inclusion in the database.
+<P>The &quot;CDDB Server&quot; list box shows a list of known CDDB servers.
+Select an entry from this list and it will appear in the text field above the
+selection box. Press the &quot;Update&quot; button to update the list of
+servers in the list box. Press the &quot;Defaultsquot; button to enter the
+default value, &quot;cddb.cddb.com 888&quot;, which will permit you to update
+the list with a fresh list of CDDB Servers listed with the master CDDB site at
+cddb.cddb.com. 
+<P>The &quot;Help&quot; button opens the <B>kscd</B> help home page.
+<CENTER><HR WIDTH="80%"></CENTER> <H4><A NAME="sss4.2.2">The
+Kscd Options tab</A></H4> <P> <CENTER><IMG SRC="kscd14.gif"></CENTER>
+<P>The &quot;LED Color:&quot; and &quot;Background Color:&quot; fields show the
+color selected for the foreground and background of the status display. Press
+the &quot;Change&quot; button next to the color box to change these colors.
+<P>The &quot;CDROM Device&quot; field contains the name of the CDROM device to
+be used to play audio CDs. The default value is &quot;/dev/cdrom&quot;. The
+permissions on this device <I>must</I> be set to allow opening this device
+read-only. Changing the permissions on this device file will in almost all
+cases require superuser priveleges and can be done from the command line or in
+the &quot;Super User Mode&quot; of <B>kfm</B>. <P>The &quot;Unix mail
+command&quot; field shows the command used to send new CDDB entries to the
+database.  The default value is &quot;mail -s &quot;%s&quot;&quot;. You will
+need to make sure this command will actually send mail to non-local systems if
+you want to submit CDDB entries, especially if you access the Internet through
+a dial-up connection. Check the documentation for your Linux distribution for
+details. Some Linux distributions that use <B>sendmail</B> to deliver e-mail
+require only that you enter your mail host into the &quot;&quot;Smart&quot;
+relay host&quot; field in <B>/etc/sendmail.cf</B>. In addition, the CDDB site
+will want to be able to mail you back; it may therefore also be neccessary to
+edit <B>/etc/sendmail.cf</B> to ensure that the return address on the
+submission is valid. Your mileage is likely to vary.
+<P>The &quot;WWW-Browser&quot; section lets you choose which web browser to use
+ to access the web sites in the <A HREF="kscd-4.html#sss4.1.7">information
+button</A> menus. You can choose either <B>kfm</B> or a custom browser with the
+radio buttons. By default, the &quot;Use Custom Browser&quot; field contains
+&quot;netscape &quot;%s&quot;&quot;, for use with Netscape Navigator or
+Comminicator.
+<P>The &quot;Show Tool Tips&quot; checkbox turns tooltips <I>(tiny windows that
+pop up when the mouse is &quot;parked&quot; briefly over a control)</I> on or
+off.
+<P>The &quot;Help&quot; button opens the <B>kscd</B> help home page.
+<CENTER><HR WIDTH=80%></CENTER><H4><A
+NAME="sss4.2.3">The About tab</A></H4> <P>The &quot;About&quot; tab displays
+information about the version of <B>kscd</B> you are using and some copyright
+information. <CENTER><HR WIDTH=80%></CENTER> <P> <H3><A NAME="ss4.3">4.3 The CD
+Database Editor</A></H3> <P> <CENTER><IMG SRC="kscd8.gif" HEIGHT=488></CENTER>
+<P>The CD Database Editor allows you to modify, download, save, annotate, and
+upload <A HREF="kscd-5.html">CDDB <I>(Compact Disc Data Base)</I></A> entries.
+If there is an entry in your local CDDB tree <I>(see <A
+HREF="kscd-4.html#sss4.2.1">the CDDB subsection in 4.2 Configuring
+Kscd</A>)</I> for the CD in the in your CD-ROM drive, or if the disc could be
+found in the CDDB, you will see the name of the artist and the title of the CD
+in the &quot;Disc Artist / Title&quot; field and a list of tracks with song
+titles in the &quot;Track / Time / Title &quot; selection box. Otherwise, you
+will see a list of tracks and play times without titles. 
+<P>You can make an annotation for the entire disc with the &quot;Ext Info&quot;
+button next to the &quot;Disc Artist / Title&quot; field, or for a selected
+track in the &quot;Track / Time /Title&quot; selection box with the adjacent
+&quot;Ext Info&quot; button. <P>If you select a track in the &quot;Track / Time
+/Title&quot; selection box, the title, if present, will appear in the
+&quot;Edit Track Title&quot; field below. You can type a title for the track in
+the box, or edit the entry to suit your needs. Press the &quot;Return&quot; key
+on your keyboard, and the text will appear in the proper line in the selection
+box. 
+<P>Once all tracks have been given titles and the &quot;Disc Artist /
+Title&quot; field has been filled out, you can press the &quot;Submit&quot;
+ button to send your submission by e-mail to the CDDB. You will be prompted to
+select a category for the submission.
+<P>The &quot;Disc ID&quot; section displays the
+32 bit ID code used by the CDDB to identify a compact disc. Above the ID code
+is the category of the CDDB entry. These categories correspond to the
+subdirectories tree of the directory chosen in the &quot;CDDB Base
+Directory&quot; in the <A HREF="kscd-4.html#sss4.2.1">CDDB tab of the
+<B>kscd</B> Configuration</A> window.
+<P>The &quot;Total Time:&quot; display shows the total play time of the CD.
+<P>The &quot;Play List Editor&quot; lets you change the play order of a 
+disc. Enter a comma seperated list of track numbers to define a new play order.
+<P>The &quot;Save&quot; button writes the displayed record to disk. You will be
+prompted to select a category under which to save the record. Select a
+directory and press &quot;Ok&quot; to finish saving.
+<P>The &quot;Load&quot; button will prompt you for a location to look for a
+CDDB entry other than a remote CDDB server or the local CDDB entries in the
+file system.
+<P>The &quot;Close&quot; button closes the CD Database Editor.
+<P ALIGN="RIGHT"> <A
+HREF="kscd-5.html">Next</A> <A HREF="kscd-3.html">Previous</A> <A
+HREF="kscd.html#toc4">Table of Contents</A> </P> <CENTER> <HR WIDTH="100%"
+SIZE=3 ALIGN=CENTER NOSHADE> </CENTER>     </FONT> </BODY> </HTML>

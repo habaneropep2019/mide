@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kpm Handbook: The menu</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="">
+<META NAME="description" CONTENT="kpm process management">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kpm-3.html">Next</A>
+<A HREF="kpm-1.html">Previous</A>
+<A HREF="kpm.html#toc2">Table of Contents</A>
+</P>
+<H3><A NAME="s2">2. The menu</A></H3>
+
+<P>
+<H3><A NAME="ss2.1">2.1 Window menu</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Iconify</B><DD><P>Iconifies the main window. When iconfied, kpm uses far less CPU time because
+there is no need to update the process list. If you use KWM as window manager
+and the option "Dock into kpanel" is checked, you will see a little icon in
+kpanel displaying the average system load. Under other window managers like
+fvwm, kpm's icon itself will show the load (but this depends on how the window
+manager is configured).
+<P>
+<DT><B>Quit</B><DD><P>Exits kpm (closing the main window has the same effect).
+</DL>
+<P>
+<H3><A NAME="ss2.2">2.2 Process menu</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Renice</B><DD><P>Allows you to modify the priority of the marked process
+(or all marked processes). Under Linux a process has a priority (nice
+value) ranging from -20 (best) to +20 (worst), thus
+<I>increasing</I> the nice value gives a process <I>less</I> CPU
+time. You are not allowed to lower the nice value (improve its
+priority) unless are the super-user. This means that, as an ordinary
+user, you cannot lower the nice value of a process even if you raised
+it before.
+<P>Of course you are only allowed to alter the priority of your own
+processes. The super-user is allowed to modify the priority for any
+process, and he may lower the priority.
+<P>
+<DT><B>Change scheduling</B><DD><P>This option is only available to root.
+The  Change Scheduling...  dialog allows the super-user to
+change the scheduling policy  of  the  selected  processes
+(using  the  Posix.1b  real-time extensions present in the
+Linux  2.0.x  kernels).  Normal  processes  are   set   to
+SCHED_OTHER  and  have static priority 0; (soft) real-time
+processes have the policy SCHED_FIFO  or  SCHED_RR  and  a
+static   priority   in   the   range  of  1  to  99.
+<P>
+<DT><B>Socket info</B><DD><P>Displays a list of TCP and UDP sockets used by the selected processes.
+</DL>
+<P>
+<H3><A NAME="ss2.3">2.3 Signal menu</A>
+</H3>
+
+<P>The signal menu allows you to send various signals to all marked processes. Be
+careful when doing this, especially if more than one process is marked. The
+standard Linux signals are explained 
+<A HREF="kpm-4.html#UNIX Signals">here</A>.
+<P>
+<H3><A NAME="ss2.4">2.4 View menu</A>
+</H3>
+
+<P>
+<DL>
+<DT><B>Refresh process list</B><DD><P>Immediatly updates the process list. This is very useful if you use rather
+long update periods. You can also do this by pressing the update button in the
+toolbar or by pressing the Space key. 
+<P>
+<DT><B>All processes</B><DD><P>Displays all processes.
+<P>
+<DT><B>Your processes</B><DD><P>Display your processes, including those running under a
+different user (i.e. SETUID root programs you started)
+<P>
+<DT><B>Non-root processes</B><DD><P>Display all processes except those started by root.
+<P>
+<DT><B>Running processes</B><DD><P>Show only running processes (running or on the run queue)
+<P>
+<DT><B>User fields</B><DD><P>The process list will show the most interesting process fields. This are those
+fields typically displayed by "top".
+<P>
+<DT><B>Job fields</B><DD><P>Displays most relevant fields for job-control.
+<P>
+<DT><B>Memory fields</B><DD><P>Shows information about memory usage, page faults...
+<P>
+</DL>
+<P>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kpm-3.html">Next</A>
+<A HREF="kpm-1.html">Previous</A>
+<A HREF="kpm.html#toc2">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

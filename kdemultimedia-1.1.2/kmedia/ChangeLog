@@ -1,0 +1,38 @@
+1998-12-12  Christian Esken  <esken@kde.org>
+
+	* Touches for KDE1.1:
+	* Version number bumped to 1.0
+	* Adding setSteps(), this was an omission
+	* Adding status bar item (Time)
+
+1998-06-17  Christian Esken  <esken@kde.org>
+
+	* ADDING MdDisconnect(). *BSD users should be much happier now.
+	* Now using getHelpMenu().
+	* Using more standard texts
+	* Cleaning up options dialog
+
+1998-06-13  Christian Esken  <esken@kde.org>
+
+	* Adding new file selector
+        * Adding "Open" menu entry
+
+Fri Apr 24 23:57:03 1998    <chris@magicon.ping.de>
+
+	* CHANGES: Changing from CHANGES to ChangeLog
+	* using i18n instead klocale->translate
+	* added version number to about box
+	* FINALLY FOUND OUT the reason for all this popping and klicking in
+	kmedia. It was caused by a hard to find loopback:
+	1) maudio hands over the new media position
+	2) kmedia sees it and places the position indicator (KSlider) at the
+	new position.
+	3) KSlider thinks (wrong) the user has dragged the Slider and tells
+	maudio about the new wished media position. I am glad this is
+	finally resolved. 8-)
+	
+
+
+0.50 Added this file
+     Implementing the new "set playback position" thing, which is
+     in the mediatool protocol since today.

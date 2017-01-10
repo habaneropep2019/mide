@@ -1,0 +1,28 @@
+Source: kdegames
+Section: contrib/games
+Priority: extra
+Maintainer: Stephan Kulow <coolo@kde.org>
+Standards-Version: 2.5.1
+
+Package: kdegames
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: kdebase
+Description: KDE games collection
+ This is a collection of several games written for kde.
+ .
+ kabalone - Abalone Board Game
+ kasteroids - Asteroids
+ kblackbox - Logic game
+ kmahjongg - Mahjongg
+ kmines - Minesweeper
+ konquest - Gnu-Lactic Konquest
+ kpat - Patience
+ kpoker - Poker
+ kreversi - Reversi (or Othello) game
+ ksame - SameGame
+ kshisen - Shisen-Sho
+ ksirtet - tetris clone
+ ksmiletris - tetris based game
+ ksnake - Snake Game
+ ksokoban - Sokoban

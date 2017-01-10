@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-02 02:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Andrea Rizzi <rizzi@kde.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: main.cpp:178
+msgid "Sorry, can't open your printcap file."
+msgstr "Spiacente, impossibile aprire il tuo file printcap"
+
+#: main.cpp:183
+msgid "Sorry, unable to parse your printcap."
+msgstr "Spiacente, impossibile interpretare il tuo printcap."
+
+#: main.cpp:184
+msgid "Please email your printcap to Christoph.Neerfeld@home.ivm.de"
+msgstr "Per favore spedisci il tuo printcap a Christoph.Neerfeld@home.ivm.de"
+
+#: klpq.cpp:90
+msgid "Printer"
+msgstr "Stampante"
+
+#: klpq.cpp:95
+msgid "Queuing"
+msgstr "In Coda"
+
+#: klpq.cpp:100
+msgid "Printing"
+msgstr "In Stampa"
+
+#: klpq.cpp:105
+msgid "Update"
+msgstr "Aggiorna"
+
+#: klpq.cpp:125
+msgid "Rank"
+msgstr ""
+
+#: klpq.cpp:126
+msgid "Owner"
+msgstr "Proprietario"
+
+#: klpq.cpp:127
+msgid "Job"
+msgstr "Job"
+
+#: klpq.cpp:129
+msgid "Size"
+msgstr "Dimensione"
+
+#: klpq.cpp:150 klpq.cpp:228
+msgid "Make Top"
+msgstr "In Alto"
+
+#: klpq.cpp:160
+msgid "Auto"
+msgstr "Auto"
+
+#: klpq.cpp:204
+msgid "&Auto update"
+msgstr "&Aggiornamento automatico"
+
+#: klpq.cpp:205
+msgid "&Spooler"
+msgstr "&Spooler"
+
+#: klpq.cpp:208
+#, c-format
+msgid ""
+"Klpq %s\n"
+"(C) by Christoph Neerfeld\n"
+"chris@kde.org"
+msgstr ""
+"Klpq %s\n"
+"(C) di Christoph Neerfeld\n"
+"chris@kde.org"
+
+#: klpq.cpp:213
+msgid "&Config"
+msgstr "&Configura"
+
+#: klpq.cpp:404
+#, c-format
+msgid "Do you really want to remove job No %d"
+msgstr "Vuoi veramente rimuover il job No %d"
+
+#: klpq.cpp:424
+#, c-format
+msgid ""
+"Do you really want to move job No\n"
+"%d\n"
+"on top of queue"
+msgstr ""
+"Vuoi veramente mettere il job No\n"
+"%d\n"
+"in cima alla coda"
+
+#: klpq.cpp:572 klpq.cpp:578 klpq.cpp:593
+msgid "Permission denied"
+msgstr "Permesso negato"
+
+#: klpq.cpp:573 klpq.cpp:579 klpq.cpp:594
+msgid ""
+"This is a privileged command\n"
+"and you do not have permission to execute it."
+msgstr ""
+"Questo è un comando privilegiato\n"
+"e tu non hai i permessi per eseguirlo."
+
+#: ConfAutoUpdate.cpp:10
+msgid "Configure Auto Update"
+msgstr "Configura Auto Aggiornamento"
+
+#: ConfAutoUpdateData.cpp:17
+msgid "Update frequency in seconds:"
+msgstr "Frequenza aggiornamento in secondi:"
+
+#: klpqspooler.cpp:199 klpqspooler.cpp:269
+msgid "Can't find your lpc program !"
+msgstr "Non riesco a trovare il tuo programma lpc !"
+
+#: klpqspooler.cpp:200 klpqspooler.cpp:270
+msgid ""
+"Sorry, I can't find your lpc program.\n"
+"Please check the configuration under Config->Spooler."
+msgstr ""
+"Spiacente, non posso trovare il tuo programma lpc.\n"
+"Per favore controlla la configurazione sotto Configura->Spooler."
+
+#: FirstStart.cpp:21 SpoolerConfig.cpp:21 SpoolerConfigData.cpp:151
+msgid "Select your spooling system"
+msgstr "Imposta il tuo sistema di spooling"
+
+#: FirstStartData.cpp:42
+msgid ""
+"Please select the spooling system you use. Most systems use the BSD spooler. "
+"So if you don't know which spooler is installed on your system, BSD is "
+"probably a good choice."
+msgstr ""
+"Per favore imposta il sistema di spooling che usi. Molti sistemi usano lo "
+"spooler BSD. Quindi se non conosci lo spooler installato sul tuo sistema, "
+"BSD probailmente è la scelta migliore."
+
+#: SpoolerConfigData.cpp:99
+msgid "Paths of spooling commands:"
+msgstr "Path per i comandi di spooling:"

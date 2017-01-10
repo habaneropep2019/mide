@@ -1,0 +1,202 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: Sun Jul 11 1999 18:40:49+0200\n"
+"Last-Translator: 井村 竜一郎 <imura@cs.titech.ac.jp>\n"
+"Language-Team: japanese <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"X-Generator: KTranslator v 0.5.0"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "KDE フロッピーフォーマッタについて"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "バージョン"
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "フロッピードライブ:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "密度:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "ファイルシステム:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "フォーマット"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "クイック消去"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "完全フォーマット"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "ラベル作成:"
+
+#: floppy.cpp:148
+msgid "KDE Floppy"
+msgstr "KDE フロッピー"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "KDE フロッピーフォマッタ"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr "DD"
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"%s にアクセスできません\n"
+"デバイスが存在するか、あなたがそれに書き込む権限があるか確認してください。"
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"kfdformat がみつかりません\n"
+"kfdformat はKFloppy ディストリビューションの\n"
+"一部です。KFloppyを正しくインストールして下さい。"
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"kmke2fs が見つかりません。\n"
+"kmke2fs は KFloppy ディストリビューションの\n"
+"一部です。KFloppy を正しくインストールして下さい。"
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"kmkdosfs が見つかりません。\n"
+"kmkdosfs は KFloppy ディストリビューションの\n"
+"一部です。KFloppy を正しくインストールして下さい。"
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "バージョン情報"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "新しいプログラムを動かせません: fork() の失敗"
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"フロッピーかフロッピードライブにアクセスできません\n"
+"フロッピーを挿入し、正しいフロッピードライブを選択したか\n"
+"確認してください。\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"フォーマットできません: %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "%d ブロックは不良です。続けます..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"ファイルシステムを作れません: %s\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"フロッピのフォーマットは正常に終了しました。\n"
+"不良ブロック: %d\n"
+"生の容量: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "全てのファイルは正常に削除されました。"
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "ファイルシステムを構築しています..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "確認中 ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"新しいプログラムを動かせません\n"
+"fork() 失敗"
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "フロッピーがマウントされているかどうか、確認中にエラーが生じました\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s はマウントされています。\n"
+"先にフロッピーをアンマウントして下さい。"

@@ -1,0 +1,20 @@
+Source: kdesupport
+Section: non-free/libs
+Priority: extra
+Maintainer: Stephan Kulow <coolo@kde.org>
+Standards-Version: 2.5.1
+
+Package: kdesupport0g-dev
+Architecture: any
+Section: non-free/devel
+Conflicts: kdesupport-dev
+Depends: qt1g-dev, xlib6g-dev, libc6-dev, kdesupport0g (=${Source-Version})
+Description: mime and uuencode/decode library - development version
+ This library is used by kde to handle mime types and uuencoding/decoding.
+
+Package: kdesupport0g
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: mime, uuencode and QwSpriteField library - runtime version
+ This libraries are used by several KDE applications
+

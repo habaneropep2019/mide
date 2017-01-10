@@ -1,0 +1,19 @@
+    1.1 **Binary Install**
+
+    1.1.1 IF YOU DO _NOT_ HAVE THE KDE
+
+	cd /usr/local/
+	tar -zxvvf <ksirc file>
+	tar -zxvvf kdehelp-netscape.tgz
+
+	You can then run ksirc by typing "ksirc".
+	Remember, you do need to have perl5 installed.
+
+        If you want online help, and don't have KDE you'll netscape and
+        get kdehelp-netscape.tgz from ksirc.org/pub/ksirc
+
+    1.1.2 For those with KDE
+	cd $KDEDIR/..
+	tar -zxvvf <ksirc file>
+	
+	You can then run ksirc by typeing "ksirc".

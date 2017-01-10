@@ -1,0 +1,362 @@
+# ksysv translation
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Vladimir Vuksan <vuksan@veus.hr>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeadmin\n"
+"POT-Creation-Date: 1999-04-12 03:34+0200\n"
+"PO-Revision-Date: 1998-10-15 15:00-0700\n"
+"Last-Translator: Vladimir Vuksan <vuksan@veus.hr>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.cpp:236
+msgid ": Error"
+msgstr ": Gre¹ka"
+
+#: main.cpp:237
+msgid "Only root is allowed to manage runlevels."
+msgstr "Samo korijenski korisnik mo¾e upravljati runlevelima."
+
+#: OldView.cpp:105
+msgid "Available"
+msgstr "Dostupno"
+
+#: OldView.cpp:106
+msgid "&Services"
+msgstr "&Servisi"
+
+#: OldView.cpp:110 OldView.cpp:115
+msgid ""
+"These are the <bold>available services</bold>\n"
+"To start a service, drag it to the <bold>\"Start\"</bold>section of a "
+"runlevel.\n"
+"\n"
+"To stop one, do the same for the <bold>\"Stop\"</bold> section."
+msgstr ""
+
+# , c-format
+# , c-format
+#: OldView.cpp:143
+#, c-format
+msgid "Runlevel &%i"
+msgstr "Runlevel &%i"
+
+# , c-format
+# , c-format
+#: OldView.cpp:146
+#, c-format
+msgid "Runlevel %i"
+msgstr "Runlevel %i"
+
+#: OldView.cpp:149
+msgid "Start"
+msgstr "Pokreni"
+
+# , c-format
+# , c-format
+#: OldView.cpp:249
+#, c-format
+msgid ""
+"Drag here to start services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Vucite ovdje za pokretanje servisa\n"
+"prilikom ulaza u Runlevel %i"
+
+# , c-format
+# , c-format
+#: OldView.cpp:250
+#, c-format
+msgid ""
+"Drag here to stop services\n"
+"when entering Runlevel %i"
+msgstr ""
+"Vucite ovdje za zaustavljanje servisa\n"
+"prilikom ulaza u Runlevel %i"
+
+#: OldView.cpp:340
+msgid "** WRITING CONFIGURATION **\n"
+msgstr ""
+
+#: OldView.cpp:343
+#, c-format
+msgid "** RUNLEVEL %i **\n"
+msgstr "** RUNLEVEL %i **\n"
+
+#: OldView.cpp:517
+msgid "Reading configuration: "
+msgstr "Uèitavam postavu: "
+
+#: OldView.cpp:619
+msgid "** Stopping "
+msgstr "** Zaustavljam "
+
+#: OldView.cpp:624
+msgid " stop"
+msgstr " zaustavi"
+
+#: OldView.cpp:639
+msgid "** Starting "
+msgstr "** Pokreæem "
+
+#: OldView.cpp:644
+msgid " start"
+msgstr " pokreni"
+
+#: OldView.cpp:661
+msgid "** Re-starting "
+msgstr "** Pokreæem ponovo"
+
+#: OldView.cpp:666
+msgid " restart"
+msgstr " pokreni ponovo"
+
+# , c-format
+# , c-format
+#: OldView.cpp:811
+msgid "P&roperties..."
+msgstr "P&ostavke..."
+
+#: OldView.cpp:831
+msgid "S&top"
+msgstr "&Zaustavi"
+
+#: OldView.cpp:833
+msgid "&Restart"
+msgstr "Pok&reni ponovo"
+
+#: TopWidget.cpp:136
+msgid "&New Configuration"
+msgstr "&Nova postava"
+
+#: TopWidget.cpp:137
+msgid "&Save Configuration"
+msgstr "&Spremi postavu"
+
+#: TopWidget.cpp:143
+msgid "Print &Log..."
+msgstr "Ispi¹i &dnevnik..."
+
+#: TopWidget.cpp:170
+msgid "Show &Tool Bar"
+msgstr "Poka¾i &traku sa alatima"
+
+#: TopWidget.cpp:171
+msgid "Show &Status Bar"
+msgstr "Poka¾i &statusnu traku"
+
+#: TopWidget.cpp:172
+msgid "Show &Log"
+msgstr "Prika¾i d&nevnik"
+
+#: TopWidget.cpp:174
+msgid "&Configure..."
+msgstr "&Podesi..."
+
+#: TopWidget.cpp:177
+msgid "&Save Options"
+msgstr "Sp&remi opcije"
+
+#: TopWidget.cpp:215
+msgid "New"
+msgstr "Nova"
+
+#: TopWidget.cpp:244
+msgid "Toggle script output"
+msgstr "Uklj./isklj. ispis skripte"
+
+#: TopWidget.cpp:261
+msgid ""
+"There are unsaved changes.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"Postoje nespremljene promjene.\n"
+"®elite li zbilja zavr¹iti?"
+
+#: TopWidget.cpp:263
+msgid "Yes, quit!"
+msgstr "Da, zavr¹i!"
+
+#: TopWidget.cpp:264
+msgid "No, don't quit."
+msgstr "Ne, ne ¾elim zavr¹iti."
+
+#: TopWidget.cpp:292
+msgid "Clear Changes"
+msgstr "Obri¹i promjene"
+
+#: TopWidget.cpp:293
+msgid "Do you really want to clear all unsaved changes?"
+msgstr "®elite li zbilja izbrisati sve nepospremljene promjene?"
+
+#: TopWidget.cpp:307
+msgid "Save configuration"
+msgstr "Spremi postavu"
+
+#: TopWidget.cpp:308
+msgid ""
+"You're about to save the changes made to your init configuration.\n"
+"Please realize that wrong settings could result in your system being "
+"unbootable.\n"
+"\n"
+"Do you wish to continue?"
+msgstr ""
+"Upravo se spremate spremiti promjene va¹e inicijalne konfiguracije.\n"
+"Budite upozoreni da pogre¹ne vrijednosti mogu sprijeèiti podizanje sistema.\n"
+"\n"
+"®elite zbilja nastaviti?"
+
+#: TopWidget.cpp:313
+msgid "Yes, &save!"
+msgstr "Da, &spremi"
+
+#: TopWidget.cpp:314
+msgid "No, &don't save."
+msgstr "Ne, &nemoj spremiti."
+
+#: TopWidget.cpp:397
+msgid "About Qt"
+msgstr "O Qt"
+
+#: TopWidget.cpp:472
+msgid "Changed"
+msgstr "Promjenjeno"
+
+#: TopWidget.cpp:589
+msgid "Could not generate sorting number. Please change manually."
+msgstr ""
+
+#: prefs.cpp:48
+#, c-format
+msgid "%s - Preferences"
+msgstr "%s - Postavke"
+
+#: prefs.cpp:58
+msgid "Directory containing your init-scripts (&services)"
+msgstr "Direktorij koji sadr¾i va¹e init-skriptove (&servise):"
+
+#: prefs.cpp:79
+msgid "Directory containing your &runlevel-directories"
+msgstr "Direktorij koji sadr¾i va¹e &runlevel-direktorije:"
+
+#: prefs.cpp:117
+msgid "Color for &new entries"
+msgstr "Boja za &nove zapise"
+
+#: prefs.cpp:118
+msgid "Color for c&hanged entries"
+msgstr "Boja za &promjenjene zapise"
+
+#: prefs.cpp:148
+msgid "&Paths"
+msgstr "&Putanje"
+
+#: prefs.cpp:149
+msgid "&Colors"
+msgstr "&Boje"
+
+#: trash.cpp:55 trash.cpp:56
+msgid "Drag here to remove services"
+msgstr "Dovuci ovdje za uklanjanje servisa"
+
+#: PropDlg.cpp:52
+msgid "&Name"
+msgstr "&Ime"
+
+#: PropDlg.cpp:54
+msgid "&Points to"
+msgstr "&Pokazuje na"
+
+#: PropDlg.cpp:56
+msgid "&Sorting number"
+msgstr ""
+
+# , c-format
+# , c-format
+#: PropDlg.cpp:113
+#, c-format
+msgid "%s - Properties"
+msgstr "%s - Postavke"
+
+#: IOCore.cpp:48
+#, c-format
+msgid "FAILED to remove %s from %s: \"%s\"\n"
+msgstr ""
+
+#: IOCore.cpp:53
+#, c-format
+msgid "removed %s from %s\n"
+msgstr "uklonio %s iz %s\n"
+
+#: IOCore.cpp:83
+#, c-format
+msgid "created %s in %s\n"
+msgstr "napravio %s u %s\n"
+
+#: IOCore.cpp:87
+#, c-format
+msgid "FAILED to create %s in %s: \"%s\"\n"
+msgstr ""
+
+#: About.cpp:46
+#, c-format
+msgid "About %s"
+msgstr "O %s"
+
+#: About.cpp:64
+msgid "KDE SysV Init Editor"
+msgstr ""
+
+#: About.cpp:81
+#, c-format
+msgid "Version %s (KDE %s)"
+msgstr "Inaèica %s (KDE %s)"
+
+#: About.cpp:89
+msgid "© 1997-1999 "
+msgstr "© 1997-1999 "
+
+#: About.cpp:99
+msgid "Peter Putzer"
+msgstr "Peter Putzer"
+
+#: About.cpp:103
+msgid "Mail bug report/success story/lots of money/..."
+msgstr ""
+
+#: About.cpp:115
+msgid ". All rights reserved."
+msgstr ". Sva prava pridr¾ana."
+
+#: About.cpp:122
+msgid ""
+"IPC parts taken from kdehelp © 1997 Martin Jones.\n"
+"Uses the KDE libraries © 1997-1999 The KDE Team.\n"
+"Uses the Qt library © 1992-1998 Troll Tech AS."
+msgstr ""
+
+#: About.cpp:129
+msgid ""
+"An editor for SysV-style init configuration, similar to Red Hat's "
+"\"tksysv\",\n"
+"only ksysv allows drag-and-drop, as well as keyboard use."
+msgstr ""
+
+#: About.cpp:142
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the\n"
+"terms of version 2 of the GNU General Public License as published by the "
+"Free\n"
+"Software Foundation.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or\n"
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n"
+"for more details."
+msgstr ""

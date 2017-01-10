@@ -1,0 +1,942 @@
+# Перевод kdat.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Denis Pershin <dyp@inetlab.com>, 1999.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdat 2.0\n"
+"POT-Creation-Date: 1998-12-10 02:17+0100\n"
+"PO-Revision-Date: 1999-06-05 00:12+07:00\n"
+"Last-Translator: Denis Pershin <dyp@inetlab.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: ArchiveInfoWidget.cpp:39 BackupProfileWidget.cpp:40
+msgid "Archive name:"
+msgstr "Имя архива:"
+
+#: ArchiveInfoWidget.cpp:40 FileInfoWidget.cpp:38 TapeInfoWidget.cpp:43
+msgid "Created on:"
+msgstr "Создан:"
+
+#: ArchiveInfoWidget.cpp:41 FileInfoWidget.cpp:41 TapeFileInfoWidget.cpp:36
+msgid "Size:"
+msgstr "Размер:"
+
+#: BackupDlg.cpp:74 BackupDlg.cpp:75 KDat.cpp:432
+msgid "KDat: Backup"
+msgstr "KDat: Резервное копирование"
+
+#: BackupDlg.cpp:87 IndexDlg.cpp:69 VerifyDlg.cpp:78
+msgid "Elapsed time:"
+msgstr "Ожидаемое время:"
+
+#: BackupDlg.cpp:90 BackupDlg.cpp:96 IndexDlg.cpp:72 VerifyDlg.cpp:81
+#: VerifyDlg.cpp:87
+msgid "00:00:00"
+msgstr "00:00:00"
+
+#: BackupDlg.cpp:93 VerifyDlg.cpp:84
+msgid "Time remaining:"
+msgstr "Оставшееся время:"
+
+#: BackupDlg.cpp:99 VerifyDlg.cpp:90
+msgid "Total kbytes:"
+msgstr "Всего килобайт:"
+
+#: BackupDlg.cpp:105
+msgid "Kbytes written:"
+msgstr "Килобайт записано:"
+
+#: BackupDlg.cpp:108 IndexDlg.cpp:84 VerifyDlg.cpp:99
+msgid "0k"
+msgstr "0к"
+
+#: BackupDlg.cpp:111 IndexDlg.cpp:93 VerifyDlg.cpp:102
+msgid "Transfer rate:"
+msgstr "Скорость передачи:"
+
+#: BackupDlg.cpp:114 IndexDlg.cpp:96 VerifyDlg.cpp:105
+msgid "0k/min"
+msgstr "0к/мин"
+
+#: BackupDlg.cpp:117 IndexDlg.cpp:87 VerifyDlg.cpp:110
+msgid "Files:"
+msgstr "Файлы:"
+
+#: BackupDlg.cpp:120 IndexDlg.cpp:78 IndexDlg.cpp:90 IndexDlg.cpp:102
+msgid "0"
+msgstr "0"
+
+#: BackupDlg.cpp:123
+msgid "Backup log:"
+msgstr "Журнал:"
+
+#: BackupDlg.cpp:130 IndexDlg.cpp:112 VerifyDlg.cpp:131
+msgid "Save Log..."
+msgstr "Записать журнал..."
+
+#: BackupDlg.cpp:135 IndexDlg.cpp:117 VerifyDlg.cpp:136
+msgid "Abort"
+msgstr "Прервать"
+
+#: BackupDlg.cpp:302
+msgid "*** Write failed, giving up."
+msgstr "*** Ошибка записи, восстанавливаю."
+
+#: BackupDlg.cpp:367 BackupDlg.cpp:377 IndexDlg.cpp:335 VerifyDlg.cpp:358
+#: VerifyDlg.cpp:368
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#: BackupDlg.cpp:380 IndexDlg.cpp:338 VerifyDlg.cpp:371
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: BackupDlg.cpp:384 IndexDlg.cpp:342 VerifyDlg.cpp:375
+#, c-format
+msgid "%s/min"
+msgstr "%s/мин"
+
+#: BackupOptDlg.cpp:31 BackupOptDlg.cpp:32
+msgid "KDat: Backup Options"
+msgstr "KDat: Настройки резервного копирования"
+
+#: BackupProfileInfoWidget.cpp:40
+msgid "Backup profile name:"
+msgstr "Имя профиля:"
+
+#: BackupProfileInfoWidget.cpp:51
+msgid "Files >>"
+msgstr "Файлы >>"
+
+#: BackupProfileInfoWidget.cpp:54
+msgid "<< Files"
+msgstr "<< Файлы"
+
+#: BackupProfileWidget.cpp:38 KDat.cpp:152
+msgid "Backup"
+msgstr "Резервное копирование"
+
+#: BackupProfileWidget.cpp:46
+msgid "Working directory:"
+msgstr "Рабочий каталог:"
+
+#: BackupProfileWidget.cpp:52
+msgid "Backup files:"
+msgstr "Копируемые файлы"
+
+#: BackupProfileWidget.cpp:58
+msgid "Tar Options"
+msgstr "Настройки tar'а"
+
+#: BackupProfileWidget.cpp:60
+msgid "Stay on one filesystem"
+msgstr "Не выходить за файловую систему"
+
+#: BackupProfileWidget.cpp:63
+msgid "GNU listed incremental"
+msgstr "Инкрементальный GNU-формат"
+
+#: BackupProfileWidget.cpp:67
+msgid "Snapshot file:"
+msgstr "Файл состояния:"
+
+#: BackupProfileWidget.cpp:73
+msgid "Remove snapshot file before backup"
+msgstr "Удалять файл состояния до начала"
+
+#: FileInfoWidget.cpp:37 TapeFileInfoWidget.cpp:34
+msgid "File name:"
+msgstr "Имя файла:"
+
+#: FileInfoWidget.cpp:39 TapeFileInfoWidget.cpp:35 TapeInfoWidget.cpp:44
+msgid "Last modified:"
+msgstr "Время изменения:"
+
+#: FileInfoWidget.cpp:40
+msgid "Last accessed:"
+msgstr "Время доступа:"
+
+#: FileInfoWidget.cpp:42
+msgid "Owner:"
+msgstr "Владелец:"
+
+#: FileInfoWidget.cpp:43
+msgid "Group:"
+msgstr "Группа:"
+
+#: IndexDlg.cpp:56 IndexDlg.cpp:57
+msgid "KDat: Index"
+msgstr "KDat: Индекс"
+
+#: IndexDlg.cpp:75
+msgid "Archives:"
+msgstr "Архивы:"
+
+#: IndexDlg.cpp:81 VerifyDlg.cpp:96
+msgid "Kbytes read:"
+msgstr "Прочитано Килобайт:"
+
+#: IndexDlg.cpp:99
+msgid "Total files:"
+msgstr "Всего файлов:"
+
+#: IndexDlg.cpp:105
+msgid "Index log:"
+msgstr "Журнал индекса:"
+
+#: IndexDlg.cpp:226
+msgid "Rewinding tape."
+msgstr "Перематываю ленту на начало."
+
+#: IndexDlg.cpp:228 KDat.cpp:442
+msgid "KDat: Cannot Rewind Tape"
+msgstr "KDat: Ошибка перемотки ленты на начало"
+
+#: IndexDlg.cpp:228
+msgid "Cannot rewind tape.  Indexing aborted."
+msgstr "Ошибка перемотки ленты на начало. Индексирование прервано."
+
+#: IndexDlg.cpp:232
+msgid "Cannot rewind tape."
+msgstr "Ошибка перемотки ленты на начало."
+
+#: IndexDlg.cpp:238 KDat.cpp:451 TapeDrive.cpp:222 TapeDrive.cpp:230
+#: TapeDrive.cpp:242 TapeDrive.cpp:254 TapeDrive.cpp:259
+msgid "KDat: Error"
+msgstr "KDat: Ошибка"
+
+#: IndexDlg.cpp:238 IndexDlg.cpp:242
+msgid "Failed to skip tape ID."
+msgstr "Не могу пропустить ID ленты."
+
+#: IndexDlg.cpp:271
+#, c-format
+msgid "Indexing archive %d."
+msgstr "Индексирую архив: %d."
+
+#: IndexDlg.cpp:274
+#, c-format
+msgid "Archive %d"
+msgstr "Архив %d"
+
+#: IndexDlg.cpp:321
+msgid "Reindexed Tape"
+msgstr "Индексирую ленту"
+
+#: KDat.cpp:81 KDat.cpp:82 KDat.cpp:1101
+msgid "KDat: <no tape>"
+msgstr "KDat: <нет ленты>"
+
+#: KDat.cpp:86 KDat.cpp:122 KDat.cpp:233 KDat.cpp:1141
+msgid "Mount Tape"
+msgstr "Монтировать ленту"
+
+#: KDat.cpp:87 KDat.cpp:123
+msgid "Recreate Tape Index"
+msgstr "Создать индекс ленты"
+
+#: KDat.cpp:89 KDat.cpp:129
+msgid "Format Tape..."
+msgstr "Форматировать ленту..."
+
+#: KDat.cpp:92 KDat.cpp:98 KDat.cpp:126
+msgid "Delete Archive"
+msgstr "Удалить архив"
+
+#: KDat.cpp:95 KDat.cpp:101 KDat.cpp:121
+msgid "Verify..."
+msgstr "Проверить..."
+
+#: KDat.cpp:96 KDat.cpp:102 KDat.cpp:120
+msgid "Restore..."
+msgstr "Восстановить..."
+
+#: KDat.cpp:105 KDat.cpp:114 KDat.cpp:119
+msgid "Backup..."
+msgstr "Создать резервную копию..."
+
+#: KDat.cpp:108
+msgid "Delete Tape Index"
+msgstr "Удалить индекс ленты"
+
+#: KDat.cpp:111 KDat.cpp:124
+msgid "Create Backup Profile"
+msgstr "Создать профиль"
+
+#: KDat.cpp:116 KDat.cpp:128
+msgid "Delete Backup Profile"
+msgstr "Удалить профиль"
+
+#: KDat.cpp:127
+msgid "Delete Index"
+msgstr "Удалить индекс"
+
+#: KDat.cpp:134
+msgid "Preferences..."
+msgstr "Настройки..."
+
+#: KDat.cpp:141
+#, c-format
+msgid ""
+"KDat Version %s\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+msgstr ""
+"KDat версии %s\n"
+"\n"
+"KDat это основанный на tar'е архиватор на ленту.\n"
+"\n"
+"Copyright (c) 1998 Sean Vyain\n"
+"svyain@mail.tds.net"
+
+#: KDat.cpp:148
+msgid "Mount/unmount tape"
+msgstr "Монтировать/размонтировать ленту"
+
+#: KDat.cpp:154
+msgid "Verify"
+msgstr "Проверить"
+
+#: KDat.cpp:168
+msgid "Ready."
+msgstr "Готов."
+
+#: KDat.cpp:230 KDat.cpp:1138
+msgid "Unmount Tape"
+msgstr "Размонтировать ленту"
+
+#: KDat.cpp:399 KDat.cpp:756
+msgid "%m/%d/%y"
+msgstr "%m/%d/%y"
+
+#: KDat.cpp:400
+#, c-format
+msgid "Archive created on %s"
+msgstr "Архив создан %s"
+
+#: KDat.cpp:418
+msgid "Performing backup..."
+msgstr "Производится резервное копирование..."
+
+#: KDat.cpp:431
+#, c-format
+msgid ""
+"WARNING: The estimated archive size is %dKB.\n"
+"The tape has only %dKB of space!\n"
+"\n"
+"Backup anyway?"
+msgstr ""
+"ВНИМАНИЕ: Ожидаемый размер архива - %d Кб.\n"
+"На ленте осталось только %d Кб.\n"
+"\n"
+"Все равно создать резервную копию?"
+
+#: KDat.cpp:433
+msgid "Backup canceled."
+msgstr "Резервное копирование отменено."
+
+#: KDat.cpp:440 TapeDrive.cpp:520 TapeDrive.cpp:541
+msgid "Rewinding tape..."
+msgstr "Перематываю ленту..."
+
+#: KDat.cpp:442
+msgid "Cannot rewind tape.  Backup aborted."
+msgstr "Ошибка перемотки ленты. Резервное копирование прервано."
+
+#: KDat.cpp:443 KDat.cpp:452 KDat.cpp:472
+msgid "Backup aborted."
+msgstr "Резервное копирование прервано."
+
+#: KDat.cpp:449
+msgid "Skipping to end of tape..."
+msgstr "Пропускаю до конца ленты..."
+
+#: KDat.cpp:451
+msgid "Cannot get to end of tape."
+msgstr "Конец ленты не найден."
+
+#: KDat.cpp:456
+msgid "Backup in progress..."
+msgstr "Идет резервное копирование..."
+
+#: KDat.cpp:470
+msgid "Backup complete."
+msgstr "Резервное копирование завершено."
+
+#: KDat.cpp:591
+msgid "Restore in progress..."
+msgstr "Идет восстановление..."
+
+#: KDat.cpp:593
+msgid "Verify in progress..."
+msgstr "Идет проверка..."
+
+#: KDat.cpp:600
+msgid "Restore complete."
+msgstr "Восстановление завершено."
+
+#: KDat.cpp:602
+msgid "Verify complete."
+msgstr "Проверка завершена."
+
+#: KDat.cpp:606
+msgid "Restore aborted."
+msgstr "Восстановление прервано."
+
+#: KDat.cpp:608
+msgid "Verify aborted."
+msgstr "Проверка прервана."
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "KDat: No Tape"
+msgstr "KDat: Нет ленты"
+
+#: KDat.cpp:619 KDat.cpp:627
+msgid "There is no tape in the drive."
+msgstr "Нет ленты в устройстве."
+
+#: KDat.cpp:636
+msgid "KDat: Index Tape"
+msgstr "KDat: Индексировать ленту"
+
+#: KDat.cpp:636
+msgid "The current tape index will be overwritten, continue?"
+msgstr "Текущий индекс ленты будет переписан, продолжить?"
+
+#: KDat.cpp:641 KDat.cpp:1097
+#, c-format
+msgid "KDat: %s"
+msgstr "KDat: %s"
+
+#: KDat.cpp:645
+msgid "Index complete."
+msgstr "Индексирование завершено."
+
+#: KDat.cpp:647
+msgid "Index aborted."
+msgstr "Индексирование прервано."
+
+#: KDat.cpp:656
+msgid "KDat: No Archive Selected"
+msgstr "KDat: Не выбрано ни одного архива"
+
+#: KDat.cpp:656
+msgid "An archive must be selected in the tree."
+msgstr "Должен быть выбран архив на дереве."
+
+#: KDat.cpp:689
+#, c-format
+msgid ""
+"An archive cannot be removed from the middle of the tape.  If\n"
+"the archive '%s' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%s\n"
+"\n"
+" Delete all listed archives?"
+msgstr ""
+"Архив не может быть удален с середины ленты. Если\n"
+"архив '%s' будет удален, тогда\n"
+"следующие за ним архивы также будут удалены:\n"
+"%s\n"
+"\n"
+"Удалить перечисленные архивы?"
+
+#: KDat.cpp:690
+msgid "KDat: Delete Archives?"
+msgstr "KDat: Удалить архивы?"
+
+#: KDat.cpp:692
+msgid "Archives deleted."
+msgstr "Архивы удалены."
+
+#: KDat.cpp:701
+#, c-format
+msgid "Really delete the archive '%s'?"
+msgstr "Вы уверены, что хотите удалить архив '%s'?"
+
+#: KDat.cpp:702
+msgid "KDat: Delete Archive?"
+msgstr "KDat: Удалить архив?"
+
+#: KDat.cpp:704
+msgid "Archive deleted."
+msgstr "Архив удален."
+
+#: KDat.cpp:717
+msgid "KDat: No Tape Index Selected"
+msgstr "KDat: Не выбрано ни одного индекса ленты"
+
+#: KDat.cpp:717
+msgid "A tape index must be selected in the tree."
+msgstr "Необходимо выбрать индекс ленты на дереве."
+
+#: KDat.cpp:724
+msgid "KDat: Tape Is Mounted"
+msgstr "KDat: Лента замонтирована"
+
+#: KDat.cpp:724
+msgid ""
+"The index for a mounted tape cannot be deleted.\n"
+"\n"
+"Unmount the tape and try again."
+msgstr ""
+"Индекс замонтированной ленты не может быть удален.\n"
+"\n"
+"Размонтируйте ленту и повторите."
+
+#: KDat.cpp:729
+#, c-format
+msgid "Really delete the index for '%s'?"
+msgstr "Вы уверены, что хотите удалить индекс для '%s'?"
+
+#: KDat.cpp:730
+msgid "KDat: Delete Tape Index?"
+msgstr "KDat: Удалить индекс ленты?"
+
+#: KDat.cpp:732
+msgid "Tape index deleted."
+msgstr "Индекс ленты удален."
+
+#: KDat.cpp:743
+msgid "KDat: No Tape In Drive"
+msgstr "Kdat: Нет ленты в устройстве"
+
+#: KDat.cpp:743
+msgid ""
+"There is no tape in the tape drive.\n"
+"Please insert a tape and try again."
+msgstr ""
+"В устройстве отсутствует лента.\n"
+"Пожалуйста вставьте ленту и повторите."
+
+#: KDat.cpp:748
+msgid "KDat: Write Protected Tape"
+msgstr "KDat: Лента защищена от записи"
+
+#: KDat.cpp:748
+msgid ""
+"The tape in the drive is write protected.\n"
+"Please disable write protection and try again."
+msgstr ""
+"Лента в устройстве защищена от записи.\n"
+"Пожалуйста снимите защиту от записи и повторите."
+
+#: KDat.cpp:752
+msgid "KDat: Format Tape"
+msgstr "KDat: Форматирование ленты"
+
+#: KDat.cpp:752
+msgid "All data will be lost, continue?"
+msgstr "Все данные будут потеряны, продолжать?"
+
+#: KDat.cpp:757
+#, c-format
+msgid "Tape created on %s"
+msgstr "Лента создана '%s'"
+
+#: KDat.cpp:773
+msgid "Formatting tape..."
+msgstr "Форматирую ленту..."
+
+#: KDat.cpp:776
+msgid "Format complete."
+msgstr "Форматирование завершено."
+
+#: KDat.cpp:790
+#, c-format
+msgid "Backup Profile %d"
+msgstr "Профиль %d"
+
+#: KDat.cpp:807
+msgid "Archive"
+msgstr "Архив"
+
+#: KDat.cpp:828
+msgid "KDat: No Backup Profile Selected"
+msgstr "KDat: Профиль не выбран"
+
+#: KDat.cpp:828
+msgid "A backup profile must be selected in the tree."
+msgstr "Необходимо выбрать профиль на дереве."
+
+#: KDat.cpp:836
+#, c-format
+msgid "Really delete backup profile '%s'?"
+msgstr "Вы уверены, что хотите удалить профиль '%s'?"
+
+#: KDat.cpp:837
+msgid "KDat: Delete Backup Profile?"
+msgstr "KDat: Удаления профиля."
+
+#: KDat.cpp:839
+msgid "Backup profile deleted."
+msgstr "Профиль удален."
+
+#: KDat.cpp:877
+msgid "Tape unmounted."
+msgstr "Лента размонтирована."
+
+#: KDat.cpp:881
+msgid "Reading tape header..."
+msgstr "Читаю заголовок ленты..."
+
+#: KDat.cpp:888 KDat.cpp:890
+msgid "KDat: Unformatted Tape"
+msgstr "KDat: Неформатированная лента"
+
+#: KDat.cpp:888
+msgid "This tape has not been formatted by KDat."
+msgstr "Эта ленты не была форматирована при помощи KDat."
+
+#: KDat.cpp:890
+msgid ""
+"This tape has not been formatted by KDat.\n"
+"\n"
+"Would you like to format it now?"
+msgstr ""
+"Эта ленты не была форматирована при помощи KDat.\n"
+"\n"
+"Форматировать сейчас?"
+
+#: KDat.cpp:901
+msgid "Tape mounted."
+msgstr "Лента замонтирована."
+
+#: KDat.cpp:976
+#, c-format
+msgid "Estimating backup size: %s, %s"
+msgstr "Ожидаемый размер резервной копии: %s, %s"
+
+#: KDat.cpp:1102
+msgid "KDat: <no tape >"
+msgstr "KDat: <нет ленты>"
+
+#: LoggerWidget.cpp:60
+msgid "KDat: Save Log"
+msgstr "KDat: Записать журнал"
+
+#: LoggerWidget.cpp:60
+msgid "Log file exists, overwrite?"
+msgstr "Журнал существует, переписать?"
+
+#: Node.cpp:1182 Node.cpp:1252
+msgid "<no tape>"
+msgstr "<нет ленты>"
+
+#: Node.cpp:1332
+msgid "Tape Indexes"
+msgstr "Индексы лент"
+
+#: Node.cpp:1466
+msgid "Backup Profiles"
+msgstr "Профили"
+
+#: OptionsDlg.cpp:39 OptionsDlg.cpp:40
+msgid "KDat: Options"
+msgstr "KDat: Параметры"
+
+#: OptionsDlg.cpp:44
+msgid "Default tape size:"
+msgstr "Размер ленты по умолчанию:"
+
+#: OptionsDlg.cpp:45
+msgid "Tape block size:"
+msgstr "Размер блока:"
+
+#: OptionsDlg.cpp:46
+msgid "Tape device:"
+msgstr "Устройство:"
+
+#: OptionsDlg.cpp:47
+msgid "Tar command:"
+msgstr "Команда tar:"
+
+#: OptionsDlg.cpp:70
+msgid "bytes"
+msgstr "байт"
+
+#: OptionsDlg.cpp:76 OptionsDlg.cpp:82 VerifyOptDlg.cpp:57
+msgid "..."
+msgstr "..."
+
+#: OptionsDlg.cpp:85
+msgid "Tape drive options"
+msgstr "Параметры устройства"
+
+#: OptionsDlg.cpp:87
+msgid "Load tape on mount"
+msgstr "Загружать кассету при монтировании"
+
+#: OptionsDlg.cpp:90
+msgid "Lock tape drive on mount"
+msgstr "Закрывать устройство при монтировании"
+
+#: OptionsDlg.cpp:93
+msgid "Eject tape on unmount"
+msgstr "Выбрасывать лента при размонтировании"
+
+#: OptionsDlg.cpp:96
+msgid "Variable block size"
+msgstr "Переменная длина блока"
+
+#: Tape.cpp:36
+msgid "New Tape"
+msgstr "Новая лента"
+
+#: Tape.cpp:70 Tape.cpp:76 Tape.cpp:85 Tape.cpp:92 Tape.cpp:99 Tape.cpp:103
+msgid "KDat: Format Failed"
+msgstr "KDat: Ошибка форматирования"
+
+#: Tape.cpp:70 TapeDrive.cpp:222
+msgid "Rewinding tape failed."
+msgstr "Ошибка перемотки назад."
+
+#: Tape.cpp:76
+msgid "Cannot set tape block size."
+msgstr "Не могу установить размер блока."
+
+#: Tape.cpp:85
+msgid "Writing magic string failed."
+msgstr "Ошибка записи ключевой фразы."
+
+#: Tape.cpp:92
+msgid "Writing version number failed."
+msgstr "Ошибка записи номера версии."
+
+#: Tape.cpp:99
+msgid "Writing tape ID length failed."
+msgstr "Ошибка записи длины ID ленты."
+
+#: Tape.cpp:103
+msgid "Writing tape ID failed."
+msgstr "Ошибка записи ID ленты."
+
+#: Tape.cpp:132
+msgid "KDat: Tape Index"
+msgstr "KDat: Индекс ленты"
+
+#: Tape.cpp:132
+msgid ""
+"No index file was found for this tape.\n"
+"Recreate the index from tape?"
+msgstr ""
+"На ленте не найден индексный файл.\n"
+"Создать с ленты?"
+
+#: Tape.cpp:150 Tape.cpp:192 Tape.cpp:471 Tape.cpp:477 Tape.cpp:483
+#: Tape.cpp:490 Tape.cpp:497 Tape.cpp:505 Tape.cpp:512 Tape.cpp:520
+#: Tape.cpp:528 Tape.cpp:535 Tape.cpp:542 Tape.cpp:555 Tape.cpp:567
+#: Tape.cpp:575 Tape.cpp:582 Tape.cpp:589 Tape.cpp:618 Tape.cpp:624
+#: Tape.cpp:630 Tape.cpp:637 Tape.cpp:644 Tape.cpp:652 Tape.cpp:659
+#: Tape.cpp:679 Tape.cpp:685 Tape.cpp:721 Tape.cpp:727
+msgid "KDat: Index File Error"
+msgstr "KDat: Ошибка файла индекса"
+
+#: Tape.cpp:150 TapeDrive.cpp:242
+msgid "Reading version number failed."
+msgstr "Ошибка чтения номера версии."
+
+#: Tape.cpp:191
+#, c-format
+msgid ""
+"The tape index file format is version %d.  The index cannot be read by this "
+"version of KDat.  Perhaps the tape index file was created by a newer version "
+"of KDat?"
+msgstr "Индексный файл имеет номер версии %d.Невозможно прочитать индекс при помощи данной версии KDat. Возможно индексный файл создан более новой версией."
+
+#: Tape.cpp:471 Tape.cpp:618 Tape.cpp:679 Tape.cpp:721 TapeDrive.cpp:259
+msgid "Reading tape ID failed."
+msgstr "Ошибка чтения ID ленты."
+
+#: Tape.cpp:477 Tape.cpp:624 Tape.cpp:685 Tape.cpp:727
+msgid "Tape ID on tape does not match tape ID in index file."
+msgstr "ID ленты на ленте не соответствует ID ленты в файле индекса."
+
+#: Tape.cpp:483 Tape.cpp:630
+msgid "Reading creation time failed."
+msgstr "Ошибка чтения времени создания."
+
+#: Tape.cpp:490 Tape.cpp:637
+msgid "Reading modification time failed."
+msgstr "Ошибка чтения времени изменения."
+
+#: Tape.cpp:497 Tape.cpp:644
+msgid "Reading tape name failed."
+msgstr "Ошибка чтения имени ленты."
+
+#: Tape.cpp:505 Tape.cpp:652
+msgid "Reading tape size failed."
+msgstr "Ошибка чтения размера ленты."
+
+#: Tape.cpp:512 Tape.cpp:659
+msgid "Reading archive count failed."
+msgstr "Ошибка чтения количества архивов."
+
+#: Tape.cpp:520
+msgid "Reading archive name failed."
+msgstr "Ошибка чтения имени архива."
+
+#: Tape.cpp:528
+msgid "Reading archive time stamp failed."
+msgstr "Ошибка чтения времени последней записи."
+
+#: Tape.cpp:535
+msgid "Reading archive start block failed."
+msgstr "Ошибка чтения стартового блока архива."
+
+#: Tape.cpp:542
+msgid "Reading archive end block failed."
+msgstr "Ошибка чтения заключительного блока архива."
+
+#: Tape.cpp:555
+msgid "Reading archive file count failed."
+msgstr "Ошибка чтения количества файлов в архиве."
+
+#: Tape.cpp:567
+msgid "Reading file name failed."
+msgstr "Ошибка чтения имени файла."
+
+#: Tape.cpp:575
+msgid "Reading file size failed."
+msgstr "Ошибка чтения размера файла."
+
+#: Tape.cpp:582
+msgid "Reading file modification time failed."
+msgstr "Ошибка чтения времени изменения файла."
+
+#: Tape.cpp:589
+msgid "Reading file record number failed."
+msgstr "Ошибка чтения количества записей в файле."
+
+#: TapeDrive.cpp:188
+msgid "Tape mounted readonly."
+msgstr "Лента замонтирована только на чтение."
+
+#: TapeDrive.cpp:190
+msgid "Tape mounted read/write."
+msgstr "Лента замонтирована на чтение и запись."
+
+#: TapeDrive.cpp:227
+msgid "Reading magic string..."
+msgstr "Читаю ключевую фразу..."
+
+#: TapeDrive.cpp:230
+msgid "Reading magic string failed."
+msgstr "Ошибка чтения ключевой фразы."
+
+#: TapeDrive.cpp:239
+msgid "Reading version number..."
+msgstr "Читаю номер версии..."
+
+#: TapeDrive.cpp:247
+msgid "KDat: Warning"
+msgstr "KDat: Предупреждение"
+
+#: TapeDrive.cpp:247
+msgid ""
+"Tape was formatted by a more recent version of KDat, consider upgrading."
+msgstr "Лента форматирована более ранней версией KDat. Предлагается произвести обновление."
+
+#: TapeDrive.cpp:251
+msgid "Reading tape ID..."
+msgstr "Читаю ID ленты..."
+
+#: TapeDrive.cpp:254
+msgid "Reading tape ID length failed."
+msgstr "Ошибка чтения длины ID ленты."
+
+#: TapeDrive.cpp:515
+msgid "Skipping to archive..."
+msgstr "Пропускаю до архива..."
+
+#: TapeDrive.cpp:537
+msgid "Skipping to block..."
+msgstr "Пропускаю до блока..."
+
+#: TapeFileInfoWidget.cpp:37
+msgid "Start record:"
+msgstr "Первая запись:"
+
+#: TapeFileInfoWidget.cpp:38
+msgid "End record:"
+msgstr "Последняя запись:"
+
+#: FormatOptDlg.cpp:39 TapeInfoWidget.cpp:40
+msgid "Tape name:"
+msgstr "Имя ленты:"
+
+#: FormatOptDlg.cpp:40 TapeInfoWidget.cpp:41
+msgid "Tape size:"
+msgstr "Размер ленты:"
+
+#: TapeInfoWidget.cpp:42
+msgid "Tape ID:"
+msgstr "ID ленты:"
+
+#: TapeInfoWidget.cpp:45
+msgid "Archive count:"
+msgstr "Количество архивов:"
+
+#: TapeInfoWidget.cpp:46
+msgid "Space used:"
+msgstr "Используемое место:"
+
+#: FormatOptDlg.cpp:36 FormatOptDlg.cpp:37
+msgid "KDat: Format Options"
+msgstr "KDat: Параметры форматирования"
+
+#: VerifyDlg.cpp:61 VerifyDlg.cpp:62
+msgid "KDat: Restore"
+msgstr "KDat: Восстановление"
+
+#: VerifyDlg.cpp:64 VerifyDlg.cpp:65
+msgid "KDat: Verify"
+msgstr "KDat: Проверка"
+
+#: VerifyDlg.cpp:113
+msgid "Differences:"
+msgstr "Разница:"
+
+#: VerifyDlg.cpp:121
+msgid "Restore log:"
+msgstr "Журнал восстановления:"
+
+#: VerifyDlg.cpp:123
+msgid "Verify log:"
+msgstr "Журнал проверки:"
+
+#: VerifyDlg.cpp:315
+msgid "failed while reading tape data.\n"
+msgstr "ошибка чтения данных с ленты.\n"
+
+#: VerifyOptDlg.cpp:38 VerifyOptDlg.cpp:39
+msgid "KDat: Restore Options"
+msgstr "KDat: Параметры восстановления"
+
+#: VerifyOptDlg.cpp:41 VerifyOptDlg.cpp:42
+msgid "KDat: Verify Options"
+msgstr "KDat: Параметры проверки"
+
+#: VerifyOptDlg.cpp:47
+msgid "Restore to directory:"
+msgstr "Восстанавливать в каталог:"
+
+#: VerifyOptDlg.cpp:49
+msgid "Verify in directory:"
+msgstr "Проверять в каталоге:"
+
+#: VerifyOptDlg.cpp:62
+msgid "Restore files:"
+msgstr "Восстанавливать файлы:"
+
+#: VerifyOptDlg.cpp:64
+msgid "Verify files:"
+msgstr "Проверять файлы:"

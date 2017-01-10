@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Hasso C. Tepper <heathcliff@iname.com>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: 1999-01-12 HO:MI+ZONE\n"
+"Last-Translator: Hasso C. Tepper <heathcliff@iname.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "KDE flopi formaatija info"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "Versioon "
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Folpidraiv:"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Tihedus:"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Failisüsteem:"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Formaat"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Kiire kustutamine"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Täielik formaat"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Kirjeldus:"
+
+#: floppy.cpp:148
+msgid "KDE Floppy"
+msgstr "KDE Flopi"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "KDE flopi formaatija"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr "DD"
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"%s -le pole võimalik ligi pääseda.\n"
+"Tee kindlaks kas seade eksisteerib ning\n"
+"et sul on õigus sinna kirjutada."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Faili kfdformat pole võimalik leida.\n"
+"kfdformat kuulub KFloppy distributsiooni.\n"
+"Palun instaleeri KFlopyy korrektselt."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Faili kmke2fs pole võimalik leida.\n"
+"kmke2fs kuulub KFloppy distributsiooni.\n"
+"Palun instaleeri KFlopyy korrektselt."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"Faili kmkdosfs pole võimalik leida.\n"
+"kmkdosfs kuulub KFloppy distributsiooni.\n"
+"Palun instaleeri KFlopyy korrektselt."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Katkestamine"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "Uut programmi pole võimalik käivitada: fork() ebaõnnestus."
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"Flopile või flopidraivile pole võimalik juurde\n"
+"pääseda. Palun aseta flopi flopi draivi ja veendu,\n"
+"et sa oled valinud õige flopi seadme.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"Pole võimalik formaatida: %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Plokk %d on vigane. Jätkamine ..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"Pole võimalik luua failisüsteemi : %s -le\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"Flopi on edukalt formaaditud.\n"
+"Vigaseid plokke: %d\n"
+"Mahutavus: %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "Kõik failid kustutati edukalt."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "Failisüsteemi loomine..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "Testimine..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"Uut programmi pole võimalik käivitada:\n"
+"fork() ebaõnnestus."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Flopi ühendatuse kontrollimisel ilmnes viga\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s on ühendatud.\n"
+"Palun ühenda kõigepealt flopi lahti."

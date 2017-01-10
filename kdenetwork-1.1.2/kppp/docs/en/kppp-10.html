@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kppp Handbook: Appendix</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KPPP Dialer Internet PPP IP PAP CHAP">
+<META NAME="description" CONTENT="KPPP Internet Dialer">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-11.html">Next</A>
+<A HREF="kppp-9.html">Previous</A>
+<A HREF="kppp.html#toc10">Table of Contents</A>
+</P>
+<H3><A NAME="s10">10. Appendix</A></H3>
+
+<P>
+<H3><A NAME="ss10.1">10.1 The Hayes Modem Command Set</A>
+</H3>
+
+<P>
+<A HREF="hayes.html">The Hayes Command Set</A> might come handy if you 
+need to fine-tune your modem commands.
+<P>
+<P>
+<H3><A NAME="ss10.2">10.2 <EM>kppp</EM> related files</A>
+</H3>
+
+<P>By default <EM>kppp</EM> makes use of the following files and directories. The location
+of some of those can be changed at compile time.
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+${KDEDIR}/bin/kppp
+${KDEDIR}/share/doc/HTML/.../kppp/*
+${KDEDIR}/share/apps/kppp
+${KDEDIR}/share/apps/kppp/Rules/*/*.rst
+${KDEDIR}/share/apps/kppp/pics/*
+${HOMEDIR}/.kde/share/apps/kppp
+${HOMEDIR}/.kde/share/apps/kppp/kppp.pid
+${HOMEDIR}/.kde/share/apps/kppp/Log/*
+${HOMEDIR}/.kde/share/config/kppprc
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<H3><A NAME="ss10.3">10.3 Reporting problems with <EM>kppp</EM></A>
+</H3>
+
+<P>Before reporting a problem or potential bug to the 
+<A HREF="kppp-1.html#maintainers">maintainers</A>
+ of <EM>kppp</EM>, 
+please make sure that you have read the section 
+<A HREF="kppp-7.html#&lt;em/kppp/ FAQ">Frequently asked Questions</A> carefully.
+<P>If you still have problems, you need to include the following informations
+with your report:
+<UL>
+<LI>The version of <EM>kppp</EM> you are using. <I>kppp -v</I> will show the
+version number.</LI>
+<LI>The version of pppd you are using. <I>/usr/sbin/pppd -h</I> will show
+the number.</LI>
+<LI>What operating system and version you use. <I>uname -a</I> will tell you this
+information on most UNIX systems.</LI>
+<LI>If <EM>kppp</EM> reports "pppd died unexpectedly", add the <I>debug</I> option
+to the 
+<A HREF="kppp-4.html#pppd arguments">pppd arguments</A>. Dial again to
+reproduce the error.<P>Now the file <CODE>/var/log/messages</CODE> (this depends on your system and
+configuration, but a typically installed Linux system will have this. Of
+course you must have root permissions to read this file) will have a lot of
+debugging output at the end. <B>Don't send us the whole file</B>. It
+typically has several thousands of lines and we neither have time nor are we
+willing to process such a file. Just send us the last lines that
+contain <I>pppd</I>, instead. Make sure that this file does <B>not</B> contain security compromising information such as passwords or usernames. Replace such entries with something like "myusername" and "mypassword"
+</LI>
+</UL>
+<P>
+<P>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-11.html">Next</A>
+<A HREF="kppp-9.html">Previous</A>
+<A HREF="kppp.html#toc10">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

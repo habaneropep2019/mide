@@ -1,0 +1,88 @@
+PWS v0.5
+Roberto Alsina <ralsina@unl.edu.ar>
+----------------------------------------------------------------------
+
++-------------------------+
+| WARNING ------- WARNING |
++-------------------------+
+
+This program installs a web server, and makes it accessible
+to other users on other computers. There is always some risk of
+this being a security risk. I AM NOT RESPONSIBLE FOR IT.
+So, BE CAREFUL.
+DON'T USE IT AS ROOT (It shouldn't work anyway).
+
+So, now that I scared you, keep on reading ;-)
++-------------------------+
+| WARNING --END-- WARNING |
++-------------------------+
+
+
+PWS is a frontend for the incredible mathopd web server.
+It is meant to be used basically as a personal web server, for example,
+if you want to share pictures in a chat page, you need to give a URL
+to the pic.
+
+Well PWS and mathopd let you do that in a painless way.
+
+Just start it, enable the server, and let it roll.
+
+It can also be used easily to provide you with a simple web server.
+In fact, the capabilities of mathopd and its low resource usage make
+it an ideal solution for simple personal homepage serving, and similar
+stuff.
+
+So, if you sometime wanted to have a web server and never dared mess with
+apache and it's kind... here's a chance to play ;-)
+
+PWS is released under your choice of the Artistic license (Read the file
+ARTISTIC for details) or the GPL (read file COPYING).
+
+Mathopd is released under its own license, look in that package.
+
+If you need any other license agreements (but I fail to see why), just ask.
+
+For a list of the things still missing from pws, read the TODO file.
+
+Send suggestions, comments and offers I can't refuse to ralsina@unl.edu.ar
+
+
+
+
+
+Installation Instructions
+-------------------------
+
+PWS has two pieces, the configuration/activation interface (called PWS)
+and the web server itself, which is a great program called mathopd,
+written by Michiel Boland <boland@diva.nl>.
+
+So, you first need to install mathopd. One of the things that make mathopd
+great is just how simple this is.
+
+You should have here a file called mathopd-1.1.tar.gz. That's mathopd.
+
+Untar it in the usual way (gzip -c mathopd-1.1.tar.gz |tar xvf -).
+
+That should give you a directory called mathopd-1.1.
+
+cd mathopd-1.1/src
+./configure
+make
+
+That should create a file called mathopd. That's the server itself.
+Copy it somewhere in your path (/usr/local/bin is usually a good place,
+~/bin is another popular choice if you are not root).
+
+Mathopd is now installed, and we can move to the second piece, PWS itself.
+
+Return to the pws-0.1 directory, and then:
+
+./configure
+make
+make install
+
+And that's it, pws is now installed.
+
+Enjoy!
+

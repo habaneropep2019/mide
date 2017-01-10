@@ -1,0 +1,116 @@
+1999-01-30  Peter Silva <peter.silva@kde.org>
+
+	* Added Weu keyboard which allows access to all accented 
+	  characters on a normal US keyboard without losing normal
+	  key bindings (all accented & dead keys accessed via switch_key)
+	  Dig that US & EU flag...
+
+1999-01-20  Cristian Tibirna  <ctibirna@gch.ulaval.ca>
+
+	* reverted the modifs for the disabling of kikdb autostart
+		(this was wrong and un-called)
+	* set AutoStart=false in the master kikbdrc file.
+	* fixed the installation of the kikbdrc master file
+	* added confirmation dialog on menu-triggered exit, with
+		choice for disabling autoStart.
+
+1999-01-18  Cristian Tibirna  <ctibirna@gch.ulaval.ca>
+
+	* FINALLY!!! Fixed the extremely screwy startup
+	* disabled the first KDE start initialization 
+		(100% of the called votes)
+	* fixed a number of spelling errors
+	* made some dialog boxes read a little clearer
+	* disabled the KConfObject version check for now (useless, however)
+	* lame (temporary) solution to the inversion problem ("Espagnol idioma"
+		isn't correct, whether "English language" is
+
+1999-01-12  Cristian Tibirna  <ctibirna@gch.ulaval.ca>
+
+	* Added HP9000 keyboard codes map thanks to Petter Reinholdtsen
+ 		<pere@hungry.com>
+	* Added pc102 keyboard codes map
+	* Added pc-win keyboard codes map thanks to Peter Silva 
+		<peter.silva@videotron.ca> 
+	* Added Meta_L and Meta_R support in Alternate symbols switchers
+	* Fixed a cut/paste error in fr.kimap
+
+1999-01-07  Cristian Tibirna  <ctibirna@gch.ulaval.ca>
+
+	* Fixed (in the lamest way possible) the bug of non-responsive
+		windows to KiKbd keyboard switch accelerator (the windows
+		newer than kikbd didn't get added to the list of
+		treated windows)
+	* Spellcheck errors (in messages)
+
+1999-01-04  Cristian Tibirna  <ctibirna@gch.ulaval.ca>
+
+	* New French keyboard (contributed by Binois Stephane 
+		<binois@normandnet.fr> through David Fauré <faure@kde.org>)
+
+04 November 1998
+	* Change help page from kcmikbd to kikbd-4.html
+	* Remove support for multiple keys from AltSwitch
+	* Do not expand codes to 4 symbols if alternate symbols not used
+	
+30 October 1998
+	* Using base color instead of white for drawing label in widgets.cpp
+	* Adding readOnly parameter for KObjectConfig anf KiKbdConfig
+	* Fix bug in KeyMap:expandCodes
+
+19 October 1998
+        * us.kimap removed, use en.kimap
+	* Added support to preload x codes from separate file. This is a solution
+	for "symbol not found" error
+	* better language substitution in "Add Map" dialog
+
+4 October 1998	Lars Knoll <knoll@mpi-hd.mpg.de>
+	* Added Hebrew keyboard
+
+16 September 1998
+        * You have to reconfigure kikbd because it now use readBool from
+	KBaseConfig
+	* Added Bulgarian keyboard
+	* Added French keyboard
+	* Added German keyboard
+
+kikbd go to CVS 8 September 1998
+
+version 0.2.1 9 April 1998
+        * Applying new SDK
+	* Added Czech keyboards
+	* Added single Control_R Switch
+	* Added Shift+Shift Switch
+	* Fix of event handling (keyboard in all windows)
+	* Fix session managment code in Global, Window and Class Inputs
+	* Fix kcontrol swallow
+	* Butify Maps TabBox in kcmikbd
+	
+version 0.2.0 18 March 1998
+	* SGML KDE style documentation updated
+	* fixed Alternate switch under Shift bug
+	* QListBox in kcmikbd changed to KTabListBox
+	* simplified kcmikbd
+	* Added partialy translated Russian doc
+	* Translations updated (Added sk and nl)
+	
+version 0.1.9 3 March 1998
+        * Updated keyboard maps
+	* Added spanish translations
+	* Added russian and ukrainian keyboards for Microsoft layouts
+	* "Separated list" moved to "Hot List"
+	* Added single Alt_R Switch
+
+version 0.1.8 1 March 1998
+        * some minor modifications by Bernd Johannes Wuebben <wuebben@math.cornell.edu>
+
+version 0.1.7 24 Feb 1998
+
+	* Us lebel changed to En
+	* List of keyboards dividet intot two - main and additional
+	* Added Canadian French and Ukrainian keyboards
+	* Added Portuguese translations
+	* Added tooltips
+	* Smarter placement on reconfiguration
+	* Documentation updated
+	

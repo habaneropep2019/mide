@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The KBiff Handbook: Questions, Answers, and Tips</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="">
+<META NAME="description" CONTENT="">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+Next<A HREF="kbiff-5.html">Previous</A>
+<A HREF="kbiff.html#toc6">Table of Contents</A>
+</P>
+<H3><A NAME="s6">6. Questions, Answers, and Tips</A></H3>
+
+<P>
+<H3><A NAME="ss6.1">6.1 Are there other KDE-aware "biff" utilities?</A>
+</H3>
+
+<P>
+<P>Yes. There are at least two that I know of. Each "biff" has its own strengths.
+<B>KOrn</B> was the original. It's main strength is the ability to monitor multiple
+mailboxes with one instance and effectively show the number of messages in
+each. If you have many mailboxes and don't care for the cutesy icons, then
+KOrn is probably a better choice than KBiff. The other "biff" is <B>KNewMail</B>.
+KNewMail attempts to emulate the Windows utility NewMail. It checks for POP3
+mail and displays the subject line for each message.
+<H3><A NAME="ss6.2">6.2 What is the difference between a "profile" and a "mailbox" again?</A>
+</H3>
+
+<P>
+<P>A "profile" is a group of one or more mailboxes that one instance of
+KBiff will monitor. And example of a profile is "Inbox". A "mailbox" is
+a physical entity that can be monitored by KBiff. An example of a mailbox is
+"/usr/var/username".
+<H3><A NAME="ss6.3">6.3 How do I use my own pixmaps?</A>
+</H3>
+
+<P>
+<P>Short answer: select them using the setup dialog.
+Longer answer: KBiff
+searches for its icons in the standard KDE icon path. Currently, this is
+<PRE>
+kdedir()/share/apps/kbiff/toolbar
+kdedir()/share/toolbar
+kdedir()/share/icons
+kdedir()/share/apps/kbiff/pics
+$HOME/.kde/share/apps/kbiff/toolbar
+$HOME/.kde/share/toolbar
+$HOME/.kde/share/icons
+$HOME/.kde/share/apps/kbiff/pics
+</PRE>
+<P>Where "kdedir()" is usally "/opt/kde" and $HOME is your home
+directory. If you put your pixmaps in any of these directories (the last one
+listed is recommended), then KBiff should have no problems finding and using
+them.
+<P>If you plan on docking KBiff, you should have a 22x22 (or smaller) version
+of your pixmap. The name of the small pixmap should be the name of the larger
+pixmap preceded by "mini-". So if you want to use the default "oldmail.xpm"
+pixmap for old mail but want to use your own "mycoolpixmap.xpm" smaller pixmap
+when it's docked, you should rename your pixmap to "mini-oldmail.xpm" If
+you do not do this, KBiff will use the large version even in the panel.
+<P>Note that KBiff determines its size by the old mail pixmap. So if your
+pixmap for old mail is 100x100, but all the other ones are 32x32... well, KBiff
+will look very strange every time new mail arrives.
+<H3><A NAME="ss6.4">6.4 How do I use elm (or mutt or PINE) with KBiff?</A>
+</H3>
+
+<P>
+<P>You tried putting "elm" into the Mail Client edit box, didn't you? Whoops!
+'elm', 'mutt', and 'PINE' all need a terminal to run in and KBiff does not
+supply one. The author uses the following as his Mail Client: 
+<PRE>
+kvt -vt_geometry 80x35 -caption Mail -no_scrollbar -e mutt &amp;
+</PRE>
+<P>If you use a graphical email client such as KMail or Netscape, then you
+simply need to put the name of the client in the edit box. No terminal is necessary.
+<H3><A NAME="ss6.5">6.5 Why won't KBiff play my newmail.au file?</A>
+</H3>
+
+<P>
+<P>KBiff uses the KAudio class to play sounds when new mail arrives. Currently,
+this class only supports .wav files. If you wish to play an .au file when new
+mail arrives, try getting the SOX package and put 'play newmail.au' (or just
+'cat newmail.au &gt; /dev/audio') in the Run Command option.
+<H3><A NAME="ss6.6">6.6 Does KBiff work without session management?</A>
+</H3>
+
+<P>
+<P>Yes. Session management is on by default, but you can turn it off in the
+setup dialog. You can still have KBiff start up when KDE starts up by putting
+KBiff into your Autostart folder with the '-profile' option.
+<H3><A NAME="ss6.7">6.7 Clicking on your email address in About does nothing!</A>
+</H3>
+
+<P>
+<P>It would be nice to pass the 'mailto:granroth@kde.org' URL to kfm to process
+it.. unfortunately, this is not implemented yet. I did code in some support,
+though. Just set an environment variable MAILER to whatever your mailer is
+and the link should work.
+<PRE>
+e.g.
+% setenv MAILER kvt -e mutt
+</PRE>
+<P>Note that this has the pleasant side effect that 'mailto:' links in the
+regular kfm will also use your mailer.
+<H3><A NAME="ss6.8">6.8 When I use KBiff to monitor my mailbox, all other 'biff' utilities stop</A>
+ working. What's up?</H3>
+
+<P>
+<P>This is a result of the new message counting code in KBiff. In order for
+KBiff to know how many new messages are in an mbox mailbox, it must open it
+up to read it. When this happens, most other 'biff' utilities (including your
+shell's built-in one) will assume that you read your mailbox and announce it
+as old (or "read") mail.
+<P>There are three ways around this:
+<OL>
+<LI>Don't use KBiff.</LI>
+<LI>Use the 'file' protocol instead of the 'mbox' protocol (note that you'll
+no longer know how many new mails have arrived)</LI>
+<LI>Convert all of your 'mbox' mailboxes to 'maildir'</LI>
+</OL>
+<H3><A NAME="ss6.9">6.9 How do I use Netscape Mail with KBiff?</A>
+</H3>
+
+<P>
+<P>You tried 'netscape -mail', didn't you? You then discovered that this caused
+Netscape to complain about a lockfile if it was already running, right? Well,
+here's a workaround from KBiff user Steven Boger 
+<A HREF="mailto:sboger@marcus-online.net">(sboger@marcus-online.net)</A>
+Create a shell script like so:
+<PRE>
+#!/bin/sh
+</PRE>
+
+<PRE>
+if [ -L "$HOME/.netscape/lock" ]; 
+then 
+netscape -remote 'xfeDoCommand(openInbox)' 
+else 
+netscape -mail &amp; 
+fi
+</PRE>
+<P>
+<H3><A NAME="ss6.10">6.10 KBiff truncates the initial slash in IMAP mode.  Is this a bug?</A>
+</H3>
+
+<P>No, it's a feature!  It is very very rare that one uses an absolute path
+with IMAP.  Nearly all mailbox can (and are) accessed either relative to
+the user's home directory or use symbolic names like 'inbox.
+<P>If you are trying to read 
+<PRE>
+/var/spool/mail/username
+</PRE>
+ try entering
+<PRE>
+inbox
+</PRE>
+ as the mailbox name.
+<P>
+<H3><A NAME="ss6.11">6.11 I have this great feature I want implemented.  What should I do?</A>
+</H3>
+
+<P>First, look at the TODO file in the source distribution (or on the web
+page).  If your feature request is already there, then sit tight -- it may
+well be implemented.  If it is not there... well, it doesn't hurt to ask.
+Email me!
+<P>
+<P ALIGN="RIGHT">
+
+Next<A HREF="kbiff-5.html">Previous</A>
+<A HREF="kbiff.html#toc6">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

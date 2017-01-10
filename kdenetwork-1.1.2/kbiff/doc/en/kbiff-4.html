@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The KBiff Handbook: The Setup Dialog</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="">
+<META NAME="description" CONTENT="">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kbiff-5.html">Next</A>
+<A HREF="kbiff-3.html">Previous</A>
+<A HREF="kbiff.html#toc4">Table of Contents</A>
+</P>
+<H3><A NAME="s4">4. The Setup Dialog</A></H3>
+
+<P>The setup dialog handles all configuration items for KBiff. As a result,
+there is no need for command line parameters in nearly all cases.
+<H3><A NAME="ss4.1">4.1 Profile Name</A>
+</H3>
+
+<P>The top part of the dialog consists of a drop down list and three buttons.
+The drop down list contains the names of all the "profiles." A profile is a
+set of configuration settings for one mailbox under one name. The three
+buttons are New, Rename, and Delete. The buttons work on the profiles,
+only. They do not touch the actual mailbox files. When KBiff is started for
+the first time, there will be one profile automatically created. This is
+the Inbox profile which monitors the system mailbox.
+<P>
+<H3><A NAME="ss4.2">4.2 Preference Tabs</A>
+</H3>
+
+<P>There are four preference tabs. These are full of options that apply to the
+current profile. The current profile is the one that is currently displayed
+in the drop down list. There are no global settings.
+<P>
+<H4>General Preferences</H4>
+
+<P>The general preferences for each profile are contained in this tab. There
+are five fields here:
+<P>
+<H4>Poll</H4>
+
+<P>This setting controls how much time KBiff will wait until it checks the
+mailbox again. The time is in seconds. The default is 60 seconds (one
+minute).
+<P>
+<P>To choose a time other than the default, here, it is a good idea to analyze
+the frequency in which your mail arrives. If, for instance, you have
+<CODE>fetchmail</CODE> downloading new mail every 5 minutes, then it doesn't make sense
+to set the time for less than that. On the other hand, if you are using the
+POP3 or IMAP4 feature of KBiff, you should probably use a higher interval. Setting
+it less than 60 might give you unexpected results if your network
+connection isn't very fast.
+<P>
+<H4>Mail client</H4>
+
+<P>This field specifies what command will run when KBiff is left-clicked.
+While this is typically a mail client, it does not have to be. It can be
+any command that can be run with its own X window. In other words, putting
+<CODE>elm</CODE> in this field will not work. Putting <CODE>kvt -e elm</CODE> would.
+The default is <CODE>kmail -check</CODE>
+<P>
+<H4>Dock in panel</H4>
+
+<P>This controls whether or not KBiff will start docked into the panel or not
+when the user exits the setup dialog. Note that it is still possible to
+switch between docked and undocked regardless of this option. This only
+controls the initial state. This is checked by default.
+<P>
+<H4>Enable session management</H4>
+
+<P>This controls whether or not KDE session management is enabled. This should
+be turned off only in rare cases. The most common case where session
+management is disabled is when a user is running KDE under the same account
+on several different computers at the same time. In this case, it would
+probably be desirable to turn off session management and use the <CODE>-profile</CODE>
+command line option instead.
+<P>In all other cases, session management should probably be left on.
+<P>
+<H4>Icons</H4>
+
+<P>KBiff uses three icons to represent the three states: No Mail, Old Mail,
+and New Mail. The icons shown are the "large" icons. To select new ones,
+click on the buttons and a icon loader dialog will pop up. Note that even
+though KBiff supports animated GIFs, they will not appear animated here.
+<P>
+<H4>New Mail Preferences</H4>
+
+<P>This tab groups together the options that control what happen when new mail
+arrives.
+<P>
+<H4>Run Command</H4>
+
+<P>This is a shell command that will be executed when new mail arrives. A
+typical example of this would be play newmail.au. This would cause the file
+newmail.au to be played whenever new mail arrives. By default, this is
+turned off.
+<P>
+<H4>Play Sound</H4>
+
+<P>This specifies a sound to play when new mail arrives. As of this version,
+it will only play .wav files. Simply specify the path to the file to have
+it played. By default, this is turned off.
+<P>
+<H4>System Beep</H4>
+
+<P>Enabling this will cause KBiff to beep whenever new mail arrives. This is
+probably the least intrusive, yet still active, method of alerting the user
+that new mail as arrived. By default, this is on.
+<P>
+<H4>Notify</H4>
+
+<P>Enabling this will cause KBiff to popup a window when new mail arrives. The
+"notify" message box will list both the mailbox in question and the number of
+new mails.  This option is not recommended on mailboxes that receive lots of
+mail.
+<P>
+<H4>Floating Status</H4>
+
+<P>If this is enabled, KBiff will popup a small box listing all mailboxes
+with their newmail count whenever you the mouse is over the icon (after
+a one second delay).  The effect is similar to that of a tooltip... only
+better.  This isn't technically a new mail feature... but it doesn't fit
+easily anywhere else!
+<P>
+<H4>Mailbox Preferences</H4>
+
+<P>This groups together the options controlling the physical mailboxs themself.
+<P>All options on this tab are PER mailbox.  So if you have three mailboxes in
+this profile, each mailbox will have its own settings on this tab.  However,
+all settings in the other tabs apply profile-wide.  This means that if you
+have the Notify option checking the the New Mail tab, then KBiff will notify
+you that new mail has arrived in all of the mailboxes in this profile.
+<P>
+<H4>Mailbox list</H4>
+
+<P>The listbox on the left of the tab contains the list of mailboxes that the
+current profile will monitor. In most cases, there will be only one (the
+"Default" mailbox).  However, you may have as many mailboxes per profile as
+you wish.
+<P>There are two buttons below the mailbox list.  The button with the mailbox on
+it will create a new mailbox.  The button with the cross will delete a
+mailbox.  If you wish to rename a mailbox, you must delete the old one and
+create a new one with identical properties.
+<P>
+<H4>Protocol</H4>
+
+<P>This determines the protocol for the currently selected mailbox. There are 4
+(and a half) protocols - mbox (Unix style), maildir (Qmail), POP3, and IMAP4.
+The 'file' protocol can be used to monitor any local file as it uses only
+the last read and last modified times to determine the state.
+<P>
+<H4>Mailbox</H4>
+
+<P>This field will not be active with the POP3 protocol.  In all other cases, put
+the path to your mailbox here. In the case of mbox, this will be a file.  With
+maildir, this will be a directory.  It is a folder with IMAP4.
+<P>
+<H4>Server</H4>
+
+<P>This is active only for the IMAP4 and POP3 protocols.
+<P>
+<H4>UserThis is active only for the IMAP4 and POP3 protocols.</H4>
+
+<P>
+<H4>Password</H4>
+
+<P>This is active only for the IMAP4 and POP3 protocols.
+<P>
+<H4>Store Password</H4>
+
+<P>This will save the password between sessions.
+<P>KBiff does not encrypt the password when it is saved! It will scramble it a
+little, but anybody with the source code (or a little patience) could
+unscramble it in an instant. If you are on an insecure network, it is
+strongly recommended that the store password option be turned off
+<P>
+<H4>Advanced</H4>
+
+<P>This will popup a dialog containing advanced features.
+<H4>Mailbox URL</H4>
+
+<P>KBiff handles mailboxes internally as a URL. If you know what you are doing,
+you can directly modify the URL here.  Modifying this is discouraged unless
+you are familiar with the code,
+<P>
+<H4>Port</H4>
+
+<P>Set this to whatever port your server is at.  By default, it will be 110 for
+POP3 and 143 for IMAP4
+<P>
+<H4>PREAUTH</H4>
+
+<P>If you don't know what this means, you probably don't need to use it.
+Basically, it will start checking for new mail in IMAP4 without logging in.
+<P>
+<H4>Keep Alive</H4>
+
+<P>When checked in POP3 or IMAP4 mode, this will keep the connection "alive".
+That is, KBiff will login once and stay logged in. This is not recommended if
+your POP3 or IMAP4 server uses locks.  If locks are in place and KBiff does
+not log out then your mail client will not be able to access your account.
+<P>
+<H4>About</H4>
+
+<P>This tab has information about KBiff.
+<P>
+<H4>About KBiff</H4>
+
+<P>This contains information about which version of KBiff is being used. It
+also has contact information about the author.
+<P>Note that the email address is a hyperlink. Clicking on it is supposed to
+pop up your mail client in order to send mail to the author. Unfortunately,
+there is no automated way of doing this in KBiff at the present time. There
+is some code here, though. To send email using this hyperlink, KBiff looks
+for the environment variable <CODE>MAILER</CODE>. If it finds it, it will use the
+contents of this variable as the email program to use.
+<P>For example, if <CODE>MAILER</CODE> is set like so:
+<PRE>
+  % setenv MAILER "kvt -e mutt"
+</PRE>
+
+then KBiff will use <CODE>kvt -e mutt</CODE> as the default mail client, here.
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kbiff-5.html">Next</A>
+<A HREF="kbiff-3.html">Previous</A>
+<A HREF="kbiff.html#toc4">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

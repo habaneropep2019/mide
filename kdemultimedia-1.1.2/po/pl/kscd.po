@@ -1,0 +1,601 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kscd \n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: 1999-04-18 15:37+0200\n"
+"Last-Translator: Piotr Roszatycki <dexter@fnet.pl>\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "Katalog CDDB"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "Wysy³aj zapytania CDDB do:"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "Serwer CDDB:"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "Uaktualnij"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "W³±cz zdalny CDDB"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "Domy¶lne"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "U¿yj HTTP proxy do po³±czeñ CDDB"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "Edytor informacji CD"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"Ca³kowity czas:\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"Ca³kowity czas:\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "U¿yj tego edytora do opisania ¶cie¿ki"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "U¿yj tego edytora do opisania tytu³u"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "Proszê wybraæ Kategoriê lub wcisn±æ Anuluj"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "Do jakiej kategorii nale¿y ten CD?"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "Wysy³anie wpisu cddb: %s\n"
+
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"Nie mo¿na przekierowaæ danych do:\n"
+" %s"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "W jakim katalogu chcesz zapisaæ tê pozycjê CDDB?"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"Nie mo¿na zapisaæ pliku:\n"
+"%s\n"
+"Proszê sprawdziæ prawa zapisu lub utworzyæ katalog."
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "B³±d Kscd"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "B³êdny wpis informacji"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Pole Artysta / Tytu³ jest nie wype³nione.\n"
+"Proszê poprawiæ to pole i spróbowaæ ponownie."
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"Pole Artysta / Tytu³ jest nieprawid³owo wype³nione.\n"
+"Proszê oddzieliæ artystê od tytu³u uko¶nikiem,\n"
+"np.: Peter Gabriel / Greatest Hits\n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Wszystkie ¶cie¿ki nie mog± byæ puste.\n"
+"Proszê wprowadziæ tytu³u i spróbowaæ ponownie."
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "Wewnêtrzny b³±d"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Proszê skontaktowaæ siê z autorem programu."
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "B³êdna lista utworów\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "Za³aduj"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "Edytor listy utworów"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "Edytuj tytu³ ¶cie¿ki"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "Artysta / Tytu³"
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "¦cie¿ka / Czas / Tytu³"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "Rozsz. info."
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "ID dysku"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "Wprowad¼"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "Konfiguruj kscd"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "Kolor LED:"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "Kolor t³a:"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "Urz±dzenie CDROM:"
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Polecenie dla poczty:"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "Przegl±darka WWW"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "U¿yj kfm jako przegl±darki"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "U¿yj dowolnej przegl±darki:"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "Pokazuj podpowiedzi"
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "W³±cz dokowanie"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr "Automatycznie odtwarzaj"
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr "Dokuj przy minizalizacji"
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr "Zatrzymaj po wyj¶ciu"
+
+#: configdlg.cpp:190
+msgid "Eject on Finish"
+msgstr "Wyrzuæ na koniec"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "Odtwarzaj/Pauza"
+
+#: docking.cpp:75
+msgid "Forward"
+msgstr "W przód"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "W ty³"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "Nastêpny"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "Poprzedni"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "Wyrzuæ"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "Minimalizuj"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr ""
+"Brak jednoznacznego opisu. Proszê wybraæ odpowiedni CD z ni¿ej podanej listy."
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "Proszê wybraæ Tytu³ lub wcisn±æ Anuluj"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr "Dane zosta³y poprawnie wys³ane"
+
+#: kscd.cpp:236
+msgid "Error connecting to server."
+msgstr "B³±d podczas ³±czenia z serwerem."
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr "Brak po³±czenia."
+
+#: kscd.cpp:242
+msgid "Connection timed out."
+msgstr "Przekroczony czas po³±czenia."
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr "Przekroczony czas oczekiwania na odpowied¼ serwera."
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+"Odpowied¼ serwera:\n"
+"\"%s\""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+"B³±d #%d podczas wysy³ania danych przez SMTP.\n"
+"\n"
+"%s"
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "Vol: --"
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Wiadomo¶ci"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "Zakupy"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Magic"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "Powtarzaj CD"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "Wybór ¶cie¿ek"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "30 sek do przodu"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "30 sek do ty³u"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "Nastêpna ¶cie¿ka"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "Poprzednia ¶cie¿ka"
+
+#: kscd.cpp:570
+msgid "Quit Kscd"
+msgstr "Wyjd¼ z Kscd"
+
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "Zegar"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Konfiguruj Kscd"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "Wyrzuæ CD"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "Arty¶ci na WWW"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "Losowe odtwarzanie"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "CDDB"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "CD g³o¶no¶æ"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "Odtwarza"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr "%02d: <Nieznany>"
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "Pauza"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "Losowo"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Nietypowo..."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "Zatrzymany"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "Powtarzanie"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "Wyrzucanie"
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "Konfiguracja kscd"
+
+#: kscd.cpp:1008
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Aktualny opiekun:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd zawiera kod:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Specjalne podziêkowania dla Ti Kan oraz Steve Scherf, twórcom koncepcji bazy "
+"danych CDDB. Wiêcej informacji o CDDB dostêpnych jest pod adresem  "
+"http://www.cddb.com\n"
+"\n"
+"Polskie t³umaczenie:\n"
+"Piotr Roszatycki <dexter@fnet.pl>\n"
+"\n"
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"KSCD Magic oparte na Synaesthesia - Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+
+#: kscd.cpp:1025
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Podziêkowania dla Vadim Zaliva <lord@crocodile.org>\n"
+"za jego pracê nad obs³ug± http proxy.\n"
+"\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr "Ustawienia SMTP"
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Opcje Kscd"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Magic"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "Vol: %02d%%"
+
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"B³±d odczytu CDROM lub dostêpu.\n"
+"Proszê sprawdziæ prawa do:\n"
+"%s"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "Gotowe"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "Wyrzucanie"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "Nie mo¿na pobraæ listy CDDB."
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "Brak wpisu do CDDB."
+
+#: kscd.cpp:1834 kscd.cpp:1844
+msgid "Error getting CDDB entry."
+msgstr "B³±d podczas odczytu danych z CDDB."
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "Przekroczony czas odczytu z CDDB."
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "¦ci Zos"
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Ca³ Sek"
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Ca³ Zos"
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "¦ci Sek"
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "Nie mo¿na uruchomiæ kscdmagic."
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"KSCD Magic zakoñczy³ siê niespodziewanie.\n"
+"Czy kscdmagic jest na pewno zainstalowany?"
+
+#: kscd.cpp:2368
+msgid "Enter the local CDDB base Directory"
+msgstr "Podaj lokalny katalog z danymi CDDB"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: poka¿ opcje\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: w³±cz tryb odpluskwiania\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "Magic Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "Szeroko¶æ okna:"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "Wysoko¶æ okna:"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "Jasno¶æ:"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr "W³±cz wysy³anie przez SMTP"
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr "SMTP Adres:Port"
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr "Twój adres e-mail"

@@ -1,0 +1,358 @@
+* Version 0.4.99	(pputzer 17-June-99)
+	- some small fixes for 1.1.2
+          (this is only an interim version,
+	   neither HEAD nor my development version
+	   will include these modifications - 
+	   most are already in place)
+
+* Version 0.4.6		(pputzer 11-April-99)
+	- removed useless "inline"
+	- better NDEBUG support
+	- added workaround for segfault-bug
+	  (SIGSEGV-handler)
+
+* Version 0.4.5		(pputzer 06-March-99)
+	- small bugfix for Qt 1.43
+	  (QFontMetrics may not be accessed outside
+	  of QPainter::begin( QPaintDevice* ) anymore)
+	  
+* Version 0.4.4		(pputzer 31-January-99)
+	- removed old and useless moc-dependencies
+	  from Makefile.am
+	- small cosmetic fix for pathnames with "/"
+	  appended
+	- service-names starting with "/" are treated
+	  as absolute pathnames now => it is possible
+	  to add entries for scripts that do not lie in
+	  the "Services" directory
+
+* Version 0.4.3		(pputzer 27-January-99)
+	- added KURLLabel again (copied from
+	  kdelibs/kdecore) - without my "personal"
+	  copy of those files I always get segfaults
+	  in the constructor of the "About..." dialog
+
+* Version 0.4.2		(pputzer 14-January-99)
+	- accidentally rm´ed all files
+	- bumped up version number to commemorate 
+	  recovery of source with "mc" (Midnight Commander)
+	- (c) 1997-1999 in "About" dialog
+
+* Version 0.4.1		(pputzer 22-December-98)
+	- looks like I was a bit to quick pronouncing
+	  KSysV ready... I added re-sorting after
+	  the sorting number of an entry is changed
+	  via the properties dialog
+	- fixed paste stuff (the menu that "appends")
+	- added updated documentation
+
+* Version 0.4.0		(pputzer 20-December-98)
+	- we are ready for prime-time: bumped up
+	  version number
+
+* Version 0.3.27	(pputzer 20-December-98)
+	- changed license to just GPLv2 (not GPLv2 "or
+	  at your option, any later version")
+	- removed Kurt Granroth´s copyright from the about
+	  dialog (since KURLLabel is not included with
+	  ksysv anymore), added "Uses KDE libraries" and
+	  "Uses Qt lib" messages.
+	- replaced "(c)" with the real copyright symbol ("©")
+	- removed several un-needed member variables
+	- removed some more excessive "const"
+	- made KSVDragData inspectors inline (they are called
+	  _VERY_ often)
+	- fixed HAVE_SYS_PARAM_H
+	- fixed handling of cut, copy & paste (you can´t
+	  select "Paste" now if nothing is the clipboard,
+	  neither can you "Copy" or "Cut" when no entry
+	  is selected)
+
+* Version 0.3.26	(pputzer 19-December-98)
+	- added Quickhelp (using KQuickHelp)
+	- eliminated my own copy of KURLLabel
+	  (and updated About dialog ´cause Text would be
+	   3 pixels to high with the new version)
+	- found a way to make About dialog fixed size
+	  (using freeze(int,int))
+	- eliminated KNumericSpinbox (replaced by QSpinBox)
+	- "Available Scripts" entries can´t be modified anymore
+	- made properties dialog fixed size
+
+* Version 0.3.25	(pputzer 18-December-98)
+	- fixed segfault when (supposedly) not exiting
+	  the application (had to re-implement closeEvent)
+	- add message handler to eliminate debug() and
+	  Qt warning()s when compiling with -DNDEBUG
+	- fixed behaviour of Preferences dialog
+	- <Enter> and <Return> work now the same as a
+	  doubleclick (calling up properties dialog)
+
+* Version 0.3.24	(pputzer 15-December-98)
+	- fixed compilation error on non-BSD boxes
+	  (introduced by bieker)
+	- fixed "start/stop/restart" (took me some time
+	  to find that multiple-signals bug...)
+	- added some i18n messages I forgot earlier
+
+* Version 0.3.23	(pputzer 01-December-98)
+	- some clean-ups (removed excessive "const")
+	- only usable by root now (same KMsgBox as in
+	  the user manager, but with a "Close" button
+	  (I think someone said to always use "reasonable
+	  labels, not M$-style "OK"/"Cancel")
+	
+* Version 0.3.22	(pputzer 19-November-98)
+	- fixed several warnings with egcs 1.1
+	- fixed bug in moc output
+	- began to update documentation (in SGML again)
+	- disabled printing (won´t be implemented until
+	  after KDE 1.1)
+
+* Version 0.3.21	(pputzer 18-June-98)
+	- since 1.0 is getting near I have to release
+	  this as soon as possible (this will be the last
+	  developer-only release before 1.0)
+	- modified the preference dialog a little,
+	  should be cleaned up, but not before 1.0 comes
+	  out...
+	- fixed a memory hole in KSVTrash/ReadOnlyDragList
+
+* Version 0.3.20	(pputzer 13-June-98)
+	- finally tracked down a bug in KSVDragData
+	  that prevented the correct propagation
+	  of isNew()/new_entry
+
+* Version 0.3.19	(pputzer 11-June-98)
+	- tried to replace QString with
+	  const char* (as a return type)...
+	  couldn't get it to work right, so
+	  I changed that again...
+	- added a Timer for autoscrolling
+
+* Version 0.3.18	(pputzer 09-June-98)
+	- uses KURLLabel now (in About-dialog)
+	  maybe use it for context-sensitive help?
+	- uses KNewPanner for the log diplay now
+	  (log is resizable)
+	- saves panning factor now
+
+* Version 0.3.17	(pputzer 06-June-98)
+	- optimized draw() in draglist.cpp
+	  (now only the neccessary "cells" get
+	   repainted, don't know of any further
+	   optimization to be done)
+	- fixed bug in draw (I mis-used the
+	  QRect(int,int,int,int) constructor)
+	- fixed bug in the deletedItems list
+	- renamed draglist.* to DragListCanvas.*,
+	  DragList.* to DragList.* and
+	  RODragList.* to ReadOnlyDragList.*
+
+* Version 0.3.16	(pputzer 30-May-98)
+	- dumped KTypeLayout
+	- uses layout-managers wherever possible
+
+* Version 0.3.15	(pputzer 28-May-98)
+	- experimented with QLayout
+	  (soon all dialogs will use layout-management,
+	   and I´ll dump ktypelayout)
+
+* Version 0.3.14	(pputzer 26-May-98
+	- should be released soon
+	- saving works now mostly
+
+* Version 0.3.13	(pputzer 25-May-98)
+	- several small fixes
+	- more conforming to style-book
+	- working log
+
+* Version 0.3.12	(pputzer 14-May-98)
+	- doesn´t save settings
+	  on changing path preferences anymore
+	- updated the GUI (progress dialog swallowed
+	  in status bar now)
+
+* Version 0.3.11	(pputzer 11-May-98)
+	- various fixes
+	- implemented clearRL
+	- cleaned-up code
+	  (uses KSVConfig extensively now)
+
+* Version 0.3.10	(pputzer 04-May-98)
+	- fixed annoying bug in KSVDragData::toString()
+	  (actually IMHO a bug in the implicit sharing
+	   in QString) that caused path to become the
+	  "marshalled" object-string...
+	- sort numbers of "changed" items shown in red
+	- generating numbers works now (execpt for empty lists...
+	  (will fix that today)
+	- fixed some memory leaks in drag'n'drop
+
+* Version 0.3.9		(pputzer 02-May-98)
+	- will implement various things suggested
+	  in de.alt.comp.kde (mainly to fix
+	  -- in their opinion -- design errors.
+	- nicer selection
+	- shows sort number now (see also
+	  item one in this list)
+
+* Version 0.3.8		(pputzer 19-Apr-98)
+	- uses the RESTORE macro now
+	- minor fixes for compatibility
+	  with current kdelibs
+
+* Version 0.3.7		(pputzer 03-Apr-98)
+	- connections added to popmenu
+	- started working on clipboard
+	- added (non-functional) undo
+	- working cut, copy & paste!
+
+* Version 0.3.6		(pputzer 01-Apr-98)
+	- fixed superfluous "Changed" bug
+	- various small fixes
+	- removed splash screen
+	  (there is a progress dialog now,
+	   which makes more sense IMO)
+
+* Version 0.3.6		(pputzer 30-Mar-98)
+	- multiple selection seems to work
+	- selection is now a class (KSVSelection)
+
+* Version 0.3.5		(pputzer 22-Mar-98)
+	- added getSelection
+	- allow multiple selected items
+	  ==> hopefully there will soon be
+	      a functional clipboard
+
+* Version 0.3.4		(pputzer 21-Mar-98)
+	- removed some redundant calls of
+	  "repaint(FALSE)"
+	- separated IOCore from KSVCore
+
+* Version 0.3.3		(pputzer 18-Mar-98
+	- now there is text (and transparency)
+	  when dragging icons!!!!
+
+* Version 0.3.2		(pputzer 16-Mar-98)
+	- started seperating GUI and "application logic"
+	- added stub for KSVConfig
+
+* Version 0.3.1		(pputzer 05-Mar-98)
+	- removed KTabCtl (the bug is supposedly fixed)
+	- new icons by the KDE Graphics Team
+	- added splash screen during "load-up"
+	  (really just the timeout for IPC)
+	- nice logo for about box (the icon)
+	- optimized handling of "selected"
+	  draglist (and fixed some conditions)
+	- replaced my "homegrown" TR macro
+	  with i18n()
+
+* Version 0.3.0		(pputzer 10-Feb-98)
+	- added "KTypeLayout" for use in dialog
+	- converted "Copy/Move" dialog to KTypeLayout
+	- converted "Preferences" to KTypeLayout
+	- added my own version of KTabCtl
+	  (until the one in kdeui is fixed)
+
+* Version 0.2.5		(pputzer 01-Feb-98)
+	- Yin-Yang icon for "Restart"
+	- fixed false "changed" flag after changing
+	  path settings
+	- fixed setting of "changed" flag when 
+	  dropping a script on itself.
+
+* Version 0.2.4		(pputzer 21-Jan-98)
+	- added "AutoScroll" feature
+	  (currently based on "mouseMoveEvent" and
+	   therefore very jerky... I'll try to think
+	   of an alternative method)
+	- unfortunately deleted sgml-source for current
+	  documentation => I'll have to write it again :(
+	- added german translation (not yet in cvs)
+	- changed "Scripts" to "Services"
+	- added a few forgotten translate() statements
+	- fixed copy/move with keyboard
+
+* Version 0.2.3dev2	(pputzer 15-Jan-98)
+	- add "Edit" menu (disabled at the moment)
+	- a few more keyboard shortcuts	
+
+* Version 0.2.3dev1	(pputzer 10-Jan-98)
+	- converted to automake
+	- removed some icons from menus
+	  (everything was way too cluttered)
+	- changed version number (due to my numbering
+	  scheme during programming sessions)
+	- minor fixes (I am currently too stressed for
+	  any significant effort :( )
+	- new documentation (done with LyX & LinuxDoc)
+	  [Not finished yet.]
+
+* Version 0.2.0dev2	(pputzer 06-Dec-97)
+	- new icons for entries
+	  (scripts get the mini exec.xpm, start & stop
+	   got their own - hopefully kde icon standard
+	   compliant)
+	- several small fixes
+	- changed msgtype for ipc to 3L / 4L instead
+	  of 1L / 2L to remove conflict with kdehelp
+	  (hopefully this doesn't break anything)
+	
+* Version 0.2.0dev1	(pputzer 30-Nov-97)
+	- rewritten KSVWidgetList
+	  (nice scrolling now ;)
+	- added keyboard control
+	  (not complete)
+	- removed cosmetic bug that didn't update the
+	  status bar properly
+	- look & feel changes
+	  (dropping an entry on the "Scripts" panel
+	   will no longer remove that entry from the
+	   originating panel)
+
+* Version 0.1.5		(pputzer 14-Nov-97)
+	- added pid code from kdehelp
+	  (only one instance of ksysv can be run on
+	   the same machine now)
+	- added much nicer message window for scripts
+	  (and made it switchable :)
+	- modified KSVWidgetList to recognize GUI style
+	- dragging icon with text removed again
+	  (don't know how to make good mask)
+	- added COPYING
+	- pretty icons
+
+* Version 0.1.4		(pputzer 05-Nov-97)
+	- added kludge to name "halt" "reboot" in runlevel 6
+	- made start, stop & restart non-blocking
+	- compiles cleanly now (changed include order)
+
+* Version 0.1.3		(pputzer 26-Oct-97)
+	- added support for pseudo session-management
+	- added TODO
+	- added functionality to Start, Stop & Restart
+	  (this is a very ugly hack)
+	- removed usage of KMsgBox
+	  (now uses QMessageBox instead)
+	- fixed skyrocketing cpu-usage when dialogs popped-up
+	- added temporary icons
+
+* Version 0.1.2		(pputzer 01-Oct-97)
+	- moved menu stuff to ksysv.cpp
+	  (dragwidget/widgetlist now emits
+	    sigPopupMenu)
+	- fixed bug that tried to normalize
+	  absolute filepaths
+	- added Info to runlevel context menus
+	- added Start, Stop & Restart to scripts 
+	  context menu
+
+* Version 0.1.1		(pputzer 30-Sep-97)
+	- added translate() to preferences
+	- added kludge to "halt" executed as reboot
+	  in runlevel 6
+
+* Version 0.1.0		(pputzer 27-Sep-97)
+	- initial release

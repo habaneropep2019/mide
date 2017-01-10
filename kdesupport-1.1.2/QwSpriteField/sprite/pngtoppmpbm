@@ -1,0 +1,20 @@
+#!/bin/sh
+
+PNG=$1
+PPM=${PNG%.png}.ppm
+PGM=${PNG%.png}.pgm
+PBM=${PNG%.png}.pbm
+
+pngtoppmpgm -H 16 16 -c $PNG
+
+# Fix PBM treatment of narrow bit bitmaps
+if [ `head -2 $PGM | tail -1 | sed 's/ .*//'` -lt 9 ]
+then
+	FIX=pnmnoraw
+else
+	FIX=cat
+fi
+
+pgmtopbm -threshold -value 0.1 <$PGM | pnminvert | $FIX >$PBM
+
+rm $PGM

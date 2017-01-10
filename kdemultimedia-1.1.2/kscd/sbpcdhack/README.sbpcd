@@ -1,0 +1,33 @@
+(don't forget to read the original README)
+
+SPECIAL NOTES ON WORKMAN 1.3a mB (hacked)
+-----------------------------------------
+
+The package you have is WorkMan 1.3 hacked for smoother working with
+several drives under Linux.
+
+The changes in the code are enabled with HACK = -DSBPCD-HACK in 
+Makefile.linux. In this distribution, this is the default. If you use
+one of the following drives, workman sould now work more correctly:
+
+ - Any drive handled through the sbpcd driver
+ - Any drive handled through the mcdx driver
+
+"work more correctly" includes the following:
+ - Autodetection of inserted CDs is working. (The correct data is
+   displayed, not old data from the previous disc. "-C" no longer needed).
+ - disc and track repeat are working at the cost of some unplayed frames.
+   (No 'hanging' on the last second(s) of a track).
+ 
+I decided to make /dev/sbpcd the default device if the hack is enabled.
+
+To disable this hack, please comment out the define in Makefile.linux.
+After that, you have plain vanilla WorkMan 1.3a.
+
+For other platforms than Linux, *nothing* has changed in this version
+compared to WorkMan 1.3a.
+
+The original Author will not support this hacked version. Direct any
+questions / flames / tips on this version directly to me.
+
+ -dirk (milliByte@DeathsDoor.com)

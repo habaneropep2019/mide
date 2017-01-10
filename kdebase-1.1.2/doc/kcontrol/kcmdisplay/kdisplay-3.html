@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Display Setup Handbook: Background</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE display configuration">
+<META NAME="description" CONTENT="kcmdisplay help docs">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kdisplay-4.html">Next</A>
+<A HREF="kdisplay-2.html">Previous</A>
+<A HREF="kdisplay.html#toc3">Table of Contents</A>
+</P>
+<H3><A NAME="s3">3. Background</A></H3>
+
+<P>
+<P>The Background setup dialog is comprised of four sections:
+<P>
+<OL>
+<LI>Selection of the <B>Desktop</B> to configure.</LI>
+<LI>The background <B>Preview Monitor</B>.</LI>
+<LI>The background <B>Color</B>.</LI>
+<LI>The background <B>Wallpaper</B>.</LI>
+</OL>
+<P>At the bottom of the screen the
+option <B>Dock into the panel</B>
+allows you to select whether an icon for
+the Background  Display Setting dialog is docked into the Panel
+(this provides quick access to the Display Settings menu,
+and also allows stepping through changing background
+sequences  when the ``<B>Random</B>'' background mode option
+is selected).
+<P>Also at the bottom of the screen is a slider
+allowing the  memory <B>Cache size</B> used by the display to
+be adjusted.
+<P>
+<P>
+<H3><A NAME="ss3.1">3.1 Selection of the Desktop to configure.</A>
+</H3>
+
+<P>The top left <B>Desktop</B> box lists the 
+currently-configured desktops by their assigned names.
+Click on a name to select the corresponding desktop to
+be configured.   
+<P>If you wish to configure a common background for
+all Desktops, select  the <B>Common Background</B>
+option.
+<P>
+<H3><A NAME="ss3.2">3.2 Preview Monitor</A>
+</H3>
+
+<P>
+<P>This is a minature representation of your display background, using the
+current settings.  To apply these settings to your display, press the
+<B>Apply</B> button to continue using the KDE display setup utility, or the
+<B>Ok</B> button to apply your changes and quit.
+<P>
+<P>
+<P><EM>Note:</EM> Pressing <B>Ok</B> or <B>Apply</B> applies changes made in
+<EM>all</EM> of the display setup modules.
+<P>
+<H3><A NAME="ss3.3">3.3 Background Color</A>
+</H3>
+
+<P>
+<P>The display background can be filled with a single color or with a color
+gradient.
+<P>
+<P>
+<P>
+<UL>
+<LI>Select ``<B>One Color</B>'' to fill the background with a single color.
+The background color can be changed by clicking on the colored box which
+shows the currently-selected color.
+This will display a color selection dialog from which
+you may select a new background color.</LI>
+<LI>Select ``<B>Two Color</B>''
+to fill the background with a color gradient or pattern,
+A second colored box will appear. 
+Click on this box to select the second color.
+Now click on the <B>Setup</B> button to choose how to
+blend the two colors. A dialog and Preview box will appear.
+You may choose to progressively blend the colors from 
+<B>top to bottom</B> of the screen, from <B>right to left</B>, 
+or in a <B>pattern</B> selected
+from the list shown.   You will see a preview of the choice you make
+before you apply it. Click <B>OK</B> or <B>Cancel</B> to leave
+this dialog.</LI>
+</UL>
+<P>
+<P>When you are happy with your color selection, press <B>Ok</B> in the color
+selection dialog.  The colors will be updated in the colored
+boxes (and in the Preview
+Monitor,  provided no Wallpaper is selected).
+<P>
+<P>
+<P>
+<P>A blend of the two colors uses only 8 colors, leaving plenty free for other
+applications. However, it requires an image the size of your display to be
+maintained in memory.
+<P>
+<H3><A NAME="ss3.4">3.4 Wallpaper</A>
+</H3>
+
+<P>
+<P>The wallpaper is an image displayed in the background (root window) of your
+display.  To change the wallpaper displayed, select one from the list
+or click the <B>Browse</B> button and select an image.  If wish to
+use a One Color or Two Color background, choose <CODE>No Wallpaper</CODE>. 
+<P>
+<P>Choose from the <B>Arrangement</B> list to select how the
+wallpaper image is applied to the desktop: various tiling, mirroring, or
+scaling schemes are possible, and their effects may be seen in 
+the Preview box.
+<P>
+<P>You may also select the  <B>Random</B> option
+which causes a random sequence
+of backgrounds to be displayed, changing after a specified time
+interval, or when you click on the  Display icon docked in the panel.
+<P>To configure the random sequence of backgrounds:
+<UL>
+<LI> 
+Click on the <B>Setup</B> button to open the
+<B>Random mode setup</B> dialog, which allows you to select 
+the sequence of backgrounds which is sampled.</LI>
+<LI>If the option <B>Pick files from directory</B> is
+selected, the backgrounds wil be
+chosen from the set of wallpaper files in the selected directory
+entered in the box that opens.
+If this option is <B>not</B> selected, they will
+be chosen from a list of backgrounds that can be specified in
+the ``<B>Desktops</B>''  box below.</LI>
+<LI>The <B>Timer Delay in seconds </B> box allows you to set
+the time interval  between background changes.  
+</LI>
+<LI>Select the ``<B>in order</B>'' option to display
+the sequence of backgrounds in order.  If this option is not
+active, the sequence will be sampled randomly.
+</LI>
+<LI> The ``<B>Desktops</B>'' box contains the user-specified
+sequence of  backgrounds that will be sampled if the ``<B>pick files
+from directory</B>'' option is <I>not</I> active.
+<UL>
+<LI>Click on an entry to highlight it; it will be
+previewed in the main Background dialog Preview Monitor.  </LI>
+<LI>Click on <B>Add</B> To add an entry to this sequence.
+This will open a  dialog which
+allows you to choose a Wallpaper file.
+(Initially, the contents of the KDE default wallpaper directory are
+displayed, but you may change
+to other directories).  
+Select a file, and click on ``OK''. If your choice
+is valid, it will be added to the sequence.</LI>
+<LI>Click on <B>Delete</B> to remove the highlighted
+item from the Random Mode backgrounds sequence.</LI>
+</UL>
+
+In this way, you can construct any sequence of backgrounds
+you wish.  Click on <B>OK</B> when you are satisfied with it.</LI>
+</UL>
+<P>
+<P>
+<P>Displaying wallpaper requires that the image be kept in memory.  If you are low
+on memory, using a small, tiled image or none at all is recommended. Note
+that scaling or centering a small image still requires an image the size of
+your display to be maintained in memory.
+<P>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kdisplay-4.html">Next</A>
+<A HREF="kdisplay-2.html">Previous</A>
+<A HREF="kdisplay.html#toc3">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

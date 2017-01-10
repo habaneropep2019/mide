@@ -1,0 +1,84 @@
+This package was cleaned up by Ivan E. Moore II <rkrusty@debian.org>
+This package was debianized by Andreas Jellinghaus <aj@debian.org>.
+Thanks to Brandon Mitchell <bhmit1@mail.wm.edu> for his work on the
+libc5 version.
+
+It was downloaded from ftp.kde.org 
+/pub/kde/stable/Beta1/distribution/tgz/share kdenetwork-*.tgz 
+
+Copyright:
+
+kmail :
+parts from kedit :
+  kedit, a simple text editor for the KDE project
+
+  Requires the Qt widget libraries, available at no cost at
+  http://www.troll.no
+
+  Copyright (C) 1997 Bernd Johannes Wuebben
+  wuebben@math.cornell.edu
+
+  parts:
+  Alexander Sanda <alex@darkstar.ping.at>
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+kalarmtimer:
+/* kalarmtimer: timeout handler using the system's alarm timer
+ *
+ * The alarm timer uses the alarm signal for timeout events. The
+ * advantage of this signal is that the event will also occur when
+ * the application is busy. Qt's timer events only occur when
+ * the application is idle.
+ *
+ * Author: Stefan Taferner <taferner@salzburg.co.at>
+ * This code is under GPL.
+ */ 
+
+parts :
+/**
+ * KMimeMagic is inspired by the code of the
+ * Apache Web Server.
+ *
+ * Rewritten for KDE by Fritz Elfert
+ * fritz@kde.org
+ */
+
+i got a message from one of the kde core developers, martin konold:
+I herby declare any part of KDE in the Version Beta 2 to be coverd by the
+GNU GPL Ver.2 which is not already explicitely covered by any other
+copyright.
+ 
+krn:
+parts from kedit (see above).
+
+// This file os part of KRN, a newsreader for the KDE project.
+// KRN is distributed under the GNU General Public License.
+// Read the acompanying file COPYING for more info.
+
+// KRN wouldn't be possible without these libraries, whose authors have
+// made free to use on non-commercial software:
+//                                                                          //
+// MIME++ by Doug Sauder
+// Qt     by Troll Tech
+//                                                                          //
+// This file is copyright 1997 by
+// Roberto Alsina <ralsina@unl.edu.ar>
+// Magnus Reftel  <d96reftl@dtek.chalmers.se>
+
+parts:
+ * KMimeMagic is inspired by the code of the
+ * Apache Web Server.
+ *
+ * Rewritten for KDE by Fritz Elfert
+ * fritz@kde.org
+
+(some parts without note, so gpl'ed).

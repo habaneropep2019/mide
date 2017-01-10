@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Ôï åã÷åéñßäéï ôïõ  ktalkd : ÅñùôÞóåéò êáé ÁðáíôÞóåéò</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE, KTalkD, talk, ntalk">
+<META NAME="description" CONTENT="The KTalkD manual">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Åðüìåíï</A>
+<A HREF="ktalkd-4.html">Ðñïçãïýìåíï</A>
+<A HREF="ktalkd.html#toc5">Ðåñéå÷üìåíá</A>
+</P>
+<H3><A NAME="s5">5. ÅñùôÞóåéò êáé ÁðáíôÞóåéò</A></H3>
+
+<P>
+<H3><A NAME="ss5.1">5.1 Ãéáôß ï root äåí ëáìâÜíåé åéäïðïéÞóåéò áðü ôï KDE ;</A>
+</H3>
+
+<P>Ãéáôß èá áðïôåëïýóå ôñýðá óôçí áóöÜëåéá.
+Ìðïñåßôå íá îåðåñÜóåôå áõôüí ôïí ðåñéïñéóìü, ðñïóèÝôïíôáò äýï ãñáììÝò óôá áñ÷åßá ñýèìéóçò ôïõ xdm
+(ðïõ åßíáé ôá ßäéá ìå áõôÜ ôïõ kdm).
+Óçìåßùóç : ç äéáíïìÞ linux S.u.S.E óõìðåñéëáìâÜíåé áõôÝò ôéò äýï ãñáììÝò.
+<P>
+<P>ÁõôÜ ôá áñ÷åßá ñõèìßóåùí åäñåýïõí óå Ýíá êáôÜëïãï üðùò ï /etc/X11/xdm,
+Þ ï /usr/X11R6/lib/X11/xdm óå êÜðïéá Üëëá óõóôÞìáôá. Ôá ðáñáêÜôù õðïèÝôïõí ðùò âñßóêïíôáé óôï /etc/X11/xdm, 
+êáé óõíåðþò ßóùò ÷ñåéÜæåôáé íá ôá ìåôáöñÜæåôå ãéá êÜðïéï Üëëï êáôÜëïãï.
+<P>
+<P>Íá ôé ðñÝðåé íá êÜíåôå :
+Äéïñèþóôå ôï áñ÷åßï Xstartup, Þ äçìéïõñãÞóôå ôï, (óôïí êáôÜëïãï ñõèìßóåùí ôïõ xdm) þóôå ðëåüí íá ëÝåé:
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/GiveConsole
+sessreg -a -l $DISPLAY -x /etc/X11/xdm/Xservers $USER
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>êáé ôï áñ÷åßï Xreset þóôå ðëåüí íá ëÝåé:
+<BLOCKQUOTE><CODE>
+<PRE>
+#!/bin/sh
+/etc/X11/xdm/TakeConsole
+sessreg -d -l $DISPLAY $USER   
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Âåâáéùèåßôå ðùò ôï <B>xdm-config</B> êÜíåé áíáöïñÜ óå áõôÜ ôá äýï áñ÷åßá :
+<BLOCKQUOTE><CODE>
+<PRE>
+DisplayManager._0.startup:      /etc/X11/xdm/Xstartup
+DisplayManager._0.reset:        /etc/X11/xdm/Xreset 
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>Áõôü èá êáèïäçãÞóåé ôï kdm (Þ ôï  xdm) íá óõíäÝóåé ôïí ÷ñÞóôç ìå ôï utmp, ðñÜãìá ðïõ åßíáé êáé ôï óùóôü.
+Äåí åßíáé áñìïäéüôçôá ôïõ kvt, ïýôå ôïõ xterm, íá óõíäÝóåé ôïí ÷ñÞóôç óôï óýóôçìá, áëëÜ ôïõ xdm êáé ôïõ  kdm,
+êáôÜ ôçí ãíþìç ìïõ. Ðáñüëá áõôÜ, áõôü äåí èá óõíäÝóåé ôïí ÷ñÞóôç óôï óýóôçìá óáí ÷ñÞóôç ôùí X, áí ÷ñçóéìïðïéåßôáé ôï 
+startx. Êáìßá õðüäåéîç ãéá áõôü;
+<P>
+<H3><A NAME="ss5.2">5.2 Ãéáôß äåí ëáìâÜíù, óáí êáíïíéêüò ÷ñÞóôçò, åéäïðïéÞóåéò áðü KDE ;</A>
+</H3>
+
+<P>Áí ôñÝ÷åôå Ýíá óýóôçìá linux (ìå åíåñãïðïéçìÝíï ôï /proc), áõôü áðïôåëåß óöÜëìá
+(bug). Ðáñáêáëþ óôåßëôå ìïõ ìéá ðåñéãñáöÞ, þóôå íá ôï äéïñèþóù.
+<P>Óå Üëëç ðåñßðôùóç, åßíáé öõóéïëïãéêü : ôï ktalkd äåí âñßóêåé ôïí ÷ñÞóôç, êáèþò ôï KDE äåí ôïí óõíäÝåé ìå ôï
+utmp êáé ôï /proc åßíáé áðåíåñãïðïéçìÝíï.
+Ç ëýóç åßíáé ç ßäéá ìå áõôÞ ôðõ ôìÞìáôïò 5.1, õðü ôïí üñï ðùò ôñÝ÷åôå kdm Þ xdm ãéá íá ìðáßíåôå óôá X.
+Ìéá Üëëç ëýóç åßíáé íá âåâáéùèåßôå ðùò ðÜíôá Ý÷åôå Ýíá xterm áíïé÷ôü.
+<P>
+<H3><A NAME="ss5.3">5.3 Ðùò ìðïñþ íá Ý÷ù ðëçñïöïñßåò áðïóöáëìÜôùóçò áðü ôï ktalkd ?</A>
+</H3>
+
+<P>Êáèþò åßíáé äáßìïíáò, äåí õðÜñ÷åé Ýîïäïò áðïóöáëìÜôùóçò óôçí óôÜíôáñô Ýîïäï. Ãéá íá Ý÷åôå ðëçñïöïñßåò áðïóöáëìÜôùóçò
+(ãéá ðáñÜäåéãìá üôáí èÝëåôå íá ìïõ óôåßëåôå ìéá áíáöïñÜ óöáëìÜôùí !), åíçìåñþóôå ôéò ãñáììÝò óôï inetd.conf 
+ðïõ åêêéíïýí ôá ktalkd êáé kotalkd þóôå íá ãßíïõí :
+<BLOCKQUOTE><CODE>
+<PRE>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd -d
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd -d
+</PRE>
+</CODE></BLOCKQUOTE>
+
+(ðñïóÝîôå ôçí åðéëïãÞ <B>-d</B>)
+<P>
+<P>ÌåôÜ äéïñèþóôå ôï áñ÷åßï /etc/syslog.conf êáé åéóÜãåôå ôçí ðáñáêÜôù ãñáììÞ :
+<BLOCKQUOTE><CODE>
+<PRE>
+*.*         /var/log/all_messages
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Ãéá íá äïõëÝøåé, ðñÝðåé ìåôÜ íá åðáíåêêéíÞóåôå ôï inetd êáé ôï syslogd :
+<BLOCKQUOTE><CODE>
+<PRE>
+% killall -HUP inetd
+% killall -HUP syslogd
+</PRE>
+</CODE></BLOCKQUOTE>
+
+ÔÝëïò, êÜíôå ìéá a talk óõíïìéëßá êáé äåßôå ôï áðïôÝëåóìá óôï /var/log/all_messages
+<P>1/4ôáí õðïâÜëëåôáé ìéá áíáöïñÜ óöáëìÜôùí, ðïôÝ ìçí îå÷Üóåôå íá óõìðåñéëÜâåôå ôçí Ýîïäï áðïóöáëìÜôùóçò, áëëÜ
+åðßóçò êáé ôïí áñéèìü Ýêäïóçò ôïõ ktalkd's êáé ôçí Ýîïäï ôïõ "./configure".
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="ktalkd-6.html">Åðüìåíï</A>
+<A HREF="ktalkd-4.html">Ðñïçãïýìåíï</A>
+<A HREF="ktalkd.html#toc5">Ðåñéå÷üìåíá</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

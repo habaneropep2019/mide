@@ -1,0 +1,488 @@
+<!doctype linuxdoc system>
+
+<article>
+
+<title>The KBiff Handbook
+<author>Kurt Granroth 
+<htmlurl url="mailto:granroth@kde.org" name="&lt;granroth@kde.org&gt;">
+<date>Version 2.3.6 June 03, 1999
+<abstract>KBiff is a KDE aware mail notification utility. It supports MBOX (Unix
+ style), Maildir (Qmail), MH, POP3, IMAP4, and NNTP mailboxes.
+<toc>
+<sect>Introduction
+<p>
+<sect1>Features
+<p>
+
+KBiff is a mail notification utility for the KDE project. It has several
+ advantages over much of its competition:
+<itemize>
+<item><bf>Pure GUI configuration</bf>. No more command line parameters to remember (well,
+ one optional one to make things easier for some people) or strange config files.
+ All settings for KBiff can be done from one setup dialog.
+<item><bf>Session Management</bf>. KBiff starts up with the same configuration you left
+ it with.
+<item><bf>Panel Docking</bf>. KBiff can be docked into the panel very easily. Handy when
+ you are monitoring several mailboxes and don't have room anywhere else.
+<item><bf>Animated GIFs</bf>. You can use animated GIFs as your icons.
+<item><bf>Sounds</bf>. KBiff has an option to play .wav files when new mail arrives.
+<item><bf>POP3, IMAP4, NNTP, Maildir, MBOX, MH</bf>. KBiff supports all major mailbox formats!
+<item><bf>Multiple Mailbox</bf>. KBiff can monitor several mailboxes with one instance.
+<item><bf>Others</bf>. KBiff has scads of other options.
+</itemize>
+
+If you have any comments or requests for more features, feel free to email.
+ 
+
+Kurt Granroth
+
+
+<htmlurl url="mailto:granroth@kde.org" name="&lt;granroth@kde.org&gt;">
+
+<sect>Installation
+<p>
+<sect1>How to obtain KBiff
+<p>
+
+The most current release version in both source and binary formats can
+ always be found at the KBiff homepage. This is at 
+<htmlurl url="http://www.pobox.com/&tilde;kurt_granroth/kbiff" name="http://www.pobox.com/&tilde;kurt_granroth/kbiff">
+ KBiff is also now part of the KDE Networks package. As such, the bleeding edge
+ release can always be found in the KDE CVS repository.
+<sect1>Requirements
+<p>
+
+In order to successfully compile KBiff, you need at least the 1.0 version
+ of KDE. All required libraries can be found on 
+<htmlurl url="ftp://ftp.kde.org/pub/kde" name="ftp://ftp.kde.org/pub/kde">.
+<sect1>Compilation and Installation
+<p>
+
+Compiling KBiff is very easy. The following should do it:
+<code>
+&percnt; ./configure
+&percnt; make
+&percnt; make install
+</code>
+
+That should do it! Should you run into any problems, please report them
+ to the <htmlurl url="mailto:granroth@kde.org" name="author">
+<sect>Using KBiff
+<p>
+
+Almost every feature of KBiff can be configured from the Setup dialog.
+ What few command line parameters KBiff has are mostly for convenience -- some
+ options just make more sense on the command line.
+<sect1>The "profile"
+<p>
+
+KBiff revolves around something called a "profile" A profile is simply
+ a container for one or mailboxes that KBiff will monitor. For instance, there
+ will always be one default profile called "Inbox" (or something else if you
+ rename it). This profile will contain one mailbox, usually something like "/var/mail/username".
+ It could just as well hold several mailboxes, though. Each instance of KBiff
+ (that is, each visible icon) corresponds to one profile.
+<sect1>Command Line Parameters
+<p>
+
+KBiff supports three command line parameters. They are: <bf>profile</bf>, <bf>debug</bf>,
+ and <bf>secure</bf>.
+<verb>
+-profile &lt;profile_name&gt; Bypass the Setup dialog and start KBiff directly in the 
+                        given profile. e.g., 'kbiff -profile Inbox'
+-debug                  Turns on verbose debugging. Use this only if you are
+                        having problems with KBiff
+-secure                 Disables the setup dialog. Useful when you want KBiff
+                        displayed but don't want others to modify it.
+</verb>
+<sect>The Setup Dialog
+<p>
+The setup dialog handles all configuration items for KBiff. As a result,
+there is no need for command line parameters in nearly all cases.
+<sect1>Profile Name
+<p>
+The top part of the dialog consists of a drop down list and three buttons.
+The drop down list contains the names of all the "profiles." A profile is a
+set of configuration settings for one mailbox under one name. The three
+buttons are New, Rename, and Delete. The buttons work on the profiles,
+only. They do not touch the actual mailbox files. When KBiff is started for
+the first time, there will be one profile automatically created. This is
+the Inbox profile which monitors the system mailbox.
+
+<sect1>Preference Tabs
+<p>
+There are four preference tabs. These are full of options that apply to the
+current profile. The current profile is the one that is currently displayed
+in the drop down list. There are no global settings.
+
+<sect2>General Preferences
+<p>
+The general preferences for each profile are contained in this tab. There
+are five fields here:
+
+<sect3>Poll
+<p>
+This setting controls how much time KBiff will wait until it checks the
+mailbox again. The time is in seconds. The default is 60 seconds (one
+minute).
+<p>
+
+To choose a time other than the default, here, it is a good idea to analyze
+the frequency in which your mail arrives. If, for instance, you have
+<tt>fetchmail</tt> downloading new mail every 5 minutes, then it doesn't make sense
+to set the time for less than that. On the other hand, if you are using the
+POP3 or IMAP4 feature of KBiff, you should probably use a higher interval. Setting
+it less than 60 might give you unexpected results if your network
+connection isn't very fast.
+
+<sect3>Mail client
+<p>
+This field specifies what command will run when KBiff is left-clicked.
+While this is typically a mail client, it does not have to be. It can be
+any command that can be run with its own X window. In other words, putting
+<tt>elm</tt> in this field will not work. Putting <tt>kvt -e elm</tt> would.
+The default is <tt>kmail -check</tt>
+
+<sect3>Dock in panel
+<p>
+This controls whether or not KBiff will start docked into the panel or not
+when the user exits the setup dialog. Note that it is still possible to
+switch between docked and undocked regardless of this option. This only
+controls the initial state. This is checked by default.
+
+<sect3>Enable session management
+<p>
+This controls whether or not KDE session management is enabled. This should
+be turned off only in rare cases. The most common case where session
+management is disabled is when a user is running KDE under the same account
+on several different computers at the same time. In this case, it would
+probably be desirable to turn off session management and use the <tt>-profile</tt>
+command line option instead.
+<p>
+In all other cases, session management should probably be left on.
+
+<sect3>Icons
+<p>
+KBiff uses three icons to represent the three states: No Mail, Old Mail,
+and New Mail. The icons shown are the "large" icons. To select new ones,
+click on the buttons and a icon loader dialog will pop up. Note that even
+though KBiff supports animated GIFs, they will not appear animated here.
+
+<sect2>New Mail Preferences
+<p>
+This tab groups together the options that control what happen when new mail
+arrives.
+
+<sect3>Run Command
+<p>
+This is a shell command that will be executed when new mail arrives. A
+typical example of this would be play newmail.au. This would cause the file
+newmail.au to be played whenever new mail arrives. By default, this is
+turned off.
+
+<sect3>Play Sound
+<p>
+This specifies a sound to play when new mail arrives. As of this version,
+it will only play .wav files. Simply specify the path to the file to have
+it played. By default, this is turned off.
+
+<sect3>System Beep
+<p>
+Enabling this will cause KBiff to beep whenever new mail arrives. This is
+probably the least intrusive, yet still active, method of alerting the user
+that new mail as arrived. By default, this is on.
+
+<sect3>Notify
+<p>
+Enabling this will cause KBiff to popup a window when new mail arrives. The
+"notify" message box will list both the mailbox in question and the number of
+new mails.  This option is not recommended on mailboxes that receive lots of
+mail.
+
+<sect3>Floating Status
+<p>
+If this is enabled, KBiff will popup a small box listing all mailboxes
+with their newmail count whenever you the mouse is over the icon (after
+a one second delay).  The effect is similar to that of a tooltip... only
+better.  This isn't technically a new mail feature... but it doesn't fit
+easily anywhere else!
+
+<sect2>Mailbox Preferences
+<p>
+This groups together the options controlling the physical mailboxs themself.
+<p>
+All options on this tab are PER mailbox.  So if you have three mailboxes in
+this profile, each mailbox will have its own settings on this tab.  However,
+all settings in the other tabs apply profile-wide.  This means that if you
+have the Notify option checking the the New Mail tab, then KBiff will notify
+you that new mail has arrived in all of the mailboxes in this profile.
+<p>
+<sect3>Mailbox list
+<p>
+The listbox on the left of the tab contains the list of mailboxes that the
+current profile will monitor. In most cases, there will be only one (the
+"Default" mailbox).  However, you may have as many mailboxes per profile as
+you wish.
+<p>
+There are two buttons below the mailbox list.  The button with the mailbox on
+it will create a new mailbox.  The button with the cross will delete a
+mailbox.  If you wish to rename a mailbox, you must delete the old one and
+create a new one with identical properties.
+<p>
+<sect3>Protocol
+<p>
+This determines the protocol for the currently selected mailbox. There are 4
+(and a half) protocols - mbox (Unix style), maildir (Qmail), POP3, and IMAP4.
+The 'file' protocol can be used to monitor any local file as it uses only
+the last read and last modified times to determine the state.
+<p>
+<sect3>Mailbox
+<p>
+This field will not be active with the POP3 protocol.  In all other cases, put
+the path to your mailbox here. In the case of mbox, this will be a file.  With
+maildir, this will be a directory.  It is a folder with IMAP4.
+<p>
+<sect3>Server
+<p>
+This is active only for the IMAP4 and POP3 protocols.
+<p>
+<sect3>User
+
+This is active only for the IMAP4 and POP3 protocols.
+<p>
+<sect3>Password
+<p>
+This is active only for the IMAP4 and POP3 protocols.
+<p>
+<sect3>Store Password
+<p>
+This will save the password between sessions.
+<p>
+KBiff does not encrypt the password when it is saved! It will scramble it a
+little, but anybody with the source code (or a little patience) could
+unscramble it in an instant. If you are on an insecure network, it is
+strongly recommended that the store password option be turned off
+<p>
+<sect3>Advanced
+<p>
+This will popup a dialog containing advanced features.
+<sect4>Mailbox URL
+<p>
+KBiff handles mailboxes internally as a URL. If you know what you are doing,
+you can directly modify the URL here.  Modifying this is discouraged unless
+you are familiar with the code,
+<p>
+<sect4>Port
+<p>
+Set this to whatever port your server is at.  By default, it will be 110 for
+POP3 and 143 for IMAP4
+<p>
+<sect4>PREAUTH
+<p>
+If you don't know what this means, you probably don't need to use it.
+Basically, it will start checking for new mail in IMAP4 without logging in.
+<p>
+<sect4>Keep Alive
+<p>
+When checked in POP3 or IMAP4 mode, this will keep the connection "alive".
+That is, KBiff will login once and stay logged in. This is not recommended if
+your POP3 or IMAP4 server uses locks.  If locks are in place and KBiff does
+not log out then your mail client will not be able to access your account.
+
+<sect2>About
+<p>
+This tab has information about KBiff.
+
+<sect3>About KBiff
+<p>
+This contains information about which version of KBiff is being used. It
+also has contact information about the author.
+<p>
+Note that the email address is a hyperlink. Clicking on it is supposed to
+pop up your mail client in order to send mail to the author. Unfortunately,
+there is no automated way of doing this in KBiff at the present time. There
+is some code here, though. To send email using this hyperlink, KBiff looks
+for the environment variable <tt>MAILER</tt>. If it finds it, it will use the
+contents of this variable as the email program to use.
+<p>
+For example, if <tt>MAILER</tt> is set like so:
+<verb>
+  % setenv MAILER "kvt -e mutt"
+</verb>
+then KBiff will use <tt>kvt -e mutt</tt> as the default mail client, here.
+<p>
+
+<sect>The Popup Menu
+<p>
+
+The popup menu is activated whenever the right mouse button is clicked
+ in the KBiff icon area.
+<sect1>(Un)Dock
+<p>
+
+This docks or undocks KBiff from the panel. This option will only work
+ in KDE complient window managers like KWM. The default state is determined
+ by the setup dialog.
+<sect1>Setup
+<p>
+
+This will activate the setup dialog. See the Setup Dialog section for more details.
+
+<sect1>Help
+<p>
+
+This activates the online help (this).
+<sect1>Check Mail Now
+<p>
+
+This forces KBiff to check for new mail right now, regardless of the poll
+ time. This will check all mailboxes in a profile.
+<sect1>Read Mail Now
+<p>
+
+This will force KBiff to act like all mailboxes in the current profile
+ are "old." This makes most sense when you have new mail on a remote server
+ (pop3 or imap4) and don't feel like downloading it right then.
+<sect1>Stop/Start
+<p>
+
+This will either stop or start KBiff.
+<sect>Questions, Answers, and Tips
+<p>
+<sect1>Are there other KDE-aware "biff" utilities?
+<p>
+
+Yes. There are at least two that I know of. Each "biff" has its own strengths.
+ <bf>KOrn</bf> was the original. It's main strength is the ability to monitor multiple
+ mailboxes with one instance and effectively show the number of messages in
+ each. If you have many mailboxes and don't care for the cutesy icons, then
+ KOrn is probably a better choice than KBiff. The other "biff" is <bf>KNewMail</bf>.
+ KNewMail attempts to emulate the Windows utility NewMail. It checks for POP3
+ mail and displays the subject line for each message.
+<sect1>What is the difference between a "profile" and a "mailbox" again?
+<p>
+
+A "profile" is a group of one or more mailboxes that one instance of
+ KBiff will monitor. And example of a profile is "Inbox". A "mailbox" is
+ a physical entity that can be monitored by KBiff. An example of a mailbox is
+ "/usr/var/username".
+<sect1>How do I use my own pixmaps?
+<p>
+
+Short answer: select them using the setup dialog.
+Longer answer: KBiff
+ searches for its icons in the standard KDE icon path. Currently, this is
+<verb>kdedir()/share/apps/kbiff/toolbar
+kdedir()/share/toolbar
+kdedir()/share/icons
+kdedir()/share/apps/kbiff/pics
+&dollar;HOME/.kde/share/apps/kbiff/toolbar
+&dollar;HOME/.kde/share/toolbar
+&dollar;HOME/.kde/share/icons
+&dollar;HOME/.kde/share/apps/kbiff/pics
+</verb>
+
+Where "kdedir()" is usally "/opt/kde" and &dollar;HOME is your home
+ directory. If you put your pixmaps in any of these directories (the last one
+ listed is recommended), then KBiff should have no problems finding and using
+ them.
+
+If you plan on docking KBiff, you should have a 22x22 (or smaller) version
+ of your pixmap. The name of the small pixmap should be the name of the larger
+ pixmap preceded by "mini-". So if you want to use the default "oldmail.xpm"
+ pixmap for old mail but want to use your own "mycoolpixmap.xpm" smaller pixmap
+ when it's docked, you should rename your pixmap to "mini-oldmail.xpm" If
+ you do not do this, KBiff will use the large version even in the panel.
+
+Note that KBiff determines its size by the old mail pixmap. So if your
+ pixmap for old mail is 100x100, but all the other ones are 32x32... well, KBiff
+ will look very strange every time new mail arrives.
+<sect1>How do I use elm (or mutt or PINE) with KBiff?
+<p>
+
+You tried putting "elm" into the Mail Client edit box, didn't you? Whoops!
+ 'elm', 'mutt', and 'PINE' all need a terminal to run in and KBiff does not
+ supply one. The author uses the following as his Mail Client: 
+<verb>kvt -vt_geometry 80x35 -caption Mail -no_scrollbar -e mutt &amp;
+</verb>
+
+If you use a graphical email client such as KMail or Netscape, then you
+ simply need to put the name of the client in the edit box. No terminal is necessary.
+<sect1>Why won't KBiff play my newmail.au file?
+<p>
+
+KBiff uses the KAudio class to play sounds when new mail arrives. Currently,
+ this class only supports .wav files. If you wish to play an .au file when new
+ mail arrives, try getting the SOX package and put 'play newmail.au' (or just
+ 'cat newmail.au &gt; /dev/audio') in the Run Command option.
+<sect1>Does KBiff work without session management?
+<p>
+
+Yes. Session management is on by default, but you can turn it off in the
+ setup dialog. You can still have KBiff start up when KDE starts up by putting
+ KBiff into your Autostart folder with the '-profile' option.
+<sect1>Clicking on your email address in About does nothing!
+<p>
+
+It would be nice to pass the 'mailto:granroth@kde.org' URL to kfm to process
+ it.. unfortunately, this is not implemented yet. I did code in some support,
+ though. Just set an environment variable MAILER to whatever your mailer is
+ and the link should work.
+<verb>e.g.
+&percnt; setenv MAILER kvt -e mutt
+</verb>
+
+Note that this has the pleasant side effect that 'mailto:' links in the
+ regular kfm will also use your mailer.
+<sect1>When I use KBiff to monitor my mailbox, all other 'biff' utilities stop
+ working. What's up?
+<p>
+
+This is a result of the new message counting code in KBiff. In order for
+ KBiff to know how many new messages are in an mbox mailbox, it must open it
+ up to read it. When this happens, most other 'biff' utilities (including your
+ shell's built-in one) will assume that you read your mailbox and announce it
+ as old (or "read") mail.
+
+There are three ways around this:
+<enum>
+<item>Don't use KBiff.
+<item>Use the 'file' protocol instead of the 'mbox' protocol (note that you'll
+ no longer know how many new mails have arrived)
+<item>Convert all of your 'mbox' mailboxes to 'maildir'
+</enum>
+<sect1>How do I use Netscape Mail with KBiff?
+<p>
+
+You tried 'netscape -mail', didn't you? You then discovered that this caused
+ Netscape to complain about a lockfile if it was already running, right? Well,
+ here's a workaround from KBiff user Steven Boger 
+<htmlurl url="mailto:sboger@marcus-online.net" name="(sboger@marcus-online.net)">
+ Create a shell script like so:
+<verb>&num;!/bin/sh
+</verb>
+<verb>if &lsqb; -L "&dollar;HOME/.netscape/lock" &rsqb;; 
+then 
+netscape -remote 'xfeDoCommand(openInbox)' 
+else 
+netscape -mail &amp; 
+fi
+</verb>
+
+<sect1>KBiff truncates the initial slash in IMAP mode.  Is this a bug?
+<p>
+No, it's a feature!  It is very very rare that one uses an absolute path
+with IMAP.  Nearly all mailbox can (and are) accessed either relative to
+the user's home directory or use symbolic names like 'inbox.
+<p>
+If you are trying to read <verb>/var/spool/mail/username</verb> try entering
+<verb>inbox</verb> as the mailbox name.
+
+<sect1>I have this great feature I want implemented.  What should I do?
+<p>
+First, look at the TODO file in the source distribution (or on the web
+page).  If your feature request is already there, then sit tight -- it may
+well be implemented.  If it is not there... well, it doesn't hurt to ask.
+Email me!
+
+</article>

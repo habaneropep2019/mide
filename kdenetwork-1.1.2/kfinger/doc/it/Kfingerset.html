@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.03 [en] (X11; I; Linux 2.0.33 i586) [Netscape]">
+   <TITLE>Kfinger Help - Setup</TITLE>
+</HEAD>
+<BODY>
+<B>Kfinger - Finestra Impostazioni</B>
+<BR><IMG SRC="setupw.gif" ALT="KFinger Setup Window" HEIGHT=368 WIDTH=258>
+
+<P>Nella finestra delle impostazioni del kfinger trovi:
+<BR><A HREF="#userserver">Liste Utenti e Server</A>
+<BR><A HREF="#time">Varie</A>
+<BR><A HREF="#talk">Parla</A>
+<BR>&nbsp;
+
+<P><A NAME="userserver"></A><B>Liste Utenti e Server</B>
+<UL>Per aggiungere una voce alla lista devi soltanto scrivere il nome che
+vuoi aggiungere nello spazio a sinistra del pulsante aggiungi e quindi
+premere tale pulsante. Se vuoi aggiungere una voce in una particolare posizione
+devi prima selezionare la posizione nella lista premendo il tasto sinistro
+del mouse nel punto opportuno.
+<BR>Per rimuovere dalla lista una voce devi selezionarla sempre con il
+pulsante sinistro e quindi premere il pulsante rimuovi.</UL>
+<A NAME="time"></A><B>Varie</B>
+<UL>Qui trovi tre cose:
+<OL>
+<LI>
+Una casella per attivare/disattivare il finger automatico</LI>
+
+<LI>
+Una barra "scorrevole" che ti permette di selezionare la durata della pausa
+tra l'esecuzione di un finger e l'altra</LI>
+
+<LI>
+Uno spazio contenente il nome del programma usato come talk</LI>
+</OL>
+</UL>
+<A NAME="talk"></A><B>TALK LAUNCHER SETUP</B>
+
+<P>&nbsp;The talk launcher permit you to see who is logged on a server
+and than to talk with him only clicking on Talk Launcher button &amp; selecting
+the desired user.
+<BR>Kfinger execute "Ktalk userVar@ServerVar"
+<BR>To get the two Var Ktalk use 3 methods:
+<BR><A HREF="#fout">-Scanf from finger output(FINGER OUTPUT)</A>
+<BR><A HREF="#fval">-Using the same value in ToolBar ComboBox(FINGER SERVER
+or USER)</A>
+<BR><A HREF="#fixed">-Using a fixed value(FIXED)</A>
+<BR><IMG SRC="formatw.gif" ALT="KFinger Talk settings" HEIGHT=491 WIDTH=664>
+
+<P><A NAME="fout"></A><B>Finger output</B>
+<BR>To select how Kfinger have to get from finger output the values you
+must press "Format.."
+<BR>Kfinger could read 2 Vars, with C function scanf, from finger output;
+the two vars are an integer(var2) and a string(var1). You must specify
+a format string for scanf and an offset for the read string (how many characters
+must be ignored before start to read).
+<BR>Than you have to create a format string for the output.
+
+<P>EXAMPLE:
+<BR>I have the following output with kfinger and I want to obtain a talkLauncher
+list where the username is "root" and the server is "portNNN-ISDN.InterService.com"
+:
+<PRE>&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; idle
+&nbsp;&nbsp;
+Jack01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10
+
+Mary&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+&nbsp;
+robert&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</PRE>
+You can set:
+<BR>Lines to skip: 1
+<BR>User: Fixed to "root"
+<BR>Server: Finger output with the following settings:
+<BR><IMG SRC="formatex.gif" ALT="Example" HEIGHT=358 WIDTH=418>
+
+<P>
+<HR><A HREF="mailto:bilibao@ouverture.it">Andrea Rizzi</A>
+<BR><A HREF="mailto:bilibao@ouverture.it">Bilibao@ouverture.it</A>
+</BODY>
+</HTML>

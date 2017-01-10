@@ -1,0 +1,66 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {ksprogress.h}
+	ClassSource {ksprogress.cpp}
+	ClassName {KSProgress}
+	DataHeader {ksprogressdata.h}
+	DataSource {ksprogressdata.cpp}
+	DataName {ksprogressData}
+	WindowBaseClass {QFrame}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {250 130}
+MinSize {250 140}
+MaxSize {250 140}
+Grid {10}
+
+User {
+		UserClassHeader {kprogress.h}
+		UserClassName {KProgress}
+		Rect {10 60 230 20}
+		Name {User_1}
+		Variable {progress}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Cancel}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {70 90 100 30}
+		Name {PushButton_1}
+		Signal {[Protected]  clicked --> cancelPressed  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {fileName}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 10 230 20}
+		Name {Label_1}
+		Variable {fileName}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {XferStatus}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 35 230 20}
+		Name {Label_2}
+		Variable {transferStatus}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

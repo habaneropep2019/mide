@@ -1,0 +1,314 @@
+<!doctype linuxdoc system>
+
+<!-- Manual del Ktalkd. -->
+
+<article>
+
+<!-- Información del Título -->
+
+<title>Manual del Ktalkd
+<author>David Faure <tt/David.Faure@insa-lyon.fr/
+<date>Versión 0.8.6, Agosto 15, 1998
+<abstract>
+Este manual describe la Versión 0.8.6 de Ktalkd 
+</abstract>
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+<sect>Introducción
+<p>
+
+<tt/ktalkd/ es un demonio de talk mejorado - el programa procesa las
+peticiones entrantes de talk, las anuncia y te permite responderlas con un
+cliente de talk.
+GLOSARIO : En estas páginas, si alguien quiere hablar contigo, se te
+designará como "llamado".
+
+<tt/Ktalkd/ tiene las siguientes características :
+
+<descrip>
+<tag/KDE o no KDE/
+Esta es la cuestión. :) Más en serio, esto significa que <tt/Ktalkd/ puede
+ser compilado con o sin el soporte de KDE.
+Para usarlo sin KDE, el proceso de compilación detectará si las X, las Qt o
+las KDE no están instaladas, pero puedes forzar un demonio "no-KDE" si usas
+la opción de configuración '--without-X'.
+
+<tag/Máquina contestadora/
+Si el llamado no esta conectado, o no responde tras el segundo anuncio, una
+"Máquina contestadora" arrancará, coje el mensaje y lo envía por correo al
+llamado.
+
+<tag/Sonido/
+Si se quiere, puede sonar un sonido con el anuncio.
+
+<tag/Anuncio en X/
+Si se compila con las KDE instaladas, Ktalkd usará <bf/ktalkdlg/, 
+un cuadro de KDE para el anuncio.
+
+<tag/Anuncios en varios monitores/
+Si estás conectado de forma remota (ej. con un comando
+<tt/"export DISPLAY=..."/), el aviso de X se hará en este
+monitor también. ¡ Responde donde quieras !
+
+<tag/Reenvíando   <it/(Nuevo desde 0.8.0)//
+Puedes configurar un reenvío a otro usuario incluso a otra máquina si estás
+fuera. Hay tres métodos de reenvío diferentes. Mira en la sección "Uso".
+
+<tag/Configuración/
+Si se compila con KDE, lee la información de los archivos de configuración
+de KDE, el entorno ($KDEDIR/share/config/ktalkdrc) y el del usuario, en su
+propio directorio principal.
+
+El entorno uno debe de ser editado de forma manual por el administrador,
+pero ahora hay un cuadro de configuración para el usuario uno. Se llama <bf/kcmktalkd/ 
+y puede encontrarse en el Centro de Control KDE después de instalar <tt/Ktalkd/.
+En sistemas sin KDE, <tt/ktalkd/ leerá /etc/talkd.conf.
+
+<tag/Internacionalización/
+Bajo KDE, el anuncio estará en tu idioma siempre y cuando así lo configures
+y alguien haya traducido el <bf/ktalkdlg/ a tu idioma. Lo mismo para el
+cuadro de configuración <bf/kcmktalkd/.
+
+<tag/Soporte para otalk y ntalk   <it/(Nuevo desde 0.8.1)//
+Ktalkd ahora soporta ambos protocolos, aun cuando se reenvíe. Ktalkd soporta
+también los dos.
+</descrip>
+
+<p>Espero que disfrutes este demonio de talk,
+<p>David Faure
+<p><htmlurl url="mailto:David.Faure@insa-lyon.fr" name="David.Faure@insa-lyon.fr">
+
+<sect>Plataformas Soportadas
+<p>
+
+<descrip>
+<tag/RedHat Linux 5.0/
+Mi plataforma de desarrollo. Completamente probado aquí.
+
+<tag/Otro Linux, BSD/
+Debería compilar y correr bien.
+
+<tag/Solaris/
+No funcionará hasta que alguien reemplace snprintf. Por supuesto uno debería
+de ser capaz de instalar otra libc para solucionar esto...
+
+<tag/AIX/
+He oído que hay problemas con el localtime, ctime y otras funciones.
+</descrip>
+
+<p>Estaré encantado de recibir comentarios acerca de compilar y ejecutar <tt/ktalkd/
+en esos y otros sistemas.
+
+<sect>Instalación
+<p>
+
+<sect1>¿Cómo obtener Ktalkd?
+<p>
+
+<p><tt/Ktalkd/ es una aplicación principal del proyecto KDE 
+<url url="http://www.kde.org">, parte del paquete <bf/kdenetwork/.
+
+<p>Puedes bajarte <tt/Ktalkd/ del servidor principal de ftp del proyecto KDE,
+<url url="ftp://ftp.kde.org/pub/kde"> y de sus mirrors.
+
+<sect1>Requisitos.
+<p>
+
+Para compilar correctamente <tt/Ktalkd/, necesitas las últimas versiones de
+las librerías de KDE así como las librerías Qt C++. Todas las librerías
+necesarias así como el propio Ktalkd se pueden encontrar en <url
+url="ftp://ftp.kde.org/pub/kde/">.
+
+<sect1>Compilación e Instalación.
+<p>
+
+Para compilar e instalar <tt/Ktalkd/ en tu sistema, teclea lo  siguiente en
+el directorio principal de la distribución de <tt/ktalkd/:
+
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+Como <tt/Ktalkd/ es un demonio, <tt/make install/ necesitará privilegios de root.
+
+<p>No olvides actualizar /etc/inetd.conf.
+Por ejemplo en un sistema linux, si kde es en /opt/kde, cambia las lineas
+correspondientes a talk y ntalk a:
+
+<tscreen><verb>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd
+</verb></tscreen>
+
+Proporcionamos un script para hacer los cambios necesarios de forma
+automática.
+Actualiza tu archivo inetd.conf tecleando simplemente
+
+<tscreen><verb>
+% ./post-install.sh
+</verb></tscreen>
+De todas formas, deberás <bf/reiniciar el inetd/ después de ésto.
+En la mayoría de los sistemas LiNUX, haz :
+<tscreen><verb>
+% killall -HUP inetd
+</verb></tscreen>
+
+<p>Por favor infórmame de cualquier modificación que hayas tenido que hacer
+para compilar <tt/Ktalkd/ en tu plataforma.
+
+<sect>Uso
+<p>
+
+No hay mucho que decir acerca de Ktalkd : es un demonio. No tiene interfaz
+de usuario para usarlo.
+<p>El cuadro de anuncio es sencillo : responder o ignorar.
+<p>El cuadro de configuración debería dejarse como está, excepto para
+configurar un reenvío a otro usuario (u otra máquina).
+
+<sect1>Eligiendo un método de reenvío
+<p>
+Nada es perfecto, todos tienen pros (+) y contras (-).
+
+<p><bf/FWA/ : Reenvíar solo el anuncio. Conexión directa. No recomendado.
+<itemize>
+<item>       (+) Puedes saber quien te llama, pero
+<item>       (-) El que llama tendrá que responder a un anuncio tuyo. Desagradable.
+<item>       (-) No lo uses si tienes una "Máquina contestadora" en tu
+máquina remota. (La Máquina contestadora" no podrá hacer aparecer el aviso.
+¡Puede ser confuso!)
+</itemize>
+<p><bf/FWR/ : Reenvíar todas las peticiones, cambiando la información
+cuando sea necesario. Conexión directa.
+<itemize>
+<item>       (+) La persona que llama no sabrá que estas fuera, pero
+<item>       (-) Tu no sabrás realmente quien te llama - solo su nombre de usuario, 
+(así que verás "talk from Wintalk@mi_máquina")
+</itemize>
+<p><bf/FWT/ : Reenviar todas las peticiones y cojer el talkk. No hay conexión directa.
+<itemize>
+<item>       (+) Lo mismo que mas arriba, pero funciona también si tú y el
+que llama no pueden estar en contacto directo con el otro (ej: firewalls)
+<item>       (+) Te avisará de la persona real que está hablando contigo
+cuando aceptes la conexión.
+<item>       (-) Pero como en un reenvío, no podras saber el nombre de su máquina en el anuncio.
+</itemize>
+<p>En resumen, usa <bf/FWT/ si quieres usarlo a través de una firewall (y si
+ktalkd puede acceder a ambas redes),y <bf/FWR/ en otro caso.
+
+<sect>Preguntas y respuestas
+<p>
+<sect1>¿Por qué root no recibe los avisos de KDE?
+<p>
+Porque esto podría ser un agujero de seguridad con la detección de un
+usuario nomal.
+Puedes solucionar esta limitación añadiendo dos lineas en los ficheros de
+configuración de xdm (que son los mismos que los de kdm).
+Nota : La distribución S.u.S.E incluye esas lineas por defecto.
+
+<p>
+Esos ficheros de configuración están situados en un directorio como
+/etc/X11/xdm, o /usr/X11R6/lib/X11/xdm en otros sistemas. 
+Suponemos en adelante que están en /etc/X11/xdm así que deberás traducirlos
+a otro directorio.
+
+<p>
+Aquí está lo que tienes que hacer:
+Edita el fichero Xstartup, o crealo (en el directorio de configuración xdm)
+de tal forma que se lea:
+<tscreen><verb>
+#!/bin/sh
+/etc/X11/xdm/GiveConsole
+sessreg -a -l $DISPLAY -x /etc/X11/xdm/Xservers $USER
+</verb></tscreen>
+
+y el fichero Xreset para que se lea:
+<tscreen><verb>
+#!/bin/sh
+/etc/X11/xdm/TakeConsole
+sessreg -d -l $DISPLAY $USER   
+</verb></tscreen>
+
+Asegúrate de que <bf/xdm-config/ hace referencia a los dos ficheros:
+<tscreen><verb>
+DisplayManager._0.startup:      /etc/X11/xdm/Xstartup
+DisplayManager._0.reset:        /etc/X11/xdm/Xreset 
+</verb></tscreen>
+
+<P>
+Esto hará que kdm (o xdm) registre el usuario en utmp, que es lo que hay que
+hacer. Esto no es para kvt, ni para xterm, el registrar el usuario pero si
+para xdm y kdm en mi opionión. De todas formas, esto no registrará el
+usuario como un usuario de X cuando ejecute startx,... ¿Alguna pista para
+esto?
+
+<sect1>¿Por qué yo, como usuario normal, recibo anuncios de KDE?
+<p>
+Si estás ejecutando en un sistema LiNUX (con /proc habilitado), esto es un
+fallo (un bug). Por favor envíame la descripción para que pueda
+corregirlo.</p>
+<p>De otra forma, esto es normal : Ktalkd no puede encontrar al usuario 
+así que KDE no puede registrarlo en utmp porque la detección basada en /proc de
+LiNUX está deshabilitada.
+La solución es la misma que la de la sección 5.1, teniendo en cuenta que tu
+ejecutarás kdm o xdm para registrarlo en X.
+
+<sect1>¿Cómo puedo ver salidas detalladas del Ktalkd?
+<P>
+Como es un demonio, no hay salidas detalladas en la salida estándar.
+Para obtener salidas depuradas (por ejemplo ¡ antes de envíarme un reporte de
+error !) actualiza las lineas del inet.conf con las que ejecutas el ktalkd y
+kotalkf que han de ser:
+<tscreen><verb>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd -d
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd -d
+</verb></tscreen>
+(date cuenta de la opción <bf/-d/)
+
+<P>Edita el /etc/syslog.conf para añadir la linea siguiente :
+<tscreen><verb>
+*.*         /var/log/all_messages
+</verb></tscreen>
+<P>Para hacerlo funcionar, tienes que reiniciar inetd y syslogd :
+<tscreen><verb>
+% killall -HUP inetd
+% killall -HUP syslogd
+</verb></tscreen>
+Finalmente, ejecuta una sesión de talk y mira el resultado en /var/log/all_messages
+
+Cuando envíes un reporte de error, nunca olvides incluir la salida
+detallada, la versión del Ktalkd y la de "./configure"
+
+<sect>Licencia
+
+<p>Ktalkd es mantenido y mejorado por David Faure, David.Faure@insa-lyon.fr
+<p>El programa original fue escrito por Robert Cimrman, cimrman3@students.zcu.cz
+
+<tscreen><verb>
+Ktalkd esta registrado, 1997,1998 por David Faure David.Faure@insa-lyon.fr
+
+Este Programa es libre; puedes redistribuirlo y/o modificarlo bajo los
+términos de la Licencia Pública General GNU publicada por la Fundación para
+el Software Libre; tanto como la versión 2 de la Licencia, u (a tú elección)
+otra posterior.
+
+Este programa es distribuído con la esperanza de que sea útil,
+pero SIN NIGUNA GARANTIA; sin ninguna garantía ni COMERCIAL ni que funcione
+en un USO EN PARTICULAR. Mira la Licencia Pública General GNU para más
+detalles.
+
+Debes haber recibido una copia de la Licencia Pública General GNU con este
+programa; si no, escribe a la Fundación para el Software Libre:
+Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+</verb></tscreen>
+<p>
+
+Traducción al castellano por Jaime Robles.
+Enviar reportes de posibles incorrecciones a <tt/ea4abw@amsat.org/
+
+</article>

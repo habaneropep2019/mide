@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kppp Handbook: Modem Tricks &amp; Hints</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KPPP Dialer Internet PPP IP PAP CHAP">
+<META NAME="description" CONTENT="KPPP Internet Dialer">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-6.html">Next</A>
+<A HREF="kppp-4.html">Previous</A>
+<A HREF="kppp.html#toc5">Table of Contents</A>
+</P>
+<H3><A NAME="s5">5. Modem Tricks &amp; Hints</A></H3>
+
+<P>This section should get the fearful started on the (not so) arcane art
+of modem tweaking.  The commands here are all Hayes AT standard, but
+all modems are not equal, so your mileage may vary.
+<P>
+<H3><A NAME="ss5.1">5.1 Modem Sessions</A>
+</H3>
+
+<P>
+<P>A Modem session allows you to interact with the modem directly.
+You type commands, and it will respond.  To obtain a modem session, when no 
+connection is active, go into Setup/Modem/Terminal dialog.  This will open 
+a window for interactive configuration of the modem.  Try typing <B>ATZ</B> (which 
+resets your modem)  Your should get an <B>OK</B> response.  use File/Close to 
+end the session.
+<P>
+<H3><A NAME="ss5.2">5.2 Modem Profiles</A>
+</H3>
+
+<P>One reason you might want to send the modem commands directly is
+if you have a set of modem configurations you want to keep, and not
+have to specify for every connection.  A good way to do that is via modem
+profiles.   Modems can have several stored profiles numbered 0,1,...  <B>AT&amp;V</B>
+can be used to view them all.  The default profile is usually 0 (this 
+can be changed via <B>AT&amp;Y</B>.) The profile currently in use is called the "active" 
+profile.
+<P>When you change a setting, the active profile is modified.  The <B>ATZ</B> command 
+will have the modem load the default profile, erasing any changes you 
+have made.  To save changes,  Load the profile you
+want to change via <B>ATZ</B><EM>n</EM> (where <EM>n</EM> is the profile number).  Make the
+changes you want, then save it with <B>AT&amp;W<EM>n</EM></B>.  To have <EM>kppp</EM> use the profile
+you want, change the modem initialization string
+(Setup/Modem/Modem Commands/Initialization String.)  For example
+<B>ATZ1</B> will have the <EM>kppp</EM> reset the modem and use stored profile #1.
+<P>If you want reset you modem to get back to some known starting point, use
+<B>AT&amp;F&amp;W</B> to set the active profile to the factory defaults, and store those
+settings as the default profile.  
+<P>Example of profile changes are in the next section.
+<P>
+<H3><A NAME="ss5.3">5.3 Getting the modem to hang up</A>
+</H3>
+
+<P>Sometimes, you may find <EM>kppp</EM> has difficulties hanging up the modem.  This
+is likely the result of a mismatch between <EM>kppp</EM> settings and those of the modem.
+A standard modem uses two methods to decide to hangup:  Command, and DTR.
+The Command method involves sending an escape sequence to the modem, which puts 
+it in command mode, then issuing the hangup command (ATH).   
+<P>Outside of <EM>kppp</EM>, when configuring the pppd package manually, it's often helpful
+to use the command method, so that one can exit a terminal session, and then
+start pppd without having the modem hangup.  In most other situations, the
+DTR method is preferred, as it is simpler.
+<P>
+<H4>DTR (AT&amp;Dn) method</H4>
+
+<P>The DTR method will have the modem hangup whenever <EM>kppp</EM> stops using the modem. 
+If you obtain a modem session, and query the state via AT&amp;V, and the among
+the settings displayed for the active profile are &amp;D0, then the DTR hangup
+method is disabled.  To enable the DTR method Use the Setup/More/Terminal to 
+get a modem session. Then:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+ATZ             # reset to default profile
+AT&amp;D2               # Set to hang up on DTR drop.
+AT&amp;W                # Write to default profile
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<H4>How The DTR Method Works</H4>
+
+<P>Whenever the Data Terminal Ready (DTR) line on the serial line between the host computer
+and the modem goes high, the modem hangs up.  When <EM>kppp</EM> opens the serial port, the 
+DTR line is pulled low, on an external modem, you can see the DTR (or TR) light 
+come on when this happens.  When the TR light goes out (because <EM>kppp</EM> has closed
+the serial port, or something worse!), the modem will hangup.
+<P>
+<H4>Command Method</H4>
+
+<P>The other way to have a modem hang up when connected (used when AT&amp;Dn where n is 
+not 2) is to have the modem accept the command when a session is in progress.  To 
+have it hangup properly, Get a modem session, and set the guard time to a short 
+interval like so:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+ATZ
+ATS12=5
+AT&amp;W
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Then use the Settings/More/Modem Commands/Guard Time slider to match the register
+(S12) value to match (5)  The modem should then hangup properly.
+<P>
+<H4>How The Command Method Works</H4>
+
+<P>When the local modem is connected to a remote modem, it is in the "connect" state, where
+it passes all the characters it receives to the remote modem without interpretation.
+To have the modem accept the characters as commands for itself, one must put the 
+modem into the command state.  The escape code does this.
+<P>The escape code is defined as a being three intervals of time whose length
+is defined by S12 (in fiftieth of a second.)
+<P>
+<UL>
+<LI>Quiet (must last more than S12/50 seconds)</LI>
+<LI>Escape character (defined by register S2, default is "+") 
+repeated three times (less than S12/50 seconds between each)</LI>
+<LI>Quiet (must last more than S12/50 seconds)
+</LI>
+</UL>
+<P>Once the modem is in the command state, you can send it commands.  To have
+it hang up. Sent ATH.  The escape codes and hangup string used by <EM>kppp</EM>
+are shown in the Setup/More/Modem Commands dialogs.  These should match
+your modem.
+<P>
+<H3><A NAME="ss5.4">5.4 Make Tone Dialling Faster</A>
+</H3>
+
+<P>
+<P>If you can use tone dialling, the amount of time it takes to dial can be 
+changed using the S11 register.  It gives the duration (in 100hundreds of a second)
+to send each tone while dialling.  The default is usually 95 (almost a second.)
+How fast you can dial depends on the phone company's switching equipment which
+handles your line.  The minimum duration is 50, almost twice as fast, and
+that speed often works. 
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+ATZ             # reset to default profile
+ATS11=50        # fastest possible dialling, use a higher number if it doesn't work.
+AT&amp;W                # Write to default profile
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kppp-6.html">Next</A>
+<A HREF="kppp-4.html">Previous</A>
+<A HREF="kppp.html#toc5">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

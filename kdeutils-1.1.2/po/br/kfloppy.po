@@ -1,0 +1,201 @@
+# KTranslator Generated File
+# Breton version of KDE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Jañ-Mai Drapier <jdrapier@club-internet.fr>, 1999
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kfloppy-1.1\n"
+"POT-Creation-Date: 1999-03-13 01:55+0100\n"
+"PO-Revision-Date: 1999-03-04 07:10+0100\n"
+"Last-Translator: Jañ-Mai Drapier <jdrapier@club-internet.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-1\n"
+"Content-Transfer-Encoding: 8 bit\n"
+
+#: about.cpp:40
+msgid "About KDE Floppy Formatter"
+msgstr "Diwar-benn mentrezher pladennig KDE"
+
+#: about.cpp:49 floppy.cpp:295 floppy.cpp:342 floppy.cpp:358 floppy.cpp:374
+#: floppy.cpp:481 floppy.cpp:584 floppy.cpp:598 floppy.cpp:713 floppy.cpp:727
+#: floppy.cpp:774 floppy.cpp:783 floppy.cpp:890 floppy.cpp:911 floppy.cpp:935
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#: about.cpp:54
+msgid "Version "
+msgstr "Doare"
+
+#: floppy.cpp:56
+msgid "Floppy Drive:"
+msgstr "Unvez pladennig :"
+
+#: floppy.cpp:65
+msgid "Density:"
+msgstr "Douester :"
+
+#: floppy.cpp:74
+msgid "File System:"
+msgstr "Reizhiad restroù :"
+
+#: floppy.cpp:108 floppy.cpp:414
+msgid "Format"
+msgstr "Mentrezh"
+
+#: floppy.cpp:131
+msgid "Quick Erase"
+msgstr "Diverkañ buan"
+
+#: floppy.cpp:136
+msgid "Full Format"
+msgstr "Mentrezhañ klok"
+
+#: floppy.cpp:142
+msgid "Create Label:"
+msgstr "Krouiñ kelig :"
+
+#: floppy.cpp:148
+msgid "KDE Floppy"
+msgstr "Pladennig KDE"
+
+#: floppy.cpp:162
+msgid "KDE Floppy Formatter"
+msgstr "Mentrezher pladennig KDE"
+
+#: floppy.cpp:168 floppy.cpp:222 floppy.cpp:240 floppy.cpp:255 floppy.cpp:273
+#: floppy.cpp:1016
+msgid "HD"
+msgstr "HD"
+
+#: floppy.cpp:169
+msgid "DD"
+msgstr "DD"
+
+#: floppy.cpp:292
+#, c-format
+msgid ""
+"Cannot access %s\n"
+"Make sure that the device exists and that\n"
+"you have write permission to it."
+msgstr ""
+"N'hellan ket tizhout %s\n"
+"Bezit sur ez eus deus an trobarzhell, hag oc'h\n"
+"eus an aotre da skrivañ warni."
+
+#: floppy.cpp:339
+msgid ""
+"Cannot find kfdformat\n"
+"kfdformat is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"N'hellan ket kavout kfdformat\n"
+"kfdformat a zo ur parzh eus dasparzhadenn KFloppy\n"
+"Staliit Kfloppy ent reizh, mar plij."
+
+#: floppy.cpp:355
+msgid ""
+"Cannot find kmke2fs\n"
+"kmke2fs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"N'hellan ket kavout kmke2fs\n"
+"kmke2fs a zo ur parzh eus dasparzhadenn KFloppy\n"
+"Staliit Kfloppy ent reizh, mar plij."
+
+#: floppy.cpp:370
+msgid ""
+"Cannot find kmkdosfs\n"
+"kmkdosfs is part of the KFloppy distribution.\n"
+"Please install KFloppy properly."
+msgstr ""
+"N'hellan ket kavout kmkdosfs\n"
+"kmkdosfs a zo ur parzh eus dasparzhadenn KFloppy\n"
+"Staliit mar plij Kfloppy ent reizh, mar plij."
+
+#: floppy.cpp:430
+msgid "Abort"
+msgstr "Darniñ"
+
+#: floppy.cpp:478
+msgid "Cannot start a new program: fork() failed."
+msgstr "N'hellan ket loc'hañ ur goulev nevez : fork() sac'het"
+
+#: floppy.cpp:578 floppy.cpp:706
+msgid ""
+"Cannot access floppy or floppy drive\n"
+"Please insert a floppy and make sure that you\n"
+"have selected a valid floppy drive.\n"
+msgstr ""
+"N'hellan ket tizhout ar pladennig pe an unvez pladennig\n"
+"Ensoc'hit ur pladennig mar plij ha bezit sur oc'h eus\n"
+"diuzet un unvez pladennig reizh.\n"
+
+#: floppy.cpp:593
+#, c-format
+msgid ""
+"Cannot format: %s\n"
+"%s"
+msgstr ""
+"N'hellan ket  mentrezhañ : %s\n"
+"%s"
+
+#: floppy.cpp:640
+#, c-format
+msgid "Block %d is bad. Continuing ..."
+msgstr "Ar bloc'h %d a zo fall. O kenderc'hel ..."
+
+#: floppy.cpp:723
+#, c-format
+msgid ""
+"Cannot create a filesystem on: %s\n"
+"%s"
+msgstr ""
+"N'hellan ket krouiñ ur reizhiad restroù war : %s\n"
+"%s"
+
+#: floppy.cpp:759
+#, c-format
+msgid ""
+"The floppy was sucessfully formatted.\n"
+"Blocks marked bad: %d\n"
+"Raw Capacity: %d\n"
+msgstr ""
+"Ar pladennig a zo bet mentrezhet ent reizh.\n"
+"Bloc'hoù merket fall : %d\n"
+"Barr diaoz  : %d\n"
+
+#: floppy.cpp:780
+msgid "All files were sucessfully erased."
+msgstr "An holl restroù a zo bet diverket ent reizh."
+
+#: floppy.cpp:838
+msgid "Creating Filesystem ..."
+msgstr "O krouiñ ur reizhiad restroù..."
+
+#: floppy.cpp:842
+msgid "Verifying ..."
+msgstr "O wiriañ ..."
+
+#: floppy.cpp:887
+msgid ""
+"Cannot start a new program\n"
+"fork() failed."
+msgstr ""
+"N'hellan ket loc'hañ ur goulev nevez\n"
+"fork() sac'het."
+
+#: floppy.cpp:913
+msgid "Error while trying to determine whether floppy is mounted\n"
+msgstr "Fazi en ur glask amprouiñ ma eo mountet ar bladennig\n"
+
+#: floppy.cpp:930
+#, c-format
+msgid ""
+"%s is mounted.\n"
+"Please unmount the floppy first."
+msgstr ""
+"%s a zo mountet.\n"
+"Divountit ar pladennig da gentañ mar plij."

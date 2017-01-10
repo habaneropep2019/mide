@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The kpm Handbook: kpm main window</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="">
+<META NAME="description" CONTENT="kpm process management">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kpm-4.html">Next</A>
+<A HREF="kpm-2.html">Previous</A>
+<A HREF="kpm.html#toc3">Table of Contents</A>
+</P>
+<H3><A NAME="s3">3. kpm main window</A></H3>
+
+<P>
+<P>
+<H3><A NAME="ss3.1">3.1 Explaining the fields</A>
+</H3>
+
+<P>
+<DL>
+<P>
+<A NAME="PID"></A> <DT><B>PID - Process ID</B><DD><P>Each process has a unique process ID number, starting at 1 and going up.
+When a new process is created, the next unused PID is allocated. PIDs
+are (currently) 16-bit signed integers, so they wrap around at 32767; this
+is normal behaviour and nothing to worry about.
+<P>
+<A NAME="PPID"></A> <DT><B>PPID - Parent process ID</B><DD><P>Every process has one parent process.  The exception is process 1 (init),
+which is the root of the process hierarchy; it has no parent.
+<P>
+<A NAME="PGID"></A> <DT><B>PGID - Process group ID</B><DD><P>Each process is member of one process group. Process groups are used for
+distribution of signals, and by terminals to arbitrate requests for
+their input: processes that have the same process group as the
+terminal are foreground and may read, while others will block with a
+signal if they attempt to read.
+<P>
+<A NAME="SID"></A> <DT><B>SID - Session ID</B><DD><P>Session IDs are used mainly to determine what happens at terminal
+hangups.
+<P>
+<A NAME="TTY"></A> <DT><B>TTY - Controlling tty</B><DD><P>The controlling terminal (tty) is usually the device (serial port, pty etc)
+from which the process was started, and which it uses for input or output.
+Not all processes have a controlling terminal.  Kpm scans the /dev
+directory to determine the name of the terminal, but this might fail.
+To save space, only the two last characters of the tty name is shown
+(thus /dev/ttyp6 is shown as p6)
+<P>
+<A NAME="TPGID"></A> <DT><B>TPGID - Process group ID of tty owner</B><DD><P>A tty in use is owned by a process. This is the PGID of that process.
+<P>
+<A NAME="USER"></A> <DT><B>USER - Process owner</B><DD><P>This is the name of the (real) user owning the process.  If the effective
+user ID of a process is different from the real user ID, this is indicated
+by a trailing "*" or "+".  The asterisk is used when the effective user
+is the super-user (this usually indicates a binary that is set-uid to root).
+<P>
+<A NAME="NICE"></A> <DT><B>NICE - Time-sharing priority</B><DD><P>The nice value determines how often a process is allowed to run, and
+the length of its timeslice. The value is in the range -20 to 20, 0
+being the default.  Lower numbers give more CPU time to a process.
+Only the super-user may lower the nice value.
+<P>
+<A NAME="PRI"></A> <DT><B>PRI - Length of next timeslice</B><DD><P>This is the maximal length of the process's next timeslice (or what is
+left of its current timeslice, if it is the currently running process).
+The number is rescaled to the -20..20 interval, smaller number indicating
+a longer timeslice.
+<P>
+<A NAME="PLCY"></A> <DT><B>PLCY - Scheduling policy</B><DD><P>FIFO (F) and Round-Robin (R) are realtime scheduling policies; OTHER
+(O) is the normal Unix time-sharing policy. F and R processes have a
+realtime priority between 1 and 99. A process will run as long as
+there is no runnable process with higher priority. Round-Robin
+processes will run for the length of one time-slice, after which they
+are placed last in the queue of their priority. FIFO processes run
+until they give up their CPU time (by sleeping or blocking) or
+pre-empted by a process with higher priority. Only the super-user (root)
+may change the scheduling policy.
+<P>
+<A NAME="RPRI"></A> <DT><B>RPRI - Realtime priority</B><DD><P>Realtime processes (FIFO and Round-Robin) have priorities between 1 and 99.
+A process will pre-empt any other process that has lower priority.
+Normal time-sharing processes (policy O) all have priority 0. Only the
+super-user (root) may change the realtime priority.
+<P>
+<A NAME="MAJFLT"></A> <DT><B>MAJFLT - Number of major faults occured</B><DD><P>A page fault occurs when a process attempts to read or write from a memory
+page that isn't present in RAM.
+A major page fault is when disk access is involved, such as swapping
+in and out memory pages.
+<P>
+<A NAME="MINFLT"></A> <DT><B>MINFLT - Number of minor faults occured</B><DD><P>A page fault occurs when a process attempts to read or write from a memory
+page that isn't present in RAM, or write to a page that isn't writeable.
+A minor fault is when there is no disk access involved, for instance
+when writing to a copy-on-write shared page.
+<P>
+<A NAME="TRS"></A> <DT><B>TRS - Text resident set size (Kbytes)</B><DD><P>This is the size of the text (that is, executable code) of the process
+that is currently present in RAM.
+<P>
+<A NAME="DRS"></A> <DT><B>DRS - Data resident set size (Kbytes)</B><DD><P>This is the size of the data (not executable code) of the process that
+is currently present in RAM.
+<P>
+<A NAME="SIZE"></A> <DT><B>SIZE - virtual image size of process (Kbytes)</B><DD><P>This is the total size of the image of the process. This includes all
+code, data, and shared libraries used by the process, including pages
+that have been swapped out.
+<P>
+<A NAME="SWAP"></A> <DT><B>SWAP - Kbytes on swap device</B><DD><P>This is simply the difference between SIZE and RSS, in other words how
+much of a process that resides on disk.
+<P>
+<A NAME="RSS"></A> <DT><B>RSS - resident set size (Kbytes)</B><DD><P>This is the size of the part of the process (code and data) that
+actually resides in RAM, including shared libraries. This gives a fair
+approximation of how much RAM a process is using.
+<P>
+<A NAME="SHARE"></A> <DT><B>SHARE - shared memory (Kbytes)</B><DD><P>This is the amount of memory that the process shares with other processes.
+It doesn't mean that any of it is actually used by any other process, just
+that it is possible.
+<P>
+<A NAME="DT"></A> <DT><B>DT - number of dirty pages</B><DD><P>This is the number (not the number of bytes!) of pages in RAM that have been
+modified since they were last written to disk. Dirty pages have to be written
+to disk before they are freed and used for something else.
+<P>
+<A NAME="STAT"></A> <DT><B>STAT - state of the process</B><DD><P>The process is at any time in one of the following states:
+<UL>
+<LI>R (running): the process is running on a cpu or is ready to run.</LI>
+<LI>S (sleeping): the process is waiting for an event to occur (such as I/O or
+a timer).</LI>
+<LI>D (uninterruptible sleep): the process is waiting for an event to occur,
+without being interruptible (usually waiting in a device driver).</LI>
+<LI>T (stopped): the process is stopped, or being traced by another process.</LI>
+<LI>Z (zombie): the process has terminated, but its parent hasn't mourned its
+death yet.</LI>
+<LI> If the process is completely swapped out (has no resident pages), a 'W'
+is shown in the field. (This is also true for kernel processes, such as kswapd.)</LI>
+</UL>
+<P>
+<A NAME="FLAGS"></A> <DT><B>FLAGS - process flags (hex)</B><DD><P>This contains some additional information about the state of a process.
+Refer to the Linux kernel source for details.
+<P>
+<A NAME="WCHAN"></A> <DT><B>WCHAN - function where process is sleeping</B><DD><P>If the process is waiting for something to happen, this is the kernel function
+where it is stuck. (Leading do_ or sys_ is stripped from the name to make it
+shorter.)
+<P>
+<A NAME="UID"></A> <DT><B>UID - numerical user ID</B><DD><P>This is the ID of the (real) user owning the process.
+<P>
+<A NAME="%WCPU"></A> <DT><B>%WCPU - weighted percentage of CPU</B><DD><P>This is the percentage of CPU time the process is using, averaged over the
+last 30 seconds (exponentially decaying average).
+<P>
+<A NAME="%CPU"></A> <DT><B>%CPU - percentage of CPU since last update</B><DD><P>This is how much of the CPU time the process used since the last
+update of kpm's process table.
+<P>
+<A NAME="%MEM"></A> <DT><B>%MEM - percentage of memory used</B><DD><P>This is how large part of the total RAM that is used by the process (as
+resident size). Shared libraries count, so this is an overstatement.
+<P>
+<A NAME="START"></A> <DT><B>START - time process started</B><DD><P>This is when the process was created.
+<P>
+<A NAME="TIME"></A> <DT><B>TIME - total CPU time used</B><DD><P>This is how much CPU time the process has used since it was started.
+<P>
+<A NAME="COMM"></A> <DT><B>COMM - command that started the process</B><DD><P>This is the command (file name) that started the process. Long names are
+truncated.
+<P>
+<A NAME="CMDLINE"></A> <DT><B>CMDLINE - command line that started the process</B><DD><P>This the command line, including arguments, that started the process. If
+"Hide Command Path" in the Options menu is selected, then the leading path
+of the command name is stripped. Processes swapped out may show just the
+command name in parentheses (this is true for kernel processes as well).
+</DL>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kpm-4.html">Next</A>
+<A HREF="kpm-2.html">Previous</A>
+<A HREF="kpm.html#toc3">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

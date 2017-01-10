@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 1998.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KVIEW\n"
+"POT-Creation-Date: 1999-01-31 01:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kim Enkovaara <kim.enkovaara@iki.fi>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: viewer.cpp:95
+msgid "no image loaded"
+msgstr "ei ladattua kuvaa"
+
+#: viewer.cpp:103 viewer.cpp:599
+msgid "Ready"
+msgstr "Valmis"
+
+#: viewer.cpp:181
+msgid "Net saving not yet implemented"
+msgstr "Verkkotalennusta ei ole vielä toteutettu"
+
+#: viewer.cpp:189
+#, c-format
+msgid "%s: written"
+msgstr "%s: kirjoitettu"
+
+#: viewer.cpp:227
+msgid "Enter Zoom factor (100 = 1x):"
+msgstr "Anna suurennuskerroin (100 = 1x):"
+
+#: viewer.cpp:231
+msgid "Illegal zoom factor"
+msgstr "Virheellinen suurennuskerroin"
+
+#: viewer.cpp:282
+#, c-format
+msgid ""
+"KView -- Graphics viewer. %s\n"
+"\n"
+"Sirtaj S. Kang (taj@kde.org)\n"
+msgstr ""
+
+#: viewer.cpp:285
+msgid "About KView"
+msgstr "Tietoja KView:tä"
+
+#: viewer.cpp:310 viewer.cpp:412
+msgid "&List..."
+msgstr "&Lista..."
+
+#: viewer.cpp:312 viewer.cpp:416
+msgid "&Previous"
+msgstr "&Edellinen"
+
+#: viewer.cpp:314 viewer.cpp:418
+msgid "&Next"
+msgstr "&Seuraava"
+
+#: viewer.cpp:316 viewer.cpp:421
+msgid "&Slideshow On/Off"
+msgstr "&Diashow Päällä/Pois"
+
+#: viewer.cpp:324
+msgid "&Zoom"
+msgstr "&Suurennus"
+
+#: viewer.cpp:325
+msgid "&Transform"
+msgstr "&Muuta"
+
+#: viewer.cpp:326
+msgid "To &Desktop"
+msgstr "&Työpöydälle"
+
+#: viewer.cpp:328
+msgid "F&ilter"
+msgstr "&Suodatin"
+
+#: viewer.cpp:332
+msgid "&Images"
+msgstr "&Kuvat"
+
+#: viewer.cpp:352
+msgid "&Save As..."
+msgstr "Tallenna &nimellä..."
+
+#: viewer.cpp:356
+msgid "&Close Window"
+msgstr "&Sulje ikkuna"
+
+#: viewer.cpp:362
+msgid "&Full Screen"
+msgstr "&Koko näyttö"
+
+#: viewer.cpp:365
+msgid "&Crop"
+msgstr "&Crop"
+
+#: viewer.cpp:367
+msgid "&Reset"
+msgstr "&Oletus"
+
+#: viewer.cpp:369
+msgid "&Preferences..."
+msgstr "&Asetukset..."
+
+#: viewer.cpp:375
+msgid "&Zoom..."
+msgstr "&Suurenna..."
+
+#: viewer.cpp:376
+#, c-format
+msgid "Zoom &in 10%"
+msgstr "Pienennä 10%"
+
+#: viewer.cpp:378
+#, c-format
+msgid "Zoom &out 10%"
+msgstr "Suurenna 10%"
+
+#: viewer.cpp:380
+msgid "&Double size"
+msgstr "&Tuplakoko"
+
+#: viewer.cpp:382
+msgid "&Half size"
+msgstr "&Puolikoko"
+
+#: viewer.cpp:384
+msgid "&Max size"
+msgstr "&Täyskoko"
+
+#: viewer.cpp:386
+msgid "Max/&aspect"
+msgstr "Maksimi&aspect"
+
+#: viewer.cpp:392
+msgid "Rotate &clockwise"
+msgstr "Kierrä &myötäpäivään"
+
+#: viewer.cpp:394
+msgid "Rotate &anti-clockwise"
+msgstr "Kierrä &vastapäivään"
+
+#: viewer.cpp:396
+msgid "Flip &vertical"
+msgstr "Käännä pystysuunnassa"
+
+#: viewer.cpp:398
+msgid "Flip &horizontal"
+msgstr "Käännä vaakasuunnassa"
+
+#: viewer.cpp:404
+msgid "Desktop &Tile"
+msgstr "Työpöytä &kopioi"
+
+#: viewer.cpp:405
+msgid "Desktop &Max"
+msgstr "&Työpöytä &Max."
+
+#: viewer.cpp:407
+msgid "Desktop Max&pect"
+msgstr "Työpöytä Max&aspect"
+
+#: viewer.cpp:426
+msgid "&How do I..."
+msgstr "&Miten..."
+
+#: viewer.cpp:427
+msgid "&What is a..."
+msgstr "&Mikä on..."
+
+#: viewer.cpp:429
+msgid "&About KView..."
+msgstr "&Tietoja KView:tä..."
+
+#: viewer.cpp:471 viewer.cpp:478
+msgid "Existing transfer not yet complete."
+msgstr "Nykyyinen siirto ei ole vielä valmis."
+
+#: viewer.cpp:493
+msgid "Couldn't get temporary transfer name."
+msgstr "En saanut väliaikaista siirtonimeä."
+
+#: viewer.cpp:532
+msgid "Transfer error: "
+msgstr "Siirtovirhe: "
+
+#: viewer.cpp:618
+msgid "Loading..."
+msgstr "Lataan..."
+
+#: viewer.cpp:632
+#, c-format
+msgid "Couldn't load %s"
+msgstr "En saanut ladattua tiedostoa %s"
+
+#: viewer.cpp:852
+msgid "Printing..."
+msgstr "Tulostan..."
+
+#: colour.cpp:32
+msgid "Enter brightness factor (%):"
+msgstr "Anna kirkastuskerroin (%):"
+
+#: colour.cpp:37
+msgid "Brightness factor must be positive"
+msgstr "Kirkastuskertoimen pitää olla positiivinen"
+
+#: colour.cpp:44
+msgid "Changing brightness..."
+msgstr "Muutan kirkkautta..."
+
+#: colour.cpp:58
+msgid "Intensity:Brightness"
+msgstr "Intensiteetti:Kirkasta"
+
+#: colour.cpp:100
+msgid "Converting to Greyscale..."
+msgstr "Muunnan harmaasävyihin..."
+
+#: colour.cpp:129
+msgid "Greyscale"
+msgstr "Harmaasävy"
+
+#: colour.cpp:147
+msgid "Smoothing..."
+msgstr "Pehmennys..."
+
+#: colour.cpp:213
+msgid "Smooth"
+msgstr "Pehmennä"
+
+#: colour.cpp:234
+msgid "Enter gamma value ( >0 ):"
+msgstr "Anna gamma-arvo ( >0 ):"
+
+#: colour.cpp:237
+msgid "Bad Gamma value"
+msgstr "Virheellinen gamma-arvo"
+
+#: colour.cpp:243
+msgid "Gamma-correcting..."
+msgstr "Gammakorjaan..."
+
+#: colour.cpp:296
+msgid "Intensity:Gamma Correct..."
+msgstr "IntentiseettiGammakorjaa..."
+
+#: colour.cpp:310
+msgid "External.."
+msgstr "Ulkoinen.."
+
+#: ilistdlg.cpp:56
+msgid "Prev"
+msgstr "Edellinen"
+
+#: ilistdlg.cpp:60
+msgid "Shu&ffle"
+msgstr "Sekoita"
+
+#: ilistdlg.cpp:65
+msgid "Next"
+msgstr "Seuraava"
+
+#: ilistdlg.cpp:69
+msgid "Start slide"
+msgstr "Aloituskuva"
+
+#: ilistdlg.cpp:85
+msgid "Image List"
+msgstr "Kuvalista"
+
+#: ilistdlg.cpp:259
+msgid "Stop &slide"
+msgstr "Pysäytä kuva"
+
+#: ilistdlg.cpp:267
+msgid "Start &slide"
+msgstr "Aloita kuva"
+
+#: prefdlg.cpp:32
+msgid "kView Preferences"
+msgstr "kView asetukset"
+
+#: prefdlg.cpp:36
+msgid "&Apply"
+msgstr "&Käytä"
+
+#: prefdlg.cpp:51
+msgid "On Load"
+msgstr "Ladattaessa"
+
+#: prefdlg.cpp:58
+msgid "Resize Window"
+msgstr "Muuta ikkunan kokoa"
+
+#: prefdlg.cpp:61
+msgid "Resize Image"
+msgstr "Muuta kuvan kokoa"
+
+#: prefdlg.cpp:64
+msgid "No Resize"
+msgstr "Älä muuta kokoa"
+
+#: prefdlg.cpp:69
+msgid "Slideshow"
+msgstr "Diaesitys"
+
+#: prefdlg.cpp:72
+msgid "Loop"
+msgstr "Looppi"
+
+#: prefdlg.cpp:76
+msgid "Slide interval (sec)"
+msgstr "Diojen viive (sek)"
+
+#: prefdlg.cpp:84
+msgid "&Keys"
+msgstr "&Näppäimet"

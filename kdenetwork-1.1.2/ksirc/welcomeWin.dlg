@@ -1,0 +1,59 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {welcomeWin.h}
+	ClassSource {welcomeWin.cpp}
+	ClassName {welcomeWin}
+	DataHeader {welcomeWinData.h}
+	DataSource {welcomeWinData.cpp}
+	DataName {welcomeWinData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowCaption {Welcome to kSirc}
+	WindowFlags {643072}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {600 550}
+MinSize {600 550}
+MaxSize {600 550}
+Grid {10}
+
+User {
+		UserClassHeader {irclistbox.h}
+		UserClassName {KSircListBox}
+		Rect {10 10 580 490}
+		Name {Dispay dialog}
+		Variable {DisplayDialog}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+CheckBox {
+		Checked {FALSE}
+		Text {Show Again}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 510 100 30}
+		Name {Show again checkbox}
+		Variable {ShowAgain}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Dissmiss}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {480 510 110 30}
+		Name {Dismiss Button}
+		Variable {But_dismiss}
+		Signal {[Protected]  clicked --> dismiss  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

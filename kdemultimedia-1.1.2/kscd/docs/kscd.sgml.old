@@ -1,0 +1,135 @@
+<!doctype linuxdoc system>
+
+<!-- The Kscd Handbook.
+
+ -->
+
+<article>
+
+<!-- Title information -->
+
+<title>The Kscd Handbook
+<author>Bernd Johannes Wuebben, <tt/wuebben@kde.org/
+<date>Version 0.8, Jan 17, 1997
+<abstract>This Handbook describes Kdscd Version 0.8
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+
+<sect>Introduction
+
+<p>
+
+Kscd is a fast, CDDB enabled cd player for the Unix platform.
+Kscd stands for "The KDE Project's small/simple CD player". 
+
+
+<p>
+I hope you will enjoy this cd-player,
+<p>
+<tt>Bernd Johannes Wuebben</tt>
+<p>
+<tt><htmlurl url="mailto:wuebben@kde.org" name="wuebben@kde.org"></tt>
+<p>
+
+<sect>Supported Platforms<p>
+
+KSCD explicitely supports the following platforms: 
+
+<itemize>
+<item>Linux 
+<item>FreeBSD 
+<item>NetBSD 
+<item>BSD386 
+<item>Sun 
+<item>Solaris (including cdda support) 
+<item>HPUX 
+<item>SGI Irix (including cdda support) 
+<item>Sony NEWS 
+<item>OSF/1 
+<item>Ultrix 
+</itemize>
+and should compile on many others with few modifications.
+
+<p>
+<sect>Installation
+<p>
+<sect1>How to obtain Kscd
+<p>
+Kscd is part of the kdemultimedia package available at 
+KDE project <url url="http://www.kde.org">.
+
+<sect1>Requirements
+<p>
+In order to successfully compile Kscd, you need the latest versions of the KDE libraries as well as the Qt C++ library.All required libraries as well as Kscd 
+itself can be found on <url url="ftp://ftp.kde.org/pub/kde/">. 
+
+
+
+<sect1>Compilation and installation
+<p>
+
+In order to compile and install Kscd on your system, type the following in the base 
+directory of the Kscd distribution:
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+<p>
+Please inform me of any modification you had to undertake in order to
+get KSCD to compile on your platform.
+<p>
+<sect>Onscreen Fundamentals
+<p>
+
+I am sure however that you will have no trouble operating KSCD, otherwise,
+write up what was difficult to understand and I will include it here..
+
+<sect>CDDB Support<p>
+Kscd by default installs its cddb database files in 
+<tt>KDEIDR/share/apps/kscd/cddb</tt>. You can create as many category subdirectories
+as you like. However, when uploading only the
+offical cddb categories are displayed. The default upload address is
+<tt>xmcd-cddb@amb.org</tt>. For more information about CDDB visit the
+CDDB <htmlurl url="http://www.cddb.com" name="homepage">.
+
+<p>
+<sect>Questions and answers
+If you experience trouble in particular with the cddb functionality try the
+start kscd as <tt>kscd -d</tt> and observer the debug output.
+<p>
+
+<sect>Thanks<p>
+Special thanks to Ti Kan and Steve Scherf, the inventors of 
+the CDDB database concept. Visit <htmlurl url="http://www.cddb.com" name="www.cddb.com"> 
+for  more information on CDDB.;  
+
+<p>
+<sect>Copyright<p>
+<tscreen><verb>
+Kscd Copyright (c) 1997,1998  Bernd Johannes Wuebben wuebben@kde.org
+
+kscd contains code from:
+workman 1.4 beta 3 Copyright (c) Steven Grimm koreth@hyperion.com   
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+</verb></tscreen>
+</article>

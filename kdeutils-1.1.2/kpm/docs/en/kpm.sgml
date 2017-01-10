@@ -1,0 +1,404 @@
+<!doctype linuxdoc system>
+
+<!-- The kpm Handbook. -->
+
+<article>
+
+<!-- Title information -->
+
+<!--
+ ****************************************************************************
+ ****************************************************************************
+-->
+<title>The kpm Handbook
+<author>Mario Weilguni <tt>mweilguni@kde.org</tt>
+<date>Version 1.3k1, 02 Februar 1998
+<abstract>This Handbook describes kpm 1.3k1, an utility for information and
+management of processes.
+
+
+<!--
+ ****************************************************************************
+ ****************************************************************************
+-->
+<!-- Table of contents -->
+<toc>
+
+
+<!--
+ ****************************************************************************
+ ****************************************************************************
+-->
+<sect>General information<p>
+<sect1>What is kpm?<p>
+kpm allows you to view and modify the processes of you Linux computer. It
+shows detailed information of running processes, computer resources like RAM,
+swap space, CPU utilization, uptime and so on. You can kill processes and modify
+their priority. If you are running it as super-user, it gives you abilty to
+change scheduling settings too.
+
+<sect1>Legal stuff<p>
+kpm is heavily based on <htmlurl name="Mattias Engdegård's" url="mailto:f91-men@nada.kth.se">
+<tt/qps/. The main difference between kpm and qps is the KDE interface. kpm
+adheres to most KDE standard, uses the KDE config files and has session
+managment. Some features of qps were removed (i.e. the ability to display Mac
+OS7 style tables or special checkbox widgets). 
+
+qps (and thus kpm) is published under the GNU General Public License (GNU GPL).
+
+<sect1>Requirements for kpm<p>
+<itemize><item>A Linux 2.0 or higher operating system. kpm makes excessive use of
+Linux's <tt>/proc</tt> filesystem. Unfortunatly this is not portable to other
+systems, because every UNIX system seems to have it's own way of gathering
+process information.
+<item>K Desktop Environment Beta2 or better
+<item>Qt 1.31. Because KDE is based on Qt, this is no problem.
+<item>Your Linux kernel must be compiled with <tt>proc</tt> filesystem
+support. Since many things like top won't even work without that, this is
+standard for most kernels.
+</itemize>
+
+
+<!--
+ ****************************************************************************
+ ****************************************************************************
+-->
+<sect>The menu<p>
+<sect1>Window menu<p>
+<descrip>
+<tag/Iconify/
+Iconifies the main window. When iconfied, kpm uses far less CPU time because
+there is no need to update the process list. If you use KWM as window manager
+and the option "Dock into kpanel" is checked, you will see a little icon in
+kpanel displaying the average system load. Under other window managers like
+fvwm, kpm's icon itself will show the load (but this depends on how the window
+manager is configured).
+
+<tag/Quit/
+Exits kpm (closing the main window has the same effect).
+</descrip>
+
+<sect1>Process menu<p>
+<descrip>
+<tag/Renice/ Allows you to modify the priority of the marked process
+(or all marked processes). Under Linux a process has a priority (nice
+value) ranging from -20 (best) to +20 (worst), thus
+<it>increasing</it> the nice value gives a process <it>less</it> CPU
+time. You are not allowed to lower the nice value (improve its
+priority) unless are the super-user. This means that, as an ordinary
+user, you cannot lower the nice value of a process even if you raised
+it before.
+
+Of course you are only allowed to alter the priority of your own
+processes. The super-user is allowed to modify the priority for any
+process, and he may lower the priority.
+
+<tag/Change scheduling/
+This option is only available to root.
+The  Change Scheduling...  dialog allows the super-user to
+change the scheduling policy  of  the  selected  processes
+(using  the  Posix.1b  real-time extensions present in the
+Linux  2.0.x  kernels).  Normal  processes  are   set   to
+SCHED_OTHER  and  have static priority 0; (soft) real-time
+processes have the policy SCHED_FIFO  or  SCHED_RR  and  a
+static   priority   in   the   range  of  1  to  99.
+
+<tag/Socket info/
+Displays a list of TCP and UDP sockets used by the selected processes.
+<!-- TODO -->
+</descrip>
+
+<sect1>Signal menu<p>
+The signal menu allows you to send various signals to all marked processes. Be
+careful when doing this, especially if more than one process is marked. The
+standard Linux signals are explained <ref id="UNIX Signals"name="here">.
+
+<sect1>View menu<p>
+<descrip>
+<tag/Refresh process list/
+Immediatly updates the process list. This is very useful if you use rather
+long update periods. You can also do this by pressing the update button in the
+toolbar or by pressing the Space key. <!-- TODO ref -->
+
+<tag/All processes/
+Displays all processes.
+
+<tag/Your processes/ Display your processes, including those running under a
+different user (i.e. SETUID root programs you started)
+
+<tag/Non-root processes/ Display all processes except those started by root.
+
+<tag/Running processes/
+Show only running processes (running or on the run queue)
+
+<!-- TODO -->
+<tag/User fields/
+The process list will show the most interesting process fields. This are those
+fields typically displayed by "top".
+
+<tag/Job fields/
+Displays most relevant fields for job-control.
+
+<tag/Memory fields/
+Shows information about memory usage, page faults...
+
+</descrip>
+
+
+
+<!--
+ ****************************************************************************
+ ****************************************************************************
+-->
+<sect>kpm main window<p>
+
+<sect1>Explaining the fields<p>
+<descrip>
+<label id="PID"><tag/PID - Process ID/
+Each process has a unique process ID number, starting at 1 and going up.
+When a new process is created, the next unused PID is allocated. PIDs
+are (currently) 16-bit signed integers, so they wrap around at 32767; this
+is normal behaviour and nothing to worry about.
+
+<label id="PPID"><tag/PPID - Parent process ID/
+Every process has one parent process.  The exception is process 1 (init),
+which is the root of the process hierarchy; it has no parent.
+
+<label id="PGID"><tag/PGID - Process group ID/
+Each process is member of one process group. Process groups are used for
+distribution of signals, and by terminals to arbitrate requests for
+their input: processes that have the same process group as the
+terminal are foreground and may read, while others will block with a
+signal if they attempt to read.
+
+<label id="SID"><tag/SID - Session ID/
+Session IDs are used mainly to determine what happens at terminal
+hangups.
+
+<label id="TTY"><tag/TTY - Controlling tty/
+The controlling terminal (tty) is usually the device (serial port, pty etc)
+from which the process was started, and which it uses for input or output.
+Not all processes have a controlling terminal.  Kpm scans the /dev
+directory to determine the name of the terminal, but this might fail.
+To save space, only the two last characters of the tty name is shown
+(thus /dev/ttyp6 is shown as p6)
+
+<label id="TPGID"><tag/TPGID - Process group ID of tty owner/
+A tty in use is owned by a process. This is the PGID of that process.
+
+<label id="USER"><tag/USER - Process owner/
+This is the name of the (real) user owning the process.  If the effective
+user ID of a process is different from the real user ID, this is indicated
+by a trailing "*" or "+".  The asterisk is used when the effective user
+is the super-user (this usually indicates a binary that is set-uid to root).
+
+<label id="NICE"><tag/NICE - Time-sharing priority/
+The nice value determines how often a process is allowed to run, and
+the length of its timeslice. The value is in the range -20 to 20, 0
+being the default.  Lower numbers give more CPU time to a process.
+Only the super-user may lower the nice value.
+
+<label id="PRI"><tag/PRI - Length of next timeslice/
+This is the maximal length of the process's next timeslice (or what is
+left of its current timeslice, if it is the currently running process).
+The number is rescaled to the -20..20 interval, smaller number indicating
+a longer timeslice.
+
+<label id="PLCY"><tag/PLCY - Scheduling policy/
+FIFO (F) and Round-Robin (R) are realtime scheduling policies; OTHER
+(O) is the normal Unix time-sharing policy. F and R processes have a
+realtime priority between 1 and 99. A process will run as long as
+there is no runnable process with higher priority. Round-Robin
+processes will run for the length of one time-slice, after which they
+are placed last in the queue of their priority. FIFO processes run
+until they give up their CPU time (by sleeping or blocking) or
+pre-empted by a process with higher priority. Only the super-user (root)
+may change the scheduling policy.
+
+<label id="RPRI"><tag/RPRI - Realtime priority/
+Realtime processes (FIFO and Round-Robin) have priorities between 1 and 99.
+A process will pre-empt any other process that has lower priority.
+Normal time-sharing processes (policy O) all have priority 0. Only the
+super-user (root) may change the realtime priority.
+
+<label id="MAJFLT"><tag/MAJFLT - Number of major faults occured/
+A page fault occurs when a process attempts to read or write from a memory
+page that isn't present in RAM.
+A major page fault is when disk access is involved, such as swapping
+in and out memory pages.
+
+<label id="MINFLT"><tag/MINFLT - Number of minor faults occured/
+A page fault occurs when a process attempts to read or write from a memory
+page that isn't present in RAM, or write to a page that isn't writeable.
+A minor fault is when there is no disk access involved, for instance
+when writing to a copy-on-write shared page.
+
+<label id="TRS"><tag/TRS - Text resident set size (Kbytes)/
+This is the size of the text (that is, executable code) of the process
+that is currently present in RAM.
+
+<label id="DRS"><tag/DRS - Data resident set size (Kbytes)/
+This is the size of the data (not executable code) of the process that
+is currently present in RAM.
+
+<label id="SIZE"><tag/SIZE - virtual image size of process (Kbytes)/
+This is the total size of the image of the process. This includes all
+code, data, and shared libraries used by the process, including pages
+that have been swapped out.
+
+<label id="SWAP"><tag/SWAP - Kbytes on swap device/
+This is simply the difference between SIZE and RSS, in other words how
+much of a process that resides on disk.
+
+<label id="RSS"><tag/RSS - resident set size (Kbytes)/
+This is the size of the part of the process (code and data) that
+actually resides in RAM, including shared libraries. This gives a fair
+approximation of how much RAM a process is using.
+
+<label id="SHARE"><tag/SHARE - shared memory (Kbytes)/
+This is the amount of memory that the process shares with other processes.
+It doesn't mean that any of it is actually used by any other process, just
+that it is possible.
+
+<label id="DT"><tag/DT - number of dirty pages/
+This is the number (not the number of bytes!) of pages in RAM that have been
+modified since they were last written to disk. Dirty pages have to be written
+to disk before they are freed and used for something else.
+
+<label id="STAT"><tag/STAT - state of the process/
+The process is at any time in one of the following states:
+<itemize>
+<item>R (running): the process is running on a cpu or is ready to run.
+<item>S (sleeping): the process is waiting for an event to occur (such as I/O or
+a timer).
+<item>D (uninterruptible sleep): the process is waiting for an event to occur,
+without being interruptible (usually waiting in a device driver).
+<item>T (stopped): the process is stopped, or being traced by another process.
+<item>Z (zombie): the process has terminated, but its parent hasn't mourned its
+death yet.
+<item> If the process is completely swapped out (has no resident pages), a 'W'
+is shown in the field. (This is also true for kernel processes, such as kswapd.)
+</itemize>
+
+<label id="FLAGS"><tag/FLAGS - process flags (hex)/
+This contains some additional information about the state of a process.
+Refer to the Linux kernel source for details.
+
+<label id="WCHAN"><tag/WCHAN - function where process is sleeping/
+If the process is waiting for something to happen, this is the kernel function
+where it is stuck. (Leading do_ or sys_ is stripped from the name to make it
+shorter.)
+
+<label id="UID"><tag/UID - numerical user ID/
+This is the ID of the (real) user owning the process.
+
+<label id="%WCPU"><tag/%WCPU - weighted percentage of CPU/
+This is the percentage of CPU time the process is using, averaged over the
+last 30 seconds (exponentially decaying average).
+
+<label id="%CPU"><tag/%CPU - percentage of CPU since last update/
+This is how much of the CPU time the process used since the last
+update of kpm's process table.
+
+<label id="%MEM"><tag/%MEM - percentage of memory used/
+This is how large part of the total RAM that is used by the process (as
+resident size). Shared libraries count, so this is an overstatement.
+
+<label id="START"><tag/START - time process started/
+This is when the process was created.
+
+<label id="TIME"><tag/TIME - total CPU time used/
+This is how much CPU time the process has used since it was started.
+
+<label id="COMM"><tag/COMM - command that started the process/
+This is the command (file name) that started the process. Long names are
+truncated.
+
+<label id="CMDLINE"><tag/CMDLINE - command line that started the process/
+This the command line, including arguments, that started the process. If
+"Hide Command Path" in the Options menu is selected, then the leading path
+of the command name is stripped. Processes swapped out may show just the
+command name in parentheses (this is true for kernel processes as well).
+</descrip>
+
+
+<!--
+ ****************************************************************************
+ ****************************************************************************
+-->
+<sect>Appendix<p>
+<label id="UNIX Signals">
+<sect1>UNIX Signals<p>
+These are the signals as explained on the manual page of <it>signal(7)</it>. For
+details consult the manual page with:
+
+<tt>man 7 signal</tt>
+
+The following signals are defined by Posix and can be sent by kpm:
+<itemize>
+<item><bf>SIGHUP:</bf>  Hangup detected on controlling terminal or death of controlling
+process
+<item><bf>SIGINT:</bf> Interrupt from keyboard
+<item><bf>SIGQUIT:</bf> Quit from keyboard
+<item><bf>SIGILL:</bf> Illegal Instruction
+<item><bf>SIGABRT:</bf> Abort signal from abort(3)
+<item><bf>SIGFPE:</bf> Floating point exception
+<item><bf>SIGKILL:</bf> Kill signal
+<item><bf>SIGSEG:</bf> Invalid memory reference
+<item><bf>SIGPIPE:</bf> Broken pipe: write to pipe with no readers
+<item><bf>SIGALRM:</bf> Timer signal from alarm(1)
+<item><bf>SIGTERM:</bf> Termination signal
+<item><bf>SIGUSR1:</bf> User-defined signal 1
+<item><bf>SIGUSR2:</bf> User-defined signal 2
+<item><bf>SIGCHLD:</bf> Child stopped or terminated
+<item><bf>SIGCONT:</bf> Continue if stopped
+<item><bf>SIGSTOP:</bf> Stop process
+<item><bf>SIGTSTP:</bf> Stop typed at tty
+<item><bf>SIGTTIN:</bf> tty input for background process
+<item><bf>SIGTTOU:</bf> tty output for background process 
+</itemize>
+These signals aren't defined by Posix, nor available from kpm (yet)
+<itemize>
+<item><bf>SIGTRAP:</bf> Trace/breakpoint trap
+<item><bf>SIGIOT:</bf> IOT trap. A synonym for SIGABRT
+<item><bf>SIGBUS:</bf> Bus error
+<item><bf>SIGSYS:</bf> Bad argument to routine (SVID)
+<item><bf>SIGSTKFLT:</bf> Stack fault on coprocessor
+<item><bf>SIGURG:</bf> Urgent condition on socket (4.2 BSD)
+<item><bf>SIGIO:</bf> I/O now possible (4.2 BSD)
+<item><bf>SIGPOLL:</bf> synonym for SIGIO (System V)
+<item><bf>SIGCLD:</bf> synonym for SIGCHLD
+<item><bf>SIGXCPU:</bf> CPU time limit exceeded (4.2 BSD)
+<item><bf>SIGXFSZ:</bf> File size limit exceeded (4.2 BSD)
+<item><bf>SIGVTALRM:</bf> Virtual alarm clock (4.2 BSD)
+<item><bf>SIGPROF:</bf> Profile alarm clock
+<item><bf>SIGPWR:</bf> Power failure (System V)
+<item><bf>SIGINFO:</bf> A synonym for SIGPWR 
+<item><bf>SIGLOST:</bf> File lock lost
+<item><bf>SIGWINCH:</bf> Window resize signal (4.3 BSD, Sun)
+<item><bf>SIGUNUSED:</bf> Unused signal
+</itemize>
+
+<sect1>Known bugs and problems<p>
+<itemize>
+<item>kpm sometimes dies with a segmentation fault if more than one process is
+marked and the list is updated. I've no clue why...
+<item>The info bar and the process list itself are optimized for 12pt
+fonts. It will look good enough with fonts up to 14pt, but look very ugly for
+bigger fonts.
+<item>kpm can consume a lot of CPU resources if the update period is too
+small. On my system (AMD K6PR200) it uses approximatly 5 percent CPU time with
+an update period of one second. This heavily depends on the total number of
+processes (all processes, not only those displayed) and can be much higher
+than this.
+<item>The %CPU number isn't accurate at very short update periods due to timer
+granularity.
+<item>The WCHAN field isn't correct if a  process  sleeps  in  a location
+outside those in <tt>System.map</tt> (for instance, in a kernel module). In
+these cases, the last entry in <tt/System.map/ will be showed (something like
+<tt/_end/).
+<item>kpm doesn't handle more than one process with the same PID.  This can
+occur when using CLONE_PID with the clone() system call. 
+</itemize>
+
+</article>

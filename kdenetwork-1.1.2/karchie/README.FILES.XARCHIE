@@ -1,0 +1,49 @@
+Many files in this distribution are shared with the Prospero distribution
+by Cliff Neuman (bcn@isi.edu) and the standalone archie client by Brendan
+Kehoe (brendan@cs.widener.edu). This file attempts to make sense of the
+similarities and differences.
+
+The Prospero file "uw-copyright.h" has been renamed to "copyright.h"
+to shorten its filename.
+
+The file "archie.h" is unchanged from the Prospero distribution. I'm
+not really sure how necessary it is for xarchie anymore...
+
+The following files are from the Prospero distribution, and differ only in
+that they include <copyright.h> rather than <uw-copyright.h>:
+	aquery.c
+	p_err_text.c
+	pauthent.h
+	pcompat.h
+	perrno.h
+	pprot.h
+
+The files "pmachine.h" and "rdgram.h" are from the standalone archie
+client distribution.
+
+The file "support.c" is from the standalone archie client distribution, and
+was put together from parts of the Prospero distribution.
+
+The following files are from the Prospero distribution, but were modified
+slightly for use in the standalone archie client:
+	atalloc.c	get_pauth.c	get_vdir.c	pfs.h
+	ptalloc.c	stcopy.c	vl_comp.c	vlalloc.c
+
+The file "dirsend.c" is identical to the standalone archie client version
+except for code surrounded by "#ifdef XARCHIE" conditionals.
+
+The file "aquery.c" was created for the xarchie distribution by
+combining and modifying "procquery.c" and "aquery.c" (writen by GF and
+BPK) from the standalone archie client distribution.
+
+The file "regex.c" was written by Ozan S. Yigit, Dept. of Computer Science,
+York University. It is in the public domain and is distributed with the
+Prospero distribution.
+
+The file "inet_ntoa.c" is part of the freed Berkeley sources as is
+copyright (c) 1983 Regents of the University of California.
+
+The files in the FWF directory are copyright 1990,1991,1992 Brian
+Totty. See the file FWF/COPYRIGHT for more details.
+
+George Ferguson, ferguson@cs.rochester.edu, 4 Jan 1993.

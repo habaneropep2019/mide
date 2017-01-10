@@ -1,0 +1,341 @@
+# KTranslator Generated File
+
+# KBiff Message File for 2.3.6 (KDE 1.1.2)
+# Copyright (C) 1999 Kurt Granroth
+# Kurt Granroth <granroth@kde.org>, 1999.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libgtop VERSION\n"
+"POT-Creation-Date: 1999-03-01 22:58+0100\n"
+"PO-Revision-Date: Sun Jul 11 1999 18:20:07+0200\n"
+"Last-Translator: 井村 竜一郎 <imura@cs.titech.ac.jp>\n"
+"Language-Team: japanese <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=euc-japan\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KTranslator v 0.5.0"
+
+# This is used in a popup menu.  It instructs KBiff to remove itself
+# from the kpanel dock and use its own menu
+#: kbiff.cpp:629
+msgid "&UnDock"
+msgstr "パネルから出す (&U)"
+
+# This is also used in a popup menu.  It instructs KBiff to dock itself into
+# the panel
+#: kbiff.cpp:631
+msgid "&Dock"
+msgstr "パネルに格納 (&D)"
+
+# This is a menu item instructing KBiff to popup the Setup Dialog
+#: kbiff.cpp:632
+msgid "&Setup..."
+msgstr "セットアップ (&S)"
+
+# This.. well, you can probably guess what this does ;-)
+#: kbiff.cpp:634
+msgid "&Help..."
+msgstr "ヘルプ (&H)"
+
+# This is a menu item that instructs KBiff to perform a mail check right now
+#: kbiff.cpp:638
+msgid "&Check Mail Now"
+msgstr "直ちにメールをチェックする (&C)"
+
+# This is a menu item that instructs KBiff to pretend that the mail is all
+# in the old state.  It is used when you *know* that there is new mail but
+# don't want KBiff to indicate that.
+#: kbiff.cpp:640
+msgid "&Read Mail Now"
+msgstr "直ちにメールを読む (&R)"
+
+# Menu item telling KBiff to stop monitoring
+#: kbiff.cpp:646
+msgid "&Stop"
+msgstr "停止 (&S)"
+
+# Message instructing the user that new mail has arrived
+#: notify.cpp:33 notify.cpp:50
+msgid "You have new mail!"
+msgstr "あなたに新しいメールがあります！"
+
+# This displays the number of new messages
+#: notify.cpp:58 notify.cpp:103
+#, c-format
+msgid "New Messages: %d"
+msgstr "新しいメッセージ：%d件"
+
+# This displays the name of the current mailbox
+#: notify.cpp:63
+#, c-format
+msgid "Mailbox: %s"
+msgstr "メールボックス：%s"
+
+# This is on a button.  It launches the user's mail client
+#: notify.cpp:73
+msgid "Mailer"
+msgstr "メイラー"
+
+# This is the label on the KBiff Setup Dialog
+#: setupdlg.cpp:83
+msgid "KBiff Setup"
+msgstr "KBiff セットアップ"
+
+# Hmm... I'm not sure how to describe a "profile".  It's kinda a grouping
+# of settings that apply to a single mailbox or group mailboxes.
+#: setupdlg.cpp:86
+msgid "Profile:"
+msgstr "プロフィール："
+
+# This is on a button that will popup a dialog asking for a new name
+#: setupdlg.cpp:102
+msgid "&New..."
+msgstr "新規 (&N)"
+
+# This is on a button that will popup a dialog asking for a new name used
+# for renaming a profile
+#: setupdlg.cpp:109
+msgid "&Rename..."
+msgstr "名称変更 (&R)"
+
+# This is on a tab dialog.  This particular tab contains all of the settings
+# for a given profile that are kind of general. For instance, it has the
+# poll seconds, mail client, icon selection, and similar related stuff
+#: setupdlg.cpp:143
+msgid "General"
+msgstr "一般"
+
+# This is on a tab dialog.  This particular tab contains all of the settings
+# for a given profile that are related to new mail arriving.  For instance,
+# you can specify a sound to play, a command to execute, and other stuff
+#: setupdlg.cpp:144
+msgid "New Mail"
+msgstr "新しいメール"
+
+# This is on a tab dialog.  It allows you to specify any number of mailboxes.
+#: setupdlg.cpp:145 status.cpp:33
+msgid "Mailbox"
+msgstr "メールボックス"
+
+# This is used when adding a new profile
+#: setupdlg.cpp:391
+msgid "New Profile"
+msgstr "新しいプロフィール"
+
+# This is used when renaming a given profile.  For instance,
+# Rename Profile: Inbox" would say that we are now going to rename the Inbox
+# profile
+#: setupdlg.cpp:423
+#, c-format
+msgid "Rename Profile: %s"
+msgstr "プロフィールの名称変更：%s"
+
+# This is similar to Rename with the exception that we are going to delete
+# the given profile
+#: setupdlg.cpp:463
+#, c-format
+msgid "Delete Profile: %s"
+msgstr "プロフィールの削除：%s"
+
+# This makes sure that the user really does want to delete the given
+# profile
+#: setupdlg.cpp:464
+msgid "Are you sure you wish to delete this profile?\n"
+msgstr "本当にこのプロフィールを削除して構いませんか?\n"
+
+# This setting dictates the time between monitoring a mailbox.  For instance,
+# if the poll time was 30, then KBiff would check for new mail every 30
+# seconds
+#: setupdlg.cpp:524
+msgid "Poll (sec):"
+msgstr "調査間隔 (秒)"
+
+# This setting contains the name of the user's mail client
+#: setupdlg.cpp:529
+msgid "Mail client:"
+msgstr "チェックコマンド"
+
+# This setting governs whether or not KBiff will start docked in the panel
+#: setupdlg.cpp:542
+msgid "Dock in panel"
+msgstr "パネルに格納"
+
+# This setting governs whether or not KBiff will use session management
+#: setupdlg.cpp:547
+msgid "Use session management"
+msgstr "KDE セッションマネジメントを用いる"
+
+# This is on a groupbox containing all of the Icons that KBiff uses
+#: setupdlg.cpp:552
+msgid "Icons:"
+msgstr "アイコン："
+
+# This is the icon that is displayed when there is no mail
+#: setupdlg.cpp:570
+msgid "No Mail:"
+msgstr "メールなし："
+
+# This is the icon that is displayed when there is old mail
+#: setupdlg.cpp:579
+msgid "Old Mail"
+msgstr "古いメール"
+
+# This is the icon that is displayed when there is new mail
+#: setupdlg.cpp:589
+msgid "New Mail:"
+msgstr "新規メール："
+
+# This is the icon that is displayed when KBiff could not make a connection
+# to a remote server
+#: setupdlg.cpp:599
+msgid "No Conn.:"
+msgstr "未接続 :"
+
+# This is the command that will run when new mail arrives
+#: setupdlg.cpp:756
+msgid "Run Command"
+msgstr "コマンド実行"
+
+# This will popup a file dialog for selecting *something*
+#: setupdlg.cpp:763 setupdlg.cpp:783 setupdlg.cpp:1178
+msgid "Browse"
+msgstr "参照"
+
+# This is the sound file that will play when new mail arrives
+#: setupdlg.cpp:769
+msgid "Play Sound"
+msgstr "音楽再生"
+
+# This instructs KBiff to beep when new mail arrives
+#: setupdlg.cpp:789
+msgid "System Beep"
+msgstr "ビープ音"
+
+# This instructs KBiff to popup a Notify message box when new mail arrives
+#: setupdlg.cpp:794
+msgid "Notify"
+msgstr "通知"
+
+# If this is checked, then KBiff will popup a list of mailboxes with the
+# number of new mail whenever the user puts the cursor of a KBiff icon.
+#: setupdlg.cpp:798
+msgid "Floating Status"
+msgstr "フローティングステータス"
+
+# This is the label of the advanced options dialog box.  It contains direct
+# manipulation of such features as port, preauthorization, and other stuff
+#: setupdlg.cpp:948
+msgid "Advanced Options"
+msgstr "その他のオプション"
+
+# This setting contains the entire URL denoting the mailbox.
+#: setupdlg.cpp:952
+msgid "Mailbox URL:"
+msgstr "メールボックスのURL："
+
+# This setting holds the port that KBiff will use for network protocols like
+# POP3, IMAP4, and NNTP
+#: setupdlg.cpp:956
+msgid "Port:"
+msgstr "ポート："
+
+# This is for IMAP users.  It instructs KBiff not to login to the IMAP server
+# as the login method was already pre-authorized.  Specificially, it uses
+# the PREAUTH command
+#: setupdlg.cpp:960
+msgid "PREAUTH"
+msgstr "PREAUTH"
+
+# This instructs KBiff to not logout from either the POP3, IMAP4, or NNTP
+# server
+#: setupdlg.cpp:967
+msgid "Keep Alive"
+msgstr "サーバにセッションを残す"
+
+# If this is selected, then KBiff will do all of it's network work in an
+# asynchronous mode.  That is, it will not wait for the response to any
+# given command... it will receive the response as an event, later.
+#: setupdlg.cpp:974
+msgid "Asynchronous"
+msgstr "非同期"
+
+# This is a list of all mailboxes in this profile
+#: setupdlg.cpp:1123 setupdlg.cpp:1152
+msgid "Mailbox:"
+msgstr "メールボックス："
+
+# This is a tooltip on a button that will popup a dialog for creating a
+# new mailbox
+#: setupdlg.cpp:1136 setupdlg.cpp:1474
+msgid "New Mailbox"
+msgstr "新しいメールボックス"
+
+# This is a tooltip on a button that will delete the selected mailbox
+#: setupdlg.cpp:1143
+msgid "Delete Mailbox"
+msgstr "メールボックスの削除"
+
+# This is the protocol used for the given mailbox.  This can be either mbox,
+# maildir, pop3, imap4, nntp, mh, or file
+#: setupdlg.cpp:1149
+msgid "Protocol:"
+msgstr "プロトコル："
+
+# This is the server used with the network protocols (POP3, IMAP4, NNTP)
+#: setupdlg.cpp:1155
+msgid "Server:"
+msgstr "サーバー："
+
+# This is the user used with the network protocols (POP3, IMAP4, NNTP)
+#: setupdlg.cpp:1158
+msgid "User:"
+msgstr "ユーザー："
+
+# This is the password used with the network protocols (POP3, IMAP4, NNTP)
+#: setupdlg.cpp:1161
+msgid "Password:"
+msgstr "パスワード："
+
+# If this is checked, then KBiff will store the user's password.  Otherwise,
+# the password is discarded when KBiff exits.
+#: setupdlg.cpp:1195
+msgid "Store password"
+msgstr "パスワードを保存する"
+
+# This button will popup the Advanced Options dialog
+#: setupdlg.cpp:1198
+msgid "Advanced"
+msgstr "その他"
+
+# The name of this program!
+#: setupdlg.cpp:1675
+msgid "KBiff"
+msgstr "KBiff"
+
+# Me!
+#: setupdlg.cpp:1697
+#, c-format
+msgid ""
+"Version %s\n"
+"\n"
+"Copyright (C) 1999\n"
+"Kurt Granroth"
+msgstr ""
+
+# This is the new name for either the profile or mailbox.  It is a label
+# on a dialog
+#: setupdlg.cpp:1746
+msgid "New Name:"
+msgstr "新しい名前 :"
+
+# This is the same as the above.. only without the ':' after it
+#: setupdlg.cpp:1772
+msgid "New Name"
+msgstr "新しい名前"
+
+# This displays the number of new messages for a given mailbox
+#: status.cpp:34
+msgid "New"
+msgstr "新規"

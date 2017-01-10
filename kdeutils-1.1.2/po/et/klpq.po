@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Hasso Tepper <hasso@ewsound.estnet.ee>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-02 02:22+0200\n"
+"PO-Revision-Date: 1999-06-26 03:58+0200\n"
+"Last-Translator: Hasso Tepper <hasso@ewsound.estnet.ee>\n"
+"Language-Team: Estonian <linux-ee@eenet.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: main.cpp:178
+msgid "Sorry, can't open your printcap file."
+msgstr "Vabandust, printcap faili pole võimalik avada."
+
+#: main.cpp:183
+msgid "Sorry, unable to parse your printcap."
+msgstr "Vabandust, printcap faili pole võimalik analüüsida."
+
+#: main.cpp:184
+msgid "Please email your printcap to Christoph.Neerfeld@home.ivm.de"
+msgstr "Palun meili oma printcap faili aadressil Christoph.Neerfeld@home.ivm.de"
+
+#: klpq.cpp:90
+msgid "Printer"
+msgstr "Printer"
+
+#: klpq.cpp:95
+msgid "Queuing"
+msgstr "Järjekord"
+
+#: klpq.cpp:100
+msgid "Printing"
+msgstr "Trükkimine"
+
+#: klpq.cpp:105
+msgid "Update"
+msgstr "Värskenda"
+
+#: klpq.cpp:125
+msgid "Rank"
+msgstr "Nr."
+
+#: klpq.cpp:126
+msgid "Owner"
+msgstr "Omanik"
+
+#: klpq.cpp:127
+msgid "Job"
+msgstr "Töö"
+
+#: klpq.cpp:129
+msgid "Size"
+msgstr "Suurus"
+
+#: klpq.cpp:150 klpq.cpp:228
+msgid "Make Top"
+msgstr "Pane esimeseks"
+
+#: klpq.cpp:160
+msgid "Auto"
+msgstr "Automaatne"
+
+#: klpq.cpp:204
+msgid "&Auto update"
+msgstr "&Automaatne värskendamine"
+
+#: klpq.cpp:205
+msgid "&Spooler"
+msgstr "Puhverdus&süsteem"
+
+#: klpq.cpp:208
+#, c-format
+msgid ""
+"Klpq %s\n"
+"(C) by Christoph Neerfeld\n"
+"chris@kde.org"
+msgstr ""
+"Klpq %s\n"
+"(C) Christoph Neerfeld\n"
+"chris@kde.org"
+
+#: klpq.cpp:213
+msgid "&Config"
+msgstr "&Konfiguratsioon"
+
+#: klpq.cpp:404
+#, c-format
+msgid "Do you really want to remove job No %d"
+msgstr "Soovid sa tõesti eemaldada töö nr. %d"
+
+#: klpq.cpp:424
+#, c-format
+msgid ""
+"Do you really want to move job No\n"
+"%d\n"
+"on top of queue"
+msgstr ""
+"Soovid sa tõesti panna töö nr.\n"
+"%d\n"
+"järjekorras esmeseks?"
+
+#: klpq.cpp:572 klpq.cpp:578 klpq.cpp:593
+msgid "Permission denied"
+msgstr "Juurdepääs keelatud"
+
+#: klpq.cpp:573 klpq.cpp:579 klpq.cpp:594
+msgid ""
+"This is a privileged command\n"
+"and you do not have permission to execute it."
+msgstr ""
+"See on priviligeeritud käsk\n"
+"ja sul pole õigusi selle käivitamiseks."
+
+#: ConfAutoUpdate.cpp:10
+msgid "Configure Auto Update"
+msgstr "Konfigureeri automaatset värskendamist"
+
+#: ConfAutoUpdateData.cpp:17
+msgid "Update frequency in seconds:"
+msgstr "Värskendamise sagedus sekundites:"
+
+#: klpqspooler.cpp:199 klpqspooler.cpp:269
+msgid "Can't find your lpc program !"
+msgstr "Prgrammi 'lpc' pole võimalik leida!"
+
+#: klpqspooler.cpp:200 klpqspooler.cpp:270
+msgid ""
+"Sorry, I can't find your lpc program.\n"
+"Please check the configuration under Config->Spooler."
+msgstr ""
+"Vabandust, programmi 'lpc' pole võimalik leida.\n"
+"Palun kontrolli konfiguratsiooni Konfiguratsioon->Puhverdussüsteem."
+
+#: FirstStart.cpp:21 SpoolerConfig.cpp:21 SpoolerConfigData.cpp:151
+msgid "Select your spooling system"
+msgstr "Vali puhverdussüsteem"
+
+#: FirstStartData.cpp:42
+msgid ""
+"Please select the spooling system you use. Most systems use the BSD spooler. "
+"So if you don't know which spooler is installed on your system, BSD is "
+"probably a good choice."
+msgstr ""
+"Palun vali puhverdussüsteem, mida kasutada. Enamik süsteeme kasutab BSD puhverdust. "
+"Kui sa ei tea missugune puhverdus on sinu süsteemis installeritud, siis peaks "
+"BSD olema õige valik."
+
+#: SpoolerConfigData.cpp:99
+msgid "Paths of spooling commands:"
+msgstr "Teed puhverduskäskudele:"

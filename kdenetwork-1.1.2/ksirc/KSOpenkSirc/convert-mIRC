@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+
+while ($line = <STDIN>) {
+  if ($line =~ /.*=(Random .*)SERVER:(.*):(.*)GROUP:.*/) {
+    $service = 'Random';
+    $servername = $1;
+    $server = $2;
+    $ports = $3;
+    print "$service\:$servername\:$server\:$ports\:\n";
+  }
+  elsif ($line =~ /.*=(.*): (.*)SERVER:(.*):(.*)GROUP:.*/) {
+    $service = $1;
+    $servername = $2;
+    $server = $3;
+    $ports = $4;
+   
+    print "$service\:$servername\:$server\:$ports\:\n";
+  } 
+}

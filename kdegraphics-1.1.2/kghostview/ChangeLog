@@ -1,0 +1,41 @@
+  * [Duncan Haldane] <duncan@kde.org>  Fixed bug #712; 
+	changed KPSWidget::layout() to KSPWidget::KPSLayout( Bool force )
+	to allow forcing an image update by calling KPSLayout( True )
+	for changes like Landscape<-> Seascape orientation which do not 
+	change the image size. The name layout() is changed to KPSLayout() 
+	to avoid confusion with QT's layout() function.  May 23, 1999.  
+	Fix essentially follows suggestion by submitter of Bug report:
+        Sven Fischer <herpes@kawo2.rwth.aachen.de>
+
+Version 0.7:
+  * [Mark Donohoe] Patch from Jake Hamy <jehamby@lightside.com> which
+                     incorporates code from Johanes Plass' GV. This adds
+					 (1) Compressed file support, (2) PDF support 
+					 ( Currently limited by ghostscript's poor handling of
+					 this format )
+  * [Mark Donohoe] Fixed major performance bug which caused gs to be
+                     repeatedly restarted
+  * [Mark Donohoe] Improved print dialog
+				     - Print to file
+				     - Print all, current, marked, or range of pages
+				     - Setup spooler command, printer name
+                     - Reverse order of printing
+  * [Mark Donohoe] Much better keyboard support
+  * [Mark Donohoe] Improved geometry management
+  * [Mark Donohoe] Improved warning and error dialogs
+	
+Version 0.6.3:
+  * [Mark Donohoe] Session management
+  * [Mark Donohoe] Patch from Markus Duda <Duda@physik.rwth-aachen.de> for 
+                     pagelist.
+				     ( Fixes a problem with documents that have named rather
+					 than numbered pages I believe )
+  * [Mark Donohoe] Imporvements to page list interface
+  * [Mark Donohoe] Fixed mix up of Magnification and Orientation on
+                     View Control dialog
+  * [Mark Donohoe] Few geometry management fixes
+  * [Mark Donohoe] New icon
+  
+Version 0.6.1:
+  * [Robert Williams]  Added version.h and ChangeLog
+  * [Robert Williams]  Added -caption "%c" to kghostview.kdelnk

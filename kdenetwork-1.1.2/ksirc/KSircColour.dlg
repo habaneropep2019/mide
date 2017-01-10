@@ -1,0 +1,149 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {KSircColour.h}
+	ClassSource {KSircColour.cpp}
+	ClassName {KSircColour}
+	DataHeader {KSircColourData.h}
+	DataSource {KSircColourData.cpp}
+	DataName {KSircColourData}
+	WindowBaseClass {QFrame}
+	WindowCaption {Colour Settings}
+	WindowFlags {12288}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {230 250}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+Label {
+		Text {Generic Text}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 10 100 30}
+		Name {Label_1}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+User {
+		UserClassHeader {kcolorbtn.h}
+		UserClassName {KColorButton}
+		Rect {120 10 100 30}
+		Name {User_1}
+		Variable {ColourText}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+User {
+		UserClassHeader {kcolorbtn.h}
+		UserClassName {KColorButton}
+		Rect {120 50 100 30}
+		Name {User_2}
+		Variable {ColourInfo}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+User {
+		UserClassHeader {kcolorbtn.h}
+		UserClassName {KColorButton}
+		Rect {120 90 100 30}
+		Name {User_3}
+		Variable {ColourChan}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+User {
+		UserClassHeader {kcolorbtn.h}
+		UserClassName {KColorButton}
+		Rect {120 130 100 30}
+		Name {User_4}
+		Variable {ColourError}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Info}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 50 100 30}
+		Name {Label_2}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Chan Messages}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 90 100 30}
+		Name {Label_3}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Errors}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 130 100 30}
+		Name {Label_4}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {TRUE}
+		Text {Ok}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {120 210 100 30}
+		Name {PushButton_1}
+		Signal {[Protected]  clicked --> ok  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 210 100 30}
+		Name {PushButton_2}
+		Signal {[Protected]  clicked --> cancel  ()}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+User {
+		UserClassHeader {kcolorbtn.h}
+		UserClassName {KColorButton}
+		Rect {120 170 100 30}
+		Name {User_5}
+		Variable {ColourBackground}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Background}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {10 170 100 30}
+		Name {Label_5}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

@@ -1,0 +1,315 @@
+<!doctype linuxdoc system>
+
+<!-- The ktalkd Handbook. -->
+
+<article>
+
+<!-- Title information -->
+
+<title>The ktalkd Handbook
+<author>David Faure <tt/faure@kde.org/
+<date>Version 0.9.0, November 14, 1998
+<abstract>This handbook describes ktalkd version 0.9.0
+
+<!-- Table of contents -->
+<toc>
+
+<!-- Begin the document -->
+
+<sect>Introduction
+<p>
+
+<tt/ktalkd/ is an enhanced talk daemon - a program to handle incoming talk requests,
+announce them and allow you to respond to it using a talk client.
+
+GLOSSARY : In this document, if somebody wants to talk to you, you are 
+designated as the "callee".
+
+<tt/ktalkd/ has the following features :
+
+<descrip>
+<tag/KDE or not KDE/
+That is the question. :) More seriously, this means that
+<tt/ktalkd/ is able to be compiled with or without KDE support.
+To use it without KDE, the compilation stage will detect if X or Qt 
+or KDE is not installed, but you can force a non-KDE daemon if you 
+use the configure option '--without-X'.
+
+<tag/Answering machine/
+If the callee isn't logged on, or doesn't answer after
+the second announcement, an answering machine is launched, takes the
+message, and mails it to the callee.
+
+<tag/Sound/
+If desired, a sound is played with the announcement.
+
+<tag/X Announce/
+If compiled with KDE installed, ktalkd will use
+<bf/ktalkdlg/, a KDE dialog, for announcement.
+If <bf/ktalk/ is running, it will be asked to make the announcement 
+itself. (New since 0.8.8).
+
+<tag/Multiple displays annoucement/
+If you are logged remotely (e.g. with an
+<tt/"export DISPLAY=..."/ command), the X announcement will be made on
+this display too. Answer on the one you want !
+If you're also logged in a text terminal, and if you're NOT using xterms
+(internal restriction), then you'll see a text announcement too, in case 
+you're using the text terminal at the time of the announcement.  
+
+<tag/Forwarding   <it/(New since 0.8.0)//
+You can set up a forward to another user even to another host
+if you're away. There are 3 different forwarding methods. See section 'Usage'.
+
+<tag/Configuration/
+If ktalkd is compiled for KDE, it reads config from KDE config files,
+the sitewide ($KDEDIR/share/config/ktalkdrc) and the user one, in its home directory.
+The sitewide one has to be manually edited by the administrator, but there is now
+a configuration dialog for the user one. It's called <bf/kcmktalkd/ and can 
+be found in the KDE Control Center after installing <tt/ktalkd/.
+On non-KDE systems, <tt/ktalkd/ will read /etc/talkd.conf.
+
+<tag/Internationalization/
+Under KDE, the announcement will be in your language provided that
+you set it in the KDE menus and that someone translated <bf/ktalkdlg/ to your
+language. The same goes for the configuration dialog, <bf/kcmktalkd/.
+
+<tag/Support for otalk and ntalk   <it/(New since 0.8.1)//
+ktalkd now supports both protocols, even when forwarding. 
+ktalk supports both protocols as well.
+</descrip>
+
+<p>I hope you will enjoy this talk daemon,
+<p>David Faure
+<p><htmlurl url="mailto:faure@kde.org" name="faure@kde.org">
+
+<sect>Supported Platforms
+<p>
+
+<descrip>
+<tag/RedHat Linux 5.x/
+My development platform. Fully tested on it.
+
+<tag/Other Linux, BSD/
+Should compile and run well.
+
+<tag/Solaris/
+It won't work until somebody makes a replacement for snprintf. 
+Of course, one should be able to install another libc to solve this...
+
+<tag/AIX/
+I've heard about problems about localtime, ctime, and assorted functions.
+</descrip>
+
+<p>I would be glad to receive comments about compiling and running <tt/ktalkd/
+  on those and other systems.
+
+<sect>Installation
+<p>
+
+<sect1>How to obtain ktalkd
+<p>
+
+<p><tt/ktalkd/ is now a core application of the KDE project 
+<url url="http://www.kde.org">, part of the
+<bf/kdenetwork/ package.
+
+<p>But you can always download the latest <tt/ktalkd/ from the main ftp site of the KDE project,
+<url url="ftp://ftp.kde.org/pub/kde"> and from its mirrors.
+It's usually found in <url url="ftp://ftp.kde.org/pub/kde/stable/latest/apps/network"> 
+
+<sect1>Requirements
+<p>
+
+In order to successfully compile <tt/ktalkd/, you need the latest versions 
+of the KDE libraries as well as the Qt C++ library. All required 
+libraries as well as ktalkd itself can be found on 
+<url url="ftp://ftp.kde.org/pub/kde/">.
+
+<sect1>Compilation and installation
+<p>
+
+  In order to compile and install <tt/ktalkd/ on your system, type the 
+  following in the base directory of the <tt/ktalkd/ distribution:
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+As <tt/ktalkd/ is a daemon, <tt/make install/ will require root privileges.
+
+<p>Don't forget to update /etc/inetd.conf.
+For example, on a linux system, if kde is in /opt/kde, change the lines 
+concerning talk and ntalk to :
+<tscreen><verb>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd
+</verb></tscreen>
+A script is provided, to make the necessary change automatically. 
+Update your inetd.conf file just by running 
+<tscreen><verb>
+% ./post-install.sh
+</verb></tscreen>
+Anyway, you'll have to <bf/restart inetd/ after this.
+On most Linux systems, do :
+<tscreen><verb>
+% killall -HUP inetd
+</verb></tscreen>
+
+<p>Please inform me of any modification you had to undertake in order to
+get <tt/ktalkd/ to compile on your platform.
+
+<sect>Usage
+<p>
+
+To use ktalkd, you need a talk client. The text-based <tt/talk/ is available on 
+most Unix systems. Try <tt/talk your_username/ to see what happens when you
+receive a talk request. You can also try the answering machine the same way :
+initiate a talk to yourself, ignore the announcement twice, and you'll see the
+answering machine.
+<p>
+There is a talk client with a graphical interface for the KDE, <tt/ktalk/.
+It's not yet shipped with KDE packages, but you can find it on
+ftp://ftp.kde.org. It should be in
+<url url="ftp://ftp.kde.org/pub/kde/stable/latest/apps/network">
+
+<p>The announcement dialog box is trivial : respond or ignore.
+<p>The configuration dialog should be rather straight forward, except for setting up a
+forward to another user (or even to another host).
+
+<sect1>Choosing a Forwarding Method
+<p>
+None is perfect, they all have pros (+) and cons (-).
+
+<p><bf/FWA/ : Forward announcement only. Direct connection. Not recommended.
+<itemize>
+<item>       (+) You know who the caller is, but
+<item>       (-) Caller will have to respond to an announcement from you. Annoying.
+<item>       (-) Don't use if you have an answering machine on your 'away' location.
+  (The answering machine can't popup an announcement, it would be confusing!)
+</itemize>
+<p><bf/FWR/ : Forward all requests, changing info when necessary. Direct connection.
+<itemize>
+<item>       (+) Caller won't know that you're away, but
+<item>       (-) You won't really know who the caller is - only his username, 
+(so you might see "talk from Wintalk@my_host")
+</itemize>
+<p><bf/FWT/ : Forward all requests and take the talk. No direct connection.
+<itemize>
+<item>       (+) Same as above, but also works if you and caller can't be in
+direct contact one with the other (e.g. firewall).
+<item>       (+) You'll be told who's really talking to you when you accept the talk
+<item>       (-) But as in FWR, you won't know his machine name in the announcement
+</itemize>
+<p>In short, use <bf/FWT/ it you want to use it behind a firewall (and if ktalkd
+can access both networks), and <bf/FWR/ otherwise.
+
+<sect>Questions and Answers
+<p>
+<sect1>Why Doesn't Root Receive KDE Announcements ?
+<p>
+Because this would be security hole, with the current user detection.
+You can bypass the limitation by adding two lines in xdm config files
+(which are the same than kdm ones).
+Note : the S.u.S.E linux distribution includes those lines by default.
+
+<p>
+Those config files are normally in a directory such as /etc/X11/xdm,
+or /usr/X11R6/lib/X11/xdm on other systems. The following supposes
+that they are in /etc/X11/xdm, so you might have to translate them
+for another directory.
+
+<p>
+Here is what you have to do :
+Edit the file Xstartup, or create it, (in the xdm config directory) so that it reads :
+<tscreen><verb>
+#!/bin/sh
+/etc/X11/xdm/GiveConsole
+sessreg -a -l $DISPLAY -x /etc/X11/xdm/Xservers $USER
+</verb></tscreen>
+
+and the file Xreset so that it reads :
+<tscreen><verb>
+#!/bin/sh
+/etc/X11/xdm/TakeConsole
+sessreg -d -l $DISPLAY $USER   
+</verb></tscreen>
+
+Make sure that <bf/xdm-config/ make reference to those two
+files:
+<tscreen><verb>
+DisplayManager._0.startup:      /etc/X11/xdm/Xstartup
+DisplayManager._0.reset:        /etc/X11/xdm/Xreset 
+</verb></tscreen>
+
+<P>
+This will make kdm (or xdm) log the user into utmp, which is the right 
+thing to do. It's not up to kvt, nor xterm, to log the user, but to
+xdm and kdm, in my opinion. However, this will not log the user as a X 
+user when using startx... Any hint about that ?
+
+<sect1>Why Don't I, as a Normal User, Receive KDE Announcements ?
+<p>
+If you're running a linux system (with /proc enabled), this behaviour is a
+bug. Please send me a description of it so that I correct it.</p>
+<p>If you're running linux 2.0.35, this is a known bug in the kernel,
+which doesn't let root read /proc. The solution is the same as in section
+5.1, provided that you run kdm or xdm to log into X. Or upgrade !
+<p>Otherwise, this is normal : ktalkd can't find the user, as KDE doesn't 
+log him into utmp and the linux based (/proc) detection is disabled.
+The solution is the same as in section 5.1, provided that you run kdm
+or xdm to log into X.
+Another solution is to make sure you always have a xterm running.
+
+<sect1>How Do I Get Debug Output from Ktalkd ?
+<P>
+As it is a daemon, there is no debug output on standard output. To get 
+debugging output (for instance before submitting me a bug report !), update 
+the lines in inetd.conf which launches ktalkd and kotalkd to be :
+<tscreen><verb>
+talk   dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/kotalkd -d
+ntalk  dgram   udp     wait    root    /usr/sbin/tcpd  /opt/kde/bin/ktalkd -d
+</verb></tscreen>
+(notice the <bf/-d/ option)
+
+<P>Then edit /etc/syslog.conf to add the following line :
+<tscreen><verb>
+*.*         /var/log/all_messages
+</verb></tscreen>
+<P>To make it work, you then have to restart inetd and syslogd :
+<tscreen><verb>
+% killall -HUP inetd
+% killall -HUP syslogd
+</verb></tscreen>
+Finally, run a talk session and see the result in /var/log/all_messages
+
+When submitting a bug report, never forget to include the debugging output, but 
+also ktalkd's version number and the "./configure" output. Thanks.
+
+<sect>Copyright
+
+<p>ktalkd is maintained and improved by David Faure, faure@kde.org
+<p>The original program was written by Robert Cimrman, cimrman3@students.zcu.cz
+
+<tscreen><verb>
+ktalkd is Copyright 1997,1998 David Faure, faure@kde.org
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+</verb></tscreen>
+<p>
+
+</article>

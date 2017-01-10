@@ -1,0 +1,164 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {open_ksirc.h}
+	ClassSource {open_ksirc.cpp}
+	ClassName {open_ksirc}
+	DataHeader {open_ksircData.h}
+	DataSource {open_ksircData.cpp}
+	DataName {open_ksircData}
+	WindowBaseClass {QDialog}
+	IsModal {FALSE}
+	WindowCaption {Connect to Server}
+	WindowFlags {45056}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {440 140}
+MinSize {440 140}
+MaxSize {440 140}
+Grid {10}
+
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {TRUE}
+		Text {&Connect}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {290 100 140 30}
+		Name {PushButton_1}
+		Variable {PB_Connect}
+		Font {"helvetica" 12 63 0 0 0 0 0 0}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {Cancel}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {150 100 130 30}
+		Name {PushButton_2}
+		Variable {PB_Cancel}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {&Edit Servers}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 100 130 30}
+		Name {PushButton_3}
+		Variable {PB_Edit}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ComboBox {
+		Style {ReadOnly}
+		SizeLimit {10}
+		Policy {AtTop}
+		AutoResize {FALSE}
+		Rect {10 30 100 30}
+		Name {ComboBox_2}
+		Variable {ComboB_ServerGroup}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+ComboBox {
+		Style {ReadWrite}
+		SizeLimit {10}
+		Policy {AtTop}
+		AutoResize {FALSE}
+		Rect {360 30 70 30}
+		Name {ComboBox_3}
+		Variable {ComboB_ServerPort}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Group:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Style {35}
+		LineWidth {2}
+		Rect {10 10 100 20}
+		Name {Label_2}
+		Font {"helvetica" 12 75 0 0 0 0 0 0}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Server/Quick Connect to:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Style {35}
+		LineWidth {2}
+		Rect {120 10 230 20}
+		Name {Label_3}
+		Font {"helvetica" 12 75 0 0 0 0 0 0}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Port:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Style {35}
+		LineWidth {2}
+		Rect {360 10 70 20}
+		Name {Label_4}
+		Font {"helvetica" 12 75 0 0 0 0 0 0}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {}
+		AutoResize {FALSE}
+		Margin {-1}
+		Style {35}
+		LineWidth {2}
+		Rect {120 70 310 20}
+		Name {Label_5}
+		Variable {Label_ServerDesc}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Label {
+		Text {Server Desc:}
+		AutoResize {FALSE}
+		Margin {-1}
+		Style {35}
+		LineWidth {2}
+		Rect {10 70 110 20}
+		Name {Label_6}
+		Font {"helvetica" 12 75 0 0 0 0 0 0}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+User {
+		UserClassHeader {enter_combo.h}
+		UserClassName {EnterCombo}
+		Rect {120 30 230 30}
+		Name {ServerNameCombo}
+		Variable {ComboB_ServerName}
+		LayoutStatus {NoLayout}
+		MinimumSize {10 10}
+		MaximumSize {32767 32767}
+}
+Layout {None}
+}

@@ -1,0 +1,762 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeadmin\n"
+"POT-Creation-Date: 1999-06-03 18:02+0700\n"
+"PO-Revision-Date: 1999-4-29 23:34+0100\n"
+"Last-Translator: Alonso Lara <jlaram@nexo.es>\n"
+"Language-Team: Spanish <kde-es@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: mainWidget.cpp:20
+msgid "&Preferences..."
+msgstr "&Preferencias..."
+
+#: mainWidget.cpp:26 mainWidget.cpp:33
+msgid "&Edit..."
+msgstr "&Editar..."
+
+#: mainWidget.cpp:27 mainWidget.cpp:34
+msgid "&Delete..."
+msgstr "E&liminar..."
+
+#: mainWidget.cpp:28 mainWidget.cpp:35
+msgid "&Add..."
+msgstr "&Añadir..."
+
+#: mainWidget.cpp:29
+msgid "&Set password..."
+msgstr "&Introducir contraseña..."
+
+#: mainWidget.cpp:38
+#, c-format
+msgid ""
+"KUser version %s\n"
+"KDE project\n"
+"This program was created by\n"
+"Denis Pershin\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+msgstr ""
+"KUser versión %s\n"
+"Proyecto KDE\n"
+"Este programa fué creado por\n"
+"Denis Y. Pershin\n"
+"dyp@inetlab.com\n"
+"Copyright 1997(c)"
+
+#: mainWidget.cpp:49
+msgid "&User"
+msgstr "&Usuario"
+
+#: mainWidget.cpp:50
+msgid "&Group"
+msgstr "&Grupo"
+
+#: mainWidget.cpp:60
+msgid "Add user"
+msgstr "Añadir usuario"
+
+#: mainWidget.cpp:62
+msgid "Delete user"
+msgstr "Elimiar usuario"
+
+#: mainWidget.cpp:64
+msgid "Edit user"
+msgstr "Editar usuario"
+
+#: grpnamedlg.cpp:17 mainWidget.cpp:69
+msgid "Add group"
+msgstr "Añadir grupo"
+
+#: mainWidget.cpp:71
+msgid "Delete group"
+msgstr "Eliminar usuario"
+
+#: mainWidget.cpp:73
+msgid "Edit group"
+msgstr "Editar grupo"
+
+#: mainWidget.cpp:96
+msgid "Ready"
+msgstr "Listo"
+
+#: editGroup.cpp:37
+msgid "Group properties"
+msgstr "Propiedades de Grupo..."
+
+#: editGroupData.cpp:41
+msgid "Users not in Group"
+msgstr "Usuarios no están en Grupo"
+
+#: editGroupData.cpp:55
+msgid "Users in Group"
+msgstr "Usuarios en Grupo"
+
+#: kuservw.cpp:49 propdlg.cpp:56
+msgid "User login"
+msgstr "Nombre de login"
+
+#: kuservw.cpp:50
+msgid "Full Name"
+msgstr "Nombre completo"
+
+#: kgroupvw.cpp:49
+msgid "GID"
+msgstr "GID"
+
+#: kgroupvw.cpp:50
+msgid "Group name"
+msgstr "Nombre de grupo"
+
+#: kdatectl.cpp:28
+msgid "January"
+msgstr "Enero"
+
+#: kdatectl.cpp:29
+msgid "February"
+msgstr "Febrero"
+
+#: kdatectl.cpp:30
+msgid "March"
+msgstr "Marzo"
+
+#: kdatectl.cpp:31
+msgid "April"
+msgstr "Abril"
+
+#: kdatectl.cpp:32
+msgid "May"
+msgstr "Mayo"
+
+#: kdatectl.cpp:33
+msgid "June"
+msgstr "Junio"
+
+#: kdatectl.cpp:34
+msgid "July"
+msgstr "Julio"
+
+#: kdatectl.cpp:35
+msgid "August"
+msgstr "Agosto"
+
+#: kdatectl.cpp:36
+msgid "September"
+msgstr "Septiembre"
+
+#: kdatectl.cpp:37
+msgid "October"
+msgstr "Octubre"
+
+#: kdatectl.cpp:38
+msgid "November"
+msgstr "Noviembre"
+
+#: kdatectl.cpp:39
+msgid "December"
+msgstr "Diciembre"
+
+#: kgroup.cpp:143 kuser.cpp:454
+#, c-format
+msgid "Error opening %s for reading"
+msgstr "Error abriendo %s para lectura"
+
+#: kuser.cpp:520
+#, c-format
+msgid ""
+"No /etc/passwd entry for %s.\n"
+"Entry will be removed at the next `Save'-operation."
+msgstr ""
+"No hay entrada para %s en /etc/passwd.\n"
+"La entrada será eliminada en la siguiente operación 'Guardar'."
+
+#: kgroup.cpp:183 kuser.cpp:615 kuser.cpp:693
+#, c-format
+msgid "Error opening %s for writing"
+msgstr "Error abriendo %s para escritura"
+
+#: kuser.cpp:663
+msgid "Unable to build password database"
+msgstr "Imposible construir una base de datos de contraseñas"
+
+#: kuser.cpp:704
+#, c-format
+msgid "No shadow entry for %s."
+msgstr "No hay entrada 'shadow' para %s."
+
+#: kuser.cpp:761
+msgid "You have more than 65534 users!?!? You have ran out of uid space!"
+msgstr "Hay más de 65534 usuarios!?!? Se ha agotado el número de uid's"
+
+#: kuser.cpp:801
+#, c-format
+msgid "Directory %s already exists"
+msgstr "Ya existe el directorio %s"
+
+#: kuser.cpp:808
+#, c-format
+msgid ""
+"Cannot create home directory\n"
+"Error: %s"
+msgstr ""
+"No se puede crear el directorio personal\n"
+"Error: %s"
+
+#: kuser.cpp:815
+#, c-format
+msgid ""
+"Cannot change owner of home directory\n"
+"Error: %s"
+msgstr ""
+"No se puede cambiar el propietario del directorio personal\n"
+"Error: %s"
+
+#: kuser.cpp:822
+#, c-format
+msgid ""
+"Cannot change permissions on home directory\n"
+"Error: %s"
+msgstr ""
+"No se puede cambiar los permisos en el directorio personal\n"
+"Error: %s"
+
+#: kuser.cpp:855
+#, c-format
+msgid ""
+"Cannot change permissions on mailbox: %s\n"
+"Error: %s"
+msgstr ""
+"no se puede cambiar los permisos en buzón: %s\n"
+"Error: %s"
+
+#: kuser.cpp:893
+#, c-format
+msgid ""
+"Cannot change owner of directory %s\n"
+"Error: %s"
+msgstr ""
+"No se puede cambiar el propietario del directorio %s\n"
+"Error: %s"
+
+#: kuser.cpp:900
+#, c-format
+msgid ""
+"Cannot change permissions on directory %s\n"
+"Error: %s"
+msgstr ""
+"No se puede cambiar los permisos en el directorio %s\n"
+"Error: %s"
+
+#: kuser.cpp:927
+#, c-format
+msgid ""
+"Cannot change owner of file %s\n"
+"Error: %s"
+msgstr ""
+"No se puede cambiar el propietario del archivo %s\n"
+"Error: %s"
+
+#: kuser.cpp:934
+#, c-format
+msgid ""
+"Cannot change permissions on file %s\n"
+"Error: %s"
+msgstr ""
+"no se puede cambiar los permisos del archivo %s\n"
+"Error: %s"
+
+#: kuser.cpp:949 kuser.cpp:957
+#, c-format
+msgid "Directory %s does not exist"
+msgstr "El directorio %s no existe"
+
+#: kuser.cpp:984
+#, c-format
+msgid ""
+"Cannot remove home directory %s\n"
+"Error: %s"
+msgstr ""
+"No se puede eliminar el directorio %s\n"
+"Error: %s"
+
+#: kuser.cpp:1007
+#, c-format
+msgid ""
+"Cannot remove crontab %s\n"
+"Error: %s"
+msgstr ""
+"No se puede eliminar crontab %s\n"
+"Error: %s"
+
+#: kuser.cpp:1024
+#, c-format
+msgid ""
+"Cannot remove mailbox %s\n"
+"Error: %s"
+msgstr ""
+"No se puede eliminar el buzón de correo %s\n"
+"Error: %s"
+
+#: kuser.cpp:1044
+msgid "Cannot fork()"
+msgstr "No se puede hacer fork()"
+
+#: kgroup.cpp:240
+msgid "You have more than 65534 groups!?!? You have ran out of gid space!"
+msgstr "Hay más de 65534 grupos!?!? Se ha agotado el número de gid's"
+
+#: main.cpp:48
+msgid "Only root is allowed to manage users."
+msgstr "lo el super-usuario puede administrar cuentas."
+
+#: main.cpp:58
+msgid "KDE User Manager"
+msgstr "Gestor de Usuarios KDE"
+
+#: maindlg.cpp:152 maindlg.cpp:190 maindlg.cpp:495
+msgid "WARNING"
+msgstr "PELIGRO"
+
+#: maindlg.cpp:153
+msgid "Do you really want to delete user ?"
+msgstr "¿Seguro que quieres eliminar el usuario?"
+
+#: maindlg.cpp:191
+msgid ""
+"You are using private groups.\n"
+"Do you want delete user's private group ?"
+msgstr ""
+"Está usando grupos privados.\n"
+"¿Desea eliminar el grupo privado del usuario?"
+
+#: maindlg.cpp:321
+msgid "Data was modified"
+msgstr "Datos modificados"
+
+#: maindlg.cpp:322
+msgid "Would you like to save changes ?"
+msgstr "¿Seguro que quiere guardar los cambios?"
+
+#: maindlg.cpp:324
+msgid "Discard changes"
+msgstr "No aplicar cambios"
+
+#: maindlg.cpp:362
+msgid "Edit defaults"
+msgstr "Editar por defecto"
+
+#: maindlg.cpp:390
+#, c-format
+msgid "Null pointer tmpKG in mainDlg::groupSelected(%d)\n"
+msgstr "Puntero a Null tmpKG en mainDlg::groupSelected(%d)\n"
+
+#: maindlg.cpp:408
+#, c-format
+msgid "Null pointer tmpKU in mainDlg::userSelected(%d)\n"
+msgstr "Puntero a Null tmpKU en mainDlg::userSelected(%d)\n"
+
+#: maindlg.cpp:418
+#, c-format
+msgid "Null pointer tmpQ in mainDlg::selected(%d)\n"
+msgstr "Puntero a Null tmpQ en mainDlg::selected(%d)\n"
+
+#: maindlg.cpp:496
+msgid "Do you really want to delete group ?"
+msgstr "¿Seguro que quieres eliminar el grupo?"
+
+#: propdlg.cpp:55
+msgid "User name"
+msgstr "Nombre de usuario"
+
+#: propdlg.cpp:59
+msgid "User identificator"
+msgstr "Identificador de usuario"
+
+#: propdlg.cpp:60
+msgid "User id"
+msgstr "Id de usuario"
+
+#: propdlg.cpp:64
+msgid "Set password"
+msgstr "Asignar contraseña"
+
+#: propdlg.cpp:69 propdlg.cpp:70
+msgid "Full name"
+msgstr "Nombre completo"
+
+#: propdlg.cpp:73 propdlg.cpp:96
+msgid "Login shell"
+msgstr "Shell de conexión"
+
+#: propdlg.cpp:75 userDefaultsPage.cpp:30
+msgid "<Empty>"
+msgstr "<Vacío>"
+
+#: propdlg.cpp:101 propdlg.cpp:102
+msgid "Home directory"
+msgstr "Directorio Personal"
+
+#: propdlg.cpp:109 propdlg.cpp:110
+msgid "Office"
+msgstr "Oficina"
+
+#: propdlg.cpp:112
+msgid "Office description"
+msgstr "Descripción de la oficina"
+
+#: propdlg.cpp:116 propdlg.cpp:117
+msgid "Office phone"
+msgstr "Teléfono de la oficina"
+
+#: propdlg.cpp:119
+msgid "Office phone number"
+msgstr "Número de teléfono de la oficina"
+
+#: propdlg.cpp:123 propdlg.cpp:124
+msgid "Home phone"
+msgstr "Teléfono de casa"
+
+#: propdlg.cpp:126
+msgid "Home phone number"
+msgstr "Número de teléfono de casa"
+
+#: propdlg.cpp:127 propdlg.cpp:186
+msgid "User info"
+msgstr "Información de usuario"
+
+#: propdlg.cpp:135 propdlg.cpp:136
+msgid "Login class"
+msgstr "Clase de Login"
+
+#: propdlg.cpp:138
+msgid "Login resource class"
+msgstr "Clase de recurso de Login"
+
+#: propdlg.cpp:145
+msgid "Password never expires"
+msgstr "Contraseña nunca expira"
+
+#: propdlg.cpp:146
+msgid "Date when password expires"
+msgstr "Fecha de expiración de la contraseña"
+
+#: propdlg.cpp:154 propdlg.cpp:224
+msgid "Account never expires"
+msgstr "Cuenta nunca expira"
+
+#: propdlg.cpp:155
+msgid "Date when account expires"
+msgstr "Fecha de expiración de la cuenta"
+
+#: propdlg.cpp:163 propdlg.cpp:230
+msgid "Extended"
+msgstr "Extendido"
+
+#: propdlg.cpp:169
+msgid "The first office"
+msgstr "La primera oficina"
+
+#: propdlg.cpp:170
+msgid "Office1"
+msgstr "Office1"
+
+#: propdlg.cpp:172
+msgid "First office description"
+msgstr "Descripción de la primera oficina"
+
+#: propdlg.cpp:176
+msgid "The second office"
+msgstr "La segunda oficina"
+
+#: propdlg.cpp:177
+msgid "Office2"
+msgstr "Office2"
+
+#: propdlg.cpp:179
+msgid "Second office description"
+msgstr "Descripción de la segunda oficina"
+
+#: propdlg.cpp:182
+msgid "Postal address"
+msgstr "Dirección postal"
+
+#: propdlg.cpp:183
+msgid "Address"
+msgstr "Dirección"
+
+#: propdlg.cpp:184
+msgid "Full postal address"
+msgstr "Dirección postal completa"
+
+#: propdlg.cpp:197
+msgid "Last password change"
+msgstr "Último cambio de contraseña"
+
+#: propdlg.cpp:199
+msgid "Password change not allowed"
+msgstr "Cambio de contraseña no permitido"
+
+#: propdlg.cpp:200
+msgid ""
+"Date before which password cannot\n"
+"be changed"
+msgstr ""
+"Fecha hasta la que la contraseña no\n"
+"puede cambiarse"
+
+#: propdlg.cpp:205
+msgid "Password will not expire"
+msgstr "Contraseña no expirará"
+
+#: propdlg.cpp:206
+msgid ""
+"Date when password expires and\n"
+"must be changed"
+msgstr ""
+"Fecha de expiración de la contraseña\n"
+"y esta debe cambiarse"
+
+#: propdlg.cpp:212
+msgid "No warning will be given"
+msgstr "Avisos no serán mostrados"
+
+#: propdlg.cpp:213
+msgid ""
+"Date after which warning about pending\n"
+"password expiration will be given"
+msgstr ""
+"Fecha en la que se le avisará sobre\n"
+"contraseña pendiente de expiración"
+
+#: propdlg.cpp:218
+msgid "Account will remain enabled"
+msgstr "La cuenta permanecerá activa"
+
+#: propdlg.cpp:219
+msgid ""
+"Date when account will be disabled\n"
+"if password has expired"
+msgstr ""
+"Fecha cuando la cuenta será desactivada\n"
+"si la contraseña ha expirado"
+
+#: propdlg.cpp:225
+msgid ""
+"Date when account expires and will\n"
+"be disabled"
+msgstr ""
+"Fecha cuando la cuenta expira y será\n"
+"desactivada"
+
+#: propdlg.cpp:239
+msgid "Filesystem with quotas"
+msgstr "Sistema de archivos con quotas"
+
+#: propdlg.cpp:248
+msgid "Filesystem with quotas:"
+msgstr "Sistema de archivos con quotas:"
+
+#: propdlg.cpp:254 propdlg.cpp:255
+msgid "Disk space soft quota"
+msgstr "Quotas blandas de espacio en disco"
+
+#: propdlg.cpp:260 propdlg.cpp:261
+msgid "Disk space hard quota"
+msgstr "Quotas estrictas de espacio en disco"
+
+#: propdlg.cpp:264 propdlg.cpp:265
+msgid "Disk space usage"
+msgstr "Ocupación de disco"
+
+#: propdlg.cpp:271 propdlg.cpp:272
+msgid "Time limit allowed for Disk space over soft quota"
+msgstr ""
+"Límite de tiempo permitido de superación de quota blanda de espacio en disco"
+
+#: propdlg.cpp:278 propdlg.cpp:279
+msgid "File number soft quota"
+msgstr "Quotas blandas de número de archivos"
+
+#: propdlg.cpp:284 propdlg.cpp:285
+msgid "File number hard quota"
+msgstr "Quotas estrictas de número de archivos"
+
+#: propdlg.cpp:288 propdlg.cpp:289
+msgid "File number usage"
+msgstr "Ocupación de número de archivos"
+
+#: propdlg.cpp:295 propdlg.cpp:296
+msgid "Time limit allowed for File number over soft quota"
+msgstr ""
+"Límite de tiempo permitido de superación de quota blanda de número de "
+"archivos"
+
+#: propdlg.cpp:299
+msgid "Quota"
+msgstr "Quota"
+
+#: propdlg.cpp:313
+msgid "Groups not belonged to"
+msgstr "Grupos no correspondidos a"
+
+#: propdlg.cpp:339
+msgid "Groups belonged to"
+msgstr "Grupos correspondidos a"
+
+#: propdlg.cpp:350
+msgid "Primary group"
+msgstr "Grupo primario"
+
+#: propdlg.cpp:354
+msgid "Groups"
+msgstr "Grupos"
+
+#: propdlg.cpp:365
+msgid "User properties"
+msgstr "Propiedades de Usuario"
+
+#: addUser.cpp:93 propdlg.cpp:681
+#, c-format
+msgid "User with UID %u already exists"
+msgstr "Ya existe un usuario con UID %u."
+
+#: misc.cpp:48
+#, c-format
+msgid "Can't create backup file for %s"
+msgstr "No se puede crear un archivo de backup para %s"
+
+#: misc.cpp:165
+#, c-format
+msgid "File %s does not exist."
+msgstr "El archivo %s no existe."
+
+#: misc.cpp:173
+#, c-format
+msgid "Can not open file %s for reading."
+msgstr "No se puede abrir el archivo %s para lectura."
+
+#: misc.cpp:181
+#, c-format
+msgid "Can not open file %s for writing."
+msgstr "No se puede abrir el archivo %s para escritura."
+
+#: usernamedlg.cpp:15
+msgid "Enter username"
+msgstr "Introduzca nombre de usuario"
+
+#: usernamedlg.cpp:22
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+#: usernamedlg.cpp:72
+#, c-format
+msgid "User with name %s already exists."
+msgstr "Ya existe un usuario con nombre %s."
+
+#: usernamedlg.cpp:79
+msgid "You have to enter a user name."
+msgstr "Debe introducir un nombre de usuario."
+
+#: pwddlg.cpp:24
+msgid "Enter password"
+msgstr "Introduzca la contraseña"
+
+#: pwddlg.cpp:31
+msgid "Password"
+msgstr "Contraseña"
+
+#: pwddlg.cpp:49
+msgid "Retype password"
+msgstr "Re-introduzca la contraseña"
+
+#: pwddlg.cpp:105
+msgid ""
+"Passwords are not identical.\n"
+"Try again"
+msgstr ""
+"Las contraseñas no son iguales.\n"
+"Inténtelo de nuevo"
+
+#: grpnamedlg.cpp:24
+msgid "Group name:"
+msgstr "Nombre de grupo:"
+
+#: grpnamedlg.cpp:30
+msgid "Group number:"
+msgstr "Numero de grupo:"
+
+#: grpnamedlg.cpp:98
+#, c-format
+msgid "Group with name %s already exists."
+msgstr "Ya existe un grupo con el nombre %s."
+
+#: grpnamedlg.cpp:105
+#, c-format
+msgid "Group with gid %d already exists."
+msgstr "Ya existe un grupo con el gid %d."
+
+#: kerror.cpp:35
+msgid "Message"
+msgstr "Mensaje"
+
+#: addUser.cpp:32 addUser.cpp:52
+msgid "Create home directory"
+msgstr "Crear directorio 'Home'"
+
+#: addUser.cpp:38 addUser.cpp:58
+msgid "Copy skeleton"
+msgstr "Copiar ficheros básicos"
+
+#: addUser.cpp:43 addUser.cpp:63 userDefaultsPageData.cpp:115
+msgid "User Private Group"
+msgstr "Grupo Privado de Usuario"
+
+#: addUser.cpp:135
+#, c-format
+msgid "Directory %s already exists (uid = %d, gid = %d)"
+msgstr "El directorio %s ya existe (uid = %d, gid = %d)"
+
+#: addUser.cpp:138
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s no es un directorio"
+
+#: addUser.cpp:164
+#, c-format
+msgid "Mailbox %s already exist (uid=%d)"
+msgstr "El buzón de correo %s ya existe (uid=%d)"
+
+#: addUser.cpp:167
+#, c-format
+msgid "%s exists but is not a regular file"
+msgstr "%s existe pero no es un archivo regular"
+
+#: editDefaults.cpp:32
+msgid "User"
+msgstr "Usuario"
+
+#: userDefaultsPageData.cpp:39
+msgid "Shell"
+msgstr "Shell"
+
+#: userDefaultsPageData.cpp:64
+msgid "Base of home directories"
+msgstr "Base de directorios personales"
+
+#: userDefaultsPageData.cpp:89
+msgid "Create home dir"
+msgstr "Crear directorio personal"
+
+#: userDefaultsPageData.cpp:102
+msgid "Copy skeleton to home dir"
+msgstr "Copiar archivos básicos a personal"
+
+#~ msgid "Disk space  hard quota"
+#~ msgstr "Quotas estrictas de espacio en disco"
+
+#~ msgid "Time limit allowd for File number over soft quota"
+#~ msgstr ""
+#~ "Límite de tiempo permitido de superación de quota blanda de número de "
+#~ "archivos"

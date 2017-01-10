@@ -1,0 +1,451 @@
+# KDEUTILS translation to Slovenian language.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Marko Samastur <markos@elite.org>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ktop\n"
+"POT-Creation-Date: 1999-03-19 01:51+0100\n"
+"PO-Revision-Date: 1999-07-17 00:30 MEST\n"
+"Last-Translator: Marko Samastur <markos@elite.org>\n"
+"Language-Team: Slovenian <ftp://ftp.lugos.si/pub/lugos/localization/kde-sl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ktop.cpp:66
+msgid "88888 Processes"
+msgstr "88888 procesov"
+
+#: ktop.cpp:67
+msgid "Memory: 888888 kB used, 888888 kB free"
+msgstr "Pomnilnik: 888888 kB porabljeno, 888888 kB prosto"
+
+#: ktop.cpp:69
+msgid "Swap: 888888 kB used, 888888 kB free"
+msgstr "Izmenjalni prostor: 888888 kB porabljeno, 888888 kB prosto"
+
+#: ktop.cpp:76
+msgid "KDE Task Manager"
+msgstr "KDE Upravitelj opravil"
+
+#: ktop.cpp:137
+#, c-format
+msgid "%d Processes"
+msgstr "%d procesov"
+
+#: ktop.cpp:142
+#, c-format
+msgid "Memory: %d kB used, %d kB free"
+msgstr "Pomnilnik: %d kB porabljeno, %d kB prosto"
+
+#: ktop.cpp:147
+#, c-format
+msgid "Swap: %d kB used, %d kB free"
+msgstr "Izmenjalni prostor: %d kB porabljeno, %d kB prosto"
+
+#: MainMenu.cpp:51
+#, c-format
+msgid ""
+"KDE Task Manager (KTop) Version %s\n"
+"\n"
+"Copyright:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+msgstr ""
+"KDE Upravitelj opravil (KTop) verzija %s\n"
+"\n"
+"Avtorske pravice:\n"
+"1996 : A. Sanda <alex@darkstar.ping.at>\n"
+"1997 : Ralf Mueller <ralf@bj-ig.de>\n"
+"1997-98 : Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"1998 : Nicolas Leclercq <nicknet@planete.net>\n"
+"1999 : Chris Schlaeger <cs@kde.org>\n"
+
+#: MainMenu.cpp:64
+msgid "Manual Refresh"
+msgstr "Roèno obnovi"
+
+#: MainMenu.cpp:65
+msgid "Slow Refresh"
+msgstr "Poèasno obnavljanje"
+
+#: MainMenu.cpp:66
+msgid "Medium Refresh"
+msgstr "Srednje obnavljanje"
+
+#: MainMenu.cpp:67
+msgid "Fast Refresh"
+msgstr "Pogosto obnavljanje"
+
+#: MainMenu.cpp:79
+msgid "&Refresh Rate"
+msgstr "&Hitrost obnavljanja"
+
+#: MainMenu.cpp:80
+msgid "&Process"
+msgstr "&Proces"
+
+#: ProcessMenu.cpp:44
+msgid "Renice Task..."
+msgstr "renice opravilo..."
+
+#: ProcessMenu.cpp:47
+msgid "send SIGINT\t(ctrl-c)"
+msgstr "po¹lji SIGINT\t(ctrl-c)"
+
+#: ProcessMenu.cpp:48
+msgid "send SIGQUIT\t(core)"
+msgstr "po¹lji SIGQUIT\t(izvr¾i core)"
+
+#: ProcessMenu.cpp:49
+msgid "send SIGTERM\t(term.)"
+msgstr "po¹lji SIGTERM\t(ukini)"
+
+#: ProcessMenu.cpp:50
+msgid "send SIGKILL\t(term.)"
+msgstr "po¹lji SIGKILL\t(ukini)"
+
+#: ProcessMenu.cpp:52
+msgid "send SIGUSR1\t(user1)"
+msgstr "po¹lji SIGUSR1t(uporabnik1)"
+
+#: ProcessMenu.cpp:53
+msgid "send SIGUSR2\t(user2)"
+msgstr "po¹lji SIGUSR2\t(uporabnik2)"
+
+#: ProcessMenu.cpp:74 ProcessMenu.cpp:86 ProcessMenu.cpp:150
+#: ProcessMenu.cpp:158 ProcessMenu.cpp:176
+msgid "Task Manager"
+msgstr "Upravitelj opravil"
+
+#: ProcessMenu.cpp:75
+msgid "You need to select a process first!"
+msgstr "Najprej morate izbrati proces!"
+
+#: ProcessMenu.cpp:85 ProcessMenu.cpp:149
+#, c-format
+msgid "The process %d is no longer persistent."
+msgstr "Proces %d ne vztraja veè."
+
+#: ProcessMenu.cpp:98
+msgid "SIGINT"
+msgstr "SIGINT"
+
+#: ProcessMenu.cpp:101
+msgid "SIGQUIT"
+msgstr "SIGQUIT"
+
+#: ProcessMenu.cpp:104
+msgid "SIGTERM"
+msgstr "SIGTERM"
+
+#: ProcessMenu.cpp:107
+msgid "SIGKILL"
+msgstr "SIGKILL"
+
+#: ProcessMenu.cpp:110
+msgid "SIGUSR1"
+msgstr "SIGUSR1"
+
+#: ProcessMenu.cpp:113
+msgid "SIGUSR2"
+msgstr "SIGUSR2"
+
+#: ProcessMenu.cpp:116
+msgid "Unkown Signal"
+msgstr "Neznan signal"
+
+#: ProcessMenu.cpp:122
+#, c-format
+msgid ""
+"Send signal %s to process %d?\n"
+"(Process name: %s  Owner: %s)\n"
+msgstr ""
+"Po¹ljem signal %s procesu %d?\n"
+"(Ime procesa: %s Lastnik: %s)\n"
+
+#: ProcessMenu.cpp:126
+msgid "Abort"
+msgstr "Prekini"
+
+#: ProcessMenu.cpp:159 ProcessMenu.cpp:177
+msgid ""
+"Renice error...\n"
+"Specified process does not exist\n"
+"or permission denied."
+msgstr ""
+"renice napaka...\n"
+"Naveden proces ne obstaja\n"
+"ali nimate dovoljenja za spremembo."
+
+#: TaskMan.cpp:80
+msgid "Processes &List"
+msgstr "&Seznam procesov"
+
+#: TaskMan.cpp:81
+msgid "Performance &Meter"
+msgstr "Performanèni &meter"
+
+#: ProcListPage.cpp:42
+msgid "Running Processes"
+msgstr "Tekoèi procesi"
+
+#: ProcListPage.cpp:49
+msgid "Show Tree"
+msgstr "Prika¾o drevo"
+
+#: ProcListPage.cpp:60
+msgid "All processes"
+msgstr "Vsi procesi"
+
+#: ProcListPage.cpp:61
+msgid "System processes"
+msgstr "Sistemski procesi"
+
+#: ProcListPage.cpp:62
+msgid "User processes"
+msgstr "Uporabnikovi procesi"
+
+#: ProcListPage.cpp:63
+msgid "Own processes"
+msgstr "Lastni procesi"
+
+#: ProcListPage.cpp:79
+msgid "Refresh Now"
+msgstr "Sedaj obnovi"
+
+#: ProcListPage.cpp:85
+msgid "Kill task"
+msgstr "Ubij opravilo"
+
+#: ProcessList.cpp:227
+msgid "Remove Column"
+msgstr "Odstrani stolpec"
+
+#: ProcessList.cpp:228
+msgid "Add Column"
+msgstr "Dodaj stolpec"
+
+#: ProcessList.cpp:229
+msgid "Help on Column"
+msgstr "Pomoè o stolpcu"
+
+#: ProcessList.cpp:691 ProcessList.cpp:692
+msgid "Name"
+msgstr "Ime"
+
+#: ProcessList.cpp:695 ProcessList.cpp:696
+msgid "PID"
+msgstr "PID"
+
+#: ProcessList.cpp:699
+msgid "User ID"
+msgstr "Uporabnikov ID"
+
+#: ProcessList.cpp:700
+msgid "CPU"
+msgstr "CPU"
+
+#: ProcessList.cpp:701
+msgid "Time"
+msgstr "Èas"
+
+#: ProcessList.cpp:702
+msgid "Nice"
+msgstr "Nice"
+
+#: ProcessList.cpp:703
+msgid "Status"
+msgstr "Status"
+
+#: ProcessList.cpp:704
+msgid "Memory"
+msgstr "Pomnilnik"
+
+#: ProcessList.cpp:705
+msgid "Resident"
+msgstr "Bivajoè"
+
+#: ProcessList.cpp:706
+msgid "Shared"
+msgstr "Deljen"
+
+#: ProcessList.cpp:707
+msgid "Command line"
+msgstr "Ukazna vrstica"
+
+#: OSProcessList.cpp:76 OSProcessList.cpp:104
+msgid ""
+"Cannot open directory '/proc'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Ne morem odpreti imenika '/proc'!\n"
+"Jedro mora biti prevedeno z vklopljeno\n"
+"podporo za datoteèni sistem /proc!"
+
+#: OSProcessList.cpp:266
+msgid "Cannot read status of processes\n"
+msgstr "Ne morem prebrati status procesov\n"
+
+#: OSProcessList.cpp:367
+msgid "Your OS is not supported yet.  Sorry"
+msgstr "Va¹ OS ¹e ni podprt. Oprostite"
+
+#: OSProcess.cpp:123 OSProcess.cpp:154 OSProcess.cpp:171
+#, c-format
+msgid "Cannot open %s!\n"
+msgstr "Ni mo¾no odpreti %s!\n"
+
+#: OSProcess.cpp:183
+msgid "Run"
+msgstr "Po¾eni"
+
+#: OSProcess.cpp:186
+msgid "Sleep"
+msgstr "Spi"
+
+#: OSProcess.cpp:189
+msgid "Disk"
+msgstr "Disk"
+
+#: OSProcess.cpp:192
+msgid "Zombie"
+msgstr "Zombie"
+
+#: OSProcess.cpp:198
+msgid "Swap"
+msgstr "Izmenjalni prostor"
+
+#: OSProcess.cpp:201
+msgid "????"
+msgstr "????"
+
+#: OSProcess.cpp:320
+#, c-format
+msgid "Could not set new nice level for process %d"
+msgstr "Novega nivoja nice za proces %d ni mo¾no nastaviti"
+
+#: OSProcess.cpp:334
+#, c-format
+msgid "Cound not send signal %d to process %d"
+msgstr "Ni mo¾no poslati signala %d procesu %d"
+
+#: PerfMonPage.cpp:49
+msgid "CPU Load History"
+msgstr "Zgodovina obremenjenosti CPU"
+
+#: PerfMonPage.cpp:52
+msgid "System Load History"
+msgstr "Zgodovina obremenjenosti sistema"
+
+#: PerfMonPage.cpp:55 PerfMonPage.cpp:113
+msgid "User (%)"
+msgstr "Uporabnik (%)"
+
+#: PerfMonPage.cpp:56 PerfMonPage.cpp:114
+msgid "Nice (%)"
+msgstr "Nice (%)"
+
+#: PerfMonPage.cpp:57 PerfMonPage.cpp:115
+msgid "System (%)"
+msgstr "Sistem (%)"
+
+#: PerfMonPage.cpp:64
+msgid "Memory Usage History"
+msgstr "Zgodovina porabe pomnilnika"
+
+#: PerfMonPage.cpp:66
+msgid "Program (kB)"
+msgstr "Programi (kB)"
+
+#: PerfMonPage.cpp:67
+msgid "Buffer (kB)"
+msgstr "Bafer (kB)"
+
+#: PerfMonPage.cpp:68
+msgid "Cache (kB)"
+msgstr "Predpomnilnik (kB)"
+
+#: PerfMonPage.cpp:69
+msgid "Swap (kB)"
+msgstr "Izmenjalni prostor (kB)"
+
+#: PerfMonPage.cpp:109
+#, c-format
+msgid "CPU%d Load History"
+msgstr "Zgodovina obremenjenosti CPU%d"
+
+#: OSStatus.cpp:98
+msgid ""
+"Cannot open file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Ni mo¾no odpreti datoteke '/proc/stat'!\n"
+"Jedro mora biti prevedeno z vkljuèeno podporo\n"
+"za datoteèni sistem /proc!"
+
+#: OSStatus.cpp:120 OSStatus.cpp:303 OSStatus.cpp:378
+msgid ""
+"Cannot open file '/proc/meminfo'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Ni mo¾no odpreti datoteke '/proc/meminfo'!\n"
+"Jedro mora biti prevedeno z vkljuèeno podporo\n"
+"za datoteèni sistem /proc!"
+
+#: OSStatus.cpp:311
+msgid "Cannot read memory info file '/proc/meminfo'!\n"
+msgstr "Ni mo¾no prebrati informacij o pomnilniku v '/proc/meminfo'!\n"
+
+#: OSStatus.cpp:354
+#, c-format
+msgid ""
+"Cannot read info for %s from file '/proc/stat'!\n"
+"The kernel needs to be compiled with support\n"
+"for /proc filesystem enabled!"
+msgstr ""
+"Ni mo¾no prebrati informacij o %s iz '/proc/stat'!\n"
+"Jedro mora biti prevedeno z vkljuèeno podporo\n"
+"za datoteèni sistem /proc!"
+
+#: OSStatus.cpp:386
+msgid "Cannot read swap info from '/proc/meminfo'!\n"
+msgstr ""
+"Ni mo¾no prebrati informacij o izmenjalnem prostoru v '/proc/meminfo'!\n"
+
+#: OSStatus.cpp:575 OSStatus.cpp:588 OSStatus.cpp:615 OSStatus.cpp:624
+msgid ""
+"Your system is not currently supported.\n"
+"Sorry"
+msgstr ""
+"Va¹ sistem trenutno ¹e ni podprt.\n"
+"Oprostite"
+
+#: ReniceDlg.cpp:32
+msgid "Renice Process"
+msgstr "Renice proces"
+
+#: ReniceDlg.cpp:39
+#, c-format
+msgid ""
+"You are about the change the scheduling priority of\n"
+"process %d. Be aware that only the Superuser (root)\n"
+"can decrease the nice level of a process. The smaller\n"
+"the number is the higher is the priority.\n"
+"\n"
+"Please enter the desired nice level:"
+msgstr ""
+"Ste pred tem, da spremenite razporejevalno prioriteto\n"
+"procesa %d. Bodite pozorni na to, da lahko le superuporabnik\n"
+"(root) zmanj¹a nice nivo procesa. Manj¹a kot je ¹tevilka,\n"
+"veèjo prioriteto ima proces.\n"
+"\n"
+"Prosim vnesite ¾eljeni nivo nice:"
+

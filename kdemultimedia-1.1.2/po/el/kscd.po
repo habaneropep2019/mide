@@ -1,0 +1,603 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kscd\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: 1999-02-10 18:00+0200\n"
+"Last-Translator: Yiannis Belias <orion@hellug.gr>\n"
+"Language-Team: Greek <linux-howto@hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-7\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "Κατάλογος αποθήκευσης της CDDB"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "Στείλε τις καταχωρίσεις CDDB σε:"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "Διακομιστής CDDB:"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "Ανανέωση"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "Ενεργοποίηση απομακρυσμένης CDDB"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "Προεπιλεγμένα"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "Πρόσβαση στη CDDB με χρήση HTTP proxy"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "Επεξεργαστής Βάσης Δεδομένων CD"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"Ολικός Χρόνος:\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"Συνολικός Χρόνος:\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "Γράψτε εδώ τα σχόλια για το κομμάτι"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "Γράψτε εδώ τα σχόλια για τον τίτλο"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "Παρακαλώ επιλέξτε Κατηγορία ή πατήστε 'Ακυρο"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "Σε ποιά κατηγορία ανήκει αυτό το CD;"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "Η εγγραφή cddb υποβάλλεται: %s\n"
+
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+"Αδύνατη η σωλήνωση περιεχομένων στο:\n"
+" %s"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "Σε ποιά κατηγορία θα θέλατε να καταχωρίσετε την εγγραφή CDDB;"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"Δε μπορώ να γράψω στο αρχείο:\n"
+"%s\n"
+"Παρακαλώ βεβαιωθήτε για τα δικαιώματα και την ύπαρξη των καταλόγων."
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "Σφάλμα Kscd"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "'Ακυρη Καταχώριση στη Βάση Δεδομένων"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Το πεδίο Καλλιτέχης / Τίτλος Δίσκου δεν είναι συμπληρωμένο.\n"
+"Παρακαλώ διορθώστε την εγγραφή και προσπαθήστε ξανά."
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr ""
+"Το πεδίο Καλλιτέχης / Τίτλος Δίσκου δεν είναι συμπληρωμένο σωστά.\n"
+"Παρακαλώ διαχωρίστε τον καλλιτέχνη από τον τίτλο του CD \n"
+"όπως: Σάκης / Μάνα γιατί με γέννησες\n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"Δεν γίνεται όλοι οι τίτλοι των κομματιών να είναι άδειοι.\n"
+"Παρακαλώ διορθώστε την καταχώριση και προσπαθήστε ξανά."
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "Εσωτερικό Σφάλμα"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Παρακαλώ στέιλτε e-mail στον συγγραφέα."
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "Η λίστα δεν είναι έγκυρη\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "Φόρτωσε"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "Επεξεργασία λίστας"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "Επεξεργασία Τίτλων Κομματιών"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "Καλλιτέχης / Τίτλος Δίσκου "
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "Κομμάτι / 'Ωρα / Τίτλος"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "Σχόλιο"
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "ID Δίσκου"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "Αποστολή"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "Ρυθμίσεις kscd"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "Χρώμα LED:"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "Χρώμα Φόντου:"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "Συσκευή CDROM:"
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Εντολή για e-mail:"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "Πρόγραμμα Αναζήτησης Παγκοσμίου Ιστού"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "Χρησιμοποίηση του kfm σαν πρόγραμμα αναζήτησης"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "Χρήση συνήθους προγράμματος αναζήτησης:"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr ""
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "Ενεργοποίηση ενσωμάτωσης του KPanel"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr "Αναπαραγωγή με το Κλείσιμο της Θύρας"
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr "Αυτόματη Ενσωμάτωση στην Ελαχιστοποίηση"
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr "Διακοπή Αναπαραγωγής στην έξοδο"
+
+#: configdlg.cpp:190
+msgid "Eject on Finish"
+msgstr "'Ανοιγμα Θύρας στο Τέλος"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "Αναπαραγωγή/Παύση"
+
+#: docking.cpp:75
+msgid "Forward"
+msgstr "Μπροστά"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "Πίσω"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "Επόμενο"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "Προηγούμενο"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "'Ανοιγμα"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "Ελαχιστοποίηση"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr ""
+"Δεν μπόρεσε να γίνει ακριβής αντιστοίχιση. Παρακαλώ διαλέξτε το κατάλληλο CD "
+"από την παρακάτω λίστα."
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "Παρακαλώ επιλέξτε ένα Τίτλο Δίσκου ή πατήστε Ακύρωση"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr "Η εγγραφή στάλθηκε επιτυχώς"
+
+#: kscd.cpp:236
+msgid "Error connecting to server."
+msgstr "Σφάλμα σύνδεσης με το διακομιστή."
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr "Εκτός σύνδεσης."
+
+#: kscd.cpp:242
+msgid "Connection timed out."
+msgstr "Ο χρόνος σύνδεσης τελείωσε."
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr "Διακοπή - Περιμένω απάντηση σπό το διακομιστή."
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+"Απάντηση Διακομιστή:\n"
+"\"%s\""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+"Σφάλμα #%d στέλνοντας μύνημα μέσω SMTP.\n"
+"\n"
+"%s"
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "'Ενταση: --"
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "Συναυλίες"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "Αγορές"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Magic"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "Κυκλική εναλλαγή κομματιών"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "Επιλογή Κομματιού"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "30 Δευτ. Μπροστά"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "30 Δευτ. Πίσω"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "Επόμενο Κομμάτι"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "Προηγούμενο Κομμάτι"
+
+#: kscd.cpp:570
+msgid "Quit Kscd"
+msgstr "'Εξοδος από Kscd"
+
+#: kscd.cpp:571
+#, fuzzy
+msgid "Cycle Time Display"
+msgstr "Εναλλαγή Εμφάνισης Χρόνου"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Ρυθμίσεις Kscd"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "'Ανοιγμα θύρας CD"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "Ο Καλλιτέχνης στο Δίκτυο"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "Τυχαία Αναπαραγωγή"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "Διάλογος CDDB"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "'Ελεγχος 'Εντασης CD"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "Αναπαραγωγή"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr "%02d: <'Αγνωστο>"
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "Παύση"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "Τυχαία"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "Περίεργο...."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "Διακοπή"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "Κυκλική εναλλαγή"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "'Ανοιγμα..."
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "Ρυθμίσεις kscd"
+
+#: kscd.cpp:1008
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Τωρινός υπεύθυνος:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"το kscd περιέχει κώδικα από:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Πολλά ευχαριστώ στους Ti Kan και Steve Scherf, τους εμπνευστές της ιδέας για "
+"τη βάση CDDB. Περισσότερες πληροφορίες για την CDDB στο: \n"
+"http://www.cddb.com \n"
+"\n"
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"Το KSCD Magic βασίστηκε στο Synaesthesia του Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+
+#: kscd.cpp:1025
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Ευχαριστώ τον Vadim Zaliva <lord@crocodile.org>\n"
+"για τη δουλειά του στον κώδικα του http proxy.\n"
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr "Ρυθμίσεις SMTP"
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Επιλογές Kscd"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Magic"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "'Εντ.: %02d%%"
+
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"Σφάλμα ανάγνωσης ή πρόσβασης στο CDROM.\n"
+"Παρακαλώ σιγουρευτείτε ότι έχετε δικαιώματα πρόσβασης στο:\n"
+"%s"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "'Ετοιμο"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "Ανοιχτό"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "Δε μπορώ να κατεβάσω τη λίστα CDDB από το διακομιστή."
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "Δε βρέθηκε σύμφωνη καταχώριση στη CDDB."
+
+#: kscd.cpp:1834 kscd.cpp:1844
+msgid "Error getting CDDB entry."
+msgstr "Σφάλμα κατά το κατέβασμα της εγγραφής CDDB"
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "Ο χρόνος του ερωτήματος CDDB έληξε."
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "Tra Rem"
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Tot Sec"
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Tot Rem"
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "Tra Sec"
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "Αδύνατη η εκκίνηση του kscdmagic."
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"Το KSCD Magic τερματίστηκε μη κανονικά.\n"
+"Είστε σίγουρος ότι το kscdmagic είναι εγκατεστημένο;"
+
+#: kscd.cpp:2368
+msgid "Enter the local CDDB base Directory"
+msgstr "Εισάγετε τον τοπικό κατάλογο της CDDB"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: εμφάνιση επιλογών στη γραμμή εντολών\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: ενεργοποίηση εξόδου αποσφαλμάτωσης.\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "Magic Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "Πλάτος παραθύρου Magic:"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "'Υψος παραθύρου Magic:"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "Φωτεινότητα MAGIC:"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr "Ενεργοποίηση αποστολής μέσω SMTP"
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr "SMTP Διεύθυνση:Θύρα"
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr "Η Ηλεκτρονική σας Διεύθυνση"

@@ -1,0 +1,554 @@
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Vladimir Vuksan <vuksan@veus.hr>, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeutils\n"
+"POT-Creation-Date: 1999-06-12 01:15+0100\n"
+"Last-Translator: Vladimir Vuksan <vuksan@veus.hr>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"   
+
+#: kfileio.cpp:25
+msgid "File I/O Error"
+msgstr "Datoteèna U/I gre¹ka"
+
+#: kfileio.cpp:46
+#, c-format
+msgid ""
+"The specified file does not exist:\n"
+"%s"
+msgstr ""
+"Navedena datoteka ne postoji:\n"
+"%s"
+
+#: kfileio.cpp:53
+#, c-format
+msgid ""
+"This is a directory and not a file:\n"
+"%s"
+msgstr ""
+"Ovo je direktorij a ne datoteka:\n"
+"%s"
+
+#: kfileio.cpp:60
+#, c-format
+msgid ""
+"You do not have read permissions to the file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:71
+#, c-format
+msgid ""
+"Could not read file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:74
+#, c-format
+msgid ""
+"Could not open file:\n"
+"%s"
+msgstr ""
+"Ne mogu otvoriti datoteku:\n"
+"%s"
+
+#: kfileio.cpp:77
+#, c-format
+msgid ""
+"Error while reading file:\n"
+"%s"
+msgstr ""
+
+#: kfileio.cpp:97
+#, c-format
+msgid "Could only read %u bytes of %u."
+msgstr "Mogu èitati samo %u bajtova od %u."
+
+#: kfileio.cpp:126
+#, c-format
+msgid ""
+"File %s exists.\n"
+"Do you want to replace it ?"
+msgstr ""
+
+#: kfileio.cpp:146
+#, c-format
+msgid ""
+"Failed to make a backup copy of %s.\n"
+"Continue anyway ?"
+msgstr ""
+
+#: kfileio.cpp:158 kfileio.cpp:178
+#, c-format
+msgid ""
+"Could not write to file:\n"
+"%s"
+msgstr ""
+"Ne mogu pisati u datoteku:\n"
+"%s"
+
+#: kfileio.cpp:161
+#, c-format
+msgid ""
+"Could not open file for writing:\n"
+"%s"
+msgstr ""
+"Ne mogu otvoriti datoteku za pisanje:\n"
+"%s"
+
+#: kfileio.cpp:165
+#, c-format
+msgid ""
+"Error while writing file:\n"
+"%s"
+msgstr ""
+"Gre¹ka prilikom pisanja u datoteku:\n"
+"%s"
+
+#: kfileio.cpp:184
+#, c-format
+msgid "Could only write %d bytes of %d."
+msgstr "Uspio sam pisati %d bajtova od %d."
+
+#: kxaccpre.cpp:37
+msgid "Manage Accounts"
+msgstr "Upravljaj raèunima"
+
+#: kxaccpre.cpp:61
+msgid "Account"
+msgstr "Raèun"
+
+#: kxaccpre.cpp:62
+msgid "You did not choose a name for this account"
+msgstr "Niste odabrali ime za ovaj raèun"
+
+#: kxaccpre.cpp:133
+msgid "Settings"
+msgstr "Postava"
+
+#: kxaccpre.cpp:137
+msgid "Identity"
+msgstr "Identitet"
+
+#: kxaccpre.cpp:140 kxserverdata.cpp:44
+msgid "Server"
+msgstr "Server"
+
+#: kxaccpre.cpp:150
+msgid "Do you really want to delete this Account?"
+msgstr "Da li zaista ¾elite pobrisati ovaj raèun?"
+
+#: kxaccpre.cpp:157
+msgid "Couldn't delete, there are files I don't know in the directory"
+msgstr ""
+
+#: kxaccpredata.cpp:35
+msgid "Accounts"
+msgstr "Raèuni"
+
+#: kxaccpredata.cpp:63
+msgid "New"
+msgstr "Novi"
+
+#: kxentrylist.cpp:49
+msgid "Folder"
+msgstr "Direktorij"
+
+#: kxentrylist.cpp:78
+msgid "Archive"
+msgstr "Arhiva"
+
+#: kxgenoptsdata.cpp:42
+msgid "Show Headers"
+msgstr "Prika¾i zaglavlja"
+
+#: kxgenoptsdata.cpp:54
+msgid "Max. number of Headers to download:"
+msgstr "Max. broj zaglavlja koja mo¾emo skinuti:"
+
+#: kxgenoptsdata.cpp:79
+msgid "Show Threads"
+msgstr "Prika¾i nitna stabla"
+
+#: kxgenoptsdata.cpp:92
+msgid "keep articles"
+msgstr "èuvaj èlanke"
+
+#: kxgenoptsdata.cpp:118
+msgid "days"
+msgstr "dana"
+
+#: kxgenoptsdata.cpp:131
+msgid "Reply-Prefix:"
+msgstr ""
+
+#: kxgenoptsdata.cpp:143
+msgid "include Signature"
+msgstr "dodaj potpis"
+
+#: kxgenoptsdata.cpp:168
+msgid "all"
+msgstr ""
+
+#: kxgenoptsdata.cpp:180
+msgid "normal"
+msgstr "normalno"
+
+#: kxgenoptsdata.cpp:192
+msgid "short"
+msgstr ""
+
+#: kxgenoptsdata.cpp:204
+msgid "Keep Threads together while expiring"
+msgstr ""
+
+#: kxgenoptsdata.cpp:216
+msgid "Expand Threads"
+msgstr "Pro¹iri niti"
+
+#: kxgenoptsdata.cpp:228
+msgid "Generate Message ID"
+msgstr ""
+
+#: kxheaderlist.cpp:479 kxmainwin.cpp:720 kxmainwin.cpp:780 kxmainwin.cpp:786
+#: kxmainwin.cpp:808 kxmainwin.cpp:814
+msgid "Loader"
+msgstr ""
+
+#: kxheaderlist.cpp:480
+msgid "You did not choose a group"
+msgstr "Niste izabrali grupu"
+
+#: kxidentdata.cpp:42
+msgid "Account:"
+msgstr "Raèun"
+
+#: kxidentdata.cpp:51
+msgid "Name:"
+msgstr "Ime:"
+
+#: kxidentdata.cpp:69
+msgid "Organisation:"
+msgstr "Organizacija:"
+
+#: kxidentdata.cpp:96
+msgid "eMail Address:"
+msgstr "eMail adresa"
+
+#: kxidentdata.cpp:105
+msgid "Reply Address:"
+msgstr ""
+
+#: kxmainwin.cpp:60
+#, c-format
+msgid ""
+"kexpress [%s]\n"
+"\n"
+"by Peter Wichert <peter.wichert@t-online.de>\n"
+"\n"
+"Special thanks to\n"
+"Carsten Pfeiffer, for testing and helpful tips\n"
+"\n"
+"This program is covered by the GPL."
+msgstr ""
+
+#: kxmainwin.cpp:160
+msgid "Send pending"
+msgstr ""
+
+#: kxmainwin.cpp:162
+msgid "Delete pending"
+msgstr ""
+
+#: kxmainwin.cpp:166
+msgid "Exit and expire"
+msgstr ""
+
+#: kxmainwin.cpp:168
+msgid "Exit"
+msgstr "Zavr¹i"
+
+#: kxmainwin.cpp:172
+msgid "New Message..."
+msgstr "Nova poruka..."
+
+#: kxmainwin.cpp:174
+msgid "Reply..."
+msgstr "Odgovori..."
+
+#: kxmainwin.cpp:178
+msgid "Search..."
+msgstr "Tra¾i..."
+
+#: kxmainwin.cpp:182
+msgid "Unmark all"
+msgstr ""
+
+#: kxmainwin.cpp:184
+msgid "Mark all read"
+msgstr ""
+
+#: kxmainwin.cpp:188
+msgid "Download server ..."
+msgstr ""
+
+#: kxmainwin.cpp:190
+msgid "Download newsgroup ..."
+msgstr "Preuzmi grupu..."
+
+#: kxmainwin.cpp:192
+msgid "Download marked ..."
+msgstr "Skini oznaèene ..."
+
+#: kxmainwin.cpp:196
+msgid "Accounts..."
+msgstr "Raèuni..."
+
+#: kxmainwin.cpp:198
+msgid "General Options..."
+msgstr ""
+
+#: kxmainwin.cpp:200
+msgid "Newsgroups..."
+msgstr "Novinske grupe..."
+
+#: kxmainwin.cpp:209
+msgid "&Messages"
+msgstr "Poru&ke"
+
+#: kxmainwin.cpp:225
+msgid "New Message"
+msgstr "Nova poruka"
+
+#: kxmainwin.cpp:229
+msgid "Reply"
+msgstr "Odgovori"
+
+#: kxmainwin.cpp:235
+msgid "Save as"
+msgstr "Spremi pod imenom"
+
+#: kxmainwin.cpp:248
+msgid "Abort current transfer"
+msgstr "Prekini trenutni prijenos"
+
+#: kxmainwin.cpp:287
+msgid "Welcome to kexpress"
+msgstr "Dobrodo¹li u kexpress"
+
+#: kxmainwin.cpp:368
+msgid "General"
+msgstr "Opæenito"
+
+#: kxmainwin.cpp:372
+msgid "General Options"
+msgstr ""
+
+#: kxcomposer.cpp:162 kxcomposer.cpp:195 kxmainwin.cpp:465 kxmainwin.cpp:476
+#: kxmainwin.cpp:511 kxmainwin.cpp:526 kxmainwin.cpp:571 kxmainwin.cpp:584
+#: kxmainwin.cpp:592 kxmainwin.cpp:635 kxmainwin.cpp:650 kxmessage.cpp:301
+msgid "Composer"
+msgstr "Sastavljaè"
+
+#: kxmainwin.cpp:466 kxmainwin.cpp:512 kxmainwin.cpp:585
+msgid "You must choose a server first"
+msgstr ""
+
+#: kxmainwin.cpp:477 kxmainwin.cpp:527
+msgid "There are no pending messages"
+msgstr ""
+
+#: kxmainwin.cpp:593 kxmainwin.cpp:651
+msgid "Your Name/eMail-adress is not set"
+msgstr ""
+
+#: kxmainwin.cpp:636
+msgid "You must choose a newsgroup first"
+msgstr "Prvo morate izabrati grupu"
+
+#: kxmainwin.cpp:721 kxmainwin.cpp:809
+msgid "You did not choose a server"
+msgstr "Niste izabrali poslu¾itelj"
+
+#: kxmainwin.cpp:781
+msgid "You did not choose a Server"
+msgstr "Niste izabrali poslu¾itelj"
+
+#: kxmainwin.cpp:787
+msgid "Load bodies of new articles of this group now ?"
+msgstr ""
+
+#: kxmainwin.cpp:815
+msgid "Load bodies of marked articles now ?"
+msgstr ""
+
+#: kxnewsclient.cpp:198
+msgid "Sender"
+msgstr "Po¹iljatelj"
+
+#: kxnewsclient.cpp:199
+msgid ""
+"There seems to be an authorisation problem\n"
+"check user/password"
+msgstr ""
+
+#: kxnewsclient.cpp:277
+#, c-format
+msgid "loading headers of %s"
+msgstr "uèitavam zaglavlja od %s"
+
+#: kxnewsclient.cpp:345 kxnewsclient.cpp:541 kxnewsclient.cpp:696
+#: kxnewsclient.cpp:744 kxnewsclient.cpp:790
+msgid "Ready"
+msgstr "Spreman"
+
+#: kxnewsclient.cpp:509
+msgid "NNTP-Server does not response"
+msgstr ""
+
+#: kxnewsclient.cpp:524
+msgid "loading grouplist, please wait ..."
+msgstr ""
+
+#: kxnewsclient.cpp:685
+#, c-format
+msgid "loading %s"
+msgstr "uèitavam %s"
+
+#: kxnewsclient.cpp:733
+#, c-format
+msgid "loading header of %s"
+msgstr "uèitavam zaglavlja %s"
+
+#: kxnewsclient.cpp:779
+#, c-format
+msgid "loading body of %s"
+msgstr "uèitavam tijela %s"
+
+#: kxngdialog.cpp:47
+msgid "Choose Newsgroups"
+msgstr "Izaberi novinske grupe"
+
+#: kxngdialog.cpp:319
+msgid "Newsgroups"
+msgstr "Novinske grupe"
+
+#: kxngdialog.cpp:320
+msgid "You don't have any newsgroups. Get them now?"
+msgstr ""
+
+#: kxngdialogdata.cpp:73
+msgid "Searchstring"
+msgstr ""
+
+#: kxngdialogdata.cpp:82
+msgid "All Groups"
+msgstr "Sve grupe"
+
+#: kxngdialogdata.cpp:91
+msgid "Subscribed"
+msgstr "Pretplaæene"
+
+#: kxngdialogdata.cpp:100
+msgid "New List"
+msgstr ""
+
+#: kxserverdata.cpp:35
+msgid "Authorisation"
+msgstr ""
+
+#: kxserverdata.cpp:52
+msgid "NNTP-Server:"
+msgstr "NNTP poslu¾itelj:"
+
+#: kxserverdata.cpp:70
+msgid "Port:"
+msgstr "Port:"
+
+#: kxserverdata.cpp:88
+msgid "Password:"
+msgstr "Lozinka:"
+
+#: kxserverdata.cpp:97
+msgid "User:"
+msgstr "Korisnik:"
+
+#: kxcomposer.cpp:95
+msgid "Send message"
+msgstr "Po¹alji poruku"
+
+#: kxcomposer.cpp:108
+msgid "Insert File..."
+msgstr "Umetni datoteku..."
+
+#: kxcomposer.cpp:111
+msgid "&Send now"
+msgstr "&©alji odmah"
+
+#: kxcomposer.cpp:112
+msgid "S&end later"
+msgstr "Po¹a&lji kasnije"
+
+#: kxcomposer.cpp:163
+msgid "You did not set all neccessary headers"
+msgstr ""
+
+#: kxcomposer.cpp:196
+msgid "You did not send your message, really exit?"
+msgstr ""
+
+#: kxmessage.cpp:302
+msgid "Could not store this Message, check if spool-directory exists"
+msgstr ""
+
+#: kxloadopts.cpp:33
+msgid "Load New Messages"
+msgstr "Uèitaj nove poruke"
+
+#: kxloadopts.cpp:53
+msgid "Load Headers only"
+msgstr "Uèitaj samo zaglavlja"
+
+#: kxloadopts.cpp:66
+msgid "Load Headers + Articles"
+msgstr "Uèitaj zaglavlja i èlanke"
+
+#: kxsearch.cpp:40
+msgid "Search Message"
+msgstr "Tra¾i poruku"
+
+#: kxsearch.cpp:132
+msgid "Search"
+msgstr "Tra¾i"
+
+#: kxsearch.cpp:133
+msgid "String not found"
+msgstr ""
+
+#: kxsearchdata.cpp:42
+msgid "Search for"
+msgstr ""
+
+#: kxsearchdata.cpp:67
+msgid "Searchstring:"
+msgstr ""
+
+#: kxsearchdata.cpp:106
+msgid "Subject"
+msgstr "Tema"
+
+#: kxsearchdata.cpp:118
+msgid "From"
+msgstr "Od"
+
+#: kxsearchdata.cpp:130
+msgid "Body"
+msgstr "Tijelo"
+
+#: kxsearchdata.cpp:142
+msgid "ignore case"
+msgstr ""

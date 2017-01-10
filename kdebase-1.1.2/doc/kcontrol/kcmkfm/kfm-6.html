@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>KDE Control Center - KFM : KFM Web Browser Configuration: User Agent</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE KFM">
+<META NAME="description" CONTENT="KFM configuration help (KDE)">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="kfm-7.html">Next</A>
+<A HREF="kfm-5.html">Previous</A>
+<A HREF="kfm.html#toc6">Table of Contents</A>
+</P>
+<H3><A NAME="s6">6. KFM Web Browser Configuration: User Agent</A></H3>
+
+<P>
+<P>When requesting web pages, Web Browsers identify themselves to Web Servers by 
+reporting
+their name and version as a  <B>User-Agent String</B>.
+The default User-Agent string for KFM is set to <B>Konqueror</B>
+plus version information.
+<P>
+<P>You can also configure the KFM Browser to report a different User-Agent String
+to specific web sites,  while reporting the default string to other
+sites. 
+The usefulness of this is that web servers may decide
+on what form to send the information (e.g., frames or
+no frames) depending on which browser application it
+thinks it is talking to.  
+<P>The KFM Browser (Konqueror) is perfectly capable of handling frames,
+but may not be recognized by a web site that only sends frames
+to web browsers it thinks can handle them.  In such a case,
+you can configure KFM/Konqueror
+to send a different  <B>User-Agent String</B>;
+for example, you might decide
+to tell that site that your browser is
+<B>Netscape Navigator</B> (tm), 
+(user-agent string = ``<CODE>Mozilla</CODE>'' plus version information)
+or <B>Internet Explorer</B>(tm).
+<P>To create a binding between a User-Agent String and a web site:
+<UL>
+<LI> enter the address of the website in the box labelled 
+``<B>On server:</B>''</LI>
+<LI> enter the desired User-Agent String in the box labelled
+``<B>login as:</B>''</LI>
+<LI> Click on the <B>Add</B> button.</LI>
+</UL>
+<P>To remove such a binding, click on its entry in the list of 
+<B>Known bindings</B> to highlight it, then 
+click on the <B>Delete</B> button.
+<P>To activate your changes, click on <B>Apply</B> or
+<B>OK</B>.  To exit without applying the changes, click on
+<B>Cancel</B>.
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="kfm-7.html">Next</A>
+<A HREF="kfm-5.html">Previous</A>
+<A HREF="kfm.html#toc6">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

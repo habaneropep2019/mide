@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The KFax Handbook: Fundamentals</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="KDE fax graphics display">
+<META NAME="description" CONTENT="KDE Fax Viewer">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.gif" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="index-4.html">Next</A>
+<A HREF="index-2.html">Previous</A>
+<A HREF="index.html#toc3">Table of Contents</A>
+</P>
+<H3><A NAME="s3">3. Fundamentals</A></H3>
+
+<P>
+<P>KFax can not (yet) send or receive Fax files. For this I wholeheartedly
+recommend the mgetty/sendfax 
+<A HREF="ftp://ftp.leo.org/pub/comp/networking/communication/modem/mgetty">ftp://ftp.leo.org/pub/comp/networking/communication/modem/mgetty</A>
+and hylafax fax
+<A HREF="ftp://sgi.com/sgi/fax">ftp://sgi.com/sgi/fax</A>
+send/receive packages which are
+available for free.
+<P>
+<P>HylaFAX:
+<A HREF="http://info-sys.home.vix.com/flexfax/toc.html">http://info-sys.home.vix.com/flexfax/toc.html</A><P>sendfax/mgetty:
+<A HREF="http://www.leo.org/~doering/mgetty/">http://www.leo.org/~doering/mgetty/</A><P>
+<P>
+<P>A "zoomed-in" document can be moved within the KFax view, by clicking and holding
+down the first mouse button down while moving the pointer.
+<P>KFax can not display image file formats which are not related to 
+faxing, such as an arbitrary tiff or gif file.
+<P>By default raw fax files are interpreted as g3 files. If you want
+to display faxg3-2d and faxg4 files you have to specifiy this on
+the Fax Options dialog. In the case of raw g4 files you might also 
+need to specify the height in scan lines of the fax if it differs 
+from the default 2155.
+<P>
+<P>
+<P>
+<H3><A NAME="ss3.1">3.1 Drag and Drop</A>
+</H3>
+
+<P>KFax makes use of the KDE Drag and Drop protocol. This means that you can drag
+and drop files form the Desktop or kfm or some remote ftp site that you have
+open in one of kfm's windows onto KFax. 
+<P>
+<H3><A NAME="ss3.2">3.2 Dealing with files on the internet</A>
+</H3>
+
+<P>You can open and save files transparently on the internet.
+<P>
+<H3><A NAME="ss3.3">3.3 Printing</A>
+</H3>
+
+<P>KFax supports PostScript printing natively. 
+supported. 
+<P>
+<P>
+<P>Make sure your system is set up for printing PostScript documents. If you
+don't have a native PostScript printer get yourself
+ghostscript/ghostview version 5 or newer  from
+<A HREF="http://www.cs.wisc.edu/%7Eghost/">http://www.cs.wisc.edu/%7Eghost/</A>.
+<P>
+<P>
+<H3><A NAME="ss3.4">3.4 Fax Options</A>
+</H3>
+
+<P>KFax supports a number of options in order to allow you an optimal configuration
+for your specific usage.
+<DL>
+<DT><B>Display Options.</B><DD><P>
+<UL>
+<LI>Landscape: Show the fax pages by default rotated by 90 degrees.</LI>
+<LI>Upside Down: Display the fax pages by default upside-down.</LI>
+<LI>Invert: Display the Fax as white on black background</LI>
+</UL>
+<P>
+<DT><B>Raw Fax Resolution.</B><DD><P>
+<UL>
+<LI>Auto: Some fax transmission programs set the first letter of the 
+name of a fax of "fine" resolution to an f and to an n for a 
+fax of "normal" resolution. If "Auto" is checked
+KFax will observe this convention. This options has no effect
+on Tiff and "PC-Research (DIGIFAX) facsimili. Those facsimili
+are self-specifying.</LI>
+<LI>Fine: Assume raw fax files (g3-g32d-g4) are fine resolution facsimili
+(7.7 lines/mm). Tiff  and "PC-Research" (DigiFAX) files are self-specifying. </LI>
+<LI>Normal: Assume raw fax files (g3/g32d/g4) are of normal resolution
+(3.85  lines/mm).   Each  fax  line is
+duplicated in the displayed image to give  approximately 
+equal vertical and horizontal scales. 
+</LI>
+</UL>
+<P>
+<DT><B>Raw Fax Data:</B><DD><P>Checking LS-Bit first will lead KFax to assume that the
+bit order of the fax data bytes is reversed. The official fax specification deals only
+with serial data transmission. Modem manufacturers have to decide whether the first
+bit received should be placed in the most significant or the least significant position
+in a byte. The consensus is to pack most significant first, but the options is
+available to deal with the opposite order.
+<P>
+<DT><B>Raw Faxsimili Format:</B><DD><P>
+<UL>
+<LI>g3: Assume the raw input files use group 3, 1-dimensional coding.</LI>
+<LI>g32d: Assume the raw input files use group 3, 2-dimensional coding.</LI>
+<LI>g4: Assume the raw input files use group 4 coding.</LI>
+</UL>
+<P>
+<DT><B>Raw Fax Data default height-width:</B><DD><P>
+<UL>
+<LI>height: specify the default number of line for raw fax data</LI>
+<LI>width: specify the default number of pixels in each scan line for raw fax data
+The default value is 1728.</LI>
+<LI>auto: this option is the recommended setting for g3 raw fax data. g3-2d and g4 need
+explicit dimensions.</LI>
+</UL>
+</DL>
+<P>
+<P>
+<H3><A NAME="ss3.5">3.5 Command Line Options</A>
+</H3>
+
+<P>KFax supports the following command line options:
+<BLOCKQUOTE><CODE>
+<PRE>
+wuebben: ../kfax -h
+usage: KFax &lt;flags> file ...
+        -f      fine resolution
+        -n      normal resolution
+        -h      height (number of fax lines)
+        -w      width (dots per fax line)
+        -l      turn image 90 degrees (landscape mode)
+        -u      turn image upside down
+        -i      invert (black/white)
+        -m      memory usage limit in bytes (M m mega, K k kilo) default:8 megs
+        -r      fax data is packed ls-bit first in input bytes
+        -v      version information
+        -2      raw files are g3-2d
+        -4      raw files are g4    
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>
+<H3><A NAME="ss3.6">3.6 KFax Key Bindings</A>
+</H3>
+
+<P>KFax honors the following key bindings when the pointer is place on an open
+fax document view.
+<P>
+<P>
+<UL>
+<LI><CODE>h</CODE> Show help page displaying the available keyboard-shortcuts</LI>
+<LI><CODE>q</CODE> Return to the original document.</LI>
+<LI><CODE>n + Next PgDn Space</CODE> Display the next page</LI>
+<LI><CODE>p - Prior PgUp Backspace</CODE> Display the previous page</LI>
+<LI><CODE>Shift Home</CODE> First Page</LI>
+<LI><CODE>Shift End</CODE> Last Page</LI>
+<LI><CODE>u</CODE> Turn Page upside down</LI>
+<LI><CODE>l</CODE> Turn page 90 degrees</LI>
+<LI><CODE>m</CODE> Show a mirror image of the current fax page</LI>
+<LI><CODE>i</CODE> zoom in</LI>
+<LI><CODE>o</CODE> zoom out
+</LI>
+</UL>
+<P>
+<H3><A NAME="ss3.7">3.7 How to create fax files</A>
+</H3>
+
+<P>
+<P>Perhaps the easiest way to create fax files is by first creating
+PostScript file from you document that you wish to fax and then 
+to use the ghostscript PostScript interpreter to transform the PostScript
+file into one of several fax file, conforming to one of several different
+fax file format.
+<P>In order to create fax files from ps documents you will need ghostscript.
+KFax can display all fax output modes of ghostscript:
+<P>
+<UL>
+<LI>raw:  fag3 faxg32d faxg4  </LI>
+<LI>tiff: tiffg3 tiffg32d tiffg4</LI>
+</UL>
+<P>A raw file will have no pagination information and will be displayed
+as a whole in the fax window. 
+Tiff files contain pagination information can be paged through in the
+fax window.
+<P>
+<P>
+<H4>Example</H4>
+
+<P>How to create a fax file that sendfax/mgetty can accept and send:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+gs -sDEVICE=faxg3 -sOutputFile=/tmp/fax.g3.%d yourdocument.ps
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>Assuming that your ps document <CODE>yourdocumnet.ps</CODE> contains three pages,
+this will result in the creation of  fax.g3.1 fax.g3.2 fax.g3.3
+<P>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="index-4.html">Next</A>
+<A HREF="index-2.html">Previous</A>
+<A HREF="index.html#toc3">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

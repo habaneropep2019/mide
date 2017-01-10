@@ -1,0 +1,21 @@
+ktalkd needs the snprintf function, but some system don't have it (some
+Solaris versions, for instance).
+
+If snprintf is missing on your system, you can do the following :
+
+* compile ktalkd/kotalkd/vsnprintf.c, by entering 'make vsnprintf.o' in this
+directory. (there might be warnings, don't be afraid of them...)
+* if it compiles
+  - add vsnprintf.o to the kotalkd_OBJECTS line in ktalkd/kotalkd/Makefile 
+  - copy vsnprintf.o to ktalkd/ktalkd
+  - add vsnprintf.o to the cond0ktalkd_OBJECTS line in ktalkd/ktalkd/Makefile 
+  then run make from the toplevel directory again.
+
+Many thanks to Olof S Kylander <olof@frozenriver.com> for providing vsnprintf.c
+and to Bert Haverkamp <b.r.j.haverkamp@its.tudelft.nl> for reporting bugs in this readme.
+
+I know, the really good approach would be to include the missing
+automatically, which can be done. But for this I need to know if
+vsnprintf.c compiles on all architectures where snprintf is missing.
+If yes, I'll make the code in vsnprintf included automatically (in kdecore/fakes.cpp)
+

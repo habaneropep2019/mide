@@ -1,0 +1,329 @@
+# Norwegian translations for KDE Graphics/kview
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Hans Petter Bieker <zerium@webindex.no>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE GRAPHICS/kview\n"
+"POT-Creation-Date: 1999-01-31 01:52+0100\n"
+"PO-Revision-Date: 1998-08-09 14:50+0200\n"
+"Last-Translator: Hans Petter Bieker <zerium@webindex.no>\n"
+"Language-Team: no <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO_8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: viewer.cpp:95
+msgid "no image loaded"
+msgstr "intet bilde lastet"
+
+#: viewer.cpp:103 viewer.cpp:599
+msgid "Ready"
+msgstr "Klar"
+
+#: viewer.cpp:181
+msgid "Net saving not yet implemented"
+msgstr "Nettlagring foreløbig ikke implementert"
+
+#: viewer.cpp:189
+#, c-format
+msgid "%s: written"
+msgstr "%s: skrevet"
+
+#: viewer.cpp:227
+msgid "Enter Zoom factor (100 = 1x):"
+msgstr "Skriv inn forstørringsfaktor (100 = 1x):"
+
+#: viewer.cpp:231
+msgid "Illegal zoom factor"
+msgstr "Ugyldig forstørringsfaktor"
+
+#: viewer.cpp:282
+#, c-format
+msgid ""
+"KView -- Graphics viewer. %s\n"
+"\n"
+"Sirtaj S. Kang (taj@kde.org)\n"
+msgstr ""
+"KView -- grafikkfremviser. %s\n"
+"\n"
+"Sirtaj S. Kang (taj@kde.org)\n"
+
+#: viewer.cpp:285
+msgid "About KView"
+msgstr "Om KView"
+
+#: viewer.cpp:310 viewer.cpp:412
+msgid "&List..."
+msgstr "&Liste..."
+
+#: viewer.cpp:312 viewer.cpp:416
+msgid "&Previous"
+msgstr "&Forrige"
+
+#: viewer.cpp:314 viewer.cpp:418
+msgid "&Next"
+msgstr "&Neste"
+
+#: viewer.cpp:316 viewer.cpp:421
+msgid "&Slideshow On/Off"
+msgstr "&Lysbildefremvisning av/på"
+
+#: viewer.cpp:324
+msgid "&Zoom"
+msgstr "F&orstørre"
+
+#: viewer.cpp:325
+msgid "&Transform"
+msgstr "O&mdanne"
+
+#: viewer.cpp:326
+msgid "To &Desktop"
+msgstr "Til &skrivebord"
+
+#: viewer.cpp:328
+msgid "F&ilter"
+msgstr "F&ilter"
+
+#: viewer.cpp:332
+msgid "&Images"
+msgstr "&Bilder"
+
+#: viewer.cpp:352
+msgid "&Save As..."
+msgstr "&Lagre som..."
+
+#: viewer.cpp:356
+msgid "&Close Window"
+msgstr "&Lukk vindu"
+
+#: viewer.cpp:362
+msgid "&Full Screen"
+msgstr "&Fullskjerm"
+
+#: viewer.cpp:365
+msgid "&Crop"
+msgstr "&Beskjær"
+
+#: viewer.cpp:367
+msgid "&Reset"
+msgstr "&Nullstill"
+
+#: viewer.cpp:369
+msgid "&Preferences..."
+msgstr "&Preferanser..."
+
+#: viewer.cpp:375
+msgid "&Zoom..."
+msgstr "&Forstørr..."
+
+#: viewer.cpp:376
+#, c-format
+msgid "Zoom &in 10%"
+msgstr "Fo&rstørr 10 %"
+
+#: viewer.cpp:378
+#, c-format
+msgid "Zoom &out 10%"
+msgstr "F&orminsk 10%"
+
+#: viewer.cpp:380
+msgid "&Double size"
+msgstr "&Doble størrelse"
+
+#: viewer.cpp:382
+msgid "&Half size"
+msgstr "&Halver størrelse"
+
+#: viewer.cpp:384
+msgid "&Max size"
+msgstr "&Maks størrelse"
+
+#: viewer.cpp:386
+msgid "Max/&aspect"
+msgstr "Maks/&aspekt"
+
+#: viewer.cpp:392
+msgid "Rotate &clockwise"
+msgstr "Roter &klokkevis"
+
+#: viewer.cpp:394
+msgid "Rotate &anti-clockwise"
+msgstr "Roter &Mot klokken"
+
+#: viewer.cpp:396
+msgid "Flip &vertical"
+msgstr "Drei &vertikalt"
+
+#: viewer.cpp:398
+msgid "Flip &horizontal"
+msgstr "Drei &horisontalt"
+
+#: viewer.cpp:404
+msgid "Desktop &Tile"
+msgstr "F&lislegg på skrivebord"
+
+#: viewer.cpp:405
+msgid "Desktop &Max"
+msgstr "&Maks på skrivebordet"
+
+#: viewer.cpp:407
+msgid "Desktop Max&pect"
+msgstr "Maks&pekt på skrivebordet"
+
+#: viewer.cpp:426
+msgid "&How do I..."
+msgstr "&Hvordan gjør jeg..."
+
+#: viewer.cpp:427
+msgid "&What is a..."
+msgstr "H&var er en..."
+
+#: viewer.cpp:429
+msgid "&About KView..."
+msgstr "&Om KView..."
+
+#: viewer.cpp:471 viewer.cpp:478
+msgid "Existing transfer not yet complete."
+msgstr "Eksisterende overføring ikke fullført."
+
+#: viewer.cpp:493
+msgid "Couldn't get temporary transfer name."
+msgstr "Kunne ikke få midlertidig overføringsnavn."
+
+#: viewer.cpp:532
+msgid "Transfer error: "
+msgstr "Overføringsfeil: "
+
+#: viewer.cpp:618
+msgid "Loading..."
+msgstr "Laster..."
+
+#: viewer.cpp:632
+#, c-format
+msgid "Couldn't load %s"
+msgstr "Kunne ikke laste %s"
+
+#: viewer.cpp:852
+msgid "Printing..."
+msgstr "Skriver ut..."
+
+#: colour.cpp:32
+msgid "Enter brightness factor (%):"
+msgstr "Oppgi lyshetsfaktor (%):"
+
+#: colour.cpp:37
+msgid "Brightness factor must be positive"
+msgstr "Lyshetsfaktor må være positiv"
+
+#: colour.cpp:44
+msgid "Changing brightness..."
+msgstr "Endrer lyshet..."
+
+#: colour.cpp:58
+msgid "Intensity:Brightness"
+msgstr "Intensitet:Lyshet"
+
+#: colour.cpp:100
+msgid "Converting to Greyscale..."
+msgstr "Konverterer til gråskala..."
+
+#: colour.cpp:129
+msgid "Greyscale"
+msgstr "Gråskala"
+
+#: colour.cpp:147
+msgid "Smoothing..."
+msgstr "Jevner..."
+
+#: colour.cpp:213
+msgid "Smooth"
+msgstr "Jevn"
+
+#: colour.cpp:234
+msgid "Enter gamma value ( >0 ):"
+msgstr "Skriv inn gamma-verdi ( >0 ):"
+
+#: colour.cpp:237
+msgid "Bad Gamma value"
+msgstr "Ugyldig gamma-verdi"
+
+#: colour.cpp:243
+msgid "Gamma-correcting..."
+msgstr "Gamma-korrigering..."
+
+#: colour.cpp:296
+msgid "Intensity:Gamma Correct..."
+msgstr "Intensitet:Gamma-korreksjon..."
+
+#: colour.cpp:310
+msgid "External.."
+msgstr "Ekstern.."
+
+#: ilistdlg.cpp:56
+msgid "Prev"
+msgstr "Forrige"
+
+#: ilistdlg.cpp:60
+msgid "Shu&ffle"
+msgstr "&Tilfeldig"
+
+#: ilistdlg.cpp:65
+msgid "Next"
+msgstr "Neste"
+
+#: ilistdlg.cpp:69
+msgid "Start slide"
+msgstr "Start lydbilde"
+
+#: ilistdlg.cpp:85
+msgid "Image List"
+msgstr "Bildeliste"
+
+#: ilistdlg.cpp:259
+msgid "Stop &slide"
+msgstr "Stopp &lysbilde"
+
+#: ilistdlg.cpp:267
+msgid "Start &slide"
+msgstr "Start &lysbilde"
+
+#: prefdlg.cpp:32
+msgid "kView Preferences"
+msgstr "kview-preferanser"
+
+#: prefdlg.cpp:36
+msgid "&Apply"
+msgstr "&Bruk"
+
+#: prefdlg.cpp:51
+msgid "On Load"
+msgstr "Ved lasting"
+
+#: prefdlg.cpp:58
+msgid "Resize Window"
+msgstr "Endre størrelse på vindu"
+
+#: prefdlg.cpp:61
+msgid "Resize Image"
+msgstr "Endre "
+
+#: prefdlg.cpp:64
+msgid "No Resize"
+msgstr "Ingen endring av størrelse"
+
+#: prefdlg.cpp:69
+msgid "Slideshow"
+msgstr "Lysbildefremvisning"
+
+#: prefdlg.cpp:72
+msgid "Loop"
+msgstr "Sløyfe"
+
+#: prefdlg.cpp:76
+msgid "Slide interval (sec)"
+msgstr "Lysbildeintervall (sek)"
+
+#: prefdlg.cpp:84
+msgid "&Keys"
+msgstr "&Taster"

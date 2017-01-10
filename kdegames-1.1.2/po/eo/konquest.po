@@ -1,0 +1,253 @@
+# Esperantaj mesaøoj por "konquest"
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Wolfram Diestel <diestel@rzaix340.rz.uni-leipzig.de>, 1998.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: konquest\n"
+"POT-Creation-Date: 1999-01-13 01:34+0100\n"
+"PO-Revision-Date: 1998-12-17 21:00+0100\n"
+"Last-Translator: Wolfram Diestel <diestel@rzaix340.rz-uni-leipzig.de>\n"
+"Language-Team: Esperanto <eo@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-3\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: gameboard.cc:55
+msgid "End Turn"
+msgstr "Finu rondon"
+
+#: gameboard.cc:203
+msgid ": Select source planet..."
+msgstr ": Elektu deirplanedon..."
+
+#: gameboard.cc:221
+msgid ": Select destination planet..."
+msgstr ": Elektu celplanedon..."
+
+#: gameboard.cc:243
+msgid ": How many ships?"
+msgstr ": Kiom da þipoj?"
+
+#: gameboard.cc:267
+msgid "Ruler: Select starting planet."
+msgstr "Mezurilo: Elektu startplanedon."
+
+#: gameboard.cc:287
+#, c-format
+msgid ""
+"The distance from Planet %s to Planet %s is %s light years.\n"
+"A ship leaving this turn will arrive on turn %s"
+msgstr ""
+"La distanco de planedo %s al planedo %s estas %s da lumjaroj.\n"
+"Þipo eliranta tiun æi rondon alvenos en rondo %s"
+
+#: gameboard.cc:291
+msgid "Distance"
+msgstr "Distanco"
+
+#: gameboard.cc:296
+msgid "Ruler: Select ending planet."
+msgstr "Mezurilo: Elektu finplanedon."
+
+#: gameboard.cc:311
+#, c-format
+msgid "Turn #: %2d of %2d"
+msgstr "Rondo #: %2d el %2d"
+
+#: gameboard.cc:426
+#, c-format
+msgid "The once mighty empire of %s has fallen in ruins."
+msgstr "La iame potenca imperio de %s pereis en ruinoj."
+
+#: gameboard.cc:428
+msgid "An Empire has fallen..."
+msgstr "Imperio pereis..."
+
+#: gameboard.cc:438
+#, c-format
+msgid "The fallen empire of %s has staggered back to life."
+msgstr "La pereita imperio de %s þanceliøis al vivo."
+
+#: gameboard.cc:440
+msgid "Up from the ashes..."
+msgstr "Reviviøo el la cindro..."
+
+#: gameboard.cc:460
+#, c-format
+msgid "Reinforcements have arrived for planet %s"
+msgstr "Subteno alvenis por la planedo %s"
+
+#: gameboard.cc:462
+msgid "Fleet Arrival"
+msgstr "Flugkaravano alvenis"
+
+#: gameboard.cc:505
+#, c-format
+msgid "Planet %s has held against an attack from %s"
+msgstr "Planedo %s rezistis atakon de %s"
+
+#: gameboard.cc:507
+msgid "Planet Holds"
+msgstr "Planedo rezistis"
+
+#: gameboard.cc:515
+#, c-format
+msgid "Planet %s has fallen to %s"
+msgstr "Planedo %s nun apartenas al %s"
+
+#: gameboard.cc:517
+msgid "Planet Conquered"
+msgstr "Planedo malvenkis"
+
+#: gameboard.cc:579 mainwin.cc:82
+msgid "End Game"
+msgstr "Finu ludon"
+
+#: gameboard.cc:580
+msgid "Do you wish to retire this game?"
+msgstr "Æu vi volas fini tiun æi ludon?"
+
+#: gameboard.cc:586
+msgid "Final Standings"
+msgstr "Fina rezulto"
+
+#: gameboard.cc:758
+msgid "Not enough ships to send."
+msgstr "Ne sufiæe da þipoj por sendado."
+
+#: mainwin.cc:23
+msgid "GNU-Lactic Conquest"
+msgstr "GNUlakta Konkero"
+
+#: mainwin.cc:47
+#, c-format
+msgid ""
+"Version %s\n"
+"Copyright (c) 1998 by\n"
+"The Gnu-Lactic Conquest Project\n"
+"\n"
+"KDE version by Russ Steffen <rsteffen@ia.net>\n"
+"See http://www.ia.net/~rsteffen/konquest.html for more info"
+msgstr ""
+"versio %s\n"
+"kopirajto (c) 1998 æe\n"
+"La Gnu-lakta konkero-projekto\n"
+"\n"
+"KDE-versio de Russ Steffen <rsteffen@ia.net>\n"
+"Vidu http://www.ia.net/~rsteffen/konquest.html por pli da informo"
+
+#: mainwin.cc:88
+msgid "Measure Distance"
+msgstr "Mezuru distancon"
+
+#: mainwin.cc:92
+msgid "Show Standings"
+msgstr "Montru rezulton"
+
+#: newgamedlg.cc:31
+msgid "Preview Map"
+msgstr "Antaýrigardu mapon"
+
+#: newgamedlg.cc:35
+msgid "&Reject Map"
+msgstr "&Remetu mapon"
+
+#: newgamedlg.cc:41
+msgid "&Player List"
+msgstr "&Ludantolisto"
+
+#: newgamedlg.cc:48
+msgid "&Add"
+msgstr "&Aldonu"
+
+#: newgamedlg.cc:54
+msgid "&Clear"
+msgstr "&Viþu"
+
+#: newgamedlg.cc:70
+msgid "&Start Game"
+msgstr "&Komencu ludon"
+
+#: newgamedlg.cc:162
+#, c-format
+msgid "Number of Neutral Planets: %2d"
+msgstr "Nombro de neýtralaj planedoj: %2d"
+
+#: newgamedlg.cc:174
+#, c-format
+msgid "Number of turns: %2d"
+msgstr "Nombro de rondoj: %2d"
+
+#: planet_info.cc:81 planet_info.cc:116 planet_info.cc:131
+msgid "Planet Name : "
+msgstr "Planedonomo: "
+
+#: planet_info.cc:84 planet_info.cc:134
+msgid "Owner : "
+msgstr "Posedanto: "
+
+#: planet_info.cc:87
+msgid "Ships : "
+msgstr "Þipoj: "
+
+#: planet_info.cc:90
+msgid "Production : "
+msgstr "Produktado: "
+
+#: planet_info.cc:93
+msgid "Kill Percent : "
+msgstr "Mortoprocentoj: "
+
+#: planet_info.cc:137
+#, c-format
+msgid "Ships : %d"
+msgstr "Þipoj: %d"
+
+#: planet_info.cc:140
+#, c-format
+msgid "Production : %d"
+msgstr "Produktado: %d"
+
+#: planet_info.cc:143
+#, c-format
+msgid "Kill Percent : %.3f"
+msgstr "Mortoprocentoj: %.3f"
+
+#: gameenddlg.cc:14
+msgid ""
+"This is the last turn.\n"
+"Do you wish to add more turns?"
+msgstr ""
+"Tio estas la lasta rondo.\n"
+"Æu vi volas aldoni pliajn rondojn?"
+
+#: gameenddlg.cc:64
+#, c-format
+msgid "Add %d turns"
+msgstr "Aldonu %d rondojn"
+
+#: scoredlg.cc:18
+msgid "Player"
+msgstr "Ludantoj"
+
+#: scoredlg.cc:19
+msgid "Ships Built"
+msgstr "Konstruitaj þipoj"
+
+#: scoredlg.cc:20
+msgid "Planets Conquered"
+msgstr "Konkeritaj planedoj"
+
+#: scoredlg.cc:21
+msgid "Fleets Launched"
+msgstr "Startitaj flugkaravanoj"
+
+#: scoredlg.cc:22
+msgid "Fleets Destroyed"
+msgstr "Detruitaj flugkaravanoj"
+
+#: scoredlg.cc:23
+msgid "Ships Destroyed"
+msgstr "Detruitaj þipoj"

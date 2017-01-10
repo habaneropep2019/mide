@@ -1,0 +1,9 @@
+#! /bin/sh
+
+if [ "$1" != "upgrade" ]
+then
+  update-alternatives --remove editor /usr/bin/kedit
+fi
+
+exit 0
+

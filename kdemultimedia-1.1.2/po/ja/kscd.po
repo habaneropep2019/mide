@@ -1,0 +1,641 @@
+# KTranslator Generated File
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-04-03 02:43+0200\n"
+"PO-Revision-Date: Wed Jul 7 1999 16:19:07+0200\n"
+"Last-Translator: Kimiyasu Tomiyama <tomy@truga.com>\n"
+"Language-Team: Japanese <kde-jp@albert.nikkeibp.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KTranslator v 0.4.0"
+
+#: CDDBSetupData.cpp:44
+msgid "CDDB Base Directory"
+msgstr "CDDBベースディレクトリ"
+
+#: CDDBSetupData.cpp:63
+msgid "Send CDDB submissions to:"
+msgstr "CDDB提出の送信先 :"
+
+#: CDDBSetupData.cpp:84
+msgid "CDDB server:"
+msgstr "CDDBサーバ :"
+
+#: CDDBSetupData.cpp:93
+msgid "Update"
+msgstr "更新"
+
+#: CDDBSetupData.cpp:115
+msgid "Enable Remote CDDB"
+msgstr "リモートCDDBを有効にする"
+
+#: CDDBSetupData.cpp:124
+msgid "Defaults"
+msgstr "デフォルト"
+
+#: CDDBSetupData.cpp:141
+msgid "Use HTTP proxy to access CDDB"
+msgstr "HTTPプロキシを使ってCDDBへアクセス"
+
+#: CDDialog.cpp:59
+msgid "CD Database Editor"
+msgstr "CDDB エディタ"
+
+#: CDDialog.cpp:211
+#, c-format
+msgid ""
+"Total Time:\n"
+"%02d:%02d:%02d"
+msgstr ""
+"合計時間:\n"
+"%02d:%02d:%02d"
+
+#: CDDialog.cpp:213
+#, c-format
+msgid ""
+"Total Time:\n"
+" %02d:%02d"
+msgstr ""
+"合計時間:\n"
+" %02d:%02d"
+
+#: CDDialog.cpp:255
+msgid "Use this Editor to annotate this track"
+msgstr "このトラックに注釈をつけるためにこのエディタを使います"
+
+#: CDDialog.cpp:281
+msgid "Use this Editor to annotate the title"
+msgstr "このタイトルに注釈をつけるためにこのエディタを使います"
+
+#: CDDialog.cpp:430 CDDialog.cpp:589
+msgid "Please select a Category or press Cancel"
+msgstr "ジャンルを選択するかキャンセルを押して下さい"
+
+#: CDDialog.cpp:431
+msgid "To which category does the CD belong?"
+msgstr "このCDのジャンルはどれですか？"
+
+#: CDDialog.cpp:501
+#, c-format
+msgid "Submitting cddb entry: %s\n"
+msgstr "CDDBエントリを提出する : %s\n"
+
+#: CDDialog.cpp:508
+#, c-format
+msgid ""
+"Could not pipe contents into:\n"
+" %s"
+msgstr ""
+" %s に\n"
+"内容をパイプできませんでした"
+
+#: CDDialog.cpp:590
+msgid "Under which category would you like to store this CDDB entry?"
+msgstr "どのジャンルにこのCDDBエントリを入れますか？"
+
+#: CDDialog.cpp:641
+#, c-format
+msgid ""
+"Unable to write to file:\n"
+"%s\n"
+"Please check your permissions and make your category directories exist."
+msgstr ""
+"ファイル%s に書き込めません\n"
+"あなたの書き込み許可とジャンルディレクトリが存在するか調べて下さい"
+
+#: CDDialog.cpp:646
+msgid "Kscd Error"
+msgstr "Kscd エラー"
+
+#: CDDialog.cpp:815 CDDialog.cpp:830 CDDialog.cpp:844 CDDialog.cpp:866
+msgid "Invalid Database Entry"
+msgstr "データベースのエントリが無効です"
+
+#: CDDialog.cpp:816
+msgid ""
+"The Disc Artist / Title field is not filled in.\n"
+"Please correct the entry and try again."
+msgstr ""
+"ディスク アーティスト / タイトルが入力されていません\n"
+"エントリを訂正してもう一度行なって下さい"
+
+#: CDDialog.cpp:831
+msgid ""
+"The Disc Artist / Title field is not filled in correctly.\n"
+"Please separate the artist from the title of the CD with \n"
+"a forward slash, such as in: Peter Gabriel / Greatest Hits\n"
+msgstr "ディスクのアーティストとタイトルの欄が正しく埋まっていません\n"
+"アーティストとタイトルを / (スラッシュ) で区切って下さい\n"
+"例： Peter Grbriel / Greatest Hits\n"
+
+#: CDDialog.cpp:845 CDDialog.cpp:867
+msgid ""
+"Not all track titles can be empty.\n"
+"Please correct the entry and try again."
+msgstr ""
+"全てのトラックタイトルが埋まっていません\n"
+"エントリを訂正してもう一度行なって下さい"
+
+#: CDDialog.cpp:877
+msgid "Internal Error"
+msgstr "内部エラー"
+
+#: CDDialog.cpp:878
+msgid ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"Please email the author."
+msgstr ""
+"cdinfo.ntracks != title_list->count() + 1\n"
+"製作者に e-mail を送って下さい"
+
+#: CDDialog.cpp:907
+msgid "Invalid Playlist\n"
+msgstr "無効なプレイリスト\n"
+
+#: CDDialogData.cpp:74
+msgid "Load"
+msgstr "ロード"
+
+#: CDDialogData.cpp:87
+msgid "Play List Editor"
+msgstr "再生リストエディタ"
+
+#: CDDialogData.cpp:93
+msgid "Edit Track Title"
+msgstr "トラックの曲名を編集"
+
+#: CDDialogData.cpp:99
+msgid "Disc Artist / Title"
+msgstr "アーティスト名 / タイトル"
+
+#: CDDialogData.cpp:105
+msgid "Track / Time / Title"
+msgstr "トラック / 時間 / 曲名"
+
+#: CDDialogData.cpp:111 CDDialogData.cpp:117
+msgid "Ext Info"
+msgstr "注釈"
+
+#: CDDialogData.cpp:133
+msgid "Disc ID"
+msgstr "ディスクID"
+
+#: CDDialogData.cpp:145
+msgid "Upload"
+msgstr "更新"
+
+#: configdlg.cpp:71
+msgid "Configure kscd"
+msgstr "kcsd の設定"
+
+#: configdlg.cpp:78
+msgid "LED Color:"
+msgstr "液晶の色:"
+
+#: configdlg.cpp:93
+msgid "Background Color:"
+msgstr "背景の色:"
+
+#: configdlg.cpp:107
+msgid "CDROM Device:"
+msgstr "CDROMデバイス:"
+
+#: configdlg.cpp:124
+msgid "Unix mail command:"
+msgstr "Unix メールコマンド:"
+
+#: configdlg.cpp:132
+msgid "WWW-Browser"
+msgstr "WWWブラウザ"
+
+#: configdlg.cpp:135
+msgid "Use kfm as Browser"
+msgstr "kfmをブラウザとして使う"
+
+#: configdlg.cpp:142
+msgid "Use Custom Browser:"
+msgstr "その他のブラウザを使う:"
+
+#: configdlg.cpp:154
+msgid "Show Tool Tips"
+msgstr "ツールティプの表示"
+
+#: configdlg.cpp:161
+msgid "Enable KPanel Docking"
+msgstr "KPanelへ組み込む"
+
+#: configdlg.cpp:168
+msgid "Play on Tray Close"
+msgstr "トレイが閉まると再生"
+
+#: configdlg.cpp:175
+msgid "AutoDock on Minimize"
+msgstr "最小化時に自動的に組み込む"
+
+#: configdlg.cpp:183
+msgid "Stop Playing on Exit"
+msgstr "終了時に演奏を止める"
+
+#: configdlg.cpp:190
+msgid "Eject on Finish"
+msgstr "終了時にCDを取り出す"
+
+#: docking.cpp:73 kscd.cpp:562
+msgid "Play/Pause"
+msgstr "再生/一時停止"
+
+#: docking.cpp:75
+msgid "Forward"
+msgstr "送る"
+
+#: docking.cpp:76
+msgid "Backward"
+msgstr "戻る"
+
+#: docking.cpp:77
+msgid "Next"
+msgstr "次曲"
+
+#: docking.cpp:78
+msgid "Previous"
+msgstr "前曲"
+
+#: docking.cpp:79
+msgid "Eject"
+msgstr "取り出す"
+
+#: docking.cpp:174
+msgid "Minimize"
+msgstr "最小化"
+
+#: inexact.cpp:54
+msgid ""
+"No exact match could be found. Please select the appropriate CD from the "
+"list of choices presented below."
+msgstr "正確に一致するものがありませんでした "
+"下のリストから該当するものを選択して下さい"
+
+#: inexact.cpp:57
+msgid "Please select a Disk Title or press Cancel"
+msgstr "ディスクタイトルを選ぶかキャンセルを押して下さい"
+
+#: kscd.cpp:226
+msgid "Record submitted successfully"
+msgstr "記録の提出成功しました"
+
+#: kscd.cpp:236
+msgid "Error connecting to server."
+msgstr "サーバーへの接続エラー"
+
+#: kscd.cpp:239
+msgid "Not connected."
+msgstr "接続されていません"
+
+#: kscd.cpp:242
+msgid "Connection timed out."
+msgstr "接続の時間切れです"
+
+#: kscd.cpp:245
+msgid "Time out waiting for server interaction."
+msgstr "サーバーの反応待ち時間切れです"
+
+#: kscd.cpp:248
+#, c-format
+msgid ""
+"Server said:\n"
+"\"%s\""
+msgstr ""
+"サーバのメッセージ:\n"
+"\"%s\""
+
+#: kscd.cpp:250
+#, c-format
+msgid ""
+"Error #%d sending message via SMTP.\n"
+"\n"
+"%s"
+msgstr ""
+"SMTP経由でのメッセージ送信エラー#%d\n"
+"\n"
+"%s"
+
+#: kscd.cpp:378
+msgid "Vol: --"
+msgstr "音量: --"
+
+#: kscd.cpp:528
+msgid "Performances"
+msgstr "ライブ情報"
+
+#: kscd.cpp:531
+msgid "Purchases"
+msgstr "購入情報"
+
+#: kscd.cpp:538
+msgid "KSCD Magic"
+msgstr "KSCD Magic"
+
+#: kscd.cpp:564
+msgid "Loop CD"
+msgstr "リピート再生"
+
+#: kscd.cpp:565
+msgid "Track Selection"
+msgstr "トラックの選択"
+
+#: kscd.cpp:566
+msgid "30 Secs Forward"
+msgstr "30秒送る"
+
+#: kscd.cpp:567
+msgid "30 Secs Backward"
+msgstr "30秒戻す"
+
+#: kscd.cpp:568
+msgid "Next Track"
+msgstr "次のトラック"
+
+#: kscd.cpp:569
+msgid "Previous Track"
+msgstr "前のトラック"
+
+#: kscd.cpp:570
+msgid "Quit Kscd"
+msgstr "Kscdの終了"
+
+#: kscd.cpp:571
+msgid "Cycle Time Display"
+msgstr "時間の表示切替え"
+
+#: kscd.cpp:572
+msgid "Configure Kscd"
+msgstr "Kscdの設定"
+
+#: kscd.cpp:573
+msgid "Eject CD"
+msgstr "CDの取り出し"
+
+#: kscd.cpp:574
+msgid "The Artist on the Web"
+msgstr "アーティストをウェブで検索"
+
+#: kscd.cpp:575
+msgid "Random Play"
+msgstr "ランダム再生"
+
+#: kscd.cpp:576
+msgid "CDDB Dialog"
+msgstr "CDDBダイアログ"
+
+#: kscd.cpp:577
+msgid "CD Volume Control"
+msgstr "CDの音量調節"
+
+#: kscd.cpp:628 kscd.cpp:679 kscd.cpp:1279
+msgid "Playing"
+msgstr "再生中"
+
+#: kscd.cpp:640 kscd.cpp:1293 kscd.cpp:1346 kscd.cpp:1755 kscd.cpp:1953
+#, c-format
+msgid "%02d: <Unknown>"
+msgstr "%02d: <不明>"
+
+#: kscd.cpp:671 kscd.cpp:1323
+msgid "Pause"
+msgstr "一時停止"
+
+#: kscd.cpp:676 kscd.cpp:941 kscd.cpp:1275
+msgid "Random"
+msgstr "ランダム"
+
+#: kscd.cpp:684
+msgid "Strange...."
+msgstr "異常あり..."
+
+#: kscd.cpp:702
+msgid "Stopped"
+msgstr "停止"
+
+#: kscd.cpp:904 kscd.cpp:1277
+msgid "Loop"
+msgstr "リピート"
+
+#: kscd.cpp:916
+msgid "Ejecting"
+msgstr "排出中"
+
+#: kscd.cpp:992
+msgid "kscd Configuraton"
+msgstr "kscdの設定"
+
+#: kscd.cpp:1008
+msgid ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"Currently maintained by:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd contains code from:\n"
+"workman 1.4 beta 3\n"
+"Copyright (c) Steven Grimm <koreth@hyperion.com>\n"
+"\n"
+"Special thanks to Ti Kan and Steve Scherf, the inventors of the CDDB "
+"database concept. Visit http://www.cddb.com for more information on CDDB.\n"
+"\n"
+msgstr ""
+"Copyright (c) 1997-98 \n"
+"Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"\n"
+"現在のメンテナは:\n"
+"Sam Maloney <thufir@illogic.ml.org>\n"
+"\n"
+"Kscd には workman 1.4 beta 3\n"
+"(Copyright (c) Steven Grimm <koreth@hyperion.com>による)\n"
+"コードが含まれています\n"
+"\n"
+"CDDB(CDデータベース)の概念の発明者である\n"
+"Ti Kan and Steve Scherf には大変感謝しています\n"
+"CDDBの情報をもっと知りたければ http://www.cddb.com\n"
+"へ訪れて下さい\n"
+"\n"
+""
+
+#: kscd.cpp:1021
+msgid ""
+"KSCD Magic based on Synaesthesia by Paul Harrison "
+"<pfh@yoyo.cc.monash.edu.au>\n"
+"\n"
+msgstr ""
+"KSCD Magic は Paul Harrison\n"
+"<pfh@yoyo.cc.monash.edu.au> による\n"
+"Synaesthesia に基づいています\n"
+"\n"
+""
+
+#: kscd.cpp:1025
+msgid ""
+"Thanks to Vadim Zaliva <lord@crocodile.org>\n"
+"for his work on the http proxy code.\n"
+"\n"
+msgstr ""
+"Vadim Zaliva <lord@crocodile.org> に感謝します\n"
+"彼は HTTP プロキシコードを担当してくれました\n"
+"\n"
+""
+
+#: kscd.cpp:1080
+msgid "SMTP Setup"
+msgstr "SMTPの設定"
+
+#: kscd.cpp:1081
+msgid "Kscd Options"
+msgstr "Kscd のオプション"
+
+#: kscd.cpp:1082
+msgid "Kscd Magic"
+msgstr "Kscd Magic"
+
+#: kscd.cpp:1185 kscd.cpp:2085
+msgid "Vol: %02d%%"
+msgstr "音量: %02d%%"
+
+#: kscd.cpp:1223
+#, c-format
+msgid ""
+"CDROM read or access error.\n"
+"Please make sure you have access permissions to:\n"
+"%s"
+msgstr ""
+"CDROM 読み込みまたはアクセスエラー\n"
+"%sへのアクセス許可を下ろして下さい"
+
+#: kscd.cpp:1334
+msgid "Ready"
+msgstr "待機中"
+
+#: kscd.cpp:1377
+msgid "Ejected"
+msgstr "排出完了"
+
+#: kscd.cpp:1661
+msgid "Unable to get CDDB server list."
+msgstr "CDDBサーバリストを得られません"
+
+#: kscd.cpp:1805 kscd.cpp:1810
+msgid "No matching CDDB entry found."
+msgstr "CDDBエントリが見つかりません"
+
+#: kscd.cpp:1834 kscd.cpp:1844
+msgid "Error getting CDDB entry."
+msgstr "CDDBエントリ取得エラー"
+
+#: kscd.cpp:1860 kscd.cpp:1870
+msgid "CDDB query timed out."
+msgstr "CDDBクエリー時間切れです"
+
+#: kscd.cpp:2060
+msgid "Tra Rem"
+msgstr "Tra Rem"
+
+#: kscd.cpp:2064
+msgid "Tot Sec"
+msgstr "Tot Sec"
+
+#: kscd.cpp:2068
+msgid "Tot Rem"
+msgstr "Tot Rem"
+
+#: kscd.cpp:2073
+msgid "Tra Sec"
+msgstr "Tra Sec"
+
+#: kscd.cpp:2198
+msgid "Cannot start kscdmagic."
+msgstr "kscdmagic が開始できません"
+
+#: kscd.cpp:2213
+msgid ""
+"KSCD Magic exited abnormally.\n"
+"Are you sure kscdmagic is installed?"
+msgstr ""
+"KSCD Magicは異常終了しました\n"
+"kscdmagicを本当にインストールしましたか？"
+
+#: kscd.cpp:2368
+msgid "Enter the local CDDB base Directory"
+msgstr "ローカルCDDBベースディレクトリを入力してください"
+
+#: kscd.cpp:2425
+msgid "-h: display commandline options\n"
+msgstr "-h: コマンドラインオプションの表示\n"
+
+#: kscd.cpp:2426
+msgid "-d: enable debugging output.\n"
+msgstr "-d: デバッグ用出力を有効にする\n"
+
+#: mgconfdlg.cpp:52
+msgid "Magic Kscd"
+msgstr "Magic Kscd"
+
+#: mgconfdlg.cpp:59
+msgid "Width of Magic Window:"
+msgstr "Magicウィンドウの幅:"
+
+#: mgconfdlg.cpp:71
+msgid "Height of Magic Window:"
+msgstr "Magicウィンドウの高さ:"
+
+#: mgconfdlg.cpp:83
+msgid "MAGIC Brightness:"
+msgstr "MAGICの明るさ"
+
+#: smtpconfig.cpp:37
+msgid "Enable submission via SMTP"
+msgstr "SMTP経由提出を有効にする"
+
+#: smtpconfig.cpp:44
+msgid "SMTP Address:Port"
+msgstr "SMTPアドレス:ポート"
+
+#: smtpconfig.cpp:62
+msgid "Your Email Address"
+msgstr "あなたのメールアドレス"
