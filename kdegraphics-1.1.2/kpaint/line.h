@@ -3,7 +3,7 @@
 // Line class
 // This class is a subclass of Tool and provides a rubber line drawing tool.
 
-// $Id: line.h,v 1.5 1998/10/18 19:59:54 habenich Exp $
+// $Id$
 
 #ifndef LINE_H
 #define LINE_H

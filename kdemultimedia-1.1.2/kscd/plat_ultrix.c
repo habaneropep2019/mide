@@ -1,7 +1,7 @@
 /*   
    Kscd - A simple cd player for the KDE Project
 
-   $Id: plat_ultrix.c,v 1.6 1998/04/10 03:20:32 wuebben Exp $
+   $Id$
  
    Copyright (c) 1997 Bernd Johannes Wuebben math.cornell.edu
 

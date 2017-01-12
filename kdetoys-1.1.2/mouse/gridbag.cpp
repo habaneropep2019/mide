@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 
 #include <stdlib.h>
 #include <string.h>
@@ -10,6 +10,8 @@
 #define MAX_VALUE 65536
 
 #include "gridbag.h"
+
+using namespace std;
 
 Rectangle::Rectangle(int xx,int yy,int h,int w)
 {
@@ -1144,3 +1146,5 @@ GridBagLayoutInfo* GridBagLayout::getGridInfo(QWidget* parent)
 
     return info;
 }
+
+#include "gridbag.moc"

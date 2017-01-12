@@ -16,7 +16,7 @@
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-// $Id: kmediaui.cpp,v 1.4.2.3 1999/04/09 18:15:15 pbrown Exp $
+// $Id$
 // A GUI for the mediatool players. Serves as mediatool master
 
 #include "kmediaui.h"

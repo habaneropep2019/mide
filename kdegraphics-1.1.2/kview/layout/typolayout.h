@@ -21,7 +21,7 @@ class QWidget;
 /**
 * Provides a @ref KBagLayout with widget generation.
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: typolayout.h,v 1.3 1999/01/10 18:17:06 ssk Exp $
+* @version $Id$
 */
 class KTypoLayout : public KBagLayout
 {

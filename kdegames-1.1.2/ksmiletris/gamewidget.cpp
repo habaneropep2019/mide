@@ -526,3 +526,5 @@ void GameWidget::timeout()
 	}
 
 }
+
+#include "gamewidget.moc"

@@ -3,7 +3,7 @@
 # Date created:        18 June 1998
 # Whom:                Alex Zepeda <garbanzo@hooked.net>
 #
-# $Id: Makefile,v 1.3 1998/06/30 20:04:22 garbanzo Exp $
+# $Id$
 #
 PKGNAME=	kdegames-`date "+%y%m%d"`
 CATEGORIES=	games kde

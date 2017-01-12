@@ -1,5 +1,5 @@
 /*
-    $Id: options.cpp,v 1.4.2.1 1999/04/11 12:06:43 dfaure Exp $
+    $Id$
 
     Requires the Qt widget libraries, available at no cost at 
     http://www.troll.no

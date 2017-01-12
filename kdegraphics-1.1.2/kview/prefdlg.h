@@ -17,7 +17,7 @@ class KAccel;
 /**
 * TabDialog for kView preferences.
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: prefdlg.h,v 1.1 1999/01/10 18:16:51 ssk Exp $
+* @version $Id$
 */
 class KViewPrefDlg : public QTabDialog
 {

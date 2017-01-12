@@ -1,4 +1,3 @@
-
 INCLUDES = $(all_includes)
 
 LDFLAGS = $(all_libraries) $(KDE_RPATH)

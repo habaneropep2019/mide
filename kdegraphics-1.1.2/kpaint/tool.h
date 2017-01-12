@@ -1,6 +1,6 @@
 // -*- c++ -*-
 
-// $Id: tool.h,v 1.10 1998/11/04 20:49:16 habenich Exp $
+// $Id$
 
 #ifndef TOOL_H
 #define TOOL_H

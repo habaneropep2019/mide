@@ -1,5 +1,5 @@
 // -*- c++ -*-
-// $Id: circle.h,v 1.5 1998/10/18 19:59:42 habenich Exp $
+// $Id$
 
 #ifndef CIRCLE_H
 #define CIRCLE_H

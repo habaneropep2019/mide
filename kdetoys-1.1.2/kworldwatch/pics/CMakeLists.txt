@@ -1,0 +1,7 @@
+install_icon(flag-blue.xpm "${KDE1_DATADIR}/kworldwatch/pics")
+install_icon(flag-green.xpm "${KDE1_DATADIR}/kworldwatch/pics")
+install_icon(flag-yellow.xpm "${KDE1_DATADIR}/kworldwatch/pics")
+install_icon(flag-red.xpm "${KDE1_DATADIR}/kworldwatch/pics")
+install_icon(world.gif "${KDE1_DATADIR}/kworldwatch/pics")
+install_icon(world2.gif "${KDE1_DATADIR}/kworldwatch/pics")
+install_icon(world_dark.gif "${KDE1_DATADIR}/kworldwatch/pics")

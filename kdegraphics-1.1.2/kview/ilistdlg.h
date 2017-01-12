@@ -18,7 +18,7 @@ class QCheckBox;
 /**
 * Image List dialog.
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: ilistdlg.h,v 1.5 1999/01/10 18:16:46 ssk Exp $
+* @version $Id$
 */
 class ImgListDlg : public QWidget
 {

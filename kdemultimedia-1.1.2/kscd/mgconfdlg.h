@@ -3,7 +3,7 @@
  *
  * kscd -- A simple CD player for the KDE project           
  *
- * $Id: mgconfdlg.h,v 1.1.4.1 1999/02/16 15:11:51 kulow Exp $
+ * $Id$
  * 
  * Copyright (C) 1997 Bernd Johannes Wuebben 
  * wuebben@math.cornell.edu

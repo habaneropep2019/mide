@@ -24,7 +24,6 @@
 #include "stl_headers.h"
 #include "keyvaluemap.h"
 #include <algorithm>
-#include <fstream.h>
 
 class Section
 {

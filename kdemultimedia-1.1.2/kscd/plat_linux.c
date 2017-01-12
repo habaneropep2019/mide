@@ -1,7 +1,7 @@
 /*   
    Kscd - A simple cd player for the KDE Project
 
-   $Id: plat_linux.c,v 1.7.4.2 1999/04/14 20:47:31 porten Exp $
+   $Id$
  
    Copyright (c) 1997 Bernd Johannes Wuebben math.cornell.edu
 
@@ -23,7 +23,7 @@
  */
 
 /*
- * $Id: plat_linux.c,v 1.7.4.2 1999/04/14 20:47:31 porten Exp $
+ * $Id$
  *
  * Linux-specific drive control routines.  Very similar to the Sun module.
  */

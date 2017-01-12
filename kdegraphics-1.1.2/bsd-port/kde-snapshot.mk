@@ -1,4 +1,4 @@
-#$Id: kde-snapshot.mk,v 1.4 1998/06/26 21:06:58 garbanzo Exp $
+#$Id$
 
 OSVERSION!=     sysctl -n kern.osreldate
 

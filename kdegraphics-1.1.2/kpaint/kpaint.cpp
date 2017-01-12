@@ -1,4 +1,4 @@
-// $Id: kpaint.cpp,v 1.30.2.1 1999/04/08 21:23:53 dfaure Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <string.h>

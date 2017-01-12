@@ -1,4 +1,4 @@
-## kdegraphics/Makefile.am $Id: Makefile.am,v 1.14.2.1 1999/02/14 16:34:36 kulow Exp $
+## kdegraphics/Makefile.am $Id$
 ## (C) 1997 Stephan Kulow
 
 AUTOMAKE_OPTIONS = foreign 1.4

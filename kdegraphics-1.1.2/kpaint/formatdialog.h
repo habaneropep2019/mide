@@ -1,6 +1,6 @@
 // -*- c++ -*-
 
-// $Id: formatdialog.h,v 1.2 1997/08/30 18:22:37 kdecvs Exp $
+// $Id$
 
 #ifndef FORMATDIALOG_H
 #define FORMATDIALOG_H

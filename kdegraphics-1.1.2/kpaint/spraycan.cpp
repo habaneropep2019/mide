@@ -1,4 +1,4 @@
-// $Id: spraycan.cpp,v 1.11 1998/10/18 20:00:04 habenich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

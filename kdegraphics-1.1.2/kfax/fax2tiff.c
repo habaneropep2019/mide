@@ -1,6 +1,6 @@
 /*
 
-  $Id: fax2tiff.c,v 1.2 1997/10/06 03:22:05 wuebben Exp $
+  $Id$
 
   Copyright (C) 1997 Bernd Johannes Wuebben   
                      wuebben@math.cornell.edu

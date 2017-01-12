@@ -1,5 +1,5 @@
 /*
- * $Id: cdinfo.c,v 1.5.4.1 1999/02/18 02:15:36 porten Exp $
+ * $Id$
  *
  * Get information about a CD.
  */

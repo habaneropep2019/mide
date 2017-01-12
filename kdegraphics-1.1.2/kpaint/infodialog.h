@@ -1,6 +1,6 @@
 // -*- c++ -*-
 
-// $Id: infodialog.h,v 1.3 1998/01/13 19:01:57 rich Exp $
+// $Id$
 
 #ifndef IMAGEINFODIALOG_H
 #define IMAGEINFODIALOG_H

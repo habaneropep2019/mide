@@ -1,4 +1,4 @@
-# $Id: Makefile.am,v 1.15.2.1 1999/07/11 16:22:55 rahn Exp $
+# $Id$
 
 LDFLAGS	=	$(all_libraries) $(KDE_RPATH)
 LDADD   =       ./libtiffax/libtif.a  -lm $(LIB_KFILE) 

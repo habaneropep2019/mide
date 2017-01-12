@@ -1,7 +1,7 @@
 /*
 * kaccelmenuwatch.cpp -- Implementation of class KAccelMenuWatch.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: kaccelmenuwatch.cpp,v 1.1 1999/01/10 18:16:47 ssk Exp $
+* Version:	$Id$
 * Generated:	Thu Jan  7 15:05:26 EST 1999
 */
 

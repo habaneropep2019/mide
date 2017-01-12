@@ -13,7 +13,7 @@ class QLineEdit;
 /**
 * Request a numeric value from the user.
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: numdlg.h,v 1.2 1998/10/16 04:07:42 ssk Exp $
+* @version $Id$
 */
 class KNumDialog : public QDialog
 {

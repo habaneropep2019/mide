@@ -1,4 +1,4 @@
-/* $Header: /home/kde/kdegraphics/kfax/libtiffax/t4.h,v 1.2 1997/10/06 03:22:18 wuebben Exp $ */
+/* $Header$ */
 
 /*
  * Copyright (c) 1988-1995 Sam Leffler

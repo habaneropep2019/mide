@@ -1,7 +1,7 @@
 /*
  * Kscd - A simple cd player for the KDE Project
  *
- * $Id: smtpconfig.h,v 1.3 1998/11/29 01:50:12 wuebben Exp $
+ * $Id$
  *
  * Copyright (c) 1997 Bernd Johannes wuebben@math.cornell.edu
  *

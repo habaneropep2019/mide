@@ -1,7 +1,7 @@
 /*
 * bagconst.cpp -- Implementation of class KBagConstraints.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: bagconst.cpp,v 1.3 1999/01/10 18:17:00 ssk Exp $
+* Version:	$Id$
 * Generated:	Mon May  4 15:58:10 EST 1998
 */
 

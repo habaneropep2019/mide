@@ -1,0 +1,68 @@
+add_subdirectory(is)
+add_subdirectory(hr)
+add_subdirectory(pl)
+add_subdirectory(no)
+add_subdirectory(hs)
+add_subdirectory(tr)
+add_subdirectory(cs)
+add_subdirectory(sl)
+add_subdirectory(eo)
+add_subdirectory(ko)
+add_subdirectory(pt)
+add_subdirectory(zh_TW.Big5)
+add_subdirectory(el)
+add_subdirectory(es)
+add_subdirectory(ro)
+add_subdirectory(br)
+add_subdirectory(fi)
+add_subdirectory(pt_BR)
+add_subdirectory(hu)
+add_subdirectory(nl)
+add_subdirectory(en_UK)
+add_subdirectory(it)
+add_subdirectory(da)
+add_subdirectory(fr)
+add_subdirectory(de)
+add_subdirectory(he)
+add_subdirectory(sk)
+add_subdirectory(et)
+add_subdirectory(mk)
+add_subdirectory(ru)
+add_subdirectory(ja)
+add_subdirectory(sv)
+add_subdirectory(zh_CN.GB2312)
+add_subdirectory(ca)
+
+install(FILES
+    kbgndwm.pot
+    kcmbell.pot
+    kcmdisplay.pot
+    kcminfo.pot
+    kcminput.pot
+    kcmkeys.pot
+    kcmkfm.pot
+    kcmkpanel.pot
+    kcmkwm.pot
+    kcmlocale.pot
+    kcmsamba.pot
+    kcmsample.pot
+    kcmsyssound.pot
+    kcontrol.pot
+    kdehelp.pot
+    kdmconfig.pot
+    kdm.pot
+    kfind.pot
+    kfm.pot
+    kfontmanager.pot
+    kikbd.pot
+    klock.pot
+    kmenuedit.pot
+    konsole.pot
+    kpager.pot
+    kpanel.pot
+    krootwm.pot
+    kstart.pot
+    kthememgr.pot
+    kvt.pot
+    kwm.pot
+DESTINATION ${KDE1_LOCALE})

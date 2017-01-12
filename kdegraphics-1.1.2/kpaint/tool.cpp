@@ -1,4 +1,4 @@
-// $Id: tool.cpp,v 1.8 1998/10/18 20:00:07 habenich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

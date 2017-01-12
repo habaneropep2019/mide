@@ -17,7 +17,7 @@
 * All RGB values are assumed to be in the range (0..255).
 *
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: kcproc.h,v 1.2 1998/10/26 06:22:39 ssk Exp $
+* @version $Id$
 * @short Colour space and gamma utilities.
 */
 class KColourProc

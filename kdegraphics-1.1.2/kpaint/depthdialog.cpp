@@ -1,4 +1,4 @@
-// $Id: depthdialog.cpp,v 1.3.2.1 1999/04/08 21:23:50 dfaure Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <qpushbt.h>

@@ -1,4 +1,4 @@
-# $Id: Makefile.am,v 1.15.2.1 1999/07/11 16:23:00 rahn Exp $
+# $Id$
 ##
 
 INCLUDES=	$(all_includes)

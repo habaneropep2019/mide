@@ -2,7 +2,7 @@
  *
  * kscd -- A simple CD player for the KDE project           
  *
- * $Id: cddb.h,v 1.15 1998/10/10 04:42:49 tibirna Exp $
+ * $Id$
  * 
  * Copyright (C) 1997 Bernd Johannes Wuebben 
  * wuebben@math.cornell.edu

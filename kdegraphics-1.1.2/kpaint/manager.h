@@ -1,5 +1,5 @@
 // -*- c++ -*-
-// $Id: manager.h,v 1.7 1998/10/18 19:59:56 habenich Exp $
+// $Id$
 
 #ifndef MANAGER_H
 #define MANAGER_H

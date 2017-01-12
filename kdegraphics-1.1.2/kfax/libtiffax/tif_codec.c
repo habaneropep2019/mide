@@ -1,4 +1,4 @@
-/* $Header: /home/kde/kdegraphics/kfax/libtiffax/tif_codec.c,v 1.2 1997/10/06 03:22:21 wuebben Exp $ */
+/* $Header$ */
 
 /*
  * Copyright (c) 1988-1995 Sam Leffler

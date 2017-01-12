@@ -1,7 +1,7 @@
 /*
    Kscd - A simple cd player for the KDE Project
 
-   $Id: kscd.h,v 1.24 1998/12/16 15:21:09 ettrich Exp $
+   $Id$
 
    Copyright (c) 1997 Bernd Johannes Wuebben math.cornell.edu
 

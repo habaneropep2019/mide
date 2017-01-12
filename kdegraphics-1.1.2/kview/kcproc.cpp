@@ -1,7 +1,7 @@
 /*
 * kcproc.cpp -- Implementation of class KColourProc.
 * Author:	Sirtaj Singh Kang <taj@kde.org>
-* Version:	$Id: kcproc.cpp,v 1.2 1998/10/26 06:22:38 ssk Exp $
+* Version:	$Id$
 * Generated:	Thu Oct 15 13:51:46 EST 1998
 */
 

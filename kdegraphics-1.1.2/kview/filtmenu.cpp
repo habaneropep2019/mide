@@ -1,7 +1,7 @@
 /*
 * filtmenu.cpp -- Implementation of class KFiltMenuFactory.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: filtmenu.cpp,v 1.2 1998/10/08 14:42:45 kulow Exp $
+* Version:	$Id$
 * Generated:	Fri Sep 25 05:13:29 EST 1998
 */
 

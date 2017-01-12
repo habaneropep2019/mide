@@ -3,7 +3,7 @@
  *
  *    kmidi
  *
- * $Id: configdlg.cpp,v 1.2.2.1 1999/04/09 14:09:30 xavier Exp $
+ * $Id$
  * 
  * Copyright (C) 1997 Bernd Johannes Wuebben 
  * wuebben@math.cornell.edu

@@ -1,7 +1,7 @@
 /*
 * filtlist.cpp -- Implementation of class KFilterList.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: filtlist.cpp,v 1.2 1998/10/08 14:42:43 kulow Exp $
+* Version:	$Id$
 * Generated:	Mon Apr 13 06:10:04 EST 1998
 */
 

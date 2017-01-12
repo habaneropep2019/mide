@@ -1,4 +1,4 @@
-// $Id: canvassize.h,v 1.4 1998/05/07 13:34:29 rich Exp $
+// $Id$
 
 #ifndef CANVASSIZE_H
 #define CANVASSIZE_H

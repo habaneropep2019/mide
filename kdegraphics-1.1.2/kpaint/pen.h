@@ -1,5 +1,5 @@
 // -*- c++ -*-
-// $Id: pen.h,v 1.5 1998/10/18 19:59:59 habenich Exp $
+// $Id$
 
 #ifndef PEN_H
 #define PEN_H

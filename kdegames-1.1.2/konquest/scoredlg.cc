@@ -3,7 +3,7 @@
 #include <qpushbt.h>
 #include <kapp.h>
 
-#include <iostream.h>
+#include <iostream>
 
 #include "scoredlg.h"
 #include "scoredlg.moc"

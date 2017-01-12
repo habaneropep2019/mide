@@ -2,7 +2,7 @@
 /*
 
   kscdmagic 1.0   Bernd Johannes Wuebben <wuebben@kde.org>
-  $Id: main.cpp,v 1.8.4.2 1999/04/15 12:48:37 kulow Exp $
+  $Id$
 
   based on:
  

@@ -1,6 +1,6 @@
 // -*- c++ -*-
 
-// $Id: canvas.h,v 1.8 1998/10/25 16:06:43 habenich Exp $
+// $Id$
 
 #ifndef CANVAS_H
 #define CANVAS_H

@@ -1,4 +1,4 @@
-// $Id: areaselect.cpp,v 1.8.2.1 1999/04/08 21:23:46 dfaure Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

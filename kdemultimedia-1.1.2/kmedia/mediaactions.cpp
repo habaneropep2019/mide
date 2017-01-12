@@ -16,7 +16,7 @@
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-// $Id: mediaactions.cpp,v 1.5 1998/04/26 19:26:00 esken Exp $
+// $Id$
 // Mediatool actions
 
 #include "kmediawin.h"

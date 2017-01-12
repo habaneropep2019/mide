@@ -1,6 +1,6 @@
 /*
  *   kmoon - a moon phase indicator
- *   $Id: kmoon.cpp,v 1.2 1998/12/13 20:04:19 ettrich Exp $
+ *   $Id$
  *   Copyright (C) 1998  Stephan Kulow
  *
  *   This program is free software; you can redistribute it and/or modify

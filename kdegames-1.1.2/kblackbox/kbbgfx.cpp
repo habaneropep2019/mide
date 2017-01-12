@@ -37,7 +37,7 @@ KBBGraphic::KBBGraphic( QPixmap **p, QWidget* parent, const char* name )
   pix = p;
   if (pix == NULL) pixScaled = NULL;
   else {
-    pixScaled = new (QPixmap *) [NROFTYPES];
+    pixScaled = new QPixmap * [NROFTYPES];
     for (i = 0; i < NROFTYPES; i++) {
        pixScaled[i] = new QPixmap;
     }
@@ -463,3 +463,5 @@ void KBBGraphic::updateElement( int col, int row )
   paint.setViewport( col * cellW, row * cellH, width(), height() );
   paintCell( &paint, row, col );
 }
+
+#include "kbbgfx.moc"

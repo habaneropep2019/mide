@@ -15,7 +15,7 @@
 
 #include <ctype.h>
 #include <math.h>
-#include <iostream.h>
+#include <iostream>
 
 #include "gamecore.h"
 

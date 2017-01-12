@@ -1,4 +1,4 @@
-/* $Header: /home/kde/kdegraphics/kfax/libtiffax/tif_version.c,v 1.1.1.1 1997/07/05 14:41:58 kulow Exp $ */
+/* $Header$ */
 /*
  * Copyright (c) 1992-1995 Sam Leffler
  * Copyright (c) 1992-1995 Silicon Graphics, Inc.

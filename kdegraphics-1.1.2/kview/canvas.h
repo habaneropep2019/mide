@@ -18,7 +18,7 @@ class QPen;
 /**
 * @short KImageCanvas
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: canvas.h,v 1.8 1999/01/10 18:16:44 ssk Exp $
+* @version $Id$
 */
 class KImageCanvas : public QScrollView
 {

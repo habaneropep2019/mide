@@ -5,12 +5,9 @@
 //  Copyright: Bernd Johannes Wuebben, wuebben@math.cornell.edu
 //
 //
-//  $Id: example.cpp,v 1.2 1999/01/17 19:54:52 bieker Exp $
+//  $Id$
 //
-//  $Log: example.cpp,v $
-//  Revision 1.2  1999/01/17 19:54:52  bieker
-//  i18n() some more strings.
-//
+//  $Log$
 //  Revision 1.1.1.1  1997/07/04 21:23:49  kulow
 //  Coolo: added Bernd's kscd
 //

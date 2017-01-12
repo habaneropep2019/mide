@@ -3,7 +3,7 @@
 # Date created:        18 June 1998
 # Whom:                Alex Zepeda <garbanzo@hooked.net>
 #
-# $Id: Makefile,v 1.5 1998/06/30 20:07:17 garbanzo Exp $
+# $Id$
 #
 PKGNAME=	kdemultimedia-`date "+%y%m%d"`
 CATEGORIES=	audio kde

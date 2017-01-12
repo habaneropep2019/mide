@@ -29,7 +29,7 @@
 * accelerators, as they are not activated till then.
 *
  @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: kaccelmenuwatch.h,v 1.1.2.1 1999/02/16 15:11:45 kulow Exp $
+* @version $Id$
 */
 class KAccelMenuWatch : public QObject
 {

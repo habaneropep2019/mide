@@ -1,7 +1,7 @@
 /*
 * canvas.cpp -- Implementation of class KImageCanvas.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: canvas.cpp,v 1.10 1999/01/10 18:16:43 ssk Exp $
+* Version:	$Id$
 * Generated:	Thu Oct  9 09:03:54 EST 1997
 */
 

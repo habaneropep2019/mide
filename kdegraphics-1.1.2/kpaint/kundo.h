@@ -1,6 +1,6 @@
 // -*- c++ -*-
 
-// $Id: kundo.h,v 1.2 1997/08/30 18:22:46 kdecvs Exp $
+// $Id$
 
 #ifndef KUNDO_H
 #define KUNDO_H

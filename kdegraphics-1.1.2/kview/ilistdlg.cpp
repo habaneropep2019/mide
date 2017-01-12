@@ -1,7 +1,7 @@
 /*
 * ilistdlg.cpp -- Implementation of class ImgListDlg.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: ilistdlg.cpp,v 1.5 1999/01/10 18:16:45 ssk Exp $
+* Version:	$Id$
 * Generated:	Wed Sep 23 16:04:52 EST 1998
 */
 

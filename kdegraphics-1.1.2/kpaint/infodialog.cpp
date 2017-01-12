@@ -1,4 +1,4 @@
-// $Id: infodialog.cpp,v 1.7.4.1 1999/04/08 21:23:52 dfaure Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <string.h>

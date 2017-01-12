@@ -18,7 +18,7 @@ extern "C" {
 	   }
 #include <qmessagebox.h>
 #include <qradiobutton.h>
-#include <iostream.h>
+#include <iostream>
 #include "AssertDialog.h"
 #include "kabapi.h"
 #include "debug.h"

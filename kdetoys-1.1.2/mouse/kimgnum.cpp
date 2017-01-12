@@ -84,3 +84,5 @@ QSize KImageNumber::sizeHint() const
     
     return QSize(strlen(data)*each,fontPix->height());
 }
+
+#include "kimgnum.moc"

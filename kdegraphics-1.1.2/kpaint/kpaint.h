@@ -3,7 +3,7 @@
 /* modified by jha (j.habenicht@usa.net)
  */
 
-// $Id: kpaint.h,v 1.16 1998/11/04 20:49:14 habenich Exp $
+// $Id$
 
 #ifndef KPAINT_H
 #define KPAINT_H

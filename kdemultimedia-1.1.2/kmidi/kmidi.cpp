@@ -2,7 +2,7 @@
 
    kmidi - a midi to wav converter
 
-   $Id: kmidi.cpp,v 1.11.2.1 1999/04/02 13:21:27 porten Exp $
+   $Id$
 
    Copyright 1997, 1998 Bernd Johannes Wuebben math.cornell.edu
 

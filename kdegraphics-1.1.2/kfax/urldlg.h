@@ -1,7 +1,7 @@
 
 /*
 
- $Id: urldlg.h,v 1.1 1998/06/29 04:56:59 wuebben Exp $
+ $Id$
 
  Copyright (C) Bernd Johannes Wuebben
                wuebben@math.cornell.edu

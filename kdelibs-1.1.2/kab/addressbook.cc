@@ -11,12 +11,15 @@
  * $Revision: 1.11.4.2 $
  */
 
+using namespace std;
+
 #include "addressbook.h"
 #ifdef KAB_DEBUG
 #include "debug.h"
 #endif
 #include <kapp.h>
 #include "debug.h"
+#include <iostream>
 
 extern "C" {
 #include <sys/types.h>

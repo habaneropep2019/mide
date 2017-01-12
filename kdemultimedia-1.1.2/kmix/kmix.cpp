@@ -21,7 +21,7 @@
  */
 
 // Thanks for taking a look in here. :-)
-static char rcsid[]="$Id: kmix.cpp,v 1.44.2.2 1999/07/18 20:53:29 esken Exp $";
+static char rcsid[]="$Id$";
 
 #include <stdio.h>
 #include <unistd.h>

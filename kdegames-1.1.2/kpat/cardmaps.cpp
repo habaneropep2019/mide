@@ -32,6 +32,7 @@
 #include <kconfig.h>
 #include <config.h>
 #include <kapp.h>
+#include <stdlib.h>
 
 int cardMaps::CARDX;
 int cardMaps::CARDY;

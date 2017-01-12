@@ -1,4 +1,4 @@
-// $Id: ellipse.cpp,v 1.14 1998/10/25 16:06:45 habenich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

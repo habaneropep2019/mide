@@ -1,7 +1,7 @@
 /*
  *        kmidi - midi to wav player/converter
  *
- * $Id: log.h,v 1.2 1998/06/10 01:52:34 wuebben Exp $
+ * $Id$
  *            Copyright (C) 1997  Bernd Wuebben
  *                 wuebben@math.cornel.edu 
  * 

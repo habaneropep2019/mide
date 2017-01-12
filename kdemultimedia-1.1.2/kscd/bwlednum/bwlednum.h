@@ -5,12 +5,9 @@
  * Copyright: Bernd Johannes Wuebben, wuebben@math.cornell.edu
  * 
  *
- * $Id: bwlednum.h,v 1.1.1.1 1997/07/04 21:23:49 kulow Exp $
+ * $Id$
  * 
- * $Log: bwlednum.h,v $
- * Revision 1.1.1.1  1997/07/04 21:23:49  kulow
- * Coolo: added Bernd's kscd
- *
+ * $Log$
  * Revision 1.1  1997/06/21 23:10:11  wuebben
  * Initial revision
  *

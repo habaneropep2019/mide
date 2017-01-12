@@ -48,7 +48,6 @@
 #pragma interface
 
 #include "stl_headers.h"
-#include <fstream.h>
 
 // forward declaration needed to avoid duplicate declaration 
 // of global specifiers "red" and "black" in

@@ -1,5 +1,5 @@
 /****************************************************************************
-** $Id: QwViewport.cpp,v 1.6 1997/12/19 12:29:15 rich Exp $
+** $Id$
 **
 ** Implementation of QwViewport class
 **

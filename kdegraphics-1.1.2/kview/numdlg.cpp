@@ -1,7 +1,7 @@
 /*
 * numdlg.cpp -- Implementation of class KNumDialog.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: numdlg.cpp,v 1.2 1998/10/16 04:07:41 ssk Exp $
+* Version:	$Id$
 * Generated:	Fri Oct  9 01:51:29 EST 1998
 */
 

@@ -5,7 +5,7 @@
 
 
 // eps.h -- Declare Qimage IO EPS handlers.
-// $Id: eps.h,v 1.1.1.1 1998/10/20 13:11:49 hoelzer Exp $
+// $Id$
 // 
 
 

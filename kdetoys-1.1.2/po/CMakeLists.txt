@@ -1,0 +1,25 @@
+add_subdirectory(br)
+add_subdirectory(cs)
+add_subdirectory(da)
+add_subdirectory(de)
+add_subdirectory(es)
+add_subdirectory(et)
+add_subdirectory(fi)
+add_subdirectory(fr)
+add_subdirectory(hr)
+add_subdirectory(is)
+add_subdirectory(ja)
+add_subdirectory(no)
+add_subdirectory(pl)
+add_subdirectory(pt)
+add_subdirectory(pt_BR)
+add_subdirectory(ro)
+add_subdirectory(sk)
+add_subdirectory(sl)
+add_subdirectory(sv)
+add_subdirectory(zh_CN.GB2312)
+
+install(FILES
+    kmoon.pot
+    kworldwatch.pot
+DESTINATION ${KDE1_LOCALE})

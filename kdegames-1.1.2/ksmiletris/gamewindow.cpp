@@ -270,3 +270,5 @@ void GameWindow::movedMenu(menuPosition pos)
 		resize(width(), height() - menu->height());
 	}
 }
+
+#include "gamewindow.moc"

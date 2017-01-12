@@ -1,7 +1,7 @@
 /*
 * kview.cpp -- Implementation of class KView.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: kview.cpp,v 1.6 1999/01/10 18:16:49 ssk Exp $
+* Version:	$Id$
 * Generated:	Wed Oct 15 01:26:27 EST 1997
 */
 

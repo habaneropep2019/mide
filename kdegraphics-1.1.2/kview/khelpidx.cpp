@@ -1,7 +1,7 @@
 /*
 * khelpidx.cpp -- Implementation of class KHelpIndex.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: khelpidx.cpp,v 1.3 1999/01/10 18:16:48 ssk Exp $
+* Version:	$Id$
 * Generated:	Thu Sep  3 13:16:48 EST 1998
 */
 

@@ -1,4 +1,4 @@
-/* $Header: /home/kde/kdegraphics/kfax/libtiffax/mkspans.c,v 1.2 1997/10/06 03:22:17 wuebben Exp $ */
+/* $Header$ */
 
 /*
  * Copyright (c) 1991-1995 Sam Leffler

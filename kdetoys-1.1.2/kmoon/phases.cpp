@@ -15,6 +15,7 @@
 **                and minute of the event
 */
 
+#include <stdlib.h>
 #include <time.h>
 
 time_t JDtoDate(double jd, struct tm *event_date)

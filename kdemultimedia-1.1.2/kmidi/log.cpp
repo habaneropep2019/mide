@@ -1,7 +1,7 @@
 /*
  *        kmidi
  *
- * $Id: log.cpp,v 1.5.2.1 1999/06/10 08:47:35 porten Exp $
+ * $Id$
  *            Copyright (C) 1997  Bernd Wuebben
  *                 wuebben@math.cornel.edu 
  *

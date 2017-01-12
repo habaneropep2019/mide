@@ -3,7 +3,7 @@
 #
 #  Copyright 1997 Bernd Johannes Wuebben, wuebben@math.cornell.edu
 #
-#  $Id: Makefile.am,v 1.14.2.5 1999/09/07 14:48:51 kulow Exp $
+#  $Id$
 #
 
 VERSION = 0.2i

@@ -3,7 +3,7 @@
  *   they refer to.  The routine load_fff_patch is adapted from "load_instrument",
  *   which is Copyright (C) 1995 Tuukka Toivonen <toivonen@clinet.fi>.
  *		-- Greg Lee, lee@Hawaii.edu, June, 1997.
- * $Id: fffload.c,v 1.5 1998/07/03 21:21:22 garbanzo Exp $
+ * $Id$
  */
 
 #include <stdio.h>

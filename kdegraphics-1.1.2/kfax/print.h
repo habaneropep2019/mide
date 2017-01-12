@@ -1,5 +1,5 @@
 /*
-    $Id: print.h,v 1.4 1999/01/10 14:54:20 bieker Exp $
+    $Id$
 
     Requires the Qt widget libraries, available at no cost at 
     http://www.troll.no

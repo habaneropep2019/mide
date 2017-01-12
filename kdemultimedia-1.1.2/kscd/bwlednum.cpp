@@ -3,13 +3,9 @@
  * 
  * Copyright: Bernd Johannes Wuebben, wuebben@math.cornell.edu
  * 
- * $Id: bwlednum.cpp,v 1.5 1998/01/02 00:47:17 wuebben Exp $
+ * $Id$
  * 
- * $Log: bwlednum.cpp,v $
- * Revision 1.5  1998/01/02 00:47:17  wuebben
- * Bernd: Monster Commit !! Finished CDDB support and Web intergration
- * Let the games begin
- *
+ * $Log$
  * Revision 1.4  1997/10/25 15:15:34  wuebben
  * Bernd: fixed the segfault error if you had no permiision to access the cdrom
  * drive
