@@ -1,6 +1,6 @@
     /*
 
-    $Id: kfax.h,v 1.10 1999/01/05 18:39:36 kulow Exp $
+    $Id$
 
     Requires the Qt widget libraries, available at no cost at 
     http://www.troll.no

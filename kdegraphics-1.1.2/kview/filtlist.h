@@ -24,7 +24,7 @@ struct FilterContainer
 /**
 * Maintains a list of filter objects and provides a lookup table.
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: filtlist.h,v 1.2 1998/10/08 14:42:44 kulow Exp $
+* @version $Id$
 */
 class KFilterList : public QObject
 {

@@ -1,4 +1,4 @@
-// $Id: line.cpp,v 1.14 1998/10/25 16:06:49 habenich Exp $
+// $Id$
 
 // Note: When used to draw more than one line segment should use draw poly line
 // functions to avoid glitches at the joints.

@@ -33,7 +33,7 @@ class KAccelMenuWatch;
 /**
 * Top-level window
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: viewer.h,v 1.9 1999/01/19 02:12:29 ssk Exp $
+* @version $Id$
 */
 class KImageViewer : public KTopLevelWidget
 {

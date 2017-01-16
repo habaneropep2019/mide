@@ -1,7 +1,7 @@
 /*
  *              KSCD -- a simpole cd player for the KDE project
  *
- * $Id: docking.cpp,v 1.10 1998/12/22 05:36:17 thufir Exp $
+ * $Id$
  *
  *              Copyright (C) 1997 Bernd Johannes Wuebben
  *                      wuebben@math.cornell.edu

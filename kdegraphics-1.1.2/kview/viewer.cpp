@@ -1,7 +1,7 @@
 /*
 * viewer.cpp -- Implementation of class KImageViewer.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: viewer.cpp,v 1.20 1999/01/19 02:12:27 ssk Exp $
+* Version:	$Id$
 * Generated:	Wed Oct 15 11:37:16 EST 1997
 */
 

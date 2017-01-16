@@ -1,4 +1,4 @@
-// $Id: version.h,v 1.8 1998/11/04 20:49:17 habenich Exp $
+// $Id$
 
 #define APPVERSTR "0.4.3" 
 #define APPNAME "kpaint"

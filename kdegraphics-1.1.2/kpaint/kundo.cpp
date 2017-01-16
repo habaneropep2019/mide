@@ -1,4 +1,4 @@
-// $Id: kundo.cpp,v 1.3 1997/12/19 12:29:33 rich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

@@ -1,7 +1,7 @@
 /*   
    Kscd - A simple cd player for the KDE Project
 
-   $Id: plat_freebsd.c,v 1.11.2.1 1999/05/17 13:07:34 porten Exp $
+   $Id$
  
    Copyright (c) 1997 Bernd Johannes Wuebben math.cornell.edu
 

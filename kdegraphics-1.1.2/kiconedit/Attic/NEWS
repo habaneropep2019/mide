@@ -1,0 +1,68 @@
+KDE Icon Editor
+_______________
+
+------------------------------------------------------------------------------
+   News and fixes in version 0.4.0:
+------------------------------------------------------------------------------
+ - Enabled loading other image types than XPM.
+ - Repainting large pictures is very much faster now.
+ - Added drop site indication when using XDND.
+ - Added QWhatsThis help (this is great!).
+ - Started playing with XDND. The toolbar now has a drag source and the grid
+   supports both XDND and KDND.
+ - Added rulers (can be toggled from the configuration dialog).
+ - Circular selection.
+ - Configuration dialog:
+   - Shortcut keys.
+   - Appearance.
+   - Templates.
+   - Miscellaneous (paste mode, show rulers etc.).
+
+------------------------------------------------------------------------------
+   News and fixes in version 0.3.2:
+------------------------------------------------------------------------------
+ - German translations. (thanks to Gregor Zumstein <zumste98@cui.unige.ch>)
+ - Solaris didn't like TRANSPARENT definition. (thanks to Alastair Burt <burt@dfki.de>)
+ - Crashed on empty string in strlen. (thanks to Alastair Burt <burt@dfki.de>)
+ - Russian translations (thanks to Andy Pershin <apa@penza.com.ru>)
+
+------------------------------------------------------------------------------
+   News and fixes in version 0.3.1:
+------------------------------------------------------------------------------
+ - Icon templates installed in the wrong directory.
+ - Templates didn't load.
+
+------------------------------------------------------------------------------
+   News and fixes in version 0.3:
+------------------------------------------------------------------------------
+ - Complete rewrite of the drawing grid. Should now be faster and more flexible.
+ - New class KIcon for file manipulation.
+ - The "Line" tool can now draw 45 dgr. angles.
+ - Smooth resizing of icons if linked with QT >= 1.40.
+ - Improved loading/saving images with transparent pixels.
+ - Loading and saving should now work on non-local files.
+
+------------------------------------------------------------------------------
+   News and fixes in version 0.2:
+------------------------------------------------------------------------------
+ - Saves restore file when closed by session management or by crash.
+ - Fixed multi instance handling.
+ - Added toolbar button for creating new instances.
+ - Added danish translation.
+ - Added statusbar field for messages.
+ - Saves window size.
+ - Couldn't toggle grid from the menu.
+ - Added "Toggle toolbar", "Toggle drawing tools" and "Toggle statusbar" to the
+   "View" menu. This as well as the *Bar positions is saved between sessions.
+ - Grid state and zoom factor saved between sessions.
+ - The clipboard is checked with short intervals to check if there's a pixmap.
+ - The cursor hotspots are now correct.
+ - Cursor position is shown in the statusbar.
+ - Removed a lot of memory leaks and made the general memory footprint some smaller.
+ - New tools: "Find pixel", "Flood Fill", "Filled Circle" and "Filled Ellipse".
+ - Clipboard now supports selection of regions and inserting into existing image.
+ - Speeded up loading of pixmaps by some thousand percents ;-)
+ - Preview has scrollbars if it doesn't fit.
+ 
+
+

@@ -1,6 +1,6 @@
 // -*- c++ -*-
 
-// $Id: spraycan.h,v 1.5 1998/10/18 20:00:06 habenich Exp $
+// $Id$
 
 #ifndef SPRAYCAN_H
 #define SPRAYCAN_H

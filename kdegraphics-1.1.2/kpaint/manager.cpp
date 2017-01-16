@@ -1,4 +1,4 @@
-// $Id: manager.cpp,v 1.13 1998/11/04 20:49:15 habenich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <qobject.h>

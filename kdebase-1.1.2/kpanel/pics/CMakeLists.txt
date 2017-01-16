@@ -1,0 +1,10 @@
+install_icon(exit.xpm "${KDE1_DATADIR}/kpanel/pics")
+install_icon(go.xpm "${KDE1_DATADIR}/kpanel/pics")
+install_icon(key.xpm "${KDE1_DATADIR}/kpanel/pics")
+install_icon(window_list.xpm "${KDE1_DATADIR}/kpanel/pics")
+install_icon(shared.xpm "${KDE1_DATADIR}/kpanel/pics")
+install_icon(personal.xpm "${KDE1_DATADIR}/kpanel/pics")
+install_icon(pers_applnk.xpm "${KDE1_DATADIR}/kpanel/pics")
+install_icon(kfm_home.xpm "${KDE1_DATADIR}/kpanel/pics")
+install_icon(kdisknav.xpm "${KDE1_DATADIR}/kpanel/pics")
+

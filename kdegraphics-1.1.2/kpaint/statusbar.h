@@ -1,4 +1,4 @@
-// $Id: statusbar.h,v 1.1 1997/05/19 13:42:57 kulow Exp $
+// $Id$
 
 #ifndef STATUSBAR_H
 #define STATUSBAR_H

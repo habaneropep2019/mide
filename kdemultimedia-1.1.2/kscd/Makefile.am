@@ -1,4 +1,4 @@
-# $Id: Makefile.am,v 1.17.2.4 1999/09/07 14:48:52 kulow Exp $
+# $Id$
 
 MIMEDIR = $(kde_mimedir)/text/
 PICSDIR  = $(kde_datadir)/kscd/pics/

@@ -4,7 +4,7 @@
 #include <kapp.h>
 #include <kiconloader.h>
 
-#include <iostream.h>
+#include <iostream>
 
 #include "minimap.h"
 #include "minimap.moc"

@@ -1,5 +1,5 @@
 /*
-    $Id: print.cpp,v 1.5 1998/09/14 20:43:50 kulow Exp $
+    $Id$
     
     KFax -- a fax file viewer for KDE
        

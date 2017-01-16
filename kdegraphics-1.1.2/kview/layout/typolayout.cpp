@@ -1,7 +1,7 @@
 /*
 * typolayout.cpp -- Implementation of class KTypoLayout.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: typolayout.cpp,v 1.4 1999/01/19 02:12:31 ssk Exp $
+* Version:	$Id$
 * Generated:	Tue May  5 01:12:37 EST 1998
 */
 

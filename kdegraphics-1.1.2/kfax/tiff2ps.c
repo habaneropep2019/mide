@@ -1,4 +1,4 @@
-/* $Header: /home/kde/kdegraphics/kfax/tiff2ps.c,v 1.3 1997/10/06 03:22:11 wuebben Exp $ */
+/* $Header$ */
 
 /*
  * Copyright (c) 1988-1995 Sam Leffler

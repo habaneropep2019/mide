@@ -1,7 +1,7 @@
 /*
    kmidi
    
-   $Id: playlist.cpp,v 1.4 1999/01/14 16:55:36 bieker Exp $
+   $Id$
 
    Copyright 1997 Bernd Johannes Wuebben math.cornell.edu
 

@@ -1,5 +1,5 @@
 
-# $Id: Makefile,v 1.1.1.1 1997/07/04 21:23:49 kulow Exp $
+# $Id$
 
 all:	bwlednum.o example
 

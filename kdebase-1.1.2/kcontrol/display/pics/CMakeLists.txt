@@ -1,0 +1,7 @@
+install_icon(background.xpm "")
+install_icon(colors.xpm "")
+install_icon(logo.xpm "")
+install_icon(monitor.xpm "")
+install_icon(screensaver.xpm "")
+install_icon(style.xpm "")
+install_icon(fonts.xpm "")

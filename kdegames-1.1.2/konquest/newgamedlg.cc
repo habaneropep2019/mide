@@ -14,7 +14,7 @@
 #include "newgamedlg.h"
 #include "newgamedlg.moc"
 
-#include <iostream.h>
+#include <iostream>
 
 /*************************************************************************
  New Game Dialog Members

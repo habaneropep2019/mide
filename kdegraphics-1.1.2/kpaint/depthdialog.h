@@ -1,6 +1,6 @@
 // -*- c++ -*-
 
-// $Id: depthdialog.h,v 1.2 1998/10/18 19:59:45 habenich Exp $
+// $Id$
 
 #ifndef DEPTHDIALOG_H
 #define DEPTHDIALOG_H

@@ -1,7 +1,7 @@
 /*
 * colour.cpp -- Implementation of class ColourFilter.
 * Author:	Sirtaj Singh Kang <taj@kde.org>
-* Version:	$Id: colour.cpp,v 1.8 1998/11/20 18:28:23 ssk Exp $
+* Version:	$Id$
 * Generated:	Tue Sep 22 02:26:05 EST 1998
 */
 

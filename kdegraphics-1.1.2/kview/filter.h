@@ -11,7 +11,7 @@
 /**
 * KImageFilter
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: filter.h,v 1.4 1998/10/18 08:17:04 ssk Exp $
+* @version $Id$
 */
 class KImageFilter : public QObject
 {

@@ -1,5 +1,5 @@
 /*
- * $Id: b_out.c,v 1.3 1998/07/03 21:21:21 garbanzo Exp $
+ * $Id$
  */
 
 #include "config.h"

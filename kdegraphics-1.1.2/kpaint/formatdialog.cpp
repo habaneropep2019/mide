@@ -1,4 +1,4 @@
-// $Id: formatdialog.cpp,v 1.8 1998/10/18 19:59:49 habenich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <qpushbt.h>

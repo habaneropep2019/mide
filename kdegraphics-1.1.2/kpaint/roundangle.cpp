@@ -1,4 +1,4 @@
-// $Id: roundangle.cpp,v 1.3 1998/10/25 16:06:53 habenich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

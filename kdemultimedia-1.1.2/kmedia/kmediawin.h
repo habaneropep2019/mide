@@ -21,7 +21,7 @@
 */
 
 
-// $Id: kmediawin.h,v 1.12 1998/06/17 01:56:07 esken Exp $
+// $Id$
 // KmediaWin header
 
 const int	WIDTH  = 25;

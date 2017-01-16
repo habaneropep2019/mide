@@ -20,7 +20,7 @@
 * </pre>
 *
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: khelpidx.h,v 1.1 1998/11/20 18:28:25 ssk Exp $
+* @version $Id$
 */
 class KHelpIndex
 {

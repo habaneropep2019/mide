@@ -1,4 +1,4 @@
-// $Id: canvassize.cpp,v 1.10 1998/10/18 19:59:39 habenich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdlib.h>

@@ -19,7 +19,7 @@ class KImageViewer;
 /**
 * KView application object.
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: kview.h,v 1.5 1999/01/10 18:16:50 ssk Exp $
+* @version $Id$
 */
 class KView : public QObject
 {

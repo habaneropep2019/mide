@@ -3,7 +3,7 @@
 # Date created:        18 June 1998
 # Whom:                Alex Zepeda <garbanzo@hooked.net>
 #
-# $Id: Makefile,v 1.4 1998/06/30 20:06:02 garbanzo Exp $
+# $Id$
 #
 PKGNAME=	kdegraphics-`date "+%y%m%d"`
 CATEGORIES=	graphics kde

@@ -1,7 +1,7 @@
 /*
  * Kscd - A simple cd player for the KDE Project
  *
- * $Id: smtp.h,v 1.3.2.2 1999/04/14 20:47:34 porten Exp $
+ * $Id$
  *
  * Copyright (c) 1997 Bernd Johannes wuebben@math.cornell.edu
  *

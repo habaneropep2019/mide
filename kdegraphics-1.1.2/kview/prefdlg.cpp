@@ -1,7 +1,7 @@
 /*
 * prefdlg.cpp -- Implementation of class KViewPrefDlg.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: prefdlg.cpp,v 1.1 1999/01/10 18:16:51 ssk Exp $
+* Version:	$Id$
 * Generated:	Fri Jan  1 16:15:08 EST 1999
 */
 

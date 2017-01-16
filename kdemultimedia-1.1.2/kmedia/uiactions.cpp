@@ -17,7 +17,7 @@
 */
 
 
-// $Id: uiactions.cpp,v 1.25 1998/12/12 17:41:47 esken Exp $
+// $Id$
 // User interface actions
 
 

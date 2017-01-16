@@ -5,12 +5,9 @@
  * Copyright: Bernd Johannes Wuebben, wuebben@math.cornell.edu
  * 
  *
- * $Id: bwlednum.h,v 1.2 1998/04/06 18:44:11 wuebben Exp $
+ * $Id$
  * 
- * $Log: bwlednum.h,v $
- * Revision 1.2  1998/04/06 18:44:11  wuebben
- * Bernd: layout changes
- *
+ * $Log$
  * Revision 1.3  1997/10/25 15:15:35  wuebben
  * Bernd: fixed the segfault error if you had no permiision to access the cdrom
  * drive

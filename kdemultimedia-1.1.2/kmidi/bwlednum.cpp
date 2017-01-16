@@ -3,12 +3,9 @@
  * 
  * Copyright: Bernd Johannes Wuebben, wuebben@math.cornell.edu
  * 
- * $Id: bwlednum.cpp,v 1.2 1998/04/06 18:44:10 wuebben Exp $
+ * $Id$
  * 
- * $Log: bwlednum.cpp,v $
- * Revision 1.2  1998/04/06 18:44:10  wuebben
- * Bernd: layout changes
- *
+ * $Log$
  * Revision 1.5  1998/01/02 00:47:17  wuebben
  * Bernd: Monster Commit !! Finished CDDB support and Web intergration
  * Let the games begin

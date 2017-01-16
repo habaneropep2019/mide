@@ -1,4 +1,4 @@
-// $Id: canvas.cpp,v 1.16.2.2 1999/04/08 21:23:47 dfaure Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

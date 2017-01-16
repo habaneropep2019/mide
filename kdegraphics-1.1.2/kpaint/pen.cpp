@@ -1,4 +1,4 @@
-// $Id: pen.cpp,v 1.12 1998/10/18 19:59:57 habenich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

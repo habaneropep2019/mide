@@ -1,7 +1,7 @@
 /*   
    Kscd - A simple cd player for the KDE Project
 
-   $Id: scsi.c,v 1.6 1998/12/18 16:31:45 pbrown Exp $
+   $Id$
  
    Copyright (c) 1997 Bernd Johannes Wuebben math.cornell.edu
 

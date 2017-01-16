@@ -1,6 +1,6 @@
 /*
 
-    $Id: about.h,v 1.1 1997/10/06 03:22:04 wuebben Exp $
+    $Id$
        
     Copyright (C) 1997 Bernd Johannes Wuebben   
                        wuebben@math.cornell.edu

@@ -29,6 +29,7 @@
 
 class KCharsetEntry;
 class KCharsetsData;
+class KCharsets;
 
 /**
 *  A class representing a charset.

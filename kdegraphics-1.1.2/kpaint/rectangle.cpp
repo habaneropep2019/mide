@@ -1,4 +1,4 @@
-// $Id: rectangle.cpp,v 1.13 1998/10/25 16:06:51 habenich Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

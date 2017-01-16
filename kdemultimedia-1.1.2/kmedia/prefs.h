@@ -21,7 +21,7 @@
 */
 
 
-// $Id: prefs.h,v 1.3 1998/06/20 22:52:09 esken Exp $
+// $Id$
 // Preferences header file
 
 #include <stdio.h>

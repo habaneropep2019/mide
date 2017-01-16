@@ -1,4 +1,4 @@
-#Makefile.am for kodo $Id: Makefile.am,v 1.6.2.1 1999/08/22 21:04:48 elter Exp $
+#Makefile.am for kodo $Id$
 
 # just set the variable
 APPSDIR = $(kde_appsdir)/Utilities

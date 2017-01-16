@@ -1,5 +1,5 @@
 /*
-    $Id: options.h,v 1.3 1997/12/12 13:53:46 denis Exp $
+    $Id$
 
        
     Copyright (C) 1996 Bernd Johannes Wuebben   

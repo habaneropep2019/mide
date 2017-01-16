@@ -17,7 +17,6 @@
 #pragma interface
 
 #include "stl_headers.h"
-#include <fstream.h>
 
 /** Read a line, ignore comments. */
 string ReadLineFromStream(ifstream&);

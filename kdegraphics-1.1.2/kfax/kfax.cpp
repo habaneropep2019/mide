@@ -1,6 +1,6 @@
    /*
 
-    $Id: kfax.cpp,v 1.17.2.1 1999/02/26 14:17:17 dfaure Exp $
+    $Id$
 
     Copyright (C) 1997 Bernd Johannes Wuebben   
                        wuebben@math.cornell.edu

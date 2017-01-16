@@ -17,7 +17,7 @@
 */
 
 
-// $Id: kmediawin.cpp,v 1.17 1999/01/17 19:51:37 bieker Exp $
+// $Id$
 // KMediaWin implementation
 
 #include <iostream.h>

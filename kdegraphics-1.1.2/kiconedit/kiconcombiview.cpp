@@ -19,7 +19,7 @@
     Boston, MA 02111-1307, USA.
 */  
 
-// $Id: kiconcombiview.cpp,v 1.1 1998/10/16 15:26:36 tanghus Exp $
+// $Id$
 
 #include "kiconcombiview.h"
 #include <kdirlistbox.h>

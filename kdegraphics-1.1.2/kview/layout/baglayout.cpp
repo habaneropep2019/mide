@@ -1,7 +1,7 @@
 /*
 * gridbagl.cpp -- Implementation of class KGridBagLayout.
 * Author:	Sirtaj Singh Kang
-* Version:	$Id: baglayout.cpp,v 1.3 1999/01/10 18:17:02 ssk Exp $
+* Version:	$Id$
 * Generated:	Mon May  4 15:57:51 EST 1998
 */
 

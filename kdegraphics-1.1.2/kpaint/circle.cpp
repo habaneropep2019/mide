@@ -1,4 +1,4 @@
-// $Id: circle.cpp,v 1.13.2.1 1999/02/16 15:11:39 kulow Exp $
+// $Id$
 
 #include <kdebug.h>
 #include <stdio.h>

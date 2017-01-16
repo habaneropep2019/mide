@@ -1,6 +1,6 @@
 /*
 
-    $Id: about.cpp,v 1.7 1998/09/14 20:43:46 kulow Exp $
+    $Id$
        
     Copyright (C) 1997 Bernd Johannes Wuebben   
                        wuebben@math.cornell.edu

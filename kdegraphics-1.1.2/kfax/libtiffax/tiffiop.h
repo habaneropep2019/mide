@@ -1,4 +1,4 @@
-/* $Header: /home/kde/kdegraphics/kfax/libtiffax/tiffiop.h,v 1.1.1.1 1997/07/05 14:41:59 kulow Exp $ */
+/* $Header$ */
 
 /*
  * Copyright (c) 1988-1995 Sam Leffler

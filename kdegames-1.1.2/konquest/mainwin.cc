@@ -4,7 +4,7 @@
 #include <kiconloader.h>
 #include <qpushbt.h>
 
-#include <iostream.h>
+#include <iostream>
 
 #include <config.h>
 

@@ -17,7 +17,7 @@ class KImageFilter;
 * Creates a cascading menu of filters and provides signalling of
 * filter selection from the menu.
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: filtmenu.h,v 1.2 1998/10/08 14:42:46 kulow Exp $
+* @version $Id$
 */
 class KFiltMenuFactory : public QObject
 {

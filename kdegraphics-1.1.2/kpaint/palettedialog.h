@@ -1,4 +1,4 @@
-// $Id: palettedialog.h,v 1.3 1998/05/07 13:34:50 rich Exp $
+// $Id$
 
 #ifndef PALETTEDIALOG_H
 #define PALETTEDIALOG_H

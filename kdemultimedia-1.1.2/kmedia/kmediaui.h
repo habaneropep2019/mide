@@ -21,7 +21,7 @@
 */
 
 
-// $Id: kmediaui.h,v 1.1 1998/04/27 23:54:49 esken Exp $
+// $Id$
 // KMediaUi header
 
 

@@ -2,7 +2,7 @@
 /*   
    Kscd - A simple cd player for the KDE Project
 
-   $Id: inexact.h,v 1.2 1998/11/20 06:27:17 thufir Exp $
+   $Id$
  
    Copyright (c) 1997 Bernd Johannes Wuebben math.cornell.edu
 

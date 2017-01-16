@@ -1,7 +1,7 @@
 /*
    kmidi 
    
-   $Id: ctl.c,v 1.6.2.1 1999/03/29 12:24:39 dfaure Exp $
+   $Id$
 
    Copyright 1997 Bernd Johannes Wuebben math.cornell.edu
 

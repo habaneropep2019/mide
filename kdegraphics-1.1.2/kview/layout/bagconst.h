@@ -8,7 +8,7 @@
 /**
 * @short KBagConstraints
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: bagconst.h,v 1.3 1999/01/10 18:17:01 ssk Exp $
+* @version $Id$
 */
 class KBagConstraints
 {

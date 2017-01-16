@@ -4,7 +4,7 @@
 #include <qpalette.h>
 #include <kapp.h>
 
-#include <iostream.h>
+#include <iostream>
 
 #include "planet_info.h"
 #include "planet_info.moc"

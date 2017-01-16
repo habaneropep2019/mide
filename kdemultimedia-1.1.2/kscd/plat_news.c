@@ -1,7 +1,7 @@
 /*   
    Kscd - A simple cd player for the KDE Project
 
-   $Id: plat_news.c,v 1.7 1998/04/10 03:20:25 wuebben Exp $
+   $Id$
  
    Copyright (c) 1997 Bernd Johannes Wuebben math.cornell.edu
 
@@ -23,7 +23,7 @@
  */
 
 /*
- * $Id: plat_news.c,v 1.7 1998/04/10 03:20:25 wuebben Exp $
+ * $Id$
  *
  * Sony NEWS-specific drive control routines.
  */

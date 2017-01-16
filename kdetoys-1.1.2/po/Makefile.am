@@ -1,4 +1,4 @@
-# $Id: Makefile.am,v 1.9.2.5 1999/09/03 16:33:35 duncan Exp $
+# $Id$
 
 SUBDIRS = br cs da de et hr no pt sk zh_CN.GB2312 is fi fr sv es pt_BR pl ro ja sl
 

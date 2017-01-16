@@ -17,7 +17,7 @@
 */
 
 
-// $Id: prefs.cpp,v 1.9 1999/01/17 19:51:38 bieker Exp $
+// $Id$
 // Preferences Widget of Media player
 
 #include <kapp.h>

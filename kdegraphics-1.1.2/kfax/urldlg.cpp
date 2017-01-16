@@ -1,7 +1,7 @@
 
 /*
 
- $Id: urldlg.cpp,v 1.2 1998/09/14 20:43:51 kulow Exp $
+ $Id$
 
  Copyright (C) Bernd Johannes Wuebben
                wuebben@math.cornell.edu

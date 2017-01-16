@@ -17,7 +17,7 @@ class QFrame;
 * Similar to @ref QGridLayout but allows more refined control
 * of each widget to 
 * @author Sirtaj Singh Kang (taj@kde.org)
-* @version $Id: baglayout.h,v 1.3 1999/01/10 18:17:03 ssk Exp $
+* @version $Id$
 * @short Allows finer-grained layout control similar to @ref QGridLayout
 */
 class KBagLayout : public QObject

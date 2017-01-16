@@ -5,7 +5,7 @@
 #include <math.h>
 #include <time.h>
 
-#include <iostream.h>
+#include <iostream>
 
 #include <config.h>
 

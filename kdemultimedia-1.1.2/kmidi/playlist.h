@@ -1,7 +1,7 @@
 /*
    kModPlayer - Qt-Based Mod Player
    
-   $Id: playlist.h,v 1.1.1.1 1997/11/27 05:13:56 wuebben Exp $
+   $Id$
 
    Copyright 1996 Bernd Johannes Wuebben math.cornell.edu
 

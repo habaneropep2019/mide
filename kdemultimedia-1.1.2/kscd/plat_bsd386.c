@@ -1,7 +1,7 @@
 /*   
    Kscd - A simple cd player for the KDE Project
 
-   $Id: plat_bsd386.c,v 1.7 1998/04/10 03:20:19 wuebben Exp $
+   $Id$
  
    Copyright (c) 1997 Bernd Johannes Wuebben math.cornell.edu
 
@@ -23,7 +23,7 @@
  */
 
 /*
- * $Id: plat_bsd386.c,v 1.7 1998/04/10 03:20:19 wuebben Exp $
+ * $Id$
  *
  * BSD/386-specific drive control routines.
  */

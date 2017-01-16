@@ -1,7 +1,7 @@
 /*
  * Kscd - A simple cd player for the KDE Project
  *
- * $Id: kscd.cpp,v 1.63.2.1 1999/03/17 13:39:31 porten Exp $
+ * $Id$
  *
  * Copyright (c) 1997 Bernd Johannes wuebben@math.cornell.edu
  *

@@ -96,7 +96,7 @@
 #include <math.h>
 #include <ctype.h>
 #include <time.h>
-#include <iostream.h>
+#include <iostream>
 
 #include <qkeycode.h>
 #include <qtooltip.h>
@@ -939,4 +939,4 @@ int main(int argc,char **argv)
     return a.exec();
 }
 
-
+#include "kodo.moc"

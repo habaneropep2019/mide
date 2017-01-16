@@ -1,5 +1,5 @@
 // -*- c++ -*-
-// $Id: ellipse.h,v 1.5 1998/10/18 19:59:48 habenich Exp $
+// $Id$
 
 #ifndef ELLIPSE_H
 #define ELLIPSE_H

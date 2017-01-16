@@ -19,7 +19,7 @@
 // code is not worth spending much time on.
 // moorer@cs.man.ac.uk
 //
-// $Id: gif.cpp,v 1.6 1998/10/19 20:09:16 garbanzo Exp $
+// $Id$
 
 
 #include <kdebug.h>

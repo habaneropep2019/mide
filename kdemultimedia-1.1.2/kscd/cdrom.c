@@ -1,5 +1,5 @@
 /*
- * $Id: cdrom.c,v 1.8.4.2 1999/04/14 20:47:29 porten Exp $
+ * $Id$
  *
  * Interface between most of WorkMan and the low-level CD-ROM library
  * routines defined in plat_*.c and drv_*.c.  The goal is to have no
