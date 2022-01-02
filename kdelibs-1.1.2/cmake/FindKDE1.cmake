@@ -16,7 +16,7 @@ set(KDE1_FOUND 0)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 find_package(X11 REQUIRED)
-find_package(Qt1 REQUIRED)
+find_package(Qt2 REQUIRED)
 find_package(Gettext REQUIRED)
 
 include(CMakePackageConfigHelpers)

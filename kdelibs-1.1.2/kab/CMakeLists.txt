@@ -53,7 +53,7 @@ set(KAB_MOC
 	kab.h kabapi.h searchresults.h
     )
 
-QT1_WRAP_HEADER(MOC_FILES ${KAB_MOC})
+QT2_WRAP_HEADER(MOC_FILES ${KAB_MOC})
 
 add_library(kab SHARED ${KAB_SRCS} ${MOC_FILES})
 set_target_properties(kab PROPERTIES VERSION 2.0.0 SOVERSION 2)

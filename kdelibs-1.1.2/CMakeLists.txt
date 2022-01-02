@@ -16,7 +16,7 @@ find_package(PNG REQUIRED)
 find_package(JPEG REQUIRED)
 find_package(TIFF REQUIRED)
 find_package(X11 REQUIRED)
-find_package(Qt1 REQUIRED)
+find_package(Qt2 REQUIRED)
 find_package(Gettext REQUIRED)
 
 include(CMakePackageConfigHelpers)
@@ -37,11 +37,11 @@ endif()
 
 install(FILES
     cmake/FindKDE1.cmake
-    cmake/FindQt1.cmake
+    cmake/FindQt2.cmake
     cmake/KDE1Macros.cmake
     cmake/KDE1InstallDirs.cmake
     cmake/KDE1Macros.cmake
-    cmake/Qt1Macros.cmake
+    cmake/Qt2Macros.cmake
     DESTINATION ${CMAKE_ROOT}/Modules)
 
 add_subdirectory(doc)

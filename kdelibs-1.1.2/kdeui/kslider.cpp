@@ -159,7 +159,7 @@ void KSlider::drawArrow( QPainter *painter, bool show, const QPoint &pos )
       painter->drawPolyline( array, 0, 3);
 
       // !!! This fixes a problem with a missing point! Qt Bug?
-      // !!! I will wait for Qt1.3 to see the results
+      // !!! I will wait for Qt2.3 to see the results
       // painter->drawPoint(array[1]);
     }
 }

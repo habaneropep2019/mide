@@ -51,7 +51,7 @@ set(KDECORE_MOC
     ksock.h
    )
 
-QT1_WRAP_HEADER(MOC_FILES ${KDECORE_MOC})
+QT2_WRAP_HEADER(MOC_FILES ${KDECORE_MOC})
 
 add_library(kdecore SHARED ${KDECORE_SRCS} ${MOC_FILES})
 set_target_properties(kdecore PROPERTIES VERSION 2.0.0 SOVERSION 2)

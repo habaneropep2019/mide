@@ -6,7 +6,7 @@ Standards-Version: 2.5.1
 
 Package: kdelibs2g-dev
 Architecture: any
-Depends: kdelibs2g (= ${Source-Version}), gettext, qt1g-dev, libjpeg62-dev, xlib6g-dev
+Depends: kdelibs2g (= ${Source-Version}), gettext, qt2g-dev, libjpeg62-dev, xlib6g-dev
 Conflicts: kdelibs0-dev
 Description: KDE core libraries (development files)
  KDE core libraries.
@@ -14,7 +14,7 @@ Description: KDE core libraries (development files)
 
 Package: kdelibs-doc
 Architecture: all
-Depends: kdelibs2g (= ${Source-Version}), qt1g-doc
+Depends: kdelibs2g (= ${Source-Version}), qt2g-doc
 Suggests: kdevelop, kdoc, ktranslator
 Description: KDE core libraries (kdoc documentation)
  KDE core libraries (kdoc documentation)

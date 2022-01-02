@@ -31,7 +31,7 @@ $(BUILDDIR)/build-stamp:
 	CFLAGS="-O2 -Wall -Wno-uninitialized -g" \
 	CXXFLAGS="-O2 -Wall -Wno-uninitialized -g" \
 	../configure --prefix=/usr \
-	--disable-rpath --with-qt-dir=/usr/lib/qt1g \
+	--disable-rpath --with-qt-dir=/usr/lib/qt2g \
 	--includedir=/usr/include/kde \
 	--libdir=/usr/lib 
 
@@ -82,10 +82,10 @@ binary-arch:  build
 	if test -f /usr/bin/qt2kdoc; then \
 	mkdir -p debian/tmp/usr/share/kdoc/index ; \
 	mkdir -p debian/tmp/usr/doc/kdelibs-doc/html ; \
-	qt2kdoc --url=/usr/doc/qt1g-doc/html \
+	qt2kdoc --url=/usr/doc/qt2g-doc/html \
 	--outdir=`pwd`/debian/tmp/usr/share/kdoc/index \
 	--compress \
-	/usr/doc/qt1g-doc/html ; \
+	/usr/doc/qt2g-doc/html ; \
 	makekdedoc --libdir=`pwd`/debian/tmp/usr/share/kdoc/index \
 	--outputdir=`pwd`/debian/tmp/usr/doc/kdelibs-doc/html ; \
 	dh_movefiles -pkdelibs-doc usr/share/kdoc usr/doc/kdelibs-doc ; \
