@@ -5,7 +5,7 @@
 #include <errno.h>
 
 // Linux/OSS includes
-#ifdef linux
+#ifdef __linux__
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include <sys/types.h>
