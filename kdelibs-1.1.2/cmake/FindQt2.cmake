@@ -24,8 +24,9 @@ if(UNIX)
     ${QT2_INCLUDE_DIR}
     )
 
-  find_library(QT_LIBRARIES qt
+  find_library(QT_LIBRARIES libqt
     /opt/qt2/lib64
+    /opt/qt2/lib
     ${QT2_LIBRARY_DIR}
     )
 

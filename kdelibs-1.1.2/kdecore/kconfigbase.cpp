@@ -376,10 +376,10 @@ const QString KConfigBase::readEntry( const char* pKey,
   if( data()->bExpand ) {
 	  // check for environment variables and make necessary translations
 	  int nDollarPos = aValue.find( '$' );
-	  
+// No longer need to detach the QString in Qt2 as it's shared
 	  // detach the QString if you are doing modifications!
-	  if (nDollarPos != -1)
-		  aValue.detach();
+//	  if (nDollarPos != -1)
+//		  aValue.detach();
 	  
 	  while( nDollarPos != -1 && nDollarPos+1 < static_cast<int>(aValue.length()))
 		  {
